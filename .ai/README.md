@@ -132,4 +132,4 @@ New files created to provide a structured entry point for future agents:
 - `ROADMAP.md`, `TASKS.md`, `TECH_DEBT.md`, `DECISIONS.md`
 - `AGENT_INSTRUCTIONS.md`, `AUDIT_REPORT.md`
 
-No existing files were deleted or archived — the `.ai/` folder's operational history is preserved intact. The new files supplement existing documentation rather than replacing it.
+No existing files were deleted. The archive directory `.ai/archive/2026-05-09/` was created for future archival needs. Active docs with stale counts (`project-overview.md`) were marked with superseded banners showing current verified counts alongside historical values.

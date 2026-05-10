@@ -1,7 +1,7 @@
 {
   "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:58ce4b1b1f33dae90ea73693544a18c6db93bc4955e9b82c6150112d19c1a1f7",
+  "linked_questions_hash": "sha256:546ebaee35d32d0ee7c87ecd5e1a120e4edc2c91f6e476db7be26e9f3b69b279",
   "question_count": 10,
   "questions": [
     {
@@ -39,7 +39,7 @@
         "correct": "Engineered quartz typically has Mohs hardness of 5-6 to 7 depending on brand/formulation (often scratched by #6 pick). Provides good but not top-tier scratch resistance. 7 (quartz mineral component). This matches natural granite and provides excellent scratch resistance.",
         "takeaway": "Quartz hardness 7 = excellent durability. Marble hardness 3 = soft, etches easily. Memorize the scale."
       },
-      "explanation": null,
+      "explanation": "3-4 is marble hardness; too soft. 5-6 is limestone/travertine; insufficient for counters. 8-9 is diamond/sapphire; harder than quartz. Engineered quartz typically has Mohs hardness of 5-6 to 7 depending on brand/formulation (often scratched by #6 pick). Provides good but not top-tier scratch resistance. 7 (quartz mineral component). This matches natural granite and provides excellent scratch resistance. Quartz hardness 7 = excellent durability. Marble hardness 3 = soft, etches easily. Memorize the scale.",
       "code_citation": "Mohs Hardness Sclea; engineered stone specifications",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -51,8 +51,58 @@
       "model_id": "ALE-MATL-007-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7a09c5686181a31af4032ee6523997a97a3ca431a1cbe379600d2f6b08cf08d9"
+      "updated_at": "2026-05-06T14:48:27.668348+00:00",
+      "content_hash": "sha256:240552c93dd033868d6e153ecbb8f8b66779f16d2b2c493b90f89cd2075817d9"
+    },
+    {
+      "question_id": "28c5f292-afaf-498f-b79f-acbb156336cf",
+      "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
+      "topic_id": "1c2a2673-091a-411c-927d-d8b34acf522a",
+      "text": "Why is Corian (solid surface) repairable in ways that engineered quartz is not?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Corian is softer and can be re-sanded; quartz scratches are permanent and cannot be easily repaired"
+        },
+        {
+          "id": "b",
+          "text": "B) Quartz is harder and more scratch-resistant, but scratches cannot be sanded out without damage; Corian's lower hardness allows repair by sanding and re-buffing"
+        },
+        {
+          "id": "c",
+          "text": "C) Corian is sealed; quartz is not, making it more susceptible to damage that cannot be repaired"
+        },
+        {
+          "id": "d",
+          "text": "D) Quartz is more expensive and therefore cannot be repaired without incurring significant costs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Corian is softer, allowing repair. Quartz scratches are permanent—correct understanding.",
+        "c": "Sealing is not the factor; hardness and repairability are.",
+        "d": "Cost does not determine repairability.",
+        "correct": "Corian (Mohs hardness ~2.5-3) can be lightly sanded to remove minor scratches and re-buffed to restore finish. Quartz (hardness 7) scratches are deep; sanding would remove too much material and damage the surface. This is a trade-off: quartz is more scratch-resistant overall, but when scratched, it cannot be repaired. Corian scratches more easily but is repairable.",
+        "takeaway": "Quartz = harder, scratch-resistant, but scratches are permanent (cosmetic concern). Corian = softer, more scratch-prone, but minor scratches are repairable. Match to household use."
+      },
+      "explanation": "Corian is softer, allowing repair. Quartz scratches are permanent—correct understanding. Sealing is not the factor; hardness and repairability are. Cost does not determine repairability. Corian (Mohs hardness ~2.5-3) can be lightly sanded to remove minor scratches and re-buffed to restore finish. Quartz (hardness 7) scratches are deep; sanding would remove too much material and damage the surface. This is a trade-off: quartz is more scratch-resistant overall, but when scratched, it cannot be repaired. Corian scratches more easily but is repairable. Quartz = harder, scratch-resistant, but scratches are permanent (cosmetic concern). Corian = softer, more scratch-prone, but minor scratches are repairable. Match to household use.",
+      "code_citation": "Solid surface vs. engineered stone comparison",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T14:48:28.034769+00:00",
+      "content_hash": "sha256:ea35d46e9618264b371b12c83ee3663b3ea8850a954ec2b6bb68c9bff01efe76"
     },
     {
       "question_id": "121cc4a8-9eb0-4b7b-b2ab-e719423f8e86",
@@ -139,7 +189,7 @@
         "correct": "Engineered quartz absorbs 0.05% water or less (inherently non-porous). This is the primary advantage: no sealing required.",
         "takeaway": "Quartz 0.05% = non-porous, no sealing needed. Natural stone sealed = 0.5%, re-sealing required. Big difference in maintenance."
       },
-      "explanation": null,
+      "explanation": "0.5% is sealed natural stone (still requires re-sealing). 2-5% is unsealed concrete; requires sealing. 10% is highly porous; unsuitable for counters. Engineered quartz absorbs 0.05% water or less (inherently non-porous). This is the primary advantage: no sealing required. Quartz 0.05% = non-porous, no sealing needed. Natural stone sealed = 0.5%, re-sealing required. Big difference in maintenance.",
       "code_citation": "Engineered stone properties; water absorption specifications",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -151,8 +201,8 @@
       "model_id": "ALE-MATL-007-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2d67a73d872f5c542dacaef81aaa0b8e77cb28785e2d18c881325e30111f8140"
+      "updated_at": "2026-05-06T14:48:27.78708+00:00",
+      "content_hash": "sha256:f0df23e02d97c859bcad7e202fa97a4769d65a7d7e10ea358b6fe59e82f48416"
     },
     {
       "question_id": "144dbf84-2b68-4609-9ed5-25f148d2f30f",
@@ -389,7 +439,7 @@
         "correct": "Marble has Mohs hardness of 3, making it soft and vulnerable to etching and scratching. This is a key consideration for kitchen suitability.",
         "takeaway": "Marble hardness 3 = soft, etches easily from acidic foods, requires high maintenance. Avoid kitchens; use in formal dining only."
       },
-      "explanation": null,
+      "explanation": "2 is gypsum (too soft for any counter). 5-6 is limestone; borderline for counters. 7 is quartz/granite; appropriate for kitchens. Marble has Mohs hardness of 3, making it soft and vulnerable to etching and scratching. This is a key consideration for kitchen suitability. Marble hardness 3 = soft, etches easily from acidic foods, requires high maintenance. Avoid kitchens; use in formal dining only.",
       "code_citation": "Mohs Hardness Sclea; natural stone properties",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -401,8 +451,8 @@
       "model_id": "ALE-MATL-007-06-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:913d34ed18d1b3f0410c9b2c8fdbc3da09954a52603b3a5cf4747d1b195dc403"
+      "updated_at": "2026-05-06T14:48:27.912553+00:00",
+      "content_hash": "sha256:5a81e9af62f85ed0951f87d4be9072657e9402fdfa945a862da4fa17c170c5fb"
     },
     {
       "question_id": "09bfee5a-27b2-4879-8717-940b5a09b32b",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:9cb9c51bab7ad24c1fe857f791ebb7ae454d978048d6c7b5da0946eb7f007551"
-    },
-    {
-      "question_id": "28c5f292-afaf-498f-b79f-acbb156336cf",
-      "article_id": "cc2eb7b8-8933-47d3-a61a-f3f835daf1ab",
-      "topic_id": "1c2a2673-091a-411c-927d-d8b34acf522a",
-      "text": "Why is Corian (solid surface) repairable in ways that engineered quartz is not?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) Corian is softer and can be re-sanded; quartz scratches are permanent and cannot be easily repaired"
-        },
-        {
-          "id": "b",
-          "text": "B) Quartz is harder and more scratch-resistant, but scratches cannot be sanded out without damage; Corian's lower hardness allows repair by sanding and re-buffing"
-        },
-        {
-          "id": "c",
-          "text": "C) Corian is sealed; quartz is not, making it more susceptible to damage that cannot be repaired"
-        },
-        {
-          "id": "d",
-          "text": "D) Quartz is more expensive and therefore cannot be repaired without incurring significant costs"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Corian is softer, allowing repair. Quartz scratches are permanent—correct understanding.",
-        "c": "Sealing is not the factor; hardness and repairability are.",
-        "d": "Cost does not determine repairability.",
-        "correct": "Corian (Mohs hardness ~2.5-3) can be lightly sanded to remove minor scratches and re-buffed to restore finish. Quartz (hardness 7) scratches are deep; sanding would remove too much material and damage the surface. This is a trade-off: quartz is more scratch-resistant overall, but when scratched, it cannot be repaired. Corian scratches more easily but is repairable.",
-        "takeaway": "Quartz = harder, scratch-resistant, but scratches are permanent (cosmetic concern). Corian = softer, more scratch-prone, but minor scratches are repairable. Match to household use."
-      },
-      "explanation": null,
-      "code_citation": "Solid surface vs. engineered stone comparison",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-007-06-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e6eaa6798d81bea19f6d2aaffbef3cd65bead00d1901bddc26e6cd7b2142f3ea"
     }
   ]
 }

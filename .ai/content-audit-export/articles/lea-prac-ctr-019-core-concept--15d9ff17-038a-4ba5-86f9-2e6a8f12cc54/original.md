@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 019 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -52,17 +61,29 @@ The distinction between Substantial Completion (architect's certificate) and Cer
 
 **Question Pattern 5:** As-built documentation—What architect responsibility exists regarding as-built drawings and testing documentation required for occupancy? (Tests architect's coordination and documentation duties)
 
-<Tip>Remember: Certificate of Occupancy is government permit from Building Official = owner can legally occupy. Architect's Substantial Completion certificate = construction contract milestone. Different authorities, different criteria. Architect must ensure design and construction comply with code so occupancy inspection does not reveal defects.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember: Certificate of Occupancy is government permit from Building Official = owner can legally occupy. Architect's Substantial Completion certificate = construction contract milestone. Different authorities, different criteria. Architect must ensure design and construction comply with code so occupancy inspection does not reveal defects.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Assuming architect's Substantial Completion certificate authorizes occupancy (Only the government Certificate of Occupancy authorizes legal occupancy)", "Thinking the architect issues the Certificate of Occupancy (Building Official issues it—architect assists but does not issue)", "Confusing code compliance as the Building Official's responsibility alone (Architect's design must comply with code; architect must monitor construction compliance)", "Believing architect liability ends at Substantial Completion certification (Architect remains liable for code compliance discovered during occupancy inspection)", "Assuming as-built drawings are optional documents (As-built drawings are required for occupancy permit and must be accurate)", "Thinking design compliance is sufficient without construction monitoring (Both design compliance and construction monitoring are architect responsibilities)", "Confusing deviations from plans as contractor errors only (Architect must identify deviations and ensure they are corrected or approved for code compliance)", "Assuming occupancy inspection will not find code non-compliance if Substantial Completion was certified (Substantial Completion and occupancy inspection use different criteria)"] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes=true, Assuming=true, architect=true, s=true, Substantial=true, Completion=true, certificate=true, authorizes=true, occupancy=true, Only=true, the=true, government=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 
 
-<ArticleMedia id="media-lea-prac-ctr-019-core-concept-0" type="image" caption="Delay and Extension of Time — Event Classification and Notice Requirements" description="Decision tree for delay events: Is delay excusable (owner-caused, force majeure) or non-excusable (contractor-caused)? Timelines showing: Excusable delays → Extension of Time granted, No liquidated damages. Non-excusable delays → Liquidated damages, No EOT. Notice requirement timeline: Contractor must notify architect within specified period (typically 7-14 days) with documentation." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-ctr-019-core-concept-0", type="image", caption="Delay and Extension of Time — Event Classification and Notice Requirements", description="Decision tree for delay events: Is delay excusable (owner-caused, force majeure) or non-excusable (contractor-caused)? Timelines showing: Excusable delays → Extension of Time granted, No liquidated damages. Non-excusable delays → Liquidated damages, No EOT. Notice requirement timeline: Contractor must notify architect within specified period (typically 7-14 days) with documentation."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

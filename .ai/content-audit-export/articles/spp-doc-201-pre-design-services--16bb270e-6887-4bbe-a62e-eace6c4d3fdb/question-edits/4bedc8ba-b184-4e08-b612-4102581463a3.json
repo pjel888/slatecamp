@@ -1,0 +1,28 @@
+{
+  "question_id": "4bedc8ba-b184-4e08-b612-4102581463a3",
+  "baseline_hash": "sha256:5a3ea68037eb1c8b0d0456f3affb006fee0b6693942c62f0aa666910a060e188",
+  "status": "proposed_source_audited_local_no_supabase",
+  "reason": "Fixes MDPE label/typo blocker by using the exact raw-PDF term: Multiple of Direct Personnel Expenses.",
+  "approved_by": "source-audit-local-agent",
+  "approved_at": "2026-05-10T11:51:00+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+    "pdf_pages": [
+      25,
+      28,
+      58
+    ],
+    "quoted_pdf_excerpt": "MULTIPLE OF DIRECT PERSONNEL EXPENSES ... The multiplier ranges from 1.5 to 2.5 ... M = Multiplier to account for overhead and reasonable profit. The value may range from 1.5 to 2.5."
+  },
+  "proposed": {
+    "text": "What is the range of the Multiple of Direct Personnel Expenses multiplier for pre-design services under SPP 201?",
+    "rationale": {
+      "a": "1.0 to 2.0 is too low. SPP 201 states that the Multiple of Direct Personnel Expenses multiplier ranges from 1.5 to 2.5.",
+      "b": "Correct. SPP 201 states that the Multiple of Direct Personnel Expenses multiplier ranges from 1.5 to 2.5, depending on the office set-up, overhead, experience of the Architect, and project complexity.",
+      "c": "2.0 to 3.0 is incorrect. The source-stated range is 1.5 to 2.5.",
+      "d": "2.5 to 3.5 is incorrect. The source-stated range ends at 2.5.",
+      "correct": "Under SPP 201, the Multiple of Direct Personnel Expenses method adds all costs of technical services and multiplies them by a multiplier to cover overhead and profit. The multiplier ranges from 1.5 to 2.5.",
+      "takeaway": "Multiple of Direct Personnel Expenses multiplier = 1.5 to 2.5."
+    }
+  }
+}

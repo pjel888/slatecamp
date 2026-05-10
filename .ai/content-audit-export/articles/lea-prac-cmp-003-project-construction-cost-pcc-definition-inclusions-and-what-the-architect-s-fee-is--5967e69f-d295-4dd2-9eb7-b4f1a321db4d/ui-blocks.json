@@ -1,90 +1,14 @@
 {
   "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
   "slug": "lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on",
-  "normalized_created_at": "2026-05-04T09:10:36.912Z",
+  "normalized_created_at": "2026-05-09T17:04:25.768Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:d48928245436bde2d0e552f9af10e3a6fb17937ce2fce3ba1a319be7ed47e923",
+  "original_content_hash": "sha256:69783f0b4efc85fdb6708d538ea74537da875ac3f6b05d609c88a31e17c6d39b",
   "normalized_content_hash": "sha256:69783f0b4efc85fdb6708d538ea74537da875ac3f6b05d609c88a31e17c6d39b",
-  "ui_block_count": 3,
-  "total_blocks": 3,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"ra9266\">RA 9266, Section 22 — The architect's compensation shall be based on a percentage of the construction cost or other mutually agreed basis as provided in the contract. UAP SPP Documents provide the standard fee schedule.</LawCallout>",
-      "raw_hash": "sha256:d71d1274d5ac1f9f8b314889fa3064ea841114cfa5e52b78531ffc27d4fe22da",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"ra9266\"\n- Text: RA 9266, Section 22 — The architect's compensation shall be based on a percentage of the construction cost or other mutually agreed basis as provided in the contract. UAP SPP Documents provide the standard fee schedule.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:8ce2a8ae2de6e3ae613af3429e6ad1c356eee5241415716d41dc5b74133d74ac",
-      "props": {
-        "code": "ra9266"
-      },
-      "props_json": {
-        "code": "ra9266"
-      },
-      "props_text": "code=\"ra9266\"",
-      "children_raw": "RA 9266, Section 22 — The architect's compensation shall be based on a percentage of the construction cost or other mutually agreed basis as provided in the contract. UAP SPP Documents provide the standard fee schedule.",
-      "children_text": "RA 9266, Section 22 — The architect's compensation shall be based on a percentage of the construction cost or other mutually agreed basis as provided in the contract. UAP SPP Documents provide the standard fee schedule.",
-      "start_offset": 3383,
-      "end_offset": 3641,
-      "line_start": 29,
-      "line_end": 29,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "ExamTip",
-      "raw": "<ExamTip>**LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.</ExamTip>",
-      "raw_hash": "sha256:c37633673a49b38afe60ab9b622259bfda036a101c3b44d3826e4ea133914897",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:d037002e368f2f5ecf5bca53329b40cce93b5cfbdef08cdfe1f4afa7e46d004f",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": "**LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.",
-      "children_text": "**LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.",
-      "start_offset": 5395,
-      "end_offset": 5626,
-      "line_start": 43,
-      "line_end": 43,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "KeyValues",
-      "raw": "<KeyValues pairs={[[\"PCC Inclusions\", \"Labor, materials, equipment, contractor overhead and profit\"], [\"PCC Exclusions\", \"Architect's fee, land cost, contingency, legal fees\"], [\"Typical Fee\", \"10–15% of PCC depending on project complexity\"]]} />",
-      "raw_hash": "sha256:d1cb44de13ea637f961abe755c02ad76251570a2ee65c1de300ec8dc7c7dd61d",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: pairs=\"{[[\\\"PCC Inclusions\\\", \\\"Labor, materials, equipment, contractor overhead and profit\\\"], [\\\"PCC Exclusions\\\", \\\"Architect's fee, land cost, contingency, legal fees\\\"], [\\\"Typical Fee\\\", \\\"10–15% of PCC depending on project complexity\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:f1299628ec23f174e6e3b6558850506cf1980fe59d35cdb6a94c0404abde47a6",
-      "props": {
-        "pairs": "{[[\"PCC Inclusions\", \"Labor, materials, equipment, contractor overhead and profit\"], [\"PCC Exclusions\", \"Architect's fee, land cost, contingency, legal fees\"], [\"Typical Fee\", \"10–15% of PCC depending on project complexity\"]]}"
-      },
-      "props_json": {
-        "pairs": "{[[\"PCC Inclusions\", \"Labor, materials, equipment, contractor overhead and profit\"], [\"PCC Exclusions\", \"Architect's fee, land cost, contingency, legal fees\"], [\"Typical Fee\", \"10–15% of PCC depending on project complexity\"]]}"
-      },
-      "props_text": "pairs={[[\"PCC Inclusions\", \"Labor, materials, equipment, contractor overhead and profit\"], [\"PCC Exclusions\", \"Architect's fee, land cost, contingency, legal fees\"], [\"Typical Fee\", \"10–15% of PCC depending on project complexity\"]]}",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 7138,
-      "end_offset": 7384,
-      "line_start": 56,
-      "line_end": 56,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:09830f17759680b9d5668cb11d2028714b44c3ea566663a428604c65ba0181f1",
-  "normalized_content_hash_sha256": "sha256:69783f0b4efc85fdb6708d538ea74537da875ac3f6b05d609c88a31e17c6d39b"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

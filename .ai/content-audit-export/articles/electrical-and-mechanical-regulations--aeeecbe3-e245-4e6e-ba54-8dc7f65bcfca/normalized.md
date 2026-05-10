@@ -414,4 +414,3 @@ Cross-drill with **Article 22** (sprinkler systems in boiler rooms per Sec. 1212
 ## Cross‑References
 
 **Sanitation And Water Supply**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Sheet Metal And Spray Booths**
-

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 002 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 Structural systems classify buildings into two primary categories: bearing wall systems (where walls carry gravity loads) and frame systems (where skeletal frameworks carry loads). This distinction determines load paths, member sizing, and lateral bracing strategies.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-002-01-core-concept" type="image" caption="Bearing Wall System vs Frame System — Load Path Comparison" description="Comparative cross-section diagram showing: (1) Bearing wall system — gravity loads flow through walls directly to foundation, lateral loads resisted by wall in-plane shear; (2) Frame system — gravity loads flow through beams→columns→foundation, lateral loads resisted by frame bending or separate shear walls. Load path arrows in contrasting colors for gravity (blue) and lateral (red)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-002-01-core-concept", type="image", caption="Bearing Wall System vs Frame System — Load Path Comparison", description="Comparative cross-section diagram showing: (1) Bearing wall system — gravity loads flow through walls directly to foundation, lateral loads resisted by wall in-plane shear; (2) Frame system — gravity loads flow through beams→columns→foundation, lateral loads resisted by frame bending or separate shear walls. Load path arrows in contrasting colors for gravity (blue) and lateral (red).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A **bearing wall system** relies on walls to resist both gravity and lateral loads. The walls transfer vertical loads directly to the foundation through compression, while also functioning as shear walls for lateral resistance. Bearing walls in masonry or reinforced concrete are common in low-to-mid-rise construction because they are economical and inherently stiff.
 
@@ -44,7 +57,11 @@ Bearing wall systems dominate residential and mixed-use construction in the Phil
 
 **Apply-level:** Given a building in Seismic Zone 2 with 10 stories, justify why a frame system with moment-resisting capability would be chosen over a bearing wall approach.
 
-<Tip>**Memory aid:** Bearing walls **bear** loads directly; frames **defer** loads to a skeleton. Think "walls work, frames relax."</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory aid:** Bearing walls **bear** loads directly; frames **defer** loads to a skeleton. Think "walls work, frames relax."
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -52,6 +69,14 @@ See also: **Shear Walls** (lea-strc-002-02) for lateral-force-resisting variants
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Confusing bearing wall with any wall that touches a load—bearing walls must carry superimposed loads, not just their own weight (thresholds defined in LEA-STRC-002-04)","Thinking frame systems cannot have shear walls—frames require lateral bracing (shear walls, diaphragms, or moment connections)","Assuming bearing walls are always masonry—RC shear wall systems are bearing systems, and light-gauge stud walls can be bearing if they carry required loads"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing bearing wall with any wall that touches a load—bearing walls must carry superimposed loads, not just their own weight (thresholds defined in LEA-STRC-002-04)\",\"Thinking frame systems cannot have shear walls—frames require lateral bracing (shear walls, diaphragms, or moment connections)\",\"Assuming bearing walls are always masonry—RC shear wall systems are bearing systems, and light-gauge stud walls can be bearing if they carry required loads\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

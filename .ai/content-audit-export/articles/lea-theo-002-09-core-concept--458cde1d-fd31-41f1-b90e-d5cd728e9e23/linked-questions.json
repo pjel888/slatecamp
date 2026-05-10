@@ -1,9 +1,217 @@
 {
   "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6fa5a3161ff191dae6524b7ee85c4b6aced86f631f088c8592039af93ca16b26",
+  "linked_questions_hash": "sha256:48aab46f2962f6470b312882456a69c6465febb6a3b21394dd57fc5e6192b8b3",
   "question_count": 14,
   "questions": [
+    {
+      "question_id": "59673c2d-fbab-4395-8994-5e1d495dd459",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "Shadow in architectural design functions as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "A primary design element revealing and articulating form, organizing space, and creating rhythm—shadows are intentional design tools"
+        },
+        {
+          "id": "b",
+          "text": "An absence of light that should be minimized for safety and visibility, especially in public spaces and pathways"
+        },
+        {
+          "id": "c",
+          "text": "A problem created by poor lighting design, often requiring corrective measures such as additional artificial lighting"
+        },
+        {
+          "id": "d",
+          "text": "Only a concern in theatrical or dramatic architectural contexts, where lighting effects are used to enhance the experience"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Shadow is a design tool, not a problem.",
+        "c": "Shadow is intentional design, not poor performance.",
+        "d": "All architecture uses shadow strategically.",
+        "correct": "Ching treats shadow as fundamental design element: shadows reveal form through highlights and dark areas (grazing light exaggerates texture); shadows create visual rhythm (column shadows on floor); shadows organize space. Shadows are intentional, not incidental.",
+        "takeaway": "Shadows are intentional, not incidental."
+      },
+      "explanation": "Shadow is a design tool, not a problem. Shadow is intentional design, not poor performance. All architecture uses shadow strategically. Ching treats shadow as fundamental design element: shadows reveal form through highlights and dark areas (grazing light exaggerates texture); shadows create visual rhythm (column shadows on floor); shadows organize space. Shadows are intentional, not incidental. Shadows are intentional, not incidental.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T15:00:20.73959+00:00",
+      "content_hash": "sha256:34037ed65b67c88c6d3ec43d1254f1e38f4d2ec99a51293b7cf4934b6f9b9608"
+    },
+    {
+      "question_id": "21177a82-9cf3-42e2-8245-32815d9ca9f4",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "How do color, texture, light, and shadow work together as an integrated design system in architectural composition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Color and texture are primary; light and shadow are incidental results, which is a simplistic view"
+        },
+        {
+          "id": "b",
+          "text": "Light reveals color and texture, creating highlights and shadows; shadow articulates form; color affects spatial perception; texture modulates light and creates tactile richness—all four operate synergistically"
+        },
+        {
+          "id": "c",
+          "text": "These elements operate independently; each can be designed without reference to others, which is not typically the case in integrated design"
+        },
+        {
+          "id": "d",
+          "text": "Only light and shadow matter; color and texture are secondary, which overlooks their importance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "All four are fundamental to spatial experience.",
+        "c": "They are deeply interconnected.",
+        "d": "All four contribute equally to design impact.",
+        "correct": "These elements are interdependent and mutually reinforcing: light makes color visible and reveals texture; shadow articulates the form that color and texture define; color's effects depend on how light and shadow interact with it; texture's character depends on light quality. Coherent design integrates all four simultaneously.",
+        "takeaway": "Coherent design integrates all four simultaneously."
+      },
+      "explanation": "All four are fundamental to spatial experience. They are deeply interconnected. All four contribute equally to design impact. These elements are interdependent and mutually reinforcing: light makes color visible and reveals texture; shadow articulates the form that color and texture define; color's effects depend on how light and shadow interact with it; texture's character depends on light quality. Coherent design integrates all four simultaneously. Coherent design integrates all four simultaneously.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T15:00:20.908145+00:00",
+      "content_hash": "sha256:9ebae9543e759681ab7554a5bf13f3095775b9a6646c521989ec5195bbd6d82d"
+    },
+    {
+      "question_id": "81e45a77-1c19-4756-84ca-2866b7ed9ccb",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "A designer employs cool-toned light (5000K) in an office workspace and warm-toned light (2700K) in a residential evening space. What design principle is demonstrated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cost minimization through standard lighting, which may not consider the specific needs of different environments"
+        },
+        {
+          "id": "b",
+          "text": "Using color temperature to support functional needs and psychological effects—cool light aids alertness in work; warm light promotes relaxation at home"
+        },
+        {
+          "id": "c",
+          "text": "Following lighting manufacturers' recommendations, which are often based on general guidelines rather than specific design principles"
+        },
+        {
+          "id": "d",
+          "text": "Arbitrary color temperature choices, without regard to the intended use or psychological impact of the space"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Color temperature choice is based on function, not cost.",
+        "c": "While manufacturers provide options, the designer chose intentionally for function.",
+        "d": "Selections are intentional and functional.",
+        "correct": "Color temperature is a functional design tool: cool light supports daytime alertness and circadian rhythm; warm light supports evening relaxation. This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs.",
+        "takeaway": "This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs."
+      },
+      "explanation": "Color temperature choice is based on function, not cost. While manufacturers provide options, the designer chose intentionally for function. Selections are intentional and functional. Color temperature is a functional design tool: cool light supports daytime alertness and circadian rhythm; warm light supports evening relaxation. This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs. This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T15:00:21.728416+00:00",
+      "content_hash": "sha256:bb4cf62c3a9bdaf70571dfc96fa73b5dc92ce3663f6b0743e6eb0af1c05384bc"
+    },
+    {
+      "question_id": "f9ebb355-80bb-4298-80f9-e5969565634a",
+      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
+      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
+      "text": "Texture in architectural design functions by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Applying decorative patterns to surfaces for visual interest, enhancing the aesthetic appeal of the structure"
+        },
+        {
+          "id": "b",
+          "text": "Creating smooth, reflective surfaces throughout the building, which can influence light distribution and perception"
+        },
+        {
+          "id": "c",
+          "text": "Adding weight to a building's exterior, contributing to the structural integrity and visual grounding of the design"
+        },
+        {
+          "id": "d",
+          "text": "The surface quality conveying material properties and creating both visual and tactile richness"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While patterns are textural, texture is about material surface quality.",
+        "b": "Texture varies from smooth to rough.",
+        "c": "Texture is about surface property, not structural weight.",
+        "correct": "Texture is surface quality—rough, fine, smooth, coarse. It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely.",
+        "takeaway": "It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely."
+      },
+      "explanation": "While patterns are textural, texture is about material surface quality. Texture varies from smooth to rough. Texture is about surface property, not structural weight. Texture is surface quality—rough, fine, smooth, coarse. It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely. It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-002-09-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:53.884733+00:00",
+      "updated_at": "2026-05-06T15:00:22.056996+00:00",
+      "content_hash": "sha256:e0430f66c5b66bd662fe6f26514d6059d6ccddbd840ce1f058cd407181bcd28a"
+    },
     {
       "question_id": "c3298607-44b3-4269-a8a4-fe69fd185316",
       "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
@@ -39,7 +247,7 @@
         "correct": "Light-value ceilings read as higher visually; slightly darker walls provide contrast. This color value strategy makes the room feel more spacious vertically. Darkness would lower the perceived ceiling.",
         "takeaway": "Darkness would lower the perceived ceiling."
       },
-      "explanation": null,
+      "explanation": "Warm colors advance, not elevate ceiling perception. Saturation doesn't address vertical perception. Dark ceilings lower perceived height—opposite of desired effect. Light-value ceilings read as higher visually; slightly darker walls provide contrast. This color value strategy makes the room feel more spacious vertically. Darkness would lower the perceived ceiling. Darkness would lower the perceived ceiling.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -53,8 +261,8 @@
       "model_id": "ALE-THEO-002-09-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:eba9c667d98b61856c97df83ff28da44dab6c454aa15c4e1e4219a5502db30b4"
+      "updated_at": "2026-05-06T15:00:20.576573+00:00",
+      "content_hash": "sha256:8dd308f6a39f684467f5458ab173c666aff22e39f0a147cadc89681d6dd001d8"
     },
     {
       "question_id": "7166dcdd-4a90-4a08-af6c-e10223345569",
@@ -107,110 +315,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:0dc991717ec90038e00d9ac49266c0a1e3d88aaf26ce9294222457b877b99590"
-    },
-    {
-      "question_id": "59673c2d-fbab-4395-8994-5e1d495dd459",
-      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
-      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Shadow in architectural design functions as:",
-      "options": [
-        {
-          "id": "a",
-          "text": "A primary design element revealing and articulating form, organizing space, and creating rhythm—shadows are intentional design tools"
-        },
-        {
-          "id": "b",
-          "text": "An absence of light that should be minimized for safety and visibility, especially in public spaces and pathways"
-        },
-        {
-          "id": "c",
-          "text": "A problem created by poor lighting design, often requiring corrective measures such as additional artificial lighting"
-        },
-        {
-          "id": "d",
-          "text": "Only a concern in theatrical or dramatic architectural contexts, where lighting effects are used to enhance the experience"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Shadow is a design tool, not a problem.",
-        "c": "Shadow is intentional design, not poor performance.",
-        "d": "All architecture uses shadow strategically.",
-        "correct": "Ching treats shadow as fundamental design element: shadows reveal form through highlights and dark areas (grazing light exaggerates texture); shadows create visual rhythm (column shadows on floor); shadows organize space. Shadows are intentional, not incidental.",
-        "takeaway": "Shadows are intentional, not incidental."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-09-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5c0d6fe4a3099b88447c69dfd84bf8683df0ef3575e6edbda64ff4ce064049bd"
-    },
-    {
-      "question_id": "21177a82-9cf3-42e2-8245-32815d9ca9f4",
-      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
-      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "How do color, texture, light, and shadow work together as an integrated design system in architectural composition?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Color and texture are primary; light and shadow are incidental results, which is a simplistic view"
-        },
-        {
-          "id": "b",
-          "text": "Light reveals color and texture, creating highlights and shadows; shadow articulates form; color affects spatial perception; texture modulates light and creates tactile richness—all four operate synergistically"
-        },
-        {
-          "id": "c",
-          "text": "These elements operate independently; each can be designed without reference to others, which is not typically the case in integrated design"
-        },
-        {
-          "id": "d",
-          "text": "Only light and shadow matter; color and texture are secondary, which overlooks their importance"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "All four are fundamental to spatial experience.",
-        "c": "They are deeply interconnected.",
-        "d": "All four contribute equally to design impact.",
-        "correct": "These elements are interdependent and mutually reinforcing: light makes color visible and reveals texture; shadow articulates the form that color and texture define; color's effects depend on how light and shadow interact with it; texture's character depends on light quality. Coherent design integrates all four simultaneously.",
-        "takeaway": "Coherent design integrates all four simultaneously."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-09-014",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d0fdb21148f4ff0d56c67d5fba799b200ad407eb4d189d1f15f2b3e7fe91b07d"
     },
     {
       "question_id": "d553a483-33fe-4080-8e66-03d48c0e1ca5",
@@ -299,7 +403,7 @@
         "correct": "Natural light's character changes throughout day and year, creating dynamic experience: cool north light, warm south light, dramatic directional grazing light at dawn/dusk. Windows, skylights, light shelves control this dynamic illumination.",
         "takeaway": "Windows, skylights, light shelves control this dynamic illumination."
       },
-      "explanation": null,
+      "explanation": "Natural light is inherently variable and time-bound. Natural light illuminates all surfaces depending on direction. Many buildings achieve adequate daylighting without supplemental artificial light. Natural light's character changes throughout day and year, creating dynamic experience: cool north light, warm south light, dramatic directional grazing light at dawn/dusk. Windows, skylights, light shelves control this dynamic illumination. Windows, skylights, light shelves control this dynamic illumination.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -313,8 +417,8 @@
       "model_id": "ALE-THEO-002-09-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:82622baefe81f82636e59509b50ffc4387f251efdc605fc22200dd1fe5537801"
+      "updated_at": "2026-05-06T15:00:21.071887+00:00",
+      "content_hash": "sha256:36a53aca26b7609daf9ce6aa2a46cf7959c63faec68dcc453d78eda064609095"
     },
     {
       "question_id": "6f9f3afd-e76b-46ba-a7da-79b526b6fd8c",
@@ -351,7 +455,7 @@
         "correct": "Hue is the fundamental color property: red, blue, green, etc. Warm hues (reds, oranges, yellows) advance and energize; cool hues (blues, greens, purples) recede and calm. Hues carry cultural and psychological associations.",
         "takeaway": "Hues carry cultural and psychological associations."
       },
-      "explanation": null,
+      "explanation": "That is color value (lightness/darkness). That is color saturation (intensity). That describes light behavior, not hue itself. Hue is the fundamental color property: red, blue, green, etc. Warm hues (reds, oranges, yellows) advance and energize; cool hues (blues, greens, purples) recede and calm. Hues carry cultural and psychological associations. Hues carry cultural and psychological associations.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -365,8 +469,8 @@
       "model_id": "ALE-THEO-002-09-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0966632383414579b1814af94c31d2a24ee479a2cfb841c98b5551e35ceaf206"
+      "updated_at": "2026-05-06T15:00:21.237213+00:00",
+      "content_hash": "sha256:884118d698df40b0d45915c06088daa4f5b6f28c638295c1ec96856309974bd4"
     },
     {
       "question_id": "ef71fa56-1b43-45aa-9a8f-3089f41e2631",
@@ -455,7 +559,7 @@
         "correct": "Grazing light creates dramatic shadows highlighting every surface variation, texture, and form undulation. This is why ruins and archaeological sites are photographed in golden-hour light—grazing light dramatically reveals form. Architects use this strategically through façade articulation and overhang placement.",
         "takeaway": "Architects use this strategically through façade articulation and overhang placement."
       },
-      "explanation": null,
+      "explanation": "Grazing light emphasizes variation, not uniforms. Grazing light actually creates dramatic shadow patterns. Grazing light reveals surface geometry clearly through shadow articulation. Grazing light creates dramatic shadows highlighting every surface variation, texture, and form undulation. This is why ruins and archaeological sites are photographed in golden-hour light—grazing light dramatically reveals form. Architects use this strategically through façade articulation and overhang placement. Architects use this strategically through façade articulation and overhang placement.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -469,8 +573,8 @@
       "model_id": "ALE-THEO-002-09-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e2885d2ce53293c1a10ea05900e9fe477303f654a42706782ec8a4bd2bc95685"
+      "updated_at": "2026-05-06T15:00:21.400899+00:00",
+      "content_hash": "sha256:8855c8981d1a2b94ede04a9826f398b295287de4f03d1208da7786b03c08e164"
     },
     {
       "question_id": "7e6dc778-716e-4825-ae9c-5c20bd7e07c8",
@@ -507,7 +611,7 @@
         "correct": "Color temperature fundamentally affects mood: warm light (2700K) feels intimate and relaxing; cool light (5000K) feels alert and clinical. Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms.",
         "takeaway": "Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms."
       },
-      "explanation": null,
+      "explanation": "Direction is determined by fixture placement and angle. Color temperature of light, not saturation of finishes, affects mood. Intensity (brightness) is separate from color temperature. Color temperature fundamentally affects mood: warm light (2700K) feels intimate and relaxing; cool light (5000K) feels alert and clinical. Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms. Contemporary design uses warmer light in evenings, cooler light daytime to support circadian rhythms.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -521,60 +625,8 @@
       "model_id": "ALE-THEO-002-09-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6582afc2e021e345b61cd288bfee4a145c08122307a38073dc0224d7379504cc"
-    },
-    {
-      "question_id": "81e45a77-1c19-4756-84ca-2866b7ed9ccb",
-      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
-      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "A designer employs cool-toned light (5000K) in an office workspace and warm-toned light (2700K) in a residential evening space. What design principle is demonstrated?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cost minimization through standard lighting, which may not consider the specific needs of different environments"
-        },
-        {
-          "id": "b",
-          "text": "Using color temperature to support functional needs and psychological effects—cool light aids alertness in work; warm light promotes relaxation at home"
-        },
-        {
-          "id": "c",
-          "text": "Following lighting manufacturers' recommendations, which are often based on general guidelines rather than specific design principles"
-        },
-        {
-          "id": "d",
-          "text": "Arbitrary color temperature choices, without regard to the intended use or psychological impact of the space"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Color temperature choice is based on function, not cost.",
-        "c": "While manufacturers provide options, the designer chose intentionally for function.",
-        "d": "Selections are intentional and functional.",
-        "correct": "Color temperature is a functional design tool: cool light supports daytime alertness and circadian rhythm; warm light supports evening relaxation. This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs.",
-        "takeaway": "This demonstrates that color temperature is not aesthetic preference but functional design addressing psychological and physiological needs."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-09-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fc65f902ceb624e5ed2cc0e4db5d36011042a81fcd99fdf2a81533c22c5602c0"
+      "updated_at": "2026-05-06T15:00:21.565969+00:00",
+      "content_hash": "sha256:bc96f0a14c35f2472d217c784d0b35833c84a0eabd82d6ee11ed3569e6cdbf8c"
     },
     {
       "question_id": "32e29bde-61a8-41fa-b76d-c74b47295e94",
@@ -611,7 +663,7 @@
         "correct": "Value (lightness/darkness) directly affects spatial perception: a light-colored ceiling reads as higher; dark ceiling reads as lower. Light values create openness; dark values create intimacy. This is a functional design tool, not decorative choice.",
         "takeaway": "This is a functional design tool, not decorative choice."
       },
-      "explanation": null,
+      "explanation": "That is cultural association, not value's spatial effect. That is hue property. That is saturation property. Value (lightness/darkness) directly affects spatial perception: a light-colored ceiling reads as higher; dark ceiling reads as lower. Light values create openness; dark values create intimacy. This is a functional design tool, not decorative choice. This is a functional design tool, not decorative choice.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -625,8 +677,8 @@
       "model_id": "ALE-THEO-002-09-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:585c87a7128048fd1906b5fc2582aea4669b6a239cc53dd6d5f41f1b7193773d"
+      "updated_at": "2026-05-06T15:00:21.890962+00:00",
+      "content_hash": "sha256:39e0cef03c0400c96b504541ba9931b4a6fc389f3d5421e942780a98c94d7074"
     },
     {
       "question_id": "33a59956-773b-4dfe-a283-638e102da0fa",
@@ -679,58 +731,6 @@
       "created_at": "2026-03-23T19:27:53.884733+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:b752e10bddb00e9bf0b7b9a8af63d6b59207e955cdcca89317c7a270b92d649c"
-    },
-    {
-      "question_id": "f9ebb355-80bb-4298-80f9-e5969565634a",
-      "article_id": "458cde1d-fd31-41f1-b90e-d5cd728e9e23",
-      "topic_id": "317a1260-23fc-4bea-815d-a911c51e901e",
-      "text": "Texture in architectural design functions by:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Applying decorative patterns to surfaces for visual interest, enhancing the aesthetic appeal of the structure"
-        },
-        {
-          "id": "b",
-          "text": "Creating smooth, reflective surfaces throughout the building, which can influence light distribution and perception"
-        },
-        {
-          "id": "c",
-          "text": "Adding weight to a building's exterior, contributing to the structural integrity and visual grounding of the design"
-        },
-        {
-          "id": "d",
-          "text": "The surface quality conveying material properties and creating both visual and tactile richness"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "While patterns are textural, texture is about material surface quality.",
-        "b": "Texture varies from smooth to rough.",
-        "c": "Texture is about surface property, not structural weight.",
-        "correct": "Texture is surface quality—rough, fine, smooth, coarse. It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely.",
-        "takeaway": "It expresses material properties (rough stone feels permanent; smooth glass feels dematerialized), affects tactile perception, and operates at multiple scales visually and tactilely."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-002-09-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7b1c438abe261afde7f874fb8da3e353fc025215e12f88f77b0cbb2b5dc8abea"
     }
   ]
 }

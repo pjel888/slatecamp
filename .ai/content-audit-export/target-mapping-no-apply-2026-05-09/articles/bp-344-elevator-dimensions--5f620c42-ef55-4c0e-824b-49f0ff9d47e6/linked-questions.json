@@ -1,0 +1,562 @@
+{
+  "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:0fa70366c1f2fd30e11f782ae83777e162942036e17a56bcf7413a4b76374319",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "3a02b862-6bcb-421a-bbe0-7390023e56d1",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"BP 344 Elevator Dimensions\", if a project requires 1200 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1200 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "1200 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "1200 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "1200 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 1200 mm as the requirement. Context: at what height?\r \r > **Ans:** On **both side door jambs** of each landing at **1...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.798339+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2df024fe0691c95645e4a5d921ccdcbf52e7284f215610e09b51593ac0aa9a0d"
+    },
+    {
+      "question_id": "74ef0a31-d5e4-4b92-a30c-c55192514e4a",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Sections 8.6 and 8.6.c, on which walls must handrails be installed inside the accessible elevator car, at what height, and what is the maximum gap allowed between the rail and the wall?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both side walls only; height: 900 mm; maximum gap: 100 mm — the rear wall is left clear for a mirror required by Sec 8.6.d"
+        },
+        {
+          "id": "B",
+          "text": "Both side walls and the rear wall; height: 750 mm; maximum gap: 150 mm — the lower height matches wheelchair seating area handrails used in assembly spaces"
+        },
+        {
+          "id": "C",
+          "text": "Rear wall only; height: 900 mm; maximum gap: 150 mm — side-wall handrails would obstruct wheelchair entry and exit through the 900 mm door opening"
+        },
+        {
+          "id": "D",
+          "text": "Both side walls and the rear wall; height: 900 mm; maximum gap: 150 mm — three-wall coverage provides support regardless of user orientation"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both side walls AND rear wall; 900 mm height; maximum 150 mm gap (Sec 8.6, 8.6.c)",
+        "explanation": "Section 8.6 requires handrails on both side walls and the rear wall — all three walls — at 900 mm height above the car floor. Section 8.6.c limits the gap between the handrail and the wall to a maximum of 150 mm to prevent arms being trapped or overreaching behind the rail. A design with handrails on only two walls (sides only) is non-compliant. Three-wall coverage provides support regardless of whether the user faces forward, sideways, or rear.",
+        "common_misconceptions": [
+          "Installing handrails on side walls only — the rear wall is also required",
+          "Using the 750 mm assembly-area handrail height for elevator car handrails — elevator car handrails are at 900 mm"
+        ]
+      },
+      "explanation": "Tests the three-wall handrail requirement — TRAP LEART in the article: 'side walls only' is under-compliant.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.6, 8.6.c",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b568c9dfe8c2a3a121d6494a02e1ce14a04b142f9ea8e9b5a584a53da681649e"
+    },
+    {
+      "question_id": "0cfc8500-66d3-43f7-8b1e-d631fd6d6c44",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Sections 8.7.a and 8.7.d, what is the car operating panel (COP) centerline height, and what are the button diameter and depression depth requirements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "COP centerline: 900–1200 mm AFF (a range); button diameter: min 15 mm; depression depth: max 2 mm — allows flexibility for different panel configurations"
+        },
+        {
+          "id": "B",
+          "text": "COP centerline: 1000 mm on center; button diameter: min 20 mm; depression depth: max 1 mm — the 1000 mm height matches accessible counter and reach heights used elsewhere in BP 344"
+        },
+        {
+          "id": "C",
+          "text": "COP centerline: 900 mm on center; button diameter: min 25 mm; depression depth: max 3 mm — larger buttons with deeper travel for users with limited dexterity"
+        },
+        {
+          "id": "D",
+          "text": "COP centerline: 900 mm on center (a single fixed value); button diameter: min 20 mm; depression depth: max 1 mm — exact values with no range permitted"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "COP: 900 mm on center (single fixed value, not a range); buttons: min 20 mm diameter, max 1 mm depression (Sec 8.7.a, 8.7.d)",
+        "explanation": "Section 8.7.a specifies the COP centerline at exactly 900 mm above the car floor — a single fixed dimension, not a range. This is TRAP ALERT 6: the distractor '900–1200 mm' is wrong. Section 8.7.d specifies button minimum diameter of 20 mm (large enough for activation with limited dexterity or closed fist) and maximum depression depth of 1 mm (provides tactile feedback with minimal effort). Braille characters must also accompany the buttons (Sec 8.7.b), located to the left of each button.",
+        "common_misconceptions": [
+          "Using a range (900–1200 mm) for the COP height — it is a single fixed value of 900 mm",
+          "Using 15 mm button diameter — the minimum is 20 mm for accessible activation with limited dexterity"
+        ]
+      },
+      "explanation": "Tests the COP fixed height and button specifications — TRAP LEART 6 (range vs. single value) is directly covered here.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.7.a, 8.7.d",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c33d830845166aa8d0c7c24c7da58201918e8ee668af43d592b4c3e7131dcb68"
+    },
+    {
+      "question_id": "d752e07a-5772-4127-987e-38dbe7a03a03",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 8.7.c, where must Braille floor indicators be placed, and at what height above finished floor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "On both side door jambs of each landing — 1200 mm AFF, symmetric placement so blind users tracing either jamb will find the floor indicator"
+        },
+        {
+          "id": "B",
+          "text": "On the car operating panel buttons only — 900 mm AFF to align with the COP centerline so blind users can locate buttons and floor Braille simultaneously"
+        },
+        {
+          "id": "C",
+          "text": "On the center of the elevator door only — 1000 mm AFF, within reach zone for standing users with low vision who approach the door directly"
+        },
+        {
+          "id": "D",
+          "text": "On the left door jamb only — 1200 mm AFF, consistent with the left-of-button Braille placement convention used on the COP inside the car"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both side door jambs at each landing; 1200 mm AFF (Sec 8.7.c) — symmetric placement ensures a blind user tracing either jamb finds the indicator",
+        "explanation": "Section 8.7.c requires Braille floor level indicators on both side door jambs at each landing, placed at 1200 mm AFF. Blind users naturally trace the jamb as they approach an elevator door. Symmetric placement (both jambs) means the user finds the indicator regardless of which side they approach from. Placing Braille only on the COP buttons (900 mm) is insufficient — jamb indicators are additional and separate. This is TRAP ALERT 4: 'Braille is required only on the control panel buttons' is false.",
+        "common_misconceptions": [
+          "Placing Braille only on COP buttons and omitting the door jamb indicators",
+          "Using only one jamb — both side jambs are mandatory for symmetric accessibility"
+        ]
+      },
+      "explanation": "Tests the jamb vs panel Braille distinction — TRAP LEART 4 from the article.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.7.c",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:02ef4b9754b5b4e63fb4ff47245251d04d7ac958668cab858023f4fc8e8e75e7"
+    },
+    {
+      "question_id": "14e1fe5d-0b68-41e5-bb3b-a008ab213333",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 8.4, what is the maximum horizontal travel distance from the main accessible entrance to the accessible elevator in a public building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "50 meters — the accessible elevator may be at the far end of a building's primary corridor as long as the route is level and unobstructed"
+        },
+        {
+          "id": "B",
+          "text": "30 meters — the maximum horizontal travel from the main accessible entrance to the accessible elevator"
+        },
+        {
+          "id": "C",
+          "text": "20 meters — the shorter limit reflects the greater exertion required by wheelchair users compared to ambulatory persons"
+        },
+        {
+          "id": "D",
+          "text": "15 meters — the same as the landing interval for 1:20 accessible ramps, creating a consistent maximum distance standard across BP 344"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "30 meters maximum horizontal travel (Sec 8.4) — prevents exhausting approach routes for mobility-impaired users",
+        "explanation": "Section 8.4 limits the horizontal travel from the main accessible entrance (or principal accessible route) to the accessible elevator to a maximum of 30 meters. This prevents mobility-impaired users from exhausting themselves before even boarding the elevator. PD 1096 does not specify this distance — BP 344 fills that gap specifically for PWD users. The 30-meter figure appears consistently in the 2024 IRR and is directly testable.",
+        "common_misconceptions": [
+          "Applying exit travel distance limits from PD 1096 fire codes to the accessible elevator distance — these are separate requirements",
+          "Using 15 m or 20 m — the BP 344 2024 IRR figure is consistently 30 m"
+        ]
+      },
+      "explanation": "Tests the maximum accessible route distance to the elevator — a specific and directly testable figure.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.4",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f0197e41c0a1a2ceb4d1872a85eaa4e12b171fd91043d78cbf3565bc5f7d2025"
+    },
+    {
+      "question_id": "5a156fd4-5a1b-44e2-8ef0-6aaf6711bca5",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Sections 8.8.b and 8.9, what audio and visual communication systems are required in accessible elevators?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An audio intercom system for emergencies — visual communication is not required because deaf users can read the digital floor display to determine their location"
+        },
+        {
+          "id": "B",
+          "text": "A digital floor number display for normal use plus an audio-only emergency intercom — visual emergency communication is addressed by the floor display screen"
+        },
+        {
+          "id": "C",
+          "text": "A voice synthesizer for floor announcements only — emergency communication is handled by the building's general fire alarm system, not elevator-specific systems"
+        },
+        {
+          "id": "D",
+          "text": "A voice synthesizer for floor announcements plus a two-way visual communication system for emergencies — audio alone excludes deaf and hard-of-hearing users"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Voice synthesizer (Sec 8.8.b) for floor announcements + two-way visual communication (Sec 8.9) for emergencies — audio alone is insufficient",
+        "explanation": "Section 8.8.b mandates a voice synthesizer that announces each floor arrival, giving non-visual feedback to blind and low-vision users. Section 8.9 additionally requires a two-way visual communication system for emergencies — not just audio. This ensures deaf and hard-of-hearing users can communicate with building staff during an emergency. TRAP ALERT 5: 'An audio intercom is sufficient' is explicitly false. The visual system is required in addition to, not instead of, audio.",
+        "common_misconceptions": [
+          "Assuming an audio intercom satisfies the emergency communication requirement — Section 8.9 requires two-way visual communication in addition",
+          "Believing the floor number display substitutes for the visual emergency communication system — these serve different purposes"
+        ]
+      },
+      "explanation": "Tests the audio + visual dual requirement — TRAP LEART 5 from the article.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.8.b, 8.9",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e816fd3fca286e7c4da827e0cb7c6745db4c82790d0a20fe5894f1211fd41c0"
+    },
+    {
+      "question_id": "da07b616-7211-4255-9794-bdbbd0b3ddc8",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 8.11, what is the required clear turning space in the elevator lobby outside the car, and how does this relate to the car's internal dimensions?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1200 mm × 1400 mm — matching the elevator car interior so users can practice maneuvering before boarding"
+        },
+        {
+          "id": "B",
+          "text": "1500 mm × 1500 mm — a compromise between the car size and a full turning circle, sufficient for most modern wheelchair models"
+        },
+        {
+          "id": "C",
+          "text": "1800 mm × 1800 mm — a full 360° wheelchair turning circle; the car itself (1200 × 1400 mm) is too small for this turn, so it occurs in the lobby"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm × 1800 mm inside the car — the car dimensions actually permit this turn when the 1200 mm width and 1400 mm depth are combined with door clearance"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "1800 × 1800 mm in the lobby (Sec 8.11) — the car (1200 × 1400 mm) is too small for a full turn; the turning circle is in the external lobby",
+        "explanation": "Section 8.11 requires 1800 mm × 1800 mm clear turning space in the elevator lobby/corridor outside the car. This is TRAP ALERT 3: the 1800 mm turning space is in the lobby, not inside the 1200 × 1400 mm car, which is too small for a full 360° turn. NBC Rule VIII establishes general minimum corridor sizes but does not fix a wheelchair turning circle — BP 344's 1800 mm overlays on that framework.",
+        "common_misconceptions": [
+          "Assuming the elevator car provides the 1800 mm turning space — the car is 1200 × 1400 mm, which cannot accommodate a full 1.8 m circle",
+          "Using 1500 mm for the lobby turning space — the requirement is 1800 mm, consistent with the turning space used throughout BP 344"
+        ]
+      },
+      "explanation": "Tests the lobby vs car turning space distinction — TRAP LEART 3 from the article.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.11",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f5ba7b7ae4b3cd987725df04d209a22bd6217e010d7c671a829d659c91dcd50d"
+    },
+    {
+      "question_id": "233368c2-56f7-430c-9b0f-0dd58bb0c3ab",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 8.10, what must happen to an accessible elevator during a building power outage, and why does this requirement differ from PD 1096's approach to vertical circulation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The elevator must remain operable for evacuation via backup or alternative power — PD 1096 exit provisions assume ambulatory occupants can use stairs, but PWDs relying on elevators cannot"
+        },
+        {
+          "id": "B",
+          "text": "The elevator must park at the nearest floor and remain stationary — users must then use accessible fire exit stairs as required by PD 1096 for all occupants"
+        },
+        {
+          "id": "C",
+          "text": "The elevator must descend to the ground floor and lock — users evacuate through the lobby while the elevator is secured against further use during the outage"
+        },
+        {
+          "id": "D",
+          "text": "The elevator must remain operable for 30 minutes minimum before transitioning to emergency lighting only — matching the 30-minute fire resistance rating of accessible egress paths"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Must remain operable for evacuation via backup/alternative power (Sec 8.10) — PD 1096 exit stairs assume ambulatory occupants; PWDs cannot use stairs",
+        "explanation": "Section 8.10 requires the accessible elevator to remain operable for evacuation through backup or alternative power during a building power outage. PD 1096 exit and stair provisions assume ambulatory occupants can descend stairs. PWDs who rely on elevators cannot, so BP 344 mandates that at least the accessible elevator remain functional — making the egress strategy inclusive. This is an explicit gap where BP 344 overlays on PD 1096 to address users whom PD 1096 effectively excludes.",
+        "common_misconceptions": [
+          "Assuming PD 1096 fire exit provisions cover PWD evacuation needs — PD 1096 assumes ambulatory egress via stairs",
+          "Believing the elevator must only descend once and then lock — it must remain operable throughout the evacuation"
+        ]
+      },
+      "explanation": "Tests the power outage operation requirement and its relationship to PD 1096 egress assumptions.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.10; PD 1096",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d6b5f10b9625fbc6450caf5cf27989e03dc6939b86eda81f9cbfc53fac6017c0"
+    },
+    {
+      "question_id": "524f50c6-5b68-4f28-bf5f-62334ee18bcd",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A building review reveals an accessible elevator with: a 900 mm clear door opening, handrails on the two side walls only, a COP height of 1100 mm on center, and an audio-only emergency intercom. How many of these four elements violate the 2024 BP 344 IRR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One violation — the audio-only intercom (Sec 8.9 requires visual communication); the other three elements are compliant"
+        },
+        {
+          "id": "B",
+          "text": "Two violations — handrails on side walls only (rear wall required, Sec 8.6) and audio-only intercom (visual also required, Sec 8.9)"
+        },
+        {
+          "id": "C",
+          "text": "Three violations — handrails on side walls only (Sec 8.6), COP at 1100 mm (must be 900 mm, Sec 8.7.a), and audio-only intercom (Sec 8.9)"
+        },
+        {
+          "id": "D",
+          "text": "Four violations — 900 mm door is too narrow (must be 1000 mm), side-wall handrails only, COP at 1100 mm, and audio-only intercom"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Three violations: side-wall handrails only (Sec 8.6), COP at 1100 mm instead of 900 mm (Sec 8.7.a), audio-only intercom (Sec 8.9); the 900 mm clear door IS compliant",
+        "explanation": "900 mm clear door opening is exactly the BP 344 requirement (Sec 8.5) — compliant. Handrails on side walls only violates Sec 8.6 (rear wall also required) — violation 1. COP at 1100 mm violates Sec 8.7.a (must be exactly 900 mm on center, not a range) — violation 2. Audio-only intercom violates Sec 8.9 (two-way visual communication also required) — violation 3. Total: three violations. The Protégé Effect Challenge in the article uses a similar four-element audit scenario.",
+        "common_misconceptions": [
+          "Flagging the 900 mm door as a violation — 900 mm clear is the exact BP 344 requirement",
+          "Missing the COP height violation because 1100 mm seems 'close enough' — the code specifies exactly 900 mm on center"
+        ]
+      },
+      "explanation": "Multi-element compliance audit integrating all key elevator requirements — highest difficulty question in this set.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.5, 8.6, 8.7.a, 8.9",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e6621cde766b83b9063b24bfb555196a1e271985eec0d3833bfb681d8d229e2f"
+    },
+    {
+      "question_id": "d86e6822-87dd-4d0c-aad1-fb4e2404dc93",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 8.12, what elevator car configuration is preferred for accessible cars, and what is the practical advantage of this configuration for wheelchair users?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Single-entry cars are preferred — one set of doors allows better control of entry/exit flow and prevents congestion at peak hours in accessible-designated cars"
+        },
+        {
+          "id": "B",
+          "text": "Through-type cars are required, not merely preferred — any single-entry accessible car is non-compliant under the 2024 IRR for public buildings"
+        },
+        {
+          "id": "C",
+          "text": "Corner-entry cars are preferred — offset doors allow a wider internal turning radius so wheelchair users can reorient without backing up"
+        },
+        {
+          "id": "D",
+          "text": "Through-type cars (front and rear doors) are preferred — users enter from one side and exit forward on the other, eliminating the need to reverse a wheelchair inside the car"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Through-type (front and rear doors) is preferred (not required) per Sec 8.12 — eliminates reversing inside the 1200 × 1400 mm car",
+        "explanation": "Section 8.12 states that through-type elevator cars with front and rear doors are preferred for accessible cars. The practical benefit is that a wheelchair user enters from one side and exits forward through the opposite doors — no reversing required. Reversing a wheelchair in a 1200 × 1400 mm car is difficult and potentially dangerous. However, the code uses 'preferred,' not 'required,' so single-entry cars remain permissible when properly sized and otherwise compliant.",
+        "common_misconceptions": [
+          "Treating 'preferred' as 'required' — single-entry cars are not prohibited, through-type is merely the preferred configuration",
+          "Assuming through-type cars require a larger car footprint — the same 1200 × 1400 mm minimum applies regardless of door configuration"
+        ]
+      },
+      "explanation": "Tests knowledge of the through-type car preference and the critical 'preferred vs required' distinction.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.12",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0da8bd98b24a5daed1b7b26734cc21756ab7414fca44cf6f5da356b472b527a6"
+    },
+    {
+      "question_id": "e67995d3-de1e-4f60-bf6f-1127bc709b16",
+      "article_id": "5f620c42-ef55-4c0e-824b-49f0ff9d47e6",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Section 8.5, what are the minimum clear internal dimensions of an accessible elevator car, and why was the width updated from older review materials?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1200 mm wide × 1400 mm deep — updated from the older 1100 mm width to accommodate modern power wheelchairs and scooters that are wider than older manual chairs"
+        },
+        {
+          "id": "B",
+          "text": "1100 mm wide × 1400 mm deep — retained from older IRR; the 2024 revision did not change car dimensions, only communication and control requirements"
+        },
+        {
+          "id": "C",
+          "text": "1200 mm wide × 1200 mm deep — a square car that provides equal maneuvering space in all orientations for wheelchair users, ensuring compliance with maneuverability standards"
+        },
+        {
+          "id": "D",
+          "text": "1400 mm wide × 1200 mm deep — wider than deep so side-entry wheelchairs can enter without turning inside the car, which is beneficial for quick access in emergency situations"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "1200 mm wide × 1400 mm deep (Sec 8.5) — width updated from older 1100 mm to accommodate modern wider wheelchairs",
+        "explanation": "Section 8.5 specifies 1200 mm clear width × 1400 mm clear depth for the accessible elevator car. The 1200 mm width is an update from older references that cited 1100 mm. Modern power wheelchairs and scooters are wider than older manual chairs, and the 2024 IRR future-proofs the accessible car for current and near-future mobility devices. The 1400 mm depth allows full wheelchair length while maintaining door clearance and maneuvering space.",
+        "common_misconceptions": [
+          "Using 1100 mm width from older review notes or foreign codes — the 2024 BP 344 IRR requires 1200 mm",
+          "Reversing width and depth — the car is 1200 mm wide and 1400 mm deep, not the other way around"
+        ]
+      },
+      "explanation": "Tests the core elevator car dimensions and the rationlea for the 2024 update — TRAP LEART 1 in the article.",
+      "code_citation": "BP 344 2024 IRR, Sec 8.5",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:54.494397+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:af2fa632e2aae21fed726fdd68e71ff7b831c23c01b4ceab8c635efdd4535dca"
+    }
+  ]
+}

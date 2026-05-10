@@ -16,7 +16,7 @@
 | scripts | 45 | 2 | Development, build, Playwright, audit, seed and operational scripts. | audits, backups |
 | public | 9 | 0 | Static assets served by Next.js. | — |
 | src/app | 244 | — | Next.js App Router pages, route handlers, layouts/loading/error boundaries. | admin, api, dashboard, developer, quiz, calculators, tools |
-| supabase | 92 migrations | — | Database migrations and inspection/reset scripts. | migrations, check_db*.ts, seed/reset SQL |
+| supabase | 101 migrations | — | Database migrations and inspection/reset scripts. | migrations, check_db*.ts, seed/reset SQL |
 | .ai | many | — | Operational intelligence, audits, plans, performance docs, current AI context. | 00_system, 00_performance, 02_audits, 06_specs, 10_state |
 | docs | — | — | Root-level bridge/pointer docs. | README.md and docs subtree |
 | e2e | 13 | — | Playwright e2e tests and support fixtures. | support/authenticated-demo.ts |

@@ -1,0 +1,508 @@
+{
+  "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b1df2c322e6b2a40a05ecddec7f446a94b1355b9702f2097185979818e92d328",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "03c1b1e1-52d4-4215-b230-af7df296b355",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "Comparing a 10-storey residential building (NGR 0.80) with a 10-storey office building (NGR 0.70), which has more net rentable area per gross floor area? What explains the difference?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Office has more (0.70 > 0.80); residential needs more MEP per unit"
+        },
+        {
+          "id": "b",
+          "text": "Residential has more (0.80 > 0.70); offices require more MEP and circulation per floor area"
+        },
+        {
+          "id": "c",
+          "text": "Both have equal net area; NGR is independent of building type"
+        },
+        {
+          "id": "d",
+          "text": "Cannot compare; residential and office units are different sizes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reversed; residential has higher NGR (more usable).",
+        "c": "They are definitely different; building type drives NGR variance.",
+        "d": "While units differ, the NGR comparison is about efficiency of the overall built envelope.",
+        "correct": "Residential NGR 0.80 → 80% net (20% structure/MEP/circulation). Office NGR 0.70 → 70% net (30% structure/MEP/circulation). Residential uses less because: (1) MEP is distributed (plumbing within units, not centralized), (2) shorter circulation (bedrooms and kitchens use space efficiently), (3) smaller elevator requirements per unit. Office requires more MEP (centralized HVAC, larger mechanical floor, more electrical distribution, zoned cooling) and circulation (common corridors, elevator lobbies). Thus, residential achieves higher NGR and more usable area.",
+        "takeaway": "Residential buildings achieve higher NGR (0.75–0.85) than offices (0.65–0.75) due to simpler MEP distribution. Hospital NGR is lowest (0.55–0.65) due to complex medical MEP systems."
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE Planning Data, Building Type Efficiency",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b67b56e39d91412794487c7a739bbdb3a4feb6b21d9c1d8e2816f9ff0e7c9006"
+    },
+    {
+      "question_id": "e95282e2-64e3-4612-97d1-50df9223e4fc",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "How many elevators are typically required for a 20-storey office building with 4,000 sqm per floor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 elevators (minimum code), which may lead to longer wait times during peak hours"
+        },
+        {
+          "id": "b",
+          "text": "4–6 elevators (standard office occupancy)"
+        },
+        {
+          "id": "c",
+          "text": "8 elevators (high-rise CBD standard), ensuring efficient vertical transportation"
+        },
+        {
+          "id": "d",
+          "text": "1 elevator per 3 floors = 6–7 elevators, balancing cost and service efficiency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Code minimum, but inadequate for occupancy and peak hours.",
+        "c": "Excessive for 20 storeys; 8 is more typical for 40+ storey buildings.",
+        "d": "Uses different ratio (1 per 3 floors) yielding 6–7, which overlaps with b but less standard.",
+        "correct": "NYC standard: 1 elevator per 3,000–5,000 sqm of floor area. Total GFA = 80,000 sqm. Elevators needed = 80,000 ÷ 4,000 = 20 ÷ 5 = 4 elevators. Add 1–2 for peak hour redundancy → 4–6 total. This accounts for occupancy load, waiting times, and code requirements (typically min 2, but functional design needs 4–6 for a 20-storey CBD office).",
+        "takeaway": "Office elevators: 1 per 3,000–5,000 sqm of GFA. For 20-storey, 4,000 sqm/floor → 4–5 elevators + 1 service = 5–6 total."
+      },
+      "explanation": null,
+      "code_citation": "ASME A17.1 / Elevator Code, ASHRAE Planning Data",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:09eafd6cff050707236db22f7b4ef2106d70336aa82656fdb64b650933bb8679"
+    },
+    {
+      "question_id": "38fd3f13-ea4e-4892-b7de-6ef5db8c715b",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "Which building type typically has the lowest NGR (highest MEP/structure ratio)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retail (most open, least MEP), which generally has a lower MEP ratio compared to more complex buildings."
+        },
+        {
+          "id": "b",
+          "text": "Hospital (complex systems, redundancy)"
+        },
+        {
+          "id": "c",
+          "text": "Residential apartment (minimal MEP per unit), which typically has a lower MEP ratio due to simpler systems."
+        },
+        {
+          "id": "d",
+          "text": "Office (standard fit-out), which usually has a moderate MEP ratio."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Retail NGR is highest (0.82–0.90), meaning MEP is minimal—mostly electrical for lights and HVAC distribution.",
+        "c": "Residential is 0.75–0.85, moderate MEP (plumbing distributed to units, but not redundant).",
+        "d": "Office is 0.75–0.82, moderate due to zoned HVAC and cable management.",
+        "correct": "Hospital NGR = 0.55–0.65; meaning 35–45% of GFA is non-usable. Hospitals require operating suites, imaging, emergency power, backup water, sterilization, waste systems, pharmaceutical storage, etc. All consumed by MEP and service infrastructure.",
+        "takeaway": "NGR varies by complexity: retail (highest, least MEP) → office/residential (medium) → hospital (lowest, most MEP)."
+      },
+      "explanation": "Retail NGR is highest (0.82–0.90), meaning MEP is minimal—mostly electrical for lights and HVAC distribution. Residential is 0.75–0.85, moderate MEP (plumbing distributed to units, but not redundant). Office is 0.75–0.82, moderate due to zoned HVAC and cable management. Hospital NGR = 0.55–0.65; meaning 35–45% of GFA is non-usable. Hospitals require operating suites, imaging, emergency power, backup water, sterilization, waste systems, pharmaceutical storage, etc. All consumed by MEP and service infrastructure. NGR varies by complexity: retail (highest, least MEP) → office/residential (medium) → hospital (lowest, most MEP).",
+      "code_citation": "ASHRAE Planning Data (NGR not in NBC)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-05-06T13:14:18.608561+00:00",
+      "content_hash": "sha256:0fdfa2eda541cae43b03dc658d272cb54695d30600dc4ca3d0067a9bf9ffadad"
+    },
+    {
+      "question_id": "c3b62b18-0a23-48d5-9f4b-b6f02f064126",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "A hospital wing has 15,000 sqm GFA and NGR = 0.60. How much area is consumed by MEP and structural systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,000 sqm (100% − 60%)"
+        },
+        {
+          "id": "b",
+          "text": "9,000 sqm (100% − 60%)"
+        },
+        {
+          "id": "c",
+          "text": "15,000 sqm (all consumed)"
+        },
+        {
+          "id": "d",
+          "text": "3,000 sqm (insufficient MEP)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Confuses percentage; 40% ≠ 60%.",
+        "c": "All space is built (GFA); the question asks what portion is MEP/structure.",
+        "d": "Significantly under-estimates; hospitals require 35–45% MEP allocation.",
+        "correct": "NGR = 0.60 means 60% is usable space. Therefore, 40% is consumed by MEP, structure, circulation. 40% × 15,000 = 6,000 sqm non-usable. Hospitals are MEP-intensive due to operating suites, imaging (radiology), ICU systems, emergency power, backup water, sterilization, waste handling, and redundant feeds.",
+        "takeaway": "NGR inverse = MEP/structure/circulation ratio. Hospital at 0.60 NGR → 40% consumed by non-usable systems."
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE Planning Data, FGI Guidelines for Hospitals",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c100ea18064db12215c6f931f94c9979e36b11edc94ef90f8e4879d1d9ffa3d8"
+    },
+    {
+      "question_id": "78a61ba1-cee2-4ac5-87af-68861bbc9b6b",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "Why must MEP space be planned during conceptual architectural design, not later during coordination?",
+      "options": [
+        {
+          "id": "a",
+          "text": "MEP systems are cheaper if installed early, but this does not account for design integration"
+        },
+        {
+          "id": "b",
+          "text": "Late MEP planning forces costly floor-to-floor increases or compression of usable space"
+        },
+        {
+          "id": "c",
+          "text": "MEP engineers have a deadline before contractors arrive, which can lead to rushed decisions"
+        },
+        {
+          "id": "d",
+          "text": "Only structural engineers need MEP input at the start, which overlooks the importance of early coordination"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost savings exist but are secondary to design feasibility.",
+        "c": "MEP engineers should be engaged in schematic design, not later.",
+        "d": "All disciplines (architecture, structure, MEP) must coordinate early.",
+        "correct": "Underestimating MEP during design forces trade-offs: increase floor-to-floor (raising construction cost/envelope) or compress ceiling height (reducing rental value and occupancy comfort). Early planning locks in F-to-F, allows efficient routing, and prevents rework. Late discovery of MEP deficiency is expensive.",
+        "takeaway": "MEP space (20–40% of GFA) fundamentally shapes floor-to-floor, ceiling height, and building economics. Design MEP locations *before* finalizing architectural layout."
+      },
+      "explanation": null,
+      "code_citation": "Integrated Design Process, AIA Best Practices",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:14c32c3c016ee3330d38a1352409c7221148581304b4117783f63d57344e5ea6"
+    },
+    {
+      "question_id": "894eafc1-a496-4a9f-8bb4-27cfcd0d2be4",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "A building NGR of 0.70 is typical for mid-rise office. What percentage of GFA is consumed by structure, MEP, and circulation (non-usable)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20% non-usable (70% usable net floor area)"
+        },
+        {
+          "id": "b",
+          "text": "30% non-usable (70% usable net floor area)"
+        },
+        {
+          "id": "c",
+          "text": "70% non-usable; design is flawed"
+        },
+        {
+          "id": "d",
+          "text": "Cannot determine without knowing building height"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Only 20% would indicate exceptional efficiency; unrealistic for office.",
+        "c": "NGR of 0.70 is healthy; 30% for structure/MEP/circulation is standard.",
+        "d": "NGR is independent of height; it depends on design density and mechanical systems.",
+        "correct": "NGR (Net-to-Gross Ratio) = 0.70 means 70% of GFA is net usable floor area (offices, rentable space). The remaining 30% (100% − 70%) is consumed by structure, MEP, circulation (stairs, corridors, elevator shafts, mechanical rooms, restrooms). This 30% is typical for office towers with efficient structural frames and centralized MEP.",
+        "takeaway": "NGR inverse (1 − NGR) = non-usable percentage. For office NGR 0.70 → 30% structure/MEP/circ. For retail NGR 0.85 → 15% (simple MEP). For hospital NGR 0.60 → 40% (complex MEP)."
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE Planning Data, NGR Standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb94b062977d2d6679df95b0b5dee04a5c5876b11391cfc613cff50bf9814a79"
+    },
+    {
+      "question_id": "ccc5a718-5f32-4f95-8875-0bd622ccf9ce",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "A 3.0m floor-to-floor in an RCC building is allocated: 250mm slab, 400mm MEP, 150mm ceiling. What is the clear ceiling height?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.2m (3.0 − 0.8)"
+        },
+        {
+          "id": "b",
+          "text": "2.4m (3.0 − 0.6)"
+        },
+        {
+          "id": "c",
+          "text": "2.75m (standard office)"
+        },
+        {
+          "id": "d",
+          "text": "2.0m (inadequate for office)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Assumes only 600mm consumed; does not account for all components.",
+        "c": "That would be the target, but this design only achieves 2.2m.",
+        "d": "Close to actual result (2.2m); slightly pessimistic wording.",
+        "correct": "Floor-to-floor 3.0m: subtract slab (250mm) + MEP (400mm) + ceiling (150mm) = 800mm consumed. Clear height = 3,000 − 800 = 2,200mm = 2.2m. This is marginal for office (standard is 2.7–2.8m). Indicates over-aggressive MEP allocation.",
+        "takeaway": "Floor-to-floor allocation critically affects usable ceiling height. 400mm MEP for 3.0m F-to-F is tight. Better practice: 3.2m or above, or reduce MEP to 300mm."
+      },
+      "explanation": null,
+      "code_citation": "RCC Design & Construction, ASHRAE Duct Sizing",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7b039a9135e562f613618a166a59fc9b67dd7de1dc4b9a577f208cae5b84aa8b"
+    },
+    {
+      "question_id": "2907d732-4008-4879-8c2c-65154eacc291",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "A 20-storey office building has 4,000 sqm per floor. If NGR = 0.75, what is the total usable floor area across all floors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "60,000 sqm (4,000 × 20 × 0.75)"
+        },
+        {
+          "id": "b",
+          "text": "80,000 sqm (total GFA)"
+        },
+        {
+          "id": "c",
+          "text": "50,000 sqm (conservative estimate)"
+        },
+        {
+          "id": "d",
+          "text": "72,000 sqm (80,000 × 0.9)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "That is total GFA, not usable area; does not apply NGR.",
+        "c": "Arbitrary estimate; not based on NGR formula.",
+        "d": "Over-complicated calculation; ignores NGR definition.",
+        "correct": "Total GFA = 4,000 × 20 = 80,000 sqm. Usable area = GFA × NGR = 80,000 × 0.75 = 60,000 sqm. This means 20,000 sqm (25%) is consumed by MEP, structure, and circulation.",
+        "takeaway": "Usable Floor Area = Total GFA × NGR. For office, NGR 0.75 means 25% is MEP/structure/circ."
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE System Design Manual",
+      "bloom_level": "remember",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed0a453c44589da33e6975138a7b83ca0ba842cb2730820aad597e07f6fe510c"
+    },
+    {
+      "question_id": "e1712c7c-b7a9-42b4-92cf-2f2d1cb80d0e",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "For a 15-storey office building (3,000 sqm per floor), estimate the size of a central mechanical room on one floor (HVAC, chiller, boiler loops, main ductwork starts).",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 sqm (minimal MEP), which is insufficient for the building's needs"
+        },
+        {
+          "id": "b",
+          "text": "200–300 sqm (typical for this building)"
+        },
+        {
+          "id": "c",
+          "text": "500 sqm (excessive), which would occupy too much rentable space"
+        },
+        {
+          "id": "d",
+          "text": "50 sqm (too small), which would not accommodate necessary equipment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too small; inadequate for main chiller and boiler equipment.",
+        "c": "Over-sized; wastes valuable floor area.",
+        "d": "Far too small; cannot fit equipment.",
+        "correct": "A 15-storey, 3,000 sqm/floor office requires a dedicated mechanical floor (typically mid-building, around 8th floor) sized 200–350 sqm. This accommodates main chiller/boiler equipment, distribution manifolds, main ductwork branches, and service access. Rule of thumb: 5–8% of floor area per mechanical floor.",
+        "takeaway": "Mechanical room for mid-rise office: ~250 sqm. Allows equipment layout, redundancy, and maintenance access. Under-sizing forces vertical chases or distributed rooms."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Document 207 (Architectural Interior Design) or local practice standards (NGR not in NBC)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eeb905c4fe8edb4ec948d23a305491ffdced3f3f278f0358f124cc7081028db4"
+    },
+    {
+      "question_id": "b9ac6347-039d-4972-86b0-34a3e6cf4f2e",
+      "article_id": "11c32082-10d4-4312-bbf9-e674b925e550",
+      "topic_id": "f814c1c6-233e-46c3-b1be-7256a66fc714",
+      "text": "A 10-storey residential building has vertical plumbing stacks. If each stack serves 2,500 sqm of building area, how many stacks are needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 stack (one per building), which may not meet the demand for larger buildings"
+        },
+        {
+          "id": "b",
+          "text": "10 stacks (25,000 sqm ÷ 2,500 sqm/stack)"
+        },
+        {
+          "id": "c",
+          "text": "4 stacks (one per floor cluster), which assumes a different distribution strategy"
+        },
+        {
+          "id": "d",
+          "text": "10 stacks (one per floor), ensuring each floor has dedicated plumbing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Single stack creates noise problems; no redundancy.",
+        "c": "Over-design; not necessary.",
+        "d": "Massively over-designed; one per floor is industrial/laboratory only.",
+        "correct": "Total building area = 10 storeys × 2,500 sqm = 25,000 sqm. 25,000 ÷ 2,500 sqm/stack = 10 stacks needed. If stacks serve larger zones (e.g., 8,000–12,000 sqm each), then 2–3 stacks suffice. Rule of thumb for residential: 1 main stack + 1 backup per 15,000 sqm = 2–3 stacks for a 10-storey building. Proper answer is 2–3 stacks distributed at opposite ends (for acoustic isolation and redundancy).",
+        "takeaway": "Residential stacks: 2–3 total for mid-rise buildings. Distribute at opposite ends to avoid party-wall noise transfer. Main stack + backup provides redundancy."
+      },
+      "explanation": null,
+      "code_citation": "National Plumbing Code of the Philippines / PD 1096 Rule IX",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-09-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:12.558927+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f4443298348da3339e5f20bb3a5f5d4ea305a46796518d8019c05e3123a2c2ff"
+    }
+  ]
+}

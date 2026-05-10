@@ -1,9 +1,59 @@
 {
   "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:5ece7f40db7616d154e5ba3a3b23de9fbc9830c435ea54355dfd905d8e2f7693",
+  "linked_questions_hash": "sha256:05d2e32206b263fa2d39bef47bc27ef8095b2b3e7c2c5a7a17089aa8caeb1fd8",
   "question_count": 15,
   "questions": [
+    {
+      "question_id": "0b8bb1cc-a6cb-4989-9bf2-0aff3b695ab4",
+      "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
+      "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
+      "text": "According to ASHRAE guidance, what is the typical natural frequency range for coil spring isolators commonly used in HVAC equipment mounting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 0.5–2 Hz"
+        },
+        {
+          "id": "b",
+          "text": "B) 2–8 Hz"
+        },
+        {
+          "id": "c",
+          "text": "C) 10–15 Hz"
+        },
+        {
+          "id": "d",
+          "text": "D) 15–25 Hz"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.5–2 Hz frequencies are too low for typical HVAC equipment mass and would require extremely soft springs with excessive deflection (>200 mm), making installation impractical.",
+        "c": "10–15 Hz is the range for elastomeric pads, which are lower-stiffness isolators suitable for lighter loads; spring isolators are stiffer and target 2–8 Hz.",
+        "d": "15–25 Hz frequencies are too high; at this range, isolation effectiveness drops to <10 dB above 30 Hz, insufficient for mechanical room noise control.",
+        "correct": "Spring isolators (coil springs) are designed for HVAC equipment with natural frequencies of 2–8 Hz per ASHRAE Handbook—Applications, Chapter 47. This frequency range is critical for effective isolation above ~30 Hz, where equipment noise dominates (ASHRAE design methodology).",
+        "takeaway": "Spring isolator selection must match equipment mass to achieve 2–8 Hz natural frequency; undersized or oversized isolators fail to provide required vibration isolation."
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE Handbook—Applications (2021), Chapter 47 (Vibration and Seismic Restraint Design)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-07-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.938652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b3e18ef1a4c0e7e5d88bd71c2f5627d3a422f9e4830ce0b51b854fbae8d98fbc"
+    },
     {
       "question_id": "31a3dde5-2d63-4543-8d86-cecc572615d5",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
@@ -105,56 +155,6 @@
       "content_hash": "sha256:1c8162fbbb73515425ab37f9bc87e44e42b52364b2ba1a6db53e1d7beb7208b2"
     },
     {
-      "question_id": "0b8bb1cc-a6cb-4989-9bf2-0aff3b695ab4",
-      "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
-      "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "According to ASHRAE guidance, what is the typical natural frequency range for coil spring isolators commonly used in HVAC equipment mounting?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) 0.5–2 Hz"
-        },
-        {
-          "id": "b",
-          "text": "B) 2–8 Hz"
-        },
-        {
-          "id": "c",
-          "text": "C) 10–15 Hz"
-        },
-        {
-          "id": "d",
-          "text": "D) 15–25 Hz"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "0.5–2 Hz frequencies are too low for typical HVAC equipment mass and would require extremely soft springs with excessive deflection (>200 mm), making installation impractical.",
-        "c": "10–15 Hz is the range for elastomeric pads, which are lower-stiffness isolators suitable for lighter loads; spring isolators are stiffer and target 2–8 Hz.",
-        "d": "15–25 Hz frequencies are too high; at this range, isolation effectiveness drops to <10 dB above 30 Hz, insufficient for mechanical room noise control.",
-        "correct": "Spring isolators (coil springs) are designed for HVAC equipment with natural frequencies of 2–8 Hz per ASHRAE Handbook—Applications, Chapter 47. This frequency range is critical for effective isolation above ~30 Hz, where equipment noise dominates (ASHRAE design methodology).",
-        "takeaway": "Spring isolator selection must match equipment mass to achieve 2–8 Hz natural frequency; undersized or oversized isolators fail to provide required vibration isolation."
-      },
-      "explanation": null,
-      "code_citation": "ASHRAE Handbook—Applications (2021), Chapter 47 (Vibration and Seismic Restraint Design)",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-006-07-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:01.938652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b3e18ef1a4c0e7e5d88bd71c2f5627d3a422f9e4830ce0b51b854fbae8d98fbc"
-    },
-    {
       "question_id": "5baaab42-9918-4909-ae15-0068a8a9356d",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
@@ -189,7 +189,7 @@
         "correct": "Vibration isolation works by setting the system natural frequency (f_n) well below the equipment vibration frequency (f_e). When f_e >> f_n (typically f_e > 2.5 × f_n), attenuation ∝ (f_e/f_n)². At 2–5 Hz natural frequency with equipment vibration at 30+ Hz, this produces 20–30 dB reduction (CIBSE Guide E; ASHRAE).",
         "takeaway": "Effective vibration isolation requires frequency separation: f_n << f_e, not mass increase or frequency matching."
       },
-      "explanation": null,
+      "explanation": "While some energy is absorbed by the isolator material (damping), this is secondary; the primary mechanism is frequency separation (tuning). Pure energy absorption would be inefficient. Raising the natural frequency would bring it closer to equipment vibration, reducing isolation effectiveness and potentially creating resonance amplification. Isolators are designed for selective frequency isolation, not flat damping; equal attenuation across all frequencies is neither achievable nor desired. Vibration isolation works by setting the system natural frequency (f_n) well below the equipment vibration frequency (f_e). When f_e >> f_n (typically f_e > 2.5 × f_n), attenuation ∝ (f_e/f_n)². At 2–5 Hz natural frequency with equipment vibration at 30+ Hz, this produces 20–30 dB reduction (CIBSE Guide E; ASHRAE). Effective vibration isolation requires frequency separation: f_n << f_e, not mass increase or frequency matching.",
       "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43 (Vibration Isolation); CIBSE Guide E (2018)",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -201,8 +201,58 @@
       "model_id": "ALE-UTIL-006-07-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:01.938652+00:00",
+      "updated_at": "2026-05-06T15:03:13.141976+00:00",
+      "content_hash": "sha256:83d561c2b5f5e66428fb1b82663754dbe443011cbd3af286b4dc052a0742aafb"
+    },
+    {
+      "question_id": "e494ec90-a6c1-41fd-b156-f1a6252e26f1",
+      "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
+      "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
+      "text": "A centrifugal pump (80 dB(A)) is mounted on the third floor of a residential building, and vibration must be isolated to meet NC 25 target in the bedroom below (45 dB(A) allowable). Assuming vibration isolation achieves 20 dB reduction, what additional attenuation is required from airborne transmission, and is single-layer 100 mm concrete partition sufficient?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 15 dB additional required; 100 mm concrete (STC 48, ~50 dB at 1 kHz) provides adequate attenuation for the remaining airborne path"
+        },
+        {
+          "id": "b",
+          "text": "B) 25 dB additional required; 100 mm concrete is marginal; STC 60+ (double-skin construction) recommended for safety margin, especially in high-noise environments"
+        },
+        {
+          "id": "c",
+          "text": "C) 15 dB additional required; but low-frequency pump noise (70–150 Hz) at 63 Hz may be only 35 dB attenuated by 100 mm concrete; upgrade to decoupled double-layer required"
+        },
+        {
+          "id": "d",
+          "text": "D) 5 dB additional required; vibration isolation is primary control; partition is secondary, but may need reinforcement in certain conditions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While 100 mm concrete provides adequate mid-frequency attenuation, low-frequency weakness (38 dB at 63 Hz vs. 50 dB at 1 kHz) creates spectral imbalance. The remaining 15 dB budget is exceeded at low frequencies.",
+        "b": "15 dB additional is correct, but the analysis omits the critical low-frequency gap. STC 60+ is recommended, but the specific reason is low-frequency control, not a general safety requirement.",
+        "d": "Vibration isolation is critical (20 dB), but airborne transmission via direct radiation from pump (fan noise, discharge) and through partition is not negligible. Both paths must be controlled per sound path analysis methodology.",
+        "correct": "Source level 80 dB(A) − target 45 dB(A) = 35 dB required total. Vibration isolation provides 20 dB, leaving 15 dB required from airborne/partition path. Single-layer 100 mm concrete achieves STC 48 (~50 dB at 1 kHz mid-frequency), but low-frequency pump noise peaks at 70–150 Hz with significant 63 Hz content. At 63 Hz, mass law predicts: SRI = 20 log₁₀(240 × 63) − 47 = 20(4.18) − 47 ≈ 38 dB (versus 50 dB at 1 kHz). The low-frequency attenuation (38 dB) is insufficient for 15 dB remaining budget; a dominant 63 Hz signature will exceed the 45 dB(A) target. Recommendation: decoupled double-skin construction (100 mm concrete + 100 mm air + 100 mm concrete + 50 mm lining) achieves 45–50 dB at 63 Hz, plus vibration isolation (20 dB) = 65–70 dB total reduction, exceeding 35 dB requirement with safety margin (ASHRAE Chapter 43).",
+        "takeaway": "Design allocation of attenuation must account for spectral content; low-frequency equipment (pumps, compressors, chillers) requires explicit low-frequency wall design or increased partition thickness/decoupling."
+      },
+      "explanation": null,
+      "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43; ISO 12354-1:2017",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-07-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b5f64fe99a38ff0d5fc73de6401932e2071735f341cbdb6368546a494c4edda8"
+      "content_hash": "sha256:b9b7849aa8a0245b017cb41d29930776a856f479f7f5fbfc81bb7f17cc8efe23"
     },
     {
       "question_id": "84992241-8a45-400a-91ad-123866d139c2",
@@ -305,54 +355,54 @@
       "content_hash": "sha256:7bb71817e7d651a60caa973249b0bf8aa8e2299dca23c28700961847543aa1ca"
     },
     {
-      "question_id": "c9d72107-2797-4191-91f6-ad26abb9bdc2",
+      "question_id": "059c8c19-5d80-46a5-b810-b2b70f05310c",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "A chiller isolation system uses inertia base mass = 12,000 kg (equipment + base), target f_n = 3 Hz, and static deflection is measured at 30 mm. Using the natural frequency formula, is this isolation system properly tuned?",
+      "text": "Flexible hose connectors (vibration-isolation assemblies) are installed at the inlet and outlet of a centrifugal pump (85 dB(A) at source). What is the minimum recommended length of flexible hose per section, and what is the primary benefit within 1 meter of the equipment?",
       "options": [
         {
           "id": "a",
-          "text": "A) Yes; 30 mm deflection is within acceptable 25–100 mm range for practical installations, ensuring adequate vibration isolation."
+          "text": "A) 100 mm minimum; provides 5 dB attenuation at high frequencies only, which is insufficient for comprehensive noise control"
         },
         {
           "id": "b",
-          "text": "B) No; calculated spring stiffness (1.15 × 10^7 N/m) exceeds practical component ratings, which may lead to premature failure."
+          "text": "B) 300 mm minimum; decouples vibration transmission at low frequencies (3–8 Hz) for >20 dB attenuation above 200 Hz"
         },
         {
           "id": "c",
-          "text": "C) No; actual calculated f_n ≈ 2.85 Hz, below the 3 Hz target, resulting in inadequate attenuation above 10 Hz"
+          "text": "C) 500 mm minimum; required for pressure rating and stress relief, ensuring long-term durability under operational conditions"
         },
         {
           "id": "d",
-          "text": "D) Cannot determine without knowing the isolator material (elastomeric vs. spring), as material properties significantly affect performance."
+          "text": "D) 1000 mm minimum; achieves full isolation equivalent to spring isolators, providing maximum noise and vibration reduction"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "While 30 mm is within the acceptable 25–100 mm range, the design goal is to achieve target f_n = 3 Hz, not merely fall within deflection limits. This design is under-tuned.",
-        "b": "At 30 mm deflection, stiffness is 3.9 × 10^6 N/m, within standard component ratings (typical springs rated to 10^7 N/m). This is not the limiting factor.",
-        "d": "The calculation method applies to both spring and elastomeric isolators (they both follow f_n = √(kg/Δ) physics). Material type does not change the fundamental frequency calculation.",
-        "correct": "Given Δ = 30 mm = 0.03 m and M = 12,000 kg, solve for k: k = M × g / Δ = 12,000 × 9.81 / 0.03 ≈ 3.9 × 10^6 N/m. Then f_n = (1/2π) × √(k/m) = (1/2π) × √(3.9 × 10^6 / 12,000) ≈ 2.87 Hz (ASHRAE formula). At 2.87 Hz natural frequency, attenuation begins at ~9 Hz; at 30 Hz source frequency, attenuation is only (30/2.87)² ≈ 109× ≈ 20 dB. If target is 25 dB attenuation at 30 Hz, this is marginal. Recalibration to reduce deflection to 22–25 mm would raise f_n to 3.2–3.5 Hz, improving mid-range isolation per ASHRAE guidelines.",
-        "takeaway": "Measured deflection and natural frequency must be verified against design targets; small deviations in deflection (±5 mm) significantly impact isolation effectiveness at critical frequencies (20–50 Hz)."
+        "a": "100 mm is insufficient; the flexible section must have adequate length to deform under load and provide frequency separation. High-frequency-only attenuation is inadequate for low-frequency equipment noise.",
+        "c": "500 mm and 1000 mm are larger than the minimum required; 300 mm is the industry-standard minimum for practical installations. Longer sections provide no additional benefit for isolation but increase cost and space.",
+        "d": "Flexible hose stress rating and pressure capacity are separate from isolation length; 300 mm is adequate for isolation per design standards.",
+        "correct": "Flexible hose assemblies (elastomeric core, typically 3–8 Hz natural frequency) require minimum 300 mm length per section per ASHRAE Applications Chapter 47 and pump manufacturer specifications. This length provides adequate flexibility to isolate vibration transmission through the piping system, breaking the rigid connection path. Attenuation >20 dB is achieved above 200 Hz (ASHRAE design guidance). Installation within 1 meter of pump inlet/outlet is critical per PD 1058 (Philippine Mechanical Code) to prevent structure-borne transmission before isolation.",
+        "takeaway": "Flexible connectors are not a substitute for equipment vibration isolation; they supplement isolators by breaking pipe transmission paths at the source."
       },
       "explanation": null,
-      "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
+      "code_citation": "ASHRAE Handbook—Applications (2021), Chapter 47",
+      "bloom_level": "apply",
+      "application_context": "calculation",
       "practice_context": [],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-UTIL-006-07-017",
+      "model_id": "ALE-UTIL-006-07-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:65a09ce27e6876a3b38456eb22cec31733be39a0ff2927250a50110d9feb3411"
+      "content_hash": "sha256:1ec842dfe3289789a60069a07deed5bef35be45f2c38bbbb56182914979b00d4"
     },
     {
       "question_id": "4c01e366-2b98-4197-b9af-c1f2acd0e89c",
@@ -389,7 +439,7 @@
         "correct": "NC (ANSI/ASA S12.2-2008) is a spectral criterion providing acceptable sound levels across 11 octave bands (63 Hz–8 kHz), designed to correlate with speech intelligibility and task performance in specific room types. dB(A) is an overall sound pressure level weighted by the A-weighting curve (ISO 226), reducing low-frequency sensitivity. A design can meet NC 30 in one space and dB(A) 45 in another; NC captures spectral balance (avoiding low-frequency dominance), while dB(A) represents overall energy. ASHRAE design typically specifies both: NC for spectral compliance in occupied spaces, dB(A) for overall budget in mechanical areas.",
         "takeaway": "Design specifications must address both NC (spectral quality) and dB(A) (overall energy); meeting one does not guarantee the other, particularly if low-frequency energy dominates."
       },
-      "explanation": null,
+      "explanation": "This reverses the definitions; NC is spectral, dB(A) is overall single-number. While both metrics can be measured simultaneously, NC and dB(A) capture different aspects of the acoustic environment. NC 30 might correspond to dB(A) 40–45 depending on spectral content. Both metrics apply to indoor and outdoor environments. NC is typically used for enclosed spaces; dB(A) is the legal standard for environmental/property boundary compliance (DENR DAO 2000-81). NC (ANSI/ASA S12.2-2008) is a spectral criterion providing acceptable sound levels across 11 octave bands (63 Hz–8 kHz), designed to correlate with speech intelligibility and task performance in specific room types. dB(A) is an overall sound pressure level weighted by the A-weighting curve (ISO 226), reducing low-frequency sensitivity. A design can meet NC 30 in one space and dB(A) 45 in another; NC captures spectral balance (avoiding low-frequency dominance), while dB(A) represents overall energy. ASHRAE design typically specifies both: NC for spectral compliance in occupied spaces, dB(A) for overall budget in mechanical areas. Design specifications must address both NC (spectral quality) and dB(A) (overall energy); meeting one does not guarantee the other, particularly if low-frequency energy dominates.",
       "code_citation": "ANSI/ASA S12.2-2008; ASHRAE Handbook—Fundamentals (2021), Chapter 8",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -401,8 +451,8 @@
       "model_id": "ALE-UTIL-006-07-020",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1b48f682a10bf7bbfd7e1dfda4a7e269a2f17cfffef3b30017945c35b5bd0329"
+      "updated_at": "2026-05-06T15:03:13.273785+00:00",
+      "content_hash": "sha256:17725d81e1ae832e78d2ffd66b213ff54f0cd80da9cc538d5864e19d03ceac61"
     },
     {
       "question_id": "a4bafc8a-9b31-43fb-9cf8-5bd8837f5c40",
@@ -555,54 +605,54 @@
       "content_hash": "sha256:839688020ffa2125a69d634931c9c2d4bd1f7703552037684de3348ff97f80ec"
     },
     {
-      "question_id": "059c8c19-5d80-46a5-b810-b2b70f05310c",
+      "question_id": "c9d72107-2797-4191-91f6-ad26abb9bdc2",
       "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
       "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "Flexible hose connectors (vibration-isolation assemblies) are installed at the inlet and outlet of a centrifugal pump (85 dB(A) at source). What is the minimum recommended length of flexible hose per section, and what is the primary benefit within 1 meter of the equipment?",
+      "text": "A chiller isolation system uses inertia base mass = 12,000 kg (equipment + base), target f_n = 3 Hz, and static deflection is measured at 30 mm. Using the natural frequency formula, is this isolation system properly tuned?",
       "options": [
         {
           "id": "a",
-          "text": "A) 100 mm minimum; provides 5 dB attenuation at high frequencies only, which is insufficient for comprehensive noise control"
+          "text": "A) Yes; 30 mm deflection is within acceptable 25–100 mm range for practical installations, ensuring adequate vibration isolation."
         },
         {
           "id": "b",
-          "text": "B) 300 mm minimum; decouples vibration transmission at low frequencies (3–8 Hz) for >20 dB attenuation above 200 Hz"
+          "text": "B) No; calculated spring stiffness (1.15 × 10^7 N/m) exceeds practical component ratings, which may lead to premature failure."
         },
         {
           "id": "c",
-          "text": "C) 500 mm minimum; required for pressure rating and stress relief, ensuring long-term durability under operational conditions"
+          "text": "C) No; actual calculated f_n ≈ 2.85 Hz, below the 3 Hz target, resulting in inadequate attenuation above 10 Hz"
         },
         {
           "id": "d",
-          "text": "D) 1000 mm minimum; achieves full isolation equivalent to spring isolators, providing maximum noise and vibration reduction"
+          "text": "D) Cannot determine without knowing the isolator material (elastomeric vs. spring), as material properties significantly affect performance."
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "100 mm is insufficient; the flexible section must have adequate length to deform under load and provide frequency separation. High-frequency-only attenuation is inadequate for low-frequency equipment noise.",
-        "c": "500 mm and 1000 mm are larger than the minimum required; 300 mm is the industry-standard minimum for practical installations. Longer sections provide no additional benefit for isolation but increase cost and space.",
-        "d": "Flexible hose stress rating and pressure capacity are separate from isolation length; 300 mm is adequate for isolation per design standards.",
-        "correct": "Flexible hose assemblies (elastomeric core, typically 3–8 Hz natural frequency) require minimum 300 mm length per section per ASHRAE Applications Chapter 47 and pump manufacturer specifications. This length provides adequate flexibility to isolate vibration transmission through the piping system, breaking the rigid connection path. Attenuation >20 dB is achieved above 200 Hz (ASHRAE design guidance). Installation within 1 meter of pump inlet/outlet is critical per PD 1058 (Philippine Mechanical Code) to prevent structure-borne transmission before isolation.",
-        "takeaway": "Flexible connectors are not a substitute for equipment vibration isolation; they supplement isolators by breaking pipe transmission paths at the source."
+        "a": "While 30 mm is within the acceptable 25–100 mm range, the design goal is to achieve target f_n = 3 Hz, not merely fall within deflection limits. This design is under-tuned.",
+        "b": "At 30 mm deflection, stiffness is 3.9 × 10^6 N/m, within standard component ratings (typical springs rated to 10^7 N/m). This is not the limiting factor.",
+        "d": "The calculation method applies to both spring and elastomeric isolators (they both follow f_n = √(kg/Δ) physics). Material type does not change the fundamental frequency calculation.",
+        "correct": "Given Δ = 30 mm = 0.03 m and M = 12,000 kg, solve for k: k = M × g / Δ = 12,000 × 9.81 / 0.03 ≈ 3.9 × 10^6 N/m. Then f_n = (1/2π) × √(k/m) = (1/2π) × √(3.9 × 10^6 / 12,000) ≈ 2.87 Hz (ASHRAE formula). At 2.87 Hz natural frequency, attenuation begins at ~9 Hz; at 30 Hz source frequency, attenuation is only (30/2.87)² ≈ 109× ≈ 20 dB. If target is 25 dB attenuation at 30 Hz, this is marginal. Recalibration to reduce deflection to 22–25 mm would raise f_n to 3.2–3.5 Hz, improving mid-range isolation per ASHRAE guidelines.",
+        "takeaway": "Measured deflection and natural frequency must be verified against design targets; small deviations in deflection (±5 mm) significantly impact isolation effectiveness at critical frequencies (20–50 Hz)."
       },
       "explanation": null,
-      "code_citation": "ASHRAE Handbook—Applications (2021), Chapter 47",
-      "bloom_level": "apply",
-      "application_context": "calculation",
+      "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
       "practice_context": [],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-UTIL-006-07-018",
+      "model_id": "ALE-UTIL-006-07-017",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:02.422831+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1ec842dfe3289789a60069a07deed5bef35be45f2c38bbbb56182914979b00d4"
+      "content_hash": "sha256:65a09ce27e6876a3b38456eb22cec31733be39a0ff2927250a50110d9feb3411"
     },
     {
       "question_id": "bd1044d6-dc61-418f-b931-e0ae71527d6b",
@@ -703,56 +753,6 @@
       "created_at": "2026-03-23T19:28:02.422831+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:6fea07996157142fb7c3b23a010ea553c7cb4e006f623e09455d4d059e49bd88"
-    },
-    {
-      "question_id": "e494ec90-a6c1-41fd-b156-f1a6252e26f1",
-      "article_id": "0c236406-a3aa-46b6-9833-b2aa88a6e131",
-      "topic_id": "a5cded23-a755-49be-9600-1663333f7724",
-      "text": "A centrifugal pump (80 dB(A)) is mounted on the third floor of a residential building, and vibration must be isolated to meet NC 25 target in the bedroom below (45 dB(A) allowable). Assuming vibration isolation achieves 20 dB reduction, what additional attenuation is required from airborne transmission, and is single-layer 100 mm concrete partition sufficient?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) 15 dB additional required; 100 mm concrete (STC 48, ~50 dB at 1 kHz) provides adequate attenuation for the remaining airborne path"
-        },
-        {
-          "id": "b",
-          "text": "B) 25 dB additional required; 100 mm concrete is marginal; STC 60+ (double-skin construction) recommended for safety margin, especially in high-noise environments"
-        },
-        {
-          "id": "c",
-          "text": "C) 15 dB additional required; but low-frequency pump noise (70–150 Hz) at 63 Hz may be only 35 dB attenuated by 100 mm concrete; upgrade to decoupled double-layer required"
-        },
-        {
-          "id": "d",
-          "text": "D) 5 dB additional required; vibration isolation is primary control; partition is secondary, but may need reinforcement in certain conditions"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "While 100 mm concrete provides adequate mid-frequency attenuation, low-frequency weakness (38 dB at 63 Hz vs. 50 dB at 1 kHz) creates spectral imbalance. The remaining 15 dB budget is exceeded at low frequencies.",
-        "b": "15 dB additional is correct, but the analysis omits the critical low-frequency gap. STC 60+ is recommended, but the specific reason is low-frequency control, not a general safety requirement.",
-        "d": "Vibration isolation is critical (20 dB), but airborne transmission via direct radiation from pump (fan noise, discharge) and through partition is not negligible. Both paths must be controlled per sound path analysis methodology.",
-        "correct": "Source level 80 dB(A) − target 45 dB(A) = 35 dB required total. Vibration isolation provides 20 dB, leaving 15 dB required from airborne/partition path. Single-layer 100 mm concrete achieves STC 48 (~50 dB at 1 kHz mid-frequency), but low-frequency pump noise peaks at 70–150 Hz with significant 63 Hz content. At 63 Hz, mass law predicts: SRI = 20 log₁₀(240 × 63) − 47 = 20(4.18) − 47 ≈ 38 dB (versus 50 dB at 1 kHz). The low-frequency attenuation (38 dB) is insufficient for 15 dB remaining budget; a dominant 63 Hz signature will exceed the 45 dB(A) target. Recommendation: decoupled double-skin construction (100 mm concrete + 100 mm air + 100 mm concrete + 50 mm lining) achieves 45–50 dB at 63 Hz, plus vibration isolation (20 dB) = 65–70 dB total reduction, exceeding 35 dB requirement with safety margin (ASHRAE Chapter 43).",
-        "takeaway": "Design allocation of attenuation must account for spectral content; low-frequency equipment (pumps, compressors, chillers) requires explicit low-frequency wall design or increased partition thickness/decoupling."
-      },
-      "explanation": null,
-      "code_citation": "ASHRAE Handbook—Fundamentals (2021), Chapter 43; ISO 12354-1:2017",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-006-07-023",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:02.422831+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b9b7849aa8a0245b017cb41d29930776a856f479f7f5fbfc81bb7f17cc8efe23"
     }
   ]
 }

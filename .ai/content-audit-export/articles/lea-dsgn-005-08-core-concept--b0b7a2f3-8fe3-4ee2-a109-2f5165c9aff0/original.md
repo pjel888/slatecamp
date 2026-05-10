@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 005 08 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -12,7 +21,11 @@ Community Health Centers and Barangay Health Centers operate as Group D occupanc
 The core design principle centers on functional separation of clinical zones: consultation, treatment, pharmacy, and support areas must be sized and arranged to prevent congestion during medical consultation while maintaining infection control. A consultation room requires a minimum of 9 square meters (typically 3.0m × 3.0m). A treatment room requires 12 square meters. The waiting area must provide 1.5 square meters per seated occupant. Pharmacy dispensaries require a minimum of 4 square meters. Accessible toilet facilities, per **BP 344** (2024 Revised IRR), must provide minimum clear floor space of 1.50m × 1.50m per facility.
 
 Group D occupancies require fire-resistance-rated occupancy separations per NBC Rule VII Table 703(d), minimum 1-hour, and exits must be sized per NBC Rule VIII Table 8.1 or RA 9514 Table 10 at 7.6 mm/person for doors. Travel distance to exits shall not exceed 45 meters (or 60 meters if sprinklered). At 50 persons occupant load, two separate exits are mandatory.
-<ArticleMedia id="media-lea-dsgn-005-08-core-concept" type="image" caption="Community Health Center — Group D Space Program Diagram" description="Bubble diagram of a community health center showing consultation, treatment, pharmacy, waiting, and admin zones. Annotated with DOH space standards, fire separation requirements, and assisted evacuation considerations per Group D occupancy." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-08-core-concept", type="image", caption="Community Health Center — Group D Space Program Diagram", description="Bubble diagram of a community health center showing consultation, treatment, pharmacy, waiting, and admin zones. Annotated with DOH space standards, fire separation requirements, and assisted evacuation considerations per Group D occupancy.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -52,10 +65,18 @@ In the Philippines, community health centers serve as the primary contact point 
 
 **Pattern 3:** _Accessible design and accessibility standards_ — "An accessible toilet serving a primary care facility must measure _____ × _____ meters per **BP 344**, and the approach ramp slope shall not exceed 1:_____."
 
-<Tip>BHC = Group D (NOT C). Consultation room = 9 sqm. Exit width = 7.6mm/person. 2-hour fire separation required. Accessible door = 900mm. Ramp = 1:20 max (2024 Revised IRR). Toilet = 1.7m × 1.7m.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: BHC = Group D (NOT C). Consultation room = 9 sqm. Exit width = 7.6mm/person. 2-hour fire separation required. Accessible door = 900mm. Ramp = 1:20 max (2024 Revised IRR). Toilet = 1.7m × 1.7m.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip — ERR-DSGN-024:** BHCs are Group D because patients may require assisted evacuation. Unlike acute hospitals, BHCs use DOH Sentrong Sigla standards for space programming, not DOH hospital coding.
-<ArticleMedia id="media-lea-dsgn-005-08-core-concept" type="image" caption="Community Health Center — Group D Occupancy Space Program and Egress" description="Bubble diagram of a community health center showing functional zones: consultation rooms (9 sqm), treatment area (12 sqm), pharmacy, waiting area at 1.5 sqm/person, and admin offices. Fire separation requirements and assisted egress for Group D occupancy annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-08-core-concept", type="image", caption="Community Health Center — Group D Occupancy Space Program and Egress", description="Bubble diagram of a community health center showing functional zones: consultation rooms (9 sqm), treatment area (12 sqm), pharmacy, waiting area at 1.5 sqm/person, and admin offices. Fire separation requirements and assisted egress for Group D occupancy annotated.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -63,4 +84,8 @@ See **LEA-DSGN-005-05** (Specialized Health Facilities) for Group D classificati
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["ERR-DSGN-002: Classifying community health center as Group C (education) — BHCs are Group D (institutional) because occupants may need assisted evacuation","ERR-DSGN-014: Specifying ramp slope as 1:10 or 1:12 (old IRR) instead of 1:20 (2024 IRR) per BP 344","ERR-DSGN-015: Accessible door width as 800mm instead of 900mm minimum clear width per BP 344","ERR-DSGN-019: Exit width calculated at 5mm/person instead of 7.6mm/person per NBC","ERR-DSGN-021: Assuming one exit is sufficient for 100-person occupancy — two exits required at 50+ persons"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"ERR-DSGN-002: Classifying community health center as Group C (education) — BHCs are Group D (institutional) because occupants may need assisted evacuation\",\"ERR-DSGN-014: Specifying ramp slope as 1:10 or 1:12 (old IRR) instead of 1:20 (2024 IRR) per BP 344\",\"ERR-DSGN-015: Accessible door width as 800mm instead of 900mm minimum clear width per BP 344\",\"ERR-DSGN-019: Exit width calculated at 5mm/person instead of 7.6mm/person per NBC\",\"ERR-DSGN-021: Assuming one exit is sufficient for 100-person occupancy — two exits required at 50+ persons\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

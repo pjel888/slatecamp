@@ -1,9 +1,109 @@
 {
   "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:c2d92bf825ff5792044176b8317029cdab77b5c52d7540209b9812b8d3a33908",
+  "linked_questions_hash": "sha256:f1ad077940851840ac9107c19dceec470738a2baaf4c6dd0d92be6a3c82f4742",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "8a9ca302-ebc3-4440-9d9c-cadd4ab3733e",
+      "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+      "topic_id": "eded2adc-5640-4da4-9db7-9ac4ecce4063",
+      "text": "The trapezoidal formula for earthwork volume with two cross-sections is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "V = L × (A₁ + A₂)"
+        },
+        {
+          "id": "b",
+          "text": "V = (L/2) × (A₁ + A₂)"
+        },
+        {
+          "id": "c",
+          "text": "V = (L/3) × (A₁ + A₂)"
+        },
+        {
+          "id": "d",
+          "text": "V = L × avg(A₁, A₂)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Missing the 1/2 factor; would over-estimate.",
+        "c": "L/3 is the prismoidal constant, not trapezoidal.",
+        "d": "Simplified approximation; less precise.",
+        "correct": "The trapezoidal formula for one interval is V = (L/2) × (A₁ + A₂), where L is distance and A₁, A₂ are cross-sectional areas.",
+        "takeaway": "Trapezoidal: V = (L/2) × (A₁ + A₂) for a single interval."
+      },
+      "explanation": "Missing the 1/2 factor; would over-estimate. L/3 is the prismoidal constant, not trapezoidal. Simplified approximation; less precise. The trapezoidal formula for one interval is V = (L/2) × (A₁ + A₂), where L is distance and A₁, A₂ are cross-sectional areas. Trapezoidal: V = (L/2) × (A₁ + A₂) for a single interval.",
+      "code_citation": "DPWH Blue Book, surveying manuals",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T14:40:23.425014+00:00",
+      "content_hash": "sha256:39c45b80a3594ef79b98a31411713cb68effd7c136cd536c03e74ba07af01170"
+    },
+    {
+      "question_id": "ab723439-0780-496f-a863-05155486f852",
+      "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
+      "topic_id": "eded2adc-5640-4da4-9db7-9ac4ecce4063",
+      "text": "What is the relationship between trapezoidal and prismoidal volumes for the same earthwork cross-sections?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trapezoidal is 2–8% lower than prismoidal"
+        },
+        {
+          "id": "b",
+          "text": "Prismoidal is 2–8% lower than trapezoidal"
+        },
+        {
+          "id": "c",
+          "text": "Both methods give identical results"
+        },
+        {
+          "id": "d",
+          "text": "The difference depends on area units"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Opposite; trapezoidal is actually higher.",
+        "c": "They rarely give identical results; prismoidal is more accurate.",
+        "d": "The relationship is independent of units; it's a formula difference.",
+        "correct": "The prismoidal method typically yields 2–8% LOWER volumes than the trapezoidal method for the same data. This is expected and shows prismoidal's higher accuracy.",
+        "takeaway": "Prismoidal ≈ Trapezoidal × 0.95 (approximately). Prismoidal is more accurate for final billing."
+      },
+      "explanation": "Opposite; trapezoidal is actually higher. They rarely give identical results; prismoidal is more accurate. The relationship is independent of units; it's a formula difference. The prismoidal method typically yields 2–8% LOWER volumes than the trapezoidal method for the same data. This is expected and shows prismoidal's higher accuracy. Prismoidal ≈ Trapezoidal × 0.95 (approximately). Prismoidal is more accurate for final billing.",
+      "code_citation": "Surveying manuals",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T14:40:23.562883+00:00",
+      "content_hash": "sha256:ce8ac5a5ede41ec5f4f86ed79d6b894e25ac7e2739cdd341112d78c6bec37656"
+    },
     {
       "question_id": "98d31146-e56d-4d85-a89a-d3e996b4e342",
       "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
@@ -39,7 +139,7 @@
         "correct": "The prismoidal formula V = (L/3) × [(A₁ + Aₙ) + 4(even-numbered areas) + 2(odd-numbered areas, excluding 1 and n)] is used for high-precision estimates.",
         "takeaway": "Prismoidal: V = (L/3) × [(A₁ + Aₙ) + 4(even) + 2(odd)] for n sections."
       },
-      "explanation": null,
+      "explanation": "That is the trapezoidal formula, not prismoidal. Simple average; not a standard formula. Incorrect; prismoidal applies to multiple sections, not just two. The prismoidal formula V = (L/3) × [(A₁ + Aₙ) + 4(even-numbered areas) + 2(odd-numbered areas, excluding 1 and n)] is used for high-precision estimates. Prismoidal: V = (L/3) × [(A₁ + Aₙ) + 4(even) + 2(odd)] for n sections.",
       "code_citation": "Surveying manuals, DPWH guidelines",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -51,8 +151,8 @@
       "model_id": "ALE-MATL-010-08-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:06836af94ae25f1d2e04d2ccd33960fad37346d2a50c68de3ce365f343372304"
+      "updated_at": "2026-05-06T14:40:23.290769+00:00",
+      "content_hash": "sha256:9c28319c59090e0e57aa19cdcd48f2d13e6f4c2813f573f09e2ad2a1145d7c8f"
     },
     {
       "question_id": "d5115579-fd54-41fa-9c63-8e6240a0929a",
@@ -355,56 +455,6 @@
       "content_hash": "sha256:c16b57723020f4852c9c6c58f76f1ce1602dc9ccb89196fe595d838fc6ba7712"
     },
     {
-      "question_id": "8a9ca302-ebc3-4440-9d9c-cadd4ab3733e",
-      "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
-      "topic_id": "eded2adc-5640-4da4-9db7-9ac4ecce4063",
-      "text": "The trapezoidal formula for earthwork volume with two cross-sections is ___.",
-      "options": [
-        {
-          "id": "a",
-          "text": "V = L × (A₁ + A₂)"
-        },
-        {
-          "id": "b",
-          "text": "V = (L/2) × (A₁ + A₂)"
-        },
-        {
-          "id": "c",
-          "text": "V = (L/3) × (A₁ + A₂)"
-        },
-        {
-          "id": "d",
-          "text": "V = L × avg(A₁, A₂)"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Missing the 1/2 factor; would over-estimate.",
-        "c": "L/3 is the prismoidal constant, not trapezoidal.",
-        "d": "Simplified approximation; less precise.",
-        "correct": "The trapezoidal formula for one interval is V = (L/2) × (A₁ + A₂), where L is distance and A₁, A₂ are cross-sectional areas.",
-        "takeaway": "Trapezoidal: V = (L/2) × (A₁ + A₂) for a single interval."
-      },
-      "explanation": null,
-      "code_citation": "DPWH Blue Book, surveying manuals",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-010-08-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:63b5129c4f33681234ef49d4424706329ec037c94564cb1b54fdeb438309d4c4"
-    },
-    {
       "question_id": "8712ff2e-82a5-4331-9fd3-4508a4f3ed7b",
       "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
       "topic_id": "eded2adc-5640-4da4-9db7-9ac4ecce4063",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:28.926909+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:d5a815146c9d05cce12ed2a06383ac3dd3f60669371535ebf6c09a86a4dde5bd"
-    },
-    {
-      "question_id": "ab723439-0780-496f-a863-05155486f852",
-      "article_id": "0b83bfa7-6ca2-48f8-9f23-52428c85d02a",
-      "topic_id": "eded2adc-5640-4da4-9db7-9ac4ecce4063",
-      "text": "What is the relationship between trapezoidal and prismoidal volumes for the same earthwork cross-sections?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Trapezoidal is 2–8% lower than prismoidal"
-        },
-        {
-          "id": "b",
-          "text": "Prismoidal is 2–8% lower than trapezoidal"
-        },
-        {
-          "id": "c",
-          "text": "Both methods give identical results"
-        },
-        {
-          "id": "d",
-          "text": "The difference depends on area units"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Opposite; trapezoidal is actually higher.",
-        "c": "They rarely give identical results; prismoidal is more accurate.",
-        "d": "The relationship is independent of units; it's a formula difference.",
-        "correct": "The prismoidal method typically yields 2–8% LOWER volumes than the trapezoidal method for the same data. This is expected and shows prismoidal's higher accuracy.",
-        "takeaway": "Prismoidal ≈ Trapezoidal × 0.95 (approximately). Prismoidal is more accurate for final billing."
-      },
-      "explanation": null,
-      "code_citation": "Surveying manuals",
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-010-08-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2ed08e2c33dc5a4d7932f0197fbf422c681e2e49595d69927a9f4bd799fc7994"
     }
   ]
 }

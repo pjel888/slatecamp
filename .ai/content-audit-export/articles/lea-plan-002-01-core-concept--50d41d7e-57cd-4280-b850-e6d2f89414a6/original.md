@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 002 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 The three classical urban models — Concentric Zone, Sector, and Multiple Nuclei — explain how cities grow and organize spatially. Each model identifies the theorist, the year, and the underlying mechanism. These are the most-tested models in the LEA and the most commonly swapped by mistake.
@@ -25,11 +34,19 @@ The **Multiple Nuclei Model** (**Chauncy Harris AND Edward Ullman, 1945**) rejec
 - **Rank-Size Rule** (**George Kingsley Zipf, 1949**) predicts that in a balanced urban system, the second-largest city should be 1/2 the population of the largest, the third city 1/3, and so on. The Philippines dramatically violates this rule—Metro Manila is roughly 10 times larger than Cebu City, creating a primate city pattern.
 
 - **Primate City** (**Mark Jefferson, 1939**) describes a city that is _disproportionately_ large and dominates the urban system far beyond statistical prediction. Manila is the classic Philippine example—it concentrates national commerce, government, education, and culture in a way that violates the rank-size expectation. Primacy is not just being the largest; it is being dramatically oversized.
-<ArticleMedia id="media-lea-plan-002-01-core-concept" type="image" caption="Classical Urban Models — Concentric Zone, Sector, and Multiple Nuclei" description="Three-panel comparison of classical urban land use models: (1) Burgess Concentric Zone (1925) — CBD, transition, working-class, residential, commuter rings; (2) Hoyt Sector Model (1939) — wedge-shaped growth along transport corridors; (3) Harris & Ullman Multiple Nuclei (1945) — polycentric decentralized nodes." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-002-01-core-concept", type="image", caption="Classical Urban Models — Concentric Zone, Sector, and Multiple Nuclei", description="Three-panel comparison of classical urban land use models: (1) Burgess Concentric Zone (1925) — CBD, transition, working-class, residential, commuter rings; (2) Hoyt Sector Model (1939) — wedge-shaped growth along transport corridors; (3) Harris & Ullman Multiple Nuclei (1945) — polycentric decentralized nodes.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-<WikiExamTable headers={["Model","Theorist","Year","Key Mechanism","Philippine Application"]} rows={[{"Model":"Concentric Zone","Theorist":"Ernest W. Burgess","Year":"1925","Key Mechanism":"Concentric rings; CBD expansion outward via ecological succession","Philippine Application":"Metro Manila CBD (Makati-Taguig) expands outward; Quezon City represents middle-ring residential; Antipolo/Cavite farther commuter ring"},{"Model":"Sector (Wedge)","Theorist":"Homer Hoyt","Year":"1939","Key Mechanism":"Pie-shaped sectors along transport corridors; high-rent stability","Philippine Application":"EDSA and major highways create wedge development; BGC and Fort Bonifacio premium sector; industrial sectors along highways"},{"Model":"Multiple Nuclei","Theorist":"Chauncy Harris AND Edward Ullman","Year":"1945","Key Mechanism":"Multiple specialized centers, each with locational requirements","Philippine Application":"BGC (commercial), Quezon City Hall (government), Luneta (culture/recreation), port districts (Intramuros, Manila), residential clusters"}]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Model\",\"Theorist\",\"Year\",\"Key Mechanism\",\"Philippine Application\"]}", rows="{[{\"Model\":\"Concentric Zone\",\"Theorist\":\"Ernest W. Burgess\",\"Year\":\"1925\",\"Key Mechanism\":\"Concentric rings; CBD expansion outward via ecological succession\",\"Philippine Application\":\"Metro Manila CBD (Makati-Taguig) expands outward; Quezon City represents middle-ring residential; Antipolo/Cavite farther commuter ring\"}", Model=true, Sector=true, Wedge=true, Theorist=true, Homer=true, Hoyt=true, Year=true, Key=true, Mechanism=true, Pie-shaped=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -43,7 +60,11 @@ Metro Manila exemplifies all three models simultaneously. The CBD (Makati-Taguig
 
 3. **Application questions:** "The Multiple Nuclei Model best explains [Metro Manila's mix of CBD, port district, and government center / Quezon City's radial growth / suburban sprawl]?" Must match the mechanism to the phenomenon.
 
-<Tip>**Memory anchors:** BURGESS = **BULLSEYE** (concentric circles). HOYT = **HOT CORRIDORS** (sectors along transit). HARRIS + ULLMAN = **MULTIPLE** (two names = multiple nuclei).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory anchors:** BURGESS = **BULLSEYE** (concentric circles). HOYT = **HOT CORRIDORS** (sectors along transit). HARRIS + ULLMAN = **MULTIPLE** (two names = multiple nuclei).
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Most common swap on the LEA: Burgess (Concentric Zone = bullseye) vs. Hoyt (Sector Model = pie wedges). Memory anchor: BURGESS = BULLSEYE, HOYT = HOT CORRIDORS. Multiple Nuclei requires BOTH Harris AND Ullman.
 
@@ -53,4 +74,8 @@ See **LEA-PLAN-001-01** (Planning Fundamentals) for theorist context, **LEA-PLAN
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing Burgess (Concentric Zone) with Hoyt (Sector Model)—they are always taught together and are the most commonly swapped names on the LEA","Forgetting that Multiple Nuclei requires BOTH Harris AND Ullman—writing only one name is incomplete","Thinking a Primate City is simply 'the largest city' instead of 'disproportionately large'—Manila is not just largest; it is 10× larger than the second city","Attributing Ebenezer Howard's Garden City concept to urban structure models—Howard proposed new towns, not an explanation of existing city form"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing Burgess (Concentric Zone) with Hoyt (Sector Model)—they are always taught together and are the most commonly swapped names on the LEA\",\"Forgetting that Multiple Nuclei requires BOTH Harris AND Ullman—writing only one name is incomplete\",\"Thinking a Primate City is simply 'the largest city' instead of 'disproportionately large'—Manila is not just largest; it is 10× larger than the second city\",\"Attributing Ebenezer Howard's Garden City concept to urban structure models—Howard proposed new towns, not an explanation of existing city form\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

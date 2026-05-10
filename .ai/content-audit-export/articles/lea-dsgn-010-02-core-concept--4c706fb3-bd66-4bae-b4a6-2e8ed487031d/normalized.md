@@ -10,7 +10,7 @@ Before memorizing details from this topic, state the task in one sentence: what 
 ## Learning Goal
 Design parking structure geometry — ramp grades (max 1:7), bay widths, aisle dimensions, column spacing, and turning radii — to accommodate vehicle maneuverability, verify accessible stall dimensions (3.7m × 5.0m), and apply structural and operational constraints.
 
-Parking structure geometry—ramp grades, bay widths, aisle dimensions, column spacing, and turning radii—determines whether a parking design is buildable and user-friendly. 
+Parking structure geometry—ramp grades, bay widths, aisle dimensions, column spacing, and turning radii—determines whether a parking design is buildable and user-friendly.
 ## Core Concept
 
 A parking structure must accommodate vehicle maneuverability, emergency egress, and structural efficiency. The geometry is constrained by:

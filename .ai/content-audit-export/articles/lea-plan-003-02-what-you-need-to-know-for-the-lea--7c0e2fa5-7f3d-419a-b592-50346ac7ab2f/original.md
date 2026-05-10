@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 003 02 What You Need To Know For The Lea** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -54,7 +61,11 @@ Characteristics:
 - Examples: luxury residential subdivisions, high-end condominiums, exclusive golf course communities
 
 Open-market housing has no affordability requirement, no balanced housing obligation (except insofar as RA 7279 requires developers to produce an equivalent value of socialized housing), and is entirely driven by market demand and supply.
-<ArticleMedia id="media-lea-plan-003-02-what-you-need-to-know-fo" type="image" caption="Housing Delivery Methods — On-Site, Off-Site, Joint Venture, CMP, NHA Direct, Pag-IBIG" description="Flowchart diagram showing six housing delivery methods for socialized and economic housing in the Philippines: (1) On-Site Balanced Housing (developer builds within same project), (2) Off-Site Balanced Housing (separate location), (3) Joint Venture with NHA, (4) Bond Contribution to NHA, (5) Community Mortgage Program via SHFC, and (6) Pag-IBIG Direct Purchase. Arrows indicate regulatory pathway and financing flow." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-003-02-what-you-need-to-know-fo", type="image", caption="Housing Delivery Methods — On-Site, Off-Site, Joint Venture, CMP, NHA Direct, Pag-IBIG", description="Flowchart diagram showing six housing delivery methods for socialized and economic housing in the Philippines: (1) On-Site Balanced Housing (developer builds within same project), (2) Off-Site Balanced Housing (separate location), (3) Joint Venture with NHA, (4) Bond Contribution to NHA, (5) Community Mortgage Program via SHFC, and (6) Pag-IBIG Direct Purchase. Arrows indicate regulatory pathway and financing flow.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 <ArticleMedia id="media-lea-plan-003-02-what-you-need-to-know-fo" type="image" caption="Philippine Housing Classification Comparison — Socialized, Economic, Low-Cost, Open-Market" description="Four-panel comparison chart showing the four Philippine housing classifications: Socialized (BP 220 — 72 sqm lot, 22 sqm floor, <₱15K/mo income), Economic (BP 220 — 100 sqm lot, 42 sqm floor, ₱15-40K/mo), Low-Cost (industry standard — 100-200 sqm lot, 60-100 sqm floor, ₱40-60K/mo), and Open-Market (market-determined, >₱60K/mo). Each panel shows minimum lot area, floor area, price range, financing source, and primary developer type. Color-coded by affordability tier." suggestedAsset="Diagram or reference image" status="placeholder" />
 
 ---
@@ -146,7 +157,7 @@ Pag-IBIG members use their accumulated fund balance to purchase socialized or ec
 Questions often ask: "Under what delivery method is socialized housing produced?" Students must not confuse the classification (socialized) with the delivery method (on-site, off-site, NHA, CMP, Pag-IBIG, etc.). The classification is fixed by law; the delivery method is a policy choice.
 
 Example:
-- **Question:** "A developer builds 300 units of socialized housing using Pag-IBIG financing. What housing classification is this?" 
+- **Question:** "A developer builds 300 units of socialized housing using Pag-IBIG financing. What housing classification is this?"
 - **Answer:** Socialized housing (classification is determined by BP 220 standards, not financing source).
 - **Not the Answer:** "Pag-IBIG housing" — this incorrectly treats the financing method as a classification.
 
@@ -159,7 +170,11 @@ Another example:
 
 ### Common Distractors and Mistakes
 
-<WikiMistakeList mistakes={[{"mistake":"Low-cost housing is a statutory classification in BP 220.","fact":"BP 220 defines only socialized (72/28 lot, 22 floor) and economic (100 lot, 42 floor) housing. Low-cost is an industry-recognized segment between economic and open-market, but not a legal classification."},{"mistake":"Economic housing has a minimum lot area of 72 sq.m.","fact":"72 sq.m. is socialized housing (new subdivision). Economic housing is 100 sq.m. minimum lot area under BP 220."},{"mistake":"Socialized housing on-site or off-site changes its classification from socialized to something else.","fact":"On-site and off-site are delivery methods, not classifications. Both deliver socialized housing; the location and financing source do not change the legal classification."},{"mistake":"NHA is responsible for financing end-buyer housing loans.","fact":"NHA builds housing; Pag-IBIG/HDMF finances loans to individual buyers. These are distinct functions."},{"mistake":"A private developer building a luxury subdivision has no responsibility to produce affordable housing.","fact":"RA 7279 and RA 10884 require open-market developers to produce balanced housing equivleant to 15–20% of project cost as socialized units."},{"mistake":"The Community Mortgage Program (CMP) is a classification of housing.","fact":"CMP is a delivery method (SHFC financing for community land purchases) that can deliver socialized or economic housing. It is not itself a classification."}]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[{\"mistake\":\"Low-cost housing is a statutory classification in BP 220.\",\"fact\":\"BP 220 defines only socialized (72/28 lot, 22 floor) and economic (100 lot, 42 floor) housing. Low-cost is an industry-recognized segment between economic and open-market, but not a legal classification.\"}", mistake=true, Economic=true, housing=true, has=true, a=true, minimum=true, lot=true, area=true, of=true, sq=true, m=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 009 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -17,11 +26,11 @@ _Hardware schedules_ specify the lock type, hinge size and material, closer requ
 _Lighting schedules_ tabulate fixture type, wattage, quantity per room, mounting height, color temperature (2700K, 4000K), and control method (on/off, dimming, motion sensor). For electrical coordination, lighting schedules are often developed jointly with the mechanical engineer and building systems designer.
 
 
-<ArticleMedia id="media-three-part-format-diagram" layout="single" type="image" status="placeholder"
-  alt="Diagram showing the three-part specification section format: Part 1 General, Part 2 Products, Part 3 Execution with information type summaries"
-  caption="Future diagram: three-part specification format — Part 1 General, Part 2 Products, Part 3 Execution"
-  suggestedAsset="Annotated diagram or template showing each part's contents"
-  placementIntent="Visualizes the structure of a specification section" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-three-part-format-diagram", layout="single", type="image", status="placeholder", alt="Diagram showing the three-part specification section format: Part 1 General, Part 2 Products, Part 3 Execution with information type summaries", caption="Future diagram: three-part specification format — Part 1 General, Part 2 Products, Part 3 Execution", suggestedAsset="Annotated diagram or template showing each part's contents", placementIntent="Visualizes the structure of a specification section"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -42,11 +51,11 @@ Schedules are essential in the Philippine climate and regulatory context. Fire-r
 In practice, schedules are often developed by interior designers or specification writers in coordination with the architect. The architect verifies that schedules are complete, internally consistent (door marks match floor plan symbols), and aligned with specification requirements. A door schedule specifying "Fire-Rated 60-minute" must correspond to a Division 08 specification stating "60-minute fire rating per ASTM E152."
 
 
-<ArticleMedia id="media-spec-section-annotated" layout="single" type="image" status="placeholder"
-  alt="Annotated specification section showing Part 1 General, Part 2 Products, and Part 3 Execution with explanatory callouts for each information type"
-  caption="Future diagram: annotated specification section — three-part format with explanatory callouts"
-  suggestedAsset="Annotated excerpt from a real specification section"
-  placementIntent="Provides visual example of three-part spec section structure" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-spec-section-annotated", layout="single", type="image", status="placeholder", alt="Annotated specification section showing Part 1 General, Part 2 Products, and Part 3 Execution with explanatory callouts for each information type", caption="Future diagram: annotated specification section — three-part format with explanatory callouts", suggestedAsset="Annotated excerpt from a real specification section", placementIntent="Provides visual example of three-part spec section structure"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 _Pattern 1 — Schedule Completeness:_ The exam presents an incomplete door schedule (missing columns like Hardware Set, Fire Rating, or Remarks) and asks you to identify what information is missing. Answer: A complete door schedule must include quantities, sizes, frame/face materials, fire ratings (where applicable), hardware assignments, and any special requirements (security, accessibility). Incomplete schedules lead to field changes and cost overruns.
@@ -59,21 +68,34 @@ _Pattern 4 — Philippine Regulatory Requirements:_ A window schedule for a coas
 
 _Pattern 5 — Schedule Use in Construction Administration:_ The exam describes a scenario where a contractor installs a door with the wrong hardware or wrong size. The architect should have used a schedule to prevent this. What information in the schedule would have prevented this error? Answer: Clear, complete schedules with photographs or samples referenced in the schedule prevent field substitutions.
 
-<Tip>
-Memory aid for schedules: **Completeness, Consistency, Coordination**. Every schedule must be complete (all columns filled), consistent internally (door marks match drawings), and coordinated with specifications and drawings. A missing door mark or hardware set is a red flag. Always verify schedule accuracy before sending to bidding or construction.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid for schedules: **Completeness, Consistency, Coordination**. Every schedule must be complete (all columns filled), consistent internally (door marks match drawings), and coordinated with specifications and drawings. A missing door mark or hardware set is a red flag. Always verify schedule accuracy before sending to bidding or construction.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Including a room in the room finish schedule but forgetting to label that room number on the floor plan, or vice versa. Field team cannot find the schedule entry for the room." correction="Schedules and drawings must be cross-keyed consistently. Every room number on a floor plan must appear in the room finish schedule. Every door mark on a floor plan must appear in the door schedule. Verify this mapping before contract documents are issued." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Including a room in the room finish schedule but forgetting to label that room number on the floor plan, or vice versa. Field team cannot find the schedule entry for the room.", correction="Schedules and drawings must be cross-keyed consistently. Every room number on a floor plan must appear in the room finish schedule. Every door mark on a floor plan must appear in the door schedule. Verify this mapping before contract documents are issued."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Specifying different performance criteria in the schedule versus the specification. Example: window schedule specifies 'U-value 0.22' but Division 08 specification requires 'U-value 0.25 minimum.' This ambiguity creates disputes over which document controls." correction="The specification typically controls performance and acceptance criteria. The schedule should reference specification sections (e.g., 'See Division 08 for glazing requirements'). Never let schedule and specification criteria conflict. If they differ, the specification (Part 1: General) must clarify which takes precedence." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Specifying different performance criteria in the schedule versus the specification. Example: window schedule specifies 'U-value 0.22' but Division 08 specification requires 'U-value 0.25 minimum.' This ambiguity creates disputes over which document controls.", correction="The specification typically controls performance and acceptance criteria. The schedule should reference specification sections (e.g., 'See Division 08 for glazing requirements'). Never let schedule and specification criteria conflict. If they differ, the specification (Part 1: General) must clarify which takes precedence."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Developing a door schedule without fire rating information when fire-rated doors are required by NSCP (commercial buildings, corridors, exit stairs)", "Omitting hardware schedules, forcing the contractor to infer hardware requirements from specification text", "Creating a room finish schedule but failing to coordinate it with interior design drawings, leading to color/material mismatches", "Specifying 'typical' instead of itemizing each unique door/window (defeats the purpose of the schedule)", "Failing to identify accessibility requirements in hardware schedules (door force, lever handle height, latch design per ADA)", "Omitting quantity columns, making it unclear how many of each item to fabricate", "Not including remarks/notes columns for special conditions (e.g., 'coordinate with structural opening,' 'hold for field verification')"]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Developing a door schedule without fire rating information when fire-rated doors are required by NSCP (commercial buildings, corridors, exit stairs)\", \"Omitting hardware schedules, forcing the contractor to infer hardware requirements from specification text\", \"Creating a room finish schedule but failing to coordinate it with interior design drawings, leading to color/material mismatches\", \"Specifying 'typical' instead of itemizing each unique door/window (defeats the purpose of the schedule)\", \"Failing to identify accessibility requirements in hardware schedules (door force, lever handle height, latch design per ADA)\", \"Omitting quantity columns, making it unclear how many of each item to fabricate\", \"Not including remarks/notes columns for special conditions (e.g., 'coordinate with structural opening,' 'hold for field verification')\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also within Architectural Specifications and Documentation: **lea-matl-009-01-core-concept**, **lea-matl-009-02-core-concept**, **lea-matl-009-04-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

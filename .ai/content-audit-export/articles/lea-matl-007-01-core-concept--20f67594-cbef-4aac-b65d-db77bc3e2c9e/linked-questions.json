@@ -1,9 +1,109 @@
 {
   "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:74867bcca5708a7a51e7eaeade32d3d968c9a09702c096d2df0f9e6724522358",
+  "linked_questions_hash": "sha256:b1a0aa095168ae9e9f351d36923972edb3cd46c5c194d3e314d431294cfb2f69",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "aab76f9d-e868-4acc-9cf5-0723aedcf966",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "According to ASTM C373, what is the maximum water absorption percentage that defines a porcelain tile?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Less than 0.5%"
+        },
+        {
+          "id": "b",
+          "text": "B) Between 0.5% and 3%"
+        },
+        {
+          "id": "c",
+          "text": "C) Between 3% and 7%"
+        },
+        {
+          "id": "d",
+          "text": "D) Greater than 7%"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Semi-vitreous tiles fall in the 0.5-3% range, acceptable for light-duty areas but not ground-level installations.",
+        "c": "Non-vitreous tiles absorb 3-7%, suitable only for interior walls, not floors.",
+        "d": "Unglazed earthenware and porous materials exceed 7%, unsuitable for any interior floor application.",
+        "correct": "Porcelain tiles are defined by water absorption ≤0.5% per ASTM C373, making them impervious (not non-vitreous). Semi-vitreous is 3-7%; vitreous is 0.5-3%. and suitable for wet areas.",
+        "takeaway": "Memorize: porcelain <0.5%, semi-vitreous 0.5-3%, non-vitreous >3%. For wet areas, always specify porcelain."
+      },
+      "explanation": "Semi-vitreous tiles fall in the 0.5-3% range, acceptable for light-duty areas but not ground-level installations. Non-vitreous tiles absorb 3-7%, suitable only for interior walls, not floors. Unglazed earthenware and porous materials exceed 7%, unsuitable for any interior floor application. Porcelain tiles are defined by water absorption ≤0.5% per ASTM C373, making them impervious (not non-vitreous). Semi-vitreous is 3-7%; vitreous is 0.5-3%. and suitable for wet areas. Memorize: porcelain <0.5%, semi-vitreous 0.5-3%, non-vitreous >3%. For wet areas, always specify porcelain.",
+      "code_citation": "ASTM C373 Standard Test Methods; Philippine construction practice",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T16:21:47.638412+00:00",
+      "content_hash": "sha256:6bf68f9986883565057870b675c0f57f5d913fae834fed6166753d1b89537d71"
+    },
+    {
+      "question_id": "9137f9d5-5ebf-479f-93e0-aa3f23f3ab03",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "Which PEI wear rating is the minimum acceptable for a residential kitchen floor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) PEI Grade I"
+        },
+        {
+          "id": "b",
+          "text": "B) PEI Grade II"
+        },
+        {
+          "id": "c",
+          "text": "C) PEI Grade III"
+        },
+        {
+          "id": "d",
+          "text": "D) PEI Grade IV"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PEI I is wall-only; unsuitable for any floor.",
+        "b": "PEI II is light residential use (bathrooms, bedrooms); insufficient for kitchens where daily wear is heavier.",
+        "d": "PEI IV and V are commercial-grade, unnecessary for residential but acceptable if budget allows.",
+        "correct": "PEI Grade III is the standard for residential kitchens, handling normal foot traffic without visible wear within the service life.",
+        "takeaway": "Kitchen = Grade III minimum. Bathrooms and bedrooms = Grade II acceptable. Retail and offices = Grade IV or V."
+      },
+      "explanation": "PEI I is wall-only; unsuitable for any floor. PEI II is light residential use (bathrooms, bedrooms); insufficient for kitchens where daily wear is heavier. PEI IV and V are commercial-grade, unnecessary for residential but acceptable if budget allows. PEI Grade III is the standard for residential kitchens, handling normal foot traffic without visible wear within the service life. Kitchen = Grade III minimum. Bathrooms and bedrooms = Grade II acceptable. Retail and offices = Grade IV or V.",
+      "code_citation": "PEI Rating System; LEA specification standards",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T16:21:47.771631+00:00",
+      "content_hash": "sha256:8a5a24adcb60a272305793a93bbb2faada8a36ae25f7c40fb018f1e93407124f"
+    },
     {
       "question_id": "c7ae46cd-f4c9-4aa5-b056-861f2f64f0b9",
       "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
@@ -205,56 +305,6 @@
       "content_hash": "sha256:3337170825f410bc705f877bbc8237ab78772f955583f80b8241160cf4ee06b3"
     },
     {
-      "question_id": "aab76f9d-e868-4acc-9cf5-0723aedcf966",
-      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
-      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
-      "text": "According to ASTM C373, what is the maximum water absorption percentage that defines a porcelain tile?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) Less than 0.5%"
-        },
-        {
-          "id": "b",
-          "text": "B) Between 0.5% and 3%"
-        },
-        {
-          "id": "c",
-          "text": "C) Between 3% and 7%"
-        },
-        {
-          "id": "d",
-          "text": "D) Greater than 7%"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Semi-vitreous tiles fall in the 0.5-3% range, acceptable for light-duty areas but not ground-level installations.",
-        "c": "Non-vitreous tiles absorb 3-7%, suitable only for interior walls, not floors.",
-        "d": "Unglazed earthenware and porous materials exceed 7%, unsuitable for any interior floor application.",
-        "correct": "Porcelain tiles are defined by water absorption ≤0.5% per ASTM C373, making them impervious (not non-vitreous). Semi-vitreous is 3-7%; vitreous is 0.5-3%. and suitable for wet areas.",
-        "takeaway": "Memorize: porcelain <0.5%, semi-vitreous 0.5-3%, non-vitreous >3%. For wet areas, always specify porcelain."
-      },
-      "explanation": null,
-      "code_citation": "ASTM C373 Standard Test Methods; Philippine construction practice",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-007-01-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:332894b773c08fffeefa68117e17522a6d882b6d3fa14c50378fdf46f70c24ea"
-    },
-    {
       "question_id": "b50574a4-16b0-429e-b274-fb00b5704096",
       "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
       "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:d04891d77b5b122bcf0e71ba189d1b7eaaaa5639f2598249befd3025c3d9cc33"
-    },
-    {
-      "question_id": "9137f9d5-5ebf-479f-93e0-aa3f23f3ab03",
-      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
-      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
-      "text": "Which PEI wear rating is the minimum acceptable for a residential kitchen floor?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) PEI Grade I"
-        },
-        {
-          "id": "b",
-          "text": "B) PEI Grade II"
-        },
-        {
-          "id": "c",
-          "text": "C) PEI Grade III"
-        },
-        {
-          "id": "d",
-          "text": "D) PEI Grade IV"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "PEI I is wall-only; unsuitable for any floor.",
-        "b": "PEI II is light residential use (bathrooms, bedrooms); insufficient for kitchens where daily wear is heavier.",
-        "d": "PEI IV and V are commercial-grade, unnecessary for residential but acceptable if budget allows.",
-        "correct": "PEI Grade III is the standard for residential kitchens, handling normal foot traffic without visible wear within the service life.",
-        "takeaway": "Kitchen = Grade III minimum. Bathrooms and bedrooms = Grade II acceptable. Retail and offices = Grade IV or V."
-      },
-      "explanation": null,
-      "code_citation": "PEI Rating System; LEA specification standards",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-007-01-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:24ca3cd671c745125a2dfc3b16db2dc1bbc2297fea6dae9924c23c022f7afd4b"
     },
     {
       "question_id": "a3167e74-3e6f-4147-ac53-9b9cf0146f41",

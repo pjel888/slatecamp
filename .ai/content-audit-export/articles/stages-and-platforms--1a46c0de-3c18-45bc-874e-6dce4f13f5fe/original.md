@@ -1,6 +1,12 @@
 # Stages and Platforms
 
----
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Stages and Platforms** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
@@ -299,7 +305,11 @@ D. 15.00 sq.m
 
 > **Answer: C**
 >
-<LawCallout />
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -314,7 +324,11 @@ D. 14.00 sq.m
 
 > **Answer: C**
 >
-<LawCallout />
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -329,7 +343,11 @@ D. 3-hour fire-resistive construction, extending at least 1.20 m above the audit
 
 > **Answer: B**
 >
-<LawCallout />
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -362,8 +380,11 @@ ALE Trap: Platforms ≤ 1.20 m high are NOT classified as stages and do not requ
 
 
 
-<ArticleMedia id="media-stages-and-platforms-0" type="image" caption="Stage and Platform Design — Proscenium Wall, Gridiron, and Projection Room Layout" description="Section and plan of a proscenium stage showing: stage floor, proscenium wall (2-hour fire rating, extending 1.20m above roof), stage ventilator (min 5% of stage floor area), gridiron and fly gallery, motion picture projection room (min 7.00 sqm + 3.50 sqm per additional projector), and two-exit requirement with doors separated by at least 1/3 of room perimeter." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-stages-and-platforms-0", type="image", caption="Stage and Platform Design — Proscenium Wall, Gridiron, and Projection Room Layout", description="Section and plan of a proscenium stage showing: stage floor, proscenium wall (2-hour fire rating, extending 1.20m above roof), stage ventilator (min 5% of stage floor area), gridiron and fly gallery, motion picture projection room (min 7.00 sqm + 3.50 sqm per additional projector), and two-exit requirement with doors separated by at least 1/3 of room perimeter."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Cross‑References
 
 **Accessible Seating In Assembly Areas**, **Fixtures And Small Items In Common Areas**, **Fire Extinguishing Systems**, **Vertical Openings And Floor Roof Construction**
-

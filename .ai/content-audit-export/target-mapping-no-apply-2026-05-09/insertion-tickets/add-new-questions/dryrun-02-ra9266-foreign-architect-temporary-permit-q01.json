@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+  "dry_question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q01",
+  "target_article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "Definition of foreign architect is useful and not the same intent as existing permit/reciprocity items.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "RA 9266 IRR, Section 3, Item 30, PDF p.5.",
+    "text": "Under the RA 9266 IRR, which description best matches a foreign architect?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Section 3, Item 30 defines the foreign architect by non-Filipino/non-Philippine licensure status plus home-country architectural licensure.",
+      "distractors": {
+        "A": "Foreign ownership of the firm is not the definition.",
+        "C": "Studying abroad does not make a Philippine RLA a foreign architect under this definition.",
+        "D": "The contractor relationship is not the statutory definition."
+      },
+      "takeaway": "The definition turns on citizenship, Philippine registration/licensure, and home-country licensure."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "ra9266-foreign-q1",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "B",
+    "explanation": "RA 9266 IRR, Section 3, Item 30, PDF p.5.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "A Filipino architect working for a foreign-owned firm"
+      },
+      {
+        "id": "B",
+        "text": "An architect not Filipino and not registered and licensed in the Philippines, but licensed in the home country"
+      },
+      {
+        "id": "C",
+        "text": "Any architect who studied abroad but holds a Philippine PRC card"
+      },
+      {
+        "id": "D",
+        "text": "A contractor who hires a foreign design consultant"
+      }
+    ]
+  },
+  "sme_source_locator": "RA 9266 IRR, Section 3, Item 30, PDF p.5.",
+  "code_citation": "RA 9266 IRR, Section 3, Item 30, PDF p.5.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

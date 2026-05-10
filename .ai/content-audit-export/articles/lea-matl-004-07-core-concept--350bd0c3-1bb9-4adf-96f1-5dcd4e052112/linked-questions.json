@@ -1,7 +1,7 @@
 {
   "article_id": "350bd0c3-1bb9-4adf-96f1-5dcd4e052112",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:eab8a8c46c20e3d402342a6a1e6aef46904d392b9e6eced68b5b89ac1361b1c3",
+  "linked_questions_hash": "sha256:2c36e0e1d5d5936ccfdca544471105dc4a88648589de0efc48a59a05f4fd5e37",
   "question_count": 10,
   "questions": [
     {
@@ -38,7 +38,7 @@
         "d": "MRF is not economical due to complex connections; braced frames are cheaper.",
         "correct": "MRF transfers lateral forces through bending moment at rigid beam-column connections. Advantages: architectural flexibility (open floor plans, no interior bracing). Disadvantages: require larger members for moment capacity, complex connections (welded or bolted moment plates), higher cost. Essential for ductility in seismic regions (Philippines)."
       },
-      "explanation": null,
+      "explanation": "Braced frames use axial force in diagonals, not bending. Floor decking carries gravity loads; lateral forces are in frame. MRF is not economical due to complex connections; braced frames are cheaper. MRF transfers lateral forces through bending moment at rigid beam-column connections. Advantages: architectural flexibility (open floor plans, no interior bracing). Disadvantages: require larger members for moment capacity, complex connections (welded or bolted moment plates), higher cost. Essential for ductility in seismic regions (Philippines).",
       "code_citation": "AISC 360-22; NSCP 2015 Chapter 5",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -50,8 +50,8 @@
       "model_id": "ALE-MATL-004-07-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:80daa0bd97f9f361107ee746d3d2735e7888e4f871236704b05c9c5df5dc5463"
+      "updated_at": "2026-05-06T14:43:19.333572+00:00",
+      "content_hash": "sha256:dae3e5d8cf7ad69adc9ae0a8e59c3b924e1660256fcb2147c827d63af9918406"
     },
     {
       "question_id": "4080f5cd-695e-40d9-8f66-102d884693eb",
@@ -234,7 +234,7 @@
         "d": "Decking cannot be installed before columns and beams support it.",
         "correct": "Correct sequence: (1) Erect columns from lowest level upward, (2) Install temporary bracing (diagonals, knee braces) to stabilize frame against wind/seismic, (3) Install floor beams and make connections (bolted or welded), (4) Install deck and concrete. Temporary bracing is critical to prevent instability and collapse during erection."
       },
-      "explanation": null,
+      "explanation": "Beams are installed after columns and bracing, not first. Fireproofing is installed after frame is complete and connections are verified. Decking cannot be installed before columns and beams support it. Correct sequence: (1) Erect columns from lowest level upward, (2) Install temporary bracing (diagonals, knee braces) to stabilize frame against wind/seismic, (3) Install floor beams and make connections (bolted or welded), (4) Install deck and concrete. Temporary bracing is critical to prevent instability and collapse during erection.",
       "code_citation": "AISC 360-22; NSCP 2015 Chapter 5; OSHA 1926.500+",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -246,8 +246,8 @@
       "model_id": "ALE-MATL-004-07-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:98c11a646e6e0b3d84b65373c1222419bc2b76bea739694c56d268587c017196"
+      "updated_at": "2026-05-06T14:43:19.455378+00:00",
+      "content_hash": "sha256:8fa579b7f1d803d6c28b1927dc86ca2790ac2270acbd8f8d3023591319dbcb17"
     },
     {
       "question_id": "9fbc565d-046c-4cdb-8b49-61f11a36c026",
@@ -283,7 +283,7 @@
         "d": "Precast elements do not enhance lateral system; this is tangential.",
         "correct": "Dual systems combine MRF (ductile, absorbs seismic energy elastically) with bracing (stiff, reduces lateral drift). MRF alone requires large members for moment capacity; bracing alone is brittle if poorly designed. Dual optimizes both seismic ductility (essential in Philippines per NSCP 2015) and stiffness, reducing member sizes and cost."
       },
-      "explanation": null,
+      "explanation": "Two MRFs add redundancy but do not reduce member sizes. Two braced systems are stiff but brittle; ductility is sacrificed. Precast elements do not enhance lateral system; this is tangential. Dual systems combine MRF (ductile, absorbs seismic energy elastically) with bracing (stiff, reduces lateral drift). MRF alone requires large members for moment capacity; bracing alone is brittle if poorly designed. Dual optimizes both seismic ductility (essential in Philippines per NSCP 2015) and stiffness, reducing member sizes and cost.",
       "code_citation": "AISC 360-22; NSCP 2015 Chapter 5",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -295,8 +295,8 @@
       "model_id": "ALE-MATL-004-07-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:88ecada472d0e420c3afbba0864961357e9948d875e142375ce0321d757d010f"
+      "updated_at": "2026-05-06T14:43:19.57158+00:00",
+      "content_hash": "sha256:d5dfe7cf45516cc346b810163d583c332243f983f6a15ee39e0b1801976d6807"
     },
     {
       "question_id": "7c51503e-1a06-4087-a462-0b77207825f0",

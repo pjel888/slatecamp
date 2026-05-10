@@ -1,0 +1,562 @@
+{
+  "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:cca35c7e5f89c5109b3e790e50d69a91fbfe5371c66c477e41f513fd132fb4d4",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "8dce4846-35a3-4745-ab75-f01b43723c34",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Fixtures and Small Items in Common Areas\", if a project requires 100 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "100 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "100 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "100 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 100 mm as the requirement. Context: fountain includes a bottle-filling station, the bottle filler spout is set at **...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:10.27217+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4e9095bdc1aa1b907281acda5827619a6e240f7dba49a68b60e1a8180401fb79"
+    },
+    {
+      "question_id": "5fade63d-e0ec-4d5e-b919-470699b22cf8",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), what is the minimum illumination level required at accessible public telephone areas, and under which section is this specified?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100 lux — the minimum for accessible routes and corridors under BP 344"
+        },
+        {
+          "id": "B",
+          "text": "200 lux — specifically for accessible public telephone areas under Sec. 11.2"
+        },
+        {
+          "id": "C",
+          "text": "300 lux — the standard for task areas requiring close-range visual work"
+        },
+        {
+          "id": "D",
+          "text": "500 lux — the requirement for all accessible transaction counters and communication fixtures"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible telephone areas require 200 lux under BP 344 (2024 IRR) Sec. 11.2.",
+        "explanation": "BP 344 (2024 IRR) Sec. 11.2 specifies 200 lux minimum illumination at accessible public telephone areas. This is higher than general corridor lighting because low-vision users must be able to read instructions, dial, and check displays at the phone. The 200 lux standard is specific to telephone areas — it does not apply universally to all accessible fixtures.",
+        "common_misconceptions": [
+          "Assuming telephone area illumination follows general corridor lighting standards",
+          "Confusing the 200 lux telephone standard with area-of-refuge illumination (also 200 lux, but a different element)"
+        ]
+      },
+      "explanation": "This question tests the specific 200 lux telephone area illumination requirement — a factual recall item that is easy to miss.",
+      "code_citation": "BP 344 2024 IRR, Sec. 11.2",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ceca6f88fe54c255e2f7911f52ed53a10c094a15bcccb6720414d480706291cc"
+    },
+    {
+      "question_id": "7162aeff-6c26-4136-aed5-c84f2d35143e",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR) Section 3.2.b, what is the specified seat height, minimum seat length, and minimum back support start height for an accessible bench?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Seat height 450 mm; seat length min 1,200 mm; back support starts 50 mm above seat surface"
+        },
+        {
+          "id": "B",
+          "text": "Seat height 400 mm; seat length min 1,500 mm; back support starts flush with seat surface"
+        },
+        {
+          "id": "C",
+          "text": "Seat height 500 mm; seat length min 1,200 mm; back support starts 100 mm above seat surface"
+        },
+        {
+          "id": "D",
+          "text": "Seat height 450 mm; seat length min 900 mm; back support starts 50 mm above seat surface"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible benches: 450 mm seat height, 1,200 mm minimum seat length, back support begins 50 mm above seat surface.",
+        "explanation": "BP 344 (2024 IRR) Sec. 3.2.b specifies: seat height 450 mm AFF (matching wheelchair seat height for lateral transfers); minimum seat length 1,200 mm (same as the back support length); back support starts at 50 mm above the seat surface (the gap aids transfer by persons with mobility impairments); back support top reaches 450 mm above seat surface. The 50 mm gap is intentional — flush backs impede transfers.",
+        "common_misconceptions": [
+          "Assuming the back support starts flush with the seat (no gap)",
+          "Using 900 mm as the minimum seat length instead of 1,200 mm"
+        ]
+      },
+      "explanation": "This question tests three simultaneous bench specifications — seat height, length, and the back support gap — all from the same section.",
+      "code_citation": "BP 344 2024 IRR, Sec. 3.2.b",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8738521f8687725250d8d2849eb87cdd7840b72ea2a28b20d52d01c5fc2f592c"
+    },
+    {
+      "question_id": "1d681c23-e1f2-4786-831d-a9b28d536a38",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), accessible benches must be placed at maximum intervals of 30 m along circulation routes. A plaza has benches every 45 m. What is the compliance status and the minimum load capacity required for each bench?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Non-compliant spacing; benches must withstand a minimum load of 75 kg"
+        },
+        {
+          "id": "B",
+          "text": "Non-compliant spacing; benches must withstand a minimum load of 113 kg"
+        },
+        {
+          "id": "C",
+          "text": "Compliant spacing since 45 m is within the 60 m walkway rest space interval; benches need no load specification"
+        },
+        {
+          "id": "D",
+          "text": "Non-compliant spacing; benches must withstand a minimum load of 150 kg to accommodate assistive devices"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Benches spaced 45 m apart violate the 30 m maximum interval; each bench must withstand at least 113 kg.",
+        "explanation": "BP 344 (2024 IRR) Sec. 18.1.c requires benches at intervals not exceeding 30 m along accessible circulation routes. At 45 m spacing, benches are 15 m too far apart — non-compliant. The 30 m standard is based on research on accessible pedestrian networks and the walking distance threshold for persons with cardiac, respiratory, and mobility conditions. Each bench must also withstand a minimum load of 113 kg (Sec. 3.2.c), accounting for a large-framed user plus assistive device.",
+        "common_misconceptions": [
+          "Confusing the 30 m bench interval with the 60 m walkway rest space interval",
+          "Assuming no specific load capacity is required for accessible benches"
+        ]
+      },
+      "explanation": "This question combines two bench specifications — the 30 m spacing interval and the 113 kg load capacity — tested together to require simultaneous recall.",
+      "code_citation": "BP 344 2024 IRR, Sec. 18.1.c; Sec. 3.2.c",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:55fdeae230c00ee21320ba154e9f71a9ae57f56c52ea5960df8a4c53d2405f81"
+    },
+    {
+      "question_id": "ae50e718-27f8-41eb-ac50-4443810ac699",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A designer specifies a 1,500 × 1,500 mm clear floor space in front of both a drinking fountain and a public ATM. Under BP 344 (2024 IRR), are these specifications compliant?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compliant for both — 1,500 × 1,500 mm exceeds the minimum clear floor space for fountains and ATMs"
+        },
+        {
+          "id": "B",
+          "text": "Compliant for the ATM only — ATMs require 1,500 × 1,500 mm; fountains require 1,800 × 1,800 mm"
+        },
+        {
+          "id": "C",
+          "text": "Non-compliant for both — both drinking fountains and ATMs require 1,800 × 1,800 mm clear floor space"
+        },
+        {
+          "id": "D",
+          "text": "Compliant for the fountain only — fountains require 1,500 × 1,500 mm; ATMs require 1,800 × 1,800 mm"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both drinking fountains and ATMs require 1,800 × 1,800 mm clear floor space — 1,500 × 1,500 mm is insufficient for both.",
+        "explanation": "BP 344 (2024 IRR) requires 1,800 × 1,800 mm clear floor space in front of: drinking fountains (Sec. 18.3), ATMs (Sec. 12.1), and public telephones (Sec. 11.4). All three share the 1,800 × 1,800 mm standard. The 1,500 × 1,500 mm clear floor applies to ticket office counters (Sec. 14), not to fountains or ATMs. Examiners frequently swap these two dimensions to test whether candidates know which fixture uses which clear floor space.",
+        "common_misconceptions": [
+          "Believing the 1,500 × 1,500 mm ticket counter standard applies to ATMs or fountains",
+          "Assuming different fixtures use different clear floor dimensions when three of them share the same 1,800 × 1,800 mm standard"
+        ]
+      },
+      "explanation": "This evaluation question tests the '1,800 × 1,800 mm Club' — the three fixtures (fountain, ATM, telephone) that all require the same clear floor space — vs. the ticket counter's 1,500 × 1,500 mm.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.1; Sec. 18.3",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e3e1013c7bf2f03b289b4b189bb50618c8cbea2940bf78686c7c803d3ac19476"
+    },
+    {
+      "question_id": "76952a12-01dd-45f3-9309-9c7a0338f2fb",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), what is the maximum projection from the wall for a coat hook, and why is this limit set at that specific dimension?",
+      "options": [
+        {
+          "id": "A",
+          "text": "40 mm maximum — shallow enough to reduce injury risk for white-cane users; objects projecting more than ~100 mm at mid-body height are hazards"
+        },
+        {
+          "id": "B",
+          "text": "100 mm maximum — the standard for all wall-mounted projecting objects between 680 mm and 2,000 mm AFF"
+        },
+        {
+          "id": "C",
+          "text": "75 mm maximum — the threshold above which objects become detectable by a standard cane sweep"
+        },
+        {
+          "id": "D",
+          "text": "25 mm maximum — the minimum to maintain flush wall appearance while providing functional coat storage"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Coat hooks must project no more than 40 mm from the wall — a shallow depth that reduces hazard for white-cane users navigating at mid-body height.",
+        "explanation": "BP 344 (2024 IRR) General Provisions limits coat hooks to a maximum projection of 40 mm from the wall. Objects projecting more than approximately 100 mm from a wall at heights between 680 mm and 2,000 mm AFF create a mid-body hazard for blind and low-vision users — a white cane sweeps at floor level and may not detect objects at waist or chest height. The 40 mm limit keeps projections shallow enough to minimize this risk. The coat hook maximum height is separately specified at 1,200 mm AFF.",
+        "common_misconceptions": [
+          "Assuming the 100 mm figure is a limit rather than the hazard threshold that the 40 mm rule is designed to avoid",
+          "Confusing coat hook projection limits with the reach range or height maximums"
+        ]
+      },
+      "explanation": "This question tests knowledge of the 40 mm coat hook projection limit and the safety rationlea behind it — important because the 'why' often appears in LEA explanations.",
+      "code_citation": "BP 344 2024 IRR, General Provisions",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:96f1eff1149df852d5b8924605367ec99f63c7020f2ca9dbe64227de0c77c93c"
+    },
+    {
+      "question_id": "e038c620-e24a-469b-8f32-067aa44f14a6",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A building installs a single drinking fountain with its spout at 850 mm AFF. Under BP 344 (2024 IRR) Section 18.3, is this compliant, and why?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compliant — 850 mm is within the permitted 750–900 mm spout height range for accessible fountains, ensuring accessibility for most users"
+        },
+        {
+          "id": "B",
+          "text": "Non-compliant — the spout height is correct, but a single fountain does not satisfy the dual access requirement"
+        },
+        {
+          "id": "C",
+          "text": "Compliant — a single fountain at any height within 750–1,100 mm satisfies BP 344 requirements, which is a common misunderstanding of the code"
+        },
+        {
+          "id": "D",
+          "text": "Non-compliant — the spout must be at exactly 750 mm, not 850 mm, which is incorrect as the code allows a range"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The spout height is acceptable, but BP 344 requires dual access — either two units or a high-low combination. A single unit fails.",
+        "explanation": "BP 344 (2024 IRR) Sec. 18.3 requires dual access: either one wheelchair-accessible unit (750–900 mm spout) paired with a standing-height unit, OR a single combination high-low unit. A single fountain at 850 mm is within the correct spout range but does not satisfy the dual access mandate. It serves wheelchair users but not standing users effectively. Both populations must be accommodated.",
+        "common_misconceptions": [
+          "Assuming that a single fountain at the correct height satisfies BP 344",
+          "Believing the spout height alone determines compliance"
+        ]
+      },
+      "explanation": "This question tests the dual access requirement — the most common trap for drinking fountain compliance, where a correctly-sized single unit still fails.",
+      "code_citation": "BP 344 2024 IRR, Sec. 18.3",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:958ca4d05401934148a9b20cc44183b07858c2f8bc4a43057df7feab3f5c7988"
+    },
+    {
+      "question_id": "c5b31bc5-2692-40fa-8768-522855d93fb7",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A bank floor has two separate banks of public telephones: one near the entrance (3 phones) and one near the elevator lobby (2 phones). Under BP 344 (2024 IRR) Section 11.5, how many accessible phones are required in total?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One — only one accessible phone is required per floor regardless of the number of banks, simplifying compliance."
+        },
+        {
+          "id": "B",
+          "text": "Two — one accessible phone per bank of 2 or more phones, plus this also satisfies the per-floor requirement"
+        },
+        {
+          "id": "C",
+          "text": "Three — one for the floor plus one for each of the two banks of phones, ensuring maximum accessibility."
+        },
+        {
+          "id": "D",
+          "text": "Five — every phone in each bank must be accessible to satisfy BP 344 requirements, which is not typically required."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 requires 1 accessible phone per group of 2+ phones — two banks means two accessible phones total, which also satisfies the per-floor requirement.",
+        "explanation": "BP 344 (2024 IRR) Sec. 11.5 requires: (1) at least 1 accessible phone per floor, AND (2) at least 1 per group of 2 or more phones. With two separate banks of phones on one floor, each bank (even the 2-phone bank) requires its own accessible phone. Total = 2 accessible phones. The per-floor requirement is satisfied by either bank's accessible phone, so no additional phone is needed beyond the 1-per-group count. Not every phone needs to be accessible.",
+        "common_misconceptions": [
+          "Assuming only one accessible phone is needed per floor regardless of bank count",
+          "Adding a separate 'per floor' phone on top of the per-bank requirement"
+        ]
+      },
+      "explanation": "This application question tests the '1 per floor + 1 per group' phone rule with a two-bank scenario.",
+      "code_citation": "BP 344 2024 IRR, Sec. 11.5",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:649f6f6099b2faf36231bb8fdabd60128e26f781bfe6cb59457b0c8dc7bfcec7"
+    },
+    {
+      "question_id": "913d3df8-cd8d-4211-820c-f0e14b52ad8c",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), which three output modes must an accessible ATM provide to serve blind and low-vision users?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Audio output, tactile keypad, and Braille transaction receipts, ensuring comprehensive accessibility"
+        },
+        {
+          "id": "B",
+          "text": "Audio output, tactile keypad, and Braille labels/output as required by Sec. 12.2"
+        },
+        {
+          "id": "C",
+          "text": "Large-print display, audio output, and tactile keypad only, which may not fully meet all accessibility needs"
+        },
+        {
+          "id": "D",
+          "text": "Hearing loop, tactile keypad, and high-contrast screen display, which are not all mandated by the regulation"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 Sec. 12.2 requires audio output, tactile keypad, and Braille — not large-print or hearing loop.",
+        "explanation": "BP 344 (2024 IRR) Sec. 12.2 mandates three modes for accessible ATMs: (1) Braille labels and/or output; (2) tactile keypad (raised tactile markings on keys); (3) audio output (spoken prompts). These three together allow a blind user to operate the ATM independently without assistance. Large-print displays help low-vision users but are not among the three specified requirements. Hearing loops are for deaf/hard-of-hearing users and are a separate provision.",
+        "common_misconceptions": [
+          "Substituting large-print display for Braille as one of the required modes",
+          "Confusing hearing loop provisions with audio output requirements"
+        ]
+      },
+      "explanation": "This question tests the three mandatory ATM accessibility modes from Sec. 12.2 — Braille, tactile keypad, and audio — and distinguishes them from related but incorrect options.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.2",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:acfdce8def185df4778eac4c59bb5b2fa999e9fccc1d0227be4d6845a3317fb3"
+    },
+    {
+      "question_id": "a1735626-64bb-42ca-968f-93d93a908921",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR) Section 12.3, an ATM has its top-most control key at 1,280 mm AFF. Is this compliant, and what is the required height range?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compliant — 1,280 mm falls within the 900–1,500 mm general accessible reach range"
+        },
+        {
+          "id": "B",
+          "text": "Non-compliant — ATM controls must fall within 900–1,200 mm AFF; 1,280 mm exceeds the upper limit"
+        },
+        {
+          "id": "C",
+          "text": "Compliant — the 1,200 mm limit applies only to telephone coin slots, not ATM keypads"
+        },
+        {
+          "id": "D",
+          "text": "Non-compliant — ATM controls must be at exactly 900 mm AFF like door handles and elevator COP"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "ATM controls must be within 900–1,200 mm AFF — 1,280 mm is 80 mm above the upper limit and non-compliant.",
+        "explanation": "BP 344 (2024 IRR) Sec. 12.3 specifies that all ATM controls (keypad, card slot, receipt port, etc.) must fall within 900–1,200 mm AFF. This is a band with both a floor and a ceiling. A control at 1,280 mm is out of reach for a seated wheelchair user who can comfortably reach only to about 1,200 mm. The 1,500 mm reach range applies to general wall-mounted switches and signage — not to ATM control surfaces.",
+        "common_misconceptions": [
+          "Applying the 1,500 mm general signage height to ATM control surfaces",
+          "Assuming only the lower limit (900 mm) matters for ATM controls"
+        ]
+      },
+      "explanation": "This application question tests the ATM control range (900–1,200 mm) and the specific upper-limit trap — a control slightly above 1,200 mm fails even though it may look acceptable.",
+      "code_citation": "BP 344 2024 IRR, Sec. 12.3",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:95fb90774bdb562619c2a64515f0bf57b75cc95722cde656b030baf2b5272d70"
+    },
+    {
+      "question_id": "6364bc19-4267-44a1-bb0a-59385412cd50",
+      "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR) Section 18.3, what are the three dimensions of the knee clearance required under an accessible drinking fountain?",
+      "options": [
+        {
+          "id": "A",
+          "text": "750 mm wide, 200 mm deep, 650 mm high — consistent width and depth, with knee height distinct from toe clearance"
+        },
+        {
+          "id": "B",
+          "text": "900 mm wide, 300 mm deep, 700 mm high — matching the wheelchair footprint and handrail height, ensuring accessibility"
+        },
+        {
+          "id": "C",
+          "text": "600 mm wide, 150 mm deep, 650 mm high — narrow clearance suitable for most wheelchair footrests, but may not meet all accessibility standards"
+        },
+        {
+          "id": "D",
+          "text": "750 mm wide, 480 mm deep, 650 mm high — the same knee space as an ATM counter shelf, which may not be appropriate for all users"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Drinking fountain knee clearance: 750 mm wide, 200 mm deep, 650 mm high.",
+        "explanation": "BP 344 (2024 IRR) Sec. 18.3 specifies knee clearance under accessible drinking fountains as 750 mm wide × 200 mm deep × 650 mm high. The 200 mm depth is shallow — just enough for wheelchair footrests to tuck under. The toe clearance below the knee zone shares the same 750 mm width and 200 mm depth but is 200 mm high (instead of 650 mm). The 480 mm depth applies to ATM counter knee space, not drinking fountains.",
+        "common_misconceptions": [
+          "Applying the 480 mm ATM counter depth to drinking fountain knee clearance",
+          "Confusing the 650 mm knee clearance height with the 200 mm toe clearance height"
+        ]
+      },
+      "explanation": "This question requires precise recall of three distinct dimensions — width, depth, and height — for the drinking fountain knee clearance, and distinguishing them from ATM counter knee space.",
+      "code_citation": "BP 344 2024 IRR, Sec. 18.3",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.86331+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:05934658c01b17496949f938026adeb23046ed7fbf5666782d0c6f82b1f5c0c0"
+    }
+  ]
+}

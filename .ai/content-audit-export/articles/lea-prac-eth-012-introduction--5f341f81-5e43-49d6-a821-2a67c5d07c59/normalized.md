@@ -32,7 +32,7 @@ The Code of Ethical Conduct (SPP Document 200) establishes that the architect's 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
 Extracted summary:
 - Props: type="critical"
-- Text: **The Core Ethical Rule:** An architect may not accept compensation, commissions, or benefits from third parties in exchange for recommendations or referrals **unless:** 1. The client is fully informed of the arrangement 2. The client consents to the arrangement in writing 3. The architect's recommendation is based on merit and client benefit, not the financial incentive 4. All market discounts or benefits flow to the client, not the architect 5. The arrangement does not compromise professional 
+- Text: **The Core Ethical Rule:** An architect may not accept compensation, commissions, or benefits from third parties in exchange for recommendations or referrals **unless:** 1. The client is fully informed of the arrangement 2. The client consents to the arrangement in writing 3. The architect's recommendation is based on merit and client benefit, not the financial incentive 4. All market discounts or benefits flow to the client, not the architect 5. The arrangement does not compromise professional
 [/SLATECAMP_UI_BLOCK]
 
 ## Category 1: Prohibited Kickbacks

@@ -1,0 +1,508 @@
+{
+  "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a32a88d40964c9d60a4ebdd8e0eae0f75551e24904248d96ac061186ca573893",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "9398b4db-9d97-454d-94d7-dd24e73f72bb",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "Where are LEA examination records, answer sheets, and graded papers custodially maintained?",
+      "options": [
+        {
+          "id": "a",
+          "text": "In the private office of the Board chairman, which is not a standard practice for record-keeping"
+        },
+        {
+          "id": "b",
+          "text": "Under the custody of the Professional Regulation Commission"
+        },
+        {
+          "id": "c",
+          "text": "At the CHED central office, which does not typically handle such records"
+        },
+        {
+          "id": "d",
+          "text": "In the candidate's personal file with the DTI, which is not a recognized procedure for examination records"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misplaces records in private custody; Board chairs do not maintain official examination records; the PRC holds custodial responsibility.",
+        "c": "Conflates institutional roles; CHED accredits schools, not maintains examination records for professional licensure exams.",
+        "d": "Violates confidentiality and security; candidates do not hold official examination records; the PRC maintains centralized custody.",
+        "correct": "[UNVERIFIED] — Search results do not confirm the specific section or custodial requirement. Recommend verification against full RA 9266 IRR text before using this question., ensuring proper chain of custody and confidentiality.",
+        "takeaway": "ALE records custody: Professional Regulation Commission maintains official examination files under IRR Section 8."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eca38c808dabfc55eae4ef60301abcc26269f5ece59a6c781886deb0c81c0ce4"
+    },
+    {
+      "question_id": "db8ae194-6572-4228-a72c-68d7d47b4c4d",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "How does the dual-threshold passing requirement (70% weighted average AND no subject below 50%) protect public safety in architectural practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It allows candidates with narrow specialization to become architects, potentially compromising comprehensive skill sets"
+        },
+        {
+          "id": "b",
+          "text": "It prevents candidates with foundational deficiencies in critical areas from practicing"
+        },
+        {
+          "id": "c",
+          "text": "It ensures only wealthy candidates can afford retakes, limiting access to the profession"
+        },
+        {
+          "id": "d",
+          "text": "It simplifies the examination administration process, reducing complexity in scoring"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misrepresents the purpose; the dual threshold actually PREVENTS narrow specialization by requiring competence across all areas.",
+        "c": "Conflates examination cost with licensing standards; the dual threshold is a competence measure, not an economic filter.",
+        "d": "Ignores public safety; the dual threshold's rigor increases administrative complexity to protect the public, not simplify process.",
+        "correct": "The dual-threshold approach prevents candidates from advancing with deficiencies in foundational areas, even if compensated by high performance elsewhere — a critical safeguard for public safety in architectural practice where failures can endanger building occupants.",
+        "takeaway": "Dual threshold protects safety: 50% floor prevents licensing candidates with critical foundational gaps, even if strong elsewhere."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7837b117d1301ed61cd3d74564d97e4dc19bb4607ef12012023d75dd7814f2e7"
+    },
+    {
+      "question_id": "c7cd772a-ccb9-48ec-8f02-b183400fa519",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "Compare the examination passing standard with the requirement for Continuing Professional Development. How do they reinforce continuous competence in architectural practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ALE verifies initial competence; CPD requirements maintain competence throughout a career"
+        },
+        {
+          "id": "b",
+          "text": "Both are administered simultaneously by the same examination board, ensuring a streamlined process for professionals"
+        },
+        {
+          "id": "c",
+          "text": "ALE is more stringent than CPD, so no further learning is needed, which simplifies the professional's ongoing education requirements"
+        },
+        {
+          "id": "d",
+          "text": "They are independent and do not relate to professional competence standards, allowing for flexibility in professional development"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Conflates separate regulatory functions; ALE and CPD are typically administered by different processes at different career stages.",
+        "c": "Creates a false security; ALE's rigor establishes entry standards, but architectural knowledge and codes evolve, necessitating ongoing professional development.",
+        "d": "Severs the relationship between initial and continuing competence; both mechanisms work together to protect public safety over an architect's full career.",
+        "correct": "The ALE represents a one-time rigorous assessment of baseline competence across all architectural disciplines required for initial licensure. CPD requirements, as mandated by RA 9266 Section 8(i), ensure that licensed architects maintain and update their knowledge throughout their careers as practice standards, materials, codes, and technologies evolve.",
+        "takeaway": "ALE establishes entry competence; CPD maintains and updates competence throughout practice life."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:07b7dae9147575d09f2eead70a11ab432ee601f302f8a42d90c1dc7e82666008"
+    },
+    {
+      "question_id": "b9c2c1eb-97f4-47e5-8e16-868fa209474e",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "A candidate fails the LEA and wishes to retake it six months later. What must she confirm before reapplying?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only that the examination fee has been paid, ensuring no outstanding balances"
+        },
+        {
+          "id": "b",
+          "text": "Current NBI clearance and valid DAE credentials, along with reapplication of all required documents"
+        },
+        {
+          "id": "c",
+          "text": "Permission from her previous architect-mentor, which is a common courtesy but not a formal requirement"
+        },
+        {
+          "id": "d",
+          "text": "Letter of recommendation from her university, which may enhance her application but is not mandatory"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Undershoots qualification requirements; examination fees alone do not satisfy the legal prerequisites for retake eligibility.",
+        "c": "Invents an unnecessary barrier; mentor permission is not required for reapplication; the candidate only needs to meet statutory requirements.",
+        "d": "Substitutes subjective evaluation for objective compliance; university recommendations are not part of the retake eligibility criteria.",
+        "correct": "Retaking candidates must reapply with all required documents as specified for initial applicants (including NBI clearance and DAE credentials per Section 13), though specific retake-only procedures are not detailed in the available IRR excerpts.",
+        "takeaway": "ALE retake: candidates must resubmit all required documents and maintain current NBI clearance + valid DAE credentials."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e2aa4ca9cdfa2c906302f87b87efa486f3745e10e6662b1d0825ccf74db55409"
+    },
+    {
+      "question_id": "d6d27221-5bf9-4ea3-a9b0-e661375047b9",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "A candidate scoring 65% in Design, 72% in Building Science, 78% in Professional Practice, and 71% in History achieves a 71.5% weighted average. Is this passing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the weighted average of 71.5% exceeds 70%"
+        },
+        {
+          "id": "b",
+          "text": "No, the Design score of 65% does not meet the 70% threshold for each subject"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but the candidate must retake Design to improve overall performance"
+        },
+        {
+          "id": "d",
+          "text": "No, the composite score lacks sufficient margin above 70%"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Misapplies the threshold; the law requires 50% minimum per subject, not 70%; Design at 65% exceeds the 50% floor.",
+        "c": "Invents non-existent requirements; passing the dual threshold means no mandatory retakes; the candidate has met all requirements.",
+        "d": "Suggests an arbitrary margin requirement; RA 9266 establishes 70% as the passing standard, not a margin above 70%.",
+        "correct": "The 70% weighted average is satisfied (71.5%), and no individual subject falls below 50% (Design is 65%, which exceeds 50%). Both thresholds are met, so the candidate passes.",
+        "takeaway": "Passing criteria met: 71.5% weighted average + all subjects above 50% minimum = candidate passes."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5ff1f8f295ac1beed1347ed87a9cfc750e0824067653fe68547cb547747a5c8f"
+    },
+    {
+      "question_id": "146e0b66-a573-42ba-b706-de5495310ca6",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "A candidate's LEA scores are: Design 75%, Building Science 68%, Professional Practice 82%, History 48%. Does this candidate pass?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the weighted average exceeds 70%, which is the general passing criterion for the ALE"
+        },
+        {
+          "id": "b",
+          "text": "No, because the History score falls below the 50% minimum requirement"
+        },
+        {
+          "id": "c",
+          "text": "Yes, with a conditional pass pending History retake, which is not a standard provision in ALE regulations"
+        },
+        {
+          "id": "d",
+          "text": "No, because Building Science is below 70%, which is not a disqualifying factor if the overall average is sufficient"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores the mandatory no-subject-below-50% safeguard; weighted average alone is insufficient.",
+        "c": "Misrepresents the law; conditional passes do not exist; failure of the 50% floor on any subject bars passing outright.",
+        "d": "Confuses the floor threshold; the law requires 50% minimum per subject, not 70%; Building Science at 68% meets the requirement.",
+        "correct": "Even if the weighted average exceeds 70%, the dual-threshold requirement mandates that no individual subject may fall below 50%. History at 48% violates this floor, making the candidate ineligible to pass regardless of overall average.",
+        "takeaway": "Dual threshold blocks passing: any subject below 50% fails the candidate, even with 70%+ weighted average."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b697bc5cde78e0fa88fec99fa1f542217f7db447ac3485d832604bf0886675f7"
+    },
+    {
+      "question_id": "9b3bb3d8-ab63-41b4-ae11-47b27c5ca769",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "The Board of Architecture discovers that an LEA candidate submitted a forged diploma in her original application. What action is authorized under the IRR?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept the application but require verification before examination, ensuring authenticity of documents"
+        },
+        {
+          "id": "b",
+          "text": "Refuse to renew the professional identification card or suspend/revoke the Certificate of Registration if already issued"
+        },
+        {
+          "id": "c",
+          "text": "Allow one retake without the fraudulent document, providing a second chance under strict conditions"
+        },
+        {
+          "id": "d",
+          "text": "Refer the matter to the candidate's university for internal discipline, which may involve academic penalties"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly accommodates fraud; accepting applications with forged documents contradicts the Board's duty to verify credentials and protect the profession.",
+        "c": "Falsely implies fraud can be cured by retrying; fraudulent applications result in denial, not remedial attempts.",
+        "d": "Deflects Board responsibility to universities; the Board has independent authority and obligation to enforce licensing integrity.",
+        "correct": "[UNVERIFIED] — Search results do not explicitly confirm Board authority to refuse retakes or revoke certificates for fraudulent initial applications. Recommend verification against full RA 9266 IRR and PRC rules on disciplinary action.",
+        "takeaway": "Fraud in ALE applications: Board may refuse registration, or suspend/revoke Certificate if already issued."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12b3d5a647603407b00942e9bf76f68dd960a2a3bda9e1806b0b76546f22dd5d"
+    },
+    {
+      "question_id": "a238bbd2-f6d4-4fcf-9705-4e7284f976c5",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "What is the passing standard for the Architect Licensure Examination as specified in RA 9266, Section 15?",
+      "options": [
+        {
+          "id": "a",
+          "text": "60% weighted average, which is below the minimum passing requirement and indicates a need for further study"
+        },
+        {
+          "id": "b",
+          "text": "70% weighted average with no subject below 50%"
+        },
+        {
+          "id": "c",
+          "text": "75% weighted average, which is the standard benchmark for passing and reflects a comprehensive understanding of the material"
+        },
+        {
+          "id": "d",
+          "text": "50% weighted average, a threshold that is not applicable to professional licensure exams due to the need for higher competency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understates the minimum threshold; RA 9266 Section 15 requires 70%, not 60%.",
+        "c": "Overstates the requirement; the law specifies 70%, not 75%.",
+        "d": "Confuses the individual subject minimum (50%) with the overall passing standard; the weighted average must reach 70%.",
+        "correct": "RA 9266 Section 15 mandates a 70% weighted average across all subjects AND no individual subject may score below 50%, creating a dual-threshold safety standard.",
+        "takeaway": "ALE passing: 70% weighted average AND no subject below 50% — both conditions required."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e9793eb29b7a6c31f07ba4580905a677161b788d0b961244c73550e4d369321d"
+    },
+    {
+      "question_id": "e9bd18dd-61dd-4623-82e7-80199b6b1c48",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "Who has authority to approve the examination syllabi for the Architect Licensure Examination?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The President of the Philippines, acting through the Office of the Executive Secretary"
+        },
+        {
+          "id": "b",
+          "text": "Individual university architecture departments, each setting their own standards and guidelines"
+        },
+        {
+          "id": "c",
+          "text": "The Board of Architecture in consultation with the CHED-accredited academe"
+        },
+        {
+          "id": "d",
+          "text": "The Professional Regulation Commission without consultation, based on internal policy decisions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overstates executive authority; presidential approval is not required for examination syllabus development.",
+        "b": "Fragments authority inappropriately; individual universities do not approve syllabi; the Board coordinates with CHED-accredited schools collectively.",
+        "d": "Contradicts the collaborative requirement; RA 9266 mandates consultation with academe, not unilateral PRC action.",
+        "correct": "RA 9266 Section 8(j) of the IRR establishes that the Board develops examination syllabi in consultation with the academe to ensure alignment with curriculum standards to ensure alignment with curriculum standards at recognized architecture schools.",
+        "takeaway": "ALE syllabi authority: Board of Architecture in consultation with CHED-accredited academic institutions."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:261b521c107c0fa31f7bff8f38547a233995535dcc7829d6e2bdfc0f10fa6854"
+    },
+    {
+      "question_id": "f3735773-264e-4d66-9bf5-3e40e6ecca6a",
+      "article_id": "63ba5964-80fc-472c-bc26-7d64f1507bed",
+      "topic_id": "a27845ab-80c9-46e2-b8d5-fcf5de250b87",
+      "text": "Within what timeframe must the Board announce LEA results after the examination date?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Within 15 days"
+        },
+        {
+          "id": "b",
+          "text": "Within 30 days"
+        },
+        {
+          "id": "c",
+          "text": "Within 45 days"
+        },
+        {
+          "id": "d",
+          "text": "Within 60 days"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understates the allowable timeframe; Section 16 permits 30 days, not 15.",
+        "c": "Extends the deadline unnecessarily; the law requires announcement within 30 days, not 45.",
+        "d": "Further delays candidate notification; Section 16 mandates 30 days, not 60.",
+        "correct": "RA 9266 Section 16 specifies that the Board must announce ALE results within 30 days after the examination, ensuring timely notification and allowing successful candidates to apply for Certificate of Registration without delay.",
+        "takeaway": "ALE results must be announced within 30 days of the examination date."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-008-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4a2b5b48527efdb3aa7995b996daf4b71e9c1de09a25342e1c57bb9abf3d6e4f"
+    }
+  ]
+}

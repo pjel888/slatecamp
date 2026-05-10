@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 007 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -15,11 +24,11 @@ Metal ceiling panels, typically aluminum or steel with various finishes, offer d
 Standard dimensions align with structural bays. A 600×600mm grid fitted into a standard office (4m × 5m) results in 7 × 9 = 63 tiles, minimizing waste and cost. Custom sizes are possible but increase labor and cut waste.
 
 
-<ArticleMedia id="media-ceiling-finish-comparison" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of ceiling finishes: suspended acoustic tile, gypsum board, metal pan, open plenum, wood strip, and stretched fabric with acoustic, fire rating, and access ratings"
-  caption="Future chart: ceiling finish comparison — acoustic performance, fire rating, access, and aesthetics"
-  suggestedAsset="Material comparison chart with ceiling system illustrations"
-  placementIntent="Helps learners select ceiling systems by occupancy requirements" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-ceiling-finish-comparison", layout="single", type="image", status="placeholder", alt="Comparison chart of ceiling finishes: suspended acoustic tile, gypsum board, metal pan, open plenum, wood strip, and stretched fabric with acoustic, fire rating, and access ratings", caption="Future chart: ceiling finish comparison — acoustic performance, fire rating, access, and aesthetics", suggestedAsset="Material comparison chart with ceiling system illustrations", placementIntent="Helps learners select ceiling systems by occupancy requirements"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -48,11 +57,11 @@ Typhoons and tropical humidity drive selection toward moisture-resistant product
 Slab-mounted (flat gypsum) ceilings are common in residential projects and low-budget commercial buildings. These offer cost savings (no grid cost) but limit access to MEP infrastructure. Fire protection requires additional intumescent paint coating if structural fire rating is needed.
 
 
-<ArticleMedia id="media-ceiling-system-comparison" layout="single" type="image" status="placeholder"
-  alt="Comparison of ceiling systems: suspended acoustic tile, gypsum board on furring, metal pan, open plenum, and wood strip with system components"
-  caption="Future diagram: ceiling system comparison — suspended, gypsum, metal pan, open plenum, wood strip"
-  suggestedAsset="Cross-section comparison of ceiling system types"
-  placementIntent="Helps learners select ceiling systems by performance requirements" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-ceiling-system-comparison", layout="single", type="image", status="placeholder", alt="Comparison of ceiling systems: suspended acoustic tile, gypsum board on furring, metal pan, open plenum, and wood strip with system components", caption="Future diagram: ceiling system comparison — suspended, gypsum, metal pan, open plenum, wood strip", suggestedAsset="Cross-section comparison of ceiling system types", placementIntent="Helps learners select ceiling systems by performance requirements"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Question Type 1 (Grid Sizing):** A rectangular office measures 6m × 8m. The architect specifies 600×600mm suspended ceiling tiles. How many tiles fit without cutting? Students calculate: 6000mm / 600mm = 10 tiles, 8000mm / 600mm = 13.33 tiles (requires cutting on one edge). Proper specification would use 600×600 or adjust room dimensions via architectural planning.
@@ -63,23 +72,46 @@ Slab-mounted (flat gypsum) ceilings are common in residential projects and low-b
 
 **Question Type 4 (Seismic Compliance):** A high-rise building in Metro Manila (Zone 4) includes suspended ceilings. What bracing is required per IBC Section 13.5.7? Answer: Lateral (wire) and diagonal bracing at ≤1200mm spacing. Omitting bracing = code violation and collapse risk in earthquake.
 
-<Tip>Memory aid: Suspended ceilings are modular (600×600mm, 600×1200mm). NRC for offices is 0.75+; for retail, 0.65. Class A fire rating is material property; 2-hour fire rating requires assembly design. Seismic zones need diagonal bracing—it's not optional.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: Suspended ceilings are modular (600×600mm, 600×1200mm). NRC for offices is 0.75+; for retail, 0.65. Class A fire rating is material property; 2-hour fire rating requires assembly design. Seismic zones need diagonal bracing—it's not optional.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Specifying standard mineral fiber tiles (NRC 0.65) for a law office requiring speech privacy" correction="Offices demand NRC ≥0.75 minimum. Use perforated tiles (NRC 0.80+) or specify acoustic baffles. NRC 0.65 is for retail corridors only." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Specifying standard mineral fiber tiles (NRC 0.65) for a law office requiring speech privacy", correction="Offices demand NRC ≥0.75 minimum. Use perforated tiles (NRC 0.80+) or specify acoustic baffles. NRC 0.65 is for retail corridors only."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Assuming Class A fire rating of tiles provides structural 2-hour fire rating" correction="Class A is surface fire rating (flame/smoke). Structural fire rating requires additional gypsum, intumescent paint, or rated assembly. Specify both separately." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Assuming Class A fire rating of tiles provides structural 2-hour fire rating", correction="Class A is surface fire rating (flame/smoke). Structural fire rating requires additional gypsum, intumescent paint, or rated assembly. Specify both separately."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Omitting seismic bracing in suspended ceilings in Philippines Zone 4" correction="IBC Section 13.5.7 mandates lateral and diagonal bracing at 900-1200mm spacing. Failure to brace = code violation and collapse risk. Inspect on-site." />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Omitting seismic bracing in suspended ceilings in Philippines Zone 4", correction="IBC Section 13.5.7 mandates lateral and diagonal bracing at 900-1200mm spacing. Failure to brace = code violation and collapse risk. Inspect on-site."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Installing standard gypsum ceiling tiles in high-humidity bathrooms or areas above pools" correction="Specify moisture-rated gypsum (e.g., USG Firecode C water-resistant) or metal panels. Standard tile absorbs water and deteriorates in 3-5 years." />
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Installing standard gypsum ceiling tiles in high-humidity bathrooms or areas above pools", correction="Specify moisture-rated gypsum (e.g., USG Firecode C water-resistant) or metal panels. Standard tile absorbs water and deteriorates in 3-5 years."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Calculating grid layout without accounting for trim perimeter and access panel requirements", "Failing to specify return air path height (≥300mm above tiles) for HVAC compliance", "Mixing 9/16-inch and 15/16-inch grids in the same ceiling without clear transitions", "Specifying non-fire-rated ceilings (NRC only) in occupancy types requiring fire rating", "Ignoring MEP coordination; ceiling height may conflict with ductwork, piping, or cable trays"]} />
+[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Calculating grid layout without accounting for trim perimeter and access panel requirements\", \"Failing to specify return air path height (≥300mm above tiles) for HVAC compliance\", \"Mixing 9/16-inch and 15/16-inch grids in the same ceiling without clear transitions\", \"Specifying non-fire-rated ceilings (NRC only) in occupancy types requiring fire rating\", \"Ignoring MEP coordination; ceiling height may conflict with ductwork, piping, or cable trays\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also within Interior Finishes: **lea-matl-007-01-core-concept**, **lea-matl-007-02-core-concept**, **lea-matl-007-04-core-concept**, **lea-matl-007-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

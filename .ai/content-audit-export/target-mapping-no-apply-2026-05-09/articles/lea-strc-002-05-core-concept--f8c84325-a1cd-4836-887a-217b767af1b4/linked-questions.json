@@ -1,0 +1,508 @@
+{
+  "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:ecc35b8034b22569baeea8dd85b8f66b23d8915f379947d1c3ba9f2d770881f1",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2764051d-11bc-4237-b05a-c96c2d15fe10",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "At a joint in a truss, two members meet at an angle, and no external load is applied at the joint. One member is vertical and the other is diagonal. What can you conclude about the forces in these members?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both members must carry equal tension, assuming symmetrical loading conditions"
+        },
+        {
+          "id": "b",
+          "text": "One of the members is a zero-force member because two non-collinear members cannot both carry load at a joint with no external force"
+        },
+        {
+          "id": "c",
+          "text": "Both members must be in compression, which is typical in certain truss configurations"
+        },
+        {
+          "id": "d",
+          "text": "The vertical must be in tension and the diagonal in compression, based on typical load distribution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "When only two members meet at a joint with no external load, and they are not collinear (not in a line), equilibrium requires one member to have zero force. The non-collinear geometry prevents both members from carrying load simultaneously.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Structural Analysis (method of joints)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8d42ab578fe1bf14e77b9d9c6993a18e2400a33e7d73458a4f2d509b2c877fef"
+    },
+    {
+      "question_id": "881d96c3-3af6-459b-9d4d-2717c429161e",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "Describe the diagonal member orientation in a Pratt truss.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Diagonals slope outward from the bottom chord, providing stability against lateral forces"
+        },
+        {
+          "id": "b",
+          "text": "Diagonals slope inward from the bottom chord toward the top chord"
+        },
+        {
+          "id": "c",
+          "text": "Diagonals are always vertical, which is a common misconception about truss design"
+        },
+        {
+          "id": "d",
+          "text": "Diagonals slope outward from the top chord, which is typical in other truss types but not in Pratt trusses"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In a Pratt truss, diagonals slope inward (upward and inward) from the bottom toward the top chord. This configuration places diagonals in tension and verticals in compression under gravity load—an efficient arrangement because long members (diagonals) are in tension (can handle tension well) and short members (verticals) are in compression (resist buckling better).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 202; Structural design references",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c6656ce6ffd1a42d92918c04c2687c97365cf237fe46e61e21e7dd3a00db7a33"
+    },
+    {
+      "question_id": "169c459f-76f8-43e8-a3fb-6af2af8971eb",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "A roof truss spans 24 meters and carries distributed load from roofing materials. Which truss type is most appropriate for this application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simple truss (single triangle), which is generally used for smaller spans and not suitable for distributed loads over long distances"
+        },
+        {
+          "id": "b",
+          "text": "Pratt truss or Warren truss, as both are efficient for medium-to-long spans and distributed loads"
+        },
+        {
+          "id": "c",
+          "text": "Howe truss exclusively, which is typically used for specific load conditions and may not be the best choice for distributed loads"
+        },
+        {
+          "id": "d",
+          "text": "Beam-column frame (not a truss), which is an alternative structural system but not a truss type suitable for this span"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "For a 24-meter roof truss span with distributed load, Pratt trusses (diagonals in tension, economical) and Warren trusses (excellent load distribution) are both suitable. Simple trusses are typically used for shorter spans (up to 10-12 m); Howe trusses are less common and less efficient than Pratt.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 202; AISC Truss Design",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bfb4cdeba41afd69115b57853439d3ec50dde7bc15dd1900a074c026eed60187"
+    },
+    {
+      "question_id": "6bb5bd75-b17c-4cb7-875e-456900d08520",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "What is the fundamental principle that makes trusses structurally efficient?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trusses are made of very strong materials, which inherently increases their load-bearing capacity"
+        },
+        {
+          "id": "b",
+          "text": "Triangular geometry is rigid—it cannot change shape without changing member lengths—allowing members to carry axial loads (tension/compression) rather than bending"
+        },
+        {
+          "id": "c",
+          "text": "Trusses eliminate the need for foundations, which reduces construction costs and simplifies site preparation"
+        },
+        {
+          "id": "d",
+          "text": "Trusses can span unlimited distances, making them ideal for large-scale structures without intermediate supports"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The triangle is the only polygon that cannot change shape without member length change. This inherent rigidity means truss members primarily carry axial loads, not bending moments. Bending requires larger sections; axial loading is more efficient.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 5 Section 307 (Trusses)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6d125a63337453f428a802357deb8078af9f181918756c34562ff3666438b61f"
+    },
+    {
+      "question_id": "5c1da5d4-97dd-4743-9fe7-b3b4bccbeda4",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "What is a zero-force member in a truss?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A member that has no strength and should be removed from the truss, as it does not contribute to the structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "A member that carries no axial load (zero tension or compression) under a given loading condition"
+        },
+        {
+          "id": "c",
+          "text": "A member that is decorative and not part of the structural system, often used for aesthetic purposes only"
+        },
+        {
+          "id": "d",
+          "text": "A member that is always vertical in orientation, regardless of the truss design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A zero-force member carries no load under a specific loading condition (found through equilibrium analysis). The member may still be included for redundancy, other load cases, or constructability, but under the given loads, its axial force is zero.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Structural Analysis (truss analysis methods)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1ff68bca501cccdbccaa0c0409677c9018f820fa2bf19ef6cdbce55c0f73cb17"
+    },
+    {
+      "question_id": "8f8c16de-beed-4ee9-9c2e-abeb3e9646d5",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "In a Warren truss, how is the diagonal pattern described?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All diagonals slope in the same direction (inward or outward), creating a consistent load distribution across the truss"
+        },
+        {
+          "id": "b",
+          "text": "Diagonals alternate direction, forming a zigzag or W pattern"
+        },
+        {
+          "id": "c",
+          "text": "Diagonals are perpendicular to both chords, providing maximum structural stability and load-bearing capacity"
+        },
+        {
+          "id": "d",
+          "text": "Warren trusses have no diagonals, only verticals, which simplifies construction but limits load distribution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A Warren truss has diagonals that alternate direction, creating a distinctive zigzag or W pattern. This pattern provides efficient load distribution for distributed loads and good lateral bracing.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 202; Truss design references",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f9774764b2ca19897e5bf859284dcde98e29087b01c35bb7607cc94ae0304c06"
+    },
+    {
+      "question_id": "bc8f7217-eb58-44b4-b755-9f422ee2f458",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "Compare the stress states (tension or compression) in Pratt and Howe trusses under gravity loading.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both trusses have identical stress distributions in all members, which is a common misconception in structural analysis."
+        },
+        {
+          "id": "b",
+          "text": "Pratt: diagonals in tension, verticals in compression; Howe: diagonals in compression, verticals in tension (opposite stress patterns)"
+        },
+        {
+          "id": "c",
+          "text": "Both trusses put all members in tension under gravity, which is not typically the case in practical applications."
+        },
+        {
+          "id": "d",
+          "text": "Stress distribution depends only on material, not geometry, which overlooks the influence of truss design."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The diagonal orientation determines stress state. In Pratt, inward-sloping diagonals develop tension (good use of slender members). In Howe, outward-sloping diagonals develop compression. The stress distributions are opposite, making Pratt generally more efficient for gravity loads.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Structural Analysis (method of sections or joints); AISC Manual",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:22c57db4fd6d810829f34cf6f40dd0830694165de22e2e35e04305c7a7ede464"
+    },
+    {
+      "question_id": "be02abf9-bcb4-4c09-a949-e3f117045ae3",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "Name the four primary members of a simple truss.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Top chord, bottom chord, verticals, and diagonals"
+        },
+        {
+          "id": "b",
+          "text": "Left column, right column, cross-braces, and purlins, which are not typically part of a simple truss"
+        },
+        {
+          "id": "c",
+          "text": "Beams, columns, ties, and shears, which are more common in frame structures"
+        },
+        {
+          "id": "d",
+          "text": "Stringers, webs, flanges, and connectors, terms more associated with steel beams"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Truss members are classified as: top chord (upper boundary), bottom chord (lower boundary), verticals (perpendicular connectors), and diagonals (angled members). Together they form the triangulated structure.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Structural engineering principles (no specific NSCP section)",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6dc00ee2d57a89c8650d73d76a6bd615d3ad8fd53a503d5c65917ca51b814b63"
+    },
+    {
+      "question_id": "e4d0dcdc-87a0-49cd-9ce4-35088017576e",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "In a pitched roof truss with a concentrated load at the apex (top), which member(s) are most likely to experience zero force?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The bottom chord; it is farthest from the load"
+        },
+        {
+          "id": "b",
+          "text": "Members at the apex joint that meet the specific zero-force criteria (two non-collinear with no external load, or three with two collinear)"
+        },
+        {
+          "id": "c",
+          "text": "All diagonal members, because they do not support the load directly"
+        },
+        {
+          "id": "d",
+          "text": "No members can be zero-force under concentrated loading"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "At the apex of a pitched roof truss with a concentrated load at the peak, members meeting the geometric criteria for zero-force (two non-collinear non-loaded, or three with two collinear) will have zero force, depending on truss geometry. Not all members are zero-force, but some may be based on their configuration relative to the load.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Structural Analysis (method of joints)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0906d9a67a53e112d8b131b4e1bacb31d77fd2765d6e4e2faa4c40882b56185"
+    },
+    {
+      "question_id": "3a18db99-1aba-4482-8d2b-0a9a7fb98cc1",
+      "article_id": "f8c84325-a1cd-4836-887a-217b767af1b4",
+      "topic_id": "0df0f4e9-c16b-4b7a-ad0f-95a3346ecc3e",
+      "text": "At a truss joint, three members meet: two are collinear (form a straight line through the joint), and the third is at an angle. No external load is applied at the joint. What is the zero-force member?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The two collinear members both have zero force, as they do not contribute to the joint's stability"
+        },
+        {
+          "id": "b",
+          "text": "The angled member has zero force because the collinear members form a continuous load path"
+        },
+        {
+          "id": "c",
+          "text": "All three members have zero force, indicating a state of equilibrium at the joint"
+        },
+        {
+          "id": "d",
+          "text": "No zero-force member exists; all three must carry load due to the structural configuration"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "When three members meet at a joint with no external load, two are collinear, and one is at an angle, equilibrium requires the angled member to have zero force. The collinear members can form a straight load path; the third member adds nothing to equilibrium.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Structural Analysis (method of joints)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0b4484d4d72fcc529043086a566987fbb102235fa7fcfea09c0e107086660788"
+    }
+  ]
+}

@@ -1,0 +1,507 @@
+{
+  "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:3d1431267c29c8f75404e615d89749b9570424b3e94e8d72b06c307e8f4cc0ea",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "22890f63-7cf6-465e-97f5-14391be65452",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "A museum gallery stores 500-year-old textiles. According to NCCA conservation standards, what is the recommended lighting level and critical environmental parameter?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 lux; temperature 15–20°C, which may not be suitable for all textile types"
+        },
+        {
+          "id": "b",
+          "text": "50 lux maximum, UV-free; humidity 45–55% RH with ±5% daily stability"
+        },
+        {
+          "id": "c",
+          "text": "150 lux; humidity range 30–70%, which is too broad for sensitive materials"
+        },
+        {
+          "id": "d",
+          "text": "300 lux; temperature 24°C, potentially causing deterioration over time"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "200 lux is too high for ancient textiles; will cause fading.",
+        "c": "Humidity range is too broad; causes dimensional instability.",
+        "d": "Lighting and temperature are both too high for long-term conservation.",
+        "correct": "Textiles are 'highly sensitive' to light. NCCA standards limit them to 50 lux and strictly UV-free. Humidity must be stable (45-55%) as fluctuations cause fiber stress.",
+        "takeaway": "Sensitive textiles: 50 lux max, 0 UV, 50% RH ±5%."
+      },
+      "explanation": "200 lux is too high for ancient textiles; will cause fading. Humidity range is too broad; causes dimensional instability. Lighting and temperature are both too high for long-term conservation. Textiles are 'highly sensitive' to light. NCCA standards limit them to 50 lux and strictly UV-free. Humidity must be stable (45-55%) as fluctuations cause fiber stress. Sensitive textiles: 50 lux max, 0 UV, 50% RH ±5%.",
+      "code_citation": "NCCA Conservation Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-05-06T14:56:46.144845+00:00",
+      "content_hash": "sha256:b79cbb144f147e48d95b1df4bf4802f9c3abdeaae7edadddb306c469abee2cdb"
+    },
+    {
+      "question_id": "56d33dea-ed9e-48bc-a331-6bac8cf69231",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "Why is the occupant load for museum galleries (2.8 sqm/person) denser than general retail (18.6 sqm/person)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Museums are Group H Assembly, requiring higher capacity, which is a classification that affects design and safety standards"
+        },
+        {
+          "id": "b",
+          "text": "Gallery visitors tend to cluster at specific artifacts (concentrated occupancy) rather than being dispersed across shelves/racks."
+        },
+        {
+          "id": "c",
+          "text": "Retail spaces have higher fire loads, necessitating more stringent safety measures and lower occupancy"
+        },
+        {
+          "id": "d",
+          "text": "It is to ensure the building satisfies parking requirements, which are calculated based on occupancy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Museums are Group A-2, not H.",
+        "c": "Fire load refers to fuel, not people density.",
+        "d": "Parking is calculated by the Building Code (PD 1096), not the Fire Code (RA 9514).",
+        "correct": "The Fire Code acknowledges that exhibition viewing is a stationary/clustered activity, requiring a denser factor (2.8) to ensure egress safety for 'pockets' of high density.",
+        "takeaway": "Factors reflect human behavior: Clustering (Museums/2.8) vs. Dispersion (Retail/18.6)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1d2c11676c566a12afc9ed4ef872ce31c7da4f73e06487501d5f42977f4b2f65"
+    },
+    {
+      "question_id": "576558b2-20f3-499f-9207-85507686db83",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "In a 'comb' gallery layout, the central corridor is 5.0 m wide and the branching galleries are 3.5 m wide. Identify the circulation hierarchy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Central spine is primary (min 3.0 m); Galleries are secondary (min 1.8 m)."
+        },
+        {
+          "id": "b",
+          "text": "Both are primary (min 3.0 m), which suggests equal importance in circulation but does not reflect typical design hierarchy"
+        },
+        {
+          "id": "c",
+          "text": "Central spine is primary (min 1.2 m); Galleries are tertiary (min 0.9 m), indicating a less significant role for galleries"
+        },
+        {
+          "id": "d",
+          "text": "Central spine is secondary; Galleries are primary, which is unusual as central corridors typically serve as main circulation routes"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Gallery branches are rarely sized the same as the main spine due to lower traffic volume.",
+        "c": "Widths are too narrow for museum standards.",
+        "correct": "In planning, the main traffic artery (spine) is Primary, while dead-end galleries or branches are Secondary. Standards require wider clearance for primary bi-directional flow.",
+        "takeaway": "Spine (Primary) = 3.0 m; Branches (Secondary) = 1.8 m."
+      },
+      "explanation": null,
+      "code_citation": "Architectural Design Standards",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a9e758a8771a171efe6509b2aefe40d37a60684a918fa95a946c97595b7444c9"
+    },
+    {
+      "question_id": "46cc4ed2-9964-4d1a-9777-6798a7410d00",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "A multi-story museum has an occupant load of 893. If the egress consists of stairs, what is the required total exit width and is an available width of 4.6 m compliant under RA 9514 (2019 IRR)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Required=6,787 mm; Available=4,600 mm; NON-COMPLIANT"
+        },
+        {
+          "id": "b",
+          "text": "Required=4,465 mm; Available=4,600 mm; COMPLIANT"
+        },
+        {
+          "id": "c",
+          "text": "Required=5,115 mm; Available=4,600 mm; NON-COMPLIANT"
+        },
+        {
+          "id": "d",
+          "text": "Required=6,787 mm; Available=4,600 mm; COMPLIANT (3 exits used)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Uses the 'Level' factor (5.0 mm), which is only for ramps/corridors/doors.",
+        "c": "Calculation error.",
+        "d": "Having 3 exits satisfies the 'quantity' of exits (min. 3 for 501-1,000 persons) but the aggregate width is still insufficient.",
+        "correct": "For stairs, the factor is 7.6 mm/person. Calculation: 893 × 7.6 = 6,786.8 mm (6.79 m). Available 4.6 m < 6.79 m. Non-compliant.",
+        "takeaway": "Stair Egress Factor = 7.6 mm/person. Total width must be met regardless of exit count."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Section 10.2.5.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7961bb1b414e3d8cba8ab5d74b0133d0f091818604a0821daae0d2ef992feda6"
+    },
+    {
+      "question_id": "fda41152-4719-4593-b403-239d26829af9",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "Under PD 1096, what occupancy group classification applies to a museum that charges admission for public gallery access?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group E (Business/Mercantile), which includes establishments primarily engaged in retail or service"
+        },
+        {
+          "id": "b",
+          "text": "Group A-2 (Residential/Institutional branch libraries and museums)"
+        },
+        {
+          "id": "c",
+          "text": "Group H (Assembly/Public Gathering), typically for large venues like theaters and stadiums"
+        },
+        {
+          "id": "d",
+          "text": "Group C (Education and Recreation), which covers schools and recreational facilities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group E is for commercial retail; museums are institutional/exhibition spaces regardless of fees.",
+        "c": "Group H is for assembly with fixed seating or high-density stages (stadiums, theaters).",
+        "d": "Group C is strictly for educational institutions (Schools, Colleges, Day-care).",
+        "correct": "PD 1096 Rule VII Table VII.1 explicitly classifies museums and branch libraries as Group A Division 2. This is a common board exam trap where students confuse it with Group C (Schools).",
+        "takeaway": "Museum = Group A-2. School = Group C."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Table VII.1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d324626d2472ca87ef346a81956a4701aba245c36e0031e35602af749462c12b"
+    },
+    {
+      "question_id": "d83cb31e-d7ce-4ca2-840c-8a6e52c11416",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "A museum's non-public artifact storage room is 300 sqm. Using RA 9514 (2019 IRR), how should the occupant load for this specific space be calculated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "300 sqm ÷ 2.8 = 107 occupants"
+        },
+        {
+          "id": "b",
+          "text": "300 sqm ÷ 18.6 = 16 occupants"
+        },
+        {
+          "id": "c",
+          "text": "300 sqm ÷ 27.9 = 11 occupants"
+        },
+        {
+          "id": "d",
+          "text": "Excluded from building occupant load as it is non-public."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect; applies gallery density to storage.",
+        "b": "Incorrect; applies residential factor.",
+        "d": "Incorrect; all areas contribute to the 'Total Occupant Load' of the building, though non-public support areas have very low densities.",
+        "correct": "RA 9514 2019 IRR Section 10.2.1.2 mandates that every part of the building be calculated by its function. Storage areas use a factor of 27.9 sqm/person (gross).",
+        "takeaway": "Storage Occupant Load Factor = 27.9 sqm/person."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e01606a8434743b298932a24f49aa143e1a7cdd6fca8bc7fa4987c4ee6d6427"
+    },
+    {
+      "question_id": "01597131-2a97-4a01-99a6-7caa6cbcbd3b",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "What is the minimum recommended width for a primary circulation aisle in a museum gallery to allow for bi-directional traffic and viewing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.2 m"
+        },
+        {
+          "id": "b",
+          "text": "1.8 m"
+        },
+        {
+          "id": "c",
+          "text": "3.0 m"
+        },
+        {
+          "id": "d",
+          "text": "2.0 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Minimum for standard corridors, but inadequate for gallery viewing depth.",
+        "b": "Minimum for secondary aisles where viewing is one-sided or traffic is low.",
+        "d": "Minimum for general public corridors but lacks optimal viewing clearances.",
+        "correct": "Architectural design standards (Neufert/Time-Saver) recommend 3.0 m for primary aisles. This allows ~1.5 m of viewing space on each side without blocking a 1.2 m - 1.5 m central through-traffic lane.",
+        "takeaway": "Primary Gallery Aisle = 3.0 m; Secondary Aisle = 1.8 m."
+      },
+      "explanation": null,
+      "code_citation": "Architectural Design Standards (Gallery Planning)",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd1f4326079951e3af6acbb6526d2d1fd87b89996f24736396e56f7f9cc723fe"
+    },
+    {
+      "question_id": "7e9c9f02-6699-4b60-8e98-449086541a45",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "A museum gallery covers 4,000 sqm (gross). Using RA 9514 (2019 IRR) Table 10.2.7.3.1, calculate the occupant load for the gallery.",
+      "options": [
+        {
+          "id": "a",
+          "text": "215 occupants"
+        },
+        {
+          "id": "b",
+          "text": "1,429 occupants"
+        },
+        {
+          "id": "c",
+          "text": "870 occupants"
+        },
+        {
+          "id": "d",
+          "text": "2,857 occupants"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uses the wrong factor (~18.6 sqm) intended for general residential.",
+        "c": "Uses the factor for concentrated standing (approx 4.6 sqm).",
+        "d": "Uses the factor for concentrated assembly (approx 1.4 sqm).",
+        "correct": "RA 9514 Table 10.2.7.3.1 (2019) factor for 'Exhibits' is 2.8 sqm/person (gross). 4,000 sqm ÷ 2.8 = 1,428.57, rounded up to 1,429.",
+        "takeaway": "Exhibition Space Factor = 2.8 sqm per person."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 10.2.7.3.1",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:af7a4db98d4e0106fe117626786e1ebeb224c19ee7cab24bf054c2f02c7d6e3a"
+    },
+    {
+      "question_id": "2037c278-7f67-4dfb-9e53-26a2ab5c3a4f",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "A museum has 4,000 sqm of galleries and 600 sqm of storage. Calculate the Total Building Occupant Load for egress design.",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,429 occupants"
+        },
+        {
+          "id": "b",
+          "text": "1,451 occupants"
+        },
+        {
+          "id": "c",
+          "text": "1,643 occupants"
+        },
+        {
+          "id": "d",
+          "text": "2,000 occupants"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits the storage staff occupancy.",
+        "c": "Uses the dense gallery factor for the storage area.",
+        "d": "Calculation error.",
+        "correct": "1. Gallery: 4,000 ÷ 2.8 = 1,429. 2. Storage: 600 ÷ 27.9 = 21.5 ≈ 22. Total = 1,429 + 22 = 1,451 occupants.",
+        "takeaway": "Sum all occupancies using their respective factors (2.8 for galleries, 27.9 for storage)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Section 10.2.1.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1f98dd1ca4e6e85263ea37635929b3ff50f13053a160fd3a7e6529cebde36255"
+    },
+    {
+      "question_id": "552f6056-2871-48a2-870c-6dd412f519a6",
+      "article_id": "ea6d06eb-e659-4092-ad67-14d4956cc4c6",
+      "topic_id": "ed3ab568-986d-43d5-bfc3-665dacdb7be8",
+      "text": "A museum storage room fluctuations from 45% RH to 52% RH in 12 hours. Evaluate compliance with NCCA stability standards.",
+      "options": [
+        {
+          "id": "a",
+          "text": "COMPLIANT; remains within 45–55% range and does not exceed daily tolerance limits."
+        },
+        {
+          "id": "b",
+          "text": "NON-COMPLIANT; fluctuation of 7% exceeds the ±5% daily tolerance."
+        },
+        {
+          "id": "c",
+          "text": "COMPLIANT; ±10% variation is allowed for non-organic items stored in climate-controlled vaults."
+        },
+        {
+          "id": "d",
+          "text": "COMPLIANT; textiles are only affected by temperature, not RH, so humidity variance is irrelevant."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "End-points are in range, but the rate of change is too high.",
+        "c": "Inaccurate; ±10% is dangerous for almost all artifacts.",
+        "d": "Textiles are hygroscopic; RH is their primary threat for dimensional damage.",
+        "correct": "Stability is more important than the absolute value. NCCA limits daily swings to ±5% RH to prevent the physical expansion/contraction of sensitive organic fibers.",
+        "takeaway": "Stability Rule: RH must not swing more than ±5% in a 24-hour cycle."
+      },
+      "explanation": null,
+      "code_citation": "NCCA Standards",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-004-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4248602196dd6d9b8ea686bff526999bac40b40adad512bfa01a61616093d011"
+    }
+  ]
+}

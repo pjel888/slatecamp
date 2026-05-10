@@ -1,0 +1,508 @@
+{
+  "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:d80570fafef5a99d91aaf4e02a093e66a886b55f5ac7ce6a37c5f87062b8ae7b",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "d75cb091-8ae6-4b48-ae79-05419429d147",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "Philippine DPWH specifications for structural lumber typically require a minimum grade of ___ and species from Group ___ or ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structural Grade; I or II"
+        },
+        {
+          "id": "b",
+          "text": "Merchantable; II or III species groups"
+        },
+        {
+          "id": "c",
+          "text": "Culls; III or IV species groups"
+        },
+        {
+          "id": "d",
+          "text": "Export Common; IV only species group"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Merchantable is used for non-structural work like temporary forms or scaffolding.",
+        "c": "Culls are rejected materials and never allowed for structural use.",
+        "d": "Group IV species (like Pine) are too soft for primary structural framing in traditional DPWH specs.",
+        "correct": "Per DPWH Standard Specs (Blue Book), structural members must be 'Structural Grade' (Stress-graded) and belong to Group I or II (e.g., Yakal, Guijo, Narra).",
+        "takeaway": "DPWH Structural = High Grade + High Strength Groups (I or II)."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Standard Specifications for Public Works and Highways (Blue Book)",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:06412f4e149f8482e22b62995c41f0dc218844c3c4f154ad1a2511daa4bbf576"
+    },
+    {
+      "question_id": "8244536e-ed02-4e52-96eb-19b647d2b8c2",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "A project requires 100 board feet of 2 × 4 lumber (actual 1.5 × 3.5). If all pieces are 8 feet long, how many pieces are needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 pieces"
+        },
+        {
+          "id": "b",
+          "text": "30 pieces"
+        },
+        {
+          "id": "c",
+          "text": "35 pieces"
+        },
+        {
+          "id": "d",
+          "text": "50 pieces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "25 pieces only provides 87.5 BF, which is less than the 100 BF requirement.",
+        "c": "35 pieces would be 122.5 BF, which is a significant over-order.",
+        "d": "Incorrectly assumes each piece is only 2 BF.",
+        "correct": "BF per piece = (1.5 × 3.5 × 8) / 12 = 3.5 BF. Pieces needed = 100 BF / 3.5 BF per piece = 28.57 pieces. Round up to 29 or 30 pieces.",
+        "takeaway": "Always round UP to the nearest whole piece when calculating quantity for procurement."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2401; Quantity Estimation",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e3f4598c938263ae1263da2821926fa9266513a9cb52565f6d7ef51dd5cd61a"
+    },
+    {
+      "question_id": "fa1eaa18-0f98-4999-ba89-c1eb1782cacb",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "A specification requires 500 board feet of narra (Group II hardwood) at $2.80/BF. With a waste allowance of 12%, what is the minimum order and total cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "560 BF; $1,568"
+        },
+        {
+          "id": "b",
+          "text": "500 BF; $1,400"
+        },
+        {
+          "id": "c",
+          "text": "560 BF; $1,400"
+        },
+        {
+          "id": "d",
+          "text": "625 BF; $1,750"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Ignores the waste allowance entirely.",
+        "c": "Correct quantity, but fails to include the waste portion in the cost calculation.",
+        "d": "Uses an incorrect 25% waste factor.",
+        "correct": "Required Order = Net BF × (1 + Waste %). 500 × 1.12 = 560 BF. Total Cost = 560 BF × $2.80 = $1,568.",
+        "takeaway": "In ALE estimation, always apply waste factors to the final quantity before calculating total price."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2401; Construction Cost Estimation",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bcfaac187765532d49691b7035c284333340f034dc4d86c3025cac9600dec107"
+    },
+    {
+      "question_id": "0e09776d-bff2-4476-9274-332e3b83398f",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "A construction specification lists lumber length as 144 inches. Convert this to feet for use in the board foot formula.",
+      "options": [
+        {
+          "id": "a",
+          "text": "12 feet"
+        },
+        {
+          "id": "b",
+          "text": "144 feet"
+        },
+        {
+          "id": "c",
+          "text": "1.44 feet"
+        },
+        {
+          "id": "d",
+          "text": "172 feet"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Fails to convert units, which would result in an error factor of 12 in the final BF calculation.",
+        "c": "Incorrect decimal placement; conversion requires division by 12, not 100.",
+        "d": "Incorrect operation; dimensions must be scaled down to feet.",
+        "correct": "Standard conversion: 144 inches ÷ 12 inches per foot = 12 feet.",
+        "takeaway": "The BF formula specifically expects L in feet. Always check the units given in the problem statement."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015; Unit Conversion Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6e435d159e9360f42f18158f5a7db8f642a20735d45262b131cdd6d3b28e7178"
+    },
+    {
+      "question_id": "818dfe01-d240-4515-b21d-733538e8714a",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "A deck project requires 200 linear feet of 1 × 6 narra boards (actual 0.75 × 5.5). Calculate total board feet.",
+      "options": [
+        {
+          "id": "a",
+          "text": "68.75 BF"
+        },
+        {
+          "id": "b",
+          "text": "75 BF"
+        },
+        {
+          "id": "c",
+          "text": "100 BF"
+        },
+        {
+          "id": "d",
+          "text": "165 BF"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Incorrect math or use of a non-standard divisor.",
+        "c": "This is the NOMINAL BF: (1 × 6 × 200) / 12 = 100 BF. The question asks for actual volume based on the 0.75 x 5.5 dims provided.",
+        "d": "Gross overestimation.",
+        "correct": "BF = (Actual T × Actual W × Total Linear Feet) / 12 = (0.75 × 5.5 × 200) / 12 = 825 / 12 = 68.75 BF.",
+        "takeaway": "Linear feet (LF) is simply the total length (L). Use it as the L variable in the BF formula."
+      },
+      "explanation": "Incorrect math or use of a non-standard divisor. This is the NOMINAL BF: (1 × 6 × 200) / 12 = 100 BF. The question asks for actual volume based on the 0.75 x 5.5 dims provided. Gross overestimation. BF = (Actual T × Actual W × Total Linear Feet) / 12 = (0.75 × 5.5 × 200) / 12 = 825 / 12 = 68.75 BF. Linear feet (LF) is simply the total length (L). Use it as the L variable in the BF formula.",
+      "code_citation": "NSCP 2015 Section 2401; Quantity Surveying Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:14:20.379094+00:00",
+      "content_hash": "sha256:8b1b065acf06d14f95d63382a9880f38522d88381955a9ccba3984b18e39bda5"
+    },
+    {
+      "question_id": "9e4aa471-d705-4161-941f-85eb3067c866",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "The nominal size of lumber is 2 × 4. What is the actual size?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.5 × 3.5 inches"
+        },
+        {
+          "id": "b",
+          "text": "2 × 4 inches"
+        },
+        {
+          "id": "c",
+          "text": "1.75 × 3.75 inches"
+        },
+        {
+          "id": "d",
+          "text": "2.25 × 4.25 inches"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This is the rough-sawn/nominal size, not the actual finished size.",
+        "c": "This reduction is insufficient; 0.5 inches is the standard deduction for these sizes.",
+        "d": "Dimensions decrease during milling and drying, they do not increase.",
+        "correct": "In the Philippines, standard S4S (surfaced 4 sides) lumber reduces nominal dimensions by 0.5 inches for 2-6 inch members. A 2x4 is actually 1.5 x 3.5 inches.",
+        "takeaway": "Memorize: 1\" nominal becomes 0.75\"; 2\"-6\" nominal reduces by 0.5\"; 8\"+ nominal reduces by 0.75\"."
+      },
+      "explanation": "This is the rough-sawn/nominal size, not the actual finished size. This reduction is insufficient; 0.5 inches is the standard deduction for these sizes. Dimensions decrease during milling and drying, they do not increase. In the Philippines, standard S4S (surfaced 4 sides) lumber reduces nominal dimensions by 0.5 inches for 2-6 inch members. A 2x4 is actually 1.5 x 3.5 inches. Memorize: 1\" nominal becomes 0.75\"; 2\"-6\" nominal reduces by 0.5\"; 8\"+ nominal reduces by 0.75\".",
+      "code_citation": "DENR Administrative Order No. 2001-08; NSCP 2015",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:14:20.506874+00:00",
+      "content_hash": "sha256:b8156b066a792de6d904453a205a6cba97eacae346be7bee575b89ccd4c603ac"
+    },
+    {
+      "question_id": "adec3c12-138b-4db5-bfc4-1003376076f5",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "A framing calculation yields 450 board feet of required lumber. The supplier delivers 30 pcs of 2×6×12 and 40 pcs of 2×4×8. Is the delivery adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; total delivered is 573.3 BF."
+        },
+        {
+          "id": "b",
+          "text": "No; total delivered is 437.5 BF."
+        },
+        {
+          "id": "c",
+          "text": "No; total delivered is 387.5 BF."
+        },
+        {
+          "id": "d",
+          "text": "Yes; total delivered is exactly 450 BF."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Incorrect math; likely using incorrect divisors.",
+        "c": "This would be the result if using ACTUAL dimensions (8.25 BF and 3.5 BF) - however, delivery and trade are measured nominally.",
+        "d": "Calculation does not result in 450.",
+        "correct": "Using standard NOMINAL board foot calculations for trade: (2×6×12)/12 = 12 BF per pc. 30 pcs × 12 = 360 BF. (2×4×8)/12 = 5.33 BF per pc. 40 pcs × 5.33 = 213.3 BF. Total = 360 + 213.3 = 573.3 BF. This exceeds the 450 BF requirement.",
+        "takeaway": "Unless specified as 'actual volume', board feet for delivery/invoicing are always based on Nominal dimensions."
+      },
+      "explanation": "Incorrect math; likely using incorrect divisors. This would be the result if using ACTUAL dimensions (8.25 BF and 3.5 BF) - however, delivery and trade are measured nominally. Calculation does not result in 450. Using standard NOMINAL board foot calculations for trade: (2×6×12)/12 = 12 BF per pc. 30 pcs × 12 = 360 BF. (2×4×8)/12 = 5.33 BF per pc. 40 pcs × 5.33 = 213.3 BF. Total = 360 + 213.3 = 573.3 BF. This exceeds the 450 BF requirement. Unless specified as 'actual volume', board feet for delivery/invoicing are always based on Nominal dimensions.",
+      "code_citation": "NSCP 2015 Section 2401; Material Verification Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:14:20.639113+00:00",
+      "content_hash": "sha256:32e056a7917e2bbb873cfa9fa3e247d21dd829c178167e8c0ab93a668c20d17a"
+    },
+    {
+      "question_id": "a5568ab4-1694-42c1-aac9-0d10be5fecb3",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "A framing specification calls for 2 × 6 lumber at 12 feet. Using actual dimensions (1.5 × 5.5), calculate board feet per piece.",
+      "options": [
+        {
+          "id": "a",
+          "text": "8.25 BF"
+        },
+        {
+          "id": "b",
+          "text": "11 BF, assuming no waste and perfect cuts"
+        },
+        {
+          "id": "c",
+          "text": "12 BF, which accounts for potential waste during cutting"
+        },
+        {
+          "id": "d",
+          "text": "15 BF, which is an overestimation based on incorrect dimensions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This is a common mathematical error in the previous draft; 1.5 × 5.5 is 8.25, not 11.",
+        "c": "12 BF is the result of using NOMINAL dimensions (2 × 6 × 12) / 12, which is the standard for purchasing but not what the prompt requested.",
+        "d": "This is an overestimation based on incorrect unit application.",
+        "correct": "BF = (1.5 × 5.5 × 12) / 12. The 12 in the numerator (length) and 12 in the denominator cancel out, leaving 1.5 × 5.5 = 8.25 BF.",
+        "takeaway": "While lumber is bought by nominal size, actual volume calculations (for weight or structural density) must use actual milled dimensions."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 2401; Lumber Dimension Tables",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b4e6b157241b9a39cc009a28dbdf2fec6da7fd78215104d995fe027778282846"
+    },
+    {
+      "question_id": "8a23ddd5-c3e9-4f50-8202-746ffc6d2c96",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "The board foot formula is BF = (T × W × L) / 12. Which of the following correctly describes the unit requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "T and W are in inches; L is in feet; the divisor 12 converts cubic inches to board feet."
+        },
+        {
+          "id": "b",
+          "text": "T, W, and L are all in feet; 12 is a standard divisor for lumber, which simplifies calculations."
+        },
+        {
+          "id": "c",
+          "text": "T and W are in feet; L is in inches; the divisor converts to feet³, which is a common error."
+        },
+        {
+          "id": "d",
+          "text": "All dimensions are in inches; no conversion is needed, which is a misconception."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "If all units were feet, the result would be cubic feet, and the divisor 12 would be mathematically incorrect for volume.",
+        "c": "This combination of units does not align with the standard 144 cubic inch definition of a board foot.",
+        "d": "If all dimensions were in inches, the divisor would need to be 144 (12 × 12) to result in board feet.",
+        "correct": "The formula requires thickness (T) and width (W) in inches, and length (L) in feet. The numerator produces units of [sq. in. × ft]; dividing by 12 converts this to board feet (1 BF = 1\" × 12\" × 1').",
+        "takeaway": "Memorize the unit mix: Inches for cross-section, Feet for length, Divisor 12."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Lumber Standards (DENR AO 2001-08); NSCP 2015 Section 2401",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f9023333473a73bf8a019054c342500e0006503b90524eb2d7f1008b712681d6"
+    },
+    {
+      "question_id": "7eeef6ed-23cf-4ba0-abbf-5acc4b26fc75",
+      "article_id": "a38effc8-a3b8-48e8-8cce-cfd163a6e32e",
+      "topic_id": "078c6572-75b2-47d5-a080-be4d379653d8",
+      "text": "In the Philippines, timber is classified into grading groups based on ___. Group I (hardest) includes species such as ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "specific gravity; yakal and molave"
+        },
+        {
+          "id": "b",
+          "text": "moisture content; narra and tanguile, which are known for their durability"
+        },
+        {
+          "id": "c",
+          "text": "surface finish; white lauan, which is often used for interior applications"
+        },
+        {
+          "id": "d",
+          "text": "age; pine and spruce, which are typically softer woods"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Moisture content determines if wood is S-Dry or Green, but it is not the basis for Group I-IV classification.",
+        "c": "Finish is a quality of milling, not botanical grouping.",
+        "d": "Softwoods like Pine are Group IV; Group I is reserved for high-density hardwoods.",
+        "correct": "Philippine timber is grouped by the Forest Products Research and Development Institute (FPRDI) based on specific gravity. Group I (High Strength) includes Yakal, Molave, and Gijo.",
+        "takeaway": "Group I = Hardest/Strongest (>0.70 specific gravity). Group IV = Lightest/Weakest (<0.40 specific gravity)."
+      },
+      "explanation": "Moisture content determines if wood is S-Dry or Green, but it is not the basis for Group I-IV classification. Finish is a quality of milling, not botanical grouping. Softwoods like Pine are Group IV; Group I is reserved for high-density hardwoods. Philippine timber is grouped by the Forest Products Research and Development Institute (FPRDI) based on specific gravity. Group I (High Strength) includes Yakal, Molave, and Gijo. Group I = Hardest/Strongest (>0.70 specific gravity). Group IV = Lightest/Weakest (<0.40 specific gravity).",
+      "code_citation": "FPRDI Guidelines; NSCP 2015 Table 2401.13-1",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-001-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:14:20.782624+00:00",
+      "content_hash": "sha256:3baed37c96bd584d690c18c7983ca3bf2fa377cd0d16222b653409fb07a99315"
+    }
+  ]
+}

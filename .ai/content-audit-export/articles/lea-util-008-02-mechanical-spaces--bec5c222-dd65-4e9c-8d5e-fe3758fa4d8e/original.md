@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Util 008 02 Mechanical Spaces** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,7 +16,11 @@ Design mechanical spaces (chiller plants, boiler rooms, AHU rooms, fan rooms, el
 
 ### Chiller Plant and Central AHU Rooms
 
-<ArticleMedia id="media-lea-util-008-02-mechanical-spaces" type="image" caption="Mechanical Room Floor Plan — Chiller, Pump, AHU, Electrical, and Fire Protection Coordination" description="Coordinated floor plan showing mechanical room: chiller on vibration isolation pads with 1.2-1.5m service clearance, pump sets with flexible connections, AHU with ductwork terminations, electrical panelboard with 1m working clearance, fire suppression header and sprinkler coverage, floor drains and condensate collection (2 L/min per 100kW cooling capacity). Access door (900mm min width), equipment removal path, and BIM coordination at 30/60/90% DD stages annotated." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-008-02-mechanical-spaces", type="image", caption="Mechanical Room Floor Plan — Chiller, Pump, AHU, Electrical, and Fire Protection Coordination", description="Coordinated floor plan showing mechanical room: chiller on vibration isolation pads with 1.2-1.5m service clearance, pump sets with flexible connections, AHU with ductwork terminations, electrical panelboard with 1m working clearance, fire suppression header and sprinkler coverage, floor drains and condensate collection (2 L/min per 100kW cooling capacity). Access door (900mm min width), equipment removal path, and BIM coordination at 30/60/90% DD stages annotated.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 Chiller plant rooms typically consume _3–5% of gross floor area (GFA)_ for full-capacity central systems. This allocation accommodates:
@@ -47,15 +60,23 @@ Pump room sizing is equipment-driven:
 
 ---
 
-<KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, label=true, Panel=true, Efficiency=true, Warranty=true, Life=true, Grid-Tie=true, Most=true, Common=true, DC=true, AC=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+[/SLATECAMP_UI_BLOCK]
 
 ## Electrical Spaces
 
@@ -407,4 +428,3 @@ Based on PD 1096 and typical Metro Manila commercial practice:
 See also within MEPF Coordination and Integration: **lea-util-008-01-core-concept**, **lea-util-008-03-core-concept**, **lea-util-008-04-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

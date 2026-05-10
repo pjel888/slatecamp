@@ -1,7 +1,12 @@
 # Pre-Colonial Vernacular
-*An Immersive LEA Review Module*
 
----
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Pre-Colonial Vernacular** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
@@ -75,23 +80,23 @@ You are crouched beneath a traditional bahay kubo in a Visayan coastal village. 
 
 ---
 
-<Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: The "HALIGI ng BAHAY" Path (Bottom to Top).** Haligi (posts) → Batangan (joists) → Sahig (floor) → Dingding (walls) → Bubong (roof). Chant it: "Haligi, Batangan, Sahig, Dingding, Bubong" — post, joist, floor, wall, roof. This covers the primary structural sequence of any bahay kubo.
+[/SLATECAMP_UI_BLOCK]
 
-**Memory Aid: The "HALIGI ng BAHAY" Path (Bottom to Top).** Haligi (posts) → Batangan (joists) → Sahig (floor) → Dingding (walls) → Bubong (roof). Chant it: "Haligi, Batangan, Sahig, Dingding, Bubong" — post, joist, floor, wall, roof. This covers the primary structural sequence of any bahay kubo.
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Real-World Analogy:** The bahay kubo's nail-less lashing (pagtatali) works like a shock absorber in a car. A rigid nailed building would snap during an earthquake — the joints would crack and the structure would fail catastrophically. But rattan-lashed bamboo joints flex with the ground motion, then spring back into place. This is why pre-colonial Philippine houses survived typhoons and earthquakes that destroyed rigid Spanish stone structures.
+[/SLATECAMP_UI_BLOCK]
 
-</Tip>
-
-<Example>
-
-**Real-World Analogy:** The bahay kubo's nail-less lashing (pagtatali) works like a shock absorber in a car. A rigid nailed building would snap during an earthquake — the joints would crack and the structure would fail catastrophically. But rattan-lashed bamboo joints flex with the ground motion, then spring back into place. This is why pre-colonial Philippine houses survived typhoons and earthquakes that destroyed rigid Spanish stone structures.
-
-</Example>
-
-<ExamTip>
-
-**LEA Exam Pattern:** The LEA frequently tests regional vernacular distinctions. The key question: "Which dwelling type belongs to which region?" Memorize the four: bahay kubo (lowland Tagalog/Visayan), torogan (Maranao, Mindanao — okir carvings, no partitions), Ivatan stone house (Batanes — thick stone walls for typhoons), Ifugao bale (Cordillera — four posts with hagabi rat guards). Do not mix these up.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Exam Pattern:** The LEA frequently tests regional vernacular distinctions. The key question: "Which dwelling type belongs to which region?" Memorize the four: bahay kubo (lowland Tagalog/Visayan), torogan (Maranao, Mindanao — okir carvings, no partitions), Ivatan stone house (Batanes — thick stone walls for typhoons), Ifugao bale (Cordillera — four posts with hagabi rat guards). Do not mix these up.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

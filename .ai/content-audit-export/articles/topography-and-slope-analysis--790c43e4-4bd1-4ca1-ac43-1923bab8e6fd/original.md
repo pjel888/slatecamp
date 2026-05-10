@@ -1,4 +1,11 @@
 # Topography and Slope Analysis
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Topography and Slope Analysis** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 **An Immersive LEA Review Module**
 
 ---
@@ -171,57 +178,55 @@ Sum all grid cells across the site for total cut and fill volumes.
 ### Question 1
 A site has an elevation change of 8 meters over a horizontal distance of 50 meters. What is the slope expressed as a **percentage** and as a **ratio**?
 
-A. 16%, 1:6.25  
-B. 6.25%, 1:16  
-C. 16%, 1:8  
-D. 8%, 1:50  
+A. 16%, 1:6.25
+B. 6.25%, 1:16
+C. 16%, 1:8
+D. 8%, 1:50
 
-> **Answer: A. 16%, 1:6.25**  
+> **Answer: A. 16%, 1:6.25**
 > Slope (%) = (Rise / Run) × 100 = (8 / 50) × 100 = **16%**. Slope ratio = 1 : (Run / Rise) = 1 : (50 / 8) = **1:6.25**. Option B reverses the percentage and ratio. Option C incorrectly calculates the ratio as 1:8 (using only the rise). Option D divides rise by total distance rather than computing rise/run properly. At 16%, this site is in the "challenging" buildability range requiring stepped foundations or retaining walls.
 
 ### Question 2
 Using the Average End Area Method, calculate the cut volume between two stations **25 meters apart**, where Station A has a cut cross-section of 10 m² and Station B has a cut cross-section of 14 m².
 
-A. 250 m³  
-B. 300 m³  
-C. 350 m³  
-D. 600 m³  
+A. 250 m³
+B. 300 m³
+C. 350 m³
+D. 600 m³
 
-> **Answer: B. 300 m³**  
+> **Answer: B. 300 m³**
 > V = [(A₁ + A₂) / 2] × L = [(10 + 14) / 2] × 25 = [24 / 2] × 25 = 12 × 25 = **300 m³**. Option A (250) results from using only A₁ (10 × 25). Option C (350) results from using only A₂ (14 × 25). Option D (600) results from adding A₁ + A₂ without dividing by 2 and then multiplying by L. Always average the two end areas first, then multiply by the distance between stations.
 
 ### Question 3
 An architect excavates 400 m³ (bank volume) of clay soil with a swell factor of 30% and a compaction shrinkage factor of 15%. What is the **compacted fill volume** that this excavated material will produce?
 
-A. 400.0 m³  
-B. 442.0 m³  
-C. 520.0 m³  
-D. 340.0 m³  
+A. 400.0 m³
+B. 442.0 m³
+C. 520.0 m³
+D. 340.0 m³
 
-> **Answer: B. 442.0 m³**  
+> **Answer: B. 442.0 m³**
 > Step 1: Loose volume = 400 × 1.30 = 520 m³. Step 2: Compacted volume = 520 × (1 − 0.15) = 520 × 0.85 = **442.0 m³**. Option A assumes no volume change. Option C is the loose volume (before compaction). Option D incorrectly subtracts 15% from the bank volume. The correct sequence is: Bank → Swell → Loose → Compact → Compacted fill. This 442 m³ result means the 400 m³ cut produces more compacted fill than the original bank volume — because swell outweighs shrinkage in clay. If your fill requirement is only 400 m³, you have a 42 m³ surplus to dispose of.
 
 ---
 
-<LawCallout code="pd1096" section="Rule VIII - Site Development">
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VIII - Site Development"
+- Text: Per the NSCP, foundations on sloping sites must be designed for the actual soil conditions at each foundation level. Stepped footings are required where slope exceeds 15%. Retaining walls are mandatory where cut or fill slopes exceed 2H:1V. Geotechnical investigation is required for any building on slopes >25%.
+[/SLATECAMP_UI_BLOCK]
 
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember the slope buildability ranges: 0-5% (easy), 5-15% (moderate), 15-25% (challenging/stepped foundations), 25-40% (difficult/retaining walls), >40% (generally unbuildable). On exam problems, classify the slope first, then identify the required foundation approach.
+[/SLATECAMP_UI_BLOCK]
 
-Per the NSCP, foundations on sloping sites must be designed for the actual soil conditions at each foundation level. Stepped footings are required where slope exceeds 15%. Retaining walls are mandatory where cut or fill slopes exceed 2H:1V. Geotechnical investigation is required for any building on slopes >25%.
-
-
-</LawCallout>
-
-<Tip >
-
-Remember the slope buildability ranges: 0-5% (easy), 5-15% (moderate), 15-25% (challenging/stepped foundations), 25-40% (difficult/retaining walls), >40% (generally unbuildable). On exam problems, classify the slope first, then identify the required foundation approach.
-
-</Tip>
-
-<ExamTip >
-
-Cut-and-fill balance problems on the LEA typically give you a site cross-section with elevations at regular intervals. Calculate the average elevation, then determine cut and fill areas. The goal is cut ≈ fill to minimize hauling costs. Watch for questions that test whether you know that material compaction reduces fill volume by approximately 15-25%.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Cut-and-fill balance problems on the LEA typically give you a site cross-section with elevations at regular intervals. Calculate the average elevation, then determine cut and fill areas. The goal is cut ≈ fill to minimize hauling costs. Watch for questions that test whether you know that material compaction reduces fill volume by approximately 15-25%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -231,4 +236,3 @@ Cut-and-fill balance problems on the LEA typically give you a site cross-section
 ## Cross‑References
 
 **Microclimate Analysis**, **Hydrology In Site Planning**, **Geological Hazards**, **Excavation Foundation And Veneer**
-

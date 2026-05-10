@@ -1,17 +1,34 @@
 # PD 1096 Rule VII Height Limits
 
-**Module Focus:** Rule VII of the 2004 Revised IRR of PD 1096  
-**LEA Area:** 3 (Architectural Design and Site Planning) — 40% of total exam weight  
-**Difficulty:** Intermediate–Advanced  
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **PD 1096 Rule VII Height Limits** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
+**Module Focus:** Rule VII of the 2004 Revised IRR of PD 1096
+**LEA Area:** 3 (Architectural Design and Site Planning) — 40% of total exam weight
+**Difficulty:** Intermediate–Advanced
 **Spaced Repetition:** Return in 3 days. If you can answer the Blitz Quiz cold, move on.[file:17][file:18]
 
 ---
 
 ## Why This Module Decides Your Score
 
-<ArticleMedia id="media-pd-1096-rule-vii-height-limits-0" name="three-controls-venn" type="diagram" caption="Venn diagram / three-overlapping-circles showing the three independent controls: BHL (how high), FLAR (how much GFA), PSO (how much footprint). Below each, show the governing table reference and a sample value. Emphasize they are independent and the most restrictive result governs. Include the master formula chain TLA → PSO → AMBF → FLAR → Max GFA → BHL as a flowchart below." />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-pd-1096-rule-vii-height-limits-0", name="three-controls-venn", type="diagram", caption="Venn diagram / three-overlapping-circles showing the three independent controls: BHL (how high), FLAR (how much GFA), PSO (how much footprint). Below each, show the governing table reference and a sample value. Emphasize they are independent and the most restrictive result governs. Include the master formula chain TLA → PSO → AMBF → FLAR → Max GFA → BHL as a flowchart below."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-pd-1096-rule-vii-height-limits-1" name="bhl-flar-rrow-diagram" type="diagram" caption="Street section diagram showing RROW width governing BHL: 6–7m RROW → ~3 storeys/9m, 4–5m RROW → ~2.5 storeys/7.5m, ≤3m RROW → ~2 storeys/6m. Show building silhouette stepping back with annotations for BHL exemptions (spires in incombustible materials unlimited, combustible max 6m above BHL)." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-pd-1096-rule-vii-height-limits-1", name="bhl-flar-rrow-diagram", type="diagram", caption="Street section diagram showing RROW width governing BHL: 6–7m RROW → ~3 storeys/9m, 4–5m RROW → ~2.5 storeys/7.5m, ≤3m RROW → ~2 storeys/6m. Show building silhouette stepping back with annotations for BHL exemptions (spires in incombustible materials unlimited, combustible max 6m above BHL)."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -63,13 +80,11 @@ The following projections above the main roof are permitted and are **excluded**
 | **Entirely incombustible materials** | May extend beyond BHL, limited by structural and special regulations (e.g., aviation) |
 | **Combustible materials**            | Maximum of **6.00 m above the prescribed BHL**                                        |
 
-<LawCallout code="pd1096" section="Rule VII - Height Limits">
-
-
-BHL protects urban light and ventilation corridors and helps keep densities within the capacity of roads, water and sewer infrastructure, while separate aviation limits protect flight safety near airports.[file:17] The 3-meter tolerance prevents unrealistic penalties on buildings on steeply sloped lots.[file:17][file:18]
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Height Limits"
+- Text: BHL protects urban light and ventilation corridors and helps keep densities within the capacity of roads, water and sewer infrastructure, while separate aviation limits protect flight safety near airports.[file:17] The 3-meter tolerance prevents unrealistic penalties on buildings on steeply sloped lots.[file:17][file:18]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -87,13 +102,11 @@ Allowable Maximum GFA = TLA x FLAR
 
 **Mental Hook:** _FLAR is your floor area budget; BHL is your height ceiling; they are independent, and FLAR usually bites first on constrained lots._[file:17]
 
-<LawCallout code="pd1096" section="Rule VII - Section 705">
-
-
-FLAR links total habitable floor area to lot size and zone capacity, preventing very small lots from carrying tower-like densities that overload surrounding infrastructure and urban form.[file:17]
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule VII - Section 705"
+- Text: FLAR links total habitable floor area to lot size and zone capacity, preventing very small lots from carrying tower-like densities that overload surrounding infrastructure and urban form.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -101,7 +114,7 @@ FLAR links total habitable floor area to lot size and zone capacity, preventing 
 
 **Definition (Rule VII, Sec. 705 / Guidelines):** GFA is the total floor space within the perimeter of the permanent external building walls, measured to interior surfaces, inclusive of habitable and usable spaces such as residential units, offices, corridors, lobbies and mezzanines.[file:17][file:18]
 
-**Included in GFA:**  
+**Included in GFA:**
 Building projections that function as integral floor areas directly connected to interior spaces, including **balconies with a floor area of 10.0 sq.m or less** per unit.[file:17][file:18]
 
 ### LEART: GFA Exclusions — Do NOT Count These Against FLAR
@@ -115,11 +128,11 @@ Building projections that function as integral floor areas directly connected to
 
 [file:17][file:18]
 
-<Callout variant="authority" title="Reason for the Law">
-
-If parking and open recreational/service spaces counted against GFA, developers would be pushed to minimize them to free more FLAR allowance for sleaable units, worsening congestion and livability.[file:17] Excluding them from GFA (but still recognizing them in TGFA) encourages sufficient parking and amenity provision while still acknowledging total built mass.[file:17]
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="authority", title="Reason for the Law"
+- Text: If parking and open recreational/service spaces counted against GFA, developers would be pushed to minimize them to free more FLAR allowance for sleaable units, worsening congestion and livability.[file:17] Excluding them from GFA (but still recognizing them in TGFA) encourages sufficient parking and amenity provision while still acknowledging total built mass.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -140,11 +153,11 @@ TGFA = GFA + Non-GFA Areas
 
 [file:17][file:18]
 
-<Callout variant="authority" title="Reason for the Law">
-
-TGFA reflects the total built volume that still imposes load on infrastructure (roads, utilities, fire protection) even if the spaces are not habitable, so it is used for impact and compliance checks apart from pure density limits.[file:17]
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="authority", title="Reason for the Law"
+- Text: TGFA reflects the total built volume that still imposes load on infrastructure (roads, utilities, fire protection) even if the spaces are not habitable, so it is used for impact and compliance checks apart from pure density limits.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -160,7 +173,7 @@ TGFA reflects the total built volume that still imposes load on infrastructure (
 | **How it is derived** | GFA + non-GFA areas                    | **AMBF x BHL**                       |
 | **Governs**           | Floor-area density (with FLAR)         | Bulk/envelope control                |
 
-**The trap formula:**  
+**The trap formula:**
 `AMBF x BHL = AMVB` — this yields **cubic meters**, not square meters.[file:17]
 
 **Correct source for allowable TGFA:** **Table VII.1** and the related guidelines, which express allowable maximum TGFA as a function of PSO (Percentage of Site Occupancy) and TLA; this is separate from the FLAR-based GFA and from AMVB.[file:17]
@@ -237,11 +250,11 @@ _These values are drawn from the PRBoA/DPWH 2005 Revised IRR, using the annotate
 
 [file:17]
 
-<Note>
-
-This table is from the annotated Building Bulk Guidelines; the BHL values referenced in remarks coordinate with Table VII.2 but are not themselves the normative BHL table.[file:17]
-
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0007 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: This table is from the annotated Building Bulk Guidelines; the BHL values referenced in remarks coordinate with Table VII.2 but are not themselves the normative BHL table.[file:17]
+[/SLATECAMP_UI_BLOCK]
 
 ### Table B: Building Height Limit by Occupancy (Table VII.2, Rule VII)
 
@@ -269,11 +282,11 @@ Lots served by only one narrow RROW are subject to **stricter height caps** rega
 | **4.00 to 5.00 m**        | ≈ **2.5 storeys / 7.50 m**      |
 | **3.00 m or less**        | ≈ **2 storeys / 6.00 m**        |
 
-<Callout variant="authority" title="Reason for the Law">
-
-Narrow roads cannot support safe emergency access for tall buildings; tying BHL to RROW width ensures that fire trucks, ambulances, and evacuation flows remain feasible.[file:17][file:18]
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0008 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="authority", title="Reason for the Law"
+- Text: Narrow roads cannot support safe emergency access for tall buildings; tying BHL to RROW width ensures that fire trucks, ambulances, and evacuation flows remain feasible.[file:17][file:18]
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -344,24 +357,16 @@ Many candidates assume that a very high FLAR automatically means a very tall BHL
 
 You are designing a Commercial building in a zone where the local ordinance imposes a maximum FLAR of 4.0 on a 1,000 sq.m lot. Your proposed design has a total GFA of 5,000 sq.m. What is the regulatory status of your design?
 
-A) It complies, as long as the building stays under the local BHL.  
-B) It complies, because 5,000 sq.m falls within typical commercial ranges.  
-C) It violates the code because the maximum allowable GFA is 4,000 sq.m.  
+A) It complies, as long as the building stays under the local BHL.
+B) It complies, because 5,000 sq.m falls within typical commercial ranges.
+C) It violates the code because the maximum allowable GFA is 4,000 sq.m.
 D) It violates the code because GFA must include parking spaces.
 
-<Accordion>
-  <summary><b>Click to reveal the answer</b></summary>
-  <br>
-  <b>Correct Answer: C</b><br><br>
-  <b>Step-by-step:</b><br>
-  Step 1: Max GFA = TLA x FLAR = 1,000 sq.m x 4.0 = <b>4,000 sq.m</b>.<br>
-  Step 2: Proposed GFA = 5,000 sq.m → exceeds allowable by 1,000 sq.m.<br>
-  Step 3: Height/BHL compliance cannot cure a FLAR violation; both must be met independently.<br><br>
-  <b>Why the other choices are wrong:</b><br>
-  A — Height/BHL is a separate control; FLAR must still be satisfied.<br>
-  B — The local ordinance’s FLAR 4.0 is binding even if the national FLAR range allows higher values.<br>
-  D — Parking is excluded from GFA by the Guidelines; including it here reverses the rule.
-</Accordion>
+[SLATECAMP_UI_BLOCK:ui_0009 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Click to reveal the answer Correct Answer: C Step-by-step: Step 1: Max GFA = TLA x FLAR = 1,000 sq.m x 4.0 = 4,000 sq.m . Step 2: Proposed GFA = 5,000 sq.m → exceeds allowable by 1,000 sq.m. Step 3: Height/BHL compliance cannot cure a FLAR violation; both must be met independently. Why the other choices are wrong: A — Height/BHL is a separate control; FLAR must still be satisfied. B — The local ordinance’s FLAR 4.0 is binding even if the national FLAR range allows higher values. D — Parking is e
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -369,18 +374,16 @@ D) It violates the code because GFA must include parking spaces.
 
 A commercial lot is served by a single RROW that is 5.00 m wide. The occupancy-based BHL for the use is higher than 20 m. What BHL cap applies in practice?
 
-A) The higher occupancy-based BHL.  
-B) 3 storeys / 9.00 m.  
-C) 2.5 storeys / 7.50 m.  
+A) The higher occupancy-based BHL.
+B) 3 storeys / 9.00 m.
+C) 2.5 storeys / 7.50 m.
 D) 2 storeys / 6.00 m.
 
-<Accordion>
-  <summary><b>Click to reveal the answer</b></summary>
-  <br>
-  <b>Correct Answer: C</b><br><br>
-  Where only one RROW of 4.00–5.00 m width serves the lot, the more restrictive cap of about <b>2.5 storeys / 7.50 m</b> applies, regardless of occupancy-based BHL.<br><br>
-  This reflects the guideline that RROW width can override higher occupancy-based height allowances in the interest of emergency access and safety.
-</Accordion>
+[SLATECAMP_UI_BLOCK:ui_0010 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Click to reveal the answer Correct Answer: C Where only one RROW of 4.00–5.00 m width serves the lot, the more restrictive cap of about 2.5 storeys / 7.50 m applies, regardless of occupancy-based BHL. This reflects the guideline that RROW width can override higher occupancy-based height allowances in the interest of emergency access and safety.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -388,22 +391,16 @@ D) 2 storeys / 6.00 m.
 
 A residential condominium (R-5) floor has: 800 sq.m of units, a 50 sq.m lobby/corridor, a 200 sq.m covered parking bay, and twenty balconies of 12 sq.m each (one per unit). What is the GFA of this floor?
 
-A) 1,290 sq.m  
-B) 1,050 sq.m  
-C) 850 sq.m  
+A) 1,290 sq.m
+B) 1,050 sq.m
+C) 850 sq.m
 D) 1,090 sq.m
 
-<Accordion>
-  <summary><b>Click to reveal the answer</b></summary>
-  <br>
-  <b>Correct Answer: C</b><br><br>
-  - Units: 800 sq.m → <b>included</b> in GFA.<br>
-  - Lobby & corridor: 50 sq.m → <b>included</b> in GFA.<br>
-  - Covered parking: 200 sq.m → <b>excluded</b> from GFA (non-GFA).<br>
-  - 20 balconies @ 12 sq.m (240 sq.m): each exceeds 10.0 sq.m → <b>excluded</b> from GFA.<br><br>
-  GFA = 800 + 50 = <b>850 sq.m</b>.<br>
-  TGFA of the floor = 850 + 200 + 240 = 1,290 sq.m.
-</Accordion>
+[SLATECAMP_UI_BLOCK:ui_0011 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Click to reveal the answer Correct Answer: C - Units: 800 sq.m → included in GFA. - Lobby & corridor: 50 sq.m → included in GFA. - Covered parking: 200 sq.m → excluded from GFA (non-GFA). - 20 balconies @ 12 sq.m (240 sq.m): each exceeds 10.0 sq.m → excluded from GFA. GFA = 800 + 50 = 850 sq.m . TGFA of the floor = 850 + 200 + 240 = 1,290 sq.m.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -411,20 +408,16 @@ D) 1,090 sq.m
 
 An architect is designing a high-rise building on a 2,000 sq.m lot. PSO is 80% and FLAR is 10.0. The BHL for the zone is 60 storeys (180.00 m). If you hold the footprint at the full AMBF on every floor, how many full floors can you build by FLAR?
 
-A) 60 storeys  
-B) 12 storeys  
-C) 18 storeys  
+A) 60 storeys
+B) 12 storeys
+C) 18 storeys
 D) 25 storeys
 
-<Accordion>
-  <summary><b>Click to reveal the answer</b></summary>
-  <br>
-  <b>Correct Answer: B</b><br><br>
-  Step 1: AMBF = 2,000 x 80% = <b>1,600 sq.m</b>.<br>
-  Step 2: Max GFA = 2,000 x 10.0 = <b>20,000 sq.m</b>.<br>
-  Step 3: Max floors by FLAR = 20,000 / 1,600 = 12.5 → at most <b>12 full floors</b> at full footprint.<br><br>
-  Even though BHL allows 60 storeys, the FLAR-based GFA budget only supports 12 full floors at the chosen AMBF. FLAR is binding here.
-</Accordion>
+[SLATECAMP_UI_BLOCK:ui_0012 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Click to reveal the answer Correct Answer: B Step 1: AMBF = 2,000 x 80% = 1,600 sq.m . Step 2: Max GFA = 2,000 x 10.0 = 20,000 sq.m . Step 3: Max floors by FLAR = 20,000 / 1,600 = 12.5 → at most 12 full floors at full footprint. Even though BHL allows 60 storeys, the FLAR-based GFA budget only supports 12 full floors at the chosen AMBF. FLAR is binding here.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -441,18 +434,11 @@ Say each answer aloud before revealing.
 7. What formula gives Allowable Maximum GFA from FLAR?
 8. TGFA equals GFA plus \_\_\_.
 
-<Accordion>
-  <summary><b>Answers</b></summary>
-  <br>
-  1. <b>1.50</b> (for R-1, at a 3-storey or 10.00 m BHL, per Table VII.G.1).<br>
-  2. <b>Table VII.G.1, Guidelines on Building Bulk</b>.<br>
-  3. <b>10.0</b> sq.m per unit.<br>
-  4. <b>Volume</b> (AMVB, in cubic meters — not area).<br>
-  5. <b>AMBF</b> (AMBF = TLA x PSO).<br>
-  6. <b>Not more than 6.00 m above the prescribed BHL</b> for combustible materials.<br>
-  7. <b>Max GFA = TLA x FLAR</b>.<br>
-  8. <b>Non-GFA areas</b> (parking, utility spaces, over-10 sq.m balconies, external fire escapes, etc.).
-</Accordion>
+[SLATECAMP_UI_BLOCK:ui_0013 component="Accordion" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Answers 1. 1.50 (for R-1, at a 3-storey or 10.00 m BHL, per Table VII.G.1). 2. Table VII.G.1, Guidelines on Building Bulk . 3. 10.0 sq.m per unit. 4. Volume (AMVB, in cubic meters — not area). 5. AMBF (AMBF = TLA x PSO). 6. Not more than 6.00 m above the prescribed BHL for combustible materials. 7. Max GFA = TLA x FLAR . 8. Non-GFA areas (parking, utility spaces, over-10 sq.m balconies, external fire escapes, etc.).
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

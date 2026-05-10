@@ -1,7 +1,7 @@
 {
   "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:cb46f5c9250c9f7171b8a5729d676fe8a5ac9ae78707283b61470e65c624ab51",
+  "linked_questions_hash": "sha256:7ef51ab4f181935cd1104ecdc726ccc6e8ee11d829847bd68aa1d2d5cb3e6728",
   "question_count": 10,
   "questions": [
     {
@@ -53,6 +53,56 @@
       "created_at": "2026-03-23T19:27:43.821974+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:b505fc38ced956bea8dfb714b52925029c57445051d45782ce351030250132c9"
+    },
+    {
+      "question_id": "13145816-156c-45ea-b398-01c581aceb61",
+      "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
+      "topic_id": "d5183ae2-2f63-421f-9e52-756d3113565f",
+      "text": "What specific disciplinary tools does the Board exercise under Section 7(h) in hearing administrative cases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Board may only recommend discipline; courts impose final penalties, limiting the Board's direct influence on professional conduct"
+        },
+        {
+          "id": "b",
+          "text": "The Board may investigate, issue subpoenas, hear evidence, and impose discipline including censure, suspension, or revocation of the certificate and professional identification card."
+        },
+        {
+          "id": "c",
+          "text": "The Board has no enforcement authority; complaints go directly to court, bypassing any preliminary investigation by the Board"
+        },
+        {
+          "id": "d",
+          "text": "The Board may impose fines only; license suspension is prohibited, restricting its ability to enforce compliance through more severe measures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Board imposes final discipline (subject to appeal to Commission); courts are not part of the first-instance process.",
+        "c": "The Board has full administrative enforcement authority; appeals go to the Commission.",
+        "d": "The Board may impose suspension or revocation, which are more substantial than fines.",
+        "correct": "Section 7(h) grants quasi-judicial authority; the Board conducts investigations, hearing witnesses under oath via subpoena, and issues binding decisions imposing discipline.",
+        "takeaway": "The Board's disciplinary authority is substantial; it controls the license credential that authorizes practice, making its enforcement mechanism powerful."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-005-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.017953+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:70753406f48dfd4a4264176926bb9ef2553f69d307f6fd738509d25034e94fe7"
     },
     {
       "question_id": "73030b31-b2f2-4ae5-810a-0ffc12e67007",
@@ -153,56 +203,6 @@
       "created_at": "2026-03-23T19:27:44.017953+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:7bc77d6fdc9c6b2cc2af296587345f0ec56df2af6176fbdbd30da3c6210ad8eb"
-    },
-    {
-      "question_id": "2f304c4d-f66b-4e8b-a741-c2d07d30a15e",
-      "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
-      "topic_id": "d5183ae2-2f63-421f-9e52-756d3113565f",
-      "text": "What is the relationship between the Board's rulemaking power and the Commission's review authority over Board policies and regulations?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The Board has unlimited rulemaking authority without Commission oversight, operating as a fully autonomous regulatory body."
-        },
-        {
-          "id": "b",
-          "text": "The Board prescribes rules; the Commission must review and approve them before they take effect. This prevents Board overreach while allowing Board autonomy in disciplinary decisions, which are appealable directly to the Commission."
-        },
-        {
-          "id": "c",
-          "text": "The Commission prescribes rules; the Board has no input and serves only as an advisory body for professional standards."
-        },
-        {
-          "id": "d",
-          "text": "Board rules take effect immediately without any review, and the Commission intervenes only when formal complaints are filed."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The Commission approval requirement constrains Board rulemaking.",
-        "c": "The Board prescribes rules, though subject to Commission approval.",
-        "d": "Rules require Commission approval before taking effect.",
-        "correct": "The statute states: 'The policies, resolutions, rules and regulations, issued or promulgated by the Board shall be subject to review and approval of the Commission. However, the Board's decisions, resolutions or orders rendered in administrative cases shall be subject to review only if on appeal.'",
-        "takeaway": "This dual structure balances: in rulemaking, the Commission maintains oversight; in disciplinary matters, the Board has relative autonomy with direct appeal to the Commission."
-      },
-      "explanation": null,
-      "code_citation": "RA 9266",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-LAW-005-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:44.017953+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fdf5aa797adf03949f30a418194152cc36cc96c3898d37ddef8c4e6e2da2efd5"
     },
     {
       "question_id": "bba310f4-fefb-4a88-bd79-73fb1f5c863f",
@@ -405,26 +405,26 @@
       "content_hash": "sha256:f4bbcfcc3c8f56358b6e0732bac453a5e579bfa35306f2c2b9559a232cc085e1"
     },
     {
-      "question_id": "13145816-156c-45ea-b398-01c581aceb61",
+      "question_id": "2f304c4d-f66b-4e8b-a741-c2d07d30a15e",
       "article_id": "ab6d74a1-744c-4961-816a-b088bb707848",
       "topic_id": "d5183ae2-2f63-421f-9e52-756d3113565f",
-      "text": "What specific disciplinary tools does the Board exercise under Section 7(h) in hearing administrative cases?",
+      "text": "What is the relationship between the Board's rulemaking power and the Commission's review authority over Board policies and regulations?",
       "options": [
         {
           "id": "a",
-          "text": "The Board may only recommend discipline; courts impose final penalties, limiting the Board's direct influence on professional conduct"
+          "text": "The Board has unlimited rulemaking authority without Commission oversight, operating as a fully autonomous regulatory body."
         },
         {
           "id": "b",
-          "text": "The Board may investigate, issue subpoenas, hear evidence, and impose discipline including censure, suspension, or revocation of the certificate and professional identification card."
+          "text": "The Board prescribes rules; the Commission must review and approve them before they take effect. This prevents Board overreach while allowing Board autonomy in disciplinary decisions, which are appealable directly to the Commission."
         },
         {
           "id": "c",
-          "text": "The Board has no enforcement authority; complaints go directly to court, bypassing any preliminary investigation by the Board"
+          "text": "The Commission prescribes rules; the Board has no input and serves only as an advisory body for professional standards."
         },
         {
           "id": "d",
-          "text": "The Board may impose fines only; license suspension is prohibited, restricting its ability to enforce compliance through more severe measures"
+          "text": "Board rules take effect immediately without any review, and the Commission intervenes only when formal complaints are filed."
         }
       ],
       "correct_option_id": "b",
@@ -433,26 +433,26 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The Board imposes final discipline (subject to appeal to Commission); courts are not part of the first-instance process.",
-        "c": "The Board has full administrative enforcement authority; appeals go to the Commission.",
-        "d": "The Board may impose suspension or revocation, which are more substantial than fines.",
-        "correct": "Section 7(h) grants quasi-judicial authority; the Board conducts investigations, hearing witnesses under oath via subpoena, and issues binding decisions imposing discipline.",
-        "takeaway": "The Board's disciplinary authority is substantial; it controls the license credential that authorizes practice, making its enforcement mechanism powerful."
+        "a": "The Commission approval requirement constrains Board rulemaking.",
+        "c": "The Board prescribes rules, though subject to Commission approval.",
+        "d": "Rules require Commission approval before taking effect.",
+        "correct": "The statute states: 'The policies, resolutions, rules and regulations, issued or promulgated by the Board shall be subject to review and approval of the Commission. However, the Board's decisions, resolutions or orders rendered in administrative cases shall be subject to review only if on appeal.'",
+        "takeaway": "This dual structure balances: in rulemaking, the Commission maintains oversight; in disciplinary matters, the Board has relative autonomy with direct appeal to the Commission."
       },
-      "explanation": null,
+      "explanation": "The Commission approval requirement constrains Board rulemaking. The Board prescribes rules, though subject to Commission approval. Rules require Commission approval before taking effect. The statute states: 'The policies, resolutions, rules and regulations, issued or promulgated by the Board shall be subject to review and approval of the Commission. However, the Board's decisions, resolutions or orders rendered in administrative cases shall be subject to review only if on appeal.' This dual structure balances: in rulemaking, the Commission maintains oversight; in disciplinary matters, the Board has relative autonomy with direct appeal to the Commission.",
       "code_citation": "RA 9266",
-      "bloom_level": "understand",
+      "bloom_level": "apply",
       "application_context": "code_interpretation",
       "practice_context": [],
-      "difficulty": 0.5,
+      "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-PRAC-LAW-005-005",
+      "model_id": "ALE-PRAC-LAW-005-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:44.017953+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:70753406f48dfd4a4264176926bb9ef2553f69d307f6fd738509d25034e94fe7"
+      "updated_at": "2026-05-06T14:40:19.18081+00:00",
+      "content_hash": "sha256:95a999d2f0386e94c37d6ef2fe491694f3aca78bd6027b355812c9fc440611c3"
     },
     {
       "question_id": "f96f80fe-0919-4fbc-8a73-6f0235e73b5e",

@@ -1,7 +1,7 @@
 {
   "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:28a91ef9c0154870e9e694d9b6b70567159de13893f3ee88f0025b25442a9e58",
+  "linked_questions_hash": "sha256:a21b38b6366276f54256fcbe9201fdeb49c4f70a3708c15a3831f4900f6caca3",
   "question_count": 15,
   "questions": [
     {
@@ -53,6 +53,106 @@
       "created_at": "2026-03-23T19:28:03.161281+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:6fedc67a839e73993f2ab8b3e59d78d74c95b04d65573cf1a26eba2d039e9c83"
+    },
+    {
+      "question_id": "2ae5639a-b45a-4f18-971f-4d4877ecadf8",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "A rural agricultural facility in Mindanao is designed as a hybrid solar-diesel system with a 10 kW PV array and 5 kW diesel generator. Based on typical hybrid ratios (2–4 kW PV per 1 kW generator), what is the expected annual diesel displacement and fuel cost savings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 10–15% diesel displacement; USD 500–1,000 annual savings"
+        },
+        {
+          "id": "b",
+          "text": "B) 20–30% diesel displacement; USD 1,500–2,500 annual savings"
+        },
+        {
+          "id": "c",
+          "text": "C) 30–50% diesel displacement; USD 2,000–4,000 annual savings"
+        },
+        {
+          "id": "d",
+          "text": "D) 60–75% diesel displacement; USD 5,000–7,500 annual savings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Low displacement (10–15%) underestimates typical hybrid system performance; this would occur only with undersized PV arrays (<3 kW).",
+        "b": "Moderate savings (USD 1,500–2,500) corresponds to 20–30% displacement, insufficient for the stated 2:1 ratio and full tropical solar resource utilization.",
+        "d": "Displacement above 50% requires PV oversizing beyond 4:1 ratio or exceptional solar conditions; economically inefficient and not recommended for standard hybrid design.",
+        "correct": "A 10 kW PV array with 5 kW diesel generator achieves 2:1 PV-to-generator ratio (within 2–4 kW PV per 1 kW diesel range). This configuration displaces 30–50% annual diesel consumption (~8,000–12,000 kWh/year from PV generation at 4.0 kWh/m²/day), saving USD 2,000–4,000/year at current diesel costs. System cost approximately USD 25,000–40,000 including battery and hybrid controller.",
+        "takeaway": "Hybrid solar-diesel systems with 2–4 kW PV per 1 kW generator typically achieve 30–50% annual diesel displacement, generating USD 2,000–4,000 fuel savings annually and improving rural facility sustainability."
+      },
+      "explanation": "Low displacement (10–15%) underestimates typical hybrid system performance; this would occur only with undersized PV arrays (<3 kW). Moderate savings (USD 1,500–2,500) corresponds to 20–30% displacement, insufficient for the stated 2:1 ratio and full tropical solar resource utilization. Displacement above 50% requires PV oversizing beyond 4:1 ratio or exceptional solar conditions; economically inefficient and not recommended for standard hybrid design. A 10 kW PV array with 5 kW diesel generator achieves 2:1 PV-to-generator ratio (within 2–4 kW PV per 1 kW diesel range). This configuration displaces 30–50% annual diesel consumption (~8,000–12,000 kWh/year from PV generation at 4.0 kWh/m²/day), saving USD 2,000–4,000/year at current diesel costs. System cost approximately USD 25,000–40,000 including battery and hybrid controller. Hybrid solar-diesel systems with 2–4 kW PV per 1 kW generator typically achieve 30–50% annual diesel displacement, generating USD 2,000–4,000 fuel savings annually and improving rural facility sustainability.",
+      "code_citation": "Article LEA-UTIL-007-04: Renewable Energy Systems in Buildings—Energy Storage and Hybrid Systems section.",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T14:40:23.692163+00:00",
+      "content_hash": "sha256:23aabeffebcb8fc7334a897612d83f3eed3126ae63aa6e36728150c08f25f5c7"
+    },
+    {
+      "question_id": "d6e826ec-546f-405a-8283-d6f70e169a09",
+      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
+      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
+      "text": "Building-integrated photovoltaics (BIPV) embed solar cells into building envelope components. Which of the following BIPV products achieves the highest power output per square meter on a vertical facade?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Transparent glazing modules with 5–10% efficiency, suitable for applications where natural light is prioritized"
+        },
+        {
+          "id": "b",
+          "text": "B) Solar roof tiles producing 50–150 W per tile, optimized for sloped roof installations rather than vertical facades"
+        },
+        {
+          "id": "c",
+          "text": "C) Facade-mounted systems rated 80–180 W/m² for vertical facades (68% of rooftop optimal at equator latitudes)"
+        },
+        {
+          "id": "d",
+          "text": "D) Thin-film amorphous silicon modules with 7–10% efficiency, often used in applications where flexibility and lightweight are critical"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Transparent glazing achieves only 5–10% efficiency, limiting power density to ~10–20 W/m² despite dual shading function.",
+        "b": "Solar roof tiles are medium-efficiency products; total power density depends on tile size and spacing, typically lower than vertical facade systems.",
+        "d": "Thin-film amorphous modules (7–10%) are less efficient than crystalline BIPV options and unsuitable for facade applications.",
+        "correct": "Facade-mounted BIPV systems deliver 100–250 W/m² on vertical surfaces, outperforming transparent glazing (5–10% efficiency yields ~10–20 W/m²) and thin-film modules (7–10% efficiency). Solar roof tiles (50–150 W/tile) are suitable for sloped roofs but less efficient per m² than facade systems.",
+        "takeaway": "BIPV facade-mounted systems offer superior power density (100–250 W/m²) for vertical building surfaces compared to transparent glazing or thin-film alternatives, making them optimal for commercial building integration."
+      },
+      "explanation": "Transparent glazing achieves only 5–10% efficiency, limiting power density to ~10–20 W/m² despite dual shading function. Solar roof tiles are medium-efficiency products; total power density depends on tile size and spacing, typically lower than vertical facade systems. Thin-film amorphous modules (7–10%) are less efficient than crystalline BIPV options and unsuitable for facade applications. Facade-mounted BIPV systems deliver 100–250 W/m² on vertical surfaces, outperforming transparent glazing (5–10% efficiency yields ~10–20 W/m²) and thin-film modules (7–10% efficiency). Solar roof tiles (50–150 W/tile) are suitable for sloped roofs but less efficient per m² than facade systems. BIPV facade-mounted systems offer superior power density (100–250 W/m²) for vertical building surfaces compared to transparent glazing or thin-film alternatives, making them optimal for commercial building integration.",
+      "code_citation": "NREL (2021). Photovoltaic Technology Performance: 2021 Benchmarks. NREL/TP-6A40-79326. + IRENA (2022). Southeast Asia Renewable Energy Cost Review.",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-007-04-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:03.161281+00:00",
+      "updated_at": "2026-05-06T14:43:14.200736+00:00",
+      "content_hash": "sha256:b13ec0e2ff35154066794e0b7e7db07e71e8e34599f6c4b578854805cc0bd7fa"
     },
     {
       "question_id": "1f7428cb-97ef-4e1e-ab1b-f974b15b39f0",
@@ -405,56 +505,6 @@
       "content_hash": "sha256:6e05b0f0e61208c7848de7645c595e706b0a7abde8ee5e9dbd1b3f680be28296"
     },
     {
-      "question_id": "2ae5639a-b45a-4f18-971f-4d4877ecadf8",
-      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
-      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
-      "text": "A rural agricultural facility in Mindanao is designed as a hybrid solar-diesel system with a 10 kW PV array and 5 kW diesel generator. Based on typical hybrid ratios (2–4 kW PV per 1 kW generator), what is the expected annual diesel displacement and fuel cost savings?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) 10–15% diesel displacement; USD 500–1,000 annual savings"
-        },
-        {
-          "id": "b",
-          "text": "B) 20–30% diesel displacement; USD 1,500–2,500 annual savings"
-        },
-        {
-          "id": "c",
-          "text": "C) 30–50% diesel displacement; USD 2,000–4,000 annual savings"
-        },
-        {
-          "id": "d",
-          "text": "D) 60–75% diesel displacement; USD 5,000–7,500 annual savings"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Low displacement (10–15%) underestimates typical hybrid system performance; this would occur only with undersized PV arrays (<3 kW).",
-        "b": "Moderate savings (USD 1,500–2,500) corresponds to 20–30% displacement, insufficient for the stated 2:1 ratio and full tropical solar resource utilization.",
-        "d": "Displacement above 50% requires PV oversizing beyond 4:1 ratio or exceptional solar conditions; economically inefficient and not recommended for standard hybrid design.",
-        "correct": "A 10 kW PV array with 5 kW diesel generator achieves 2:1 PV-to-generator ratio (within 2–4 kW PV per 1 kW diesel range). This configuration displaces 30–50% annual diesel consumption (~8,000–12,000 kWh/year from PV generation at 4.0 kWh/m²/day), saving USD 2,000–4,000/year at current diesel costs. System cost approximately USD 25,000–40,000 including battery and hybrid controller.",
-        "takeaway": "Hybrid solar-diesel systems with 2–4 kW PV per 1 kW generator typically achieve 30–50% annual diesel displacement, generating USD 2,000–4,000 fuel savings annually and improving rural facility sustainability."
-      },
-      "explanation": null,
-      "code_citation": "Article LEA-UTIL-007-04: Renewable Energy Systems in Buildings—Energy Storage and Hybrid Systems section.",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-007-04-013",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bec303a44af75152b7207daa38be402b66f4579eba2c4d895f047f3340d5aee6"
-    },
-    {
       "question_id": "197c1744-01ae-4e44-88d7-38b376301a30",
       "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
       "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
@@ -553,56 +603,6 @@
       "created_at": "2026-03-23T19:28:03.161281+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:1b1734589e5b1c81e93c7f55fba75b507f58df877286d7429d92a1810e93b66f"
-    },
-    {
-      "question_id": "d6e826ec-546f-405a-8283-d6f70e169a09",
-      "article_id": "06c6e7dc-b3cd-4ff8-a25a-fed405c47830",
-      "topic_id": "3eddafd9-ac8e-47ba-98d8-1b5c8a8b430e",
-      "text": "Building-integrated photovoltaics (BIPV) embed solar cells into building envelope components. Which of the following BIPV products achieves the highest power output per square meter on a vertical facade?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) Transparent glazing modules with 5–10% efficiency, suitable for applications where natural light is prioritized"
-        },
-        {
-          "id": "b",
-          "text": "B) Solar roof tiles producing 50–150 W per tile, optimized for sloped roof installations rather than vertical facades"
-        },
-        {
-          "id": "c",
-          "text": "C) Facade-mounted systems rated 80–180 W/m² for vertical facades (68% of rooftop optimal at equator latitudes)"
-        },
-        {
-          "id": "d",
-          "text": "D) Thin-film amorphous silicon modules with 7–10% efficiency, often used in applications where flexibility and lightweight are critical"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Transparent glazing achieves only 5–10% efficiency, limiting power density to ~10–20 W/m² despite dual shading function.",
-        "b": "Solar roof tiles are medium-efficiency products; total power density depends on tile size and spacing, typically lower than vertical facade systems.",
-        "d": "Thin-film amorphous modules (7–10%) are less efficient than crystalline BIPV options and unsuitable for facade applications.",
-        "correct": "Facade-mounted BIPV systems deliver 100–250 W/m² on vertical surfaces, outperforming transparent glazing (5–10% efficiency yields ~10–20 W/m²) and thin-film modules (7–10% efficiency). Solar roof tiles (50–150 W/tile) are suitable for sloped roofs but less efficient per m² than facade systems.",
-        "takeaway": "BIPV facade-mounted systems offer superior power density (100–250 W/m²) for vertical building surfaces compared to transparent glazing or thin-film alternatives, making them optimal for commercial building integration."
-      },
-      "explanation": null,
-      "code_citation": "NREL (2021). Photovoltaic Technology Performance: 2021 Benchmarks. NREL/TP-6A40-79326. + IRENA (2022). Southeast Asia Renewable Energy Cost Review.",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-007-04-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:03.161281+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2fb1984cb5a1504e3ce9677323f5a9367ec471a3626f586eaefca651ce434a9c"
     },
     {
       "question_id": "aad6391a-f10e-4912-894d-423415dcba70",

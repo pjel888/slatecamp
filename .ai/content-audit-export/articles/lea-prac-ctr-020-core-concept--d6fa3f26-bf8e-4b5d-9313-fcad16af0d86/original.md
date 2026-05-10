@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 020 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -54,17 +63,29 @@ The architect's role in claims review is central. The architect inspects the wor
 
 **Question Pattern 5:** Architect's claim review authority—What is the architect's role in evaluating and recommending on contractor claims? (Tests architect's claim review responsibility and impartial evaluation duty)
 
-<Tip>Remember: Claims must be documented contemporaneously (during construction), submitted on time (per contract deadline), and substantiated with evidence (invoices, time records, correspondence). Without documentation, no claim. Architect reviews claims and recommends to owner. All elements must be proven.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember: Claims must be documented contemporaneously (during construction), submitted on time (per contract deadline), and substantiated with evidence (invoices, time records, correspondence). Without documentation, no claim. Architect reviews claims and recommends to owner. All elements must be proven.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Assuming casual requests are claims (Claims are formal written demands with supporting documentation, not casual requests)", "Thinking delay can be claimed without proving the four elements (Must prove event, non-contractor fault, cleandar days, and contract entitlement)", "Confusing cost estimates with proof of actual costs incurred (Invoices and cost records are required, not estimates)", "Believing contractor can claim cost recovery months after performance without documentation (Documentation must be contemporaneous during construction)", "Assuming contract deadline for claims can be extended informally (Deadline is strict; informal extensions do not waive the requirement)", "Thinking architect can ignore contractor claims (Architect must review, request documentation, and make written recommendation)", "Confusing changed work claims with differing conditions claims (Different legal bases, different proof requirements)", "Assuming architect's claim recommendation is final (Architect recommends; owner makes final decision on claim acceptance)"] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes=true, Assuming=true, casual=true, requests=true, are=true, claims=true, Claims=true, formal=true, written=true, demands=true, with=true, supporting=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 
 
-<ArticleMedia id="media-lea-prac-ctr-020-core-concept-0" type="image" caption="Dispute Resolution Process — Negotiation to Litigation Flowchart" description="Escalation flowchart showing progressive dispute resolution steps: Step 1 Negotiation (architect mediates), Step 2 Mediation (neutral third party), Step 3 CIAC Arbitration (mandatory for construction contracts), Step 4 Litigation (court appeal of arbitration award). CIAC jurisdiction requisites checklist and timeline expectations for each stage." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-ctr-020-core-concept-0", type="image", caption="Dispute Resolution Process — Negotiation to Litigation Flowchart", description="Escalation flowchart showing progressive dispute resolution steps: Step 1 Negotiation (architect mediates), Step 2 Mediation (neutral third party), Step 3 CIAC Arbitration (mandatory for construction contracts), Step 4 Litigation (court appeal of arbitration award). CIAC jurisdiction requisites checklist and timeline expectations for each stage."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Standard Owner-Architect Agreement](lea-prac-ctr-001)

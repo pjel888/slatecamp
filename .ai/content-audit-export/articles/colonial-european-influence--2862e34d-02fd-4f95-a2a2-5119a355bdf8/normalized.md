@@ -119,28 +119,28 @@ Extracted summary:
 
 **Question 1.** The *talud-tablero* profile is associated with which architectural tradition?
 
-A. Churrigueresque Baroque churches of Spanish colonial Mexico  
-B. Pre-Columbian Mesoamerican pyramids, particularly at Teotihuacan  
-C. Georgian symmetrical facades of colonial Virginia  
-D. Federation-style residential architecture of early 20th-century Australia  
+A. Churrigueresque Baroque churches of Spanish colonial Mexico
+B. Pre-Columbian Mesoamerican pyramids, particularly at Teotihuacan
+C. Georgian symmetrical facades of colonial Virginia
+D. Federation-style residential architecture of early 20th-century Australia
 
 > **Correct Answer: B.** This is a cross-topic trap. *Talud-tablero* (slope-and-panel) is a pre-Columbian Mesoamerican pyramidal profile most associated with Teotihuacan (1st–7th century CE), not with any colonial style. If this term appears in a colonial architecture question, it is a distractor. Churrigueresque Baroque (Option A) refers to the highly ornate Spanish colonial church facades of Mexico and Peru.
 
 **Question 2.** Which climate adaptation distinguishes Southern colonial American plantation houses from their Northern Georgian counterparts?
 
-A. Use of Gothic pointed arches for structural reinforcement  
-B. Raised floors on brick piers and wrap-around verandas for flood protection and ventilation in humid subtropical conditions  
-C. Underground cellars with vaulted masonry ceilings for cold storage  
-D. Fortified stone walls with minimal fenestration for defense against tropical storms  
+A. Use of Gothic pointed arches for structural reinforcement
+B. Raised floors on brick piers and wrap-around verandas for flood protection and ventilation in humid subtropical conditions
+C. Underground cellars with vaulted masonry ceilings for cold storage
+D. Fortified stone walls with minimal fenestration for defense against tropical storms
 
 > **Correct Answer: B.** Southern plantation architecture responded to hot, humid, flood-prone conditions by elevating the main living floor on brick piers (allowing air circulation beneath) and surrounding it with deep verandas (galleries) for shade and rain protection. Northern Georgian houses, by contrast, prioritized heat retention with compact plans, thick masonry walls, and central chimneys.
 
 **Question 3.** Australia's Federation style (c. 1901–1915) is best characterized by which combination of features?
 
-A. Symmetrical Georgian facades with classical pediments and no verandas  
-B. Gothic Revival stone churches with flying buttresses and stained glass  
-C. Red brick construction, terracotta roof tiles, wide verandas with bull-nosed corrugated iron roofing, and cast-iron lacework  
-D. Minimalist International Style concrete frames with ribbon windows  
+A. Symmetrical Georgian facades with classical pediments and no verandas
+B. Gothic Revival stone churches with flying buttresses and stained glass
+C. Red brick construction, terracotta roof tiles, wide verandas with bull-nosed corrugated iron roofing, and cast-iron lacework
+D. Minimalist International Style concrete frames with ribbon windows
 
 > **Correct Answer: C.** Federation style is a uniquely Australian synthesis combining Arts and Crafts ideals with local climate responses. Its hallmarks include red brick walls, Marseilles-pattern terracotta roof tiles, deep verandas with bull-nosed (curved) corrugated iron awnings, and decorative cast-iron or timber lacework — all designed to manage Australia's intense sun and seasonal rainfall.
 

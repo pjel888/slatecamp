@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 005 09 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -9,21 +18,19 @@ Waste reduction follows a hierarchy: reduce (source elimination), reuse (whole-c
 Building Information Modeling (BIM) enables material optimization by calculating exact quantities before fabrication, reducing off-cuts and waste. Prefabrication in controlled factory settings reduces on-site breakage and moisture damage compared to field construction. RA 9003 (Ecological Solid Waste Management Act) and DENR EMB (Environmental Management Bureau) requirements mandate waste management plans on projects exceeding specified scales.
 
 
-<ArticleMedia id="media-lca-stages-diagram" layout="single" type="image" status="placeholder"
-  alt="Diagram showing the five life cycle assessment stages: raw material extraction, manufacturing, construction, use/maintenance, and end-of-life"
-  caption="Future diagram: life cycle assessment (LCA) stages — cradle to grave"
-  suggestedAsset="Process diagram or circular lifecycle diagram with stage descriptions"
-  placementIntent="Visualizes the LCA framework for evaluating environmental impacts" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lca-stages-diagram", layout="single", type="image", status="placeholder", alt="Diagram showing the five life cycle assessment stages: raw material extraction, manufacturing, construction, use/maintenance, and end-of-life", caption="Future diagram: life cycle assessment (LCA) stages — cradle to grave", suggestedAsset="Process diagram or circular lifecycle diagram with stage descriptions", placementIntent="Visualizes the LCA framework for evaluating environmental impacts"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-<WikiExamTable headers={["C&D Waste Component", "% by Weight", "Typical Destination", "Reduction Strategy"]}>
-<tr><td>Concrete and Masonry</td><td>40</td><td>Landfill, base course aggregate</td><td>Prefab design; minimize rework; crush and reuse on-site as aggregate</td></tr>
-<tr><td>Wood (framing, formwork)</td><td>20</td><td>Landfill, mulch, energy recovery</td><td>Exact length cutting; prefab components; palletized transport to reduce breakage</td></tr>
-<tr><td>Metals (rebar, structural steel)</td><td>10</td><td>Recycling facilities (high value)</td><td>Segregate by alloy; minimize cutting waste; stockpile for slea as scrap</td></tr>
-<tr><td>Gypsum and Drywall</td><td>5</td><td>Gypsum recycle plants or landfill</td><td>Prefab walls; careful installation to minimize breakage; segregate paper backing from core</td></tr>
-<tr><td>Mixed Materials (insulation, adhesives, caulk, etc.)</td><td>25</td><td>Landfill (difficult to recycle)</td><td>Limit adhesive use; prefer mechanical fastening; design for disassembly at end-of-life</td></tr>
-</WikiExamTable>
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"C&D Waste Component\", \"% by Weight\", \"Typical Destination\", \"Reduction Strategy\"]}"
+- Text: Concrete and Masonry 40 Landfill, base course aggregate Prefab design; minimize rework; crush and reuse on-site as aggregate Wood (framing, formwork) 20 Landfill, mulch, energy recovery Exact length cutting; prefab components; palletized transport to reduce breakage Metals (rebar, structural steel) 10 Recycling facilities (high value) Segregate by alloy; minimize cutting waste; stockpile for slea as scrap Gypsum and Drywall 5 Gypsum recycle plants or landfill Prefab walls; careful installation t
+[/SLATECAMP_UI_BLOCK]
 
 RA 9003 (Ecological Solid Waste Management Act of 2000) establishes waste management responsibilities for local government units (LGUs) and project generators. Covered projects must prepare waste management plans addressing source reduction, segregation, and final disposal. DENR EMB (Environmental Management Bureau) environmental compliance certificate (ECC) approval requires demonstration that construction waste will be managed per RA 9003 protocols.
 
@@ -42,39 +49,51 @@ DPWH (Department of Public Works and Highways) specifications increasingly manda
 Rice hull ash (byproduct of milling) and coconut husk (coconut processing waste) are being investigated as partial cement replacements and aggregate fillers, transforming agricultural waste into construction material. National government agencies (DOST, DENR) support pilot projects demonstrating waste-to-resource conversion in agricultural regions.
 
 
-<ArticleMedia id="media-lca-certification-flow" layout="single" type="image" status="placeholder"
-  alt="Flowchart showing how LCA results inform BERDE, LEED, and EDGE certification credits across material selection, energy, and waste categories"
-  caption="Future diagram: LCA to green certification — BERDE, LEED, and EDGE credit pathways"
-  suggestedAsset="Process flow diagram of LCA data into certification systems"
-  placementIntent="Connects LCA methodology to practical green building certification" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lca-certification-flow", layout="single", type="image", status="placeholder", alt="Flowchart showing how LCA results inform BERDE, LEED, and EDGE certification credits across material selection, energy, and waste categories", caption="Future diagram: LCA to green certification — BERDE, LEED, and EDGE credit pathways", suggestedAsset="Process flow diagram of LCA data into certification systems", placementIntent="Connects LCA methodology to practical green building certification"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 LEA candidates must identify C&D waste composition percentages, match reduction strategies to specific waste types (concrete crushing for reuse, metal segregation for recycling, wood chipping for mulch), and calculate waste reduction benefits of lean or prefabrication approaches. Questions present a construction scenario requiring a waste management plan and ask candidates to specify segregation methods, destination facilities, and cost-benefit analysis.
 
 A second test approach asks candidates to evaluate a BIM-based material quantification against traditional method estimates, recognizing that BIM precision reduces over-ordering and material waste. Calculation questions may involve waste reduction percentages: if conventional construction generates 10 kg of waste per m² and lean construction reduces it by 25 percent, the target is 7.5 kg/m². Candidates must apply waste hierarchy logic: reduce first (source design changes), reuse second (component reuse), recycle third (material reprocessing).
 
-<Tip>When a question presents a waste management scenario, apply the hierarchy in order: reduce (design changes, prefabrication), reuse (whole components), recycle (material streams), recover (energy), dispose (last resort). Do not assume all waste is recyclable; mixed materials, contaminated wood, and asbestos-containing products may only be landfilled after proper sorting. Always specify segregation methods and documented disposal destinations when answering waste management questions.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: When a question presents a waste management scenario, apply the hierarchy in order: reduce (design changes, prefabrication), reuse (whole components), recycle (material streams), recover (energy), dispose (last resort). Do not assume all waste is recyclable; mixed materials, contaminated wood, and asbestos-containing products may only be landfilled after proper sorting. Always specify segregation methods and documented disposal destinations when answering waste management questions.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard title="Confusing Waste Reduction with Recycling" severity="critical">Candidates often use "reduce" and "recycle" interchangeably. Reducing waste (source) is always preferable to recycling (end-of-life). If a prefabrication strategy eliminates 100 kg of concrete waste entirely, that is superior to generating 400 kg of waste and recycling 100 kg. Candidates must prioritize source reduction (design, prefab, lean construction) over end-of-life recycling in waste strategy recommendations.</WikiMistakeCard>
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Confusing Waste Reduction with Recycling", severity="critical"
+- Text: Candidates often use "reduce" and "recycle" interchangeably. Reducing waste (source) is always preferable to recycling (end-of-life). If a prefabrication strategy eliminates 100 kg of concrete waste entirely, that is superior to generating 400 kg of waste and recycling 100 kg. Candidates must prioritize source reduction (design, prefab, lean construction) over end-of-life recycling in waste strategy recommendations.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard title="Overestimating Recycling Rates in Philippines" severity="high">While developed countries recycle 30-50 percent of C&D waste, Philippines currently recycles less than 5 percent. Candidates cannot assume that segregated waste will be recycled; many municipalities lack facilities or markets for certain materials (contaminated wood, mixed gypsum). Strategies must account for realistic local recycling capacity: metals and rebar are high-value and recycled; concrete can be crushed for base course; wood is often landfilled or burned despite sustainability ideals.</WikiMistakeCard>
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Overestimating Recycling Rates in Philippines", severity="high"
+- Text: While developed countries recycle 30-50 percent of C&D waste, Philippines currently recycles less than 5 percent. Candidates cannot assume that segregated waste will be recycled; many municipalities lack facilities or markets for certain materials (contaminated wood, mixed gypsum). Strategies must account for realistic local recycling capacity: metals and rebar are high-value and recycled; concrete can be crushed for base course; wood is often landfilled or burned despite sustainability ideals.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard title="Ignoring Contamination and Sorting Costs" severity="high">Candidates specify waste segregation without acknowledging that contaminated waste streams (sawdust mixed with concrete dust, adhesives on lumber, paint on drywall) cannot be easily recycled. Sorting labor and equipment costs may exceed material salvage value, making segregation economically infeasible. Candidates must recognize contamination risks and design strategies to prevent contamination at source (separate work areas, careful handling) rather than assuming end-of-life sorting is cost-effective.</WikiMistakeCard>
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Ignoring Contamination and Sorting Costs", severity="high"
+- Text: Candidates specify waste segregation without acknowledging that contaminated waste streams (sawdust mixed with concrete dust, adhesives on lumber, paint on drywall) cannot be easily recycled. Sorting labor and equipment costs may exceed material salvage value, making segregation economically infeasible. Candidates must recognize contamination risks and design strategies to prevent contamination at source (separate work areas, careful handling) rather than assuming end-of-life sorting is cost-eff
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList title="Common errors in waste reduction strategies:">
-<li>Specifying waste reduction without identifying specific sources (e.g., 'reduce formwork waste' without addressing on-site concrete breakage or over-ordering)</li>
-<li>Assuming 100% of segregated waste streams can find recycling or reuse markets; not accounting for market unavailability or contamination barriers</li>
-<li>Calculating waste reduction percentages from prefabrication without baseline data; studies show 20-30% reduction, not 50%+ as optimistic assumptions suggest</li>
-<li>Forgetting that RA 9003 waste management plans are mandatory for covered projects; omitting plan preparation violates environmental regulations</li>
-<li>Proposing waste reduction strategies without cost-benefit analysis; most reduction methods (lean training, BIM quantification, prefab sourcing) require upfront investment</li>
-<li>Ignoring that wood formwork and temporary structures account for much waste; candidates must address formwork reuse and design-for-reuse strategies</li>
-</WikiMistakeList>
+[SLATECAMP_UI_BLOCK:ui_0008 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: title="Common errors in waste reduction strategies:"
+- Text: Specifying waste reduction without identifying specific sources (e.g., 'reduce formwork waste' without addressing on-site concrete breakage or over-ordering) Assuming 100% of segregated waste streams can find recycling or reuse markets; not accounting for market unavailability or contamination barriers Calculating waste reduction percentages from prefabrication without baseline data; studies show 20-30% reduction, not 50%+ as optimistic assumptions suggest Forgetting that RA 9003 waste managemen
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also within Sustainable and Green Materials: **lea-matl-005-05-core-concept**, **lea-matl-005-07-core-concept**, **lea-matl-005-08-core-concept**, **lea-matl-005-10-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

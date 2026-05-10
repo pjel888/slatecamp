@@ -1,8 +1,19 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 021 Quantity Surveying And Cost Estimation The Architect S Role Vs The Qs Professional S Role** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Quantity Surveying and Cost Estimation—The Architect's Role vs. the QS Professional's Role
 
-<ExamTip>
-Focus on the key concepts in this section for the Licensure Examination for Architects.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the key concepts in this section for the Licensure Examination for Architects.
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -10,9 +21,11 @@ After studying this article, you should be able to:
 
 - Describe quantity surveying and cost estimation in architectural practice.
 
-<Tip>
-Memorize these items — they appear frequently on the exam.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memorize these items — they appear frequently on the exam.
+[/SLATECAMP_UI_BLOCK]
 
 - Distinguish the architect's role from the QS professional's role.
 - Explain the levels of cost estimates: order-of-magnitude, budget, definitive.
@@ -78,7 +91,11 @@ If the estimate exceeds the budget, the architect and client should discuss opti
 
 
 
-<ArticleMedia id="media-lea-prac-frm-021-quantity-surv-0" type="image" caption="Quantity Surveying vs. Architect's Cost Role — Responsibility Matrix" description="Comparison matrix showing QS vs. Architect responsibilities: Cost estimation (QS leads, architect provides design scope), Bill of Quantities (QS prepares, architect verifies), Cost control during design (architect designs to budget, QS tracks), Variation evaluation (QS quantifies, architect certifies). Overlapping and distinct responsibility areas clearly marked." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-frm-021-quantity-surv-0", type="image", caption="Quantity Surveying vs. Architect's Cost Role — Responsibility Matrix", description="Comparison matrix showing QS vs. Architect responsibilities: Cost estimation (QS leads, architect provides design scope), Bill of Quantities (QS prepares, architect verifies), Cost control during design (architect designs to budget, QS tracks), Variation evaluation (QS quantifies, architect certifies). Overlapping and distinct responsibility areas clearly marked."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)
@@ -92,6 +109,8 @@ If the estimate exceeds the budget, the architect and client should discuss opti
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
 
-<Note>
-This article covers foundational material. Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: This article covers foundational material. Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards.
+[/SLATECAMP_UI_BLOCK]

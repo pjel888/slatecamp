@@ -1,9 +1,59 @@
 {
   "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:d772d2a83f1fe1cf556e36534c4bbf8f9fd8df6749bd2ad099e0d7ec088b7e16",
+  "linked_questions_hash": "sha256:b8fbd4d2c3688dc8c19e86bf3049dc2715779d84c6db39143051921c3709dfd6",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "5cc8794e-0930-4790-8438-c7014cc210c6",
+      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
+      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
+      "text": "NRC (Noise Reduction Coefficient) rating of 0.7 indicates that the material absorbs ___ percent of incident sound.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7%"
+        },
+        {
+          "id": "b",
+          "text": "30%"
+        },
+        {
+          "id": "c",
+          "text": "70%"
+        },
+        {
+          "id": "d",
+          "text": "Cannot be determined from NRC alone"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "7% is 0.07 NRC, not 0.7.",
+        "b": "30% would be NRC 0.3.",
+        "d": "NRC directly indicates absorption percentage; can be determined.",
+        "correct": "NRC 0.7 = 70% sound absorption. NRC 0 = 0% absorption (hard reflective surface); NRC 1.0 = 100% absorption (theoretical maximum).",
+        "takeaway": "NRC 0-1.0 directly scales to absorption %: NRC 0.6 = 60%, NRC 0.8 = 80%, etc. NRC >0.7 required for effective noise control in open-plan offices."
+      },
+      "explanation": "7% is 0.07 NRC, not 0.7. 30% would be NRC 0.3. NRC directly indicates absorption percentage; can be determined. NRC 0.7 = 70% sound absorption. NRC 0 = 0% absorption (hard reflective surface); NRC 1.0 = 100% absorption (theoretical maximum). NRC 0-1.0 directly scales to absorption %: NRC 0.6 = 60%, NRC 0.8 = 80%, etc. NRC >0.7 required for effective noise control in open-plan offices.",
+      "code_citation": "ASTM C423 (NRC Rating)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T16:21:51.425508+00:00",
+      "content_hash": "sha256:df28fbb7718ef930ebfe67c5a945f7c7035f45e87f74860a53a64f44eb3bf083"
+    },
     {
       "question_id": "cc29799c-e70f-4e78-b92d-7bf467fdcbe3",
       "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
@@ -39,7 +89,7 @@
         "correct": "Mass law: every doubling of mass increases sound isolation by approximately 6 dB. A 100 kg/m² wall at STC 40 becomes approximately STC 46 when mass is doubled to 200 kg/m².",
         "takeaway": "Mass law: +6 dB per doubling of mass. For high STC ratings (70+), mass alone is insufficient; damping (decoupling, absorptive fill) is required."
       },
-      "explanation": null,
+      "explanation": "3 dB is half the increase; incorrect. 12 dB is double the increase; overstates relationship. Mass increase always improves isolation; frequency response becomes less important at higher mass. Mass law: every doubling of mass increases sound isolation by approximately 6 dB. A 100 kg/m² wall at STC 40 becomes approximately STC 46 when mass is doubled to 200 kg/m². Mass law: +6 dB per doubling of mass. For high STC ratings (70+), mass alone is insufficient; damping (decoupling, absorptive fill) is required.",
       "code_citation": "ASTM E413, Acoustic Principles",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -51,8 +101,8 @@
       "model_id": "ALE-MATL-006-04-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6095afe7b01eeb2aaea9b125f5f344eb6dcb1a5288217a6d411326e29a07136e"
+      "updated_at": "2026-05-06T16:21:51.178063+00:00",
+      "content_hash": "sha256:9db23e9335327ed3f41596b7cc8eb7336467e321eb4730003dad4e24164d4ea8"
     },
     {
       "question_id": "8a8b8d25-2b14-4c30-85d3-2d8260f6aee4",
@@ -89,7 +139,7 @@
         "correct": "STC is a single-number rating 50-80 (higher = better isolation). A wall with STC 50 blocks average speech; STC 70 blocks loud music.",
         "takeaway": "STC = sound isolation (wall assembly property); NRC = sound absorption (interior finish property). STC 50-80; NRC 0-1.0."
       },
-      "explanation": null,
+      "explanation": "0-1.0 is NRC (sound absorption rating), not STC (isolation). dB is a unit; STC is not expressed in dB directly (though it relates to sound reduction in dB). 0.3-0.9 is NRC range, not STC. STC is a single-number rating 50-80 (higher = better isolation). A wall with STC 50 blocks average speech; STC 70 blocks loud music. STC = sound isolation (wall assembly property); NRC = sound absorption (interior finish property). STC 50-80; NRC 0-1.0.",
       "code_citation": "ASTM E413 (STC Rating)",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -101,8 +151,8 @@
       "model_id": "ALE-MATL-006-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8d6e52aecca9ba71879dfc1352a15222118438dc1a81989c3fb8683117e140d4"
+      "updated_at": "2026-05-06T16:21:51.302692+00:00",
+      "content_hash": "sha256:ce4eeea8eab7fd1d084feacc7db7fa8c64be2f03567d50b8fe8ed7c93e96e93e"
     },
     {
       "question_id": "d43372cf-f536-4457-ae95-95291181c73c",
@@ -405,56 +455,6 @@
       "content_hash": "sha256:91c5078c4df1c7145068bd7fbdfa42f57d7579a9c684f1cf3a61cc6d697a7fe3"
     },
     {
-      "question_id": "5cc8794e-0930-4790-8438-c7014cc210c6",
-      "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
-      "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
-      "text": "NRC (Noise Reduction Coefficient) rating of 0.7 indicates that the material absorbs ___ percent of incident sound.",
-      "options": [
-        {
-          "id": "a",
-          "text": "7%"
-        },
-        {
-          "id": "b",
-          "text": "30%"
-        },
-        {
-          "id": "c",
-          "text": "70%"
-        },
-        {
-          "id": "d",
-          "text": "Cannot be determined from NRC alone"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "7% is 0.07 NRC, not 0.7.",
-        "b": "30% would be NRC 0.3.",
-        "d": "NRC directly indicates absorption percentage; can be determined.",
-        "correct": "NRC 0.7 = 70% sound absorption. NRC 0 = 0% absorption (hard reflective surface); NRC 1.0 = 100% absorption (theoretical maximum).",
-        "takeaway": "NRC 0-1.0 directly scales to absorption %: NRC 0.6 = 60%, NRC 0.8 = 80%, etc. NRC >0.7 required for effective noise control in open-plan offices."
-      },
-      "explanation": null,
-      "code_citation": "ASTM C423 (NRC Rating)",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-006-04-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:889fac958824aaf05acc2235b9d0223bde5a8e46be4f921374b812cc2135e61a"
-    },
-    {
       "question_id": "d926901d-e273-4e49-91af-5cf49525b7ba",
       "article_id": "763d451f-d9eb-469f-8d5e-8be6c9a7bfa7",
       "topic_id": "8502bb7c-b200-4fc5-8890-2df8254b621c",
@@ -489,7 +489,7 @@
         "correct": "k-value is thermal conductivity in W/(m·K) per ASTM C518; it describes material's ability to conduct heat, independent of thickness.",
         "takeaway": "k = thermal conductivity (material property, independent of thickness). R = thermal resistance (depends on thickness and k)."
       },
-      "explanation": null,
+      "explanation": "m²·K/W is R-value (thermal resistance), which depends on thickness. Btu·in/(hr·ft²·°F) is imperial k-value; correct units but less commonly used in metric regions. Temperature gradient is not a unit of conductivity. k-value is thermal conductivity in W/(m·K) per ASTM C518; it describes material's ability to conduct heat, independent of thickness. k = thermal conductivity (material property, independent of thickness). R = thermal resistance (depends on thickness and k).",
       "code_citation": "ASTM C518",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -501,8 +501,8 @@
       "model_id": "ALE-MATL-006-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8c538b2cc22f9b8b0d1b6b38e26fb12790075e439df357b5fe09cad4cfa2d47b"
+      "updated_at": "2026-05-06T16:21:51.555453+00:00",
+      "content_hash": "sha256:77b836353f7e31151547ac7c0af637268eb0ec56709b6b711f162b64be07e9ba"
     }
   ]
 }

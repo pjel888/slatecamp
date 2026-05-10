@@ -1,7 +1,7 @@
 {
   "article_id": "b68471a2-34f6-46e3-8f79-7a14ed16eebb",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:9cf4336f31f65c1651b20e5eba78b64fa9e6f5f1d147aa491741644f3d7f0d70",
+  "linked_questions_hash": "sha256:68cf53c21e74a430e1ed7f0ae61da2e842c3e748f82dd95157beb0f6c6af7f49",
   "question_count": 10,
   "questions": [
     {
@@ -139,7 +139,7 @@
         "correct": "Steel density is 7,850 kg/m³, which is encoded in the formula denominator (162.5).",
         "takeaway": "Standard structural steel density = 7,850 kg/m³. This is fundamental to rebar weight calculations."
       },
-      "explanation": null,
+      "explanation": "7,200 kg/m³ is too low; would under‑estimate weight. 7,500 kg/m³ is close but is not the standard value. 8,000 kg/m³ is slightly high; may be used for heavier alloys. Steel density is 7,850 kg/m³, which is encoded in the formula denominator (162.5). Standard structural steel density = 7,850 kg/m³. This is fundamental to rebar weight calculations.",
       "code_citation": "ASTM A615-21, NSCP 2015",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -151,8 +151,8 @@
       "model_id": "ALE-MATL-010-03-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7888607f5f5b17e56a51fe9ded70f75ffc6b969fa5bcb0724b0937fd1e22688f"
+      "updated_at": "2026-05-06T15:00:16.062635+00:00",
+      "content_hash": "sha256:e83b84c771ed112c3f8f9a511c234fe21c9effb5ff3e9f2707a30dad3d11eb38"
     },
     {
       "question_id": "417874e2-b48c-48e8-ae1f-061292580f92",
@@ -240,7 +240,7 @@
         "correct": "Standard bar length in Philippine practice is 12 meters, supplied by all major manufacturers (Pag‑asa, Capitol Steel, Vulcan).",
         "takeaway": "Always assume 12‑meter bars when calculating quantities. This is the market standard in the Philippines."
       },
-      "explanation": null,
+      "explanation": "6 meters is half the standard; not a typical supply length. 9 meters is not standard in Philippine practice. 15 meters is longer than standard and less common. Standard bar length in Philippine practice is 12 meters, supplied by all major manufacturers (Pag‑asa, Capitol Steel, Vulcan). Always assume 12‑meter bars when calculating quantities. This is the market standard in the Philippines.",
       "code_citation": "Philippine construction practice, Pag‑asa Steel, Capitol Steel",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -252,8 +252,8 @@
       "model_id": "ALE-MATL-010-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:56b81652734863181984ff4060ef099e832e8982628ef692025de4c7324aff9f"
+      "updated_at": "2026-05-06T15:00:16.239659+00:00",
+      "content_hash": "sha256:197c0fa3c02ac2bb917bee7d15ff8af442170e9370063a86f128825bfb658b08"
     },
     {
       "question_id": "30bcd44a-2b02-4b63-baef-081e2dee8d79",

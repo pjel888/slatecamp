@@ -78,7 +78,7 @@ Extracted summary:
 - Text: ⚠️ Trap — 50% vs 30% contrast: The 50% minimum luminance contrast applies specifically to tactile warning indicators / tactile floor surfaces. A lower 30% contrast is used for general floor-wall distinction, gratings vs surrounding floor, and other visual elements — NOT for tactile blocks themselves. On the LEA, if a question asks about tactile block contrast, answer ≥50%. If it asks about general floor/wall or grating contrast, answer ≥30%.
 [/SLATECAMP_UI_BLOCK]
 
-**TRAP — 50% vs 30% contrast:**  
+**TRAP — 50% vs 30% contrast:**
 The 50% minimum luminance contrast applies specifically to **tactile warning indicators / tactile floor surfaces**, while a lower 30% contrast is used for **general floor–wall distinction**, **gratings vs surrounding floor**, and other visual elements — not for tactile blocks themselves.[file:2]
 
 ---

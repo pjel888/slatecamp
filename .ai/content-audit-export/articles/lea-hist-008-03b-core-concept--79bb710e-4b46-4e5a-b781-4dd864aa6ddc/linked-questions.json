@@ -1,113 +1,9 @@
 {
   "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:672ebd5f95b27fb278de5b3f1a6988356c093753f151711812e3da2e3054c424",
+  "linked_questions_hash": "sha256:a4cabd24c436c2c9fab113597a2376015a0b22b5c8196520faaf7048ce1b0aca",
   "question_count": 11,
   "questions": [
-    {
-      "question_id": "327e00eb-bcb4-4c73-b7c1-0e36a4557a90",
-      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
-      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
-      "text": "The Farnsworth House was constructed during which years?",
-      "options": [
-        {
-          "id": "a",
-          "text": "1936–1938"
-        },
-        {
-          "id": "b",
-          "text": "1943–1945"
-        },
-        {
-          "id": "c",
-          "text": "1946–1951"
-        },
-        {
-          "id": "d",
-          "text": "1952–1955"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "1936–1938 is too early; this predates the Farnsworth House project.",
-        "b": "1943–1945 is before the project began.",
-        "d": "1952–1955 is after completion.",
-        "correct": "The Farnsworth House was constructed 1946–1951. Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946.",
-        "takeaway": "Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "CH"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-008-03B-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6c35485ab2a315399f2a7a82e7130e766f39a6dab8134549584af8596e000580"
-    },
-    {
-      "question_id": "75d1eb90-9dea-40cc-b41e-ffeb251f1b07",
-      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
-      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
-      "text": "In the Seagram Building (1954–1958), the bronze I-beams visible on the facade serve what architectural purpose?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Non-structural bronze I-beam elements applied to the facade to visually express the structural rhythm hidden beneath fire-code-mandated concrete casing"
-        },
-        {
-          "id": "b",
-          "text": "Structural columns that directly support the building's weight and transfer gravity loads to the foundation system below"
-        },
-        {
-          "id": "c",
-          "text": "Cladding material intended to disguise the building as a traditional masonry structure with load-bearing exterior walls"
-        },
-        {
-          "id": "d",
-          "text": "Purely aesthetic ornament with no relationship to the building's structural system or its internal load-bearing framework"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "The bronze I-beams do NOT carry structural loads. The actual steel frame is hidden beneath fire-code-mandated concrete cladding. This is the most common factual error about the Seagram Building.",
-        "c": "The I-beams do not disguise the building as masonry; they express (suggest) the steel structure beneath, even though they are not structural themselves.",
-        "d": "While non-structural, the I-beams are philosophically significant — they represent Mies's desire for structural honesty constrained by fire codes, not mere decoration.",
-        "correct": "The bronze I-beams are non-structural. American fire codes required all structural steel to be encased in concrete for fireproofing, concealing the actual structure. Mies applied non-structural bronze-toned I-beams to the facade to visually suggest the structural rhythm hidden within — achieving 'honest expression' through a non-structural appliqué. This famous paradox is one of the most tested details in modern architecture.",
-        "takeaway": "This famous paradox is one of the most tested details in modern architecture."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "ST"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-008-03B-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:694c9643756fac4538b56265a6204b7b9cb53419c31b49c0188f38a885977fef"
-    },
     {
       "question_id": "ead45cde-a15b-4afc-a177-8431a30f47dd",
       "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
@@ -143,7 +39,7 @@
         "correct": "Ludwig Mies van der Rohe designed the Barcelona Pavilion, which uses only free-standing steel columns, glass, and stone planes—demonstrating pure spatial and material minimalism.",
         "takeaway": "Ludwig Mies van der Rohe designed the Barcelona Pavilion, which uses only free-standing steel columns, glass, and stone planes—demonstrating pure spatial and material minimalism."
       },
-      "explanation": null,
+      "explanation": "Le Corbusier designed Villa Savoye and other works demonstrating the Five Points. Gropius designed the Bauhaus Building and other structures. Marcel Breuer designed the Wassily Chair and other furniture. Ludwig Mies van der Rohe designed the Barcelona Pavilion, which uses only free-standing steel columns, glass, and stone planes—demonstrating pure spatial and material minimalism. Ludwig Mies van der Rohe designed the Barcelona Pavilion, which uses only free-standing steel columns, glass, and stone planes—demonstrating pure spatial and material minimalism.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -157,8 +53,8 @@
       "model_id": "ALE-HIST-008-03B-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:35e5a8c892e55f27d46f07ede55dd3ce4012e928ec5e3554963073288782b9be"
+      "updated_at": "2026-05-06T14:40:21.717691+00:00",
+      "content_hash": "sha256:d709d48bb08dc7b489b255be33cc16d35b5ea2541d16687adef039d8b480b82f"
     },
     {
       "question_id": "f93dd3d4-224a-415b-b5bd-3233f346c7c4",
@@ -195,7 +91,7 @@
         "correct": "'Less is more' is sophisticated reduction, not austerity. Mies's buildings are expensive, luxurious, and proportionally complex—they achieve profundity through elimination of excess, not elimination of quality.",
         "takeaway": "Mies's buildings are expensive, luxurious, and proportionally complex—they achieve profundity through elimination of excess, not elimination of quality."
       },
-      "explanation": null,
+      "explanation": "Mies pursued beauty through essential means, not elimination of beauty. Mies worked with multiple materials; material choice isn't the point. Mies's philosophy is about essence, not inherent superiority of simplicity. 'Less is more' is sophisticated reduction, not austerity. Mies's buildings are expensive, luxurious, and proportionally complex—they achieve profundity through elimination of excess, not elimination of quality. Mies's buildings are expensive, luxurious, and proportionally complex—they achieve profundity through elimination of excess, not elimination of quality.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -209,8 +105,8 @@
       "model_id": "ALE-HIST-008-03B-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6c6d8963722e67145e1a173e8c6be5e3935a666382e0d9d1dae1cbaa89671d3e"
+      "updated_at": "2026-05-06T14:40:21.85348+00:00",
+      "content_hash": "sha256:d94bb467ef32ea4507fd79b84a695b503778acfc415a24a1ae34972c26076ff9"
     },
     {
       "question_id": "e181cc37-7bde-4828-8c2b-7d25a0ce7f83",
@@ -247,7 +143,7 @@
         "correct": "'Less is more' is Ludwig Mies van der Rohe's foundational principle. It expresses his belief that maximum spatial and material beauty emerges from minimum essential elements.",
         "takeaway": "It expresses his belief that maximum spatial and material beauty emerges from minimum essential elements."
       },
-      "explanation": null,
+      "explanation": "Louis Sullivan's axiom was 'form follows function,' not 'less is more.' Le Corbusier pursued functionalism and complexity, not reduction to essence. Gropius founded the Bauhaus with principles of integration, not Miesian reduction. 'Less is more' is Ludwig Mies van der Rohe's foundational principle. It expresses his belief that maximum spatial and material beauty emerges from minimum essential elements. It expresses his belief that maximum spatial and material beauty emerges from minimum essential elements.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -261,8 +157,164 @@
       "model_id": "ALE-HIST-008-03B-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:63ebefddc4d48c55593cb2f5d4dab25cb42116e5636e664118a20c2f59e01e74"
+      "updated_at": "2026-05-06T14:40:21.991987+00:00",
+      "content_hash": "sha256:c749e47c10720c527afe3e5c08661a6085487a1cc13a79469b578d5884cbe9aa"
+    },
+    {
+      "question_id": "d78c7967-cac6-4777-b9eb-a9b4ac2ed3e9",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "Mies van der Rohe's concept of 'universal space' suggests that [blank].",
+      "options": [
+        {
+          "id": "a",
+          "text": "buildings should be designed to serve specific functional programs, which contradicts the idea of universal space"
+        },
+        {
+          "id": "b",
+          "text": "a geometrically perfect spatial container can accommodate any activity without imposing predetermined uses"
+        },
+        {
+          "id": "c",
+          "text": "all buildings should look identical regardless of location or purpose, which is a misinterpretation of the concept"
+        },
+        {
+          "id": "d",
+          "text": "space must be subdivided into specialized rooms for different functions, which is contrary to the universal space idea"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is the opposite; universal space transcends specific program.",
+        "c": "While Mies believed in universal principles, he didn't require identical designs.",
+        "d": "Universal space prioritizes openness and flexibility, not specialization.",
+        "correct": "Universal space is a neutral, refined container that can flexibly accommodate any activity. This reflects Mies's belief that pure spatial and material beauty transcends specific program.",
+        "takeaway": "This reflects Mies's belief that pure spatial and material beauty transcends specific program."
+      },
+      "explanation": "This is the opposite; universal space transcends specific program. While Mies believed in universal principles, he didn't require identical designs. Universal space prioritizes openness and flexibility, not specialization. Universal space is a neutral, refined container that can flexibly accommodate any activity. This reflects Mies's belief that pure spatial and material beauty transcends specific program. This reflects Mies's belief that pure spatial and material beauty transcends specific program.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-05-06T14:40:22.121055+00:00",
+      "content_hash": "sha256:0f9e0a8b0f5205908a2d6019f74a33e824c4cfb2504228d8532df17c17b26a93"
+    },
+    {
+      "question_id": "327e00eb-bcb4-4c73-b7c1-0e36a4557a90",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "The Farnsworth House was constructed during which years?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1936–1938"
+        },
+        {
+          "id": "b",
+          "text": "1943–1945"
+        },
+        {
+          "id": "c",
+          "text": "1946–1951"
+        },
+        {
+          "id": "d",
+          "text": "1952–1955"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1936–1938 is too early; this predates the Farnsworth House project.",
+        "b": "1943–1945 is before the project began.",
+        "d": "1952–1955 is after completion.",
+        "correct": "The Farnsworth House was constructed 1946–1951. Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946.",
+        "takeaway": "Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946."
+      },
+      "explanation": "1936–1938 is too early; this predates the Farnsworth House project. 1943–1945 is before the project began. 1952–1955 is after completion. The Farnsworth House was constructed 1946–1951. Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946. Mies and Farnsworth met in late 1945; design work occurred after, with construction beginning in 1946.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-05-06T14:40:21.443561+00:00",
+      "content_hash": "sha256:3343de0e8b768de4ecc5f37311536db699fbca55172fbc728cd805e359078bea"
+    },
+    {
+      "question_id": "75d1eb90-9dea-40cc-b41e-ffeb251f1b07",
+      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
+      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
+      "text": "In the Seagram Building (1954–1958), the bronze I-beams visible on the facade serve what architectural purpose?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-structural bronze I-beam elements applied to the facade to visually express the structural rhythm hidden beneath fire-code-mandated concrete casing"
+        },
+        {
+          "id": "b",
+          "text": "Structural columns that directly support the building's weight and transfer gravity loads to the foundation system below"
+        },
+        {
+          "id": "c",
+          "text": "Cladding material intended to disguise the building as a traditional masonry structure with load-bearing exterior walls"
+        },
+        {
+          "id": "d",
+          "text": "Purely aesthetic ornament with no relationship to the building's structural system or its internal load-bearing framework"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The bronze I-beams do NOT carry structural loads. The actual steel frame is hidden beneath fire-code-mandated concrete cladding. This is the most common factual error about the Seagram Building.",
+        "c": "The I-beams do not disguise the building as masonry; they express (suggest) the steel structure beneath, even though they are not structural themselves.",
+        "d": "While non-structural, the I-beams are philosophically significant — they represent Mies's desire for structural honesty constrained by fire codes, not mere decoration.",
+        "correct": "The bronze I-beams are non-structural. American fire codes required all structural steel to be encased in concrete for fireproofing, concealing the actual structure. Mies applied non-structural bronze-toned I-beams to the facade to visually suggest the structural rhythm hidden within — achieving 'honest expression' through a non-structural appliqué. This famous paradox is one of the most tested details in modern architecture.",
+        "takeaway": "This famous paradox is one of the most tested details in modern architecture."
+      },
+      "explanation": "The bronze I-beams do NOT carry structural loads. The actual steel frame is hidden beneath fire-code-mandated concrete cladding. This is the most common factual error about the Seagram Building. The I-beams do not disguise the building as masonry; they express (suggest) the steel structure beneath, even though they are not structural themselves. While non-structural, the I-beams are philosophically significant — they represent Mies's desire for structural honesty constrained by fire codes, not mere decoration. The bronze I-beams are non-structural. American fire codes required all structural steel to be encased in concrete for fireproofing, concealing the actual structure. Mies applied non-structural bronze-toned I-beams to the facade to visually suggest the structural rhythm hidden within — achieving 'honest expression' through a non-structural appliqué. This famous paradox is one of the most tested details in modern architecture. This famous paradox is one of the most tested details in modern architecture.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-008-03B-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:25.729652+00:00",
+      "updated_at": "2026-05-06T14:40:21.579479+00:00",
+      "content_hash": "sha256:4a32e99b492053a546fc78c854d13b0dfe36696b455917b8dc05f9ea45b7c91b"
     },
     {
       "question_id": "66d25d4e-330d-41f4-8a6a-7faa24227f0d",
@@ -315,58 +367,6 @@
       "created_at": "2026-03-23T19:27:25.729652+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:87be47bd3dafeb685820fad6f10c3e148126cbbe70f403186a17f08531b3bb2e"
-    },
-    {
-      "question_id": "d78c7967-cac6-4777-b9eb-a9b4ac2ed3e9",
-      "article_id": "79bb710e-4b46-4e5a-b781-4dd864aa6ddc",
-      "topic_id": "048666eb-6f35-47a9-9ded-f8e3ad656154",
-      "text": "Mies van der Rohe's concept of 'universal space' suggests that [blank].",
-      "options": [
-        {
-          "id": "a",
-          "text": "buildings should be designed to serve specific functional programs, which contradicts the idea of universal space"
-        },
-        {
-          "id": "b",
-          "text": "a geometrically perfect spatial container can accommodate any activity without imposing predetermined uses"
-        },
-        {
-          "id": "c",
-          "text": "all buildings should look identical regardless of location or purpose, which is a misinterpretation of the concept"
-        },
-        {
-          "id": "d",
-          "text": "space must be subdivided into specialized rooms for different functions, which is contrary to the universal space idea"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This is the opposite; universal space transcends specific program.",
-        "c": "While Mies believed in universal principles, he didn't require identical designs.",
-        "d": "Universal space prioritizes openness and flexibility, not specialization.",
-        "correct": "Universal space is a neutral, refined container that can flexibly accommodate any activity. This reflects Mies's belief that pure spatial and material beauty transcends specific program.",
-        "takeaway": "This reflects Mies's belief that pure spatial and material beauty transcends specific program."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-008-03B-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:25.729652+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e893b0ec6553463ce02f39249e38318da4abb2e2e0d931a61df6426128f2dbda"
     },
     {
       "question_id": "21e6a43c-3e28-47c3-9f79-e74fb94080f5",

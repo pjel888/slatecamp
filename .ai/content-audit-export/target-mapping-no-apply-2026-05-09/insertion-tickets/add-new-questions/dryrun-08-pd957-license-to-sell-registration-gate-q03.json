@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+  "dry_question_id": "dryrun-08-pd957-license-to-sell-registration-gate-q03",
+  "target_article_id": null,
+  "ticket_target": "new-article-pd957-license-to-sell-registration-gate",
+  "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "PD 957 IRR, application documentary requirement excerpt, PDF p.43.",
+    "text": "Which document type is explicitly included among public-offering materials in the cited PD 957 application evidence?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "The excerpt lists circular, prospectus, brochure, advertisement, or communication for public offering.",
+      "distractors": {
+        "B": "A plumbing fixture schedule is not named in the cited public-offering list.",
+        "C": "A fire drill certificate is not named in the cited public-offering list.",
+        "D": "The cited list is broader and specifically names offering materials."
+      },
+      "takeaway": "Do not confuse sales/public-offering evidence with unrelated technical submittals."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "pd957-license-q3",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "A",
+    "explanation": "PD 957 IRR, application documentary requirement excerpt, PDF p.43.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "A prospectus or brochure"
+      },
+      {
+        "id": "B",
+        "text": "A plumbing fixture schedule"
+      },
+      {
+        "id": "C",
+        "text": "A fire evacuation drill certificate"
+      },
+      {
+        "id": "D",
+        "text": "A barangay zoning sketch only"
+      }
+    ]
+  },
+  "sme_source_locator": "PD 957 IRR, application documentary requirement excerpt, PDF p.43.",
+  "code_citation": "PD 957 IRR, application documentary requirement excerpt, PDF p.43.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

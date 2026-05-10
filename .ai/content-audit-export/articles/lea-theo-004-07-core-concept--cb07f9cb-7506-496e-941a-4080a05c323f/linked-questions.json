@@ -1,9 +1,113 @@
 {
   "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6e1727bd784b9a77d26d73cc0a7535ef9afb67d505a07dc58295116c8dd8a184",
+  "linked_questions_hash": "sha256:0070e0210990af9b89d9f6cbc6c861d20335e7e1c2da9af410e042fc251027b9",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "a9c2a381-6626-461a-a9b2-39bb5d376d6b",
+      "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+      "topic_id": "83ec1859-032b-4d54-b531-8512613a6702",
+      "text": "What is the optimal range for fractal dimension in biophilic design patterns, and why does this mathematical measure matter for occupant response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fractal dimension is irrelevant to tropical architecture, as the focus is on climate adaptation rather than mathematical aesthetics"
+        },
+        {
+          "id": "b",
+          "text": "Fractal dimension 1.3–1.5; this range produces optimal biophilic response. Values outside this range (too simple or too chaotic) reduce pattern recognition comfort"
+        },
+        {
+          "id": "c",
+          "text": "Lower fractal dimension (0.5–0.8) is optimal; natural patterns are simple and should not be overly complex to maintain harmony"
+        },
+        {
+          "id": "d",
+          "text": "Fractal dimension > 1.8; higher complexity increases biophilic effect indefinitely, enhancing the sensory experience without limit"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fractal dimension directly affects occupant comfort and is critical for tropical biophilic design (ceiling patterns, facade geometry).",
+        "c": "Natural patterns (fern fronds, tree canopies) have fractal dimensions ~1.3–1.5, not lower ranges.",
+        "d": "Higher complexity does not yield greater biophilic response; the relationship is optimized within 1.3–1.5 range.",
+        "correct": "Degree of Visual Complexity: Measured as fractal dimension; values between 1.3–1.5 produce optimal biophilic response.' This range balances complexity (like tree canopies, coral reefs) with recognizable order; deviation from this range produces either monotony (too simple) or overwhelm (too chaotic).",
+        "takeaway": "Degree of Visual Complexity: Measured as fractal dimension; values between 1.3–1.5 produce optimal biophilic response.' This range balances complexity (like tree canopies, coral reefs) with recognizable order; deviation from this range produces either monotony (too simple) or overwhelm (too chaotic)."
+      },
+      "explanation": "Fractal dimension directly affects occupant comfort and is critical for tropical biophilic design (ceiling patterns, facade geometry). Natural patterns (fern fronds, tree canopies) have fractal dimensions ~1.3–1.5, not lower ranges. Higher complexity does not yield greater biophilic response; the relationship is optimized within 1.3–1.5 range. Degree of Visual Complexity: Measured as fractal dimension; values between 1.3–1.5 produce optimal biophilic response.' This range balances complexity (like tree canopies, coral reefs) with recognizable order; deviation from this range produces either monotony (too simple) or overwhelm (too chaotic). Degree of Visual Complexity: Measured as fractal dimension; values between 1.3–1.5 produce optimal biophilic response.' This range balances complexity (like tree canopies, coral reefs) with recognizable order; deviation from this range produces either monotony (too simple) or overwhelm (too chaotic).",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-07-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-05-06T15:06:25.040334+00:00",
+      "content_hash": "sha256:4dd47bdaeb8887e0d36a7d8e32e30efab97124830a16ce4be78e61c980add1bf"
+    },
+    {
+      "question_id": "7e763bc9-2296-443f-8418-e6d209da8218",
+      "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
+      "topic_id": "83ec1859-032b-4d54-b531-8512613a6702",
+      "text": "Why is it important that Francisco Mañosa's philosophy, 'Everything started with the Nipa Hut,' validates biophilic design as authentic to Philippine architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The bahay kubo's open materials (bamboo sawali), natural ventilation, and indigenous material authenticity demonstrate climate-optimized biophilic practice developed empirically over centuries. Modern biophilic design is not novelty but validation of vernacular wisdom"
+        },
+        {
+          "id": "b",
+          "text": "The nipa hut has no thermal comfort benefits; cultural authenticity is the only merit, which is often debated among architects"
+        },
+        {
+          "id": "c",
+          "text": "The nipa hut is purely decorative and nostalgic; Mañosa romanticizes vernacular without performance justification, which some critics argue lacks practical application"
+        },
+        {
+          "id": "d",
+          "text": "Mañosa rejected all modern design; his philosophy mandates literal nipa hut reproduction, which is impractical in urban settings"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The bahay kubo achieves 8–10 ACH natural ventilation, evaporative cooling, and flood resilience—substantial thermal benefits beyond cultural value.",
+        "c": "Mañosa advocated climate intelligence, not mere nostalgia; the bahay kubo's performance is quantifiable.",
+        "d": "Mañosa's philosophy informs contemporary design principles; literal reproduction is neither required nor feasible for modern programs.",
+        "correct": "Francisco Mañosa emphasized that \"Everything started with the Nipa Hut\"—not as nostalgia but as recognition that indigenous materials represent climate-optimized solutions developed through centuries of empirical observation.' This grounds biophilic design in proven tropical practice, not superficial aesthetics.",
+        "takeaway": "Francisco Mañosa emphasized that \"Everything started with the Nipa Hut\"—not as nostalgia but as recognition that indigenous materials represent climate-optimized solutions developed through centuries of empirical observation.' This grounds biophilic design in proven tropical practice, not superficial aesthetics."
+      },
+      "explanation": "The bahay kubo achieves 8–10 ACH natural ventilation, evaporative cooling, and flood resilience—substantial thermal benefits beyond cultural value. Mañosa advocated climate intelligence, not mere nostalgia; the bahay kubo's performance is quantifiable. Mañosa's philosophy informs contemporary design principles; literal reproduction is neither required nor feasible for modern programs. Francisco Mañosa emphasized that \"Everything started with the Nipa Hut\"—not as nostalgia but as recognition that indigenous materials represent climate-optimized solutions developed through centuries of empirical observation.' This grounds biophilic design in proven tropical practice, not superficial aesthetics. Francisco Mañosa emphasized that \"Everything started with the Nipa Hut\"—not as nostalgia but as recognition that indigenous materials represent climate-optimized solutions developed through centuries of empirical observation.' This grounds biophilic design in proven tropical practice, not superficial aesthetics.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-07-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-05-06T15:06:25.161523+00:00",
+      "content_hash": "sha256:8aa63fad11b250d02b738900b8216fda1f1bb69d63963337934e4cc1b622b13d"
+    },
     {
       "question_id": "dc3c76ef-5d1b-4d07-a873-5465db5c7b0d",
       "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
@@ -91,7 +195,7 @@
         "correct": "Capiz shell windows filter diffuse light and create dynamic luminous patterns—early biophilic innovations predating contemporary frameworks.' Capiz exemplifies authentic integration: visual connection (translucency), dynamic light quality, privacy (refuge pattern), ventilation enablement. This demonstrates indigenous wisdom aligns with modern biophilic science.",
         "takeaway": "This demonstrates indigenous wisdom aligns with modern biophilic science."
       },
-      "explanation": null,
+      "explanation": "Capiz demonstrates that vernacular practice validates contemporary frameworks; it is highly relevant. Modern clear glass creates glare and psychological exposure; capiz's diffuse filtering is superior for biophilic quality. Capiz serves multiple functions beyond decoration. Capiz shell windows filter diffuse light and create dynamic luminous patterns—early biophilic innovations predating contemporary frameworks.' Capiz exemplifies authentic integration: visual connection (translucency), dynamic light quality, privacy (refuge pattern), ventilation enablement. This demonstrates indigenous wisdom aligns with modern biophilic science. This demonstrates indigenous wisdom aligns with modern biophilic science.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -105,8 +209,8 @@
       "model_id": "ALE-THEO-004-07-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6e3050e153b52677fd5579eba12c6782561caed82217c12400556bd263b9fbf4"
+      "updated_at": "2026-05-06T15:06:24.800553+00:00",
+      "content_hash": "sha256:35d553f17cc50eff4b4ce4df38e9b661bb6c8b85058b75b4d232b54aef3f2833"
     },
     {
       "question_id": "12e6232e-d6a7-4463-b355-a2342e37c1d1",
@@ -195,7 +299,7 @@
         "correct": "The framework organizes 14 patterns into three categories. Tested application: 'Visual Connection with Nature' (courtyards, water views) reduces stress and cognitive load. 'Non-Visual Connection' (water trickling, bird sounds) activates parasympathetic response and provides evaporative cooling benefit. 'Prospect' (open sightlines, observation decks) creates psychological engagement. All three categories work synergistically in tropical contexts.",
         "takeaway": "All three categories work synergistically in tropical contexts."
       },
-      "explanation": null,
+      "explanation": "Biophilic design and typhoon resilience are compatible; structural redundancy + nature integration can coexist (e.g., wind-resistant native plantings). Nature in the Space (direct physical nature) is equally important; all categories contribute to tropical thermal comfort and psychological well-being. Category distinction matters; integration across three categories provides comprehensive biophilic response. The framework organizes 14 patterns into three categories. Tested application: 'Visual Connection with Nature' (courtyards, water views) reduces stress and cognitive load. 'Non-Visual Connection' (water trickling, bird sounds) activates parasympathetic response and provides evaporative cooling benefit. 'Prospect' (open sightlines, observation decks) creates psychological engagement. All three categories work synergistically in tropical contexts. All three categories work synergistically in tropical contexts.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -209,60 +313,8 @@
       "model_id": "ALE-THEO-004-07-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a68e497c97f15c1fe1463dd6a0d70e49ab1f06033c9f133b42b454acdb9b68d3"
-    },
-    {
-      "question_id": "a9c2a381-6626-461a-a9b2-39bb5d376d6b",
-      "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
-      "topic_id": "83ec1859-032b-4d54-b531-8512613a6702",
-      "text": "What is the optimal range for fractal dimension in biophilic design patterns, and why does this mathematical measure matter for occupant response?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Fractal dimension is irrelevant to tropical architecture, as the focus is on climate adaptation rather than mathematical aesthetics"
-        },
-        {
-          "id": "b",
-          "text": "Fractal dimension 1.3–1.5; this range produces optimal biophilic response. Values outside this range (too simple or too chaotic) reduce pattern recognition comfort"
-        },
-        {
-          "id": "c",
-          "text": "Lower fractal dimension (0.5–0.8) is optimal; natural patterns are simple and should not be overly complex to maintain harmony"
-        },
-        {
-          "id": "d",
-          "text": "Fractal dimension > 1.8; higher complexity increases biophilic effect indefinitely, enhancing the sensory experience without limit"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Fractal dimension directly affects occupant comfort and is critical for tropical biophilic design (ceiling patterns, facade geometry).",
-        "c": "Natural patterns (fern fronds, tree canopies) have fractal dimensions ~1.3–1.5, not lower ranges.",
-        "d": "Higher complexity does not yield greater biophilic response; the relationship is optimized within 1.3–1.5 range.",
-        "correct": "Degree of Visual Complexity: Measured as fractal dimension; values between 1.3–1.5 produce optimal biophilic response.' This range balances complexity (like tree canopies, coral reefs) with recognizable order; deviation from this range produces either monotony (too simple) or overwhelm (too chaotic).",
-        "takeaway": "Degree of Visual Complexity: Measured as fractal dimension; values between 1.3–1.5 produce optimal biophilic response.' This range balances complexity (like tree canopies, coral reefs) with recognizable order; deviation from this range produces either monotony (too simple) or overwhelm (too chaotic)."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-004-07-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3854d38d92cd4d9344bcbc8496894ca040874c2e0bd6cc7a3d51d98095af48b7"
+      "updated_at": "2026-05-06T15:06:24.919977+00:00",
+      "content_hash": "sha256:36e644441e02303a185c5cf9aace864be3d32953733fc3fcdd0c9bdf2cdabf3a"
     },
     {
       "question_id": "0d101c07-3afe-4f47-b5ae-e0de8b616392",
@@ -419,58 +471,6 @@
       "created_at": "2026-03-23T19:27:54.791916+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:c20138b7bb03b05f8f7efe297a750b83c87a5a8d893809f3d88f85a3544cdfc8"
-    },
-    {
-      "question_id": "7e763bc9-2296-443f-8418-e6d209da8218",
-      "article_id": "cb07f9cb-7506-496e-941a-4080a05c323f",
-      "topic_id": "83ec1859-032b-4d54-b531-8512613a6702",
-      "text": "Why is it important that Francisco Mañosa's philosophy, 'Everything started with the Nipa Hut,' validates biophilic design as authentic to Philippine architecture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The bahay kubo's open materials (bamboo sawali), natural ventilation, and indigenous material authenticity demonstrate climate-optimized biophilic practice developed empirically over centuries. Modern biophilic design is not novelty but validation of vernacular wisdom"
-        },
-        {
-          "id": "b",
-          "text": "The nipa hut has no thermal comfort benefits; cultural authenticity is the only merit, which is often debated among architects"
-        },
-        {
-          "id": "c",
-          "text": "The nipa hut is purely decorative and nostalgic; Mañosa romanticizes vernacular without performance justification, which some critics argue lacks practical application"
-        },
-        {
-          "id": "d",
-          "text": "Mañosa rejected all modern design; his philosophy mandates literal nipa hut reproduction, which is impractical in urban settings"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "The bahay kubo achieves 8–10 ACH natural ventilation, evaporative cooling, and flood resilience—substantial thermal benefits beyond cultural value.",
-        "c": "Mañosa advocated climate intelligence, not mere nostalgia; the bahay kubo's performance is quantifiable.",
-        "d": "Mañosa's philosophy informs contemporary design principles; literal reproduction is neither required nor feasible for modern programs.",
-        "correct": "Francisco Mañosa emphasized that \"Everything started with the Nipa Hut\"—not as nostalgia but as recognition that indigenous materials represent climate-optimized solutions developed through centuries of empirical observation.' This grounds biophilic design in proven tropical practice, not superficial aesthetics.",
-        "takeaway": "Francisco Mañosa emphasized that \"Everything started with the Nipa Hut\"—not as nostalgia but as recognition that indigenous materials represent climate-optimized solutions developed through centuries of empirical observation.' This grounds biophilic design in proven tropical practice, not superficial aesthetics."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "PH"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-004-07-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b187bc0cb0e8633fa917159cbdfba443b677e6bc6a63e537a2950467eb21690e"
     },
     {
       "question_id": "7458086f-9aa2-4f81-bd75-2635168513e2",

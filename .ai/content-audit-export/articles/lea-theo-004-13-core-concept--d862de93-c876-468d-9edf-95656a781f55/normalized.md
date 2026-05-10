@@ -321,7 +321,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
-- Props: 
+- Props:
 - Text: Sun shading devices reduce solar heat gain by 40–70% without sacrificing daylighting; they are essential tropical architecture elements. The **brise-soleil** (sun breaker) and related devices—horizont
 
 ## Common Mistakes
@@ -384,4 +384,3 @@ Extracted summary:
 See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-02-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-07-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

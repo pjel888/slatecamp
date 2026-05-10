@@ -5,6 +5,8 @@
 // ─── Y-Axis Geometry Constants (Anti-Z-Fighting System) ─────────────────────
 // Minimum separation = 0.01 world units (1cm at 1:100 scale).
 // WebGL 24-bit depth buffer resolves ~0.000001 at close range.
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
+
 // Z-fighting is geometrically impossible in this system.
 
 export const GEOMETRY_Y = {
@@ -31,7 +33,7 @@ export type GeometryYKey = keyof typeof GEOMETRY_Y
 
 export const COLOR = {
   // Ground & context
-  GROUND:          '#f1f5f9',   // Raw earth / terrain — Tailwind slate-100
+  GROUND:          SCENE_COLORS.groundLight, // Raw earth / terrain — slightly darker than white
   ROAD:            '#6B7280',   // Road surface
   ROAD_MARKING:    '#FFFFFF',   // Lane markings
   SIDEWALK:        '#D4D0C8',   // Pedestrian pavement
@@ -154,7 +156,7 @@ export const CAMERA_PRESETS: Record<string, CameraPresetConfig> = {
 // ─── Scene Constants ────────────────────────────────────────────────────────
 
 export const SCENE = {
-  SKY_COLOR:          '#F2F0EB',
+  SKY_COLOR:          SCENE_COLORS.skyWhite,
   DPR_RANGE:          [1, 1.5] as [number, number],
   MAX_DRAW_CALLS:     20,
   FLOOR_HEIGHT_DEFAULT: 3.0,

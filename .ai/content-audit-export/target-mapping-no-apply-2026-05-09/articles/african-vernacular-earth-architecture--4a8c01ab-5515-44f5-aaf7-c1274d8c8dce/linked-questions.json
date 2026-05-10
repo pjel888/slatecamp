@@ -1,0 +1,1116 @@
+{
+  "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a83fd1e9679fa92052665219f5bc02b7508af8a1c0c0206a12e8f8e9a0de4df1",
+  "question_count": 22,
+  "questions": [
+    {
+      "question_id": "e334631a-5c2a-4d3c-9a9e-cb134a555e57",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Which Philippine law or code governs the principles discussed in \"African Vernacular Earth Architecture\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PD 1096 - National Building Code of the Philippines"
+        },
+        {
+          "id": "B",
+          "text": "BP 344 - Accessibility Law of the Philippines"
+        },
+        {
+          "id": "C",
+          "text": "RA 9266 - Architecture Act of the Philippines"
+        },
+        {
+          "id": "D",
+          "text": "Various codes depending on the specific provision"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "African Vernacular Earth Architecture may reference multiple laws including PD 1096, BP 344, and other regulations.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:13.694494+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3af0f977c59cfd305cd9cd34633e223fc57e7c9eb3bfbbca7def3c541f5c36e3"
+    },
+    {
+      "question_id": "7c9bb8e9-abc7-479e-91d7-a162299eb52c",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Based on the specifications in \"African Vernacular Earth Architecture\", if a project requires 40 cm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "40 cm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "40 cm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "40 cm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "40 cm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 40 cm as the requirement. Context: plaster; *toron* timber beams (Palmyra palm) | Battered (tapering) walls up to 4...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:13.694494+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c6eb002474bd9135d6db070f1af525aaf74adcee255d943cf12e192e74851054"
+    },
+    {
+      "question_id": "0e1d8974-af5a-4091-b05a-791174346b17",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "An architect designing a hillside community center in Mindanao wants to adapt Great Zimbabwe's structural principles for seismic resilience without mortar. Which design strategy directly applies?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Employ dry-fit stone walls with battered (inward-tapering) profiles and curved plan geometry to distribute seismic forces and allow controlled flexing"
+        },
+        {
+          "id": "B",
+          "text": "Use straight, parallel stone walls with lime mortar joints to create a rigid box frame resistant to lateral earthquake forces, ensuring stability"
+        },
+        {
+          "id": "C",
+          "text": "Build thin stone veneers over a reinforced concrete frame to achieve seismic strength while referencing vernacular aesthetics, maintaining cultural integrity"
+        },
+        {
+          "id": "D",
+          "text": "Stack flat stone slabs horizontally without shaping, relying solely on dead weight for stability against lateral loads, assuming weight alone provides resistance"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Dry-fit battered walls with curved geometry distribute seismic forces through the same principles Great Zimbabwe employs.",
+        "explanation": "Great Zimbabwe's seismic resilience derives from two interlocking strategies: the battered (tapering) wall profile that lowers the center of gravity, and the curvilinear plan that distributes lateral loads around curves rather than concentrating them at corners. The mortarless friction-fit joints allow micro-movement during seismic events. These principles are directly applicable to earthquake-prone Philippine construction contexts.",
+        "common_misconceptions": [
+          "Rigid box frames (Option A) amplify seismic forces at corners — the opposite of Great Zimbabwe's flexible approach.",
+          "Thin veneer over concrete (Option C) is modern engineering, not an application of the dry-stone vernacular principle."
+        ]
+      },
+      "explanation": "This question tests application of Great Zimbabwe's seismic resilience principles to a Philippine design scenario.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f16c91a1acbaf5e15a3c7b218e8740fa1505b4bbae9295ba3bafe86418eda528"
+    },
+    {
+      "question_id": "56930853-eb80-4fc1-84bc-52631c005c89",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Which statement most accurately characterizes Sudano-Sahelian mosque architecture as an engineered building type rather than a primitive shelter?",
+      "options": [
+        {
+          "id": "A",
+          "text": "These structures use imported steel reinforcement hidden within the earthen walls to achieve structural spans equivalent to reinforced concrete frames, providing modern engineering capabilities"
+        },
+        {
+          "id": "B",
+          "text": "The Great Mosque of Djenné is the world's largest mud-brick building and a UNESCO World Heritage Site, with battered tapering walls, embedded ventilation, and a systematic community maintenance program"
+        },
+        {
+          "id": "C",
+          "text": "These mosques are designated as temporary structures and rebuilt from scratch every generation, which limits their historical significance for architectural study, despite their cultural importance"
+        },
+        {
+          "id": "D",
+          "text": "Their earthen walls are stabilized with modern cement additives applied during the 20th-century restorations, giving them contemporary engineering performance and durability"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Great Mosque of Djenné is the world's largest mud-brick structure and a UNESCO World Heritage Site with sophisticated engineering features.",
+        "explanation": "The article explicitly warns against the 'mud hut' misconception. Sudano-Sahelian mosques feature tapering walls (up to 40 cm thick at the base), embedded toron ventilation channels, sloping wall profiles that shed rainwater, and systematic crépissage maintenance programs. The Great Mosque of Djenné is both the largest mud-brick structure on earth and a UNESCO World Heritage Site — neither characterization fits a 'primitive' structure.",
+        "common_misconceptions": [
+          "The article explicitly identifies the 'mud hut' misconception as an ALE trap — these are sophisticated engineered structures, not temporary shelters.",
+          "No modern cement additives define the traditional Sudano-Sahelian technique; the engineering is entirely pre-industrial."
+        ]
+      },
+      "explanation": "This question tests the ability to counter the 'primitive shelter' misconception with specific factual evidence from the article.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:548f2f59dc9f63817a1eae916ce55487f06ab71b1487844c32f12ef6cc5f00af"
+    },
+    {
+      "question_id": "1ef45fe7-ef7e-49c4-ad84-48950f4af93e",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "A developer proposes using cement-stabilized compressed earth blocks (CSEB) for a school in a remote municipality, citing vernacular African earth-building traditions. Which assessment of this approach is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CSEB is categorically incompatible with modern building codes and cannot be used in any Philippine structural application regardless of engineering input"
+        },
+        {
+          "id": "B",
+          "text": "Vernacular earth construction is inherently inferior to fired brick and should only be permitted in temporary structures with lifespans under five years"
+        },
+        {
+          "id": "C",
+          "text": "Stabilized earth technologies including CSEB and reinforced rammed earth are recognized in contemporary building codes worldwide and can be adapted to meet Philippine structural standards with appropriate engineering"
+        },
+        {
+          "id": "D",
+          "text": "Earth construction techniques are valid only in arid climates and cannot perform adequately in tropical humid conditions like those found in the Philippines"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Stabilized earth technologies are recognized in contemporary building codes worldwide and can be engineered to meet the NSCP.",
+        "explanation": "The article directly addresses this: stabilized earth (CSEB and reinforced rammed earth) is recognized in contemporary building codes worldwide. The ALE tests whether candidates understand that vernacular principles can be adapted to modern standards — including the National Structural Code of the Philippines (NSCP) — with appropriate engineering. Dismissing earth construction as inherently code-incompatible is the misconception the article warns against.",
+        "common_misconceptions": [
+          "The assumption that vernacular materials cannot meet modern standards is explicitly identified as an ALE misconception in the article.",
+          "Earth construction performs in tropical climates when properly stabilized and detailed — the Philippines has relevant indigenous precedents."
+        ]
+      },
+      "explanation": "This question tests evaluative judgment about the applicability of earth-building technology to contemporary Philippine practice.",
+      "code_citation": null,
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:035e99bb02019d7b2508f55bba0e8a5adcd9b642199a3516b7d33f5f8539d358"
+    },
+    {
+      "question_id": "ce997611-af95-4d6e-8b1b-4f0f51cabcb6",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The current structure of the Great Mosque of Djenné dates to which period, and what construction material gives it its distinctive surface texture?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Founded by Mansa Musa in 1325 CE; constructed from dry granite blocks and lime mortar with a smooth ashlar finish"
+        },
+        {
+          "id": "B",
+          "text": "Originally built in 1327 CE; constructed from fired clay bricks imported from North Africa and finished with bitumen waterproofing"
+        },
+        {
+          "id": "C",
+          "text": "Rebuilt in 1906–1907; constructed from Djenné-ferey cylindrical sun-dried mud bricks covered with earthen plaster"
+        },
+        {
+          "id": "D",
+          "text": "Reconstructed in 1570 CE; built from rammed earth poured into timber formwork and sealed with volcanic pumice plaster"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The current Djenné mosque was rebuilt in 1906–1907 using Djenné-ferey cylindrical sun-dried mud bricks with earthen plaster.",
+        "explanation": "The Great Mosque of Djenné was originally constructed around the 13th century. The current structure is a 1906–1907 reconstruction using the traditional Sudano-Sahelian technique: Djenné-ferey (cylindrical sun-dried mud bricks) with earthen plaster applied during the annual crépissage. Option A describes Great Zimbabwe (dry stone). Option C references the Djinguereber Mosque in Timbuktu (founded 1325 by Mansa Musa). Option D confuses it with rammed earth techniques.",
+        "common_misconceptions": [
+          "Confusing the original 13th-century construction date with the current structure's 1906–1907 rebuild date is a common ALE trap.",
+          "Mansa Musa founded the Djinguereber Mosque in Timbuktu in 1325, not the Djenné mosque."
+        ]
+      },
+      "explanation": "This question tests precise recall of dates and materials for the Great Mosque of Djenné, distinguishing it from the Timbuktu mosques.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5762b4f9e6dc999999144a4f50d4a04cfb9213dd86a3dff9a6af8b23379b245f"
+    },
+    {
+      "question_id": "d999bb17-5339-4227-bb42-abf4b1c00f29",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Great Zimbabwe's massive enclosure walls achieve structural stability through which primary method?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lime mortar binding with embedded iron clamps that lock granite courses together against lateral seismic forces"
+        },
+        {
+          "id": "B",
+          "text": "Post-and-lintel granite framing with rubble infill core and bitumen waterproofing on exposed wall surfaces"
+        },
+        {
+          "id": "C",
+          "text": "Rammed earth cores faced with granite veneer slabs pinned together with bronze hardware and mud grout"
+        },
+        {
+          "id": "D",
+          "text": "Dry-stone masonry using precisely shaped granite blocks held by gravity, friction, and curvilinear wall geometry"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Great Zimbabwe uses dry-stone masonry — no mortar — relying on gravity, friction, and curved geometry for stability.",
+        "explanation": "The Great Enclosure walls at Great Zimbabwe reach up to 11 m high and 250 m long. Blocks were shaped by controlled heating and flaking of granite, then carefully fitted without any mortar. The curvilinear plan distributes lateral forces and allows controlled flexing during seismic events. This mortarless system is analogous in principle to modern seismic base-isolation concepts.",
+        "common_misconceptions": [
+          "A key ALE trap is assuming mortar was used — it was not. The term 'dry-stone' is definitional for Great Zimbabwe.",
+          "Iron tools did not exist in sub-Saharan Africa during this period; blocks were shaped by heating and flaking."
+        ]
+      },
+      "explanation": "This question tests understanding of the structural logic of Great Zimbabwe's dry-stone construction.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4009099fc9d17aa624dba855db84ff3afee726e2b784461cb6acfd56620a77a9"
+    },
+    {
+      "question_id": "a9579b4a-7fe8-4c57-aecc-2db8479f8111",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Archaeological and radiocarbon evidence confirms that Great Zimbabwe was built by which people, and over what approximate period?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bantu-speaking ancestors of the Shona people, with bulk construction between the 11th and 15th centuries CE"
+        },
+        {
+          "id": "B",
+          "text": "Phoenician traders from the Mediterranean, who constructed the complex between the 5th and 3rd centuries BCE as a trading post"
+        },
+        {
+          "id": "C",
+          "text": "Arab merchants from the Swahili Coast, who built the enclosures between the 8th and 10th centuries CE as a fortified market"
+        },
+        {
+          "id": "D",
+          "text": "Early European explorers, who erected the walls between the 16th and 17th centuries CE as a colonial administrative center"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Great Zimbabwe was built by Bantu-speaking ancestors of the Shona people between the 11th and 15th centuries CE.",
+        "explanation": "Radiocarbon dating and archaeological consensus since the 1950s definitively confirm that Great Zimbabwe was constructed by the indigenous Bantu-speaking Shona ancestors. The site covers 7.22 km² and represents the largest stone structure in sub-Saharan Africa. The colonial attribution fallacy — claiming foreign (Phoenician, Arab, or European) builders — has been thoroughly discredited and any ALE answer implying external construction is definitively incorrect.",
+        "common_misconceptions": [
+          "The colonial attribution fallacy is explicitly identified in the article as an ALE trap — the answer is always Shona indigenous construction.",
+          "No external civilization built Great Zimbabwe; this was a fully indigenous achievement."
+        ]
+      },
+      "explanation": "This question tests the colonial attribution fallacy identified in the article as a primary LEA trap.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6379948d133596f20653b5277a24352360246bef63cb0951786fec230b4c29b6"
+    },
+    {
+      "question_id": "d9950f0e-cf85-49a9-b3a4-cb59f02e6cbe",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The thermal mass advantage of thick Sahelian adobe walls is most accurately described as which of the following?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Walls generate evaporative cooling by releasing moisture absorbed during morning dew, reducing interior temperatures by 10–15°C"
+        },
+        {
+          "id": "B",
+          "text": "Walls absorb solar heat during the day and release it slowly at night, buffering interiors against extreme diurnal temperature swings"
+        },
+        {
+          "id": "C",
+          "text": "Walls channel prevailing winds through embedded hollow tubes, creating forced convection across interior surfaces"
+        },
+        {
+          "id": "D",
+          "text": "Walls reflect incoming solar radiation using a white lime plaster finish that prevents heat absorption entirely"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Adobe walls absorb heat during the day and release it at night, buffering interior temperatures against diurnal extremes.",
+        "explanation": "Thermal mass is the defining climate adaptation of Sahelian earth architecture. In arid climates with extreme diurnal swings (very hot days, cool nights), thick clay-sand-straw walls act as thermal batteries: absorbing heat during daylight hours (keeping interiors cool) and radiating stored heat after sunset (keeping interiors warm). This passive system requires no mechanical assistance.",
+        "common_misconceptions": [
+          "Thermal mass is not the same as evaporative cooling — the mechanism is heat storage and time-delayed release, not moisture evaporation.",
+          "Reflection (Option D) describes a different strategy — light-colored finishes reduce absorption but do not provide the time-shift thermal buffering that adobe mass delivers."
+        ]
+      },
+      "explanation": "This question tests understanding of the thermal mass principle, the defining climate adaptation of Sahel earth architecture.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:958a4e3741fae2cc72839f4b17539284110c3fdd7ef6b0116bf93907f94d7650"
+    },
+    {
+      "question_id": "073e4da0-54b5-423b-88d1-a2743bd4cab7",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The annual crépissage of Sudano-Sahelian mosques serves which combined purpose?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A structural reinforcement procedure performed by government contractors to apply cement-stabilized plaster over deteriorating earthen surfaces"
+        },
+        {
+          "id": "B",
+          "text": "An annual seismic inspection program in which engineers assess crack patterns and inject grout into compromised wall joints"
+        },
+        {
+          "id": "C",
+          "text": "A communal replastering ritual that maintains the earthen exterior, uses torons as scaffolding, and functions as a major social and cultural event"
+        },
+        {
+          "id": "D",
+          "text": "A decorative repainting ceremony in which local artisans apply mineral pigments to the mosque facade in ceremonial colors"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Crépissage is the communal annual replastering ritual that maintains earthen mosque walls using torons as scaffolding.",
+        "explanation": "The crépissage is both a practical maintenance necessity and a deeply social event. Because earthen plaster erodes under seasonal rains, the Great Mosque of Djenné and similar structures require annual re-application of fresh earthen plaster. The projecting toron beams serve as permanent scaffolding attachment points. The entire community participates, making it a major cultural ritual as well as a building maintenance program.",
+        "common_misconceptions": [
+          "Crépissage is not a modern engineering intervention — it is a traditional, community-driven maintenance practice that has sustained these structures for centuries.",
+          "The torons are not decorative; they exist specifically to facilitate this annual maintenance."
+        ]
+      },
+      "explanation": "This question tests understanding of crépissage as a combined structural maintenance and communal social practice.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:93eb82ce1ee9de24a8785008b0fd7a5dc3bf1718d3a41add772102787955f176"
+    },
+    {
+      "question_id": "46607040-9c33-4927-b5f2-3ef9f9474b58",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The Djinguereber Mosque in Timbuktu was founded by which ruler, in approximately what year?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Founded by Koi Konboro around the 13th century CE as the first mosque in the Djenné region, marking a significant cultural and religious milestone"
+        },
+        {
+          "id": "B",
+          "text": "Founded by Sultan Muhammad Askia around 1493 CE after the Songhai Empire conquered the Timbuktu region, establishing a new era of architectural development"
+        },
+        {
+          "id": "C",
+          "text": "Founded by Sundiata Keita around 1235 CE as the principal mosque of the Mali Empire's founding capital, symbolizing the empire's religious and political power"
+        },
+        {
+          "id": "D",
+          "text": "Founded by Mansa Musa around 1325 CE, with a dated inscription from 1327, as part of the University of Timbuktu complex"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Djinguereber Mosque was founded by Mansa Musa around 1325 CE, with a dated inscription from 1327.",
+        "explanation": "Mansa Musa, the wealthy ruler of the Mali Empire famous for his 1324 pilgrimage to Mecca, commissioned the Djinguereber Mosque in Timbuktu upon his return. The mosque is part of the University of Timbuktu complex. Option A describes the circumstances of the Great Mosque of Djenné (founded under Koi Konboro). The ALE frequently tests the distinction between these two mosques.",
+        "common_misconceptions": [
+          "The Great Mosque of Djenné and the Djinguereber Mosque of Timbuktu are different structures — a critical ALE distinction.",
+          "Mansa Musa founded Djinguereber (Timbuktu); the Djenné mosque predates this under a different ruler."
+        ]
+      },
+      "explanation": "This question tests precise attribution of the Djinguereber Mosque to Mansa Musa, a key LEA distinction from the Djenné mosque.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:777cc1e0c2ef85c9958e96f51b00bbe329400315d827eff2a3b2ab92662ac8ab"
+    },
+    {
+      "question_id": "5c5339f3-4fd1-4eb8-87bd-1310a731d4c1",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "What are torons in the context of Sudano-Sahelian mosque architecture, such as the Great Mosque of Djenné?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Decorative ceramic tiles pressed into the exterior plaster surface of minaret towers to create geometric patterns, enhancing the visual appeal"
+        },
+        {
+          "id": "B",
+          "text": "Projecting Palmyra palm timber beams embedded in earthen walls, serving as permanent scaffolding anchors and ventilation elements"
+        },
+        {
+          "id": "C",
+          "text": "Carved stone lintels spanning doorway and window openings in dry-stone construction across West Africa, providing structural support"
+        },
+        {
+          "id": "D",
+          "text": "Woven reed lattice screens mounted inside window openings to filter sunlight and direct natural cross-ventilation, improving indoor comfort"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Torons are the projecting Palmyra palm timber beams embedded in Sudano-Sahelian earthen walls.",
+        "explanation": "Torons serve a dual function: they are permanent scaffolding anchor points used during the annual crépissage (communal replastering ritual) and act as ventilation channels through the thick earthen walls. They are one of the most recognizable features of the Great Mosque of Djenné and other Sudano-Sahelian mosques.",
+        "common_misconceptions": [
+          "Torons are sometimes confused with decorative elements — they are structural and functional, not merely ornamental.",
+          "The crépissage replastering they enable is both a maintenance necessity and a social/communal ritual."
+        ]
+      },
+      "explanation": "This question tests recall of a highly specific and testable architectural term from the Sudano-Sahelian tradition.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.46088+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca00d8e2019bfe73fa07520e61ac7f231ba25d832db4dbdd4f25e1865d0e44a4"
+    },
+    {
+      "question_id": "a7a0aa70-9a61-40a6-84cd-18636fc664a1",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "An architect designing a hillside community center in Mindanao wants to adapt Great Zimbabwe's structural principles for seismic resilience without mortar. Which design strategy directly applies?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Employ dry-fit stone walls with battered (inward-tapering) profiles and curved plan geometry to distribute seismic forces and allow controlled flexing"
+        },
+        {
+          "id": "B",
+          "text": "Use straight, parallel stone walls with lime mortar joints to create a rigid box frame resistant to lateral earthquake forces, ensuring stability through rigidity"
+        },
+        {
+          "id": "C",
+          "text": "Build thin stone veneers over a reinforced concrete frame to achieve seismic strength while referencing vernacular aesthetics, providing a modern interpretation"
+        },
+        {
+          "id": "D",
+          "text": "Stack flat stone slabs horizontally without shaping, relying solely on dead weight for stability against lateral loads, which may not be effective in seismic zones"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Dry-fit battered walls with curved geometry distribute seismic forces through the same principles Great Zimbabwe employs.",
+        "explanation": "Great Zimbabwe's seismic resilience derives from two interlocking strategies: the battered (tapering) wall profile that lowers the center of gravity, and the curvilinear plan that distributes lateral loads around curves rather than concentrating them at corners. The mortarless friction-fit joints allow micro-movement during seismic events. These principles are directly applicable to earthquake-prone Philippine construction contexts.",
+        "common_misconceptions": [
+          "Rigid box frames (Option A) amplify seismic forces at corners — the opposite of Great Zimbabwe's flexible approach.",
+          "Thin veneer over concrete (Option C) is modern engineering, not an application of the dry-stone vernacular principle."
+        ]
+      },
+      "explanation": "This question tests application of Great Zimbabwe's seismic resilience principles to a Philippine design scenario.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12c993d041e17082dea8fcf39c22cc78fff14c3a5664374041638606bc53944a"
+    },
+    {
+      "question_id": "716edfbf-e518-466a-bed6-225ffeb44114",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The Djinguereber Mosque in Timbuktu was founded by which ruler, in approximately what year?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Founded by Koi Konboro around the 13th century CE as the first mosque in the Djenné region, marking a significant cultural development"
+        },
+        {
+          "id": "B",
+          "text": "Founded by Sultan Muhammad Askia around 1493 CE after the Songhai Empire conquered the Timbuktu region, establishing a new religious center"
+        },
+        {
+          "id": "C",
+          "text": "Founded by Sundiata Keita around 1235 CE as the principal mosque of the Mali Empire's founding capital, symbolizing the empire's rise"
+        },
+        {
+          "id": "D",
+          "text": "Founded by Mansa Musa around 1325 CE, with a dated inscription from 1327, as part of the University of Timbuktu complex"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Djinguereber Mosque was founded by Mansa Musa around 1325 CE, with a dated inscription from 1327.",
+        "explanation": "Mansa Musa, the wealthy ruler of the Mali Empire famous for his 1324 pilgrimage to Mecca, commissioned the Djinguereber Mosque in Timbuktu upon his return. The mosque is part of the University of Timbuktu complex. Option A describes the circumstances of the Great Mosque of Djenné (founded under Koi Konboro). The ALE frequently tests the distinction between these two mosques.",
+        "common_misconceptions": [
+          "The Great Mosque of Djenné and the Djinguereber Mosque of Timbuktu are different structures — a critical ALE distinction.",
+          "Mansa Musa founded Djinguereber (Timbuktu); the Djenné mosque predates this under a different ruler."
+        ]
+      },
+      "explanation": "This question tests precise attribution of the Djinguereber Mosque to Mansa Musa, a key LEA distinction from the Djenné mosque.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd5305e9a341e3725c28345b0a4c55e99a8abe3e8ef3948b6b29fd35790c3f89"
+    },
+    {
+      "question_id": "85036b1c-a162-4d13-a612-e1be47f6c61b",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The current structure of the Great Mosque of Djenné dates to which period, and what construction material gives it its distinctive surface texture?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Founded by Mansa Musa in 1325 CE; constructed from dry granite blocks and lime mortar with a smooth ashlar finish"
+        },
+        {
+          "id": "B",
+          "text": "Originally built in 1327 CE; constructed from fired clay bricks imported from North Africa and finished with bitumen waterproofing"
+        },
+        {
+          "id": "C",
+          "text": "Rebuilt in 1906–1907; constructed from Djenné-ferey cylindrical sun-dried mud bricks covered with earthen plaster"
+        },
+        {
+          "id": "D",
+          "text": "Reconstructed in 1570 CE; built from rammed earth poured into timber formwork and sealed with volcanic pumice plaster"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The current Djenné mosque was rebuilt in 1906–1907 using Djenné-ferey cylindrical sun-dried mud bricks with earthen plaster.",
+        "explanation": "The Great Mosque of Djenné was originally constructed around the 13th century. The current structure is a 1906–1907 reconstruction using the traditional Sudano-Sahelian technique: Djenné-ferey (cylindrical sun-dried mud bricks) with earthen plaster applied during the annual crépissage. Option A describes Great Zimbabwe (dry stone). Option C references the Djinguereber Mosque in Timbuktu (founded 1325 by Mansa Musa). Option D confuses it with rammed earth techniques.",
+        "common_misconceptions": [
+          "Confusing the original 13th-century construction date with the current structure's 1906–1907 rebuild date is a common ALE trap.",
+          "Mansa Musa founded the Djinguereber Mosque in Timbuktu in 1325, not the Djenné mosque."
+        ]
+      },
+      "explanation": "This question tests precise recall of dates and materials for the Great Mosque of Djenné, distinguishing it from the Timbuktu mosques.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:52804ff7647dee5ee7044e7706da47658ab63173f556d8c7480ca06235b3d481"
+    },
+    {
+      "question_id": "b0fe625f-97c8-4fa2-af54-bc8a025648f1",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "What are torons in the context of Sudano-Sahelian mosque architecture, such as the Great Mosque of Djenné?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Decorative ceramic tiles pressed into the exterior plaster surface of minaret towers to create geometric patterns, which is not a feature of traditional Sudano-Sahelian architecture"
+        },
+        {
+          "id": "B",
+          "text": "Projecting Palmyra palm timber beams embedded in earthen walls, serving as permanent scaffolding anchors and ventilation elements"
+        },
+        {
+          "id": "C",
+          "text": "Carved stone lintels spanning doorway and window openings in dry-stone construction across West Africa, which is not typical of the mosque's construction style"
+        },
+        {
+          "id": "D",
+          "text": "Woven reed lattice screens mounted inside window openings to filter sunlight and direct natural cross-ventilation, which is not a characteristic of torons"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Torons are the projecting Palmyra palm timber beams embedded in Sudano-Sahelian earthen walls.",
+        "explanation": "Torons serve a dual function: they are permanent scaffolding anchor points used during the annual crépissage (communal replastering ritual) and act as ventilation channels through the thick earthen walls. They are one of the most recognizable features of the Great Mosque of Djenné and other Sudano-Sahelian mosques.",
+        "common_misconceptions": [
+          "Torons are sometimes confused with decorative elements — they are structural and functional, not merely ornamental.",
+          "The crépissage replastering they enable is both a maintenance necessity and a social/communal ritual."
+        ]
+      },
+      "explanation": "This question tests recall of a highly specific and testable architectural term from the Sudano-Sahelian tradition.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eb72e8a1d010bf2e66e185116f18ffbc7802a7ec03b2a804cac45c48bb93a276"
+    },
+    {
+      "question_id": "51a689ba-59ce-44c0-8221-6ec2a8e90fd3",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Which statement most accurately characterizes Sudano-Sahelian mosque architecture as an engineered building type rather than a primitive shelter?",
+      "options": [
+        {
+          "id": "A",
+          "text": "These structures use imported steel reinforcement hidden within the earthen walls to achieve structural spans equivalent to reinforced concrete frames, demonstrating advanced engineering techniques"
+        },
+        {
+          "id": "B",
+          "text": "The Great Mosque of Djenné is the world's largest mud-brick building and a UNESCO World Heritage Site, with battered tapering walls, embedded ventilation, and a systematic community maintenance program"
+        },
+        {
+          "id": "C",
+          "text": "These mosques are designated as temporary structures and rebuilt from scratch every generation, which limits their historical significance for architectural study"
+        },
+        {
+          "id": "D",
+          "text": "Their earthen walls are stabilized with modern cement additives applied during the 20th-century restorations, giving them contemporary engineering performance"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Great Mosque of Djenné is the world's largest mud-brick structure and a UNESCO World Heritage Site with sophisticated engineering features.",
+        "explanation": "The article explicitly warns against the 'mud hut' misconception. Sudano-Sahelian mosques feature tapering walls (up to 40 cm thick at the base), embedded toron ventilation channels, sloping wall profiles that shed rainwater, and systematic crépissage maintenance programs. The Great Mosque of Djenné is both the largest mud-brick structure on earth and a UNESCO World Heritage Site — neither characterization fits a 'primitive' structure.",
+        "common_misconceptions": [
+          "The article explicitly identifies the 'mud hut' misconception as an ALE trap — these are sophisticated engineered structures, not temporary shelters.",
+          "No modern cement additives define the traditional Sudano-Sahelian technique; the engineering is entirely pre-industrial."
+        ]
+      },
+      "explanation": "This question tests the ability to counter the 'primitive shelter' misconception with specific factual evidence from the article.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:70c2d7c2268780402c8878817f14bf9024bc6d93d5762392b3f8d08a6a64cbc4"
+    },
+    {
+      "question_id": "4cf639c8-3f9a-43d4-b54a-989537b44ca2",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "A developer proposes using cement-stabilized compressed earth blocks (CSEB) for a school in a remote municipality, citing vernacular African earth-building traditions. Which assessment of this approach is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "CSEB is categorically incompatible with modern building codes and cannot be used in any Philippine structural application regardless of engineering input, due to its perceived lack of durability"
+        },
+        {
+          "id": "B",
+          "text": "Vernacular earth construction is inherently inferior to fired brick and should only be permitted in temporary structures with lifespans under five years, as it cannot withstand long-term environmental exposure"
+        },
+        {
+          "id": "C",
+          "text": "Stabilized earth technologies including CSEB and reinforced rammed earth are recognized in contemporary building codes worldwide and can be adapted to meet Philippine structural standards with appropriate engineering"
+        },
+        {
+          "id": "D",
+          "text": "Earth construction techniques are valid only in arid climates and cannot perform adequately in tropical humid conditions like those found in the Philippines, due to moisture-related degradation"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Stabilized earth technologies are recognized in contemporary building codes worldwide and can be engineered to meet the NSCP.",
+        "explanation": "The article directly addresses this: stabilized earth (CSEB and reinforced rammed earth) is recognized in contemporary building codes worldwide. The ALE tests whether candidates understand that vernacular principles can be adapted to modern standards — including the National Structural Code of the Philippines (NSCP) — with appropriate engineering. Dismissing earth construction as inherently code-incompatible is the misconception the article warns against.",
+        "common_misconceptions": [
+          "The assumption that vernacular materials cannot meet modern standards is explicitly identified as an ALE misconception in the article.",
+          "Earth construction performs in tropical climates when properly stabilized and detailed — the Philippines has relevant indigenous precedents."
+        ]
+      },
+      "explanation": "This question tests evaluative judgment about the applicability of earth-building technology to contemporary Philippine practice.",
+      "code_citation": null,
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aae3f47868536106b04393cb3509b9069b8edacfe6407541374c488ba702617c"
+    },
+    {
+      "question_id": "cf441e8c-49c5-41c6-9137-df78ec8934c8",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Great Zimbabwe's massive enclosure walls achieve structural stability through which primary method?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Lime mortar binding with embedded iron clamps that lock granite courses together against lateral seismic forces"
+        },
+        {
+          "id": "B",
+          "text": "Post-and-lintel granite framing with rubble infill core and bitumen waterproofing on exposed wall surfaces"
+        },
+        {
+          "id": "C",
+          "text": "Rammed earth cores faced with granite veneer slabs pinned together with bronze hardware and mud grout"
+        },
+        {
+          "id": "D",
+          "text": "Dry-stone masonry using precisely shaped granite blocks held by gravity, friction, and curvilinear wall geometry"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Great Zimbabwe uses dry-stone masonry — no mortar — relying on gravity, friction, and curved geometry for stability.",
+        "explanation": "The Great Enclosure walls at Great Zimbabwe reach up to 11 m high and 250 m long. Blocks were shaped by controlled heating and flaking of granite, then carefully fitted without any mortar. The curvilinear plan distributes lateral forces and allows controlled flexing during seismic events. This mortarless system is analogous in principle to modern seismic base-isolation concepts.",
+        "common_misconceptions": [
+          "A key ALE trap is assuming mortar was used — it was not. The term 'dry-stone' is definitional for Great Zimbabwe.",
+          "Iron tools did not exist in sub-Saharan Africa during this period; blocks were shaped by heating and flaking."
+        ]
+      },
+      "explanation": "This question tests understanding of the structural logic of Great Zimbabwe's dry-stone construction.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:33fd0c22aac8bab62eb7004f82a5a15ff4881d00ffc2735735ed03104e14606e"
+    },
+    {
+      "question_id": "cf6686d8-d00a-450b-b284-452812bdbad9",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Archaeological and radiocarbon evidence confirms that Great Zimbabwe was built by which people, and over what approximate period?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bantu-speaking ancestors of the Shona people, with bulk construction between the 11th and 15th centuries CE"
+        },
+        {
+          "id": "B",
+          "text": "Phoenician traders from the Mediterranean, who constructed the complex between the 5th and 3rd centuries BCE as a trading post"
+        },
+        {
+          "id": "C",
+          "text": "Arab merchants from the Swahili Coast, who built the enclosures between the 8th and 10th centuries CE as a fortified market"
+        },
+        {
+          "id": "D",
+          "text": "Early European explorers, who erected the walls between the 16th and 17th centuries CE as a colonial administrative center"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Great Zimbabwe was built by Bantu-speaking ancestors of the Shona people between the 11th and 15th centuries CE.",
+        "explanation": "Radiocarbon dating and archaeological consensus since the 1950s definitively confirm that Great Zimbabwe was constructed by the indigenous Bantu-speaking Shona ancestors. The site covers 7.22 km² and represents the largest stone structure in sub-Saharan Africa. The colonial attribution fallacy — claiming foreign (Phoenician, Arab, or European) builders — has been thoroughly discredited and any ALE answer implying external construction is definitively incorrect.",
+        "common_misconceptions": [
+          "The colonial attribution fallacy is explicitly identified in the article as an ALE trap — the answer is always Shona indigenous construction.",
+          "No external civilization built Great Zimbabwe; this was a fully indigenous achievement."
+        ]
+      },
+      "explanation": "This question tests the colonial attribution fallacy identified in the article as a primary LEA trap.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:17cf0d8e78804c16d6dcb4421b30db4c16f09ede3ca974160577e78e2e911e0e"
+    },
+    {
+      "question_id": "1163f95d-15ff-4c31-8ee5-6a6bb3c9bc93",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The thermal mass advantage of thick Sahelian adobe walls is most accurately described as which of the following?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Walls generate evaporative cooling by releasing moisture absorbed during morning dew, reducing interior temperatures by 10–15°C"
+        },
+        {
+          "id": "B",
+          "text": "Walls absorb solar heat during the day and release it slowly at night, buffering interiors against extreme diurnal temperature swings"
+        },
+        {
+          "id": "C",
+          "text": "Walls channel prevailing winds through embedded hollow tubes, creating forced convection across interior surfaces"
+        },
+        {
+          "id": "D",
+          "text": "Walls reflect incoming solar radiation using a white lime plaster finish that prevents heat absorption entirely"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Adobe walls absorb heat during the day and release it at night, buffering interior temperatures against diurnal extremes.",
+        "explanation": "Thermal mass is the defining climate adaptation of Sahelian earth architecture. In arid climates with extreme diurnal swings (very hot days, cool nights), thick clay-sand-straw walls act as thermal batteries: absorbing heat during daylight hours (keeping interiors cool) and radiating stored heat after sunset (keeping interiors warm). This passive system requires no mechanical assistance.",
+        "common_misconceptions": [
+          "Thermal mass is not the same as evaporative cooling — the mechanism is heat storage and time-delayed release, not moisture evaporation.",
+          "Reflection (Option D) describes a different strategy — light-colored finishes reduce absorption but do not provide the time-shift thermal buffering that adobe mass delivers."
+        ]
+      },
+      "explanation": "This question tests understanding of the thermal mass principle, the defining climate adaptation of Sahel earth architecture.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:731cd60534647613b85481025adde9968fc38e2b396ae47ba33219241d0af2e5"
+    },
+    {
+      "question_id": "a6115378-d37f-44a5-ad43-131eb64649d6",
+      "article_id": "4a8c01ab-5515-44f5-aaf7-c1274d8c8dce",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The annual crépissage of Sudano-Sahelian mosques serves which combined purpose?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A structural reinforcement procedure performed by government contractors to apply cement-stabilized plaster over deteriorating earthen surfaces"
+        },
+        {
+          "id": "B",
+          "text": "An annual seismic inspection program in which engineers assess crack patterns and inject grout into compromised wall joints"
+        },
+        {
+          "id": "C",
+          "text": "A communal replastering ritual that maintains the earthen exterior, uses torons as scaffolding, and functions as a major social and cultural event"
+        },
+        {
+          "id": "D",
+          "text": "A decorative repainting ceremony in which local artisans apply mineral pigments to the mosque facade in ceremonial colors"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Crépissage is the communal annual replastering ritual that maintains earthen mosque walls using torons as scaffolding.",
+        "explanation": "The crépissage is both a practical maintenance necessity and a deeply social event. Because earthen plaster erodes under seasonal rains, the Great Mosque of Djenné and similar structures require annual re-application of fresh earthen plaster. The projecting toron beams serve as permanent scaffolding attachment points. The entire community participates, making it a major cultural ritual as well as a building maintenance program.",
+        "common_misconceptions": [
+          "Crépissage is not a modern engineering intervention — it is a traditional, community-driven maintenance practice that has sustained these structures for centuries.",
+          "The torons are not decorative; they exist specifically to facilitate this annual maintenance."
+        ]
+      },
+      "explanation": "This question tests understanding of crépissage as a combined structural maintenance and communal social practice.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.390418+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:266878fe2b3a6713552c62e03014e3b8f662189c351a4b8f8b6de63bd13c11d7"
+    }
+  ]
+}

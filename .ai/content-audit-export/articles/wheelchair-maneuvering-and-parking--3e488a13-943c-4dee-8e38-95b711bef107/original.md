@@ -1,5 +1,12 @@
 # Wheelchair Maneuvering and Parking
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Wheelchair Maneuvering and Parking** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 _(Aligned with BP 344 2024 IRR + PD 1096, using your files and the official 2024 IRR online)[file:1][file:2][web:11][web:8]_
 
 ---
@@ -25,9 +32,17 @@ Recall the core wheelchair mnemonic (4.0-1.8-2.3-1.5-1.8-1.2 m) and apply each v
 
 ## 2. Accessible Parking (BP 344 2024 IRR – Appendix C)
 
-<ArticleMedia id="media-wheelchair-maneuvering-and-par-0" name="accessible-parking-layout" type="diagram" caption="Top-down parking layout showing accessible stall 4.0 m × 5.0 m with 1.8 m access aisle. Show two configurations: single stall + aisle = 5.8 m total width, and two stalls sharing an aisle = 9.8 m total width. Include vertical clearance callout (2.3 m), the shortest route to accessible entrance arrow, and PWD signage symbol." />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-wheelchair-maneuvering-and-par-0", name="accessible-parking-layout", type="diagram", caption="Top-down parking layout showing accessible stall 4.0 m × 5.0 m with 1.8 m access aisle. Show two configurations: single stall + aisle = 5.8 m total width, and two stalls sharing an aisle = 9.8 m total width. Include vertical clearance callout (2.3 m), the shortest route to accessible entrance arrow, and PWD signage symbol."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-accessible-corridor-ramp-profile" name="accessible-corridor-ramp-profile" type="diagram" caption="Plan and section of accessible corridor (1.5 m clear width) with turning spaces (1.8 m × 1.8 m every 12 m) and passing space (1.8 m × 2.0 m). Below, show ramp profile with 1.2 m width, 1:20 preferred slope, 1.8 m landings at top/bottom, intermediate landing for runs >10.5 m, and 100 mm edge curb." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="unknown"]
+Extracted summary:
+- Props: id="media-accessible-corridor-ramp-profile", name="accessible-corridor-ramp-profile", type="diagram", caption=true, Plan=true, and=true, section=true, of=true, accessible=true, corridor=true, m=true, clear=true
+- Text: 10.5 m, and 100 mm edge curb." />
+[/SLATECAMP_UI_BLOCK]
 
 Accessible slots must be nearest the accessible entrance and on the shortest route.[web:8][web:11]
 
@@ -126,25 +141,23 @@ Use this one page as your **go‑to widths & slopes sheet** for LEA questions on
 
 ---
 
-<LawCallout code="bp344" section="Section 6 - Maneuvering Space">
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 6 - Maneuvering Space"
+- Text: Per BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width × 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be ≥2300 mm. The accessible stall must be the nearest to the accessible entrance on the shortest possible route. ISA signage at 600×600 mm on poles is required.
+[/SLATECAMP_UI_BLOCK]
 
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Do not confuse accessible parking stall width (4000 mm) with the combined stall+aisle width. The stall is vehicle-only at 4000 mm; the adjacent 1800 mm access aisle is separate. The total width for a single accessible space with aisle = 5800 mm. Two adjacent accessible stalls can share one 1800 mm aisle between them.
+[/SLATECAMP_UI_BLOCK]
 
-Per BP 344 2024 IRR Appendix C, accessible parking stalls must be: 4000 mm width × 5000 mm length, with an 1800 mm wide access aisle. Vertical clearance must be ≥2300 mm. The accessible stall must be the nearest to the accessible entrance on the shortest possible route. ISA signage at 600×600 mm on poles is required.
-
-
-</LawCallout>
-
-<Warn >
-
-Do not confuse accessible parking stall width (4000 mm) with the combined stall+aisle width. The stall is vehicle-only at 4000 mm; the adjacent 1800 mm access aisle is separate. The total width for a single accessible space with aisle = 5800 mm. Two adjacent accessible stalls can share one 1800 mm aisle between them.
-
-</Warn>
-
-<ExamTip >
-
-Memorize the mnemonic: '4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.5 m (corridor width), 1.8 m (turning space), 1.2 m (ramp width).
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memorize the mnemonic: '4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2'. Test yourself by converting each number to its corresponding element: 4.0 m (stall width), 1.8 m (aisle width), 2.3 m (vertical clearance), 1.5 m (corridor width), 1.8 m (turning space), 1.2 m (ramp width).
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

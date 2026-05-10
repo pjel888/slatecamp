@@ -103,7 +103,7 @@ Zoning logic often determines building form. A building with a public/retail gro
 [SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Zone adjacency is not symmetric. A public zone benefits from adjacency to entry and parking. A semi-public zone benefits from proximity to public (people flow naturally from public through semi-public). A private zone benefits from isolation from public (restricted access required). A service zone must be separated from public (prevents visual/acoustic intrusion). Understanding this asymmetry prevents bad decisions like placing executive offices adjacent to public lobbies (creates surveillance, 
+- Text: Zone adjacency is not symmetric. A public zone benefits from adjacency to entry and parking. A semi-public zone benefits from proximity to public (people flow naturally from public through semi-public). A private zone benefits from isolation from public (restricted access required). A service zone must be separated from public (prevents visual/acoustic intrusion). Understanding this asymmetry prevents bad decisions like placing executive offices adjacent to public lobbies (creates surveillance,
 [/SLATECAMP_UI_BLOCK]
 
 ### Adjacency Logic Within Zones
@@ -140,7 +140,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: 4. **Vertical Stacking Decision**: Multi-story projects require vertical zoning decisions. "A 60,000 SF program on an urban site suitable for 8 stories. How would you vertically stack public, semi-public, private, and service zones to optimize efficiency and user experience?" Expected strategy: Retail/lobby ground (public); office floors 2–7 (semi-public); mechanical/penthouse floor 8 (service); parking basement (service). Justification: maximizes ground-level activation, maintains office floor 
+- Text: 4. **Vertical Stacking Decision**: Multi-story projects require vertical zoning decisions. "A 60,000 SF program on an urban site suitable for 8 stories. How would you vertically stack public, semi-public, private, and service zones to optimize efficiency and user experience?" Expected strategy: Retail/lobby ground (public); office floors 2–7 (semi-public); mechanical/penthouse floor 8 (service); parking basement (service). Justification: maximizes ground-level activation, maintains office floor
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
@@ -200,4 +200,3 @@ Extracted summary:
 See also within Space Planning Theory: **lea-theo-009-01-core-concept**, **lea-theo-009-02-core-concept**, **lea-theo-009-03-core-concept**, **lea-theo-009-05-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

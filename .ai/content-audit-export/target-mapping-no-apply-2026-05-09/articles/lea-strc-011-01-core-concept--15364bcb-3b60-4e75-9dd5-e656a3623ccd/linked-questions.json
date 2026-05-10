@@ -1,0 +1,508 @@
+{
+  "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4871197573b6d2c251abdb6afb23875edc1d58a6a732944791cc7c4fd4641a20",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1069929b-de3f-4d2a-80f1-9f20a14c2386",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "A comparison of end-bearing and friction pile behavior in a clay deposit shows that end-bearing piles have a lower settlement rate than friction piles at the same load level. Explain this observation and discuss the implications for pile selection in compressible clay.",
+      "options": [
+        {
+          "id": "a",
+          "text": "End-bearing piles always perform better; friction piles should never be used due to their inherent limitations in certain soil conditions."
+        },
+        {
+          "id": "b",
+          "text": "End-bearing relies on tip bearing capacity (generally higher stiffness at shallow competent layers). Friction piles develop capacity over a long shaft and exhibit greater consolidation settlement as water is expelled over time. For compressible clay without shallow firm strata, friction piles are unavoidable, but settlement must be anticipated and mitigated (e.g., group settlement analysis, load control)."
+        },
+        {
+          "id": "c",
+          "text": "Settlement depends only on pile diameter; larger piles always settle less, regardless of the soil type or load conditions."
+        },
+        {
+          "id": "d",
+          "text": "Friction piles have no settlement because friction is distributed; end-bearing settles because all load is at the tip, which is a misconception in geotechnical engineering."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "End-bearing piles rest on firm, less compressible strata, resulting in lower settlement. Friction piles in compressible clay develop capacity over the shaft length and cause soil consolidation and pore water expulsion, leading to significant time-dependent settlement. In deep soft clay without firm shallow strata, friction piles are the only option. Settlement is an accepted design consideration; it must be calculated, monitored, and mitigated (e.g., preloading, underpinning provisions, tolerance limits). This reflects real-world Metro Manila conditions.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C; Bowles (1996); Terzaghi et al. (1996)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:79d242f1481a5856d1ff7e990f44490f5777cfc6385096821fa54f7a3a6a6295"
+    },
+    {
+      "question_id": "e2b621e5-e485-47b2-95dd-2b488503674f",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "A contractor installs sheet piles around an excavation site to prevent soil movement into the pit. An engineer mistakenly assumes these sheet piles are load-bearing foundation elements. Identify the error and state the correct function of sheet piles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sheet piles are load-bearing; the error is assuming they carry superstructure load, which is incorrect as they are not designed for such purposes"
+        },
+        {
+          "id": "b",
+          "text": "Sheet piles are a retaining system; they prevent soil displacement and water infiltration but do not transfer building load. Confusing retaining function with load-bearing function is the error."
+        },
+        {
+          "id": "c",
+          "text": "Sheet piles are batter elements inclined to resist overturning; the error is assuming they are vertical, which misrepresents their actual installation and function"
+        },
+        {
+          "id": "d",
+          "text": "Sheet piles are friction piles; the error is assuming they develop capacity along the shaft only, ignoring their primary role in lateral earth support"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Sheet piles are thin, interlocking structural sections driven in a wall formation. Their function is retaining soil and blocking water, not transferring superstructure load. A cofferdam built from sheet piles exemplifies this distinction. Sheet piles do not form the foundation; they stabilize the excavation boundary.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 1-C (Deep Foundations); sheet piles addressed in excavation/retaining provisions",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a2731d365f85019e691ccee15a3dcdeae589f7dc7d0ac52983adf6d6a182a3e6"
+    },
+    {
+      "question_id": "8dbb2f75-8f31-4395-be31-adc86f321d43",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "A bridge abutment in a typhoon-prone region must resist large lateral wind and seismic loads. Describe which pile type is optimal and explain the geometric parameter that enables this resistance.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Vertical end-bearing piles; tip bearing increases lateral resistance, which is crucial for stability in high wind areas."
+        },
+        {
+          "id": "b",
+          "text": "Friction piles at steep inclination; friction grows with depth, providing additional resistance to lateral forces."
+        },
+        {
+          "id": "c",
+          "text": "Batter piles inclined at 1:8 (H:V); inclination resolves superstructure load into axial and lateral pile reactions."
+        },
+        {
+          "id": "d",
+          "text": "Sheet piles; they form a wall that resists overturning, which is essential for preventing structural failure."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Batter piles are intentionally inclined (typical slopes 1:6 to 1:12) to resist lateral and overturning forces. The inclination allows the pile to develop an axial component along the pile axis and a lateral component perpendicular to it, efficiently resisting horizontal loads. This is standard in bridge abutments and structures subject to wind and seismic forces.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C; Reese & Van Impe (2001)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0df84b9056adf6fd5c63db88dabee899809af21cfcfbfd21309891374dbec5c9"
+    },
+    {
+      "question_id": "a43321ff-aa33-4e99-b8c0-45090f7ff300",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "A batter pile is inclined at 1:10 (H:V) and must carry an axial load of 500 kN down the pile axis and resist a horizontal force of 100 kN perpendicular to the pile shaft. Resolve the pile reaction into its components and identify the design implication for the batter angle.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Axial = 500 kN; lateral = 100 kN; batter angle is arbitrary and does not affect load resolution, assuming uniform soil conditions"
+        },
+        {
+          "id": "b",
+          "text": "Total load = 600 kN; batter angle does not affect component magnitudes; load is applied as stated, with no additional considerations"
+        },
+        {
+          "id": "c",
+          "text": "The batter angle creates an inclined axis. The 500 kN axial load acts along the inclined pile axis. The 100 kN horizontal force is resolved into components parallel and perpendicular to the inclined axis. Batter angle must be chosen to match the lateral force direction and magnitude."
+        },
+        {
+          "id": "d",
+          "text": "Batter angle reverses the direction of lateral load; 100 kN becomes 100 kN in the opposite direction, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A batter pile at 1:10 has an inclined axis. Loads must be resolved relative to this inclined axis. The 500 kN axial load acts along the pile axis. The 100 kN horizontal force is decomposed into components parallel and perpendicular to the pile axis using trigonometry. The batter angle is selected such that the inclined axis is aligned with the primary load direction (here, roughly vertical with a lateral component). Angle selection is not arbitrary; it directly affects load distribution and pile capacity utilization.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Reese & Van Impe (2001); Bowles (1996)",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:256c0e1cccc1169df7f9a85b29de9c5886d369016fc1f2b6c842d9d194de1b61"
+    },
+    {
+      "question_id": "d2958d29-592e-48b5-97ca-dbbd49348012",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "A pile transfers 80% of its load through the shaft via skin friction and 20% through the tip. Classify this pile type and explain the soil condition that favors this mechanism.",
+      "options": [
+        {
+          "id": "a",
+          "text": "End-bearing pile; used when a firm stratum exists within shallow depth, providing a solid base for load transfer"
+        },
+        {
+          "id": "b",
+          "text": "Friction pile; used when no competent shallow bearing layer exists and soft alluvial deposits extend to significant depth."
+        },
+        {
+          "id": "c",
+          "text": "Batter pile; the inclination develops friction rather than bearing, which is advantageous in sloped or uneven terrain"
+        },
+        {
+          "id": "d",
+          "text": "Sheet pile; friction develops along the interlocked wall section, typically used in retaining wall applications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A pile that relies primarily on skin friction (80%) is classified as a friction pile. Friction piles develop capacity along the entire shaft and are employed when a competent bearing stratum is absent or at uneconomical depth, typical in soft alluvial deposits.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C, Pile Foundation",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:88412be3a78d0ba5d6ea7cbc3da9ce6bff6587fe82c671a0f6fc8e7936a6d113"
+    },
+    {
+      "question_id": "b41a5f18-c1a7-4dea-bd4d-3dd4e158e5db",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "A bored pile installation includes the use of a tremie. Explain the purpose of the tremie in bored pile construction and cite a consequence if tremie placement is omitted.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tremie drains groundwater from the borehole; omission allows water saturation of the concrete, leading to potential structural weaknesses."
+        },
+        {
+          "id": "b",
+          "text": "Tremie drives the drill bit deeper to ensure end-bearing; omission reduces pile tip penetration, compromising load-bearing capacity."
+        },
+        {
+          "id": "c",
+          "text": "Tremie places concrete submerged or within the borehole without segregation or water contamination; omission risks soil and water mixing with concrete, weakening the shaft and reducing skin friction capacity."
+        },
+        {
+          "id": "d",
+          "text": "Tremie is a vibrator that consolidates fresh concrete; omission causes honeycomb voids but not strength loss, which can affect the surface finish."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A tremie is a tube through which concrete is placed into the borehole, especially when groundwater is present. It prevents concrete segregation and keeps water, soil, and concrete separate. Omitting tremie placement results in contaminated, weak concrete with reduced bond to the borehole wall, compromising both shaft integrity and skin friction capacity—critical for friction piles.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Bored Pile Construction)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:921a5e7b21c617cee9d03324f3cb572d94a7412aeb1cab463adc26ce8d669232"
+    },
+    {
+      "question_id": "065f8b57-3b0b-4712-8195-1d0fb2b01fd5",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "A cofferdam is being designed for a river crossing project. Sheet piles are selected as the primary structural element. Analyze the role of sheet piles in the cofferdam system and distinguish this role from the role of piles in foundation support.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sheet piles and foundation piles serve identical load-bearing functions; choice depends only on aesthetics, which is a common misconception."
+        },
+        {
+          "id": "b",
+          "text": "Sheet piles retain soil and block water within the cofferdam boundary; foundation piles transfer superstructure load to soil. Sheet piles are a temporary retaining system; piles are permanent load-bearing elements."
+        },
+        {
+          "id": "c",
+          "text": "Sheet piles are friction piles optimized for deep penetration, although they are primarily used for retaining purposes."
+        },
+        {
+          "id": "d",
+          "text": "Sheet piles and piles differ only in diameter; both perform identical functions, which is a simplification of their actual roles."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Sheet piles are thin, interlocked sections driven in a wall formation to prevent soil and water movement into an excavation or work area. They serve a _retaining function_, not load-bearing. Cofferdam sheet piles are often temporary. In contrast, foundation piles transfer superstructure load into the soil and are permanent. This distinction is fundamental: retaining vs. load-bearing.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 1-C (Deep Foundations and Retaining Structures)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:84e13574c25765cf1dc92302e8919f1e3c99db3586ca09d79427e44c94d7e96f"
+    },
+    {
+      "question_id": "8b6e3c08-1be8-42e0-ac76-81d63cd010fc",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "A deep soft clay deposit with no firm stratum within 50 m requires a piled foundation. Explain which pile type (end-bearing or friction) is viable and describe the design implication regarding pile length and pile cap detail.",
+      "options": [
+        {
+          "id": "a",
+          "text": "End-bearing pile; extend to 50 m to reach an assumed firm layer; use small pile cap (minimal redundancy), ensuring cost-effectiveness"
+        },
+        {
+          "id": "b",
+          "text": "Friction pile; capacity is developed along the 50 m shaft; pile length must be sufficient to mobilize adequate skin friction; pile cap must distribute load across many piles for redundancy."
+        },
+        {
+          "id": "c",
+          "text": "Either type; the choice depends only on pile diameter selection, which affects load distribution and settlement characteristics"
+        },
+        {
+          "id": "d",
+          "text": "End-bearing pile; friction does not contribute; termination depth is governed by tip bearing capacity alone, focusing on direct load transfer"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In soft clay with no firm shallow stratum, end-bearing is not viable; friction piles are the solution. Capacity is mobilized along the shaft via skin friction and adhesion. Pile length must be sufficient to develop adequate total friction. Multiple piles with a robust pile cap are required to achieve structural redundancy and distribute load effectively. This approach is typical in deep alluvial deposits like those in Metro Manila.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C; Bowles (1996)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b7e6d3557b21ea41213cef087f805df3b1386c1e5e1bb1ae9a05c6304139ff9a"
+    },
+    {
+      "question_id": "9ce68797-21a4-4ad2-8bd9-c313522f5583",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "Two foundation options are under review: Option A uses piles 500 mm diameter drilled to 30 m depth; Option B uses drilled elements 650 mm diameter to 25 m. Classify each and cite the threshold criterion.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both are piles because both are drilled to firm strata, ensuring stability and load-bearing capacity"
+        },
+        {
+          "id": "b",
+          "text": "Both are deep foundation elements (drilled shafts/piles). Classification as pile or caisson depends on construction method and soil conditions, not diameter alone."
+        },
+        {
+          "id": "c",
+          "text": "Option A is a caisson; Option B is a pile. Threshold: depth governs the distinction, with deeper elements typically classified as caissons"
+        },
+        {
+          "id": "d",
+          "text": "Both are caissons because both are drilled and > 20 m depth, which is a common threshold for caisson classification"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Pile vs. caisson classification considers construction method (e.g., tremie vs. slurry), diameter, depth, and load transfer mechanism per standard practice. Option A (500 mm) is a pile. Option B (650 mm) is a caisson. This threshold reflects changes in excavation practice, integrity testing, and load transfer behavior.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 1-C (Pile and Caisson Foundation)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d572ec7d7f4232295beecfa7ba2e161960bf5386145f0eccef802d3a6f21a60"
+    },
+    {
+      "question_id": "f09d7118-1b31-4c08-bede-0a426f30298c",
+      "article_id": "15364bcb-3b60-4e75-9dd5-e656a3623ccd",
+      "topic_id": "6264a7cc-1fb1-487b-a886-93dc8eb91d27",
+      "text": "A foundation design uses 12 piles arranged in a 3×4 grid under a building column. Explain why a pile cap is necessary and describe what the cap transfers and how.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pile cap is optional; each pile can independently support part of the load, provided soil conditions are uniformly stable and load distribution is even"
+        },
+        {
+          "id": "b",
+          "text": "Pile cap is a reinforced concrete element that distributes superstructure load from the column to the 12 piles via bearing and bending; it ensures uniform load distribution and prevents differential settlement."
+        },
+        {
+          "id": "c",
+          "text": "Pile cap is a shaft coupling; it connects the piles axially but does not transfer load, assuming that axial alignment is the primary concern"
+        },
+        {
+          "id": "d",
+          "text": "Pile cap is a lateral bracing element only; it does not participate in vertical load transfer, focusing solely on horizontal stability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A pile cap is a reinforced concrete beam or slab that ties multiple piles together and distributes superstructure load across the pile group. The cap transfers vertical load from the column through bearing pressure and flexure, ensuring all piles share the load proportionally and preventing differential settlement. The cap also provides stiffness and redundancy to the foundation system.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Chapter 1-C (Pile Cap Design)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-011-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:17d55e9654e3f08ba2a8732ba58b4b1c718dd240835a3ce9a7cf93446d51b5c3"
+    }
+  ]
+}

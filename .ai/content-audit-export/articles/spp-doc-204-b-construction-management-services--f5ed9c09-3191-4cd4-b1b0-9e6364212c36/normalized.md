@@ -203,7 +203,7 @@ The specific percentage rates for CM services under the PCC method are prescribe
 [SLATECAMP_UI_BLOCK:ui_0005 component="ComparisonTable" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: | | SPP 204-A (Fulltime Supervision) | SPP 204-B (Construction Management) | |---|---|---| | **Primary Role** | On-site inspection and quality control | Project-wide management of cost, time, quality, and coordination | | **Scope** | CSG tasks: QC, evaluation, daily reports, filing | All CSG tasks + coordination, cost/time control, broader record keeping | | **Personnel** | CSG — qualified architects on-site daily | CM — senior professional overseeing the CSG and all parties | | **Reporting** | 
+- Text: | | SPP 204-A (Fulltime Supervision) | SPP 204-B (Construction Management) | |---|---|---| | **Primary Role** | On-site inspection and quality control | Project-wide management of cost, time, quality, and coordination | | **Scope** | CSG tasks: QC, evaluation, daily reports, filing | All CSG tasks + coordination, cost/time control, broader record keeping | | **Personnel** | CSG — qualified architects on-site daily | CM — senior professional overseeing the CSG and all parties | | **Reporting** |
 [/SLATECAMP_UI_BLOCK]
 
 ***

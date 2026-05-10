@@ -15,13 +15,6 @@ After reading this article, you should be able to:
 
 # Owner Smoke Article-A 1775980402961
 
-
-## Board Exam Quick Check
-
-Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
-
-**Common mistake:** treating a familiar keyword in **Owner Smoke Article-A 1775980402961** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
-
 Owner smoke content for Article-A 1775980402961.
 
 <Warn>Common design error: assuming that passive fire-resistive construction alone satisfies smoke control requirements. Many building codes require active smoke management systems (mechanical pressurization, exhaust, or stair pressurization) in addition to passive compartmentation. Overlooking active smoke control can result in non-compliant designs that fail to protect egress paths during a fire event.</Warn>

@@ -1,9 +1,165 @@
 {
   "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:2fa72bb9b3b989db2e2067069eb3fc431423f240ca99cf60b1ba7e57c25aecc1",
+  "linked_questions_hash": "sha256:07b9665d78d9b9a9e065754c2ab6709e5131580a3139b2f8c2ac41fadeca9761",
   "question_count": 12,
   "questions": [
+    {
+      "question_id": "4baf8136-462f-49e1-a93a-3873dc573145",
+      "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
+      "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
+      "text": "The progression from Vitruvius to Alberti to Palladio reveals a shift in architectural theory from describing existing practice to theorizing ideals to systematizing knowledge. Which aspect of this progression most directly enabled architecture's transformation into a discipline teachable through rational, transmissible principles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The mutual agreement of all three theorists on the primacy of beauty over function, which established a unified aesthetic standard"
+        },
+        {
+          "id": "b",
+          "text": "Alberti's elevation of the architect as intellectual and his emphasis on paper-based design authority over craftspeople, which shifted the focus from manual to intellectual labor"
+        },
+        {
+          "id": "c",
+          "text": "Vitruvius's establishment of the classical orders as universal standards, providing a foundational framework for architectural education"
+        },
+        {
+          "id": "d",
+          "text": "Palladio's publication of measured drawings and proportional systems that could be replicated and taught across regions and generations"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "architectural theory does not establish that all three agreed on beauty's primacy; rather, it traces an evolution in how architects understood and transmitted their discipline.",
+        "b": "Alberti's theoretical contributions were crucial, but systematization for universal teachability required Palladio's published measured drawings.",
+        "c": "While Vitruvius established orders, transmission of knowledge for universal application came through Palladio's method.",
+        "correct": "Concluding paragraph directly emphasizes that Palladio achieved the 'systematizing knowledge for universal application,' and the text emphasizes that his measured drawings created 'a visual language that architects could study and imitate,' enabling transmission of principles across the centuries. This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve.",
+        "takeaway": "This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve."
+      },
+      "explanation": "architectural theory does not establish that all three agreed on beauty's primacy; rather, it traces an evolution in how architects understood and transmitted their discipline. Alberti's theoretical contributions were crucial, but systematization for universal teachability required Palladio's published measured drawings. While Vitruvius established orders, transmission of knowledge for universal application came through Palladio's method. Concluding paragraph directly emphasizes that Palladio achieved the 'systematizing knowledge for universal application,' and the text emphasizes that his measured drawings created 'a visual language that architects could study and imitate,' enabling transmission of principles across the centuries. This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve. This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-05-06T14:48:28.294619+00:00",
+      "content_hash": "sha256:e011988e3cd6ff24c51e7d70fda47fa0019d2111b06ff1ed32f41a80c95cf9d8"
+    },
+    {
+      "question_id": "36350452-7bde-4644-b6e7-ba589b171c2c",
+      "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
+      "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
+      "text": "The Palladian motif (Serliana) consists of what architectural arrangement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A single large arched window with flanking rectangular windows on each side"
+        },
+        {
+          "id": "b",
+          "text": "A central arched opening flanked by two smaller rectangular openings"
+        },
+        {
+          "id": "c",
+          "text": "A series of paired columns supporting a unified arch"
+        },
+        {
+          "id": "d",
+          "text": "Three identical arched openings arranged in a linear sequence"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes a related but distinct window arrangement without the proportional logic of the Palladian motif.",
+        "c": "This describes a columnar arcade rather than the specific arched-rectangular-rectangular arrangement of the Palladian motif.",
+        "d": "This represents equal repetition rather than the hierarchical center-flanked composition.",
+        "correct": "architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design.",
+        "takeaway": "architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design."
+      },
+      "explanation": "This describes a related but distinct window arrangement without the proportional logic of the Palladian motif. This describes a columnar arcade rather than the specific arched-rectangular-rectangular arrangement of the Palladian motif. This represents equal repetition rather than the hierarchical center-flanked composition. architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design. architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-05-06T14:48:28.543463+00:00",
+      "content_hash": "sha256:af5df313d369fd063e80b9729e1d071f874e5392980e5e0f0b392f5af680a2d9"
+    },
+    {
+      "question_id": "8ee5ccd4-dee2-4027-acbb-a23779ca0a77",
+      "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
+      "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
+      "text": "How did Alberti's insistence that the architect should design on paper with drawings and plans before construction differ fundamentally from the medieval craft-guild model, and what theoretical implication did this distinction carry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Alberti's method was faster than guild methods, enabling quicker construction by reducing the time spent on on-site adjustments and modifications."
+        },
+        {
+          "id": "b",
+          "text": "Alberti invented architectural drawings whereas guilds relied entirely on built prototypes, marking a shift towards a more conceptual approach to design."
+        },
+        {
+          "id": "c",
+          "text": "Alberti required all architects to be trained in mathematics, whereas guilds allowed practical experience, emphasizing the importance of theoretical knowledge in architectural practice."
+        },
+        {
+          "id": "d",
+          "text": "Alberti separated the architect's intellectual authority and conception from the craftspeople's execution, positioning architecture as a rational discipline governed by intelligible rules rather than craft secrecy"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Speed of construction is not addressed as a distinguishing feature.",
+        "b": "Architectural drawings existed before Alberti; the distinction is about his methodological emphasis on paper-based authority, not invention of drawings.",
+        "c": "While Alberti valued mathematical knowledge, architectural theory does not establish this as the primary distinction from guild training.",
+        "correct": "Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology.",
+        "takeaway": "Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology."
+      },
+      "explanation": "Speed of construction is not addressed as a distinguishing feature. Architectural drawings existed before Alberti; the distinction is about his methodological emphasis on paper-based authority, not invention of drawings. While Alberti valued mathematical knowledge, architectural theory does not establish this as the primary distinction from guild training. Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology. Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-005-01-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-05-06T14:48:28.664341+00:00",
+      "content_hash": "sha256:b5f6587f55524938d28bb79831c14a3407e7528bd72317ba1af30cad35b869ba"
+    },
     {
       "question_id": "6bdd8eea-15a0-4ea8-bf49-815955aeb38f",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
@@ -247,7 +403,7 @@
         "correct": "Palladio's 'proportional room ratios...were not decorative but fundamental to acoustic and spatial experience,' derived 'from harmonic musical intervals.' This shows that proportion shapes actual lived experience, not merely visual aesthetics.",
         "takeaway": "Palladio's 'proportional room ratios...were not decorative but fundamental to acoustic and spatial experience,' derived 'from harmonic musical intervals.' This shows that proportion shapes actual lived experience, not merely visual aesthetics."
       },
-      "explanation": null,
+      "explanation": "This contradicts emphasis that proportion fundamentally shapes spatial and acoustic experience. This reverses argument; proportions are structural/acoustic, not ornamental. While visual pleasure may result, this does not explain why proportion is 'fundamental' to experience rather than merely decorative. Palladio's 'proportional room ratios...were not decorative but fundamental to acoustic and spatial experience,' derived 'from harmonic musical intervals.' This shows that proportion shapes actual lived experience, not merely visual aesthetics. Palladio's 'proportional room ratios...were not decorative but fundamental to acoustic and spatial experience,' derived 'from harmonic musical intervals.' This shows that proportion shapes actual lived experience, not merely visual aesthetics.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -261,60 +417,8 @@
       "model_id": "ALE-THEO-005-01-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3324f391688c29e4d859ecc0bd21c9aa0f69b831209cc36bf6cbd8bc54cc0e15"
-    },
-    {
-      "question_id": "4baf8136-462f-49e1-a93a-3873dc573145",
-      "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
-      "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "The progression from Vitruvius to Alberti to Palladio reveals a shift in architectural theory from describing existing practice to theorizing ideals to systematizing knowledge. Which aspect of this progression most directly enabled architecture's transformation into a discipline teachable through rational, transmissible principles?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The mutual agreement of all three theorists on the primacy of beauty over function, which established a unified aesthetic standard"
-        },
-        {
-          "id": "b",
-          "text": "Alberti's elevation of the architect as intellectual and his emphasis on paper-based design authority over craftspeople, which shifted the focus from manual to intellectual labor"
-        },
-        {
-          "id": "c",
-          "text": "Vitruvius's establishment of the classical orders as universal standards, providing a foundational framework for architectural education"
-        },
-        {
-          "id": "d",
-          "text": "Palladio's publication of measured drawings and proportional systems that could be replicated and taught across regions and generations"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "architectural theory does not establish that all three agreed on beauty's primacy; rather, it traces an evolution in how architects understood and transmitted their discipline.",
-        "b": "Alberti's theoretical contributions were crucial, but systematization for universal teachability required Palladio's published measured drawings.",
-        "c": "While Vitruvius established orders, transmission of knowledge for universal application came through Palladio's method.",
-        "correct": "Concluding paragraph directly emphasizes that Palladio achieved the 'systematizing knowledge for universal application,' and the text emphasizes that his measured drawings created 'a visual language that architects could study and imitate,' enabling transmission of principles across the centuries. This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve.",
-        "takeaway": "This visual-textual documentation made architecture teachable in a way theoretical writing alone could not achieve."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [
-        "PH"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-005-01-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b325becd2a942a75f18c260b4216ccb29d1c10488570b7eded7e4c00663640fa"
+      "updated_at": "2026-05-06T14:48:28.180564+00:00",
+      "content_hash": "sha256:ca944031b2e90973e92192877432bcca365ee9ca0d0b2d087222dd66a4e7c237"
     },
     {
       "question_id": "b416dc5c-58f4-4719-be46-c4c674ef22fb",
@@ -351,7 +455,7 @@
         "correct": "Concinnitas is explicitly defined as 'a harmonious, reasoned relationship among all parts of a whole' where removing or altering any single element would destroy the beauty—rooting beauty in mathematical proportion.",
         "takeaway": "Concinnitas is explicitly defined as 'a harmonious, reasoned relationship among all parts of a whole' where removing or altering any single element would destroy the beauty—rooting beauty in mathematical proportion."
       },
-      "explanation": null,
+      "explanation": "Concinnitas is not about applied ornament but about the geometric and proportional relationships among parts. While classical proportional ratios relate to concinnitas, this option oversimplifies to a single column measurement. This describes firmitas from the Vitruvian triad, not Alberti's concinnitas. Concinnitas is explicitly defined as 'a harmonious, reasoned relationship among all parts of a whole' where removing or altering any single element would destroy the beauty—rooting beauty in mathematical proportion. Concinnitas is explicitly defined as 'a harmonious, reasoned relationship among all parts of a whole' where removing or altering any single element would destroy the beauty—rooting beauty in mathematical proportion.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -365,8 +469,8 @@
       "model_id": "ALE-THEO-005-01-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8b9396140ae0561fa84701f45a52b105c8d6761694399e931b0086fa97c8288e"
+      "updated_at": "2026-05-06T14:48:28.421361+00:00",
+      "content_hash": "sha256:88181b42c06c38044d923c64cdddf839484b97f7839aa35c4fe7e4f60212ef3d"
     },
     {
       "question_id": "794dd209-1150-4f48-80a4-72272d8a28e8",
@@ -421,58 +525,6 @@
       "content_hash": "sha256:b279346ed2066c847dfd34bbdae8c1df3a604ab0d1d7d935ee00569bdc85b00d"
     },
     {
-      "question_id": "36350452-7bde-4644-b6e7-ba589b171c2c",
-      "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
-      "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "The Palladian motif (Serliana) consists of what architectural arrangement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A single large arched window with flanking rectangular windows on each side"
-        },
-        {
-          "id": "b",
-          "text": "A central arched opening flanked by two smaller rectangular openings"
-        },
-        {
-          "id": "c",
-          "text": "A series of paired columns supporting a unified arch"
-        },
-        {
-          "id": "d",
-          "text": "Three identical arched openings arranged in a linear sequence"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This describes a related but distinct window arrangement without the proportional logic of the Palladian motif.",
-        "c": "This describes a columnar arcade rather than the specific arched-rectangular-rectangular arrangement of the Palladian motif.",
-        "d": "This represents equal repetition rather than the hierarchical center-flanked composition.",
-        "correct": "architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design.",
-        "takeaway": "architectural theory explicitly defines the Palladian motif as 'a central arched opening flanked by two smaller rectangular openings'—a three-part arrangement that became a signature element of Renaissance design."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-005-01-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f2d5c982207173e2dd4173b221ab55058db77dbe1c496a7148f9a2544e12b67c"
-    },
-    {
       "question_id": "a694fcf2-9421-469b-a8be-719010b11c01",
       "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
       "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
@@ -523,58 +575,6 @@
       "created_at": "2026-03-23T19:27:54.791916+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:ed797479d01ed7200ff585eedadd581a0fb7a713ddaaa407e417100bffda33bf"
-    },
-    {
-      "question_id": "8ee5ccd4-dee2-4027-acbb-a23779ca0a77",
-      "article_id": "128400dd-8642-4275-a64f-c411f6836d6d",
-      "topic_id": "d5bab161-cb1c-444a-82bb-e9097d80056a",
-      "text": "How did Alberti's insistence that the architect should design on paper with drawings and plans before construction differ fundamentally from the medieval craft-guild model, and what theoretical implication did this distinction carry?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Alberti's method was faster than guild methods, enabling quicker construction by reducing the time spent on on-site adjustments and modifications."
-        },
-        {
-          "id": "b",
-          "text": "Alberti invented architectural drawings whereas guilds relied entirely on built prototypes, marking a shift towards a more conceptual approach to design."
-        },
-        {
-          "id": "c",
-          "text": "Alberti required all architects to be trained in mathematics, whereas guilds allowed practical experience, emphasizing the importance of theoretical knowledge in architectural practice."
-        },
-        {
-          "id": "d",
-          "text": "Alberti separated the architect's intellectual authority and conception from the craftspeople's execution, positioning architecture as a rational discipline governed by intelligible rules rather than craft secrecy"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Speed of construction is not addressed as a distinguishing feature.",
-        "b": "Architectural drawings existed before Alberti; the distinction is about his methodological emphasis on paper-based authority, not invention of drawings.",
-        "c": "While Alberti valued mathematical knowledge, architectural theory does not establish this as the primary distinction from guild training.",
-        "correct": "Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology.",
-        "takeaway": "Alberti 'challenged the medieval guild-master model and positioned the architect as an intellectual' and that 'the architect should design on paper, with drawings and plans, before construction—establishing the architect's authority over craftspeople.' This shift from craft secrecy to rational, paper-based authority fundamentally transformed the discipline's epistemology."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "INT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-005-01-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c247c6fc41d1b962120b65d291e4f0c872c4d5202b7682f7bb423aea03caef34"
     },
     {
       "question_id": "5980ae86-2f75-4f63-a07c-64e987018bdf",

@@ -1,7 +1,7 @@
 {
   "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:a2f890675468e0011ec227de58c5a0a18a6d64a04e5d46488cbe6fc5dff76af7",
+  "linked_questions_hash": "sha256:98cd10699c295ec8a413ef22d7fe74224a07db9895545880acd7f0735d9b31bf",
   "question_count": 10,
   "questions": [
     {
@@ -107,6 +107,110 @@
       "created_at": "2026-03-23T19:27:55.809916+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:57edd9fb73ddc698cc829e5ae692d9422995d4b23daddf0dcd1be9c0d2fe052f"
+    },
+    {
+      "question_id": "ca2e2bcd-1fa0-448b-882f-4ee4971fd5ee",
+      "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+      "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
+      "text": "Which climate adaptation strategy did the bahay kubo employ in response to Philippine tropical monsoon climate, and what building features implemented this strategy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rapid water management through elevated structure (1–2 meters on posts), steep pitched roof (rapid runoff), open sides with adjustable screens (ventilation), and deep eaves (solar shading)"
+        },
+        {
+          "id": "b",
+          "text": "Thermal mass accumulation using thick stone walls for temperature moderation, which is more suitable for arid climates"
+        },
+        {
+          "id": "c",
+          "text": "Underground construction to maintain cool temperatures year-round, a method typically used in temperate regions"
+        },
+        {
+          "id": "d",
+          "text": "Large south-facing windows for winter solar gain and mechanical heating systems, which are not applicable in tropical climates"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Thermal mass is appropriate for diurnal temperature swings; tropical climate has modest swings, making thermal mass less critical. Stone construction was urban (bahay na bato), not vernacular bahay kubo.",
+        "c": "Underground construction was not employed in tropical vernacular; elevation above ground is the opposite strategy.",
+        "d": "Large south-facing windows increase solar gain detrimental in tropical climate; this is inappropriate for Philippine context.",
+        "correct": "elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation.",
+        "takeaway": "elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation."
+      },
+      "explanation": "Thermal mass is appropriate for diurnal temperature swings; tropical climate has modest swings, making thermal mass less critical. Stone construction was urban (bahay na bato), not vernacular bahay kubo. Underground construction was not employed in tropical vernacular; elevation above ground is the opposite strategy. Large south-facing windows increase solar gain detrimental in tropical climate; this is inappropriate for Philippine context. elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation. elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-13-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:39:29.636951+00:00",
+      "content_hash": "sha256:d99d30ce7feddf90ff92d400b37a21fa7f243959469d4918d447b2cb16254694"
+    },
+    {
+      "question_id": "3ede4b38-8f85-4e40-a5ae-76dfab9edc24",
+      "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
+      "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
+      "text": "What is 'typological stability' in vernacular architecture, and why is it significant for understanding vernacular design methodology?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Typological stability is irrelevant to vernacular architecture; constant radical innovation is vernacular's defining feature, challenging traditional norms"
+        },
+        {
+          "id": "b",
+          "text": "Typological stability means all vernacular buildings worldwide are identical, ignoring regional variations and cultural influences"
+        },
+        {
+          "id": "c",
+          "text": "Vernacular building types remain fundamentally similar across generations because that type has proven optimized for local conditions; variation occurs within stable parameters rather than radical innovation, reflecting iterative refinement of proven solutions"
+        },
+        {
+          "id": "d",
+          "text": "Vernacular types never change; complete absence of innovation demonstrates cultural stagnation, preventing adaptation to new environmental challenges"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Typological stability is central to understanding vernacular's methodology; it reflects rational constraint-based optimization.",
+        "b": "Types are locally specific; different climates and cultures develop distinct types optimized to their conditions.",
+        "d": "Typological stability involves incremental variation and refinement, not complete stagnation; ongoing evolution within stable types.",
+        "correct": "Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation.",
+        "takeaway": "Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation."
+      },
+      "explanation": "Typological stability is central to understanding vernacular's methodology; it reflects rational constraint-based optimization. Types are locally specific; different climates and cultures develop distinct types optimized to their conditions. Typological stability involves incremental variation and refinement, not complete stagnation; ongoing evolution within stable types. Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation. Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-007-13-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:39:29.895589+00:00",
+      "content_hash": "sha256:9775fa5c5b84bef7f1d0e0ffefdf0185764dff458f3677a2492044c06efe39ee"
     },
     {
       "question_id": "0add29df-0a82-4db2-bc6c-2bb33f93a51c",
@@ -247,7 +351,7 @@
         "correct": "Rudofsky argued that modernism's focus on authored, innovative, formally distinct buildings obscured the vast majority of built environment—anonymous, traditional, pragmatic structures.' This established vernacular as sophisticated rational design deserving intellectual engagement.",
         "takeaway": "Rudofsky argued that modernism's focus on authored, innovative, formally distinct buildings obscured the vast majority of built environment—anonymous, traditional, pragmatic structures.' This established vernacular as sophisticated rational design deserving intellectual engagement."
       },
-      "explanation": null,
+      "explanation": "Rudofsky's argument is the opposite; he established vernacular's intellectual validity against professional monopoly. Rudofsky was serious, not ironic; his exhibition and book documented vernacular sophistication rigorously. Rudofsky did not critique professional compensation; his point concerns epistemic authority, not labor economics. Rudofsky argued that modernism's focus on authored, innovative, formally distinct buildings obscured the vast majority of built environment—anonymous, traditional, pragmatic structures.' This established vernacular as sophisticated rational design deserving intellectual engagement. Rudofsky argued that modernism's focus on authored, innovative, formally distinct buildings obscured the vast majority of built environment—anonymous, traditional, pragmatic structures.' This established vernacular as sophisticated rational design deserving intellectual engagement.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -261,8 +365,8 @@
       "model_id": "ALE-THEO-007-13-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:cbe7272df2db180f9c39d26dae75cf88a4e7818dac82812892e1b86a55ace991"
+      "updated_at": "2026-05-06T15:39:29.369164+00:00",
+      "content_hash": "sha256:0b11a543dc43bac0290ebc3f481f53119cf2516d21982191c871d08243293398"
     },
     {
       "question_id": "dcc1b54e-ad4f-4fa5-a699-b9c7b5e87dce",
@@ -299,7 +403,7 @@
         "correct": "This as epistemological parity: 'Vernacular builders possessed sophisticated understanding of climate, materials, and building science developed through observation and iterative refinement, not formal education.' Contemporary practice increasingly treats these as complementary—professional analysis systematizes what vernacular has always known through experience. The recognition is that different epistemologies (theoretical analysis vs. empirical iteration) can reach similar conclusions.",
         "takeaway": "empirical iteration) can reach similar conclusions."
       },
-      "explanation": null,
+      "explanation": "Vernacular as sophisticated, not naive; professional and traditional knowledge differ in method, not validity. architectural theory demonstrates compatibility and value in integration of both knowledge forms. architectural theory advocates integration, not replacement; both contribute essential perspectives. This as epistemological parity: 'Vernacular builders possessed sophisticated understanding of climate, materials, and building science developed through observation and iterative refinement, not formal education.' Contemporary practice increasingly treats these as complementary—professional analysis systematizes what vernacular has always known through experience. The recognition is that different epistemologies (theoretical analysis vs. empirical iteration) can reach similar conclusions. empirical iteration) can reach similar conclusions.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -313,60 +417,8 @@
       "model_id": "ALE-THEO-007-13-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ad126cc9927a49f5a7ed06e9d4cbe6b96d7e131fdc940c5848020b2761c5cfd2"
-    },
-    {
-      "question_id": "ca2e2bcd-1fa0-448b-882f-4ee4971fd5ee",
-      "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
-      "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "Which climate adaptation strategy did the bahay kubo employ in response to Philippine tropical monsoon climate, and what building features implemented this strategy?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Rapid water management through elevated structure (1–2 meters on posts), steep pitched roof (rapid runoff), open sides with adjustable screens (ventilation), and deep eaves (solar shading)"
-        },
-        {
-          "id": "b",
-          "text": "Thermal mass accumulation using thick stone walls for temperature moderation, which is more suitable for arid climates"
-        },
-        {
-          "id": "c",
-          "text": "Underground construction to maintain cool temperatures year-round, a method typically used in temperate regions"
-        },
-        {
-          "id": "d",
-          "text": "Large south-facing windows for winter solar gain and mechanical heating systems, which are not applicable in tropical climates"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Thermal mass is appropriate for diurnal temperature swings; tropical climate has modest swings, making thermal mass less critical. Stone construction was urban (bahay na bato), not vernacular bahay kubo.",
-        "c": "Underground construction was not employed in tropical vernacular; elevation above ground is the opposite strategy.",
-        "d": "Large south-facing windows increase solar gain detrimental in tropical climate; this is inappropriate for Philippine context.",
-        "correct": "elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation.",
-        "takeaway": "elevation prevents ground moisture and flooding, steep roof sheds monsoon water rapidly, adjustable screens allow climate-responsive ventilation without wall permanence, deep eaves provide solar protection from intense tropical radiation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ATT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-007-13-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6c398387e8991899099cb488f950be6cd6567a019e6af5da871d3dd64133317f"
+      "updated_at": "2026-05-06T15:39:29.503442+00:00",
+      "content_hash": "sha256:3ab6a844be94ee5cf2dddf2fc003a89e7f508cd0100fff461ff89fa119aa7750"
     },
     {
       "question_id": "4db09ee2-d61a-4796-a442-2af0be21f07a",
@@ -403,7 +455,7 @@
         "correct": "This integration: 'Contemporary architectural practice increasingly learns from vernacular...passive design strategies, local material sourcing, site-specific optimization—all vernacular principles apply directly to sustainability goals.' This suggests traditional and modern knowledge address similar environmental challenges through different epistemologies (experiential vs. analytical).",
         "takeaway": "analytical)."
       },
-      "explanation": null,
+      "explanation": "architectural theory shows successful integration and complementarity between traditional and contemporary approaches. architectural theory demonstrates vernacular principles are essential to contemporary practice; dismissing tradition misses centuries of accumulated optimization. Many vernacular buildings perform better environmentally than modern replacements; architectural theory critiques this assumption as mistaken. This integration: 'Contemporary architectural practice increasingly learns from vernacular...passive design strategies, local material sourcing, site-specific optimization—all vernacular principles apply directly to sustainability goals.' This suggests traditional and modern knowledge address similar environmental challenges through different epistemologies (experiential vs. analytical). analytical).",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -417,8 +469,8 @@
       "model_id": "ALE-THEO-007-13-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:81deee57a02b802446e670b6fc0a7c19644ff98f643fc07ea946c5e91214644b"
+      "updated_at": "2026-05-06T15:39:29.765248+00:00",
+      "content_hash": "sha256:8f7d81dffb6e0800cd5b7f579566b600e9b2f223b813a191d0ce974c9ae583b5"
     },
     {
       "question_id": "55553333-93fa-4dee-a61a-94648d747a8e",
@@ -471,58 +523,6 @@
       "created_at": "2026-03-23T19:27:55.809916+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:44ab5c848d6efec88e9136418a8e648d5e44fac6f6e974e301a8ca28d356cac6"
-    },
-    {
-      "question_id": "3ede4b38-8f85-4e40-a5ae-76dfab9edc24",
-      "article_id": "3437f275-1ceb-4f88-b66a-d82d29ad4a2a",
-      "topic_id": "d638f176-000e-43aa-98a4-0f60d33e0798",
-      "text": "What is 'typological stability' in vernacular architecture, and why is it significant for understanding vernacular design methodology?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Typological stability is irrelevant to vernacular architecture; constant radical innovation is vernacular's defining feature, challenging traditional norms"
-        },
-        {
-          "id": "b",
-          "text": "Typological stability means all vernacular buildings worldwide are identical, ignoring regional variations and cultural influences"
-        },
-        {
-          "id": "c",
-          "text": "Vernacular building types remain fundamentally similar across generations because that type has proven optimized for local conditions; variation occurs within stable parameters rather than radical innovation, reflecting iterative refinement of proven solutions"
-        },
-        {
-          "id": "d",
-          "text": "Vernacular types never change; complete absence of innovation demonstrates cultural stagnation, preventing adaptation to new environmental challenges"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Typological stability is central to understanding vernacular's methodology; it reflects rational constraint-based optimization.",
-        "b": "Types are locally specific; different climates and cultures develop distinct types optimized to their conditions.",
-        "d": "Typological stability involves incremental variation and refinement, not complete stagnation; ongoing evolution within stable types.",
-        "correct": "Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation.",
-        "takeaway": "Vernacular building type remains fundamentally similar across generations because that type has proven optimal...Variation occurs within stable parameters; radical innovation is rare because financial and social risk is too great.' Stability reflects optimization, not stagnation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-007-13-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:884b9f45e67cab2edc9bd710d2236819c4a7c67e798dc8ebdb069f93e4d15ec3"
     }
   ]
 }

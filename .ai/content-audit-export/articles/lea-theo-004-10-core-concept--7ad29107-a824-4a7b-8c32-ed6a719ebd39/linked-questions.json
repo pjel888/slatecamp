@@ -1,9 +1,113 @@
 {
   "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:7bc9501f498e3736cc955423d684cb513a1620bbb3652d1d8083ff0366b7bdb6",
+  "linked_questions_hash": "sha256:6f80f2c8e0cfaa525ec17644808c65587953615eaecc4ce3bfd3b252784d4daa",
   "question_count": 11,
   "questions": [
+    {
+      "question_id": "db34901b-2be4-4aab-9dd8-ee86b16932af",
+      "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+      "topic_id": "5a3294a2-b3e2-479a-ad3e-26500c5eedda",
+      "text": "What material selection principle does Francisco Mañosa's philosophy 'Everything started with the Nipa Hut' emphasize for authentic Filipino tropical architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material selection is irrelevant to architectural authenticity; style alone matters, disregarding environmental context"
+        },
+        {
+          "id": "b",
+          "text": "Modern technology eliminates the need for climate-responsive material strategy, focusing solely on aesthetics"
+        },
+        {
+          "id": "c",
+          "text": "Imported materials are superior to indigenous options for durability, despite potential environmental mismatches"
+        },
+        {
+          "id": "d",
+          "text": "Indigenous materials (Philippine hardwoods, bamboo, rattan) represent climate-optimized solutions developed over centuries. Modern design should derive from material authenticity and visible material expression, not abandon vernacular wisdom for imported alternatives"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Material authenticity is core to Mañosa's philosophy; style is secondary.",
+        "b": "Climate responsiveness remains relevant; modern technology enhances, not replaces, material-based strategy.",
+        "c": "Indigenous materials are proven effective in Philippine climate; imported materials often require additional protection.",
+        "correct": "Mañosa's philosophy emphasizes: 'Indigenous materials represent climate-optimized solutions developed through centuries of empirical observation... Modern design should reinterpret, not abandon, these principles... preference for indigenous materials (Philippine hardwoods, bamboo, rattan) and visible material expression as fundamental to biophilic authenticity.'",
+        "takeaway": "preference for indigenous materials (Philippine hardwoods, bamboo, rattan) and visible material expression as fundamental to biophilic authenticity.'."
+      },
+      "explanation": "Material authenticity is core to Mañosa's philosophy; style is secondary. Climate responsiveness remains relevant; modern technology enhances, not replaces, material-based strategy. Indigenous materials are proven effective in Philippine climate; imported materials often require additional protection. Mañosa's philosophy emphasizes: 'Indigenous materials represent climate-optimized solutions developed through centuries of empirical observation... Modern design should reinterpret, not abandon, these principles... preference for indigenous materials (Philippine hardwoods, bamboo, rattan) and visible material expression as fundamental to biophilic authenticity.' preference for indigenous materials (Philippine hardwoods, bamboo, rattan) and visible material expression as fundamental to biophilic authenticity.'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-10-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-05-06T15:59:04.10224+00:00",
+      "content_hash": "sha256:77d4fc2f52a7111a3b6769aded52c75a03675862234ddc917a157515837cdf2a"
+    },
+    {
+      "question_id": "7d2551eb-fb55-4144-bfc6-69137ba01c79",
+      "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
+      "topic_id": "5a3294a2-b3e2-479a-ad3e-26500c5eedda",
+      "text": "What does the bahay kubo achieve in terms of natural ventilation rates without mechanical fans?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2–3 ACH (minimal, insufficient for tropical climate), which may require additional ventilation solutions"
+        },
+        {
+          "id": "b",
+          "text": "15+ ACH, excessive for occupant comfort, potentially causing discomfort due to high air movement"
+        },
+        {
+          "id": "c",
+          "text": "8–10 ACH during monsoon season and 4–6 ACH during calm periods—rates matching or exceeding typical mechanical ventilation"
+        },
+        {
+          "id": "d",
+          "text": "Natural ventilation rates are unmeasurable in traditional buildings, making it difficult to quantify performance"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2–3 ACH is insufficient; bahay kubo achieves 8–10 ACH during monsoon.",
+        "b": "8–10 ACH is optimal for thermal comfort (per ASHRAE 55); not excessive.",
+        "d": "Vernacular ventilation is quantifiable through CFD analysis and field measurement.",
+        "correct": "The bahay kubo achieves 8–10 air changes per hour (ACH) during monsoon season (May–Oct) and 4–6 ACH during calm periods—rates exceeding typical mechanical ventilation.' This quantification is critical for understanding vernacular performance validation.",
+        "takeaway": "The bahay kubo achieves 8–10 air changes per hour (ACH) during monsoon season (May–Oct) and 4–6 ACH during calm periods—rates exceeding typical mechanical ventilation.' This quantification is critical for understanding vernacular performance validation."
+      },
+      "explanation": "2–3 ACH is insufficient; bahay kubo achieves 8–10 ACH during monsoon. 8–10 ACH is optimal for thermal comfort (per ASHRAE 55); not excessive. Vernacular ventilation is quantifiable through CFD analysis and field measurement. The bahay kubo achieves 8–10 air changes per hour (ACH) during monsoon season (May–Oct) and 4–6 ACH during calm periods—rates exceeding typical mechanical ventilation.' This quantification is critical for understanding vernacular performance validation. The bahay kubo achieves 8–10 air changes per hour (ACH) during monsoon season (May–Oct) and 4–6 ACH during calm periods—rates exceeding typical mechanical ventilation.' This quantification is critical for understanding vernacular performance validation.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-10-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-05-06T15:59:04.222649+00:00",
+      "content_hash": "sha256:02d6e318dd2bcaa515dc2922de0a0a3db2edc501cff0c94251504a5fa7a72343"
+    },
     {
       "question_id": "0803afd4-dcec-42df-8b76-94ba55bed6a4",
       "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
@@ -39,7 +143,7 @@
         "correct": "Neovernacular is defined: 'Modern design reinterpreting traditional vernacular principles (climate responsiveness, material authenticity, cultural continuity) rather than literal reproduction.' This allows contemporary programs (high-rises, hospitals, offices) to incorporate vernacular climate intelligence without romantic historicism.",
         "takeaway": "Neovernacular is defined: 'Modern design reinterpreting traditional vernacular principles (climate responsiveness, material authenticity, cultural continuity) rather than literal reproduction.' This allows contemporary programs (high-rises, hospitals, offices) to incorporate vernacular climate intelligence without romantic historicism."
       },
-      "explanation": null,
+      "explanation": "Neovernacular deliberately preserves vernacular principles; it opposes pure modernism without context. Literal reproduction is impractical; neovernacular is interpretive. Authentic neovernacular integrates function; purely decorative application is pastiche, not neovernacular. Neovernacular is defined: 'Modern design reinterpreting traditional vernacular principles (climate responsiveness, material authenticity, cultural continuity) rather than literal reproduction.' This allows contemporary programs (high-rises, hospitals, offices) to incorporate vernacular climate intelligence without romantic historicism. Neovernacular is defined: 'Modern design reinterpreting traditional vernacular principles (climate responsiveness, material authenticity, cultural continuity) rather than literal reproduction.' This allows contemporary programs (high-rises, hospitals, offices) to incorporate vernacular climate intelligence without romantic historicism.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -53,8 +157,8 @@
       "model_id": "ALE-THEO-004-10-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:32d63932914109915265731eeddca77748ada354ff9a9ef18edc2de4fb9c0a68"
+      "updated_at": "2026-05-06T15:59:03.985789+00:00",
+      "content_hash": "sha256:d70c0d0ea317dc36cb00bd8f84c3f943579c0db212cee5300e6d1925c7458523"
     },
     {
       "question_id": "3c0b09e5-d3d0-443b-8e02-269e468168a7",
@@ -265,58 +369,6 @@
       "content_hash": "sha256:43672e5884bb24de5d6fe6b9bfaf7ed1cf01d328aeb989c47502aab2d2317f57"
     },
     {
-      "question_id": "db34901b-2be4-4aab-9dd8-ee86b16932af",
-      "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
-      "topic_id": "5a3294a2-b3e2-479a-ad3e-26500c5eedda",
-      "text": "What material selection principle does Francisco Mañosa's philosophy 'Everything started with the Nipa Hut' emphasize for authentic Filipino tropical architecture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Material selection is irrelevant to architectural authenticity; style alone matters, disregarding environmental context"
-        },
-        {
-          "id": "b",
-          "text": "Modern technology eliminates the need for climate-responsive material strategy, focusing solely on aesthetics"
-        },
-        {
-          "id": "c",
-          "text": "Imported materials are superior to indigenous options for durability, despite potential environmental mismatches"
-        },
-        {
-          "id": "d",
-          "text": "Indigenous materials (Philippine hardwoods, bamboo, rattan) represent climate-optimized solutions developed over centuries. Modern design should derive from material authenticity and visible material expression, not abandon vernacular wisdom for imported alternatives"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Material authenticity is core to Mañosa's philosophy; style is secondary.",
-        "b": "Climate responsiveness remains relevant; modern technology enhances, not replaces, material-based strategy.",
-        "c": "Indigenous materials are proven effective in Philippine climate; imported materials often require additional protection.",
-        "correct": "Mañosa's philosophy emphasizes: 'Indigenous materials represent climate-optimized solutions developed through centuries of empirical observation... Modern design should reinterpret, not abandon, these principles... preference for indigenous materials (Philippine hardwoods, bamboo, rattan) and visible material expression as fundamental to biophilic authenticity.'",
-        "takeaway": "preference for indigenous materials (Philippine hardwoods, bamboo, rattan) and visible material expression as fundamental to biophilic authenticity.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ATT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-004-10-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5fed6cae45cfa567a790c1ba69211e71b3e788f8fa169c5bfaed903463152a47"
-    },
-    {
       "question_id": "eb88e096-9e74-403f-9c77-91245072992b",
       "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
       "topic_id": "5a3294a2-b3e2-479a-ad3e-26500c5eedda",
@@ -419,58 +471,6 @@
       "created_at": "2026-03-23T19:27:54.791916+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:18e992d90dae7ff3319e4008dd0815b05878e00831ed47831b0215f9faa8f2cb"
-    },
-    {
-      "question_id": "7d2551eb-fb55-4144-bfc6-69137ba01c79",
-      "article_id": "7ad29107-a824-4a7b-8c32-ed6a719ebd39",
-      "topic_id": "5a3294a2-b3e2-479a-ad3e-26500c5eedda",
-      "text": "What does the bahay kubo achieve in terms of natural ventilation rates without mechanical fans?",
-      "options": [
-        {
-          "id": "a",
-          "text": "2–3 ACH (minimal, insufficient for tropical climate), which may require additional ventilation solutions"
-        },
-        {
-          "id": "b",
-          "text": "15+ ACH, excessive for occupant comfort, potentially causing discomfort due to high air movement"
-        },
-        {
-          "id": "c",
-          "text": "8–10 ACH during monsoon season and 4–6 ACH during calm periods—rates matching or exceeding typical mechanical ventilation"
-        },
-        {
-          "id": "d",
-          "text": "Natural ventilation rates are unmeasurable in traditional buildings, making it difficult to quantify performance"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "2–3 ACH is insufficient; bahay kubo achieves 8–10 ACH during monsoon.",
-        "b": "8–10 ACH is optimal for thermal comfort (per ASHRAE 55); not excessive.",
-        "d": "Vernacular ventilation is quantifiable through CFD analysis and field measurement.",
-        "correct": "The bahay kubo achieves 8–10 air changes per hour (ACH) during monsoon season (May–Oct) and 4–6 ACH during calm periods—rates exceeding typical mechanical ventilation.' This quantification is critical for understanding vernacular performance validation.",
-        "takeaway": "The bahay kubo achieves 8–10 air changes per hour (ACH) during monsoon season (May–Oct) and 4–6 ACH during calm periods—rates exceeding typical mechanical ventilation.' This quantification is critical for understanding vernacular performance validation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-004-10-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.791916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dfe191d15c0a7ff11bf56f8265c8c7fb2438d7fc8d34235cf13fbe8b24f0bede"
     },
     {
       "question_id": "c5455f0c-7023-410f-8238-50036123d9f6",

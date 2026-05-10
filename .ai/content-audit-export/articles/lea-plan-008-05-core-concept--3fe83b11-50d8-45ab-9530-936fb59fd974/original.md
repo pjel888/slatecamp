@@ -1,4 +1,11 @@
-## What You Need to Know for the LEA
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 008 05 Core Concept** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 Distinguish urban regeneration (large-scale redevelopment) from placemaking (incremental community activation) and tactical urbanism (low-cost temporary interventions), apply each approach to Philippine urban scenarios, and evaluate gentrification risks.
@@ -17,11 +24,19 @@ Placemaking is the process of creating meaningful public spaces and experiences 
 2. **Community engagement** — low-risk interventions build trust and demonstrate how spaces can be improved
 
 Adaptive reuse—converting buildings from one use to another (warehouse to lofts, church to restaurant, office to residential)—is both a regeneration strategy and a sustainability practice, preserving existing structures rather than demolishing.
-<ArticleMedia id="media-lea-plan-008-05-core-concept" type="image" caption="Urban Regeneration vs. Placemaking vs. Tactical Urbanism Comparison" description="Three-panel comparison: Urban Regeneration (large-scale, long-term, master-planned redevelopment), Placemaking (incremental community-led public space activation), Tactical Urbanism (low-cost temporary interventions like parklets, pop-up plazas). Gentrification risk assessment per approach." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-008-05-core-concept", type="image", caption="Urban Regeneration vs. Placemaking vs. Tactical Urbanism Comparison", description="Three-panel comparison: Urban Regeneration (large-scale, long-term, master-planned redevelopment), Placemaking (incremental community-led public space activation), Tactical Urbanism (low-cost temporary interventions like parklets, pop-up plazas). Gentrification risk assessment per approach.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-<WikiExamTable headers={["Strategy", "Sclea / Approach", "Outcomes / Applications"]} rows={[["Urban Regeneration", "Large-sclea, long-term; infrastructure, building rehabilitation, institutional repositioning", "Blighted areas become mixed-use neighborhoods, innovation districts, cultural quarters; economic revitalization with risk of gentrification"], ["Placemaking", "Human-sclea; public space design, cultural programming, community activation", "Vibrant gathering spaces, street life, community identity, cultural continuity"], ["Tactical Urbanism", "Low-cost, temporary; parklets, murals, street closures, community gardens", "Test design ideas; engage communities; build ownership; rapid feedback without major capital investment"], ["Adaptive Reuse", "Building-level; convert existing structures to new uses", "Preserve urban fabric and heritage; reduce embodied carbon from demolition; economical redevelopment"], ["Gentrification / Displacement", "Side effect of successful regeneration; property values and rents rise", "Original residents and businesses priced out unless anti-displacement policies (rent control, community land trusts, local hiring) are implemented"]]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Strategy\", \"Sclea / Approach\", \"Outcomes / Applications\"]}", rows="{[[\"Urban Regeneration\", \"Large-sclea, long-term; infrastructure, building rehabilitation, institutional repositioning\", \"Blighted areas become mixed-use neighborhoods, innovation districts, cultural quarters; economic revitalization with risk of gentrification\"], [\"Placemaking\", \"Human-sclea; public space design, cultural programming, community activation\", \"Vibrant gathering spaces, street life, community identity, cultural continuity\"], [\"Tactical Urbanism\", \"Low-cost, temporary; parklets, murals, street closures, community gardens\", \"Test design ideas; engage communities; build ownership; rapid feedback without major capital investment\"], [\"Adaptive Reuse\", \"Building-level; convert existing structures to new uses\", \"Preserve urban fabric and heritage; reduce embodied carbon from demolition; economical redevelopment\"], [\"Gentrification / Displacement\", \"Side effect of successful regeneration; property values and rents rise\", \"Original residents and businesses priced out unless anti-displacement policies (rent control, community land trusts, local hiring) are implemented\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -35,7 +50,11 @@ Philippine cities have significant areas suitable for regeneration: aging coloni
 
 3. **Displacement and community impact** — "A waterfront regeneration project transforms a degraded area into a high-value mixed-use district. What planning risk must be mitigated?" → Answer: Gentrification and displacement of original residents; mitigation requires anti-displacement policies (community land trusts, affordable housing preservation, local hiring). Tests understanding of the social risks of regeneration.
 
-<Tip>Memory aid: **Tactical = temporary, low-cost, quick** (think "guerrilla tactics"—fast, low-resource). **Placemaking = making places meaningful** (the human experience comes first). **Adaptive Reuse = reuse existing buildings** (sustainable, economical). **Gentrification = the risk** (success can displace original communities).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: **Tactical = temporary, low-cost, quick** (think "guerrilla tactics"—fast, low-resource). **Placemaking = making places meaningful** (the human experience comes first). **Adaptive Reuse = reuse existing buildings** (sustainable, economical). **Gentrification = the risk** (success can displace original communities).
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Three key distinctions: (1) Regeneration = large-scale, top-down, capital-intensive. (2) Placemaking = community-driven, incremental, public space-focused. (3) Tactical urbanism = low-cost, temporary, rapid prototyping (pop-up bike lanes, parklets). Know which approach fits which scenario.
 
@@ -45,4 +64,8 @@ See **LEA-PLAN-008-03** (Sustainable Development) for sustainable regeneration, 
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Treating tactical urbanism as unpermitted vandalism or graffiti. True tactical urbanism is coordinated with municipal authorities; it is not illegal. (Unsanctioned street art may be inspired by tactical urbanism principles but is not itself tactical urbanism.)", "Assuming placemaking and urban regeneration are the same thing. Placemaking is human-sclea activation and community engagement; regeneration is often large-sclea infrastructure redevelopment. They are different but can complement each other.", "Overlooking that adaptive reuse is sustainable. Converting existing buildings (reducing embodied carbon from demolition) is more environmentally friendly than greenfield development or demolition-reconstruction.", "Ignoring gentrification as an inevitable problem rather than a manageable risk. Gentrification can be prevented or mitigated through anti-displacement policies (rent control, community land trusts, affordability preservation, community ownership of development)."]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Treating tactical urbanism as unpermitted vandalism or graffiti. True tactical urbanism is coordinated with municipal authorities; it is not illegal. (Unsanctioned street art may be inspired by tactical urbanism principles but is not itself tactical urbanism.)\", \"Assuming placemaking and urban regeneration are the same thing. Placemaking is human-sclea activation and community engagement; regeneration is often large-sclea infrastructure redevelopment. They are different but can complement each other.\", \"Overlooking that adaptive reuse is sustainable. Converting existing buildings (reducing embodied carbon from demolition) is more environmentally friendly than greenfield development or demolition-reconstruction.\", \"Ignoring gentrification as an inevitable problem rather than a manageable risk. Gentrification can be prevented or mitigated through anti-displacement policies (rent control, community land trusts, affordability preservation, community ownership of development).\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

@@ -436,4 +436,3 @@ LEA Swipe: Chimney height above roof = 900 mm minimum (or 600 mm if within 3 m o
 ## Cross‑References
 
 **Fire Resistive Construction Ratings**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Vertical Openings And Floor Roof Construction**
-

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 004 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 Live loads (floor occupancy loads) are the responsibility of the occupant, not the designer. The NSCP specifies minimum live load values for design; the occupant must not exceed them. Partition loads (dead load from non-structural walls) must be added if partitions are present or anticipated. Storage loads can be severe and override standard floor loads if the space will contain stored materials.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-004-05-core-concept" type="image" caption="Live Load Values — NSCP Table 202 Minimum Occupancy Loads" description="Reference diagram showing common NSCP live load values organized by occupancy: Residential (1.9 kPa), Office (2.4 kPa), Corridors (3.8 kPa), Assembly fixed seats (2.9 kPa), Assembly no fixed seats (4.8 kPa), Light storage (6.0 kPa), Heavy storage (12.0 kPa), Flat roof (1.0 kPa). Live load reduction rule illustrated with tributary area ≥18.6 m² threshold." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-004-05-core-concept", type="image", caption="Live Load Values — NSCP Table 202 Minimum Occupancy Loads", description="Reference diagram showing common NSCP live load values organized by occupancy: Residential (1.9 kPa), Office (2.4 kPa), Corridors (3.8 kPa), Assembly fixed seats (2.9 kPa), Assembly no fixed seats (4.8 kPa), Light storage (6.0 kPa), Heavy storage (12.0 kPa), Flat roof (1.0 kPa). Live load reduction rule illustrated with tributary area ≥18.6 m² threshold.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 _Live load_ (LL) is the load exerted by occupancy, equipment, and temporary activities on a floor. It is distinct from dead load (permanent structural weight). The NSCP provides a table of minimum live load values for different occupancy types, measured in kPa (kiloPascals):
 
@@ -69,7 +82,11 @@ Storage facilities (warehouses) in industrial zones require 12.0 kPa if heavy ma
 
 **Pattern 4: Tributary area and reduction.** "A column supports a 20 m² tributary area on a residential floor. Can live load reduction be applied?" → Yes, because 20 m² > 14 m² threshold. Calculate the reduction factor.
 
-<Tip>Live load defaults to the table value. Partitions always add 1.0 kPa (if anticipated). Storage can be 2–6× the occupancy LL if heavy materials are present. The occupant's use is the occupant's responsibility—the designer provides the capacity, not the police.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Live load defaults to the table value. Partitions always add 1.0 kPa (if anticipated). Storage can be 2–6× the occupancy LL if heavy materials are present. The occupant's use is the occupant's responsibility—the designer provides the capacity, not the police.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -77,5 +94,8 @@ See also: **Load Types** (lea-strc-001-02) for the complete live load discussion
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
-
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]

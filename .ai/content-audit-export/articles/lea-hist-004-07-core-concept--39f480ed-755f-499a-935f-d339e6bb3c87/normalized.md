@@ -83,7 +83,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Pattern 2: Material and Technique Recognition** "A Mughal building employs **parchin kari** (semi-precious stone inlay) in geometric patterns. The stones—jade, lapis lazuli, carnelian, turquoise—create optical effects through light reflection. Which building exemplifies this technique, and what decorative principle does it represent compared to muqarnas or arabesque?" (Answer: **Taj Mahal** is the masterpiece, though **Humayun's Tomb** shows earlier use. Parchin kari is precisely placed inlay 
+- Text: **Pattern 2: Material and Technique Recognition** "A Mughal building employs **parchin kari** (semi-precious stone inlay) in geometric patterns. The stones—jade, lapis lazuli, carnelian, turquoise—create optical effects through light reflection. Which building exemplifies this technique, and what decorative principle does it represent compared to muqarnas or arabesque?" (Answer: **Taj Mahal** is the masterpiece, though **Humayun's Tomb** shows earlier use. Parchin kari is precisely placed inlay
 [/SLATECAMP_UI_BLOCK]
 [SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
 Extracted summary:
@@ -98,7 +98,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Pattern 5: Proportional and Spiritual Meaning** "Mughal architects employed modular grid systems and mathematical proportions in buildings like the Taj Mahal. Why would precision in proportions matter in Islamic architecture, and how does this differ from the spatial strategies of Andalusian or Ottoman mosques?" (Answer: Mathematical proportions reflect divine harmony and cosmological order; precision makes the building a microcosm of paradise. Andalusian mosques emphasize poetic intimacy and 
+- Text: **Pattern 5: Proportional and Spiritual Meaning** "Mughal architects employed modular grid systems and mathematical proportions in buildings like the Taj Mahal. Why would precision in proportions matter in Islamic architecture, and how does this differ from the spatial strategies of Andalusian or Ottoman mosques?" (Answer: Mathematical proportions reflect divine harmony and cosmological order; precision makes the building a microcosm of paradise. Andalusian mosques emphasize poetic intimacy and
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
@@ -166,4 +166,3 @@ Extracted summary:
 See also within Islamic Architecture: **lea-hist-004-01-core-concept**, **lea-hist-004-02-core-concept**, **lea-hist-004-05-core-concept**, **lea-hist-004-06-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
-

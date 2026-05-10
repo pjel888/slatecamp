@@ -1,9 +1,59 @@
 {
   "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b60bdb5777d2ac51f426ad5ce83dbfbf7ff21e49b2aa5da512944327fb888ddf",
+  "linked_questions_hash": "sha256:3194cd570f247f762fea3f869c4a9aa4fa3ee1dcc849080510d493511e9aa028",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "811525b7-b940-47e1-9ffc-7b12ef0713e6",
+      "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
+      "topic_id": "2b2131c7-f361-48b9-b1e7-5e0fe2b3c6e8",
+      "text": "Describe the role of the Commission on Audit (COA) in reviewing government-funded architectural projects and what documentation architects must maintain.",
+      "options": [
+        {
+          "id": "a",
+          "text": "COA only reviews financial transactions, not design decisions, which are outside its jurisdiction"
+        },
+        {
+          "id": "b",
+          "text": "COA reviews regularity, legality, and economy; architects must maintain complete project documentation including preliminary studies, design records, and construction notes for audit purposes"
+        },
+        {
+          "id": "c",
+          "text": "COA has no authority over design decisions, focusing solely on financial compliance"
+        },
+        {
+          "id": "d",
+          "text": "Only cost estimates need to be audited, which simplifies the process but may overlook design issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understates COA scope; audit extends to design quality, compliance, and appropriateness of decisions.",
+        "c": "Overstates COA limitations; audit findings often address design choices affecting cost and functionality.",
+        "d": "Incompletely specifies audit scope; COA reviews design rationale, not just cost estimates.",
+        "correct": "COA conducts comprehensive audits including regularity, legality, and economy—covering design decisions and requiring complete documentation from project inception through completion.",
+        "takeaway": "COA audits design decisions for compliance and economy; complete documentation from preliminary studies through construction administration is mandatory."
+      },
+      "explanation": "Understates COA scope; audit extends to design quality, compliance, and appropriateness of decisions. Overstates COA limitations; audit findings often address design choices affecting cost and functionality. Incompletely specifies audit scope; COA reviews design rationale, not just cost estimates. COA conducts comprehensive audits including regularity, legality, and economy—covering design decisions and requiring complete documentation from project inception through completion. COA audits design decisions for compliance and economy; complete documentation from preliminary studies through construction administration is mandatory.",
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-011-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T13:14:21.732692+00:00",
+      "content_hash": "sha256:917c26479384c0d9d20353be8441158633fe5c030a81c41f0d113c7b10b6c06c"
+    },
     {
       "question_id": "6979f68f-5f67-491a-9aae-471817f67146",
       "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:48.361702+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:c5649bb37e2068a8510d01930edcc47c4b2655f13e4d1527e1855f3ea4372877"
-    },
-    {
-      "question_id": "811525b7-b940-47e1-9ffc-7b12ef0713e6",
-      "article_id": "46490e40-c2c3-4c76-bf43-87b40512989f",
-      "topic_id": "2b2131c7-f361-48b9-b1e7-5e0fe2b3c6e8",
-      "text": "Describe the role of the Commission on Audit (COA) in reviewing government-funded architectural projects and what documentation architects must maintain.",
-      "options": [
-        {
-          "id": "a",
-          "text": "COA only reviews financial transactions, not design decisions, which are outside its jurisdiction"
-        },
-        {
-          "id": "b",
-          "text": "COA reviews regularity, legality, and economy; architects must maintain complete project documentation including preliminary studies, design records, and construction notes for audit purposes"
-        },
-        {
-          "id": "c",
-          "text": "COA has no authority over design decisions, focusing solely on financial compliance"
-        },
-        {
-          "id": "d",
-          "text": "Only cost estimates need to be audited, which simplifies the process but may overlook design issues"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Understates COA scope; audit extends to design quality, compliance, and appropriateness of decisions.",
-        "c": "Overstates COA limitations; audit findings often address design choices affecting cost and functionality.",
-        "d": "Incompletely specifies audit scope; COA reviews design rationale, not just cost estimates.",
-        "correct": "COA conducts comprehensive audits including regularity, legality, and economy—covering design decisions and requiring complete documentation from project inception through completion.",
-        "takeaway": "COA audits design decisions for compliance and economy; complete documentation from preliminary studies through construction administration is mandatory."
-      },
-      "explanation": null,
-      "code_citation": "RA 9266",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-011-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d1cdd7851d9c2fb0d5749e6e4ee353d50f1a323b457dae5f1120248232cf603f"
     },
     {
       "question_id": "0230b95d-eeee-4086-bd23-8551412e5268",

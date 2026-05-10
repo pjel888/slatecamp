@@ -57,7 +57,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Scenario 2: Exterior wall painting, 300 m² surface area, rough concrete texture, single topcoat after primer, coverage: primer 11 m²/L, topcoat 10 m²/L (reduced due to texture), 10% waste factor** **Step 1: Account for rough surface (reduce coverage by 15%)Adjusted primer coverage: 25 m²/L × 0.85 = 21.25 m²/L Adjusted topcoat coverage: 25 m²/L × 0.85 = 21.25 m²/L **Step 2: Calculate primer needed** Primer = 300 m² ÷ 9.35 m²/L = 32.1 liters **Step 3: Calculate topcoat needed** Topcoat = 300 m² 
+- Text: **Scenario 2: Exterior wall painting, 300 m² surface area, rough concrete texture, single topcoat after primer, coverage: primer 11 m²/L, topcoat 10 m²/L (reduced due to texture), 10% waste factor** **Step 1: Account for rough surface (reduce coverage by 15%)Adjusted primer coverage: 25 m²/L × 0.85 = 21.25 m²/L Adjusted topcoat coverage: 25 m²/L × 0.85 = 21.25 m²/L **Step 2: Calculate primer needed** Primer = 300 m² ÷ 9.35 m²/L = 32.1 liters **Step 3: Calculate topcoat needed** Topcoat = 300 m²
 [/SLATECAMP_UI_BLOCK]
 
 
@@ -145,4 +145,3 @@ Extracted summary:
 See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-02-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-04-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

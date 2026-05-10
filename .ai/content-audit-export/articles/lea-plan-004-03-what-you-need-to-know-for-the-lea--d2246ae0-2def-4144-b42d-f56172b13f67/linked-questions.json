@@ -1,7 +1,7 @@
 {
   "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:2fceb6dff38ae3b2a5f87e31f4a950e93822c3cf8416c7a1310829bd22a98519",
+  "linked_questions_hash": "sha256:c3affe0b0ae0f84199a33eb4e097476419796304399d7b88e7e730cfa8ca8fdb",
   "question_count": 10,
   "questions": [
     {
@@ -54,6 +54,57 @@
       "created_at": "2026-03-23T19:27:37.333335+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:9f8e9b3e19c9fe0ceca4d2d2e7a45bd2be2e39271b79ab860c75c1fbced22a11"
+    },
+    {
+      "question_id": "1fb91500-8524-4972-899e-0cc8e4e7bcaf",
+      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
+      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
+      "text": "A site planner is analyzing a proposed development adjacent to a barangay market. The existing market is a key placemaking element—residents identify themselves with the market's community and vitality. However, the development's design isolates the market behind tall buildings with minimal pedestrian connection. What is the planner's responsibility in addressing this socio-psychological constraint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore the market's placemaking role; it is a separate land use and not relevant to the development site, focusing solely on the new development's requirements"
+        },
+        {
+          "id": "b",
+          "text": "Recommend the market be relocated to make room for development; this resolves the constraint but may disrupt community ties"
+        },
+        {
+          "id": "c",
+          "text": "Redesign the development's edges to maintain visual and physical connection to the market, incorporate ground-floor retail to extend market vitality, and create pedestrian pathways linking the development and market to strengthen placemaking"
+        },
+        {
+          "id": "d",
+          "text": "Placemaking is subjective and emotional; it cannot be addressed through site planning and should be left to cultural programs, which may not align with planning objectives"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student fails to recognize placemaking as a context factor affecting site planning",
+        "b": "Student advocates for destroying a placemaking element rather than integrating it",
+        "c": "Placemaking is spatial—preserve connections, extend ground-floor activity, and link the development with the existing market to strengthen community identity.",
+        "d": "Student separates spatial design from social/cultural outcomes",
+        "correct": "Placemaking is spatial—preserve connections, extend ground-floor activity, and link the development with the existing market to strengthen community identity.",
+        "takeaway": "Preserve and strengthen existing placemaking through design connection."
+      },
+      "explanation": "Student fails to recognize placemaking as a context factor affecting site planning Student advocates for destroying a placemaking element rather than integrating it Placemaking is spatial—preserve connections, extend ground-floor activity, and link the development with the existing market to strengthen community identity. Student separates spatial design from social/cultural outcomes Placemaking is spatial—preserve connections, extend ground-floor activity, and link the development with the existing market to strengthen community identity. Preserve and strengthen existing placemaking through design connection.",
+      "code_citation": "LEA-PLAN-004-03: Community Identity and Placemaking section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:37.54359+00:00",
+      "updated_at": "2026-05-06T15:06:23.90762+00:00",
+      "content_hash": "sha256:ddb2617aa5dd9c1852e9efa28561388e042a3fa4c4b5a461117ec38d4a9970bd"
     },
     {
       "question_id": "7a8bf283-e24e-4a04-a8ba-7acc67f999c2",
@@ -193,7 +244,7 @@
         "correct": "Crowding stress is mitigated by outdoor space access, park proximity, and visual variety—site-level interventions, not just unit interior.",
         "takeaway": "Mitigate crowding stress with outdoor space, parks, and visual variety."
       },
-      "explanation": null,
+      "explanation": "Student focuses only on interior privacy without addressing site-level crowding stress Crowding stress is mitigated by outdoor space access, park proximity, and visual variety—site-level interventions, not just unit interior. Student avoids the design challenge rather than addressing it Student treats crowding stress as immutable rather than designable Crowding stress is mitigated by outdoor space access, park proximity, and visual variety—site-level interventions, not just unit interior. Mitigate crowding stress with outdoor space, parks, and visual variety.",
       "code_citation": "LEA-PLAN-004-03: Density, Crowding, and Psychological Stress section",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -205,8 +256,8 @@
       "model_id": "ALE-PLAN-004-03-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.54359+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:09aada98f8819fa988b6c892f0764b1b94170d931a7c19fea9adbd536e96f052"
+      "updated_at": "2026-05-06T15:06:23.659612+00:00",
+      "content_hash": "sha256:b5e044c90f4ef001a2782477de17f015fc65e044a2e4c1672d8a7efe4c967885"
     },
     {
       "question_id": "c05c5044-4a49-4e34-901a-8ddcde147821",
@@ -258,57 +309,6 @@
       "created_at": "2026-03-23T19:27:37.54359+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:092cc28fcc21dc990adad48f98472af4a7f0a73743634a3e6ad403168bc00c03"
-    },
-    {
-      "question_id": "28c63043-eef8-4df8-8e01-0143be6e9199",
-      "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
-      "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
-      "text": "In the context of site planning, what does _eyes on the street_ (informed by Jane Jacobs' principles) contribute to public safety and community vitality?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Informal surveillance by residents and activity—ground-floor shops, varied activity times, and proximity of buildings to the street create natural oversight that deters crime and encourages street life"
-        },
-        {
-          "id": "b",
-          "text": "Extensive security cameras and private security guards monitoring all spaces, ensuring constant surveillance"
-        },
-        {
-          "id": "c",
-          "text": "High fences and gates that allow only residents to view the street from their homes, limiting public access"
-        },
-        {
-          "id": "d",
-          "text": "Public surveillance is invasive and should be minimized in site planning; crime prevention is not a planning concern and should be addressed separately"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Eyes on the street = informal surveillance by residents through active ground floors, varied uses, and street proximity—a natural crime deterrent from good urban design.",
-        "b": "Student conflates eyes-on-street with formal security systems (outside site planning)",
-        "c": "Student treats exclusion as equivalent to surveillance",
-        "d": "Student rejects natural surveillance as privacy invasion",
-        "correct": "Eyes on the street = informal surveillance by residents through active ground floors, varied uses, and street proximity—a natural crime deterrent from good urban design.",
-        "takeaway": "Eyes on the street = ground-floor active uses + mixed-use vitality + informal oversight."
-      },
-      "explanation": null,
-      "code_citation": "LEA-PLAN-004-03: Surveillance and 'Eyes on the Street' section",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-004-03-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:37.54359+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:87599858aed8e7ba5c07d16d77fb573e39bbc8c894f20e273050a75b374433d6"
     },
     {
       "question_id": "610892cf-0dae-40d9-94f4-98738e7a9c75",
@@ -413,55 +413,55 @@
       "content_hash": "sha256:d75a852d7ffc999b4d7dfc08c3e684bc3f70836ccdc4d280e20277d54c6ab521"
     },
     {
-      "question_id": "1fb91500-8524-4972-899e-0cc8e4e7bcaf",
+      "question_id": "28c63043-eef8-4df8-8e01-0143be6e9199",
       "article_id": "d2246ae0-2def-4144-b42d-f56172b13f67",
       "topic_id": "d07ac1a5-4897-4820-876f-e41ae93cc241",
-      "text": "A site planner is analyzing a proposed development adjacent to a barangay market. The existing market is a key placemaking element—residents identify themselves with the market's community and vitality. However, the development's design isolates the market behind tall buildings with minimal pedestrian connection. What is the planner's responsibility in addressing this socio-psychological constraint?",
+      "text": "In the context of site planning, what does _eyes on the street_ (informed by Jane Jacobs' principles) contribute to public safety and community vitality?",
       "options": [
         {
           "id": "a",
-          "text": "Ignore the market's placemaking role; it is a separate land use and not relevant to the development site, focusing solely on the new development's requirements"
+          "text": "Informal surveillance by residents and activity—ground-floor shops, varied activity times, and proximity of buildings to the street create natural oversight that deters crime and encourages street life"
         },
         {
           "id": "b",
-          "text": "Recommend the market be relocated to make room for development; this resolves the constraint but may disrupt community ties"
+          "text": "Extensive security cameras and private security guards monitoring all spaces, ensuring constant surveillance"
         },
         {
           "id": "c",
-          "text": "Redesign the development's edges to maintain visual and physical connection to the market, incorporate ground-floor retail to extend market vitality, and create pedestrian pathways linking the development and market to strengthen placemaking"
+          "text": "High fences and gates that allow only residents to view the street from their homes, limiting public access"
         },
         {
           "id": "d",
-          "text": "Placemaking is subjective and emotional; it cannot be addressed through site planning and should be left to cultural programs, which may not align with planning objectives"
+          "text": "Public surveillance is invasive and should be minimized in site planning; crime prevention is not a planning concern and should be addressed separately"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Student fails to recognize placemaking as a context factor affecting site planning",
-        "b": "Student advocates for destroying a placemaking element rather than integrating it",
-        "c": "Placemaking is spatial—preserve connections, extend ground-floor activity, and link the development with the existing market to strengthen community identity.",
-        "d": "Student separates spatial design from social/cultural outcomes",
-        "correct": "Placemaking is spatial—preserve connections, extend ground-floor activity, and link the development with the existing market to strengthen community identity.",
-        "takeaway": "Preserve and strengthen existing placemaking through design connection."
+        "a": "Eyes on the street = informal surveillance by residents through active ground floors, varied uses, and street proximity—a natural crime deterrent from good urban design.",
+        "b": "Student conflates eyes-on-street with formal security systems (outside site planning)",
+        "c": "Student treats exclusion as equivalent to surveillance",
+        "d": "Student rejects natural surveillance as privacy invasion",
+        "correct": "Eyes on the street = informal surveillance by residents through active ground floors, varied uses, and street proximity—a natural crime deterrent from good urban design.",
+        "takeaway": "Eyes on the street = ground-floor active uses + mixed-use vitality + informal oversight."
       },
-      "explanation": null,
-      "code_citation": "LEA-PLAN-004-03: Community Identity and Placemaking section",
-      "bloom_level": "apply",
+      "explanation": "Eyes on the street = informal surveillance by residents through active ground floors, varied uses, and street proximity—a natural crime deterrent from good urban design. Student conflates eyes-on-street with formal security systems (outside site planning) Student treats exclusion as equivalent to surveillance Student rejects natural surveillance as privacy invasion Eyes on the street = informal surveillance by residents through active ground floors, varied uses, and street proximity—a natural crime deterrent from good urban design. Eyes on the street = ground-floor active uses + mixed-use vitality + informal oversight.",
+      "code_citation": "LEA-PLAN-004-03: Surveillance and 'Eyes on the Street' section",
+      "bloom_level": "understand",
       "application_context": "code_interpretation",
       "practice_context": [],
-      "difficulty": 0.7,
+      "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-PLAN-004-03-007",
+      "model_id": "ALE-PLAN-004-03-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:37.54359+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ce35e8bfbcaa81d4c23de8e23d434ff115b1f218d566c19e078e64ebbaa2bb13"
+      "updated_at": "2026-05-06T15:06:23.781792+00:00",
+      "content_hash": "sha256:0ad0fc0f5819bf25e0fd18439d076149614528052573b3ee1a540bea28026962"
     },
     {
       "question_id": "a21f4872-7187-4f49-ab80-4e940c190080",

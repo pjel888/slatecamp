@@ -1,7 +1,7 @@
 {
   "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:e681fdd980be0cb0ce16b2ae6fe0b0786aaa52ec2e75519d755199b7e9478cdc",
+  "linked_questions_hash": "sha256:da3d1614697dbf6b7a3550c6810f51a512b181d9fab3fccadc6b0e5ac031c529",
   "question_count": 12,
   "questions": [
     {
@@ -39,7 +39,7 @@
         "correct": "ART proposes that soft fascinations (moving water, rustling leaves) restore depleted attention by engaging attention effortlessly",
         "takeaway": "ART proposes that soft fascinations (moving water, rustling leaves) restore depleted attention by engaging attention effortlessly."
       },
-      "explanation": null,
+      "explanation": "ART addresses recovery from directed attention demands, not increasing them ART relies on engaging stimuli (soft fascinations), not sensory deprivation Physical exercise is valuable but distinct from ART's attention restoration mechanism ART proposes that soft fascinations (moving water, rustling leaves) restore depleted attention by engaging attention effortlessly ART proposes that soft fascinations (moving water, rustling leaves) restore depleted attention by engaging attention effortlessly.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -53,8 +53,8 @@
       "model_id": "ALE-THEO-003-04-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fe21b2d4deecceee4ba58cfdf20af80e6bf8cdf922cb3ffb2e7878851bd75fc9"
+      "updated_at": "2026-05-06T14:56:50.862725+00:00",
+      "content_hash": "sha256:7bb4f1796c1ee9388363d85646091c97910a3a4b82a884e52e207d7081bc909f"
     },
     {
       "question_id": "a75ebdc0-42f3-466e-a584-ce2977ada43e",
@@ -91,7 +91,7 @@
         "correct": "Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research",
         "takeaway": "Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research."
       },
-      "explanation": null,
+      "explanation": "Green color or decoration alone does not constitute biophilic design While biophilic design may include living plants, the concept extends beyond horticultural practice This describes biology or ecology, not the design concept of biophilia Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research Biophilia is the inherent human attraction to nature rooted in evolutionary biology and supported by psychological research.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -105,8 +105,8 @@
       "model_id": "ALE-THEO-003-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f3fb06fc9903adf62ad08427f92c751590ec6bb9deaf9f93820407de992601ee"
+      "updated_at": "2026-05-06T15:00:14.365007+00:00",
+      "content_hash": "sha256:0d9f4193aeefc7e7ec8d88f54d7f94e66819026c0b78d2cb45c8122b26f990c8"
     },
     {
       "question_id": "7e196bd7-fbb4-4ea7-82c4-6fd38baaadb3",
@@ -143,7 +143,7 @@
         "correct": "Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration",
         "takeaway": "Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration."
       },
-      "explanation": null,
+      "explanation": "Cost reduction is unrelated to biophilic design benefits Desk area increases productivity but doesn't address biophilic well-being Glazing alone without biophilic elements doesn't provide restoration Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration Biophilic design directly addresses well-being through nature connection, soft fascinations, and attention restoration.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -157,60 +157,8 @@
       "model_id": "ALE-THEO-003-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:53.884733+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2a4b32c1c961eee5a2349acbd14f0160b27593a51e2aa43652e84508b2ca418c"
-    },
-    {
-      "question_id": "e810bd78-8112-4c57-aa59-050ab61505b3",
-      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
-      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "Why is the distinction between 'natural materials' and 'biophilic design' important for architects?",
-      "options": [
-        {
-          "id": "a",
-          "text": "There is no meaningful distinction; both terms describe the same design approach, which focuses on integrating nature into built environments"
-        },
-        {
-          "id": "b",
-          "text": "Natural materials (wood, stone) are always biophilic; synthetic materials are never biophilic, as they do not evoke the same connection to nature"
-        },
-        {
-          "id": "c",
-          "text": "Biophilic design refers only to potted plants; natural materials are unrelated, as they do not contribute to the psychological benefits of nature"
-        },
-        {
-          "id": "d",
-          "text": "Natural materials provide environmental credentials while biophilic design includes living systems, views to nature, and dynamic elements"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The distinction is critical; natural materials without living systems or nature connection lack biophilic effect",
-        "b": "Material authenticity alone doesn't constitute biophilic design; plastic plants and dead wood are not biophilic",
-        "c": "Biophilic design encompasses living systems, views, light variation, and complexity—not just plants",
-        "correct": "Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity",
-        "takeaway": "Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-04-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f5cf5fe736a2125f1ac6d7d2426e427736a9eeba188dd444f10cd049551b52bb"
+      "updated_at": "2026-05-06T15:00:14.573638+00:00",
+      "content_hash": "sha256:efd62425e14dd7c279e7c019dbe191f4b876bce54b249919bfd1f81c0ec03462"
     },
     {
       "question_id": "4125c599-dfd2-46b7-b279-c371c277df8f",
@@ -247,7 +195,7 @@
         "correct": "Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support",
         "takeaway": "Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support."
       },
-      "explanation": null,
+      "explanation": "Both legibility and biophilia contribute independently and synergistically to psychological well-being Patient experience depends fundamentally on spatial clarity and orientation support Clear organization that integrates biophilic elements creates optimal well-being support Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support Spatial clarity (legibility) reduces anxiety through reduced cognitive effort; combined with biophilic elements, it creates comprehensive well-being support.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -261,112 +209,8 @@
       "model_id": "ALE-THEO-003-04-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:689ed7f2892b56c24cacf9f61f90d1e414e0fec52b5a72fbff93b0f14358e8ff"
-    },
-    {
-      "question_id": "f57580d1-6bc9-43bd-a32f-2d9f0ba0de89",
-      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
-      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "In designing a hospital patient room, biophilic principles would most directly reduce patient stress through:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Using exclusively artificial lighting to control illumination precisely, ensuring consistent light levels"
-        },
-        {
-          "id": "b",
-          "text": "Eliminating all decorative elements to maintain sterile conditions, focusing solely on functionality"
-        },
-        {
-          "id": "c",
-          "text": "Minimizing room size to reduce cleaning requirements, thereby optimizing maintenance efficiency"
-        },
-        {
-          "id": "d",
-          "text": "Incorporating window views to vegetation, natural materials, variable daylighting, and color schemes supporting calm"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Static artificial lighting disrupts circadian rhythm and lacks biophilic benefit",
-        "b": "Sterility is hygienic requirement; biophilic elements support stress reduction without compromising cleanliness",
-        "c": "Room size doesn't address biophilic stress reduction",
-        "correct": "Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations",
-        "takeaway": "Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-04-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7782eeee70326fc8bef02c6a3cb1bd134d2e3ddc8d516c0c28fdb721181654eb"
-    },
-    {
-      "question_id": "41f6f40b-0f19-4a23-910b-e8f9b0bdaeaf",
-      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
-      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "The concept of 'prospect and refuge' in spatial psychology suggests humans prefer spaces where they can:",
-      "options": [
-        {
-          "id": "a",
-          "text": "See out to surroundings (prospect) while maintaining protection and security (refuge)"
-        },
-        {
-          "id": "b",
-          "text": "Maximize enclosed private space without external visual connection, prioritizing privacy over openness"
-        },
-        {
-          "id": "c",
-          "text": "Eliminate all barriers and create completely open environments, which may not always be practical"
-        },
-        {
-          "id": "d",
-          "text": "Only view internal spaces, avoiding external distractions, which can enhance focus"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Refuge alone without prospect creates isolation and anxiety",
-        "c": "Open environments without refuge create exposure anxiety",
-        "d": "External views provide engagement and well-being, not distraction",
-        "correct": "Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge)",
-        "takeaway": "Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge)."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-04-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ad1378c379db7580e3c4cd5025cb018bea50aeab19a0b454d8e52647bf7ab4ad"
+      "updated_at": "2026-05-06T15:00:14.909102+00:00",
+      "content_hash": "sha256:167d3a26f0fe4b20393d8e5d2077bd9b632af03055c2f43accdc078879907b30"
     },
     {
       "question_id": "a885c1e1-14f1-453b-aaf0-7a467a63fd24",
@@ -403,7 +247,7 @@
         "correct": "In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration",
         "takeaway": "In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration."
       },
-      "explanation": null,
+      "explanation": "Mechanical cooling doesn't address biophilic benefits; living systems provide both thermal and psychological benefit Excellent design integrates both concerns; they reinforce each other Strategic fenestration with shading provides views, daylighting, and thermal benefit simultaneously In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration In tropical contexts, biophilic elements (vegetation, water features, dappled light) simultaneously provide climate benefit and psychological restoration.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -417,8 +261,268 @@
       "model_id": "ALE-THEO-003-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:11c9f40c5fdd17a31c802518fbe5c60ab2da9c080fc93cf477404cbd50aac4ce"
+      "updated_at": "2026-05-06T15:00:15.401525+00:00",
+      "content_hash": "sha256:f8494a14016851b63c6b6a440ee6e3a03d3ac2a1ba2984f20b312bd5747526ac"
+    },
+    {
+      "question_id": "ae5ff407-f5d8-4c94-a759-e26b7027240d",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "The four characteristics of restorative environments are fascination, being away, extent, and compatibility. Which element is most directly related to biophilic design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compatibility—agreement between building use and occupant expectations, which enhances user satisfaction"
+        },
+        {
+          "id": "b",
+          "text": "Being away—psychological distance from work demands through spatial separation, fostering mental recovery"
+        },
+        {
+          "id": "c",
+          "text": "Fascination—provided through soft fascinations of moving water, rustling leaves, and light variation in natural or nature-inspired spaces"
+        },
+        {
+          "id": "d",
+          "text": "Extent—the overall size of the restorative space, which contributes to a sense of immersion"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Compatibility relates to program-user fit, not biophilic effect",
+        "b": "Being away relates to spatial separation and access to nature, connected to but distinct from biophilia",
+        "d": "Extent relates to environmental scale, not specifically biophilic mechanisms",
+        "correct": "Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments",
+        "takeaway": "Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments."
+      },
+      "explanation": "Compatibility relates to program-user fit, not biophilic effect Being away relates to spatial separation and access to nature, connected to but distinct from biophilia Extent relates to environmental scale, not specifically biophilic mechanisms Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T15:00:15.566921+00:00",
+      "content_hash": "sha256:85d70751778cb31ce3d540c52267865bd828027ddee749f248adce93c906efe5"
+    },
+    {
+      "question_id": "d2553add-12b8-4ad6-be32-a5db85852632",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "A design brief requires a commercial office in dense Manila with high occupant well-being and low operational costs. Which biophilic strategy directly addresses both requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Installing expensive hydroponic green walls throughout the building, which may not be cost-effective"
+        },
+        {
+          "id": "b",
+          "text": "Eliminating windows entirely to reduce HVAC load, which negatively impacts occupant well-being"
+        },
+        {
+          "id": "c",
+          "text": "Decorating offices with high-quality artificial plants, which do not provide the same benefits as real plants"
+        },
+        {
+          "id": "d",
+          "text": "Strategic fenestration maximizing views to existing vegetation, external water features, or sky with appropriate shading"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Green walls require complex maintenance and irrigation",
+        "b": "Windowless design eliminates biophilic benefit and requires artificial lighting",
+        "c": "Artificial plants lack biophilic effect; living systems are required",
+        "correct": "Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost",
+        "takeaway": "Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost."
+      },
+      "explanation": "Green walls require complex maintenance and irrigation Windowless design eliminates biophilic benefit and requires artificial lighting Artificial plants lack biophilic effect; living systems are required Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T15:00:15.732388+00:00",
+      "content_hash": "sha256:fce28e645a4aa689cc5410265c73166e9ea4db651cd81fe4f0fd7cfd059aa712"
+    },
+    {
+      "question_id": "57e80712-067a-4de0-b3eb-f718ca151d11",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "Attention Restoration Theory was developed by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stephen and Rachel Kaplan"
+        },
+        {
+          "id": "b",
+          "text": "Le Corbusier and Edward T. Hall"
+        },
+        {
+          "id": "c",
+          "text": "Ernst Neufert and Henry Dreyfuss"
+        },
+        {
+          "id": "d",
+          "text": "Kevin Lynch and Ron Mace"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Le Corbusier and Hall developed different theories (Modulor, proxemics)",
+        "c": "Neufert and Dreyfuss developed anthropometric systems, not psychological restoration theory",
+        "d": "Lynch and Mace developed urban legibility and universal design, not ART",
+        "correct": "Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration",
+        "takeaway": "Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration."
+      },
+      "explanation": "Le Corbusier and Hall developed different theories (Modulor, proxemics) Neufert and Dreyfuss developed anthropometric systems, not psychological restoration theory Lynch and Mace developed urban legibility and universal design, not ART Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T15:00:15.898603+00:00",
+      "content_hash": "sha256:8e3d1171a4bb8227d38bf467ad026f1d1c031115f54568267cba5a0bd04bb5bb"
+    },
+    {
+      "question_id": "f57580d1-6bc9-43bd-a32f-2d9f0ba0de89",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "In designing a hospital patient room, biophilic principles would most directly reduce patient stress through:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using exclusively artificial lighting to control illumination precisely, ensuring consistent light levels"
+        },
+        {
+          "id": "b",
+          "text": "Eliminating all decorative elements to maintain sterile conditions, focusing solely on functionality"
+        },
+        {
+          "id": "c",
+          "text": "Minimizing room size to reduce cleaning requirements, thereby optimizing maintenance efficiency"
+        },
+        {
+          "id": "d",
+          "text": "Incorporating window views to vegetation, natural materials, variable daylighting, and color schemes supporting calm"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Static artificial lighting disrupts circadian rhythm and lacks biophilic benefit",
+        "b": "Sterility is hygienic requirement; biophilic elements support stress reduction without compromising cleanliness",
+        "c": "Room size doesn't address biophilic stress reduction",
+        "correct": "Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations",
+        "takeaway": "Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations."
+      },
+      "explanation": "Static artificial lighting disrupts circadian rhythm and lacks biophilic benefit Sterility is hygienic requirement; biophilic elements support stress reduction without compromising cleanliness Room size doesn't address biophilic stress reduction Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations Biophilic design measurably reduces patient stress through nature connection, natural light, materials, and soft fascinations.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T15:00:15.073555+00:00",
+      "content_hash": "sha256:a261f39d1e94d530ffebc96158533f2828613f49caa51a1a0968548e10f17518"
+    },
+    {
+      "question_id": "41f6f40b-0f19-4a23-910b-e8f9b0bdaeaf",
+      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
+      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
+      "text": "The concept of 'prospect and refuge' in spatial psychology suggests humans prefer spaces where they can:",
+      "options": [
+        {
+          "id": "a",
+          "text": "See out to surroundings (prospect) while maintaining protection and security (refuge)"
+        },
+        {
+          "id": "b",
+          "text": "Maximize enclosed private space without external visual connection, prioritizing privacy over openness"
+        },
+        {
+          "id": "c",
+          "text": "Eliminate all barriers and create completely open environments, which may not always be practical"
+        },
+        {
+          "id": "d",
+          "text": "Only view internal spaces, avoiding external distractions, which can enhance focus"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Refuge alone without prospect creates isolation and anxiety",
+        "c": "Open environments without refuge create exposure anxiety",
+        "d": "External views provide engagement and well-being, not distraction",
+        "correct": "Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge)",
+        "takeaway": "Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge)."
+      },
+      "explanation": "Refuge alone without prospect creates isolation and anxiety Open environments without refuge create exposure anxiety External views provide engagement and well-being, not distraction Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge) Prospect-refuge principle reflects evolutionary preferences: surveillance capability (prospect) combined with protective enclosure (refuge).",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T15:00:15.238823+00:00",
+      "content_hash": "sha256:9d8afbd95208e5e29ceb85fc8eb517cf4d1f70676b88e3a999efde3e88b6db76"
     },
     {
       "question_id": "aaa8a655-caf9-49b7-8889-e08826f63d96",
@@ -473,78 +577,26 @@
       "content_hash": "sha256:cba88320f8c28aa9124530dc671100f6bed535dd62f65ccf21bc8e78ad0f0981"
     },
     {
-      "question_id": "ae5ff407-f5d8-4c94-a759-e26b7027240d",
+      "question_id": "e810bd78-8112-4c57-aa59-050ab61505b3",
       "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
       "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "The four characteristics of restorative environments are fascination, being away, extent, and compatibility. Which element is most directly related to biophilic design?",
+      "text": "Why is the distinction between 'natural materials' and 'biophilic design' important for architects?",
       "options": [
         {
           "id": "a",
-          "text": "Compatibility—agreement between building use and occupant expectations, which enhances user satisfaction"
+          "text": "There is no meaningful distinction; both terms describe the same design approach, which focuses on integrating nature into built environments"
         },
         {
           "id": "b",
-          "text": "Being away—psychological distance from work demands through spatial separation, fostering mental recovery"
+          "text": "Natural materials (wood, stone) are always biophilic; synthetic materials are never biophilic, as they do not evoke the same connection to nature"
         },
         {
           "id": "c",
-          "text": "Fascination—provided through soft fascinations of moving water, rustling leaves, and light variation in natural or nature-inspired spaces"
+          "text": "Biophilic design refers only to potted plants; natural materials are unrelated, as they do not contribute to the psychological benefits of nature"
         },
         {
           "id": "d",
-          "text": "Extent—the overall size of the restorative space, which contributes to a sense of immersion"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Compatibility relates to program-user fit, not biophilic effect",
-        "b": "Being away relates to spatial separation and access to nature, connected to but distinct from biophilia",
-        "d": "Extent relates to environmental scale, not specifically biophilic mechanisms",
-        "correct": "Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments",
-        "takeaway": "Fascination through soft fascinations (engaging but non-demanding natural stimuli) is the primary biophilic mechanism in restorative environments."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "SYS"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-04-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9d524f0ffccc1a59c46827f6445ccdf7d2c1c1ed8327fdac3fbdd13e30d575d7"
-    },
-    {
-      "question_id": "d2553add-12b8-4ad6-be32-a5db85852632",
-      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
-      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "A design brief requires a commercial office in dense Manila with high occupant well-being and low operational costs. Which biophilic strategy directly addresses both requirements?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Installing expensive hydroponic green walls throughout the building, which may not be cost-effective"
-        },
-        {
-          "id": "b",
-          "text": "Eliminating windows entirely to reduce HVAC load, which negatively impacts occupant well-being"
-        },
-        {
-          "id": "c",
-          "text": "Decorating offices with high-quality artificial plants, which do not provide the same benefits as real plants"
-        },
-        {
-          "id": "d",
-          "text": "Strategic fenestration maximizing views to existing vegetation, external water features, or sky with appropriate shading"
+          "text": "Natural materials provide environmental credentials while biophilic design includes living systems, views to nature, and dynamic elements"
         }
       ],
       "correct_option_id": "d",
@@ -553,80 +605,28 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Green walls require complex maintenance and irrigation",
-        "b": "Windowless design eliminates biophilic benefit and requires artificial lighting",
-        "c": "Artificial plants lack biophilic effect; living systems are required",
-        "correct": "Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost",
-        "takeaway": "Strategic fenestration is cost-effective, requires no maintenance, and provides views delivering biophilic benefit and daylighting reducing operational cost."
+        "a": "The distinction is critical; natural materials without living systems or nature connection lack biophilic effect",
+        "b": "Material authenticity alone doesn't constitute biophilic design; plastic plants and dead wood are not biophilic",
+        "c": "Biophilic design encompasses living systems, views, light variation, and complexity—not just plants",
+        "correct": "Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity",
+        "takeaway": "Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity."
       },
-      "explanation": null,
+      "explanation": "The distinction is critical; natural materials without living systems or nature connection lack biophilic effect Material authenticity alone doesn't constitute biophilic design; plastic plants and dead wood are not biophilic Biophilic design encompasses living systems, views, light variation, and complexity—not just plants Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity Biophilic design requires living systems, views to nature, dynamic light patterns, or complexity mimicking nature—not merely material authenticity.",
       "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
       "practice_context": [
-        "APP"
+        "CON"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-THEO-003-04-008",
+      "model_id": "ALE-THEO-003-04-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bb36c3676b6da17898cc92e0ad8f5c387f95329a438f955e4f8c5122516c9544"
-    },
-    {
-      "question_id": "57e80712-067a-4de0-b3eb-f718ca151d11",
-      "article_id": "b5c8b7bb-b62a-4e2c-a9c8-7c7b29388ea8",
-      "topic_id": "3096aa3a-e787-4e82-b65a-89e238c5b568",
-      "text": "Attention Restoration Theory was developed by:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Stephen and Rachel Kaplan"
-        },
-        {
-          "id": "b",
-          "text": "Le Corbusier and Edward T. Hall"
-        },
-        {
-          "id": "c",
-          "text": "Ernst Neufert and Henry Dreyfuss"
-        },
-        {
-          "id": "d",
-          "text": "Kevin Lynch and Ron Mace"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Le Corbusier and Hall developed different theories (Modulor, proxemics)",
-        "c": "Neufert and Dreyfuss developed anthropometric systems, not psychological restoration theory",
-        "d": "Lynch and Mace developed urban legibility and universal design, not ART",
-        "correct": "Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration",
-        "takeaway": "Stephen and Rachel Kaplan developed Attention Restoration Theory explaining psychological mechanisms of nature restoration."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ATT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-003-04-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:54.274779+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e20b314a65fb2914dad78354dcc4babe5ceeab59cccbead173a4f7b38f43c5e7"
+      "updated_at": "2026-05-06T15:00:14.738944+00:00",
+      "content_hash": "sha256:40fec668d75876ac6c9df4fe9e2efe4376ce8a752f76d3fc5688c5aa24e88158"
     }
   ]
 }

@@ -11,7 +11,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Mixed-use buildings combine two or more distinct program types (retail, office, residential, hotel, parking, parking) in a single structure or development, requiring sophisticated program management to resolve conflicting adjacency requirements and operational logistics. Horizontal mixed-use (functions side-by-side) and vertical mixed-use (functions stacked) each present different spatial and circulation challenges. The podium-tower typology—ground-floor retail/public functions with residential 
+- Text: Mixed-use buildings combine two or more distinct program types (retail, office, residential, hotel, parking, parking) in a single structure or development, requiring sophisticated program management to resolve conflicting adjacency requirements and operational logistics. Horizontal mixed-use (functions side-by-side) and vertical mixed-use (functions stacked) each present different spatial and circulation challenges. The podium-tower typology—ground-floor retail/public functions with residential
 [/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
@@ -111,7 +111,7 @@ Programming must document each stakeholder group and their requirements explicit
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Acoustic isolation between retail and residential is critical but often overlooked. Building code may require 50–60 dB sound reduction. This requires: (1) separate floor/ceiling assembly (2–3 inches of sound-absorbing material); (2) independent HVAC systems (shared ductwork transmits noise); (3) resilient floor mount (mechanical decoupling); (4) careful coordination to prevent sound paths through pipes, electrical chases, or structural connections. Inadequate acoustic planning is a major source 
+- Text: Acoustic isolation between retail and residential is critical but often overlooked. Building code may require 50–60 dB sound reduction. This requires: (1) separate floor/ceiling assembly (2–3 inches of sound-absorbing material); (2) independent HVAC systems (shared ductwork transmits noise); (3) resilient floor mount (mechanical decoupling); (4) careful coordination to prevent sound paths through pipes, electrical chases, or structural connections. Inadequate acoustic planning is a major source
 [/SLATECAMP_UI_BLOCK]
 
 ### Mixed-Use Case Example: Manila Urban Development
@@ -214,4 +214,3 @@ Extracted summary:
 See also within Space Planning Theory: **lea-theo-009-01-core-concept**, **lea-theo-009-02-core-concept**, **lea-theo-009-03-core-concept**, **lea-theo-009-04-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

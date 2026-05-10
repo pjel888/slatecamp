@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 007 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 Standard hooks anchor reinforcement at supports and splices. The LEA tests your exact knowledge of hook geometry—bend angle, extension length, and minimum diameter—across three contexts: longitudinal bars, stirrups, and seismic confinement. Critical values: 180° hook = 4_db_ (min 65mm), 90° hook = 12_db_, seismic 135° = 6_db_ (min 75mm).
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-007-02-core-concept" type="image" caption="Rebar Hook Types — 90°, 180°, Stirrup, and Seismic Hooks" description="Dimensioned diagram of standard rebar hooks: (1) 90° hook — 12db extension for standard, 6db for seismic; (2) 180° hook — 4db minimum bend diameter, 12db extension; (3) Standard stirrup hook — 90° or 135° on closed stirrups; (4) Seismic hook — 135° bend with 6db extension (min 75mm). Bend diameter requirements per ACI/NSCP for different bar sizes." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-007-02-core-concept", type="image", caption="Rebar Hook Types — 90°, 180°, Stirrup, and Seismic Hooks", description="Dimensioned diagram of standard rebar hooks: (1) 90° hook — 12db extension for standard, 6db for seismic; (2) 180° hook — 4db minimum bend diameter, 12db extension; (3) Standard stirrup hook — 90° or 135° on closed stirrups; (4) Seismic hook — 135° bend with 6db extension (min 75mm). Bend diameter requirements per ACI/NSCP for different bar sizes.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A hook is a bend at the end of a reinforcing bar or stirrup that provides anchorage by mechanical interlock with concrete. Hook design balances two requirements: the bend must be sharp enough to develop anchorage (controlled by _db_, the inside diameter of the bend) and long enough to provide sufficient embedment (controlled by extension length, measured from the inside of the bend).
 
@@ -65,9 +78,11 @@ Standard 180° hooks are most common in Philippine construction for negative mom
 
 4. **Bend diameter selection:** "Design a 90° hook for a 36mm longitudinal bar. What is the minimum inside bend diameter?" (Answer: 10_db_ = 360mm; difficulty 0.7)
 
-<Tip>
-Hook memory: 180° = 4_db_ min 65mm (small bend, short extension). 90° longitudinal = 12_db_ (wide bend, long extension). Stirrup 90° ≤16mm = 4_db_ inside (tight bend). Seismic 135° = 6_db_ with min 75mm extension (mandatory minimum). Bend diameter increases with bar size: 6_db_ (10–25mm), 8_db_ (28–32mm), 10_db_ (36mm).
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Hook memory: 180° = 4_db_ min 65mm (small bend, short extension). 90° longitudinal = 12_db_ (wide bend, long extension). Stirrup 90° ≤16mm = 4_db_ inside (tight bend). Seismic 135° = 6_db_ with min 75mm extension (mandatory minimum). Bend diameter increases with bar size: 6_db_ (10–25mm), 8_db_ (28–32mm), 10_db_ (36mm).
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -75,5 +90,8 @@ See also: **Concrete Cover** (lea-strc-007-01) for how hooks relate to cover req
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
-
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]

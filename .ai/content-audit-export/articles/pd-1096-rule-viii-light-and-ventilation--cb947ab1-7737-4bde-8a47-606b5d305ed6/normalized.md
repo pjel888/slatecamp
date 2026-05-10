@@ -9,7 +9,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 
 **Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 
-**Module Focus:** PD 1096 Rule VIII — Light, Ventilation, and Room/Ceiling Minimums  
+**Module Focus:** PD 1096 Rule VIII — Light, Ventilation, and Room/Ceiling Minimums
 **Legal Basis:** Presidential Decree No. 1096 and the 2004 Revised IRR, Rule VIII (DPWH/PRBoA texts)[file:17][file:18]
 
 ---
@@ -111,7 +111,7 @@ Mnemonic: **“3–12–14: School, Work, Home.”**
 - Floor area: \(6.00 \times 10.00 = 60.00\) sq.m
 - Ceiling height: 3.00 m → volume = 180.00 cu.m
 - Max by air space: \(180.00 / 3.00 = 60\) students
-- Max by floor area (1.00 sq.m/person): 60 students  
+- Max by floor area (1.00 sq.m/person): 60 students
   → Maximum legal occupancy = **60 students**.[file:17]
 
 If ceiling is 2.70 m, volume is 162 cu.m → \(162/3 = 54\) students; air space then becomes the binding limit.[file:17]

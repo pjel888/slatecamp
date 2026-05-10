@@ -256,7 +256,7 @@ Extracted summary:
    │    ──────────────────────────────────────    │
    │                                              │
    │    LOWER LEVEL: 750 mm AFF                   │ ← for wheelchair users
-   │    [KNEE CLEARANCE: 700 mm high × 480 mm deep]   
+   │    [KNEE CLEARANCE: 700 mm high × 480 mm deep]
    │    ──────────────────────────────────────    │
    │                                              │
    │    COUNTER WIDTH: min 900 mm                 │
@@ -448,4 +448,3 @@ LEA Trap: Key design translations from PWD laws: RA 7277 = accessible parking (1
 ## Cross‑References
 
 **Law Qa Deck Ra 7277 9442 10754**, **Ra 9442 Pwd Privileges And Incentives**, **Accessible Seating In Assembly Areas**, **Wheelchair Maneuvering And Parking**
-

@@ -1,0 +1,508 @@
+{
+  "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6d4d6428c8ef5bddd96b91ad1940e35161c33894d6ab7e7c69ddbbe101b252da",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "22fac734-61b5-45b2-ae50-d1f574f10f29",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "What is the defining characteristic of an arch or barrel vault structural system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cables hold a flat deck suspended horizontally, providing tension support across the span"
+        },
+        {
+          "id": "b",
+          "text": "A curved form distributes loads primarily through compression along the curve, reducing bending moments in the structure"
+        },
+        {
+          "id": "c",
+          "text": "Vertical columns support horizontal beams, which are designed to carry loads through bending"
+        },
+        {
+          "id": "d",
+          "text": "Arches require internal bracing to prevent lateral deflection, ensuring stability under load"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes a suspension or cable-stayed system.",
+        "c": "This describes a post-and-beam (trabeated) system.",
+        "d": "While arches produce lateral thrust at supports, the form itself is designed to minimize internal bending through its geometry.",
+        "correct": "Arches and vault systems are curved forms in which loads are distributed primarily through compression along the curve. This compression-dominated behavior is highly efficient and allows large spans (40–200+ m) without significant bending moments.",
+        "takeaway": "Arches convert vertical loads into compressive forces along their curve."
+      },
+      "explanation": "This describes a suspension or cable-stayed system. This describes a post-and-beam (trabeated) system. While arches produce lateral thrust at supports, the form itself is designed to minimize internal bending through its geometry. Arches and vault systems are curved forms in which loads are distributed primarily through compression along the curve. This compression-dominated behavior is highly efficient and allows large spans (40–200+ m) without significant bending moments. Arches convert vertical loads into compressive forces along their curve.",
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-05-06T16:21:47.505879+00:00",
+      "content_hash": "sha256:754634699188ad71d627bccf46578b121bb4d78ccf34a7f46da96d03634455af"
+    },
+    {
+      "question_id": "13f2ab19-eb9e-47f9-a2d9-748da3d2290e",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "A bridge project spans 300 meters over a wide water channel. Comparing cable-stayed and suspension systems, which is more appropriate for this span, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cable-stayed is best; suspension is only for very long spans above 500 meters, where the structural efficiency of suspension cables becomes necessary"
+        },
+        {
+          "id": "b",
+          "text": "Either system is viable; cable-stayed (100–500 m) or suspension (200–2000+ m) both work. Choice depends on aesthetics, local experience, and specific project constraints"
+        },
+        {
+          "id": "c",
+          "text": "Neither system is suitable; a truss bridge is required for 300 meters, as it provides the necessary rigidity and support for medium spans"
+        },
+        {
+          "id": "d",
+          "text": "Suspension is mandatory for all spans above 200 meters, as it offers superior load distribution and flexibility for longer spans"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Suspension bridges are commonly used for spans starting at 200m.",
+        "c": "A 300m truss bridge would be massive and likely more expensive than a cable-supported alternative.",
+        "d": "There is no 'mandatory' threshold; engineering selection is based on optimization of multiple factors.",
+        "correct": "At 300 meters, both cable-stayed (practical range 100–500 m) and suspension (practical range 200–2000+ m) are feasible. The choice depends on architectural preferences, local construction expertise, maintenance experience, and specific project constraints—not on span alone.",
+        "takeaway": "The choice between cable-stayed and suspension is multi-factorial at the 300m span."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d2521815f9164e6c1529f8872208217fedea7f648d927a7914348e691cfff6b5"
+    },
+    {
+      "question_id": "7307731e-d5cf-4c15-a27e-423935437821",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "What is a geodesic dome, and why is it efficient?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A flat grid of members; no special efficiency, often used in simple structures where load distribution is not a primary concern"
+        },
+        {
+          "id": "b",
+          "text": "A spherical or hemispherical triangulated frame with members in great-circle chords; efficient because loads are distributed evenly in all directions through short axial members"
+        },
+        {
+          "id": "c",
+          "text": "A suspension cable system for large roofs, primarily used for its aesthetic appeal rather than structural efficiency"
+        },
+        {
+          "id": "d",
+          "text": "A simple arch system that requires significant buttressing, making it less efficient in terms of material usage and load distribution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Domes are inherently non-planar; their efficiency comes from their three-dimensional curvature.",
+        "c": "Geodesic domes are rigid frame structures, not cable-based tensile structures.",
+        "d": "A dome is a 3D extension of an arch, but its geometry makes it more efficient at distributing loads without heavy external buttressing.",
+        "correct": "Geodesic domes are 3D triangulated spheres (or hemispheres) where members follow great-circle paths. This geometry distributes loads evenly in all directions, minimizing bending moments and allowing efficient use of material. They can enclose very large areas with minimal self-weight.",
+        "takeaway": "Geodesic domes use triangulation and spherical geometry to maximize span-to-weight ratios."
+      },
+      "explanation": "Domes are inherently non-planar; their efficiency comes from their three-dimensional curvature. Geodesic domes are rigid frame structures, not cable-based tensile structures. A dome is a 3D extension of an arch, but its geometry makes it more efficient at distributing loads without heavy external buttressing. Geodesic domes are 3D triangulated spheres (or hemispheres) where members follow great-circle paths. This geometry distributes loads evenly in all directions, minimizing bending moments and allowing efficient use of material. They can enclose very large areas with minimal self-weight. Geodesic domes use triangulation and spherical geometry to maximize span-to-weight ratios.",
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-05-06T16:21:47.381579+00:00",
+      "content_hash": "sha256:832898feb18c3c78ca6c0198df55c47564315fc37046d3d79e1d08e21d18e6c9"
+    },
+    {
+      "question_id": "71be28e5-f4ba-4de4-9f47-db814b03d54d",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "A designer must select a structural system to cover a 150-meter span with minimal interior supports. Which system is most economical?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2D truss system, which may require additional supports and materials, increasing overall costs"
+        },
+        {
+          "id": "b",
+          "text": "Arch system, which can be aesthetically pleasing but may not be the most cost-effective for long spans"
+        },
+        {
+          "id": "c",
+          "text": "Cable-stayed or suspension system"
+        },
+        {
+          "id": "d",
+          "text": "Simple beam system, which is typically not suitable for such long spans due to deflection issues"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2D trusses become prohibitively heavy and deep at a 150m span.",
+        "b": "An arch for a 150m span would require massive abutments to resist horizontal thrust.",
+        "d": "Simple beams are restricted to much shorter spans (typically < 30m) due to excessive deflection.",
+        "correct": "A 150-meter span is beyond the practical range of trusses (20–60 m) and most arches without extreme depth. Cable-stayed (100–500 m range) or suspension (200–2000+ m range) systems are efficient and economical for this span.",
+        "takeaway": "Cable-supported systems are the most efficient for spans exceeding 100 meters."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f15bf1355e9a690f0cb4c96c94a726c9e13040cef232af332dd3762a3d061a9"
+    },
+    {
+      "question_id": "0f30f642-44c3-4ba8-9b31-0550260d258e",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "In a cable-stayed bridge, how are the main cables configured?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cables hang in a catenary shape from end to end, supporting the deck indirectly, which inaccurately describes cable-stayed bridge design"
+        },
+        {
+          "id": "b",
+          "text": "Cables run directly from towers or masts to the deck in a fan or harp pattern, transferring loads to the towers"
+        },
+        {
+          "id": "c",
+          "text": "Cables are buried beneath the roadway, which is incorrect for cable-stayed bridges"
+        },
+        {
+          "id": "d",
+          "text": "Cable-stayed bridges do not use cables; they are purely truss-based, which is a fundamental misunderstanding"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A catenary shape is characteristic of suspension bridges, not cable-stayed bridges.",
+        "c": "Cables are structural elements above the deck designed to support it through tension.",
+        "d": "Cable-stayed bridges rely fundamentally on cables to transfer deck loads to the masts.",
+        "correct": "In cable-stayed systems, cables run directly from towers/masts to the deck (fan or harp pattern). Cables are in tension; towers are in compression. This direct connection is the defining characteristic and differs from suspension systems where cables hang in catenary.",
+        "takeaway": "Cable-stayed bridges use straight, inclined cables connected directly to towers."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c92aadea3ded01582bfea8917ea1dea6b5211358564d6f5119eea27a13fb3bcb"
+    },
+    {
+      "question_id": "bf2c3f37-a72d-4e7e-b8c1-1554fb4fafa9",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "A folded-plate roof structure consists of planar concrete elements bent at angles. Why is this form efficient for large roof spans?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bending between the folds increases the moment of inertia, stiffening the plates; shear transfer between folds distributes loads"
+        },
+        {
+          "id": "b",
+          "text": "Folded plates eliminate the need for any support structure, making them ideal for open spaces"
+        },
+        {
+          "id": "c",
+          "text": "Folded plates are only efficient for very short spans (< 10 m) and not suitable for large spans"
+        },
+        {
+          "id": "d",
+          "text": "Folding reduces the weight but does not improve bending stiffness, which is crucial for large spans"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Folded plates still require support at their boundaries (columns or beams).",
+        "c": "Folded plates are specifically used for medium-to-long spans where a flat slab would be too heavy.",
+        "d": "The primary structural benefit of folding is a drastic increase in the section's bending stiffness.",
+        "correct": "Folded plates gain rigidity through the 3D geometry created by bends. The effective moment of inertia increases, allowing the plates to span longer distances with less depth than flat slabs. Shear transfer between folds also contributes to load distribution.",
+        "takeaway": "Geometric stiffness allows thin plates to span large distances."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3558722dcfcb6c1bde9ef75fd2322fbef5cc1827fa0ce9246ff4c5d4d6b62be4"
+    },
+    {
+      "question_id": "832773a5-297c-4d8a-9f83-79c7695651b2",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "What distinguishes a space frame from a 2D truss?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Space frames are three-dimensional grid structures with rigidly connected members resisting axial, shear, and bending forces; 2D trusses have pin-connected members in one plane resisting only axial forces at nodes"
+        },
+        {
+          "id": "b",
+          "text": "Space frames are the same as 2D trusses; the terms are interchangeable, with no structural differences"
+        },
+        {
+          "id": "c",
+          "text": "Space frames use cables; 2D trusses use rigid members only, which affects their load distribution capabilities"
+        },
+        {
+          "id": "d",
+          "text": "Space frames cannot span more than 20 meters, limiting their application in large structures"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Space frames are distinct from 2D trusses due to their multi-directional load distribution.",
+        "c": "Cables are primarily used in tensile structures, whereas space frames typically use rigid tubular or solid members.",
+        "d": "Space frames are specifically designed for long-span applications and can easily exceed 20 meters.",
+        "correct": "Space frames (3D trusses) extend structural capacity in three dimensions through triangulated node geometry. This 3D network is more efficient than planar trusses for large areas and provides rigidity in all directions without separate lateral bracing.",
+        "takeaway": "Space frames utilize 3D geometry to distribute loads efficiently across a grid."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b63350ba8b0ef9c5623dccc9b34a64803acbd9b15c93ec59d33f2b5f8ed693fe"
+    },
+    {
+      "question_id": "c3481fec-dd83-4c04-aa09-63c6f6137790",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "An exhibition hall requires an unobstructed interior space of 80m × 80m. Which system is most suitable, and what is the reasoning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Simple beam and column frame (most economical) but limited in span without additional supports"
+        },
+        {
+          "id": "b",
+          "text": "Space frame (3D truss, 20–60 m practical span) or geodesic dome (30–200+ m diameter); both can enclose large areas with minimal depth and interior obstruction"
+        },
+        {
+          "id": "c",
+          "text": "Suspension system; required for all large enclosed areas, though typically used for bridges"
+        },
+        {
+          "id": "d",
+          "text": "Cable-stayed system; it is the only system suitable for roofs, though primarily used in bridge construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A simple frame would require massive columns and incredibly deep beams to span 80m without intermediate support.",
+        "c": "While possible, suspension systems for roofs are complex to anchor and are usually reserved for much larger spans or specific architectural forms.",
+        "d": "Cable-stayed systems are more common in bridge engineering and are rarely the 'only' solution for building roofs.",
+        "correct": "For an 80m × 80m space, space frames or geodesic domes are ideal. Both provide large unobstructed areas with minimal self-weight and interior supports by distributing loads across a 3D network.",
+        "takeaway": "3D triangulated systems are best for long-span, unobstructed interior spaces."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:288548db437176425ec3061f2b89a7c218ac0d6cbb4e137504d5a4499703fbb5"
+    },
+    {
+      "question_id": "88fafbf8-1364-480b-ba50-2448c2a38f04",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "What is the fundamental operating principle of a tensile structure (fabric/membrane system)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The fabric is compressed by internal air pressure or external loads, which is a common misconception about tensile structures"
+        },
+        {
+          "id": "b",
+          "text": "The fabric membrane is held under tension by cables or rigid frames; tension carries loads and provides stiffness"
+        },
+        {
+          "id": "c",
+          "text": "Tensile structures are identical to truss systems, which is incorrect as truss systems rely on compression and tension in a different manner"
+        },
+        {
+          "id": "d",
+          "text": "Tensile structures cannot withstand wind or snow loads, which is false as they are designed to handle such environmental factors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fabric has negligible compressive strength; it must be pre-tensioned to maintain its shape.",
+        "c": "Truss systems use members in both tension and compression, whereas tensile membranes strictly utilize tension.",
+        "d": "When properly engineered and pre-tensioned, these structures are highly effective at resisting environmental loads.",
+        "correct": "Tensile structures rely on membrane material held under tension. Tension provides stiffness and allows the structure to resist loads through membrane action. Cables or frames maintain tension by providing boundary support.",
+        "takeaway": "Tension is the primary force that provides form and stability to membrane structures."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a13f137b0084607a225790a9fc6e29ff9ff898b5ddd2648ddade33292245ab8"
+    },
+    {
+      "question_id": "e6f8c4d4-b1f5-45f8-88aa-cb8dd1fa34a8",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "What is the primary load path in a suspension bridge?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Loads are distributed evenly to all support points equally, ensuring uniform stress distribution across the structure"
+        },
+        {
+          "id": "b",
+          "text": "Main cables hang in a catenary shape and support the deck via vertical suspender cables; towers transfer the catenary tension to the anchorages"
+        },
+        {
+          "id": "c",
+          "text": "All loads are carried by rigid trusses; cables are only for wind resistance, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "Suspension bridges cannot span more than 100 meters, which limits their application to small-scale projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Structural systems have specific hierarchies of load transfer; they are rarely 'equal' to all points.",
+        "c": "The cables are the primary load-bearing elements in a suspension bridge, not just for wind resistance.",
+        "d": "Suspension bridges are the gold standard for long spans, capable of crossing thousands of meters.",
+        "correct": "Suspension bridges have main cables in catenary (hanging shape) that support the deck through vertical suspender cables. The main cables develop tension; towers develop compression. This configuration is economical for very long spans (200–2000+ m).",
+        "takeaway": "Main cables (tension) transfer loads to towers (compression) and anchorages."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cf14fd940eeff70d4865b47d72748bd10a699689eea6ff31c057885526a78ea1"
+    }
+  ]
+}

@@ -269,4 +269,3 @@ _Article prepared per Philippine National Building Code (PD 1096 Rule VIII), ASH
 See also within HVAC and Mechanical Systems: **lea-util-002-04-core-concept**, **lea-util-002-05-core-concept**, **lea-util-002-06-core-concept**, **lea-util-002-07-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

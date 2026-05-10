@@ -573,3 +573,6 @@ Return to this module in 3 days. If you can answer the Active Recall questions w
 
 **Legal Liability And Enforcement Workflow**, **Top 50 Traps 2024 Irr**, **Typology Checklists And Plan Checking**, **Building Permit Process**
 
+## Real-World Application
+
+Suppose an architect is preparing a permit set for a two-storey mixed-use building in a provincial city. Before checking stair widths, fire-resistive ratings, or sanitation details, the architect first asks whether the project is within the scope of the National Building Code and which authority will evaluate compliance. Rule I matters because it frames the code as a public-safety instrument, not a private design preference. In practice, that means the drawings, specifications, and professional seals must support the Building Official’s review instead of leaving essential compliance decisions for construction. For the board exam, treat Rule I as the orientation rule: identify the purpose of the code, the authority administering it, and the basic obligation to comply before jumping to later technical tables. Many wrong answers fail because they quote a later rule while missing the basic scope and enforcement logic.

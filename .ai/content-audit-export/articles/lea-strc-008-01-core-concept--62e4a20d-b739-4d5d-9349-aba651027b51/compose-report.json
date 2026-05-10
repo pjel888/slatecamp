@@ -1,18 +1,26 @@
 {
   "article_id": "62e4a20d-b739-4d5d-9349-aba651027b51",
   "slug": "lea-strc-008-01-core-concept",
-  "generated_at": "2026-05-06T10:02:55.266Z",
-  "original_hash": "sha256:723e1b0df0fa08b7bd7b249c574dd3bfa0cbd8009c35f7e0404b21e110a85661",
+  "generated_at": "2026-05-09T17:04:30.562Z",
+  "original_hash": "sha256:23d8866c58e073e1cf9fd9fc4364937a56575a469651407c6e0cc3270152064f",
   "normalized_hash": "sha256:23d8866c58e073e1cf9fd9fc4364937a56575a469651407c6e0cc3270152064f",
-  "candidate_hash": "sha256:23364b862a8089952f09a5fe008a90b40d8bdc102164d698ba0fc43af5afdcfb",
-  "ui_blocks_count": 3,
+  "candidate_hash": "sha256:23d8866c58e073e1cf9fd9fc4364937a56575a469651407c6e0cc3270152064f",
+  "ui_blocks_count": 0,
   "placeholders_found": 3,
-  "placeholders_resolved": 3,
-  "unresolved_placeholders": [],
+  "placeholders_resolved": 0,
+  "unresolved_placeholders": [
+    "ui_0001",
+    "ui_0002",
+    "ui_0003"
+  ],
   "unused_blocks": [],
-  "preserved_blocks_reinserted": 3,
-  "candidate_matches_original": false,
-  "safe_to_diff": true,
-  "blockers": [],
+  "preserved_blocks_reinserted": 0,
+  "candidate_matches_original": true,
+  "safe_to_diff": false,
+  "blockers": [
+    "Unresolved placeholder ui_0001",
+    "Unresolved placeholder ui_0002",
+    "Unresolved placeholder ui_0003"
+  ],
   "warnings": []
 }

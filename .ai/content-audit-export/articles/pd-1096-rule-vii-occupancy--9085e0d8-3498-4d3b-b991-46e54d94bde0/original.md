@@ -1,6 +1,6 @@
 # PD 1096 Rule VII Occupancy
 
-**Module Focus:** PD 1096 — Classification by Use/Occupancy (Chapter 7, Rule VII) & Types of Construction (Chapter 4 / Rule IV)  
+**Module Focus:** PD 1096 — Classification by Use/Occupancy (Chapter 7, Rule VII) & Types of Construction (Chapter 4 / Rule IV)
 **Legal Basis:** Presidential Decree No. 1096 (National Building Code of the Philippines) and the 2004 Revised Implementing Rules and Regulations (IRR) as published by the DPWH[file:17]
 
 ---
@@ -53,10 +53,10 @@ The Philippine Code uses Roman numerals I–V for Types of Construction, but **T
 
 **General Rule:** A building with two or more occupancies shall comply with the requirements for the **most restrictive** occupancy involved, unless otherwise provided by the Code.[file:17]
 
-**Exception (a) — One-storey buildings:**  
+**Exception (a) — One-storey buildings:**
 In **one-storey** buildings containing multiple occupancies, each portion may be treated and designed in accordance with the requirements of its own occupancy, subject to Code provisions on separation.[file:17]
 
-**Exception (b) — Minor accessory uses (≤ 10%):**  
+**Exception (b) — Minor accessory uses (≤ 10%):**
 Where accessory uses occupy **not more than 10%** of the floor area of any storey (and within the basic allowable area), the **major occupancy** may govern the classification of the building.[file:17]
 
 **Reason for the Law:** A small clinic or chapel inside a mall should not force the entire mall to follow hospital or church standards; the exceptions prevent over-regulation while still respecting risks in higher-hazard portions.[file:17]
@@ -136,10 +136,10 @@ In many US texts, Type I is the most fire-resistive; PD 1096 runs in the **oppos
 | **IV**  | Steel, Iron, Concrete or Masonry Construction   | Structural components are of incombustible materials (steel/iron/concrete/masonry); non-bearing partitions may use treated wood.[file:17]                | Incombustible construction throughout (not necessarily the maximum fire rating).          | Mid-rise commercial/industrial buildings with exposed concrete/steel.    |
 | **V**   | Fire-Resistive Construction                     | Structural members in steel/iron/concrete/masonry; walls, ceilings and permanent partitions are incombustible, **fire-resistive** construction.[file:17] | Highest; designed to maintain structural integrity for specified fire-resistance periods. | High-rise office towers, major hospitals, critical government buildings. |
 
-**Key Distinction — Type II vs Type III:**  
+**Key Distinction — Type II vs Type III:**
 Both provide roughly 1-hour fire-resistance, but **Type III requires incombustible exterior walls**; Type II allows protected wood exteriors within limits.[file:17]
 
-**Key Distinction — Type IV vs Type V:**  
+**Key Distinction — Type IV vs Type V:**
 Both use incombustible materials, but **Type V is specifically fire-resistive**, with structural members designed/tested for required fire-resistance time periods; Type IV is incombustible but not necessarily at the strongest fire-resistive grade.[file:17]
 
 ---
@@ -161,7 +161,7 @@ Any choice using US-style group labels as if PH code adopts them is incorrect.
 
 ### Trap 2 — Reversing the Construction Type scale
 
-PD 1096 runs from **Type I (wood, lowest)** to **Type V (fire-resistive, highest)**.[file:17]  
+PD 1096 runs from **Type I (wood, lowest)** to **Type V (fire-resistive, highest)**.[file:17]
 Answering “Type I is the strongest” is a direct sign you are thinking in US IBC, not PD 1096.
 
 Mnemonic: **“One is flimsy, Five is a fortress.”**
@@ -360,3 +360,21 @@ ALE Trap: The ten occupancy groups: A=Residential, B=Commercial, C=Industrial, D
 If you want a next step, I can compress this into a one-page occupancy + construction type cheat sheet purely for last-week LEA drills.
 
 <!-- no-media-needed: code/regulatory article, tabular data is optimal -->
+
+
+---
+
+## Editorial Source Note
+
+This local production pass did not add new legal or dimensional claims. Existing code references still require source-led verification against the official/local source layer before any factual expansion beyond the current article text.
+
+
+## Board Exam Quick Check
+
+Before moving on, answer these without looking back:
+
+1. What is the governing rule or code principle this article is trying to teach?
+2. What is the most likely board-exam trap in this topic?
+3. What project decision would change if you applied the rule incorrectly?
+
+If you cannot answer all three, reread the section that introduced the rule before attempting the linked questions.

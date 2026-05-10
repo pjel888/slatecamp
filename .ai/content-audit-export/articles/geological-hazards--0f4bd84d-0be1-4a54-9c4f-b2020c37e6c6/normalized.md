@@ -134,32 +134,32 @@ While the full liquefaction analysis (Seed & Idriss method) is beyond typical LE
 ### Question 1
 According to PHIVOLCS guidelines, what is the minimum recommended buffer zone from the trace of an active fault line where no permanent structures should be built?
 
-A. 3 meters  
-B. 5 meters  
-C. 10 meters  
-D. 20 meters  
+A. 3 meters
+B. 5 meters
+C. 10 meters
+D. 20 meters
 
-> **Answer: B. 5 meters**  
+> **Answer: B. 5 meters**
 > PHIVOLCS recommends a minimum 5-meter buffer zone reckoned from both sides of the fault trace or from the edge of the deformation zone. This is a geohazard-based setback, distinct from the PD 1096 building setbacks. Option A (3 m) confuses this with the PD 1067 urban river easement. Option C (10 m) and D (20 m) are overestimates or confusions with other buffer requirements.
 
 ### Question 2
 Under the NSCP Table 304.1, what is the presumptive allowable foundation pressure for **medium-dense sand** at the minimum footing dimension of 300 mm × 300 mm?
 
-A. 50 kPa  
-B. 100 kPa  
-C. 200 kPa  
-D. 300 kPa  
+A. 50 kPa
+B. 100 kPa
+C. 200 kPa
+D. 300 kPa
 
-> **Answer: B. 100 kPa**  
+> **Answer: B. 100 kPa**
 > NSCP 2015, Table 304.1, designates 100 kPa as the presumptive allowable bearing capacity for sand, silty sand, and clayey sand (medium-dense), at the baseline footing dimension of 300 mm width and 300 mm depth into natural grade. Option A (50 kPa) is for medium-stiff clay. Option D (300 kPa) is for sedimentary rock or well-cemented gravel. This value may be increased by 20% for each additional 300 mm of width/depth, up to 3× the designated value.
 
 ### Question 3
 Which of the following correctly describes the relationship between PD 1096 and the NSCP regarding soil bearing capacity for building permit applications?
 
-A. PD 1096 provides the bearing capacity values; the NSCP provides the administrative procedures.  
-B. PD 1096 RIRR requires submission of a geotechnical report; the NSCP provides the technical standards for determining bearing capacity.  
-C. The NSCP replaces PD 1096 for all foundation-related requirements.  
-D. PD 1096 and the NSCP are interchangeable for soil bearing capacity determination.  
+A. PD 1096 provides the bearing capacity values; the NSCP provides the administrative procedures.
+B. PD 1096 RIRR requires submission of a geotechnical report; the NSCP provides the technical standards for determining bearing capacity.
+C. The NSCP replaces PD 1096 for all foundation-related requirements.
+D. PD 1096 and the NSCP are interchangeable for soil bearing capacity determination.
 
 [SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
 Extracted summary:
@@ -179,4 +179,3 @@ Extracted summary:
 ## Cross‑References
 
 **Microclimate Analysis**, **Topography And Slope Analysis**, **Hydrology In Site Planning**, **Excavation Foundation And Veneer**
-

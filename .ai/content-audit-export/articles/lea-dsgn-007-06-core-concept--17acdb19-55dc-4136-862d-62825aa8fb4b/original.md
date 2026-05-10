@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 007 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 Circulation design organizes movement through buildings using hierarchies of pathways — primary (main routes), secondary (distribution), and service (utilities, staff, goods). Effective circulation patterns minimize travel distance, clarify wayfinding, and support efficient operations while maintaining required dimensions specific to the occupancy.
@@ -35,12 +44,20 @@ Dead-end corridors are restricted to ensure occupants do not travel too far towa
 - As a design principle, dead-ends should be minimized or used deliberately to terminate minor or service areas, not created unintentionally through poor layout.
 
 Always verify the exact dead-end limits for the tested occupancy in RA 9514 IRR rather than memorizing a single blanket value.
-<ArticleMedia id="media-lea-dsgn-007-06-core-concept" type="image" caption="Circulation Typology — Primary, Secondary, and Service Circulation Hierarchy" description="Floor plan overlay diagram showing circulation hierarchy: primary corridors (main pedestrian spine), secondary circulation (room-to-room distribution), and service routes (utility, goods, staff). Annotated with minimum clear widths for each hierarchy level." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-06-core-concept", type="image", caption="Circulation Typology — Primary, Secondary, and Service Circulation Hierarchy", description="Floor plan overlay diagram showing circulation hierarchy: primary corridors (main pedestrian spine), secondary circulation (room-to-room distribution), and service routes (utility, goods, staff). Annotated with minimum clear widths for each hierarchy level.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 ## Key Provisions
-<ArticleMedia id="media-lea-dsgn-007-06-core-concept" type="image" caption="Corridor and Lobby Design — Egress Width and Dead-End Limits" description="Plan diagrams of corridor types: straight corridors with egress width annotation, dead-end corridors (6m unsprinklered, 15m sprinklered), lobby/T-junction turning radii, and stair landing configurations per RA 9514 and PD 1096." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-06-core-concept", type="image", caption="Corridor and Lobby Design — Egress Width and Dead-End Limits", description="Plan diagrams of corridor types: straight corridors with egress width annotation, dead-end corridors (6m unsprinklered, 15m sprinklered), lobby/T-junction turning radii, and stair landing configurations per RA 9514 and PD 1096.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 | Circulation Element        | Source / Code Context                            | Design Guidance                                             |
 |:-------------------------- |:------------------------------------------------- |:----------------------------------------------------------- |
@@ -68,16 +85,20 @@ Circulation design in the Philippines must respond to tropical climate, local co
 
 ## How It's Tested
 
-**Pattern 1 — Hierarchy Identification**  
+**Pattern 1 — Hierarchy Identification**
 You are given a plan and asked to identify primary, secondary, and service circulation. You must explain how each supports wayfinding, zoning (public vs. private vs. service), and operational efficiency.
 
-**Pattern 2 — Corridor Width Verification**  
+**Pattern 2 — Corridor Width Verification**
 Given a building occupancy (e.g., hospital, hotel, residential) and calculated occupant load, you verify whether proposed corridor widths comply with PD 1096 / IRR requirements for means of egress, and whether additional width is needed for accessibility and stretchers or beds.
 
-**Pattern 3 — Dead-End Analysis**  
+**Pattern 3 — Dead-End Analysis**
 Given a floor plan, you locate dead-end corridors and determine if they exceed the allowable lengths under RA 9514 IRR for the specified occupancy and sprinkler condition. You may be asked to identify layout adjustments to eliminate or shorten noncompliant dead-ends.
 
-> <Tip>**Circulation Anchor**: Think in hierarchy — Primary (widest, wayfinding spine), Secondary (distribution), Service (back-of-house). Corridor widths follow PD 1096 and occupancy, not a single universal number. Dead-ends are controlled by RA 9514 IRR; always check the specific occupancy and sprinkler condition, not just a memorized value.</Tip>
+> [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Circulation Anchor**: Think in hierarchy — Primary (widest, wayfinding spine), Secondary (distribution), Service (back-of-house). Corridor widths follow PD 1096 and occupancy, not a single universal number. Dead-ends are controlled by RA 9514 IRR; always check the specific occupancy and sprinkler condition, not just a memorized value.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

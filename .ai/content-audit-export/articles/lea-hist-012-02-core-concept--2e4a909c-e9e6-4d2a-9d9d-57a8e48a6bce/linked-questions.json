@@ -1,9 +1,165 @@
 {
   "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:1796f2bae01bf2164f9d1a84d64a51412e4365769ee91c7935bfbd3ad2114905",
+  "linked_questions_hash": "sha256:9578f60e2b3b2ab4801e4e7b7ea2e312922491061d59fd63ef1c76c3f051c628",
   "question_count": 12,
   "questions": [
+    {
+      "question_id": "d7b98249-b9e0-4f9d-9d38-e20fce297024",
+      "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
+      "topic_id": "04a8688c-f5ba-4fa9-bc03-38fc7d26cc1c",
+      "text": "What construction technique allowed Inca masons to fit stone blocks so precisely that a knife blade cannot insert between them, without using mortar?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corbelled vault stacking"
+        },
+        {
+          "id": "b",
+          "text": "Ashlar masonry"
+        },
+        {
+          "id": "c",
+          "text": "Mud-brick and replastering"
+        },
+        {
+          "id": "d",
+          "text": "Wooden lintel framing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Corbelled vaults are triangular arches (Maya), not precise rectangular block fitting.",
+        "c": "Mud-brick requires mortar and replastering (Sahel/African architecture).",
+        "d": "Wooden lintels span openings; they do not describe the overall masonry technique.",
+        "correct": "Inca builders achieved ashlar blocks fitted so precisely that a knife blade cannot insert between them.' Ashlar masonry involves precisely cut rectangular stone blocks that fit without mortar, deriving stability from tight fitting and interlocking geometry.",
+        "takeaway": "The article states: 'Inca builders achieved ashlar blocks fitted so precisely that a knife blade cannot insert between them.' Ashlar masonry involves precisely cut rectangular stone blocks that fit without mortar, deriving stability from tight fitting and interlocking geometry."
+      },
+      "explanation": "Corbelled vaults are triangular arches (Maya), not precise rectangular block fitting. Mud-brick requires mortar and replastering (Sahel/African architecture). Wooden lintels span openings; they do not describe the overall masonry technique. Inca builders achieved ashlar blocks fitted so precisely that a knife blade cannot insert between them.' Ashlar masonry involves precisely cut rectangular stone blocks that fit without mortar, deriving stability from tight fitting and interlocking geometry. The article states: 'Inca builders achieved ashlar blocks fitted so precisely that a knife blade cannot insert between them.' Ashlar masonry involves precisely cut rectangular stone blocks that fit without mortar, deriving stability from tight fitting and interlocking geometry.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-012-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-05-06T14:48:28.912504+00:00",
+      "content_hash": "sha256:f7a6007b8d3eed921ea828221bea7d9cab2f2300afc0fc7e9a7fd53e543a7a09"
+    },
+    {
+      "question_id": "9d085482-5093-4375-8d0a-a3832e732189",
+      "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
+      "topic_id": "04a8688c-f5ba-4fa9-bc03-38fc7d26cc1c",
+      "text": "At which Inca site do agricultural terraces step down a mountainside at 2,430 meters elevation, with a Temple of the Sun featuring curved walls and solstice alignment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ollantaytambo, known for its impressive stonework and strategic military significance"
+        },
+        {
+          "id": "b",
+          "text": "Cusco, the historic capital of the Inca Empire with its unique blend of Inca and colonial architecture"
+        },
+        {
+          "id": "c",
+          "text": "Machu Picchu"
+        },
+        {
+          "id": "d",
+          "text": "Moray, an archaeological site with circular terraces believed to be an agricultural laboratory"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ollantaytambo is a garrison fortress, not the site with these specific features.",
+        "b": "Cusco is the capital with Coricancha temple and plaza organization, not primarily terraced.",
+        "d": "Moray features circular terraced amphitheaters of unknown purpose, not residential and agricultural terracing like Machu Picchu.",
+        "correct": "Machu Picchu (circa 1450 CE, Machu Picchu Mountain, Peru, architect unknown) stands as the archetypal Inca site. Perched at 2,430 meters on a mountain ridge...The Temple of the Sun (also called the Torreón) exhibits Inca religious architecture at its finest. Its curved walls follow the mountain's contours, built with precisely fitted ashlar blocks. The temple's orientation aligns with winter solstice sunrise.'",
+        "takeaway": "The temple's orientation aligns with winter solstice sunrise.'."
+      },
+      "explanation": "Ollantaytambo is a garrison fortress, not the site with these specific features. Cusco is the capital with Coricancha temple and plaza organization, not primarily terraced. Moray features circular terraced amphitheaters of unknown purpose, not residential and agricultural terracing like Machu Picchu. Machu Picchu (circa 1450 CE, Machu Picchu Mountain, Peru, architect unknown) stands as the archetypal Inca site. Perched at 2,430 meters on a mountain ridge...The Temple of the Sun (also called the Torreón) exhibits Inca religious architecture at its finest. Its curved walls follow the mountain's contours, built with precisely fitted ashlar blocks. The temple's orientation aligns with winter solstice sunrise.' The temple's orientation aligns with winter solstice sunrise.'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-012-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-05-06T14:48:29.037441+00:00",
+      "content_hash": "sha256:e0a510a7d9b37b709069f4658c0c910363b8ccfcabc37f97d76a26c3b8ec1fc2"
+    },
+    {
+      "question_id": "53b277a9-d7a6-47c5-a767-0e215737f5ab",
+      "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
+      "topic_id": "04a8688c-f5ba-4fa9-bc03-38fc7d26cc1c",
+      "text": "How do Inca terraces function differently from Aztec ceremonial plazas in terms of their architectural and social purposes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both serve identical agricultural functions without social differentiation, focusing solely on crop production"
+        },
+        {
+          "id": "b",
+          "text": "Terraces increase arable land and express imperial labor organization; plazas accommodate ritual sacrifice and mass participation."
+        },
+        {
+          "id": "c",
+          "text": "Aztec terraces predate Inca terraces chronologically, indicating a historical precedence"
+        },
+        {
+          "id": "d",
+          "text": "Neither structure served economic or religious functions, being purely decorative"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Terraces are agricultural infrastructure; plazas are ceremonial spaces.",
+        "c": "Aztec civilization (1345–1521) and Inca civilization (1438–1532) were overlapping but in different regions.",
+        "d": "Both structures were economically and socially significant infrastructure.",
+        "correct": "Inca terraces covered hundreds of thousands of hectares...Terrace construction required surveying, drainage design, and sustained labor...The Inca reorganized landscape at unprecedented scales, expressing imperial ambition and consolidating subject populations through shared infrastructure projects.' The article distinguishes Inca from Aztec priorities: Inca emphasized linear infrastructure and landscape reorganization; Aztec centralized ritual at their capital. Terraces increased arable land and expressed labor organization; ceremonial plazas accommodated ritual participation. Both served empire-reinforcing but functionally distinct purposes.",
+        "takeaway": "Both served empire-reinforcing but functionally distinct purposes."
+      },
+      "explanation": "Terraces are agricultural infrastructure; plazas are ceremonial spaces. Aztec civilization (1345–1521) and Inca civilization (1438–1532) were overlapping but in different regions. Both structures were economically and socially significant infrastructure. Inca terraces covered hundreds of thousands of hectares...Terrace construction required surveying, drainage design, and sustained labor...The Inca reorganized landscape at unprecedented scales, expressing imperial ambition and consolidating subject populations through shared infrastructure projects.' The article distinguishes Inca from Aztec priorities: Inca emphasized linear infrastructure and landscape reorganization; Aztec centralized ritual at their capital. Terraces increased arable land and expressed labor organization; ceremonial plazas accommodated ritual participation. Both served empire-reinforcing but functionally distinct purposes. Both served empire-reinforcing but functionally distinct purposes.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-012-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.518466+00:00",
+      "updated_at": "2026-05-06T14:48:29.157463+00:00",
+      "content_hash": "sha256:291924d3a3be280be530a9c04988886e039161b8bd66554413ecb387f26e52d4"
+    },
     {
       "question_id": "192fc734-6178-448c-bdca-0cf76bffede0",
       "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
@@ -39,7 +195,7 @@
         "correct": "Unlike Mesoamerican corbelled vaults, the Inca used wooden lintels across doorways and windows—more efficient for narrow openings and requiring less structural mass. This technique, combined with ashlar walls, created clean interior spaces with minimal support walls.' Lintels are simpler, more direct spanning elements suitable for Inca architectural goals.",
         "takeaway": "This technique, combined with ashlar walls, created clean interior spaces with minimal support walls.' Lintels are simpler, more direct spanning elements suitable for Inca architectural goals."
       },
-      "explanation": null,
+      "explanation": "The techniques differ in efficiency and structural mass requirements. Corbelled vaults do require vertical support from the walls they cantilever from; this is not eliminated. Wooden lintels can support considerable weight when properly engineered and positioned. Unlike Mesoamerican corbelled vaults, the Inca used wooden lintels across doorways and windows—more efficient for narrow openings and requiring less structural mass. This technique, combined with ashlar walls, created clean interior spaces with minimal support walls.' Lintels are simpler, more direct spanning elements suitable for Inca architectural goals. This technique, combined with ashlar walls, created clean interior spaces with minimal support walls.' Lintels are simpler, more direct spanning elements suitable for Inca architectural goals.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -53,8 +209,8 @@
       "model_id": "ALE-HIST-012-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d35a3175f398519b0b5e249c6caa65fdc3b4f020eac66d929b3ccaeb59ebd3c8"
+      "updated_at": "2026-05-06T14:48:28.795963+00:00",
+      "content_hash": "sha256:cd41c2daf1ee296b61b9a8b25719bcd1825376fbc615978ee092f0ecd46a2aa6"
     },
     {
       "question_id": "5d467b6a-7c36-48a8-acb9-6d54c1411b7e",
@@ -159,58 +315,6 @@
       "created_at": "2026-03-23T19:27:24.518466+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:fb18761ef3a365f2cd81c07d4a3c879fa35ccd3f52baf8aadf34bb6ebe49a5e2"
-    },
-    {
-      "question_id": "d7b98249-b9e0-4f9d-9d38-e20fce297024",
-      "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
-      "topic_id": "04a8688c-f5ba-4fa9-bc03-38fc7d26cc1c",
-      "text": "What construction technique allowed Inca masons to fit stone blocks so precisely that a knife blade cannot insert between them, without using mortar?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Corbelled vault stacking"
-        },
-        {
-          "id": "b",
-          "text": "Ashlar masonry"
-        },
-        {
-          "id": "c",
-          "text": "Mud-brick and replastering"
-        },
-        {
-          "id": "d",
-          "text": "Wooden lintel framing"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Corbelled vaults are triangular arches (Maya), not precise rectangular block fitting.",
-        "c": "Mud-brick requires mortar and replastering (Sahel/African architecture).",
-        "d": "Wooden lintels span openings; they do not describe the overall masonry technique.",
-        "correct": "Inca builders achieved ashlar blocks fitted so precisely that a knife blade cannot insert between them.' Ashlar masonry involves precisely cut rectangular stone blocks that fit without mortar, deriving stability from tight fitting and interlocking geometry.",
-        "takeaway": "The article states: 'Inca builders achieved ashlar blocks fitted so precisely that a knife blade cannot insert between them.' Ashlar masonry involves precisely cut rectangular stone blocks that fit without mortar, deriving stability from tight fitting and interlocking geometry."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "ST"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-012-02-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:432ea67641bcc06995922d54eac91c5c9c3193ffc00e66c9b2f84674a7f130a4"
     },
     {
       "question_id": "58812070-cf4e-4eeb-8aa3-d1827c238880",
@@ -369,58 +473,6 @@
       "content_hash": "sha256:caf2dbf4d4ee6306f8cdb9074a031cf26fafc2fd16e521a27066c04256a871de"
     },
     {
-      "question_id": "9d085482-5093-4375-8d0a-a3832e732189",
-      "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
-      "topic_id": "04a8688c-f5ba-4fa9-bc03-38fc7d26cc1c",
-      "text": "At which Inca site do agricultural terraces step down a mountainside at 2,430 meters elevation, with a Temple of the Sun featuring curved walls and solstice alignment?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Ollantaytambo, known for its impressive stonework and strategic military significance"
-        },
-        {
-          "id": "b",
-          "text": "Cusco, the historic capital of the Inca Empire with its unique blend of Inca and colonial architecture"
-        },
-        {
-          "id": "c",
-          "text": "Machu Picchu"
-        },
-        {
-          "id": "d",
-          "text": "Moray, an archaeological site with circular terraces believed to be an agricultural laboratory"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Ollantaytambo is a garrison fortress, not the site with these specific features.",
-        "b": "Cusco is the capital with Coricancha temple and plaza organization, not primarily terraced.",
-        "d": "Moray features circular terraced amphitheaters of unknown purpose, not residential and agricultural terracing like Machu Picchu.",
-        "correct": "Machu Picchu (circa 1450 CE, Machu Picchu Mountain, Peru, architect unknown) stands as the archetypal Inca site. Perched at 2,430 meters on a mountain ridge...The Temple of the Sun (also called the Torreón) exhibits Inca religious architecture at its finest. Its curved walls follow the mountain's contours, built with precisely fitted ashlar blocks. The temple's orientation aligns with winter solstice sunrise.'",
-        "takeaway": "The temple's orientation aligns with winter solstice sunrise.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ID"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-012-02-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ba8fc4dba682782394011d208ae691d76762913d312b58d568384684fddb67d6"
-    },
-    {
       "question_id": "a00c4920-3cd8-47d6-b094-861daebade9a",
       "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
       "topic_id": "04a8688c-f5ba-4fa9-bc03-38fc7d26cc1c",
@@ -471,58 +523,6 @@
       "created_at": "2026-03-23T19:27:24.518466+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:0beaedac6de9c003c58c7e8eac91ece16d503645f0f7df49e20f80e8d4f9b320"
-    },
-    {
-      "question_id": "53b277a9-d7a6-47c5-a767-0e215737f5ab",
-      "article_id": "2e4a909c-e9e6-4d2a-9d9d-57a8e48a6bce",
-      "topic_id": "04a8688c-f5ba-4fa9-bc03-38fc7d26cc1c",
-      "text": "How do Inca terraces function differently from Aztec ceremonial plazas in terms of their architectural and social purposes?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Both serve identical agricultural functions without social differentiation, focusing solely on crop production"
-        },
-        {
-          "id": "b",
-          "text": "Terraces increase arable land and express imperial labor organization; plazas accommodate ritual sacrifice and mass participation."
-        },
-        {
-          "id": "c",
-          "text": "Aztec terraces predate Inca terraces chronologically, indicating a historical precedence"
-        },
-        {
-          "id": "d",
-          "text": "Neither structure served economic or religious functions, being purely decorative"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Terraces are agricultural infrastructure; plazas are ceremonial spaces.",
-        "c": "Aztec civilization (1345–1521) and Inca civilization (1438–1532) were overlapping but in different regions.",
-        "d": "Both structures were economically and socially significant infrastructure.",
-        "correct": "Inca terraces covered hundreds of thousands of hectares...Terrace construction required surveying, drainage design, and sustained labor...The Inca reorganized landscape at unprecedented scales, expressing imperial ambition and consolidating subject populations through shared infrastructure projects.' The article distinguishes Inca from Aztec priorities: Inca emphasized linear infrastructure and landscape reorganization; Aztec centralized ritual at their capital. Terraces increased arable land and expressed labor organization; ceremonial plazas accommodated ritual participation. Both served empire-reinforcing but functionally distinct purposes.",
-        "takeaway": "Both served empire-reinforcing but functionally distinct purposes."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-012-02-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.518466+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2076a2ea71e47c934894cf38f38b9ff63c712762dcac0e64a68d819635517741"
     },
     {
       "question_id": "abb02fcb-3063-45ee-9927-be0a334aa6bf",

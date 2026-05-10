@@ -1,7 +1,7 @@
 {
   "article_id": "559d37e6-0821-46a0-9f03-5c2edfb9e375",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:c29839258c434cf7601c6bf3e727a0aaa0f22d1aa31b402f45f17128a4b6b5bb",
+  "linked_questions_hash": "sha256:586eca99a6f221ec40001e7fa4548b8079fbea29ddabaa338f0ab3e683e754f1",
   "question_count": 10,
   "questions": [
     {
@@ -89,7 +89,7 @@
         "correct": "Air entrainment typically produces 2—8% air by volume, with bubble diameter 10—1000 micrometers. This is the standard range for freeze-thaw protection.",
         "takeaway": "Air entrainment = 2—8% volume. Each 1% air reduces compressive strength ~3—5%. Trade-off: durability vs. strength."
       },
-      "explanation": null,
+      "explanation": "10—20% is excessive and would significantly reduce strength. 0.5—1% is insufficient for freeze-thaw protection (incidental air, not intentional entrainment). 20—30% would be foam, not properly entrained air. Air entrainment typically produces 2—8% air by volume, with bubble diameter 10—1000 micrometers. This is the standard range for freeze-thaw protection. Air entrainment = 2—8% volume. Each 1% air reduces compressive strength ~3—5%. Trade-off: durability vs. strength.",
       "code_citation": "ASTM C260 Standard Specification",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -101,8 +101,8 @@
       "model_id": "ALE-MATL-002-06-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9c90c1c229f848471540c20075dfb5c60778cf1d5dfc9365ea6bb521ca58b266"
+      "updated_at": "2026-05-06T15:46:04.565206+00:00",
+      "content_hash": "sha256:07219a5a098b3d5118f30d32dcaef26fffec1a7391a8d9f329805e7de3b3184a"
     },
     {
       "question_id": "0970f60b-d2db-4d5a-a01f-0ce11474a486",
@@ -189,7 +189,7 @@
         "correct": "Type B retarders delay set time by 1—6 hours, extending workability and preventing premature stiffening in hot conditions.",
         "takeaway": "Type B = retardation (delay). For hot weather. Not recommended for cold weather (would slow strength gain)."
       },
-      "explanation": null,
+      "explanation": "Accelerating would worsen hot-weather placement (opposite of goal). Type B specifically affects set time; no effect is not an option for this admixture. Reversing set time is impossible. Type B retarders delay set time by 1—6 hours, extending workability and preventing premature stiffening in hot conditions. Type B = retardation (delay). For hot weather. Not recommended for cold weather (would slow strength gain).",
       "code_citation": "ASTM C494 Standard Specification",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -201,8 +201,8 @@
       "model_id": "ALE-MATL-002-06-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:880ba77d714cba7a45277226d6ebdc13f7be1c3b274c40bf552cabafee05f08c"
+      "updated_at": "2026-05-06T15:46:04.719157+00:00",
+      "content_hash": "sha256:bcd016def546644cc4ddebfd0c4c9d5bf56ca0b881369467b56ec93713a2d04a"
     },
     {
       "question_id": "556bb4e7-cfde-4348-8ee6-3f0b4d512d9f",
@@ -239,7 +239,7 @@
         "correct": "Type C accelerators speed hydration, developing high 1-day strength. Used in cold weather to compensate for slow natural hydration at low temperatures.",
         "takeaway": "Type C = acceleration. For cold weather. Not recommended for hot weather (would increase thermal cracking risk)."
       },
-      "explanation": null,
+      "explanation": "Accelerating in hot weather (where hydration is already fast) is unnecessary and can cause thermal stress. Slowing is contrary to acceleration purpose. Type C is not appropriate for all weather; it's specifically for cold conditions. Type C accelerators speed hydration, developing high 1-day strength. Used in cold weather to compensate for slow natural hydration at low temperatures. Type C = acceleration. For cold weather. Not recommended for hot weather (would increase thermal cracking risk).",
       "code_citation": "ASTM C494 Standard Specification",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -251,8 +251,8 @@
       "model_id": "ALE-MATL-002-06-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:38da29886a792de32d39bf86cddbcacd73e5cd9c13482d2ad511759884494a2a"
+      "updated_at": "2026-05-06T15:46:04.848578+00:00",
+      "content_hash": "sha256:3857d079f132edaad1838870995d9bfbcf16ef3919b7e6d7bdb9feef6e739eb0"
     },
     {
       "question_id": "fc727d0f-59a2-491c-bd53-b118b89534f1",
@@ -289,7 +289,7 @@
         "correct": "Reducing water by 10% (w/c = 0.50 → ~0.45) increases strength approximately 5—15%. The exact increase depends on cement type and curing. 30 MPa × 1.08 ≈ 32 MPa (conservative estimate).",
         "takeaway": "Water reduction ≈ strength increase. Lower w/c = higher strength (approximately 10 MPa increase per 0.05 reduction in w/c for normal Portland cement)."
       },
-      "explanation": null,
+      "explanation": "Admixtures do affect strength indirectly through water-cement ratio modification. Water reduction increases strength (lower w/c), not decreases it. Doubling strength from 10% water reduction is unrealistic; typical gain is 5—15%. Reducing water by 10% (w/c = 0.50 → ~0.45) increases strength approximately 5—15%. The exact increase depends on cement type and curing. 30 MPa × 1.08 ≈ 32 MPa (conservative estimate). Water reduction ≈ strength increase. Lower w/c = higher strength (approximately 10 MPa increase per 0.05 reduction in w/c for normal Portland cement).",
       "code_citation": "Concrete strength vs. w/c relationship; ASTM C494 effects",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -301,8 +301,8 @@
       "model_id": "ALE-MATL-002-06-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:639208ac47b0ba808b3debae1110dd8f6a551e5631259df67ad1efdd954741cb"
+      "updated_at": "2026-05-06T15:46:04.98656+00:00",
+      "content_hash": "sha256:fee5b0bc04a1e49520e50e84a8eb7cf50338840a0c3079493de3145657208457"
     },
     {
       "question_id": "0e9c2876-79b8-483f-98e6-634508debf4a",
@@ -339,7 +339,7 @@
         "correct": "Types F and G are superplasticizers providing 15—30% water reduction (compared to 5—10% for standard Type A reducers). They enable self-consolidating concrete and very low water-cement ratios.",
         "takeaway": "Type F/G = superplasticizers = high-range water reduction (15—30%). Use for SCC, flowing concrete, high strength."
       },
-      "explanation": null,
+      "explanation": "Standard reducers (Type A) only reduce 5—10%. Accelerators don't reduce water demand; Types F/G do. Air-entraining agents (C260) are different from C494 admixtures; minimal water reduction. Types F and G are superplasticizers providing 15—30% water reduction (compared to 5—10% for standard Type A reducers). They enable self-consolidating concrete and very low water-cement ratios. Type F/G = superplasticizers = high-range water reduction (15—30%). Use for SCC, flowing concrete, high strength.",
       "code_citation": "ASTM C494 Standard Specification",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -351,8 +351,8 @@
       "model_id": "ALE-MATL-002-06-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5ea07868ab77c2b6382f4b91648a8df7aa6e983e49059407523e288dfbf0ce88"
+      "updated_at": "2026-05-06T15:46:05.114421+00:00",
+      "content_hash": "sha256:64950731a5fe702812ad1a0122cb8944c630a8766285efed98d51f81bb95042b"
     },
     {
       "question_id": "7bcb0011-84cc-43d9-a791-e9d9e93030ed",
@@ -389,7 +389,7 @@
         "correct": "Type D = Type A (water reduction) + Type B (retardation). Used in hot weather to achieve strength gain (water reduction benefit) while extending workability (retardation benefit).",
         "takeaway": "Type D = D for hot-weather (water reduction + retardation). Remember: D = (A) + (B)."
       },
-      "explanation": null,
+      "explanation": "Type E combines water reduction + acceleration (cold-weather). Air entrainment is ASTM C260, not C494 admixtures. Superplasticizing is Types F and G, not Type D. Type D = Type A (water reduction) + Type B (retardation). Used in hot weather to achieve strength gain (water reduction benefit) while extending workability (retardation benefit). Type D = D for hot-weather (water reduction + retardation). Remember: D = (A) + (B).",
       "code_citation": "ASTM C494 Standard Specification",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -401,8 +401,8 @@
       "model_id": "ALE-MATL-002-06-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d58bc4e62413aa06977f3299b06d9d02a31dfb68740d63e9ec1a95865fd0afad"
+      "updated_at": "2026-05-06T15:46:05.284712+00:00",
+      "content_hash": "sha256:d9cababa7b30ff45e02e2a7bc184151b28ec84fa0696bae2b757dd073a6cfa85"
     },
     {
       "question_id": "ee1a0426-9f8f-4b99-b69e-a0bb60925380",
@@ -439,7 +439,7 @@
         "correct": "Type A water reducers reduce water demand by 5—10% for the same slump, allowing higher strength (lower water-cement ratio) or lower cement content (cost savings).",
         "takeaway": "Type A = water reduction only. No effect on set time (primary advantage over Types D, E, F, G which include other effects)."
       },
-      "explanation": null,
+      "explanation": "Increasing water is not the purpose of water reducers. Type A affects water, so slump is not maintained constant without adjustment. Water cannot be eliminated; admixtures reduce, not eliminate, water demand. Type A water reducers reduce water demand by 5—10% for the same slump, allowing higher strength (lower water-cement ratio) or lower cement content (cost savings). Type A = water reduction only. No effect on set time (primary advantage over Types D, E, F, G which include other effects).",
       "code_citation": "ASTM C494 Standard Specification",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -451,8 +451,8 @@
       "model_id": "ALE-MATL-002-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2dce03fe95f6c60d960671ce382cf26ada1bf22ea978e7403b1664c1489795f6"
+      "updated_at": "2026-05-06T15:46:05.406329+00:00",
+      "content_hash": "sha256:742edb6979c632271c9e606b1783565ab0c0a5d43622a07fd99cfc613ce3a267"
     },
     {
       "question_id": "60a52a8f-e57b-4f55-aba8-a9ef12dbcc8e",
@@ -489,7 +489,7 @@
         "correct": "Type D is optimized for hot weather with competing needs: strength gain (Type A water reduction) and extended working time (Type B retardation). In 32°C tropical temperature with complex column geometry, Type D prevents premature stiffening while improving strength.",
         "takeaway": "Hot weather + extended workability + strength = Type D. Hot weather + rapid strength = Type C (cold weather). Always match admixture type to project conditions."
       },
-      "explanation": null,
+      "explanation": "Type A alone provides no retardation; set time would be normal or fast (not extended working time). Type C (acceleration) is counter-productive in hot weather; it would shorten working time, opposite of goal. Type F provides flowing concrete but doesn't specifically address hot-weather retardation; Type D is more targeted. Type D is optimized for hot weather with competing needs: strength gain (Type A water reduction) and extended working time (Type B retardation). In 32°C tropical temperature with complex column geometry, Type D prevents premature stiffening while improving strength. Hot weather + extended workability + strength = Type D. Hot weather + rapid strength = Type C (cold weather). Always match admixture type to project conditions.",
       "code_citation": "ASTM C494 admixture selection; ACI 305.1 hot-weather concreting",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -501,8 +501,8 @@
       "model_id": "ALE-MATL-002-06-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:844c3f1687103e5ceef1caaa7a8643c679f2e8003b0566cdb725c499936e62ee"
+      "updated_at": "2026-05-06T15:46:05.602351+00:00",
+      "content_hash": "sha256:7188998857a3c67977b82f6c8c8c4ab18be8df2b4622b7e4ff1e523706e17e7b"
     }
   ]
 }

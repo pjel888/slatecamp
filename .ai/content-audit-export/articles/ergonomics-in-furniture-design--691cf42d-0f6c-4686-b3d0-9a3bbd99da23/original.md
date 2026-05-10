@@ -1,9 +1,12 @@
 # Ergonomics in Furniture Design
-## Learning Goal
-After reading this article, you should be able to:
 
-Apply anthropometric data to furniture design (workstation heights, seating dimensions, reach envelopes); calculate minimum clearance for workstations and desks under ergonomic standards; identify the 5th to 95th percentile design range for Philippine anthropometry; and apply adjustability requirements to ensure accommodation of the broadest user population.
----
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Ergonomics in Furniture Design** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Section 1: Accuracy Audit
 
@@ -361,11 +364,23 @@ An architect is designing a 20-row tiered auditorium in Manila and selects a C-v
 
 ---
 
-<Warn />
+[SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<Example />
+[SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Verified References
 
@@ -386,8 +401,11 @@ _End of Module. Review Section 1 to understand what to avoid. Re-read Section 2 
 
 
 
-<ArticleMedia id="media-ergonomics-in-furniture-design-0" type="image" caption="Ergonomic Furniture Dimensions — Anthropometric Data for Seating and Workstations" description="Scale figure diagrams showing: seated workstation with key dimensions (seat height 38-45cm PH, desk height 72-76cm, monitor at eye level), auditorium sightline C-value diagram (C=120mm optimal clearance between rows), and reach envelopes (5th percentile female to 95th percentile male). Filipino anthropometric data per Del Prado-Lu (2007) annotated." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-ergonomics-in-furniture-design-0", type="image", caption="Ergonomic Furniture Dimensions — Anthropometric Data for Seating and Workstations", description="Scale figure diagrams showing: seated workstation with key dimensions (seat height 38-45cm PH, desk height 72-76cm, monitor at eye level), auditorium sightline C-value diagram (C=120mm optimal clearance between rows), and reach envelopes (5th percentile female to 95th percentile male). Filipino anthropometric data per Del Prado-Lu (2007) annotated."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Cross‑References
 
 **Standard Human Body Dimensions**, **Institutional Human Dimensions**, **Public Service Counters And Atms**, **Wheelchair Maneuvering And Parking**
-

@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Util 008 03 Electrical Utility Connection** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,7 +14,11 @@ Coordinate electrical utility connection requirements with the local electric ut
 
 The electrical service entrance is where Meralco's distribution system connects to your building. Meralco service requirements vary by load demand and building classification. For residential units under 10 kW, Meralco typically requires a single-phase service entrance; commercial and industrial buildings above 50 kW demand three-phase service (Meralco Technical Standards, 2023).
 
-<ArticleMedia id="media-lea-util-008-03-electrical-utility-conne" type="image" caption="Electrical Riser Diagram — Meralco Service Connection to Main Switchgear to Distribution" description="Single-line riser showing: Meralco utility pole with 13.8kV overhead line → pad-mounted transformer (150 kVA, 13.8kV/220-380V) → service entrance conductors (min #4 AWG copper) → metering cabinet → main switchgear with main breaker and service disconnect → distribution panelboards with 25% spare capacity → branch circuits. Grounding electrode system (driven ground rod 2.4m, ≤25 ohms), step-down voltage, and Meralco coordination requirements per PEC Article 2.6 labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-008-03-electrical-utility-conne", type="image", caption="Electrical Riser Diagram — Meralco Service Connection to Main Switchgear to Distribution", description="Single-line riser showing: Meralco utility pole with 13.8kV overhead line → pad-mounted transformer (150 kVA, 13.8kV/220-380V) → service entrance conductors (min #4 AWG copper) → metering cabinet → main switchgear with main breaker and service disconnect → distribution panelboards with 25% spare capacity → branch circuits. Grounding electrode system (driven ground rod 2.4m, ≤25 ohms), step-down voltage, and Meralco coordination requirements per PEC Article 2.6 labeled.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 The service entrance consists of three main components: the transformer pad or vault, the metering installation, and the service lateral. Meralco owns and maintains the transformer equipment; the building owner provides and maintains the pad or vault structure. For buildings requiring loads between 10–50 kW, Meralco may install a ground-mounted transformer pad measuring approximately 2.5 m × 2 m × 1.5 m (height). For larger loads exceeding 50 kW or in constrained sites, underground transformer vaults are required, typically 3.5 m × 3 m in plan with 2.5 m clear internal height (Meralco Specifications, 2022).
@@ -16,15 +27,23 @@ The service lateral—the underground or overhead conductor from the Meralco dis
 
 ## Water Supply Connection
 
-<KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, label=true, Panel=true, Efficiency=true, Warranty=true, Life=true, Grid-Tie=true, Most=true, Common=true, DC=true, AC=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+[/SLATECAMP_UI_BLOCK]
 
-<LawCallout code="pec" section="PEC 2017 - Article 2.30 - Service Requirements">
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pec", section="PEC 2017 - Article 2.30 - Service Requirements"
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+[/SLATECAMP_UI_BLOCK]
 
 Manila Water Company (serving eastern Metro Manila) and Maynilad Water Services (western zones) own and operate water mains. Individual building water service laterals branch from these mains to the property boundary or building entrance. The service lateral diameter depends on building water demand: residential buildings up to 50 units typically use 19–25 mm copper or PVC pipe; commercial buildings may require 50–75 mm laterals (Manila Water Technical Requirements, 2023; Maynilad Design Manual, 2022).
 
@@ -163,4 +182,3 @@ Utility companies typically require site access for inspections at key phases; s
 See also within MEPF Coordination and Integration: **lea-util-008-01-core-concept**, **lea-util-008-02-core-concept**, **lea-util-008-04-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

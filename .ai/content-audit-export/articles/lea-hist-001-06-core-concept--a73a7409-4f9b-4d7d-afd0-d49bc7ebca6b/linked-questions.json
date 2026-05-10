@@ -1,60 +1,60 @@
 {
   "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:f448d85bc2e210432b01d2f185d7b18e3b1372bd4bf557960c876fe821c357dd",
+  "linked_questions_hash": "sha256:9656ecd9bdbb4ef5b30603acd3db04c9b4786a31d5ea36e4a5f5eed3e46b9cee",
   "question_count": 12,
   "questions": [
     {
-      "question_id": "32efcffa-bdfe-4bd9-871e-70bd8a294c73",
+      "question_id": "bb2edbf0-e1c1-4f52-b6f8-2443457aa01d",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "The Roman arch is structurally more efficient than the post-and-lintel system because:",
+      "text": "The Pantheon, built between 120–128 CE under Emperor Hadrian, features a hemispherical dome measuring approximately how much in diameter, with what as its sole light source?",
       "options": [
         {
           "id": "a",
-          "text": "It allows for greater spans without collapsing, as it creates compression (not tension) in stones, which resist compression far better than tension"
+          "text": "100 feet in diameter, with a small rectangular window as the light source, which was later modified"
         },
         {
           "id": "b",
-          "text": "It requires fewer stones and therefore less labor to construct, making it a more economical choice for large structures"
+          "text": "142 feet in diameter, with an oculus (circular opening) approximately 27–28 feet in diameter as the sole light source"
         },
         {
           "id": "c",
-          "text": "It eliminates the need for any vertical supports beneath its span, allowing for more open and flexible interior spaces"
+          "text": "200 feet in diameter, with clerestory windows around the drum providing light, a design unique to Roman architecture"
         },
         {
           "id": "d",
-          "text": "It was invented specifically to replace the post-and-lintel system used by earlier civilizations, offering improved structural integrity"
+          "text": "80 feet in diameter, with multiple skylights distributed across the dome, allowing for even light distribution"
         }
       ],
-      "correct_option_id": "a",
+      "correct_option_id": "b",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "b": "While arches may use stones efficiently, the efficiency comes from structural properties, not labor reduction.",
-        "c": "Arches actually transfer weight to abutments (vertical supports), not eliminate them.",
-        "d": "The arch is a Roman innovation, but the motivation was structural capability, not ideological replacement of earlier systems.",
-        "correct": "The arch is more efficient than the lintel because it creates compression (not tension) in its stones, and stone resists compression far better than tension. This allowed Romans to span distances impossible with lintels.'",
-        "takeaway": "This allowed Romans to span distances impossible with lintels.'."
+        "a": "The measurements are too small; 100 feet and a small window do not match the Pantheon's documented proportions.",
+        "c": "The 200-foot diameter is too large; clerestory windows are not the Pantheon's light source.",
+        "d": "The 80-foot diameter and multiple skylights do not match the Pantheon's documented design of a single 142-foot dome with one oculus.",
+        "correct": "Precise measurements: 'The Pantheon features a vast hemispherical dome measuring 142 feet (43.3 m) in diameter... At the apex is the oculus—a circular opening measuring approximately 27–28 feet (8.2–8.5 m) in diameter, the sole light source, and the only opening in the roof.'",
+        "takeaway": "At the apex is the oculus—a circular opening measuring approximately 27–28 feet (8.2–8.5 m) in diameter, the sole light source, and the only opening in the roof.'."
       },
       "explanation": null,
       "code_citation": null,
       "bloom_level": "remember",
-      "application_context": "code_interpretation",
+      "application_context": "recall",
       "practice_context": [
-        "ST"
+        "ID"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-HIST-001-06-003",
+      "model_id": "ALE-HIST-001-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:23.734061+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ab86f2c4cd73c0eb925020b4688ee268516d097957e7e9ad7ceda9b7759b1813"
+      "content_hash": "sha256:388ef2c10c50d07fd41c61f851293e559de53377089f94e1bd7c11b3628cd3ae"
     },
     {
       "question_id": "58573121-09b9-4f8e-b969-3f59e6f02f5f",
@@ -161,26 +161,78 @@
       "content_hash": "sha256:cfa00283df57846b685e1ea9496ba5c656248274a52454fa24bce619cb9008aa"
     },
     {
-      "question_id": "bb2edbf0-e1c1-4f52-b6f8-2443457aa01d",
+      "question_id": "32efcffa-bdfe-4bd9-871e-70bd8a294c73",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "The Pantheon, built between 120–128 CE under Emperor Hadrian, features a hemispherical dome measuring approximately how much in diameter, with what as its sole light source?",
+      "text": "The Roman arch is structurally more efficient than the post-and-lintel system because:",
       "options": [
         {
           "id": "a",
-          "text": "100 feet in diameter, with a small rectangular window as the light source, which was later modified"
+          "text": "It allows for greater spans without collapsing, as it creates compression (not tension) in stones, which resist compression far better than tension"
         },
         {
           "id": "b",
-          "text": "142 feet in diameter, with an oculus (circular opening) approximately 27–28 feet in diameter as the sole light source"
+          "text": "It requires fewer stones and therefore less labor to construct, making it a more economical choice for large structures"
         },
         {
           "id": "c",
-          "text": "200 feet in diameter, with clerestory windows around the drum providing light, a design unique to Roman architecture"
+          "text": "It eliminates the need for any vertical supports beneath its span, allowing for more open and flexible interior spaces"
         },
         {
           "id": "d",
-          "text": "80 feet in diameter, with multiple skylights distributed across the dome, allowing for even light distribution"
+          "text": "It was invented specifically to replace the post-and-lintel system used by earlier civilizations, offering improved structural integrity"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While arches may use stones efficiently, the efficiency comes from structural properties, not labor reduction.",
+        "c": "Arches actually transfer weight to abutments (vertical supports), not eliminate them.",
+        "d": "The arch is a Roman innovation, but the motivation was structural capability, not ideological replacement of earlier systems.",
+        "correct": "The arch is more efficient than the lintel because it creates compression (not tension) in its stones, and stone resists compression far better than tension. This allowed Romans to span distances impossible with lintels.'",
+        "takeaway": "This allowed Romans to span distances impossible with lintels.'."
+      },
+      "explanation": "While arches may use stones efficiently, the efficiency comes from structural properties, not labor reduction. Arches actually transfer weight to abutments (vertical supports), not eliminate them. The arch is a Roman innovation, but the motivation was structural capability, not ideological replacement of earlier systems. The arch is more efficient than the lintel because it creates compression (not tension) in its stones, and stone resists compression far better than tension. This allowed Romans to span distances impossible with lintels.' This allowed Romans to span distances impossible with lintels.'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:23.734061+00:00",
+      "updated_at": "2026-05-06T13:17:31.765063+00:00",
+      "content_hash": "sha256:89e9a53be1b6e333df6075e9276d7245c5334cbbc76fdb921277230036605fd4"
+    },
+    {
+      "question_id": "174a04ce-134e-4204-9a3b-bd63240a026e",
+      "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+      "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
+      "text": "How do the purposes and designs of the Pantheon and the Colosseum reflect different Roman architectural priorities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both structures served identical religious purposes and used identical architectural approaches, reflecting a unified Roman architectural style"
+        },
+        {
+          "id": "b",
+          "text": "The Pantheon, a temple and assembly space, prioritizes interior unified space and celestial symbolism (oculus), while the Colosseum, a public spectacle venue, prioritizes tiered seating, efficient circulation, and visual hierarchy in its facade"
+        },
+        {
+          "id": "c",
+          "text": "The Colosseum was more important and better engineered than the Pantheon, showcasing superior Roman engineering capabilities"
+        },
+        {
+          "id": "d",
+          "text": "The Pantheon demonstrates concrete superiority, while the Colosseum demonstrates stone superiority, highlighting different material uses"
         }
       ],
       "correct_option_id": "b",
@@ -189,28 +241,80 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The measurements are too small; 100 feet and a small window do not match the Pantheon's documented proportions.",
-        "c": "The 200-foot diameter is too large; clerestory windows are not the Pantheon's light source.",
-        "d": "The 80-foot diameter and multiple skylights do not match the Pantheon's documented design of a single 142-foot dome with one oculus.",
-        "correct": "Precise measurements: 'The Pantheon features a vast hemispherical dome measuring 142 feet (43.3 m) in diameter... At the apex is the oculus—a circular opening measuring approximately 27–28 feet (8.2–8.5 m) in diameter, the sole light source, and the only opening in the roof.'",
-        "takeaway": "At the apex is the oculus—a circular opening measuring approximately 27–28 feet (8.2–8.5 m) in diameter, the sole light source, and the only opening in the roof.'."
+        "a": "The structures served different purposes: the Pantheon was a temple, the Colosseum was an entertainment venue.",
+        "c": "Both are masterworks; superiority is not a meaningful comparison.",
+        "d": "Both structures used concrete and stone; the material distribution differs based on functional needs.",
+        "correct": "The Pantheon: 'temple and assembly... hemispherical dome... oculus—the sole light source' and the Colosseum: 'elliptical structure... 50,000+ spectators... tiered arcaded openings... seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities.",
+        "takeaway": "seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities."
       },
-      "explanation": null,
+      "explanation": "The structures served different purposes: the Pantheon was a temple, the Colosseum was an entertainment venue. Both are masterworks; superiority is not a meaningful comparison. Both structures used concrete and stone; the material distribution differs based on functional needs. The Pantheon: 'temple and assembly... hemispherical dome... oculus—the sole light source' and the Colosseum: 'elliptical structure... 50,000+ spectators... tiered arcaded openings... seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities. seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities.",
       "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
       "practice_context": [
-        "ID"
+        "CMP"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-HIST-001-06-001",
+      "model_id": "ALE-HIST-001-06-011",
       "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:23.734061+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:388ef2c10c50d07fd41c61f851293e559de53377089f94e1bd7c11b3628cd3ae"
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T13:17:32.286169+00:00",
+      "content_hash": "sha256:aa86ec3b60ed0b106a98ae82cbf4141330fdf846e881ef78192d59dce65cb232"
+    },
+    {
+      "question_id": "887c93ce-4425-4b14-8fe4-01328a1f3d10",
+      "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+      "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
+      "text": "The wedge-shaped stones forming the curve of an arch are called:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Voussoirs"
+        },
+        {
+          "id": "b",
+          "text": "Intrados"
+        },
+        {
+          "id": "c",
+          "text": "Keystones"
+        },
+        {
+          "id": "d",
+          "text": "Extrados"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The intrados is the 'inner curve' of an arch, not the stones forming it.",
+        "c": "The keystone is 'the central, uppermost voussoir,' a specific voussoir, not all voussoirs.",
+        "d": "The extrados is the 'outer curve' of an arch, not the stones themselves.",
+        "correct": "The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.'",
+        "takeaway": "The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.'."
+      },
+      "explanation": "The intrados is the 'inner curve' of an arch, not the stones forming it. The keystone is 'the central, uppermost voussoir,' a specific voussoir, not all voussoirs. The extrados is the 'outer curve' of an arch, not the stones themselves. The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.' The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T13:17:32.408986+00:00",
+      "content_hash": "sha256:aa1ec76b4ad75ea8c5ab08a196ec0cf28c56daf78e470f98f1edba5699d1d245"
     },
     {
       "question_id": "d37a6119-a159-4b89-bbb9-b3a995854017",
@@ -247,7 +351,7 @@
         "correct": "The article defines: 'Cavea: The tiered seating arrangement in an amphitheatre or theatre, designed for optimal sight lines.'",
         "takeaway": "The article defines: 'Cavea: The tiered seating arrangement in an amphitheatre or theatre, designed for optimal sight lines.'."
       },
-      "explanation": null,
+      "explanation": "The hypogeum is 'the underground substructure beneath an amphitheatre, housing equipment, cages, and mechanical systems.' A naos is a Greek temple's inner sanctum, not a seating arrangement. An apadana is a Persian columned hall, not a seating arrangement. The article defines: 'Cavea: The tiered seating arrangement in an amphitheatre or theatre, designed for optimal sight lines.' The article defines: 'Cavea: The tiered seating arrangement in an amphitheatre or theatre, designed for optimal sight lines.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -261,60 +365,8 @@
       "model_id": "ALE-HIST-001-06-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4b79f11363ff91297a6300912d685dcb451ede1e5f1b950b46a87810eedd757b"
-    },
-    {
-      "question_id": "42db4fce-7aa2-4135-94e6-298c0dff32f6",
-      "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
-      "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "Why did the Romans construct massive domed and vaulted structures like the Pantheon and basilicas, while Greek architects relied on post-and-lintel systems?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Roman culture was more advanced and intelligent than Greek culture, leading to superior architectural innovations"
-        },
-        {
-          "id": "b",
-          "text": "Roman civilization was imperial and practical, requiring large public structures for spectacles, assembly, and civic functions, which drove development of arch-vault technology and concrete"
-        },
-        {
-          "id": "c",
-          "text": "Greeks deliberately chose simpler systems for religious reasons, believing that simplicity was closer to the divine"
-        },
-        {
-          "id": "d",
-          "text": "Roman engineers discovered stone could be used to span greater distances, a technique Greeks never developed, allowing for larger and more open interior spaces"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Cultural advancement is not the determining factor; structural choices reflect different needs and values.",
-        "c": "The article does not suggest religious reasons; Greek city-states had different civic needs that the post-and-lintel system adequately served.",
-        "d": "Greeks and Romans used different materials and systems; Greeks had excellent stone technology applied to their post-and-lintel approach.",
-        "correct": "Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation.",
-        "takeaway": "The article explains: 'Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-06-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c071ea9997d54a0a040920f3aea49d98c334f3d20afc408807dc05f21944c081"
+      "updated_at": "2026-05-06T13:17:31.902508+00:00",
+      "content_hash": "sha256:a074e0efbe21eb088a7666bb7ed7bf8ecdaa203fc708db116435daf0765b9d28"
     },
     {
       "question_id": "c6e36770-f3a1-4fde-99d7-49edcd55356d",
@@ -369,58 +421,6 @@
       "content_hash": "sha256:44875533c88c9d5f0730f5ced89a5a35d090d5310bc19a57feca754d2b43e92f"
     },
     {
-      "question_id": "c69ead7e-e7f4-4561-9beb-8dcbcc65f5a0",
-      "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
-      "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "A three-dimensional vault formed by the intersection of two barrel vaults at right angles, concentrating weight at four corner piers instead of continuous walls, is called:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Barrel vault, which is a simple and continuous arch form"
-        },
-        {
-          "id": "b",
-          "text": "Dome, a hemispherical structure often used in monumental architecture"
-        },
-        {
-          "id": "c",
-          "text": "Groin vault"
-        },
-        {
-          "id": "d",
-          "text": "Tunnel vault, characterized by its elongated and cylindrical shape"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "A barrel vault is a continuous semicircular vault spanning a space, not an intersection of two vaults.",
-        "b": "A dome is a vault rotated on all axes, not an intersection of barrel vaults.",
-        "d": "Tunnel vault is another name for barrel vault, not a groin vault.",
-        "correct": "The article defines: 'A groin vault (or cross vault) formed where two barrel vaults intersect at right angles, creating four arched surfaces. Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.'",
-        "takeaway": "Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "recall",
-      "practice_context": [
-        "DESC"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-06-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:53799ab214acc9bb0f27f32bafb59fe35018cb106eb04728499cac60ac00cc1a"
-    },
-    {
       "question_id": "5db9129a-6198-44b1-8282-2cdf67abbe47",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
@@ -473,6 +473,110 @@
       "content_hash": "sha256:1b1671716dc83c32b211fdaa38c3b2c5ec844d4f268c2356e2008b4bf5216416"
     },
     {
+      "question_id": "42db4fce-7aa2-4135-94e6-298c0dff32f6",
+      "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+      "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
+      "text": "Why did the Romans construct massive domed and vaulted structures like the Pantheon and basilicas, while Greek architects relied on post-and-lintel systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roman culture was more advanced and intelligent than Greek culture, leading to superior architectural innovations"
+        },
+        {
+          "id": "b",
+          "text": "Roman civilization was imperial and practical, requiring large public structures for spectacles, assembly, and civic functions, which drove development of arch-vault technology and concrete"
+        },
+        {
+          "id": "c",
+          "text": "Greeks deliberately chose simpler systems for religious reasons, believing that simplicity was closer to the divine"
+        },
+        {
+          "id": "d",
+          "text": "Roman engineers discovered stone could be used to span greater distances, a technique Greeks never developed, allowing for larger and more open interior spaces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cultural advancement is not the determining factor; structural choices reflect different needs and values.",
+        "c": "The article does not suggest religious reasons; Greek city-states had different civic needs that the post-and-lintel system adequately served.",
+        "d": "Greeks and Romans used different materials and systems; Greeks had excellent stone technology applied to their post-and-lintel approach.",
+        "correct": "Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation.",
+        "takeaway": "The article explains: 'Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation."
+      },
+      "explanation": "Cultural advancement is not the determining factor; structural choices reflect different needs and values. The article does not suggest religious reasons; Greek city-states had different civic needs that the post-and-lintel system adequately served. Greeks and Romans used different materials and systems; Greeks had excellent stone technology applied to their post-and-lintel approach. Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation. The article explains: 'Roman civilization, unlike Greek city-states, was imperial and practical—architecture reflected this in amphitheaters for spectacles, aqueducts for water delivery, roads for military movement, and warehouses for grain.' This practical, utilitarian need drove architectural innovation.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T13:17:32.027421+00:00",
+      "content_hash": "sha256:1d2be3f3a7f81a116504abc6dc3565175fc06fe32952f97ef517eee54f50f943"
+    },
+    {
+      "question_id": "c69ead7e-e7f4-4561-9beb-8dcbcc65f5a0",
+      "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
+      "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
+      "text": "A three-dimensional vault formed by the intersection of two barrel vaults at right angles, concentrating weight at four corner piers instead of continuous walls, is called:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Barrel vault, which is a simple and continuous arch form"
+        },
+        {
+          "id": "b",
+          "text": "Dome, a hemispherical structure often used in monumental architecture"
+        },
+        {
+          "id": "c",
+          "text": "Groin vault"
+        },
+        {
+          "id": "d",
+          "text": "Tunnel vault, characterized by its elongated and cylindrical shape"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A barrel vault is a continuous semicircular vault spanning a space, not an intersection of two vaults.",
+        "b": "A dome is a vault rotated on all axes, not an intersection of barrel vaults.",
+        "d": "Tunnel vault is another name for barrel vault, not a groin vault.",
+        "correct": "The article defines: 'A groin vault (or cross vault) formed where two barrel vaults intersect at right angles, creating four arched surfaces. Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.'",
+        "takeaway": "Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.'."
+      },
+      "explanation": "A barrel vault is a continuous semicircular vault spanning a space, not an intersection of two vaults. A dome is a vault rotated on all axes, not an intersection of barrel vaults. Tunnel vault is another name for barrel vault, not a groin vault. The article defines: 'A groin vault (or cross vault) formed where two barrel vaults intersect at right angles, creating four arched surfaces. Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.' Groin vaults were more economical than barrel vaults because they concentrated weight at four corner piers instead of along continuous walls.'.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-001-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T13:17:32.15849+00:00",
+      "content_hash": "sha256:cbbf9f607e8157887d46db766613eeb7dc1850237cea0c97378ddd9029c5fb88"
+    },
+    {
       "question_id": "0ef8103b-d9a8-495c-88aa-487c8d88e883",
       "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
       "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
@@ -523,110 +627,6 @@
       "created_at": "2026-03-23T19:27:24.126756+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:e03479227239561c62745d459052b3cc7ea0166d11e2187cb2a832af4c447a42"
-    },
-    {
-      "question_id": "174a04ce-134e-4204-9a3b-bd63240a026e",
-      "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
-      "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "How do the purposes and designs of the Pantheon and the Colosseum reflect different Roman architectural priorities?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Both structures served identical religious purposes and used identical architectural approaches, reflecting a unified Roman architectural style"
-        },
-        {
-          "id": "b",
-          "text": "The Pantheon, a temple and assembly space, prioritizes interior unified space and celestial symbolism (oculus), while the Colosseum, a public spectacle venue, prioritizes tiered seating, efficient circulation, and visual hierarchy in its facade"
-        },
-        {
-          "id": "c",
-          "text": "The Colosseum was more important and better engineered than the Pantheon, showcasing superior Roman engineering capabilities"
-        },
-        {
-          "id": "d",
-          "text": "The Pantheon demonstrates concrete superiority, while the Colosseum demonstrates stone superiority, highlighting different material uses"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The structures served different purposes: the Pantheon was a temple, the Colosseum was an entertainment venue.",
-        "c": "Both are masterworks; superiority is not a meaningful comparison.",
-        "d": "Both structures used concrete and stone; the material distribution differs based on functional needs.",
-        "correct": "The Pantheon: 'temple and assembly... hemispherical dome... oculus—the sole light source' and the Colosseum: 'elliptical structure... 50,000+ spectators... tiered arcaded openings... seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities.",
-        "takeaway": "seating arrangement (cavea) was steeply raked, allowing sight lines to the arena from all positions.' These serve different purposes and reflect different architectural priorities."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-06-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8fb24e75fea4dd68fa0b1341c1ad3832da1fda9ec9f3e12aaa06f9fbc6d48533"
-    },
-    {
-      "question_id": "887c93ce-4425-4b14-8fe4-01328a1f3d10",
-      "article_id": "a73a7409-4f9b-4d7d-afd0-d49bc7ebca6b",
-      "topic_id": "189eabf4-38c4-4466-b977-5b0a664f6484",
-      "text": "The wedge-shaped stones forming the curve of an arch are called:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Voussoirs"
-        },
-        {
-          "id": "b",
-          "text": "Intrados"
-        },
-        {
-          "id": "c",
-          "text": "Keystones"
-        },
-        {
-          "id": "d",
-          "text": "Extrados"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "The intrados is the 'inner curve' of an arch, not the stones forming it.",
-        "c": "The keystone is 'the central, uppermost voussoir,' a specific voussoir, not all voussoirs.",
-        "d": "The extrados is the 'outer curve' of an arch, not the stones themselves.",
-        "correct": "The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.'",
-        "takeaway": "The article defines: 'Voussoir: A wedge-shaped stone forming part of an arch; the arrangement allows compression and makes the arch structurally efficient.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DESC"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-001-06-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:025d19a978aa2e984d5964131522b3df1d5bab7a1e398eac26e7135d7b3f1162"
     }
   ]
 }

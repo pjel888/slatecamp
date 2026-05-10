@@ -1,0 +1,562 @@
+{
+  "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:25276ef97e095cc0687b3aaaf1a59f76383de113d486f23fb349e35b4a8055ba",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "227cf311-fc41-4fd9-b0e5-95022e80013c",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Legal Liability and Enforcement Workflow\", if a project requires 18 m, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "18 m is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "18 m is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "18 m applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "18 m is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 18 m as the requirement. Context: is posted on the building's Certificate of Occupancy — a document the mall paid ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:10.735626+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f0d6027ac87783ad29bba868789eb112a9288b413c75ae467db3b1f748791474"
+    },
+    {
+      "question_id": "57727ad9-2d3a-4fd9-8faa-e0a2435bfdbc",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344, what is the criminal liability of a Building Official who knowingly issues a building permit for plans that lack required accessibility features?",
+      "options": [
+        {
+          "id": "A",
+          "text": "None — BOs are protected by official immunity when acting within their administrative functions, unless gross negligence is proven"
+        },
+        {
+          "id": "B",
+          "text": "Administrative liability only — the BO is referred to the Civil Service Commission for dereliction of duty, which may result in suspension or dismissal"
+        },
+        {
+          "id": "C",
+          "text": "Both administrative liability (CSC/Ombudsman) and criminal liability under PD 1096 Sec. 213 for issuing a permit for a noncompliant building"
+        },
+        {
+          "id": "D",
+          "text": "Civil liability only — the BO can be sued for damages by any PWD denied access due to the non-compliant building, provided the denial is directly linked to the BO's actions"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "A BO who knowingly issues a permit for non-compliant plans faces both administrative liability (CSC/Ombudsman) and criminal liability under PD 1096 Sec. 213.",
+        "explanation": "The Building Official's permit-issuance authority carries personal liability. If the BO issues a permit for accessibility-noncompliant plans: (1) Administrative — may be charged with dereliction of duty before the CSC or Office of the Ombudsman; (2) Criminal — PD 1096 Sec. 213 imposes criminal liability on BOs who issue permits for noncompliant buildings. Additionally, a permit improperly issued does NOT provide a legal defense to the building owner — the underlying violation persists. DPWH may also investigate and recommend disciplinary action to the local chief executive.",
+        "common_misconceptions": [
+          "Believing official immunity protects BOs from liability for knowing violations",
+          "Limiting BO liability to administrative consequences only, ignoring criminal exposure under PD 1096"
+        ]
+      },
+      "explanation": "This question tests BO personal liability — both administrative (CSC/Ombudsman) and criminal (PD 1096 Sec. 213) — for knowingly issuing permits for non-compliant buildings.",
+      "code_citation": "BP 344; PD 1096, Sec. 213",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7d37d596d429a53abae8384d4a1903c5475ff229a04966b5d835460c5b219558"
+    },
+    {
+      "question_id": "de09fead-1580-4321-b322-07e0157aed48",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 and PD 1096, which official is solely authorized to issue building permits, and what role does this official play in BP 344 enforcement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The DPWH Regional Director — DPWH promulgates the IRR and issues all building permits for covered buildings"
+        },
+        {
+          "id": "B",
+          "text": "The Building Official (LGU appointee) — issues permits and must not issue a permit for plans that fail accessibility compliance"
+        },
+        {
+          "id": "C",
+          "text": "The NCDA Director — the National Council on Disability Affairs has authority to issue and deny permits for buildings open to PWDs"
+        },
+        {
+          "id": "D",
+          "text": "The PRC Board of Architecture — professional accountability requires architects to obtain direct board approval before permit issuance"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Building Official (BO), an LGU appointee, is the sole permit-issuing authority and must not issue permits for non-compliant plans.",
+        "explanation": "Under PD 1096 (National Building Code), the Building Official — appointed by the Local Government Unit — is the sole authority to issue building permits. Under BP 344 Sec. 8 and Rule 3 of the IRR, the BO shall not issue a building permit for covered buildings unless the plans comply with accessibility standards. DPWH sets the rules (promulgates the IRR); the BO applies them locally. NCDA coordinates and monitors but cannot issue or deny permits.",
+        "common_misconceptions": [
+          "Attributing permit issuance to DPWH (which sets the IRR rules but does not issue permits)",
+          "Confusing NCDA's monitoring role with permit authority"
+        ]
+      },
+      "explanation": "This foundational question tests the critical distinction between the Building Official (permit authority) and DPWH (rule-making authority) — one of the most common LEA traps.",
+      "code_citation": "BP 344, Sec. 8; PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2f732ffe525525e70cc19198c167540aac82eba094ae56f65205344e1836f6fe"
+    },
+    {
+      "question_id": "05e37936-f819-4362-ae84-c1a0b8feb400",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 Rule 3 and PD 1096 Section 309, can a Certificate of Occupancy (COO) be issued for a building where the approved ramp was not installed during construction?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes — the COO can be issued with a conditional annotation requiring the ramp to be installed within 90 days, subject to verification"
+        },
+        {
+          "id": "B",
+          "text": "No — the BO must verify that all accessibility features shown in the approved plans are actually installed before issuing the COO"
+        },
+        {
+          "id": "C",
+          "text": "Yes — the COO covers structural completion; accessibility features are enforced separately by NCDA post-occupancy, ensuring compliance"
+        },
+        {
+          "id": "D",
+          "text": "No — but only if a PWD has filed a formal complaint before the COO application date, which may delay issuance"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The BO cannot issue a COO unless all accessibility features in the approved plans are actually installed — missing features are grounds to withhold the COO.",
+        "explanation": "Under BP 344 Rule 3 and PD 1096 Section 309, the Building Official shall not issue a Certificate of Occupancy unless the completed building conforms to all applicable laws, including BP 344. An on-site inspection must verify that accessibility features (ramps, parking, toilets, signage) shown in the approved plans are installed. A missing ramp — even if approved in plans — is grounds to withhold the COO. If a COO is issued in error, the BO can order cessation of operations until compliance is achieved.",
+        "common_misconceptions": [
+          "Believing a COO can be issued with a conditional annotation for incomplete accessibility features",
+          "Thinking NCDA handles accessibility enforcement separately from the COO process"
+        ]
+      },
+      "explanation": "This application question tests the COO-accessibility link — the COO cannot be issued unless all accessibility features from the approved plans are physically present.",
+      "code_citation": "BP 344 Rule 3; PD 1096, Sec. 309",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a052350a13433e3c33280a6373865fb443a059ad9ed72b36d42d2b02cbfbcfdd"
+    },
+    {
+      "question_id": "658998a6-1ef1-4e0f-b27d-ea895c24d275",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344, does the law apply to a privately owned shopping mall? What provision determines its coverage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No — BP 344 applies only to government-owned buildings; private commercial establishments are exempt from the requirements of accessibility standards"
+        },
+        {
+          "id": "B",
+          "text": "Yes — BP 344 applies to all buildings and establishments open to the public, including private commercial establishments"
+        },
+        {
+          "id": "C",
+          "text": "Only partially — BP 344 applies to common areas of the mall but not to individual tenant spaces, unless specified otherwise by local ordinances"
+        },
+        {
+          "id": "D",
+          "text": "Yes — but only if the mall has more than 500 square meters of gross floor area, as smaller establishments are not covered under the general provisions"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 applies to all buildings open to the public — 'private' does not mean 'exempt.' A shopping mall is explicitly covered.",
+        "explanation": "BP 344 applies to all 'public buildings, institutions, establishments, and public utilities' — interpreted to mean all buildings and establishments that the public can enter, regardless of private ownership. Commercial establishments (malls, stores, hotels, hospitals, schools) are all covered. Purely private single-family residences are generally exempt unless they operate a public business. The principle is: if the public can enter, BP 344 applies. There is no floor area threshold or size exemption.",
+        "common_misconceptions": [
+          "Assuming 'private ownership' creates an exemption from BP 344",
+          "Believing BP 344 applies only to government buildings"
+        ]
+      },
+      "explanation": "This understanding question addresses the most common scope misconception — that private buildings are exempt from BP 344. The coverage test is public access, not ownership.",
+      "code_citation": "BP 344",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c86a61caf389901a2af83d3befea2c85093d1f991e6a776ee319ea1948ca66da"
+    },
+    {
+      "question_id": "194d6c09-d801-4589-a693-79c5f64c8ad0",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under the BP 344 enforcement framework, what is DPWH's role, and which function does it specifically NOT perform?",
+      "options": [
+        {
+          "id": "A",
+          "text": "DPWH promulgates the IRR, provides technical guidance, and conducts inspections — but does NOT issue building permits"
+        },
+        {
+          "id": "B",
+          "text": "DPWH issues building permits, promulgates the IRR, and conducts inspections of all covered buildings, ensuring compliance with all relevant standards."
+        },
+        {
+          "id": "C",
+          "text": "DPWH monitors PWD rights compliance and issues fines directly to non-compliant building owners, maintaining strict oversight of accessibility standards."
+        },
+        {
+          "id": "D",
+          "text": "DPWH approves building plans, issues permits, and refers criminal violations to the Ombudsman, ensuring legal accountability for all stakeholders."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "DPWH promulgates the IRR, provides technical guidance, and conducts independent inspections — but does NOT issue building permits (that is the BO's function).",
+        "explanation": "DPWH has three roles in BP 344 enforcement: (1) IRR Promulgation — issues and updates the BP 344 IRR (2024 IRR is current); (2) Technical Authority — guides BOs and resolves interpretation disputes; (3) Inspection Authority — may conduct independent inspections and issue directives. DPWH does NOT issue building permits — that is exclusively the Building Official's function under PD 1096. This distinction is a primary ALE trap.",
+        "common_misconceptions": [
+          "Believing DPWH issues building permits because it promulgates the accessibility rules",
+          "Attributing direct fine-imposition authority to DPWH"
+        ]
+      },
+      "explanation": "This question tests the DPWH role — specifically that it sets rules and inspects but does NOT issue building permits, which remains the BO's exclusive function.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:609d8f3aa99e898bcf3acc385004d1461545c3247cc06335cac34cd9485af2cb"
+    },
+    {
+      "question_id": "b77f1295-d049-4a41-9480-830db5a4b8b5",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A PWD files a BP 344 accessibility complaint with the City Building Official, but the BO takes no action after 15 days. What is the correct escalation path under BP 344?",
+      "options": [
+        {
+          "id": "A",
+          "text": "File directly with the PRC Board of Architecture — professional misconduct by the building's architect triggers immediate license review"
+        },
+        {
+          "id": "B",
+          "text": "Escalate to the DPWH Regional Office — which may issue directives to the BO and conduct a technical review"
+        },
+        {
+          "id": "C",
+          "text": "File with the HLURB/DHSUD — the Housing and Land Use Regulatory Board has jurisdiction over all building accessibility complaints"
+        },
+        {
+          "id": "D",
+          "text": "File directly with the Supreme Court — constitutional rights violations bypass the administrative hierarchy"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "After no BO action within 15 days, the complaint escalates to the DPWH Regional Office, which may issue directives to the BO.",
+        "explanation": "The BP 344 escalation chain is: Level 1 — City/Municipal Building Official (initial complaint); Level 2 — DPWH Regional Office (if BO fails to act, typically within 15 days); Level 3 — NCDA (inter-agency escalation, especially for government buildings); Level 4 — Office of the Ombudsman / Regular Courts (criminal or civil action). HLURB/DHSUD handles land use and subdivision matters — not BP 344 accessibility enforcement. The PRC handles professional misconduct, which comes later in the chain (Level 5 if architect misconduct is alleged).",
+        "common_misconceptions": [
+          "Going to PRC as the first escalation step — PRC handles architect misconduct, not primary enforcement",
+          "Filing with HLURB/DHSUD, which does not have BP 344 enforcement jurisdiction"
+        ]
+      },
+      "explanation": "This application question tests the correct second step in the BP 344 enforcement escalation chain — DPWH Regional Office — not PRC, HLURB, or courts at this stage.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f7c3b8eebf328012b601e02ee09d0fa5e2c37d1252cce1ac9235c2d4001b032e"
+    },
+    {
+      "question_id": "9c58e427-26a0-4491-bd53-21548e9d25ca",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 and RA 9266, what must an architect do when a client explicitly instructs them to omit all accessible toilet features from a hospital design to reduce construction costs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Comply under protest and note the client's instruction in the project file — the client bears all resulting liability"
+        },
+        {
+          "id": "B",
+          "text": "Reduce only non-critical accessible features while retaining the ramp and main accessible toilet — a partial compliance approach that balances cost and accessibility"
+        },
+        {
+          "id": "C",
+          "text": "Inform the client in writing that BP 344 compliance is mandatory and non-waivable; refuse to sign and seal non-compliant plans; withdraw if the client insists"
+        },
+        {
+          "id": "D",
+          "text": "Submit the non-compliant plans and let the Building Official decide — the BO's approval transfers liability to the LGU, absolving the architect"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The architect must inform the client BP 344 is non-waivable, refuse to seal non-compliant plans, and withdraw from the project if the client insists.",
+        "explanation": "Under RA 9266 Sec. 33, an architect's signature and seal is a certification of compliance with all applicable laws — including BP 344. If a client instructs the architect to omit accessibility features, the architect must: (1) inform the client in writing that BP 344 is mandatory and cannot be waived by either party; (2) refuse to sign and seal non-compliant plans; (3) if the client insists, withdraw from the project. The architect's obligation runs to the public and to PWDs, not only to the client. Continuing to design a non-compliant building exposes the architect to professional and criminal liability — the architect cannot transfer this by noting the client's instruction.",
+        "common_misconceptions": [
+          "Believing the client's instructions can override the architect's professional duty to comply with BP 344",
+          "Assuming a written note in the project file is sufficient to transfer liability to the client"
+        ]
+      },
+      "explanation": "This evaluation question tests the architect's non-delegable duty under RA 9266 — the professional must refuse non-compliant work regardless of client instructions, with withdrawal as the ultimate recourse.",
+      "code_citation": "BP 344; RA 9266, Sec. 33",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:08842576ee43d00589e2daa7e8703a4e96dc38d7e60e59561673e0743988909c"
+    },
+    {
+      "question_id": "27673cb3-8cb6-4923-b927-fa622328a5fa",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 and RA 10754, a building that has been occupied for 3 years develops accessibility violations when the owner removes the TGSI strips and pads a locked chain across the accessible toilet entrance. What is the enforcement status of these violations?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The prescriptive period has run — accessibility violations must be filed within 1 year of the COO issuance"
+        },
+        {
+          "id": "B",
+          "text": "These are continuing violations — the prescriptive period resets each day the violation persists, so the complaint can be filed at any time"
+        },
+        {
+          "id": "C",
+          "text": "These are maintenance issues only — post-occupancy accessibility failures are handled by the NCDA through advisory notices, not criminal enforcement"
+        },
+        {
+          "id": "D",
+          "text": "These violations expired — once a COO is issued, accessibility enforcement authority transfers to the building owner exclusively"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Ongoing accessibility violations are continuing offenses — the prescriptive period resets each day the violation persists, so complaints can be filed at any time the violation exists.",
+        "explanation": "Under BP 344 and RA 10754, a building that remains non-compliant creates a continuing offense. The prescriptive period for the criminal action resets each day the violation continues to exist. Removing TGSI strips and locking the accessible toilet constitutes active, willful non-compliance — which is more serious than a design deficiency and can trigger both administrative action (BO Cease and Desist Order) and criminal prosecution under RA 10754 (up to ₱300,000 fine + 6 years imprisonment). Post-occupancy enforcement by the BO and DPWH remains fully active.",
+        "common_misconceptions": [
+          "Believing a COO ends the enforcement authority over accessibility features",
+          "Thinking post-occupancy accessibility violations are only advisory matters for NCDA"
+        ]
+      },
+      "explanation": "This analysis question tests the 'continuing violation' doctrine — that active accessibility failures have no prescriptive clock because the violation resets daily — a critical enforcement concept.",
+      "code_citation": "BP 344; RA 10754",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b8ee6d3eaee7e4dc343b22c0596b1f2482f3149e058aee3ad3803495a2f58d7a"
+    },
+    {
+      "question_id": "103485a5-0426-4d16-aefd-79af83230c92",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A building owner is cited for a BP 344 violation after a PWD complaint. The owner argues: 'The architect selead the plans, so the architect is responsible.' Is the owner correct, and what is the legal basis for the answer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Correct — the architect's seal transfers all legal liability to the architect; owners bear no responsibility for design compliance"
+        },
+        {
+          "id": "B",
+          "text": "Incorrect — the owner is separately liable for construction, maintenance, and operation; both the architect and owner can be liable simultaneously"
+        },
+        {
+          "id": "C",
+          "text": "Correct — RA 9266 limits accessibility liability to licensed architects who signed and sealed the compliant plans"
+        },
+        {
+          "id": "D",
+          "text": "Incorrect — only the Building Official is liable for accessibility violations, since the BO approved the plans and issued the permit"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The owner is incorrect — the architect's liability (design) and the owner's liability (construction, maintenance, operation) are separate and simultaneous.",
+        "explanation": "Under BP 344, RA 10754, and the Civil Code: the architect is primarily liable for design defects (RA 9266, 10-year period from completion). The building owner is independently and primarily liable for construction, maintenance, and continued operation of the building in an accessible state. If an accessibility feature was absent, defective, or improperly maintained, the owner faces civil damages (Civil Code Art. 2176 quasi-delict), criminal liability (RA 10754), and administrative action (BO suspension of occupancy permit). Both parties can be liable simultaneously for the same accessibility failure.",
+        "common_misconceptions": [
+          "Assuming the architect's seal fully transfers liability away from the owner",
+          "Believing only the BO is liable because the BO approved the plans"
+        ]
+      },
+      "explanation": "This analysis question tests simultaneous liability — architect (design) and owner (construction/maintenance/operation) are independently liable and neither shields the other.",
+      "code_citation": "BP 344; RA 9266; RA 10754; Civil Code Art. 2176",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:69dddc04c80d096910ef1db04cfe45d61d29432da3573880cdcb87b098add029"
+    },
+    {
+      "question_id": "e6c86256-506e-47dc-afd5-bee3f37b9e1a",
+      "article_id": "02b9f8da-3c2e-460a-bd2b-0c5d68249b1b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under RA 9266 (Architecture Act of 2004), what is the civil liability period for an architect whose noncompliant accessibility design results in injury to a PWD, and from what date does this period run?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4 years from the date of injury — the standard quasi-delict prescriptive period under the Civil Code, which applies to most personal injury claims"
+        },
+        {
+          "id": "B",
+          "text": "3 years from discovery of the design defect — the standard for professional negligence claims, allowing time for defect identification"
+        },
+        {
+          "id": "C",
+          "text": "10 years from completion of the project — a specific extended period under RA 9266 for structural and design defects"
+        },
+        {
+          "id": "D",
+          "text": "15 years from issuance of the Certificate of Occupancy — the standard for real property warranty claims, ensuring long-term accountability"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "RA 9266 imposes a 10-year civil liability period from project completion for structural and design defects — including accessibility failures.",
+        "explanation": "RA 9266 (Architecture Act of 2004) Sec. 39 establishes a 10-year civil liability period running from the completion of the project for structural and design defects. This is specific to RA 9266 and overrides the shorter quasi-delict period (4 years from injury) and the general contract period. An accessibility failure — such as an absent ramp that causes a wheelchair user to fall — is a design defect under this framework. The architect can be sued up to a decade after the building is completed.",
+        "common_misconceptions": [
+          "Applying the 4-year quasi-delict period to architect liability instead of the RA 9266 10-year period",
+          "Counting the period from the date of injury rather than project completion"
+        ]
+      },
+      "explanation": "This question tests the 10-year civil liability period under RA 9266 — which is specific to architects and differs from the general 4-year quasi-delict period under the Civil Code.",
+      "code_citation": "RA 9266, Sec. 39",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:56.41647+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b03dbb8bdb6fa8a5d4b439f09df5a1354999cb7540cb5e8488b39d0464e7f043"
+    }
+  ]
+}

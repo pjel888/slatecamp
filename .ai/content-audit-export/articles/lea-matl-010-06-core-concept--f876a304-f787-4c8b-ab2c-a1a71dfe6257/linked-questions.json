@@ -1,9 +1,109 @@
 {
   "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3178544290d185f686c3f9ee2bb22090f01385a1a79a81fe2a92ee7511e187d2",
+  "linked_questions_hash": "sha256:d6477b3e47c02043be67d32065b6d52ed3caf5ade596ea334a1c407fc54e2b8e",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "3726403a-0f50-48ec-9cf1-df5801819670",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "The unit weight of rebar steel is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "7,200 kg/m³"
+        },
+        {
+          "id": "b",
+          "text": "7,500 kg/m³"
+        },
+        {
+          "id": "c",
+          "text": "7,850 kg/m³"
+        },
+        {
+          "id": "d",
+          "text": "8,000 kg/m³"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "7,200 kg/m³ is too low; would under‑estimate weight.",
+        "b": "7,500 kg/m³ is close but is not the standard value.",
+        "d": "8,000 kg/m³ is slightly high; may be used for heavier alloys.",
+        "correct": "Steel density is 7,850 kg/m³, which is encoded in the formula denominator (162.5).",
+        "takeaway": "Standard structural steel density = 7,850 kg/m³. This is fundamental to rebar weight calculations."
+      },
+      "explanation": "7,200 kg/m³ is too low; would under‑estimate weight. 7,500 kg/m³ is close but is not the standard value. 8,000 kg/m³ is slightly high; may be used for heavier alloys. Steel density is 7,850 kg/m³, which is encoded in the formula denominator (162.5). Standard structural steel density = 7,850 kg/m³. This is fundamental to rebar weight calculations.",
+      "code_citation": "ASTM A615-21, NSCP 2015",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T15:59:01.569043+00:00",
+      "content_hash": "sha256:3b83dc24f68c9ef8fd902e88c4bdc612fda918c771a07e7b9cc51ce6e9b4ddc7"
+    },
+    {
+      "question_id": "cd8480d8-ebce-444a-a44e-8744a24ce910",
+      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
+      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
+      "text": "Standard rebar supplied in the Philippines comes in lengths of ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 meters"
+        },
+        {
+          "id": "b",
+          "text": "9 meters"
+        },
+        {
+          "id": "c",
+          "text": "12 meters"
+        },
+        {
+          "id": "d",
+          "text": "15 meters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "6 meters is half the standard; not a typical supply length.",
+        "b": "9 meters is not standard in Philippine practice.",
+        "d": "15 meters is longer than standard and less common.",
+        "correct": "Standard bar length in Philippine practice is 12 meters, supplied by all major manufacturers (Pag‑asa, Capitol Steel, Vulcan).",
+        "takeaway": "Always assume 12‑meter bars when calculating quantities. This is the market standard in the Philippines."
+      },
+      "explanation": "6 meters is half the standard; not a typical supply length. 9 meters is not standard in Philippine practice. 15 meters is longer than standard and less common. Standard bar length in Philippine practice is 12 meters, supplied by all major manufacturers (Pag‑asa, Capitol Steel, Vulcan). Always assume 12‑meter bars when calculating quantities. This is the market standard in the Philippines.",
+      "code_citation": "Philippine construction practice, Pag‑asa Steel, Capitol Steel",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T15:59:01.690762+00:00",
+      "content_hash": "sha256:5a3a3d1128dba1f5f556fcc7bbfeac4bb77f4519a16e430849eae66b0fb38c85"
+    },
     {
       "question_id": "1375e2d9-defb-4a40-804b-a196a6745d87",
       "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
@@ -405,106 +505,6 @@
       "created_at": "2026-03-23T19:27:28.926909+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:79ebb4242a03608ff0768970f377ef4c75072db2101d174fe537c41431b9ff95"
-    },
-    {
-      "question_id": "3726403a-0f50-48ec-9cf1-df5801819670",
-      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
-      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
-      "text": "The unit weight of rebar steel is ___.",
-      "options": [
-        {
-          "id": "a",
-          "text": "7,200 kg/m³"
-        },
-        {
-          "id": "b",
-          "text": "7,500 kg/m³"
-        },
-        {
-          "id": "c",
-          "text": "7,850 kg/m³"
-        },
-        {
-          "id": "d",
-          "text": "8,000 kg/m³"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "7,200 kg/m³ is too low; would under‑estimate weight.",
-        "b": "7,500 kg/m³ is close but is not the standard value.",
-        "d": "8,000 kg/m³ is slightly high; may be used for heavier alloys.",
-        "correct": "Steel density is 7,850 kg/m³, which is encoded in the formula denominator (162.5).",
-        "takeaway": "Standard structural steel density = 7,850 kg/m³. This is fundamental to rebar weight calculations."
-      },
-      "explanation": null,
-      "code_citation": "ASTM A615-21, NSCP 2015",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-010-03-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:18029622cb1013d3543244dfdb25aa2217c70a8d283e35c0f99018f7f2412e96"
-    },
-    {
-      "question_id": "cd8480d8-ebce-444a-a44e-8744a24ce910",
-      "article_id": "f876a304-f787-4c8b-ab2c-a1a71dfe6257",
-      "topic_id": "35151133-34c6-4bf5-acd4-94bb3e35106b",
-      "text": "Standard rebar supplied in the Philippines comes in lengths of ___.",
-      "options": [
-        {
-          "id": "a",
-          "text": "6 meters"
-        },
-        {
-          "id": "b",
-          "text": "9 meters"
-        },
-        {
-          "id": "c",
-          "text": "12 meters"
-        },
-        {
-          "id": "d",
-          "text": "15 meters"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "6 meters is half the standard; not a typical supply length.",
-        "b": "9 meters is not standard in Philippine practice.",
-        "d": "15 meters is longer than standard and less common.",
-        "correct": "Standard bar length in Philippine practice is 12 meters, supplied by all major manufacturers (Pag‑asa, Capitol Steel, Vulcan).",
-        "takeaway": "Always assume 12‑meter bars when calculating quantities. This is the market standard in the Philippines."
-      },
-      "explanation": null,
-      "code_citation": "Philippine construction practice, Pag‑asa Steel, Capitol Steel",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-010-03-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8407f167bad4e45d2e271fc1f8abc3a180361c84e6d42975bca70be6ded5585b"
     }
   ]
 }

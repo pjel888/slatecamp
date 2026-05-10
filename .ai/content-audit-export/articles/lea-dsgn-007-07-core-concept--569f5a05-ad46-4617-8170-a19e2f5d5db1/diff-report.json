@@ -1,16 +1,16 @@
 {
   "article_id": "569f5a05-ad46-4617-8170-a19e2f5d5db1",
   "slug": "lea-dsgn-007-07-core-concept",
-  "generated_at": "2026-05-04T09:13:04.049Z",
-  "old_hash": "sha256:5cb649835aeecc2b2931a05a6c96879656f165d460db70afa71f10e3e8b00338",
-  "new_hash": "sha256:5cb649835aeecc2b2931a05a6c96879656f165d460db70afa71f10e3e8b00338",
-  "original_hash": "sha256:5cb649835aeecc2b2931a05a6c96879656f165d460db70afa71f10e3e8b00338",
-  "normalized_hash": "sha256:b31bd08a4422f5031ba4bbecf37808253041a965f657882ada73635cd908f710",
-  "candidate_hash": "sha256:182505957e9f480565bbfff90b59ff80a330ee58b766f31d37708b151bcddc16",
-  "changed": false,
-  "changed_line_count": 0,
+  "generated_at": "2026-05-10T00:35:00.538Z",
+  "old_hash": "sha256:af231993ebd00b3c30f95fa989debc12f9268ca931cad4d233896dcdf8c8dad8",
+  "new_hash": "sha256:a793f7cea85cc822a50a24ff7a90ce082a4f1833002ad29d00ab31a62444c6d4",
+  "original_hash": "sha256:af231993ebd00b3c30f95fa989debc12f9268ca931cad4d233896dcdf8c8dad8",
+  "normalized_hash": "sha256:af231993ebd00b3c30f95fa989debc12f9268ca931cad4d233896dcdf8c8dad8",
+  "candidate_hash": "sha256:a793f7cea85cc822a50a24ff7a90ce082a4f1833002ad29d00ab31a62444c6d4",
+  "changed": true,
+  "changed_line_count": 82,
   "inserted_line_count": 0,
-  "deleted_line_count": 0,
+  "deleted_line_count": 5,
   "ui_blocks_original_count": 3,
   "ui_blocks_candidate_count": 3,
   "ui_blocks_changed_count": 0,
@@ -18,11 +18,11 @@
   "unresolved_placeholders_count": 0,
   "preserved_blocks_count": 3,
   "changed_text_summary": {
-    "changed": 0,
+    "changed": 82,
     "inserted": 0,
-    "deleted": 0,
-    "original_line_count": 120,
-    "candidate_line_count": 120
+    "deleted": 5,
+    "original_line_count": 132,
+    "candidate_line_count": 127
   },
   "changed_ui_blocks_summary": {
     "missing_block_ids": [],
@@ -34,8 +34,5 @@
   "warnings": [
     "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
   ],
-  "summary": "Locally safe after recomposition; remote stale check still required before push.",
-  "candidate_hash_sha256": "sha256:182505957e9f480565bbfff90b59ff80a330ee58b766f31d37708b151bcddc16",
-  "normalized_content_hash": "sha256:af231993ebd00b3c30f95fa989debc12f9268ca931cad4d233896dcdf8c8dad8",
-  "normalized_content_hash_sha256": "sha256:af231993ebd00b3c30f95fa989debc12f9268ca931cad4d233896dcdf8c8dad8"
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
 }

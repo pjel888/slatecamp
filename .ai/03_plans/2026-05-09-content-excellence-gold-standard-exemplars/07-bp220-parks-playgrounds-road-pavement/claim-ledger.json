@@ -1,0 +1,109 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "07-bp220-parks-playgrounds-road-pavement",
+  "title": "BP 220 Parks, Playgrounds, and Road Pavement",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_RAW_ONLY",
+  "source_pack_id": "source-pack-bp-220",
+  "documents": [
+    {
+      "document_id": "BP220_REVISED_IRR_2008",
+      "document_code": "BP 220",
+      "source_family": "BP 220 Revised IRR",
+      "document_version_date_or_edition": "2008 Revised IRR",
+      "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-220/Revised_IRR_BP220_2008.pdf",
+      "sha256": "7392741260c227647afe39de283f3efa979465692da8905e59be8857c8651614",
+      "pdf_page_count": 75,
+      "source_hierarchy_tier": 1
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "bp220-c1",
+      "claim_text": "Basic needs are listed in descending order: water, movement/circulation, storm drainage, solid/liquid waste disposal, park/playground, power.",
+      "claim_class": "LEGAL_SCOPE",
+      "article_location": "The rule that decides the answer",
+      "locator": "Rule II / Basic Needs / PDF p.9",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "none_detected_by_script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "bp220-basicneeds-q1"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "bp220-c2",
+      "claim_text": "At 150 lots/dwelling units per hectare and below, parks/playgrounds allocation is 3.5% of gross area.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "Parks and playgrounds are density-linked",
+      "locator": "Rule II / Table 1 / PDF p.12",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "none_detected_by_script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "bp220-park-q2"
+      ],
+      "notes": ""
+    },
+    {
+      "claim_id": "bp220-c3",
+      "claim_text": "Parks/playgrounds area shall not be less than 100 square meters.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "The floor is still 100 square meters",
+      "locator": "Rule II / Table 1 note / PDF p.12",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "none_detected_by_script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [],
+      "notes": ""
+    },
+    {
+      "claim_id": "bp220-c4",
+      "claim_text": "Road pavement may use asphalt minimum 50 mm or concrete minimum 150 mm with 20.7 MPa at 28 days.",
+      "claim_class": "TECHNICAL_STANDARD",
+      "article_location": "Road pavement trap",
+      "locator": "Rule II / Section 5.b.3.4 / PDF p.17",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "none_detected_by_script",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "bp220-road-q3"
+      ],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "llm_council_complete_for_calibration",
+    "reviewer_id": "llm_council_claude_opencode_commandcode",
+    "date": "2026-05-09T07:39:33Z",
+    "notes": "LLM council SME review complete for calibration artifacts. Direct publication remains held pending licensed-human SME clearance, source/provenance reconciliation, and roundtrip conversion.",
+    "council_review_files": [
+      "council-reviews/2026-05-09-sme-risk-review/01-claude-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/02-opencode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
+    ],
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+  }
+}

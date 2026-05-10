@@ -1,26 +1,28 @@
-# Project Overview
+# Project Overview (Historical Snapshot)
 
-**Last audit:** 2026-04-29
+**Last audit:** 2026-04-29 | **Superseded by:** `PROJECT_CONTEXT.md` (2026-05-09)
 
-SlateCamp is a Next.js App Router application for Philippine Licensure Examination for Architects preparation. It combines public marketing, authenticated student study workflows, admin content operations, developer tooling, and owner/CEO operational dashboards.
+> ⚠️ **This file is a historical snapshot from 2026-04-29.** Counts below are **stale**. For current verified counts and project context, see `PROJECT_CONTEXT.md`.
 
-## Current audited counts
+SlateCamp is a Next.js App Router application for Philippine Licensure Examination for Architects preparation.
 
-| Metric | Count |
-| --- | --- |
-| pages | 105 |
-| apis | 12 |
-| layouts | 14 |
-| loadings | 92 |
-| errors | 7 |
-| server_files | 157 |
-| tests | 88 |
-| stories | 100 |
-| tables | 76 |
-| migrations | 92 |
-| env | 65 referenced names; 4 launch-required core vars; 11 deferred provider vars |
-| features | 27 |
-| ip | 16 |
+## Historical audited counts (2026-04-29)
+
+| Metric | Old Count (2026-04-29) | Current Verified (2026-05-09) |
+| --- | --- | --- |
+| pages | 105 | **128** |
+| apis | 12 | **12** |
+| layouts | 14 | **15** |
+| loadings | 92 | **104** |
+| errors | 7 | **8** |
+| server_files | 157 | **150** |
+| tests | 88 | **88** |
+| stories | 100 | **113** |
+| tables | 76 | **76** (reconfirmed) |
+| migrations | 92 | **101** |
+| env | 65 referenced names | unchanged |
+| features | 27 | unchanged |
+| ip | 16 | unchanged
 
 
 ## Current status

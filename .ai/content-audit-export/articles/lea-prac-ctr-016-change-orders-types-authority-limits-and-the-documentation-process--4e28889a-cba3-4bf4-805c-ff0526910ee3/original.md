@@ -1,7 +1,20 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 016 Change Orders Types Authority Limits And The Documentation Process** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Change Orders — Types, Authority Limits, and the Documentation Process
 
 
-<ArticleMedia id="media-lea-prac-ctr-016-change-orders-0" type="image" caption="Change Order Process Flow — Documentation and Authorization Workflow" description="Flowchart showing the change order lifecycle: Change request submitted → Architect evaluates scope/cost/schedule impact → Owner approval → Change Order issued → Contractor implements → Architect verifies. Decision diamonds for: Does change affect cost? Does change affect schedule? Is change within architect's authority limit? Document flow arrows showing AIA G701 equivalent documentation." />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-ctr-016-change-orders-0", type="image", caption="Change Order Process Flow — Documentation and Authorization Workflow", description="Flowchart showing the change order lifecycle: Change request submitted → Architect evaluates scope/cost/schedule impact → Owner approval → Change Order issued → Contractor implements → Architect verifies. Decision diamonds for: Does change affect cost? Does change affect schedule? Is change within architect's authority limit? Document flow arrows showing AIA G701 equivalent documentation."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -55,18 +68,26 @@ Over a project's duration, multiple changes accumulate, potentially creating sig
 
 Disputes frequently arise regarding whether the contractor is entitled to overhead and profit adjustments when multiple changes substantially alter the original contract conditions. Clear change order language addressing pricing methodology for cumulative changes prevents these disputes.
 
-<LawCallout code="nbcp" section="RA 9266" title="Architecture Act of 2004">RA 9266 governs architectural practice and contract requirements. Agreements must specify scope, compensation, termination, and dispute resolution per SPP Document 201.</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="nbcp", section="RA 9266", title="Architecture Act of 2004"
+- Text: RA 9266 governs architectural practice and contract requirements. Agreements must specify scope, compensation, termination, and dispute resolution per SPP Document 201.
+[/SLATECAMP_UI_BLOCK]
 
-<ProcessFlow>
-<ol>
-  <li><strong>Proposal</strong> — Scope definition and fee negotiation</li>
-  <li><strong>Contract Execution</strong> — Signing of UAP Doc 301</li>
-  <li><strong>Service Delivery</strong> — Performance of defined phases</li>
-  <li><strong>Payment Processing</strong> — Progress billing and certificates</li>
-  <li><strong>Close-out</strong> — Final certificate, retention release</li>
-</ol>
-</ProcessFlow>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Proposal — Scope definition and fee negotiation Contract Execution — Signing of UAP Doc 301 Service Delivery — Performance of defined phases Payment Processing — Progress billing and certificates Close-out — Final certificate, retention release
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibility, supervision) are separately compensated. Verify exclusions.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Under UAP Doc 301, basic services = all 6 phases. Additional services (feasibility, supervision) are separately compensated. Verify exclusions.
+[/SLATECAMP_UI_BLOCK]
 
-<KeyValues items={[{"value": "10%", "label": "Standard Retention"}, {"value": "60 days", "label": "Payment Period"}, {"value": "5%", "label": "COLA Escalation Max"}, {"value": "90%", "label": "CD Phase Fee"}]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"10%\", \"label\": \"Standard Retention\"}", value=true, days=true, label=true, Payment=true, Period=true, COLA=true, Escalation=true, Max=true, CD=true, Phase=true, Fee=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

@@ -1,9 +1,159 @@
 {
   "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b29155fd1f28f0b5c825b703124e7872477ed872c54d1cfa1d1a5be537f4e2ff",
+  "linked_questions_hash": "sha256:76f2c5a4029274106ff286218cd6b9597f590c9820a65d336669ea1f13ebd6d3",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "c2adc4f4-4d40-41aa-888e-6d0c966eb5e6",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "A conventional construction project generates 10 kg of waste per m² of building floor area. Lean construction implementation reduces waste by 25%, and prefabrication reduces it an additional 15% of the original baseline. What is the approximate total waste generation target per m²?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approximately 6.4 kg/m² (10 kg baseline × 0.75 × 0.85 = 6.4 kg/m²; two independent 25% and 15% reductions compound to ~40% total reduction)"
+        },
+        {
+          "id": "b",
+          "text": "Approximately 6.0 kg/m² (10 kg baseline × 0.40 = 6.0 kg/m²)"
+        },
+        {
+          "id": "c",
+          "text": "Approximately 7.5 kg/m² (10 kg baseline × 0.25 = 7.5 kg/m²; only the first reduction applies)"
+        },
+        {
+          "id": "d",
+          "text": "Approximately 8.5 kg/m² (10 kg baseline - 1.5 kg = 8.5 kg/m²; reductions are additive, not multiplicative)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "6.0 kg/m² assumes a full 40% reduction, not accounting for the correct multiplicative calculation (25% + 15% does not equal 40% when applied sequentially).",
+        "c": "7.5 kg/m² applies only the first reduction (lean) and omits prefabrication, which is incomplete.",
+        "d": "This incorrectly adds reductions linearly (10 - 1.5) rather than applying them sequentially and multiplicatively to the baseline.",
+        "correct": "Lean implementation: 10 × 0.75 = 7.5 kg/m². Prefabrication applies to this reduced baseline: 7.5 × 0.85 = 6.375 ≈ 6.4 kg/m². The two reductions are multiplicative, not additive. Total reduction is 1 - (0.75 × 0.85) = ~0.36 or 36%.",
+        "takeaway": "When multiple waste reduction strategies are applied sequentially, reductions compound multiplicatively, not additively. Candidates must calculate each reduction against the previous baseline, not against the original."
+      },
+      "explanation": "6.0 kg/m² assumes a full 40% reduction, not accounting for the correct multiplicative calculation (25% + 15% does not equal 40% when applied sequentially). 7.5 kg/m² applies only the first reduction (lean) and omits prefabrication, which is incomplete. This incorrectly adds reductions linearly (10 - 1.5) rather than applying them sequentially and multiplicatively to the baseline. Lean implementation: 10 × 0.75 = 7.5 kg/m². Prefabrication applies to this reduced baseline: 7.5 × 0.85 = 6.375 ≈ 6.4 kg/m². The two reductions are multiplicative, not additive. Total reduction is 1 - (0.75 × 0.85) = ~0.36 or 36%. When multiple waste reduction strategies are applied sequentially, reductions compound multiplicatively, not additively. Candidates must calculate each reduction against the previous baseline, not against the original.",
+      "code_citation": "Lean Construction Institute; Prefabrication Waste Reduction Studies",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:06:24.035079+00:00",
+      "content_hash": "sha256:cb12df943813bf4df4b28927b3eca8015d3dc99fbbdad83eb5c14ac0f75bb19b"
+    },
+    {
+      "question_id": "7c60ae97-22e9-4fd1-bb4c-80c6caf4a76a",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "A waste management plan specifies that concrete waste will be crushed and reused as base course aggregate on-site, wood will be collected for mulching, metals will be segregated and sold to a scrap delear, and gypsum will be sent to a recycling facility. Which waste stream faces the highest risk of failing to meet its intended recycling destination, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Gypsum: most of Philippines lacks dedicated gypsum recycling facilities; segregated gypsum is likely to be landfilled despite plan specifications due to infrastructure scarcity"
+        },
+        {
+          "id": "b",
+          "text": "Concrete: on-site crushing requires equipment and expertise; most projects lack in-house crushers and cannot execute this strategy without significant capital investment"
+        },
+        {
+          "id": "c",
+          "text": "Metals: metals are high-value and guaranteed to be recycled; no risk exists because the scrap market always absorbs ferrous and non-ferrous materials"
+        },
+        {
+          "id": "d",
+          "text": "Wood: mulching is a common practice requiring no special infrastructure; wood always reaches its intended destination through established composting channels"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "On-site concrete crushing is executable via mobile crushers rented or contracted; this is common practice in major projects.",
+        "c": "Metal recycling is nearly guaranteed due to high scrap value; market demand is consistent and reliable.",
+        "d": "Wood mulching markets are well-established; chipping and hauling are straightforward processes with reliable destination facilities.",
+        "correct": "Gypsum recycling is limited globally in C&D streams; concrete crushing and metal markets more established. Segregated gypsum often ends up in landfill despite plans. Concrete on-site crushing is feasible with mobile crushers; metal recycling is market-driven and reliable. Wood has established mulch and fuel markets.",
+        "takeaway": "Waste management plans must account for local infrastructure limitations. Gypsum, specialty glass, and other non-common materials face higher risk of landfilling despite segregation. Candidates must evaluate facility availability before specifying recycling destinations."
+      },
+      "explanation": "On-site concrete crushing is executable via mobile crushers rented or contracted; this is common practice in major projects. Metal recycling is nearly guaranteed due to high scrap value; market demand is consistent and reliable. Wood mulching markets are well-established; chipping and hauling are straightforward processes with reliable destination facilities. Gypsum recycling is limited globally in C&D streams; concrete crushing and metal markets more established. Segregated gypsum often ends up in landfill despite plans. Concrete on-site crushing is feasible with mobile crushers; metal recycling is market-driven and reliable. Wood has established mulch and fuel markets. Waste management plans must account for local infrastructure limitations. Gypsum, specialty glass, and other non-common materials face higher risk of landfilling despite segregation. Candidates must evaluate facility availability before specifying recycling destinations.",
+      "code_citation": "DENR Recycling Infrastructure Assessment; Waste Management Best Practices",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:06:24.167467+00:00",
+      "content_hash": "sha256:dfff8df1c25cf54f3f77885a45ffa2813be0db289426b28727e1f1a50488d6c3"
+    },
+    {
+      "question_id": "9a380ddc-6a52-4573-9799-872ee7476219",
+      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
+      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
+      "text": "What is the correct sequence of the waste management hierarchy in waste reduction planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduce (source elimination), reuse (whole components), recycle (material reprocessing), recover (energy extraction), dispose (landfill)"
+        },
+        {
+          "id": "b",
+          "text": "Reduce (source elimination), recycle (material reprocessing), reuse (whole components), recover (energy extraction), dispose (landfill)"
+        },
+        {
+          "id": "c",
+          "text": "Dispose (source elimination), recover (energy extraction), recycle (material reprocessing), reuse (whole components), reduce (evaluation)"
+        },
+        {
+          "id": "d",
+          "text": "Recycle (source elimination), reuse (whole components), reduce (material reprocessing), recover (energy extraction), dispose (landfill)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Reusing whole components is preferable to recycling, which requires reprocessing energy. The order in the correct answer reflects this priority.",
+        "c": "Dispose and recover are not source elimination steps; the hierarchy does not begin with disposal.",
+        "d": "The sequence in the correct answer reflects environmental impact reduction; swapping recycle and reuse reverses the priority.",
+        "correct": "The waste hierarchy prioritizes reduce first (preventing waste at source), then reuse (whole components), recycle (material reprocessing), recover (energy), and finally dispose. Earlier steps in the hierarchy are always preferable to later ones.",
+        "takeaway": "The waste hierarchy prioritizes source reduction over all other strategies. Candidates must apply the hierarchy in order: reduce first, then reuse, recycle, recover, and finally dispose only when all other options are exhausted."
+      },
+      "explanation": "Reusing whole components is preferable to recycling, which requires reprocessing energy. The order in the correct answer reflects this priority. Dispose and recover are not source elimination steps; the hierarchy does not begin with disposal. The sequence in the correct answer reflects environmental impact reduction; swapping recycle and reuse reverses the priority. The waste hierarchy prioritizes reduce first (preventing waste at source), then reuse (whole components), recycle (material reprocessing), recover (energy), and finally dispose. Earlier steps in the hierarchy are always preferable to later ones. The waste hierarchy prioritizes source reduction over all other strategies. Candidates must apply the hierarchy in order: reduce first, then reuse, recycle, recover, and finally dispose only when all other options are exhausted.",
+      "code_citation": "RA 9003 Ecological Solid Waste Management Act; Waste Hierarchy Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-09-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:06:24.289507+00:00",
+      "content_hash": "sha256:90730a184a80ac31fd98d41a0de402f1c97629031110b6ffab5e898d3bd8f93b"
+    },
     {
       "question_id": "6aecf565-2191-4ae5-9586-1ca5fb0911ae",
       "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
@@ -53,106 +203,6 @@
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:26036642794fdcebfe4c3cd2dbf2c0da5903f2afb7fb5f92744cb0b79b013942"
-    },
-    {
-      "question_id": "c2adc4f4-4d40-41aa-888e-6d0c966eb5e6",
-      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
-      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
-      "text": "A conventional construction project generates 10 kg of waste per m² of building floor area. Lean construction implementation reduces waste by 25%, and prefabrication reduces it an additional 15% of the original baseline. What is the approximate total waste generation target per m²?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Approximately 6.4 kg/m² (10 kg baseline × 0.75 × 0.85 = 6.4 kg/m²; two independent 25% and 15% reductions compound to ~40% total reduction)"
-        },
-        {
-          "id": "b",
-          "text": "Approximately 6.0 kg/m² (10 kg baseline × 0.40 = 6.0 kg/m²)"
-        },
-        {
-          "id": "c",
-          "text": "Approximately 7.5 kg/m² (10 kg baseline × 0.25 = 7.5 kg/m²; only the first reduction applies)"
-        },
-        {
-          "id": "d",
-          "text": "Approximately 8.5 kg/m² (10 kg baseline - 1.5 kg = 8.5 kg/m²; reductions are additive, not multiplicative)"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "6.0 kg/m² assumes a full 40% reduction, not accounting for the correct multiplicative calculation (25% + 15% does not equal 40% when applied sequentially).",
-        "c": "7.5 kg/m² applies only the first reduction (lean) and omits prefabrication, which is incomplete.",
-        "d": "This incorrectly adds reductions linearly (10 - 1.5) rather than applying them sequentially and multiplicatively to the baseline.",
-        "correct": "Lean implementation: 10 × 0.75 = 7.5 kg/m². Prefabrication applies to this reduced baseline: 7.5 × 0.85 = 6.375 ≈ 6.4 kg/m². The two reductions are multiplicative, not additive. Total reduction is 1 - (0.75 × 0.85) = ~0.36 or 36%.",
-        "takeaway": "When multiple waste reduction strategies are applied sequentially, reductions compound multiplicatively, not additively. Candidates must calculate each reduction against the previous baseline, not against the original."
-      },
-      "explanation": null,
-      "code_citation": "Lean Construction Institute; Prefabrication Waste Reduction Studies",
-      "bloom_level": "apply",
-      "application_context": "calculation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-005-09-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:83ec15473992e1ee92708ba4065b2ac4de3633de3ef9f19a873f79d9d6958c0e"
-    },
-    {
-      "question_id": "7c60ae97-22e9-4fd1-bb4c-80c6caf4a76a",
-      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
-      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
-      "text": "A waste management plan specifies that concrete waste will be crushed and reused as base course aggregate on-site, wood will be collected for mulching, metals will be segregated and sold to a scrap delear, and gypsum will be sent to a recycling facility. Which waste stream faces the highest risk of failing to meet its intended recycling destination, and why?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Gypsum: most of Philippines lacks dedicated gypsum recycling facilities; segregated gypsum is likely to be landfilled despite plan specifications due to infrastructure scarcity"
-        },
-        {
-          "id": "b",
-          "text": "Concrete: on-site crushing requires equipment and expertise; most projects lack in-house crushers and cannot execute this strategy without significant capital investment"
-        },
-        {
-          "id": "c",
-          "text": "Metals: metals are high-value and guaranteed to be recycled; no risk exists because the scrap market always absorbs ferrous and non-ferrous materials"
-        },
-        {
-          "id": "d",
-          "text": "Wood: mulching is a common practice requiring no special infrastructure; wood always reaches its intended destination through established composting channels"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "On-site concrete crushing is executable via mobile crushers rented or contracted; this is common practice in major projects.",
-        "c": "Metal recycling is nearly guaranteed due to high scrap value; market demand is consistent and reliable.",
-        "d": "Wood mulching markets are well-established; chipping and hauling are straightforward processes with reliable destination facilities.",
-        "correct": "Gypsum recycling is limited globally in C&D streams; concrete crushing and metal markets more established. Segregated gypsum often ends up in landfill despite plans. Concrete on-site crushing is feasible with mobile crushers; metal recycling is market-driven and reliable. Wood has established mulch and fuel markets.",
-        "takeaway": "Waste management plans must account for local infrastructure limitations. Gypsum, specialty glass, and other non-common materials face higher risk of landfilling despite segregation. Candidates must evaluate facility availability before specifying recycling destinations."
-      },
-      "explanation": null,
-      "code_citation": "DENR Recycling Infrastructure Assessment; Waste Management Best Practices",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-005-09-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5cda8e67dd402afd3dede33656ac57bf562154a100f2091ee2dcadf92c2d57ea"
     },
     {
       "question_id": "5301c01a-f7f5-49c7-ae0e-831e34ca42e1",
@@ -255,56 +305,6 @@
       "content_hash": "sha256:05203264eb1f14ee397531d035e33ebeadc02ee0f01123771898f5c00721759d"
     },
     {
-      "question_id": "9a380ddc-6a52-4573-9799-872ee7476219",
-      "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
-      "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
-      "text": "What is the correct sequence of the waste management hierarchy in waste reduction planning?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Reduce (source elimination), reuse (whole components), recycle (material reprocessing), recover (energy extraction), dispose (landfill)"
-        },
-        {
-          "id": "b",
-          "text": "Reduce (source elimination), recycle (material reprocessing), reuse (whole components), recover (energy extraction), dispose (landfill)"
-        },
-        {
-          "id": "c",
-          "text": "Dispose (source elimination), recover (energy extraction), recycle (material reprocessing), reuse (whole components), reduce (evaluation)"
-        },
-        {
-          "id": "d",
-          "text": "Recycle (source elimination), reuse (whole components), reduce (material reprocessing), recover (energy extraction), dispose (landfill)"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Reusing whole components is preferable to recycling, which requires reprocessing energy. The order in the correct answer reflects this priority.",
-        "c": "Dispose and recover are not source elimination steps; the hierarchy does not begin with disposal.",
-        "d": "The sequence in the correct answer reflects environmental impact reduction; swapping recycle and reuse reverses the priority.",
-        "correct": "The waste hierarchy prioritizes reduce first (preventing waste at source), then reuse (whole components), recycle (material reprocessing), recover (energy), and finally dispose. Earlier steps in the hierarchy are always preferable to later ones.",
-        "takeaway": "The waste hierarchy prioritizes source reduction over all other strategies. Candidates must apply the hierarchy in order: reduce first, then reuse, recycle, recover, and finally dispose only when all other options are exhausted."
-      },
-      "explanation": null,
-      "code_citation": "RA 9003 Ecological Solid Waste Management Act; Waste Hierarchy Principles",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-005-09-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:142642cd7dfaf3cb8918bceddb0a100b0cf9eb3327a815062a346e0fa852bbfc"
-    },
-    {
       "question_id": "d3c1032f-ef99-4b3b-9c95-a3c6f437fc92",
       "article_id": "7b1d04de-6310-4187-8cfc-39f1f30cf349",
       "topic_id": "b74e9923-e39c-438a-9736-17d7c2eb3b13",
@@ -389,7 +389,7 @@
         "correct": "BIM integrates multidisciplinary data and enables clash detection (identify conflicts before construction) and material quantification (calculate exact volumes before ordering). BIM-driven quantity takeoff reduces error-induced waste by 5-15% compared to manual estimates.",
         "takeaway": "BIM reduces waste through precise quantification and coordination. Candidates must understand that BIM accuracy prevents over-ordering and design conflicts that cause rework and waste generation."
       },
-      "explanation": null,
+      "explanation": "While smartphone tools may track materials, BIM's primary waste-reduction benefit is quantification accuracy and design coordination, not logistics tracking. BIM complements design review and engineering; it does not eliminate these processes. BIM does not require or guarantee automation; it is a data integration and visualization tool used by design and planning teams. BIM integrates multidisciplinary data and enables clash detection (identify conflicts before construction) and material quantification (calculate exact volumes before ordering). BIM-driven quantity takeoff reduces error-induced waste by 5-15% compared to manual estimates. BIM reduces waste through precise quantification and coordination. Candidates must understand that BIM accuracy prevents over-ordering and design conflicts that cause rework and waste generation.",
       "code_citation": "Autodesk BIM Literature; BIM Waste Reduction Research",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -401,8 +401,8 @@
       "model_id": "ALE-MATL-005-09-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:28fb7232c8a3de73577e67810d28902790ae85a195a821844905987a1b996e40"
+      "updated_at": "2026-05-06T15:06:24.418423+00:00",
+      "content_hash": "sha256:9e4f87913d1310ff24b052248ee2bf6ac736d98cc49bee8124ecdc7b79ff7e7e"
     },
     {
       "question_id": "abc6b0b8-8be4-4a93-9806-445f19ca16d3",
@@ -439,7 +439,7 @@
         "correct": "Contamination reduces material value and increases sorting costs. Sawdust mixed with concrete, adhesives on lumber, and paint on drywall make reprocessing difficult or impossible. Prevention at source (separate work areas, careful handling) is preferable to end-of-life sorting.",
         "takeaway": "Contamination prevention at source through segregation procedures and controlled work areas is more cost-effective than post-generation sorting. Candidates must address contamination risks in waste management plans."
       },
-      "explanation": null,
+      "explanation": "Contamination significantly affects reprocessing of all material types. Assuming recyclability regardless of contamination is unrealistic. Contamination affects wood, gypsum, and other streams as much as metals. Adhesives, paint, and foreign materials reduce value. While some contamination is inevitable, planning and discipline can minimize cross-contamination. Assuming 100% contamination is defeatist and inconsistent with lean and waste reduction principles. Contamination reduces material value and increases sorting costs. Sawdust mixed with concrete, adhesives on lumber, and paint on drywall make reprocessing difficult or impossible. Prevention at source (separate work areas, careful handling) is preferable to end-of-life sorting. Contamination prevention at source through segregation procedures and controlled work areas is more cost-effective than post-generation sorting. Candidates must address contamination risks in waste management plans.",
       "code_citation": "Lean Construction Research; Waste Management Best Practices",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -451,8 +451,8 @@
       "model_id": "ALE-MATL-005-09-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9e215181a4904af92d95d6ac7b84da6d5b5086d56c252813f7146a5de642527a"
+      "updated_at": "2026-05-06T15:06:24.55272+00:00",
+      "content_hash": "sha256:18fa9b9560ee2040f0a057504b84dda4c12d092301391eec4add5ec2c7fda7e9"
     },
     {
       "question_id": "8d1fbe63-d7fa-44d9-b6cd-3b434efc9982",

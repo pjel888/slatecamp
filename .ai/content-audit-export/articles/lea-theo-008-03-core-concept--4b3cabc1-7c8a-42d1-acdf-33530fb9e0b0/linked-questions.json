@@ -1,9 +1,165 @@
 {
   "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:185ee8017eacc5c0ad3d7fe31924063afb4e9f5c70c816a59727d7f624b0807e",
+  "linked_questions_hash": "sha256:69fa984bf3f7ea725646f36215e612ea169d966df1bcb9c6e23877e8d1baf951",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "18190992-b5f7-4782-931f-ed23ff4d4646",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "topic_id": "ec02b58d-6ad7-48ea-9053-850f1111621a",
+      "text": "What does clash detection in BIM accomplish?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It identifies conflicts between building systems (structural, mechanical, electrical, plumbing) before construction, preventing costly field modifications"
+        },
+        {
+          "id": "b",
+          "text": "It analyzes user conflicts within building programs (e.g., incompatible adjacencies) to ensure functional efficiency and user satisfaction"
+        },
+        {
+          "id": "c",
+          "text": "It detects structural collisions between different building elements during dynamic simulation, allowing for preemptive design adjustments"
+        },
+        {
+          "id": "d",
+          "text": "It evaluates design conflicts with building codes and regulations, ensuring compliance before construction begins"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Program conflicts are adjacency issues, not BIM clashes.",
+        "c": "While structural analysis uses simulation, clash detection is geometry-based system coordination.",
+        "d": "Code compliance checking is separate from clash detection.",
+        "correct": "Clash detection identifies system conflicts: a mechanical duct colliding with a structural beam, an electrical panel behind a plumbing access panel, etc. Catching these before construction saves time, cost, and field coordination problems.",
+        "takeaway": "Catching these before construction saves time, cost, and field coordination problems."
+      },
+      "explanation": "Program conflicts are adjacency issues, not BIM clashes. While structural analysis uses simulation, clash detection is geometry-based system coordination. Code compliance checking is separate from clash detection. Clash detection identifies system conflicts: a mechanical duct colliding with a structural beam, an electrical panel behind a plumbing access panel, etc. Catching these before construction saves time, cost, and field coordination problems. Catching these before construction saves time, cost, and field coordination problems.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-008-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:06:21.685401+00:00",
+      "content_hash": "sha256:2728fe44c858f9fe6fa5f75ccec715d84a88fe44d75e77b8b46561535836ac8a"
+    },
+    {
+      "question_id": "c021b95d-12bc-4545-b813-430b8cd1e624",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "topic_id": "ec02b58d-6ad7-48ea-9053-850f1111621a",
+      "text": "A Filipino architectural firm is designing a tropical office building and wants to optimize passive cooling and natural ventilation. Which digital tools would be most appropriate, and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BIM alone is sufficient; visual coordination ensures good environmental performance, though it may lack detailed analysis"
+        },
+        {
+          "id": "b",
+          "text": "Renderings showing the building in a tropical setting; this demonstrates contextual responsiveness, but may not address technical performance"
+        },
+        {
+          "id": "c",
+          "text": "CAD drawings at detailed scale; precision in documentation ensures environmental performance, though it may not simulate real-world conditions"
+        },
+        {
+          "id": "d",
+          "text": "Computational simulation tools (airflow modeling, solar gain trajectories, thermal performance analysis) enabling the firm to test numerous design variations and identify solutions optimized for Philippine tropical climate conditions"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Visual coordination doesn't ensure thermal performance.",
+        "b": "Renderings are aesthetic; they don't verify environmental performance.",
+        "c": "Documentation accuracy matters but doesn't substitute for performance analysis.",
+        "correct": "Tropical climate design requires data-driven optimization. Computational tools simulate airflow, solar radiation, humidity, and thermal behavior across design variations, identifying solutions genuinely responsive to Philippine conditions rather than imported from temperate climates. This is precisely where digital tools add value to sustainability goals.",
+        "takeaway": "This is precisely where digital tools add value to sustainability goals."
+      },
+      "explanation": "Visual coordination doesn't ensure thermal performance. Renderings are aesthetic; they don't verify environmental performance. Documentation accuracy matters but doesn't substitute for performance analysis. Tropical climate design requires data-driven optimization. Computational tools simulate airflow, solar radiation, humidity, and thermal behavior across design variations, identifying solutions genuinely responsive to Philippine conditions rather than imported from temperate climates. This is precisely where digital tools add value to sustainability goals. This is precisely where digital tools add value to sustainability goals.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-008-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:06:21.851315+00:00",
+      "content_hash": "sha256:1586244f0c83dd1e66cdd978583c8fa6ac08c67c099382c082512577e4c107a6"
+    },
+    {
+      "question_id": "d2923fb8-ebc7-4ad8-8cd4-c6d001113cd8",
+      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
+      "topic_id": "ec02b58d-6ad7-48ea-9053-850f1111621a",
+      "text": "A design team uses AI-powered generative design to explore structural geometry for a high-rise, producing thousands of automated variations optimized for material efficiency. The team selects an algorithmically-generated solution. What critical evaluation should occur before proceeding?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No further evaluation needed; algorithms produce objectively optimal solutions, eliminating the need for human oversight in the decision-making process"
+        },
+        {
+          "id": "b",
+          "text": "The design should be constructed immediately; AI outputs are more reliable than human judgment, providing a superior basis for construction decisions"
+        },
+        {
+          "id": "c",
+          "text": "The design should be rejected in favor of traditional structural systems; algorithms cannot understand aesthetic goals, which are crucial for architectural integrity"
+        },
+        {
+          "id": "d",
+          "text": "The team should critically evaluate whether the algorithmic solution meets design intent, satisfies human experience and spatial quality criteria, and that optimization hasn't compromised other design values"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Algorithms optimize specific metrics; they don't determine overall design excellence.",
+        "b": "AI outputs require human verification; blindly accepting them abdicates design responsibility.",
+        "c": "Algorithms and traditional approaches aren't opposed; their combination can be powerful if integrated thoughtfully.",
+        "correct": "AI optimization outputs require human evaluation. Algorithms excel at measurable metrics (material quantity, stress distribution) but may not account for human spatial experience, aesthetic character, or contextual appropriateness. designers must maintain critical judgment; algorithms are tools, not replacements for design thinking.",
+        "takeaway": "designers must maintain critical judgment; algorithms are tools, not replacements for design thinking."
+      },
+      "explanation": "Algorithms optimize specific metrics; they don't determine overall design excellence. AI outputs require human verification; blindly accepting them abdicates design responsibility. Algorithms and traditional approaches aren't opposed; their combination can be powerful if integrated thoughtfully. AI optimization outputs require human evaluation. Algorithms excel at measurable metrics (material quantity, stress distribution) but may not account for human spatial experience, aesthetic character, or contextual appropriateness. designers must maintain critical judgment; algorithms are tools, not replacements for design thinking. designers must maintain critical judgment; algorithms are tools, not replacements for design thinking.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-008-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:06:21.973035+00:00",
+      "content_hash": "sha256:a53dc263a9c0de413ff1cadfd0228c6180a982324854091dd39baf5632130902"
+    },
     {
       "question_id": "ed90dab2-c388-4a43-9458-d77fe53f925d",
       "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
@@ -265,110 +421,6 @@
       "content_hash": "sha256:90fc6c5ad5a6a08e2fb8f43b7eb03cf0e6d0ba7e97baa8afc2dcdc94c288802a"
     },
     {
-      "question_id": "18190992-b5f7-4782-931f-ed23ff4d4646",
-      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
-      "topic_id": "ec02b58d-6ad7-48ea-9053-850f1111621a",
-      "text": "What does clash detection in BIM accomplish?",
-      "options": [
-        {
-          "id": "a",
-          "text": "It identifies conflicts between building systems (structural, mechanical, electrical, plumbing) before construction, preventing costly field modifications"
-        },
-        {
-          "id": "b",
-          "text": "It analyzes user conflicts within building programs (e.g., incompatible adjacencies) to ensure functional efficiency and user satisfaction"
-        },
-        {
-          "id": "c",
-          "text": "It detects structural collisions between different building elements during dynamic simulation, allowing for preemptive design adjustments"
-        },
-        {
-          "id": "d",
-          "text": "It evaluates design conflicts with building codes and regulations, ensuring compliance before construction begins"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Program conflicts are adjacency issues, not BIM clashes.",
-        "c": "While structural analysis uses simulation, clash detection is geometry-based system coordination.",
-        "d": "Code compliance checking is separate from clash detection.",
-        "correct": "Clash detection identifies system conflicts: a mechanical duct colliding with a structural beam, an electrical panel behind a plumbing access panel, etc. Catching these before construction saves time, cost, and field coordination problems.",
-        "takeaway": "Catching these before construction saves time, cost, and field coordination problems."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-008-03-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:585877cb4352437c62c4901e95a21618e35697192c5dda7585e40483b4b1fb31"
-    },
-    {
-      "question_id": "c021b95d-12bc-4545-b813-430b8cd1e624",
-      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
-      "topic_id": "ec02b58d-6ad7-48ea-9053-850f1111621a",
-      "text": "A Filipino architectural firm is designing a tropical office building and wants to optimize passive cooling and natural ventilation. Which digital tools would be most appropriate, and why?",
-      "options": [
-        {
-          "id": "a",
-          "text": "BIM alone is sufficient; visual coordination ensures good environmental performance, though it may lack detailed analysis"
-        },
-        {
-          "id": "b",
-          "text": "Renderings showing the building in a tropical setting; this demonstrates contextual responsiveness, but may not address technical performance"
-        },
-        {
-          "id": "c",
-          "text": "CAD drawings at detailed scale; precision in documentation ensures environmental performance, though it may not simulate real-world conditions"
-        },
-        {
-          "id": "d",
-          "text": "Computational simulation tools (airflow modeling, solar gain trajectories, thermal performance analysis) enabling the firm to test numerous design variations and identify solutions optimized for Philippine tropical climate conditions"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Visual coordination doesn't ensure thermal performance.",
-        "b": "Renderings are aesthetic; they don't verify environmental performance.",
-        "c": "Documentation accuracy matters but doesn't substitute for performance analysis.",
-        "correct": "Tropical climate design requires data-driven optimization. Computational tools simulate airflow, solar radiation, humidity, and thermal behavior across design variations, identifying solutions genuinely responsive to Philippine conditions rather than imported from temperate climates. This is precisely where digital tools add value to sustainability goals.",
-        "takeaway": "This is precisely where digital tools add value to sustainability goals."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-008-03-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d779cf2df6e1a62e0f265dff9f04697425fd5c4290c7fe91a2c942403b4ae29b"
-    },
-    {
       "question_id": "ec9c8f4e-5d7b-4671-b9ff-b2604db0796e",
       "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
       "topic_id": "ec02b58d-6ad7-48ea-9053-850f1111621a",
@@ -471,58 +523,6 @@
       "created_at": "2026-03-23T19:27:55.809916+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:dc88c962d79408505fd4c3dee74c30be60be94fd42bd2d6d46aa817aff19d45a"
-    },
-    {
-      "question_id": "d2923fb8-ebc7-4ad8-8cd4-c6d001113cd8",
-      "article_id": "4b3cabc1-7c8a-42d1-acdf-33530fb9e0b0",
-      "topic_id": "ec02b58d-6ad7-48ea-9053-850f1111621a",
-      "text": "A design team uses AI-powered generative design to explore structural geometry for a high-rise, producing thousands of automated variations optimized for material efficiency. The team selects an algorithmically-generated solution. What critical evaluation should occur before proceeding?",
-      "options": [
-        {
-          "id": "a",
-          "text": "No further evaluation needed; algorithms produce objectively optimal solutions, eliminating the need for human oversight in the decision-making process"
-        },
-        {
-          "id": "b",
-          "text": "The design should be constructed immediately; AI outputs are more reliable than human judgment, providing a superior basis for construction decisions"
-        },
-        {
-          "id": "c",
-          "text": "The design should be rejected in favor of traditional structural systems; algorithms cannot understand aesthetic goals, which are crucial for architectural integrity"
-        },
-        {
-          "id": "d",
-          "text": "The team should critically evaluate whether the algorithmic solution meets design intent, satisfies human experience and spatial quality criteria, and that optimization hasn't compromised other design values"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Algorithms optimize specific metrics; they don't determine overall design excellence.",
-        "b": "AI outputs require human verification; blindly accepting them abdicates design responsibility.",
-        "c": "Algorithms and traditional approaches aren't opposed; their combination can be powerful if integrated thoughtfully.",
-        "correct": "AI optimization outputs require human evaluation. Algorithms excel at measurable metrics (material quantity, stress distribution) but may not account for human spatial experience, aesthetic character, or contextual appropriateness. designers must maintain critical judgment; algorithms are tools, not replacements for design thinking.",
-        "takeaway": "designers must maintain critical judgment; algorithms are tools, not replacements for design thinking."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-008-03-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f06b0702187578a57a5905004596ae1ff76cde555f93b421c399608e5898a87b"
     }
   ]
 }

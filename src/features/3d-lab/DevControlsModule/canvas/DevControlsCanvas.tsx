@@ -9,6 +9,7 @@ import { useEffect } from 'react'
 import { useThree } from '@react-three/fiber'
 import { useDevControlsStore } from '../stores/useDevControlsStore'
 import { useSelectionStore } from '../stores/useSelectionStore'
+import { SCENE } from './constants'
 import { SceneLighting } from './SceneLighting'
 import { InvalidateBridge } from './InvalidateBridge'
 import { resetCursor } from './cursor'
@@ -28,7 +29,7 @@ function SceneSetup() {
 
   useEffect(() => {
     invalidate()
-    gl.setClearColor('#F2F0EB', 1)
+    gl.setClearColor(SCENE.SKY_COLOR, 1)
 
     const canvas = gl.domElement
     const handlePointerMissed = (event: PointerEvent) => {

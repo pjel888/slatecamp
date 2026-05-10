@@ -1,9 +1,59 @@
 {
   "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3259dd2ed47d532176c622a8b3fdc68a7dcd6d6ea5bd7ea27c7c161dd97c64d3",
+  "linked_questions_hash": "sha256:6d4d6428c8ef5bddd96b91ad1940e35161c33894d6ab7e7c69ddbbe101b252da",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "22fac734-61b5-45b2-ae50-d1f574f10f29",
+      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
+      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
+      "text": "What is the defining characteristic of an arch or barrel vault structural system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cables hold a flat deck suspended horizontally, providing tension support across the span"
+        },
+        {
+          "id": "b",
+          "text": "A curved form distributes loads primarily through compression along the curve, reducing bending moments in the structure"
+        },
+        {
+          "id": "c",
+          "text": "Vertical columns support horizontal beams, which are designed to carry loads through bending"
+        },
+        {
+          "id": "d",
+          "text": "Arches require internal bracing to prevent lateral deflection, ensuring stability under load"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes a suspension or cable-stayed system.",
+        "c": "This describes a post-and-beam (trabeated) system.",
+        "d": "While arches produce lateral thrust at supports, the form itself is designed to minimize internal bending through its geometry.",
+        "correct": "Arches and vault systems are curved forms in which loads are distributed primarily through compression along the curve. This compression-dominated behavior is highly efficient and allows large spans (40–200+ m) without significant bending moments.",
+        "takeaway": "Arches convert vertical loads into compressive forces along their curve."
+      },
+      "explanation": "This describes a suspension or cable-stayed system. This describes a post-and-beam (trabeated) system. While arches produce lateral thrust at supports, the form itself is designed to minimize internal bending through its geometry. Arches and vault systems are curved forms in which loads are distributed primarily through compression along the curve. This compression-dominated behavior is highly efficient and allows large spans (40–200+ m) without significant bending moments. Arches convert vertical loads into compressive forces along their curve.",
+      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-05-06T16:21:47.505879+00:00",
+      "content_hash": "sha256:754634699188ad71d627bccf46578b121bb4d78ccf34a7f46da96d03634455af"
+    },
     {
       "question_id": "13f2ab19-eb9e-47f9-a2d9-748da3d2290e",
       "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
@@ -89,7 +139,7 @@
         "correct": "Geodesic domes are 3D triangulated spheres (or hemispheres) where members follow great-circle paths. This geometry distributes loads evenly in all directions, minimizing bending moments and allowing efficient use of material. They can enclose very large areas with minimal self-weight.",
         "takeaway": "Geodesic domes use triangulation and spherical geometry to maximize span-to-weight ratios."
       },
-      "explanation": null,
+      "explanation": "Domes are inherently non-planar; their efficiency comes from their three-dimensional curvature. Geodesic domes are rigid frame structures, not cable-based tensile structures. A dome is a 3D extension of an arch, but its geometry makes it more efficient at distributing loads without heavy external buttressing. Geodesic domes are 3D triangulated spheres (or hemispheres) where members follow great-circle paths. This geometry distributes loads evenly in all directions, minimizing bending moments and allowing efficient use of material. They can enclose very large areas with minimal self-weight. Geodesic domes use triangulation and spherical geometry to maximize span-to-weight ratios.",
       "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -101,8 +151,8 @@
       "model_id": "ALE-STRC-002-06-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:894816d64a424d8048f3221bd28e91be0852ffebf1dd095e0efac63f5c73ac5c"
+      "updated_at": "2026-05-06T16:21:47.381579+00:00",
+      "content_hash": "sha256:832898feb18c3c78ca6c0198df55c47564315fc37046d3d79e1d08e21d18e6c9"
     },
     {
       "question_id": "71be28e5-f4ba-4de4-9f47-db814b03d54d",
@@ -303,56 +353,6 @@
       "created_at": "2026-03-23T19:27:51.88244+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:b63350ba8b0ef9c5623dccc9b34a64803acbd9b15c93ec59d33f2b5f8ed693fe"
-    },
-    {
-      "question_id": "22fac734-61b5-45b2-ae50-d1f574f10f29",
-      "article_id": "79c137a5-245a-441d-899b-652cf8eb1640",
-      "topic_id": "d421b611-df1f-435e-b905-66099813b594",
-      "text": "What is the defining characteristic of an arch or barrel vault structural system?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Cables hold a flat deck suspended horizontally, providing tension support across the span"
-        },
-        {
-          "id": "b",
-          "text": "A curved form distributes loads primarily through compression along the curve, reducing bending moments in the structure"
-        },
-        {
-          "id": "c",
-          "text": "Vertical columns support horizontal beams, which are designed to carry loads through bending"
-        },
-        {
-          "id": "d",
-          "text": "Arches require internal bracing to prevent lateral deflection, ensuring stability under load"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This describes a suspension or cable-stayed system.",
-        "c": "This describes a post-and-beam (trabeated) system.",
-        "d": "While arches produce lateral thrust at supports, the form itself is designed to minimize internal bending through its geometry.",
-        "correct": "Arches and vault systems are curved forms in which loads are distributed primarily through compression along the curve. This compression-dominated behavior is highly efficient and allows large spans (40–200+ m) without significant bending moments.",
-        "takeaway": "Arches convert vertical loads into compressive forces along their curve."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 202 (Structural Systems); General Structural Engineering Principles",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-002-06-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:51.88244+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:585a9a9d5fa76c4c829253df6b2384107a63e30fed4441e9e84bf7422e97a8fb"
     },
     {
       "question_id": "c3481fec-dd83-4c04-aa09-63c6f6137790",

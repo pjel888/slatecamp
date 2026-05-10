@@ -47,12 +47,12 @@ The Philippines' high ambient humidity requires sprinkler systems to be resilien
 ## How It's Tested
 
 **Scenario 1: Travel Distance Bonus**
-A floor plan shows a $55\text{m}$ travel distance from a remote room to an exit. 
+A floor plan shows a $55\text{m}$ travel distance from a remote room to an exit.
 * **If Unsprinklered**: Non-compliant (Limit is $46\text{m}$).
 * **If Sprinklered**: Compliant (Limit is $61\text{m}$).
 
 **Scenario 2: Dead-End Corridors**
-A proposed design has a $10\text{m}$ dead-end corridor. 
+A proposed design has a $10\text{m}$ dead-end corridor.
 * **Requirement**: This design requires an automatic sprinkler system, as the limit for unsprinklered corridors is strictly $6\text{m}$.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]

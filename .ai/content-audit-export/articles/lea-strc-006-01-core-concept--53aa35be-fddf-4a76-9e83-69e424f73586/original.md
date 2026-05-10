@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 006 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -11,7 +20,11 @@ By the end of this article, you will be able to:
 Concrete is a composite material made from cement, aggregates (fine and coarse), water, and optional admixtures. Understanding these components and their proportions—especially the water-cement ratio—determines concrete workability, strength, durability, and long-term performance in reinforced concrete structures.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-006-01-core-concept" type="image" caption="Concrete Mix Composition — Cement, Aggregates, Water, Admixtures" description="Cross-section diagram of concrete showing: (1) Fine aggregate (sand) filling voids between coarse aggregate; (2) Coarse aggregate (gravel/crushed stone) as primary bulk; (3) Cement paste binding aggregates; (4) Water-filled capillary pores; (5) Air voids. Proportioning pie chart for typical mix (cement 10-15%, water 15-20%, aggregates 60-75%). Water-cement ratio effect on strength shown as comparison chart." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-006-01-core-concept", type="image", caption="Concrete Mix Composition — Cement, Aggregates, Water, Admixtures", description="Cross-section diagram of concrete showing: (1) Fine aggregate (sand) filling voids between coarse aggregate; (2) Coarse aggregate (gravel/crushed stone) as primary bulk; (3) Cement paste binding aggregates; (4) Water-filled capillary pores; (5) Air voids. Proportioning pie chart for typical mix (cement 10-15%, water 15-20%, aggregates 60-75%). Water-cement ratio effect on strength shown as comparison chart.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Concrete is created by mixing Portland cement with fine aggregate (sand), coarse aggregate (gravel or crushed stone), water, and sometimes chemical or mineral admixtures. The cement chemically reacts with water in a process called hydration, binding the aggregates into a solid mass.
 
@@ -71,7 +84,11 @@ The Philippine National Structural Code (PNSC) requires concrete specifications 
 
 3. **Unit Weight and Yield (ASTM C138):** A standard container of known volume is filled with fresh concrete. The mass of concrete is divided by container volume to determine unit weight. Yield (m³ per batch) is calculated to verify mix design proportions.
 
-<Tip>The water-cement ratio is your strongest lever to control concrete strength and durability. Every project in the Philippines should specify w/c ≤ 0.50 for coastal or aggressive environments and w/c ≤ 0.55 for normal exposure. Proper 7-day curing is non-negotiable in tropical climates.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The water-cement ratio is your strongest lever to control concrete strength and durability. Every project in the Philippines should specify w/c ≤ 0.50 for coastal or aggressive environments and w/c ≤ 0.55 for normal exposure. Proper 7-day curing is non-negotiable in tropical climates.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -79,6 +96,14 @@ See also: **Deformed Bars** (lea-strc-006-02) for reinforcement used with concre
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={[ "Confusing w/c ratio with water content. A w/c = 0.50 means 0.5 kg water per 1 kg cement, not 50 kg water per m³. Lower w/c always means stronger concrete if the mix is properly proportioned.", "Assuming 7-day strength equals 28-day strength. Concrete at 7 days is typically 60–75% of 28-day strength. Design is always based on 28-day strength; early testing is for quality control only.", "Using unit weight 2,000 or 2,300 kg/m³ instead of 2,400 kg/m³. This error propagates through load calculations and self-weight estimates. Standard normal-weight concrete is 2,400 kg/m³.", "Neglecting curing in hot, dry conditions. In the Philippines, poor curing in tropical heat causes severe drying shrinkage cracking and reduced long-term durability, even if initial 28-day strength is adequate." ]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[ \"Confusing w/c ratio with water content. A w/c = 0.50 means 0.5 kg water per 1 kg cement, not 50 kg water per m³. Lower w/c always means stronger concrete if the mix is properly proportioned.\", \"Assuming 7-day strength equals 28-day strength. Concrete at 7 days is typically 60–75% of 28-day strength. Design is always based on 28-day strength; early testing is for quality control only.\", \"Using unit weight 2,000 or 2,300 kg/m³ instead of 2,400 kg/m³. This error propagates through load calculations and self-weight estimates. Standard normal-weight concrete is 2,400 kg/m³.\", \"Neglecting curing in hot, dry conditions. In the Philippines, poor curing in tropical heat causes severe drying shrinkage cracking and reduced long-term durability, even if initial 28-day strength is adequate.\" ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

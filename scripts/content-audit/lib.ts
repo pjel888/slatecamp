@@ -1256,18 +1256,25 @@ export async function updateArticleContentIfUnchanged({
   supabase,
   articleId,
   originalContent,
+  originalUpdatedAt,
   updatePayload,
 }: {
   supabase: any
   articleId: string
   originalContent: string
+  originalUpdatedAt?: string | null
   updatePayload: JsonObject
 }) {
-  const { data, error } = await supabase
+  let query = supabase
     .from('wiki_articles')
     .update(updatePayload)
     .eq('article_id', articleId)
-    .eq('content', originalContent)
+
+  query = originalUpdatedAt
+    ? query.eq('updated_at', originalUpdatedAt)
+    : query.eq('content', originalContent)
+
+  const { data, error } = await query
     .select('article_id,updated_at')
 
   if (error) throw new Error(`Failed to update wiki_articles.content: ${error.message}`)
@@ -1278,6 +1285,112 @@ export async function updateArticleContentIfUnchanged({
   }
 
   return updatedRows
+}
+
+export interface SourceAuditEvidenceClaim {
+  claim_id?: string
+  claim_text?: string
+  claim_type?: string
+  audit_result?: string
+  source_support?: JsonObject
+  blockers?: string[]
+}
+
+export interface SourceAuditEvidence {
+  schema_version?: string
+  target?: {
+    article_id?: string
+    slug?: string | null
+    candidate_sha256?: string
+    candidate_path?: string
+  }
+  classification?: {
+    contains_legal_or_code_claims?: boolean
+    source_risk_tier?: string
+    requires_raw_pdf_audit?: boolean
+  }
+  claims?: SourceAuditEvidenceClaim[]
+  unverified_or_rejected_claims?: unknown[]
+  raw_pdf_gate?: {
+    status?: string
+    all_legal_code_claims_have_pdf_locator?: boolean
+    all_section_numbers_verified_against_raw_pdf?: boolean
+    no_derivative_text_used_as_source_of_truth?: boolean
+    blockers?: string[]
+  }
+  sme_review?: {
+    required?: boolean
+    status?: string
+  }
+  overall?: {
+    source_audit_status?: string
+    safe_for_batch_apply?: boolean
+    safe_for_supabase_upload?: boolean
+    blockers?: string[]
+    warnings?: string[]
+  }
+}
+
+export function readSourceAuditEvidence(articleDir: string): SourceAuditEvidence | null {
+  const evidencePath = path.join(articleDir, 'source-audit-evidence.json')
+  if (!existsSync(evidencePath)) return null
+  return JSON.parse(readFileSync(evidencePath, 'utf8')) as SourceAuditEvidence
+}
+
+export function candidateAppearsLegalOrCode(content: string | null | undefined): boolean {
+  if (!content) return false
+  return /\b(PD\s*1096|BP\s*344|RA\s*\d{3,5}|Rule\s+[IVXLCDM]+|Sec(?:tion)?\.\s*\d|IRR|Code|Fire Code|National Building Code|NSCP|UAP|SPP|PRC|DHSUD|HLURB)\b/i.test(content)
+}
+
+export function evaluateSourceAuditGate({
+  evidence,
+  metadata,
+  candidate,
+  apply,
+}: {
+  evidence: SourceAuditEvidence | null
+  metadata: ArticleMetadata
+  candidate: string | null
+  apply: boolean
+}) {
+  const blockers: string[] = []
+  const warnings: string[] = []
+  const candidateHash = candidate == null ? null : sha256(candidate)
+  const legalOrCode = candidateAppearsLegalOrCode(candidate)
+
+  if (!apply) {
+    if (legalOrCode && !evidence) warnings.push('Legal/code candidate has no source-audit-evidence.json yet; required before apply.')
+    return { legal_or_code_candidate: legalOrCode, source_audit_required: legalOrCode, source_audit_status: evidence?.overall?.source_audit_status ?? null, blockers, warnings }
+  }
+
+  if (legalOrCode && !evidence) {
+    blockers.push('Missing source-audit-evidence.json for legal/code candidate; raw PDF source audit is required before apply.')
+    return { legal_or_code_candidate: legalOrCode, source_audit_required: true, source_audit_status: null, blockers, warnings }
+  }
+  if (!evidence) return { legal_or_code_candidate: legalOrCode, source_audit_required: false, source_audit_status: null, blockers, warnings }
+
+  if (evidence.target?.article_id && evidence.target.article_id !== metadata.article_id) blockers.push('source-audit-evidence target.article_id does not match article metadata.')
+  if (candidateHash && evidence.target?.candidate_sha256 !== candidateHash) blockers.push('source-audit-evidence target.candidate_sha256 does not match current candidate.md hash.')
+  const requiresRaw = evidence.classification?.requires_raw_pdf_audit === true || legalOrCode
+  if (requiresRaw) {
+    if (evidence.raw_pdf_gate?.status !== 'PASS') blockers.push('source-audit-evidence raw_pdf_gate.status is not PASS.')
+    if (evidence.raw_pdf_gate?.all_legal_code_claims_have_pdf_locator !== true) blockers.push('source-audit-evidence does not confirm all legal/code claims have raw PDF locators.')
+    if (evidence.raw_pdf_gate?.all_section_numbers_verified_against_raw_pdf !== true) blockers.push('source-audit-evidence does not confirm section numbers were verified against raw PDF.')
+    if (evidence.raw_pdf_gate?.no_derivative_text_used_as_source_of_truth !== true) blockers.push('source-audit-evidence does not confirm derivative text was not used as source of truth.')
+  }
+  if (evidence.overall?.source_audit_status !== 'PASS') blockers.push('source-audit-evidence overall.source_audit_status is not PASS.')
+  if (evidence.overall?.safe_for_supabase_upload !== true) blockers.push('source-audit-evidence overall.safe_for_supabase_upload is not true.')
+  if ((evidence.unverified_or_rejected_claims?.length ?? 0) > 0) blockers.push('source-audit-evidence contains unverified_or_rejected_claims.')
+  for (const claim of evidence.claims ?? []) {
+    const sourceSupport = claim.source_support ?? {}
+    if (claim.audit_result !== 'PASS') blockers.push(`source-audit claim ${claim.claim_id ?? '(unknown)'} is not PASS.`)
+    if (requiresRaw && !sourceSupport.raw_pdf_path) blockers.push(`source-audit claim ${claim.claim_id ?? '(unknown)'} lacks raw_pdf_path.`)
+    if (requiresRaw && !sourceSupport.quoted_pdf_excerpt) blockers.push(`source-audit claim ${claim.claim_id ?? '(unknown)'} lacks quoted_pdf_excerpt.`)
+  }
+  if (evidence.sme_review?.required === true && evidence.sme_review.status !== 'PASS') blockers.push('source-audit-evidence requires SME review but sme_review.status is not PASS.')
+  blockers.push(...(evidence.raw_pdf_gate?.blockers ?? []), ...(evidence.overall?.blockers ?? []))
+  warnings.push(...(evidence.overall?.warnings ?? []))
+  return { legal_or_code_candidate: legalOrCode, source_audit_required: requiresRaw, source_audit_status: evidence.overall?.source_audit_status ?? null, blockers, warnings }
 }
 
 export function evaluatePushSafety(input: PushSafetyInput): PushSafetyResult {

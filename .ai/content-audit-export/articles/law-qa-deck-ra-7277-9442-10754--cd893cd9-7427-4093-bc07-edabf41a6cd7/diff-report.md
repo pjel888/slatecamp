@@ -1,21 +1,21 @@
 # Content Diff Report: law-qa-deck-ra-7277-9442-10754
 
-Generated: 2026-05-04T09:13:15.440Z
+Generated: 2026-05-10T00:34:37.098Z
 Article ID: cd893cd9-7427-4093-bc07-edabf41a6cd7
-Changed: false
+Changed: true
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:4a856f01e857d52e0913c4c95b3f05c2218a0f3de2fcb8895d501770bf694f0d`
-- Normalized: `sha256:e6ce544101aa55d42e0f3216c0ab9ce91252d1240d534c862e33e05b40d8ad75`
-- Candidate: `sha256:4a856f01e857d52e0913c4c95b3f05c2218a0f3de2fcb8895d501770bf694f0d`
+- Original: `sha256:3319bce70bfeadaffef3ec30aea9bcea25c175a407885bdc03d5d46bd982f16a`
+- Normalized: `sha256:68b7b4b7dcedaa0bcf0dedc39fe630ff8f05b2a90f81c8ac64124fb33271d4f9`
+- Candidate: `sha256:fc1d3d006f7d7c305b7f3f0732aa95524c6a650047d8ea4a558cc8dc8ee76890`
 
 ## Line summary
 
-- Changed lines: 0
+- Changed lines: 143
 - Inserted lines: 0
-- Deleted lines: 0
+- Deleted lines: 6
 
 ## UI block preservation
 

@@ -12,7 +12,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 ## Learning Goal
 Position driveways and access points per NBC and zoning standards, manage pedestrian-vehicle conflict zones, ensure emergency vehicle access, design vehicular circulation patterns for different site configurations, and apply minimum driveway width and setback standards.
 
-Vehicular circulation and site access planning translate parking supply into functional site layouts. 
+Vehicular circulation and site access planning translate parking supply into functional site layouts.
 
 ## Core Concept
 

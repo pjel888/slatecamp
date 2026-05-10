@@ -11,7 +11,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 [SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: The search for Filipino architectural identity is not a resolved question but an ongoing professional conversation. From Juan Nakpil's foundational work establishing Philippine style, through Francisco Mañosa's indigenous material advocacy, to contemporary architects reinterpreting tradition through digital and sustainable approaches, Filipino architecture continuously negotiates between cultural authenticity and global practice standards. Understanding this historical dialogue is essential for 
+- Text: The search for Filipino architectural identity is not a resolved question but an ongoing professional conversation. From Juan Nakpil's foundational work establishing Philippine style, through Francisco Mañosa's indigenous material advocacy, to contemporary architects reinterpreting tradition through digital and sustainable approaches, Filipino architecture continuously negotiates between cultural authenticity and global practice standards. Understanding this historical dialogue is essential for
 [/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
@@ -43,7 +43,7 @@ The 1970s witnessed what scholars call the "filipinization" of architecture, whe
 [SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Tradition as design generator: The strength of Filipino identity exploration is that it draws not on mimicry of historical forms but on *principles* embedded in vernacular tradition. The bahay kubo's elevation, overhang, and ventilation are design principles applicable to contemporary programs and materials. This allows Filipino architects to engage cultural continuity without being trapped in historical repetition. A contemporary hospital designed with bayanihan spatial principles and tropical 
+- Text: Tradition as design generator: The strength of Filipino identity exploration is that it draws not on mimicry of historical forms but on *principles* embedded in vernacular tradition. The bahay kubo's elevation, overhang, and ventilation are design principles applicable to contemporary programs and materials. This allows Filipino architects to engage cultural continuity without being trapped in historical repetition. A contemporary hospital designed with bayanihan spatial principles and tropical
 [/SLATECAMP_UI_BLOCK]
 
 Francisco Mañosa emerged as the most vociferous champion of indigenous materials as the material expression of Filipino identity. A National Artist and Thomasian architect, Mañosa proclaimed "I design Filipino, nothing else." His philosophy held that authenticity required not merely cultural reference but material commitment—using bamboo, rattan, abaca, coconut, and other indigenous materials not as decoration but as structural and expressive elements. The Coconut Palace, designed as a showpiece of coconut's versatility, and the Amanpulo Resort, fashioned as a deconstructed-kubo and earning international recognition, demonstrated that indigenous material commitment need not produce parochial or unsophisticated results. Mañosa's work showed that the pursuit of Filipino identity could achieve international acclaim precisely because it arose from genuine conviction rather than superficial cultural signaling.
@@ -158,4 +158,3 @@ Extracted summary:
 See also within Innovation & Filipino Identity: **lea-theo-008-02-core-concept**, **lea-theo-008-03-core-concept**, **lea-theo-008-08-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

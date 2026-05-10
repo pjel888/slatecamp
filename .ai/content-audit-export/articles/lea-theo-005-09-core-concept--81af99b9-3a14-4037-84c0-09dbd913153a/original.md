@@ -1,8 +1,18 @@
-## What You Need to Know for the LEA
-<Callout>
 
-Critical Regionalism, theorized by Kenneth Frampton in his 1983 essay "Towards a Critical Regionalism: Six Points for an Architecture of Resistance," offers a third way beyond both modernism's placeless universalism and postmodernism's superficial historicism. The LEA examines your understanding of Frampton's framework, how critical regionalism differs from romantic vernacularism, and how contemporary architects apply its principles to create culturally and environmentally responsive architecture rooted in specific places.
-</Callout>
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 005 09 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+## What You Need to Know for the LEA
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical Regionalism, theorized by Kenneth Frampton in his 1983 essay "Towards a Critical Regionalism: Six Points for an Architecture of Resistance," offers a third way beyond both modernism's placeless universalism and postmodernism's superficial historicism. The LEA examines your understanding of Frampton's framework, how critical regionalism differs from romantic vernacularism, and how contemporary architects apply its principles to create culturally and environmentally responsive architectur
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -12,17 +22,33 @@ Critical Regionalism, theorized by Kenneth Frampton in his 1983 essay "Towards a
 
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-005-09-core-concept" type="image" caption="Critical Regionalism — Frampton's Six Points and the Third Way" description="Spectrum diagram showing architectural approaches from universal Modernism (left) through Critical Regionalism (center) to romantic vernacularism (right). Center panel details Frampton's six defining points from his 1983 essay: (1) Emancipatory practice — resist universal civilization while embracing universal techniques; (2) Place-form — architecture is experienced as a boundary of place, not a free-standing object; (3) Tectonic expression — reveal construction and material truth; (4) Site-specific — respond to topography, climate, and natural forces; (5) Haptic sensibility — engage all senses, not just vision; (6) Local reinterpretation — critically reinterpret local traditions rather than either rejecting or copying them." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-005-09-core-concept", type="image", caption="Critical Regionalism — Frampton's Six Points and the Third Way", description="Spectrum diagram showing architectural approaches from universal Modernism (left) through Critical Regionalism (center) to romantic vernacularism (right). Center panel details Frampton's six defining points from his 1983 essay: (1) Emancipatory practice — resist universal civilization while embracing universal techniques; (2) Place-form — architecture is experienced as a boundary of place, not a free-standing object; (3) Tectonic expression — reveal construction and material truth; (4) Site-specific — respond to topography, climate, and natural forces; (5) Haptic sensibility — engage all senses, not just vision; (6) Local reinterpretation — critically reinterpret local traditions rather than either rejecting or copying them.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Critical Regionalism emerged in the 1980s as a response to two seemingly opposed but equally problematic architectural conditions: modernism's imposition of universal principles divorced from specific places, climates, and cultures, and postmodernism's superficial engagement with history through applied symbolism that lacked genuine cultural grounding. Kenneth Frampton, writing his seminal essay in 1983 and published in Hal Foster's anthology *The Anti-Aesthetic*, articulated a framework for architecture that would be critically engaged with local conditions without retreating into sentimental romanticism or nationalist essentialism.
 
-<Tip>Critical Regionalism = **Critical** (maintains modernist rigor, rejects mere traditionalism) + **Regionalism** (respects place-specificity). This hyphenated meaning is the entire framework. The word "critical" is load-bearing—without it, regionalism becomes nostalgic preservation. With it, regionalism becomes contemporary engagement with place-specific constraints as design *resources*, not limitations.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical Regionalism = **Critical** (maintains modernist rigor, rejects mere traditionalism) + **Regionalism** (respects place-specificity). This hyphenated meaning is the entire framework. The word "critical" is load-bearing—without it, regionalism becomes nostalgic preservation. With it, regionalism becomes contemporary engagement with place-specific constraints as design *resources*, not limitations.
+[/SLATECAMP_UI_BLOCK]
 
 Frampton's critique of the International Style reveals modernism's fundamental contradiction: despite its claim to universality rooted in rational principles and modern materials, the International Style erased the very differences—regional climate, available materials, cultural traditions, topography—that give places their distinct character. A modernist building in Finland resembles a modernist building in the Philippines; the architecture denies place specificity in the name of universal progress. Simultaneously, postmodernism's response—applying historical quotations and ornamental references—reduced culture to surface decoration. A postmodern building might reference regional architectural history through applied symbolism while fundamentally ignoring regional climate, materials, construction techniques, and social patterns. Both approaches, Frampton argues, fail to respect the "resistance of place."
 
-<Note>Frampton's **six points** are not a design methodology checklist—they're a theoretical framework. Points emphasizing "integration with culture and nature" or "sensory engagement" are not achieved by adding a bit of local stone or a water feature. Rather, they require fundamental design thinking that begins from place constraints (topography, climate, available labor/materials) and develops form from these constraints—contemporary, not nostalgic.</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Frampton's **six points** are not a design methodology checklist—they're a theoretical framework. Points emphasizing "integration with culture and nature" or "sensory engagement" are not achieved by adding a bit of local stone or a water feature. Rather, they require fundamental design thinking that begins from place constraints (topography, climate, available labor/materials) and develops form from these constraints—contemporary, not nostalgic.
+[/SLATECAMP_UI_BLOCK]
 
-<Warn>Critical regionalism is *not* romantic traditionalism disguised. Doshi's courtyards in Aranya Housing are not museum preservation; they're contemporary solutions to heat, privacy, and community-gathering *using forms proven effective across centuries*. The critical difference: these forms address *present-day* problems (Indian summer heat, family size variation, social gathering needs), not historical recreation. If a design appeals to tradition without addressing present constraints, it's romanticism, not critical regionalism.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical regionalism is *not* romantic traditionalism disguised. Doshi's courtyards in Aranya Housing are not museum preservation; they're contemporary solutions to heat, privacy, and community-gathering *using forms proven effective across centuries*. The critical difference: these forms address *present-day* problems (Indian summer heat, family size variation, social gathering needs), not historical recreation. If a design appeals to tradition without addressing present constraints, it's roman
+[/SLATECAMP_UI_BLOCK]
 
 Critical Regionalism, by contrast, proposes that architecture should respect and engage specific geographic, climatic, and cultural conditions not as quaint tradition to preserve but as active present-day constraints and resources. The framework is "critical" because it refuses simple traditionalism or nationalist essentialism; it maintains engagement with modernist principles of economy, clarity, and innovation. It is "regional" because it insists that architecture must respond to particular places rather than claiming universal validity. The architecture that results is neither nostalgic pastiche nor deracinated abstraction but rather a critical synthesis: contemporary techniques and materials deployed with attentiveness to place, climate, and cultural memory.
 
@@ -38,28 +64,68 @@ Contemporary critical regionalism has expanded beyond Frampton's original framew
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Concept/Architect", "Context", "Year", "Critical Regionalist Strategy"]} rows={[['["Kenneth Frampton", "\\"Towards a Critical Regionalism\\" essay", "1983", "Six points of resistance; critique of International Style and postmodern pastiche"]', '["Balkrishna Doshi", "Aranya Low-Cost Housing, Indore", "1989", "Courtyard tradition; incremental expansion; responsive planning"]', '["Balkrishna Doshi", "Indian Institute of Management, Bangalore", "1977", "Fatehpur Sikri-inspired courtyards; asymmetrical arrangement; local context"]', '["Hassan Fathy", "Mud-brick architecture, Egypt", "Mid-20th century", "Vernacular materials; courtyard planning; climate-responsive design"]', '["Charles Correa", "Mumbai housing and urban projects", "1970s-1990s", "Tropical climate response; courtyard tradition; social orientation"]', '["Six Points of Critical Regionalism", "Frampton\'s framework", "1983", "Culture, precedent, identity, place form, nature-culture integration, sensory engagement"]', '["International Style Critique", "Global modernism", "Post-1945", "Placeless universalism; erasure of climatic and cultural difference"]', '["Postmodern Superficiality", "Architectural pastiche", "1960s-1980s", "Applied symbolism; disconnection from construction, climate, and social reality"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Concept/Architect\", \"Context\", \"Year\", \"Critical Regionalist Strategy\"]}", rows="{[['[\"Kenneth Frampton\", \"\\\\\"Towards a Critical Regionalism\\\\\" essay\", \"1983\", \"Six points of resistance; critique of International Style and postmodern pastiche\"]', '[\"Balkrishna Doshi\", \"Aranya Low-Cost Housing, Indore\", \"1989\", \"Courtyard tradition; incremental expansion; responsive planning\"]', '[\"Balkrishna Doshi\", \"Indian Institute of Management, Bangalore\", \"1977\", \"Fatehpur Sikri-inspired courtyards; asymmetrical arrangement; local context\"]', '[\"Hassan Fathy\", \"Mud-brick architecture, Egypt\", \"Mid-20th century\", \"Vernacular materials; courtyard planning; climate-responsive design\"]', '[\"Charles Correa\", \"Mumbai housing and urban projects\", \"1970s-1990s\", \"Tropical climate response; courtyard tradition; social orientation\"]', '[\"Six Points of Critical Regionalism\", \"Frampton\\'s framework\", \"1983\", \"Culture, precedent, identity, place form, nature-culture integration, sensory engagement\"]', '[\"International Style Critique\", \"Global modernism\", \"Post-1945\", \"Placeless universalism; erasure of climatic and cultural difference\"]', '[\"Postmodern Superficiality\", \"Architectural pastiche\", \"1960s-1980s\", \"Applied symbolism; disconnection from construction, climate, and social reality\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-<ExamTip>1. **Regionalism vs. Romanticism vs. Modernism**: The exam distinguishes three positions. Can you explain why critical regionalism is neither modernist placelessness, romantic traditionalism, nor postmodern pastiche? This requires precise theoretical understanding.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 1. **Regionalism vs. Romanticism vs. Modernism**: The exam distinguishes three positions. Can you explain why critical regionalism is neither modernist placelessness, romantic traditionalism, nor postmodern pastiche? This requires precise theoretical understanding.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>2. **Frampton's Six Points Application**: Questions ask you to apply Frampton's framework to analyze specific buildings or places. How does a given project engage "place form resistance"? How does it integrate culture and nature?</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 2. **Frampton's Six Points Application**: Questions ask you to apply Frampton's framework to analyze specific buildings or places. How does a given project engage "place form resistance"? How does it integrate culture and nature?
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>3. **Climate and Material Responsiveness**: The LEA tests whether you understand that regionalism emerges not from aesthetic preference but from engagement with actual geographic, climatic, and material conditions. Can you explain how climate should inform architectural decisions?</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 3. **Climate and Material Responsiveness**: The LEA tests whether you understand that regionalism emerges not from aesthetic preference but from engagement with actual geographic, climatic, and material conditions. Can you explain how climate should inform architectural decisions?
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>4. **Vernacular vs. Critical Regionalist**: The exam distinguishes authentic engagement with vernacular traditions (Doshi, Fathy, Correa) from superficial historicist quotation. What makes Doshi's courtyards critical regionalism rather than nostalgic revival?</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 4. **Vernacular vs. Critical Regionalist**: The exam distinguishes authentic engagement with vernacular traditions (Doshi, Fathy, Correa) from superficial historicist quotation. What makes Doshi's courtyards critical regionalism rather than nostalgic revival?
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>5. **Postcolonial Context**: Critical Regionalism is inseparable from postcolonial architects' need to define identity beyond both colonizer's modernism and sentimental nationalism. Understanding Doshi, Fathy, and Correa requires understanding their postcolonial positioning.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 5. **Postcolonial Context**: Critical Regionalism is inseparable from postcolonial architects' need to define identity beyond both colonizer's modernism and sentimental nationalism. Understanding Doshi, Fathy, and Correa requires understanding their postcolonial positioning.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>6. **Global Engagement without Loss of Specificity**: You must understand that critical regionalism does not mean isolation. Contemporary Indian architects remain engaged with global practice while maintaining regional specificity. This tension is creative, not contradictory.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0012 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 6. **Global Engagement without Loss of Specificity**: You must understand that critical regionalism does not mean isolation. Contemporary Indian architects remain engaged with global practice while maintaining regional specificity. This tension is creative, not contradictory.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Treating Critical Regionalism as Romantic Traditionalism" correction="Students often reduce critical regionalism to \"use local materials and respect traditions.\" This misses the critical dimension—the framework maintains modernist principles of clarity, economy, and innovation while grounding them in place." context="Doshi's courtyard housing is not nostalgic; it is contemporary architecture that happens to engage traditional spatial patterns because they possess present-day validity." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Critical Regionalism as Romantic Traditionalism", correction="Students often reduce critical regionalism to \\", use=true, local=true, materials=true, and=true, respect=true, traditions=true, This=true, misses=true, the=true, critical=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Confusing Frampton's Critical Regionalism with Populism" correction="Critical regionalism is not democratic architecture or \"architecture for the people.\" Frampton's framework is explicitly critical and intellectual." context="It acknowledges elite architectural discourse while insisting that discourse must engage specific places and cultures rather than pursuing universal abstract principles." />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Frampton's Critical Regionalism with Populism", correction="Critical regionalism is not democratic architecture or \\", architecture=true, for=true, the=true, people=true, Frampton=true, s=true, framework=true, is=true, explicitly=true, critical=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Missing Frampton's Anti-Nostalgic Position. Students sometimes cite Frampton as endorsing historical preservation or traditionalism. Actually, Frampton explicitly critiques both romantic regionalism and nostalgic conservatism. Critical regionalism seeks productive engagement between contemporary innovation and regional specificity without fetishizing tradition.", "Treating the Six Points as Checklist. Frampton's six points are not a design methodology checklist—a building is not \"critical regionalist\" if it simply ticks all six boxes. Rather, they constitute a theoretical framework emphasizing architecture's responsibility to place, culture, and embodied experience.", "Ignoring Postcolonial Critique's Centrality. Critical Regionalism emerges specifically from postcolonial architects' (Doshi, Fathy, Correa) rejection of both colonial modernism and postcolonial essentialism. Understanding critical regionalism requires understanding its political and decolonial implications, not treating it as merely aesthetic preference.", "Reducing Climate Engagement to Passive Response. Students sometimes present critical regionalism as architecture passively adapting to climate. Actually, climate response involves active design judgment—deciding which traditional strategies remain valid, which contemporary technologies enable new solutions, how cultural practices and thermal comfort intersect."]} />
+[SLATECAMP_UI_BLOCK:ui_0015 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Missing Frampton's Anti-Nostalgic Position. Students sometimes cite Frampton as endorsing historical preservation or traditionalism. Actually, Frampton explicitly critiques both romantic regionalism and nostalgic conservatism. Critical regionalism seeks productive engagement between contemporary innovation and regional specificity without fetishizing tradition.\", \"Treating the Six Points as Checklist. Frampton's six points are not a design methodology checklist—a building is not \\\"critical regionalist\\\" if it simply ticks all six boxes. Rather, they constitute a theoretical framework emphasizing architecture's responsibility to place, culture, and embodied experience.\", \"Ignoring Postcolonial Critique's Centrality. Critical Regionalism emerges specifically from postcolonial architects' (Doshi, Fathy, Correa) rejection of both colonial modernism and postcolonial essentialism. Understanding critical regionalism requires understanding its political and decolonial implications, not treating it as merely aesthetic preference.\", \"Reducing Climate Engagement to Passive Response. Students sometimes present critical regionalism as architecture passively adapting to climate. Actually, climate response involves active design judgment—deciding which traditional strategies remain valid, which contemporary technologies enable new solutions, how cultural practices and thermal comfort intersect.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -88,4 +154,3 @@ Contemporary critical regionalism has expanded beyond Frampton's original framew
 See also within Architectural Philosophies: **lea-theo-005-01-core-concept**, **lea-theo-005-02-core-concept**, **lea-theo-005-04-core-concept**, **lea-theo-005-05-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

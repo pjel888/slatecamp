@@ -1,0 +1,511 @@
+{
+  "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4f4385d87a41959cbee072acd461ddccf4d1cfabf52ed6b17e078d66eafd6d8d",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "de0ee3a7-dadf-4cc8-afad-11040c7f25ab",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "In an SMRF column (Special Moment Resisting Frame), what is the required bend angle for confinement hoops to be classified as a seismic hook?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90 degrees"
+        },
+        {
+          "id": "b",
+          "text": "135 degrees"
+        },
+        {
+          "id": "c",
+          "text": "180 degrees"
+        },
+        {
+          "id": "d",
+          "text": "110 degrees"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "90-degree hooks are for non-seismic ties; they can pop open when concrete cover is lost under seismic stress.",
+        "c": "180-degree hooks are used for anchorage of straight bars, not typically for transverse confinement hoops.",
+        "d": "110 degrees is not a standard code angle for hooks.",
+        "correct": "Per NSCP 2015 § 402.2 (Definitions), a seismic hook must have a bend of not less than 135 degrees. This ensures confinement remains intact even if the concrete cover spalls during an earthquake.",
+        "takeaway": "Seismic confinement requires 135-degree hooks."
+      },
+      "explanation": "90-degree hooks are for non-seismic ties; they can pop open when concrete cover is lost under seismic stress. 180-degree hooks are used for anchorage of straight bars, not typically for transverse confinement hoops. 110 degrees is not a standard code angle for hooks. Per NSCP 2015 § 402.2 (Definitions), a seismic hook must have a bend of not less than 135 degrees. This ensures confinement remains intact even if the concrete cover spalls during an earthquake. Seismic confinement requires 135-degree hooks.",
+      "code_citation": "NSCP 2015 § 402.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-05-06T15:09:20.536375+00:00",
+      "content_hash": "sha256:28f22ed940366bb494329b57e133d4aef27b49849164aa5ab267f1cfeac0caba"
+    },
+    {
+      "question_id": "292a1ef2-32f4-4118-83bf-6d92e44f6fb7",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "A 400 mm × 400 mm square column contains 20 mm diameter longitudinal bars with 10 mm diameter ties. What is the maximum spacing of ties per NSCP 2015?",
+      "options": [
+        {
+          "id": "a",
+          "text": "400 mm"
+        },
+        {
+          "id": "b",
+          "text": "480 mm"
+        },
+        {
+          "id": "c",
+          "text": "320 mm"
+        },
+        {
+          "id": "d",
+          "text": "200 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "400 mm is the column dimension but is not the smallest of the three criteria.",
+        "b": "480 mm is the tie diameter limit, which is larger than the bar buckling limit (320 mm).",
+        "d": "200 mm is a conservative design choice but not the code-defined maximum limit.",
+        "correct": "Per NSCP 2015 § 425.7.2.1, tie spacing shall not exceed the least of: (1) 16db = 16×20 = 320 mm, (2) 48×tie_dia = 48×10 = 480 mm, and (3) least column dimension = 400 mm. The 320 mm value governs.",
+        "takeaway": "Tie spacing is the minimum of: 16 × longitudinal bar dia, 48 × tie dia, or least column dimension."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 425.7.2.1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7b8288c2e4512d86cea91684cff4b9e5f3fab78616488d5c2981f0ed2d4c876e"
+    },
+    {
+      "question_id": "fbe53cbf-bf61-4006-b4f1-c71ac92268c9",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "What is the minimum diameter of ties required for longitudinal bars of 36 mm diameter per NSCP 2015?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 mm"
+        },
+        {
+          "id": "b",
+          "text": "12 mm"
+        },
+        {
+          "id": "c",
+          "text": "8 mm"
+        },
+        {
+          "id": "d",
+          "text": "16 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10 mm is only permitted for longitudinal bars 32 mm in diameter or smaller.",
+        "c": "8 mm is never permitted for column ties in reinforced concrete.",
+        "d": "16 mm is a heavy tie that may be used by choice but is not the code-specified minimum.",
+        "correct": "Per NSCP 2015 § 425.7.2.2.1, ties must be at least 10 mm for longitudinal bars 32 mm or smaller, and at least 12 mm for longitudinal bars 36 mm or larger and for bundled bars.",
+        "takeaway": "Longitudinal bars ≥ 36 mm require 12 mm ties."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 425.7.2.2.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0cc38f292250c4b6a3bfa43f4028b4c2269d9c15c206b641551b2fbfaf879462"
+    },
+    {
+      "question_id": "bfe1e2a7-9d80-4024-9d47-73248e99caa9",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "A non-seismic column is 350 mm × 350 mm with 24 mm bars and 10 mm ties. A detail shows ties spaced at 300 mm throughout. Is this compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, compliant."
+        },
+        {
+          "id": "b",
+          "text": "No; spacing exceeds 16db = 384 mm."
+        },
+        {
+          "id": "c",
+          "text": "No; spacing exceeds 48×10 = 480 mm."
+        },
+        {
+          "id": "d",
+          "text": "No; spacing must not exceed 250 mm."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The design satisfies all three tie spacing criteria for non-seismic columns.",
+        "b": "384 mm is the limit for bar diameter; 300 mm is well within this.",
+        "c": "480 mm is the limit for tie diameter; 300 mm is well within this.",
+        "d": "There is no 250 mm requirement for this specific column dimension and bar size.",
+        "correct": "Max spacing is min(16×24=384, 48×10=480, 350). The limit is 350 mm. 300 mm is less than 350 mm, so it is compliant.",
+        "takeaway": "Always verify that specified spacing is equal to or less than the most restrictive code limit."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 425.7.2.1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d49317a9e6d98049b416a4e15a3899d3de917aa7b3f95bab2ba89557c4d123b"
+    },
+    {
+      "question_id": "c5c06df4-e0dc-42ae-a615-037b330ba0ee",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "A column is 300 mm × 500 mm (rectangular) with 28 mm longitudinal bars and 12 mm diameter ties. Calculate the maximum tie spacing per NSCP 2015.",
+      "options": [
+        {
+          "id": "a",
+          "text": "300 mm"
+        },
+        {
+          "id": "b",
+          "text": "448 mm"
+        },
+        {
+          "id": "c",
+          "text": "576 mm"
+        },
+        {
+          "id": "d",
+          "text": "400 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The least dimension of the rectangular column (300 mm) governs over the bar and tie diameter calculations.",
+        "b": "448 mm is the longitudinal bar buckling limit, which is higher than the member dimension limit.",
+        "c": "576 mm is the transverse bar limit.",
+        "d": "400 mm has no basis in the three governing criteria for this specific column.",
+        "correct": "Criteria: (1) 16×28 = 448 mm, (2) 48×12 = 576 mm, (3) Least dimension = 300 mm. The smallest value is 300 mm.",
+        "takeaway": "For rectangular columns, the 'least dimension' often governs tie spacing."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 425.7.2.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6959c1459de91e96b67790125113bcc70ec57ed02edb6fee95753d0c39d33eb0"
+    },
+    {
+      "question_id": "2ad4c957-5dee-4c8c-a8b5-439a8aa774a5",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "In a seismic confinement hoop using a 12 mm bar, what is the minimum extension length required beyond the 135° bend?",
+      "options": [
+        {
+          "id": "a",
+          "text": "72 mm"
+        },
+        {
+          "id": "b",
+          "text": "75 mm"
+        },
+        {
+          "id": "c",
+          "text": "100 mm"
+        },
+        {
+          "id": "d",
+          "text": "60 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "72 mm is the 6db calculation but fails to meet the 75 mm absolute minimum.",
+        "c": "100 mm is conservative but not the code-required minimum.",
+        "d": "60 mm is the standard hook extension (5db) for 90-degree ties, not seismic hooks.",
+        "correct": "Per NSCP 2015 § 402.2, a seismic hook extension must be at least 6db or 75 mm, whichever is greater. For a 12 mm bar, 6×12 = 72 mm. Since 75 mm is larger, it governs.",
+        "takeaway": "Seismic hook extension: max(6db, 75 mm)."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 402.2",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:803a504fc33a906d28343c46da8569731b37fec0fee678807b5b5d5776a03caf"
+    },
+    {
+      "question_id": "e34a4b92-5f57-4862-82fd-f4d547bf12de",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "Within the seismic confinement zone of an SMRF column, the column dimension is 500 mm and the longitudinal bar is 32 mm diameter. What is the maximum spacing of the hoops?",
+      "options": [
+        {
+          "id": "a",
+          "text": "125 mm"
+        },
+        {
+          "id": "b",
+          "text": "150 mm"
+        },
+        {
+          "id": "c",
+          "text": "192 mm"
+        },
+        {
+          "id": "d",
+          "text": "200 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "h/4 is the most restrictive criterion in this scenario.",
+        "b": "150 mm is a common upper limit but is not the smallest here.",
+        "c": "192 mm is the longitudinal bar diameter criterion.",
+        "d": "200 mm exceeds all seismic spacing limits.",
+        "correct": "Per NSCP 2015 § 418.7.5.3, spacing shall not exceed the smallest of: (1) h/4 = 500/4 = 125 mm, (2) 6db = 6×32 = 192 mm, and (3) sx = 100 + [(350 - hx)/3] (typically 100–150 mm). The 125 mm value governs.",
+        "takeaway": "Seismic hoop spacing is significantly tighter than standard tie spacing."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 418.7.5.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed1aea12d6b010e81ed67a437ce189ee08715172904a5dc809f2054771bebbd1"
+    },
+    {
+      "question_id": "7c2a3e31-2789-4993-8374-ab9a81eaf218",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "A structural detail uses 10 mm ties to enclose 36 mm longitudinal bars in a standard column. Does this violate the NSCP 2015?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, 10 mm is the universal minimum for all column ties, regardless of the size of the longitudinal bars used"
+        },
+        {
+          "id": "b",
+          "text": "Yes, 36 mm longitudinal bars require at least 12 mm diameter ties."
+        },
+        {
+          "id": "c",
+          "text": "No, provided the spacing is less than 200 mm, which is a common practice in non-seismic zones"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only if the column is in a seismic zone, where additional reinforcement is necessary to meet safety standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10 mm is the minimum for bars up to 32 mm, but the threshold changes at 36 mm.",
+        "c": "Tighter spacing cannot compensate for a sub-standard tie diameter for large-diameter longitudinal bars.",
+        "d": "This is a basic requirement for all reinforced concrete columns, regardless of seismic zone.",
+        "correct": "NSCP 2015 Section 425.7.2.2.1 explicitly requires 12 mm ties for 36 mm or larger bars. Using 10 mm ties for such large bars is a violation of the minimum structural standards of the code.",
+        "takeaway": "Always match tie diameter to the largest longitudinal bar diameter used in the column."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 425.7.2.2.1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:50f2553824dc42c8e63a2520a0ce200a2dbd1e95feeb1096dfafab03dea843a3"
+    },
+    {
+      "question_id": "615fd0ed-83cb-4e93-9726-8fad1115829f",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "A high-seismic building detail shows 90° hooks for column confinement hoops. A code reviewer requests a revision to 135°. Is the reviewer's request legally founded?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, 90° hooks are allowed if they are alternated, which can provide adequate confinement in certain conditions."
+        },
+        {
+          "id": "b",
+          "text": "Yes, seismic confinement hoops must use 135° seismic hooks to ensure ductility."
+        },
+        {
+          "id": "c",
+          "text": "No, 135° hooks are only for beams, not columns, according to specific structural guidelines."
+        },
+        {
+          "id": "d",
+          "text": "No, the NSCP 2015 has removed the 135° requirement, allowing for more flexibility in design."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Alternating 90-degree hooks is a technique used for crossties, but the primary hoop itself must be closed with seismic hooks.",
+        "c": "Seismic hooks are mandatory for confinement in both beams and columns of SMRF systems.",
+        "d": "The requirement for 135° hooks remains a critical part of seismic design in the Philippines.",
+        "correct": "NSCP 2015 Section 418.7.5.2 requires that transverse reinforcement in SMRF columns be provided by single or overlapping hoops. Hoops are defined as closed ties with seismic hooks (135° bend) at both ends.",
+        "takeaway": "135-degree hooks are a mandatory 'legal' requirement for seismic ductility in Zone 4."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 418.7.5.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:21f906a1a6d3f66952e4ddb32acc2e2526e94dabc968eab71937d0c18af1b61e"
+    },
+    {
+      "question_id": "52fe1bb1-407a-4170-af6e-49ea1f2ed590",
+      "article_id": "0de0e175-c5a7-49e9-9b57-3833b44cda3d",
+      "topic_id": "25bf26e9-4589-4193-89e9-f0f8a583c852",
+      "text": "An SMRF column is 600 mm × 600 mm with a clear span (ln) of 5.2 m. What is the required length of the confinement zone (lo) at each end of the column per NSCP 2015?",
+      "options": [
+        {
+          "id": "a",
+          "text": "450 mm"
+        },
+        {
+          "id": "b",
+          "text": "600 mm"
+        },
+        {
+          "id": "c",
+          "text": "867 mm"
+        },
+        {
+          "id": "d",
+          "text": "1200 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "450 mm is the absolute minimum but is not the greatest among the three factors.",
+        "b": "600 mm is the member depth, which is exceeded by the ln/6 requirement.",
+        "d": "1200 mm exceeds the requirement.",
+        "correct": "Per NSCP 2015 § 418.7.5.1, the confinement length lo shall be the greatest of: (1) h = 600 mm, (2) ln/6 = 5200/6 = 866.67 ≈ 867 mm, and (3) 450 mm. The 867 mm value governs.",
+        "takeaway": "lo = max(member depth, clear span/6, 450 mm)."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 418.7.5.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f9dee0b73a7165d819ddbaefa3e367724b7655b9a8093b62e9ea5bdedd393f7"
+    }
+  ]
+}

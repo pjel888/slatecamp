@@ -1,9 +1,62 @@
 {
   "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b327c11efffd8de4f38ba75c978d9a0902aedff3e66649eed55033d79ce7e7cc",
+  "linked_questions_hash": "sha256:7e71f91e3e9fc82fc9204a086a8d14a26b536f9d634ff960c26c0446fbc23b7a",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "c0e34a50-1905-4f29-ad32-59aed88ebe6f",
+      "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
+      "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
+      "text": "An international development organization is financing a commercial office tower in Metro Manila and requires a certification system with 20% improvement in energy, water, and embodied energy compared to baseline. Which system should the project pursue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BERDE, because it is the Philippine national standard and aligns with local environmental policies"
+        },
+        {
+          "id": "b",
+          "text": "LEED, because it has the highest prestige globally and is widely recognized by international stakeholders"
+        },
+        {
+          "id": "c",
+          "text": "EDGE, because it is designed for cost-effective efficiency gains"
+        },
+        {
+          "id": "d",
+          "text": "ISO 14001, because it certifies environmental management systems across various industries"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "BERDE is appropriate for domestic projects and government buildings, but the scenario explicitly states '20% improvement' which is EDGE's defining metric.",
+        "b": "LEED has global prestige but uses a point-based system with varying thresholds, not a fixed 20% improvement target.",
+        "d": "ISO 14001 is an environmental management system, not a building performance certification.",
+        "correct": "EDGE, administered by the IFC, is specifically designed around a 20% improvement target in energy, water, and embodied energy. It is cost-effective and accessible to developing economies, making it ideal for IFC-funded projects.",
+        "takeaway": "EDGE is the IFC's efficiency-focused certification system; 20% improvement is its defining metric."
+      },
+      "explanation": "BERDE is appropriate for domestic projects and government buildings, but the scenario explicitly states '20% improvement' which is EDGE's defining metric. LEED has global prestige but uses a point-based system with varying thresholds, not a fixed 20% improvement target. ISO 14001 is an environmental management system, not a building performance certification. EDGE, administered by the IFC, is specifically designed around a 20% improvement target in energy, water, and embodied energy. It is cost-effective and accessible to developing economies, making it ideal for IFC-funded projects. EDGE is the IFC's efficiency-focused certification system; 20% improvement is its defining metric.",
+      "code_citation": "IFC EDGE Certification Manual; PHILGBC BERDE Rating System Comparison",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "IFC-funded projects",
+        "Emerging market adaptation"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-009-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-05-06T15:46:01.588513+00:00",
+      "content_hash": "sha256:c76b9c9301cd42454f3156f1d977fda8481a8f7b688775b0383206c3d22bc0d1"
+    },
     {
       "question_id": "3588f5a0-8c25-44ba-ae7b-54b9346d21a9",
       "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
@@ -39,7 +92,7 @@
         "correct": "BERDE structure: Prerequisites in Energy, Water, Site, Materials, and Waste are non-negotiable baseline performance levels. Optional credits allow projects to exceed baseline and achieve higher star ratings (1–5 stars). This two-tiered approach ensures minimum sustainability; optional credits reward innovation.",
         "takeaway": "BERDE uses a prerequisite (mandatory) + credit (optional advancement) model, similar to LEED. All certified projects must pass prerequisites."
       },
-      "explanation": null,
+      "explanation": "Incorrect—prerequisites are mandatory, not optional. Incorrect—prerequisites cannot be bypassed with credits. All BERDE certified projects must meet all prerequisites. Incorrect—BERDE explicitly uses prerequisites. BERDE structure: Prerequisites in Energy, Water, Site, Materials, and Waste are non-negotiable baseline performance levels. Optional credits allow projects to exceed baseline and achieve higher star ratings (1–5 stars). This two-tiered approach ensures minimum sustainability; optional credits reward innovation. BERDE uses a prerequisite (mandatory) + credit (optional advancement) model, similar to LEED. All certified projects must pass prerequisites.",
       "code_citation": "PHILGBC BERDE Rating System v2.0 Structure and Certification Path",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -53,8 +106,8 @@
       "model_id": "ALE-DSGN-009-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:53dd5cdc3ead9604fe0ec9617696cf1bd1df64af561be580fcd5d65dd14a6ddb"
+      "updated_at": "2026-05-06T15:46:01.163987+00:00",
+      "content_hash": "sha256:26692169d0793477227bef9ce3891d8779c4d23f401db5198f6efcde37f8e4a6"
     },
     {
       "question_id": "213446ce-a4b2-495c-ba67-8ff8593ded53",
@@ -145,7 +198,7 @@
         "correct": "Water Efficiency is a mandatory BERDE prerequisite; all projects must demonstrate minimum potable water reduction targets. This reflects the Philippines' water management challenges, especially in high-precipitation regions.",
         "takeaway": "BERDE prerequisites are mandatory minimum performance levels; Water Efficiency, Energy Efficiency, Site Selection, Materials, and Waste Management are all required categories."
       },
-      "explanation": null,
+      "explanation": "Renewable energy installation is desirable and can earn points, but it is not a mandatory prerequisite; many projects achieve BERDE without on-site PV. Green roofs are an innovation strategy, not a prerequisite; they are optional. Rainwater harvesting is one strategy to meet Water Efficiency prerequisite, but the prerequisite itself (potable water reduction) is mandatory; the implementation strategy varies. Water Efficiency is a mandatory BERDE prerequisite; all projects must demonstrate minimum potable water reduction targets. This reflects the Philippines' water management challenges, especially in high-precipitation regions. BERDE prerequisites are mandatory minimum performance levels; Water Efficiency, Energy Efficiency, Site Selection, Materials, and Waste Management are all required categories.",
       "code_citation": "PHILGBC BERDE Rating System v2.0; PD 2194 Green Building Provisions",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -160,8 +213,8 @@
       "model_id": "ALE-DSGN-009-04-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d817e1ea56883cc9e8f2546b978672dd4320e1d246d2fc26c7ab3033c4bad465"
+      "updated_at": "2026-05-06T15:46:01.316502+00:00",
+      "content_hash": "sha256:e7119f1754a7561fb1082fe9098d8757ee1ff6b09f10a58421f25fa4549db7ad"
     },
     {
       "question_id": "13781414-6765-40a5-a91e-12fc2c66fa98",
@@ -248,7 +301,7 @@
         "correct": "In the Philippines' hot, humid climate, passive design—natural ventilation, orientation to catch prevailing breezes (NE/SW in many regions), solar shading (deep overhangs, louvers), and thermal mass (exposed concrete ceilings)—dramatically reduces cooling load. This is more cost-effective than active systems and improves resilience.",
         "takeaway": "Tropical climate design must prioritize passive cooling (ventilation, shading, mass) before active systems. This aligns with BERDE's emphasis on climate-responsive design."
       },
-      "explanation": null,
+      "explanation": "High-efficiency AC is important but cannot replace the energy savings of passive design in tropical climates. Relying on mechanical systems increases operational costs and vulnerability to power outages (common in monsoon season). LED lighting reduces lighting energy (typically 10–15% of total), but climate control (heating/cooling) dominates office energy consumption (~40–60%). Addressing the larger load is more impactful. Double-glazing in tropical climates is less critical than in cold climates; it may increase cost without proportional benefit. Solar shading and ventilation are more cost-effective. In the Philippines' hot, humid climate, passive design—natural ventilation, orientation to catch prevailing breezes (NE/SW in many regions), solar shading (deep overhangs, louvers), and thermal mass (exposed concrete ceilings)—dramatically reduces cooling load. This is more cost-effective than active systems and improves resilience. Tropical climate design must prioritize passive cooling (ventilation, shading, mass) before active systems. This aligns with BERDE's emphasis on climate-responsive design.",
       "code_citation": "PD 2194 Green Building Provisions; PHILGBC BERDE—Climate Adaptation Guidance",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -263,8 +316,8 @@
       "model_id": "ALE-DSGN-009-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:19e736afc5fa71aef8354b31b67f84b12aa15f1c562e1fcefb3cb64dc98ee55e"
+      "updated_at": "2026-05-06T15:46:01.448848+00:00",
+      "content_hash": "sha256:8bf7ba20d3340460b3b61c56261a1fcd130554074c307adeb5c24a1008868831"
     },
     {
       "question_id": "1c5554c7-7175-43c4-a7f6-730630519e94",
@@ -426,59 +479,6 @@
       "created_at": "2026-03-23T19:28:58.790366+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:ea231f8c4acc81a4e13032a56829c2181e77964cf50e30bbda59a13fdeac6e36"
-    },
-    {
-      "question_id": "c0e34a50-1905-4f29-ad32-59aed88ebe6f",
-      "article_id": "246c66db-c0cf-4cd3-8f52-9491451e7c76",
-      "topic_id": "da73c15c-1a10-4832-8df3-a3b2fb2126a7",
-      "text": "An international development organization is financing a commercial office tower in Metro Manila and requires a certification system with 20% improvement in energy, water, and embodied energy compared to baseline. Which system should the project pursue?",
-      "options": [
-        {
-          "id": "a",
-          "text": "BERDE, because it is the Philippine national standard and aligns with local environmental policies"
-        },
-        {
-          "id": "b",
-          "text": "LEED, because it has the highest prestige globally and is widely recognized by international stakeholders"
-        },
-        {
-          "id": "c",
-          "text": "EDGE, because it is designed for cost-effective efficiency gains"
-        },
-        {
-          "id": "d",
-          "text": "ISO 14001, because it certifies environmental management systems across various industries"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "BERDE is appropriate for domestic projects and government buildings, but the scenario explicitly states '20% improvement' which is EDGE's defining metric.",
-        "b": "LEED has global prestige but uses a point-based system with varying thresholds, not a fixed 20% improvement target.",
-        "d": "ISO 14001 is an environmental management system, not a building performance certification.",
-        "correct": "EDGE, administered by the IFC, is specifically designed around a 20% improvement target in energy, water, and embodied energy. It is cost-effective and accessible to developing economies, making it ideal for IFC-funded projects.",
-        "takeaway": "EDGE is the IFC's efficiency-focused certification system; 20% improvement is its defining metric."
-      },
-      "explanation": null,
-      "code_citation": "IFC EDGE Certification Manual; PHILGBC BERDE Rating System Comparison",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "IFC-funded projects",
-        "Emerging market adaptation"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-009-04-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:58.790366+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c9274099de000afa306ed52e253229374045d6f2711d57c16136722d251315ef"
     },
     {
       "question_id": "c3be7e92-b350-4b11-84e3-07a01be93144",

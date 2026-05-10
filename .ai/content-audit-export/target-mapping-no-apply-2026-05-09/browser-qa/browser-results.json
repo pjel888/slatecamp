@@ -1,0 +1,485 @@
+{
+  "generated_at": "2026-05-09T17:13:30.427Z",
+  "scope": "local browser-rendered QA for 5 mapped existing article repairs only",
+  "mutation_status": "No Supabase article/question apply and no insertion workflow executed by this QA harness.",
+  "render_method": "candidate.md compiled through SlateCamp compileWikiArticleWithRenderer(), served as local static HTML, opened in Chromium via Playwright.",
+  "article_count": 5,
+  "viewport_count": 2,
+  "pass_count": 10,
+  "fail_count": 0,
+  "overall_status": "PASS",
+  "results": [
+    {
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "label": "BP 344",
+      "slug": "bp-344-ramp-slope-tiers",
+      "title": "BP 344 Ramp Slope Tiers",
+      "viewport": "desktop",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/bp-344-bp-344-ramp-slope-tiers.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/bp-344-ramp-slope-tiers-desktop.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/bp-344-bp-344-ramp-slope-tiers.html",
+        "articleId": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+        "slug": "bp-344-ramp-slope-tiers",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 7823,
+        "h1Count": 1,
+        "h2Count": 9,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      "table_expectation": {
+        "caption": "BP 344 ramp checks from the cited Appendix A excerpts",
+        "minRoleTableCount": 1,
+        "minTabCount": 2,
+        "expectedTexts": [
+          "Ramp geometry",
+          "Handrail checks",
+          "Clear width",
+          "1200 mm minimum"
+        ]
+      },
+      "table_metrics": {
+        "required": true,
+        "captionPresent": true,
+        "roleTableCount": 1,
+        "nativeTableCount": 0,
+        "tabListCount": 1,
+        "tabCount": 2,
+        "missingExpectedTexts": []
+      },
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "label": "BP 344",
+      "slug": "bp-344-ramp-slope-tiers",
+      "title": "BP 344 Ramp Slope Tiers",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/bp-344-bp-344-ramp-slope-tiers.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/bp-344-ramp-slope-tiers-mobile.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/bp-344-bp-344-ramp-slope-tiers.html",
+        "articleId": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+        "slug": "bp-344-ramp-slope-tiers",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 7823,
+        "h1Count": 1,
+        "h2Count": 9,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "table_expectation": {
+        "caption": "BP 344 ramp checks from the cited Appendix A excerpts",
+        "minRoleTableCount": 1,
+        "minTabCount": 2,
+        "expectedTexts": [
+          "Ramp geometry",
+          "Handrail checks",
+          "Clear width",
+          "1200 mm minimum"
+        ]
+      },
+      "table_metrics": {
+        "required": true,
+        "captionPresent": true,
+        "roleTableCount": 1,
+        "nativeTableCount": 0,
+        "tabListCount": 1,
+        "tabCount": 2,
+        "missingExpectedTexts": []
+      },
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "label": "RA 9266",
+      "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+      "title": "Foreign Architects in the Philippines",
+      "viewport": "desktop",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/ra-9266-lea-prac-frm-005-foreign-architects-in-the-philippines.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/lea-prac-frm-005-foreign-architects-in-the-philippines-desktop.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/ra-9266-lea-prac-frm-005-foreign-architects-in-the-philippines.html",
+        "articleId": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+        "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 7440,
+        "h1Count": 1,
+        "h2Count": 10,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      "table_expectation": null,
+      "table_metrics": null,
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "label": "RA 9266",
+      "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+      "title": "Foreign Architects in the Philippines",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/ra-9266-lea-prac-frm-005-foreign-architects-in-the-philippines.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/lea-prac-frm-005-foreign-architects-in-the-philippines-mobile.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/ra-9266-lea-prac-frm-005-foreign-architects-in-the-philippines.html",
+        "articleId": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+        "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 7440,
+        "h1Count": 1,
+        "h2Count": 10,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "table_expectation": null,
+      "table_metrics": null,
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "label": "Vitruvius",
+      "slug": "lea-theo-001-09-core-concept",
+      "title": "Vitruvius and Classical Architectural Theory",
+      "viewport": "desktop",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/vitruvius-lea-theo-001-09-core-concept.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/lea-theo-001-09-core-concept-desktop.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/vitruvius-lea-theo-001-09-core-concept.html",
+        "articleId": "25607252-c20a-4013-99f5-af11e829fd18",
+        "slug": "lea-theo-001-09-core-concept",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 7007,
+        "h1Count": 1,
+        "h2Count": 11,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      "table_expectation": null,
+      "table_metrics": null,
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "label": "Vitruvius",
+      "slug": "lea-theo-001-09-core-concept",
+      "title": "Vitruvius and Classical Architectural Theory",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/vitruvius-lea-theo-001-09-core-concept.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/lea-theo-001-09-core-concept-mobile.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/vitruvius-lea-theo-001-09-core-concept.html",
+        "articleId": "25607252-c20a-4013-99f5-af11e829fd18",
+        "slug": "lea-theo-001-09-core-concept",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 7007,
+        "h1Count": 1,
+        "h2Count": 11,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "table_expectation": null,
+      "table_metrics": null,
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "label": "PD 1096",
+      "slug": "pd-1096-rule-vii-area-metrics",
+      "title": "PD 1096 Rule VII Area Metrics",
+      "viewport": "desktop",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/pd-1096-pd-1096-rule-vii-area-metrics.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/pd-1096-rule-vii-area-metrics-desktop.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/pd-1096-pd-1096-rule-vii-area-metrics.html",
+        "articleId": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+        "slug": "pd-1096-rule-vii-area-metrics",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 8069,
+        "h1Count": 1,
+        "h2Count": 10,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      "table_expectation": {
+        "caption": "PD 1096 Rule VII controls to separate before computing",
+        "minRoleTableCount": 1,
+        "minTabCount": 2,
+        "expectedTexts": [
+          "Location checks",
+          "Area controls",
+          "Direct access",
+          "Section 704.1(a)"
+        ]
+      },
+      "table_metrics": {
+        "required": true,
+        "captionPresent": true,
+        "roleTableCount": 1,
+        "nativeTableCount": 0,
+        "tabListCount": 1,
+        "tabCount": 2,
+        "missingExpectedTexts": []
+      },
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "label": "PD 1096",
+      "slug": "pd-1096-rule-vii-area-metrics",
+      "title": "PD 1096 Rule VII Area Metrics",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/pd-1096-pd-1096-rule-vii-area-metrics.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/pd-1096-rule-vii-area-metrics-mobile.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/pd-1096-pd-1096-rule-vii-area-metrics.html",
+        "articleId": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+        "slug": "pd-1096-rule-vii-area-metrics",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 8069,
+        "h1Count": 1,
+        "h2Count": 10,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "table_expectation": {
+        "caption": "PD 1096 Rule VII controls to separate before computing",
+        "minRoleTableCount": 1,
+        "minTabCount": 2,
+        "expectedTexts": [
+          "Location checks",
+          "Area controls",
+          "Direct access",
+          "Section 704.1(a)"
+        ]
+      },
+      "table_metrics": {
+        "required": true,
+        "captionPresent": true,
+        "roleTableCount": 1,
+        "nativeTableCount": 0,
+        "tabListCount": 1,
+        "tabCount": 2,
+        "missingExpectedTexts": []
+      },
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "label": "UAP SPP 201",
+      "slug": "spp-doc-201-pre-design-services",
+      "title": "SPP Doc 201: Pre-Design Services",
+      "viewport": "desktop",
+      "dimensions": {
+        "width": 1440,
+        "height": 900
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/uap-spp-201-spp-doc-201-pre-design-services.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/spp-doc-201-pre-design-services-desktop.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/uap-spp-201-spp-doc-201-pre-design-services.html",
+        "articleId": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+        "slug": "spp-doc-201-pre-design-services",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 7571,
+        "h1Count": 1,
+        "h2Count": 11,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      "table_expectation": null,
+      "table_metrics": null,
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    },
+    {
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "label": "UAP SPP 201",
+      "slug": "spp-doc-201-pre-design-services",
+      "title": "SPP Doc 201: Pre-Design Services",
+      "viewport": "mobile",
+      "dimensions": {
+        "width": 390,
+        "height": 844
+      },
+      "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/uap-spp-201-spp-doc-201-pre-design-services.html",
+      "screenshot": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/spp-doc-201-pre-design-services-mobile.png",
+      "metrics": {
+        "url": "file://<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/uap-spp-201-spp-doc-201-pre-design-services.html",
+        "articleId": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+        "slug": "spp-doc-201-pre-design-services",
+        "rawPlaceholderOpenCount": 0,
+        "rawPlaceholderCloseCount": 0,
+        "extractedPropsLineCount": 0,
+        "hasWikiArticleError": false,
+        "articleTextLength": 7571,
+        "h1Count": 1,
+        "h2Count": 11,
+        "h3Count": 0,
+        "emptyHeadingCount": 0,
+        "brokenImageCount": 0,
+        "horizontalOverflow": false,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      "table_expectation": null,
+      "table_metrics": null,
+      "console_errors": [],
+      "console_warnings": [],
+      "page_errors": [],
+      "status": "PASS",
+      "fail_reasons": []
+    }
+  ]
+}

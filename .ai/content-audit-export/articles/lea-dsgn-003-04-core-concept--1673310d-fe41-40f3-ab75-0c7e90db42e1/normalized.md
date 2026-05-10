@@ -119,18 +119,18 @@ A typical 2-hectare socialized housing project in Metro Manila under BP 220 woul
 ## How It's Tested
 
 **Computation Pattern 1 (Difficulty 0.7):**
-"A developer proposes a socialized housing project (new subdivision) on a 5-hectare site in Quezon City. Site coverage is 60%, average floor area is 24 sqm per unit. How many units can legally be developed?" 
+"A developer proposes a socialized housing project (new subdivision) on a 5-hectare site in Quezon City. Site coverage is 60%, average floor area is 24 sqm per unit. How many units can legally be developed?"
 
 - Answer: (50,000 sqm × 0.60) ÷ 64 sqm/lot = **468 units** (socialized SD minimum lot applies).
 
 **Computation Pattern 2 (Difficulty 0.9):**
-"For an infill socialized housing project in Manila with 150 units and a site of 6,000 sqm (excluding roads), calculate net density and verify compliance with BP 220 minimum lot requirement." 
+"For an infill socialized housing project in Manila with 150 units and a site of 6,000 sqm (excluding roads), calculate net density and verify compliance with BP 220 minimum lot requirement."
 
 - Required: 150 units × 28 sqm/lot = **4,200 sqm minimum** → available 6,000 sqm compliant.
 - Actual lot size: 6,000 ÷ 150 = 40 sqm/unit (exceeds 28 sqm minimum).
 
 **Application Pattern 3 (Difficulty 0.7):**
-"Which occupancy group does a senior living care home for low-income seniors fall under?" 
+"Which occupancy group does a senior living care home for low-income seniors fall under?"
 
 - Answer: Low-income housing under BP 220 is classified as Group A residential per PD 1096. Senior living facilities (care homes, assisted living) are classified as **Group D** (institutions) or **Group I** per PD 1096 Section 303 if providing care services.
 

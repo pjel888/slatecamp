@@ -1,9 +1,60 @@
 {
   "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:677d0a2885fc9eb5d2526845e5133f71c981c7245d14b673aaf066169123c517",
+  "linked_questions_hash": "sha256:a3f449b975b03f6bf1ec2a0e96de28e7f355b6bbb6d840ecca5aec2b9c7986e5",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "e4e96d31-2fbc-4862-aa9e-efee88612415",
+      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 204-A, in how many arrangements can fulltime supervision services be provided?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One: through the CSG only"
+        },
+        {
+          "id": "b",
+          "text": "Two: dual capacity (architect as supervisor) or consulting architect only"
+        },
+        {
+          "id": "c",
+          "text": "Three: CSG, architect, or construction manager"
+        },
+        {
+          "id": "d",
+          "text": "Four: CSG, architect, contractor's superintendent, or independent inspector"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CSG-only is just one of the two recognized arrangements.",
+        "b": "Correct. SPP 204-A recognizes two arrangements: (1) dual capacity, where the architect of record also provides fulltime supervision, and (2) consulting architect only, where a separate architect/firm provides supervision services.",
+        "c": "Three arrangements overspecifies. Construction management is covered under SPP 204-B.",
+        "d": "Four arrangements is incorrect and mixes roles from different SPP documents.",
+        "correct": "SPP 204-A provides for two arrangements: dual capacity (where the designing architect also supervises) and consulting architect only (where a separate professional provides supervision). Both require qualified CSG personnel.",
+        "takeaway": "Two arrangements: dual capacity or consulting architect only."
+      },
+      "explanation": "CSG-only is just one of the two recognized arrangements. Correct. SPP 204-A recognizes two arrangements: (1) dual capacity, where the architect of record also provides fulltime supervision, and (2) consulting architect only, where a separate architect/firm provides supervision services. Three arrangements overspecifies. Construction management is covered under SPP 204-B. Four arrangements is incorrect and mixes roles from different SPP documents. SPP 204-A provides for two arrangements: dual capacity (where the designing architect also supervises) and consulting architect only (where a separate professional provides supervision). Both require qualified CSG personnel. Two arrangements: dual capacity or consulting architect only.",
+      "code_citation": "SPP 204-A",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.442383+00:00",
+      "updated_at": "2026-05-06T11:25:55.959505+00:00",
+      "content_hash": "sha256:3152fc3434c5bdfc5b75c62ccd5a75d35a7022721e5ef08d3ed3b14e006c32c5"
+    },
     {
       "question_id": "19d8de35-da91-4e4c-982b-abbb49ed0694",
       "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
@@ -40,7 +91,7 @@
         "correct": "SPP 204-A requires the CSG to prepare Daily Inspection Reports (DIRs) for every working day. DIRs document construction activities, inspection findings, material deliveries, weather conditions, workforce count, and any issues or directives.",
         "takeaway": "CSG must prepare Daily Inspection Reports (DIRs) every working day."
       },
-      "explanation": null,
+      "explanation": "Weekly reports are too infrequent for fulltime supervision. SPP 204-A requires daily reporting. Monthly reports are inadequate for the level of supervision SPP 204-A demands. Correct. The CSG must prepare Daily Inspection Reports (DIRs) documenting all construction activities, inspections, issues, and decisions for each working day. Construction Activity Log is not the term used in SPP 204-A. The specified document is the DIR. SPP 204-A requires the CSG to prepare Daily Inspection Reports (DIRs) for every working day. DIRs document construction activities, inspection findings, material deliveries, weather conditions, workforce count, and any issues or directives. CSG must prepare Daily Inspection Reports (DIRs) every working day.",
       "code_citation": "SPP 204-A",
       "bloom_level": "remember",
       "application_context": null,
@@ -52,8 +103,8 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.442383+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:085c606a5981bcecbe4a4f6d0ab6f498440bf91cccd461ca6275b18db0b98a05"
+      "updated_at": "2026-05-06T11:25:51.91527+00:00",
+      "content_hash": "sha256:2dbf0e0e82d1d1c9e9a4e7ef56931d6c0dccdb7c36e22c7276e67e89130723a3"
     },
     {
       "question_id": "2ca3a7de-6321-4f1e-a5c6-8950c644cc61",
@@ -91,7 +142,7 @@
         "correct": "SPP 204-A requires CSG inspectors to hold a BS Architecture degree as a minimum qualification. This ensures inspectors have the architectural knowledge needed to verify that construction faithfully executes the architect's design intent.",
         "takeaway": "CSG inspector minimum qualification = BS Arch degree."
       },
-      "explanation": null,
+      "explanation": "A vocational diploma is insufficient. SPP 204-A requires a professional degree. Correct. A CSG inspector must hold a Bachelor of Science in Architecture (BS Arch) degree, ensuring professional competence in architectural supervision. A master's degree is not required. The minimum is a BS Arch degree. An engineering degree does not substitute for the BS Arch requirement for CSG inspectors under SPP 204-A. SPP 204-A requires CSG inspectors to hold a BS Architecture degree as a minimum qualification. This ensures inspectors have the architectural knowledge needed to verify that construction faithfully executes the architect's design intent. CSG inspector minimum qualification = BS Arch degree.",
       "code_citation": "SPP 204-A",
       "bloom_level": "remember",
       "application_context": null,
@@ -103,8 +154,8 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.442383+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d6bd9556ae3550c551c897ce5e81ff8b947aa803157fa440dd07bd5a5b770d60"
+      "updated_at": "2026-05-06T11:25:52.754176+00:00",
+      "content_hash": "sha256:376e27c7ab5dc64c27a58a7e71c2222e1a6871ebd7445c4367d1c95179928f16"
     },
     {
       "question_id": "66516db2-db2a-440a-94b6-bb4c0523248b",
@@ -244,7 +295,7 @@
         "correct": "The fundamental difference is intensity: SPP 202 requires periodic site visits (checking progress at intervals), while SPP 204-A mandates daily 8-hour continuous on-site supervision by qualified CSG inspectors. SPP 204-A is separately compensated.",
         "takeaway": "SPP 202 = periodic visits; SPP 204-A = daily 8-hour continuous supervision."
       },
-      "explanation": null,
+      "explanation": "The frequency distinction is incorrect. SPP 202 is periodic (not specifically weekly) and SPP 204-A is daily. Correct. SPP 202 provides for periodic site visits during construction, while SPP 204-A mandates daily 8-hour continuous on-site supervision by the CSG. Both cover all aspects of architectural work, not divided by structural vs. architectural inspection. Both SPP 202 and 204-A apply to all project types, not distinguished by ownership. The fundamental difference is intensity: SPP 202 requires periodic site visits (checking progress at intervals), while SPP 204-A mandates daily 8-hour continuous on-site supervision by qualified CSG inspectors. SPP 204-A is separately compensated. SPP 202 = periodic visits; SPP 204-A = daily 8-hour continuous supervision.",
       "code_citation": "SPP 202 / SPP 204-A",
       "bloom_level": "analyze",
       "application_context": null,
@@ -256,8 +307,8 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.442383+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e5fb6694e7ae187a82099c234d4f582b7e23d71e53e10f86d530cdb68c090f81"
+      "updated_at": "2026-05-06T11:25:53.925577+00:00",
+      "content_hash": "sha256:1a745896ca3debc0226c051cd82092e32d4d271d04c37c7664d792aa8fa0105c"
     },
     {
       "question_id": "5c60d142-1beb-4882-b508-c1d030af2720",
@@ -295,7 +346,7 @@
         "correct": "The Construction Supervision Group (CSG) under SPP 204-A evolved from the traditional Clerk-of-Works role. The modernization expanded the scope from a single clerk to a professional group, added formal qualifications, and structured the reporting framework.",
         "takeaway": "CSG evolved from the traditional Clerk-of-Works role."
       },
-      "explanation": null,
+      "explanation": "Project Manager is a separate role covered under SPP 206, not the precursor to the CSG. Site Engineer is an engineering role, not the traditional architectural supervision role that evolved into the CSG. Correct. The CSG concept evolved from the traditional Clerk-of-Works role, modernizing and professionalizing on-site architectural supervision. Building Inspector is a government regulatory role, not the traditional predecessor of the CSG. The Construction Supervision Group (CSG) under SPP 204-A evolved from the traditional Clerk-of-Works role. The modernization expanded the scope from a single clerk to a professional group, added formal qualifications, and structured the reporting framework. CSG evolved from the traditional Clerk-of-Works role.",
       "code_citation": "SPP 204-A",
       "bloom_level": "remember",
       "application_context": null,
@@ -307,8 +358,8 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.442383+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a5ccd42770e7e25428ab36089e4f2631dca7c3b2fde15c096367bed199727d8e"
+      "updated_at": "2026-05-06T11:25:54.540627+00:00",
+      "content_hash": "sha256:33d03a59e5629a321222bd8e4dda07b57f87c62d492acffb27dffe6bb9af25ee"
     },
     {
       "question_id": "5585a204-3384-4867-84e8-706e74628f0b",
@@ -346,7 +397,7 @@
         "correct": "SPP 204-A provides 6 compensation methods for fulltime supervision services, offering flexibility to match compensation structure to project scale, duration, and complexity.",
         "takeaway": "SPP 204-A has 6 compensation methods for fulltime supervision."
       },
-      "explanation": null,
+      "explanation": "3 methods is too few. SPP 204-A provides more options for compensation flexibility. 4 methods is incorrect. SPP 204-A specifies a more comprehensive set. 5 methods is close but incomplete. The actual count is 6. Correct. SPP 204-A provides 6 compensation methods, giving flexibility to structure payment based on project characteristics and client preferences. SPP 204-A provides 6 compensation methods for fulltime supervision services, offering flexibility to match compensation structure to project scale, duration, and complexity. SPP 204-A has 6 compensation methods for fulltime supervision.",
       "code_citation": "SPP 204-A",
       "bloom_level": "remember",
       "application_context": null,
@@ -358,59 +409,8 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:07:47.442383+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:96a2d3966dddbc1fbf2e92e9c017fa865aba740f9d6b80baf5cc57524c8d5848"
-    },
-    {
-      "question_id": "e4e96d31-2fbc-4862-aa9e-efee88612415",
-      "article_id": "c534d94f-967a-48bb-babf-419fa6d35ec7",
-      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
-      "text": "Under SPP 204-A, in how many arrangements can fulltime supervision services be provided?",
-      "options": [
-        {
-          "id": "a",
-          "text": "One: through the CSG only"
-        },
-        {
-          "id": "b",
-          "text": "Two: dual capacity (architect as supervisor) or consulting architect only"
-        },
-        {
-          "id": "c",
-          "text": "Three: CSG, architect, or construction manager"
-        },
-        {
-          "id": "d",
-          "text": "Four: CSG, architect, contractor's superintendent, or independent inspector"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "CSG-only is just one of the two recognized arrangements.",
-        "b": "Correct. SPP 204-A recognizes two arrangements: (1) dual capacity, where the architect of record also provides fulltime supervision, and (2) consulting architect only, where a separate architect/firm provides supervision services.",
-        "c": "Three arrangements overspecifies. Construction management is covered under SPP 204-B.",
-        "d": "Four arrangements is incorrect and mixes roles from different SPP documents.",
-        "correct": "SPP 204-A provides for two arrangements: dual capacity (where the designing architect also supervises) and consulting architect only (where a separate professional provides supervision). Both require qualified CSG personnel.",
-        "takeaway": "Two arrangements: dual capacity or consulting architect only."
-      },
-      "explanation": null,
-      "code_citation": "SPP 204-A",
-      "bloom_level": "understand",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:07:47.442383+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:65c4b3905967f855a0708b491c324d11cd8d6840151b736b8b47ac844561f095"
+      "updated_at": "2026-05-06T11:25:55.164471+00:00",
+      "content_hash": "sha256:8585c48e86e4aec199fc88caed3fe13aa6eeef7fa28dbee5b5ee1b6984775a4d"
     },
     {
       "question_id": "d0bc6355-989a-4c28-ab24-1b45f77d2b33",

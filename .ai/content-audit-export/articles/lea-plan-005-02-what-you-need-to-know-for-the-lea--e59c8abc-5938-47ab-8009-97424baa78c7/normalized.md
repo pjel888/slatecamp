@@ -10,7 +10,7 @@ Before memorizing details from this topic, state the task in one sentence: what 
 ## Learning Goal
 Identify Philippine native species and their ecological roles, distinguish native from exotic/invasive species, apply successional planting and ecological restoration principles, and evaluate biodiversity conservation in landscape design.
 
-Philippine native species form complex ecological systems shaped by tropical biodiversity, endemic endemism, and long human-landscape interaction. Understanding native species identification, ecological systems, and biodiversity conservation is essential for landscape architects, environmental planners, and developers working in the Philippines. 
+Philippine native species form complex ecological systems shaped by tropical biodiversity, endemic endemism, and long human-landscape interaction. Understanding native species identification, ecological systems, and biodiversity conservation is essential for landscape architects, environmental planners, and developers working in the Philippines.
 ### Philippine Biodiversity and Native Species Framework
 
 The Philippines is one of the world's 17 mega-diverse countries, with extraordinary species richness and high endemism (species found nowhere else on Earth). Philippine ecosystems include tropical rainforests, mangrove wetlands, coastal seagrass beds, coral reefs, and montane forests. Native species are plants and animals that naturally occur in the Philippines, having evolved here over millennia through ecological processes.

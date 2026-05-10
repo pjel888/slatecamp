@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 005 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -12,7 +21,11 @@ Grading refers to the modification of site terrain through excavation (cut) and 
 Slope analysis begins with contour line interpretation. Contour lines represent elevation at constant intervals (commonly 1 meter or 5 meters). Where contours are closely spaced, terrain is steep; where widely spaced, terrain is gentle. A slope's steepness is expressed as a percentage (rise ÷ run × 100) or as a ratio (1V:3H means for every 1 meter of vertical rise, 3 meters of horizontal distance). Slope determines cost and buildability: slopes > 25% are typically expensive to build on (require retaining walls, deep excavation); slopes > 40% may be unbuildable or require specialized foundations.
 
 Cut-and-fill balance is a design goal: material excavated in one area (cut) is reused for fill elsewhere on the site, minimizing borrow and waste. However, cut and fill are not equal: soil compacts differently when placed as fill vs. in-situ; 100 cubic meters of excavated soil may compact to 85 cubic meters when used as fill.
-<ArticleMedia id="media-lea-plan-005-05-core-concept" type="image" caption="Grading and Drainage Design — Contour Interpretation and Cut-Fill Volume" description="Contour map with grading design overlay: slope calculation (% , degrees, ratio) from contour intervals, cut and fill volume determination (grid/average end area methods), building pad grading with 2% positive drainage, swales and berms for erosion control." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-005-05-core-concept", type="image", caption="Grading and Drainage Design — Contour Interpretation and Cut-Fill Volume", description="Contour map with grading design overlay: slope calculation (% , degrees, ratio) from contour intervals, cut and fill volume determination (grid/average end area methods), building pad grading with 2% positive drainage, swales and berms for erosion control.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -30,7 +43,11 @@ Philippine sites are highly varied in topography: coastal plains in Metro Manila
 
 **Pattern 3 — Grading constraint:** "A site is adjacent to a PD 1067-protected water body. How does this constrain grading?" → No fill into the easement; no permanent structures; grading must respect setback.
 
-<Tip>**Close contours = steep; wide contours = gentle.** Always read the contour interval and horizontal spacing to determine slope. Steep slopes require specialized grading (bench cuts, retaining walls, geotechnical analysis).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Close contours = steep; wide contours = gentle.** Always read the contour interval and horizontal spacing to determine slope. Steep slopes require specialized grading (bench cuts, retaining walls, geotechnical analysis).
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Cut and fill should be balanced on-site to minimize export/import. Slope stability: >30% requires geotechnical study. Max fill slope = 2:1 (horizontal:vertical) or 50%. Max cut slope = 1:1 (45°) in stable soil. Erosion control required on all graded slopes.
 
@@ -40,4 +57,8 @@ See **LEA-DSGN-012-03** (Grading and Drainage) for grading design, **LEA-PLAN-00
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Reversing contour logic: stating closely-spaced contours indicate flat terrain (wrong) instead of steep (correct)","Confusing slope percentage with slope ratio: a 1V:2H slope is 50% (not 2%)","Assuming cut and fill are 1:1 equivleant; they are not — soil compacts differently when placed as fill","Ignoring PD 1067 easements during grading design — fill and structures placed in easements violate water code","Calculating slope as rise/run without multiplying by 100; slope is a percentage, not a simple ratio"]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Reversing contour logic: stating closely-spaced contours indicate flat terrain (wrong) instead of steep (correct)\",\"Confusing slope percentage with slope ratio: a 1V:2H slope is 50% (not 2%)\",\"Assuming cut and fill are 1:1 equivleant; they are not — soil compacts differently when placed as fill\",\"Ignoring PD 1067 easements during grading design — fill and structures placed in easements violate water code\",\"Calculating slope as rise/run without multiplying by 100; slope is a percentage, not a simple ratio\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

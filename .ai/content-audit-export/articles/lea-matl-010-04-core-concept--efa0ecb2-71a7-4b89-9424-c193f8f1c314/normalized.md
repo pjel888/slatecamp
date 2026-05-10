@@ -45,7 +45,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Scenario 1: Formwork for concrete slab using 1×6 boards, 100 linear meters required, standard 8-foot boards** **Step 1: Determine quantity per board** Each standard 1×6×8 ft board provides: BF = (1 × 6 × 8) ÷ 12 = 48 ÷ 12 = 4 board feet per board **Step 2: Convert total length to feet** 100 meters = 100 ÷ 0.3048 = 328 feet (approximately) **Step 3: Calculate number of boards needed** Each 8-foot board covers 8 feet of length. Boards needed = 328 ft ÷ 8 ft/board = 41 boards **Step 4: Calculate 
+- Text: **Scenario 1: Formwork for concrete slab using 1×6 boards, 100 linear meters required, standard 8-foot boards** **Step 1: Determine quantity per board** Each standard 1×6×8 ft board provides: BF = (1 × 6 × 8) ÷ 12 = 48 ÷ 12 = 4 board feet per board **Step 2: Convert total length to feet** 100 meters = 100 ÷ 0.3048 = 328 feet (approximately) **Step 3: Calculate number of boards needed** Each 8-foot board covers 8 feet of length. Boards needed = 328 ft ÷ 8 ft/board = 41 boards **Step 4: Calculate
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
@@ -140,4 +140,3 @@ Extracted summary:
 See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-02-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

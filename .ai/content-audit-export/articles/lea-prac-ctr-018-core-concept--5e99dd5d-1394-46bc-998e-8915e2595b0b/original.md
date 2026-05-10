@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Ctr 018 Core Concept** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -52,37 +59,43 @@ The contractor's obligation to complete punch list items at no additional cost i
 
 **Question Pattern 5:** As-built documentation—What architect responsibility exists regarding as-built drawings and testing documentation required for occupancy? (Tests architect's coordination and documentation duties)
 
-<LawCallout code="ra9266" section="PD 1096 (National Building Code)" title="Certificate of Occupancy — Architect's Role">
-The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance — sealed drawings must comply with NBC; (2) Construction administration — inspect for code compliance; (3) Occupancy coordination — assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy — only the Building Official's Certificate of Occupancy does.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="PD 1096 (National Building Code)", title="Certificate of Occupancy — Architect's Role"
+- Text: The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance — sealed drawings must comply with NBC; (2) Construction administration — inspect for code compliance; (3) Occupancy coordination — assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy — only the Building Official's Certific
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>
-  **LEA Priority — Certificate of Occupancy Key Points:**
-  1. Issued by Building Official (government), not architect
-  2. Separate from and often after Substantial Completion
-  3. Based on inspection against National Building Code
-  4. Architect is liable if design or construction supervision failed to ensure code compliance
-  5. Owner cannot legally occupy without Certificate of Occupancy
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Priority — Certificate of Occupancy Key Points:** 1. Issued by Building Official (government), not architect 2. Separate from and often after Substantial Completion 3. Based on inspection against National Building Code 4. Architect is liable if design or construction supervision failed to ensure code compliance 5. Owner cannot legally occupy without Certificate of Occupancy
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding—not optional or negotiable.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding—not optional or negotiable.
+[/SLATECAMP_UI_BLOCK]
 
 **Question Pattern 5:** As-built documentation—What architect responsibility exists regarding as-built drawings and testing documentation required for occupancy? (Tests architect's coordination and documentation duties)
 
-<LawCallout code="ra9266" section="PD 1096 (National Building Code)" title="Certificate of Occupancy — Architect's Role">
-The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance — sealed drawings must comply with NBC; (2) Construction administration — inspect for code compliance; (3) Occupancy coordination — assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy — only the Building Official's Certificate of Occupancy does.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="PD 1096 (National Building Code)", title="Certificate of Occupancy — Architect's Role"
+- Text: The Certificate of Occupancy is issued by the Building Official (local government), NOT the architect. The architect's role includes: (1) Design compliance — sealed drawings must comply with NBC; (2) Construction administration — inspect for code compliance; (3) Occupancy coordination — assist owner with required documentation (as-builts, test reports, compliance certificates). The architect's Substantial Completion certificate does NOT authorize occupancy — only the Building Official's Certific
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>
-  **LEA Priority — Certificate of Occupancy Key Points:**
-  1. Issued by Building Official (government), not architect
-  2. Separate from and often after Substantial Completion
-  3. Based on inspection against National Building Code
-  4. Architect is liable if design or construction supervision failed to ensure code compliance
-  5. Owner cannot legally occupy without Certificate of Occupancy
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Priority — Certificate of Occupancy Key Points:** 1. Issued by Building Official (government), not architect 2. Separate from and often after Substantial Completion 3. Based on inspection against National Building Code 4. Architect is liable if design or construction supervision failed to ensure code compliance 5. Owner cannot legally occupy without Certificate of Occupancy
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding—not optional or negotiable.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember: Punch list = itemized outstanding work created by architect at Substantial Completion inspection. Contractor must complete at no extra cost by architect-specified deadline. Architect verifies completion and issues Final Completion certificate. Punch list is binding—not optional or negotiable.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

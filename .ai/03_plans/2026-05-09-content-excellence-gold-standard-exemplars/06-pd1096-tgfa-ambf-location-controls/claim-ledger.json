@@ -1,0 +1,123 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "06-pd1096-tgfa-ambf-location-controls",
+  "title": "PD 1096 Rule VII: TGFA, AMBF, and Location Controls",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_DPWH_OFFICIAL_PDF_VERIFIED_REMOTE_ANTIBOT_RECONCILED",
+  "source_pack_id": "source-pack-pd-1096-irr",
+  "documents": [
+    {
+      "document_id": "PD1096_RIRR_2004",
+      "document_code": "PD 1096",
+      "source_family": "PD 1096 2004 Revised IRR",
+      "document_version_date_or_edition": "2004 Revised IRR",
+      "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "pdf_page_count": 368,
+      "source_hierarchy_tier": 1,
+      "source_pack_repair_note": "2026-05-09 repair replaced weak/table-artifact chunks with DPWH Official Rule VII chunks."
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "pd1096-c1",
+      "claim_text": "No building shall be constructed unless it adjoins or has direct access to a public space, yard, or street on at least one side.",
+      "claim_class": "LEGAL_SCOPE",
+      "article_location": "The rule that decides the answer",
+      "locator": "Rule VII / Section 704 / PDF p.81",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd1096-tgfa-q1"
+      ],
+      "notes": "",
+      "sme_notes": "Verified against raw DPWH PDF p.81, Rule VII Section 704 Location on Property.",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "pd1096-c2",
+      "claim_text": "Eaves over required windows shall not be less than 750 mm from side and rear property lines.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "The rule that decides the answer",
+      "locator": "Rule VII / Section 704.1(c) / PDF p.81",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd1096-tgfa-q3"
+      ],
+      "notes": "",
+      "sme_notes": "Verified against raw DPWH PDF p.81, Rule VII Section 704.1(c). The council concern that this belonged to Rule VIII was checked against the source and rejected for this local PDF.",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "pd1096-c3",
+      "claim_text": "Allowable Maximum Total Gross Floor Area shall only be as allowed under Rule VII.",
+      "claim_class": "LEGAL_PROCESS",
+      "article_location": "Do not collapse TGFA into footprint",
+      "locator": "Rule VII / Section 705.1-2 and Table VII.1 / PDF pp.83-84",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd1096-tgfa-q2"
+      ],
+      "notes": "",
+      "sme_notes": "Table reference added for TGFA precision.",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "pd1096-c4",
+      "claim_text": "AMBF is a footprint/PSO control separate from TGFA; firewall conditions can modify the allowable footprint analysis under the Rule VII and Rule VIII cross-checks.",
+      "claim_class": "EXAM_STRATEGY",
+      "article_location": "AMBF is a separate control",
+      "locator": "Rule VII / Section 704.4 / PDF pp.81-83",
+      "extraction_status": "FOUND_PARAPHRASED",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "pd1096-tgfa-q2"
+      ],
+      "notes": "",
+      "sme_notes": "Reworded to avoid implying AMBF is itself only a firewall control; raw source frames it as building footprint and firewall requirements cross-checked against Rule VIII and Fire Code conditions."
+    }
+  ],
+  "sme_review": {
+    "status": "llm_council_complete_for_calibration",
+    "reviewer_id": "llm_council_claude_opencode_commandcode",
+    "date": "2026-05-09T07:39:33Z",
+    "notes": "LLM council SME review complete for calibration artifacts. Direct publication remains held pending licensed-human SME clearance, source/provenance reconciliation, and roundtrip conversion.",
+    "council_review_files": [
+      "council-reviews/2026-05-09-sme-risk-review/01-claude-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/02-opencode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
+    ],
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval.",
+    "source_reconciliation_closeout_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_notes": "Official/cited source anchors repaired for calibration; direct publication remains held for licensed-human SME clearance and roundtrip conversion."
+  },
+  "source_pack_id_previous": "source-pack-pd-1096-rirr",
+  "source_pack_id_fix_note": "Canonical source-pack ID is source-pack-pd-1096-irr; raw PDF title remains the 2004 Revised IRR of PD 1096."
+}

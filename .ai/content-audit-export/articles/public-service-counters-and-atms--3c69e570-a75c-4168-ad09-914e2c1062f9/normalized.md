@@ -147,7 +147,7 @@ Apply BP 344 requirements for accessible service counters and ATMs: height range
 │  ← 900 mm min width of accessible section →    │
 └─────────────────────────────────────────────────┘
          SECTION VIEW
-         
+
     950-1100mm ┌──────────────┐ (upper)
                │  TRANSACTION │
     750mm ─────┤  SURFACE     │ (lower)
@@ -175,13 +175,13 @@ Apply BP 344 requirements for accessible service counters and ATMs: height range
     │ COUNTER 750mm  │
     │ 480mm depth    │
     └────────────────┘
-    
+
     ████████████████████████████████
     ██  1800 mm × 1800 mm          ██
     ██  CLEAR FLOOR SPACE          ██
     ██  in front of ATM            ██
     ████████████████████████████████
-    
+
     ← 1800 mm →
 ```
 

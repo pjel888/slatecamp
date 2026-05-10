@@ -157,13 +157,13 @@ Extracted summary:
 
 ## 4. Case‑Style Questions to Practice
 
-1. **Hospital:**  
+1. **Hospital:**
    List at least 3 BP 344 features (e.g., curb ramp 900‑mm minimum width at 1:12 max slope; 1.20‑m minimum sidewalk with 1.50 m × 1.50 m turning spaces; accessible ramp at 1.00‑m minimum width with landings and dual handrails) and 3 RA 9442/10754 obligations (e.g., 20% discount and 12% VAT exemption on medicines, diagnostics, and professional fees; priority in ER/OPD queues; non‑discrimination obligations) that must be present in a new public hospital.[web:1][web:2][web:3][web:8][web:20][web:23][web:29][web:32]
 
-2. **Mall:**  
+2. **Mall:**
    Explain how one accessible parking bay, an escalator, and a cinema ticket counter are governed simultaneously by BP 344 (accessible stall dimensions, curb ramps, accessible routes, elevator alternative to escalator), PD 1096 Rule VII/VIII (commercial/assembly occupancy classification, egress sizing, and fire‑life safety), and RA 9442/10754 (20% discount and VAT‑exempt cinema admission, priority lanes, and anti‑discrimination).[web:1][web:2][web:7][web:8][web:11][web:15][web:29][web:32]
 
-3. **School:**  
+3. **School:**
    Describe a compliant route from public sidewalk to a second‑floor classroom for a wheelchair‑using student, naming at least 4 exact BP 344 dimensions along the path (e.g., 1.20‑m minimum sidewalk width; 900‑mm curb ramp at maximum 1:12 slope; 1.00‑m minimum ramp width or elevator door width of 0.90 m; 1.50 m × 1.50 m turning area at landings and corridor junctions).[web:1][web:3][web:6][web:9][web:12]
 
 ---

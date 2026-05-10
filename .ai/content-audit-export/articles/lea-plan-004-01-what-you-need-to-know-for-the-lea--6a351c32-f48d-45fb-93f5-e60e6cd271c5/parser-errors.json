@@ -1,36 +1,14 @@
 {
   "article_id": "6a351c32-f48d-45fb-93f5-e60e6cd271c5",
   "slug": "lea-plan-004-01-what-you-need-to-know-for-the-lea",
-  "generated_at": "2026-05-04T09:10:35.759Z",
+  "generated_at": "2026-05-09T17:04:23.466Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 1,
-  "unknown_block_count": 1,
+  "warning_count": 0,
+  "unknown_block_count": 0,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [
-    {
-      "block_id": "ui_0002",
-      "component_name": "ArticleMedia",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0002",
-      "component_name": "ArticleMedia",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:a8796b7ea8e6d3bbc35f2b78a354d4f6fac9ee0674695dcebcdc9c1c31ff2aef",
-      "line_start": 26,
-      "line_end": 26,
-      "warnings": [
-        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
+  "warnings": [],
+  "unknown_blocks": [],
   "critical_blocks": []
 }

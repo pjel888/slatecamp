@@ -1,0 +1,201 @@
+{
+  "audit_date": "2026-05-10",
+  "audit_mode": "local_source_audit_no_supabase",
+  "source_truth_protocols": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "extraction_method": "PyMuPDF via python fitz against raw PDFs in vitruvius-connection/001_Raw-Source-Layer; pdftotext unavailable in this environment.",
+  "supabase_apply_status": "not_applied",
+  "normalized_md_changes": "none_applied",
+  "canonical_article_root": ".ai/content-audit-export/articles",
+  "duplicate_export_note": "Matching folders also exist under target-mapping-no-apply-2026-05-09/articles; this audit wrote to the canonical .ai/content-audit-export/articles folders only.",
+  "audited_at": "2026-05-10T11:41:05+08:00",
+  "article_slug": "spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+  "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+  "article_title": "SPP Doc 201: Pre-Design Services",
+  "article_folder": ".ai/content-audit-export/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+  "inspected_files": [
+    ".ai/content-audit-export/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/normalized.md",
+    ".ai/content-audit-export/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/linked-questions.json",
+    ".ai/content-audit-export/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/sources.json"
+  ],
+  "readiness_verdict": "PARKED_NOT_SOURCE_AUDITED_READY",
+  "source_audit_evidence_file_policy": "source-audit-evidence.json is intentionally not written because at least one blocker remains.",
+  "raw_sources": [
+    {
+      "key": "spp201",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "sha256": "d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93"
+    },
+    {
+      "key": "doc401_402",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "sha256": "5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f"
+    }
+  ],
+  "verified_major_claims": [
+    {
+      "claim": "SPP Document 201 is the standard on Pre-design Services.",
+      "scope": "article",
+      "raw_source_key": "spp201",
+      "pdf_page": 36,
+      "source_locator": "SPP Doc. 201 title page",
+      "evidence_excerpt": "Standards of Professional Practice on Pre-design Services.",
+      "status": "verified"
+    },
+    {
+      "claim": "Consultation is a pre-design service involving oral/written advice, conferences, evaluations, and appraisals, valuable whether or not the project proceeds.",
+      "scope": "article",
+      "raw_source_key": "spp201",
+      "pdf_page": 42,
+      "source_locator": "SPP 201, service 1 Consultation",
+      "evidence_excerpt": "renders valuable inputs whether or not the Client pursues the project.",
+      "status": "verified"
+    },
+    {
+      "claim": "Pre-feasibility studies use secondary information for early decision-making.",
+      "scope": "article and linked question bdb92e62-1ee7-4801-a823-ffb3b1b0836d",
+      "raw_source_key": "spp201",
+      "pdf_page": 43,
+      "source_locator": "SPP 201, service 2 Pre-feasibility Studies",
+      "evidence_excerpt": "procurement, analysis and use of secondary information ... early decision-making.",
+      "status": "verified"
+    },
+    {
+      "claim": "Feasibility studies require primary data gathering and analysis.",
+      "scope": "linked question bdb92e62-1ee7-4801-a823-ffb3b1b0836d",
+      "raw_source_key": "spp201",
+      "pdf_page": 44,
+      "source_locator": "SPP 201, service 3 Feasibility Studies",
+      "evidence_excerpt": "This requires primary data gathering and analysis.",
+      "status": "verified"
+    },
+    {
+      "claim": "Architectural programming identifies horizontal and vertical requirements and incorporates a space program.",
+      "scope": "article",
+      "raw_source_key": "spp201",
+      "pdf_page": 48,
+      "source_locator": "SPP 201, service 7 Architectural Programming",
+      "evidence_excerpt": "statement and identification of both horizontal and vertical requirements.",
+      "status": "verified"
+    },
+    {
+      "claim": "Value Management aims for an unimpaired program at minimum cost.",
+      "scope": "linked question 1ea78898-d881-4c87-b6b9-d5126c5b4190",
+      "raw_source_key": "spp201",
+      "pdf_page": 52,
+      "source_locator": "SPP 201, service 10 Value Management",
+      "evidence_excerpt": "achieve an unimpaired program at minimum cost.",
+      "status": "verified"
+    },
+    {
+      "claim": "Design Brief Preparation states project TOR, concept, objectives, and requirements to bid out architectural services.",
+      "scope": "article and linked question 102095f1-f23f-4e8b-834a-bd19cb868e99",
+      "raw_source_key": "spp201",
+      "pdf_page": 53,
+      "source_locator": "SPP 201, service 11 Design Brief Preparation",
+      "evidence_excerpt": "requirements to bid out architectural services.",
+      "status": "verified"
+    },
+    {
+      "claim": "SPP 201 enumerates 12 pre-design services.",
+      "scope": "linked question 2da5c8b0-a317-4c85-a3a7-04ea40db8d45",
+      "raw_source_key": "spp201",
+      "pdf_pages": [
+        42,
+        54
+      ],
+      "source_locator": "SPP 201 services 1-12",
+      "evidence_excerpt": "Service list runs from 1: Consultation through 12: Promotional Services.",
+      "status": "verified"
+    },
+    {
+      "claim": "Multiple of Direct Personnel Expenses multiplier ranges from 1.5 to 2.5, and reimbursable expenses include assignments over 100 km.",
+      "scope": "linked questions 4bedc8ba-b184-4e08-b612-4102581463a3, a3ea3cae-e60e-46c4-8121-3514399adc9c",
+      "raw_source_key": "spp201",
+      "pdf_pages": [
+        25,
+        28,
+        58
+      ],
+      "source_locator": "SPP 201 compensation pages",
+      "evidence_excerpt": "multiplier ranges from 1.5 to 2.5 ... places over 100 km.",
+      "status": "verified_value_with_label_caveat"
+    },
+    {
+      "claim": "UAP Document 401-402 excludes pre-design services such as space planning and research, and separates FCS/PCM/Design-Build.",
+      "scope": "article",
+      "raw_source_key": "doc401_402",
+      "pdf_page": 1,
+      "source_locator": "UAP Document 401-402, Articles 5-6 excerpt",
+      "evidence_excerpt": "does NOT cover ... Pre-Design Services such as Space Planning and Research.",
+      "status": "verified"
+    },
+    {
+      "claim": "Article 7.08 ties suspended/abandoned work to 85% at completion of Contract Documents Phase, with PCS 5% and civil-liability signing/sealing 10% referenced in the agreement context.",
+      "scope": "article",
+      "raw_source_key": "doc401_402",
+      "pdf_pages": [
+        1,
+        8
+      ],
+      "source_locator": "UAP Document 401-402, Article 7.08 and introductory notes",
+      "evidence_excerpt": "EIGHTY FIVE percent (85.0%) ... Article 7.08.",
+      "status": "verified"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "SPP201-BLOCKER-001",
+      "severity": "critical",
+      "type": "linked_question_wrong_source_match",
+      "affected_files": [
+        "linked-questions.json"
+      ],
+      "affected_question_ids": [
+        "d6d46e45-262d-44f4-bbd1-f77b428d68df"
+      ],
+      "finding": "The question says the three delivery modes are independently, part of regular design services, or separate pre-design contract. The raw SPP 201 page titled Manner of Providing Services lists: as an individual, Architect own staff, and by association/consultation/networking.",
+      "required_fix": "Rewrite Q8 to match PDF p.56 or provide a different primary source."
+    },
+    {
+      "id": "SPP201-BLOCKER-002",
+      "severity": "medium",
+      "type": "source_label_caveat",
+      "affected_files": [
+        "linked-questions.json"
+      ],
+      "affected_question_ids": [
+        "4bedc8ba-b184-4e08-b612-4102581463a3"
+      ],
+      "finding": "The 1.5 to 2.5 value is verified, but the question calls it Man-Day Professional Equivalent (MDPE). The raw PDF pages found use Multiple of Direct Personnel Expenses and Per Diem/Honorarium wording, not that exact label.",
+      "required_fix": "Align the label with the source or add a primary source for MDPE terminology."
+    },
+    {
+      "id": "SPP201-BLOCKER-003",
+      "severity": "medium",
+      "type": "unverified_linked_question_claim",
+      "affected_files": [
+        "linked-questions.json"
+      ],
+      "affected_question_ids": [
+        "8ae49694-2cba-4888-b438-7d0b734b80a8"
+      ],
+      "finding": "The four-item written proposal requirement was not verified in the extracted SPP 201 pages inspected in this pass.",
+      "required_fix": "Locate exact PDF page/section for scope, methodology, deliverables, and compensation or revise the question."
+    },
+    {
+      "id": "SPP201-BLOCKER-004",
+      "severity": "medium",
+      "type": "empty_source_bundle",
+      "affected_files": [
+        "sources.json"
+      ],
+      "finding": "sources.json has source_count 0.",
+      "required_fix": "Populate source rows after full evidence verification."
+    }
+  ],
+  "required_next_action": "Resolve blockers, rerun raw-PDF claim ledger for article and linked questions, then write source-audit-evidence.json only if every material legal/code claim is verified."
+}

@@ -10,7 +10,7 @@ Before memorizing details from this topic, state the task in one sentence: what 
 ## Learning Goal
 Apply landscape design principles — landform, plant composition, water features, hardscape materials — to create functional outdoor spaces, design planting plans for Philippine tropical conditions, and integrate landscape with site drainage and circulation.
 
-Landscape design transforms outdoor spaces through the strategic integration of natural (softscape) and built (hardscape) elements. Mastering landscape principles requires understanding how landforms, plants, water, and human-made features work together to create functional, beautiful, and resilient environments. 
+Landscape design transforms outdoor spaces through the strategic integration of natural (softscape) and built (hardscape) elements. Mastering landscape principles requires understanding how landforms, plants, water, and human-made features work together to create functional, beautiful, and resilient environments.
 ### Landscape Design Fundamentals
 
 Landscape design is the profession and practice of designing outdoor spaces—parks, gardens, streetscapes, campuses, and larger land areas. Unlike architecture, which focuses on buildings, landscape design shapes the land itself and manages the relationship between the built and natural environments. In the Philippines, landscape design responds to tropical climate, diverse ecosystems, and the need for water-efficient design.

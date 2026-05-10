@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+  "dry_question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q03",
+  "target_article_id": null,
+  "ticket_target": "new-article-ra9514-means-of-egress-width-count-illumination",
+  "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "RA 9514 RIRR 2019, Section 10.2.5.11, PDF p.113.",
+    "text": "What minimum illumination value is stated for floors of means of egress at corridors, landings, and exit doors?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Section 10.2.5.11 states that floors of means of egress shall be illuminated at all points to values not less than 10.7 lux.",
+      "distractors": {
+        "A": "Below the cited Fire Code illumination value.",
+        "C": "A plausible lighting distractor, but not the cited egress-floor value.",
+        "D": "Too high for the cited egress-floor requirement."
+      },
+      "takeaway": "For Fire Code egress illumination, the key number in this excerpt is 10.7 lux."
+    },
+    "bloom_level": "remember",
+    "value_tolerance": 0,
+    "model_id": "ra9514-egress-q3",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "B",
+    "explanation": "RA 9514 RIRR 2019, Section 10.2.5.11, PDF p.113.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "5 lux"
+      },
+      {
+        "id": "B",
+        "text": "10.7 lux"
+      },
+      {
+        "id": "C",
+        "text": "50 lux"
+      },
+      {
+        "id": "D",
+        "text": "100 lux"
+      }
+    ]
+  },
+  "sme_source_locator": "RA 9514 RIRR 2019, Section 10.2.5.11, PDF p.113.",
+  "code_citation": "RA 9514 RIRR 2019, Section 10.2.5.11, PDF p.113.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

@@ -1,0 +1,508 @@
+{
+  "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9ee3221a2725f54128d384d0cbb72e970ebbaa7e197a3fe79b0355887e30112c",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1a6e4b92-c0bc-446b-84ca-9eee79ac5062",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "Which activities are characteristic of the Design Development phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Initial design exploration and concept development, which typically occurs in the earlier Schematic Design phase"
+        },
+        {
+          "id": "b",
+          "text": "Preparation of detailed construction documents and specifications, which is more characteristic of the Construction Documents phase"
+        },
+        {
+          "id": "c",
+          "text": "Refinement of approved designs, development of cost estimates, and preparation of Design Development documents"
+        },
+        {
+          "id": "d",
+          "text": "On-site observation and construction administration, which are activities associated with the Construction Administration phase"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Describes Schematic Design (initial exploration and concept development), not Design Development, which refines already-approved designs.",
+        "b": "Describes Contract Documents phase (detailed construction documents and specifications), which follows Design Development.",
+        "d": "Describes Construction Administration phase (on-site observation), which occurs during construction, not during Design Development.",
+        "correct": "Design Development refines the approved schematic design, develops floor plans and elevations, coordinates structural and MEP systems, refines building dimensions, and develops cost estimates (Statement of Probable Project Construction Cost).",
+        "takeaway": "Design Development (typically 20%) refines approved designs into coordinated floor plans, elevations, and systems layouts, culminating in SPPCC cost estimation."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d0e2edbfad996e784dd30f48764f724d5236e376fafbcd53e86968dfa4f0bb2d"
+    },
+    {
+      "question_id": "d93fb691-d568-4eba-b1ad-dcf85cb36ac1",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "An architect is billing for completion of the Design Development phase. Which of the following invoices would be most appropriate in terms of payment documentation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Invoice for 20% of total fee without supporting documentation, which may lead to disputes over the completion status of the phase."
+        },
+        {
+          "id": "b",
+          "text": "Invoice for 20% of total fee with evidence of client approval of Design Development documents"
+        },
+        {
+          "id": "c",
+          "text": "Invoice for 50% of total fee in anticipation of Contract Documents completion, which is premature and not aligned with standard billing practices."
+        },
+        {
+          "id": "d",
+          "text": "Lump sum invoice for all design phases combined, which lacks transparency and may not reflect the actual progress of work."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Invoices without supporting documentation lack clear basis for payment; milestone-based billing requires evidence of client approval to establish payment trigger.",
+        "c": "Invoicing for 50% before Contract Documents are complete violates milestone-based payment principles and anticipates work not yet delivered.",
+        "d": "Lump sum invoicing for all design phases defeats the milestone-based payment schedule and prevents clear tracking of phase completion.",
+        "correct": "The architect should submit an invoice for 20% (Design Development phase) with documentation of client approval of Design Development documents. This creates a clear basis for payment tied to milestone completion.",
+        "takeaway": "Invoice for Design Development must include evidence of client approval of design documents to establish milestone-based payment trigger."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:77f119c6966ad8fb71b6fbd57087198d582b08b8eb96bc75fbd01944a7a72ef2"
+    },
+    {
+      "question_id": "0d8dd6eb-66d9-43a3-bd99-599837f56dd3",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "What percentage of the total architect fee is typically allocated to the Schematic Design phase under the recommended SPP 202 schedule per the Architect's Guidelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10%"
+        },
+        {
+          "id": "b",
+          "text": "15%"
+        },
+        {
+          "id": "c",
+          "text": "20%"
+        },
+        {
+          "id": "d",
+          "text": "25%"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses Schematic Design at 10% when the typical allocation is 15%; 10% is not a recommended phase percentage.",
+        "c": "Confuses Schematic Design at 20% when 20% is actually the typical Design Development phase percentage.",
+        "d": "Overstates Schematic Design percentage; 25% is not a standard allocation for any phase under these guidelines.",
+        "correct": "Under the recommended schedule for SPP 202 per the Architect's Guidelines, the Schematic Design phase accounts for 15% of the total architect fee. This is the first phase of the typical five-phase payment schedule.",
+        "takeaway": "Schematic Design = 15% of total fee; the recommended phase allocation per the Architect's Guidelines is SD=15%, DD=20%, CD=50%, Bidding=5%, CA=10%."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4a7be5454a861e3e1c1f42b234eb434d02651a7eab0c9c7aa88e713c40ec6cde"
+    },
+    {
+      "question_id": "5d23ab15-2c82-484f-b696-afafd70ec464",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "How might payment schedules differ between Design-Bid-Build and Design-Build delivery methods?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They must remain identical regardless of delivery method per SPP 202, ensuring uniformity across all project types"
+        },
+        {
+          "id": "b",
+          "text": "Design-Build projects often front-load payments to earlier phases due to compressed schedules and early contractor involvement"
+        },
+        {
+          "id": "c",
+          "text": "Design-Build projects always reduce the architect's fee by 50%, which is a standard practice in the industry"
+        },
+        {
+          "id": "d",
+          "text": "Design-Bid-Build eliminates the Bidding Assistance phase entirely, streamlining the process significantly"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores the explicit practice that alternative delivery methods may justify different payment allocations than the standard Design-Bid-Build schedule.",
+        "c": "Incorrectly assumes automatic fee reduction; Design-Build may shift payment timing, not uniformly reduce total fee by 50%.",
+        "d": "Ignores that Design-Bid-Build includes Bidding Assistance (typically 5%); Bidding Assistance is a key part of Design-Bid-Build representing the negotiation and bid evaluation phase.",
+        "correct": "While recommended SPP 202 percentages typically apply to Design-Bid-Build projects, alternative delivery methods like Design-Build may justify different allocations, often front-loading payments to earlier phases.",
+        "takeaway": "Design-Bid-Build uses standard recommended percentages (15-20-50-5-10); Design-Build and CM at Risk often front-load earlier phases due to compressed schedules and early contractor input."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0223a7d56d255b51ba32bdf976aea269aa14d10952c0a0346ad55374831ed056"
+    },
+    {
+      "question_id": "e61473e5-6df2-4795-ad82-ce858d60bfd1",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "What deliverable marks the completion of the Schematic Design phase and triggers the recommended 15% payment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Preliminary sketches with no specific scale, often used to convey initial ideas without detailed dimensions"
+        },
+        {
+          "id": "b",
+          "text": "Schematic designs showing design direction, general layouts, and preliminary spatial planning with client approval"
+        },
+        {
+          "id": "c",
+          "text": "Detailed construction documents ready for bidding, including all specifications and material selections"
+        },
+        {
+          "id": "d",
+          "text": "Final cost estimate from the general contractor, which includes a breakdown of all projected expenses and contingencies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Preliminary sketches lack the specificity and client approval required to mark phase completion; schematic designs must show clear design direction and layouts, not just rough sketches.",
+        "c": "Detailed construction documents ready for bidding represent Contract Documents completion, not Schematic Design completion.",
+        "d": "Contractor cost estimates occur during or after Design Development, not at Schematic Design completion; schematic completion depends on design deliverables, not cost estimates.",
+        "correct": "Schematic Design phase completion is marked by schematic designs showing the design direction, general layouts, and preliminary spatial planning with client approval. This triggers the 15% payment.",
+        "takeaway": "Schematic Design completion requires design direction, general layouts, and preliminary spatial planning documents with explicit client approval before the 15% payment is triggered."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:882d6181fba180ffbec3b7ae70093289f1777071b7a6e11446a8b2f6f8a010c1"
+    },
+    {
+      "question_id": "4a369211-8be9-4a03-bc5f-7f0ca4c4687e",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "Which phase receives the largest percentage allocation of the architect fee under the typical SPP 202 schedule per the Architect's Guidelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schematic Design at 15%"
+        },
+        {
+          "id": "b",
+          "text": "Design Development at 20%"
+        },
+        {
+          "id": "c",
+          "text": "Contract Documents at 50%"
+        },
+        {
+          "id": "d",
+          "text": "Construction Administration at 10%"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Underestimates; Schematic Design at 15% is only the first phase and represents minimal effort compared to Contract Documents.",
+        "b": "Underestimates; Design Development at 20% involves refinement and cost estimation but is still less effort-intensive than preparing complete construction documents.",
+        "d": "Underestimates; Construction Administration at 10% covers site observation and administration but is less effort than the design document preparation phases.",
+        "correct": "Contract Documents represents the most effort-intensive phase and typically receives 50% of the total architect fee. This reflects the substantial work required for detailed construction documents.",
+        "takeaway": "Contract Documents phase = 50% of total fee, the largest single allocation because it demands the most effort for detailed specifications, drawings, and coordination."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:31868446a47be06626e5a189f6eee538cff1a3c7705df5b8ddf8068b50c94f81"
+    },
+    {
+      "question_id": "c3bb9f1d-9a1b-4ef7-a311-d5f0aa06b5fc",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "A project Owner retains 10% of each payment until final project completion. The total architect fee is 4 million pesos. What total amount will the architect have received by the time Contract Documents are complete, prior to final completion, assuming standard phase allocations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,060,000 pesos (85% of fee minus 10% holdback of amounts paid)"
+        },
+        {
+          "id": "b",
+          "text": "3,400,000 pesos (85% of fee without any holdback), assuming all phases are completed as scheduled"
+        },
+        {
+          "id": "c",
+          "text": "2,720,000 pesos (85% of fee minus 10% holdback from total), reflecting standard industry practices"
+        },
+        {
+          "id": "d",
+          "text": "2,400,000 pesos (60% of total fee paid directly), based on initial phase completion"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Ignores the 10% holdback provision; the architect does not receive the full 85% until final completion when the holdback is released.",
+        "c": "Applies holdback incorrectly as 10% of total fee (400,000) instead of 10% of earned amounts (340,000).",
+        "d": "Incorrectly calculates cumulative percentage; 60% of 4M = 2.4M, which fails to recognize that the architect has earned and should receive 85% of fee minus the holdback.",
+        "correct": "The architect has earned 85% of the total fee by Contract Documents completion (4 million × 85% = 3.4 million pesos). With 10% holdback applied to payments made, the architect receives 90% of earned amounts (3.4 million × 90% = 3.06 million pesos). The holdback (340,000 pesos) is retained until final completion.",
+        "takeaway": "With 10% holdback: earned amount at CD = 85% of total fee; amount received = 85% × 90% (which is 76.5% of total fee)."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:342ff19cc930cbf1fc749ec907200f27db39ea1d76e4751fe7bac3caddb2b93f"
+    },
+    {
+      "question_id": "ce2f74eb-b185-424c-89b5-7b52d249dad6",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "What is the recommended percentage of the architect's fee paid during Construction Administration under the typical SPP 202 schedule per the Architect's Guidelines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5%"
+        },
+        {
+          "id": "b",
+          "text": "10%"
+        },
+        {
+          "id": "c",
+          "text": "20%"
+        },
+        {
+          "id": "d",
+          "text": "50%"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses Construction Administration with Bidding Assistance, which is typically 5% of the fee.",
+        "c": "Overstates Construction Administration; 20% is the typical Design Development phase percentage.",
+        "d": "Confuses Construction Administration with Contract Documents, which represents 50% of the fee.",
+        "correct": "Construction Administration typically accounts for 10% of the total architect fee under the recommended schedule. This phase extends from construction start through final completion.",
+        "takeaway": "Construction Administration = 10% of total fee; extends from construction start through substantial and final completion with site observation and certification."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8ceaf73598cb2ab4c5dbd9d32b6a90f476f70f0e7a78f108af2fbd68d3f87715"
+    },
+    {
+      "question_id": "d8927e04-98cf-4576-85c5-e068170b4ccd",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "A project extends its Construction Administration phase for 36 months due to phased construction. The original fee was 3 million pesos (10% = 300,000 pesos for CA). How should the architect address the extended timeline?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept that the original 300,000 pesos covers any duration of Construction Administration, regardless of the extension"
+        },
+        {
+          "id": "b",
+          "text": "The contract should have specified whether additional compensation applies for extended Construction Administration or whether the 10% fee covers the extended period"
+        },
+        {
+          "id": "c",
+          "text": "Request a new contract for the extended period, ensuring all parties agree to the revised terms"
+        },
+        {
+          "id": "d",
+          "text": "Automatically increase the fee by 50% for extended duration, unless otherwise negotiated"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Exposes the architect to unlimited work without additional compensation; extended CA timelines should be addressed in contract provisions before the work begins.",
+        "c": "Requesting a new contract is reactive and may result in disputes; the original contract should have addressed extended timeline compensation upfront.",
+        "d": "Automatically increasing fee by 50% lacks contractual basis; compensation must be negotiated and documented based on actual extended scope and duration.",
+        "correct": "Projects extending beyond initial estimates require clear contract provisions. The contract should specify whether the recommended 10% Construction Administration fee covers extended administration or whether additional compensation applies.",
+        "takeaway": "Contracts must explicitly specify whether extended Construction Administration (beyond 12–24 months) receives additional compensation or is covered by the standard 10% allocation."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9e6e48b2e56232036e2e90cf9e7c3efca15d92d9cd32edcf7d7b2143b975b1f6"
+    },
+    {
+      "question_id": "f3ad482f-b655-44e7-9b26-0c8bb610ef8f",
+      "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
+      "topic_id": "86d10945-c2ac-48ae-bf6d-a8f09f3a18c6",
+      "text": "An architect has completed Contract Documents and they are ready for bidding. The total fee for the project is 2 million pesos. Based on the recommended schedule per the Architect's Guidelines, how much has the architect been paid through Contract Documents completion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "700,000 pesos (15% + 20% = 35%)"
+        },
+        {
+          "id": "b",
+          "text": "1,700,000 pesos (15% + 20% + 50%)"
+        },
+        {
+          "id": "c",
+          "text": "1,800,000 pesos (15% + 20% + 50% + 5%)"
+        },
+        {
+          "id": "d",
+          "text": "1,000,000 pesos (50% of total)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Calculates only Schematic Design and Design Development (35% cumulative) = 700,000 pesos, instead of including the 50% Contract Documents phase.",
+        "c": "Calculates 15+20+50+5 = 90% of 2M = 1,800,000 pesos; Bidding Assistance (5%) is not triggered until after bids are received and contract is awarded.",
+        "d": "Uses only the Contract Documents phase (50%) = 1 million pesos, instead of the cumulative percentage through Contract Documents completion (85%).",
+        "correct": "Through Contract Documents completion, the architect typically receives 15% (Schematic Design) + 20% (Design Development) + 50% (Contract Documents) = 85% of total fee. For a 2 million peso fee, that is 1.7 million pesos. The Bidding Assistance (5%) is earned upon bidding completion, not upon Contract Documents completion.",
+        "takeaway": "Through Contract Documents completion (not yet bidding), cumulative payment is 85% of total fee (15+20+50) according to recommended phase allocations."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-004-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9cadf8319ada3541a818e535574e5b195feb20b768c0cbad24970396d956d2d0"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:2fada831448750760a4b81946dc6e534b9d8f102b442187a874a8c977e75c9f1",
+  "question_count": 3,
+  "questions": [
+    {
+      "question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q01",
+      "article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "topic_id": "dryrun-topic-09-uap-spp201-pre-design-and-service-boundaries",
+      "text": "Which listed service is clearly a Pre-design Service under SPP Document 201?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Architectural programming"
+        },
+        {
+          "id": "B",
+          "text": "Fulltime Construction Supervision"
+        },
+        {
+          "id": "C",
+          "text": "Design-Build construction work"
+        },
+        {
+          "id": "D",
+          "text": "Issuance of a Fire Safety Evaluation Clearance"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "SPP 201 identifies Architectural Programming as a pre-design service.",
+        "distractors": {
+          "B": "Fulltime Construction Supervision is separately identified as not covered by the 401-402 agreement.",
+          "C": "Design-Build is explicitly not the 401-402 agreement and is a different service arrangement.",
+          "D": "FSEC is a fire-code clearance process, not the cited SPP 201 pre-design service."
+        },
+        "takeaway": "Classify the service family before answering."
+      },
+      "explanation": "UAP SPP Document 201, Architectural Programming, PDF p.48.",
+      "code_citation": "UAP SPP Document 201, Architectural Programming, PDF p.48.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "uap-predesign-q1",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "UAP SPP Document 201, Architectural Programming, PDF p.48.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:bd0f1daecd12f2c6fb5274c7f1784bc544b45bdae252c214949be8ad86f428b0"
+    },
+    {
+      "question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q02",
+      "article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "topic_id": "dryrun-topic-09-uap-spp201-pre-design-and-service-boundaries",
+      "text": "Under SPP 201, why is consultation still compensable professional input even if the project is not pursued?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The architect renders advice, evaluation, appraisal, and direction whether or not the client proceeds."
+        },
+        {
+          "id": "B",
+          "text": "Consultation automatically creates a design-build contract."
+        },
+        {
+          "id": "C",
+          "text": "Consultation replaces signed and sealed architectural documents."
+        },
+        {
+          "id": "D",
+          "text": "Consultation is only free preliminary marketing."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "The excerpt says the architect renders valuable inputs whether or not the client pursues the project.",
+        "distractors": {
+          "B": "Design-build is a different arrangement and not created by consultation.",
+          "C": "Consultation does not replace architectural documents.",
+          "D": "SPP 201 treats it as valuable professional input, not free marketing."
+        },
+        "takeaway": "Do not dismiss oral/written advice as non-service when SPP 201 classifies it."
+      },
+      "explanation": "UAP SPP Document 201, Consultation, PDF p.42.",
+      "code_citation": "UAP SPP Document 201, Consultation, PDF p.42.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "uap-consultation-q2",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "UAP SPP Document 201, Consultation, PDF p.42.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:4904f8e517d604d4b92096c26ffa37cee0283951f422f8cad4fbf9bbf2685570"
+    },
+    {
+      "question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q03",
+      "article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "topic_id": "dryrun-topic-09-uap-spp201-pre-design-and-service-boundaries",
+      "text": "Under UAP Document 401-402, which service is explicitly not covered by the agreement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Fulltime Construction Supervision"
+        },
+        {
+          "id": "B",
+          "text": "Periodic visits during construction phase service"
+        },
+        {
+          "id": "C",
+          "text": "Preparation of plans and specifications"
+        },
+        {
+          "id": "D",
+          "text": "Contract document forms as part of construction phase service"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Document 401-402 states the agreement does not cover Fulltime Construction Supervision, among other services.",
+        "distractors": {
+          "B": "The excerpt includes periodic visits in the 5% construction-phase service, not the separately engaged fulltime supervision.",
+          "C": "Preparation of plans/specifications is the primary service described in the excerpt.",
+          "D": "Contract document forms are listed under the 5% construction-phase service."
+        },
+        "takeaway": "Separate periodic construction-phase service from fulltime construction supervision."
+      },
+      "explanation": "UAP Document 401-402, Articles 5-6 and 7.08, PDF pp.1 and 8.",
+      "code_citation": "UAP Document 401-402, Articles 5-6 and 7.08, PDF pp.1 and 8.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "uap-boundary-q3",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "UAP Document 401-402, Articles 5-6 and 7.08, PDF pp.1 and 8.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:c4a9e0e0056f91d9e21f8107dc793d7abb3136429dbdcd31c086c39cb0b71a4c"
+    }
+  ],
+  "dry_run_note": "Generated from SME-approved exemplar-question-set.json; do not edit linked-questions directly for real Supabase updates."
+}

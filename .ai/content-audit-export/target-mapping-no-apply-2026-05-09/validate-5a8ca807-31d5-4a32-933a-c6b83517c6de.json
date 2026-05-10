@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-09T14:09:17.376Z",
+  "input": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "slug": "bp-344-ramp-slope-tiers",
+      "folder": "bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:3205392462f9fbf67cac6b71e6d34610d86edeb9a8181186837cf8431df8cc41",
+        "normalized": "sha256:44cc083ba14200dc43012e6f8a54405ce3900e8204b743da7bce4340e02fa540",
+        "candidate": "sha256:44cc083ba14200dc43012e6f8a54405ce3900e8204b743da7bce4340e02fa540",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

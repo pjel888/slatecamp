@@ -1,0 +1,1258 @@
+{
+  "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:f0389b2a5c4dd1973c8bc23c20d7e7bbd87ca448f16977d03b12016aadf11df1",
+  "question_count": 25,
+  "questions": [
+    {
+      "question_id": "291651ff-d1ff-4652-8abc-a1afa1bd59f6",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A fire safety engineer is commissioned to retrofit a 30-year-old 8-storey institutional building (group E: medical clinic with imaging center) in Metro Manila. The existing fire alarm system uses conventional wiring with 8 zones, analog sprinkler system, and centralized FACP in the basement. The building manager reports recent false alarms in the imaging department (2-3 per month) and plans to replace the entire system. The engineer must recommend whether to retain conventional architecture or upgrade to addressable. Considering cost (~150k pesos additional for addressable), RA 9514 requirements, and operational benefits, what is the most defensible recommendation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Retain conventional system; RA 9514 permits conventional systems for buildings <=21 m height, and cost savings justify avoiding addressable upgrade"
+        },
+        {
+          "id": "b",
+          "text": "Upgrade to addressable system with selective analog-addressable detectors in imaging department. Justification: (1) Addressable pinpoints device location for faster responder dispatch in multi-floor medical facility. (2) Analog-addressable in imaging reduces false alarms via trend analysis (distinguishing real fires from imaging scanner emissions). (3) RA 9514 IRR recommends addressable for Occupancy Group E (vulnerable populations). (4) Retrofit cost (150k pesos) is recovered through reduced false-alarm costs, operational efficiency, and improved life safety. (5) Modern insurance and regulatory preferences favor addressable in healthcare settings"
+        },
+        {
+          "id": "c",
+          "text": "Install a hybrid system: conventional zones for general areas, addressable detectors only in imaging department. This balances cost and performance, ensuring that critical areas are protected with advanced technology"
+        },
+        {
+          "id": "d",
+          "text": "Keep conventional system; add gas detectors (CO-based) in imaging department to eliminate false alarms; significantly cheaper than full addressable retrofit, while still addressing the specific issue of false alarms"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost alone does not justify avoiding addressable in a medical facility. RA 9514 does not prohibit conventional systems for buildings <=21 m, but the standard explicitly RECOMMENDS addressable for Occupancy Group E. Institutional occupancies require higher reliability; false alarms in hospitals are operationally serious (staff evacuation, patient movement, emergency response delay).",
+        "c": "Hybrid systems (conventional + addressable selectively) create operational complexity and increase maintenance burden. The FACP must be programmable for mixed-device types; this is more expensive than full addressable retrofit and provides inconsistent benefits.",
+        "d": "Gas detection (CO) supplements but does not replace smoke detection per NFPA 72 and RA 9514. Adding gas detectors without addressing the false-alarm issue in existing smoke detection does not solve the problem. Gas detectors would require separate circuitry and monitoring, increasing complexity.",
+        "correct": "For an Occupancy Group E (institutional) retrofit, upgrading to addressable is the most defensible decision: (1) RA 9514 IRR explicitly mandates fire alarm coverage for all Occupancy Group E buildings and recommends addressable for improved life safety in vulnerable-population settings. (2) Conventional systems cannot pinpoint device location, forcing technicians to manually inspect all 8 zones to find a false-alarm source--time-consuming and operationally disruptive. (3) Analog-addressable detectors in imaging (sensitive to electromagnetic emissions from scanners) can suppress nuisance alarms via trend analysis; conventional detectors cannot. (4) Medical facilities face regulatory scrutiny; modern standards and insurance policies favor addressable systems. (5) Life-safety benefit: faster emergency responder dispatch due to precise device location outweighs 150k peso cost. (6) 30-year-old system likely has maintenance/obsolescence issues; full replacement is more cost-effective than selective component upgrades.",
+        "takeaway": "Retrofit decision for institutional buildings (Occupancy Group E): (1) RA 9514 IRR recommends addressable systems for improved life-safety and vulnerability protection. (2) Cost-benefit: addressable pinpoints device location, reduces false-alarm investigation time, and improves responder dispatch speed. (3) Analog-addressable is superior for environments with nuisance-alarm risk (imaging, kitchens) due to trend analysis capability. (4) Full system replacement (vs. selective upgrade) is more defensible operationally and from code-compliance standpoint. (5) Document decision rationale in fire safety report for BFP and building management stakeholder review."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 IRR Section 1006.3 (Occupancy Group E; Institutional Buildings); NFPA 72 Sections 12-13 (Conventional vs. Addressable System Benefits and Limitations)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c52ab2bc1afe62cfe43efcc152d7a73858d6d2ad6df3a736188c8da5a8d881e"
+    },
+    {
+      "question_id": "3c35ef86-0865-453f-bf69-b58baba418d6",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "Per NFPA 72 (reference standard in RA 9514 IRR), heat detector spacing must be reduced in high-ambient-temperature spaces.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Whenever the ceiling height exceeds 3.7 m (12 ft) in any direction, which may affect heat accumulation"
+        },
+        {
+          "id": "b",
+          "text": "In high-temperature spaces where ambient temperature consistently exceeds 38°C, requiring reduced spacing of 6.1 m (20 ft) or less"
+        },
+        {
+          "id": "c",
+          "text": "When the building is located in a tropical climate (Philippines) where heat dissipation is slower, necessitating adjustments"
+        },
+        {
+          "id": "d",
+          "text": "Heat detectors never require spacing reduction; NFPA 72 mandates uniform 9.1 m spacing regardless of environment, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ceiling height alone does not trigger spacing reduction for heat detectors. The smoke detector spacing reduction applies to ceiling heights >12.2 m per NFPA 72 Section 17.7.3, not heat detectors.",
+        "c": "Climate classification (tropical) does not directly modify NFPA 72 spacing. However, if the mechanical design results in continuous >38°C ambient in spaces like boiler rooms, then spacing is reduced per Section 17.6.2.",
+        "d": "NFPA 72 Section 17.6.2 explicitly allows spacing variation based on thermal conditions; uniform spacing ignores real-world response dynamics in high-temperature environments.",
+        "correct": "NFPA 72 Section 17.6.2 Table 17.6.3 specifies reduced spacing (6.1 m or less) for heat detectors in high-ambient-temperature spaces (>38°C ambient). In such environments, the rate of temperature rise during a fire is proportionally slower, so detectors must be closer together to detect fires within the required time frame.",
+        "takeaway": "Heat detector spacing: standard 6.1-9.1 m (20-30 ft) per NFPA 72 Section 17.6.2. Reduce to 6.1 m minimum in spaces with ambient >38°C (e.g., boiler rooms, kitchens, enclosed mechanical spaces in tropical climates). Philippine buildings: evaluate ambient temperature in mechanical rooms; specify 6.1 m spacing in high-heat zones."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 17.6.2, Table 17.6.3 (Heat Detector Spacing)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:131be03e5ac47b5577e76ae024e1b53ccf4c611c9085f6980cae3c0a5096e3a1"
+    },
+    {
+      "question_id": "43895946-c8b7-4fe9-8c5a-846221eca172",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 12-storey high-rise residential tower in Metro Manila (Occupancy Group R, 4 storeys and higher per RA 9514 IRR Table 1006.3.2) is designed with addressable fire alarm system, photoelectric smoke detectors, heat detectors in kitchen areas, and comprehensive voice evacuation per RA 9514 Section 1006.3.3. During design review, the fire safety engineer discovers the BMS (Building Management System) schedule calls for a 72-hour preventive maintenance window on the fire alarm FACP during peak occupancy season (no backup planned). Per NFPA 72 and RA 9514, what is the compliance status, and what corrective action is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design is compliant if the maintenance is performed by a licensed technician; NFPA 72 Section 10.4 permits maintenance windows during occupancy if performed by qualified personnel, provided all safety protocols are strictly followed"
+        },
+        {
+          "id": "b",
+          "text": "Design is non-compliant; NFPA 72 Section 10.4.6 and RA 9514 Section 1006.3.9 prohibit taking the FACP out of service for extended periods (>24 hours) while the building is occupied. Maintenance must be scheduled during lowest-occupancy period (off-season, or weekend overnight). If essential maintenance cannot be deferred, a temporary backup FACP (portable or second system) must be installed per NFPA 72 Section 10.4.6.1, or the building must be evacuated and sealed (occupancy prevented) for the maintenance duration"
+        },
+        {
+          "id": "c",
+          "text": "Design is compliant if the BMS sends a trouble signal to the central monitoring station during the 72-hour maintenance window; building occupancy may continue as long as alternative safety measures are in place"
+        },
+        {
+          "id": "d",
+          "text": "Design is non-compliant only if the maintenance window exceeds 8 hours; 72 hours requires evacuation of the entire building per RA 9514 emergency protocols, unless a temporary system is installed"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Qualified technician authorization does not override the prohibition on extended outages during occupancy per NFPA 72 Section 10.4.6. System reliability takes precedence over maintenance convenience.",
+        "c": "A trouble signal indicates a supervisory issue (e.g., low battery) but does not maintain fire alarm functionality during an outage. The FACP itself must be operational to detect fires and initiate alarms.",
+        "d": "Evacuation is not automatically required for any outage >8 hours. However, building management must choose: (A) schedule maintenance during low occupancy, (B) deploy backup system, or (C) formally restrict occupancy during maintenance. An uncontrolled 72-hour outage during peak occupancy is indefensible per RA 9514.",
+        "correct": "NFPA 72 Section 10.4.6 specifies that fire alarm systems in occupied buildings must maintain continuous monitoring and operation. Section 10.4.6.1 addresses FACP maintenance: systems serving occupied buildings must not be taken out of service for extended periods without a backup plan. If maintenance exceeds the 'readily accessible repair time' (~4 hours for simple adjustments), temporary backup systems or evacuation procedures must be in place. A 72-hour outage during peak occupancy is a critical life-safety risk. RA 9514 Section 1006.3.9 requires continuous system functionality per occupancy requirements. Corrective actions: (1) Schedule maintenance during lowest-occupancy periods (off-season or weekends), (2) install portable backup FACP per NFPA 72 Section 10.4.6.1 (monitors same detectors, maintains communication to central station), or (3) obtain written approval from Bureau of Fire Protection (BFP) for temporary occupancy restrictions during maintenance. A trouble signal to the monitoring station does not substitute for active fire alarm monitoring during the outage.",
+        "takeaway": "FACP maintenance scheduling (NFPA 72 Section 10.4.6, RA 9514 Section 1006.3.9): (1) Minimize downtime; routine maintenance should be <4 hours if possible. (2) Extended maintenance (>8 hours): coordinate with building management for lowest-occupancy period or deploy backup system. (3) 72-hour outage during peak occupancy is non-compliant. Corrective options: (A) reschedule to off-season, (B) portable backup FACP rental (~50k pesos for 72 hours), or (C) obtain formal occupancy restriction from BFP. (4) Include maintenance window analysis in Fire Safety Plan submission to BFP for pre-approval."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 10.4.6 (FACP Maintenance); NFPA 72 Section 10.4.6.1 (Backup Systems During Maintenance); RA 9514 Section 1006.3.9 (System Testing and Maintenance)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3bbe3eca115905b6648c3cf9ce6480eff22bf6393fb1daadc0520a7ac8458e51"
+    },
+    {
+      "question_id": "6bbf6717-f436-4d66-a544-e18457023df4",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 3-storey commercial building (1,200 m2 per floor, 300 persons per floor) has a 2 m x 3 m break room with a 1.5 m wide stove and exhaust hood on Floor 2. The fire safety engineer must specify detection in the break room. Which detection strategy complies with NFPA 72 and RA 9514?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Install one photoelectric smoke detector directly above the stove at 1.5 m distance to detect cooking fires rapidly, ensuring quick response to potential hazards"
+        },
+        {
+          "id": "b",
+          "text": "Install one fixed-temperature heat detector (68C) in the break room away from the stove exhaust plume; do not install smoke detectors in the cooking zone"
+        },
+        {
+          "id": "c",
+          "text": "Install two photoelectric smoke detectors on opposite sides of the break room to provide redundant coverage of potential fires, enhancing safety measures"
+        },
+        {
+          "id": "d",
+          "text": "Install one ionization smoke detector in the break room and one heat detector above the stove for dual coverage, ensuring comprehensive detection"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Placing smoke detectors directly above or near the stove creates nuisance alarms from normal cooking steam/smoke, violating NFPA 72 Section 17.6.2.8. Engineers have learned this from decades of false alarm problems.",
+        "c": "Redundant photoelectric detectors still trigger on cooking aerosols; NFPA 72 requires heat, not smoke, in cooking zones. Two detectors worsen the nuisance alarm problem.",
+        "d": "Ionization detectors are even more prone to cooking-related false alarms than photoelectric; combining with heat detector does not solve the issue. Ionization + heat is also outdated per RA 9514 preference for photoelectric only.",
+        "correct": "NFPA 72 Section 17.6.2.8 explicitly prohibits smoke detectors in cooking zones due to nuisance alarms from cooking aerosols. Instead, fixed-temperature heat detectors (68C for normal ambient <21C, per NFPA 72) should be installed away from the exhaust plume. This protects life safety without excessive false alarms.",
+        "takeaway": "Cooking zones: use heat detectors only (typically fixed-temperature 68C or rate-of-rise per NFPA 72 Section 17.6). Smoke detectors in kitchens cause staff to disable them. Place smoke detectors in adjacent areas (hallway, prep area) away from cooking exhaust--at least 1.5-3.0 m per NFPA 72 Section 17.7.3.1(b)."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Sections 17.6.2.8 (Kitchen Heat Detectors), 17.7.3.1(b) (Smoke Detector Avoidance of Cooking Areas)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:90204fe427293a3430e850372c15d27cc40cf5fe389a376145a36319aaaf0884"
+    },
+    {
+      "question_id": "fe53e220-25ff-495f-b2ae-aa296da73102",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "According to RA 9514 IRR, fire alarm systems are mandatory in Occupancy Group A (Assembly) buildings when the occupant load exceeds which threshold?",
+      "options": [
+        {
+          "id": "a",
+          "text": "250 persons"
+        },
+        {
+          "id": "b",
+          "text": "500 persons"
+        },
+        {
+          "id": "c",
+          "text": "750 persons"
+        },
+        {
+          "id": "d",
+          "text": "1,000 persons"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "250 persons is below the RA 9514 IRR threshold; no threshold at this occupant load",
+        "c": "750 persons is above the actual threshold; RA 9514 IRR uses 500 persons as the mandatory limit",
+        "d": "1,000 persons relates to the floor area threshold (1,000 m2), not occupant load thresholds",
+        "correct": "RA 9514 IRR Section 1006.3 specifies that Occupancy Group A buildings require fire alarm systems when occupant load exceeds 500 persons OR floor area exceeds 1,000 m2 in any storey.",
+        "takeaway": "Memorize RA 9514 IRR Table 1006.3.2: occupancy-based thresholds are 500 persons (occupant load) or 1,000 m2 (floor area) for Groups A, B; all buildings >= 4 storeys for Group R; all buildings >21 m height for any occupancy."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 IRR Table 1006.3.2, RA 9514 Section 1006.3(1)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1edfaa11331b792dde9ef554e7b81d3f8456f71d24b51a304780142d6958dca0"
+    },
+    {
+      "question_id": "64addb91-3520-4ed3-bff2-e00580dbad01",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 10-storey residential tower in Metro Manila is being commissioned. The architect specifies manual pull stations at 1.8 m height (typical adult chest height) on each floor. The fire safety engineer must correct this design per RA 9514 and NFPA 72. What is the correct mounting height, and why is the architect's height problematic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Correct height: 0.9 m; architect's height is too high for children and wheelchair users to reach comfortably, violating accessibility standards"
+        },
+        {
+          "id": "b",
+          "text": "Correct height: 1.07-1.22 m (42-48 inches); architect's height exceeds the maximum and is inaccessible to children, wheelchair users, and persons with mobility limitations per NFPA 72 Section 17.15 (referenced in RA 9514 IRR)"
+        },
+        {
+          "id": "c",
+          "text": "Correct height: 1.5 m; architect's height is slightly too low for visibility in congested corridors, which may impede quick access during emergencies"
+        },
+        {
+          "id": "d",
+          "text": "Correct height: 1.2 m; architect's height is 0.6 m too high but within acceptable tolerance for adult-only buildings, though not recommended"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.9 m is too low; it places stations near knee height, which is impractical for adults and creates tripping hazards. RA 9514 IRR minimum is 1.1 m.",
+        "c": "1.5 m exceeds the code maximum (upper limit is 1.22 m per NFPA 72 Section 17.15). 1.5 m significantly exceeds code; the statement about visibility is not the primary concern.",
+        "d": "1.2 m is within the acceptable range (1.07-1.22 m), not 'too high.' The 0.6 m difference from 1.8 m is significant and violates code. 'Adult-only buildings' are not exempt from accessibility requirements in RA 9514.",
+        "correct": "NFPA 72 Section 17.14.2 specifies manual pull station mounting height 1.0-1.2 m (40-48 inches) from finished floor (referenced in RA 9514 IRR). The architect's 1.8 m height exceeds maximum and violates accessibility principles--children cannot reach, wheelchair users cannot access, and persons with physical limitations may not reach at shoulder height.",
+        "takeaway": "Manual pull station height: 1.07-1.22 m (42-48 inches) per NFPA 72 Section 17.15 (referenced in RA 9514 IRR). This range accommodates children (standing on tiptoes), adults, wheelchair users, and persons with limited reach. Verify height with mock-up during design phase."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 IRR Section 1006.3.5(a) (Manual Pull Station Requirements); NFPA 72 Section 17.14.2.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2930088b346a2fe2fadb096b09a2191030648a7a1c0a6351ec59b6ddef72c18f"
+    },
+    {
+      "question_id": "1f585d5c-d4e5-4564-ad2c-830506116dfc",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 25-storey high-rise residential tower (Metro Manila) is designed with analog-addressable fire alarm system, voice evacuation with loudspeaker coverage on all floors, and backup battery rated 150 Ah. During a 36-hour power outage (monsoon/typhoon), the building loses AC utility power. The backup battery must sustain standby mode (2 A) continuously. At hour 30, the battery voltage drops to 21.6V (from nominal 24V), and the FACP issues a low battery trouble signal. What is the compliance status, and what must building management do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "System is operating within compliance; NFPA 72 Section 10.5.7 allows battery voltage to drop to 21.6V (90% of nominal); the trouble signal is informational only and requires no immediate action"
+        },
+        {
+          "id": "b",
+          "text": "System is non-compliant; NFPA 72 Section 10.5.6 requires 24-hour standby + 5-minute alarm capacity, but at hour 30 (24-hour threshold exceeded) the battery cannot sustain both standby and an alarm event. Building management must activate manual silencing of all non-critical loads, arrange emergency utility restoration within 4 hours, or deploy a generator to restore AC utility within the 24-hour compliance window"
+        },
+        {
+          "id": "c",
+          "text": "System is compliant but inefficient; the engineer should have specified 200 Ah battery for 36-hour outages, demonstrating over-design per RA 9514 minimum requirements, which would have ensured compliance"
+        },
+        {
+          "id": "d",
+          "text": "System is non-compliant due to FACP design; analog-addressable systems consume more standby current than conventional systems, violating NFPA 72 efficiency standards, and require additional measures to ensure compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "90% voltage is a troubleshooting signal indicating battery stress, but it does NOT override the 24-hour standby requirement. The issue is time-based compliance, not voltage threshold. NFPA 72 Section 10.5.7 covers voltage monitoring but requires corrective action if design parameters (24 hours) are at risk.",
+        "c": "200 Ah battery would support ~100 hours standby (200 Ah / 2 A = 100 h), exceeding RA 9514 minimum. However, the original 150 Ah design IS compliant per NFPA 72 for 24-hour standby + 5-minute alarm. The outage duration (36 hours) is beyond design specification, not a design flaw.",
+        "d": "Analog-addressable systems consume similar standby current as conventional addressable systems (~0.3-0.5 A per loop). Power efficiency is not a code concern; capacity and duration are. Analog systems offer early detection benefits, not reduced power draw.",
+        "correct": "NFPA 72 Section 10.5.6 mandates backup power for 24 hours standby + 5 minutes full alarm. At hour 30 of the outage, the system has exceeded the 24-hour compliance window and is operating on depleted capacity. At 2 A x 6 additional hours = 12 Ah consumed beyond the 48 Ah 24-hour budget, the battery is at ~90 Ah remaining (150 - 48 - 12 = 90 Ah), sufficient for partial standby but lacking full-alarm capacity. RA 9514 Section 1006.3.5(a) and NFPA 72 Section 10.5.6 require maintained capacity per design parameters. Once 24-hour threshold is exceeded, compliance status degrades. Building management must: (1) activate generator/temporary AC power, (2) reduce non-critical loads (e.g., beacon lights if not life-safety-critical), or (3) arrange emergency utility restoration within 4 hours (assuming operator response time). The 36-hour duration exceeded the design specification; this is a non-compliance condition that must be escalated to facilities and building ownership.",
+        "takeaway": "FACP backup power (NFPA 72 Section 10.5.6, RA 9514 Section 1006.3.5): (1) Design for 24-hour standby + 5-minute alarm minimum. (2) Calculate: (Standby A x 24 h) + (Alarm A x 5 min). (3) When utility power is lost, the 24-hour clock starts. Once exceeded, the system is operating beyond design margin and compliance is at risk. (4) Building must have generator or utility restoration plan for extended outages. (5) Monitor battery voltage during outages; trouble signals at 21.6V indicate imminent capacity loss. (6) Tropical climate (typhoons, monsoons): consider 48-hour or generator backup for critical facilities."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 10.5.6 (Stored Energy [Backup] Power Supply), Section 10.5.7 (Voltage Monitoring); RA 9514 Section 1006.3.5",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7a468f411616c8145aa34addedcb4f8a536c84cc01afdf94ec6dc1a284d28207"
+    },
+    {
+      "question_id": "87c8eb89-e201-4212-bab5-d9e5f186fed1",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A large pharmaceutical manufacturing facility (Occupancy Group F, high-hazard: flammable liquids storage) in Laguna, Philippines is designed with an addressable fire alarm system, 120 photoelectric smoke detectors, 20 flame detectors (IR+UV multi-spectrum), 30 manual pull stations, and comprehensive voice evacuation with 48 loudspeakers. The FACP battery backup is specified at 100 Ah (24V). During pre-commissioning calculation, the engineer determines: standby current (all devices monitoring) = 4.5 A; alarm current (all notification devices active) = 18 A. Per NFPA 72 Section 10.5.6, is the 100 Ah battery sufficient, and what is the compliance status?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Battery is compliant; 100 Ah supports (4.5 A x 24 h) + (18 A x 5 min) = 108 + 1.5 = 109.5 Ah, exceeding design requirement with a margin for error"
+        },
+        {
+          "id": "b",
+          "text": "Battery is insufficient; calculation is (4.5 A x 24 h) + (18 A x 5 min) = 108 + 1.5 = 109.5 Ah, but 100 Ah < 109.5 Ah. A minimum 110 Ah battery (rounding up) is required per NFPA 72 Section 10.5.6. Upgrade to 120 Ah standard size for margin and aging derating"
+        },
+        {
+          "id": "c",
+          "text": "Battery is compliant if the designer can verify that the facility has on-site generator backup scheduled for maintenance every 6 months; otherwise, upgrade to 150 Ah is recommended to ensure reliability"
+        },
+        {
+          "id": "d",
+          "text": "Battery size is irrelevant to code compliance; NFPA 72 Section 10.5.6 only specifies duration (24 hours standby + 5 minutes alarm), not absolute capacity. Compliance depends on whether the facility tests the system monthly per RA 9514 Section 1006.3.9, ensuring operational readiness"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The calculation shows 109.5 Ah requirement, which exceeds 100 Ah. 100 Ah does NOT exceed the design requirement; it falls short by 9.5 Ah. This is non-compliant per NFPA 72 Section 10.5.6.",
+        "c": "Generator backup does NOT replace the backup battery requirement per NFPA 72 Section 10.5.6. Stored energy (battery) must independently support the specified duration. A generator is an additional resource for extended outages but does not change the battery sizing calculation. RA 9514 does not reference generator backup as a substitute for battery capacity.",
+        "d": "Capacity is directly specified in NFPA 72 Section 10.5.6; code explicitly requires capacity calculation. Monthly testing per RA 9514 Section 1006.3.9 verifies functionality but does not change the required Ah capacity. A battery that is under-sized cannot pass testing regardless of frequency.",
+        "correct": "NFPA 72 Section 10.5.6 requires backup power for 24 hours standby + 5 minutes full alarm operation. Calculation: (Standby Current A x 24 hours) + (Alarm Current A x 5 minutes / 60 minutes) = (4.5 A x 24 h) + (18 A x 0.0833 h) = 108 Ah + 1.5 Ah = 109.5 Ah minimum required. A 100 Ah battery is insufficient by 9.5 Ah. Code requires rounding UP to the next standard battery size (110 Ah does not exist as standard; available sizes are 100, 120, 150 Ah). Specify 120 Ah minimum to meet code, with 150 Ah preferred for temperature derating margin (batteries lose 10-15% capacity in hot environments like Philippines tropical climate) and aging (battery capacity degrades ~1% per year). Pharmaceutical facilities with hazardous materials are critical-facility contexts; larger margin is justified.",
+        "takeaway": "Battery sizing formula (NFPA 72 Section 10.5.6): Minimum Ah = (Standby A x 24 h) + (Alarm A x 5 min / 60 min). Always round UP to next standard size (50, 65, 100, 120, 150 Ah). For tropical climates (Philippines): add 15% margin for temperature derating. For critical facilities (Occupancy Group F, high-hazard): specify next-larger size for safety margin. Example: calculated 109.5 Ah -> specify 120 Ah minimum, consider 150 Ah for high-hazard factory. During commissioning, verify actual standby/alarm currents match design; if higher, battery may be insufficient."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 10.5.6 (Stored Energy [Backup] Power Supply); RA 9514 Section 1006.3 (High-Hazard Occupancy Requirements)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:63ec1ad6df1d6319b7ca805dc0d25d4f37462a6d39f0d33644722f40c34e2d3e"
+    },
+    {
+      "question_id": "c7d69c31-439e-4669-881d-22e8ec5d7849",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "Per RA 9514 2019 IRR (Chapter 10), institutional occupancies (Group E) typically require fire alarm systems based on occupancy classification, area, and height thresholds. Which of the following best describes why institutional buildings receive mandatory coverage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Institutional buildings have uniform occupant loads exceeding 1,000 persons per storey, necessitating comprehensive safety measures"
+        },
+        {
+          "id": "b",
+          "text": "Institutional occupancies (hospitals, nursing homes, schools) have vulnerable populations with limited mobility requiring early alarm notification"
+        },
+        {
+          "id": "c",
+          "text": "RA 9514 prohibits institutional buildings from using conventional (zone-based) fire alarm systems, mandating more advanced systems"
+        },
+        {
+          "id": "d",
+          "text": "Institutional buildings must locate on ground floor only, simplifying fire alarm design requirements and reducing complexity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Occupant load is not uniform across all institutional buildings; many small clinics or schools may have <500 persons but still require alarms per RA 9514 IRR occupancy classification.",
+        "c": "RA 9514 permits both conventional and addressable systems in institutional buildings; system type is not prescribed by occupancy classification alone.",
+        "d": "No restriction on institutional building height or floor location exists in RA 9514 IRR; multi-storey hospitals and medical centers are common in urban areas.",
+        "correct": "Occupancy Group E (Institutional) includes hospitals, care facilities, and schools where occupants (patients, children, elderly, disabled persons) may have limited mobility or inability to self-evacuate. RA 9514 IRR mandates fire alarm coverage regardless of floor area to protect these vulnerable populations early.",
+        "takeaway": "RA 9514 IRR Occupancy Group E: all buildings, all floor areas, mandatory fire alarm. Key rationale: vulnerable populations require early, reliable warning. Remember the six occupancy groups (A, B, E, F, R, and all buildings >21 m height)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 IRR Table 1006.3.2 (Occupancy-Based Mandatory Installation Thresholds)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:714c00e84d616f09887933466233155bcc74ccd8ee961b2223b242d1500e8bbb"
+    },
+    {
+      "question_id": "250f7007-a767-4f23-afbf-39f47e037054",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A fire safety engineer is reviewing a 2,500 m2 open-plan office floor (single storey, 9 m ceiling height) with several <1.2 m deep structural beams spaced 6 m apart in both x and y directions. The engineer must calculate the minimum number of smoke detectors required per NFPA 72 geometry analysis. How many detectors are needed, and what is the technical basis?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 detectors (one per 625 m2 quadrant); beams do not affect spacing in single-storey spaces, allowing for standard placement without additional considerations"
+        },
+        {
+          "id": "b",
+          "text": "5 detectors; 9 m ceiling allows slightly reduced spacing to 7.6 m due to building height factors, which accommodate the open-plan design and ensure adequate coverage"
+        },
+        {
+          "id": "c",
+          "text": "Approximately 30 detectors based on 9.1m spacing (2500m2 / 83m2 per detector); NFPA 72 Section 17.7.4 base spacing applies, with 17.7.5.1 adjustments only for true beam pockets"
+        },
+        {
+          "id": "d",
+          "text": "16 detectors (one per bay); maximum 9.1 m spacing per NFPA 72 Section 17.7.4 applies at beam pocket boundaries, requiring dense placement to ensure comprehensive coverage"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Beams significantly affect spacing per NFPA 72 Section 17.7.5.1. Spacing reduces to ~64% of 9.1 m (~5.8 m) when beams are present. Ignoring beams violates code.",
+        "b": "Ceiling height does not proportionally reduce spacing. NFPA 72 uses fixed 9.1 m spacing unless obstructions (beams) are present, in which case the 64% rule applies.",
+        "d": "16 detectors (one per single 6 m x 6 m bay) is overly conservative. NFPA 72 Section 17.7.5.1 requires one detector per pocket, but multiple bays can share a detector if spacing allows. 9 detectors is a reasonable engineering minimum for 2,500 m2.",
+        "correct": "NFPA 72 Section 17.7.5.1 (Smoke Detector Placement Under Ceiling Obstructions): When structural beams create pockets with spacing >1.2 m and depth >=10% of ceiling height, place detectors in EACH pocket. Here: 6 m x 6 m bays created by beams; 9 m ceiling x 10% = 0.9 m; assume beam depth ~0.5 m (meets >10% threshold). Total bays: 2 rows x 2 columns = 4 bays per 12 m x 12 m area. Full 2,500 m2 floor (~50 m x 50 m) yields ~25 bays; round to 9 detectors for typical engineering (3 x 3 grid minimum + corners). Code minimum: 1 detector per beam pocket, ~9 total.",
+        "takeaway": "Beam pocket rule (NFPA 72 Section 17.7.5.1): If beam spacing >1.2 m AND beam drop >=10% of ceiling height, place detectors in each pocket. In open plans with beams, use 64% of base spacing (9.1 m x 0.64 ~= 5.8 m) as maximum within pockets. Count bays, place one detector per pocket minimum. Reduces coverage gaps and ensures reliable detection in obstructed ceilings."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 17.7.5.1 (Smoke Detector Placement Under Structural Members); NFPA 72 Section 17.7.4 (Base Spacing)",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3a048a5defb99a91a831f10633e738c81faad67f241a80d784734ce82a9c5a70"
+    },
+    {
+      "question_id": "4afafaa0-15dd-4930-8ebb-ce28945d51e0",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A fire safety engineer is designing a state-of-the-art 40-storey mixed-use tower (retail + office + hotel + residential, total 1.2M m2) in Manila Bay with advanced fire detection including photoelectric smoke detectors, rate-of-rise heat detectors, multi-spectrum flame detectors, analog-addressable system with trend analysis, voice evacuation with 200+ loudspeakers, and hardwired connection to two independent central monitoring stations (redundancy). The FACP integrates with Building Management System (BMS) for elevator recall, HVAC shutdown, and door release. Per RA 9514 and NFPA 72, what is the SINGLE most critical design component that has NOT been mentioned, and what is its regulatory requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Backup battery capacity per NFPA 72 Section 10.5.6; required to support 24-hour standby + 5-minute alarm operation regardless of building size"
+        },
+        {
+          "id": "b",
+          "text": "Seismic restraint and fire-resistant wiring per NFPA 72 Section 12.4 for high-rise buildings in seismic zones (Philippines Earthquake Code); detectors and FACP wiring must be secured to prevent damage during earthquakes and remain operational during fire alarm condition"
+        },
+        {
+          "id": "c",
+          "text": "Manual pull stations on every floor with maximum 60 m travel distance per NFPA 72 Section 17.14.2.2; not mentioned in the original design summary, yet mandatory per RA 9514 Section 1006.3.5"
+        },
+        {
+          "id": "d",
+          "text": "Spare batteries and spare detection devices inventory per NFPA 72 Section 10.12; required as part of the maintenance plan for buildings >30 storeys to enable rapid repairs and minimize downtime"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Backup battery is mentioned implicitly (FACP operation requirement) but not explicitly. However, it is addressed as a foundational element covered in earlier design phases. The question asks for a component NOT mentioned.",
+        "b": "Seismic restraint is a structural engineering concern (per Philippine Building Code and Earthquake Code), not a fire alarm-specific NFPA 72 requirement. NFPA 72 addresses wiring integrity (Section 12.4) but does not mandate seismic analysis; that is the structural engineer's domain.",
+        "d": "Spare equipment inventory is a maintenance-plan component per NFPA 72 Section 10.12 but is not a DESIGN component or code-mandatory element. Spare inventory is operational best-practice, not a showstopper for regulatory approval.",
+        "correct": "The design mentions detectors, voice evacuation, FACP, BMS integration, and monitoring station connectivity—but does NOT explicitly reference manual pull stations. NFPA 72 Section 17.14.2.2 and RA 9514 Section 1006.3.5 mandate manual pull stations with maximum 60 m travel distance from any occupiable space. For a 40-storey tower with large floor plates (~30 m x 40 m typical), each floor likely requires 2-4 manual pull stations. Hotel and residential floors may require different strategies (in-room pull stations or corridor-accessible stations per RA 9514 accessibility requirements). Manual pull stations are a legally required component; omitting them from the design results in BFP non-approval at final inspection.",
+        "takeaway": "Manual pull station design (NFPA 72 Section 17.14.2.2, RA 9514 Section 1006.3.5): (1) Maximum 60 m travel distance from any occupiable space. (2) Height: 1.07-1.22 m (42-48 inches) per NFPA 72 Section 17.15. (3) Quantity for large towers: typically 3-4 per floor on typical office/retail floors; may be higher on floors with large open areas. (4) Hotels and residential: consider in-unit or near-door placement per occupancy-specific guidance. (5) Integration with addressable system: each pull station has unique address, allowing FACP to log activation location. (6) During 40-storey design, document pull station placement on floor plans for BFP review. (7) BFP final inspection includes walk-through of all floors confirming adequate coverage; missing pull stations will trigger non-approval."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 17.14.2.2 (Manual Fire Alarm Initiation Device Spacing and Placement); RA 9514 Section 1006.3.5 (System Components and Integration)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59dca467098ec3c234e42f7d39bca25f027d3e4b78e9cc68236b3597f81cdda3"
+    },
+    {
+      "question_id": "5624278e-d5f7-4720-be71-93d53644feb2",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A fire safety engineer is calculating backup battery capacity for a 6-storey addressable fire alarm system in an office building. System standby current is 2.5 A; full-alarm current (all notification devices active) is 10 A. Per NFPA 72 Section 10.5.6, battery must support 24 hours standby + 5 minutes alarm. What is the minimum backup battery capacity (Ah)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 Ah"
+        },
+        {
+          "id": "b",
+          "text": "60 Ah"
+        },
+        {
+          "id": "c",
+          "text": "65 Ah"
+        },
+        {
+          "id": "d",
+          "text": "75 Ah"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "50 Ah is insufficient; it covers only ~20 hours standby, not the full 24 hours required.",
+        "b": "60 Ah is close but slightly under-sized (61 Ah calculated). Code compliance requires rounding up; 60 Ah may not meet the 24-hour + 5-minute requirement after battery aging.",
+        "d": "75 Ah exceeds minimum but is acceptable practice; provides ~15% margin for battery aging and temperature derating.",
+        "correct": "NFPA 72 Section 10.5.6 requires backup battery for 24 hours standby + 5 minutes full alarm. Calculation: (24 h x 2.5 A standby) + (5 min / 60 x 10 A alarm) = 60 Ah + 0.833 Ah ~= 61 Ah. Rounding up to standard battery size: 65 Ah minimum (accounting for aging, temperature derating). Some engineers specify 75 Ah for margin, but 65 Ah is the code minimum.",
+        "takeaway": "Battery sizing: Standby (A) x 24 h + Alarm (A) x (5 min / 60 min). Always round UP to next standard battery size. Common sizes: 50, 65, 100, 150 Ah. Specify 65+ Ah for 6-storey buildings per NFPA 72."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 10.5.6 (Stored Energy (Backup) Power Supply)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:31b00985f9fb0ad1f977beb54cd914a7d0a4cfdf834e7a5f3f15d701eee9eecb"
+    },
+    {
+      "question_id": "9c5fef1f-8955-4eb9-96dc-427c64d7857a",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "What is the maximum center-to-center spacing for ceiling-mounted smoke detectors per NFPA 72?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6.1 m (20 ft)"
+        },
+        {
+          "id": "b",
+          "text": "7.6 m (25 ft)"
+        },
+        {
+          "id": "c",
+          "text": "9.1 m (30 ft)"
+        },
+        {
+          "id": "d",
+          "text": "12.2 m (40 ft)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "6.1 m is the maximum spacing for heat detectors in certain conditions, not smoke detectors",
+        "b": "7.6 m is between code values; NFPA 72 does not use 7.6 m as a primary spacing",
+        "d": "12.2 m exceeds the code maximum and would create coverage gaps in typical buildings",
+        "correct": "NFPA 72 Section 17.7.4 specifies maximum center-to-center distance of 9.1 m (30 ft) for ceiling-mounted smoke detectors.",
+        "takeaway": "NFPA 72 smoke detector spacing: 9.1 m center-to-center (typical). Reduce to 64% (5.8 m) in beam pockets per Section 17.7.5.1. Heat detectors also typically 6.1-9.1 m per Section 17.6.2."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 17.7.4 (Smoke Detector Spacing)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e6a78c44811df23ecb277b8ab2fd669da9b197af05c1ba61ca7872d46f3f4d04"
+    },
+    {
+      "question_id": "f0983215-75bf-4802-8bdb-6a44e5d1d36e",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 7-storey hospital in the Philippines (with mechanical pressurization of stairwell and smoke control) experiences a fire on Floor 3. Per RA 9514 and NFPA 72 design practice, which sequence of system integration responses is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fire alarm -> all HVAC systems shut down immediately; all elevators locked; all stairwell door holders release; voice evacuation begins floor-by-floor announcement, ensuring all occupants are informed"
+        },
+        {
+          "id": "b",
+          "text": "Fire alarm -> elevator recall to ground; HVAC return dampers close (supply to pressurized stairwell continues); stairwell door holders release; voice evacuation activated; non-affected floors' HVAC continues normal operation per smoke control design"
+        },
+        {
+          "id": "c",
+          "text": "Fire alarm -> stairwell HVAC reverses to exhaust smoke; all elevators shut down; all door holders release; audible alarm only (no voice evacuation in hospitals per privacy concerns, maintaining patient confidentiality)"
+        },
+        {
+          "id": "d",
+          "text": "Fire alarm -> Floor 3 elevator recall only; Floor 3 HVAC shutdown; affected floor door holders release; other floors unaffected, maintaining normal operations to avoid unnecessary panic"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Shutting down ALL HVAC systems defeats smoke control design and can accelerate smoke spread. Pressurized stairwell supply must continue per RA 9514 smoke control requirements. Complete elevator lock violates the need for evacuation of occupied elevators.",
+        "c": "Hospitals are covered by RA 9514 (Occupancy Group E--Institutional; all buildings require alarm). Voice evacuation is required, not suppressed for privacy. Floor-specific measures may delay building-wide alarm, violating NFPA 72 Section 10.10.1 (alarm sounded within 10 seconds).",
+        "d": "Selective floor measures (Floor 3 only) are not standard per NFPA 72; building-wide alarm and integration responses are required. Reversing stairwell HVAC is not standard practice; pressurization is maintained to protect stairwell.",
+        "correct": "RA 9514 Section 1006.3.5(a) requires elevator recall to safe level (ground). NFPA 72 Section 21.3 specifies selective HVAC shutdown: return air dampers close (prevent smoke recirculation); supply to pressurized stairwell/smoke control continues per licensed Fire Safety Engineer's design. All fire-rated exit doors unlock (door holder release). Voice evacuation (required per RA 9514 Section 1006.3.3 for 7-storey building) provides occupant direction. Non-affected floors maintain normal HVAC unless spread is detected.",
+        "takeaway": "Fire alarm integration sequence: (1) Elevators recall to ground/safe level. (2) HVAC: return dampers close, pressurized exit routes (stairwell) supply continues. (3) Exit door holders release. (4) Voice evacuation activates building-wide. (5) Smoke control design takes precedence over generic HVAC shutdown. Licensed Fire Safety Engineer approves all integration per RA 9514 IRR Section 1006.3."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Sections 1006.3.5 (System Integration), 1006.3.3 (Voice Evacuation); NFPA 72 Sections 10.10 (Alarm Initiation), 21.3 (HVAC Integration)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e3ac43ab24b7747fc220024c92a2057c9dec66290fc1448c84b157d7a541105b"
+    },
+    {
+      "question_id": "3bf30cc2-b4f3-496b-9b32-ee1dccac7219",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 6-storey mixed-use building (retail + residential, 1,500 m2 per floor) in Metro Manila is designed with voice evacuation. During final inspection, the Bureau of Fire Protection (BFP) tests the voice evacuation system and discovers that loudspeaker coverage in the residential corridor achieves only 82 dB SPL, falling short of the code minimum. Which regulatory standard is violated, and what must be corrected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RA 9514 violation only; voice evacuation systems are not required to meet NFPA 72 SPL standards, only audible alarm standards, which is incorrect as NFPA 72 applies"
+        },
+        {
+          "id": "b",
+          "text": "NFPA 72 Section 18.4.3 is violated; voice evacuation must achieve minimum 85 dB SPL (or ambient + 15 dB) in all occupiable areas; engineer must relocate loudspeakers or increase amplifier power"
+        },
+        {
+          "id": "c",
+          "text": "PD 1096 violation only; NFPA 72 does not apply to voice evacuation, only conventional horns, which is a misunderstanding of the standards"
+        },
+        {
+          "id": "d",
+          "text": "No violation; 82 dB SPL is sufficient for voice evacuation corridors per RA 9514 Section 1006.3.3, which is incorrect as it does not meet the required standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Voice evacuation systems are covered by NFPA 72 Section 18 (Notification Appliances) and must meet SPL standards per Section 18.4.3. RA 9514 explicitly references NFPA 72 in the IRR; SPL standards are applicable.",
+        "c": "PD 1096 (old National Building Code, superseded by RA 9514) is not the enforcement vehicle for detailed fire alarm standards. RA 9514 and NFPA 72 (via IRR) are the current regulatory framework.",
+        "d": "RA 9514 Section 1006.3.3 requires voice evacuation for buildings >21 m or >500 occupants but does not specify SPL; that detail comes from NFPA 72 Section 18.4.3, which RA 9514 IRR incorporates normatively. 82 dB is insufficient.",
+        "correct": "NFPA 72 Section 18.4.3 specifies minimum sound pressure level for notification appliances (including voice evacuation loudspeakers) as 85 dB or ambient + 15 dB, whichever is greater. RA 9514 IRR adopts NFPA 72 normatively, making this requirement binding in the Philippines. 82 dB < 85 dB, so the system fails. Correction: relocate loudspeaker, add additional speakers, or increase amplifier output to achieve 85 dB minimum per BFP inspection findings.",
+        "takeaway": "Voice evacuation SPL requirement: 85 dB minimum (or ambient + 15 dB) per NFPA 72 Section 18.4.3, adopted in RA 9514 IRR. Residential corridors in mixed-use buildings must meet this standard. During commissioning, BFP will test with sound meter; any shortfall requires system redesign. Plan loudspeaker spacing (typically 12-15 m apart) and amplifier power early to avoid costly retrofit."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 18.4.3 (Audibility Requirements for Notification Appliances); RA 9514 IRR Section 1006.3.3 (Voice Evacuation Systems)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da393fcfd9daf2f0b26fc0c1df9b118dc255ef7bc7d75595c359eeea75ea9d92"
+    },
+    {
+      "question_id": "bcd21cc2-32c9-42cb-ae69-e9abd229b94e",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 20-storey hospital building in Metro Manila has a comprehensive fire alarm system integrated with the BMS (Building Management System). During a post-commissioning audit, the fire safety engineer discovers the FACP is connected to the BMS via Ethernet (TCP/IP), allowing the BMS to access event logs and reset functions remotely. Per NFPA 72 and RA 9514, what is the compliance issue with this design, and what correction is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No issue; NFPA 72 Section 10.18 permits BMS integration via Ethernet if the connection is encrypted with 256-bit security"
+        },
+        {
+          "id": "b",
+          "text": "Critical issue: NFPA 72 Section 10.18 restricts BMS/FACP connections to supervised hardwired circuits or UL-listed monitoring pathways; standard Ethernet creates potential unauthorized access vulnerability. The connection must use a UL-listed gateway or dedicated hardwired interface with access controls; remote reset capability must be disabled per RA 9514"
+        },
+        {
+          "id": "c",
+          "text": "No issue; RA 9514 explicitly encourages BMS/fire system integration to improve building automation efficiency and streamline operations"
+        },
+        {
+          "id": "d",
+          "text": "Minor issue: only the reset function must be removed; event log access via Ethernet is permitted for auditing purposes, provided that the logs are encrypted and access is restricted to authorized personnel only"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Encryption alone does not meet NFPA 72 Section 10.18 requirements. The standard mandates UL-listed pathways, not just encrypted standard networks. Many cyber-secure networks are still vulnerable to insider threats and social engineering.",
+        "c": "RA 9514 does NOT encourage uncontrolled BMS integration. While system integration is required (e.g., elevator recall, HVAC shutdown), the FACP must maintain security and authorized access controls per Section 1006.3.5(a).",
+        "d": "Partial measures (log access only) do not solve the vulnerability if reset capability remains accessible via unsupervised Ethernet. Disabling remote reset is necessary, but the connection itself must be evaluated for security compliance per NFPA 72 Section 10.18.",
+        "correct": "NFPA 72 Section 10.18 (Information Network Pathways) restricts BMS/FACP interfaces to supervised, dedicated pathways or UL-listed gateways. Standard Ethernet connections expose the FACP to network vulnerabilities, hacking, and unauthorized reset/manipulation. RA 9514 Section 1006.3.5(a) specifies that only authorized personnel (fire service, building security with training) may reset the system. Remote BMS access violates this requirement. Correction: (1) Install UL-listed gateway with firewall/access controls, or (2) use dedicated hardwired supervisory circuit with physical key access only, or (3) disable remote reset and allow read-only event log access via encrypted, monitored pathway.",
+        "takeaway": "FACP/BMS integration (NFPA 72 Section 10.18, RA 9514 Section 1006.3.5(a)): (1) Use UL-listed gateways or dedicated hardwired supervisory circuits. (2) No standard Ethernet without UL certification and firewall controls. (3) Reset functionality: physical key access only; disable remote reset. (4) Event log access: read-only, encrypted, monitored pathway acceptable. (5) Access control: restrict to licensed technicians and building security with documented training. During design, engage UL-listed integrator for security compliance."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 10.18 (Information Network Pathways); RA 9514 Section 1006.3.5 (System Integration and Reset Requirements)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:77239c76d7ef3f86b38e44d86dbbc2ff810a3b7b5b28c10eb2e134cd376c1199"
+    },
+    {
+      "question_id": "254dd8b0-8dfd-479c-ab22-088c85fabe43",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A fire safety engineer is commissioned to validate a pre-occupancy fire alarm system in a new 18-storey office tower (Metro Manila) after 6 months of construction and commissioning delays. The BFP (Bureau of Fire Protection) requires final sign-off before occupancy permit issuance. During commissioning review, the engineer discovers: (1) FACP battery load test from 6 months prior shows 90 Ah capacity; (2) current standby current is measured at 3.2 A (higher than design 2.5 A due to added security cameras on alarm circuit); (3) building occupancy is scheduled to start in 48 hours. The engineer calculates: (90 Ah battery) / (3.2 A standby) = 28 hours autonomy—exceeding the 24-hour requirement. Per NFPA 72 Section 10.5.6 and best-practice considerations, should the engineer certify the system ready for occupancy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, certify as compliant; mathematical calculation shows 28 hours > 24 hours, meeting NFPA 72 Section 10.5.6 requirement. The system is technically adequate and ready for immediate use."
+        },
+        {
+          "id": "b",
+          "text": "No, do not certify; NFPA 72 Section 10.5.6 requires 24-hour standby + 5-minute alarm capacity. The 28-hour standby calculation is incomplete; alarm current (estimated 12-15 A for full-alarm state) must be verified and included. Additionally, 6-month-old battery load test result may underestimate degradation (batteries lose capacity with age and tropical climate heat). Conservative practice: (1) verify alarm current immediately, (2) re-conduct battery load test, (3) if alarm capacity falls short of 5-minute requirement or battery test shows <85 Ah, upgrade to 120 Ah battery. Delay occupancy certification until battery verification is complete."
+        },
+        {
+          "id": "c",
+          "text": "Yes, certify with conditions; allow partial occupancy (50% of floors) while battery upgrade is scheduled for next quarter, ensuring that critical areas remain compliant with safety standards"
+        },
+        {
+          "id": "d",
+          "text": "No, do not certify, but for different reason: the 3.2 A standby current is higher than design, indicating circuit load overrun. The entire FACP design must be reviewed by the original fire safety engineer; electrical load may have other issues beyond battery capacity, potentially affecting overall system reliability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Standby-only calculation ignores the mandatory 5-minute alarm requirement. This is a dangerous gap; alarm initiation could fail midway if battery capacity is actually insufficient.",
+        "c": "Partial occupancy conditional is not an option per RA 9514 and NFPA 72; all-or-nothing occupancy permit issuance applies. BFP will not allow selective floor occupancy with uncertified fire alarm systems.",
+        "d": "The 3.2 A standby current elevation (vs. 2.5 A design) is concerning and suggests load increase, but the primary issue is verification of battery capacity to meet code requirements. The circuit load increase (security cameras) should have been documented in a design change order; however, the critical path item is battery certification, not design review.",
+        "correct": "A compliant battery certification requires two capacity checks: (1) Standby autonomy (24 hours), and (2) Alarm capacity (5-minute full-alarm operation). The engineer's calculation addresses standby only (28 hours) but omits alarm capacity verification. Per NFPA 72 Section 10.5.6, the battery must sustain (24 h x 3.2 A standby) + (5 min x 12-15 A estimated alarm) = 76.8 Ah + 1-1.25 Ah = 77.8-78 Ah minimum required. The 90 Ah battery appears adequate, BUT: (1) 6-month-old load test may underestimate current capacity loss (batteries degrade ~0.5-1% per month in tropical climate), (2) actual alarm current was not measured during commissioning (12-15 A estimate could be wrong if additional notification devices were added), (3) best practice requires re-test before occupancy certification. Corrective action: (A) measure actual alarm current and recalculate required capacity, (B) re-conduct 30-minute battery load test to verify 90 Ah is still valid, (C) if either test shows shortfall, upgrade to 120 Ah. A 48-hour occupancy deadline does not override code-compliance verification; better to delay certification 1-2 days than to certify a system that fails during a real fire due to battery depletion.",
+        "takeaway": "Pre-occupancy battery certification (NFPA 72 Section 10.5.6, RA 9514 occupancy permit requirement): (1) Always verify BOTH standby AND alarm capacity. Standby alone is insufficient. (2) Load test battery within 30 days of occupancy (not 6 months prior); tropical climate causes faster degradation. (3) Measure actual alarm current during commissioning (full notification device activation test), not estimates. (4) Formula: (Standby A x 24 h) + (Alarm A x 5 min/60). (5) Conservative approach: if calculated requirement is 78 Ah, specify battery that maintains >85 Ah after load test; never operate at calculated minimum. (6) Deadline pressure (48-hour occupancy) does not justify skipping verification; delay certification if tests are incomplete. Document all battery tests in commissioning report for BFP file."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 10.5.6 (Stored Energy [Backup] Power Supply); NFPA 72 Section 10.5.7 (Battery Load Testing); RA 9514 Section 1006.3.9 (Commissioning and Occupancy Permit Requirements)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8ee5291843252ea41556a9965b8e0b6e545c8ff3f48a3234162c6606cdafb916"
+    },
+    {
+      "question_id": "e7bf58a1-129c-46ee-b1e0-c847cc459210",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 5-storey office building in Metro Manila (850 m2 per floor, 200 persons per floor) is being designed with an open-plan layout and suspended ceiling. The fire safety engineer selects an addressable smoke detector system. Why is an addressable system advantageous over a conventional (zone-based) system for this building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It automatically identifies the specific detector location during alarm, enabling faster occupant evacuation and responder targeting"
+        },
+        {
+          "id": "b",
+          "text": "It eliminates the need for backup battery power during power outages, reducing maintenance requirements"
+        },
+        {
+          "id": "c",
+          "text": "It reduces installation costs by 40% compared to conventional wiring, offering significant budget savings"
+        },
+        {
+          "id": "d",
+          "text": "It complies with RA 9514 but conventional systems do not, ensuring legal compliance"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Addressable systems do require backup battery (24 hours standby per NFPA 72 Section 10.5.6). Backup power is mandatory for both types.",
+        "c": "Addressable detectors and intelligent FACP are more expensive than conventional. Total cost is typically 20-30% higher for addressable systems.",
+        "d": "RA 9514 IRR permits both conventional and addressable systems; both comply. However, RA 9514 recommends addressable for buildings >21 m, and this building (21 m height) is at the threshold.",
+        "correct": "Addressable systems transmit unique device addresses; FACP displays exact room/location upon activation. In a 5-storey building with complex floor geometry, this pinpointing accelerates evacuation instructions and emergency responder dispatch. Conventional systems only indicate which zone, requiring technician dispatch to find the device.",
+        "takeaway": "Addressable systems excel in complex or high-rise buildings due to precise location identification. Conventional systems suffice for small, simple floor plans. For 5+ storey buildings in Philippine urban context, addressable is the modern standard."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Sections 12 (Conventional) vs. 13 (Addressable); RA 9514 Section 1006.3",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:967a241e33900f0e03794b1ab7e06f47147919e2149bbad772bc5047921f2d3f"
+    },
+    {
+      "question_id": "025aeb7f-cb92-4167-be3d-22754c2eabdf",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 12-storey commercial building in Metro Manila has two elevator banks (Bank A: 6 elevators; Bank B: 6 elevators) serving different zones. On fire alarm activation, the fire safety engineer's design integrates elevator recall via the FACP. Per RA 9514 2019 IRR Rule 10, elevators must recall to designated level on fire alarm activation., and why is this requirement non-negotiable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bank A elevators recall to ground floor immediately; Bank B elevators continue service for 60 seconds before recall, allowing occupants time to reach the fire floor if needed"
+        },
+        {
+          "id": "b",
+          "text": "Both banks immediately recall to the designated recall level (typically ground floor) and remain out of service until manually reset by fire service; no occupant can override this lockout during alarm"
+        },
+        {
+          "id": "c",
+          "text": "Bank A (serving lower floors) recalls to ground; Bank B (serving upper floors) recalls to rooftop exit; selective recall reduces elevator traffic during evacuation"
+        },
+        {
+          "id": "d",
+          "text": "Elevators remain in normal service but bypass the fire floor; the FACP alerts elevator controllers to prevent calls to the fire floor while allowing evacuation routing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Staggered recall or continued service during fire alarm violates RA 9514 and exposes occupants to entrapment risk. Elevators become hazards in fires due to smoke inhalation, loss of power, and structural damage; none may operate during alarm per regulatory requirement.",
+        "c": "Selective recall by floor does not meet RA 9514 mandate. All elevators must return to a single, pre-designated safe level. Directing upper-floor elevators to rooftops or alternate levels creates confusion and potential evacuation obstruction.",
+        "d": "Operational routing (bypassing fire floor) allows elevators to continue carrying occupants in a fire emergency, violating the prohibition on elevator use during alarm. NFPA 72 Section 21.2 and RA 9514 explicitly forbid any operational mode during fire alarm activation.",
+        "correct": "RA 9514 Section 1006.3.5(a) mandates automatic recall of ALL elevators to the designated safe level (typically ground floor or main lobby) with no override permitted during alarm condition. Both banks must execute this simultaneously to prevent any occupant from becoming trapped in the building via elevator. Manual reset by fire service ensures elevators are inspected for trapped occupants and damage before returning to service.",
+        "takeaway": "Elevator recall (RA 9514 Section 1006.3.5(a), NFPA 72 Section 21.2): (1) All elevators -> designated recall level (ground floor standard). (2) No occupant override during alarm. (3) Simultaneous recall of all banks. (4) Remain locked until fire service manually resets controller. (5) FACP sends hardwired or addressable signal to elevator controller. Design dual inputs (FACP primary + manual override) so fire service can reset after inspection."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Section 1006.3.5(a) (Elevator Recall Integration); NFPA 72 Section 21.2 (Emergency Voice/Alarm Communication System Integration)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d074cf8723332b56d3f03900e0560c2a9bd61f1111b6afbf063e0fd0248e92c0"
+    },
+    {
+      "question_id": "033aac3a-4ed2-4829-830a-79b0e05c002e",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A fire safety engineer is designing a 4-storey commercial office building (900 m2 per floor, 180 persons per floor) in Metro Manila with conventional (zone-based) fire alarm system and 6 smoke detector zones. Each zone has 8 detectors spaced 9.1 m apart per NFPA 72. After system commissioning, the Bureau of Fire Protection (BFP) inspection discovers a design issue: one zone (Floor 2, northwest corner) has 3 detectors mounted above an open-plan area with a dropped soffit extending 0.4 m below the structural ceiling (8.8 m height), creating an obstruction not accounted for in the spacing calculation. The soffit is located 1.2 m below the detectors and extends 3.0 m x 2.5 m. Per NFPA 72, is the current detector placement compliant, and what correction (if any) is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Design is compliant; NFPA 72 Section 17.7.5 applies only to structural beams, not architectural soffits. The 0.4 m soffit depth is below the code threshold for obstruction consideration"
+        },
+        {
+          "id": "b",
+          "text": "Design is non-compliant; NFPA 72 Section 17.7.5.1 applies to ALL ceiling obstructions >0.1 m deep extending >1.2 m from detectors. The soffit creates a dead space below where smoke may not reach the detectors. Correction: relocate 1 detector to the soffit-affected region (below the obstruction edge), or reduce detector spacing in the affected area to 5.8 m (64% of 9.1 m)"
+        },
+        {
+          "id": "c",
+          "text": "Design is marginally compliant; the 0.4 m soffit depth is 5% of the 8.8 m distance to detectors, within acceptable tolerance per NFPA 72 interpretation. No correction required if BFP approves the variance"
+        },
+        {
+          "id": "d",
+          "text": "Design is non-compliant for a different reason: 6 detectors on an addressable system with only 180 persons per floor violates RA 9514 occupant load thresholds; a conventional system with 8 detectors per zone is over-designed"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NFPA 72 Section 17.7.5 applies to ANY ceiling obstruction >0.1 m deep, not just beams. Architectural soffits, ductwork, and suspended elements are covered. The code does not distinguish between structural and architectural obstructions.",
+        "c": "The soffit depth (0.4 m) alone does not determine compliance; NFPA 72 evaluates the horizontal obstruction distance (1.2 m in this case) and its effect on smoke stratification. A 5% dimensional variance is not within acceptable tolerance if it creates coverage gaps.",
+        "d": "This is a conventional (not addressable) system, and 8 detectors per zone (6 zones = 48 total detectors) is reasonable for a 4-storey office building per NFPA 72 spacing standards. The detector count is not driven by occupant load but by floor area and spacing requirements.",
+        "correct": "NFPA 72 Section 17.7.5.1 (Smoke Detector Placement Under Structural Members) specifies that detectors must account for obstructions extending >1.2 m from the detector and creating pockets where smoke rise may be blocked. A 3.0 m x 2.5 m soffit extending 1.2 m below detectors creates a dead space; smoke from fires in that region may not reach the detectors above. Correction per NFPA 72: (1) Place detectors within the soffit-affected pocket (below the soffit edge) to cover the dead space, or (2) reduce spacing to 64% of 9.1 m (5.8 m) in the affected area to ensure detectors are positioned to intercept rising smoke before it can bypass the soffit. The 0.4 m depth is not the critical dimension; the 1.2 m horizontal distance from detector to soffit edge is what matters per the code.",
+        "takeaway": "Ceiling obstruction rule (NFPA 72 Section 17.7.5.1): (1) Any obstruction >0.1 m deep extending >1.2 m from detector creates a dead space requiring coverage. (2) Correct by: placing detectors in the pocket (below soffit edge), or reducing spacing to 5.8 m (64%) in affected area. (3) Applies to all obstructions: beams, soffits, HVAC ducts, pendant lights. (4) Verify floor plans during design; identify all architectural/structural elements that project below the structural ceiling. (5) Mark on fire alarm design drawing, include in spacing calculations. (6) BFP inspectors check for compliance; coordinate with Fire Safety Engineer if obstructions are discovered late in design."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 17.7.5.1 (Smoke Detector Placement Under Structural Members); Section 17.7.4 (Base Spacing)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a14cea8dc0b2f630dce9b9245d6ee7433bce0983361e1f14ecec008e3deb2fd6"
+    },
+    {
+      "question_id": "429e5441-fdc3-4e65-95a3-53d31e13eb6e",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 8-storey mixed-use building (retail + office) in Metro Manila is equipped with a centralized fire alarm control panel (FACP) on the ground floor lobby. The FACP is connected to a central monitoring station (UL-listed, 24/7 staffed) via dedicated leased hardwired trunk line. During a severe fire on Floor 5, the FACP initiates alarm signals, activates voice evacuation, and sends alarm transmission to the central station. The response time from the monitoring station to dispatch firefighters is 3 minutes. Per NFPA 72 Section 10.10.1, what is the maximum acceptable alarm-to-dispatcher transmission latency, and does this design meet it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximum 10 seconds; this design meets the standard because the FACP initiates alarm within 10 seconds of detector activation. Monitoring station transmission latency is not covered by NFPA 72 Section 10.10.1, which focuses on initial alarm activation"
+        },
+        {
+          "id": "b",
+          "text": "Maximum 60 seconds for initial alarm signal transmission to monitoring station per NFPA 72 Section 10.10.1; this design meets the standard if the hardwired trunk line transmits within 60 seconds. The 3-minute dispatcher response time is a monitoring station procedural standard, not a fire alarm code requirement"
+        },
+        {
+          "id": "c",
+          "text": "Maximum 30 seconds; this design likely violates the standard if the hardwired transmission requires cable delays exceeding 30 seconds, though 3-minute dispatcher response is acceptable per monitoring station SLA, which is a separate agreement"
+        },
+        {
+          "id": "d",
+          "text": "No specified maximum; NFPA 72 does not define latency standards for monitoring station transmission. The 3-minute response time is managed by the monitoring station's operational protocols, not by fire alarm code, which focuses on system reliability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "NFPA 72 Section 10.10.1 specifies ALARM SOUNDING (10 seconds), not monitoring transmission. Monitoring transmission has a separate standard (60 seconds per monitoring station SLA and UL 621).",
+        "c": "30 seconds is not a standard specified in NFPA 72 for monitoring transmission. The 60-second window (per monitoring station service contracts and UL 621) is the industry standard.",
+        "d": "NFPA 72 DOES specify monitoring transmission latency standards (60 seconds initial signal per UL 621). Monitoring station transmission is NOT left undefined; it is contractually binding per monitoring station SLA and audited by UL.",
+        "correct": "NFPA 72 Section 10.10.1 specifies that audible alarm signals must sound at the building within 10 seconds of alarm initiation. The standard addresses the FACP's responsibility: detect fire, initiate alarm signals (horns, voice evacuation) within 10 seconds. Section 10.10.5 and 10.10.8 address monitoring station transmission latency: initial alarm transmission to the central station should occur within 60 seconds of alarm initiation per the monitoring station's service agreement and UL 621 (Central Station Service). This design (hardwired, dedicated trunk) is specifically engineered to meet the 60-second transmission requirement. The 3-minute dispatcher response is part of the monitoring station's operational SLA (Service Level Agreement) and is separate from fire alarm code. RA 9514 Section 1006.3.5 requires monitoring station connection for buildings >=4 storeys; the 60-second transmission window aligns with emergency dispatch best practices.",
+        "takeaway": "Monitoring transmission standards (NFPA 72 Section 10.10.5-8, RA 9514 Section 1006.3.5): (1) Alarm sounding at building: within 10 seconds (Section 10.10.1). (2) Initial alarm transmission to central station: within 60 seconds per UL 621 monitoring station standard. (3) Dedicated hardwired trunk line: meets 60-second requirement reliably. (4) Cellular backup: acceptable per RA 9514 but requires verification of network latency (2G/3G may exceed 60 seconds; 4G/5G preferred). (5) During BFP inspection, verify monitoring station SLA and transmission test logs documenting compliance. (6) Buildings in remote areas: ensure monitoring station connectivity before occupancy."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 10.10.1 (Alarm Initiation and Notification), Section 10.10.5 (Monitoring Station Transmission); RA 9514 Section 1006.3.5 (Central Station Requirements)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:231150ecbfe8d8d5ed2ef402936ef77901dac43b4368d6c3e71061b32ba29518"
+    },
+    {
+      "question_id": "9c375d9c-746f-4134-bbf4-de6ffdb57525",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A Fire Alarm Control Panel (FACP) in a 10-storey residential building is designed with addressable loop capacity (512 devices per loop, 2 loops available = 1,024 address capacity). The building has 480 devices (detectors, pull stations, notification appliances). The engineer specifies dual 24V battery backup with shared charger. Dual batteries provide reliability advantages, but NFPA 72 10.5.6 requires only sufficient capacity (24h standby + 5min alarm), achievable with single or dual batteries.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dual batteries reduce the weight of individual batteries, making them easier to install and replace during maintenance, which is crucial for high-rise buildings"
+        },
+        {
+          "id": "b",
+          "text": "Dual batteries allow one to serve standby function while the second powers alarm circuits, enabling the FACP to operate continuously through extended power outages without switching delays"
+        },
+        {
+          "id": "c",
+          "text": "Dual batteries meet RA 9514 requirements for geographic redundancy in buildings taller than 21 m, protecting against single-point failure in power distribution systems"
+        },
+        {
+          "id": "d",
+          "text": "Dual batteries are not necessary; a single 150 Ah battery can support all requirements for a 10-storey building per NFPA 72 specifications, simplifying maintenance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Battery weight reduction is a minor operational consideration, not a code driver. NFPA 72 Section 10.5.6 focuses on capacity and performance, not installation convenience.",
+        "c": "RA 9514 IRR does not mandate geographic redundancy via dual batteries; it requires backup power per NFPA 72 Section 10.5.6. Dual batteries improve reliability but are not a RA 9514-specific mandate.",
+        "d": "A single 150 Ah battery can theoretically support a 10-storey building (e.g., 5 A x 24 h + 12 A x 0.083 h = 120 + 1 = 121 Ah). However, practical considerations (battery aging, temperature derating, growth margin) make dual systems more robust. Many engineers specify single large batteries instead of dual, both approaches are code-compliant if capacity is verified.",
+        "correct": "NFPA 72 Section 10.5.6 requires stored energy to support 24 hours of normal standby operation plus 5 minutes of full alarm operation. A 10-storey building with 480 devices typically requires 4-6 A standby (24 h = 96-144 Ah) plus 10-15 A alarm (5 min = 0.8-1.25 Ah). A single battery becomes a constraint. Dual batteries allow division of load: one dedicated to standby, one to alarm circuits, eliminating switching transients and ensuring continuous operation. Some systems use a single large battery, but dual smaller batteries are preferred for reliability and maintenance access.",
+        "takeaway": "FACP battery sizing (NFPA 72 Section 10.5.6): (Standby A x 24 h) + (Alarm A x 5 min/60). For 10-storey buildings: typically 100-150 Ah minimum. Dual batteries vs. single large battery: both approaches are acceptable if capacity is verified. Dual systems provide load distribution and maintenance flexibility. Always round UP to next standard size. Specify battery type (lead-acid, LiFePO4) per building requirements."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 10.5.6 (Stored Energy (Backup) Power Supply); Section 10.5.2 (FACP Power Input)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3c1fc24ee8355295f12df1e0ffdef244d17dfdcc68a3d07000253dcf7e2eea85"
+    },
+    {
+      "question_id": "a25309f7-0188-46ee-9900-c2a414d9576c",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A fire safety engineer compares three detector technologies for a data center: ionization smoke, photoelectric smoke, and gas detectors (CO-based). The engineer must select one primary technology. Which technology and justification is most appropriate per NFPA 72 and RA 9514 for minimizing false alarms in a data center with precision cooling systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ionization smoke detectors; they respond faster to flaming fires from electrical equipment overheating, but may be prone to false alarms due to dust"
+        },
+        {
+          "id": "b",
+          "text": "Photoelectric smoke detectors; they respond better to smoldering fires and are less sensitive to dust/aerosols from cooling air, aligning with RA 9514 preference for non-radioactive detection"
+        },
+        {
+          "id": "c",
+          "text": "Gas detectors (CO-based); they detect hazardous gases before visible smoke, providing earlier warning in sealed data center spaces, though they may not detect all fire types"
+        },
+        {
+          "id": "d",
+          "text": "Dual ionization/photoelectric hybrid; the combination provides both flaming and smoldering fire coverage without single-technology limitations, though installation costs may be higher"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ionization detectors respond to flaming fires but are highly susceptible to false alarms from dust and non-fire aerosols in data center cooling environments, defeating the goal of minimizing alarms.",
+        "c": "Gas detectors are supplementary to smoke detection per NFPA 72 and RA 9514, not primary. Gas (CO) may not provide life-safety early warning in all fire scenarios; gas sensors have limited geographic coverage in large data centers.",
+        "d": "Hybrid dual-technology detectors (photo + ionization in one housing) do not solve the false-alarm problem; the ionization chamber still triggers on aerosols. Hybrid systems are rare and cost-prohibitive for large deployments.",
+        "correct": "Photoelectric detectors use light scattering, making them less sensitive to dust and aerosols from data center cooling systems compared to ionization detectors. Photoelectric detectors are preferred in practice per NFPA 72 for environments like data centers due to lower false-alarm risk from dust/aerosols. Data centers generate high-velocity air flows that ionization detectors easily trigger. Photoelectric is the modern standard per NFPA 72 Section 17.7.3.2.",
+        "takeaway": "Data centers: photoelectric smoke detectors per NFPA 72 Section 17.7.3 and RA 9514 preference. Supplement with analog-addressable systems if early detection is critical (allowing trend analysis to suppress nuisance alarms). Gas detection is complementary only, not primary."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 17.7.3.2 (Smoke Detector Technology Selection); RA 9514 IRR Section 1006.3.1 (Detection Technologies)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4722edf2f16f13da7e8c5d62c781de43a9cef9aa4e188d0c6f86824fcf36c4c5"
+    },
+    {
+      "question_id": "a8ee465a-895a-4301-a225-118ed93e5f70",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A hospital ICU in the Philippines has installed ionization smoke detectors in patient rooms despite the facility's preference for photoelectric detectors. The facility engineer discovers higher nuisance alarm rates. Which characteristic of ionization detectors best explains this issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ionization detectors are highly sensitive to smoldering fires from upholstered furniture and electronics, causing false alarms in rooms with fabric-covered equipment, which is common in hospital settings"
+        },
+        {
+          "id": "b",
+          "text": "Ionization detectors respond primarily to flaming fires but trigger from non-fire aerosols (dust, moisture) common in hospital environments, resulting in nuisance alarms"
+        },
+        {
+          "id": "c",
+          "text": "Ionization detectors require more frequent battery replacement than photoelectric detectors, leading to weak signals and potential false alarms"
+        },
+        {
+          "id": "d",
+          "text": "Ionization detectors cannot distinguish between real fires and cooking odors, unlike photoelectric detectors, which are more selective"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ionization detectors are LESS sensitive to smoldering fires (e.g., upholstery, electronics), not more sensitive. Photoelectric detectors are actually better at detecting slow smoldering fires.",
+        "c": "Both detector types use batteries; ionization does not require more frequent battery replacement than photoelectric. No substantive difference in battery maintenance.",
+        "d": "Neither ionization nor photoelectric detectors are designed for cooking odor detection; cooking areas should use heat detectors instead per NFPA 72. The question premise is incorrect.",
+        "correct": "Ionization detectors ionize air via radioactive source; smoke particles reduce current and trigger alarm. However, non-fire aerosols (dust, humidity, disinfectant sprays common in hospitals) can also reduce ionization current, causing false alarms. Photoelectric detectors use light scattering, which is less sensitive to dust. Hospital environments--with frequent cleaning, aerosol medications, and air circulation--make ionization detectors problematic.",
+        "takeaway": "Ionization detectors: better for flaming fires, poor in dusty/humid environments, high false-alarm risk in hospitals, kitchens. Photoelectric detectors: better for smoldering fires, less sensitive to dust/humidity, preferred per RA 9514. Modern buildings should use photoelectric or analog-addressable systems for reliability."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 17.7.3.2 (Ionization vs. Photoelectric Characteristics)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b33862d059c671845c01713c5e5e785b97d3add37c16f9dfacfce02decde8d7a"
+    },
+    {
+      "question_id": "bf2da2fd-7d67-4887-906b-7a7fe88dc832",
+      "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+      "topic_id": "48f66a29-2ce6-42d3-b6fa-81eb0c07284c",
+      "text": "A 15-storey mixed-use building (retail floors 1-2, office floors 3-10, residential floors 11-15) in Metro Manila requires manual pull stations on each floor. The architect proposes 1 pull station per floor, each located at the primary stairwell entry. The fire safety engineer must evaluate this design against RA 9514 and NFPA 72. What is the critical design shortfall, and how many additional stations are required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The design is compliant; one pull station per floor at the primary stairwell meets RA 9514 and NFPA 72 Section 17.14.2.2 minimum requirements, assuming no additional requirements"
+        },
+        {
+          "id": "b",
+          "text": "Retail floors (1-2) have large floor areas (~1,500 m2 each) exceeding the 60 m maximum travel distance from any occupiable space to a pull station; each retail floor requires a minimum of 2 stations (opposite ends). Office/residential floors with <1,500 m2 may use 1 station. Minimum: 2 additional stations for floors 1-2"
+        },
+        {
+          "id": "c",
+          "text": "All residential floors (11-15) require dual pull stations per occupancy; office and retail can remain at single station. Minimum: 4 additional stations needed to meet safety standards"
+        },
+        {
+          "id": "d",
+          "text": "Pull stations must be on exterior walls per NFPA 72 Section 17.14.2; all current locations are at interior stairwells. Complete redesign needed; 2-3 stations per floor minimum to ensure compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "One station per floor may not meet the 60 m travel distance requirement in large retail spaces. Compliant design must verify all occupiable spaces can reach a station within 60 m; most retail floors exceed this threshold with single central station.",
+        "c": "Occupancy group (residential vs. office) does not itself determine pull station quantity per NFPA 72; floor area and geometry do. RA 9514 requires 2+ stations only on floors >1,000 m2 per the IRR guidance.",
+        "d": "Pull stations are not required to be on exterior walls per NFPA 72 Section 17.14; interior stairwell locations are acceptable and common. The standard specifies mounting height (1.07-1.22 m (42-48 inches) per NFPA 72 Section 17.15) and visibility (reflective label), not wall location.",
+        "correct": "NFPA 72 Section 17.14.2.2 requires manual pull stations within 60 m (200 ft) maximum travel distance from any occupiable space. Retail floors in mixed-use buildings typically span 1,500-2,000 m2; a single stairwell-entry station may serve 60 m radius coverage, leaving portions of large retail floors unserved. Floors 1-2 (retail) require minimum 2 stations per floor (opposite ends). Floors 3-10 (office, typically 800-1,000 m2) and 11-15 (residential, ~500 m2 per floor) can function with 1 station per floor if stairwell is centrally located. Total addition: 2 stations x 2 floors (F1-F2) = 2 additional stations minimum.",
+        "takeaway": "Manual pull station placement (NFPA 72 Section 17.14.2.2, RA 9514 IRR): (1) Max 60 m travel distance from any occupiable space. (2) Typically 1 station for floors <1,000 m2. (3) 2+ stations for floors >1,000 m2 (opposite ends recommended). (4) Height 1.07-1.22 m (42-48 inches) per NFPA 72 Section 17.15. (5) In mixed-use buildings, evaluate each floor separately; large retail requires more stations than compact offices. Use floor plan geometry and travel distance analysis during design."
+      },
+      "explanation": null,
+      "code_citation": "NFPA 72 Section 17.14.2.2 (Manual Fire Alarm Initiation Device Placement); RA 9514 IRR Section 1006.3.5(a)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-04-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:74b65e08ad664b82c0910467b6c4d7199a8543d6200cb1e6a2f9fe471d120b16"
+    }
+  ]
+}

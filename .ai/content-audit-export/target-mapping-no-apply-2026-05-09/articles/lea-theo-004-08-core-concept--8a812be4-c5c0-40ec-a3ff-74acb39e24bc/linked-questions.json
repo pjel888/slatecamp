@@ -1,0 +1,580 @@
+{
+  "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:c876aa9574761cefdfad61e1e22f249ea19eaabe206d576029afca21faefb3f5",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "0fe73a9c-1e6c-4e6a-b901-27cbb2f10bad",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "For an east-facing facade in Manila, calculate the required overhang depth at 8am during summer solstice (altitude 28°) versus winter solstice (altitude likely lower). Why is this inconsistency problematic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Summer 8am overhang = 1.5m × tan(28°) = 0.8m. Winter 8am lower altitude requires deeper overhang. Single fixed overhang cannot satisfy both seasons; seasonal adjustment or adjustable louvers become necessary"
+        },
+        {
+          "id": "b",
+          "text": "Overhang depth is irrelevant for east facades; vertical fins suffice, as they provide adequate shading throughout the day"
+        },
+        {
+          "id": "c",
+          "text": "East facade shading is unimportant compared to west facade, where afternoon sun is more intense and requires more attention"
+        },
+        {
+          "id": "d",
+          "text": "Summer and winter 8am altitudes are identical; inconsistency does not exist, making the calculation unnecessary"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Overhangs are critical for east facades (600 W/m² morning exposure); vertical fins alone are insufficient.",
+        "c": "East facade early morning exposure is significant; proper shading reduces occupant discomfort and cooling load substantially.",
+        "d": "Seasonal declination creates measurable altitude variation; design compromise is real.",
+        "correct": "This tests understanding that seasonal variation, even modest in tropics, creates overhang design conflict. Summer 8am (28° altitude) requires 0.8m overhang; winter 8am has even lower altitude (perhaps 15–20°), requiring 1.5–2.0m. A fixed overhang at 0.8m leaves winter morning sun unshaded; 2.0m overhang blocks excessive summer morning light. This is why louvers angled 60–70° (variable shading) rather than fixed geometry for east facades.",
+        "takeaway": "This is why louvers angled 60–70° (variable shading) rather than fixed geometry for east facades."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a9730f685d429449d06a0a57dc3a578ba823811d2f77ac3792d6120f9e1b7575"
+    },
+    {
+      "question_id": "0db01108-310c-47c0-ae63-62beb00f3393",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "Create a solar path diagram overlay for Manila (14.6°N) showing critical periods when each facade (N/S/E/W) receives direct solar radiation. Which facade requires the most aggressive shading strategy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All facades receive equal solar exposure throughout the year; shading can be uniform across all orientations without differentiation for azimuth or altitude angle"
+        },
+        {
+          "id": "b",
+          "text": "North facade: Direct sun only sunrise/sunset (minimal); South facade: Direct sun 3pm–6pm year-round, always high-angle; East facade: Direct sun 6am–9am year-round; West facade: Direct sun 12pm–6pm year-round with most problematic afternoon heat. West requires most aggressive shading (vertical fins 2–2.5m, louvers, or exterior screens)"
+        },
+        {
+          "id": "c",
+          "text": "South facade is most problematic in tropical latitudes (like temperate zones) because the sun tracks predominantly along the southern sky path, requiring deep horizontal overhangs exceeding 3 meters"
+        },
+        {
+          "id": "d",
+          "text": "East facade is most critical because morning sun creates occupant discomfort early in work day, requiring full-height glazing treatments and automated interior blinds to maintain visual comfort"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Facade exposure varies dramatically by orientation; uniform shading is inefficient.",
+        "c": "In Philippine tropics, south facade receives high-angle sun that is less problematic than low-angle afternoon west exposure.",
+        "d": "While morning discomfort matters, afternoon (3pm–6pm) peak heat gain is thermally more significant; west is the critical facade.",
+        "correct": "The diagram analysis in North facade: Direct sun only during equinox sunrise/sunset (minimal penetration). East facade: Direct sun 6:00 AM–9:00 AM year-round... South facade: Direct sun 3:00 PM–6:00 PM year-round; always high-angle (>53°)... West facade: Direct sun 12:00 PM–6:00 PM year-round; most problematic for heat gain.' West windows require aggressive shading: 2.0–2.5 meter overhangs, exterior louvers, or vertical fins.' This is the ALE-tested diagram analysis.",
+        "takeaway": "West facade: Direct sun 12:00 PM–6:00 PM year-round; most problematic for heat gain.' West windows require aggressive shading: 2.0–2.5 meter overhangs, exterior louvers, or vertical fins.' This is the ALE-tested diagram analysis."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:397001edea674dcb2de6bbf2e85fa171cd13c4a43b73324937c860864d5a076a"
+    },
+    {
+      "question_id": "9cba8f84-56b9-4c30-a28b-e716c7b3211d",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "Compare how a Coronas Type I building and a Type II building would differ in orientation strategy, given their distinct seasonal characteristics.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Type I allows fixed orientation; Type II requires seasonal adjustability to optimize for varying solar angles"
+        },
+        {
+          "id": "b",
+          "text": "Type II is cooler; orientation is less critical due to consistent cloud cover and lower solar gain"
+        },
+        {
+          "id": "c",
+          "text": "Type I (pronounced dry/wet seasons, regional wind reversal): Accept 10–15° east deviation to capture SW monsoon during hot May–Oct; solar shading critical Apr–May peak. Type II (year-round wet, weak wind): Align closer to true cardinal (0–5° deviation); year-round cloud cover reduces solar intensity, but shading must operate continuously for perpetual exposure without seasonal relief"
+        },
+        {
+          "id": "d",
+          "text": "Both regions use identical orientation strategies; Coronas type does not affect solar design, making it a non-factor in architectural planning"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Neither type requires seasonal adjustability; both benefit from fixed cardinal-aligned orientation optimized for their respective climate patterns.",
+        "b": "Type II may be slightly cooler (perpetual cloud cover), but this does not reduce shading requirements; year-round exposure is still demanding.",
+        "d": "Coronas type directly determines optimal orientation deviation; ignoring climate classification produces suboptimal design.",
+        "correct": "Type I climates benefit from 10–15° east deviation to capitalize on afternoon wind patterns during hot season... Type II/IV climates align closer to true cardinal (0–5° deviation) to balance monsoon wind patterns.' This reflects that Type I's strong seasonal variation allows orientation optimization; Type II's perpetual conditions require consistent year-round strategy without seasonal benefit.",
+        "takeaway": "Type II/IV climates align closer to true cardinal (0–5° deviation) to balance monsoon wind patterns.' This reflects that Type I's strong seasonal variation allows orientation optimization; Type II's perpetual conditions require consistent year-round strategy without seasonal benefit."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c9b84bce65c50aa0923b64bf8a94fbc02857ab860dd10f50e9e8a1d1112fc168"
+    },
+    {
+      "question_id": "1aa5f693-63e8-4105-912f-97332da0dd3a",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "For a south-facing window in Batanes (20°N latitude), calculate the required overhang depth at winter solstice noon to prevent direct sun penetration beyond 1 meter into the interior. Window height = 2.5m. Show calculation.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Overhang depth is irrelevant in tropical latitudes; interior penetration is always acceptable, which overlooks specific shading needs"
+        },
+        {
+          "id": "b",
+          "text": "Overhang depth = 2.5m / tan(53.5°) ≈ 1.8m; adequate for winter shading without excessive projection"
+        },
+        {
+          "id": "c",
+          "text": "Batanes latitude 20° requires no shading; winter sun is sufficiently low, which is a misinterpretation of solar angles"
+        },
+        {
+          "id": "d",
+          "text": "Overhang depth = 2.5m × tan(53.5°) ≈ 3.4m; winter sun still penetrates at such steep angle—horizontal louvers angled 60–70° are more practical than massive cantilever"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Interior penetration affects occupant comfort and cooling load; it is not 'acceptable' without design control.",
+        "b": "Calculation is inverted (should be height / tan, not height × tan).",
+        "c": "Batanes winter altitude (53.5°) is still quite steep; significant shading is required.",
+        "correct": "Overhang depth = height / tan(altitude) = 2.5 / tan(53.5°) ≈ 3.4m. This depth is impractical; this is the critical Philippine reality: 'even at noon on the winter solstice, the sun altitude is so high (>59°) that a massive overhang becomes impractical. Instead, horizontal louvers angled 60–70° from horizontal are more effective.' This is a testable calculation + design reasoning question.",
+        "takeaway": "Instead, horizontal louvers angled 60–70° from horizontal are more effective.' This is a testable calculation + design reasoning question."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9df5ef844321147a971da1163c4a56844082cd2d8a27d604043de5e0f7eb8570"
+    },
+    {
+      "question_id": "1e1d8d78-740d-41b1-bf50-d55b37289c4c",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "Why is east-west building elongation (maximizing N-S facade, minimizing E-W facade) the optimal orientation for tropical Coronas Type I climates, despite monsoon winds coming from the southwest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "E-W facade is primary solar liability (600–800 W/m² peak in morning/afternoon). Elongating E-W minimizes this exposure; 20–30% cooling load reduction is achieved. SW monsoon winds can be captured via secondary (well-shaded) facades; solar control is primary in tropical design hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "Monsoon wind direction determines building orientation; solar control is secondary, which may lead to increased cooling loads"
+        },
+        {
+          "id": "c",
+          "text": "North-south elongation is universally optimal regardless of monsoon direction, although it may not always align with local wind patterns"
+        },
+        {
+          "id": "d",
+          "text": "Type I climate has no preferred orientation; random orientation is acceptable, though not energy-efficient"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While monsoon wind matters, solar control is the primary design driver in tropical climates.",
+        "c": "N-S elongation would maximize E-W exposure; it is suboptimal compared to E-W elongation.",
+        "d": "Coronas type directly influences optimal orientation; Type I benefits from specific E-W elongation strategy.",
+        "correct": "East-West elongation is preferred: A building stretched east-west presents narrow faces to morning and afternoon sun.' East/west facades have peak solar gain 600–800 W/m² (vs. 300–450 W/m² on N-S). Elongating E-W reduces this liability by 20–30%. Prioritize solar orientation; provide supplementary stack effect and wind-catcher devices to compensate for non-ideal wind exposure.' Solar control hierarchy > wind capture.",
+        "takeaway": "Prioritize solar orientation; provide supplementary stack effect and wind-catcher devices to compensate for non-ideal wind exposure.' Solar control hierarchy > wind capture."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "PH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:27b62648e0c68631d2bc3295ba8cf7dade99fa1350db2643757f3f26c5ba0943"
+    },
+    {
+      "question_id": "a541745f-5193-4d6e-b851-d4e138507398",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "In solar geometry, what is 'solar declination,' and how does it affect Philippine building orientation design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Declination determines wind direction exclusively"
+        },
+        {
+          "id": "b",
+          "text": "Declination is irrelevant to building design"
+        },
+        {
+          "id": "c",
+          "text": "Declination is the angle between magnetic and true north; it affects compass accuracy for orientation"
+        },
+        {
+          "id": "d",
+          "text": "Declination is the angular offset of the sun's apparent path from the celestial equator. Extreme solar declination (summer solstice +23.5°, winter solstice −23.5°) creates the seasonal altitude variation (summer noon 79.5°, winter 59.5° at Manila). Philippine modest declination effect (20° altitude range) vs. temperate extreme (44° range) simplifies tropical orientation strategy"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Declination affects solar position; wind is driven by monsoon patterns, not declination.",
+        "b": "Declination directly affects seasonal sun path and overhang design feasibility.",
+        "c": "Declination is solar geometry, not magnetic; compass deviation is separate.",
+        "correct": "Solar declination is the sun's angular position relative to celestial equator; it creates seasonal sun path variation. At Manila (14.6°N), declination range creates 59.5–79.5° altitude swing—modest compared to 40°N (26–70°). This modest variation means tropical design focuses on azimuth, not seasonal altitude optimization.",
+        "takeaway": "This modest variation means tropical design focuses on azimuth, not seasonal altitude optimization."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:71fa0dd41257c9674b04f28e8006f7c2345cd48e05706aa75702e268fa43663b"
+    },
+    {
+      "question_id": "5d7dcf73-5a13-4bad-a3dd-881b31da706f",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "Why is it the case that 'azimuth shading' (considering compass direction) is more critical than overhang depth in Philippine tropical design, contrasting with temperate-zone emphasis on altitude?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Azimuth is irrelevant in tropical zones; altitude alone determines shading, which is a misconception"
+        },
+        {
+          "id": "b",
+          "text": "Tropical high altitude year-round (48–85°) makes altitude variation modest; azimuth (E-W vs. N-S exposure) drives solar gain variation. East facade (6am, 600 W/m²) and west facade (5pm, 800 W/m²) have dramatically different loads despite similar altitudes. Azimuth—not altitude—determines which facade is thermal liability. Temperate zones have extreme altitude swings (winter 26° vs. summer 70°), making altitude primary. Tropics emphasize azimuth"
+        },
+        {
+          "id": "c",
+          "text": "Tropical latitudes eliminate the distinction between altitude and azimuth effects, which simplifies design considerations"
+        },
+        {
+          "id": "d",
+          "text": "Altitude and azimuth are equally important; distinction is arbitrary, which is a common misunderstanding"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Altitude does matter, but azimuth (facade orientation) is the primary design limiter in tropics.",
+        "c": "Altitude and azimuth are always distinct; latitude determines which is primary constraint.",
+        "d": "Hierarchy differs by latitude; distinction is not arbitrary.",
+        "correct": "This captures the fundamental difference: Tropical latitudes experience modest altitude variation (year-round high sun); azimuth variation (E-W vs. N-S compass direction) creates the primary solar load differentiation. East facades require 2–3 meter overhangs... West facades need 3–4 meter elements...' Identical altitude but opposite facades demand different strategies. Temperate zones reverse this priority (altitude dominates; azimuth secondary).",
+        "takeaway": "Temperate zones reverse this priority (altitude dominates; azimuth secondary)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:244ae5deb0617dda2df499fb6c60c9fa9c60921730339d755dd8ed0a63e13595"
+    },
+    {
+      "question_id": "9486a5c8-3cf7-4f0d-bb8b-8c610c6d35fd",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "How should a north-facing window design in Manila incorporate daylighting strategy while minimizing solar heat gain, given that north facades receive minimal direct sun?",
+      "options": [
+        {
+          "id": "a",
+          "text": "North windows require heavy shading identical to east/west; orientation is irrelevant, which contradicts the typical solar path analysis"
+        },
+        {
+          "id": "b",
+          "text": "North windows can be large and unshaded (minimal solar heat gain). Strategy: maximize window area (30–40% of facade) for daylighting and ventilation benefit; integrate light shelves for deep-penetration illumination (12–15m). Heat gain is negligible, allowing full-height glazing without energy penalty. This is the recommended tropical strategy for north facades"
+        },
+        {
+          "id": "c",
+          "text": "North facades provide no daylighting benefit; artificial lighting is necessary, which ignores the potential for natural light even in indirect conditions"
+        },
+        {
+          "id": "d",
+          "text": "North and south facades require identical shading due to high tropical sun altitude, which overlooks the specific solar exposure differences between these orientations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "North facades are fundamentally different from E-W; they should maximize openings, not shade.",
+        "c": "Diffuse north light is sufficient for daylighting in tropical climates; electric lighting can be minimized (BERDE daylighting autonomy ≥55%).",
+        "d": "North and south facades are opposites in tropical design; south requires some shading (high-angle sun), north requires generous opening.",
+        "correct": "North facade windows can be large and unshaded (minimal solar heat gain).' This is a key tropical advantage: high-altitude sun means north faces receive only diffuse illumination, permitting generous glazing for daylighting and ventilation without cooling penalty. Light shelves extend illumination depth, supporting BERDE daylighting credits.",
+        "takeaway": "Light shelves extend illumination depth, supporting BERDE daylighting credits."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f37079ac9ecdb9593e88a63ea6667373da0ad7f47762af69109336fdd8f9c1e4"
+    },
+    {
+      "question_id": "8af4b46d-e0df-404a-933d-91d555cdffcb",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "Contrast the solar geometry design priorities between a Davao building (near equator, ~7°N) and a Batanes building (northern Philippines, 20°N). Which latitude requires more emphasis on seasonal overhang adjustment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Davao and Batanes require identical solar design; latitude variation is insignificant, making design adjustments unnecessary"
+        },
+        {
+          "id": "b",
+          "text": "Davao (7°N): Nearly perpendicular summer sun (85° altitude), minimal seasonal variation, year-round consistent high-altitude exposure. Overhang design is constant year-round. Batanes (20°N): 20° altitude seasonal range (summer 73°, winter 53.5°), greater seasonal variation. Overhang design requires seasonal compromise or louver adjustment. Batanes has more pronounced seasonal effect"
+        },
+        {
+          "id": "c",
+          "text": "Davao requires deeper overhangs than Batanes due to proximity to equator, which affects solar angles and shading requirements"
+        },
+        {
+          "id": "d",
+          "text": "Batanes latitude is identical to Manila; no distinction from established Manila design, thus requiring no special adjustments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Latitude directly affects seasonal altitude range; design priorities differ.",
+        "c": "Lower latitude (near equator) creates MORE consistent year-round angles, not deeper-overhang need.",
+        "d": "Batanes (20°N) differs from Manila (14.6°N) by ~5.4° latitude, creating noticeable seasonal amplitude difference.",
+        "correct": "Evidence shows that Davao (near-equatorial, ~7°N) has 'nearly vertical summer sun' and 'minimal seasonal variation,' creating consistent design conditions. Batanes (20°N) experiences 'greater seasonal range than Manila,' creating 20° altitude difference between summer and winter. This means Batanes requires more thoughtful seasonal compromise (adjustable louvers become more valuable than in Davao's nearly-constant-altitude regime).",
+        "takeaway": "This means Batanes requires more thoughtful seasonal compromise (adjustable louvers become more valuable than in Davao's nearly-constant-altitude regime)."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:833d34b3031ad01c155cb822bc8d9e3f610f0b775e9de10d7d9fa4d871e3c813"
+    },
+    {
+      "question_id": "944592b3-28c3-45ef-9464-979a95bc45cb",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "Explain the relationship between solar altitude calculation (tangent method), overhang depth requirement, and practical constraints that force compromise between winter shading depth and structural feasibility in Philippine tropical design.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Overhang depth is calculated precisely via tangent; practicality is irrelevant, as theoretical calculations take precedence over real-world constraints"
+        },
+        {
+          "id": "b",
+          "text": "Calculation (depth = height / tan(altitude)) often yields impractical depths (3–4m). Tropical high-altitude winter sun eliminates the winter-heating benefit that justifies deep overhangs in temperate zones. Compromise: shallow 0.8–1.5m overhangs + angled louvers (60–70°) + vertical fins, providing seasonal performance balance without structural over-specification"
+        },
+        {
+          "id": "c",
+          "text": "Tropical buildings should ignore overhang design entirely; ventilation is sole cooling mechanism, as passive cooling strategies are more effective"
+        },
+        {
+          "id": "d",
+          "text": "Calculation is too complex for tropical design; prescriptive rules suffice, allowing for simplified design processes without detailed calculations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Calculations inform but do not dictate final design; practicality is paramount.",
+        "c": "Overhang design is essential for reducing cooling load 30–50%; ventilation and shading work synergistically.",
+        "d": "Calculation is feasible and informs design; it should not be abandoned.",
+        "correct": "This tests understanding of design reality vs. theoretical calculation. Calculation yields impractical depths... Instead, horizontal louver angles (60–70° from horizontal) are more effective...' Practical compromise combines shallow overhangs, louvers, and fins to achieve seasonal performance (summer shading + winter diffuse light) without massive cantilevers. This is the tested design judgment—not just calculation, but application.",
+        "takeaway": "This is the tested design judgment—not just calculation, but application."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd70894a320a489457c88d02ede442505d1ae54a495ae6e0860f453a45689b3b"
+    },
+    {
+      "question_id": "dc6f5231-c321-44f5-9847-2ced45915217",
+      "article_id": "8a812be4-c5c0-40ec-a3ff-74acb39e24bc",
+      "topic_id": "01dc4953-eef6-4c70-8114-436d1d8f9121",
+      "text": "What is the critical distinction between Philippine tropical solar geometry (5°N–20°N) and temperate-zone solar geometry (40°N) that affects overhang design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Tropical latitudes are closer to equator, so they never need sun shading, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Higher latitudes (40°N) experience more extreme winter sun, requiring deeper Philippine overhangs, contrary to typical design practices"
+        },
+        {
+          "id": "c",
+          "text": "Philippines winter noon solar altitude (59.5° at 14.6°N) is more than double temperate winter (26° at 40°N). Tropical winter sun is still steep, eliminating winter heating benefit logic and requiring different overhang geometry"
+        },
+        {
+          "id": "d",
+          "text": "Both latitudes receive identical solar angles; overhang design is universal, which oversimplifies the complexity of solar geometry"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While closer to equator, tropics still need sun shading; the issue is high sun angle year-round, not absence of shading need.",
+        "b": "This reverses reality; higher latitudes have lower winter sun angles, making them require deeper overhangs—the opposite of tropical logic.",
+        "d": "Latitudes produce dramatically different solar paths; overhang design is latitude-specific.",
+        "correct": "At 40°N (New York), winter noon altitude = 26°; at 14.6°N (Manila), winter noon altitude = 59.5°—more than double.' This means Philippine buildings never require deep cantilever overhangs for winter heating gain (unnecessary in tropics); instead, high-angle sun dominates year-round, requiring shallower, more efficient shading geometry.",
+        "takeaway": "At 40°N (New York), winter noon altitude = 26°; at 14.6°N (Manila), winter noon altitude = 59.5°—more than double.' This means Philippine buildings never require deep cantilever overhangs for winter heating gain (unnecessary in tropics); instead, high-angle sun dominates year-round, requiring shallower, more efficient shading geometry."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-004-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.791916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7194b5c840ed023520a3a4087029f1cdef275feca2d58be392790008bbb409b6"
+    }
+  ]
+}

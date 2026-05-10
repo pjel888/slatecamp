@@ -1,0 +1,93 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "05-vitruvius-principles-and-departments",
+  "title": "Vitruvius Principles and Departments",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_RAW_ONLY_THEORY_TEXT",
+  "source_pack_id": null,
+  "document": {
+    "document_id": "VITRUVIUS_TEN_BOOKS",
+    "document_code": "Vitruvius",
+    "source_family": "Vitruvius, Ten Books on Architecture, Morris Hicky Morgan translation",
+    "document_version_date_or_edition": "Morgan translation / historical theory source",
+    "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/002-History/Vitruvius - 10 Books of Architecture.pdf",
+    "sha256": "e63f78260563ae36c5f1f85a07371df3d5740dfb13f5fc77453d88632238e020",
+    "pdf_page_count": 376,
+    "source_hierarchy_tier": 1
+  },
+  "claims": [
+    {
+      "claim_id": "vitruvius-c1",
+      "claim_text": "Architecture depends on Order, Arrangement, Eurythmy, Symmetry, Propriety, and Economy.",
+      "claim_class": "THEORY_CONCEPT",
+      "article_location": "Principles list",
+      "locator": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF pp.33-36",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": true,
+        "by": "hermes_pymupdf_rendered_page_visual_check_and_llm_council",
+        "date": "2026-05-09T07:39:33Z",
+        "evidence_file": "ocr-visual-evidence.generated/ocr-text-extraction-resolution.generated.md"
+      },
+      "conflict_class": "translation/edition must be declared when used for theory claims",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "vitruvius-principles-q1"
+      ],
+      "notes": "OCR/text-extraction issue resolved for calibration; manual licensed-human SME still required before publication.",
+      "sme_notes": "LLM council approved OCR promotion after PyMuPDF extraction and rendered-page visual check; citation now declares Morgan translation/edition boundary.",
+      "ocr_resolution_evidence": "ocr-visual-evidence.generated/ocr-text-extraction-resolution.generated.md#vitruvius-c1--05-vitruvius-principles-and-departments"
+    },
+    {
+      "claim_id": "vitruvius-c2",
+      "claim_text": "Architecture consists of three departments: building, dialling, and mechanics.",
+      "claim_class": "THEORY_CONCEPT",
+      "article_location": "Departments list",
+      "locator": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter III, PDF p.36",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "translation/edition must be declared when used for theory claims",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "vitruvius-departments-q2",
+        "vitruvius-economy-q3"
+      ],
+      "notes": "",
+      "sme_notes": "Translation/edition declared for theory citation consistency."
+    },
+    {
+      "claim_id": "vitruvius-c3",
+      "claim_text": "For exam category distinction, do not mix principles with departments.",
+      "claim_class": "EXAM_STRATEGY",
+      "article_location": "Board shortcut",
+      "locator": "n/a",
+      "extraction_status": "NOT_SOURCE_REQUIRED",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "translation/edition must be declared when used for theory claims",
+      "status": "EXAM_STRATEGY_NO_SOURCE_NEEDED",
+      "linked_question_ids": [],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "llm_council_complete_for_calibration",
+    "reviewer_id": "llm_council_claude_opencode_commandcode",
+    "date": "2026-05-09T07:39:33Z",
+    "notes": "LLM council SME review complete for calibration artifacts. Direct publication remains held pending licensed-human SME clearance, source/provenance reconciliation, and roundtrip conversion.",
+    "council_review_files": [
+      "council-reviews/2026-05-09-sme-risk-review/01-claude-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/02-opencode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
+    ],
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval."
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "01-bp344-accessible-ramp-geometry",
+  "title": "BP 344 Accessible Ramp Geometry",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "OFFICIAL_REMOTE_VERIFIED_LOCAL_HASH_RECONCILED",
+  "source_pack_id": "source-pack-bp-344-2024-revised-irr",
+  "document": {
+    "document_id": "BP344_2024_IRR",
+    "document_code": "BP 344",
+    "source_family": "BP 344 2024 Revised IRR",
+    "document_version_date_or_edition": "2024 Revised IRR",
+    "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+    "sha256": "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+    "pdf_page_count": 78,
+    "source_hierarchy_tier": 1
+  },
+  "claims": [
+    {
+      "claim_id": "bp344-ramp-c1",
+      "claim_text": "Accessible ramps have minimum clear width 1200 mm and general gradient not steeper than 1:20.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "The rule that decides the answer",
+      "locator": "Appendix A / Accessible Ramps / Items 1-2 / PDF p.2",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "bp344-ramp-q1",
+        "bp344-ramp-q2"
+      ],
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "bp344-ramp-c2",
+      "claim_text": "A 1:15 accessible ramp row permits 10.50 m maximum length, 700 mm maximum rise, and 10 m landing interval.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "How the table is tested",
+      "locator": "Appendix A / Accessible Ramps / Table A.1.1 / PDF p.2",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "bp344-ramp-q3"
+      ],
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "bp344-ramp-c3",
+      "claim_text": "Accessible ramps longer than 10.50 m require intermediate landings at least 1800 mm long.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "How the table is tested",
+      "locator": "Appendix A / Accessible Ramps / Item 10 / PDF p.2",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "bp344-ramp-q3"
+      ],
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "bp344-ramp-c4",
+      "claim_text": "Handrails are required for accessible ramps with changes in grade higher than 170 mm and installed at 900 mm and 700 mm.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "Handrail trap",
+      "locator": "Appendix A / Handrails and Grab Bars / PDF p.7",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
+      "status": "SUPPORTED",
+      "linked_question_ids": [],
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "bp344-ramp-c5",
+      "claim_text": "For exam strategy, check width, slope, landing trigger, then handrails.",
+      "claim_class": "EXAM_STRATEGY",
+      "article_location": "Board shortcut",
+      "locator": "n/a",
+      "extraction_status": "NOT_SOURCE_REQUIRED",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch",
+      "status": "EXAM_STRATEGY_NO_SOURCE_NEEDED",
+      "linked_question_ids": [],
+      "notes": ""
+    }
+  ],
+  "sme_review": {
+    "status": "llm_council_complete_for_calibration",
+    "reviewer_id": "llm_council_claude_opencode_commandcode",
+    "date": "2026-05-09T07:39:33Z",
+    "notes": "LLM council SME review complete for calibration artifacts. Direct publication remains held pending licensed-human SME clearance, source/provenance reconciliation, and roundtrip conversion.",
+    "council_review_files": [
+      "council-reviews/2026-05-09-sme-risk-review/01-claude-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/02-opencode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
+    ],
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval.",
+    "source_reconciliation_closeout_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_notes": "Official/cited source anchors repaired for calibration; direct publication remains held for licensed-human SME clearance and roundtrip conversion."
+  }
+}

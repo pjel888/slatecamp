@@ -1,0 +1,976 @@
+{
+  "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a5f4c4413d62fd2eaa6918a6ac070f15d27eeb8b9becfd58a094958e04d0ecda",
+  "question_count": 22,
+  "questions": [
+    {
+      "question_id": "2e5f3469-ab2f-4025-85f7-9e5a610ade8e",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1301, what is the minimum number of hoisting ropes required for a traction-type elevator?",
+      "options": [
+        {
+          "id": "em-006-a",
+          "text": "2 ropes"
+        },
+        {
+          "id": "em-006-b",
+          "text": "3 ropes"
+        },
+        {
+          "id": "em-006-c",
+          "text": "4 ropes"
+        },
+        {
+          "id": "em-006-d",
+          "text": "6 ropes"
+        }
+      ],
+      "correct_option_id": "em-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Traction elevators are more common in modern high-rise buildings because they offer higher speeds and are more energy-efficient than drum-type elevators. The different rope requirements reflect the different mechanical principles: traction relies on friction (and thus needs more ropes for redundancy), while drum elevators use direct winding (requiring fewer ropes but with a safety factor).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f338df11d15fb43a4632b1aefe9119e4ee41514232093f93d8e8122cea35a67e"
+    },
+    {
+      "question_id": "5ab0434a-d9ae-4db3-85c7-dce2bf6a6e21",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1301, for buildings exceeding 15.00 m in height, what horizontal clear zone must overhead electrical lines maintain adjacent to the building?",
+      "options": [
+        {
+          "id": "em-009-a",
+          "text": "1.00 m horizontal clear zone"
+        },
+        {
+          "id": "em-009-b",
+          "text": "1.80 m horizontal clear zone"
+        },
+        {
+          "id": "em-009-c",
+          "text": "2.45 m horizontal clear zone"
+        },
+        {
+          "id": "em-009-d",
+          "text": "3.00 m horizontal clear zone"
+        }
+      ],
+      "correct_option_id": "em-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 15.00 m height threshold corresponds approximately to 5 storeys — above this height, fire department ground ladders cannot reach the upper floors, requiring aerial apparatus. The 1.80 m clear zone provides the approach corridor for this apparatus. This provision is distinct from Table XIII.1's voltage-based clearances, which are safety clearances for electrical proximity, not firefighting access.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0eae49cb131b8b0081ef8ec2b6c65d0c0b6495a5ec1d762134869da6abac812a"
+    },
+    {
+      "question_id": "618961b3-ea21-4733-931c-3b5d1f02376b",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1302, a building has 6 elevators. Which of the following hoistway configurations is code-compliant?",
+      "options": [
+        {
+          "id": "em-003-a",
+          "text": "All 6 elevators in a single hoistway"
+        },
+        {
+          "id": "em-003-b",
+          "text": "5 elevators in one hoistway and 1 in a second hoistway"
+        },
+        {
+          "id": "em-003-c",
+          "text": "4 elevators in one hoistway and 2 in a second hoistway"
+        },
+        {
+          "id": "em-003-d",
+          "text": "3 elevators in one hoistway and 3 in a second hoistway"
+        }
+      ],
+      "correct_option_id": "em-003-d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The dual requirements (minimum 2 hoistways for 4+ elevators; max 4 per hoistway) ensure both redundancy and capacity management. The maximum of 4 elevators per hoistway limits the consequences of a hoistway fire or mechanical failure — no single shaft event can disable more than 4 elevators in a building.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:75b395e4f715076456a6644be46a8b0692103123b950a927b4b2ad00635bbd09"
+    },
+    {
+      "question_id": "b532ef95-51eb-4b5f-9e6d-04b3e899a207",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1302, what are the correct specifications for escalators in terms of maximum inclination, step width range, and maximum speed?",
+      "options": [
+        {
+          "id": "em-004-a",
+          "text": "30° inclination; 560–1,200 mm width; 38 m/min maximum speed"
+        },
+        {
+          "id": "em-004-b",
+          "text": "35° inclination; 500–1,000 mm width; 40 m/min maximum speed"
+        },
+        {
+          "id": "em-004-c",
+          "text": "30° inclination; 400–800 mm width; 30 m/min maximum speed"
+        },
+        {
+          "id": "em-004-d",
+          "text": "25° inclination; 560–1,200 mm width; 50 m/min maximum speed"
+        }
+      ],
+      "correct_option_id": "em-004-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 30° maximum inclination ensures safe passenger boarding and alighting — steeper angles create a tripping and balance hazard. The 560–1,200 mm width range accommodates different passenger volumes (from narrow service escalators to wide public mall installations). The 38 m/min speed (approximately 0.63 m/s) balances throughput against passenger comfort and safety.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:70f40325810402660ef48089fb1cfbcee8b2e277ae8aeff4a381511e1de18195"
+    },
+    {
+      "question_id": "baf20e7e-ddd1-40be-9fc1-6b1943b0f041",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1302, apartment buildings of how many or more storeys must provide at least one elevator in continuous 24-hour service?",
+      "options": [
+        {
+          "id": "em-013-a",
+          "text": "3 or more storeys"
+        },
+        {
+          "id": "em-013-b",
+          "text": "4 or more storeys"
+        },
+        {
+          "id": "em-013-c",
+          "text": "5 or more storeys"
+        },
+        {
+          "id": "em-013-d",
+          "text": "6 or more storeys"
+        }
+      ],
+      "correct_option_id": "em-013-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 24-hour service requirement reflects the reality that residential buildings have occupants at all hours — unlike office buildings that may shut down elevators at night. An elevator out of service overnight in a 5-storey apartment building would strand residents on upper floors.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e7b13a193da446ef57ef9039579eb07002cc725561243181420766ba991bfd72"
+    },
+    {
+      "question_id": "d81f6dde-eb63-457e-bb5c-ae2e21007a1d",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1302, what is the minimum hoistway pit clearance for passenger elevators?",
+      "options": [
+        {
+          "id": "em-005-a",
+          "text": "300 mm"
+        },
+        {
+          "id": "em-005-b",
+          "text": "500 mm"
+        },
+        {
+          "id": "em-005-c",
+          "text": "600 mm"
+        },
+        {
+          "id": "em-005-d",
+          "text": "900 mm"
+        }
+      ],
+      "correct_option_id": "em-005-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The pit also serves as a drainage reservoir and provides space for the governor, limit switches, and compensating chain or rope tensioning devices. The 600 mm minimum clearance ensures adequate working space for inspectors and maintenance technicians who must access the pit.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2847411d96c013fd7d948c5d396ed5c476c2ea9c3d77f2130dbf354a6867e2ae"
+    },
+    {
+      "question_id": "524ff8c2-d9d6-4158-810f-f73ae1b15964",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which of the following correctly describes the Philippine approach to elevator shaft fire ratings compared to the IBC?",
+      "options": [
+        {
+          "id": "vo-010-a",
+          "text": "Both PH and IBC assign shaft ratings based on the number of storeys served"
+        },
+        {
+          "id": "vo-010-b",
+          "text": "PH ties shaft ratings to occupancy separation hours; IBC uses a story-count rule"
+        },
+        {
+          "id": "vo-010-c",
+          "text": "IBC ties shaft ratings to occupancy separation; PH uses a story-count rule"
+        },
+        {
+          "id": "vo-010-d",
+          "text": "Neither code specifies shaft fire ratings — they are determined by local ordinance"
+        }
+      ],
+      "correct_option_id": "vo-010-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The IBC's story-count rule is simple and universal — easy to apply but potentially over-prescriptive in low-risk situations. The Philippine approach is more architecturally responsive but harder to apply mechanically because it requires determining the applicable occupancy separation first. Filipino architects working on internationally funded projects must understand both systems.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f88c8e6819879bbbee31c1ded2c13f70cba0c06d57f96e883d646cf5dbc6cab0"
+    },
+    {
+      "question_id": "4eb32727-bc7f-4ba5-afca-e351ed5761c8",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, the maximum spacing of sprinklers around an escalator perimeter is measured:",
+      "options": [
+        {
+          "id": "vo-012-a",
+          "text": "From the face of the draft curtain to the nearest sprinkler head"
+        },
+        {
+          "id": "vo-012-b",
+          "text": "Center to center between adjacent sprinkler heads"
+        },
+        {
+          "id": "vo-012-c",
+          "text": "From the edge of the floor opening to the nearest sprinkler"
+        },
+        {
+          "id": "vo-012-d",
+          "text": "From the sprinkler head to the nearest point of the escalator tread"
+        }
+      ],
+      "correct_option_id": "vo-012-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Standard sprinkler spacing conventions use center-to-center measurement as the primary design parameter because it determines the total coverage pattern. The 1.80 m c/c spacing creates a sprinkler ring around the escalator that, combined with the draft curtain, provides a continuous drenching barrier.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:960996da3650dad80c38ee9496a7b01f87613b29ee85c0afb88876d154073659"
+    },
+    {
+      "question_id": "6685ba91-4a5b-44e1-9834-916407a562b9",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, the measurement of 600 mm for sprinkler proximity to the draft curtain at escalator openings is measured from:",
+      "options": [
+        {
+          "id": "vo-006-a",
+          "text": "The edge of the floor opening"
+        },
+        {
+          "id": "vo-006-b",
+          "text": "The face of the draft curtain"
+        },
+        {
+          "id": "vo-006-c",
+          "text": "The nearest sprinkler head"
+        },
+        {
+          "id": "vo-006-d",
+          "text": "The centerline of the sprinkler ring"
+        }
+      ],
+      "correct_option_id": "vo-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is a precise code application question. The draft curtain's purpose is to confine smoke at the ceiling level; the sprinkler ring supplements this by providing active suppression. The 600 mm distance ensures the water spray from the nearest sprinkler overlaps effectively with the draft curtain's smoke-confining zone.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:af8380a70c986d857284998f0255dac1437978952393b1659dcb037ecde7e5f4"
+    },
+    {
+      "question_id": "a4c94fe3-d22a-4491-bc86-94f4d7e31280",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, RA 9514 supplements the escalator opening provisions by requiring:",
+      "options": [
+        {
+          "id": "vo-015-a",
+          "text": "Full shaft enclosure in lieu of the draft curtain + sprinkler ring combination, which is a more comprehensive approach to fire safety."
+        },
+        {
+          "id": "vo-015-b",
+          "text": "Smoke detectors, fire alarm integration, and fire dampers at HVAC penetrations through shaft walls"
+        },
+        {
+          "id": "vo-015-c",
+          "text": "A 4-hour fire-resistive rating for all elevator hoistways regardless of occupancy type, ensuring maximum protection against fire spread."
+        },
+        {
+          "id": "vo-015-d",
+          "text": "Manual fire extinguishers at every escalator landing, which is a basic but essential safety measure."
+        }
+      ],
+      "correct_option_id": "vo-015-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PD 1096 sets the minimum construction requirements; RA 9514 sets the minimum active fire protection system requirements. Both must be satisfied simultaneously. The design team must coordinate with the fire protection engineer to ensure the Sec. 1204 draft curtain + sprinkler ring design is complemented by the RA 9514-required fire alarm and detection system.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d7d5799cd2a710f10b9c8ce6a903c142714c6b876070eeefe631b005a347e33"
+    },
+    {
+      "question_id": "d8faea1e-63ed-4ade-8765-cab281717749",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, elevator shafts must be enclosed, and the fire rating of the enclosure is determined by:",
+      "options": [
+        {
+          "id": "vo-011-a",
+          "text": "The building's height above grade, which influences the required fire resistance to ensure occupant safety during evacuation."
+        },
+        {
+          "id": "vo-011-b",
+          "text": "The occupancy separation hours applicable between the floors served"
+        },
+        {
+          "id": "vo-011-c",
+          "text": "The number of elevators in the hoistway, as more elevators may necessitate additional fire protection measures."
+        },
+        {
+          "id": "vo-011-d",
+          "text": "The type of elevator drive system (traction vs. hydraulic), which can affect the fire risk profile of the installation."
+        }
+      ],
+      "correct_option_id": "vo-011-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "In a building with, say, a Group H assembly occupancy adjacent to a Group E business occupancy requiring 2-hour separation, the elevator shaft serving both would need to be rated accordingly. The same building in the IBC would simply use the story-count rule regardless of occupancy type.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:11cd7ea864b209808bb5b3ca118d6a6ad4771410af10380967fc6d841d076816"
+    },
+    {
+      "question_id": "aaf1cc79-45c2-44a7-89d9-a2a3c74e6c76",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2006, how must sign lighting be powered?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Solar-powered LED systems are preferred, especially in areas with high solar exposure and sustainability goals"
+        },
+        {
+          "id": "B",
+          "text": "Electrical means only, as governed by the Philippine Electrical Code (PEC)"
+        },
+        {
+          "id": "C",
+          "text": "Gas or flame lighting is permitted if properly ventilated and meets all safety standards for indoor and outdoor use"
+        },
+        {
+          "id": "D",
+          "text": "Battery-powered systems are acceptable for all sign types, provided they comply with energy efficiency standards and have a backup power source"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2006, sign lighting shall be by electrical means only, as governed by the Philippine Electrical Code (PEC). Alternative methods including solar-powered LED systems require PEC authorization to be considered code-compliant.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2499f08183dde40121742e511bffbd68a1eb020bf414408d962992d6c97329c2"
+    },
+    {
+      "question_id": "9d886b80-3510-4ba5-b735-0a8f6d3fa017",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule XIII, Sec. 1301, Table XIII.1, what is the minimum horizontal clearance from an INSULATED conductor (0–750V) to a building wall?",
+      "options": [
+        {
+          "id": "em-001-a",
+          "text": "1,700 mm — required for unguarded rigid live parts at medium voltage"
+        },
+        {
+          "id": "em-001-b",
+          "text": "1,400 mm — required for insulated conductors in the 0–750V voltage class"
+        },
+        {
+          "id": "em-001-c",
+          "text": "1,500 mm — required for open supply conductors in the 750V–22kV class"
+        },
+        {
+          "id": "em-001-d",
+          "text": "2,300 mm — required for any conductor operating above 22kV"
+        }
+      ],
+      "correct_option_id": "em-001-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table XIII.1 assigns four clearance levels by voltage class and conductor type: (1) Insulated 0–750V = 1,400 mm; (2) Open supply 750V–22kV = 1,500 mm; (3) Unguarded rigid live parts 750V–22kV = 1,700 mm; (4) Any conductor >22kV = 2,300 mm. Insulated 0–750V conductors fall in the lowest-clearance tier at 1,400 mm. Options A, C, and D correctly describe other rows of the table but do not apply to insulated 0–750V conductors.",
+      "explanation": "Mnemonic for Table XIII.1 clearances in ascending order: 1,400 / 1,500 / 1,700 / 2,300 mm. Each step corresponds to a higher-hazard conductor category. Insulated low-voltage conductors get the minimum clearance; conductors above 22kV get the maximum.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1301, Table XIII.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fe0770e4e83185b3b4de24a5f8c8826909a14b9c02f4fd5f2f105b67f40b32c8"
+    },
+    {
+      "question_id": "0b01e849-7207-452f-b2fc-d3f92af3ffb7",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule XIII, Sec. 1302, what is the minimum depth of an elevator hoistway pit?",
+      "options": [
+        {
+          "id": "em-006-a",
+          "text": "300 mm minimum pit depth below the lowest landing"
+        },
+        {
+          "id": "em-006-b",
+          "text": "1,000 mm minimum pit depth below the lowest landing"
+        },
+        {
+          "id": "em-006-c",
+          "text": "600 mm minimum pit depth below the lowest landing"
+        },
+        {
+          "id": "em-006-d",
+          "text": "450 mm minimum pit depth below the lowest landing"
+        }
+      ],
+      "correct_option_id": "em-006-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1302 requires elevator hoistway pits to have a minimum depth of 600 mm below the lowest landing floor level. This pit depth provides the required buffer for the car buffer (safety device that cushions the car in case of over-travel) and for maintenance access. Options A and D (300 mm and 450 mm) are insufficient for standard elevator buffers. Option B (1,000 mm) exceeds the minimum.",
+      "explanation": "Hoistway pit: ≥600 mm deep. This accommodates the car buffer and maintenance clearance. Compare with: traction elevators = 3 wire ropes minimum; drum elevators = 2 wire ropes minimum — separate rope requirements for the same elevator category.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1302",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04d8df195a05679cc0bf8c6ebaa155d74283dbc7fdc1e64c75daecf28073fe65"
+    },
+    {
+      "question_id": "d5069029-7392-4bbc-8512-7afa5706a896",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule XIII, Sec. 1302, an apartment building has 6 storeys. Which elevator provision specifically applies, and what is the service requirement?",
+      "options": [
+        {
+          "id": "em-007-a",
+          "text": "No elevator is required for buildings fewer than 10 storeys under any provision of Rule XIII"
+        },
+        {
+          "id": "em-007-b",
+          "text": "Apartment buildings of 5 or more storeys must provide at least 1 elevator operating 24 hours a day"
+        },
+        {
+          "id": "em-007-c",
+          "text": "Apartment buildings of 6 or more storeys must provide at least 2 elevators with 16-hour daily service"
+        },
+        {
+          "id": "em-007-d",
+          "text": "Apartment buildings of 5 or more storeys must provide at least 2 elevators operating during business hours only"
+        }
+      ],
+      "correct_option_id": "em-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1302 requires apartment buildings of FIVE OR MORE STOREYS to provide at least ONE elevator operating 24 HOURS A DAY. A 6-storey apartment building meets the 5-storey threshold, so it must provide a continuously available elevator. The 24-hour requirement prevents the situation where residents on upper floors are stranded without elevator access during off-hours.",
+      "explanation": "Apartments ≥5 storeys → 1 elevator, 24 hrs/day. The threshold is 5 storeys (not 6, not 10). The 24-hour service requirement is non-negotiable for residential buildings where occupants cannot be expected to use stairs at all hours.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1302",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:efc7209c2896d43eced0c34654304731c892bb4b799ae8341bf2a53b7ebfd557"
+    },
+    {
+      "question_id": "a6a4d822-446e-4945-a0a4-3a8d63b5ea13",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule XIII, Sec. 1302, what are the maximum angle of inclination and maximum speed limits for escalators?",
+      "options": [
+        {
+          "id": "em-008-a",
+          "text": "Maximum angle: 45°; maximum speed: 50 m/min"
+        },
+        {
+          "id": "em-008-b",
+          "text": "Maximum angle: 30°; maximum speed: 38 m/min"
+        },
+        {
+          "id": "em-008-c",
+          "text": "Maximum angle: 35°; maximum speed: 45 m/min"
+        },
+        {
+          "id": "em-008-d",
+          "text": "Maximum angle: 30°; maximum speed: 60 m/min"
+        }
+      ],
+      "correct_option_id": "em-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1302 limits escalators to a maximum inclination angle of 30° and a maximum speed of 38 m/min. The 30° limit ensures safe boarding and alighting for standing passengers. The 38 m/min speed limit (approximately 0.63 m/s) prevents falls due to excessive step speed. Options A, C, and D use angles or speeds not found in Sec. 1302.",
+      "explanation": "Escalator limits: ≤30° inclination, ≤38 m/min speed. Also note: escalator step width must be 560 mm–1.20 m. The 30° angle and 38 m/min speed are frequently tested together as a paired fact.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1302",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8774a2406b474af8704dc1481e326bcb8a448356a7e2c00e8bdeadc6e9d377cf"
+    },
+    {
+      "question_id": "56a3866a-82d8-48b6-9e5d-4e11e257511b",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule XIII, Sec. 1302, what is the minimum clearance required between a boiler and any surrounding wall, and what additional egress requirement applies to boiler rooms?",
+      "options": [
+        {
+          "id": "em-009-a",
+          "text": "500 mm clearance from walls; no additional egress requirement is specified"
+        },
+        {
+          "id": "em-009-b",
+          "text": "1.00 m clearance from all walls; minimum of 2 exits required from every boiler room"
+        },
+        {
+          "id": "em-009-c",
+          "text": "600 mm clearance from walls; 1 exit is sufficient if the boiler room is below grade"
+        },
+        {
+          "id": "em-009-d",
+          "text": "1.50 m clearance from all walls; minimum of 2 exits required from every boiler room"
+        }
+      ],
+      "correct_option_id": "em-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1302 requires: (1) a minimum clearance of 1.00 m between the boiler and any surrounding wall; and (2) at least 2 exits from every boiler room. The 1.00 m clearance provides maintenance access and reduces radiant heat transfer to combustible surfaces. The 2-exit requirement ensures operators have an escape route if one exit is blocked by a boiler failure or fire.",
+      "explanation": "Boiler room: 1.00 m from walls + 2 exits minimum. Both requirements apply simultaneously. Additionally, boiler rooms in non-fire-resistive buildings must have exterior walls at least 3.00 m from any adjacent structure — a third requirement for combustible-construction contexts.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1302",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4a4c8ed6daa2dc9e0b15b5e4ac4ebf322a518a9daac5393b16c4463d954bdfd7"
+    },
+    {
+      "question_id": "1b71bc3d-4948-4384-ba50-67b427a99d94",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A service drop (≤600V) passes over the flat roof of a commercial building. Under Rule XIII, Sec. 1301, what is the minimum required vertical clearance above the flat roof surface?",
+      "options": [
+        {
+          "id": "em-002-a",
+          "text": "1.00 m above the flat roof surface"
+        },
+        {
+          "id": "em-002-b",
+          "text": "3.00 m above the flat roof surface"
+        },
+        {
+          "id": "em-002-c",
+          "text": "2.50 m above the flat roof surface"
+        },
+        {
+          "id": "em-002-d",
+          "text": "5.50 m above the flat roof surface"
+        }
+      ],
+      "correct_option_id": "em-002-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1301 specifies service drop clearances: flat roof = 2.50 m; sloped roof (≥1:3 pitch) = 1.00 m; overhang ≤1.20 m = 500 mm; above ground = 3.00 m; above street crown = 5.50 m. For a flat roof, 2.50 m is the correct minimum. Option A (1.00 m) applies to sloped roofs ≥1:3. Option B (3.00 m) applies to clearance above ground, not a flat roof. Option D (5.50 m) applies to street crown clearance.",
+      "explanation": "Five service drop clearances: flat roof = 2.50 m; sloped roof ≥1:3 = 1.00 m; overhang ≤1.20 m = 500 mm; above ground = 3.00 m; street crown = 5.50 m. Each applies to a specific surface type — selecting the wrong reference surface is the most common error.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1301",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:333bc7712deff32683f87a38eb334937ca8ff33225c574d34467a4467d56419d"
+    },
+    {
+      "question_id": "45047b82-6910-493d-ad15-c30fcab652dc",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule XIII, Sec. 1301, buildings exceeding what height require a minimum horizontal clearance of 1.80 m between the building wall and any overhead electrical conductor?",
+      "options": [
+        {
+          "id": "em-004-a",
+          "text": "Buildings exceeding 10.00 m in height above grade"
+        },
+        {
+          "id": "em-004-b",
+          "text": "Buildings exceeding 15.00 m in height above grade"
+        },
+        {
+          "id": "em-004-c",
+          "text": "Buildings exceeding 12.00 m in height above grade"
+        },
+        {
+          "id": "em-004-d",
+          "text": "Buildings exceeding 20.00 m in height above grade"
+        }
+      ],
+      "correct_option_id": "em-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1301 specifies that buildings exceeding 15.00 m in height require a minimum horizontal clearance of 1.80 m from the building wall to any overhead electrical conductor. This additional setback addresses the increased risk from taller structures where workers or equipment on upper floors could contact conductors that would safely clear a shorter building.",
+      "explanation": ">15.00 m building height → 1.80 m horizontal clearance from conductor to wall. Below 15.00 m, standard Table XIII.1 clearances apply. The 15-meter threshold corresponds roughly to a 4–5 storey building where service crane operations become more likely.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1301",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eb649e190e284d1c0b4a6a88c5be64b03a1e13da500e429889cbed5a4781cc9e"
+    },
+    {
+      "question_id": "417f06d7-a5d9-4869-a2bf-2b579947dc72",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building project requires separate permits for its electrical, mechanical, sanitary, and electronics installations. Under Rule XIII, what are the four licensed professionals who must each sign the corresponding ancillary permit application?",
+      "options": [
+        {
+          "id": "em-010-a",
+          "text": "Professional Electrical Engineer (PEE), Registered Mechanical Engineer (RME), Registered Sanitary Engineer (RSP), Professional Electronics Engineer (PECE)"
+        },
+        {
+          "id": "em-010-b",
+          "text": "Licensed Electrician, Certified Mechanical Technician, Sanitary Inspector, Electronics Technician, who are responsible for ensuring compliance with local codes"
+        },
+        {
+          "id": "em-010-c",
+          "text": "Professional Electrical Engineer (PEE), Registered Civil Engineer (RCE), Master Plumber, Licensed Architect, each providing oversight for their respective disciplines"
+        },
+        {
+          "id": "em-010-d",
+          "text": "Any licensed engineer may sign all four ancillary permits as long as one professional oversees the project, which simplifies the permitting process"
+        }
+      ],
+      "correct_option_id": "em-010-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Rule XIII requires four separate ancillary permits, each signed by the applicable licensed professional: Electrical permit → Professional Electrical Engineer (PEE) per RA 7920; Mechanical permit → Registered Mechanical Engineer (RME) per RA 8495; Sanitary/plumbing permit → Registered Sanitary Plumber (RSP); Electronics permit → Professional Electronics Engineer (PECE). Each professional bears liability only for their licensed scope. Option B substitutes technicians for licensed professionals, which is not permitted.",
+      "explanation": "Four permits, four professionals: PEE (electrical), RME (mechanical), RSP (sanitary), PECE (electronics). Each ancillary permit is independent — a PEE cannot sign the mechanical permit. The professional licensing laws (RA 7920 for PEE, RA 8495 for RME) define the scope of each practice.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1301–1302; RA 7920; RA 8495",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:196f5a943b19767bc98b0e31da81ce525097bdbe83559da6af064fd18b3f08f1"
+    },
+    {
+      "question_id": "ab3e1dfd-6f8c-49f6-928a-d72186511ce4",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Rule XIII, Sec. 1301, what is the minimum horizontal clearance a service drop must maintain from the edge of a window opening?",
+      "options": [
+        {
+          "id": "em-003-a",
+          "text": "500 mm horizontal clearance from any window opening edge"
+        },
+        {
+          "id": "em-003-b",
+          "text": "1.80 m horizontal clearance from any window opening edge"
+        },
+        {
+          "id": "em-003-c",
+          "text": "2.50 m horizontal clearance from any window opening edge"
+        },
+        {
+          "id": "em-003-d",
+          "text": "1.00 m horizontal clearance from any window opening edge"
+        }
+      ],
+      "correct_option_id": "em-003-d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1301 requires a minimum horizontal clearance of 1.00 m between a service drop conductor and any window opening. This prevents occupants from inadvertently touching energized conductors when leaning out of or cleaning windows. The 1.80 m clearance applies to buildings exceeding 15.00 m in height (not to window clearances). The 500 mm clearance applies to overhangs ≤1.20 m.",
+      "explanation": "Window clearance = 1.00 m horizontal. This is the same value as the sloped-roof clearance (1.00 m) — a potential confusion point. Context determines which applies: roof pitch → 1.00 m vertical; window → 1.00 m horizontal.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1301",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:060635ec94485feddad25fe072455ead54325c5d3e022ab9ea18c002baf845cb"
+    },
+    {
+      "question_id": "6adc13a3-8817-4317-a9c6-7e810e587483",
+      "article_id": "aeeecbe3-e245-4e6e-ba54-8dc7f65bcfca",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A hospital experiences a power failure. Under Rule XIII, Sec. 1302, within how many seconds must the emergency electrical system transfer to backup power?",
+      "options": [
+        {
+          "id": "em-005-a",
+          "text": "Within 5 seconds of normal power failure"
+        },
+        {
+          "id": "em-005-b",
+          "text": "Within 30 seconds of normal power failure"
+        },
+        {
+          "id": "em-005-c",
+          "text": "Within 10 seconds of normal power failure"
+        },
+        {
+          "id": "em-005-d",
+          "text": "Within 60 seconds of normal power failure"
+        }
+      ],
+      "correct_option_id": "em-005-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1302 requires hospital emergency electrical systems to transfer to backup power (generator or UPS) within 10 seconds of normal power failure. This 10-second window is the maximum allowable interruption for life-safety systems such as operating room lighting, ICU equipment, and emergency exits. A 30-second delay (Option B) would be life-threatening in a surgical context.",
+      "explanation": "Hospital emergency power: ≤10 seconds transition. This is a hard safety threshold — surgical procedures and critical care equipment cannot tolerate longer interruptions. The 10-second standard aligns with NFPA 99 for healthcare facilities.",
+      "code_citation": "PD 1096, Rule XIII, Sec. 1302",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.08084+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:14fbc271a2ab2bdf191567078a430f02bc0e98da1f88292924283debbfde76af"
+    }
+  ]
+}

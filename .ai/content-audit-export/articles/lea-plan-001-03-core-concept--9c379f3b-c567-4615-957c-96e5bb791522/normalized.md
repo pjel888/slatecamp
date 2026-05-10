@@ -9,7 +9,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 **Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
-Philippine urban planning history is shaped by three distinct eras: Spanish colonial grid-plaza planning, American City Beautiful intervention, and postwar devolution to local authority. 
+Philippine urban planning history is shaped by three distinct eras: Spanish colonial grid-plaza planning, American City Beautiful intervention, and postwar devolution to local authority.
 ## Learning Goal
 
 Trace the evolution of Philippine urban planning from the Laws of the Indies (1573) through the Burnham Plan of Manila (1905) to the Local Government Code (RA 7160, 1991), and identify the planning frameworks, key figures, and legacies of each period.

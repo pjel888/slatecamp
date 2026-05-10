@@ -1,7 +1,7 @@
 {
   "article_id": "5723752b-4d29-442d-87ec-30e60b8569a3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:c4b79fec3c0d2d569e7da2011c38ea972de8dd5c3742517ff0e8fb61c52b374b",
+  "linked_questions_hash": "sha256:bddb53efe693109abf6db1100f2d60be28960ce22bce086c04378e69911177f8",
   "question_count": 10,
   "questions": [
     {
@@ -40,7 +40,7 @@
         "correct": "This question cannot be verified against the provided search results, which contain no information about SSS or GSIS housing programs. Recommend adding authoritative sources (SSS Charter, GSIS Charter) to the search results before using this question. Both offer housing loans but to distinct beneficiary groups.",
         "takeaway": "SSS = private sector workers; GSIS = government employees. Membership defines eligibility."
       },
-      "explanation": null,
+      "explanation": "SSS serves private sector, not informal. GSIS serves government, not informal. SSS is the Social Security System for private sector workers. GSIS (Government Service Insurance System) serves government employees. Both offer housing loans but to distinct beneficiary groups. SSS is not universal employment; both have specific eligible groups. Both SSS and GSIS are mandatory for their respective member classes. This question cannot be verified against the provided search results, which contain no information about SSS or GSIS housing programs. Recommend adding authoritative sources (SSS Charter, GSIS Charter) to the search results before using this question. Both offer housing loans but to distinct beneficiary groups. SSS = private sector workers; GSIS = government employees. Membership defines eligibility.",
       "code_citation": "SSS Charter; GSIS Charter",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -52,8 +52,59 @@
       "model_id": "ALE-PLAN-003-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:33.531863+00:00",
+      "updated_at": "2026-05-06T15:06:22.104856+00:00",
+      "content_hash": "sha256:17ba876c634ad9094a263de4b5c9aab3f7c7a0e03ce1e5c95868b58f4c47ca2b"
+    },
+    {
+      "question_id": "11f6c4bd-ed89-4568-ae6d-aad07aacb6b2",
+      "article_id": "5723752b-4d29-442d-87ec-30e60b8569a3",
+      "topic_id": "ce316bae-7d49-4129-bfc4-bb9b085bd8d6",
+      "text": "Under RA 6552, what is the PRIMARY legal distinction between a buyer who has paid fewer than 2 years of installments and a buyer who has paid 2 years or more?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The < 2-year buyer receives a longer grace period, allowing more time to settle arrears"
+        },
+        {
+          "id": "b",
+          "text": "The ≥ 2-year buyer is entitled to a refund; the < 2-year buyer receives only grace period"
+        },
+        {
+          "id": "c",
+          "text": "The < 2-year buyer must pay additional penalties; the ≥ 2-year buyer is exempt from such penalties"
+        },
+        {
+          "id": "d",
+          "text": "The ≥ 2-year buyer must accept higher interest rates on renewal, reflecting increased financial risk"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Grace period is actually 1 month per year for both; < 2-year buyers may get proportionally less total grace (< 2 months total).",
+        "b": "The 2-year threshold is the critical dividing line in Maceda Law. Below: grace period only (no refund). At or above: 50% minimum refund + grace period.",
+        "c": "Maceda Law protects buyers; it does not impose penalties on < 2-year buyers.",
+        "d": "Maceda Law governs installment cancellation and refunds; it does not address interest rate renewal.",
+        "correct": "The 2-year threshold is the critical dividing line in Maceda Law. Below: grace period only (no refund). At or above: 50% minimum refund + grace period.",
+        "takeaway": "RA 6552 threshold: 2 years paid = refund trigger. Below 2 years = grace only; ≥ 2 years = 50% refund."
+      },
+      "explanation": null,
+      "code_citation": "RA 6552, Sections 3–4",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:33.531863+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:51a5cffbc18cad916c2b91e04c28d40bd56a00adfba2802a5e05d0e13f7b58ad"
+      "content_hash": "sha256:bf896ed471e3877a678032dd04f1054a4df6f2ca4cee538197406e6f69d5964c"
     },
     {
       "question_id": "89d7065a-b01c-4559-a356-380926d13570",
@@ -411,57 +462,6 @@
       "created_at": "2026-03-23T19:27:33.531863+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:65568f5c0caa1cc63685d48f77caf04055b3239d37c1bb2f6889f4eab7ab4e96"
-    },
-    {
-      "question_id": "11f6c4bd-ed89-4568-ae6d-aad07aacb6b2",
-      "article_id": "5723752b-4d29-442d-87ec-30e60b8569a3",
-      "topic_id": "ce316bae-7d49-4129-bfc4-bb9b085bd8d6",
-      "text": "Under RA 6552, what is the PRIMARY legal distinction between a buyer who has paid fewer than 2 years of installments and a buyer who has paid 2 years or more?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The < 2-year buyer receives a longer grace period, allowing more time to settle arrears"
-        },
-        {
-          "id": "b",
-          "text": "The ≥ 2-year buyer is entitled to a refund; the < 2-year buyer receives only grace period"
-        },
-        {
-          "id": "c",
-          "text": "The < 2-year buyer must pay additional penalties; the ≥ 2-year buyer is exempt from such penalties"
-        },
-        {
-          "id": "d",
-          "text": "The ≥ 2-year buyer must accept higher interest rates on renewal, reflecting increased financial risk"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Grace period is actually 1 month per year for both; < 2-year buyers may get proportionally less total grace (< 2 months total).",
-        "b": "The 2-year threshold is the critical dividing line in Maceda Law. Below: grace period only (no refund). At or above: 50% minimum refund + grace period.",
-        "c": "Maceda Law protects buyers; it does not impose penalties on < 2-year buyers.",
-        "d": "Maceda Law governs installment cancellation and refunds; it does not address interest rate renewal.",
-        "correct": "The 2-year threshold is the critical dividing line in Maceda Law. Below: grace period only (no refund). At or above: 50% minimum refund + grace period.",
-        "takeaway": "RA 6552 threshold: 2 years paid = refund trigger. Below 2 years = grace only; ≥ 2 years = 50% refund."
-      },
-      "explanation": null,
-      "code_citation": "RA 6552, Sections 3–4",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-003-03-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:33.531863+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:bf896ed471e3877a678032dd04f1054a4df6f2ca4cee538197406e6f69d5964c"
     },
     {
       "question_id": "ae0ea563-0d32-452f-a0ee-805c2e3d80bc",

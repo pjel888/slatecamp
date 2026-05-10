@@ -32,6 +32,7 @@ export const REGISTERED_WIKI_COMPONENTS: ReadonlySet<string> = new Set([
   'RevealBlock',
   'ComparisonTable',
   'WikiExamTable',
+  'WikiTableTabs',
   'SubjectSnapshot',
 
   // Article structure
@@ -133,6 +134,7 @@ export const BLOCK_WIKI_COMPONENTS: ReadonlySet<string> = new Set([
  */
 export const SELF_CLOSING_WIKI_COMPONENTS: ReadonlySet<string> = new Set([
   'ArticleMedia',
+  'WikiTableTabs',
   'WikiReference',
   'Mermaid',
   'WikiChangedPill',

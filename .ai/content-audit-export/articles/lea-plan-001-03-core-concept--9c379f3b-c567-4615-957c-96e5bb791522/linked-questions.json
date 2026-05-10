@@ -1,7 +1,7 @@
 {
   "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:876af24cd4b23f4ac55efef15d4245cba5757a956cd92416565c5fa9b5d42f2c",
+  "linked_questions_hash": "sha256:2f14f8964ba0a0973b6d2d2487331ccf87e7db137caedd8e710fcd82677013bc",
   "question_count": 10,
   "questions": [
     {
@@ -40,7 +40,7 @@
         "correct": "The Laws of the Indies (1573) mandated a grid-plaza town plan for all Spanish colonial settlements — a central plaza (plaza mayor) with the church, cabildo (municipal hall), and governor's residence, surrounded by a regular street grid. This became the template for Spanish colonial settlements across the Americas, including the Philippines.",
         "takeaway": "LAWS OF THE INDIES = 1573 = Spanish PLANNING LAW (not tax, not military). GRID-PLAZA = every Philippine town follows this. Intramuros, Vigan, Cebu, provincial capitals all have this pattern."
       },
-      "explanation": null,
+      "explanation": "Intramuros has fortifications, but the Laws of the Indies mandate was about town planning principles, not exclusively military walls. The Laws of the Indies (1573) mandated a grid-plaza town plan for all Spanish colonial settlements — a central plaza (plaza mayor) with the church, cabildo (municipal hall), and governor's residence, surrounded by a regular street grid. This became the template for every Philippine colonial town. Radial boulevards are Baroque/Haussmannian — not the Laws of the Indies pattern. Linear settlements along rivers were not the mandated pattern. The Laws of the Indies (1573) mandated a grid-plaza town plan for all Spanish colonial settlements — a central plaza (plaza mayor) with the church, cabildo (municipal hall), and governor's residence, surrounded by a regular street grid. This became the template for Spanish colonial settlements across the Americas, including the Philippines. LAWS OF THE INDIES = 1573 = Spanish PLANNING LAW (not tax, not military). GRID-PLAZA = every Philippine town follows this. Intramuros, Vigan, Cebu, provincial capitals all have this pattern.",
       "code_citation": "Core Concept; Key Provisions table; ERROR_REGISTRY ERR-PLAN-032",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -52,8 +52,161 @@
       "model_id": "ALE-PLAN-001-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:30.684926+00:00",
+      "updated_at": "2026-05-06T14:45:54.85861+00:00",
+      "content_hash": "sha256:c97e3fbd8c978b029d3ad3377370ec0978536e1018baeeb47a6057f6babc446e"
+    },
+    {
+      "question_id": "b690488e-893c-4816-8c7f-2152b23d59ba",
+      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
+      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
+      "text": "The Burnham Plan of Manila (1905) proposed Taft Avenue as a major ceremonial boulevard. What was the planning purpose of this proposal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To establish a grand, ceremonial connection from downtown Manila to the bay, reflecting City Beautiful principles"
+        },
+        {
+          "id": "b",
+          "text": "To create a transportation highway for military logistics, ensuring rapid troop movement"
+        },
+        {
+          "id": "c",
+          "text": "To isolate the commercial district from residential areas, promoting zoning separation"
+        },
+        {
+          "id": "d",
+          "text": "To provide a defensive perimeter against flood waters, enhancing urban resilience"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Taft Avenue was envisioned by Burnham as a grand, tree-lined ceremonial boulevard — a key City Beautiful feature — connecting downtown to the Pasig River and bay, creating a monumental civic axis.",
+        "b": "While useful for transportation, the City Beautiful purpose was ceremonial and aesthetic grandeur, not logistics.",
+        "c": "Burnham proposed mixed urban development, not segregation.",
+        "d": "Flood protection was not the primary purpose of Taft Avenue's design.",
+        "correct": "Taft Avenue was envisioned by Burnham as a grand, tree-lined ceremonial boulevard — a key City Beautiful feature — connecting downtown to the Pasig River and bay, creating a monumental civic axis.",
+        "takeaway": "CITY BEAUTIFUL = monumental spaces, diagonal boulevards for grandeur. Taft Avenue is Burnham's signature ceremonial boulevard in Manila."
+      },
+      "explanation": "Taft Avenue was envisioned by Burnham as a grand, tree-lined ceremonial boulevard — a key City Beautiful feature — connecting downtown to the Pasig River and bay, creating a monumental civic axis. While useful for transportation, the City Beautiful purpose was ceremonial and aesthetic grandeur, not logistics. Burnham proposed mixed urban development, not segregation. Flood protection was not the primary purpose of Taft Avenue's design. Taft Avenue was envisioned by Burnham as a grand, tree-lined ceremonial boulevard — a key City Beautiful feature — connecting downtown to the Pasig River and bay, creating a monumental civic axis. CITY BEAUTIFUL = monumental spaces, diagonal boulevards for grandeur. Taft Avenue is Burnham's signature ceremonial boulevard in Manila.",
+      "code_citation": "Core Concept; Key Provisions table",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.889344+00:00",
+      "updated_at": "2026-05-06T14:45:54.995568+00:00",
+      "content_hash": "sha256:df391a7b53f8cd263413f5ce66bbef3dcaae33cdc3752863ae4005457ae49db2"
+    },
+    {
+      "question_id": "4fa57fdf-380c-4a73-98b6-acbc5c544221",
+      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
+      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
+      "text": "Daniel Hudson Burnham's Plan of Manila (1905) was prepared as part of which urban design movement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Art Deco Urbanism, which focused on decorative arts and architecture"
+        },
+        {
+          "id": "b",
+          "text": "Garden City Movement, emphasizing self-contained communities surrounded by greenbelts"
+        },
+        {
+          "id": "c",
+          "text": "City Beautiful Movement"
+        },
+        {
+          "id": "d",
+          "text": "New Urbanism, advocating for walkable neighborhoods and sustainable urban planning"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Art Deco emerged in the 1920s–30s; Burnham's work predated and influenced different aesthetics.",
+        "b": "Ebenezer Howard's Garden City Movement (1898+) emphasized smaller, self-contained communities — different from Burnham's monumental civic grandeur.",
+        "c": "Burnham was the principal architect of the City Beautiful Movement (1890s–1910s), emphasizing monumental civic spaces, diagonal boulevards, parks, and classical architecture. His Plan of Manila (1905) applied City Beautiful principles to the Philippine capital.",
+        "d": "New Urbanism emerged in the 1980s, long after Burnham.",
+        "correct": "Burnham was the principal architect of the City Beautiful Movement (1890s–1910s), emphasizing monumental civic spaces, diagonal boulevards, parks, and classical architecture. His Plan of Manila (1905) applied City Beautiful principles to the Philippine capital.",
+        "takeaway": "BURNHAM = CITY BEAUTIFUL. Grand civic spaces, wide boulevards, monuments, parks. This is the design philosophy behind the Plan of Manila."
+      },
+      "explanation": "Art Deco emerged in the 1920s–30s; Burnham's work predated and influenced different aesthetics. Ebenezer Howard's Garden City Movement (1898+) emphasized smaller, self-contained communities — different from Burnham's monumental civic grandeur. Burnham was the principal architect of the City Beautiful Movement (1890s–1910s), emphasizing monumental civic spaces, diagonal boulevards, parks, and classical architecture. His Plan of Manila (1905) applied City Beautiful principles to the Philippine capital. New Urbanism emerged in the 1980s, long after Burnham. Burnham was the principal architect of the City Beautiful Movement (1890s–1910s), emphasizing monumental civic spaces, diagonal boulevards, parks, and classical architecture. His Plan of Manila (1905) applied City Beautiful principles to the Philippine capital. BURNHAM = CITY BEAUTIFUL. Grand civic spaces, wide boulevards, monuments, parks. This is the design philosophy behind the Plan of Manila.",
+      "code_citation": "Core Concept; Key Provisions table",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.889344+00:00",
+      "updated_at": "2026-05-06T14:45:55.127221+00:00",
+      "content_hash": "sha256:ed1490a05a4317a01d916dfa30229e5f66f9e87d78a1dddb2e93383123a20ceb"
+    },
+    {
+      "question_id": "928bf73d-c3e4-478b-96a3-671b5488f453",
+      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
+      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
+      "text": "Which major shift in Philippine planning authority occurred with the enactment of RA 7160 (Local Government Code) in 1991?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Planning authority was centralized in a new national planning agency, consolidating decision-making at the national level"
+        },
+        {
+          "id": "b",
+          "text": "Planning responsibility was eliminated and replaced with market-driven development, removing structured oversight"
+        },
+        {
+          "id": "c",
+          "text": "Planning authority was transferred exclusively to the private development sector, sidelining public sector involvement"
+        },
+        {
+          "id": "d",
+          "text": "Planning authority was devolved from national to local government units, and all LGUs were mandated to prepare CLUPs"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "RA 7160 did the opposite — decentralized rather than centralized.",
+        "b": "Planning strengthened under RA 7160, not eliminated.",
+        "c": "Government retained planning authority; private development operates within LGU-approved plans.",
+        "d": "RA 7160 represented a watershed shift from centralized national planning to decentralized local planning. Every municipality and city was mandated to prepare a 10-year CLUP, with DHSUD oversight of national conformity.",
+        "correct": "RA 7160 represented a watershed shift from centralized national planning to decentralized local planning. Every municipality and city was mandated to prepare a 10-year CLUP, with DHSUD oversight of national conformity.",
+        "takeaway": "RA 7160 = DEVOLUTION. Central → Local. CLUP mandate. Acknowledgment that centralized planning had failed to address urbanization, slums, environmental issues. Decentralization was the solution."
+      },
+      "explanation": null,
+      "code_citation": "Core Concept; Philippine Context",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-001-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:30.889344+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5a2008b585a2867e5c121b8256f79150fc53c3f2948e74b05aaea6703005eb51"
+      "content_hash": "sha256:1c26823cef211cb8c28a7607ec27224dbb78e5692ed4f8efb316452d6ce825f4"
     },
     {
       "question_id": "3cba0100-5dc2-4639-b1b3-ff55c80ee349",
@@ -107,57 +260,6 @@
       "content_hash": "sha256:478c46f51f9b1a620fe8536719ac1cca668b68dfa559977685ecb1b96f1d251f"
     },
     {
-      "question_id": "b690488e-893c-4816-8c7f-2152b23d59ba",
-      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
-      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
-      "text": "The Burnham Plan of Manila (1905) proposed Taft Avenue as a major ceremonial boulevard. What was the planning purpose of this proposal?",
-      "options": [
-        {
-          "id": "a",
-          "text": "To establish a grand, ceremonial connection from downtown Manila to the bay, reflecting City Beautiful principles"
-        },
-        {
-          "id": "b",
-          "text": "To create a transportation highway for military logistics, ensuring rapid troop movement"
-        },
-        {
-          "id": "c",
-          "text": "To isolate the commercial district from residential areas, promoting zoning separation"
-        },
-        {
-          "id": "d",
-          "text": "To provide a defensive perimeter against flood waters, enhancing urban resilience"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Taft Avenue was envisioned by Burnham as a grand, tree-lined ceremonial boulevard — a key City Beautiful feature — connecting downtown to the Pasig River and bay, creating a monumental civic axis.",
-        "b": "While useful for transportation, the City Beautiful purpose was ceremonial and aesthetic grandeur, not logistics.",
-        "c": "Burnham proposed mixed urban development, not segregation.",
-        "d": "Flood protection was not the primary purpose of Taft Avenue's design.",
-        "correct": "Taft Avenue was envisioned by Burnham as a grand, tree-lined ceremonial boulevard — a key City Beautiful feature — connecting downtown to the Pasig River and bay, creating a monumental civic axis.",
-        "takeaway": "CITY BEAUTIFUL = monumental spaces, diagonal boulevards for grandeur. Taft Avenue is Burnham's signature ceremonial boulevard in Manila."
-      },
-      "explanation": null,
-      "code_citation": "Core Concept; Key Provisions table",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-001-03-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:30.889344+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:20e84faa562bb40e428206b36ca70c89e2cf568932c62307796439f75b4cee3c"
-    },
-    {
       "question_id": "79ecd3b0-96af-405d-896f-4b9d572a8a72",
       "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
       "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
@@ -209,57 +311,6 @@
       "content_hash": "sha256:16c3866578afa7a49a1b4865b6dca886a70229b1c421f0fecf2385f507126a10"
     },
     {
-      "question_id": "4fa57fdf-380c-4a73-98b6-acbc5c544221",
-      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
-      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
-      "text": "Daniel Hudson Burnham's Plan of Manila (1905) was prepared as part of which urban design movement?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Art Deco Urbanism, which focused on decorative arts and architecture"
-        },
-        {
-          "id": "b",
-          "text": "Garden City Movement, emphasizing self-contained communities surrounded by greenbelts"
-        },
-        {
-          "id": "c",
-          "text": "City Beautiful Movement"
-        },
-        {
-          "id": "d",
-          "text": "New Urbanism, advocating for walkable neighborhoods and sustainable urban planning"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Art Deco emerged in the 1920s–30s; Burnham's work predated and influenced different aesthetics.",
-        "b": "Ebenezer Howard's Garden City Movement (1898+) emphasized smaller, self-contained communities — different from Burnham's monumental civic grandeur.",
-        "c": "Burnham was the principal architect of the City Beautiful Movement (1890s–1910s), emphasizing monumental civic spaces, diagonal boulevards, parks, and classical architecture. His Plan of Manila (1905) applied City Beautiful principles to the Philippine capital.",
-        "d": "New Urbanism emerged in the 1980s, long after Burnham.",
-        "correct": "Burnham was the principal architect of the City Beautiful Movement (1890s–1910s), emphasizing monumental civic spaces, diagonal boulevards, parks, and classical architecture. His Plan of Manila (1905) applied City Beautiful principles to the Philippine capital.",
-        "takeaway": "BURNHAM = CITY BEAUTIFUL. Grand civic spaces, wide boulevards, monuments, parks. This is the design philosophy behind the Plan of Manila."
-      },
-      "explanation": null,
-      "code_citation": "Core Concept; Key Provisions table",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-001-03-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:30.889344+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7d92da93e7d6903aff65789b658294ca0dda0e05dc23617da555ec4a9eea057f"
-    },
-    {
       "question_id": "afc48214-81b1-46e6-91d2-53e8a574b5c8",
       "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
       "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
@@ -295,7 +346,7 @@
         "correct": "The Laws of the Indies imposed a standardized template (grid-plaza) across all colonial settlements. Burnham, working 300+ years later, proposed a customized master plan responding to Manila's specific geography, climate, and economic needs, reflecting City Beautiful modernism.",
         "takeaway": "LAWS OF INDIES = standardized grid-plaza template (efficient, replicable). BURNHAM = customized master plan (grand, site-specific). Different eras, different philosophies: Spanish pragmatism vs. American City Beautiful monumentalism."
       },
-      "explanation": null,
+      "explanation": "Both involved government planning; military efficiency was not the Laws of the Indies' primary focus. Laws of the Indies were detailed planning guidance — they definitely provided urban planning direction. The Laws of the Indies imposed a standardized template (grid-plaza) across all colonial settlements. Burnham, working 300+ years later, proposed a customized master plan responding to Manila's specific geography, climate, and economic needs, reflecting City Beautiful modernism. Both involved government authority; this distinction doesn't differentiate them. The Laws of the Indies imposed a standardized template (grid-plaza) across all colonial settlements. Burnham, working 300+ years later, proposed a customized master plan responding to Manila's specific geography, climate, and economic needs, reflecting City Beautiful modernism. LAWS OF INDIES = standardized grid-plaza template (efficient, replicable). BURNHAM = customized master plan (grand, site-specific). Different eras, different philosophies: Spanish pragmatism vs. American City Beautiful monumentalism.",
       "code_citation": "Core Concept; Key Provisions table",
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -307,8 +358,8 @@
       "model_id": "ALE-PLAN-001-03-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:30.889344+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:059c79ef50dc0fee7464bcd63a323ca93ce45d5cc2254a207731bf533d8cdec7"
+      "updated_at": "2026-05-06T14:45:55.259189+00:00",
+      "content_hash": "sha256:dd1ba64c172e2b8f9d1473a99a311ac72860b9a839892beac9c6db056b860f6c"
     },
     {
       "question_id": "bf047f9e-12a3-4fb4-be12-44e56a50c172",
@@ -397,7 +448,7 @@
         "correct": "The Burnham Plan (1905) proposed Luneta (now Rizal Park) as Manila's grand civic focal point — expanded, landscaped, and monumentalized as the heart of the city. Luneta remains one of Burnham's most recognizable legacies in Manila.",
         "takeaway": "BURNHAM LEGACIES IN MANILA = LUNETA, TAFT AVENUE, PASIG EMBANKMENT, GOVERNMENT BUILDING PLACEMENT. Luneta is the signature City Beautiful civic space."
       },
-      "explanation": null,
+      "explanation": "Intramuros' fortifications predate Burnham; Burnham proposed preserving them, not creating them. The Burnham Plan (1905) proposed Luneta (now Rizal Park) as Manila's grand civic focal point — expanded, landscaped, and monumentalized as the heart of the city. Luneta remains one of Burnham's most recognizable legacies in Manila. The Pasig River embankment development was proposed by Burnham, but the walls are medieval Spanish, not Burnham's creation. Binondo's district evolved through Chinese settlement patterns, not Burnham's master plan. The Burnham Plan (1905) proposed Luneta (now Rizal Park) as Manila's grand civic focal point — expanded, landscaped, and monumentalized as the heart of the city. Luneta remains one of Burnham's most recognizable legacies in Manila. BURNHAM LEGACIES IN MANILA = LUNETA, TAFT AVENUE, PASIG EMBANKMENT, GOVERNMENT BUILDING PLACEMENT. Luneta is the signature City Beautiful civic space.",
       "code_citation": "Core Concept; Key Provisions table",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -409,59 +460,8 @@
       "model_id": "ALE-PLAN-001-03-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:30.889344+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9dbf8d45421ecdbe5bedd312db7ec7068e7ff12e373898dc77a675285d74db85"
-    },
-    {
-      "question_id": "928bf73d-c3e4-478b-96a3-671b5488f453",
-      "article_id": "9c379f3b-c567-4615-957c-96e5bb791522",
-      "topic_id": "f003dc89-7bfc-450b-8120-aaad8da6f03f",
-      "text": "Which major shift in Philippine planning authority occurred with the enactment of RA 7160 (Local Government Code) in 1991?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Planning authority was centralized in a new national planning agency, consolidating decision-making at the national level"
-        },
-        {
-          "id": "b",
-          "text": "Planning responsibility was eliminated and replaced with market-driven development, removing structured oversight"
-        },
-        {
-          "id": "c",
-          "text": "Planning authority was transferred exclusively to the private development sector, sidelining public sector involvement"
-        },
-        {
-          "id": "d",
-          "text": "Planning authority was devolved from national to local government units, and all LGUs were mandated to prepare CLUPs"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "RA 7160 did the opposite — decentralized rather than centralized.",
-        "b": "Planning strengthened under RA 7160, not eliminated.",
-        "c": "Government retained planning authority; private development operates within LGU-approved plans.",
-        "d": "RA 7160 represented a watershed shift from centralized national planning to decentralized local planning. Every municipality and city was mandated to prepare a 10-year CLUP, with DHSUD oversight of national conformity.",
-        "correct": "RA 7160 represented a watershed shift from centralized national planning to decentralized local planning. Every municipality and city was mandated to prepare a 10-year CLUP, with DHSUD oversight of national conformity.",
-        "takeaway": "RA 7160 = DEVOLUTION. Central → Local. CLUP mandate. Acknowledgment that centralized planning had failed to address urbanization, slums, environmental issues. Decentralization was the solution."
-      },
-      "explanation": null,
-      "code_citation": "Core Concept; Philippine Context",
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-001-03-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:30.889344+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1c26823cef211cb8c28a7607ec27224dbb78e5692ed4f8efb316452d6ce825f4"
+      "updated_at": "2026-05-06T14:45:55.392805+00:00",
+      "content_hash": "sha256:daec1689add62fa40078be33077a993d9f40ce881a2483b0abf80b68aadd3dc5"
     },
     {
       "question_id": "1fd287be-048b-4235-bdf8-949f3edab6b5",

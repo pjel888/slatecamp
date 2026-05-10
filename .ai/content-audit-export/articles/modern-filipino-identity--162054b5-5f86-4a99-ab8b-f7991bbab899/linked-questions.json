@@ -1,7 +1,7 @@
 {
   "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:7e37f008b1992d146ce43c494e3c5ffedde60e49905a3ee9fef98dd6c4b4e92b",
+  "linked_questions_hash": "sha256:a015701439b11b532a9471ea398f6b75e5b51391e9a9f0bd2cdfcc4443a6b576",
   "question_count": 31,
   "questions": [
     {
@@ -49,26 +49,26 @@
       "content_hash": "sha256:86ad7defa588d476d3468eeb24a4f323cae2f03f0fc04d72d13728f670a6a992"
     },
     {
-      "question_id": "2dbadbd5-f730-4c73-94f8-0bd41c1df5c1",
+      "question_id": "bafb5497-efcb-4dc0-96b7-205f1248b79c",
       "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
       "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Which National Artist designed the EDSA Shrine, and how does it embody his Neo-Vernacular philosophy?",
+      "text": "What is the key structural distinction between Type II/III and Type IV/V fire-resistive construction under PD 1096 RIRR?",
       "options": [
         {
           "id": "A",
-          "text": "Leandro Locsin; features Brutalist concrete 'floating volume' with exposed raw concrete and minimal ornamentation, emphasizing structural expression"
+          "text": "Type II/III require 4-hour exterior walls; Type IV/V require 1-hour exterior walls, reflecting different structural priorities"
         },
         {
           "id": "B",
-          "text": "Francisco Mañosa; features indigenous materials (bamboo, coconut wood), high ceilings, large windows, and transitional indoor-outdoor spaces embodying FCC principles"
+          "text": "Type II/III require 1-hour exterior walls; Type IV/V require 4-hour exterior walls — the higher fire-resistive rating of Type IV/V reflects their heavier structural systems"
         },
         {
           "id": "C",
-          "text": "Juan Nakpil; features Art Deco ornamentation with stylized flora and angular geometric forms on a concrete frame, showcasing a blend of modern and traditional elements"
+          "text": "All four types (II, III, IV, V) require identical 1-hour fire-resistive ratings for all structural elements, ensuring uniform safety standards"
         },
         {
           "id": "D",
-          "text": "Pablo Antonio; features Art Deco theater-style massing with bold rectangular forms and dramatic vertical emphasis, highlighting a unique architectural style"
+          "text": "Type II/III are for commercial buildings; Type IV/V are for residential buildings — the ratings are not comparable across building types, as they serve different functions"
         }
       ],
       "correct_option_id": "B",
@@ -76,8 +76,52 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The EDSA Shrine (1989) is one of Mañosa's most significant ecclesiastical works. It embodies his Neo-Vernacular FCC philosophy: (1) FILIPINO VALUES — the shrine commemorates the 1986 People Power Revolution, expressing national identity and spiritual values; (2) CLIMATE RESPONSE — high ceilings, large windows, low eaves, and natural ventilation create a naturally comfortable worship space; (3) CRAFT / INDIGENOUS MATERIALS — bamboo and coconut wood structural and decorative elements, capiz shell panels. The EDSA Shrine is often compared to the Church of the Holy Sacrifice (UP Diliman, by Locsin) — both are iconic Philippine churches, but different architects and styles: Locsin's Brutalist Modernism vs Mañosa's Neo-Vernacular.",
+      "rationale": "PD 1096 RIRR (p. 39) and RA 9514 establish a hierarchy of fire-resistive construction types: Type II (wood frame, protected): 1-hour exterior walls; Type III (masonry + wood): 1-hour exterior walls; Type IV (heavy timber/masonry): 4-hour exterior walls; Type V (fire-resistive/concrete-steel): 4-hour exterior walls, 3-hour interior bearing walls. The key ALE distinction: Types II and III = 1-hour exterior walls; Types IV and V = 4-hour exterior walls.",
       "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.641107+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e4bb287383bd16e498ea9ae0462e88a44143f082c5989255bf826d498636d304"
+    },
+    {
+      "question_id": "d5ffc0ae-f004-4474-9e47-bc61af6dd07c",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Leandro Locsin's 'floating volume' concept is inspired by which traditional Philippine dwelling typology?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The bahay na bato's enclosed stone ground floor (zaguan) — the visible base inspired Locsin's recessed structural approach"
+        },
+        {
+          "id": "B",
+          "text": "The bahay kubo's raised floor with ventilated silong — the visual void beneath the elevated floor is reinterpreted in Brutalist concrete"
+        },
+        {
+          "id": "C",
+          "text": "The Ivatan stone house's low profile — Locsin abstracted the horizontal massing of Batanes vernacular architecture"
+        },
+        {
+          "id": "D",
+          "text": "The torogan's high-peaked roof — the dramatic roof silhouette inspired Locsin's cantilevered concrete forms"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Locsin's most philosophically significant concept — the 'floating volume' — is a Modernist reinterpretation of the bahay kubo's raised floor. The bahay kubo elevates its living space above flood level, creating a ventilated silong (open space under the floor). Locsin takes this spatial concept — a raised volume over a void — and executes it in Brutalist concrete. The Tanghalang Pambansa appears to hover above its reflecting pool. Critically, this is an ABSTRACT reinterpretation, not a material one: Locsin uses raw concrete (béton brut), not bamboo and nipa. This places him in the First Wave (Modernist/Brutalist) rather than the Second Wave (Neo-Vernacular) — Locsin expresses Filipino identity through spatial concepts, Mañosa through materials.",
+      "explanation": "Locsin's most philosophically significant concept — the 'floating volume' — is a Modernist reinterpretation of the bahay kubo's raised floor. The bahay kubo elevates its living space above flood level, creating a ventilated silong (open space under the floor). Locsin takes this spatial concept — a raised volume over a void — and executes it in Brutalist concrete. The Tanghalang Pambansa appears to hover above its reflecting pool. Critically, this is an ABSTRACT reinterpretation, not a material one: Locsin uses raw concrete (béton brut), not bamboo and nipa. This places him in the First Wave (Modernist/Brutalist) rather than the Second Wave (Neo-Vernacular) — Locsin expresses Filipino identity through spatial concepts, Mañosa through materials.",
       "code_citation": null,
       "bloom_level": null,
       "application_context": null,
@@ -89,8 +133,8 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:15.641107+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ca8792b57c8aca2264a723e75f3e6a604da5409e7b1cefd3d2f612a0088be39a"
+      "updated_at": "2026-05-06T15:53:18.174476+00:00",
+      "content_hash": "sha256:e01c4bd2b3e4f6fa8834562b5e389d155e670f3294637f68c18327da6650e4f3"
     },
     {
       "question_id": "21868d7a-9f76-4988-a422-0768e1808886",
@@ -121,7 +165,7 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The Coconut Palace (Tahanang Pilipino), completed in 1980 in the CCP Complex, is Mañosa's most iconic Neo-Vernacular building. It is clad in coconut lumber (coco lumber) throughout — posts, beams, floors, and panels — alongside other indigenous materials. The building embodies Mañosa's FCC framework: Filipino values (ornate Philippine cultural motifs), Climate response (high ceilings, large windows, low eaves, free indoor-outdoor interchange), Craft/indigenous materials (coconut wood throughout). Critically, the Coconut Palace must not be confused with the Tanghalang Pambansa — same CCP Complex, different architects: Mañosa (Coconut Palace, Neo-Vernatural) vs Locsin (Tanghalang Pambansa, Brutalist Modernism).",
-      "explanation": null,
+      "explanation": "The Coconut Palace (Tahanang Pilipino), completed in 1980 in the CCP Complex, is Mañosa's most iconic Neo-Vernacular building. It is clad in coconut lumber (coco lumber) throughout — posts, beams, floors, and panels — alongside other indigenous materials. The building embodies Mañosa's FCC framework: Filipino values (ornate Philippine cultural motifs), Climate response (high ceilings, large windows, low eaves, free indoor-outdoor interchange), Craft/indigenous materials (coconut wood throughout). Critically, the Coconut Palace must not be confused with the Tanghalang Pambansa — same CCP Complex, different architects: Mañosa (Coconut Palace, Neo-Vernatural) vs Locsin (Tanghalang Pambansa, Brutalist Modernism).",
       "code_citation": null,
       "bloom_level": null,
       "application_context": null,
@@ -133,52 +177,8 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:15.641107+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:670b31d7ad1015cb994f268fff890238761e87874434f163b08c5656136b3484"
-    },
-    {
-      "question_id": "134463e7-49ee-4c13-b536-2a77185acd11",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Juan Arellano designed the Manila Metropolitan Theater in which architectural style?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Brutalism — concrete masses with exposed aggregate surfaces, emphasizing raw materiality and structural expression"
-        },
-        {
-          "id": "B",
-          "text": "Neoclassical — symmetrical facades with classical columns and pediments, reflecting traditional European architectural principles"
-        },
-        {
-          "id": "C",
-          "text": "Art Deco and Streamline Modern — featuring bold geometric ornamentation, stylized flora, and aerodynamic forms; he promoted this shift from Neoclassicism in Philippine architecture"
-        },
-        {
-          "id": "D",
-          "text": "Neo-Vernacular — indigenous material expression and tropical climate response, integrating local cultural elements into modern design"
-        }
-      ],
-      "correct_option_id": "C",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Juan Arellano is one of the key second-generation Pensionado architects (trained at Pennsylvania Academy of Fine Arts and Drexel University). While his contemporaries like Antonio Toledo were still working in Neoclassical and Beaux-Arts styles, Arellano led the transition to Art Deco and Streamline Modern in the Philippines. His Metropolitan Theater is the premier example of Philippine Art Deco — featuring bold geometric ornamentation, stylized flora and fauna motifs, and an aerodynamic aesthetic. He also designed the Manila Post Office Building and Jones Bridge in Art Deco/Streamline Modern styles.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.45,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:47:15.641107+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7bc726a61d0f26bb6d587f98d3fdd24a34c1849d2706be240d770db52d29d190"
+      "updated_at": "2026-05-06T15:53:18.011347+00:00",
+      "content_hash": "sha256:076c74a473ef8a5d268c94df772fca0c25a2fab3f3cc12a02ba08e977924f35d"
     },
     {
       "question_id": "86d8aab1-cd00-4f17-bbc1-b93a4ea5ed1e",
@@ -225,26 +225,26 @@
       "content_hash": "sha256:7871faf979ab5a4d9f1138142ccfd447f05a65956c299ba9b876ac4843806f45"
     },
     {
-      "question_id": "d5ffc0ae-f004-4474-9e47-bc61af6dd07c",
+      "question_id": "2dbadbd5-f730-4c73-94f8-0bd41c1df5c1",
       "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
       "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Leandro Locsin's 'floating volume' concept is inspired by which traditional Philippine dwelling typology?",
+      "text": "Which National Artist designed the EDSA Shrine, and how does it embody his Neo-Vernacular philosophy?",
       "options": [
         {
           "id": "A",
-          "text": "The bahay na bato's enclosed stone ground floor (zaguan) — the visible base inspired Locsin's recessed structural approach"
+          "text": "Leandro Locsin; features Brutalist concrete 'floating volume' with exposed raw concrete and minimal ornamentation, emphasizing structural expression"
         },
         {
           "id": "B",
-          "text": "The bahay kubo's raised floor with ventilated silong — the visual void beneath the elevated floor is reinterpreted in Brutalist concrete"
+          "text": "Francisco Mañosa; features indigenous materials (bamboo, coconut wood), high ceilings, large windows, and transitional indoor-outdoor spaces embodying FCC principles"
         },
         {
           "id": "C",
-          "text": "The Ivatan stone house's low profile — Locsin abstracted the horizontal massing of Batanes vernacular architecture"
+          "text": "Juan Nakpil; features Art Deco ornamentation with stylized flora and angular geometric forms on a concrete frame, showcasing a blend of modern and traditional elements"
         },
         {
           "id": "D",
-          "text": "The torogan's high-peaked roof — the dramatic roof silhouette inspired Locsin's cantilevered concrete forms"
+          "text": "Pablo Antonio; features Art Deco theater-style massing with bold rectangular forms and dramatic vertical emphasis, highlighting a unique architectural style"
         }
       ],
       "correct_option_id": "B",
@@ -252,8 +252,8 @@
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "Locsin's most philosophically significant concept — the 'floating volume' — is a Modernist reinterpretation of the bahay kubo's raised floor. The bahay kubo elevates its living space above flood level, creating a ventilated silong (open space under the floor). Locsin takes this spatial concept — a raised volume over a void — and executes it in Brutalist concrete. The Tanghalang Pambansa appears to hover above its reflecting pool. Critically, this is an ABSTRACT reinterpretation, not a material one: Locsin uses raw concrete (béton brut), not bamboo and nipa. This places him in the First Wave (Modernist/Brutalist) rather than the Second Wave (Neo-Vernacular) — Locsin expresses Filipino identity through spatial concepts, Mañosa through materials.",
-      "explanation": null,
+      "rationale": "The EDSA Shrine (1989) is one of Mañosa's most significant ecclesiastical works. It embodies his Neo-Vernacular FCC philosophy: (1) FILIPINO VALUES — the shrine commemorates the 1986 People Power Revolution, expressing national identity and spiritual values; (2) CLIMATE RESPONSE — high ceilings, large windows, low eaves, and natural ventilation create a naturally comfortable worship space; (3) CRAFT / INDIGENOUS MATERIALS — bamboo and coconut wood structural and decorative elements, capiz shell panels. The EDSA Shrine is often compared to the Church of the Holy Sacrifice (UP Diliman, by Locsin) — both are iconic Philippine churches, but different architects and styles: Locsin's Brutalist Modernism vs Mañosa's Neo-Vernacular.",
+      "explanation": "The EDSA Shrine (1989) is one of Mañosa's most significant ecclesiastical works. It embodies his Neo-Vernacular FCC philosophy: (1) FILIPINO VALUES — the shrine commemorates the 1986 People Power Revolution, expressing national identity and spiritual values; (2) CLIMATE RESPONSE — high ceilings, large windows, low eaves, and natural ventilation create a naturally comfortable worship space; (3) CRAFT / INDIGENOUS MATERIALS — bamboo and coconut wood structural and decorative elements, capiz shell panels. The EDSA Shrine is often compared to the Church of the Holy Sacrifice (UP Diliman, by Locsin) — both are iconic Philippine churches, but different architects and styles: Locsin's Brutalist Modernism vs Mañosa's Neo-Vernacular.",
       "code_citation": null,
       "bloom_level": null,
       "application_context": null,
@@ -265,38 +265,38 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:15.641107+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3320235ad7570f7d16dff652d1e1d3b351454abc6eb4fa606b9e3de51615b8e1"
+      "updated_at": "2026-05-06T15:53:17.843226+00:00",
+      "content_hash": "sha256:cf49081a2a94aa777e6be576bc87ae9103997e54dc85473ac75f1c2d97f1c60c"
     },
     {
-      "question_id": "bafb5497-efcb-4dc0-96b7-205f1248b79c",
+      "question_id": "134463e7-49ee-4c13-b536-2a77185acd11",
       "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
       "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "What is the key structural distinction between Type II/III and Type IV/V fire-resistive construction under PD 1096 RIRR?",
+      "text": "Juan Arellano designed the Manila Metropolitan Theater in which architectural style?",
       "options": [
         {
           "id": "A",
-          "text": "Type II/III require 4-hour exterior walls; Type IV/V require 1-hour exterior walls, reflecting different structural priorities"
+          "text": "Brutalism — concrete masses with exposed aggregate surfaces, emphasizing raw materiality and structural expression"
         },
         {
           "id": "B",
-          "text": "Type II/III require 1-hour exterior walls; Type IV/V require 4-hour exterior walls — the higher fire-resistive rating of Type IV/V reflects their heavier structural systems"
+          "text": "Neoclassical — symmetrical facades with classical columns and pediments, reflecting traditional European architectural principles"
         },
         {
           "id": "C",
-          "text": "All four types (II, III, IV, V) require identical 1-hour fire-resistive ratings for all structural elements, ensuring uniform safety standards"
+          "text": "Art Deco and Streamline Modern — featuring bold geometric ornamentation, stylized flora, and aerodynamic forms; he promoted this shift from Neoclassicism in Philippine architecture"
         },
         {
           "id": "D",
-          "text": "Type II/III are for commercial buildings; Type IV/V are for residential buildings — the ratings are not comparable across building types, as they serve different functions"
+          "text": "Neo-Vernacular — indigenous material expression and tropical climate response, integrating local cultural elements into modern design"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "C",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "PD 1096 RIRR (p. 39) and RA 9514 establish a hierarchy of fire-resistive construction types: Type II (wood frame, protected): 1-hour exterior walls; Type III (masonry + wood): 1-hour exterior walls; Type IV (heavy timber/masonry): 4-hour exterior walls; Type V (fire-resistive/concrete-steel): 4-hour exterior walls, 3-hour interior bearing walls. The key ALE distinction: Types II and III = 1-hour exterior walls; Types IV and V = 4-hour exterior walls.",
+      "rationale": "Juan Arellano is one of the key second-generation Pensionado architects (trained at Pennsylvania Academy of Fine Arts and Drexel University). While his contemporaries like Antonio Toledo were still working in Neoclassical and Beaux-Arts styles, Arellano led the transition to Art Deco and Streamline Modern in the Philippines. His Metropolitan Theater is the premier example of Philippine Art Deco — featuring bold geometric ornamentation, stylized flora and fauna motifs, and an aerodynamic aesthetic. He also designed the Manila Post Office Building and Jones Bridge in Art Deco/Streamline Modern styles.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -310,7 +310,139 @@
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:15.641107+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e4bb287383bd16e498ea9ae0462e88a44143f082c5989255bf826d498636d304"
+      "content_hash": "sha256:7bc726a61d0f26bb6d587f98d3fdd24a34c1849d2706be240d770db52d29d190"
+    },
+    {
+      "question_id": "08b8cf43-705c-4c92-9e52-0cfe4bcbd48d",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Francisco Mañosa's 'FCC' mnemonic encapsulates the three pillars of Filipino architecture. What does FCC stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "F = Fixed structural systems, C = Contemporary materials, C = Climate-responsive design, which are essential for modern architectural practices"
+        },
+        {
+          "id": "B",
+          "text": "F = Filipino values (family, community, ornamentation, bayanihan), C = Climate response (tropical — overhangs, ventilation, elevated floors), C = Craft / indigenous materials (bamboo, coconut, rattan, capiz, anahaw)"
+        },
+        {
+          "id": "C",
+          "text": "F = Formal geometry, C = Classical proportions, C = Colonial aesthetics, reflecting historical influences"
+        },
+        {
+          "id": "D",
+          "text": "F = Fire-resistive construction, C = Concrete structural systems, C = Corrosion-resistant materials, which are crucial for durability"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Francisco Mañosa's FCC framework is his philosophical test for whether a building is genuinely Filipino: (1) FILIPINO VALUES — architecture must reflect Filipino cultural values: family and community (expressed through spatial openness, transitional indoor-outdoor spaces), the tradition of ornamentation, and bayanihan; (2) CLIMATE RESPONSE — the building must respond to the tropical Philippine climate through passive strategies: overhangs, cross-ventilation, elevated floors, high ceilings; (3) CRAFT / INDIGENOUS MATERIALS — the building must use Filipino indigenous materials: bamboo (kawayan), coconut wood (coco lumber), rattan, capiz shells, volcanic rock (adobe), anahaw palm (thatch), clay tiles (teja).",
+      "explanation": "Francisco Mañosa's FCC framework is his philosophical test for whether a building is genuinely Filipino: (1) FILIPINO VALUES — architecture must reflect Filipino cultural values: family and community (expressed through spatial openness, transitional indoor-outdoor spaces), the tradition of ornamentation, and bayanihan; (2) CLIMATE RESPONSE — the building must respond to the tropical Philippine climate through passive strategies: overhangs, cross-ventilation, elevated floors, high ceilings; (3) CRAFT / INDIGENOUS MATERIALS — the building must use Filipino indigenous materials: bamboo (kawayan), coconut wood (coco lumber), rattan, capiz shells, volcanic rock (adobe), anahaw palm (thatch), clay tiles (teja).",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.807796+00:00",
+      "updated_at": "2026-05-06T15:53:18.338147+00:00",
+      "content_hash": "sha256:7ca6617a4d93308a2778531158d1df09ffa29ceb7c593380dc3ca90500e302a4"
+    },
+    {
+      "question_id": "85de45cb-991b-4d86-8972-ab19b0f00ccd",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Which building type represents the First Wave of Filipino architecture (Modernist/Brutalist)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Coconut Palace (Tahanang Pilipino) — Neo-Vernacular with indigenous materials; designed by Francisco Mañosa, emphasizing cultural heritage"
+        },
+        {
+          "id": "B",
+          "text": "Tanghalang Pambansa (CCP Main Theater) — Brutalist concrete 'floating volume' by Leandro Locsin; First Wave Modernist/Brutalist"
+        },
+        {
+          "id": "C",
+          "text": "EDSA Shrine — Neo-Vernacular concrete with indigenous material ornamentation; designed by Francisco Mañosa, reflecting traditional Filipino motifs"
+        },
+        {
+          "id": "D",
+          "text": "Pearl Farm Resort — Contemporary Tropical architecture by BUDJI+ROYAL; Third Wave, integrating modern design with natural surroundings"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The three waves of Filipino identity architecture: (1) FIRST WAVE (Modernist/Brutalist, 1950s–1970s): Key figures = Leandro Locsin, Cesar Concio, Gabriel Formoso, Felipe Mendoza. Landmark buildings = CCP Complex (Tanghalang Pambansa), PICC, UP Holy Sacrifice Church. (2) SECOND WAVE (Neo-Vernacular, 1970s–2000s): Key figure = Francisco Mañosa. Buildings = Coconut Palace, San Miguel HQ, EDSA Shrine, Amanpulo Resort. (3) THIRD WAVE (Contemporary Tropical, 2000s–present): Key firms = BUDJI+ROYAL, WTA Architecture.",
+      "explanation": "The three waves of Filipino identity architecture: (1) FIRST WAVE (Modernist/Brutalist, 1950s–1970s): Key figures = Leandro Locsin, Cesar Concio, Gabriel Formoso, Felipe Mendoza. Landmark buildings = CCP Complex (Tanghalang Pambansa), PICC, UP Holy Sacrifice Church. (2) SECOND WAVE (Neo-Vernacular, 1970s–2000s): Key figure = Francisco Mañosa. Buildings = Coconut Palace, San Miguel HQ, EDSA Shrine, Amanpulo Resort. (3) THIRD WAVE (Contemporary Tropical, 2000s–present): Key firms = BUDJI+ROYAL, WTA Architecture.",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.807796+00:00",
+      "updated_at": "2026-05-06T15:53:18.661433+00:00",
+      "content_hash": "sha256:025f2513465de74642c48aff3586fb55423f128d9f9afabf471600d1c44bed2d"
+    },
+    {
+      "question_id": "9872e0f4-7d78-4564-b742-5c27c2f82716",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Which wave of Filipino identity architecture does Leandro Locsin belong to, and what was his signature concept?",
+      "options": [
+        {
+          "id": "A",
+          "text": "First Wave Modernist/Brutalist — signature 'floating volume' (massive concrete forms appearing to hover above the ground, inspired by the bahay kubo's raised floor)"
+        },
+        {
+          "id": "B",
+          "text": "Second Wave Neo-Vernacular — signature bamboo curtain wall system inspired by bahay na bato capiz windows, integrating traditional and modern elements"
+        },
+        {
+          "id": "C",
+          "text": "Third Wave Contemporary Tropical — signature sustainable bamboo engineering integrated with digital computational tools, emphasizing eco-friendly design"
+        },
+        {
+          "id": "D",
+          "text": "First Wave Art Deco — signature concrete ornamentation with stylized flora and angular forms, reflecting a blend of modern and traditional aesthetics"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Leandro Locsin (1928–1994, National Artist 1990) belongs to the First Wave of Filipino architecture (Modernist/Brutalist, 1950s–1970s). His signature concept is the 'floating volume' — the appearance of massive concrete forms levitating above the ground, seen most dramatically in the Tanghalang Pambansa (CCP Main Theater). The optical illusion is created by recessing the structural base and cantilevering the upper mass. Critically, this concept is inspired by the bahay kubo's raised floor — the under-floor ventilation space is reinterpreted as a visual void beneath a hovering concrete volume. Locsin's buildings are Brutalist concrete, not Neo-Vernacular. Mañosa is the Neo-Vernacular architect.",
+      "explanation": "Leandro Locsin (1928–1994, National Artist 1990) belongs to the First Wave of Filipino architecture (Modernist/Brutalist, 1950s–1970s). His signature concept is the 'floating volume' — the appearance of massive concrete forms levitating above the ground, seen most dramatically in the Tanghalang Pambansa (CCP Main Theater). The optical illusion is created by recessing the structural base and cantilevering the upper mass. Critically, this concept is inspired by the bahay kubo's raised floor — the under-floor ventilation space is reinterpreted as a visual void beneath a hovering concrete volume. Locsin's buildings are Brutalist concrete, not Neo-Vernacular. Mañosa is the Neo-Vernacular architect.",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:15.807796+00:00",
+      "updated_at": "2026-05-06T15:53:18.830214+00:00",
+      "content_hash": "sha256:56c67d77f00ea7d321ff911eeb7046096080df933563f904858714084f7b4ec1"
     },
     {
       "question_id": "10f7c28f-1dc8-4fc0-b624-e6ebea4b8b3a",
@@ -357,50 +489,6 @@
       "content_hash": "sha256:d053c9eab94ed7292d9ecc496493ab669581101b18262960032c9ab764533ce9"
     },
     {
-      "question_id": "08b8cf43-705c-4c92-9e52-0cfe4bcbd48d",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Francisco Mañosa's 'FCC' mnemonic encapsulates the three pillars of Filipino architecture. What does FCC stand for?",
-      "options": [
-        {
-          "id": "A",
-          "text": "F = Fixed structural systems, C = Contemporary materials, C = Climate-responsive design, which are essential for modern architectural practices"
-        },
-        {
-          "id": "B",
-          "text": "F = Filipino values (family, community, ornamentation, bayanihan), C = Climate response (tropical — overhangs, ventilation, elevated floors), C = Craft / indigenous materials (bamboo, coconut, rattan, capiz, anahaw)"
-        },
-        {
-          "id": "C",
-          "text": "F = Formal geometry, C = Classical proportions, C = Colonial aesthetics, reflecting historical influences"
-        },
-        {
-          "id": "D",
-          "text": "F = Fire-resistive construction, C = Concrete structural systems, C = Corrosion-resistant materials, which are crucial for durability"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Francisco Mañosa's FCC framework is his philosophical test for whether a building is genuinely Filipino: (1) FILIPINO VALUES — architecture must reflect Filipino cultural values: family and community (expressed through spatial openness, transitional indoor-outdoor spaces), the tradition of ornamentation, and bayanihan; (2) CLIMATE RESPONSE — the building must respond to the tropical Philippine climate through passive strategies: overhangs, cross-ventilation, elevated floors, high ceilings; (3) CRAFT / INDIGENOUS MATERIALS — the building must use Filipino indigenous materials: bamboo (kawayan), coconut wood (coco lumber), rattan, capiz shells, volcanic rock (adobe), anahaw palm (thatch), clay tiles (teja).",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:47:15.807796+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:96e79b6b3f997ea5e2676bd8acc9d1f89d97734fe246efbaf8fb63da14f7e0e0"
-    },
-    {
       "question_id": "8feb8b8c-362a-475c-98dd-9028395dd801",
       "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
       "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
@@ -429,7 +517,7 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "The Third Wave of Filipino architecture (2000s–present) includes firms like BUDJI+ROYAL, WTA Architecture + Design, and Mañosa & Company (continuing under Gelo Mañosa). BUDJI+ROYAL is notable for: (1) Integrating BERDE (Philippine Green Building Rating System) and LEED (international) certification requirements with Filipino spatial traditions; (2) Using bamboo engineering — engineered bamboo as structural elements, not just decorative; (3) Earth-mass design — using the thermal mass of earth/adobe/stone to regulate interior temperature; (4) Computational tools — parametric design and digital fabrication alongside traditional craft.",
-      "explanation": null,
+      "explanation": "The Third Wave of Filipino architecture (2000s–present) includes firms like BUDJI+ROYAL, WTA Architecture + Design, and Mañosa & Company (continuing under Gelo Mañosa). BUDJI+ROYAL is notable for: (1) Integrating BERDE (Philippine Green Building Rating System) and LEED (international) certification requirements with Filipino spatial traditions; (2) Using bamboo engineering — engineered bamboo as structural elements, not just decorative; (3) Earth-mass design — using the thermal mass of earth/adobe/stone to regulate interior temperature; (4) Computational tools — parametric design and digital fabrication alongside traditional craft.",
       "code_citation": null,
       "bloom_level": null,
       "application_context": null,
@@ -441,8 +529,8 @@
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:15.807796+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8a7b761959a1d82cf5e3fe53266f91eee0e1ffc432a423c10c3a6cc1ffb70a5e"
+      "updated_at": "2026-05-06T15:53:18.501278+00:00",
+      "content_hash": "sha256:a175ac631594914d572b5ec931feed276b1c488afb4427d41d16cb263919af47"
     },
     {
       "question_id": "81a6eb20-15c2-4cfd-a8ac-a0151c79405a",
@@ -487,94 +575,6 @@
       "created_at": "2026-03-31T05:47:15.807796+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:d02f74ba176c2135ac2eaf8c73229a942fa0bd18a77ad18dcf44180058f699ae"
-    },
-    {
-      "question_id": "85de45cb-991b-4d86-8972-ab19b0f00ccd",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Which building type represents the First Wave of Filipino architecture (Modernist/Brutalist)?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Coconut Palace (Tahanang Pilipino) — Neo-Vernacular with indigenous materials; designed by Francisco Mañosa, emphasizing cultural heritage"
-        },
-        {
-          "id": "B",
-          "text": "Tanghalang Pambansa (CCP Main Theater) — Brutalist concrete 'floating volume' by Leandro Locsin; First Wave Modernist/Brutalist"
-        },
-        {
-          "id": "C",
-          "text": "EDSA Shrine — Neo-Vernacular concrete with indigenous material ornamentation; designed by Francisco Mañosa, reflecting traditional Filipino motifs"
-        },
-        {
-          "id": "D",
-          "text": "Pearl Farm Resort — Contemporary Tropical architecture by BUDJI+ROYAL; Third Wave, integrating modern design with natural surroundings"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "The three waves of Filipino identity architecture: (1) FIRST WAVE (Modernist/Brutalist, 1950s–1970s): Key figures = Leandro Locsin, Cesar Concio, Gabriel Formoso, Felipe Mendoza. Landmark buildings = CCP Complex (Tanghalang Pambansa), PICC, UP Holy Sacrifice Church. (2) SECOND WAVE (Neo-Vernacular, 1970s–2000s): Key figure = Francisco Mañosa. Buildings = Coconut Palace, San Miguel HQ, EDSA Shrine, Amanpulo Resort. (3) THIRD WAVE (Contemporary Tropical, 2000s–present): Key firms = BUDJI+ROYAL, WTA Architecture.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.35,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:47:15.807796+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8780a7f10057952d17f1687355e626e395c13dd1c45f926df868beb99571d77e"
-    },
-    {
-      "question_id": "9872e0f4-7d78-4564-b742-5c27c2f82716",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Which wave of Filipino identity architecture does Leandro Locsin belong to, and what was his signature concept?",
-      "options": [
-        {
-          "id": "A",
-          "text": "First Wave Modernist/Brutalist — signature 'floating volume' (massive concrete forms appearing to hover above the ground, inspired by the bahay kubo's raised floor)"
-        },
-        {
-          "id": "B",
-          "text": "Second Wave Neo-Vernacular — signature bamboo curtain wall system inspired by bahay na bato capiz windows, integrating traditional and modern elements"
-        },
-        {
-          "id": "C",
-          "text": "Third Wave Contemporary Tropical — signature sustainable bamboo engineering integrated with digital computational tools, emphasizing eco-friendly design"
-        },
-        {
-          "id": "D",
-          "text": "First Wave Art Deco — signature concrete ornamentation with stylized flora and angular forms, reflecting a blend of modern and traditional aesthetics"
-        }
-      ],
-      "correct_option_id": "A",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Leandro Locsin (1928–1994, National Artist 1990) belongs to the First Wave of Filipino architecture (Modernist/Brutalist, 1950s–1970s). His signature concept is the 'floating volume' — the appearance of massive concrete forms levitating above the ground, seen most dramatically in the Tanghalang Pambansa (CCP Main Theater). The optical illusion is created by recessing the structural base and cantilevering the upper mass. Critically, this concept is inspired by the bahay kubo's raised floor — the under-floor ventilation space is reinterpreted as a visual void beneath a hovering concrete volume. Locsin's buildings are Brutalist concrete, not Neo-Vernacular. Mañosa is the Neo-Vernacular architect.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.35,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:47:15.807796+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b53322af2c634e0812723525d4a0a5004330764545dbbb0c8aa4a67552488a3c"
     },
     {
       "question_id": "de4f480c-4a65-4af1-83cc-f198bd4cb800",
@@ -665,26 +665,26 @@
       "content_hash": "sha256:8e9e32f5201a199114c7e30549780498cbef25e617e372bff9ab90ba89c65b6d"
     },
     {
-      "question_id": "173c7547-ec52-4bfe-b850-d25fde6ff3df",
+      "question_id": "fc893594-b737-42b8-8f7f-edcef08e91ce",
       "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
       "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Per PD 1096 RIRR (page 39), how do the fire-resistive requirements for Type V construction differ from Type IV?",
+      "text": "The article identifies three waves of Filipino architectural identity. Which firms or architects represent the Third Wave (Contemporary Tropical, 2000s–present)?",
       "options": [
         {
           "id": "A",
-          "text": "Type V requires 1-hour exterior walls (same as Types II and III); Type IV requires 4-hour exterior walls — making Type IV the most demanding construction classification in terms of fire resistance"
+          "text": "Mañosa & Company (1970s), Pablo Antonio Associates (1950s), and Juan Nakpil Studio (1940s) — the three founding firms of Neo-Vernacular architecture, which influenced later movements"
         },
         {
           "id": "B",
-          "text": "Type V requires 4-hour exterior walls and 3-hour interior bearing walls; Type IV requires 4-hour exterior walls and 1-hour interior bearing walls — the key difference is the interior bearing wall rating"
+          "text": "Lor Calma, Ed Calma, Mañosa & Company (Gelo Mañosa), BUDJI+ROYAL, and WTA Architecture + Design — fusing BERDE/LEED sustainability with local craft and computational tools"
         },
         {
           "id": "C",
-          "text": "Type V requires 2-hour exterior walls and 2-hour interior bearing walls; Type IV requires 1-hour exterior walls and 1-hour interior bearing walls across all elements, simplifying construction requirements"
+          "text": "Leandro Locsin, Cesar Concio, Gabriel Formoso, and Felipe Mendoza — the pioneering Brutalist firms of postwar Manila, known for their concrete structures"
         },
         {
           "id": "D",
-          "text": "Both Type IV and Type V share identical ratings for all wall types — the distinction between them is only in permitted construction materials, not fire-resistive ratings, which are standardized"
+          "text": "Francisco Mañosa, Jose Mañosa, and Manuel Mañosa — the Mañosa family practice that defined Neo-Vernacular architecture in the Philippines, emphasizing traditional materials"
         }
       ],
       "correct_option_id": "B",
@@ -693,121 +693,19 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "summary": "Type V: 4-hour exterior walls, 3-hour interior bearing walls. Type IV: 4-hour exterior walls, 1-hour interior bearing walls. The distinguishing factor is the interior bearing wall rating.",
-        "explanation": "PD 1096 RIRR (p. 39) fire-resistive construction table: Type IV (Heavy Timber/Masonry): 4-hour exterior walls, 1-hour interior bearing walls. Type V (Fire-Resistive/Concrete-Steel): 4-hour exterior walls, 3-hour interior bearing walls, 1-hour floors and roofs. Both types share the 4-hour exterior wall requirement. The key ALE distinction: Type V's 3-hour interior bearing walls vs Type IV's 1-hour interior bearing walls.",
+        "summary": "Third Wave (Contemporary Tropical, 2000s–present): Lor Calma, Ed Calma, Mañosa & Company (Gelo Mañosa), BUDJI+ROYAL, WTA Architecture + Design — fusing BERDE/LEED sustainability with Filipino spatial traditions, bamboo engineering, and computational tools.",
+        "explanation": "The three waves: (1) FIRST WAVE (Modernist/Brutalist, 1950s–1970s): Locsin, Cesar Concio, Gabriel Formoso, Felipe Mendoza. Buildings: CCP, PICC, UP Holy Sacrifice. (2) SECOND WAVE (Neo-Vernacular, 1970s–2000s): Francisco Mañosa, Jose Mañosa, Manuel Mañosa. Buildings: Coconut Palace, EDSA Shrine, Amanpulo. (3) THIRD WAVE (Contemporary Tropical, 2000s–present): Lor Calma, Ed Calma, Gelo Mañosa, BUDJI+ROYAL, WTA Architecture + Design — integrates BERDE/LEED, bamboo engineering, earth-mass design, and computational tools with Filipino spatial traditions.",
         "common_misconceptions": [
-          "Treating Types IV and V as identical — while they share 4-hour exterior walls, Type V has 3-hour (not 1-hour) interior bearing walls",
-          "Forgetting that floor and roof ratings are 1-hour for BOTH Type IV and Type V"
+          "Placing Mañosa in the Third Wave — Francisco Mañosa is Second Wave; Gelo Mañosa (Mañosa & Company) continues into the Third Wave",
+          "Confusing BUDJI+ROYAL with Mañosa — different firms with different approaches; BUDJI+ROYAL emphasizes sustainability certification alongside vernacular craft"
         ]
       },
-      "explanation": "The Type IV vs Type V distinction hinges on interior bearing wall ratings: 1-hour (IV) vs 3-hour (V). Both share 4-hour exterior walls.",
-      "code_citation": "PD 1096 RIRR p. 39 / RA 9514",
-      "bloom_level": "remember",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.55,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:06.530765+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7f51a7ad8b74f12c0f5fc47264cafee2ea8f46f88c444797f448c9aaef7cddc3"
-    },
-    {
-      "question_id": "3df1b862-38e2-46fb-8d1d-e3020f953cff",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Which tropical design strategy addresses Philippine monsoon wind patterns specifically, and what are the two prevailing winds named?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Elevated floors respond to monsoon winds — the Habagat from the north and the Amihan from the south are the two wind directions referenced in PD 1096 Rule VIII"
-        },
-        {
-          "id": "B",
-          "text": "Cross-ventilation responds to prevailing monsoon winds — the Amihan blows from the northeast and the Habagat blows from the southwest, determining optimal building orientation"
-        },
-        {
-          "id": "C",
-          "text": "Wide overhangs respond to monsoon winds — the Amihan from the east and the Habagat from the west require equal shade protection on all four building facades"
-        },
-        {
-          "id": "D",
-          "text": "Light-colored reflective roofing responds to monsoon conditions — the Habagat brings heavy rain from the north while the Amihan brings dry winds from the south"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "summary": "Cross-ventilation responds to prevailing monsoon winds: Amihan blows from the northeast, Habagat blows from the southwest. Buildings are oriented with openings aligned to these winds for passive cooling.",
-        "explanation": "Cross-ventilation (the V in HOVE-B) directly responds to the Philippine monsoon system. The two prevailing winds: (1) AMIHAN — northeast monsoon, typically October to May, brings cool dry air; (2) HABAGAT — southwest monsoon, typically June to September, brings warm wet air. Proper building orientation — long axis running east-west, with openings on the northeast and southwest facades — maximizes cross-ventilation from both seasonal wind directions. Minimize west-facing glazing (hottest afternoon exposure).",
-        "common_misconceptions": [
-          "Reversing Amihan and Habagat directions — Amihan = northeast; Habagat = southwest",
-          "Thinking overhangs (not cross-ventilation) are the primary monsoon response — overhangs address rain and solar control; cross-ventilation specifically responds to wind direction"
-        ]
-      },
-      "explanation": "Amihan (northeast) and Habagat (southwest) are the two Philippine monsoon winds — cross-ventilation design aligns building openings with these seasonal wind directions.",
-      "code_citation": "Philippine architecture / Tropical Regionalism",
-      "bloom_level": "remember",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.4,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:06.530765+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:26077b18e0dbdc218c02d5840fd2beaee91dc5b4354c1d18b78c0fd4a3a1f45b"
-    },
-    {
-      "question_id": "a711e2ed-d9cd-4eb9-8610-f8e1d839a9f4",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Which wave of Filipino architectural identity does Leandro Locsin represent, and what is his signature design concept?",
-      "options": [
-        {
-          "id": "A",
-          "text": "First Wave Modernist/Brutalist — signature 'floating volume' of massive concrete forms appearing to hover above the ground, inspired by the raised floor of the bahay kubo"
-        },
-        {
-          "id": "B",
-          "text": "Second Wave Neo-Vernacular — signature bamboo curtain-wall system inspired by the capiz ventanillas of the bahay na bato upper floor, which integrates traditional materials with modern design"
-        },
-        {
-          "id": "C",
-          "text": "Third Wave Contemporary Tropical — signature sustainable bamboo engineering integrated with parametric computational design tools, focusing on eco-friendly and innovative solutions"
-        },
-        {
-          "id": "D",
-          "text": "First Wave Art Deco — signature reinforced concrete ornamentation with stylized Philippine flora and bold angular geometric forms, reflecting a blend of local and international styles"
-        }
-      ],
-      "correct_option_id": "A",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "summary": "Locsin = First Wave (Modernist/Brutalist, 1950s–1970s). Signature 'floating volume' — massive concrete forms appearing to levitate above ground — inspired by the raised floor of the bahay kubo, executed in Brutalist concrete.",
-        "explanation": "Leandro Locsin (1928–1994, National Artist 1990) belongs to the First Wave of Filipino architecture (Modernist/Brutalist, 1950s–1970s). His 'floating volume' signature concept appears most dramatically in the Tanghalang Pambansa (CCP Main Theater): the concrete mass appears to levitate above a reflecting pool. The optical illusion is created by recessing the structural base and cantilevering the upper mass. Inspired by the bahay kubo's raised floor — but executed in béton brut (raw exposed concrete), not indigenous materials.",
-        "common_misconceptions": [
-          "Confusing Locsin with Mañosa — Locsin = Brutalist concrete floating volume; Mañosa = Neo-Vernacular with indigenous materials",
-          "Thinking the floating volume involves lightweight materials — it is raw, exposed concrete that appears to float through structural cantilever and optical illusion"
-        ]
-      },
-      "explanation": "Locsin's floating volume is his most testable concept — First Wave Brutalist reinterpretation of the bahay kubo's raised floor, not a Neo-Vernacular material approach.",
-      "code_citation": "Philippine architecture / Leandro Locsin",
+      "explanation": "Third Wave architects fuse green building certification (BERDE/LEED) with Filipino vernacular spatial intelligence — distinguishes them from Second Wave's material-first approach.",
+      "code_citation": "Philippine architecture / Contemporary tropical design",
       "bloom_level": "understand",
       "application_context": null,
       "practice_context": [],
-      "difficulty": 0.35,
+      "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
@@ -815,7 +713,7 @@
       "prompt_image_url": null,
       "created_at": "2026-03-31T06:36:06.530765+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:34ddfc769ec4f17da8d1342a92256c54bfc9eee9206fb53f4ff6676086a61685"
+      "content_hash": "sha256:0bda4a4e92d81b4e4ee25afcd391f3f5449dfafae0cd68f2b2222febb1c8423a"
     },
     {
       "question_id": "5a3b83d2-2177-400f-906b-513ff932eb5e",
@@ -920,6 +818,57 @@
       "content_hash": "sha256:45eabb8a3a6ff39389fb9aa8fde4dced775c001e1047a3e3a8f15e3c7c1a0805"
     },
     {
+      "question_id": "a711e2ed-d9cd-4eb9-8610-f8e1d839a9f4",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Which wave of Filipino architectural identity does Leandro Locsin represent, and what is his signature design concept?",
+      "options": [
+        {
+          "id": "A",
+          "text": "First Wave Modernist/Brutalist — signature 'floating volume' of massive concrete forms appearing to hover above the ground, inspired by the raised floor of the bahay kubo"
+        },
+        {
+          "id": "B",
+          "text": "Second Wave Neo-Vernacular — signature bamboo curtain-wall system inspired by the capiz ventanillas of the bahay na bato upper floor, which integrates traditional materials with modern design"
+        },
+        {
+          "id": "C",
+          "text": "Third Wave Contemporary Tropical — signature sustainable bamboo engineering integrated with parametric computational design tools, focusing on eco-friendly and innovative solutions"
+        },
+        {
+          "id": "D",
+          "text": "First Wave Art Deco — signature reinforced concrete ornamentation with stylized Philippine flora and bold angular geometric forms, reflecting a blend of local and international styles"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Locsin = First Wave (Modernist/Brutalist, 1950s–1970s). Signature 'floating volume' — massive concrete forms appearing to levitate above ground — inspired by the raised floor of the bahay kubo, executed in Brutalist concrete.",
+        "explanation": "Leandro Locsin (1928–1994, National Artist 1990) belongs to the First Wave of Filipino architecture (Modernist/Brutalist, 1950s–1970s). His 'floating volume' signature concept appears most dramatically in the Tanghalang Pambansa (CCP Main Theater): the concrete mass appears to levitate above a reflecting pool. The optical illusion is created by recessing the structural base and cantilevering the upper mass. Inspired by the bahay kubo's raised floor — but executed in béton brut (raw exposed concrete), not indigenous materials.",
+        "common_misconceptions": [
+          "Confusing Locsin with Mañosa — Locsin = Brutalist concrete floating volume; Mañosa = Neo-Vernacular with indigenous materials",
+          "Thinking the floating volume involves lightweight materials — it is raw, exposed concrete that appears to float through structural cantilever and optical illusion"
+        ]
+      },
+      "explanation": "Locsin's floating volume is his most testable concept — First Wave Brutalist reinterpretation of the bahay kubo's raised floor, not a Neo-Vernacular material approach.",
+      "code_citation": "Philippine architecture / Leandro Locsin",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.530765+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34ddfc769ec4f17da8d1342a92256c54bfc9eee9206fb53f4ff6676086a61685"
+    },
+    {
       "question_id": "35e6b24a-f753-49a1-8bf9-728f33a7e234",
       "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
       "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
@@ -969,57 +918,6 @@
       "created_at": "2026-03-31T06:36:06.530765+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:9e9e76acbed1a6b1c981174adda62be7cf038faaf5c7679d703742e49588d57a"
-    },
-    {
-      "question_id": "fc893594-b737-42b8-8f7f-edcef08e91ce",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "The article identifies three waves of Filipino architectural identity. Which firms or architects represent the Third Wave (Contemporary Tropical, 2000s–present)?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Mañosa & Company (1970s), Pablo Antonio Associates (1950s), and Juan Nakpil Studio (1940s) — the three founding firms of Neo-Vernacular architecture, which influenced later movements"
-        },
-        {
-          "id": "B",
-          "text": "Lor Calma, Ed Calma, Mañosa & Company (Gelo Mañosa), BUDJI+ROYAL, and WTA Architecture + Design — fusing BERDE/LEED sustainability with local craft and computational tools"
-        },
-        {
-          "id": "C",
-          "text": "Leandro Locsin, Cesar Concio, Gabriel Formoso, and Felipe Mendoza — the pioneering Brutalist firms of postwar Manila, known for their concrete structures"
-        },
-        {
-          "id": "D",
-          "text": "Francisco Mañosa, Jose Mañosa, and Manuel Mañosa — the Mañosa family practice that defined Neo-Vernacular architecture in the Philippines, emphasizing traditional materials"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "summary": "Third Wave (Contemporary Tropical, 2000s–present): Lor Calma, Ed Calma, Mañosa & Company (Gelo Mañosa), BUDJI+ROYAL, WTA Architecture + Design — fusing BERDE/LEED sustainability with Filipino spatial traditions, bamboo engineering, and computational tools.",
-        "explanation": "The three waves: (1) FIRST WAVE (Modernist/Brutalist, 1950s–1970s): Locsin, Cesar Concio, Gabriel Formoso, Felipe Mendoza. Buildings: CCP, PICC, UP Holy Sacrifice. (2) SECOND WAVE (Neo-Vernacular, 1970s–2000s): Francisco Mañosa, Jose Mañosa, Manuel Mañosa. Buildings: Coconut Palace, EDSA Shrine, Amanpulo. (3) THIRD WAVE (Contemporary Tropical, 2000s–present): Lor Calma, Ed Calma, Gelo Mañosa, BUDJI+ROYAL, WTA Architecture + Design — integrates BERDE/LEED, bamboo engineering, earth-mass design, and computational tools with Filipino spatial traditions.",
-        "common_misconceptions": [
-          "Placing Mañosa in the Third Wave — Francisco Mañosa is Second Wave; Gelo Mañosa (Mañosa & Company) continues into the Third Wave",
-          "Confusing BUDJI+ROYAL with Mañosa — different firms with different approaches; BUDJI+ROYAL emphasizes sustainability certification alongside vernacular craft"
-        ]
-      },
-      "explanation": "Third Wave architects fuse green building certification (BERDE/LEED) with Filipino vernacular spatial intelligence — distinguishes them from Second Wave's material-first approach.",
-      "code_citation": "Philippine architecture / Contemporary tropical design",
-      "bloom_level": "understand",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:06.530765+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0bda4a4e92d81b4e4ee25afcd391f3f5449dfafae0cd68f2b2222febb1c8423a"
     },
     {
       "question_id": "18efe155-c205-40a5-88d3-e39dc379e102",
@@ -1073,6 +971,159 @@
       "content_hash": "sha256:567707b2bff399db4782a4df410e8c1a63b71208d2bd7b407387e50abce4d90f"
     },
     {
+      "question_id": "173c7547-ec52-4bfe-b850-d25fde6ff3df",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Per PD 1096 RIRR (page 39), how do the fire-resistive requirements for Type V construction differ from Type IV?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Type V requires 1-hour exterior walls (same as Types II and III); Type IV requires 4-hour exterior walls — making Type IV the most demanding construction classification in terms of fire resistance"
+        },
+        {
+          "id": "B",
+          "text": "Type V requires 4-hour exterior walls and 3-hour interior bearing walls; Type IV requires 4-hour exterior walls and 1-hour interior bearing walls — the key difference is the interior bearing wall rating"
+        },
+        {
+          "id": "C",
+          "text": "Type V requires 2-hour exterior walls and 2-hour interior bearing walls; Type IV requires 1-hour exterior walls and 1-hour interior bearing walls across all elements, simplifying construction requirements"
+        },
+        {
+          "id": "D",
+          "text": "Both Type IV and Type V share identical ratings for all wall types — the distinction between them is only in permitted construction materials, not fire-resistive ratings, which are standardized"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Type V: 4-hour exterior walls, 3-hour interior bearing walls. Type IV: 4-hour exterior walls, 1-hour interior bearing walls. The distinguishing factor is the interior bearing wall rating.",
+        "explanation": "PD 1096 RIRR (p. 39) fire-resistive construction table: Type IV (Heavy Timber/Masonry): 4-hour exterior walls, 1-hour interior bearing walls. Type V (Fire-Resistive/Concrete-Steel): 4-hour exterior walls, 3-hour interior bearing walls, 1-hour floors and roofs. Both types share the 4-hour exterior wall requirement. The key ALE distinction: Type V's 3-hour interior bearing walls vs Type IV's 1-hour interior bearing walls.",
+        "common_misconceptions": [
+          "Treating Types IV and V as identical — while they share 4-hour exterior walls, Type V has 3-hour (not 1-hour) interior bearing walls",
+          "Forgetting that floor and roof ratings are 1-hour for BOTH Type IV and Type V"
+        ]
+      },
+      "explanation": "The Type IV vs Type V distinction hinges on interior bearing wall ratings: 1-hour (IV) vs 3-hour (V). Both share 4-hour exterior walls.",
+      "code_citation": "PD 1096 RIRR p. 39 / RA 9514",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.530765+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7f51a7ad8b74f12c0f5fc47264cafee2ea8f46f88c444797f448c9aaef7cddc3"
+    },
+    {
+      "question_id": "3df1b862-38e2-46fb-8d1d-e3020f953cff",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Which tropical design strategy addresses Philippine monsoon wind patterns specifically, and what are the two prevailing winds named?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Elevated floors respond to monsoon winds — the Habagat from the north and the Amihan from the south are the two wind directions referenced in PD 1096 Rule VIII"
+        },
+        {
+          "id": "B",
+          "text": "Cross-ventilation responds to prevailing monsoon winds — the Amihan blows from the northeast and the Habagat blows from the southwest, determining optimal building orientation"
+        },
+        {
+          "id": "C",
+          "text": "Wide overhangs respond to monsoon winds — the Amihan from the east and the Habagat from the west require equal shade protection on all four building facades"
+        },
+        {
+          "id": "D",
+          "text": "Light-colored reflective roofing responds to monsoon conditions — the Habagat brings heavy rain from the north while the Amihan brings dry winds from the south"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Cross-ventilation responds to prevailing monsoon winds: Amihan blows from the northeast, Habagat blows from the southwest. Buildings are oriented with openings aligned to these winds for passive cooling.",
+        "explanation": "Cross-ventilation (the V in HOVE-B) directly responds to the Philippine monsoon system. The two prevailing winds: (1) AMIHAN — northeast monsoon, typically October to May, brings cool dry air; (2) HABAGAT — southwest monsoon, typically June to September, brings warm wet air. Proper building orientation — long axis running east-west, with openings on the northeast and southwest facades — maximizes cross-ventilation from both seasonal wind directions. Minimize west-facing glazing (hottest afternoon exposure).",
+        "common_misconceptions": [
+          "Reversing Amihan and Habagat directions — Amihan = northeast; Habagat = southwest",
+          "Thinking overhangs (not cross-ventilation) are the primary monsoon response — overhangs address rain and solar control; cross-ventilation specifically responds to wind direction"
+        ]
+      },
+      "explanation": "Amihan (northeast) and Habagat (southwest) are the two Philippine monsoon winds — cross-ventilation design aligns building openings with these seasonal wind directions.",
+      "code_citation": "Philippine architecture / Tropical Regionalism",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.530765+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26077b18e0dbdc218c02d5840fd2beaee91dc5b4354c1d18b78c0fd4a3a1f45b"
+    },
+    {
+      "question_id": "f0219965-396b-4b5f-a287-f82e31d4a0ca",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Per PD 1096 RIRR (page 39), how do the fire-resistive requirements for Type V construction differ from Type IV?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Type V requires 1-hour exterior walls (same as Types II and III); Type IV requires 4-hour exterior walls — making Type IV the most demanding construction classification"
+        },
+        {
+          "id": "B",
+          "text": "Type V requires 4-hour exterior walls and 3-hour interior bearing walls; Type IV requires 4-hour exterior walls and 1-hour interior bearing walls — the key difference is the interior bearing wall rating"
+        },
+        {
+          "id": "C",
+          "text": "Type V requires 2-hour exterior walls and 2-hour interior bearing walls; Type IV requires 1-hour exterior walls and 1-hour interior bearing walls across all elements, which simplifies construction planning"
+        },
+        {
+          "id": "D",
+          "text": "Both Type IV and Type V share identical ratings for all wall types — the distinction between them is only in permitted construction materials, not fire-resistive ratings, which affects material selection"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Type V: 4-hour exterior walls, 3-hour interior bearing walls. Type IV: 4-hour exterior walls, 1-hour interior bearing walls. The distinguishing factor is the interior bearing wall rating.",
+        "explanation": "PD 1096 RIRR (p. 39) fire-resistive construction table: Type IV (Heavy Timber/Masonry): 4-hour exterior walls, 1-hour interior bearing walls. Type V (Fire-Resistive/Concrete-Steel): 4-hour exterior walls, 3-hour interior bearing walls, 1-hour floors and roofs. Both types share the 4-hour exterior wall requirement. The key ALE distinction: Type V's 3-hour interior bearing walls vs Type IV's 1-hour interior bearing walls.",
+        "common_misconceptions": [
+          "Treating Types IV and V as identical — while they share 4-hour exterior walls, Type V has 3-hour (not 1-hour) interior bearing walls",
+          "Forgetting that floor and roof ratings are 1-hour for BOTH Type IV and Type V"
+        ]
+      },
+      "explanation": "The Type IV vs Type V distinction hinges on interior bearing wall ratings: 1-hour (IV) vs 3-hour (V). Both share 4-hour exterior walls.",
+      "code_citation": "PD 1096 RIRR p. 39 / RA 9514",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:56.235591+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fe3d456d4e6010f896979f534ef95e0cccdc7ac2be00531091de3e11e405a13b"
+    },
+    {
       "question_id": "7137be6c-78f3-4f95-b2fb-bd7b78f7e7db",
       "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
       "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
@@ -1122,108 +1173,6 @@
       "created_at": "2026-03-31T06:36:56.235591+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:c2cdcabdd0492aff335aa78539d02dc3549c43d9ad7cafc7e6d237f1e3df53de"
-    },
-    {
-      "question_id": "aa8cf0fa-b7b8-4866-89ab-d0c338ae7858",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Which tropical design strategy addresses Philippine monsoon wind patterns specifically, and what are the two prevailing winds named?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Elevated floors respond to monsoon winds — the Habagat from the north and the Amihan from the south are the two wind directions referenced in PD 1096 Rule VIII"
-        },
-        {
-          "id": "B",
-          "text": "Cross-ventilation responds to prevailing monsoon winds — the Amihan blows from the northeast and the Habagat blows from the southwest, determining optimal building orientation"
-        },
-        {
-          "id": "C",
-          "text": "Wide overhangs respond to monsoon winds — the Amihan from the east and the Habagat from the west require equal shade protection on all four building facades"
-        },
-        {
-          "id": "D",
-          "text": "Light-colored reflective roofing responds to monsoon conditions — the Habagat brings heavy rain from the north while the Amihan brings dry winds from the south"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "summary": "Cross-ventilation responds to prevailing monsoon winds: Amihan blows from the northeast, Habagat blows from the southwest. Buildings are oriented with openings aligned to these winds for passive cooling.",
-        "explanation": "Cross-ventilation (the V in HOVE-B) directly responds to the Philippine monsoon system. The two prevailing winds: (1) AMIHAN — northeast monsoon, typically October to May, brings cool dry air; (2) HABAGAT — southwest monsoon, typically June to September, brings warm wet air. Proper building orientation — long axis running east-west, with openings on the northeast and southwest facades — maximizes cross-ventilation from both seasonal wind directions. Minimize west-facing glazing (hottest afternoon exposure).",
-        "common_misconceptions": [
-          "Reversing Amihan and Habagat directions — Amihan = northeast; Habagat = southwest",
-          "Thinking overhangs (not cross-ventilation) are the primary monsoon response — overhangs address rain and solar control; cross-ventilation specifically responds to wind direction"
-        ]
-      },
-      "explanation": "Amihan (northeast) and Habagat (southwest) are the two Philippine monsoon winds — cross-ventilation design aligns building openings with these seasonal wind directions.",
-      "code_citation": "Philippine architecture / Tropical Regionalism",
-      "bloom_level": "remember",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.4,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:56.235591+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2e4d79080bf91f69abb8843bd067c2cb4a3c76ed643732c4dec4a29f1d2dfb1a"
-    },
-    {
-      "question_id": "5222f32e-b726-4ed9-ad0c-e04bb9948833",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "The 'HOVE-B' mnemonic encodes five passive tropical design strategies. Which option correctly defines all five?",
-      "options": [
-        {
-          "id": "A",
-          "text": "H = High albedo roofing, O = Open-plan layouts, V = Ventilation stacks, E = Energy-efficient glazing, B = Brise-soleil shading devices, which are essential for tropical climates"
-        },
-        {
-          "id": "B",
-          "text": "H = High ceilings (hot air rises above occupied zone), O = Overhangs (shade and rain protection), V = cross-Ventilation (Amihan/Habagat winds), E = Elevated floors (flood protection, airflow), B = Breezeways (channel and accelerate wind)"
-        },
-        {
-          "id": "C",
-          "text": "H = Hydraulic cooling systems, O = Operable glass walls, V = Vertical green walls, E = Earthquake-resistant framing, B = Bamboo structural systems, which are innovative but not traditional"
-        },
-        {
-          "id": "D",
-          "text": "H = Heat island mitigation, O = Orientation-optimized facades, V = Vegetated roofs, E = Efficient envelope insulation, B = Building automation controls, which are modern strategies"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "summary": "HOVE-B: High ceilings (hot air stratification), Overhangs (shade/rain), cross-Ventilation (monsoon winds), Elevated floors (flood/airflow), Breezeways (wind channeling). The five core passive tropical strategies.",
-        "explanation": "HOVE-B covers five fundamental passive cooling strategies in Tropical Regionalism: (1) HIGH CEILINGS — hot air rises and stratifies above the occupied zone; (2) OVERHANGS — roof extends beyond the wall plane, blocking direct tropical sun and monsoon rain; (3) CROSS-VENTILATION — openings aligned with prevailing Amihan (NE) and Habagat (SW) monsoon winds; (4) ELEVATED FLOORS — building raised above grade for flood protection and under-floor air circulation inherited from the bahay kubo; (5) BREEZEWAYS — open-air passages and interior voids that channel and accelerate airflow via the Venturi effect.",
-        "common_misconceptions": [
-          "Treating HOVE-B as an optional design approach — these strategies are codified in PD 1096 (ceiling heights, ventilation requirements) and earn credits in BERDE and LEED certifications",
-          "Forgetting that elevated floors are HOVE-B — inherited directly from the bahay kubo, they appear in both traditional and contemporary Tropical Regionalist design"
-        ]
-      },
-      "explanation": "HOVE-B is the LEA's most-tested passive tropical strategy mnemonic, often paired with PD 1096 provisions on ceiling heights and natural ventilation.",
-      "code_citation": "PD 1096 / Tropical Regionalism",
-      "bloom_level": "remember",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.35,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:56.235591+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e918a0a662a2fa68015918d6f2e4399a8851efd4ebd153c25c321b15d3c7ad5e"
     },
     {
       "question_id": "5e723f73-cd95-4137-b480-aec3f3a65714",
@@ -1328,6 +1277,108 @@
       "content_hash": "sha256:c18ffbec0a1e6fd29afc203fdebe3c8041cf6e7518ec018608e8228416c08c05"
     },
     {
+      "question_id": "aa8cf0fa-b7b8-4866-89ab-d0c338ae7858",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "Which tropical design strategy addresses Philippine monsoon wind patterns specifically, and what are the two prevailing winds named?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Elevated floors respond to monsoon winds — the Habagat from the north and the Amihan from the south are the two wind directions referenced in PD 1096 Rule VIII"
+        },
+        {
+          "id": "B",
+          "text": "Cross-ventilation responds to prevailing monsoon winds — the Amihan blows from the northeast and the Habagat blows from the southwest, determining optimal building orientation"
+        },
+        {
+          "id": "C",
+          "text": "Wide overhangs respond to monsoon winds — the Amihan from the east and the Habagat from the west require equal shade protection on all four building facades"
+        },
+        {
+          "id": "D",
+          "text": "Light-colored reflective roofing responds to monsoon conditions — the Habagat brings heavy rain from the north while the Amihan brings dry winds from the south"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Cross-ventilation responds to prevailing monsoon winds: Amihan blows from the northeast, Habagat blows from the southwest. Buildings are oriented with openings aligned to these winds for passive cooling.",
+        "explanation": "Cross-ventilation (the V in HOVE-B) directly responds to the Philippine monsoon system. The two prevailing winds: (1) AMIHAN — northeast monsoon, typically October to May, brings cool dry air; (2) HABAGAT — southwest monsoon, typically June to September, brings warm wet air. Proper building orientation — long axis running east-west, with openings on the northeast and southwest facades — maximizes cross-ventilation from both seasonal wind directions. Minimize west-facing glazing (hottest afternoon exposure).",
+        "common_misconceptions": [
+          "Reversing Amihan and Habagat directions — Amihan = northeast; Habagat = southwest",
+          "Thinking overhangs (not cross-ventilation) are the primary monsoon response — overhangs address rain and solar control; cross-ventilation specifically responds to wind direction"
+        ]
+      },
+      "explanation": "Amihan (northeast) and Habagat (southwest) are the two Philippine monsoon winds — cross-ventilation design aligns building openings with these seasonal wind directions.",
+      "code_citation": "Philippine architecture / Tropical Regionalism",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:56.235591+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e4d79080bf91f69abb8843bd067c2cb4a3c76ed643732c4dec4a29f1d2dfb1a"
+    },
+    {
+      "question_id": "5222f32e-b726-4ed9-ad0c-e04bb9948833",
+      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "The 'HOVE-B' mnemonic encodes five passive tropical design strategies. Which option correctly defines all five?",
+      "options": [
+        {
+          "id": "A",
+          "text": "H = High albedo roofing, O = Open-plan layouts, V = Ventilation stacks, E = Energy-efficient glazing, B = Brise-soleil shading devices, which are essential for tropical climates"
+        },
+        {
+          "id": "B",
+          "text": "H = High ceilings (hot air rises above occupied zone), O = Overhangs (shade and rain protection), V = cross-Ventilation (Amihan/Habagat winds), E = Elevated floors (flood protection, airflow), B = Breezeways (channel and accelerate wind)"
+        },
+        {
+          "id": "C",
+          "text": "H = Hydraulic cooling systems, O = Operable glass walls, V = Vertical green walls, E = Earthquake-resistant framing, B = Bamboo structural systems, which are innovative but not traditional"
+        },
+        {
+          "id": "D",
+          "text": "H = Heat island mitigation, O = Orientation-optimized facades, V = Vegetated roofs, E = Efficient envelope insulation, B = Building automation controls, which are modern strategies"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "HOVE-B: High ceilings (hot air stratification), Overhangs (shade/rain), cross-Ventilation (monsoon winds), Elevated floors (flood/airflow), Breezeways (wind channeling). The five core passive tropical strategies.",
+        "explanation": "HOVE-B covers five fundamental passive cooling strategies in Tropical Regionalism: (1) HIGH CEILINGS — hot air rises and stratifies above the occupied zone; (2) OVERHANGS — roof extends beyond the wall plane, blocking direct tropical sun and monsoon rain; (3) CROSS-VENTILATION — openings aligned with prevailing Amihan (NE) and Habagat (SW) monsoon winds; (4) ELEVATED FLOORS — building raised above grade for flood protection and under-floor air circulation inherited from the bahay kubo; (5) BREEZEWAYS — open-air passages and interior voids that channel and accelerate airflow via the Venturi effect.",
+        "common_misconceptions": [
+          "Treating HOVE-B as an optional design approach — these strategies are codified in PD 1096 (ceiling heights, ventilation requirements) and earn credits in BERDE and LEED certifications",
+          "Forgetting that elevated floors are HOVE-B — inherited directly from the bahay kubo, they appear in both traditional and contemporary Tropical Regionalist design"
+        ]
+      },
+      "explanation": "HOVE-B is the LEA's most-tested passive tropical strategy mnemonic, often paired with PD 1096 provisions on ceiling heights and natural ventilation.",
+      "code_citation": "PD 1096 / Tropical Regionalism",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:56.235591+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e918a0a662a2fa68015918d6f2e4399a8851efd4ebd153c25c321b15d3c7ad5e"
+    },
+    {
       "question_id": "dab2727e-cf4a-4423-83e0-6bb63b387df5",
       "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
       "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
@@ -1377,57 +1428,6 @@
       "created_at": "2026-03-31T06:36:56.235591+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:58d26ec9d2a0563bf08e58acc065caa86d8974c9d85d3ffa8941cfeeaf197f13"
-    },
-    {
-      "question_id": "f0219965-396b-4b5f-a287-f82e31d4a0ca",
-      "article_id": "162054b5-5f86-4a99-ab8b-f7991bbab899",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "Per PD 1096 RIRR (page 39), how do the fire-resistive requirements for Type V construction differ from Type IV?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Type V requires 1-hour exterior walls (same as Types II and III); Type IV requires 4-hour exterior walls — making Type IV the most demanding construction classification"
-        },
-        {
-          "id": "B",
-          "text": "Type V requires 4-hour exterior walls and 3-hour interior bearing walls; Type IV requires 4-hour exterior walls and 1-hour interior bearing walls — the key difference is the interior bearing wall rating"
-        },
-        {
-          "id": "C",
-          "text": "Type V requires 2-hour exterior walls and 2-hour interior bearing walls; Type IV requires 1-hour exterior walls and 1-hour interior bearing walls across all elements, which simplifies construction planning"
-        },
-        {
-          "id": "D",
-          "text": "Both Type IV and Type V share identical ratings for all wall types — the distinction between them is only in permitted construction materials, not fire-resistive ratings, which affects material selection"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "summary": "Type V: 4-hour exterior walls, 3-hour interior bearing walls. Type IV: 4-hour exterior walls, 1-hour interior bearing walls. The distinguishing factor is the interior bearing wall rating.",
-        "explanation": "PD 1096 RIRR (p. 39) fire-resistive construction table: Type IV (Heavy Timber/Masonry): 4-hour exterior walls, 1-hour interior bearing walls. Type V (Fire-Resistive/Concrete-Steel): 4-hour exterior walls, 3-hour interior bearing walls, 1-hour floors and roofs. Both types share the 4-hour exterior wall requirement. The key ALE distinction: Type V's 3-hour interior bearing walls vs Type IV's 1-hour interior bearing walls.",
-        "common_misconceptions": [
-          "Treating Types IV and V as identical — while they share 4-hour exterior walls, Type V has 3-hour (not 1-hour) interior bearing walls",
-          "Forgetting that floor and roof ratings are 1-hour for BOTH Type IV and Type V"
-        ]
-      },
-      "explanation": "The Type IV vs Type V distinction hinges on interior bearing wall ratings: 1-hour (IV) vs 3-hour (V). Both share 4-hour exterior walls.",
-      "code_citation": "PD 1096 RIRR p. 39 / RA 9514",
-      "bloom_level": "remember",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.55,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:56.235591+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fe3d456d4e6010f896979f534ef95e0cccdc7ac2be00531091de3e11e405a13b"
     },
     {
       "question_id": "5acb00d7-ef56-4db4-ad92-db1c526b3a2a",

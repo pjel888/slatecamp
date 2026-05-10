@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Util 008 01 The Three Phase Coordination Framework** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,7 +14,11 @@ Apply the three-phase MEPF coordination framework — schematic design, design d
 
 ### Schematic Design Phase
 
-<ArticleMedia id="media-lea-util-008-01-the-three-phase-coordina" type="image" caption="MEP Coordination Framework — Structural, Architectural, and MEP Integration" description="Process flow diagram of the three-phase coordination framework between trades: Phase 1 — Schematic (30% DD) establishing floor loading, column locations, equipment room sizing; Phase 2 — Design Development (60% DD) with BIM clash detection, equipment schedules, and 3D routing; Phase 3 — Construction Documents (90% DD) with final routing, fire-stopping details, and penetration schedules. Key coordination requirements at each phase listed per PD 1096 and standard Philippine practice." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-008-01-the-three-phase-coordina", type="image", caption="MEP Coordination Framework — Structural, Architectural, and MEP Integration", description="Process flow diagram of the three-phase coordination framework between trades: Phase 1 — Schematic (30% DD) establishing floor loading, column locations, equipment room sizing; Phase 2 — Design Development (60% DD) with BIM clash detection, equipment schedules, and 3D routing; Phase 3 — Construction Documents (90% DD) with final routing, fire-stopping details, and penetration schedules. Key coordination requirements at each phase listed per PD 1096 and standard Philippine practice.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 During schematic design, the architect establishes the building envelope, floor-to-floor heights, and gross spatial zones. MEPF consultants must confirm conceptual approaches for major systems at this stage. Under RA 9266 and UAP SPP Document 201, the architect is responsible for coordinating all building systems to ensure compliance with National Building Code requirements.
@@ -16,15 +27,23 @@ Floor-to-floor height decisions made during schematic design directly impact MEP
 
 Ceiling plenum coordination begins conceptually. The typical plenum depth allocation is 300 to 450 millimeters for standard office installations with moderate MEP density, as derived from standard suspended ceiling systems common in Philippine construction. Buildings with high MEP density (data centers, hospitals) may require 450 to 600 millimeters.
 
-<KeyValues items=[{"value": "THHN", "label": "90\u00b0C General Wiring"}, {"value": "THWN", "label": "75\u00b0C Wet Locations"}, {"value": "XHHW", "label": "90\u00b0C Dry/75\u00b0C Wet"}, {"value": "UF-B", "label": "Underground Feeder"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, THHN=true, label=true, u00b0C=true, General=true, Wiring=true, THWN=true, Wet=true, Locations=true, XHHW=true, Dry=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+[/SLATECAMP_UI_BLOCK]
 
 ### Design Development Phase
 
@@ -271,4 +290,3 @@ MEPF coordination with architecture is a collaborative, iterative process that b
 See also within MEPF Coordination and Integration: **lea-util-008-02-core-concept**, **lea-util-008-03-core-concept**, **lea-util-008-04-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

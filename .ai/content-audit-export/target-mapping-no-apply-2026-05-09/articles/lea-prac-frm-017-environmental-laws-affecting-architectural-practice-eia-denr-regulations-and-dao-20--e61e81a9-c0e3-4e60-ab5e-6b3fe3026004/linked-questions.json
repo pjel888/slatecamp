@@ -1,0 +1,508 @@
+{
+  "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:e72b42a0257981c81f88e665ed756327776031bb29cd632d9c5670248a462bc2",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "87b90969-2f45-40ac-ad88-458fcc7d72cb",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "How should an architect address stormwater management under environmental regulations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore stormwater; it is not an architect's responsibility, as it falls outside the typical scope of work"
+        },
+        {
+          "id": "b",
+          "text": "Coordinate with MEP consultants to design retention, infiltration, or treatment systems that prevent water quality degradation"
+        },
+        {
+          "id": "c",
+          "text": "Only address stormwater if flooding occurs, which may lead to reactive rather than proactive solutions"
+        },
+        {
+          "id": "d",
+          "text": "Stormwater management is the contractor's only responsibility, unless specified otherwise in the contract"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Denies architect responsibility; water quality protection through stormwater design is part of environmental compliance.",
+        "c": "Reactive misunderstanding; stormwater systems must be designed proactively to prevent water quality degradation, not only after flooding occurs.",
+        "d": "Misplaces responsibility; while contractors implement systems, architects must design stormwater strategy and specify it in construction documents.",
+        "correct": "DAO 2003-30 and the National Building Code require architects to coordinate with MEP consultants to design stormwater management systems (retention, infiltration, bioswales, constructed wetlands) that protect receiving water bodies.",
+        "takeaway": "Stormwater management is an architect's responsibility through site planning and coordination with MEP—not an afterthought or contractor-only task."
+      },
+      "explanation": null,
+      "code_citation": "DAO 2003-30 (or specify exact NBC section if citing building code stormwater provisions)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1c59adcbe154fc98ddf58bbb40345cd50975aebdbfc8f4565dce99a35ebe0d75"
+    },
+    {
+      "question_id": "e548ee77-5eb6-4501-86fe-48bbfa54d21d",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What happens if a project is located in a biodiversity-sensitive area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No restrictions apply, allowing full development without any environmental considerations"
+        },
+        {
+          "id": "b",
+          "text": "Development may be prohibited entirely or restricted to minimal footprint with specialized construction methods; environmental offsets may be required"
+        },
+        {
+          "id": "c",
+          "text": "The project can proceed without modification, as biodiversity concerns are not prioritized in such areas"
+        },
+        {
+          "id": "d",
+          "text": "Only flooding concerns matter, disregarding other environmental impacts such as habitat disruption"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Dangerously incorrect; protected areas and sensitive ecosystems have strict development restrictions.",
+        "c": "False; projects in sensitive areas cannot proceed without significant restrictions and environmental review.",
+        "d": "Incomplete; biodiversity and habitat protection are primary concerns beyond flooding in sensitive areas.",
+        "correct": "DENR heavily restricts or prohibits development in sensitive ecological areas; if allowed, projects face minimal footprint limits, specialized construction methods, and environmental offset requirements (reforestation, habitat restoration).",
+        "takeaway": "Biodiversity-sensitive sites face severe development restrictions or outright prohibition—confirm site eligibility before committing to design and budget."
+      },
+      "explanation": "Dangerously incorrect; protected areas and sensitive ecosystems have strict development restrictions. False; projects in sensitive areas cannot proceed without significant restrictions and environmental review. Incomplete; biodiversity and habitat protection are primary concerns beyond flooding in sensitive areas. DENR heavily restricts or prohibits development in sensitive ecological areas; if allowed, projects face minimal footprint limits, specialized construction methods, and environmental offset requirements (reforestation, habitat restoration). Biodiversity-sensitive sites face severe development restrictions or outright prohibition—confirm site eligibility before committing to design and budget.",
+      "code_citation": "DAO 2003-30; DENR Protected Areas",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:55:59.951654+00:00",
+      "content_hash": "sha256:08be14eb07ac5a160b70bface4ad3067b5b212189677848f8c8f73b590a0138a"
+    },
+    {
+      "question_id": "a4b16a2b-deee-4415-9d4b-10d22a425829",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What should an architect do early in the pre-design phase regarding environmental requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore environmental concerns until later stages of the project when they become more apparent"
+        },
+        {
+          "id": "b",
+          "text": "Determine whether the site is in a sensitive ecological area and whether EIA is required"
+        },
+        {
+          "id": "c",
+          "text": "Only address environmental issues during construction, as they are not relevant in the design phase"
+        },
+        {
+          "id": "d",
+          "text": "Environmental concerns only matter in rural areas, where natural habitats are more prevalent"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reckless approach; discovering EIA requirements after design is advanced wastes time and money.",
+        "c": "Too late; environmental constraints must inform the design, not be addressed after construction starts.",
+        "d": "Incorrect scope; urban and suburban projects also trigger EIA and environmental restrictions depending on site conditions and project type.",
+        "correct": "Architects must verify early whether a site is in a protected area or requires EIA; failure to do so can waste design time and cause costly project delays.",
+        "takeaway": "Before design begins, confirm EIA applicability and site environmental sensitivity to avoid redesigns or project denial later."
+      },
+      "explanation": "Reckless approach; discovering EIA requirements after design is advanced wastes time and money. Too late; environmental constraints must inform the design, not be addressed after construction starts. Incorrect scope; urban and suburban projects also trigger EIA and environmental restrictions depending on site conditions and project type. Architects must verify early whether a site is in a protected area or requires EIA; failure to do so can waste design time and cause costly project delays. Before design begins, confirm EIA applicability and site environmental sensitivity to avoid redesigns or project denial later.",
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:55:59.815785+00:00",
+      "content_hash": "sha256:46dfad3ae96759ab0137a0981679da837306714a3116339f6d9f05de350a68b8"
+    },
+    {
+      "question_id": "deb634a6-66af-485a-b3e3-7da8f984302a",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What environmental offset requirement might be imposed on a project that impacts habitat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No offsets are required unless the project exceeds a specific threshold of environmental impact as determined by local regulations"
+        },
+        {
+          "id": "b",
+          "text": "Reforestation elsewhere, habitat restoration, or conservation land dedication may be required"
+        },
+        {
+          "id": "c",
+          "text": "Only financial compensation is necessary if the project is within a designated urban area"
+        },
+        {
+          "id": "d",
+          "text": "Offsets are only for government projects, except when private projects are located in ecologically critical areas"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly assumes no responsibility; projects impacting habitat must provide environmental offsets.",
+        "c": "Incomplete; while financial contributions may be part of offsets, physical restoration (reforestation, habitat dedication) is typically required.",
+        "d": "Incorrect scope; both government and private projects must provide environmental offsets if habitat is impacted.",
+        "correct": "Environmental offsets for habitat impacts include reforestation, habitat restoration on the site or elsewhere, and dedication of conservation land—these are physical mitigation measures, not just financial.",
+        "takeaway": "Environmental offsets can require setting aside project land for conservation or restoring habitat elsewhere—impacts site planning and buildable area."
+      },
+      "explanation": "Incorrectly assumes no responsibility; projects impacting habitat must provide environmental offsets. Incomplete; while financial contributions may be part of offsets, physical restoration (reforestation, habitat dedication) is typically required. Incorrect scope; both government and private projects must provide environmental offsets if habitat is impacted. Environmental offsets for habitat impacts include reforestation, habitat restoration on the site or elsewhere, and dedication of conservation land—these are physical mitigation measures, not just financial. Environmental offsets can require setting aside project land for conservation or restoring habitat elsewhere—impacts site planning and buildable area.",
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:56:00.078144+00:00",
+      "content_hash": "sha256:f38c0d9f7e1b6cf171dd18e0c5ba1f58926f5d7c1873e3c1a9bf126e22258ee4"
+    },
+    {
+      "question_id": "02ae8e77-9410-4043-b550-578be05d84c9",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What is an Environmental Impact Assessment (EIA)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A marketing document intended to promote the project without necessarily addressing environmental concerns"
+        },
+        {
+          "id": "b",
+          "text": "The systematic process of identifying, predicting, and evaluating environmental effects of a proposed project"
+        },
+        {
+          "id": "c",
+          "text": "A cost estimate that includes potential environmental mitigation expenses but does not assess impacts"
+        },
+        {
+          "id": "d",
+          "text": "A design proposal that incorporates environmental considerations but lacks formal assessment procedures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses EIA with promotional material; EIA is a technical environmental analysis required by law for certain projects.",
+        "c": "Confuses EIA with a budget item; EIA is an environmental impact study, not a cost document.",
+        "d": "Confuses EIA with design documentation; EIA is a separate regulatory analysis that informs design, not the design itself.",
+        "correct": "EIA is the systematic process of identifying, predicting, and evaluating environmental effects of a proposed project before construction proceeds (DAO 2003-30).",
+        "takeaway": "EIA is a mandatory environmental review process, not a marketing document or cost estimate."
+      },
+      "explanation": "Confuses EIA with promotional material; EIA is a technical environmental analysis required by law for certain projects. Confuses EIA with a budget item; EIA is an environmental impact study, not a cost document. Confuses EIA with design documentation; EIA is a separate regulatory analysis that informs design, not the design itself. EIA is the systematic process of identifying, predicting, and evaluating environmental effects of a proposed project before construction proceeds (DAO 2003-30). EIA is a mandatory environmental review process, not a marketing document or cost estimate.",
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:55:59.564655+00:00",
+      "content_hash": "sha256:18c3be1fd3c4fcd588fac47b407ba17ef1aabcb35fd14d2e9bf38ce31541c618"
+    },
+    {
+      "question_id": "0e962204-4430-4f1e-850a-475a85645839",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "How long does EIA approval typically take, and how should the architect plan for it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "EIA is immediate and takes no time, which is a misconception"
+        },
+        {
+          "id": "b",
+          "text": "EIA typically takes 3–6 months; architect should budget this time in project schedule and anticipate possible design changes based on findings"
+        },
+        {
+          "id": "c",
+          "text": "EIA only matters after construction starts, which is incorrect"
+        },
+        {
+          "id": "d",
+          "text": "EIA approval is guaranteed and has no scheduling impact, which is misleading"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Dangerously incorrect; EIA approval takes significant time and can delay projects.",
+        "c": "Too late; EIA must be completed and approve before construction starts; findings can require design changes.",
+        "d": "False; EIA approval is not guaranteed, and delays can have major scheduling and budget impacts.",
+        "correct": "EIA review and approval timelines vary by project category and complexity under DAO 2003-30; architects must budget adequate time in the project schedule and plan for potential design modifications based on environmental findings. Specific timeframe (3–6 months) should be verified against current DAO 2003-30 IRR or DENR guidelines.",
+        "takeaway": "Budget 3–6 months for EIA approval in the project schedule; environmental findings can require design changes, affecting budget and timeline."
+      },
+      "explanation": null,
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:80034f3f12ba2d33053b4c007f4b087bd2660a36621d8514bdfaf0002ec82a11"
+    },
+    {
+      "question_id": "56c383d6-628e-426a-b5b8-c6c57d194343",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What system maintains designations of protected areas and sensitive ecosystems in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Board of Architecture, which oversees the design and planning of urban spaces"
+        },
+        {
+          "id": "b",
+          "text": "National Integrated Protected Areas System (NIPAS)"
+        },
+        {
+          "id": "c",
+          "text": "Construction Industry Authority, responsible for infrastructure development and environmental impact assessments"
+        },
+        {
+          "id": "d",
+          "text": "Department of Budget and Management, which allocates funding for environmental conservation projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses site environmental status with architectural licensing; the Board of Architecture does not maintain environmental designations.",
+        "c": "Wrong agency; no such authority; environmental designations are maintained by DENR, not a construction industry authority.",
+        "d": "Wrong function; the Department of Budget and Management handles government finances, not environmental designations.",
+        "correct": "NIPAS (National Integrated Protected Areas System) and DENR Regional Offices maintain maps and information on protected areas, biodiversity hotspots, and sensitive ecosystems.",
+        "takeaway": "Consult NIPAS and DENR Regional Offices to determine if a proposed site is in a protected or sensitive area before proceeding with design."
+      },
+      "explanation": "Confuses site environmental status with architectural licensing; the Board of Architecture does not maintain environmental designations. Wrong agency; no such authority; environmental designations are maintained by DENR, not a construction industry authority. Wrong function; the Department of Budget and Management handles government finances, not environmental designations. NIPAS (National Integrated Protected Areas System) and DENR Regional Offices maintain maps and information on protected areas, biodiversity hotspots, and sensitive ecosystems. Consult NIPAS and DENR Regional Offices to determine if a proposed site is in a protected or sensitive area before proceeding with design.",
+      "code_citation": "DENR, NIPAS",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:55:59.684187+00:00",
+      "content_hash": "sha256:d46558410b9e800d41fb75fa07c994ea1e72e2c4e348908474508511e786a3ad"
+    },
+    {
+      "question_id": "41c186e9-5b2d-4dbf-9f6f-60a504c8aac7",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What documents should an architect specify in construction details to address construction waste management?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No waste management documentation is needed unless required by local regulations"
+        },
+        {
+          "id": "b",
+          "text": "Construction and Demolition (C&D) Waste Management Plan specifying segregation, recycling, and minimization measures"
+        },
+        {
+          "id": "c",
+          "text": "Only cost estimates, which may include waste management considerations if specified"
+        },
+        {
+          "id": "d",
+          "text": "Only contractor invoices, which should reflect any waste management fees"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Violates DAO 2003-30; waste management documentation is a legal requirement for construction compliance.",
+        "c": "Insufficient; cost estimates do not ensure waste management practices are implemented.",
+        "d": "Insufficient; invoices document costs but do not specify how waste will be managed.",
+        "correct": "DAO 2003-30 requires a Construction and Demolition (C&D) Waste Management Plan specifying how contractors will segregate, recycle, and minimize demolition and construction waste.",
+        "takeaway": "Architects must specify a C&D Waste Management Plan in contract documents requiring contractors to segregate and recycle construction waste."
+      },
+      "explanation": null,
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be8ff449bd1bad90187645d901136a3ce47dd91c163bd48c1e239d71be3d4d93"
+    },
+    {
+      "question_id": "ff7e7e2a-e3e2-4bd2-9ff6-fe22ec9649f3",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What is the difference between Category A and Category B projects under DAO 2003-30?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Category A is for government only; Category B for private, which affects the scope of environmental assessments required."
+        },
+        {
+          "id": "b",
+          "text": "Category A projects have significant environmental impacts requiring detailed EIS; Category B has localized impacts requiring IEE or exemption"
+        },
+        {
+          "id": "c",
+          "text": "There is no difference, as both categories follow the same environmental assessment procedures."
+        },
+        {
+          "id": "d",
+          "text": "Category A is cheaper than Category B, due to differing regulatory requirements and compliance costs."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly ties categories to sector; both public and private projects are categorized by environmental impact magnitude, not ownership.",
+        "c": "Dangerously incorrect; the categories have distinctly different requirements and approval timelines.",
+        "d": "Confuses category with cost; project cost does not determine category—environmental impact magnitude does.",
+        "correct": "Category A projects have large-scale, significant environmental impacts and require detailed Environmental Impact Statement (EIS); Category B projects have localized impacts and may require Initial Environmental Examination (IEE) or exemption.",
+        "takeaway": "Category A = full detailed EIS required; Category B = lighter Initial Environmental Examination or exemption possible based on impact scope."
+      },
+      "explanation": null,
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:931cac8c6936e1ab585200e356b6278acaa31520d673f3f8a7ad41b3a92ef439"
+    },
+    {
+      "question_id": "69d6c7a7-600c-4e9f-bfe9-07a71264eb1d",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "Which regulatory document prescribes the procedure for EIA in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NBC, which primarily focuses on building codes but includes some environmental considerations"
+        },
+        {
+          "id": "b",
+          "text": "RA 9266, which is the Architecture Act and does not directly address EIA procedures"
+        },
+        {
+          "id": "c",
+          "text": "DAO 2003-30"
+        },
+        {
+          "id": "d",
+          "text": "BP 344, which addresses accessibility but not environmental impact assessments"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrong regulatory source; NBC is a building code, not the EIA procedures document.",
+        "b": "Wrong regulatory source; RA 9266 is the Architecture Law, not the EIA procedures document.",
+        "d": "Wrong regulatory source; BP 344 governs accessibility for persons with disabilities, not EIA procedures.",
+        "correct": "DAO (Department Administrative Order) 2003-30 prescribes the procedure and categories for EIA in the Philippines.",
+        "takeaway": "DAO 2003-30 is the governing regulation for EIA procedures—architects must reference it to determine if a project requires EIA."
+      },
+      "explanation": null,
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8528be162b5366a02e72778b5238ef28c9278b8bef8e040f40637530ddd89c82"
+    }
+  ]
+}

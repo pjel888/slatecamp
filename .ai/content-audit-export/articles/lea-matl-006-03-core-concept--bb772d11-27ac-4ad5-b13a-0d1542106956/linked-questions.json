@@ -1,9 +1,59 @@
 {
   "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:7499867a5f2871480f41b3c7d4cef64bf3bd3091fb4524891a31041822974d25",
+  "linked_questions_hash": "sha256:71868966edadc92110364edad969c504f3df6e7d4fc688a81cfd1741bcf3b8b1",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "ca24ab09-70b5-4acf-90a3-306c93691bb8",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "A basement wall in a tropical coastal region experiences intermittent hydrostatic pressure during monsoon season. The engineer proposes negative-side (interior) waterproofing. What is the primary failure risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interior coating will fail because it cannot resist water pressure before infiltration"
+        },
+        {
+          "id": "b",
+          "text": "Exterior concrete will deteriorate from salt spray, leading to potential structural compromise over time"
+        },
+        {
+          "id": "c",
+          "text": "Interior drainage system will become overwhelmed with water, especially during peak rainfall events"
+        },
+        {
+          "id": "d",
+          "text": "Coating will fail to cure due to high humidity, which is prevalent in tropical coastal regions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Salt spray affects exterior concrete but is secondary; primary issue is hydrostatic pressure.",
+        "c": "Interior drainage can be enhanced with pumps, but this does not address the core issue of pressure-driven infiltration.",
+        "d": "Humidity does slow cure but is a secondary concern; waterproofing failure is primary.",
+        "correct": "Negative-side waterproofing is applied after water infiltrates the concrete. In tropical climates with monsoon rainfall (200+ mm/hr), hydrostatic pressure forces water through concrete faster than interior drainage can handle. Negative-side systems are designed for non-hydrostatic damp conditions only.",
+        "takeaway": "Positive-side (exterior) waterproofing is mandatory for tropical hydrostatic conditions. Negative-side only for non-hydrostatic interior applications."
+      },
+      "explanation": "Salt spray affects exterior concrete but is secondary; primary issue is hydrostatic pressure. Interior drainage can be enhanced with pumps, but this does not address the core issue of pressure-driven infiltration. Humidity does slow cure but is a secondary concern; waterproofing failure is primary. Negative-side waterproofing is applied after water infiltrates the concrete. In tropical climates with monsoon rainfall (200+ mm/hr), hydrostatic pressure forces water through concrete faster than interior drainage can handle. Negative-side systems are designed for non-hydrostatic damp conditions only. Positive-side (exterior) waterproofing is mandatory for tropical hydrostatic conditions. Negative-side only for non-hydrostatic interior applications.",
+      "code_citation": "ASTM D6164, Tropical Waterproofing Design",
+      "bloom_level": "understand",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:17:31.508598+00:00",
+      "content_hash": "sha256:e7881a9c7eadd66ba80da817e664b9b472bc540d231de9f0b962d45ed88f73ba"
+    },
     {
       "question_id": "c82532e0-7b73-4891-9292-acf89dd2251f",
       "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
@@ -39,7 +89,7 @@
         "correct": "Positive-side waterproofing is applied directly on the surface exposed to water (exterior basement walls, roof decks). It resists hydrostatic pressure by blocking water before infiltration.",
         "takeaway": "Positive-side = exterior/source side. Negative-side = interior. Tropical hydrostatic requires positive-side."
       },
-      "explanation": null,
+      "explanation": "Negative-side is applied on the interior after water infiltration; cannot resist hydrostatic pressure. Capillary-break is a damp-proofing technique using absorbent materials; does not provide full waterproofing. Damp-proof blocks vapor transmission but allows liquid water penetration; lighter than waterproofing. Positive-side waterproofing is applied directly on the surface exposed to water (exterior basement walls, roof decks). It resists hydrostatic pressure by blocking water before infiltration. Positive-side = exterior/source side. Negative-side = interior. Tropical hydrostatic requires positive-side.",
       "code_citation": "ASTM D6164, Waterproofing Design Principles",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -51,8 +101,8 @@
       "model_id": "ALE-MATL-006-03-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:358daf6bb9c420a9dcd7bdfaffec722f0b8c793ba8a6a92076bb327c6216d9e0"
+      "updated_at": "2026-05-06T13:17:31.389+00:00",
+      "content_hash": "sha256:ff039def3e1bad33c7cf29eeae321e6bb874a6c4f6a04316701eef40b7dafa08"
     },
     {
       "question_id": "d3f421c9-847a-4ad0-b6c4-ddc8b930db3e",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:27.434371+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:aec8ab49e7099e437339c1837f6286a820e4c5ab3e9681f1e92208a37837d5c1"
-    },
-    {
-      "question_id": "ca24ab09-70b5-4acf-90a3-306c93691bb8",
-      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
-      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
-      "text": "A basement wall in a tropical coastal region experiences intermittent hydrostatic pressure during monsoon season. The engineer proposes negative-side (interior) waterproofing. What is the primary failure risk?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Interior coating will fail because it cannot resist water pressure before infiltration"
-        },
-        {
-          "id": "b",
-          "text": "Exterior concrete will deteriorate from salt spray, leading to potential structural compromise over time"
-        },
-        {
-          "id": "c",
-          "text": "Interior drainage system will become overwhelmed with water, especially during peak rainfall events"
-        },
-        {
-          "id": "d",
-          "text": "Coating will fail to cure due to high humidity, which is prevalent in tropical coastal regions"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Salt spray affects exterior concrete but is secondary; primary issue is hydrostatic pressure.",
-        "c": "Interior drainage can be enhanced with pumps, but this does not address the core issue of pressure-driven infiltration.",
-        "d": "Humidity does slow cure but is a secondary concern; waterproofing failure is primary.",
-        "correct": "Negative-side waterproofing is applied after water infiltrates the concrete. In tropical climates with monsoon rainfall (200+ mm/hr), hydrostatic pressure forces water through concrete faster than interior drainage can handle. Negative-side systems are designed for non-hydrostatic damp conditions only.",
-        "takeaway": "Positive-side (exterior) waterproofing is mandatory for tropical hydrostatic conditions. Negative-side only for non-hydrostatic interior applications."
-      },
-      "explanation": null,
-      "code_citation": "ASTM D6164, Tropical Waterproofing Design",
-      "bloom_level": "understand",
-      "application_context": "design_application",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-006-03-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:60fd4a056d2c3720ac14a3a082069466d099f2c30143c1e6e67c0b2dc29afdc8"
     },
     {
       "question_id": "a615ce9f-571a-4071-b60b-35b2d3d31539",

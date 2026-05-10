@@ -171,4 +171,3 @@ Extracted summary:
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-05-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
-

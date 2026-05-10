@@ -630,4 +630,3 @@ _Dual-Context Edition: Philippine PD 1096 / BP 344 vs. US IBC / ADA_
 ## Cross‑References
 
 **Ergonomics In Furniture Design**, **Standard Human Body Dimensions**, **Commercial Clearances**, **Case Study Hospital Mall School**
-

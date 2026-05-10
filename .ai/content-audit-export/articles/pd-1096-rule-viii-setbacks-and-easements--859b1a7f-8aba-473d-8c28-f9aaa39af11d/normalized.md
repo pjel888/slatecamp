@@ -2,9 +2,9 @@
 
 ## PD 1096 (NBCP) — Rule VIII (Yards & Setbacks) and Rule X (Building Projections Over Public Streets)
 
-**Difficulty Level:** Intermediate to Advanced  
-**LEA Relevance:** Area 3 — Architectural Design & Site Planning (40%)  
-**Governing Law:** PD 1096 (National Building Code of the Philippines), 2004 Revised IRR; PD 1067 (Water Code of the Philippines)  
+**Difficulty Level:** Intermediate to Advanced
+**LEA Relevance:** Area 3 — Architectural Design & Site Planning (40%)
+**Governing Law:** PD 1096 (National Building Code of the Philippines), 2004 Revised IRR; PD 1067 (Water Code of the Philippines)
 **Date Verified:** March 28, 2026 — cross-referenced against DPWH PD 1096, 2004 Revised IRR (Rule VIII & X), and LawPhil PD 1067 Article 51.[web:2][web:7][web:15][web:16]
 
 ## Learning Goal
@@ -71,7 +71,7 @@ Extracted summary:
 
 ### KEY DEFINITION
 
-> **YARD** = the required open space left between the **outermost face** of the building or structure and the **property lines** (front, rear, right side, left side). **The width of the yard is the setback.**  
+> **YARD** = the required open space left between the **outermost face** of the building or structure and the **property lines** (front, rear, right side, left side). **The width of the yard is the setback.**
 > _(Rule VIII, Section 804, Subsection 3, 2004 Revised IRR)[web:2]_
 
 ---
@@ -181,7 +181,7 @@ Extracted summary:
 
 ### INCREMENTAL SETBACK RULE (Section 804, Subsection 6)
 
-> For buildings **more than 2 storeys**, the minimum width of the required rear or side court increases by **300 mm per storey** above the 2nd, up to the **14th storey**.[web:2]  
+> For buildings **more than 2 storeys**, the minimum width of the required rear or side court increases by **300 mm per storey** above the 2nd, up to the **14th storey**.[web:2]
 > For buildings taller than 14 storeys, use the width computed for 14 storeys (increment caps at 14).[web:2]
 
 **Reason for the Law:** Taller buildings block more sky and air, so courts must grow proportionally to retain light and ventilation for occupants and neighbors.[web:2]
@@ -216,7 +216,7 @@ The IRR identifies **seven (7)** standardized lot configurations.[web:2]
 |  6  | **End Lot**                                      | End of a row, 1 street + 1 side    | 30–50% / 20–50%                    |
 |  7  | **Corner Lot abutting 3+ Streets/Alleys/Rivers** | Maximum exposure                   | 5% for all Groups                  |
 
-\*TOSL values summarized from Table VIII.1; always check the full table for the exam problem’s exact group/occupancy.[web:2]  
+\*TOSL values summarized from Table VIII.1; always check the full table for the exam problem’s exact group/occupancy.[web:2]
 \*\*First TOSL figure applies to Groups A,B,C,D & J; second to E,F,G,H & I.
 
 > **Reason for these categories:** The more public frontages a lot has, the more natural light and ventilation its buildings receive from the surroundings, so the internal required TOSL can be lower.[web:2]
@@ -246,7 +246,7 @@ Always confirm with the specific IRR text when applying variances in a design pr
 
 **Important correction:** Easement widths along rivers, streams, and shorelines come from **PD 1067 (Water Code of the Philippines) Article 51**, not a fixed "3 m or 1 m" per water width.[web:16][web:12]
 
-> Article 51, PD 1067:  
+> Article 51, PD 1067:
 > “The banks of rivers and streams and the shores of seas and lakes throughout their entire length and within a zone of **three (3) meters in urban areas**, **twenty (20) meters in agricultural areas**, and **forty (40) meters in forest areas**, along their margins, are subject to the easement of public use…”[web:16]
 
 | Easement Type                      | Required Easement Zone (from bank or shore)                                         | Governing Law               |

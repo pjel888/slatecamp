@@ -81,12 +81,10 @@ See **LEA-DSGN-009-01** (Passive Design) for solar control strategies, **LEA-DSG
 
 ## Common Mistakes
 
-<WikiMistakeList
- mistakes={[
+<WikiMistakeList mistakes={[
  'ERR-DSGN-034: Using 1:5 (20% WFR) instead of the correct 1:10 (10% WFR) for daylighting minimums.',
  "Treating the 2.5× height rule as a legal 'limit' rather than a design optimization tool.",
  'Confusing the 1:10 light requirement with the 1:20 ventilation requirement.',
  'Ignoring glare control; assuming more glass always equals better design (excessive glass leads to solar heat gain).',
  'Applying code minimums as the final design goal rather than the starting baseline.',
- ]}
-/>
+ ]} />

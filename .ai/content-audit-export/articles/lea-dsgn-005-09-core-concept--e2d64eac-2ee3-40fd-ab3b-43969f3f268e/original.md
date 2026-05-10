@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 005 09 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -9,9 +18,17 @@ Barangay halls and small government buildings serve multiple administrative and 
 
 ## Core Concept
 
-<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Design principles tested on the LEA focus on the relationship between form and space. Understand how primary elements (point, line, plane, volume) generate architectural form and how spatial organization types (centralized, linear, radial, clustered, grid) shape building layout.
+[/SLATECAMP_UI_BLOCK]
 
 Barangay halls in the Philippines operate as mixed-use facilities typically classified as **Group D (Institutional)** for administrative functions, though large assembly components may trigger **Group H (Assembly)** classification. The occupancy classification depends on the primary use and the proportion of assembly space.
 
@@ -35,9 +52,17 @@ The **GI (Government Institutional)** zone requires parking per NBC Table VII.5.
 
 ## Key Provisions
 
-<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 
-<Example>A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).</Example>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A centralized organization places a dominant central space around which secondary spaces are grouped. Examples: the Pantheon (rotunda), Chartres Cathedral (central nave with radiating chapels).
+[/SLATECAMP_UI_BLOCK]
 
 | Function | Minimum Requirement | Reference |
 |:------------------------ |:-------------------------- |:------------------------------------------------ |
@@ -56,7 +81,11 @@ The **GI (Government Institutional)** zone requires parking per NBC Table VII.5.
 - **Travel Distance:** 22 m unsprinklered or 44 m sprinklered for Group D institutional occupancies.
 - **Dual Exits:** Two separate exits are required once the occupancy of a group or room reaches **50+ persons**.
 - **Ramp Landing:** Ramps must not exceed a 3 m continuous rise without providing a landing.
-<ArticleMedia id="media-lea-dsgn-005-09-core-concept" type="image" caption="Barangay Hall — Mixed-Occupancy Space Program" description="Floor plan diagram of a barangay hall showing dual-occupancy areas: Group D administrative offices and Group E/C assembly hall. Annotated with population-based space thresholds, dual exit requirements at 50+ occupancy, and accessibility per BP 344." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-09-core-concept", type="image", caption="Barangay Hall — Mixed-Occupancy Space Program", description="Floor plan diagram of a barangay hall showing dual-occupancy areas: Group D administrative offices and Group E/C assembly hall. Annotated with population-based space thresholds, dual exit requirements at 50+ occupancy, and accessibility per BP 344.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -71,20 +100,24 @@ Barangay halls are the civic infrastructure linking national and local governmen
 **Pattern 1: Occupancy Classification**
 
 \
-"A barangay hall with a 120-sqm multi-purpose hall plus administrative offices is classified as Group E or H depending on the dominant occupant load." 
+"A barangay hall with a 120-sqm multi-purpose hall plus administrative offices is classified as Group E or H depending on the dominant occupant load."
 
 **Pattern 2: Population-Scaled Sizing**
-"A barangay serving 8,000 persons requires a public counter with a minimum length of **16 meters** (2.0m × 8,000 / 1,000)." 
+"A barangay serving 8,000 persons requires a public counter with a minimum length of **16 meters** (2.0m × 8,000 / 1,000)."
 
 **Pattern 3: GI Zone Parking**
-"A barangay hall site has a total land area of 1,200 sqm. If zoned as GI with 50% PSO, the building footprint/parking area must align with the 50% threshold." 
+"A barangay hall site has a total land area of 1,200 sqm. If zoned as GI with 50% PSO, the building footprint/parking area must align with the 50% threshold."
 
 > **Memory Rule:** Captain = 9 sqm; SK = 10 sqm. Counter = 2.0m per 1k people. Exit width = 5.5 mm/person. Ramp = 1:20 (short) or 1:12 (long).
 
 ---
 
 **Exam Tip — ERR-DSGN-025:** Barangay halls have dual occupancy: administrative (Group D) + assembly (Group E/C if public meeting space). Calculate each component separately and use the most restrictive egress.
-<ArticleMedia id="media-lea-dsgn-005-09-core-concept" type="image" caption="Barangay Hall — Dual-Occupancy Floor Plan and Mixed-Use Egress" description="Annotated floor plan of a barangay hall showing: Group D admin offices, Group E/C assembly hall for public meetings, and connecting lobby. Mixed-use occupant load calculation and separate egress paths labeled. BP 344 accessible features shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0006 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-005-09-core-concept", type="image", caption="Barangay Hall — Dual-Occupancy Floor Plan and Mixed-Use Egress", description="Annotated floor plan of a barangay hall showing: Group D admin offices, Group E/C assembly hall for public meetings, and connecting lobby. Mixed-use occupant load calculation and separate egress paths labeled. BP 344 accessible features shown.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 

@@ -1,0 +1,508 @@
+{
+  "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:00715a4b7ac57e6c2852010cdd59408e0b67c309721d4402a35b1434adf59738",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "62f69f86-dcca-458b-96cb-2a62c69ab48a",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "A structural engineer is designing a slab for an outdoor parking garage in the Philippines. Which loads MUST be considered in the design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dead load and live load only, as these are the primary considerations for structural integrity in most standard designs"
+        },
+        {
+          "id": "b",
+          "text": "Dead load, live load, and wind load only, which are typically sufficient for most non-seismic regions"
+        },
+        {
+          "id": "c",
+          "text": "Dead load, live load, wind load, and seismic load"
+        },
+        {
+          "id": "d",
+          "text": "Live load and seismic load only, focusing on dynamic and earthquake-induced forces"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A structure in the Philippines must be designed for DL (slab and superimposed loads), LL (vehicle loading), wind (typhoon zone exposure), and seismic (Zone 2 applies to most PH). All four are part of the code-required load combinations.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP General Chapter, Required Load Cases",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a7028bd608219d0184d35cd524466a104989cb0df84288e6f09cb95af4871206"
+    },
+    {
+      "question_id": "77cd2e9a-d801-4325-b01b-aa90c1d7cf32",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "The difference between dead load and live load can be best understood as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dead load is heavier; live load is lighter, typically involving movable objects"
+        },
+        {
+          "id": "b",
+          "text": "Dead load is permanent; live load is temporary and changes with occupancy"
+        },
+        {
+          "id": "c",
+          "text": "Dead load acts downward; live load acts laterally, affecting structural stability"
+        },
+        {
+          "id": "d",
+          "text": "Dead load includes earthquakes; live load includes wind, both affecting design considerations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The fundamental distinction is permanence and changeability. Dead load does not change once the building is constructed. Live load varies with how the building is occupied and used.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP General Chapter, Load Definitions",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be3e39eba6ad5dbf550dc00947e83533d3387f2692b12255f69b51d621563350"
+    },
+    {
+      "question_id": "7f564971-2a03-4da2-ba62-10ca5fb8709b",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "A corridor in a 6-story office building is designed. According to NSCP, the corridor's live load is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.4 kPa (same as office spaces)"
+        },
+        {
+          "id": "b",
+          "text": "3.8 kPa (corridors above 1st floor)"
+        },
+        {
+          "id": "c",
+          "text": "1.9 kPa (same as residential)"
+        },
+        {
+          "id": "d",
+          "text": "4.8 kPa (assembly without fixed seats)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "NSCP Table 202 specifies corridors above the first floor at 3.8 kPa. Corridors above the 1st floor have higher LL than office spaces (2.4 kPa) due to concentrated foot traffic and transient loads.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Table 202, Corridors",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:254a2be4c8815f1979e95c0fef8a6835b66d2949c32e65953cbbbd59da913cce"
+    },
+    {
+      "question_id": "cd164305-4a4c-419b-8100-2c9e2b2b2530",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "An engineer is reviewing load specifications for a 10-story residential building in the Philippines. The specification lists: (1) dead load from concrete and steel; (2) live load per NSCP for residential; (3) wind load for tropical storm zone; (4) seismic load for Zone 2. Which of the following statements about these loads is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dead load and live load are the only loads that must be used in design; wind and seismic are optional"
+        },
+        {
+          "id": "b",
+          "text": "Seismic load applies only to structures in Zone 1, not Zone 2"
+        },
+        {
+          "id": "c",
+          "text": "All four load categories must be considered in separate load combinations per NSCP"
+        },
+        {
+          "id": "d",
+          "text": "Wind load is negligible for residential buildings; seismic is the only lateral load to consider"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "NSCP requires design for gravity (DL + LL), wind, and seismic loads in separate load combinations. All four must be evaluated; the most critical combination governs the design.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP General Chapter, Load Combinations",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b75161a08c94db450423ea57009ce5450fa3004eaf208772413cbc622876550b"
+    },
+    {
+      "question_id": "a65c16a2-85ad-4ce1-846f-edf91fc48d83",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "A warehouse is being designed to store heavy materials. According to NSCP Table 202, which occupancy classification and minimum live load apply?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heavy storage, 6.0 kPa"
+        },
+        {
+          "id": "b",
+          "text": "Heavy storage, 12.0 kPa"
+        },
+        {
+          "id": "c",
+          "text": "General storage, 8.0 kPa"
+        },
+        {
+          "id": "d",
+          "text": "Industrial, 10.0 kPa"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "NSCP Table 202 specifies heavy storage at 12.0 kPa minimum. This accounts for the concentrated weight of stored goods and the transient nature of warehouse operations.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Table 202, Storage",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:19b9b60707d2a38607d9b21cc9c274299b94043298a9333460132c22c1971385"
+    },
+    {
+      "question_id": "e3927fe9-0cb5-4a2e-8b21-8fa0cd4e9906",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "Which of the following is an example of a dead load in a reinforced concrete building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Weight of office workers and their furniture, which varies and is considered a live load"
+        },
+        {
+          "id": "b",
+          "text": "Weight of the concrete slab and structural beams"
+        },
+        {
+          "id": "c",
+          "text": "Weight of stored inventory that changes seasonally, classified as a live load due to its variability"
+        },
+        {
+          "id": "d",
+          "text": "Wind pressure during a typhoon, which is a dynamic load affecting the building's stability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Dead load is permanent, constant load from the structure's own material and fixed components. The concrete slab and beams are part of the structure and do not change during the building's life.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Table 201",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:235a15a666032601c9ba3bea69e895bc8c7fd6830afd223d0e573b2a5a5e0fa8"
+    },
+    {
+      "question_id": "e726c251-5f26-4ea0-b843-006910b6b20d",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "According to NSCP Table 202, the minimum live load for residential occupancy is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.0 kPa"
+        },
+        {
+          "id": "b",
+          "text": "1.9 kPa"
+        },
+        {
+          "id": "c",
+          "text": "2.4 kPa"
+        },
+        {
+          "id": "d",
+          "text": "3.8 kPa"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "NSCP Table 202 specifies 1.9 kPa as the minimum live load for residential spaces (dwellings, apartments, houses).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Table 202, Residential",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c6e8bb076ff3c723f8bfd011660d2578746ddae214cf4eb5e9bcd4abb0eda24c"
+    },
+    {
+      "question_id": "10b85af4-6289-43c9-901a-4cb169724da8",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "A 5-story office building is under design in Metro Manila. Which seismic zone applies to this location?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zone 1, with Z = 0.2"
+        },
+        {
+          "id": "b",
+          "text": "Zone 2, with Z = 0.2"
+        },
+        {
+          "id": "c",
+          "text": "Zone 4, with Z = 0.4"
+        },
+        {
+          "id": "d",
+          "text": "Zone 1, with Z = 0.4"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Metro Manila is in the Philippines' most seismic-active region and falls under Zone 4 (Z = 0.4). Zone 4 covers Eastern Visayas, most of Luzon including Metro Manila, and parts of Mindanao.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.1, Figure 208A, Table 208-1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6774151491d992f93c5ebfb531503b83be019fee39d1305495b57b3ae3ae94a7"
+    },
+    {
+      "question_id": "e22e3062-b6b3-4497-98b7-20461790e843",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "A floor system with a tributary area of 18 m² is being designed for office use. The designer notes that a live load reduction factor may be applied. This is permissible because:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Office LL is less than residential LL, which allows for certain design flexibilities under specific conditions"
+        },
+        {
+          "id": "b",
+          "text": "The tributary area exceeds the NSCP minimum of 37 m² (400 ft²)"
+        },
+        {
+          "id": "c",
+          "text": "Wind and seismic loads are not critical, provided that the building is not located in a high-risk zone"
+        },
+        {
+          "id": "d",
+          "text": "The structure is designed for gravity loads only, which simplifies the load calculations and may allow for reductions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "NSCP specifies that live load reduction is permitted when tributary area exceeds 37 m² (400 ft²) for most occupancies including offices. An 18 m² area exceeds this threshold, making reduction applicable.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Table 202, Live Load Reduction",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:035f29e027014a13da180ece4438ec0b6a0d2d11c60c660c1b5c0ad23611332d"
+    },
+    {
+      "question_id": "5d7b1153-482f-4f88-82cd-daf571dcbd29",
+      "article_id": "943907de-24bf-414c-8fc8-cfacf7af25ff",
+      "topic_id": "38f3abb0-ce3b-4112-b7fa-ed5f7027f691",
+      "text": "A reinforced concrete building's dead load includes the concrete weight (2,400 kg/m³) plus a fixed partition wall that may or may not be present in all future renovations. According to NSCP, how should the partition wall load be treated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore it, since it might be removed later, which is a common oversight in load calculations"
+        },
+        {
+          "id": "b",
+          "text": "Include it as a superimposed dead load of minimum 1.0 kPa"
+        },
+        {
+          "id": "c",
+          "text": "Treat it as live load since it might change, which allows for flexibility in future modifications"
+        },
+        {
+          "id": "d",
+          "text": "Include it only if explicitly shown on construction drawings, ensuring accuracy in load assessments"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "NSCP requires a minimum superimposed dead load of 1.0 kPa for fixed partitions not shown on plans. This conservative approach accounts for the likelihood that partitions will be added or reconfigured.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Table 201, Superimposed Dead Load",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:16ead96e749bd701d74e53414beeb96e30205b723a82c09806a8f537ea15778f"
+    }
+  ]
+}

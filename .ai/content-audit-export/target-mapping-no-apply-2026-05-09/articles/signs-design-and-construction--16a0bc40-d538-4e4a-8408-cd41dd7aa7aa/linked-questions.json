@@ -1,0 +1,1636 @@
+{
+  "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b2ad5e0240b6fef962ed333a984b6539f6cdd033edd182fcd0c1d59604c08fa7",
+  "question_count": 37,
+  "questions": [
+    {
+      "question_id": "0de8e05e-4518-4824-b146-78538996b570",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An architect who was NOT the designing architect has been engaged as the full-time supervisor for a commercial building. Upon physical completion, she signs and seals the construction logbook and Certificate of Completion. Under PD 1096, is this legally valid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No — only the designing architect may sign the Certificate of Completion, unless otherwise specified in the contract"
+        },
+        {
+          "id": "b",
+          "text": "Yes — the supervising Architect/CE (same or different from designer) may sign"
+        },
+        {
+          "id": "c",
+          "text": "Yes — but only if co-signed by the designing architect, which is not a requirement under PD 1096"
+        },
+        {
+          "id": "d",
+          "text": "No — the contractor must be the sole signatory, which is incorrect as the architect's role is recognized"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This tests the non-exclusivity of the designer/supervisor roles. Option A incorrectly assumes exclusivity. Option C introduces a co-signature requirement not found in the Code. Option D assigns the wrong signatory — the contractor signs as the executing party, not as the licensed professional responsible for compliance.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.005539+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5fb6958c8a5852964bc6797917919e48a86da4c33327d32ce8cb11a10f9c6103"
+    },
+    {
+      "question_id": "e000822c-f304-498f-b960-dcc5e819ed39",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A plan examiner reviews a masonry fireplace design. The fireplace walls are shown at 150 mm thick, the firebox depth is 450 mm, and the chimney terminates only 400 mm above the roof surface. How many separate provisions of Rule XII, Section 1211 does this design violate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One provision"
+        },
+        {
+          "id": "b",
+          "text": "Two provisions"
+        },
+        {
+          "id": "c",
+          "text": "Three provisions"
+        },
+        {
+          "id": "d",
+          "text": "Four provisions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This scenario is from the article's opening hook. The three violations are the 200 mm fireplace wall (150 mm shown), 500 mm firebox depth (450 mm shown), and 600 mm chimney height (400 mm shown). Interior clearance of 30 mm also violates the 50 mm minimum — making this potentially four violations.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:252584bedb933f7b3962edf91b80ef89eec509300752b6485300ac7170ffb64a"
+    },
+    {
+      "question_id": "ef43b73d-70e8-4e48-872d-a91d46b52f63",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1302, what are the required design temperature range and relative humidity range for air conditioning systems?",
+      "options": [
+        {
+          "id": "em-007-a",
+          "text": "18–22°C; 40–50% RH"
+        },
+        {
+          "id": "em-007-b",
+          "text": "20–24°C; 50–60% RH"
+        },
+        {
+          "id": "em-007-c",
+          "text": "22–26°C; 45–55% RH"
+        },
+        {
+          "id": "em-007-d",
+          "text": "20–24°C; 40–50% RH"
+        }
+      ],
+      "correct_option_id": "em-007-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 20–24°C range aligns with ASHRAE 55 comfort standards and is consistent with Filipino thermal comfort expectations. The 50–60% RH range prevents both the dryness associated with overly low humidity and the discomfort of overly humid conditions. The air movement velocity range of 4.60–7.60 m/min also applies.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4236df98f7a0c36b04727fa35429a886d8b1542ee6fd41c1811040a19bf57c7e"
+    },
+    {
+      "question_id": "ba847fe2-1060-44f4-adbb-09ba1d0fdea1",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 808, where must windows required for natural ventilation open, and why is this requirement significant for enclosed shaft designs?",
+      "options": [
+        {
+          "id": "lv-017-a",
+          "text": "Windows must open to any space within the building; significance is minimal for shaft design, as long as air circulation is maintained"
+        },
+        {
+          "id": "lv-017-b",
+          "text": "Windows must open to a court, yard, public street, alley, or other open space where air and light can freely enter; a window facing an enclosed shaft or solid wall does not comply"
+        },
+        {
+          "id": "lv-017-c",
+          "text": "Windows may open to interior corridors with mechanical ventilation; enclosed shafts are acceptable if they have adequate dimensions and airflow"
+        },
+        {
+          "id": "lv-017-d",
+          "text": "Windows must open directly to exterior only; courts and yards are not acceptable, ensuring maximum exposure to natural elements"
+        }
+      ],
+      "correct_option_id": "lv-017-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The court (Sec. 804) and the vent shaft (Sec. 809) are different provisions. A shaft meets Section 809 dimensional requirements but may NOT meet Section 804 court requirements — and only the court qualifies as a window destination. This is a common design error in high-rise residential projects.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3e3b62fc8aef82255efc88dae4cc79a23e471ced0f3f2b83a0394483c2e4c494"
+    },
+    {
+      "question_id": "d16477f3-4f40-4151-b9f8-a9184798cdee",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1206, the 120 kg/m² minimum wind load for roof construction applies to:",
+      "options": [
+        {
+          "id": "vo-013-a",
+          "text": "Only flat roofs"
+        },
+        {
+          "id": "vo-013-b",
+          "text": "All roof types regardless of slope"
+        },
+        {
+          "id": "vo-013-c",
+          "text": "Only roofs in typhoon-prone regions (Visayas and Bicol)"
+        },
+        {
+          "id": "vo-013-d",
+          "text": "Only concrete and steel roofs; timber roofs are exempt"
+        }
+      ],
+      "correct_option_id": "vo-013-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This universal application reflects the Philippines' exposure to tropical cyclones across all regions. While the NSCP wind maps designate higher risk zones, the NBCP baseline of 120 kg/m² protects against catastrophic under-design even in lower-risk areas.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:119e85279664a9811940800b391e7e2443c4942ed21751ca7f0673d64f584794"
+    },
+    {
+      "question_id": "36b8bca9-c2c1-4196-bcd9-560e4f4a457e",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule IX, Sec. 902(3), what law governs deepwell design, construction, and operation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PD 1096 alone, which provides comprehensive guidelines for all construction activities"
+        },
+        {
+          "id": "B",
+          "text": "PD 1067 (Water Code of the Philippines)"
+        },
+        {
+          "id": "C",
+          "text": "RA 9275 (Clean Water Act), which primarily addresses pollution control measures"
+        },
+        {
+          "id": "D",
+          "text": "BP 220, which is typically associated with socialized housing standards"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule IX, Sec. 902(3), underground sources (deepwells) must comply with PD 1067 (Water Code of the Philippines). PD 1067 governs water rights appropriation — a building owner who sinks a deepwell without appropriate water rights under PD 1067 violates both PD 1067 and PD 1096.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.033224+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e26757b2f29a6b38e7f01cf01791b1a7a24ba156ea6d8f225905a218a505f4cc"
+    },
+    {
+      "question_id": "dc0623ae-d36a-48b4-9ee8-a1923c27bb0d",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what is the minimum height above the sidewalk for the lowest portion of a wall sign?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2.00 m"
+        },
+        {
+          "id": "B",
+          "text": "2.44 m"
+        },
+        {
+          "id": "C",
+          "text": "3.00 m"
+        },
+        {
+          "id": "D",
+          "text": "4.00 m"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, the lowest portion of a wall sign must be at least 3.00 m above the sidewalk. Furthermore, signs within 3.00 m of the sidewalk must be flush or recessed — no projection is permitted at pedestrian level.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca76af9a2217df6b94cb039b36e8a21b1d331af1219f8476019697aaee7fd459"
+    },
+    {
+      "question_id": "9bdbccbc-122e-463a-8ed3-354092dc88fc",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2001, what language requirement applies to signs displaying foreign language text?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No translation is required, provided the sign is accompanied by a universally recognized symbol"
+        },
+        {
+          "id": "B",
+          "text": "English or the local dialect translation is required"
+        },
+        {
+          "id": "C",
+          "text": "Only Filipino is permitted, unless the sign is part of a historical or cultural exhibit"
+        },
+        {
+          "id": "D",
+          "text": "Bilingual signs (English and Filipino) are required for all signs, except in areas designated as heritage zones"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2001, any sign in a foreign language must carry a translation in English or the local dialect. This ensures that traffic signs and public information remain accessible to all road users.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd66fff01e64afacf345081643a190f52aeac872a31460fc3c3e3cbe9dd12bf9"
+    },
+    {
+      "question_id": "3a6024ea-076d-4c47-a8c0-78330f6d1295",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A projecting sign on an arcaded commercial street projects 0.80 m beyond the arcade face and is positioned 4.20 m above the road surface. Per PD 1096 Rule XX, Sec. 2004, how many rules are violated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No rules are violated"
+        },
+        {
+          "id": "B",
+          "text": "One rule is violated"
+        },
+        {
+          "id": "C",
+          "text": "Two rules are violated"
+        },
+        {
+          "id": "D",
+          "text": "Three rules are violated"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Two violations: (1) On arcaded streets, projecting signs must be FLUSH with the outermost face of the arcade — projection beyond it is prohibited. (2) On arcaded streets, minimum vertical clearance is 5.00 m above the road — not 3.00 m (which applies only to non-arcaded streets).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b7e332f3877e658348d12517bce59f987fb2c7fbb849ae4df4225e171ee61ab2"
+    },
+    {
+      "question_id": "28523c8d-f1a6-4805-90bd-b55cbb132028",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what is the minimum vertical clearance for a projecting sign on a street without an arcade?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2.00 m above the road or sidewalk surface"
+        },
+        {
+          "id": "B",
+          "text": "3.00 m above the road or sidewalk surface"
+        },
+        {
+          "id": "C",
+          "text": "5.00 m above the road or sidewalk surface"
+        },
+        {
+          "id": "D",
+          "text": "4.00 m above the road or sidewalk surface"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, projecting signs on streets without arcades must have a minimum vertical clearance of 3.00 m above the road or sidewalk surface. On arcaded streets, the clearance requirement is higher: 5.00 m above the road surface. This is a common trap — the 3.00 m clearance applies only to non-arcaded streets.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:95f634f552518c5650aa7a41ffc5f5ffa9848cb56eacdd5d1c0a3a41c03d4bcd"
+    },
+    {
+      "question_id": "2a84ff3b-a43a-4dc3-b372-241ea4592429",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, neon signs on the same building must have what minimum clear horizontal distance between them?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2.00 m"
+        },
+        {
+          "id": "B",
+          "text": "3.00 m"
+        },
+        {
+          "id": "C",
+          "text": "4.00 m"
+        },
+        {
+          "id": "D",
+          "text": "5.00 m"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, neon signs must be spaced at least 4.00 m clear horizontal distance from each other on the same building. Additionally, neon signs on adjacent buildings must be at least 2.00 m from the common boundary line.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:96250285f1002d2617007371fcf4e52b0ee81e610d81f15c702819a2e185444a"
+    },
+    {
+      "question_id": "2e128f3f-1ea1-4aca-a0c4-8fb53879744f",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, on a non-arcaded street, what is the maximum projection of a projecting sign from the wall or building line over the sidewalk?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.50 m"
+        },
+        {
+          "id": "B",
+          "text": "1.00 m"
+        },
+        {
+          "id": "C",
+          "text": "1.50 m"
+        },
+        {
+          "id": "D",
+          "text": "2.00 m"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, on non-arcaded streets, projecting signs may project no more than 1.00 m from the wall or building line over the sidewalk. On arcaded streets, the sign must be flush (0 projection) with the outermost face of the arcade.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a6a447f239f63030202c15beef333c8ebb48f290537c6a39ef6ce5a153fe250a"
+    },
+    {
+      "question_id": "4791e449-dc72-4f01-ab5d-36892e1c81fd",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what is the minimum clearance required between neon signs and utility posts or wires?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.50 m"
+        },
+        {
+          "id": "B",
+          "text": "1.00 m"
+        },
+        {
+          "id": "C",
+          "text": "2.00 m"
+        },
+        {
+          "id": "D",
+          "text": "3.00 m"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, neon signs must maintain at least 1.00 m clearance from utility posts or wires. This prevents electrical hazards from proximity between high-voltage utility infrastructure and illuminated signage.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:08de488cc5256006dbc3ae65b9421f24a426774a404449cfc384ab199671e99a"
+    },
+    {
+      "question_id": "89bc7810-7304-41ab-806d-b22e338038a7",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per the memory aid '3-5-1-3' for projecting and wall signs, what do the numbers represent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 m clearance (no arcade) — 5 m clearance (arcade) — 1 m projection — 3 m height for wall signs"
+        },
+        {
+          "id": "B",
+          "text": "3 m minimum projection — 5 m maximum clearance — 1 m minimum height — 3 m maximum projection"
+        },
+        {
+          "id": "C",
+          "text": "3 signs per building — 5 signs per street frontage — 1 m spacing between signs — 3 m minimum height"
+        },
+        {
+          "id": "D",
+          "text": "3 m width limit — 5 m height limit — 1 m spacing — 3 m projection limit"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "3-5-1-3 = 3.00 m clearance above road (no arcade); 5.00 m clearance above road (arcaded street); ≤ 1.00 m projection over sidewalk (non-arcaded); ≥ 3.00 m above sidewalk for wall sign lowest portion.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:32f7a8c622af381c305b295c57a87af533e55c6e6aef8f38fb39d2932cfb249a"
+    },
+    {
+      "question_id": "ac37db0e-2609-4ead-bc5b-0dfa7b66b17d",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what is the maximum projection of a wall sign from the face of the wall?",
+      "options": [
+        {
+          "id": "A",
+          "text": "200 mm"
+        },
+        {
+          "id": "B",
+          "text": "300 mm"
+        },
+        {
+          "id": "C",
+          "text": "500 mm"
+        },
+        {
+          "id": "D",
+          "text": "1,000 mm"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, wall signs must project no more than 300 mm from the face of the wall. Additionally, wall signs within 3.00 m of the sidewalk must be flush or recessed — they cannot project at all at pedestrian level.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:706c805d785b27e531214a5aab29dbf93d9009f960334308272bb2e16673654a"
+    },
+    {
+      "question_id": "06bd8d6d-ce78-4eb6-aa4d-6aa795520040",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2003, what structural code governs sign design, and what loads must be considered?",
+      "options": [
+        {
+          "id": "A",
+          "text": "NSCP; dead loads and lateral loads including wind"
+        },
+        {
+          "id": "B",
+          "text": "ACI 318; seismic loads only, which may not cover all necessary load considerations for signage"
+        },
+        {
+          "id": "C",
+          "text": "NSCP; gravity loads only, which may not account for lateral forces such as wind"
+        },
+        {
+          "id": "D",
+          "text": "Local municipal standards; no specific code reference, which may lead to inconsistencies in structural integrity"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2003, all signs must be structurally designed per the National Structural Code of the Philippines (NSCP). Dead loads and lateral loads (including wind) must be transmitted through the structural frame of the supporting building. The owner is responsible for maintenance.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6ff3a13f36d9b05a35d569fdd45bdb6e50fb6facd5fbfba23bc74ad4737c99d5"
+    },
+    {
+      "question_id": "41fe151c-da3a-4ac9-89cb-1cdfda4d2dd3",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2001, what is the absolute prohibition regarding sign appearance relative to traffic control devices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Signs may use red, amber, or green lights only during daytime hours, provided they do not mimic traffic signals"
+        },
+        {
+          "id": "B",
+          "text": "No sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device"
+        },
+        {
+          "id": "C",
+          "text": "Signs may use traffic signal colors if they are mounted below eye level, ensuring they do not interfere with driver perception"
+        },
+        {
+          "id": "D",
+          "text": "Signs may imitate traffic signs if they are mounted more than 5 m above road level, which is unlikely to cause confusion"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2001, no sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device. This prohibition is absolute: no sign may use red, amber, or green lights in a manner that could be mistaken for traffic control signals.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.298959+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e13fa3a55575c2eed3956ac306d0159eb970f05135a3369bc4d894ed67b91484"
+    },
+    {
+      "question_id": "0605fffe-d97c-4aff-a3d1-82a5db520648",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, on an arcaded street, a projecting sign projects 0.60 m beyond the outermost arcade face and is positioned 4.50 m above the road. Which statement is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both the projection and vertical clearance are compliant for an arcaded street"
+        },
+        {
+          "id": "b",
+          "text": "The projection violates the rule; signs on arcaded streets must be flush with the arcade face"
+        },
+        {
+          "id": "c",
+          "text": "The projection is compliant, but 4.50 m clearance is below the 5.00 m required on arcaded streets"
+        },
+        {
+          "id": "d",
+          "text": "Both the projection and the vertical clearance violate the rules for arcaded streets"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, on arcaded streets: (1) projecting signs must be flush with the outermost face of the arcade — no projection beyond it is permitted, so 0.60 m projection violates the rule; and (2) minimum vertical clearance is 5.00 m above the road — 4.50 m is below this threshold. Both dimensions violate the arcaded-street rules simultaneously.",
+      "explanation": "Per Rule XX, Sec. 2004, on arcaded streets: (1) projecting signs must be flush with the outermost face of the arcade — no projection beyond it is permitted, so 0.60 m projection violates the rule; and (2) minimum vertical clearance is 5.00 m above the road — 4.50 m is below this threshold. Both dimensions violate the arcaded-street rules simultaneously.",
+      "code_citation": "PD 1096",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a96fa468c6a51636d96eee2746223cb90b8b36643dc616ac06903bb31dc7f7f3"
+    },
+    {
+      "question_id": "eb9a794d-ca45-4439-a0b5-d35aec3e48e6",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what are the two dimensional rules governing wall signs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximum 200 mm projection from wall; lowest portion at least 2.00 m above sidewalk"
+        },
+        {
+          "id": "b",
+          "text": "Maximum 300 mm projection from wall; lowest portion at least 3.00 m above sidewalk"
+        },
+        {
+          "id": "c",
+          "text": "Maximum 500 mm projection from wall; lowest portion at least 3.00 m above sidewalk"
+        },
+        {
+          "id": "d",
+          "text": "Maximum 300 mm projection from wall; lowest portion at least 2.44 m above sidewalk"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, wall signs must project no more than 300 mm from the face of the wall, and the lowest portion of the wall sign must be at least 3.00 m above the sidewalk. Additionally, wall signs within 3.00 m of the sidewalk must be flush or recessed — they cannot project at all at pedestrian level. Both the 300 mm and 3.00 m dimensions are frequently tested.",
+      "explanation": "Per Rule XX, Sec. 2004, wall signs must project no more than 300 mm from the face of the wall, and the lowest portion of the wall sign must be at least 3.00 m above the sidewalk. Additionally, wall signs within 3.00 m of the sidewalk must be flush or recessed — they cannot project at all at pedestrian level. Both the 300 mm and 3.00 m dimensions are frequently tested.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:45cc0a337aef24e7a2d50a83a70ee43b57ab3113b8ffc459b734fc2770abf3b2"
+    },
+    {
+      "question_id": "cb9955d0-c505-42a1-b1c6-644ee07308b0",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, under what occupancy classification are signs categorized, and does this classification require a separate building permit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group J-3 occupancy; yes, a separate building permit is required for every sign"
+        },
+        {
+          "id": "b",
+          "text": "Group J-1 occupancy; no separate permit is required for signs attached to permitted buildings"
+        },
+        {
+          "id": "c",
+          "text": "Group J-2 occupancy; a simplified permit is required only for signs exceeding 5.00 m in height"
+        },
+        {
+          "id": "d",
+          "text": "Group J-4 occupancy; signs require only a business permit from the local government"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, signs are classified as Group J-3 occupancy — the same classification used for miscellaneous structures. A separate building permit is required for every sign, independent of any permit issued for the building itself. The Building Official has jurisdiction over approval, inspection, and enforcement of sign standards.",
+      "explanation": "Per Rule XX, signs are classified as Group J-3 occupancy — the same classification used for miscellaneous structures. A separate building permit is required for every sign, independent of any permit issued for the building itself. The Building Official has jurisdiction over approval, inspection, and enforcement of sign standards.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:85dac47c38d0bfa941c8aa37c29295ee070cdc7657c2f01d6853a5196cd38278"
+    },
+    {
+      "question_id": "ad72b91c-6cdb-4c2f-8c13-c7c63e68431c",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2001, what prohibition applies absolutely to sign colors and appearance relative to official traffic control devices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device"
+        },
+        {
+          "id": "b",
+          "text": "Signs may use red, amber, or green lights only during daytime hours when natural light aids distinction"
+        },
+        {
+          "id": "c",
+          "text": "Signs using traffic signal colors must be mounted at least 5.00 m above road level to avoid confusion"
+        },
+        {
+          "id": "d",
+          "text": "Signs may imitate traffic signal shapes but not colors, provided they are mounted on private property"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2001, no sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device. This prohibition is absolute — no sign may use red, amber, or green lights in any manner that could be mistaken for traffic control signals. There is no exception for mounting height, time of day, or private property location.",
+      "explanation": "Per Rule XX, Sec. 2001, no sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device. This prohibition is absolute — no sign may use red, amber, or green lights in any manner that could be mistaken for traffic control signals. There is no exception for mounting height, time of day, or private property location.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3c85000d5af09999e5f1d2ffe95bad641b35c3935f10fb4fb316ce40dc348146"
+    },
+    {
+      "question_id": "802a8d89-b04e-4ea8-9158-3127f5ed1f71",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what two additional requirements apply specifically to roof signs installed on any building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roof signs must be grounded for lightning protection and must carry warning lights visible to air traffic where hazardous"
+        },
+        {
+          "id": "b",
+          "text": "Roof signs must be structurally designed by a licensed civil engineer and must not exceed 3.00 m in height, ensuring compliance with local ordinances"
+        },
+        {
+          "id": "c",
+          "text": "Roof signs must comply with NSCP seismic provisions only and are exempt from lightning protection requirements, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "Roof signs must be painted with reflective paint and must be illuminated with LED fixtures only, which is often misunderstood as a requirement"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, roof signs must: (1) be grounded for lightning protection — the elevated position of a roof sign makes it a preferential lightning strike point; and (2) carry warning lights visible to air traffic where they present an aviation hazard. Roof signs are also prohibited on wooden structures or buildings with wooden roof framing, and must comply with Sec. 1210 penthouse and roof structure requirements.",
+      "explanation": "Per Rule XX, Sec. 2004, roof signs must: (1) be grounded for lightning protection — the elevated position of a roof sign makes it a preferential lightning strike point; and (2) carry warning lights visible to air traffic where they present an aviation hazard. Roof signs are also prohibited on wooden structures or buildings with wooden roof framing, and must comply with Sec. 1210 penthouse and roof structure requirements.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:abd50b41f64390923a4b68ad7d6a35c0c075586962a633315d66ffc2b852cc68"
+    },
+    {
+      "question_id": "393234ea-bca2-4e36-af01-af23efdb1de2",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2006, what is the required power source for sign lighting, and which code governs the specific installation requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Electrical means only per the Philippine Electrical Code (PEC); no alternative lighting method is recognized"
+        },
+        {
+          "id": "b",
+          "text": "Solar-powered LED systems are preferred because they eliminate electrical hazards near public sidewalks"
+        },
+        {
+          "id": "c",
+          "text": "Either electrical or gas-powered lighting is permitted provided the system is properly ventilated"
+        },
+        {
+          "id": "d",
+          "text": "Battery-powered systems with inverter backup are the code-preferred option for all sign types"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2006, sign lighting shall be by electrical means only, governed by the Philippine Electrical Code (PEC). No alternative lighting method — solar LED, gas, flame, or battery-only — is code-compliant under Rule XX unless specifically addressed by the PEC. The PEC is the referral code for all sign lighting installation requirements.",
+      "explanation": "Per Rule XX, Sec. 2006, sign lighting shall be by electrical means only, governed by the Philippine Electrical Code (PEC). No alternative lighting method — solar LED, gas, flame, or battery-only — is code-compliant under Rule XX unless specifically addressed by the PEC. The PEC is the referral code for all sign lighting installation requirements.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f3f428d9fcabb55e97100d7606d9f66dd3f0cefbbbb3c5dd0b2c8429fb7b3e2c"
+    },
+    {
+      "question_id": "1fe4a86b-09a8-4983-ac06-2c91364ff305",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2003 and Sec. 2002, what are the structural design standard and ongoing maintenance obligations for all signs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structural design per NSCP (dead and lateral loads); owner responsible for maintenance, neatly painted, and properly secured at all times"
+        },
+        {
+          "id": "b",
+          "text": "Structural design per ASCE 7 (dead loads only); municipality responsible for maintenance of signs over public ROW, which is a common misconception about jurisdictional responsibilities"
+        },
+        {
+          "id": "c",
+          "text": "Structural design per NSCP (seismic loads only); no specific maintenance obligation beyond annual inspection, which is often misunderstood in terms of ongoing obligations"
+        },
+        {
+          "id": "d",
+          "text": "Structural design per local municipal standards; owner responsible for maintenance only on private property, which does not align with national code requirements"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2003, all signs must be structurally designed per the NSCP, transmitting dead loads and lateral loads (including wind) through the building's structural frame. Per Sec. 2002, every sign along with all supports, braces, guys, and anchorages must be kept in good repair, neatly painted, and properly secured at all times. The owner of the premises is responsible for this ongoing maintenance obligation.",
+      "explanation": "Per Rule XX, Sec. 2003, all signs must be structurally designed per the NSCP, transmitting dead loads and lateral loads (including wind) through the building's structural frame. Per Sec. 2002, every sign along with all supports, braces, guys, and anchorages must be kept in good repair, neatly painted, and properly secured at all times. The owner of the premises is responsible for this ongoing maintenance obligation.",
+      "code_citation": "PD 1096",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4b1b504ba3c577e64cf7a4e3df75542c089728bc25c90d434637552e8e3186cd"
+    },
+    {
+      "question_id": "e4d7877c-e75c-4283-becb-14cfd41cbdc5",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2001, what language requirement applies to signs that display text in a foreign language?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No translation is required because the Philippines recognizes freedom of commercial expression"
+        },
+        {
+          "id": "b",
+          "text": "A translation in English or the local dialect must accompany every foreign-language sign"
+        },
+        {
+          "id": "c",
+          "text": "Only Filipino (Tagalog) is an acceptable translation language for all foreign-language signs"
+        },
+        {
+          "id": "d",
+          "text": "Bilingual display in both English and Filipino is required on all foreign-language commercial signs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2001, any sign in a foreign language must carry a translation in English or the local dialect. The code does not limit acceptable translation languages to Filipino only — the local dialect (e.g., Cebuano, Ilocano, Kapampangan) is also acceptable. The Building Official may also require adjacent signs to follow a common baseline for streetscape harmony.",
+      "explanation": "Per Rule XX, Sec. 2001, any sign in a foreign language must carry a translation in English or the local dileact. The code does not limit acceptable translation languages to Filipino only — the local dileact (e.g., Cebuano, Ilocano, Kapampangan) is also acceptable. The Building Official may also require adjacent signs to follow a common baseline for streetscape harmony.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bece3133807789071e7b3f3adf9f2186437a7cf7600cd92c6f341861eb71f217"
+    },
+    {
+      "question_id": "744c6fa3-f860-40bf-8451-06c49c5188af",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what is the maximum projection allowed for a projecting sign on a non-arcaded street, and what is the minimum vertical clearance above the sidewalk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximum 0.50 m projection; minimum 2.00 m vertical clearance above sidewalk"
+        },
+        {
+          "id": "b",
+          "text": "Maximum 1.00 m projection; minimum 3.00 m vertical clearance above road or sidewalk"
+        },
+        {
+          "id": "c",
+          "text": "Maximum 1.50 m projection; minimum 4.00 m vertical clearance above sidewalk"
+        },
+        {
+          "id": "d",
+          "text": "Maximum 2.00 m projection; minimum 3.00 m vertical clearance above road or sidewalk"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, on non-arcaded streets, projecting signs may project a maximum of 1.00 m from the wall or building line over the sidewalk, and must maintain a minimum vertical clearance of 3.00 m above the road or sidewalk surface. On arcaded streets, the sign must be flush with the outermost arcade face and maintain 5.00 m clearance — different rules apply.",
+      "explanation": "Per Rule XX, Sec. 2004, on non-arcaded streets, projecting signs may project a maximum of 1.00 m from the wall or building line over the sidewalk, and must maintain a minimum vertical clearance of 3.00 m above the road or sidewalk surface. On arcaded streets, the sign must be flush with the outermost arcade face and maintain 5.00 m clearance — different rules apply.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f2063a4e85fe64f481aad7b122891bfdc6d7343fc16262c3f2c65d14a3b8678c"
+    },
+    {
+      "question_id": "0a0f02be-7f90-45bb-bcbf-9e954933564f",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what are the minimum spacing rules for neon signs on the same building and between adjacent buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At least 2.00 m clear between signs on the same building; at least 4.00 m from common boundary with adjacent building"
+        },
+        {
+          "id": "b",
+          "text": "At least 4.00 m clear between signs on the same building; at least 2.00 m from common boundary with adjacent building"
+        },
+        {
+          "id": "c",
+          "text": "At least 3.00 m clear between signs on the same building; at least 3.00 m from common boundary with adjacent building"
+        },
+        {
+          "id": "d",
+          "text": "At least 4.00 m clear between signs on the same building; at least 1.00 m from utility posts or wires"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, neon signs on the same building must have at least 4.00 m clear horizontal distance between them, and neon signs on adjacent buildings must be at least 2.00 m from the common boundary line. Additionally, all neon signs must maintain at least 1.00 m clearance from utility posts or wires — this is a separate rule that applies regardless of spacing from other signs.",
+      "explanation": "Per Rule XX, Sec. 2004, neon signs on the same building must have at least 4.00 m clear horizontal distance between them, and neon signs on adjacent buildings must be at least 2.00 m from the common boundary line. Additionally, all neon signs must maintain at least 1.00 m clearance from utility posts or wires — this is a separate rule that applies regardless of spacing from other signs.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:05.400314+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2181e2341d72cd004bcf61f3e97aaa0b538c1e4a4d85cd28f0cf9213d3e81bd7"
+    },
+    {
+      "question_id": "10d28226-d5e0-4237-931f-4ff647012884",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, on an arcaded street, a projecting sign projects 0.60 m beyond the outermost arcade face and is positioned 4.50 m above the road. Which statement is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both the projection and vertical clearance are compliant for an arcaded street"
+        },
+        {
+          "id": "b",
+          "text": "The projection violates the rule; signs on arcaded streets must be flush with the arcade face"
+        },
+        {
+          "id": "c",
+          "text": "The projection is compliant, but 4.50 m clearance is below the 5.00 m required on arcaded streets"
+        },
+        {
+          "id": "d",
+          "text": "Both the projection and the vertical clearance violate the rules for arcaded streets"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, on arcaded streets: (1) projecting signs must be flush with the outermost face of the arcade — no projection beyond it is permitted, so 0.60 m projection violates the rule; and (2) minimum vertical clearance is 5.00 m above the road — 4.50 m is below this threshold. Both dimensions violate the arcaded-street rules simultaneously.",
+      "explanation": "Per Rule XX, Sec. 2004, on arcaded streets: (1) projecting signs must be flush with the outermost face of the arcade — no projection beyond it is permitted, so 0.60 m projection violates the rule; and (2) minimum vertical clearance is 5.00 m above the road — 4.50 m is below this threshold. Both dimensions violate the arcaded-street rules simultaneously.",
+      "code_citation": "PD 1096",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:520f3d9aec4abda0e427a5e7dbfac1000291a90bbf41e71ab89044edec877254"
+    },
+    {
+      "question_id": "60c70d86-4d93-46e7-b670-852e7bbaf882",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2003 and Sec. 2002, what are the structural design standard and ongoing maintenance obligations for all signs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Structural design per NSCP (dead and lateral loads); owner responsible for maintenance, neatly painted, and properly secured at all times"
+        },
+        {
+          "id": "b",
+          "text": "Structural design per ASCE 7 (dead loads only); municipality responsible for maintenance of signs over public ROW, ensuring safety and compliance."
+        },
+        {
+          "id": "c",
+          "text": "Structural design per NSCP (seismic loads only); no specific maintenance obligation beyond annual inspection, which is a minimal requirement."
+        },
+        {
+          "id": "d",
+          "text": "Structural design per local municipal standards; owner responsible for maintenance only on private property, with no public oversight."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2003, all signs must be structurally designed per the NSCP, transmitting dead loads and lateral loads (including wind) through the building's structural frame. Per Sec. 2002, every sign along with all supports, braces, guys, and anchorages must be kept in good repair, neatly painted, and properly secured at all times. The owner of the premises is responsible for this ongoing maintenance obligation.",
+      "explanation": "Per Rule XX, Sec. 2003, all signs must be structurally designed per the NSCP, transmitting dead loads and lateral loads (including wind) through the building's structural frame. Per Sec. 2002, every sign along with all supports, braces, guys, and anchorages must be kept in good repair, neatly painted, and properly secured at all times. The owner of the premises is responsible for this ongoing maintenance obligation.",
+      "code_citation": "PD 1096",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e758190b38e41bfb1cdf7d91bc5da7db961684bad425a1deb78def8cc18783f"
+    },
+    {
+      "question_id": "0f7f1087-9b20-4e9c-b466-36ff26a70463",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2006, what is the required power source for sign lighting, and which code governs the specific installation requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Electrical means only per the Philippine Electrical Code (PEC); no alternative lighting method is recognized"
+        },
+        {
+          "id": "b",
+          "text": "Solar-powered LED systems are preferred because they eliminate electrical hazards near public sidewalks"
+        },
+        {
+          "id": "c",
+          "text": "Either electrical or gas-powered lighting is permitted provided the system is properly ventilated"
+        },
+        {
+          "id": "d",
+          "text": "Battery-powered systems with inverter backup are the code-preferred option for all sign types"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2006, sign lighting shall be by electrical means only, governed by the Philippine Electrical Code (PEC). No alternative lighting method — solar LED, gas, flame, or battery-only — is code-compliant under Rule XX unless specifically addressed by the PEC. The PEC is the referral code for all sign lighting installation requirements.",
+      "explanation": "Per Rule XX, Sec. 2006, sign lighting shall be by electrical means only, governed by the Philippine Electrical Code (PEC). No alternative lighting method — solar LED, gas, flame, or battery-only — is code-compliant under Rule XX unless specifically addressed by the PEC. The PEC is the referral code for all sign lighting installation requirements.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:676a9a09ed12cb1e0b699c5775a0b3779f990124418977e29b170a0876b0e44d"
+    },
+    {
+      "question_id": "c9d431d4-7644-4582-98a6-19e3b895b712",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what are the two dimensional rules governing wall signs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximum 200 mm projection from wall; lowest portion at least 2.00 m above sidewalk"
+        },
+        {
+          "id": "b",
+          "text": "Maximum 300 mm projection from wall; lowest portion at least 3.00 m above sidewalk"
+        },
+        {
+          "id": "c",
+          "text": "Maximum 500 mm projection from wall; lowest portion at least 3.00 m above sidewalk"
+        },
+        {
+          "id": "d",
+          "text": "Maximum 300 mm projection from wall; lowest portion at least 2.44 m above sidewalk"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, wall signs must project no more than 300 mm from the face of the wall, and the lowest portion of the wall sign must be at least 3.00 m above the sidewalk. Additionally, wall signs within 3.00 m of the sidewalk must be flush or recessed — they cannot project at all at pedestrian level. Both the 300 mm and 3.00 m dimensions are frequently tested.",
+      "explanation": "Per Rule XX, Sec. 2004, wall signs must project no more than 300 mm from the face of the wall, and the lowest portion of the wall sign must be at least 3.00 m above the sidewalk. Additionally, wall signs within 3.00 m of the sidewalk must be flush or recessed — they cannot project at all at pedestrian level. Both the 300 mm and 3.00 m dimensions are frequently tested.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:39cdbc511b32bd9dbc0a37d12a5803ca9691fd82475f8ed6c1cc3e1d00f30576"
+    },
+    {
+      "question_id": "1a1bc273-4daa-41d4-95ec-4c3ad09a77ee",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2001, what language requirement applies to signs that display text in a foreign language?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No translation is required because the Philippines recognizes freedom of commercial expression"
+        },
+        {
+          "id": "b",
+          "text": "A translation in English or the local dialect must accompany every foreign-language sign"
+        },
+        {
+          "id": "c",
+          "text": "Only Filipino (Tagalog) is an acceptable translation language for all foreign-language signs"
+        },
+        {
+          "id": "d",
+          "text": "Bilingual display in both English and Filipino is required on all foreign-language commercial signs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2001, any sign in a foreign language must carry a translation in English or the local dialect. The code does not limit acceptable translation languages to Filipino only — the local dialect (e.g., Cebuano, Ilocano, Kapampangan) is also acceptable. The Building Official may also require adjacent signs to follow a common baseline for streetscape harmony.",
+      "explanation": "Per Rule XX, Sec. 2001, any sign in a foreign language must carry a translation in English or the local dileact. The code does not limit acceptable translation languages to Filipino only — the local dileact (e.g., Cebuano, Ilocano, Kapampangan) is also acceptable. The Building Official may also require adjacent signs to follow a common baseline for streetscape harmony.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e325e9db465d63635ba555c913f7faa44ddac47d2fa0dc4175eff784cd0a28f"
+    },
+    {
+      "question_id": "5b6477e2-7df8-4694-bee9-6db09e1fa14e",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2001, what prohibition applies absolutely to sign colors and appearance relative to official traffic control devices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device"
+        },
+        {
+          "id": "b",
+          "text": "Signs may use red, amber, or green lights only during daytime hours when natural light aids distinction"
+        },
+        {
+          "id": "c",
+          "text": "Signs using traffic signal colors must be mounted at least 5.00 m above road level to avoid confusion"
+        },
+        {
+          "id": "d",
+          "text": "Signs may imitate traffic signal shapes but not colors, provided they are mounted on private property"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2001, no sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device. This prohibition is absolute — no sign may use red, amber, or green lights in any manner that could be mistaken for traffic control signals. There is no exception for mounting height, time of day, or private property location.",
+      "explanation": "Per Rule XX, Sec. 2001, no sign shall confuse, obstruct, or imitate the appearance of an official traffic sign, signal, or device. This prohibition is absolute — no sign may use red, amber, or green lights in any manner that could be mistaken for traffic control signals. There is no exception for mounting height, time of day, or private property location.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:129da6b1d21f320e46b759329f0b3c7641ae5869e17485409f35d7de82570783"
+    },
+    {
+      "question_id": "d514c373-47cc-4dd7-b370-a9266eddcdfe",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what two additional requirements apply specifically to roof signs installed on any building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Roof signs must be grounded for lightning protection and must carry warning lights visible to air traffic where hazardous"
+        },
+        {
+          "id": "b",
+          "text": "Roof signs must be structurally designed by a licensed civil engineer and must not exceed 3.00 m in height, ensuring compliance with structural integrity standards"
+        },
+        {
+          "id": "c",
+          "text": "Roof signs must comply with NSCP seismic provisions only and are exempt from lightning protection requirements, which are not applicable in all zones"
+        },
+        {
+          "id": "d",
+          "text": "Roof signs must be painted with reflective paint and must be illuminated with LED fixtures only, to enhance visibility and energy efficiency"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, roof signs must: (1) be grounded for lightning protection — the elevated position of a roof sign makes it a preferential lightning strike point; and (2) carry warning lights visible to air traffic where they present an aviation hazard. Roof signs are also prohibited on wooden structures or buildings with wooden roof framing, and must comply with Sec. 1210 penthouse and roof structure requirements.",
+      "explanation": "Per Rule XX, Sec. 2004, roof signs must: (1) be grounded for lightning protection — the elevated position of a roof sign makes it a preferential lightning strike point; and (2) carry warning lights visible to air traffic where they present an aviation hazard. Roof signs are also prohibited on wooden structures or buildings with wooden roof framing, and must comply with Sec. 1210 penthouse and roof structure requirements.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b30660c507922931f5faba8bd034f67de79e229b15e376dd2bb8a246f607cccd"
+    },
+    {
+      "question_id": "d5b7be30-d51c-4ad1-8c15-22c8d36ee178",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what is the maximum projection allowed for a projecting sign on a non-arcaded street, and what is the minimum vertical clearance above the sidewalk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximum 0.50 m projection; minimum 2.00 m vertical clearance above sidewalk"
+        },
+        {
+          "id": "b",
+          "text": "Maximum 1.00 m projection; minimum 3.00 m vertical clearance above road or sidewalk"
+        },
+        {
+          "id": "c",
+          "text": "Maximum 1.50 m projection; minimum 4.00 m vertical clearance above sidewalk"
+        },
+        {
+          "id": "d",
+          "text": "Maximum 2.00 m projection; minimum 3.00 m vertical clearance above road or sidewalk"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, on non-arcaded streets, projecting signs may project a maximum of 1.00 m from the wall or building line over the sidewalk, and must maintain a minimum vertical clearance of 3.00 m above the road or sidewalk surface. On arcaded streets, the sign must be flush with the outermost arcade face and maintain 5.00 m clearance — different rules apply.",
+      "explanation": "Per Rule XX, Sec. 2004, on non-arcaded streets, projecting signs may project a maximum of 1.00 m from the wall or building line over the sidewalk, and must maintain a minimum vertical clearance of 3.00 m above the road or sidewalk surface. On arcaded streets, the sign must be flush with the outermost arcade face and maintain 5.00 m clearance — different rules apply.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb78e7dc8fdc92c5570ac3a8866137b0f0c86f72840ae03903be027addf61136"
+    },
+    {
+      "question_id": "e2bbd8d1-51d3-4f8d-8be9-8a41833bbfa2",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, under what occupancy classification are signs categorized, and does this classification require a separate building permit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group J-3 occupancy; yes, a separate building permit is required for every sign"
+        },
+        {
+          "id": "b",
+          "text": "Group J-1 occupancy; no separate permit is required for signs attached to permitted buildings"
+        },
+        {
+          "id": "c",
+          "text": "Group J-2 occupancy; a simplified permit is required only for signs exceeding 5.00 m in height"
+        },
+        {
+          "id": "d",
+          "text": "Group J-4 occupancy; signs require only a business permit from the local government"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, signs are classified as Group J-3 occupancy — the same classification used for miscellaneous structures. A separate building permit is required for every sign, independent of any permit issued for the building itself. The Building Official has jurisdiction over approval, inspection, and enforcement of sign standards.",
+      "explanation": "Per Rule XX, signs are classified as Group J-3 occupancy — the same classification used for miscellaneous structures. A separate building permit is required for every sign, independent of any permit issued for the building itself. The Building Official has jurisdiction over approval, inspection, and enforcement of sign standards.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1ce8c615d3e26d36b04596f5016515fdb15d894f5624a7591dd8905ba3a690bc"
+    },
+    {
+      "question_id": "c4565528-3d3e-4a87-9eaf-11bc569868a8",
+      "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XX, Sec. 2004, what are the minimum spacing rules for neon signs on the same building and between adjacent buildings?",
+      "options": [
+        {
+          "id": "a",
+          "text": "At least 2.00 m clear between signs on the same building; at least 4.00 m from common boundary with adjacent building"
+        },
+        {
+          "id": "b",
+          "text": "At least 4.00 m clear between signs on the same building; at least 2.00 m from common boundary with adjacent building"
+        },
+        {
+          "id": "c",
+          "text": "At least 3.00 m clear between signs on the same building; at least 3.00 m from common boundary with adjacent building"
+        },
+        {
+          "id": "d",
+          "text": "At least 4.00 m clear between signs on the same building; at least 1.00 m from utility posts or wires"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XX, Sec. 2004, neon signs on the same building must have at least 4.00 m clear horizontal distance between them, and neon signs on adjacent buildings must be at least 2.00 m from the common boundary line. Additionally, all neon signs must maintain at least 1.00 m clearance from utility posts or wires — this is a separate rule that applies regardless of spacing from other signs.",
+      "explanation": "Per Rule XX, Sec. 2004, neon signs on the same building must have at least 4.00 m clear horizontal distance between them, and neon signs on adjacent buildings must be at least 2.00 m from the common boundary line. Additionally, all neon signs must maintain at least 1.00 m clearance from utility posts or wires — this is a separate rule that applies regardless of spacing from other signs.",
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.190399+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9458499f7a108229c36cfd2b89f62be9d3553172f3edfcbbd4d3f503ba8bf8f1"
+    }
+  ]
+}

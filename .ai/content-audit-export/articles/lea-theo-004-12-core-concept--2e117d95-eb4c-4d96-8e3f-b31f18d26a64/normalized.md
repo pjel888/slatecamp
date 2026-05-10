@@ -270,7 +270,7 @@ Extracted summary:
 - Text: Thermal comfort in Philippine buildings is measured against **ASHRAE 55** standards, which include an **adaptive comfort model** allowing higher interior setpoints (26–29°C) when natural ventilation and occupant control are available. This model contradicts the fixed 23–25°C setpoint of mechanical buildings and reduces cooling energy by 40–60%. Fanger's **PMV-PPD model** quantifies thermal sensation mathematically; understanding both models enables design that achieves occupant comfort while ali
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
-- Props: 
+- Props:
 - Text: Thermal comfort in Philippine buildings is measured against **ASHRAE 55** standards, which include an **adaptive comfort model** allowing higher interior setpoints (26–29°C) when natural ventilation a
 
 ## Common Mistakes
@@ -322,4 +322,3 @@ satisfaction with thermal environment; subjective and dependent on physiological
 See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-02-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-07-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

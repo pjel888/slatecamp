@@ -1,0 +1,171 @@
+{
+  "article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6e6a2e7696719cd544d9a2510a33a2cdfdfc5cd2e7d420bb53ee6d2a73617286",
+  "question_count": 3,
+  "questions": [
+    {
+      "question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q01",
+      "article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "topic_id": "dryrun-topic-07-bp220-parks-playgrounds-road-pavement",
+      "text": "In the cited BP 220 IRR hierarchy of basic needs, which item comes first?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Park/playground"
+        },
+        {
+          "id": "B",
+          "text": "Water"
+        },
+        {
+          "id": "C",
+          "text": "Power"
+        },
+        {
+          "id": "D",
+          "text": "Solid and liquid waste disposal"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "The extracted list places water first among the basic needs of human settlements.",
+        "distractors": {
+          "A": "Park/playground appears later in the list.",
+          "C": "Power appears after park/playground in the extracted sequence.",
+          "D": "Solid/liquid waste disposal is listed, but not first."
+        },
+        "takeaway": "For hierarchy question prompts, answer from the sequence, not from what sounds most visible on a site plan."
+      },
+      "explanation": "BP 220 Revised IRR 2008, PDF p.9.",
+      "code_citation": "BP 220 Revised IRR 2008, PDF p.9.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "bp220-basicneeds-q1",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "BP 220 Revised IRR 2008, PDF p.9.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:0c714d0db196625c19c1464912e036ee7100c2e5230c1b9a64dc0acd55686dc1"
+    },
+    {
+      "question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q02",
+      "article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "topic_id": "dryrun-topic-07-bp220-parks-playgrounds-road-pavement",
+      "text": "For 150 lots/dwelling units per hectare and below, what parks/playgrounds allocation is shown in Table 1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.0%"
+        },
+        {
+          "id": "B",
+          "text": "2.0%"
+        },
+        {
+          "id": "C",
+          "text": "3.5%"
+        },
+        {
+          "id": "D",
+          "text": "7.0%"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Table 1 shows 3.5% of gross area for parks/playgrounds at 150 and below.",
+        "distractors": {
+          "A": "1.0% belongs to a different facility allocation context, not this parks/playgrounds row.",
+          "B": "2.0% is not the cited parks/playgrounds value for 150 and below.",
+          "D": "7.0% appears at a higher density band."
+        },
+        "takeaway": "Use the density row before selecting the percentage."
+      },
+      "explanation": "BP 220 Revised IRR 2008, Table 1, PDF p.12.",
+      "code_citation": "BP 220 Revised IRR 2008, Table 1, PDF p.12.",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "bp220-park-q2",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "BP 220 Revised IRR 2008, Table 1, PDF p.12.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:d15a5f7460974c5d0612fbb0584a3153006c1982e0ca8a245bbfb94620a43271"
+    },
+    {
+      "question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q03",
+      "article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "topic_id": "dryrun-topic-07-bp220-parks-playgrounds-road-pavement",
+      "text": "Under the cited BP 220 road-pavement excerpt, what minimum asphalt thickness is stated for major/minor roads and motor courts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "25 mm"
+        },
+        {
+          "id": "B",
+          "text": "50 mm"
+        },
+        {
+          "id": "C",
+          "text": "100 mm"
+        },
+        {
+          "id": "D",
+          "text": "150 mm"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "The excerpt states asphalt with minimum thickness of 50 mm; concrete is the 150 mm value.",
+        "distractors": {
+          "A": "25 mm is not the cited value.",
+          "C": "100 mm is not stated in the excerpt.",
+          "D": "150 mm is the concrete thickness, not asphalt."
+        },
+        "takeaway": "Pair the material with the correct thickness: asphalt 50 mm, concrete 150 mm."
+      },
+      "explanation": "BP 220 Revised IRR 2008, Section 5.b.3.4, PDF p.17.",
+      "code_citation": "BP 220 Revised IRR 2008, Section 5.b.3.4, PDF p.17.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "bp220-road-q3",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "BP 220 Revised IRR 2008, Section 5.b.3.4, PDF p.17.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:90d9856bb998a54a747cd9b2ff36c09b6eb8cc3dd2a1515507c131f1f33c4720"
+    }
+  ],
+  "dry_run_note": "Generated from SME-approved exemplar-question-set.json; do not edit linked-questions directly for real Supabase updates."
+}

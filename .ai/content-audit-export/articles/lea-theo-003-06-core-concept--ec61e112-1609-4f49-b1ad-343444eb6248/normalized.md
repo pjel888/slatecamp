@@ -149,7 +149,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0011 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Pattern 5: Universal Design Challenge** Stem: "A designer argues that universal design features (wider doorways, accessible bathrooms, flexible furniture) increase project cost beyond client budget. Explain why universal design is cost-effective, how accessibility requirements are legal mandates, and how strategic prioritization addresses budget constraints." Expected response: Cost-effectiveness argument: early integration costs minimally more than conventional design; features like flexible 
+- Text: **Pattern 5: Universal Design Challenge** Stem: "A designer argues that universal design features (wider doorways, accessible bathrooms, flexible furniture) increase project cost beyond client budget. Explain why universal design is cost-effective, how accessibility requirements are legal mandates, and how strategic prioritization addresses budget constraints." Expected response: Cost-effectiveness argument: early integration costs minimally more than conventional design; features like flexible
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
@@ -207,4 +207,3 @@ Extracted summary:
 See also within Design Perception: **lea-theo-003-01-core-concept**, **lea-theo-003-02-core-concept**, **lea-theo-003-03-core-concept**, **lea-theo-003-04-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

@@ -157,7 +157,7 @@ Extracted summary:
 - Text: Kinesthetics is the study of the body in motion through space. The LEA tests your understanding of how architectural sequences—stairs, ramps, corridors, thresholds, transitions—shape the experience of moving through a building. You must know the Philippine legal standards for these elements: PD 1096 (National Building Code), RA 9514 (Fire Code), and BP 344 (Accessibility Law). These dimensions are heavily tested because they are non-negotiable safety and accessibility requirements; poor stair de
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
-- Props: 
+- Props:
 - Text: Kinesthetics is the study of the body in motion through space. The LEA tests your understanding of how architectural sequences—stairs, ramps, corridors, thresholds, transitions—shape the experience of
 
 ## Common Mistakes
@@ -215,4 +215,3 @@ Thresholds are meaningful and regulated."]} />
 See also within Design Perception: **lea-theo-003-01-core-concept**, **lea-theo-003-02-core-concept**, **lea-theo-003-04-core-concept**, **lea-theo-003-05-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

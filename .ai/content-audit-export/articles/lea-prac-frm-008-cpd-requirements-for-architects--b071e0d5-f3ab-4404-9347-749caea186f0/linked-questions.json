@@ -1,9 +1,59 @@
 {
   "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:aa568e514845607ebd6470b8c9989e884ef20946fef9dbc5f361cf616663c71c",
+  "linked_questions_hash": "sha256:21a3abe61207098a59fd8e1d4e65a6944a8f393293a69f0e7c95cf10a905fcc8",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "5e646960-5904-4280-a1e6-a6167c434ce2",
+      "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
+      "topic_id": "078903e0-886e-4a6c-a677-1e6e311a60a1",
+      "text": "Can an architect practice architecture without a valid, renewed PIC?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, if employed by a government agency, provided the agency has its own licensing requirements"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if working as a consultant, but only for projects that do not require a licensed architect's seal"
+        },
+        {
+          "id": "c",
+          "text": "No, an architect cannot legally practice without current PIC status"
+        },
+        {
+          "id": "d",
+          "text": "Yes, for up to six months after expiration, during which time they must renew their license to continue practicing"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely exempts government employees; civil service employment does not override PIC renewal requirements.",
+        "b": "Falsely exempts consultants; consulting status does not waive PIC renewal mandates.",
+        "d": "Incorrectly grants a grace period; practice without current PIC is illegal immediately upon expiration.",
+        "correct": "Active PIC status is essential for legal architectural practice; an architect without a valid, renewed PIC cannot legally practice architecture or sign documents.",
+        "takeaway": "Valid PIC status is universally required for legal architectural practice, regardless of employment type or project scope."
+      },
+      "explanation": "Falsely exempts government employees; civil service employment does not override PIC renewal requirements. Falsely exempts consultants; consulting status does not waive PIC renewal mandates. Incorrectly grants a grace period; practice without current PIC is illegal immediately upon expiration. Active PIC status is essential for legal architectural practice; an architect without a valid, renewed PIC cannot legally practice architecture or sign documents. Valid PIC status is universally required for legal architectural practice, regardless of employment type or project scope.",
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-008-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T15:15:13.80865+00:00",
+      "content_hash": "sha256:7821f68e6d2fa5d699405e6046fcf39603ce08cdbc65762253bd00c39dd6de2d"
+    },
     {
       "question_id": "c01e7f13-b955-4390-b2a5-b44f2577ed58",
       "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
@@ -189,7 +239,7 @@
         "correct": "CPD activities are organized into five major areas under Professional Track category to ensure comprehensive professional development across diverse knowledge domains.",
         "takeaway": "CPD is organized into five major professional track categories covering diverse knowledge areas."
       },
-      "explanation": null,
+      "explanation": "Undercounts the track structure; three tracks would not provide the breadth required across technical, ethics, management, environmental, and specialized domains. Undercounts by one; the actual structure comprises five, not four, distinct track areas. Overcounts the track categories; seven exceeds the five-track framework. CPD activities are organized into five major areas under Professional Track category to ensure comprehensive professional development across diverse knowledge domains. CPD is organized into five major professional track categories covering diverse knowledge areas.",
       "code_citation": "RA 10912",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -201,8 +251,8 @@
       "model_id": "ALE-PRAC-FRM-008-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4be0597be72d0b9fa68b527d0a98a7a94e1f1759621dab32eead75500f4d26ba"
+      "updated_at": "2026-05-06T15:15:13.374348+00:00",
+      "content_hash": "sha256:49def40cd04df45fb1dbc5fd5cf72613066c08d987d481faca241a8011d7f572"
     },
     {
       "question_id": "dc998947-7756-4c0a-b747-a726eed49e18",
@@ -239,7 +289,7 @@
         "correct": "Failure to meet the 45-unit requirement results in PIC renewal denial until requirements are satisfied; the card cannot be renewed without proof of compliance.",
         "takeaway": "Non-compliance blocks PIC renewal entirely until the 45-unit requirement is fulfilled."
       },
-      "explanation": null,
+      "explanation": "Contradicts the mandatory requirement; automatic renewal without compliance does not occur. Inadequate remedy; written explanation alone does not substitute for actual CPD completion. Provides unauthorized grace period; renewal cycles follow statutory timelines without extension. Failure to meet the 45-unit requirement results in PIC renewal denial until requirements are satisfied; the card cannot be renewed without proof of compliance. Non-compliance blocks PIC renewal entirely until the 45-unit requirement is fulfilled.",
       "code_citation": "RA 10912",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -251,8 +301,8 @@
       "model_id": "ALE-PRAC-FRM-008-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5c528eba1690564a1c96c043cdbdcbc6303940ba511a7a0f8e75cdfed849e31f"
+      "updated_at": "2026-05-06T15:15:13.521253+00:00",
+      "content_hash": "sha256:62ebb650a0ef0369f755d399882b6d76df1f624541cb02fd75815131bb5c5476"
     },
     {
       "question_id": "e6e43914-e8d8-4385-add0-165cbb38ee1b",
@@ -389,7 +439,7 @@
         "correct": "Distribution across five tracks prevents narrow focus on preferred subjects while ensuring balanced professional development across essential competencies.",
         "takeaway": "Track distribution prevents overspecialization and ensures architects develop competency across all five essential professional areas."
       },
-      "explanation": null,
+      "explanation": "Misinterprets distribution as an increase mechanism; the 45-unit total remains constant regardless of distribution across tracks. Contradicts the purpose; distribution ensures specialists maintain breadth, not elimination of depth. Incorrectly assumes distribution reduces total credits; the 45-unit requirement is unchanged. Distribution across five tracks prevents narrow focus on preferred subjects while ensuring balanced professional development across essential competencies. Track distribution prevents overspecialization and ensures architects develop competency across all five essential professional areas.",
       "code_citation": "RA 10912",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -401,8 +451,8 @@
       "model_id": "ALE-PRAC-FRM-008-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:548439829d59d59831e0ef2bbc49f98687c5e78251d75fdb12bb70a35e58be45"
+      "updated_at": "2026-05-06T15:15:13.662365+00:00",
+      "content_hash": "sha256:ea02b62809bb9b4382236ad4e6d5279ddbaf2d6093b565a668749f4ba731636c"
     },
     {
       "question_id": "a4d7eee7-3348-4247-be99-9f05564722f0",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:48.361702+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:56faab4f252527786740f9093d1a484f9ce352349000bb5a4ece3b355fcdfe8b"
-    },
-    {
-      "question_id": "5e646960-5904-4280-a1e6-a6167c434ce2",
-      "article_id": "b071e0d5-f3ab-4404-9347-749caea186f0",
-      "topic_id": "078903e0-886e-4a6c-a677-1e6e311a60a1",
-      "text": "Can an architect practice architecture without a valid, renewed PIC?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Yes, if employed by a government agency, provided the agency has its own licensing requirements"
-        },
-        {
-          "id": "b",
-          "text": "Yes, if working as a consultant, but only for projects that do not require a licensed architect's seal"
-        },
-        {
-          "id": "c",
-          "text": "No, an architect cannot legally practice without current PIC status"
-        },
-        {
-          "id": "d",
-          "text": "Yes, for up to six months after expiration, during which time they must renew their license to continue practicing"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Falsely exempts government employees; civil service employment does not override PIC renewal requirements.",
-        "b": "Falsely exempts consultants; consulting status does not waive PIC renewal mandates.",
-        "d": "Incorrectly grants a grace period; practice without current PIC is illegal immediately upon expiration.",
-        "correct": "Active PIC status is essential for legal architectural practice; an architect without a valid, renewed PIC cannot legally practice architecture or sign documents.",
-        "takeaway": "Valid PIC status is universally required for legal architectural practice, regardless of employment type or project scope."
-      },
-      "explanation": null,
-      "code_citation": "RA 10912",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-008-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8b8c71e8fc13f582dc32c46a44d549f7097682e39b886ec136a7eeaf0a6ffb06"
     }
   ]
 }

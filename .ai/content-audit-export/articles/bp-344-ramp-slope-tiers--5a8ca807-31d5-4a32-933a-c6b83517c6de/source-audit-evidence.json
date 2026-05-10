@@ -1,0 +1,89 @@
+{
+  "audit_date": "2026-05-10",
+  "audit_mode": "local_source_audit_no_supabase",
+  "supabase_apply_status": "not_applied",
+  "readiness_verdict": "SOURCE_AUDITED_READY_LOCAL_ONLY",
+  "article_slug": "bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "article_title": "BP 344 Ramp Slope Tiers",
+  "inspected_files": [
+    "normalized.md",
+    "linked-questions.json",
+    "sources.json"
+  ],
+  "raw_sources": [
+    {
+      "key": "bp344_2024",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "sha256": "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+    }
+  ],
+  "resolved_blockers": [
+    {
+      "id": "RAMP-BLOCKER-001",
+      "resolution": "Removed/reframed linked-question claims that 1:12 is a renovation-only accessible-ramp exception. Correct answers now rely only on the verified accessible-ramp excerpt: general 1:20 and special-case 1:15 row. Incorrect distractors that mention 1:12 are explained as unsupported by the cited accessible-ramp excerpt."
+    },
+    {
+      "id": "RAMP-BLOCKER-002",
+      "resolution": "Corrected question 70215fdc option B from two intermediate landings to one intermediate landing; total remains 26.4 m = 1.8 + 10.5 + 1.8 + 10.5 + 1.8."
+    },
+    {
+      "id": "RAMP-BLOCKER-003",
+      "resolution": "Populated sources.json with the raw BP 344 2024 PDF metadata, SHA-256, locators, and verified claim list."
+    }
+  ],
+  "verified_major_claims": [
+    {
+      "claim": "Accessible ramps require minimum clear width of 1200 mm.",
+      "scope": "article and linked question 4c92b571-c5f6-45e7-accd-4567ebe47393",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 2,
+      "source_locator": "Appendix A, Accessible Ramps, item 1",
+      "evidence_excerpt": "Minimum clear width of 1200 mm.",
+      "status": "verified"
+    },
+    {
+      "claim": "Accessible ramp general gradient is not steeper than 1:20; steeper gradients may be allowed only in special cases depending on length. Table A.1.1 includes a 1:15 row with 10.50 m maximum length, 700 mm maximum rise, and 10 m landing interval.",
+      "scope": "article and linked questions 00115b59-c190-476b-8ef2-fae152241b7e, a2555ae7-ee40-4d1a-a83d-38e1f6145674, 069dd3a1-aa7d-4221-9a9b-53e3360e278b, 9b6d0315-ba0b-4c42-8bda-d437595c72f9, 2c9264f8-b339-405d-ab6c-df182954b6bd",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 2,
+      "source_locator": "Appendix A, Accessible Ramps, item 2 and Table A.1.1",
+      "evidence_excerpt": "Gradient not steeper than 1:20... Steeper gradients may be allowed in special cases... 1:15 / 10.50m / 700mm / 10m.",
+      "status": "verified"
+    },
+    {
+      "claim": "Accessible ramps with total length longer than 10.50 m require intermediate landings at least 1800 mm long; upper and lower level areas must be at least 1800 mm.",
+      "scope": "article and linked questions 70215fdc-8b37-4339-8c09-b1ff12840f34 and 9b6d0315-ba0b-4c42-8bda-d437595c72f9",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 2,
+      "source_locator": "Appendix A, Accessible Ramps, items 10-11",
+      "evidence_excerpt": "Accessible ramps with a total length longer than 10.50m shall be provided with intermediate landings with a minimum length of 1800 mm... Level area not less than 1800 mm at the upper end and lower end of any ramp.",
+      "status": "verified"
+    },
+    {
+      "claim": "Handrails are required for accessible ramps for changes in grade higher than 170 mm and installed at 900 mm and 700 mm.",
+      "scope": "article and linked questions 0a31a28e-0935-4565-a118-60b76c0a2c0c and b7afac22-7103-40b4-9fca-b6cf8b0b6707",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 7,
+      "source_locator": "Appendix A, Handrails and Grab Bars",
+      "evidence_excerpt": "Handrails shall be required for accessible ramps for changes in grade higher than 170 mm... Handrails shall be installed at 900 mm and 700 mm above ramps and stairs.",
+      "status": "verified"
+    },
+    {
+      "claim": "Ramp raised edge/curb minimum height is 100 mm.",
+      "scope": "linked question a2aafc8a-50b3-4379-863c-ddfb9d51ecce",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 2,
+      "source_locator": "Appendix A, Accessible Ramps, item 14",
+      "evidence_excerpt": "Raised edge on both sides of the ramp with a minimum height of 100 mm.",
+      "status": "verified"
+    }
+  ],
+  "unsupported_claim_handling": {
+    "claim": "1:12 as a renovation-only accessible-ramp exception",
+    "raw_pdf_search_result": "Not found in the Accessible Ramps excerpt; 1:12 found in the raw PDF only in a swimming-pool clear-transfer-space provision during this audit.",
+    "local_content_action": "Removed as a correct/affirmative linked-question claim; retained only where clearly used as an incorrect distractor or rejected proposition."
+  },
+  "blockers": [],
+  "approval_scope": "Local article bundle only. Do not apply to Supabase."
+}

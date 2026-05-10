@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>UAP SPP 201 — SPP Doc 201: Pre-Design Services — SlateCamp Browser QA</title>
+  <style>
+    :root { color-scheme: light; --ink:#172033; --muted:#607089; --line:#d8e0ea; --blue:#1d4ed8; --bg:#f4f7fb; --card:#fff; --warn:#92400e; --ok:#166534; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; }
+    .frame { max-width: 980px; margin: 0 auto; padding: 28px 24px 64px; }
+    .qa-banner { border: 1px solid #bfdbfe; background: #eff6ff; color: #1e3a8a; border-radius: 10px; padding: 12px 14px; font-size: 13px; margin-bottom: 18px; }
+    .meta { border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 16px; margin-bottom: 22px; box-shadow: 0 1px 2px rgba(15,23,42,.04); }
+    .meta h1 { margin: 0 0 6px; font-size: 24px; line-height: 1.2; letter-spacing: -0.02em; }
+    .meta dl { display: grid; grid-template-columns: 160px minmax(0,1fr); gap: 4px 12px; margin: 12px 0 0; font-size: 13px; }
+    .meta dt { color: var(--muted); font-weight: 700; }
+    .meta dd { margin: 0; word-break: break-word; }
+    .prose { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 32px 38px; box-shadow: 0 10px 30px rgba(15,23,42,.06); }
+    .prose h1 { margin: 0 0 22px; font-size: 34px; line-height: 1.14; letter-spacing: -0.03em; }
+    .prose h2 { margin: 34px 0 10px; border-top: 1px solid #eef2f7; padding-top: 22px; font-size: 22px; line-height: 1.25; letter-spacing: -0.018em; }
+    .prose h3 { margin: 24px 0 8px; font-size: 18px; }
+    .prose p { margin: 0 0 14px; }
+    .prose ul, .prose ol { margin: 0 0 18px 1.35rem; padding: 0; }
+    .prose li { margin: 7px 0; }
+    .prose strong { color: #0f172a; }
+    .prose code { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 5px; padding: .12em .35em; font-size: .92em; }
+    .prose blockquote { border-left: 4px solid #93c5fd; margin: 20px 0; padding: 8px 16px; background: #eff6ff; color: #1e3a8a; }
+    .prose table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 18px 0; }
+    .prose th, .prose td { border: 1px solid #dbe4ef; padding: 8px 10px; vertical-align: top; }
+    .prose th { background: #f8fafc; text-align: left; }
+    .qa-json { white-space: pre-wrap; font: 11px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: #475569; margin-top: 18px; }
+    @media (max-width: 720px) { .frame { padding: 16px 12px 48px; } .prose { padding: 22px 18px; } .meta dl { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="frame" data-qa-page="candidate-preview" data-article-id="16bb270e-6887-4bbe-a62e-eace6c4d3fdb" data-slug="spp-doc-201-pre-design-services">
+    <div class="qa-banner"><strong>Browser QA preview:</strong> locally rendered from <code>candidate.md</code> through SlateCamp <code>compileWikiArticleWithRenderer()</code>. No Supabase article/question mutation.</div>
+    <section class="meta" aria-label="QA metadata">
+      <h1>UAP SPP 201 — SPP Doc 201: Pre-Design Services</h1>
+      <dl>
+        <dt>Article ID</dt><dd><code>16bb270e-6887-4bbe-a62e-eace6c4d3fdb</code></dd>
+        <dt>Slug</dt><dd>spp-doc-201-pre-design-services</dd>
+        <dt>Candidate words</dt><dd>1122</dd>
+        <dt>Candidate placeholders</dt><dd>0 open / 0 close</dd>
+      </dl>
+    </section>
+    <article class="prose prose-wiki" data-qa-article-body>
+      <h1>UAP SPP 201 and Document 401-402: Pre-Design Is Not Basic Service</h1>
+<h2 id="learning-objective">Learning objective</h2>
+<p>Given a Professional Practice question prompt, distinguish pre-design services from regular/basic architectural services and from separately engaged services. The safest method is to identify the document being tested before choosing the service category.</p>
+<h2 id="governing-sources">Governing sources</h2>
+<p>Use UAP SPP Document 201 for Pre-design Services and UAP Document 401-402 for the agreement boundaries cited here. The SPP 201 source pages are PDF pp.36, 42, 43, 48, and 49. The Document 401-402 service-boundary language is on PDF p.1, and the suspended/abandoned-work percentage clause is in Article 7.08, PDF p.8.</p>
+<h2 id="spp-201-is-the-pre-design-source">SPP 201 is the pre-design source</h2>
+<p>SPP Document 201 is expressly the standard of professional practice on Pre-design Services. The cited pages identify pre-design services including consultation, pre-feasibility studies, architectural programming, and space planning.</p>
+<p>Source: UAP SPP Document 201, PDF pp.36, 42, 43, 48, and 49.</p>
+<p>This is the first exam separation. If the prompt asks which service clearly belongs to pre-design, do not force the answer into regular production of construction documents. Pre-design helps define, test, and organize the project before full design documentation proceeds.</p>
+<h2 id="consultation-is-still-professional-service">Consultation is still professional service</h2>
+<p>SPP 201 describes consultation as the architect giving oral or written advice and direction, attending conferences, making evaluations and appraisals regarding a contemplated project, and similar activities. It also states that the architect renders valuable input whether or not the client pursues the project.</p>
+<p>Source: UAP SPP Document 201, Consultation, PDF p.42.</p>
+<p>That last phrase is the exam point. Consultation is not free simply because the project later stops. It is professional judgment delivered before the client decides whether to continue. If the question prompt says the client asked for advice, conferences, evaluations, or appraisals, SPP 201 consultation is the relevant category.</p>
+<h2 id="pre-feasibility-studies-support-early-decisions">Pre-feasibility studies support early decisions</h2>
+<p>SPP 201 describes pre-feasibility studies as preliminary studies involving procurement, analysis, and use of secondary information gathered for the project to aid the client in early decision-making. They represent the architect’s initial assessment of a project’s soundness, allowing the client to explore options promptly.</p>
+<p>Source: UAP SPP Document 201, Pre-feasibility Studies, PDF p.43.</p>
+<p>Do not confuse this with final feasibility certainty or full design. The service is early-stage and decision-supportive. If the prompt emphasizes secondary information, preliminary assessment, and early options, the service is pre-feasibility study.</p>
+<h2 id="architectural-programming-and-space-planning">Architectural programming and space planning</h2>
+<p>SPP 201 describes architectural programming as an analytical problem-seeking process that leads to the statement and identification of horizontal and vertical requirements in offering a solution. It incorporates a space program with characterizations of envisioned spaces, such as ambiance and cost range.</p>
+<p>Source: UAP SPP Document 201, Architectural Programming, PDF p.48.</p>
+<p>SPP 201 describes space planning as the architect determining the adequate size and appropriate configuration for a proposed project in consideration of use, allocation, and interface of spaces for given activities.</p>
+<p>Source: UAP SPP Document 201, Space Planning, PDF p.49.</p>
+<p>The distinction is useful. Architectural programming organizes requirements and defines the problem. Space planning translates use and activity relationships into size, configuration, allocation, and interface decisions.</p>
+<h2 id="document-401-402-excludes-these-from-the-agreement">Document 401-402 excludes these from the agreement</h2>
+<p>UAP Document 401-402 states that the agreement does not cover Fulltime Construction Supervision, Project or Construction Management, Pre-Design Services such as Space Planning and Research, allied architectural design services for architectural interiors or site/physical planning, and similar services detailed elsewhere. It also states that the agreement is not for Design-Build Services and is not a Construction Agreement.</p>
+<p>Source: UAP Document 401-402, Articles 5-6 excerpt, PDF p.1.</p>
+<p>This is the boundary rule. A service can be a real architectural service and still be outside the agreement being tested. If the prompt asks what Document 401-402 does not cover, do not answer as if every architectural service is automatically inside basic services.</p>
+<h2 id="the-85105-rule-is-not-universal">The 85/10/5 rule is not universal</h2>
+<p>Article 7.08 states that, in the suspended or abandoned work context of that agreement, completion of the Contract Documents Phase is treated as 85% of the architect’s work. The remaining 15% is broken down as 10% for the architect’s liability under Article 1723 of the New Civil Code and 5% for construction-phase service, including preparation of contract document forms and periodic visits during construction.</p>
+<p>Source: UAP Document 401-402, Article 7.08, PDF p.8.</p>
+<p>This percentage breakdown must stay attached to its context. It is not a universal UAP fee table for every service. If the prompt asks about suspended or abandoned work under Document 401-402, the 85/10/5 language is relevant. If the prompt asks whether pre-design services are covered by that agreement, use the exclusion language instead.</p>
+<h2 id="service-boundary-checklist">Service-boundary checklist</h2>
+<p>When a Professional Practice prompt names a service, ask two questions. First, is the service listed in SPP 201 as pre-design work, such as consultation, pre-feasibility studies, architectural programming, or space planning? Second, is the prompt asking about what Document 401-402 covers or excludes? If it asks about exclusions, a service can be professionally valid but still outside that agreement. This prevents the common error of treating all architect-performed work as automatically included in one basic-services document.</p>
+<h2 id="real-world-application">Real-World Application</h2>
+<p>Imagine a developer in Davao City asking an architect to “just make a quick concept” for a mixed-use neighborhood center before any formal agreement is signed. The site is still one of three options, the tenant mix is uncertain, and the client wants the architect to compare feasibility, space requirements, and early planning implications. This is where SPP 201 matters. The architect should not treat that work as a free preview of basic design services. A disciplined response is to separate pre-design scope from later basic services: consultation, pre-feasibility work, architectural programming, and space planning are professional services that shape whether the project should proceed and what the later design brief should contain. The architect can explain that sketches may appear during the discussion, but the real deliverable is decision support: what the client needs, what the site can reasonably carry, and what information is still missing. The practical outcome is a clearer service proposal and fewer disputes when the client later asks why early advisory work has a professional fee.</p>
+<h2 id="exam-traps">Exam traps</h2>
+<ul>
+<li><strong>Trap 1: pre-design is treated as basic service.</strong> SPP 201 gives pre-design its own service category.</li>
+<li><strong>Trap 2: consultation is treated as worthless if the project stops.</strong> SPP 201 says it is valuable whether or not the client pursues the project.</li>
+<li><strong>Trap 3: Document 401-402 is treated as covering every service.</strong> It expressly excludes several services.</li>
+<li><strong>Trap 4: 85/10/5 is made universal.</strong> Article 7.08 is tied to suspended or abandoned work in that agreement.</li>
+<li><strong>Trap 5: fulltime construction supervision is hidden inside basic services.</strong> Document 401-402 treats FCS as separately engaged.</li>
+</ul>
+    </article>
+    <details>
+      <summary>Static source QA stats</summary>
+      <pre class="qa-json">{
+  &quot;article_id&quot;: &quot;16bb270e-6887-4bbe-a62e-eace6c4d3fdb&quot;,
+  &quot;label&quot;: &quot;UAP SPP 201&quot;,
+  &quot;title&quot;: &quot;SPP Doc 201: Pre-Design Services&quot;,
+  &quot;slug&quot;: &quot;spp-doc-201-pre-design-services&quot;,
+  &quot;folder&quot;: &quot;spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb&quot;,
+  &quot;candidate_path&quot;: &quot;.ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/candidate.md&quot;,
+  &quot;normalized_path&quot;: &quot;.ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/normalized.md&quot;,
+  &quot;word_count&quot;: 1122,
+  &quot;candidate_char_count&quot;: 7639,
+  &quot;candidate_placeholder_open_count&quot;: 0,
+  &quot;candidate_placeholder_close_count&quot;: 0,
+  &quot;normalized_placeholder_open_count&quot;: 0,
+  &quot;candidate_has_wiki_article_error_text&quot;: false,
+  &quot;candidate_component_tags&quot;: [],
+  &quot;candidate_heading_count&quot;: 12,
+  &quot;rendered_char_count&quot;: 8359,
+  &quot;rendered_placeholder_open_count&quot;: 0,
+  &quot;rendered_placeholder_close_count&quot;: 0,
+  &quot;rendered_has_extracted_props&quot;: false,
+  &quot;rendered_has_wiki_article_error&quot;: false,
+  &quot;compile_error&quot;: null
+}</pre>
+    </details>
+  </main>
+  <script>
+    window.__slatecampBrowserQa = (() => {
+      const body = document.querySelector('[data-qa-article-body]')
+      const text = body ? body.innerText : ''
+      const html = body ? body.innerHTML : ''
+      const headings = [...document.querySelectorAll('[data-qa-article-body] h1, [data-qa-article-body] h2, [data-qa-article-body] h3')].map(h => h.textContent.trim())
+      const images = [...document.images]
+      return {
+        url: location.href,
+        articleId: document.querySelector('[data-article-id]')?.getAttribute('data-article-id'),
+        slug: document.querySelector('[data-slug]')?.getAttribute('data-slug'),
+        rawPlaceholderOpenCount: html.split('[SLATECAMP_UI_BLOCK:').length - 1,
+        rawPlaceholderCloseCount: html.split('[/SLATECAMP_UI_BLOCK]').length - 1,
+        extractedPropsLineCount: text.split('Props: id=').length - 1,
+        hasWikiArticleError: text.includes('Unable to render article') || html.includes('WikiArticleError'),
+        articleTextLength: text.length,
+        h1Count: document.querySelectorAll('[data-qa-article-body] h1').length,
+        h2Count: document.querySelectorAll('[data-qa-article-body] h2').length,
+        h3Count: document.querySelectorAll('[data-qa-article-body] h3').length,
+        emptyHeadingCount: headings.filter(h => !h).length,
+        brokenImageCount: images.filter(img => img.complete && img.naturalWidth === 0).length,
+        horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 2,
+        viewport: { width: innerWidth, height: innerHeight },
+      }
+    })()
+  </script>
+</body>
+</html>

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 008 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -13,11 +22,11 @@ Steel connections transfer loads through bolting, welding, or riveting. Bolted c
 Welded connections provide monolithic strength but require skilled labor and NDT (non-destructive testing) inspection. Riveted connections are historic; modern steel construction has largely replaced them with bolts or welds. NSCP 2015 provisions specify bolt grades (ASTM A325 for structural steel, 120 ksi tensile strength), hole tolerances, and proof loads based on connection type.
 
 
-<ArticleMedia id="media-window-hardware-chart" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of window hardware: casement operators, sliding locks, awning cranks, jalousie mechanisms, pivot hinges, and projected window hardware with operation and security ratings"
-  caption="Future chart: window hardware types — operation, security, and weather-tightness comparison"
-  suggestedAsset="Hardware identification chart with window type illustrations"
-  placementIntent="Provides reference for window hardware selection by window configuration" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-window-hardware-chart", layout="single", type="image", status="placeholder", alt="Comparison chart of window hardware: casement operators, sliding locks, awning cranks, jalousie mechanisms, pivot hinges, and projected window hardware with operation and security ratings", caption="Future chart: window hardware types — operation, security, and weather-tightness comparison", suggestedAsset="Hardware identification chart with window type illustrations", placementIntent="Provides reference for window hardware selection by window configuration"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -39,11 +48,11 @@ Welded connections provide monolithic strength but require skilled labor and NDT
 The NSCP 2015 (National Structural Code of the Philippines) adopts ACI 318 and AISC design provisions for concrete and steel construction. In the Philippines, concrete slabs in tropical climates experience significant thermal cycling due to intense solar radiation and monsoon temperature swings, necessitating proper expansion joint design. Many older Philippine structures lack adequate expansion joints, resulting in buckling and cracking during hot seasons. Dowel bars at construction joints are often undersized or omitted in informal construction, leading to differential settlement in multi-story buildings. Steel connections in high-seismic regions (as most of the Philippines is classified) require moment connections rather than simple shear connections to maintain structural integrity during earthquakes. Local contractors frequently confuse control joints with expansion joints, leading to premature cracking and sealant failure.
 
 
-<ArticleMedia id="media-window-hardware-selection" layout="single" type="image" status="placeholder"
-  alt="Comparison chart of window hardware by window type: casement, sliding, awning, jalousie, pivot, and projected with operation, security, and weather-tightness ratings"
-  caption="Future chart: window hardware selection matrix by window configuration"
-  suggestedAsset="Selection matrix for window hardware by window type"
-  placementIntent="Helps select appropriate hardware for each window type" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-window-hardware-selection", layout="single", type="image", status="placeholder", alt="Comparison chart of window hardware by window type: casement, sliding, awning, jalousie, pivot, and projected with operation, security, and weather-tightness ratings", caption="Future chart: window hardware selection matrix by window configuration", suggestedAsset="Selection matrix for window hardware by window type", placementIntent="Helps select appropriate hardware for each window type"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **ExaA concrete slab with thermal expansion coefficient of 6 × 10⁻⁶ in/in/°F (0.000006 in/in/°F)... **Exam Pattern 1: Spacing Calculation.** A concrete parking garage slab experiences a 60-degree Fahrenheit temperature swing. Using the thermal expansion coefficient (6 × 10⁻⁶ in/in/°F), what is the required expansion joint width? Answer: 6 × 10⁻⁶ × 60 = 0.00036 inches, which requires recalculation based on slab length per ΔL = α × L × ΔT formulas, rounded to 0.25 inches minimum per NSCP 2015.
@@ -54,21 +63,40 @@ The NSCP 2015 (National Structural Code of the Philippines) adopts ACI 318 and A
 
 **Exam Pattern 4: Connection Type Selection.** A moment-resisting frame in a seismic zone requires connections that transfer bending moments. What connection type is mandatory, and why? Answer: Moment connections (rigid); shear connections cannot transfer bending moments required for lateral stability.
 
-<Tip>Memory aid: "Expansion = wide gap + flexible sealant (thermal swing); Control = narrow groove (drying shrinkage); Construction = dowels (shear transfer); Isolation = separation (independent movement)."</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: "Expansion = wide gap + flexible sealant (thermal swing); Control = narrow groove (drying shrinkage); Construction = dowels (shear transfer); Isolation = separation (independent movement)."
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Using control joints where expansion joints are required, assuming both serve the same purpose." correction="Control joints (0.25-0.5 inches) handle drying shrinkage at 15-25 feet spacing. Expansion joints (0.2-0.5 inches depending on temperature) are spaced 25-40 feet and require more flexible sealants." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Using control joints where expansion joints are required, assuming both serve the same purpose.", correction="Control joints (0.25-0.5 inches) handle drying shrinkage at 15-25 feet spacing. Expansion joints (0.2-0.5 inches depending on temperature) are spaced 25-40 feet and require more flexible sealants."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Omitting dowel bars at construction joints to save cost, assuming the adjacent concrete will key together adequately." correction="Without dowel bars, differential settlement between pours causes shear failure and spalling. Dowels are mandatory for structural integrity." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Omitting dowel bars at construction joints to save cost, assuming the adjacent concrete will key together adequately.", correction="Without dowel bars, differential settlement between pours causes shear failure and spalling. Dowels are mandatory for structural integrity."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Specifying shear connections in a seismic-zone moment-resisting frame, thinking pin connections are sufficient for gravity loads." correction="Shear (simple) connections cannot transfer bending moments required to resist lateral forces in earthquakes. Moment connections are mandatory for seismic zones." />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Specifying shear connections in a seismic-zone moment-resisting frame, thinking pin connections are sufficient for gravity loads.", correction="Shear (simple) connections cannot transfer bending moments required to resist lateral forces in earthquakes. Moment connections are mandatory for seismic zones."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Calculating expansion joint width using only the slab length, forgetting to multiply by the thermal coefficient and temperature change (delta-T)", "Placing dowel bars on the top surface instead of at mid-depth, reducing their shear transfer capacity", "Using rigid welds at isolation joints, eliminating the intended independent movement capability"]} />
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Calculating expansion joint width using only the slab length, forgetting to multiply by the thermal coefficient and temperature change (delta-T)\", \"Placing dowel bars on the top surface instead of at mid-depth, reducing their shear transfer capacity\", \"Using rigid welds at isolation joints, eliminating the intended independent movement capability\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also within Hardware, Joints, and Fasteners: **lea-matl-008-01-core-concept**, **lea-matl-008-03-core-concept**, **lea-matl-008-04-core-concept**, **lea-matl-008-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

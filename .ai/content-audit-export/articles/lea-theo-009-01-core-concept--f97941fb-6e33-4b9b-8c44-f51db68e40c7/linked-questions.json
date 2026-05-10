@@ -1,7 +1,7 @@
 {
   "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:714ff56c3ecbefa052316463cecc97cdb915b6a2be82dbb3aaf4ae3f5bb8b83e",
+  "linked_questions_hash": "sha256:42e9cd71c62cbf647c6a954f9072e82fad7769cc4a8c0e7a2c9c0207d21711cf",
   "question_count": 10,
   "questions": [
     {
@@ -57,58 +57,6 @@
       "content_hash": "sha256:0a67c8c085b7a8a72acaa23d79e5d2fed16f19d371f33a5f53bcf450882f2575"
     },
     {
-      "question_id": "4c9d74a0-304c-4e73-91c9-080c9fe00e07",
-      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "In William Peña's Problem Seeking methodology, what is the correct sequence of the first three steps?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Gather facts, establish goals, establish the client"
-        },
-        {
-          "id": "b",
-          "text": "Establish the client, establish goals, gather facts"
-        },
-        {
-          "id": "c",
-          "text": "Gather facts, establish the client, establish goals"
-        },
-        {
-          "id": "d",
-          "text": "Establish goals, establish the client, gather facts"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Facts must follow client and goal identification for structured programming.",
-        "c": "This reverses the critical early steps; gathering facts without first identifying the client and goals leads to unfocused research.",
-        "d": "Establishing goals before identifying all stakeholders may miss important client categories.",
-        "correct": "Peña's five steps are: (1) establish the client, (2) establish goals, (3) gather facts, (4) identify and unify the problem, (5) test the problem. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data.",
-        "takeaway": "This sequence ensures you understand who you're serving and what they aim to achieve before collecting data."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-009-01-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a270a6bb4323b09892029738fb957f92324571659cb3ee28b66042d4caee24d1"
-    },
-    {
       "question_id": "ceec0691-0c61-415a-a7d8-9e24d0735fbb",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
@@ -143,7 +91,7 @@
         "correct": "Programming is explicitly the systematic analysis phase that precedes design. It answers the 'what' and 'why' before design begins answering 'how.'",
         "takeaway": "It answers the 'what' and 'why' before design begins answering 'how.'."
       },
-      "explanation": null,
+      "explanation": "Material specifications belong to design development, not the programming phase. Sketches and preliminary layouts are design activities, which occur after programming is complete. Project management and construction oversight are separate professional functions from programming. Programming is explicitly the systematic analysis phase that precedes design. It answers the 'what' and 'why' before design begins answering 'how.' It answers the 'what' and 'why' before design begins answering 'how.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -157,30 +105,30 @@
       "model_id": "ALE-THEO-009-01-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:40bd486182f80e7eb9e53f3e4e4757363c39a0de81fd1a4438a0225169277438"
+      "updated_at": "2026-05-06T11:48:48.372645+00:00",
+      "content_hash": "sha256:d60faf205be3043c994b34b0fb11caa93eab8b21b1093126a6e93c2fa9a39ede"
     },
     {
-      "question_id": "cbbf5a9d-3618-4062-ab13-cfb7c00eb195",
+      "question_id": "4c9d74a0-304c-4e73-91c9-080c9fe00e07",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "A school program specifies that a library must accommodate 100 simultaneous users, provide 10,000 book volumes, and integrate collaborative learning spaces. Using standards (15 SF per reader, 0.1 SF per volume), what is minimum NAA, and how should the programmer address the resulting GBA?",
+      "text": "In William Peña's Problem Seeking methodology, what is the correct sequence of the first three steps?",
       "options": [
         {
           "id": "a",
-          "text": "NAA = 2,500 SF; programmer applies 0.75 efficiency factor to calculate GBA = 3,333 SF total, ensuring compliance with spatial standards"
+          "text": "Gather facts, establish goals, establish the client"
         },
         {
           "id": "b",
-          "text": "NAA = 2,500 SF; programmer must determine realistic efficiency for library (0.60–0.70) and verify GBA fits site and school capacity"
+          "text": "Establish the client, establish goals, gather facts"
         },
         {
           "id": "c",
-          "text": "NAA calculation is unnecessary; library size should be determined by budget constraints, not user counts, which may lead to underutilization"
+          "text": "Gather facts, establish the client, establish goals"
         },
         {
           "id": "d",
-          "text": "NAA = 1,500 SF; collaborative spaces reduce area requirements despite circulation overhead, allowing for flexible space usage"
+          "text": "Establish goals, establish the client, gather facts"
         }
       ],
       "correct_option_id": "b",
@@ -189,28 +137,184 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The efficiency factor and resulting GBA are too low for a library's circulation requirements; libraries typically use 0.60–0.70, not 0.75.",
-        "c": "Standards-based programming prevents arbitrary sizing; budget is a constraint applied after the program is developed, not a replacement for it.",
-        "d": "Collaborative spaces don't eliminate circulation needs; the standard already accounts for collaborative function within the SF per reader.",
-        "correct": "NAA = (100 × 15 SF) + (10,000 × 0.1 SF) = 2,500 SF. Libraries require significant circulation, mechanical, and structural space. A 0.60–0.70 efficiency factor produces GBA of 3,571–4,167 SF. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible.",
-        "takeaway": "The programmer must verify this fits the site, aligns with school program scope, and is financially feasible."
+        "a": "Facts must follow client and goal identification for structured programming.",
+        "c": "This reverses the critical early steps; gathering facts without first identifying the client and goals leads to unfocused research.",
+        "d": "Establishing goals before identifying all stakeholders may miss important client categories.",
+        "correct": "Peña's five steps are: (1) establish the client, (2) establish goals, (3) gather facts, (4) identify and unify the problem, (5) test the problem. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data.",
+        "takeaway": "This sequence ensures you understand who you're serving and what they aim to achieve before collecting data."
       },
-      "explanation": null,
+      "explanation": "Facts must follow client and goal identification for structured programming. This reverses the critical early steps; gathering facts without first identifying the client and goals leads to unfocused research. Establishing goals before identifying all stakeholders may miss important client categories. Peña's five steps are: (1) establish the client, (2) establish goals, (3) gather facts, (4) identify and unify the problem, (5) test the problem. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data. This sequence ensures you understand who you're serving and what they aim to achieve before collecting data.",
       "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
+      "bloom_level": "remember",
+      "application_context": "recall",
       "practice_context": [
-        "SYS"
+        "DEF"
       ],
       "difficulty": 0.5,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-THEO-009-01-010",
+      "model_id": "ALE-THEO-009-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T11:48:47.808247+00:00",
+      "content_hash": "sha256:66da8b9d8b8d19b0ca9c2139a7ae615a157d2097e327de6546eaf4bf5d7062a4"
+    },
+    {
+      "question_id": "ad744e14-166f-4e73-b685-6eb72722cf9e",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "In Step 5 of Problem Seeking (Test the Problem), a programmer simulates patient flow through a proposed hospital clinic program and discovers that nursing stations cannot effectively supervise all patient waiting areas from their current positions. What does this reveal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additional staff or technology is required to execute the program; nothing in the program itself needs change"
+        },
+        {
+          "id": "b",
+          "text": "The program is incomplete or inaccurate; the adjacency relationships or space layouts require revision"
+        },
+        {
+          "id": "c",
+          "text": "The simulation method is inappropriate for healthcare; testing should rely on historical data instead"
+        },
+        {
+          "id": "d",
+          "text": "The design is flawed; testing confirms the program cannot be implemented as conceived"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "If supervision is a functional requirement, it belongs in the program as a spatial relationship; adding staff isn't a program solution.",
+        "c": "Simulation testing is specifically recommended by Peña; this method is entirely appropriate.",
+        "d": "Testing happens before design, so it doesn't confirm design flaws; it confirms program adequacy.",
+        "correct": "Testing reveals that programmed relationships don't support intended operations. Either nursing stations must be repositioned/resized, waiting areas need reconfiguration, or adjacency relationships must be reassessed. The program is incomplete until this is resolved.",
+        "takeaway": "The program is incomplete until this is resolved."
+      },
+      "explanation": "If supervision is a functional requirement, it belongs in the program as a spatial relationship; adding staff isn't a program solution. Simulation testing is specifically recommended by Peña; this method is entirely appropriate. Testing happens before design, so it doesn't confirm design flaws; it confirms program adequacy. Testing reveals that programmed relationships don't support intended operations. Either nursing stations must be repositioned/resized, waiting areas need reconfiguration, or adjacency relationships must be reassessed. The program is incomplete until this is resolved. The program is incomplete until this is resolved.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T11:48:50.592728+00:00",
+      "content_hash": "sha256:dc05a8677a0c9bc995377c97b0b452254f83b80a52ee8166ff4d281d8f6fefcd"
+    },
+    {
+      "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "During a programming interview for a new law firm office, a senior partner mentions that attorneys currently spend significant time retrieving files from the central storage. Which information-gathering category does this observation address?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Relationships — which functions must be adjacent or separated"
+        },
+        {
+          "id": "b",
+          "text": "Physical — site characteristics and infrastructure capacity"
+        },
+        {
+          "id": "c",
+          "text": "Human — demographic and psychological needs of occupants"
+        },
+        {
+          "id": "d",
+          "text": "Activity — what tasks occur, frequency, and duration"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Physical site conditions are not what this observation addresses; it's about internal functional organization.",
+        "c": "This addresses user behavior but doesn't directly reveal relationship requirements.",
+        "d": "While file retrieval is an activity, the key issue is the spatial relationship between activity locations.",
+        "correct": "This observation reveals a functional relationship problem: attorney offices and file storage need better adjacency. The comment identifies which functions should be proximate to reduce walking distance and improve workflow.",
+        "takeaway": "The comment identifies which functions should be proximate to reduce walking distance and improve workflow."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a16f9fc66f0e2cf4371d6642e5767a5a0b6ffb8cf486742cf99e7988536c0b78"
+      "content_hash": "sha256:ae916237d41993634451fb4c49a73a1dd6222f74edf878894cb8e76bce2eb3bd"
+    },
+    {
+      "question_id": "bd183a62-e105-432e-be0c-3c30f1dacd12",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "Which of these statements would be most appropriate as a goal in an architectural program for a community health clinic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The clinic will include treatment rooms with dimensions of 10 feet by 12 feet minimum, ensuring adequate space for medical equipment and patient comfort"
+        },
+        {
+          "id": "b",
+          "text": "The clinic will contain 4,500 net square feet of space arranged in an open-plan configuration to facilitate flexible use and future expansion"
+        },
+        {
+          "id": "c",
+          "text": "The clinic will be constructed using single-story steel frame with concrete foundation, providing structural stability and ease of maintenance"
+        },
+        {
+          "id": "d",
+          "text": "The waiting room will accommodate 30 seated patients and reduce patient anxiety through design that conveys calm and dignity"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is a space standard, not a goal. It specifies dimensions but not why those dimensions matter or what they should accomplish.",
+        "b": "This mixes a space standard (4,500 SF) with a design decision (open-plan) rather than stating a goal about clinic mission or function.",
+        "c": "This is a design decision (structural system), not a programming goal; it prescribes form prematurely.",
+        "correct": "This goal is testable, mission-driven, and addresses what the space should achieve. It constrains design (conveying calm and dignity) without prescribing how (which is the designer's responsibility). It establishes measurable outcomes.",
+        "takeaway": "It establishes measurable outcomes."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3c19bd2fb893d9ba0926b61b459aa910ce3d5f8d109dbb8f7dee2cbdd86c48ab"
     },
     {
       "question_id": "b242498c-9f31-43c1-ba8d-38bed393271b",
@@ -317,6 +421,58 @@
       "content_hash": "sha256:82a236bf1b1482622e643140c8ceaafbadf2bbd315968ca92423ebd19f49cf52"
     },
     {
+      "question_id": "cbbf5a9d-3618-4062-ab13-cfb7c00eb195",
+      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
+      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
+      "text": "A school program specifies that a library must accommodate 100 simultaneous users, provide 10,000 book volumes, and integrate collaborative learning spaces. Using standards (15 SF per reader, 0.1 SF per volume), what is minimum NAA, and how should the programmer address the resulting GBA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NAA = 2,500 SF; programmer applies 0.75 efficiency factor to calculate GBA = 3,333 SF total, ensuring compliance with spatial standards"
+        },
+        {
+          "id": "b",
+          "text": "NAA = 2,500 SF; programmer must determine realistic efficiency for library (0.60–0.70) and verify GBA fits site and school capacity"
+        },
+        {
+          "id": "c",
+          "text": "NAA calculation is unnecessary; library size should be determined by budget constraints, not user counts, which may lead to underutilization"
+        },
+        {
+          "id": "d",
+          "text": "NAA = 1,500 SF; collaborative spaces reduce area requirements despite circulation overhead, allowing for flexible space usage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The efficiency factor and resulting GBA are too low for a library's circulation requirements; libraries typically use 0.60–0.70, not 0.75.",
+        "c": "Standards-based programming prevents arbitrary sizing; budget is a constraint applied after the program is developed, not a replacement for it.",
+        "d": "Collaborative spaces don't eliminate circulation needs; the standard already accounts for collaborative function within the SF per reader.",
+        "correct": "NAA = (100 × 15 SF) + (10,000 × 0.1 SF) = 2,500 SF. Libraries require significant circulation, mechanical, and structural space. A 0.60–0.70 efficiency factor produces GBA of 3,571–4,167 SF. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible.",
+        "takeaway": "The programmer must verify this fits the site, aligns with school program scope, and is financially feasible."
+      },
+      "explanation": "The efficiency factor and resulting GBA are too low for a library's circulation requirements; libraries typically use 0.60–0.70, not 0.75. Standards-based programming prevents arbitrary sizing; budget is a constraint applied after the program is developed, not a replacement for it. Collaborative spaces don't eliminate circulation needs; the standard already accounts for collaborative function within the SF per reader. NAA = (100 × 15 SF) + (10,000 × 0.1 SF) = 2,500 SF. Libraries require significant circulation, mechanical, and structural space. A 0.60–0.70 efficiency factor produces GBA of 3,571–4,167 SF. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible. The programmer must verify this fits the site, aligns with school program scope, and is financially feasible.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T11:48:49.054878+00:00",
+      "content_hash": "sha256:0e1042b29dc46d90e64f86a52fdf7e306618bb7c3117ca15a0fbe7e73b6519e1"
+    },
+    {
       "question_id": "de404aeb-a5b5-4609-84f3-a2103e5bb73a",
       "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
       "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
@@ -351,7 +507,7 @@
         "correct": "Programming requires testable, specific goals. 'Flexible' is vague. The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification').",
         "takeaway": "The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification')."
       },
-      "explanation": null,
+      "explanation": "The goal should be incorporated into the program, not bypassed; clarity is the programmer's responsibility. Accepting vague goals leads to programs that don't constrain design effectively; this abdicates programming responsibility. Mixed-use doesn't eliminate flexibility; this dismisses the goal rather than clarifying it. Programming requires testable, specific goals. 'Flexible' is vague. The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification'). The programmer must determine which spaces must flex, by what mechanism, over what period, and then program accordingly (e.g., 'office floors must accommodate subdivision into 5 units without major structural modification').",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -365,164 +521,8 @@
       "model_id": "ALE-THEO-009-01-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:463628e0aa0724c6030daaea7ba19638cd2051409ec7b105dc6312ba9fe9f6a2"
-    },
-    {
-      "question_id": "ad744e14-166f-4e73-b685-6eb72722cf9e",
-      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "In Step 5 of Problem Seeking (Test the Problem), a programmer simulates patient flow through a proposed hospital clinic program and discovers that nursing stations cannot effectively supervise all patient waiting areas from their current positions. What does this reveal?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Additional staff or technology is required to execute the program; nothing in the program itself needs change"
-        },
-        {
-          "id": "b",
-          "text": "The program is incomplete or inaccurate; the adjacency relationships or space layouts require revision"
-        },
-        {
-          "id": "c",
-          "text": "The simulation method is inappropriate for healthcare; testing should rely on historical data instead"
-        },
-        {
-          "id": "d",
-          "text": "The design is flawed; testing confirms the program cannot be implemented as conceived"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "If supervision is a functional requirement, it belongs in the program as a spatial relationship; adding staff isn't a program solution.",
-        "c": "Simulation testing is specifically recommended by Peña; this method is entirely appropriate.",
-        "d": "Testing happens before design, so it doesn't confirm design flaws; it confirms program adequacy.",
-        "correct": "Testing reveals that programmed relationships don't support intended operations. Either nursing stations must be repositioned/resized, waiting areas need reconfiguration, or adjacency relationships must be reassessed. The program is incomplete until this is resolved.",
-        "takeaway": "The program is incomplete until this is resolved."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "INT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-009-01-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:db4ed134d7a7c4b28d61e9c3e4e6577ed830b8fd2c9ac772cee3fd864a11a7bb"
-    },
-    {
-      "question_id": "dede4a4a-1ed5-431c-9374-cac9e5312de4",
-      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "During a programming interview for a new law firm office, a senior partner mentions that attorneys currently spend significant time retrieving files from the central storage. Which information-gathering category does this observation address?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Relationships — which functions must be adjacent or separated"
-        },
-        {
-          "id": "b",
-          "text": "Physical — site characteristics and infrastructure capacity"
-        },
-        {
-          "id": "c",
-          "text": "Human — demographic and psychological needs of occupants"
-        },
-        {
-          "id": "d",
-          "text": "Activity — what tasks occur, frequency, and duration"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Physical site conditions are not what this observation addresses; it's about internal functional organization.",
-        "c": "This addresses user behavior but doesn't directly reveal relationship requirements.",
-        "d": "While file retrieval is an activity, the key issue is the spatial relationship between activity locations.",
-        "correct": "This observation reveals a functional relationship problem: attorney offices and file storage need better adjacency. The comment identifies which functions should be proximate to reduce walking distance and improve workflow.",
-        "takeaway": "The comment identifies which functions should be proximate to reduce walking distance and improve workflow."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-009-01-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ae916237d41993634451fb4c49a73a1dd6222f74edf878894cb8e76bce2eb3bd"
-    },
-    {
-      "question_id": "bd183a62-e105-432e-be0c-3c30f1dacd12",
-      "article_id": "f97941fb-6e33-4b9b-8c44-f51db68e40c7",
-      "topic_id": "5a536cf8-a54d-4413-9748-01c79656ac6e",
-      "text": "Which of these statements would be most appropriate as a goal in an architectural program for a community health clinic?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The clinic will include treatment rooms with dimensions of 10 feet by 12 feet minimum, ensuring adequate space for medical equipment and patient comfort"
-        },
-        {
-          "id": "b",
-          "text": "The clinic will contain 4,500 net square feet of space arranged in an open-plan configuration to facilitate flexible use and future expansion"
-        },
-        {
-          "id": "c",
-          "text": "The clinic will be constructed using single-story steel frame with concrete foundation, providing structural stability and ease of maintenance"
-        },
-        {
-          "id": "d",
-          "text": "The waiting room will accommodate 30 seated patients and reduce patient anxiety through design that conveys calm and dignity"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This is a space standard, not a goal. It specifies dimensions but not why those dimensions matter or what they should accomplish.",
-        "b": "This mixes a space standard (4,500 SF) with a design decision (open-plan) rather than stating a goal about clinic mission or function.",
-        "c": "This is a design decision (structural system), not a programming goal; it prescribes form prematurely.",
-        "correct": "This goal is testable, mission-driven, and addresses what the space should achieve. It constrains design (conveying calm and dignity) without prescribing how (which is the designer's responsibility). It establishes measurable outcomes.",
-        "takeaway": "It establishes measurable outcomes."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [
-        "ATT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-009-01-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3c19bd2fb893d9ba0926b61b459aa910ce3d5f8d109dbb8f7dee2cbdd86c48ab"
+      "updated_at": "2026-05-06T11:48:49.739067+00:00",
+      "content_hash": "sha256:a50aeb9d56946c858847577abd29abaf0c3a7d2669c191198a8201558146bc8b"
     }
   ]
 }

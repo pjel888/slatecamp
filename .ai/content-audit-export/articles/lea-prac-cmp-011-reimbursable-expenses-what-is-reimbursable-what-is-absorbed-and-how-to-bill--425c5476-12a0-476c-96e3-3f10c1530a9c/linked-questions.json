@@ -1,9 +1,59 @@
 {
   "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:8f1cf7b0a6a8ac9dcb0bbd52505463539d78a5d5dd60a54a3d17404a4bf9a2ed",
+  "linked_questions_hash": "sha256:9251b59633056729516c1b107cc3a5531c79817d6978044a43155e1cc56a4003",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "37e8d567-54b0-4d7f-a6b3-9a90fd52cd9c",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "What documentation should support reimbursable expenses in invoices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect's verbal assurance that costs were incurred"
+        },
+        {
+          "id": "b",
+          "text": "Receipts, invoices, and other evidence of actual costs"
+        },
+        {
+          "id": "c",
+          "text": "Only the total amount; itemization is not necessary"
+        },
+        {
+          "id": "d",
+          "text": "Documentation is optional if the amounts are small"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Verbal assurance is insufficient; written documentation is essential.",
+        "c": "Itemization with supporting documentation prevents disputes and demonstrates transparency.",
+        "d": "Documentation is mandatory for all amounts; small expenses lack no exemption.",
+        "correct": "All reimbursable expenses must be documented with receipts, invoices, or other evidence. This documentation allows the architect to substantiate costs and protects against disputes.",
+        "takeaway": "Maintain receipts and invoices for all reimbursable expenses to substantiate costs and demonstrate accountability."
+      },
+      "explanation": "Verbal assurance is insufficient; written documentation is essential. Itemization with supporting documentation prevents disputes and demonstrates transparency. Documentation is mandatory for all amounts; small expenses lack no exemption. All reimbursable expenses must be documented with receipts, invoices, or other evidence. This documentation allows the architect to substantiate costs and protects against disputes. Maintain receipts and invoices for all reimbursable expenses to substantiate costs and demonstrate accountability.",
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-05-06T16:22:33.399087+00:00",
+      "content_hash": "sha256:9ce5d92d9a5b369fb7a1a13c61ac8906a3cc51402903039adef1a81ce908b4c1"
+    },
     {
       "question_id": "1361eb39-035a-4e15-ba8d-143bff302f3d",
       "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
@@ -39,7 +89,7 @@
         "correct": "Travel expenses for project-specific site visits and client meetings are reimbursable, including airfare, ground transportation, accommodation, and meal costs while traveling for the project.",
         "takeaway": "Project-specific travel costs (airfare, ground transportation, hotels, meals) are reimbursable when incurred for client meetings or site observation."
       },
-      "explanation": null,
+      "explanation": "Incorrectly limits reimbursable travel to airfare only; other travel costs are equally reimbursable. Confuses project travel with general firm overhead; project-specific travel is reimbursable. Arbitrarily limits reimbursable travel to hotel only; all project travel costs are reimbursable. Travel expenses for project-specific site visits and client meetings are reimbursable, including airfare, ground transportation, accommodation, and meal costs while traveling for the project. Project-specific travel costs (airfare, ground transportation, hotels, meals) are reimbursable when incurred for client meetings or site observation.",
       "code_citation": "Architect's Guidelines; SPP Doc 202",
       "bloom_level": "understand",
       "application_context": "client_scenario",
@@ -51,8 +101,8 @@
       "model_id": "ALE-PRAC-CMP-011-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:79596401c180040418e177edc38c9ae0d2e4c1eda665284f589f0b83c1555f9e"
+      "updated_at": "2026-05-06T16:22:33.278764+00:00",
+      "content_hash": "sha256:b683951be0e5a6a57b885b17ca033f7bacd82709f4f54ca72e1829c63022763e"
     },
     {
       "question_id": "17ab93cd-dd74-4ffa-9fbc-360208fe3678",
@@ -203,56 +253,6 @@
       "created_at": "2026-03-23T19:27:47.047156+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:42adad4241a02ab68c1f5fc4ded911d809d3cb636059dddd80cf521052c60dda"
-    },
-    {
-      "question_id": "37e8d567-54b0-4d7f-a6b3-9a90fd52cd9c",
-      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
-      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
-      "text": "What documentation should support reimbursable expenses in invoices?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The architect's verbal assurance that costs were incurred"
-        },
-        {
-          "id": "b",
-          "text": "Receipts, invoices, and other evidence of actual costs"
-        },
-        {
-          "id": "c",
-          "text": "Only the total amount; itemization is not necessary"
-        },
-        {
-          "id": "d",
-          "text": "Documentation is optional if the amounts are small"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Verbal assurance is insufficient; written documentation is essential.",
-        "c": "Itemization with supporting documentation prevents disputes and demonstrates transparency.",
-        "d": "Documentation is mandatory for all amounts; small expenses lack no exemption.",
-        "correct": "All reimbursable expenses must be documented with receipts, invoices, or other evidence. This documentation allows the architect to substantiate costs and protects against disputes.",
-        "takeaway": "Maintain receipts and invoices for all reimbursable expenses to substantiate costs and demonstrate accountability."
-      },
-      "explanation": null,
-      "code_citation": "Architect's Guidelines; SPP Doc 202",
-      "bloom_level": "apply",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CMP-011-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:36b0e536f4fe0759934d5a103418b8d35f982fa4cae87f645ef161e22cc46f90"
     },
     {
       "question_id": "a1116920-5d14-4702-b9ea-fdaef98fdbf6",

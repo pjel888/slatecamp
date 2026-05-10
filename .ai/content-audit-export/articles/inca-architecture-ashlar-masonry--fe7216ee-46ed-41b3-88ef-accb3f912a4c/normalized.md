@@ -96,28 +96,28 @@ Extracted summary:
 
 **Question 1.** What is the primary seismic adaptation of Inca ashlar masonry walls?
 
-A. Reinforced concrete cores hidden within decorative stone cladding  
-B. Lime mortar joints that absorb lateral movement through plastic deformation  
-C. Trapezoidal batter profile (inward lean) with mortarless friction-fit joints that allow micro-movement during earthquakes  
-D. Timber post-and-beam framing concealed behind stone veneer walls  
+A. Reinforced concrete cores hidden within decorative stone cladding
+B. Lime mortar joints that absorb lateral movement through plastic deformation
+C. Trapezoidal batter profile (inward lean) with mortarless friction-fit joints that allow micro-movement during earthquakes
+D. Timber post-and-beam framing concealed behind stone veneer walls
 
 > **Correct Answer: C.** The Inca's trapezoidal batter (walls wider at the base and leaning inward) lowers the center of gravity, while the mortarless friction-fit joints permit individual stones to shift slightly during seismic events and resettle afterward without structural failure. This is analogous to modern seismic isolation principles. No mortar, concrete, or hidden framing was used.
 
 **Question 2.** The Qhapaq Ñan, the Inca road network inscribed as a UNESCO World Heritage Site, extended approximately how far?
 
-A. 5,000 km, connecting Cusco to Lima along the coast  
-B. 30,000 km or more, connecting six modern South American nations from Colombia to Argentina  
-C. 12,000 km, limited to the highland plateau between Peru and Bolivia  
-D. 80,000 km, spanning both North and South America  
+A. 5,000 km, connecting Cusco to Lima along the coast
+B. 30,000 km or more, connecting six modern South American nations from Colombia to Argentina
+C. 12,000 km, limited to the highland plateau between Peru and Bolivia
+D. 80,000 km, spanning both North and South America
 
 > **Correct Answer: B.** UNESCO describes the Qhapaq Ñan as covering more than 30,000 km (some scholarly estimates reach 40,000 km). It connected the Inca Empire across six modern nations — Colombia, Ecuador, Peru, Bolivia, Chile, and Argentina — traversing coastal deserts, Andean peaks above 6,000 m, and Amazon rainforest. It remains the most extensive pre-Columbian road system in the Americas.
 
 **Question 3.** Which of the following best describes the layered composition of Inca agricultural terraces (*andenes*)?
 
-A. Rammed earth walls with timber reinforcement and a single soil layer  
-B. Dry-stone retaining walls with layered fill — large gravel at the bottom for drainage, sand for filtration, and topsoil on the surface  
-C. Mortared rubble-core walls with clay waterproofing and volcanic ash soil  
-D. Adobe brick retaining walls with straw-reinforced planting beds  
+A. Rammed earth walls with timber reinforcement and a single soil layer
+B. Dry-stone retaining walls with layered fill — large gravel at the bottom for drainage, sand for filtration, and topsoil on the surface
+C. Mortared rubble-core walls with clay waterproofing and volcanic ash soil
+D. Adobe brick retaining walls with straw-reinforced planting beds
 
 > **Correct Answer: B.** Inca *andenes* used dry-stone retaining walls backed by a carefully engineered fill sequence: coarse gravel at the bottom (rapid drainage), sand in the middle (filtration), and fertile topsoil on top (planting medium). This layered system prevents waterlogging, controls erosion, and sustains agriculture on extreme slopes — a principle directly applicable to modern hillside development in the Philippine Cordillera.
 

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Svc 005 Phase 1 Schematic Design Deliverables Decisions And Fee Earnedschematic Design Is The Second Phase Under Spp 2022 Following Project Definition This Phase Translates The Project Defini** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Phase 1: Schematic Design: Deliverables, Decisions, and Fee EarnedSchematic Design is the second phase under SPP 2022 following Project Definition. This phase translates the project definition and space program into preliminary design solutions through conceptual plans, cost estimates, and key design decisions.
 ## Learning Goal
 
@@ -12,23 +21,51 @@ After reading this article, you should be able to:
 
 During schematic design, the architect evaluates the owner's program, schedule, budget, and site to propose project delivery methods. The architect prepares initial line drawings representing design studies that lead to a recommended conceptual solution. These drawings present the design concept with sufficient clarity for owner review and approval. The architect also submits to the owner an updated Statement of the Probable Project Construction Cost (SPPCC) based on current cost parameters, providing the owner with cost feedback at this early stage.
 
-<ArticleMedia id="media-lea-prac-svc-005-phase-1-schematic-desig" type="image" caption="SPP Doc 202 Six-Phase Framework — Schematic Design Phase in Context" description="Process flow highlighting Phase 2 (Schematic Design) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design (15% fee, conceptual plans, elevations, cost estimates, delivery method decisions) → Design Development → Contract Documents → Bidding → Construction Admin." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-svc-005-phase-1-schematic-desig", type="image", caption="SPP Doc 202 Six-Phase Framework — Schematic Design Phase in Context", description="Process flow highlighting Phase 2 (Schematic Design) within the six-phase SPP Doc 202 framework: Project Definition → Schematic Design (15% fee, conceptual plans, elevations, cost estimates, delivery method decisions) → Design Development → Contract Documents → Bidding → Construction Admin.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: pairs="{[[\"SPP Document\", \"201 (Pre-Design), 202 (Regular Design), 203 (Specialized)\"], [\"Compensation\", \"MDPE, Lump Sum, Per Diem, Professional Fee + Expenses\"], [\"Fee Basis\", \"Percentage of PCC or MDPE\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Key Decisions and Approvals
 
-<KeyValues pairs={[["SPP Document", "201 (Pre-Design), 202 (Regular Design), 203 (Specialized)"], ["Compensation", "MDPE, Lump Sum, Per Diem, Professional Fee + Expenses"], ["Fee Basis", "Percentage of PCC or MDPE"]]} />
+[SLATECAMP_UI_BLOCK:ui_0003 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: pairs="{[[\"SPP Document\", \"201 (Pre-Design), 202 (Regular Design), 203 (Specialized)\"], [\"Compensation\", \"MDPE, Lump Sum, Per Diem, Professional Fee + Expenses\"], [\"Fee Basis\", \"Percentage of PCC or MDPE\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Schematic design requires critical decisions regarding massing, orientation, site utilization, structural systems, and project delivery approach. The owner must approve the schematic design concept and the probable construction cost estimate before the architect proceeds to design development. These approvals are essential, as changes to the approved concept in later phases typically result in additional compensation claims and schedule delays.
 
-<ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Expect scenario-based questions where you must determine which phase a specific deliverable belongs to. Key percentages to memorize: Schematic Design (15%), Design Development (35%), Contract Documents (50%).
+[/SLATECAMP_UI_BLOCK]
 ### Fee Calculation and Milestone
 
-<ProcessFlow steps={["Identify client needs", "Define scope of services", "Prepare proposal/contract", "Execute pre-design activities", "Deliver phase outputs", "Submit for owner approval"]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: steps="{[\"Identify client needs\", \"Define scope of services\", \"Prepare proposal/contract\", \"Execute pre-design activities\", \"Deliver phase outputs\", \"Submit for owner approval\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ProcessFlow steps={["Identify client needs", "Define scope of services", "Prepare proposal/contract", "Execute pre-design activities", "Deliver phase outputs", "Submit for owner approval"]} />
+[SLATECAMP_UI_BLOCK:ui_0007 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: steps="{[\"Identify client needs\", \"Define scope of services\", \"Prepare proposal/contract\", \"Execute pre-design activities\", \"Deliver phase outputs\", \"Submit for owner approval\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 Owner approval of schematic design is required before proceeding to the next phase. This milestone payment reflects the significance of this conceptual phase but represents a relatively modest portion of total fees compared to later phases. The architect must clearly document the scope of schematic design work and obtain formal approval to mark the completion of this phase and transition to design development.
 

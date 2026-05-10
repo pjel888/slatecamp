@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Cmp 007 Mdpe Multipliers Overhead Profit Non Technical Factors And Philippine Practice Ranges** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## MDPE Multipliers — Overhead, Profit, Non-Technical Factors, and Philippine Practice Ranges
 
 ## Learning Goal
@@ -22,9 +29,17 @@ Profit represents the return on the architect's investment in business, knowledg
 
 Profit component in the multiplier is calculated as: (Target profit percentage ÷ 100) × DPE, expressed as a multiplier component. If overhead is 1.5 and target profit is 25%, the profit multiplier component is 0.25, bringing total multiplier to 1.75. If risk and complexity warrant 35% profit, the multiplier component becomes 0.35, bringing total to 1.85.
 
-<Tip>To remember the MDPE formula, use the acronym DOPN: Direct Personnel Expense, Overhead, Profit, and Non-technical factors. The total fee equals DPE times (1 plus Overhead% plus Profit% plus Non-technical%). Practice with the decomposition examples until it becomes second nature.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
 Extracted summary:
-<Warn>The multiplier ranges presented here are illustrative examples based on typical Philippine practice. Actual rates vary by firm, location, project type, and negotiation. Always calculate your firm's actual overhead and profit targets before proposing MDPE fees.</Warn>
+- Props: (none)
+- Text: To remember the MDPE formula, use the acronym DOPN: Direct Personnel Expense, Overhead, Profit, and Non-technical factors. The total fee equals DPE times (1 plus Overhead% plus Profit% plus Non-technical%). Practice with the decomposition examples until it becomes second nature.
+[/SLATECAMP_UI_BLOCK]
+Extracted summary:
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The multiplier ranges presented here are illustrative examples based on typical Philippine practice. Actual rates vary by firm, location, project type, and negotiation. Always calculate your firm's actual overhead and profit targets before proposing MDPE fees.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: The multiplier ranges presented here are illustrative examples based on typical Philippine practice. Actual rates vary by firm, location, project type, and negotiation. Always calculate your firm's actual overhead and profit targets before proposing MDPE fees.
@@ -51,7 +66,11 @@ Current Philippine architecture practice uses MDPE multipliers within establishe
 
 These ranges reflect competitive market conditions in the Philippines and the balance between fair compensation and market expectations. For standard MDPE services, multipliers above 2.0 require documented justification. Multipliers significantly above 2.5 are difficult to justify in competitive Philippine markets and may price the architect out of bidding. Multipliers below 1.3 may not adequately cover overhead and profit, creating unsustainable business models.
 
-<Warn>The multiplier ranges presented here are illustrative examples based on typical Philippine practice. Actual rates vary by firm, location, project type, and negotiation. Always calculate your firm's actual overhead and profit targets before proposing MDPE fees.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The multiplier ranges presented here are illustrative examples based on typical Philippine practice. Actual rates vary by firm, location, project type, and negotiation. Always calculate your firm's actual overhead and profit targets before proposing MDPE fees.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ The multiplier ranges presented here are illustrative examples based on typical Philippine practice. Actual rates vary by firm, location, project type, and negotiation. Always calculate your firm's actual overhead and profit targets before proposing MDPE fees. — expect this as a trap answer on the LEA.
@@ -70,14 +89,20 @@ When proposing MDPE fees to clients, the architect should present the multiplier
 
 To compare MDPE multipliers with percentage-of-PCC ranges, the architect can calculate what fee percentage the MDPE would produce at the estimated PCC. If DPE is estimated at 2 million pesos with a 2.5 multiplier (resulting in 5 million peso fee), and PCC is 100 million pesos, the effective percentage is 5%. If Group classification ranges from 8–10%, the MDPE fee is lower and may be more favorable. Conversely, if PCC is only 30 million pesos, the effective percentage would be 16.7%, suggesting MDPE is more expensive. This comparison helps determine which method best aligns fee with project characteristics.
 
-<ExamTip>On the LEA, MDPE multiplier questions typically test understanding of the fee calculation structure rather than specific multiplier values. Be prepared to identify which components make up the multiplier (overhead, profit, non-technical factors), explain how to derive a multiplier from firm financial data, and compare MDPE with percentage-of-PCC methods. Computation questions may ask you to calculate a fee given DPE and multiplier components.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: On the LEA, MDPE multiplier questions typically test understanding of the fee calculation structure rather than specific multiplier values. Be prepared to identify which components make up the multiplier (overhead, profit, non-technical factors), explain how to derive a multiplier from firm financial data, and compare MDPE with percentage-of-PCC methods. Computation questions may ask you to calculate a fee given DPE and multiplier components.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: On the LEA, MDPE multiplier questions typically test understanding of the fee calculation structure rather than specific multiplier values. Be prepared to identify which components make up the multiplier (overhead, profit, non-technical factors), explain how to derive a multiplier from firm financial data, and compare MDPE with percentage-of-PCC methods. Computation questions may ask you to calculate a fee given DPE and multiplier components.
 
-<Note>
-The MDPE multiplier methodology is governed by UAP SPP Document 201, which provides the standard framework for calculating design professional engagement fees based on direct personnel expense, overhe
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The MDPE multiplier methodology is governed by UAP SPP Document 201, which provides the standard framework for calculating design professional engagement fees based on direct personnel expense, overhe
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Project Classification Groups](lea-prac-cmp-001)

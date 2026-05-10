@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Svc 025 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Learning Goal
 
 After studying this article, you should be able to:
@@ -15,13 +24,11 @@ Architectural Interior (AI) Services is a frequently tested sub-service under SP
 
 AI Services are distinct from overall architectural design (SPP 202 as a whole) because they focus exclusively on the _interior_ environment. They do not extend to site planning, landscape design, or exterior architectural expression. The scope encompasses everything that affects the user experience and functionality of enclosed spaces: spatial organization, material finishes, systems distribution, and the technical specifications that support construction and inspection.
 
-<Warn>
-  **Critical distinction:** SPP 208 is Architectural Design Competition (for
-  design competitions only). SPP 203 Section 203.1 is the standard service for
-  Interior Design planning and documentation. Do not confuse these under any
-  circumstances—they are entirely different service categories with different
-  legal frameworks, scopes, and fee structures.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Critical distinction:** SPP 208 is Architectural Design Competition (for design competitions only). SPP 203 Section 203.1 is the standard service for Interior Design planning and documentation. Do not confuse these under any circumstances—they are entirely different service categories with different legal frameworks, scopes, and fee structures.
+[/SLATECAMP_UI_BLOCK]
 
 An architect providing AI Services operates in one of two legal capacities:
 
@@ -46,14 +53,11 @@ The two-model framework exists because interior design complexity varies. Some p
 | **Cost Exclusion**    | Engineering and specialist consultant fees are _excluded_ from the cost of AI work base                                                                                       |
 | **Payment Schedule**  | Per Architect's Guidelines (SPP 203, Section 4.3)                                                                                                                             |
 
-<Example>
-  **Worked Example:** A 5,000 m² office building renovation project has a total
-  PCC (Project Construction Cost) of PHP 50 million. The interior finishes,
-  furniture, and systems layout (the AI work) are estimated to cost PHP 8
-  million. The fee for AI Services at 15% is calculated as: PHP 8 million × 15%
-  = **PHP 1.2 million**. Note that the PHP 50 million total PCC is never
-  used—only the PHP 8 million cost attributable to AI work.
-</Example>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Worked Example:** A 5,000 m² office building renovation project has a total PCC (Project Construction Cost) of PHP 50 million. The interior finishes, furniture, and systems layout (the AI work) are estimated to cost PHP 8 million. The fee for AI Services at 15% is calculated as: PHP 8 million × 15% = **PHP 1.2 million**. Note that the PHP 50 million total PCC is never used—only the PHP 8 million cost attributable to AI work.
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Practice Context
 
@@ -70,26 +74,19 @@ The LEA tests AI Services through four primary question patterns:
 3. **Compensation Calculation:** "A building project costs PHP 40 million total. Interior finishes and furniture are estimated at PHP 6 million. Using the standard 15% fee rate, what is the architect's AI compensation?" Tests ability to isolate the AI cost base and exclude total PCC.
 4. **Document and Service Delivery:** "Which of the following is _not_ part of AI Services per SPP 203.1?" Tests knowledge of the six scope items (space plans through final inspection).
 
-<Tip>
-  **Memory anchor:** AI = "All Interior, No Exterior." The scope is ruthlessly
-  limited to enclosed spaces. Any question mentioning site planning,
-  landscaping, exterior façade, or structural design is trying to lure you
-  outside AI scope. Additionally, remember the compensation formula: **Cost of
-  AI Work (only), not Total PCC × 15%.**
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory anchor:** AI = "All Interior, No Exterior." The scope is ruthlessly limited to enclosed spaces. Any question mentioning site planning, landscaping, exterior façade, or structural design is trying to lure you outside AI scope. Additionally, remember the compensation formula: **Cost of AI Work (only), not Total PCC × 15%.**
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    'Confusing SPP 208 (Architectural Design Competition) with SPP 203.1 (Architectural Interior Services)—they are completely different service categories with different legal frameworks.',
-    'Using the total project cost (PCC) as the compensation base instead of isolating the cost attributable to AI work alone.',
-    'Including engineering consultant fees and specialist fees in the cost of AI work—these are explicitly excluded.',
-    'Treating AI scope as including exterior architecture, landscape design, or site planning—AI is strictly interior/enclosed.',
-    'Misunderstanding Dual Capacity to mean two separate fees—it is one unified engagement where the architect holds both AoR and CA responsibilities.',
-    'Applying SPP 202 design phase percentages (which are for overall architectural design phases) to AI Services, instead of using the 15% rate specified in SPP 203 Section 4.1.',
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    'Confusing SPP 208 (Architectural Design Competition) with SPP 203.1 (Architectural Interior Services)—they are completely different service categories with different legal frameworks.',\n    'Using the total project cost (PCC) as the compensation base instead of isolating the cost attributable to AI work alone.',\n    'Including engineering consultant fees and specialist fees in the cost of AI work—these are explicitly excluded.',\n    'Treating AI scope as including exterior architecture, landscape design, or site planning—AI is strictly interior/enclosed.',\n    'Misunderstanding Dual Capacity to mean two separate fees—it is one unified engagement where the architect holds both AoR and CA responsibilities.',\n    'Applying SPP 202 design phase percentages (which are for overall architectural design phases) to AI Services, instead of using the 15% rate specified in SPP 203 Section 4.1.',\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

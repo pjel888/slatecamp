@@ -1,0 +1,73 @@
+{
+  "pack_id": "02-ra9266-foreign-architect-temporary-permit",
+  "title": "RA 9266 Foreign Architect and Temporary Permit Gate",
+  "subject": "Professional Practice",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_document_id": "RA9266_IRR",
+  "locator_set_id": "ra9266_foreign_architect",
+  "questions": [
+    {
+      "id": "ra9266-foreign-q1",
+      "stem": "Under the RA 9266 IRR, which description best matches a foreign architect?",
+      "options": {
+        "A": "A Filipino architect working for a foreign-owned firm",
+        "B": "An architect not Filipino and not registered and licensed in the Philippines, but licensed in the home country",
+        "C": "Any architect who studied abroad but holds a Philippine PRC card",
+        "D": "A contractor who hires a foreign design consultant"
+      },
+      "correct_option_id": "B",
+      "rationale": {
+        "correct": "Section 3, Item 30 defines the foreign architect by non-Filipino/non-Philippine licensure status plus home-country architectural licensure.",
+        "distractors": {
+          "A": "Foreign ownership of the firm is not the definition.",
+          "C": "Studying abroad does not make a Philippine RLA a foreign architect under this definition.",
+          "D": "The contractor relationship is not the statutory definition."
+        },
+        "takeaway": "The definition turns on citizenship, Philippine registration/licensure, and home-country licensure."
+      },
+      "source_locator": "RA 9266 IRR, Section 3, Item 30, PDF p.5."
+    },
+    {
+      "id": "ra9266-foreign-q2",
+      "stem": "Before assuming architectural consultant duties on a covered project in the Philippines, what must the foreign national secure under Section 38 of the RA 9266 IRR?",
+      "options": {
+        "A": "A local business permit only",
+        "B": "A special/temporary permit from the Board, subject to Commission approval",
+        "C": "A UAP chapter endorsement only",
+        "D": "A notarized employment contract only"
+      },
+      "correct_option_id": "B",
+      "rationale": {
+        "correct": "Section 38 requires a special/temporary permit from the Board subject to approval of the Commission before the foreign national assumes the covered duties.",
+        "distractors": {
+          "A": "A business permit does not substitute for the professional permit.",
+          "C": "A professional organization endorsement is not the Section 38 permit.",
+          "D": "A contract may evidence engagement, but it is not the permit gate."
+        },
+        "takeaway": "For foreign practice questions, look for the Board permit and Commission approval."
+      },
+      "source_locator": "RA 9266 IRR, Section 38, PDF p.20."
+    },
+    {
+      "id": "ra9266-foreign-q3",
+      "stem": "What is the Filipino counterpart in the RA 9266 IRR definition?",
+      "options": {
+        "A": "The local architect, partnership, or corporation that must work in association with the foreign architect on a Philippine project",
+        "B": "Any Filipino employee assigned to translate the foreign architect's drawings",
+        "C": "The building official who reviews the permit application",
+        "D": "The project owner who pays the design fee"
+      },
+      "correct_option_id": "A",
+      "rationale": {
+        "correct": "Section 3, Item 31 defines the Filipino Counterpart as the local Philippine architect, partnership, or corporation that must work in association with the foreign architect or firm on a project on Philippine soil.",
+        "distractors": {
+          "B": "Translation or staff support is not the legal counterpart role.",
+          "C": "The building official is a regulator, not the Filipino counterpart.",
+          "D": "The owner commissions the project but is not the counterpart defined by the IRR."
+        },
+        "takeaway": "Counterpart means local architectural association for the project, not a clerical or ownership role."
+      },
+      "source_locator": "RA 9266 IRR, Section 3, Item 31, PDF p.5."
+    }
+  ]
+}

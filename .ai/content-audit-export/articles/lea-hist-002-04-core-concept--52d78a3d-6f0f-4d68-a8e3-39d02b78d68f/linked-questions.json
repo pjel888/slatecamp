@@ -1,9 +1,61 @@
 {
   "article_id": "52d78a3d-6f0f-4d68-a8e3-39d02b78d68f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:39481dd4b956c6fe46c281a9f6cff6062053a4c678279668032a3f090d221ffe",
+  "linked_questions_hash": "sha256:150cf32df5876ef2cd423a1ba66a9e1d197b9edce57793488e108ca1a7094179",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "1e7183ac-c72e-43d4-b9f8-44b094f1e685",
+      "article_id": "52d78a3d-6f0f-4d68-a8e3-39d02b78d68f",
+      "topic_id": "6af1905f-17a6-42e6-a852-dc96fca01956",
+      "text": "Why are harmonic proportions based on musical intervals (such as 2:3 or 3:4) significant to Renaissance architectural theory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They allow architects to hide structural flaws and create visual illusions similar to Baroque spatial tricks, enhancing aesthetic appeal"
+        },
+        {
+          "id": "b",
+          "text": "They reduce construction costs by using standardized measurement systems, although this was not the primary intent"
+        },
+        {
+          "id": "c",
+          "text": "They reflect the Renaissance belief in universal mathematical harmony connecting music, geometry, and the human body to divine order"
+        },
+        {
+          "id": "d",
+          "text": "They simplify the process of training masons and ensuring uniform building quality, though this was a secondary benefit"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Harmonic proportions are not about visual illusion or hiding flaws; they express genuine mathematical principles central to Renaissance philosophy.",
+        "b": "While proportional systems may aid construction, the significance is philosophical and aesthetic, not primarily economic.",
+        "d": "Training masons is a practical concern, but harmonic proportions reflect deeper Renaissance values about cosmic harmony, not just workforce standardization.",
+        "correct": "Harmonic proportions derived from musical intervals express the Renaissance humanistic ideal: mathematical ratios unite music, geometry, human proportion, and divine harmony. Buildings designed with these ratios embody philosophical order.",
+        "takeaway": "Buildings designed with these ratios embody philosophical order."
+      },
+      "explanation": "Harmonic proportions are not about visual illusion or hiding flaws; they express genuine mathematical principles central to Renaissance philosophy. While proportional systems may aid construction, the significance is philosophical and aesthetic, not primarily economic. Training masons is a practical concern, but harmonic proportions reflect deeper Renaissance values about cosmic harmony, not just workforce standardization. Harmonic proportions derived from musical intervals express the Renaissance humanistic ideal: mathematical ratios unite music, geometry, human proportion, and divine harmony. Buildings designed with these ratios embody philosophical order. Buildings designed with these ratios embody philosophical order.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-05-06T16:21:50.927054+00:00",
+      "content_hash": "sha256:75f49ee2f39e1a888702ac465aebd170406f628fbe71c1b0e0259602af35f2f4"
+    },
     {
       "question_id": "180fd99b-62f6-42ca-861f-72888f90259a",
       "article_id": "52d78a3d-6f0f-4d68-a8e3-39d02b78d68f",
@@ -91,7 +143,7 @@
         "correct": "Brunelleschi's double-shell dome with internal ribbing (24 meridian and 10 parallel ribs) was revolutionary—it solved the problem of vaulting 42 meters without wooden centering and became the model for Renaissance dome construction.",
         "takeaway": "Brunelleschi's double-shell dome with internal ribbing (24 meridian and 10 parallel ribs) was revolutionary—it solved the problem of vaulting 42 meters without wooden centering and became the model for Renaissance dome construction."
       },
-      "explanation": null,
+      "explanation": "A single shell would not provide the structural redundancy or allow for the scale achieved by the double-shell system. Wooden frameworks would rot and were unavailable due to earlier wars; Brunelleschi specifically avoided this Medieval approach. Concentric masonry rings lack the sophisticated rib system Brunelleschi developed to distribute loads. Brunelleschi's double-shell dome with internal ribbing (24 meridian and 10 parallel ribs) was revolutionary—it solved the problem of vaulting 42 meters without wooden centering and became the model for Renaissance dome construction. Brunelleschi's double-shell dome with internal ribbing (24 meridian and 10 parallel ribs) was revolutionary—it solved the problem of vaulting 42 meters without wooden centering and became the model for Renaissance dome construction.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -105,8 +157,8 @@
       "model_id": "ALE-HIST-002-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d8c55c6f36e2947da4da6b758bcbfd0ae51ef8f60181477a2574269575bb5e7c"
+      "updated_at": "2026-05-06T16:21:50.683983+00:00",
+      "content_hash": "sha256:9b3d8870740b0bb31dda858efafeccf77ccb435958628c5c3565eef1e85f489e"
     },
     {
       "question_id": "b1727bee-190b-4a6b-a8ad-97053412abf4",
@@ -195,7 +247,7 @@
         "correct": "Villa Rotonda (begun 1567, completed 1590s, Vicenza) exemplifies Palladio's ideal villa: centered rotunda with dome, four identical facades with pediments and colonnades creating perfect symmetry—a synthesis of rural functionality with Classical temple grandeur.",
         "takeaway": "Villa Rotonda (begun 1567, completed 1590s, Vicenza) exemplifies Palladio's ideal villa: centered rotunda with dome, four identical facades with pediments and colonnades creating perfect symmetry—a synthesis of rural functionality with Classical temple grandeur."
       },
-      "explanation": null,
+      "explanation": "Villa Emo has a classical temple front with agricultural barchesses (farm wings), not four identical facades with rotunda. Palazzo Rucellai is an urban palace, not a rural villa, and lacks the rotunda/dome structure. The Tempietto is a tiny circular temple in Rome, not a villa, and is much smaller than Villa Rotonda. Villa Rotonda (begun 1567, completed 1590s, Vicenza) exemplifies Palladio's ideal villa: centered rotunda with dome, four identical facades with pediments and colonnades creating perfect symmetry—a synthesis of rural functionality with Classical temple grandeur. Villa Rotonda (begun 1567, completed 1590s, Vicenza) exemplifies Palladio's ideal villa: centered rotunda with dome, four identical facades with pediments and colonnades creating perfect symmetry—a synthesis of rural functionality with Classical temple grandeur.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "recall",
@@ -209,8 +261,8 @@
       "model_id": "ALE-HIST-002-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:772b4bafdafc8471466acda43463ec07b64ab0597a852ae606faf836805c1789"
+      "updated_at": "2026-05-06T16:21:50.805875+00:00",
+      "content_hash": "sha256:05eb8c2efd80612d8f5ed2efaedb84f947eef378e7a3dc57f3836d97eff15463"
     },
     {
       "question_id": "bbef12cf-e4f3-4768-a366-b6520db6fe6c",
@@ -421,58 +473,6 @@
       "content_hash": "sha256:d54fdf2533d5eb1425e84a26cb241711888888b6c10103461dd75e3dd21d003a"
     },
     {
-      "question_id": "1e7183ac-c72e-43d4-b9f8-44b094f1e685",
-      "article_id": "52d78a3d-6f0f-4d68-a8e3-39d02b78d68f",
-      "topic_id": "6af1905f-17a6-42e6-a852-dc96fca01956",
-      "text": "Why are harmonic proportions based on musical intervals (such as 2:3 or 3:4) significant to Renaissance architectural theory?",
-      "options": [
-        {
-          "id": "a",
-          "text": "They allow architects to hide structural flaws and create visual illusions similar to Baroque spatial tricks, enhancing aesthetic appeal"
-        },
-        {
-          "id": "b",
-          "text": "They reduce construction costs by using standardized measurement systems, although this was not the primary intent"
-        },
-        {
-          "id": "c",
-          "text": "They reflect the Renaissance belief in universal mathematical harmony connecting music, geometry, and the human body to divine order"
-        },
-        {
-          "id": "d",
-          "text": "They simplify the process of training masons and ensuring uniform building quality, though this was a secondary benefit"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Harmonic proportions are not about visual illusion or hiding flaws; they express genuine mathematical principles central to Renaissance philosophy.",
-        "b": "While proportional systems may aid construction, the significance is philosophical and aesthetic, not primarily economic.",
-        "d": "Training masons is a practical concern, but harmonic proportions reflect deeper Renaissance values about cosmic harmony, not just workforce standardization.",
-        "correct": "Harmonic proportions derived from musical intervals express the Renaissance humanistic ideal: mathematical ratios unite music, geometry, human proportion, and divine harmony. Buildings designed with these ratios embody philosophical order.",
-        "takeaway": "Buildings designed with these ratios embody philosophical order."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-002-04-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1c43909b8fb9dfc51ef03e9441a37d99f0786fbb83d22a9d89c18a230ec298ed"
-    },
-    {
       "question_id": "a7717ab4-eba7-46c6-b887-d86ff8df324e",
       "article_id": "52d78a3d-6f0f-4d68-a8e3-39d02b78d68f",
       "topic_id": "6af1905f-17a6-42e6-a852-dc96fca01956",
@@ -507,7 +507,7 @@
         "correct": "Palladio's *I Quattro Libri* (*Four Books on Architecture*, 1570) systematized orders, proportions, and designs, becoming the most influential architectural treatise after Vitruvius and shaping architecture for 400+ years.",
         "takeaway": "Palladio's *I Quattro Libri* (*Four Books on Architecture*, 1570) systematized orders, proportions, and designs, becoming the most influential architectural treatise after Vitruvius and shaping architecture for 400+ years."
       },
-      "explanation": null,
+      "explanation": "Alberti wrote *De re aedificatoria*, an important Renaissance treatise, but Palladio's *Four Books* was more influential and comprehensive. Bramante did not write a major theoretical treatise. Brunelleschi did not write a major architectural treatise; his innovations were demonstrated through built work. Palladio's *I Quattro Libri* (*Four Books on Architecture*, 1570) systematized orders, proportions, and designs, becoming the most influential architectural treatise after Vitruvius and shaping architecture for 400+ years. Palladio's *I Quattro Libri* (*Four Books on Architecture*, 1570) systematized orders, proportions, and designs, becoming the most influential architectural treatise after Vitruvius and shaping architecture for 400+ years.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -521,8 +521,8 @@
       "model_id": "ALE-HIST-002-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:12be3cd94682fcd9b4370f71d133b24a7d13400844539ecc48085c1b29c76d9a"
+      "updated_at": "2026-05-06T16:21:51.059228+00:00",
+      "content_hash": "sha256:2b086acd715927c8454c26a3fad3378e59d12d39416ddedd4f9635706e33d411"
     }
   ]
 }

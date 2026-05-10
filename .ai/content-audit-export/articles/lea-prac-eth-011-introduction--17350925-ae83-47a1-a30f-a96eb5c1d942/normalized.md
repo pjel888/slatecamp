@@ -334,7 +334,7 @@ If the architect serves as construction manager, additional conflicts arise:
 When architect serves as expert witness in a malpractice case, conflicts arise:
 - Architect may be biased toward defending architects (professional solidarity) or toward plaintiffs (fear of establishing dangerous precedent)
 - Architect's testimony may be influenced by the fee structure (plaintiff vs. defense attorneys)
-- Architect may unconsciously favor positions that benefit architects 
+- Architect may unconsciously favor positions that benefit architects
 
 **Mitigation:** Clear written engagement letter specifying that expert will provide objective analysis regardless of where analysis leads; fee structure that doesn't incentivize particular conclusions; transparent disclosure of any conflicts with parties or their counsel; willingness to recuse if conflicts are irreconcilable.
 

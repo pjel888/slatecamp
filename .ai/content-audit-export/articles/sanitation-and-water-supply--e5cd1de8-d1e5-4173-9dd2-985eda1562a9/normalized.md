@@ -335,7 +335,7 @@ A five-storey mixed-use building in Makati City has its roof drainage pipes conn
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: code="pd1096", section="Rule IX - Sanitation"
-- Text: Per PD 1096, Rule IX, Sec. 904(1): "Rainwater drainage shall NOT discharge to the sanitary sewer system." This prohibition is absolute — connecting storm drainage to the sanitary sewer is a code violation regardless of sewer capacity, city engineer certification, or otherwise code-compliant status of the building. Because Rule III, Sec. 309 requires the building to comply with all applicable requirements of PD 1096 before a Certificate of Occupancy is issued, this violation prevents CO issuance 
+- Text: Per PD 1096, Rule IX, Sec. 904(1): "Rainwater drainage shall NOT discharge to the sanitary sewer system." This prohibition is absolute — connecting storm drainage to the sanitary sewer is a code violation regardless of sewer capacity, city engineer certification, or otherwise code-compliant status of the building. Because Rule III, Sec. 309 requires the building to comply with all applicable requirements of PD 1096 before a Certificate of Occupancy is issued, this violation prevents CO issuance
 [/SLATECAMP_UI_BLOCK]
 >
 > **LEA Area:** Architecture Utilities / Architectural Practice (Building Administration)

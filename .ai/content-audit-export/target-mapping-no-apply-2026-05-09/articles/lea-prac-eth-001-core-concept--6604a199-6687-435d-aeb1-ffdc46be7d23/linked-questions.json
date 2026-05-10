@@ -1,0 +1,508 @@
+{
+  "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:368ab351fb277d3b35ece0545a4e7116fb0c4bf9318c969fbb4d4f83ae6ca78d",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "f94d898f-7837-48b9-879e-a25a17fc752c",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "At the initial client meeting, an architect and prospective client discuss scope of work and fees. The architect fails to document in writing the exact nature and scope of services or corresponding professional charges. According to Section 2-b, what ethical obligation has the architect violated?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obligation to the Public to maintain professional standards, ensuring transparency and accountability in all professional dealings"
+        },
+        {
+          "id": "b",
+          "text": "Obligation to the Client to ascertain and document scope and fees at engagement inception"
+        },
+        {
+          "id": "c",
+          "text": "Obligation to the Profession to avoid free preliminary services, which undermines the value of professional expertise"
+        },
+        {
+          "id": "d",
+          "text": "Obligation to Fellow Architects regarding fair fee practices, promoting equitable competition within the profession"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Section 5-a addresses free services policy, not scope/fee clarity requirement.",
+        "d": "Fellow architect obligations concern competition, commission notification, and professional courtesy—not client fee documentation.",
+        "correct": "Section 2-b states architect 'shall acquaint or ascertain from the Client at the very inception of their business relationship, the exact nature and scope of his services and the corresponding professional charges.' Failure to document this at start violates Client obligation (Section 2).",
+        "takeaway": "Section 2-b requires architects to document exact scope and fees in writing at the inception of the client relationship, not during or after project commencement."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6ef37fb21ab7383e58356cb5f7049a587be7d48915f1b5b9032bd57edf2fb530"
+    },
+    {
+      "question_id": "51d72071-6e64-46e9-8575-8f5353d0149b",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "An architect is offered a material discount by a building supplier. The architect intends to use the discounted material in the project and keep the discount as personal profit rather than crediting it to the client. According to Section 4-b, is this practice permitted?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, provided the architect discloses the discount to the client verbally and the client does not object to the arrangement"
+        },
+        {
+          "id": "b",
+          "text": "No, Section 4-b prohibits accepting commissions, discounts, or favors from suppliers unless credited to client"
+        },
+        {
+          "id": "c",
+          "text": "Yes, because the architect personally sourced the supplier relationship and has the right to manage discounts as seen fit"
+        },
+        {
+          "id": "d",
+          "text": "Only if the client specifically authorized the architect to retain supplier discounts in writing as part of the contract terms"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Architect's role in sourcing is irrelevant. Section 4-b prohibits architect retaining supplier compensation regardless of sourcing method.",
+        "d": "Client authorization does not override code requirement. Section 4-b is absolute prohibition unless discount credited to client—not subject to case-by-case negotiation.",
+        "correct": "Section 4-b states architect 'shall not at any time receive commissions, discounts, fees, gifts or favors from agents or firms handling building materials or equipment which may place him in a reciprocal frame of mind. He may however, accept marker discount which shall be credited to the Client.' Market discount must benefit the client, not architect's pocket.",
+        "takeaway": "Section 4-b prohibits architects from retaining supplier discounts—any market discount must be credited to the client, not kept as personal profit."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:96f47a34b0eeae7115af4a875b4d4cee5aaa67c02463cd0c491039e9828dbe4e"
+    },
+    {
+      "question_id": "a4e806ec-8b5f-4c00-86a0-9c797e5e15ab",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "An architect signs and seals architectural drawings that were prepared entirely by a recent graduate intern without any architect oversight during the preparation process. Which obligation in the Code of Ethical Conduct does this violate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obligation to Client regarding faithful representation, which ensures that the client's interests are accurately reflected."
+        },
+        {
+          "id": "b",
+          "text": "Obligation to the Public regarding design safety standards, which is critical for ensuring public safety and welfare."
+        },
+        {
+          "id": "c",
+          "text": "Obligation to the Profession requiring direct personal supervision of sealed work"
+        },
+        {
+          "id": "d",
+          "text": "Obligation to Fellow Architects regarding fair competition, which promotes ethical practices within the profession."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "b": "While public safety is ultimately at stake, the specific code violation is Section 5-i profession obligation, not the public obligation sections.",
+        "d": "Not a competition issue. Section 5-g addresses malicious statements about competitors; this is supervision scope, not competitive conduct.",
+        "correct": "Section 5-i explicitly forbids affixing signature and seal to work 'not done under direct personal supervision.' This directly violates the Profession obligation (Section 5), which requires architect oversight during preparation, not mere approval of finished product.",
+        "takeaway": "Section 5-i prohibits signing and sealing work not done under direct personal supervision—approval of finished drawings is insufficient; personal oversight during preparation is mandatory."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c922c93b4e67136b320c5c6030cac573d35022c4cd05012670c30af0abf3a62c"
+    },
+    {
+      "question_id": "4e9e0f65-368e-4858-b7b9-833b6e0ed36d",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "When the Code of Ethical Conduct refers to 'IAPOA' in Section 41, what organization does this term identify?",
+      "options": [
+        {
+          "id": "a",
+          "text": "International Association of Professional Architects representing foreign-licensed practitioners in the Philippines"
+        },
+        {
+          "id": "b",
+          "text": "Integrated and Accredited Professional Organization of Architects (United Architects of the Philippines)"
+        },
+        {
+          "id": "c",
+          "text": "Institute of Architecture and Professional Organization Authority overseeing all design professions"
+        },
+        {
+          "id": "d",
+          "text": "Independent Accreditation Panel for Overseas Architects evaluating foreign credential equivalency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Fabricates acronym expansion. 'Professional Organization Authority' is incorrect suffix.",
+        "d": "Invents overseas-focused organization. IAPOA/UAP is domestic Philippine professional body, not overseas architect panel.",
+        "correct": "Section 41 equivalency states 'IAPOA = UAP' (United Architects of the Philippines). IAPOA is the formal designation; UAP is the practical usage. The acronym stands for Integrated and Accredited Professional Organization of Architects.",
+        "takeaway": "IAPOA stands for Integrated and Accredited Professional Organization of Architects, which is the formal name for UAP (United Architects of the Philippines)."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:229e3d267d7f55324886a65f72dadd97a8c67d0feb7b2aefbad51239e422a12e"
+    },
+    {
+      "question_id": "8d3e8aa7-bec3-4299-ac41-842a1c1a034c",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "Under RA 9266, the Professional Regulatory Board of Architecture (PRBoA) composition is defined in Section 4 as consisting of how many members?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One member only (Chair with rotating advisor roles)"
+        },
+        {
+          "id": "b",
+          "text": "Three members total: one Chairman plus two Members"
+        },
+        {
+          "id": "c",
+          "text": "Five members including the PRC Commissioner"
+        },
+        {
+          "id": "d",
+          "text": "Two members with equal voting authority"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Confuses PRBoA with broader PRC. PRBoA operates under PRC but maintains its three-member structure independent of PRC Commissioner count.",
+        "d": "Invents alternate structure. PRBoA always has chairman role and two members, not two equal members.",
+        "correct": "Section 4 explicitly states PRBoA composition: 1 Chairman + 2 Members = 3 total. This is the defined structure under RA 9266.",
+        "takeaway": "PRBoA composition is always 1 Chairman plus 2 Members (3 total)—this is the defined structure under Section 4."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ab058baf976ed9dcd867b2a56435b0fc914bbf3ab7135722793f09a300f07159"
+    },
+    {
+      "question_id": "8dd9e329-f1b1-433f-8eb7-c4e9c4cd6a4a",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "The Code of Ethical Conduct identifies four tiered obligations. In order of priority, which ranking correctly lists these obligations from highest to lowest?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fellow Architects, Profession, Client, Public"
+        },
+        {
+          "id": "b",
+          "text": "Public, Client, Profession, Fellow Architects"
+        },
+        {
+          "id": "c",
+          "text": "Profession, Public, Client, Fellow Architects"
+        },
+        {
+          "id": "d",
+          "text": "Client, Public, Profession, Fellow Architects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "c": "Misorders by placing Profession second. Profession obligation follows Client obligation.",
+        "d": "Inverts entire ranking. Client comes second, not first.",
+        "correct": "Sections 1-5 organize obligations in this sequence: Section 1 = Public (health, safety, welfare, illegal practice reporting). Section 2 = Client (faithful representation, confidentiality, conflict disclosure). Section 3-4 = Profession (dignity, fair competition, direct supervision, sealed work). Section 5 = Fellow Architects (notification, commission courtesy, fair dealing). Public welfare always takes precedence in ethical hierarchies.",
+        "takeaway": "The four obligations rank in order: Public (Section 1), Client (Section 2), Profession (Sections 3-4), Fellow Architects (Section 5)—public welfare always trumps commercial interest."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4b0f9cd16652f4cea8892435eb3f588c26367689786543661740c51b31c190f5"
+    },
+    {
+      "question_id": "5f3ed9c2-b588-48bc-a60c-cbb68870b803",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "An architect advises a client against proceeding with a project because the client's budget is insufficient to construct the design adequately. The client resists and insists the project proceed despite this professional concern. According to Section 2-c, what is the architect's obligation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Withdraw from the project immediately to protect professional reputation and avoid potential liability"
+        },
+        {
+          "id": "b",
+          "text": "Proceed with design since the client has explicitly overridden the architect's concern, but document the client's decision"
+        },
+        {
+          "id": "c",
+          "text": "Continue advising against the project and document the concern in writing, understanding this advice may mean loss of the commission"
+        },
+        {
+          "id": "d",
+          "text": "Reduce design scope without client approval to fit the budget, ensuring compliance with minimum standards"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "b": "Inverts obligation. Client override does not nullify architect's duty to advise. Section 2-c places duty on architect, not conditioned on client acceptance.",
+        "d": "Violates scope integrity. Architect cannot unilaterally reduce design without client agreement; this is separate from the advisory duty.",
+        "correct": "Section 2-c mandates: 'Architect shall advise a Client against proceeding with any project whose practicability may be questionable due to financial, legal or arresting or exigent conditions, even if such advice may mean the loss of a prospective commission.' The 'even if' clause makes clear the advice must stand regardless of financial loss to architect.",
+        "takeaway": "Section 2-c requires architects to advise against questionable projects due to financial insufficiency, even if such advice risks losing the commission—the duty stands regardless of client override."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ddebddbfd6e7ee172c7edc0075de8ccef0ab935059fd914d9a992aa4f42c8ee5"
+    },
+    {
+      "question_id": "552d8c94-fb3f-4292-95c6-f5c0ff0c0bce",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "An architect learns that a colleague is currently in active fee negotiations with a commercial client for a hotel project. Without notifying the colleague, the architect approaches the same client and offers to design the hotel at a lower fee. Under Sections 5-c and 5-e, what ethical violation has occurred?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No violation—the colleague has not signed a contract yet, so negotiation does not establish protected commission status under the Code of Ethics"
+        },
+        {
+          "id": "b",
+          "text": "Violation of Section 5-b regarding unfair competition on fee basis by offering lower fees to undercut a colleague's ongoing client engagement"
+        },
+        {
+          "id": "c",
+          "text": "Violation of Sections 5-c and 5-e requiring notification before assuming commission known to be under negotiation by another architect"
+        },
+        {
+          "id": "d",
+          "text": "Violation of Section 1-d regarding paid advertisement and competitive solicitation through direct approach to a client already engaged with another professional"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "b": "Section 5-b addresses fee-based competition among multiple architects in open bidding. This case involves known prior negotiation, triggering Sections 5-c/5-e, not 5-b.",
+        "d": "Section 1-d concerns paid advertisement and self-laudatory publicity. This violation stems from commission poaching, which is Section 5-c/5-e domain.",
+        "correct": "Section 5-c forbids seeking 'commissions already known to him as previously endowed to another Architect, whether such endowment has been definitely agreed upon or still in the process of negotiation.' Section 5-e requires written notification and proof of prior engagement termination. The colleague's active negotiation triggers Section 5-c protection.",
+        "takeaway": "Sections 5-c and 5-e prohibit assuming a commission known to be under negotiation by another architect—written notification and proof of prior engagement termination is required."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0d66bdc79e8c741fb845299e04e35aa4eee1f036b68ea4f12fdc005461f201f3"
+    },
+    {
+      "question_id": "da350aa6-e429-43cd-8724-e2b4f4ffb8a0",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "An architect claims specialization in 'Green Building Design' on her business card and website. She has three years of commercial project experience with LEED-certified buildings but holds no formal green building credential or degree specialization. According to Section 1-f, is this claim permissible?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because three years of project experience constitutes sufficient proof of specialization, demonstrating practical expertise"
+        },
+        {
+          "id": "b",
+          "text": "Yes, because project-based reputation is all that Section 1-f requires, emphasizing real-world application over formal credentials"
+        },
+        {
+          "id": "c",
+          "text": "No, Section 1-f requires specialization claims be supported by academic qualification or professional consensus backed by years of proven expertise"
+        },
+        {
+          "id": "d",
+          "text": "No, but only because she lacks a formal degree in green building, which is necessary for such claims"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option reflects a common misconception. Review the source provision.",
+        "b": "Misreads Section 1-f requirement. Reputation alone ('well known facts') requires substantial demonstrated history, not just three years.",
+        "d": "Incomplete analysis. While a credential would satisfy the standard, architect could also satisfy requirement through longer experience history plus professional consensus recognition—degree is not the only path.",
+        "correct": "Section 1-f states architect 'shall not mislead the public through advertisements, signs or printed matter citing his professional specializations unless such qualifications are well known facts or sanctioned by professional consensus and years of experience.' Three years alone may not constitute 'years of experience' benchmark; combination of academic backing (credential/degree) or broader industry recognition (professional consensus) is required.",
+        "takeaway": "Section 1-f prohibits specialization claims unless backed by academic qualification (degree/credential) or professional consensus supported by substantial years of proven experience."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e78e5669475a354d84781b1900aa94cabbbe185d0c5e2e153b66ec586c296581"
+    },
+    {
+      "question_id": "d6d7d27e-3927-4efb-b220-8d665c84bb19",
+      "article_id": "6604a199-6687-435d-aeb1-ffdc46be7d23",
+      "topic_id": "e4eab557-730c-414d-9d70-616cd93f34ca",
+      "text": "An architect discovers that an unregistered individual is offering design services to a residential client in the architect's area. According to the Code of Ethical Conduct, which obligation takes priority in this scenario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect's obligation to the profession to report the illegal practice to the PRBoA"
+        },
+        {
+          "id": "b",
+          "text": "The architect's obligation to fellow architects to notify competitors of lost business"
+        },
+        {
+          "id": "c",
+          "text": "The architect's obligation to the client to maintain confidentiality regardless of illegal practice"
+        },
+        {
+          "id": "d",
+          "text": "The architect's obligation to the profession to publicly denounce the unregistered practitioner"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Confuses professional solidarity with legal duty. Fellow architects obligation (Section 5) comes fourth—does not override public protection duty.",
+        "c": "Misapplies confidentiality. Client confidentiality applies to sensitive project information, not knowledge of illegal professional practice endangering public.",
+        "d": "Overextends obligation scope. Report to PRBoA authorities, not public denunciation. Section 1-c specifies compliance with laws, not media campaigns.",
+        "correct": "Section 1-c mandates architects abide by government laws and report illegal practice. The Public obligation (Section 1) ranks first; reporting protects public welfare by preventing unqualified design work.",
+        "takeaway": "Public obligation (Section 1) ranks first—architects must report illegal practice to PRBoA, not notify competitors or maintain client confidentiality about unlicensed practitioners."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 200; RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-001-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:72f973caf242f7382bc579e7474fd9de39cc59f5c17f2e2a962591e212c97976"
+    }
+  ]
+}

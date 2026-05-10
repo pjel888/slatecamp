@@ -1,0 +1,112 @@
+{
+  "schema_version": "source-audit-evidence-v1",
+  "audit_date": "2026-05-10",
+  "audit_mode": "local_source_audit_no_supabase",
+  "target": {
+    "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+    "slug": "spp-doc-201-pre-design-services",
+    "candidate_sha256": "c0e3bf9f7b260341df1a509397464afb6ff7fa8488015153e9dfba3857991258",
+    "candidate_path": ".ai/content-audit-export/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/candidate.md"
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "legal_code_primary_source",
+    "requires_raw_pdf_audit": true
+  },
+  "raw_sources": [
+    {
+      "key": "spp201",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "sha256": "d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93"
+    },
+    {
+      "key": "doc401_402",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "sha256": "5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "SPP201-Q2-LABEL-PASS",
+      "claim": "Question 4bedc8ba-b184-4e08-b612-4102581463a3 should use the source label Multiple of Direct Personnel Expenses; the multiplier range is 1.5 to 2.5.",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "pdf_pages": [
+          25,
+          28,
+          58
+        ],
+        "quoted_pdf_excerpt": "MULTIPLE OF DIRECT PERSONNEL EXPENSES ... The multiplier ranges from 1.5 to 2.5 ... M = Multiplier to account for overhead and reasonable profit. The value may range from 1.5 to 2.5."
+      },
+      "local_resolution": "question-edits/4bedc8ba-b184-4e08-b612-4102581463a3.json"
+    },
+    {
+      "claim_id": "SPP201-Q8-MANNER-PASS",
+      "claim": "Question d6d46e45-262d-44f4-bbd1-f77b428d68df should identify the three source-listed manners of providing services: as an individual; Architect’s own staff; by association, consultation or networking.",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "pdf_page": 56,
+        "quoted_pdf_excerpt": "MANNER OF PROVIDING SERVICES ▪As an individual ▪Architect’s own staff ▪By association, consultation or networking"
+      },
+      "local_resolution": "question-edits/d6d46e45-262d-44f4-bbd1-f77b428d68df.json"
+    },
+    {
+      "claim_id": "SPP201-Q9-PROPOSAL-PARK-REPLACED",
+      "claim": "The exported written-proposal four-item requirement was not located in SPP 201 raw PDF text; local edit replaces it with a verified Multiple of Direct Personnel Expenses computation question.",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "pdf_pages": [
+          25,
+          28,
+          58
+        ],
+        "quoted_pdf_excerpt": "The computation is made by adding all costs of technical services (man hours x rate) and then multiplying it by a multiplier to cover overhead and profit. The multiplier ranges from 1.5 to 2.5."
+      },
+      "local_resolution": "question-edits/8ae49694-2cba-4888-b438-7d0b734b80a8.json",
+      "rejected_exported_claim": "SPP 201 requires four written proposal items: scope, methodology, deliverables, compensation."
+    },
+    {
+      "claim_id": "SPP201-DOC401-402-PASS",
+      "claim": "UAP Document 401-402 supports article context excluding pre-design services and separate service/agreement context.",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "pdf_pages": [
+          1,
+          8
+        ],
+        "quoted_pdf_excerpt": "does NOT cover ... Pre-Design Services such as Space Planning and Research; EIGHTY FIVE percent (85.0%) ... Article 7.08."
+      }
+    }
+  ],
+  "proposed_question_edits": [
+    "question-edits/4bedc8ba-b184-4e08-b612-4102581463a3.json",
+    "question-edits/d6d46e45-262d-44f4-bbd1-f77b428d68df.json",
+    "question-edits/8ae49694-2cba-4888-b438-7d0b734b80a8.json"
+  ],
+  "unverified_or_rejected_claims": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "NOT_REQUIRED"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "No Supabase write was performed. PASS depends on applying the local question-edits before upload; exported linked-questions.json still shows stale source-blocked text.",
+      "sources.json remains source_count 0 in export; raw source evidence is carried in this artifact."
+    ]
+  }
+}

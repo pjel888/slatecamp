@@ -354,4 +354,3 @@ Extracted summary:
 See also within Electrical Systems: **lea-util-003-02-core-concept**, **lea-util-003-03-core-concept**, **lea-util-003-04-core-concept**, **lea-util-003-05-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

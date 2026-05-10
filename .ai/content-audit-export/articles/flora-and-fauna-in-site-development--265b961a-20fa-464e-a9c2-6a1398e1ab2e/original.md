@@ -1,9 +1,12 @@
 # Flora and Fauna in Site Development
-## Learning Goal
-After reading this article, you should be able to:
 
-Apply environmental regulations for tree preservation and habitat protection during site development: identify protected species under DENR regulations; calculate tree preservation zone radii; determine when an Environmental Compliance Certificate (ECC) is required; and apply DENR buffer requirements for developments near protected areas and waterways.
----
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Flora and Fauna in Site Development** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## The Real-World Scenario (The Hook)
 
@@ -13,11 +16,11 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## Core Concepts
 
-<Tip>
-
-**Memory Aid: "E-E-T = EIS, ECA, Tree Permit."** Three regulatory requirements for flora/fauna in site development: EIS System (PD 1586) — required for projects in ECAs or classified as ECPs; ECA (Environmentally Critical Areas) — watersheds, mangroves, NIPAS areas trigger the ECC requirement; Tree Cutting Permit (PD 705) — separate from building permit, required by DENR before removing any naturally grown tree.
-
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: "E-E-T = EIS, ECA, Tree Permit."** Three regulatory requirements for flora/fauna in site development: EIS System (PD 1586) — required for projects in ECAs or classified as ECPs; ECA (Environmentally Critical Areas) — watersheds, mangroves, NIPAS areas trigger the ECC requirement; Tree Cutting Permit (PD 705) — separate from building permit, required by DENR before removing any naturally grown tree.
+[/SLATECAMP_UI_BLOCK]
 
 - **Environmental Impact Statement (EIS) System (PD 1586 & DENR DAO 2003-30):** The Philippine EIS System, not PD 1096, is the governing framework for evaluating ecological impacts of development projects. Projects located in or adjacent to Environmentally Critical Areas (ECAs) — such as watersheds, mangrove swamps, coral reef areas, habitats of endangered species, and national parks — are required to secure an ECC from the DENR-EMB before construction.
 
@@ -31,11 +34,11 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## The Hard Data (Cheat Sheet)
 
-<Example>
-
-**Philippine Application:** A 2-hectare mixed-use development in Antipolo borders a watershed reserve with 40+ mature Narra trees. Before building permit application, the architect must secure: (1) ECC from DENR-EMB (PD 1586), (2) Tree Cutting/Transplant Permit (PD 705), (3) Wildlife Gratuitous Permit if any threatened species are present (RA 9147). Root Protection Zones (RPZ = 12× DBH) must be marked on the site plan.
-
-</Example>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Philippine Application:** A 2-hectare mixed-use development in Antipolo borders a watershed reserve with 40+ mature Narra trees. Before building permit application, the architect must secure: (1) ECC from DENR-EMB (PD 1586), (2) Tree Cutting/Transplant Permit (PD 705), (3) Wildlife Gratuitous Permit if any threatened species are present (RA 9147). Root Protection Zones (RPZ = 12× DBH) must be marked on the site plan.
+[/SLATECAMP_UI_BLOCK]
 
 | Parameter | Requirement / Standard | Governing Law / Regulation |
 |---|---|---|
@@ -56,11 +59,11 @@ You are the architect-of-record for a 2-hectare mixed-use development in Antipol
 
 ## Crucial Formulas & Computations
 
-<ExamTip>
-
-**LEA Exam Pattern — Agency Confusion Trap:** The LEA frequently tests which agency handles which permit. Remember: DENR-EMB = EIS System and ECC issuance (PD 1586, DAO 2003-30). OBO (Office of the Building Official) = Building permit under PD 1096. If a question says "who issues the ECC?" the answer is DENR-EMB, NOT the OBO.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Exam Pattern — Agency Confusion Trap:** The LEA frequently tests which agency handles which permit. Remember: DENR-EMB = EIS System and ECC issuance (PD 1586, DAO 2003-30). OBO (Office of the Building Official) = Building permit under PD 1096. If a question says "who issues the ECC?" the answer is DENR-EMB, NOT the OBO.
+[/SLATECAMP_UI_BLOCK]
 
 While flora/fauna preservation is primarily regulatory and qualitative, two quantitative tools frequently appear in EIA studies for site development:
 
@@ -109,45 +112,45 @@ This metric is used in EIA reports to demonstrate the ecological value of existi
 
 ---
 
-<Warn>
-
-⚠️ EXAM WARNING: The RPZ (Root Protection Zone) formula is RPZ = 12 × DBH (diameter at breast height, measured at 1.4 m above grade). This is the standard for Philippine EIA studies. Do NOT confuse it with the 5-meter PHIVOLCS fault buffer (geological hazard) or the 3–40 m PD 1067 easement (hydrology). Each has its own formula and regulatory trigger.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ EXAM WARNING: The RPZ (Root Protection Zone) formula is RPZ = 12 × DBH (diameter at breast height, measured at 1.4 m above grade). This is the standard for Philippine EIA studies. Do NOT confuse it with the 5-meter PHIVOLCS fault buffer (geological hazard) or the 3–40 m PD 1067 easement (hydrology). Each has its own formula and regulatory trigger.
+[/SLATECAMP_UI_BLOCK]
 
 ## Active Recall Questions
 
 ### Question 1
 A developer plans to build a resort adjacent to a DENR-classified watershed reserve. Which document must be secured from the DENR-EMB **before** applying for a building permit?
 
-A. Fire Safety Inspection Certificate (FSIC)  
-B. Environmental Compliance Certificate (ECC)  
-C. Locational Clearance from HLURB  
-D. Barangay Business Permit  
+A. Fire Safety Inspection Certificate (FSIC)
+B. Environmental Compliance Certificate (ECC)
+C. Locational Clearance from HLURB
+D. Barangay Business Permit
 
-> **Answer: B. Environmental Compliance Certificate (ECC)**  
+> **Answer: B. Environmental Compliance Certificate (ECC)**
 > Projects in or adjacent to Environmentally Critical Areas (ECAs) such as watersheds are required to secure an ECC under PD 1586 and DENR DAO 2003-30. The ECC certifies that the project's Environmental Management Plan (EMP) has been reviewed and approved. The FSIC (A) is under RA 9514 (Fire Code) and is obtained after construction, not before. Locational Clearance (C) is a zoning tool, not an environmental one.
 
 ### Question 2
 Under PD 1067 (Water Code of the Philippines), what is the required easement from the banks of rivers and streams in **urban areas** where no structures may be built?
 
-A. 5 meters  
-B. 20 meters  
-C. 3 meters  
-D. 40 meters  
+A. 5 meters
+B. 20 meters
+C. 3 meters
+D. 40 meters
 
-> **Answer: C. 3 meters**  
+> **Answer: C. 3 meters**
 > Article 51 of PD 1067 establishes easement zones of 3 meters in urban areas, 20 meters in agricultural areas, and 40 meters in forest areas from river/stream banks. These are no-build zones reserved for public use (recreation, navigation, salvage). The 5-meter figure (A) is a common confusion with the PHIVOLCS fault-line buffer, and 40 meters (D) applies to forest areas only.
 
 ### Question 3
 An architect's site survey reveals a mature Molave tree (DBH = 0.60 m) directly in the path of a proposed access road. Using the standard Root Protection Zone formula, what is the minimum radius that must be kept undisturbed around this tree?
 
-A. 3.60 meters  
-B. 6.00 meters  
-C. 7.20 meters  
-D. 12.00 meters  
+A. 3.60 meters
+B. 6.00 meters
+C. 7.20 meters
+D. 12.00 meters
 
-> **Answer: C. 7.20 meters**  
+> **Answer: C. 7.20 meters**
 > The RPZ radius = 12 × DBH = 12 × 0.60 m = 7.20 m. This means no excavation, grading, or compaction within 7.20 m of the trunk center. Option A (3.60 m) would result from incorrectly using 6× DBH. Option D (12 m) confuses the multiplier (12) with the result. The architect must either reroute the access road or justify tree removal through a DENR Tree Cutting Permit — but on the LEA, the safe answer is always to preserve and reroute.
 
 ---

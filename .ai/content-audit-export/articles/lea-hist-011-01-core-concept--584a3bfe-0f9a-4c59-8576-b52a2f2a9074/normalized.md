@@ -142,4 +142,3 @@ Extracted summary:
 See also within African Architecture: **lea-hist-011-02-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
-

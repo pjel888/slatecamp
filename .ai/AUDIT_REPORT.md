@@ -23,11 +23,11 @@ The `.ai/` folder is extensive, well-organized, and largely current. The most re
 |------|--------|----------|--------|
 | `README.md` | Updated | Existing index from 2026-04-29; needs refresh for new files | **Updated** - Added new canonical files and reading order |
 | `AGENTS.md` | Current | Generated 2026-04-16; governs `.ai/` subtree rules | Preserved |
-| `project-overview.md` | Current | Last audit 2026-04-29; counts match codebase | Preserved; superseded by `PROJECT_CONTEXT.md` for future agents |
+| `project-overview.md` | **Superseded** | 2026-04-29 counts stale (105 pages, 92 migrations); now marked as historical snapshot pointing to `PROJECT_CONTEXT.md` | Updated — added superseded banner and current verified counts |
 | `architecture.md` | Current | Last audit 2026-04-29 | **Updated** - Added `PROJECT_CONTEXT.md` cross-reference |
 | `features.md` | Current | Last audit 2026-04-29; 27 features documented | Preserved; superseded by `IMPLEMENTATION_STATUS.md` |
 | `routes.md` | Current | Last audit 2026-05-01; 128 page routes mapped | Preserved |
-| `api-and-server.md` | Current | 11 route handlers, 157 server action files | Preserved |
+| `api-and-server.md` | Current | 12 route handlers, 150 server action files | Preserved |
 | `data-models.md` | Current | 76 tables documented with field counts | Preserved |
 | `ip-inventory.md` | Current | 16 IP-relevant items cataloged | Preserved |
 | `testing.md` | Current | Test inventory and commands | Preserved |
@@ -97,12 +97,13 @@ The `.ai/` folder is extensive, well-organized, and largely current. The most re
 
 ---
 
-## Source-of-Truth Verification
+## Source-of-Truth Verification (Verified 2026-05-09)
 
 ### Routes
-- README claims 118 `page.tsx` routes; `.ai/routes.md` claims 128.
-- `find src/app -name "page.tsx" | wc -l` returns 105 (excluding route groups).
-- **Finding:** Route counts vary based on counting methodology (route groups vs actual files). The code is the truth; documentation counts should be verified with a fresh count command.
+- `find src/app -name "page.tsx" | wc -l` returns **128** page.tsx routes
+- 15 layouts, 104 loading files, 8 error boundaries
+- 12 route handlers (route.ts/route.tsx)
+- **Finding:** `.ai/routes.md` was correct at 128 routes. The README claim of 118 is stale. This audit verified the count against live files.
 
 ### Features
 - README lists 27 features; `.ai/features.md` lists 27 features.
@@ -112,13 +113,26 @@ The `.ai/` folder is extensive, well-organized, and largely current. The most re
 ### Database
 - README lists 76 tables across 9 domain families.
 - `DATABASE_SCHEMA.sql` is the canonical schema snapshot.
-- 92 migration files in `supabase/migrations/`.
-- **Finding:** Schema documentation appears current and accurate.
+- **101** migration files in `supabase/migrations/` (verified: `ls supabase/migrations/*.sql | wc -l`).
+- `supabase/config.toml` is **MISSING** — documented gap.
+- **Finding:** Previous doc claims of 92 migrations were stale. Correct count is 101.
 
 ### Tests
-- README reports 74 test files and 623 passing tests as of 2026-04-29.
-- `src/**/*.test.ts*` glob matches ~81 files.
-- **Finding:** Test inventory may have grown since last count; documentation should note this as approximate.
+- `find src -name "*.test.ts" -o -name "*.test.tsx" | wc -l` returns **88** test files.
+- 13 Playwright E2E specs in `e2e/`.
+- 113 Storybook story files.
+- **Finding:** Test inventory counts updated from live verification.
+
+### Components
+- `find src/components -type f -name "*.tsx" | wc -l` returns **652** component files.
+- `find src/lib/actions -type f | wc -l` returns **150** server action files.
+
+### Code-Intelligence Triad (2026-05-09)
+Per the mandatory blast-radius triad in root `AGENTS.md`:
+- **code-review-graph:** 8,909 nodes, 72,017 edges across 2,311 files. Risk 0.40. Top hubs: `Skeleton` (709 connections, untested), `cn` (649 connections, untested). Test gaps: `HeaderHero`, `HeroSection`, `drawAnnotations`.
+- **GitNexus:** Not run (MCP availability to be confirmed).
+- **ChunkHound:** Failed — requires LLM provider configuration.
+- **Finding:** All `.ai/` doc changes have 0 source-code blast radius — safe to modify independently. Architectural hotspots `Skeleton` and `cn` lack test coverage despite 650+ dependents (added to `TECH_DEBT.md`).
 
 ---
 
@@ -141,8 +155,8 @@ The `.ai/` folder is extensive, well-organized, and largely current. The most re
 
 ## Assumptions Needing Human Confirmation
 
-1. **Route count discrepancy:** 105 vs 118 vs 128. Which counting methodology is canonical?
-2. **Supabase verification target:** Was a safe Supabase verification target created after the 2026-05-05 audit?
+1. **Route count confirmed:** 128 page.tsx routes (verified 2026-05-09 via `find src/app -name "page.tsx" | wc -l`). Previously reported counts of 105 and 118 were inaccurate. The `.ai/routes.md` count of 128 is correct.
+2. **Supabase verification target:** Was a safe Supabase verification target created after the 2026-05-05 audit? `supabase/config.toml` is confirmed MISSING.
 3. **Landing page implementation:** Are the 2026-05-07 landing-page plans in `03_plans/` being actively implemented or still in planning?
 4. **Migration replay:** Has the 101-migration replay been completed on a verified target?
 5. **Production deployment:** Is there a production/staging deployment environment? The README notes this was not verified during the 2026-04-29 audit.

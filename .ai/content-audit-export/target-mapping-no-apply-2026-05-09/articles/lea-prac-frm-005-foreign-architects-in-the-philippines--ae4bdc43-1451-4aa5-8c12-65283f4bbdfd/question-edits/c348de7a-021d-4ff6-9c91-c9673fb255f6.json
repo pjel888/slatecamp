@@ -1,0 +1,59 @@
+{
+  "question_id": "c348de7a-021d-4ff6-9c91-c9673fb255f6",
+  "baseline_hash": "sha256:3ef7f0204651281fdba701b595a8bc431210ad396844667bfac6db0fcc168aa9",
+  "status": "proposed_no_apply",
+  "reason": "Same authorization/permit concept; dry-run wording is source-specific to Section 38 and has explicit code citation.",
+  "approved_by": "Hermes target-mapping dry-run review; final apply still blocked",
+  "approved_at": "2026-05-09T14:08:41.185713Z",
+  "dry_run_source": {
+    "dry_article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+    "dry_question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q02",
+    "sme_source_locator": "RA 9266 IRR, Section 38, PDF p.20.",
+    "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline."
+  },
+  "proposed": {
+    "code_citation": "RA 9266 IRR, Section 38, PDF p.20.",
+    "text": "Before assuming architectural consultant duties on a covered project in the Philippines, what must the foreign national secure under Section 38 of the RA 9266 IRR?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Section 38 requires a special/temporary permit from the Board subject to approval of the Commission before the foreign national assumes the covered duties.",
+      "distractors": {
+        "A": "A business permit does not substitute for the professional permit.",
+        "C": "A professional organization endorsement is not the Section 38 permit.",
+        "D": "A contract may evidence engagement, but it is not the permit gate."
+      },
+      "takeaway": "For foreign practice questions, look for the Board permit and Commission approval."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "B",
+    "explanation": "RA 9266 IRR, Section 38, PDF p.20.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "A local business permit only"
+      },
+      {
+        "id": "B",
+        "text": "A special/temporary permit from the Board, subject to Commission approval"
+      },
+      {
+        "id": "C",
+        "text": "A UAP chapter endorsement only"
+      },
+      {
+        "id": "D",
+        "text": "A notarized employment contract only"
+      }
+    ]
+  }
+}

@@ -91,28 +91,28 @@ Extracted summary:
 
 **Question 1.** What is the primary passive-cooling mechanism of Pueblo adobe construction in the American Southwest?
 
-A. Cross-ventilation through large window openings on opposite walls  
-B. Evaporative cooling ponds integrated into flat roof surfaces  
-C. Thermal mass — thick adobe walls absorb daytime heat and release it slowly at night, stabilizing interior temperatures across extreme diurnal swings  
-D. Underground mechanical air-cooling systems connected to subterranean kivas  
+A. Cross-ventilation through large window openings on opposite walls
+B. Evaporative cooling ponds integrated into flat roof surfaces
+C. Thermal mass — thick adobe walls absorb daytime heat and release it slowly at night, stabilizing interior temperatures across extreme diurnal swings
+D. Underground mechanical air-cooling systems connected to subterranean kivas
 
 > **Correct Answer: C.** Pueblo adobe walls (typically 30–60 cm thick) function as thermal batteries. In the desert Southwest, daytime temperatures can exceed 40°C while nighttime temperatures drop below 10°C. The massive earthen walls absorb heat during the day (keeping interiors cool) and radiate stored heat at night (keeping interiors warm). This thermal flywheel effect is the defining climate adaptation of Pueblo architecture. Kivas are ceremonial/community spaces, not mechanical systems.
 
 **Question 2.** A typical Haudenosaunee (Iroquois) longhouse measured approximately:
 
-A. 8 × 8 × 4 m (a compact square plan for single-family use)  
-B. 24 × 5.5 × 5.5 m (an elongated communal hall with central hearths for multiple families)  
-C. 100 × 30 × 15 m (a monumental stone assembly hall comparable to European cathedrals)  
-D. 6 × 3 × 3 m (a small portable shelter for seasonal hunting camps)  
+A. 8 × 8 × 4 m (a compact square plan for single-family use)
+B. 24 × 5.5 × 5.5 m (an elongated communal hall with central hearths for multiple families)
+C. 100 × 30 × 15 m (a monumental stone assembly hall comparable to European cathedrals)
+D. 6 × 3 × 3 m (a small portable shelter for seasonal hunting camps)
 
 > **Correct Answer: B.** The standard Haudenosaunee longhouse averaged approximately 24 m (80 ft) long × 5.5 m (18 ft) wide × 5.5 m (18 ft) high, housing around 20 or more families in compartments along a central corridor with shared hearths. While some exceptional longhouses exceeded 75 m in length, the LEA typically tests the standard dimensions.
 
 **Question 3.** Which feature of tipi construction provides its primary ventilation mechanism?
 
-A. Fixed glass skylights in the hide covering  
-B. Adjustable smoke flaps at the apex of the cone, creating a chimney effect that draws fresh air from the base perimeter and exhausts smoke upward  
-C. Mechanically operated louvered vents powered by wind turbines  
-D. Large rectangular doorways on all four cardinal orientations  
+A. Fixed glass skylights in the hide covering
+B. Adjustable smoke flaps at the apex of the cone, creating a chimney effect that draws fresh air from the base perimeter and exhausts smoke upward
+C. Mechanically operated louvered vents powered by wind turbines
+D. Large rectangular doorways on all four cardinal orientations
 
 > **Correct Answer: B.** The tipi's conical form creates a natural chimney effect. Adjustable flaps at the apex (controlled by exterior poles) regulate smoke exhaust from the central hearth, while fresh air enters through the base perimeter and through the gap between the outer cover and an interior liner. This passive stack-ventilation system is effective in both calm and windy conditions — a principle applicable to natural ventilation design in Philippine tropical architecture.
 

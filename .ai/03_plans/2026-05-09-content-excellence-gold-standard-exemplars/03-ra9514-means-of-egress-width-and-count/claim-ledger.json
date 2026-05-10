@@ -1,0 +1,114 @@
+{
+  "schema_version": "slatecamp-claim-ledger-v1",
+  "pack_id": "03-ra9514-means-of-egress-width-and-count",
+  "title": "RA 9514 Means of Egress Width and Count",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_status": "LOCAL_BFP_OFFICIAL_PDF_VERIFIED_SOURCE_PACK_REBUILT",
+  "source_pack_id": "source-pack-ra-9514-rirr",
+  "document": {
+    "document_id": "RA9514_RIRR_2019",
+    "document_code": "RA 9514",
+    "source_family": "RA 9514 2019 Revised IRR",
+    "document_version_date_or_edition": "2019 Revised IRR",
+    "relative_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+    "sha256": "ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+    "pdf_page_count": 448,
+    "source_hierarchy_tier": 1,
+    "source_pack_repair_note": "2026-05-09 repair replaced corrupted BP 344 chunks with RA 9514 Rule 10 BFP 2019 RIRR chunks."
+  },
+  "claims": [
+    {
+      "claim_id": "ra9514-egress-c1",
+      "claim_text": "Buildings designed for human occupancy require exits sufficient for prompt and safe escape.",
+      "claim_class": "LEGAL_SCOPE",
+      "article_location": "The life-safety premise",
+      "locator": "Rule 10 / Division 2 / General Requirements / PDF p.89",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "ra9514-egress-q1"
+      ],
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "ra9514-egress-c2",
+      "claim_text": "General means-of-egress width must not be less than 915 mm unless occupancy divisions allow otherwise.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "Width and number are separate checks",
+      "locator": "Rule 10 / Division 2 / Section 10.2.5.2(F) / PDF p.95",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "ra9514-egress-q2"
+      ],
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "ra9514-egress-c3",
+      "claim_text": "Number of means of egress must not be less than two, with thresholds of three for occupant load over 500 to 1000 and four over 1000.",
+      "claim_class": "LEGAL_DIMENSION",
+      "article_location": "Load threshold trap",
+      "locator": "Rule 10 / Division 2 / Section 10.2.5.2(G) / PDF p.95",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt",
+      "status": "SUPPORTED",
+      "linked_question_ids": [
+        "ra9514-egress-q3"
+      ],
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    },
+    {
+      "claim_id": "ra9514-egress-c4",
+      "claim_text": "Means of egress illumination must be continuous and not less than 10.7 lux at required points.",
+      "claim_class": "TECHNICAL_STANDARD",
+      "article_location": "Illumination check",
+      "locator": "Rule 10 / Division 2 / Section 10.2.5.11 / PDF p.113",
+      "extraction_status": "FOUND_VERBATIM",
+      "visual_verification": {
+        "performed": false,
+        "by": null,
+        "date": null
+      },
+      "conflict_class": "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt",
+      "status": "SUPPORTED",
+      "linked_question_ids": [],
+      "notes": "",
+      "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION"
+    }
+  ],
+  "sme_review": {
+    "status": "llm_council_complete_for_calibration",
+    "reviewer_id": "llm_council_claude_opencode_commandcode",
+    "date": "2026-05-09T07:39:33Z",
+    "notes": "LLM council SME review complete for calibration artifacts. Direct publication remains held pending licensed-human SME clearance, source/provenance reconciliation, and roundtrip conversion.",
+    "council_review_files": [
+      "council-reviews/2026-05-09-sme-risk-review/01-claude-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/02-opencode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/03-commandcode-sme-review.md",
+      "council-reviews/2026-05-09-sme-risk-review/04-sme-council-synthesis.md"
+    ],
+    "publication_boundary": "HOLD_FOR_DIRECT_PUBLICATION; LLM SME council is calibration review, not learner-facing release approval.",
+    "source_reconciliation_closeout_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_notes": "Official/cited source anchors repaired for calibration; direct publication remains held for licensed-human SME clearance and roundtrip conversion."
+  }
+}

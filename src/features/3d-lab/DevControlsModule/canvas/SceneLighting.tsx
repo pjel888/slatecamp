@@ -4,6 +4,8 @@
 // ─── Self-contained architectural studio lighting ──────────────────────────
 // Does NOT use shared StudioLighting. Custom rig for site development scene.
 
+import { SCENE_COLORS } from '@/features/3d-lab/constants/scene-colors'
+
 export function SceneLighting() {
   return (
     <>
@@ -24,9 +26,9 @@ export function SceneLighting() {
         color="#E6EFFF"
       />
 
-      {/* Hemisphere — subtle sky/ground tint for natural feel */}
+      {/* Hemisphere — neutral sky/ground tint for the white viewport */}
       <hemisphereLight
-        args={['#E8F0FF', '#D4CFC4', 0.2]}
+        args={[SCENE_COLORS.skyWhite, SCENE_COLORS.groundNeutral, 0.2]}
       />
     </>
   )

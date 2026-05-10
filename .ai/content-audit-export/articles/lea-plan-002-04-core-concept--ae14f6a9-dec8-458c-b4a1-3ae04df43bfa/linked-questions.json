@@ -1,9 +1,60 @@
 {
   "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:57e2409ebfc9c5ca7f4f6c393dab4d8040867eddd53b49a2b98fb23c4b4078bb",
+  "linked_questions_hash": "sha256:6e5d536b46678d9608f470569901bbc9004ba28c11b4f93fc68ebeb13e1f7445",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "d50e388c-1e82-4df6-a5ce-1f5708819dc4",
+      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
+      "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
+      "text": "How does zoning simultaneously 'enable' and 'restrain' development?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Zoning enables development in designated zones but restrains it everywhere else by specifying which uses are prohibited in which areas"
+        },
+        {
+          "id": "b",
+          "text": "Zoning enables all development equally while restraining environmental damage through pollution controls and other regulatory measures"
+        },
+        {
+          "id": "c",
+          "text": "Zoning restrains development for poor communities while enabling development for wealthy areas only, often through differential zoning laws and incentives"
+        },
+        {
+          "id": "d",
+          "text": "Zoning enables development through building permits but restrains it through architectural design standards that must be adhered to strictly"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not.",
+        "b": "Zoning allocates land use; pollution control is separate regulation (environmental law). Zoning does not control environmental impacts directly.",
+        "c": "Zoning is a neutral regulatory mechanism applicable to all properties. While zoning can have inequitable outcomes (e.g., zoning out affordable housing), that is a policy problem, not the inherent function of zoning.",
+        "d": "Building permits are issued under zoning authority, but they are a separate approval. Design standards are also separate from zoning (though related).",
+        "correct": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not.",
+        "takeaway": "Zoning enables development in designated zones; restrains it in others. This allocation mechanism is zoning's core function."
+      },
+      "explanation": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not. Zoning allocates land use; pollution control is separate regulation (environmental law). Zoning does not control environmental impacts directly. Zoning is a neutral regulatory mechanism applicable to all properties. While zoning can have inequitable outcomes (e.g., zoning out affordable housing), that is a policy problem, not the inherent function of zoning. Building permits are issued under zoning authority, but they are a separate approval. Design standards are also separate from zoning (though related). Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not. Zoning enables development in designated zones; restrains it in others. This allocation mechanism is zoning's core function.",
+      "code_citation": "Zoning principles; RA 7160",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-05-06T11:48:41.007893+00:00",
+      "content_hash": "sha256:e6c5779b9091cf21a38d173e5b643812f7563c089496c1467507e9f356952d45"
+    },
     {
       "question_id": "428e42b4-9c1e-4c80-adfc-20d4504813dd",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
@@ -268,57 +319,6 @@
       "content_hash": "sha256:6d10f95acfa1575f58288bf914946592d0e8a7674f2ad890666e8e43e8ccedd2"
     },
     {
-      "question_id": "d50e388c-1e82-4df6-a5ce-1f5708819dc4",
-      "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
-      "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
-      "text": "How does zoning simultaneously 'enable' and 'restrain' development?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Zoning enables development in designated zones but restrains it everywhere else by specifying which uses are prohibited in which areas"
-        },
-        {
-          "id": "b",
-          "text": "Zoning enables all development equally while restraining environmental damage through pollution controls and other regulatory measures"
-        },
-        {
-          "id": "c",
-          "text": "Zoning restrains development for poor communities while enabling development for wealthy areas only, often through differential zoning laws and incentives"
-        },
-        {
-          "id": "d",
-          "text": "Zoning enables development through building permits but restrains it through architectural design standards that must be adhered to strictly"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not.",
-        "b": "Zoning allocates land use; pollution control is separate regulation (environmental law). Zoning does not control environmental impacts directly.",
-        "c": "Zoning is a neutral regulatory mechanism applicable to all properties. While zoning can have inequitable outcomes (e.g., zoning out affordable housing), that is a policy problem, not the inherent function of zoning.",
-        "d": "Building permits are issued under zoning authority, but they are a separate approval. Design standards are also separate from zoning (though related).",
-        "correct": "Zoning works through inclusion and exclusion. It enables certain uses in designated zones (e.g., 'residential use is permitted here') while prohibiting the same uses elsewhere (e.g., 'residential use is prohibited in the industrial zone'). This dual mechanism guides where development happens and where it does not.",
-        "takeaway": "Zoning enables development in designated zones; restrains it in others. This allocation mechanism is zoning's core function."
-      },
-      "explanation": null,
-      "code_citation": "Zoning principles; RA 7160",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-002-04-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:87ed6f67540942f3b30697dbec2d13b14af0dbad871df661f727395a240cdd2c"
-    },
-    {
       "question_id": "f148bd59-ec01-4e30-a114-3caf969eec40",
       "article_id": "ae14f6a9-dec8-458c-b4a1-3ae04df43bfa",
       "topic_id": "1e9a5807-ce84-402d-8981-6db7dbf0c7a5",
@@ -354,7 +354,7 @@
         "correct": "The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations.",
         "takeaway": "Zoning Ordinance = enforceable legislative act adopted by Sanggunian, implementing the CLUP."
       },
-      "explanation": null,
+      "explanation": "That describes the CLUP (Comprehensive Land Use Plan), not the zoning ordinance. The CLUP is the vision; the ordinance is the law that implements it. The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations. The Planning Office drafts the zoning ordinance, but the Sanggunian must formally adopt it as law. Guidelines alone are not enforceable. DHSUD reviews the ordinance for conformity with national standards, but the ordinance itself is not a construction permit—it sets the rules under which permits are issued. The Zoning Ordinance is a legislative tool adopted by the Sanggunian that translates CLUP decisions into enforceable rules specifying what uses are allowed in each zone, building height limits, setbacks, lot sizes, and other regulations. Zoning Ordinance = enforceable legislative act adopted by Sanggunian, implementing the CLUP.",
       "code_citation": "RA 7160 (Local Government Code); DHSUD Zoning Guidelines",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -366,8 +366,8 @@
       "model_id": "ALE-PLAN-002-04-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2062148efda5e25cfd3edabab0826b70f8efa13693f1277694d88a59ab5859ab"
+      "updated_at": "2026-05-06T11:48:41.801502+00:00",
+      "content_hash": "sha256:1a382da151509c0be604b609df7106ed4cbe89395179644eb13279faee20e612"
     },
     {
       "question_id": "4ba27171-6e13-42f5-b60c-d31ed680d19f",

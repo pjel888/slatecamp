@@ -11,7 +11,7 @@
 | Priority | Task | Status | Acceptance Criteria | Related Files | Notes |
 |----------|------|--------|---------------------|---------------|-------|
 | P0 | Create/restore safe Supabase verification target | In Progress | Local Supabase instance running with verified migration target | `supabase/config.toml`, local Supabase | 2026-05-05 milestone; needs verify |
-| P0 | Replay all 92 migrations on verified target | Todo | All migrations apply cleanly; no errors | `supabase/migrations/` | 2026-05-05 milestone |
+| P0 | Replay all 101 migrations on verified target | Todo | All migrations apply cleanly; no errors | `supabase/migrations/` | 2026-05-05 milestone |
 | P0 | Verify AI audit access-control migration | Todo | Migration `20260505145349` applies correctly | `supabase/migrations/20260505145349_restrict_ai_audit_admin_access.sql` | 2026-05-05 milestone |
 | P0 | Regenerate Supabase types from verified schema | Todo | `src/types/supabase.ts` matches live schema | `src/types/supabase.ts` | Must run after migration replay |
 | P0 | Rerun full validation gate after type regeneration | Todo | `bun run type-check`, `bun run lint`, `bun run test` all pass | `package.json` scripts | 2026-05-05 milestone |

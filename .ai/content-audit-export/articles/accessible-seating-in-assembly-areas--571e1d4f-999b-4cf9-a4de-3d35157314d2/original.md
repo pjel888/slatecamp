@@ -1,4 +1,11 @@
 # Accessible Seating in Assembly Areas
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Accessible Seating in Assembly Areas** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Learning Goal
 After reading this article, you should be able to:
 
@@ -43,7 +50,11 @@ Calculate the number and distribution of accessible wheelchair seating locations
 ---
 
 
-<WikiPartHeader partNumber=1 title="COMPREHENSIVE DATA CHEAT SHEET" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="WikiPartHeader" status="preserved"]
+Extracted summary:
+- Props: partNumber=1, title="COMPREHENSIVE DATA CHEAT SHEET"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## COMPREHENSIVE DATA CHEAT SHEET
 
@@ -57,13 +68,11 @@ Calculate the number and distribution of accessible wheelchair seating locations
 | Old IRR | 301 – 500 seats | 6 spaces | Old BP 344 IRR |
 | Old IRR | > 500 seats | 6 + 1 per 100 seats above 500 | Old BP 344 IRR |
 
-<LawCallout code="bp344" section="Section 11 - Assembly Areas">
-
-
-EXAM NOTE: The 2024 IRR replaces the old tiered table with the flat 3% rule. Exams may ask about EITHER version. Know both.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 11 - Assembly Areas"
+- Text: EXAM NOTE: The 2024 IRR replaces the old tiered table with the flat 3% rule. Exams may ask about EITHER version. Know both.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -74,7 +83,11 @@ EXAM NOTE: The 2024 IRR replaces the old tiered table with the flat 3% rule. Exa
 | Clear footprint (front/rear access) | **900 mm × 1200 mm** | App. D Sec. 4.5 |
 | Surface condition | Clear, firm, level | App. D Sec. 4.5 |
 
-<ArticleMedia id="media-wheelchair-space-allocation-chart" type="diagram" caption="Bar chart comparing old vs. new IRR wheelchair space allocation: Old tiered system (2/4/6/6+per 100) vs. 2024 flat 3% rule. Example walkthrough showing 750-seat cinema: 3% = 22.5 → 23 wheelchair spaces vs. old IRR 8-9 spaces. Each space = 900×1200mm = 1.08m², total 24.84m² dedicated footprint." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-wheelchair-space-allocation-chart", type="diagram", caption="Bar chart comparing old vs. new IRR wheelchair space allocation: Old tiered system (2/4/6/6+per 100) vs. 2024 flat 3% rule. Example walkthrough showing 750-seat cinema: 3% = 22.5 → 23 wheelchair spaces vs. old IRR 8-9 spaces. Each space = 900×1200mm = 1.08m², total 24.84m² dedicated footprint."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 | Handrail height | **750 mm** at front AND sides | App. D Sec. 4.7 |
 | Access to space | Must NOT pass through another WC space | App. D Sec. 4.3 |
 | Location relative to routes | Must adjoin accessible circulation | App. D Sec. 4.4 |
@@ -88,7 +101,11 @@ EXAM NOTE: The 2024 IRR replaces the old tiered table with the flat 3% rule. Exa
 |-------------|-------------|---------|
 | Companion seat | Required in **sports facilities**, adjacent to WC space | App. D Sec. 3.3.a |
 
-<ArticleMedia id="media-sightline-and-handrail-heights" type="diagram" caption="Section view through tiered cinema showing: wheelchair spaces at multiple elevations with unobstructed sightlines (18° max vertical viewing angle), companion seats in same row beside WC spaces, accessible circulation path at rear. Callout detail comparing handrail heights: 750mm AFF for WC seating positions vs. 900mm AFF for stair handrails per BP 344." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-sightline-and-handrail-heights", type="diagram", caption="Section view through tiered cinema showing: wheelchair spaces at multiple elevations with unobstructed sightlines (18° max vertical viewing angle), companion seats in same row beside WC spaces, accessible circulation path at rear. Callout detail comparing handrail heights: 750mm AFF for WC seating positions vs. 900mm AFF for stair handrails per BP 344."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 | Priority waiting seats | **5%** of waiting area seats designated for PWDs | App. D Sec. 18.2.b.iii |
 | General cinemas/theaters | Companion seat strongly implied by dispersal + adjacency rules | — |
 
@@ -100,15 +117,19 @@ EXAM NOTE: The 2024 IRR replaces the old tiered table with the flat 3% rule. Exa
 |---------|----------------------|--------------|------|
 | WC area handrails | **750 mm** AFF | N/A (not in NBC for seating areas) | BP 344 governs |
 
-<ArticleMedia id="media-seating-bowl-dispersion-layout" type="diagram" caption="Plan view of assembly seating bowl showing: wheelchair spaces (900×1200mm) dispersed across left, center, and right sections at multiple rows, companion seats (C) adjacent to each WC space, accessible circulation route (1500mm wide) running along the rear without overlapping WC spaces, handrails at 750mm AFF at front and sides of each WC position." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-seating-bowl-dispersion-layout", type="diagram", caption="Plan view of assembly seating bowl showing: wheelchair spaces (900×1200mm) dispersed across left, center, and right sections at multiple rows, companion seats (C) adjacent to each WC space, accessible circulation route (1500mm wide) running along the rear without overlapping WC spaces, handrails at 750mm AFF at front and sides of each WC position."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 | Stair handrails (accessible) | 900 mm AFF | 800–900 mm AFF (Rule XII) | Both comply at 900 mm |
 | Guard rails where drop > 750 mm | N/A in BP 344 | 1100 mm min (NBC Rule XII) | NBC governs guards |
 
-<LawCallout code="bp344">
-
-Conflict Resolution: BP 344 and PD 1096 may overlap in assembly halls with tiered seating. The more restrictive or more specific provision wins. For accessible handrails in WC seating areas, BP 344's 750 mm is specific and governs. For general stair guards, PD 1096's 1100 mm governs.
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344"
+- Text: Conflict Resolution: BP 344 and PD 1096 may overlap in assembly halls with tiered seating. The more restrictive or more specific provision wins. For accessible handrails in WC seating areas, BP 344's 750 mm is specific and governs. For general stair guards, PD 1096's 1100 mm governs.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -180,7 +201,11 @@ SCREEN
 - WC spaces at **multiple elevations** for unobstructed views
 - Spaces **dispersed** across left, center, and right of seating bowl
 - Not all grouped in one corner (dispersal requirement implied by "adjoin accessible circulation throughout")
-<WikiPartHeader partNumber=2 title="TRAP LEART BOXES" />
+[SLATECAMP_UI_BLOCK:ui_0007 component="WikiPartHeader" status="preserved"]
+Extracted summary:
+- Props: partNumber=2, title="TRAP LEART BOXES"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 - Companion seat is **beside** (same row), not behind or in front
@@ -191,71 +216,61 @@ SCREEN
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #1: "Round Down" Trick
-The exam may present **3% of an odd number** and expect rounding. Always **round UP** to the nearest whole number for accessibility counts. Never round down — that would provide fewer accessible spaces than required.
-- 3% of 750 = 22.5 → **23** (not 22)
-- 3% of 333 = 9.99 → **10** (not 9)
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0008 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #1: "Round Down" Trick The exam may present **3% of an odd number** and expect rounding. Always **round UP** to the nearest whole number for accessibility counts. Never round down — that would provide fewer accessible spaces than required. - 3% of 750 = 22.5 → **23** (not 22) - 3% of 333 = 9.99 → **10** (not 9)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #2: Old vs. New IRR
-Questions may specify "under the 2004 IRR" or "under the current (2024) IRR." Read carefully. If a building was **designed in 2005**, the old tiered table may apply. If it is being designed **today**, the 3% rule applies.
-
-</Callout>
-
----
-
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #3: The 750 mm Handrail Height
-"What is the required handrail height at accessible stairs?" = **900 mm** (BP 344 stair standard)
-"What is the required handrail height at wheelchair seating areas?" = **750 mm** (App. D Sec. 4.7)
-These are DIFFERENT heights for DIFFERENT contexts. The exam loves this distinction.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0009 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #2: Old vs. New IRR Questions may specify "under the 2004 IRR" or "under the current (2024) IRR." Read carefully. If a building was **designed in 2005**, the old tiered table may apply. If it is being designed **today**, the 3% rule applies.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #4: Companion Seats Are Not Always Required
-The **2024 IRR explicitly mandates companion seats in sports facilities** (Sec. 3.3.a). For theaters and cinemas, companion seating is best practice but the explicit mandate is sports-specific. Don't over-generalize.
-
-</Callout>
-
----
-
-<Callout variant="lea-watch" title="Trap Leart">
-
-### 🚨 TRAP LEART #5: Route Overlap
-"The accessible route may pass through wheelchair spaces if the spaces are unoccupied." — **FALSE.** Sec. 4.2 is absolute. The route shall NOT overlap wheelchair seating areas, occupied or not.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0010 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #3: The 750 mm Handrail Height "What is the required handrail height at accessible stairs?" = **900 mm** (BP 344 stair standard) "What is the required handrail height at wheelchair seating areas?" = **750 mm** (App. D Sec. 4.7) These are DIFFERENT heights for DIFFERENT contexts. The exam loves this distinction.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Callout variant="lea-watch" title="Trap Leart">
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #4: Companion Seats Are Not Always Required The **2024 IRR explicitly mandates companion seats in sports facilities** (Sec. 3.3.a). For theaters and cinemas, companion seating is best practice but the explicit mandate is sports-specific. Don't over-generalize.
+[/SLATECAMP_UI_BLOCK]
 
-### 🚨 TRAP LEART #6: 5% Priority ≠ 5% Accessible
-The 5% priority waiting seats are for **waiting areas** (lobbies, queues). They are **separate** from the 3% wheelchair spaces in the seating bowl. Do not conflate the two percentages.
+---
 
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0012 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #5: Route Overlap "The accessible route may pass through wheelchair spaces if the spaces are unoccupied." — **FALSE.** Sec. 4.2 is absolute. The route shall NOT overlap wheelchair seating areas, occupied or not.
+[/SLATECAMP_UI_BLOCK]
+
+---
+
+[SLATECAMP_UI_BLOCK:ui_0013 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: ### 🚨 TRAP LEART #6: 5% Priority ≠ 5% Accessible The 5% priority waiting seats are for **waiting areas** (lobbies, queues). They are **separate** from the 3% wheelchair spaces in the seating bowl. Do not conflate the two percentages.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 ## ACTIVE RECALL DRILL
 
-<Warn>
-
-⚠️ COMMON EXAM MISTAKE: Students frequently confuse the 3% wheelchair space rule (App. D Sec. 4) with the 5% priority waiting seat rule (Sec. 18.2.b.iii). The 3% applies to seating in the assembly bowl. The 5% applies to lobby/waiting-area seats. They are SEPARATE requirements that add together — not interchangeable percentages.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0014 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ COMMON EXAM MISTAKE: Students frequently confuse the 3% wheelchair space rule (App. D Sec. 4) with the 5% priority waiting seat rule (Sec. 18.2.b.iii). The 3% applies to seating in the assembly bowl. The 5% applies to lobby/waiting-area seats. They are SEPARATE requirements that add together — not interchangeable percentages.
+[/SLATECAMP_UI_BLOCK]
 
 *(Cover the answer column, read the question, recall before looking)*
 
@@ -281,11 +296,11 @@ The 5% priority waiting seats are for **waiting areas** (lobbies, queues). They 
 
 ## 60-SECOND BLITZ QUIZ
 
-<ExamTip>
-
-**LEA Tip — Dispersal is implied, not explicit.** The 2024 IRR says wheelchair spaces must "adjoin accessible circulation" (Sec. 4.4). It does NOT explicitly say "disperse throughout the seating bowl." However, exam questions expect dispersal because clustering all spaces in one location violates the implied principle of equal access. If an answer choice says "group all spaces at the back row," it is WRONG.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0015 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Tip — Dispersal is implied, not explicit.** The 2024 IRR says wheelchair spaces must "adjoin accessible circulation" (Sec. 4.4). It does NOT explicitly say "disperse throughout the seating bowl." However, exam questions expect dispersal because clustering all spaces in one location violates the implied principle of equal access. If an answer choice says "group all spaces at the back row," it is WRONG.
+[/SLATECAMP_UI_BLOCK]
 
 *(Read and answer each in under 4 seconds)*
 
@@ -327,7 +342,11 @@ You are now the reviewer. A classmate says:
 2. **All in one row at the back (dispersal failure):** Wheelchair spaces must adjoin accessible circulation throughout the seating bowl, implying dispersal. Clustering all spaces in one location denies PWDs equal choice of seating location. **Violation: App. D Sec. 4.4 + RA 7277 spirit.**
 3. **Accessible corridor passing through WC spaces:** The accessible route SHALL NOT overlap wheelchair seating areas. **Direct violation: App. D Sec. 4.2.**
 4. **Access through adjacent spaces:** If spaces are grouped in a row, accessing an interior space requires passing through the outer spaces. **Violation:
-<WikiPartHeader partNumber=3 title="Cross‑References" />
+[SLATECAMP_UI_BLOCK:ui_0016 component="WikiPartHeader" status="preserved"]
+Extracted summary:
+- Props: partNumber=3, title="Cross‑References"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
  App. D Sec. 4.3.**
 

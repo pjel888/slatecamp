@@ -1,0 +1,101 @@
+{
+  "article_count": 9,
+  "depth_floor_min_words": 904,
+  "articles_below_900_words": [],
+  "content_flags_count": 0,
+  "question_issues_count": 0,
+  "summary_hash_issues_count": 0,
+  "pd1096_q3_correct_option_id": "C",
+  "pd1096_q3_distractor_keys": [
+    "A",
+    "B",
+    "D"
+  ],
+  "pd1096_q3_correct_rationale": "Section 704.1(c) states that eaves over required windows shall not be less than 750 mm from the side and rear property lines.",
+  "pd1096_q3_source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81.",
+  "npcp_source_provenance": {
+    "governing_source_label": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99",
+    "locator_scope": "Section 207.8 for Fixture Unit; Section 311.4 for vent/soil/waste-pipe interchange; Definitions entry for Loop or Circuit Vent.",
+    "local_source_status": "Local raw PDF used for Section 207.8, Section 311.4, and Loop or Circuit Vent locators; learner-facing wording cites the Code and section/definition, not OCR workflow details.",
+    "learner_citation_style": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section/definition, PDF page."
+  },
+  "word_counts": [
+    {
+      "article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+      "words": 904,
+      "method": "wc -w",
+      "regex_words": 944,
+      "candidate_hash": "sha256:c0ef90e3d88ced45e33563dfbfbaec0d85426e18d9c31402f288c664aad4acd7"
+    },
+    {
+      "article_id": "dryrun-05-vitruvius-principles-and-departments",
+      "words": 920,
+      "method": "wc -w",
+      "regex_words": 912,
+      "candidate_hash": "sha256:8656cf9d5f866c418bff47816b68e968c0202d63d312169ca7f3a3e0cadf6c6a"
+    },
+    {
+      "article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+      "words": 925,
+      "method": "wc -w",
+      "regex_words": 934,
+      "candidate_hash": "sha256:c560a1842651d962e95fa2621d88b7fd3694528450449b3631f2601b92ff9e3f"
+    },
+    {
+      "article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "words": 926,
+      "method": "wc -w",
+      "regex_words": 965,
+      "candidate_hash": "sha256:1d4b306a267335074b5b87914cfd83dbbc141a0075d82253230b081555daab94"
+    },
+    {
+      "article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+      "words": 929,
+      "method": "wc -w",
+      "regex_words": 921,
+      "candidate_hash": "sha256:80e733f822e9deb994fedd44582da2fc3ed6774bafdb94e9a2bd50bebeb46d0f"
+    },
+    {
+      "article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "words": 940,
+      "method": "wc -w",
+      "regex_words": 955,
+      "candidate_hash": "sha256:9b4e286bee63efaf11ec68780cc2901f47c4a77ec793df78b2532d32d23199da"
+    },
+    {
+      "article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "words": 942,
+      "method": "wc -w",
+      "regex_words": 949,
+      "candidate_hash": "sha256:136c0a9fac67a1f38786c0ee981a4dac4bc53951a7f1d982357714cc82ecc5dc"
+    },
+    {
+      "article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "words": 944,
+      "method": "wc -w",
+      "regex_words": 942,
+      "candidate_hash": "sha256:2cdc2ed40e8e06f760244189a2f68eb6f5309f69df74e9f6b9d6e921d6fc9848"
+    },
+    {
+      "article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+      "words": 947,
+      "method": "wc -w",
+      "regex_words": 958,
+      "candidate_hash": "sha256:44cc083ba14200dc43012e6f8a54405ce3900e8204b743da7bce4340e02fa540"
+    }
+  ],
+  "updated_at": "2026-05-09T13:29:42Z",
+  "depth_floor_min_words_method": "shell wc -w on generated candidate.md (strict external counter)",
+  "regex_depth_floor_min_words": 912,
+  "regex_word_count_method": "Python regex \\\\b[\\\\w’'-]+\\\\b retained for compatibility with earlier audit counter",
+  "articles_below_900_words_by_wc_w": [],
+  "articles_below_900_words_by_regex": [],
+  "bp220_word_count_reconciliation": {
+    "status": "resolved",
+    "article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+    "wc_words_before": 896,
+    "wc_words_after": 940,
+    "regex_words_after": 955,
+    "note": "Added one source-consistent board-review application paragraph to normalized.md, recomposed candidate.md, and reran diff/validate. No Supabase mutation."
+  }
+}

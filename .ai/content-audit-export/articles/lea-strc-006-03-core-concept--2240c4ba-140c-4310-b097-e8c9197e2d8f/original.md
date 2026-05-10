@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 006 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -11,7 +20,11 @@ By the end of this article, you will be able to:
 A reinforced concrete section can fail in three modes depending on the ratio of tensile reinforcement: balanced (steel and concrete reach their respective ultimate strains simultaneously), underreinforced (steel yields before concrete crushes, allowing warning), and overreinforced (concrete crushes before steel yields, sudden failure with no warning). Understanding these concepts is fundamental to designing safe, ductile structures. The distinctions are based on comparing steel strain and concrete strain at failure using ε_u = 0.003 for concrete and the yield strain of steel (≈ 0.0021 for Grade 60).
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-006-03-core-concept" type="image" caption="Reinforced Concrete Beam — Flexural Behavior Under Bending" description="Cross-section and strain/stress diagram of an RC beam under positive bending: (1) Cross-section showing tension steel (As) at bottom, compression zone at top; (2) Strain distribution (linear, assumed plane sections remain plane); (3) Stress distribution — rectangular stress block (Whitney) for concrete compression, steel stress at yield in tension; (4) Neutral axis depth c, effective depth d, and internal couple jd." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-006-03-core-concept", type="image", caption="Reinforced Concrete Beam — Flexural Behavior Under Bending", description="Cross-section and strain/stress diagram of an RC beam under positive bending: (1) Cross-section showing tension steel (As) at bottom, compression zone at top; (2) Strain distribution (linear, assumed plane sections remain plane); (3) Stress distribution — rectangular stress block (Whitney) for concrete compression, steel stress at yield in tension; (4) Neutral axis depth c, effective depth d, and internal couple jd.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 In a reinforced concrete section under bending, the concrete carries compression in the top fiber while the reinforcing steel carries tension in the bottom. As load increases, both materials strain. The section fails when one material reaches its ultimate strain first.
 
@@ -74,7 +87,11 @@ The PNSC and earthquake-resistant design codes in the Philippines require struct
 
 3. **Neutral Axis Measurement:** After failure, the depth of the compression zone (neutral axis position) can be measured in the failed section. This confirms whether the neutral axis position was consistent with balanced, underreinforced, or overreinforced behavior.
 
-<Tip>Memorize the strain hierarchy: Concrete crushing (0.003) vs. Grade 60 yield (0.0021). If actual steel strain < 0.0021 at failure, the section is overreinforced (bad). If actual steel strain > 0.0021, it is underreinforced or balanced (good). This distinction is the foundation of ductile design.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memorize the strain hierarchy: Concrete crushing (0.003) vs. Grade 60 yield (0.0021). If actual steel strain 0.0021, it is underreinforced or balanced (good). This distinction is the foundation of ductile design.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -82,6 +99,14 @@ See also: **Concrete Materials** (lea-strc-006-01) for f'c and material properti
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={[ "Using 0.003 as the steel crushing strain instead of the concrete crushing strain. The strain 0.003 (3 parts per thousand) is specific to concrete, not steel. Steel at 0.003 strain is well into the plastic range and has long since yielded (at ≈ 0.0021). This confusion breaks strain-compatibility analysis.", "Confusing yield strain with ultimate strain. Steel yield strain ≈ 0.0021; steel ultimate strain is much higher (≈ 0.10 or 10% strain). The balanced section calculation uses _yield_ strain, not ultimate strain. Using the wrong value miscalculates the balanced point.", "Assuming overreinforced sections have no strength advantage. While overreinforced sections are less ductile, they do carry higher loads before failure. However, the lack of warning (brittle failure) makes them unacceptable in code-compliant design, especially in seismic regions.", "Forgetting that ductility (underreinforced sections) is a design requirement, not an option. Code requires ductile behavior to absorb energy and provide warning. Overreinforced design is a violation and may not be approved by authorities." ]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[ \"Using 0.003 as the steel crushing strain instead of the concrete crushing strain. The strain 0.003 (3 parts per thousand) is specific to concrete, not steel. Steel at 0.003 strain is well into the plastic range and has long since yielded (at ≈ 0.0021). This confusion breaks strain-compatibility analysis.\", \"Confusing yield strain with ultimate strain. Steel yield strain ≈ 0.0021; steel ultimate strain is much higher (≈ 0.10 or 10% strain). The balanced section calculation uses _yield_ strain, not ultimate strain. Using the wrong value miscalculates the balanced point.\", \"Assuming overreinforced sections have no strength advantage. While overreinforced sections are less ductile, they do carry higher loads before failure. However, the lack of warning (brittle failure) makes them unacceptable in code-compliant design, especially in seismic regions.\", \"Forgetting that ductility (underreinforced sections) is a design requirement, not an option. Code requires ductile behavior to absorb energy and provide warning. Overreinforced design is a violation and may not be approved by authorities.\" ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

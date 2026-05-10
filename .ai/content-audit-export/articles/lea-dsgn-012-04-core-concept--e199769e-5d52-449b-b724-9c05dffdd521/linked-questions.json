@@ -1,9 +1,59 @@
 {
   "article_id": "e199769e-5d52-449b-b724-9c05dffdd521",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:15ae56c18c2497efebc0cd71af71194cea8240d9de436f1deb9b691e9cf4ccfa",
+  "linked_questions_hash": "sha256:1992d13ecd38a68468115fd086f563a76f871016e36fdc2ad3bdbf33953b7efc",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "67d648d2-38f4-42fd-9389-0397990188e5",
+      "article_id": "e199769e-5d52-449b-b724-9c05dffdd521",
+      "topic_id": "fe5fc056-4059-4339-ac5c-902d070e9048",
+      "text": "A coastal residential site in Batangas is exposed to salt spray and experiences seasonal flooding. Which of the following plant selections would be most appropriate for this environment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Japanese cherry trees, imported ornamental shrubs, and exotic groundcovers, which are not typically suited for saline conditions or flooding"
+        },
+        {
+          "id": "b",
+          "text": "Narra trees, fire tree (Delonix regia), pili, and native salt-tolerant groundcovers"
+        },
+        {
+          "id": "c",
+          "text": "Mango, calamansi, and temperate-zone vegetables, which may not thrive in high salinity or waterlogged soils"
+        },
+        {
+          "id": "d",
+          "text": "Bamboo only; monoculture reduces maintenance but may not provide the necessary ecological diversity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Japanese cherry trees do not thrive in coastal salt spray; exotic species require more maintenance and may fail.",
+        "c": "Mango and calamansi can work, but vegetables are temporary and not suitable for long-term landscaping structure.",
+        "d": "Monoculture creates pest vulnerability and biodiversity loss; diversity is essential.",
+        "correct": "Narra is a native, salt-tolerant Philippine tree. Fire tree thrives in tropical conditions. Pili is native and produces crops. Native salt-tolerant groundcovers (such as Philippine sedge or vetiver) survive coastal exposure. These species reduce irrigation needs, resist local pests, and provide ecological value.",
+        "takeaway": "Select native species adapted to local climate, soil, and hazards (salt spray, flooding). Native plants thrive with minimal input, reducing lifecycle costs and environmental impact."
+      },
+      "explanation": "Japanese cherry trees do not thrive in coastal salt spray; exotic species require more maintenance and may fail. Mango and calamansi can work, but vegetables are temporary and not suitable for long-term landscaping structure. Monoculture creates pest vulnerability and biodiversity loss; diversity is essential. Narra is a native, salt-tolerant Philippine tree. Fire tree thrives in tropical conditions. Pili is native and produces crops. Native salt-tolerant groundcovers (such as Philippine sedge or vetiver) survive coastal exposure. These species reduce irrigation needs, resist local pests, and provide ecological value. Select native species adapted to local climate, soil, and hazards (salt spray, flooding). Native plants thrive with minimal input, reducing lifecycle costs and environmental impact.",
+      "code_citation": "DENR Native Species Guidelines; Philippine Horticultural Society",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-012-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:15.05978+00:00",
+      "updated_at": "2026-05-06T12:49:08.997527+00:00",
+      "content_hash": "sha256:0f2d0e6c2bd24216e4d145be655d14d242470b5c4ded5dbdb480df57d741583c"
+    },
     {
       "question_id": "02655ba6-fc27-42a8-8485-097af580f297",
       "article_id": "e199769e-5d52-449b-b724-9c05dffdd521",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:15.05978+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:92954c5418675d2ffe93391a355f22fd9ccd2407fc80d1de525c71fdfdbb10d4"
-    },
-    {
-      "question_id": "67d648d2-38f4-42fd-9389-0397990188e5",
-      "article_id": "e199769e-5d52-449b-b724-9c05dffdd521",
-      "topic_id": "fe5fc056-4059-4339-ac5c-902d070e9048",
-      "text": "A coastal residential site in Batangas is exposed to salt spray and experiences seasonal flooding. Which of the following plant selections would be most appropriate for this environment?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Japanese cherry trees, imported ornamental shrubs, and exotic groundcovers, which are not typically suited for saline conditions or flooding"
-        },
-        {
-          "id": "b",
-          "text": "Narra trees, fire tree (Delonix regia), pili, and native salt-tolerant groundcovers"
-        },
-        {
-          "id": "c",
-          "text": "Mango, calamansi, and temperate-zone vegetables, which may not thrive in high salinity or waterlogged soils"
-        },
-        {
-          "id": "d",
-          "text": "Bamboo only; monoculture reduces maintenance but may not provide the necessary ecological diversity"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Japanese cherry trees do not thrive in coastal salt spray; exotic species require more maintenance and may fail.",
-        "c": "Mango and calamansi can work, but vegetables are temporary and not suitable for long-term landscaping structure.",
-        "d": "Monoculture creates pest vulnerability and biodiversity loss; diversity is essential.",
-        "correct": "Narra is a native, salt-tolerant Philippine tree. Fire tree thrives in tropical conditions. Pili is native and produces crops. Native salt-tolerant groundcovers (such as Philippine sedge or vetiver) survive coastal exposure. These species reduce irrigation needs, resist local pests, and provide ecological value.",
-        "takeaway": "Select native species adapted to local climate, soil, and hazards (salt spray, flooding). Native plants thrive with minimal input, reducing lifecycle costs and environmental impact."
-      },
-      "explanation": null,
-      "code_citation": "DENR Native Species Guidelines; Philippine Horticultural Society",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-012-04-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:15.05978+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a8635ab3925a93986732a8b06640be1769e6526baf000082ad865c7201856c97"
     },
     {
       "question_id": "3cea18db-aac6-41a1-9fd0-b98592a4d016",

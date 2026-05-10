@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Theo 002 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -5,11 +14,19 @@
 Identify and apply the six basic principles of design — contrast, rhythm, proportion, balance, scale, and character — to architectural composition analysis and explain how each principle shapes spatial perception and formal coherence.
 ## Core Concept
 
-<ArticleMedia id="media-lea-theo-002-02-core-concept" type="image" caption="Six Principles of Design — Visual Reference" description="Six-panel diagram illustrating Ching's design principles: (1) Contrast — light vs dark, solid vs void, vertical vs horizontal; (2) Rhythm — unaccented (equal spacing) vs accented (varied emphasis) repetition; (3) Proportion — golden ratio, 1:2, 3:5 ratios; (4) Balance — symmetrical (axial), asymmetrical (dynamic), and radial (centered) arrangements; (5) Scale — human scale (relative to body) vs visual scale (relative to context); (6) Character — functional, associated, and personal sources. Each panel shows a building example that demonstrates the principle." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-theo-002-02-core-concept", type="image", caption="Six Principles of Design — Visual Reference", description="Six-panel diagram illustrating Ching's design principles: (1) Contrast — light vs dark, solid vs void, vertical vs horizontal; (2) Rhythm — unaccented (equal spacing) vs accented (varied emphasis) repetition; (3) Proportion — golden ratio, 1:2, 3:5 ratios; (4) Balance — symmetrical (axial), asymmetrical (dynamic), and radial (centered) arrangements; (5) Scale — human scale (relative to body) vs visual scale (relative to context); (6) Character — functional, associated, and personal sources. Each panel shows a building example that demonstrates the principle.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 According to Francis D.K. Ching in *Architecture: Form, Space, and Order*, **design principles** are the fundamental rules and relationships that guide how architectural elements are organized. They differ from the basic elements of form (point, line, plane, volume) because they address *how* those elements relate to each other and create visual and spatial meaning.
 
-<Tip>Think of design principles as the **grammar of composition**—they tell you how to arrange basic elements into meaningful, coherent wholes.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Think of design principles as the **grammar of composition**—they tell you how to arrange basic elements into meaningful, coherent wholes.
+[/SLATECAMP_UI_BLOCK]
 
 ### Contrast
 
@@ -19,7 +36,11 @@ According to Francis D.K. Ching in *Architecture: Form, Space, and Order*, **des
 
 **Rhythm** is the repetition of lines, planes, surface treatments, or forms arranged in a regular sequence. Like rhythm in music, architectural rhythm creates patterns that the eye perceives and anticipates. Ching identifies two types: **unaccented rhythm** occurs when identical units repeat at equal intervals (equally spaced windows, regular structural bays, repeated colonnade columns), creating calm, measured progression; **accented rhythm** introduces variation or emphasis at intervals (certain columns emphasized with capitals, certain bays widened, certain windows enlarged), creating visual interest and focal points. The strength of rhythm depends on the regularity of intervals and consistency of the repeated unit.
 
-<Note>The critical distinction: **unaccented rhythm = regular intervals; accented rhythm = variation at intervals**. Without regularity, repetition is chaos, not rhythm.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The critical distinction: **unaccented rhythm = regular intervals; accented rhythm = variation at intervals**. Without regularity, repetition is chaos, not rhythm.
+[/SLATECAMP_UI_BLOCK]
 
 ### Proportion
 
@@ -37,47 +58,76 @@ According to Francis D.K. Ching in *Architecture: Form, Space, and Order*, **des
 
 **Character** is the distinctive quality that identifies a building or space and communicates its identity and purpose. Ching identifies three sources of character: **functional character** derives from the building's purpose and the materials and systems that support that purpose; **associated character** develops from ideas and impressions linked to historical precedent, cultural associations, or symbolic meaning (a pitched roof suggests domestic permanence; arches suggest classical formality); **personal character** reflects individual design expression and the designer's interpretive choices. The strongest architectural work integrates all three—a courthouse functions clearly, carries associations with law and tradition, and expresses individual design vision.
 
-<Warn>The most common mistake: confusing **functional character** (purpose-driven) with **associated character** (culturally linked). A hospital's character comes from clinical function; a pitched roof's character comes from historical domestic tradition—never mix these categories.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The most common mistake: confusing **functional character** (purpose-driven) with **associated character** (culturally linked). A hospital's character comes from clinical function; a pitched roof's character comes from historical domestic tradition—never mix these categories.
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["**Principle**", "**Core Definition**", "**Key Characteristic**", "**LEA Test Indicator**"]} rows={[['["**Contrast**", "Comparison showing differences", "Creates emphasis through opposition", "\\"What makes an element stand out?\\""]', '["**Rhythm**", "Repetition in regular sequence", "Unaccented (regular) or accented (varied)", "\\"Equally spaced windows... repetition\\""]', '["**Proportion**", "Comparison of size, shape, and tone", "Relative and absolute relationships", "\\"Relationship between parts and whole\\""]', '["**Balance**", "Equality in visual weight distribution", "Symmetrical, asymmetrical, or radial", "\\"Equality... distribution of visual weight\\""]', '["**Sclea**", "Feeling of size relative to human and context", "Human sclea and visual sclea", "\\"Grandeur, dignity, monumentality\\""]', '["**Character**", "Distinctive quality identifying purpose", "Functional, associated, personal", "\\"Influenced by purpose of building\\""]']]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"**Principle**\", \"**Core Definition**\", \"**Key Characteristic**\", \"**LEA Test Indicator**\"]}", rows="{[['[\"**Contrast**\", \"Comparison showing differences\", \"Creates emphasis through opposition\", \"\\\\\"What makes an element stand out?\\\\\"\"]', '[\"**Rhythm**\", \"Repetition in regular sequence\", \"Unaccented (regular) or accented (varied)\", \"\\\\\"Equally spaced windows... repetition\\\\\"\"]', '[\"**Proportion**\", \"Comparison of size, shape, and tone\", \"Relative and absolute relationships\", \"\\\\\"Relationship between parts and whole\\\\\"\"]', '[\"**Balance**\", \"Equality in visual weight distribution\", \"Symmetrical, asymmetrical, or radial\", \"\\\\\"Equality... distribution of visual weight\\\\\"\"]', '[\"**Sclea**\", \"Feeling of size relative to human and context\", \"Human sclea and visual sclea\", \"\\\\\"Grandeur, dignity, monumentality\\\\\"\"]', '[\"**Character**\", \"Distinctive quality identifying purpose\", \"Functional, associated, personal\", \"\\\\\"Influenced by purpose of building\\\\\"\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Definition Recognition**
-*Question stem:* "Contrast is best defined as..."
-*Correct answer:* "A comparison showing the differences between two or more elements."
-*Trap:* Confusing contrast with rhythm (both create visual interest, but rhythm repeats while contrast opposes).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Definition Recognition** *Question stem:* "Contrast is best defined as..." *Correct answer:* "A comparison showing the differences between two or more elements." *Trap:* Confusing contrast with rhythm (both create visual interest, but rhythm repeats while contrast opposes).
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Principle Application**
-*Question stem:* "A row of identical columns at equal intervals creates which design principle?"
-*Correct answer:* "Unaccented rhythm."
-*Trap:* Answering "balance" or "proportion"—unaccented rhythm specifically means regular, uniform repetition without variation.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Principle Application** *Question stem:* "A row of identical columns at equal intervals creates which design principle?" *Correct answer:* "Unaccented rhythm." *Trap:* Answering "balance" or "proportion"—unaccented rhythm specifically means regular, uniform repetition without variation.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Character Types**
-*Question stem:* "A building's character derived from its specific function and the systems supporting that function is known as..."
-*Correct answer:* "Functional character."
-*Trap:* Confusing functional character with associated character (which derives from historical or cultural associations).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Character Types** *Question stem:* "A building's character derived from its specific function and the systems supporting that function is known as..." *Correct answer:* "Functional character." *Trap:* Confusing functional character with associated character (which derives from historical or cultural associations).
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 4: Sclea Distinction**
-*Question stem:* "The dimensions and proportions of a doorway relative to the human body exemplify..."
-*Correct answer:* "Human sclea."
-*Trap:* Confusing human sclea with visual sclea (which concerns relative size among elements, not specifically human measurement).</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Sclea Distinction** *Question stem:* "The dimensions and proportions of a doorway relative to the human body exemplify..." *Correct answer:* "Human sclea." *Trap:* Confusing human sclea with visual sclea (which concerns relative size among elements, not specifically human measurement).
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 5: Balance Types**
-*Question stem:* "An arrangement where identical forms flank a central axis is..."
-*Correct answer:* "Symmetrical balance."
-*Trap:* Forgetting that asymmetrical balance still achieves equilibrium, just through unequal distribution.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 5: Balance Types** *Question stem:* "An arrangement where identical forms flank a central axis is..." *Correct answer:* "Symmetrical balance." *Trap:* Forgetting that asymmetrical balance still achieves equilibrium, just through unequal distribution.
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>The six basic principles of design—contrast, rhythm, proportion, balance, sclea, and character—form the foundation of architectural design decisions. The LEA tests these concepts directly through recognition questions, definition items, and applied scenarios asking you to identify which principle governs a design decision or to distinguish between similar concepts.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The six basic principles of design—contrast, rhythm, proportion, balance, sclea, and character—form the foundation of architectural design decisions. The LEA tests these concepts directly through recognition questions, definition items, and applied scenarios asking you to identify which principle governs a design decision or to distinguish between similar concepts.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Confusing Rhythm with Repetition Alone" correction="Students often define rhythm simply as \"repetition.\" Rhythm requires *regular sequence*—random or chaotic repetition is not rhythm. The interval matters. Equally spaced = unaccented rhythm; varying intervals = accented rhythm." context="Ching emphasizes the *regularity* and *perception of pattern*." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Rhythm with Repetition Alone", correction="Students often define rhythm simply as \\", repetition=true, Rhythm=true, requires=true, regular=true, sequence=true, random=true, or=true, chaotic=true, is=true, not=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Treating All Balance as Symmetrical" correction="Many students assume balance always means symmetry. In fact, asymmetrical balance is equally valid and more common in modern architecture. Ching clearly distinguishes three types." context="Memorize that radial balance distributes around a center point (like a rotunda), symmetrical balances across an axis, and asymmetrical balances unequal visual weights." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating All Balance as Symmetrical", correction="Many students assume balance always means symmetry. In fact, asymmetrical balance is equally valid and more common in modern architecture. Ching clearly distinguishes three types.", context="Memorize that radial balance distributes around a center point (like a rotunda), symmetrical balances across an axis, and asymmetrical balances unequal visual weights."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Confusing Sclea with Size. Size and sclea are not identical. A very large building can feel small-sclead if divided into small parts; a small room can feel monumental if proportioned generously. Sclea concerns *perception relative to human measure and context*, not absolute dimensions. This distinction appears frequently on the LEA.", "Misidentifying Proportion as Only Ratio. Proportion is broader than mathematical ratio. While ratios are part of proportion (golden ratio, Fibonacci), Ching defines it as \"the comparison the eye makes between the size, shape, and tone of different elements.\" A building can be proportionally pleasing without following any specific mathematical formula—the eye judges relationships holistically.", "Merging Functional and Associated Character. Students confuse these constantly. Functional character comes from *how the building works*—a hospital's character is shaped by clinical efficiency, circulation systems, and structural needs. Associated character comes from *cultural memory and precedent*—a pitched roof evokes domestic tradition; classical columns evoke formality. Both can exist in one building but derive from different sources.", "Ignoring the Three-Part Character Framework. The LEA specifically tests whether you know that character has three sources. Students who memorize only \"character is identity\" miss questions asking \"which type of character comes from a building's purpose?\" Always link character to one of the three categories: functional (purpose), associated (cultural/historical), or personal (designer's expression)."]} />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing Sclea with Size. Size and sclea are not identical. A very large building can feel small-sclead if divided into small parts; a small room can feel monumental if proportioned generously. Sclea concerns *perception relative to human measure and context*, not absolute dimensions. This distinction appears frequently on the LEA.\", \"Misidentifying Proportion as Only Ratio. Proportion is broader than mathematical ratio. While ratios are part of proportion (golden ratio, Fibonacci), Ching defines it as \\\"the comparison the eye makes between the size, shape, and tone of different elements.\\\" A building can be proportionally pleasing without following any specific mathematical formula—the eye judges relationships holistically.\", \"Merging Functional and Associated Character. Students confuse these constantly. Functional character comes from *how the building works*—a hospital's character is shaped by clinical efficiency, circulation systems, and structural needs. Associated character comes from *cultural memory and precedent*—a pitched roof evokes domestic tradition; classical columns evoke formality. Both can exist in one building but derive from different sources.\", \"Ignoring the Three-Part Character Framework. The LEA specifically tests whether you know that character has three sources. Students who memorize only \\\"character is identity\\\" miss questions asking \\\"which type of character comes from a building's purpose?\\\" Always link character to one of the three categories: functional (purpose), associated (cultural/historical), or personal (designer's expression).\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -110,4 +160,3 @@ According to Francis D.K. Ching in *Architecture: Form, Space, and Order*, **des
 See also within Elements & Principles of Design: **lea-theo-002-01-core-concept**, **lea-theo-002-03-core-concept**, **lea-theo-002-04-core-concept**, **lea-theo-002-05-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

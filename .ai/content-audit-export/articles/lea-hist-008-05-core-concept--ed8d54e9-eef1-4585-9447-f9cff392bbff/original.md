@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Hist 008 05 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,14 +16,26 @@ Identify the defining characteristics of Brutalism — exposed béton brut concr
 **Brutalism** developed in Britain and spread globally in the 1950s–70s as modernism's most uncompromising phase. The term derives from the French **béton brut** (raw concrete), which defines the movement's visual and ethical character: concrete left exposed after formwork removal, showing the imprint of wooden shuttering, aggregate texture, and construction honesty. British architectural critic **Reyner Banham** codified the movement in his 1955 essay "The New Brutalism" (published in The Architectural Review) and later expanded this analysis in his 1966 book *The New Brutalism: Ethic or Aesthetic?*
 
 
-<ArticleMedia id="media-hist-008-05-core-concept" layout="single" type="image" status="placeholder" alt="View of Unité d'Habitation (Marseille, 1947–1952, Le Corbusier), showing the raw exposed concrete (béton brut) surface, rough board-marked texture, and the large-scale pilotis elevating the housing block." caption="Unité d'Habitation — Le Corbusier's Béton Brut" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-008-05-core-concept", layout="single", type="image", status="placeholder", alt="View of Unité d'Habitation (Marseille, 1947–1952, Le Corbusier), showing the raw exposed concrete (béton brut) surface, rough board-marked texture, and the large-scale pilotis elevating the housing block.", caption="Unité d'Habitation — Le Corbusier's Béton Brut", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
-<Tip>Brutalism = béton brut (raw concrete) + massive sculptural forms + structural honesty + utopian social ambition. NOT mere concrete construction—it's a philosophical movement. Key projects: Barbican Estate, Habitat 67, Boston City Hall, National Theatre. Remember: Le Corbusier's Unité d'Habitation (1947–1952) preceded and inspired the movement.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Brutalism = béton brut (raw concrete) + massive sculptural forms + structural honesty + utopian social ambition. NOT mere concrete construction—it's a philosophical movement. Key projects: Barbican Estate, Habitat 67, Boston City Hall, National Theatre. Remember: Le Corbusier's Unité d'Habitation (1947–1952) preceded and inspired the movement.
+[/SLATECAMP_UI_BLOCK]
 
 Brutalists rejected the International Style's glass refinement in favor of massive, sculptural concrete forms. Rather than dematerializing the building through transparency, Brutalism emphasized weight, solidity, and the building's presence as an object. Large cantilevers, fortress-like massing, and bold structural expression dominated. The philosophy held that technology's raw power deserved honest expression without aestheticizing veneers. **Le Corbusier's Unité d'Habitation** (1947–1952, Marseille) preceded and inspired the movement; his invention of the term **béton brut** during its construction became foundational to Brutalism's ethical and material vocabulary. Banham himself acknowledged Le Corbusier's concrete work as a source of inspiration for the movement.
 
-<Note>Brutalism has a strong ethical and social dimension. Architects believed honest material expression and structural clarity would create morally superior architecture. The movement emerged from postwar optimism about solving housing crises, creating better communities, and expressing technological progress through architecture. The formal language is inseparable from the ideology.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Brutalism has a strong ethical and social dimension. Architects believed honest material expression and structural clarity would create morally superior architecture. The movement emerged from postwar optimism about solving housing crises, creating better communities, and expressing technological progress through architecture. The formal language is inseparable from the ideology.
+[/SLATECAMP_UI_BLOCK]
 
 **Paul Rudolph**, **Chamberlin, Powell and Bon**, **Louis Kahn**, and **Moshe Safdie** shaped the movement. **Kahn** pursued a more refined approach, revealing structure's inherent beauty through concrete's form. The **Barbican Estate** (1965–1976, London, **Chamberlin, Powell and Bon**) exemplifies Brutalist urban ambition: a vast residential complex in raw concrete, inward-facing, creating its own defensible community against the chaos of London's postwar streets. The towers rise as monoliths; the pedestrian decks create a second city above street level.
 
@@ -28,35 +49,79 @@ Brutalism's ethical dimension set it apart. Architects believed that honest expr
 
 By the 1980s, Brutalism fell from favor. Concrete deteriorated visibly; maintenance proved expensive; the style's heaviness clashed with postmodern irony. Only in recent years has Brutalism's formal power and social ambition been reassessed and celebrated.
 
-<Warn>Critical: Don't confuse Brutalism with mere concrete construction. Brutalism is a philosophical movement prioritizing structural honesty, material expression, and often utopian urban intention. Also: Kahn's refined approach (Kimbell Art Museum with beautiful proportion and light) differs from Chamberlin/Powell's austere fortress aesthetic (Barbican) and Lasdun's topographical strategy (National Theatre). All are Brutalist but with distinct philosophies. Brutalism is not merely residential—it shaped civic, cultural, and institutional architecture.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Critical: Don't confuse Brutalism with mere concrete construction. Brutalism is a philosophical movement prioritizing structural honesty, material expression, and often utopian urban intention. Also: Kahn's refined approach (Kimbell Art Museum with beautiful proportion and light) differs from Chamberlin/Powell's austere fortress aesthetic (Barbican) and Lasdun's topographical strategy (National Theatre). All are Brutalist but with distinct philosophies. Brutalism is not merely residential—it sha
+[/SLATECAMP_UI_BLOCK]
 
 
-<ArticleMedia id="media-hist-008-05-core-concept" layout="single" type="image" status="placeholder" alt="View of Boston City Hall (1963–1968, Kallmann McKinnell & Knowles), showing the massive sculptural concrete forms, cantilevered upper floors, expressed structural grid, and the raw materiality of béton brut." caption="Boston City Hall — Brutalist Civic Monument" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-008-05-core-concept", layout="single", type="image", status="placeholder", alt="View of Boston City Hall (1963–1968, Kallmann McKinnell & Knowles), showing the massive sculptural concrete forms, cantilevered upper floors, expressed structural grid, and the raw materiality of béton brut.", caption="Boston City Hall — Brutalist Civic Monument", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Building", "Architect(s)", "Year", "Location", "Key Features"]} rows={[["Barbican Estate", "Chamberlin, Powell and Bon", "1965–1976", "London", "Raw concrete towers; defensive urban fortress; pedestrian decks; inward-facing community"], ["Habitat 67", "Moshe Safdie", "1967", "Montreal", "Stacked modular units; prefabrication; interlocking cubes; concrete; dynamic massing"], ["Boston City Hall", "Kallmann, McKinnell &amp; Knowles", "1968", "Boston", "Massive stepped pyramid; raw concrete; dramatic cantilever; public plaza beneath"], ["National Theatre", "Denys Lasdun", "1963–1976", "London", "Layered terraces; raw concrete; monumental urban presence; cultural institution"], ["Brunel University", "Richard Sheppard", "1967", "London", "Residential cluster; modular concrete units; sculptural forms"], ["Kimbell Art Museum", "Louis Kahn", "1972", "Fort Worth, Texas", "Concrete barrel vaults; cycloid sections; refined Brutalist expressionism"]]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Building\", \"Architect(s)\", \"Year\", \"Location\", \"Key Features\"]}", rows="{[[\"Barbican Estate\", \"Chamberlin, Powell and Bon\", \"1965–1976\", \"London\", \"Raw concrete towers; defensive urban fortress; pedestrian decks; inward-facing community\"], [\"Habitat 67\", \"Moshe Safdie\", \"1967\", \"Montreal\", \"Stacked modular units; prefabrication; interlocking cubes; concrete; dynamic massing\"], [\"Boston City Hall\", \"Kallmann, McKinnell &amp; Knowles\", \"1968\", \"Boston\", \"Massive stepped pyramid; raw concrete; dramatic cantilever; public plaza beneath\"], [\"National Theatre\", \"Denys Lasdun\", \"1963–1976\", \"London\", \"Layered terraces; raw concrete; monumental urban presence; cultural institution\"], [\"Brunel University\", \"Richard Sheppard\", \"1967\", \"London\", \"Residential cluster; modular concrete units; sculptural forms\"], [\"Kimbell Art Museum\", \"Louis Kahn\", \"1972\", \"Fort Worth, Texas\", \"Concrete barrel vaults; cycloid sections; refined Brutalist expressionism\"]]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Material identification.** "Which movement is defined by **béton brut** (raw concrete) and rejects refinement in favor of structural honesty?" Students must recognize that béton brut is not merely a material choice but an ethical stance.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Material identification.** "Which movement is defined by **béton brut** (raw concrete) and rejects refinement in favor of structural honesty?" Students must recognize that béton brut is not merely a material choice but an ethical stance.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Building-movement matching.** "Which of these buildings exemplifies Brutalism and why: **Boston City Hall**, **Seagram Building**, or **Habitat 67**?" Recognition of raw concrete, massive forms, and structural drama identifies **Habitat 67** and **Boston City Hall**.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Building-movement matching.** "Which of these buildings exemplifies Brutalism and why: **Boston City Hall**, **Seagram Building**, or **Habitat 67**?" Recognition of raw concrete, massive forms, and structural drama identifies **Habitat 67** and **Boston City Hall**.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Architectural language.** "Describe the differences between International Style's glass curtain wall and Brutalism's concrete massing." Students articulate the rejection of dematerialization in favor of material presence and weight.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Architectural language.** "Describe the differences between International Style's glass curtain wall and Brutalism's concrete massing." Students articulate the rejection of dematerialization in favor of material presence and weight.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 4: Urban intention.** "The **Barbican Estate** creates an inward-facing community through Brutalist form. What is the architectural strategy?" Students identify how massive concrete walls and elevated pedestrian decks defend and enclose the community. Similarly, "The **National Theatre's** terraced form exemplifies 'architecture as urban landscape.' How does structural expression define public space?" Students recognize how Lasdun's layered concrete volumes create both monumentality and accessibility.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0010 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 4: Urban intention.** "The **Barbican Estate** creates an inward-facing community through Brutalist form. What is the architectural strategy?" Students identify how massive concrete walls and elevated pedestrian decks defend and enclose the community. Similarly, "The **National Theatre's** terraced form exemplifies 'architecture as urban landscape.' How does structural expression define public space?" Students recognize how Lasdun's layered concrete volumes create both monumentality an
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>**Brutalism** dominates the LEA's post-war modernism section. The exam tests whether you recognize béton brut (raw concrete) as the movement's defining material, can identify canonical Brutalist buildings, and understand why this movement emerged as modernism's most austere expression.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0011 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Brutalism** dominates the LEA's post-war modernism section. The exam tests whether you recognize béton brut (raw concrete) as the movement's defining material, can identify canonical Brutalist buildings, and understand why this movement emerged as modernism's most austere expression.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Confusing Brutalism with mere concrete construction" correction="Any exposed concrete building is NOT necessarily Brutalist. Brutalism is a philosophical movement prioritizing honest material expression, structural drama, and often utopian urban intention. The movement has an ethical stance, not just a material choice." context="Test questions distinguish between Brutalism as a movement and concrete construction as a technique. Understanding the ideology is essential." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Confusing Brutalism with mere concrete construction", correction="Any exposed concrete building is NOT necessarily Brutalist. Brutalism is a philosophical movement prioritizing honest material expression, structural drama, and often utopian urban intention. The movement has an ethical stance, not just a material choice.", context="Test questions distinguish between Brutalism as a movement and concrete construction as a technique. Understanding the ideology is essential."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Treating Brutalism as purely residential" correction="While the Barbican and Habitat 67 are iconic residential projects, Brutalism shaped institutional, civic, and commercial architecture equally. Boston City Hall and Kimbell Art Museum demonstrate Brutalism's public, governmental, and cultural scope." context="Recognizing Brutalist examples across building types is essential for comprehensive understanding and visual identification questions." />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Brutalism as purely residential", correction="While the Barbican and Habitat 67 are iconic residential projects, Brutalism shaped institutional, civic, and commercial architecture equally. Boston City Hall and Kimbell Art Museum demonstrate Brutalism's public, governmental, and cultural scope.", context="Recognizing Brutalist examples across building types is essential for comprehensive understanding and visual identification questions."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Overlooking different Brutalist philosophies: Kahn sought beauty through careful proportion and light; Chamberlin/Powell pursued austere, defensive urban aesthetics; Lasdun created dynamic topographies through layered terraces. All are Brutalist but with distinct approaches.", "Neglecting the social and utopian dimension: The movement emerged from postwar optimism about solving housing crises, creating better communities, and expressing technological progress honestly. Form and ideology are inseparable.", "Confusing Brutalism's decline with failure: By the 1980s, concrete deteriorated and tastes changed, but this was cultural shift, not architectural failure. Recent reassessment celebrates Brutalism's formal power and social ambition."]} />
+[SLATECAMP_UI_BLOCK:ui_0014 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Overlooking different Brutalist philosophies: Kahn sought beauty through careful proportion and light; Chamberlin/Powell pursued austere, defensive urban aesthetics; Lasdun created dynamic topographies through layered terraces. All are Brutalist but with distinct approaches.\", \"Neglecting the social and utopian dimension: The movement emerged from postwar optimism about solving housing crises, creating better communities, and expressing technological progress honestly. Form and ideology are inseparable.\", \"Confusing Brutalism's decline with failure: By the 1980s, concrete deteriorated and tastes changed, but this was cultural shift, not architectural failure. Recent reassessment celebrates Brutalism's formal power and social ambition.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 - **Béton brut**: Raw concrete left unfinished after formwork removal, showing aggregate, shuttering marks, and inherent texture; the defining material of Brutalism.
@@ -70,11 +135,14 @@ By the 1980s, Brutalism fell from favor. Concrete deteriorated visibly; maintena
 - **Prefabrication**: Manufacturing building components off-site for assembly; central to **Habitat 67's** efficiency and repeatability.
 - **Utopian urbanism**: Architectural design pursuing idealized, improved social conditions through form and planning.
 
-<ArticleMedia id="media-hist-008-05-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Timeline of Brutalism (1950s–1970s) showing the evolution from Le Corbusier's Unité d'Habitation (1947–1952) through the Smithsons' Hunstanton School, the Barbican Centre, and Boston City Hall, with the signature béton brut aesthetic." caption="Brutalism — Timeline of Key Works" suggestedAsset="Timeline diagram" placementIntent="Timeline diagram for architectural period" />
+[SLATECAMP_UI_BLOCK:ui_0015 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-008-05-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Timeline of Brutalism (1950s–1970s) showing the evolution from Le Corbusier's Unité d'Habitation (1947–1952) through the Smithsons' Hunstanton School, the Barbican Centre, and Boston City Hall, with the signature béton brut aesthetic.", caption="Brutalism — Timeline of Key Works", suggestedAsset="Timeline diagram", placementIntent="Timeline diagram for architectural period"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also within Modern & Contemporary Architecture: **lea-hist-008-01-core-concept**, **lea-hist-008-02-core-concept**, **lea-hist-008-03a-core-concept**, **lea-hist-008-03b-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
-

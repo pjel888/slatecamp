@@ -1,0 +1,39 @@
+{
+  "ticket_type": "NEW_ARTICLE_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "ticket_id": "new-article-bp220-parks-playgrounds-road-pavement",
+  "label": "BP 220 Parks, Playgrounds, and Road Pavement",
+  "dry_article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+  "proposed_slug": "bp-220-parks-playgrounds-and-road-pavement",
+  "decision": "NEW_ARTICLE_TICKET",
+  "basis": "Fresh mirror found BP 220 housing/density articles, but no exact parks/playgrounds allocation plus road pavement construction target.",
+  "closest_existing": [
+    {
+      "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
+      "slug": "lea-dsgn-003-04-core-concept",
+      "title": "Senior Living and Low-Income Housing",
+      "note": "BP 220 overlap but different design/housing focus"
+    },
+    {
+      "article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
+      "slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
+      "title": "Philippine Housing Law Framework",
+      "note": "framework overview, not parks/road-pavement details"
+    }
+  ],
+  "status": "ticket_only_no_supabase_insert",
+  "dry_run_folder": "bp-220-parks-playgrounds-and-road-pavement--dryrun-07-bp220-parks-playgrounds-road-pavement",
+  "dry_run_article_metadata": {
+    "article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+    "title": "BP 220 Parks, Playgrounds, and Road Pavement",
+    "slug": "bp-220-parks-playgrounds-and-road-pavement",
+    "subject_label": "Planning / Housing / Building Laws",
+    "difficulty_label": "Calibration exemplar"
+  },
+  "candidate_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/bp-220-parks-playgrounds-and-road-pavement--dryrun-07-bp220-parks-playgrounds-road-pavement/candidate.md",
+  "normalized_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/bp-220-parks-playgrounds-and-road-pavement--dryrun-07-bp220-parks-playgrounds-road-pavement/normalized.md",
+  "candidate_hash": "sha256:9b4e286bee63efaf11ec68780cc2901f47c4a77ec793df78b2532d32d23199da",
+  "candidate_word_count": 925,
+  "linked_question_count": 3,
+  "gate_lock": "No insert/apply command is authorized by this ticket."
+}

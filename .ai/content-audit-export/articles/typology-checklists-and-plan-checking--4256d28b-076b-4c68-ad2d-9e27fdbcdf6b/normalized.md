@@ -472,4 +472,3 @@ Extracted summary:
 ## Cross‑References
 
 **Building Permit Process**, **Legal Liability And Enforcement Workflow**, **Top 50 Traps 2024 Irr**, **Rule I General Provisions**
-

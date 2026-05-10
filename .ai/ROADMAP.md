@@ -39,7 +39,7 @@ SlateCamp is a **pre-launch MVP** with broad implemented functionality. All 27 d
 **Acceptance criteria:**
 - [ ] Safe Supabase verification target created/restored
 - [ ] `supabase/config.toml` added/restored for local Supabase workflow
-- [ ] All 92 active migrations replayed on verified target
+- [ ] All 101 active migrations replayed on verified target
 - [ ] AI audit access-control migration verified (`20260505145349_restrict_ai_audit_admin_access.sql`)
 - [ ] Supabase types regenerated from verified schema (`src/types/supabase.ts`)
 - [ ] Full validation gate re-run after type regeneration
@@ -95,7 +95,7 @@ SlateCamp is a **pre-launch MVP** with broad implemented functionality. All 27 d
 ### NX-2: Route Surface Cutline Decision
 
 **Goal:** Decide which optional/internal routes stay visible for launch.
-**Why it matters:** 105+ routes include CEO, developer, pods, DAE, studio, professional, results-day surfaces that may not be launch-critical.
+**Why it matters:** 128 routes include CEO, developer, pods, DAE, studio, professional, results-day surfaces that may not be launch-critical.
 **Acceptance criteria:**
 - [ ] Founder decision on each optional surface (keep/hide/delete)
 - [ ] Sidebar navigation updated to match decision

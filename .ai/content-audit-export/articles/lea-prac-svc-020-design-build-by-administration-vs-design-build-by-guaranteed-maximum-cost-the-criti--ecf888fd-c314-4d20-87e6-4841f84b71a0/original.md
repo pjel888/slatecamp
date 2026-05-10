@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Svc 020 Design Build By Administration Vs Design Build By Guaranteed Maximum Cost The Critical Distinction** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Design-Build by Administration vs. Design-Build by Guaranteed Maximum Cost: The Critical Distinction
 
 ## Learning Goal
@@ -14,7 +21,11 @@ After studying this article, you should be able to:
 
 In Design-Build by Administration, the architect provides comprehensive services including all regular design phases and construction management. The architect organizes and hires construction personnel, negotiates with contractors, procures materials and equipment, maintains accounts, and manages all business transactions related to project construction.
 
-<ArticleMedia id="media-lea-prac-svc-020-design-build-by-adminis" type="image" caption="Design-Build by Administration vs. Guaranteed Maximum Cost — Risk Comparison" description="Comparison diagram contrasting two Design-Build models: Administration (architect manages construction, no cost guarantee, % of PCC fee, collaborative risk) vs. Guaranteed Maximum Cost (cost guaranteed ≤10% over estimate, architect bears financial risk, savings shared equally 50/50, 10% of PCC fee). Shows cost control mechanisms and liability thresholds for each." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-svc-020-design-build-by-adminis", type="image", caption="Design-Build by Administration vs. Guaranteed Maximum Cost — Risk Comparison", description="Comparison diagram contrasting two Design-Build models: Administration (architect manages construction, no cost guarantee, % of PCC fee, collaborative risk) vs. Guaranteed Maximum Cost (cost guaranteed ≤10% over estimate, architect bears financial risk, savings shared equally 50/50, 10% of PCC fee). Shows cost control mechanisms and liability thresholds for each.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 This model places responsibility for technical excellence and professional coordination entirely on the architect.
 
@@ -52,22 +63,29 @@ Both models require clear contractual definition of scope, responsibilities, cha
 
 Successful Design-Build relationships, regardless of model, depend on transparency about cost factors, clear communication about design implications, and shared commitment to project success. The contractual structure provides the framework, but professional integrity and collaborative problem-solving determine actual outcomes.
 
-<SPP207RefServices />
+[SLATECAMP_UI_BLOCK:ui_0002 component="SPP207RefServices" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ProcessFlow>
-<ol>
-  <li><strong>Project Definition</strong> — Problem identification</li>
-  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
-  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
-  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
-  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
-  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
-</ol>
-</ProcessFlow>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
+[/SLATECAMP_UI_BLOCK]
 
-<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -84,4 +102,8 @@ Successful Design-Build relationships, regardless of model, depend on transparen
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

@@ -1,0 +1,508 @@
+{
+  "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:d441da4874b42dbdf5f16f3e9ed8c598915cc7e34b7897f1b014562c2a025a0b",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "14922cc7-cfd5-4e61-a675-ed77a34e05d1",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "Service loads on a beam are D = 80 kN (dead) and L = 60 kN (live). Calculate the factored load for LRFD design using U = 1.2D + 1.6L.",
+      "options": [
+        {
+          "id": "a",
+          "text": "U = 80 + 60 = 140 kN, which is a simple summation of loads without factoring, often used for preliminary checks"
+        },
+        {
+          "id": "b",
+          "text": "U = 1.2(80) + 1.6(60) = 96 + 96 = 192 kN"
+        },
+        {
+          "id": "c",
+          "text": "U = 1.4(80 + 60) = 196 kN, applying a uniform factor for simplicity in some design contexts"
+        },
+        {
+          "id": "d",
+          "text": "U = 0.9D + 1.3L = 72 + 78 = 150 kN, which is an alternative load combination sometimes used for specific load cases"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "U = 1.2D + 1.6L = 1.2(80) + 1.6(60) = 96 + 96 = 192 kN. The load factors are applied to service loads, not the sum. The modern standard (NSCP 2015) uses 1.2 for dead load and 1.6 for live load.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b89e9951d84e2706fe45ba97bd67c9ea74b25b210095b545c3be012dd4c7b2f0"
+    },
+    {
+      "question_id": "2f5f2514-fb02-4cd3-ad9a-24220e93d9d9",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "What do resistance factors (φ) in LRFD represent, and why is φ = 0.90 (flexure) higher than φ = 0.70 (tied column)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ factors reduce nominal capacities; flexure is ductile and gives warning (higher φ), while tied columns are brittle (lower φ)"
+        },
+        {
+          "id": "b",
+          "text": "φ factors increase nominal capacities; tied columns are always weaker than beams (lower φ), which is a misunderstanding of their purpose"
+        },
+        {
+          "id": "c",
+          "text": "φ factors are independent of failure mode; they apply equally to all limit states, which is not accurate"
+        },
+        {
+          "id": "d",
+          "text": "φ = 0.90 means 90% capacity is available; φ = 0.70 means only 70% is available, independent of ductility, which oversimplifies the concept"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "φ factors (0 < φ ≤ 1) reduce nominal capacities to account for uncertainty in material properties and resistance prediction. Flexure in well-reinforced beams is ductile: the beam bends and warns before collapse, justifying higher φ = 0.90 (10% reduction). Tied columns are more brittle: failure is sudden without warning, justifying lower φ = 0.70 (30% reduction). The factor explicitly penalizes brittle modes.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e2c334552e5315159888a46eb4c5b9765e5ec698e3bf9ef5da237dc3044508af"
+    },
+    {
+      "question_id": "290e8c56-bb35-47ea-a100-c08c6b380d11",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "A concrete beam in ASD is found to have an actual bending stress f = 0.50Fy. In LRFD, the same beam experiences a factored moment Mu = 0.60φMn (where Mn is the nominal moment capacity). Which statement correctly interprets the comparison?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The ASD beam is less stressed (0.50Fy vs. 0.60Fy) and therefore has more reserve capacity than the LRFD beam"
+        },
+        {
+          "id": "b",
+          "text": "The designs are not directly comparable because ASD uses unfactored loads and allowable stresses, while LRFD uses factored loads and factored capacities. Each method accounts for safety differently."
+        },
+        {
+          "id": "c",
+          "text": "The LRFD beam is less stressed because 0.60φMn < 0.50Fy in all cases, which indicates a lower stress level under the same conditions"
+        },
+        {
+          "id": "d",
+          "text": "The ASD beam is stronger because it uses Fy as the reference, while LRFD uses a reduced capacity φMn, which inherently limits the design strength"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Direct numerical comparison across methods is misleading. ASD's f = 0.50Fy is a check on actual stress from service loads; LRFD's Mu = 0.60φMn is a check on factored demand from amplified loads against reduced capacity. Safety in ASD comes from low working stresses; safety in LRFD comes from load amplification and capacity reduction. The two ratios (0.50Fy vs. 0.60φMn) are not comparable without understanding the underlying loads and capacities. Both beams are, by definition, adequate if each passes its respective code check.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:08463a3b1a9290d6bf0dc643f44b0331f8b99530c64baae2f05981a79c8f77cd"
+    },
+    {
+      "question_id": "7b243d75-c79d-4c53-a8c1-66cab3379bf4",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "What do load factors in LRFD represent, and why are live load factors typically higher than dead load factors?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Load factors account for safety; dead loads are certain, live loads are uncertain, so live load factors are higher to reflect greater variability"
+        },
+        {
+          "id": "b",
+          "text": "Load factors increase the apparent size of the structure; higher live load factors make the design more economical by reducing material costs"
+        },
+        {
+          "id": "c",
+          "text": "Dead loads must equal live loads for equilibrium, so the factors balance this requirement to ensure structural stability"
+        },
+        {
+          "id": "d",
+          "text": "Load factors are arbitrary and set by code; they have no physical meaning but ensure compliance with safety standards"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "LRFD load factors reflect the statistical variability and uncertainty in loads. Dead loads (self-weight) are well-known and certain; live loads (occupancy, snow, wind) are variable. The modern factor U = 1.2D + 1.6L reflects this: 1.2 for dead (lower uncertainty), 1.6 for live (higher uncertainty). The higher live load factor is the price of uncertainty.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0b4aeda096be853fdb09c41d7775743154509855a4ce780ca30fc3c5aa52f6fc"
+    },
+    {
+      "question_id": "850378e9-4dd3-4d88-908e-983f10ead976",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "In LRFD, a column's nominal axial capacity is Pn = 500 kN. The resistance factor is φ = 0.70. The factored load from loads is Pu = 320 kN. Is the column adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No; 320 kN exceeds 500 kN without the φ factor"
+        },
+        {
+          "id": "b",
+          "text": "Yes; 320 kN is less than 500 kN, the nominal capacity"
+        },
+        {
+          "id": "c",
+          "text": "Yes; the design capacity φPn = 0.70(500) = 350 kN, and Pu = 320 ≤ 350 kN"
+        },
+        {
+          "id": "d",
+          "text": "No; the φ factor means only 70% of the material can be used, so Pu = 320 exceeds 70% of nominal"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "LRFD check: Pu ≤ φPn. The design (factored) capacity is φPn = 0.70 × 500 = 350 kN. Since Pu = 320 ≤ 350 kN, the column is adequate. The φ factor reduces the nominal capacity to account for uncertainty; the check uses the reduced (factored) capacity, not the nominal.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d5047bc5c660a2368273f19dc26edb1c7532ab091475208575e1f875dc3d2717"
+    },
+    {
+      "question_id": "773e71c5-d2c8-4e8f-8109-1575dfc9b17d",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "A designer checks a beam and finds: f = 120 MPa, and Fa (allowable stress in bending) = 164 MPa. What design method is being used, and is the beam adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "LRFD; the beam is adequate because the actual stress is less than the allowable"
+        },
+        {
+          "id": "b",
+          "text": "ASD; the beam is adequate because f ≤ Fa (120 ≤ 164)"
+        },
+        {
+          "id": "c",
+          "text": "ASD; the beam is not adequate because φ factor reduction has not been applied"
+        },
+        {
+          "id": "d",
+          "text": "LRFD; the beam must be checked against Mu ≤ φMn, not stress comparison"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "This is ASD. The check compares actual stress f against an allowable stress Fa. Since f = 120 ≤ Fa = 164, the beam is adequate (the ratio is 120/164 ≈ 0.73, well within allowable). ASD does not use φ factors; the safety margin is implicit in the choice of Fa as a fraction of Fy.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5084fb900cc4b47d624bc2ee1f53265ee64cca77b771f437d04d7a27b4a4cf72"
+    },
+    {
+      "question_id": "12b7dbc4-e79a-4624-8534-2b0feeadbf6d",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "Which statement best describes the fundamental difference between ASD (Allowable Stress Design) and LRFD (Load and Resistance Factor Design)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ASD is for steel; LRFD is for concrete, reflecting a common misconception about their applications"
+        },
+        {
+          "id": "b",
+          "text": "ASD uses unfactored (service) loads with allowable stresses; LRFD uses factored loads with factored capacities"
+        },
+        {
+          "id": "c",
+          "text": "ASD is older and less accurate than LRFD, though both are used in modern engineering practice"
+        },
+        {
+          "id": "d",
+          "text": "LRFD permits plastic deformation; ASD forbids it entirely, highlighting a key difference in design philosophy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "This is the core distinction. ASD: actual stress ≤ allowable stress (unfactored load, elastic region). LRFD: factored demand ≤ factored capacity (amplified load, controlled plasticity allowed). Both methods aim for safety; the path differs.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1d692e58a2f29fbe52408e2526b9c6dd9bb595f3421071617ce998b962ab9035"
+    },
+    {
+      "question_id": "1b1f0cff-02cb-4173-9ef2-f2dece83f2cc",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "In Allowable Stress Design (ASD), why are allowable stresses (such as 0.60Fy or 0.66Fy) kept well below the yield strength?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To prevent permanent deformation and ensure the material remains elastic"
+        },
+        {
+          "id": "b",
+          "text": "Because allowable stresses equal the ultimate strength divided by a safety factor, which is a standard practice in structural engineering"
+        },
+        {
+          "id": "c",
+          "text": "To simplify calculations and avoid using factored loads, which can complicate the design process"
+        },
+        {
+          "id": "d",
+          "text": "Because lower stresses reduce the cost of materials, making projects more economically viable"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Allowable stresses are set as fractions of Fy (e.g., 0.60Fy for axial compression, 0.66Fy for bending) to ensure the material operates in the elastic region and does not yield under service loads. Yielding would introduce permanent deformation, violating serviceability. The safety margin is the ratio Fy / allowable stress (roughly 1.5–1.7 for ASD).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c15286c464f909fcb033e8362df8c48d48256afb1bd600b075753e906faf73ef"
+    },
+    {
+      "question_id": "e5d3a413-d0c0-4d4c-9fd3-119918592779",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "A designer performs calculations using service loads, elastic analysis, and checks f = 100 MPa ≤ Fa = 150 MPa. Then, in the next phase, the designer recalculates using factored loads U = 1.2D + 1.6L and checks Pu ≤ φPn. Is this approach acceptable, and why or why not?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes; both methods are acceptable, and using both provides extra safety confirmation, ensuring that the design meets all possible criteria."
+        },
+        {
+          "id": "b",
+          "text": "No; ASD and LRFD are distinct design methods and must not be mixed within the same design. The designer must choose one method and apply it consistently throughout."
+        },
+        {
+          "id": "c",
+          "text": "Yes; LRFD is always a superset of ASD, so checking both is redundant but harmless, as it covers all bases without introducing errors."
+        },
+        {
+          "id": "d",
+          "text": "No; mixing methods violates equilibrium and will give incorrect results, potentially leading to unsafe structural conditions."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "ASD and LRFD are complementary but separate design philosophies. Mixing them introduces inconsistency and confusion. A single design must commit to one method: either use unfactored loads with allowable stresses (ASD), or use factored loads with factored capacities (LRFD). Switching methods mid-design can disguise errors and violates code requirements, which typically require the designer to declare the method upfront. The results from one method cannot be directly compared to the other.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e5a9280311c3c125d7f1378a46ab9eccb9879e6fd5756c7a17b857fe1df25653"
+    },
+    {
+      "question_id": "056e3237-b29b-42f2-844e-3093eac999ec",
+      "article_id": "f0f43f10-eabc-474f-8397-c196a9b3649c",
+      "topic_id": "435c213b-f743-4781-8c93-87db1476b78a",
+      "text": "Explain why LRFD is considered more theoretically rigorous than ASD for accounting for uncertainty in loads and material properties.",
+      "options": [
+        {
+          "id": "a",
+          "text": "LRFD always gives more economical designs because all factors are smaller, which can lead to cost savings in certain scenarios"
+        },
+        {
+          "id": "b",
+          "text": "LRFD separately factors different load types (1.2D, 1.6L) and failure modes (different φ values), allowing uncertainty to be addressed specifically rather than with a single blanket safety factor"
+        },
+        {
+          "id": "c",
+          "text": "LRFD eliminates all uncertainty by requiring exact material properties and loads, which is not feasible in practical applications"
+        },
+        {
+          "id": "d",
+          "text": "ASD is theoretically sound; LRFD and ASD are equivalent in rigor, just expressed differently, which can lead to confusion in their application"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "LRFD's strength is its granularity. Load factors reflect the statistical variability of each load type (dead is more certain than live, hence 1.2 < 1.6). Resistance factors reflect the predictability of each failure mode (ductile flexure φ = 0.90 vs. brittle bearing φ = 0.70). This separation allows designers and code writers to target reliability more precisely. ASD uses a single overall safety margin (allowable stress as fraction of yield), which is simpler but less nuanced.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-003-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fec9648ea9671f8684a93b16f0efaf716c5229951204c6dd0aedeab0b6e91f26"
+    }
+  ]
+}

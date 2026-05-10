@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 006 02 Core Concept** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -24,11 +31,11 @@ NSCP 2015 requires design for basic wind speed $V = 20\text{--}50\text{ m/s}$ de
 Collar ties, commonly positioned in the upper third of the truss height as a design recommendation, reduce lateral thrust on walls and prevent rafter spreading in high-wind regions.
 
 
-<ArticleMedia id="media-roof-assembly-sections" layout="single" type="image" status="placeholder"
-  alt="Cross-section of a complete roof assembly showing underlayment, flashings, valleys, ridges, eaves, gutters, and vents in sequence"
-  caption="Future diagram: roof assembly cross-section — component layering from deck to finish"
-  suggestedAsset="Annotated cross-section of roof assembly with component callouts"
-  placementIntent="Shows how all roofing components work together for weather-tightness" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-roof-assembly-sections", layout="single", type="image", status="placeholder", alt="Cross-section of a complete roof assembly showing underlayment, flashings, valleys, ridges, eaves, gutters, and vents in sequence", caption="Future diagram: roof assembly cross-section — component layering from deck to finish", suggestedAsset="Annotated cross-section of roof assembly with component callouts", placementIntent="Shows how all roofing components work together for weather-tightness"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -56,11 +63,11 @@ Steel trusses are gaining market share in Metro Manila for industrial constructi
 Collar ties are recommended in high-wind zones ($V > 30\text{ m/s}$) to prevent lateral thrust failure and rafter spreading.
 
 
-<ArticleMedia id="media-roof-ventilation-diagram" layout="single" type="image" status="placeholder"
-  alt="Cross-section of roof assembly showing ventilation paths: soffit intake vents, ridge vents, and turbine vents with air flow arrows"
-  caption="Future diagram: roof ventilation — soffit intake, ridge vent, and turbine vent air flow"
-  suggestedAsset="Cross-section diagram of roof ventilation system"
-  placementIntent="Shows proper roof ventilation design for tropical climate" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-roof-ventilation-diagram", layout="single", type="image", status="placeholder", alt="Cross-section of roof assembly showing ventilation paths: soffit intake vents, ridge vents, and turbine vents with air flow arrows", caption="Future diagram: roof ventilation — soffit intake, ridge vent, and turbine vent air flow", suggestedAsset="Cross-section diagram of roof ventilation system", placementIntent="Shows proper roof ventilation design for tropical climate"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## How It's Tested
 
 **Pattern 1: Truss Type Identification** — "A roof truss has a single vertical member from the peak and two diagonal struts to the feet. What is the truss type?"
@@ -75,17 +82,19 @@ Collar ties are recommended in high-wind zones ($V > 30\text{ m/s}$) to prevent 
 **Pattern 4: Member Sizing** — "Purlins spacing 1500 mm apart support corrugated roofing ($2\text{ kN/m}^2$). Calculate bending moment."
 (Answer: $w = 2\text{ kN/m}^2 \times 1.5\text{ m} = 3\text{ kN/m}$; $M = wL^2/8 = 3 \times 1.5^2 / 8 = 0.84\text{ kN}\cdot\text{m}$. Select section per NSCP bending stress allowables.)
 
-<Tip>
-Memorize truss types by span: King Post 5–7 m, Fink 9–15 m, Howe 10–20 m, Pratt 10–25 m. 
-In Philippine wind zones, collar ties in the upper 1/3 are recommended for $V > 30\text{ m/s}$ to control lateral thrust.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memorize truss types by span: King Post 5–7 m, Fink 9–15 m, Howe 10–20 m, Pratt 10–25 m. In Philippine wind zones, collar ties in the upper 1/3 are recommended for $V > 30\text $ to control lateral thrust.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard
- mistake='Assuming all trusses can span equivleant distances; confusing Queen Post (7–10 m) with Fink (9–15 m) capability.'
- correction='Truss span depends on geometry. Fink W-pattern distributes load more efficiently than Queen Post verticals. Span capability increases with geometric complexity.'
-/>
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Assuming all trusses can span equivleant distances; confusing Queen Post (7–10 m) with Fink (9–15 m) capability.", correction="Truss span depends on geometry. Fink W-pattern distributes load more efficiently than Queen Post verticals. Span capability increases with geometric complexity."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ibutary rafter load alone without wind multipliers',
  ]}
@@ -96,4 +105,3 @@ ibutary rafter load alone without wind multipliers',
 See also within Roofing, Waterproofing, and Insulation: **lea-matl-006-01-core-concept**, **lea-matl-006-03-core-concept**, **lea-matl-006-04-core-concept**, **lea-matl-006-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

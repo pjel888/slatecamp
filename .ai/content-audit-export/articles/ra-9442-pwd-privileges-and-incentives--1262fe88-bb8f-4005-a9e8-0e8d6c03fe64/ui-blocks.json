@@ -1,94 +1,14 @@
 {
   "article_id": "1262fe88-bb8f-4005-a9e8-0e8d6c03fe64",
   "slug": "ra-9442-pwd-privileges-and-incentives",
-  "normalized_created_at": "2026-05-04T09:10:35.737Z",
+  "normalized_created_at": "2026-05-09T17:04:23.434Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:a64cbbfc06b963fdf21d14b38a3eafd4f326f76eab53f77a63e5d77aae48464e",
+  "original_content_hash": "sha256:4d7ddd5d6a7490b7a5ccca81f04500a1b26df545bde31490129ed571fcfd3edb",
   "normalized_content_hash": "sha256:4d7ddd5d6a7490b7a5ccca81f04500a1b26df545bde31490129ed571fcfd3edb",
-  "ui_block_count": 3,
-  "total_blocks": 3,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"ra9442\" section=\"Section 4 - Incentives\">\nBP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.\n</LawCallout>",
-      "raw_hash": "sha256:4bd4e11286469186d1bbc03592ef4b3e5d2e410216370b0ad981ec2fe399d2b7",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"ra9442\", section=\"Section 4 - Incentives\"\n- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:beaddac978d5dd1296443ae03e7f03566219d1b06e3d305906551f849ca0c36f",
-      "props": {
-        "code": "ra9442",
-        "section": "Section 4 - Incentives"
-      },
-      "props_json": {
-        "code": "ra9442",
-        "section": "Section 4 - Incentives"
-      },
-      "props_text": "code=\"ra9442\" section=\"Section 4 - Incentives\"",
-      "children_raw": "\nBP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.\n",
-      "children_text": "BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.",
-      "start_offset": 176,
-      "end_offset": 343,
-      "line_start": 7,
-      "line_end": 9,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"ra9442\" section=\"Section 3 - PWD Privileges\">\nBP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.\n</LawCallout>",
-      "raw_hash": "sha256:afcd559dec3937028d862fa670c661109eaf3c19d68a8a3d5f3eee5a38d25c39",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"ra9442\", section=\"Section 3 - PWD Privileges\"\n- Text: BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:3289f84a6539952873097a2040e9d0780218a98560001fd072b65ef07d3fc139",
-      "props": {
-        "code": "ra9442",
-        "section": "Section 3 - PWD Privileges"
-      },
-      "props_json": {
-        "code": "ra9442",
-        "section": "Section 3 - PWD Privileges"
-      },
-      "props_text": "code=\"ra9442\" section=\"Section 3 - PWD Privileges\"",
-      "children_raw": "\nBP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.\n",
-      "children_text": "BP 344 — The Accessibility Law mandates barrier-free access for PWDs in all public buildings.",
-      "start_offset": 469,
-      "end_offset": 640,
-      "line_start": 14,
-      "line_end": 16,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "Note",
-      "raw": "<Note>\n\\\n- Domestic air/sea/land transport fares.[web:29]\n- Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32]\n- Funeral and burial services.[web:29]\n- Educational assistance (tuition, school fees; details from RA 7277).[web:21]\n\n**Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29]\n\n---\n</Note>",
-      "raw_hash": "sha256:24c3fe05a87fa53962c6c8b8ffe5ea83cee2ec866ae0b3ebf0dcd8518c913dc8",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Note\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: \\ - Domestic air/sea/land transport fares.[web:29] - Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32] - Funeral and burial services.[web:29] - Educational assistance (tuition, school fees; details from RA 7277).[web:21] **Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29] ---\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:307a90dfb54f8ec9b74087d4afdfc5f98e7506eea555f355a56443ae8027a317",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": "\n\\\n- Domestic air/sea/land transport fares.[web:29]\n- Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32]\n- Funeral and burial services.[web:29]\n- Educational assistance (tuition, school fees; details from RA 7277).[web:21]\n\n**Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29]\n\n---\n",
-      "children_text": "\\ - Domestic air/sea/land transport fares.[web:29] - Hotels, restaurants, recreation (cinemas, amusement).[web:29][web:32] - Funeral and burial services.[web:29] - Educational assistance (tuition, school fees; details from RA 7277).[web:21] **Key point:** Establishments **absorb** these costs; they are not direct government reimbursements, though they may be treated as deductible expenses under BIR rules.[web:26][web:29] ---",
-      "start_offset": 6811,
-      "end_offset": 7256,
-      "line_start": 87,
-      "line_end": 97,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:b0329be1019021fe77c15a249c49c86c2cc987bb6953c64a8db750fc94dd1b4d",
-  "normalized_content_hash_sha256": "sha256:4d7ddd5d6a7490b7a5ccca81f04500a1b26df545bde31490129ed571fcfd3edb"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

@@ -91,28 +91,28 @@ Extracted summary:
 
 **Question 1.** The *talud-tablero* architectural profile, most closely associated with Teotihuacan, consists of:
 
-A. A pointed arch supporting a ribbed vault, derived from Gothic structural principles  
-B. A sloping battered wall (*talud*) supporting a rectangular vertical panel (*tablero*), forming the characteristic stepped profile of Mesoamerican pyramids  
-C. A corbelled arch formed by progressively offsetting horizontal stone courses, typical of Maya architecture  
-D. A smooth, inclined stone face rising to a pointed apex, as seen in Egyptian pyramid construction  
+A. A pointed arch supporting a ribbed vault, derived from Gothic structural principles
+B. A sloping battered wall (*talud*) supporting a rectangular vertical panel (*tablero*), forming the characteristic stepped profile of Mesoamerican pyramids
+C. A corbelled arch formed by progressively offsetting horizontal stone courses, typical of Maya architecture
+D. A smooth, inclined stone face rising to a pointed apex, as seen in Egyptian pyramid construction
 
 > **Correct Answer: B.** The *talud-tablero* is the signature Mesoamerican architectural motif: a sloping lower wall (talud) that transitions into a projecting rectangular upper panel (tablero), framed by a protruding molding. This profile defines the stepped pyramids of Teotihuacan and spread as an architectural influence across Mesoamerica. It is fundamentally different from both Maya corbel arches (Option C) and Egyptian smooth-faced pyramids (Option D).
 
 **Question 2.** Tenochtitlan's *chinampas* are best described as:
 
-A. Stone aqueducts carrying freshwater from mountain springs to the island city  
-B. Defensive walls surrounding the sacred precinct of the Templo Mayor  
-C. Rectangular artificial island-gardens constructed in the shallow lake bed using layers of vegetation, mud, and stakes, providing intensive agricultural production  
-D. Elevated stone causeways connecting the island city to the mainland  
+A. Stone aqueducts carrying freshwater from mountain springs to the island city
+B. Defensive walls surrounding the sacred precinct of the Templo Mayor
+C. Rectangular artificial island-gardens constructed in the shallow lake bed using layers of vegetation, mud, and stakes, providing intensive agricultural production
+D. Elevated stone causeways connecting the island city to the mainland
 
 > **Correct Answer: C.** Chinampas were highly productive artificial agricultural islands built in the shallow waters of Lake Texcoco. Constructed by staking out rectangular plots and layering aquatic vegetation, mud, and soil, they could produce multiple crop cycles per year. Chinampas were integral to Tenochtitlan's self-sufficiency, feeding a population of 150,000–300,000. Option A describes the Chapultepec aqueducts; Option D describes the causeways — both are separate infrastructure systems.
 
 **Question 3.** Which statement correctly distinguishes Teotihuacan from the Aztec capital Tenochtitlan?
 
-A. Teotihuacan was a 14th-century Aztec city; Tenochtitlan was its predecessor from the 1st century CE  
-B. Both cities were built simultaneously by the same civilization on opposite shores of Lake Texcoco  
-C. Teotihuacan (1st–7th century CE) was built by an unidentified civilization and was already in ruins when the Aztecs founded Tenochtitlan in 1325 CE  
-D. Teotihuacan was a small ceremonial site; Tenochtitlan was the first city in the Americas  
+A. Teotihuacan was a 14th-century Aztec city; Tenochtitlan was its predecessor from the 1st century CE
+B. Both cities were built simultaneously by the same civilization on opposite shores of Lake Texcoco
+C. Teotihuacan (1st–7th century CE) was built by an unidentified civilization and was already in ruins when the Aztecs founded Tenochtitlan in 1325 CE
+D. Teotihuacan was a small ceremonial site; Tenochtitlan was the first city in the Americas
 
 > **Correct Answer: C.** Teotihuacan peaked between the 1st and 7th centuries CE with an estimated population of 100,000–150,000, making it one of the largest cities in the ancient world. It collapsed around the 7th–8th century for reasons still debated. The Aztecs (Mexica) founded Tenochtitlan roughly 600 years later in 1325 CE. The Aztecs considered Teotihuacan a sacred site of divine origin but had no hand in its construction.
 

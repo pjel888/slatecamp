@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-09T14:09:18.148Z",
+  "input": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "slug": "pd-1096-rule-vii-area-metrics",
+      "folder": "pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:e49208e2ecee6aecdeada17bf364c108ad95fe9ec88b00fc336bfeec82207b07",
+        "normalized": "sha256:1d4b306a267335074b5b87914cfd83dbbc141a0075d82253230b081555daab94",
+        "candidate": "sha256:1d4b306a267335074b5b87914cfd83dbbc141a0075d82253230b081555daab94",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

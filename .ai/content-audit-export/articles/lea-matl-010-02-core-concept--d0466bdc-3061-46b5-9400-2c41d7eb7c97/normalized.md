@@ -45,7 +45,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="Example" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Scenario 1: Residential wall, 6-inch CHB, 30 m² gross area with two 1.5 m × 1.2 m windows and one 1.0 m × 2.1 m door** **Step 1: Calculate net wall area** Gross wall area = 30 m² Window opening 1: 1.5 m × 1.2 m = 1.8 m² Window opening 2: 1.5 m × 1.2 m = 1.8 m² Door opening: 1.0 m × 2.1 m = 2.1 m² Total openings = 1.8 + 1.8 + 2.1 = 5.7 m² Net wall area = 30 – 5.7 = 24.3 m² **Step 2: Calculate CHB quantity** CHB quantity = 24.3 m² × 12.5 pcs/m² = 303.75 pcs Round up to 304 blocks (add 5% waste: 
+- Text: **Scenario 1: Residential wall, 6-inch CHB, 30 m² gross area with two 1.5 m × 1.2 m windows and one 1.0 m × 2.1 m door** **Step 1: Calculate net wall area** Gross wall area = 30 m² Window opening 1: 1.5 m × 1.2 m = 1.8 m² Window opening 2: 1.5 m × 1.2 m = 1.8 m² Door opening: 1.0 m × 2.1 m = 2.1 m² Total openings = 1.8 + 1.8 + 2.1 = 5.7 m² Net wall area = 30 – 5.7 = 24.3 m² **Step 2: Calculate CHB quantity** CHB quantity = 24.3 m² × 12.5 pcs/m² = 303.75 pcs Round up to 304 blocks (add 5% waste:
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Example" status="preserved"]
@@ -136,4 +136,3 @@ Extracted summary:
 See also within Estimating Quantities and Material Computation: **lea-matl-010-01-core-concept**, **lea-matl-010-03-core-concept**, **lea-matl-010-04-core-concept**, **lea-matl-010-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

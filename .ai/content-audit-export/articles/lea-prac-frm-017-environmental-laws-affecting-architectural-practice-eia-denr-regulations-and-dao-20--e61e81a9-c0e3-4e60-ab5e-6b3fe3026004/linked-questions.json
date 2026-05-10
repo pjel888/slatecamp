@@ -1,7 +1,7 @@
 {
   "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:cfafdceca6b5db9df6207539febdf6083a692bcdb7dccb3257df21288df8ac3e",
+  "linked_questions_hash": "sha256:e72b42a0257981c81f88e665ed756327776031bb29cd632d9c5670248a462bc2",
   "question_count": 10,
   "questions": [
     {
@@ -55,6 +55,156 @@
       "content_hash": "sha256:1c59adcbe154fc98ddf58bbb40345cd50975aebdbfc8f4565dce99a35ebe0d75"
     },
     {
+      "question_id": "e548ee77-5eb6-4501-86fe-48bbfa54d21d",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What happens if a project is located in a biodiversity-sensitive area?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No restrictions apply, allowing full development without any environmental considerations"
+        },
+        {
+          "id": "b",
+          "text": "Development may be prohibited entirely or restricted to minimal footprint with specialized construction methods; environmental offsets may be required"
+        },
+        {
+          "id": "c",
+          "text": "The project can proceed without modification, as biodiversity concerns are not prioritized in such areas"
+        },
+        {
+          "id": "d",
+          "text": "Only flooding concerns matter, disregarding other environmental impacts such as habitat disruption"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Dangerously incorrect; protected areas and sensitive ecosystems have strict development restrictions.",
+        "c": "False; projects in sensitive areas cannot proceed without significant restrictions and environmental review.",
+        "d": "Incomplete; biodiversity and habitat protection are primary concerns beyond flooding in sensitive areas.",
+        "correct": "DENR heavily restricts or prohibits development in sensitive ecological areas; if allowed, projects face minimal footprint limits, specialized construction methods, and environmental offset requirements (reforestation, habitat restoration).",
+        "takeaway": "Biodiversity-sensitive sites face severe development restrictions or outright prohibition—confirm site eligibility before committing to design and budget."
+      },
+      "explanation": "Dangerously incorrect; protected areas and sensitive ecosystems have strict development restrictions. False; projects in sensitive areas cannot proceed without significant restrictions and environmental review. Incomplete; biodiversity and habitat protection are primary concerns beyond flooding in sensitive areas. DENR heavily restricts or prohibits development in sensitive ecological areas; if allowed, projects face minimal footprint limits, specialized construction methods, and environmental offset requirements (reforestation, habitat restoration). Biodiversity-sensitive sites face severe development restrictions or outright prohibition—confirm site eligibility before committing to design and budget.",
+      "code_citation": "DAO 2003-30; DENR Protected Areas",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:55:59.951654+00:00",
+      "content_hash": "sha256:08be14eb07ac5a160b70bface4ad3067b5b212189677848f8c8f73b590a0138a"
+    },
+    {
+      "question_id": "a4b16a2b-deee-4415-9d4b-10d22a425829",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What should an architect do early in the pre-design phase regarding environmental requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ignore environmental concerns until later stages of the project when they become more apparent"
+        },
+        {
+          "id": "b",
+          "text": "Determine whether the site is in a sensitive ecological area and whether EIA is required"
+        },
+        {
+          "id": "c",
+          "text": "Only address environmental issues during construction, as they are not relevant in the design phase"
+        },
+        {
+          "id": "d",
+          "text": "Environmental concerns only matter in rural areas, where natural habitats are more prevalent"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reckless approach; discovering EIA requirements after design is advanced wastes time and money.",
+        "c": "Too late; environmental constraints must inform the design, not be addressed after construction starts.",
+        "d": "Incorrect scope; urban and suburban projects also trigger EIA and environmental restrictions depending on site conditions and project type.",
+        "correct": "Architects must verify early whether a site is in a protected area or requires EIA; failure to do so can waste design time and cause costly project delays.",
+        "takeaway": "Before design begins, confirm EIA applicability and site environmental sensitivity to avoid redesigns or project denial later."
+      },
+      "explanation": "Reckless approach; discovering EIA requirements after design is advanced wastes time and money. Too late; environmental constraints must inform the design, not be addressed after construction starts. Incorrect scope; urban and suburban projects also trigger EIA and environmental restrictions depending on site conditions and project type. Architects must verify early whether a site is in a protected area or requires EIA; failure to do so can waste design time and cause costly project delays. Before design begins, confirm EIA applicability and site environmental sensitivity to avoid redesigns or project denial later.",
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:55:59.815785+00:00",
+      "content_hash": "sha256:46dfad3ae96759ab0137a0981679da837306714a3116339f6d9f05de350a68b8"
+    },
+    {
+      "question_id": "deb634a6-66af-485a-b3e3-7da8f984302a",
+      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
+      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
+      "text": "What environmental offset requirement might be imposed on a project that impacts habitat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No offsets are required unless the project exceeds a specific threshold of environmental impact as determined by local regulations"
+        },
+        {
+          "id": "b",
+          "text": "Reforestation elsewhere, habitat restoration, or conservation land dedication may be required"
+        },
+        {
+          "id": "c",
+          "text": "Only financial compensation is necessary if the project is within a designated urban area"
+        },
+        {
+          "id": "d",
+          "text": "Offsets are only for government projects, except when private projects are located in ecologically critical areas"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly assumes no responsibility; projects impacting habitat must provide environmental offsets.",
+        "c": "Incomplete; while financial contributions may be part of offsets, physical restoration (reforestation, habitat dedication) is typically required.",
+        "d": "Incorrect scope; both government and private projects must provide environmental offsets if habitat is impacted.",
+        "correct": "Environmental offsets for habitat impacts include reforestation, habitat restoration on the site or elsewhere, and dedication of conservation land—these are physical mitigation measures, not just financial.",
+        "takeaway": "Environmental offsets can require setting aside project land for conservation or restoring habitat elsewhere—impacts site planning and buildable area."
+      },
+      "explanation": "Incorrectly assumes no responsibility; projects impacting habitat must provide environmental offsets. Incomplete; while financial contributions may be part of offsets, physical restoration (reforestation, habitat dedication) is typically required. Incorrect scope; both government and private projects must provide environmental offsets if habitat is impacted. Environmental offsets for habitat impacts include reforestation, habitat restoration on the site or elsewhere, and dedication of conservation land—these are physical mitigation measures, not just financial. Environmental offsets can require setting aside project land for conservation or restoring habitat elsewhere—impacts site planning and buildable area.",
+      "code_citation": "DAO 2003-30",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-017-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T15:56:00.078144+00:00",
+      "content_hash": "sha256:f38c0d9f7e1b6cf171dd18e0c5ba1f58926f5d7c1873e3c1a9bf126e22258ee4"
+    },
+    {
       "question_id": "02ae8e77-9410-4043-b550-578be05d84c9",
       "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
       "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
@@ -89,7 +239,7 @@
         "correct": "EIA is the systematic process of identifying, predicting, and evaluating environmental effects of a proposed project before construction proceeds (DAO 2003-30).",
         "takeaway": "EIA is a mandatory environmental review process, not a marketing document or cost estimate."
       },
-      "explanation": null,
+      "explanation": "Confuses EIA with promotional material; EIA is a technical environmental analysis required by law for certain projects. Confuses EIA with a budget item; EIA is an environmental impact study, not a cost document. Confuses EIA with design documentation; EIA is a separate regulatory analysis that informs design, not the design itself. EIA is the systematic process of identifying, predicting, and evaluating environmental effects of a proposed project before construction proceeds (DAO 2003-30). EIA is a mandatory environmental review process, not a marketing document or cost estimate.",
       "code_citation": "DAO 2003-30",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -101,8 +251,8 @@
       "model_id": "ALE-PRAC-FRM-017-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4df9eb35cd5eb2a952d66245054785ab43cc3904c9157f7b4fe1373d67dd18e4"
+      "updated_at": "2026-05-06T15:55:59.564655+00:00",
+      "content_hash": "sha256:18c3be1fd3c4fcd588fac47b407ba17ef1aabcb35fd14d2e9bf38ce31541c618"
     },
     {
       "question_id": "0e962204-4430-4f1e-850a-475a85645839",
@@ -189,7 +339,7 @@
         "correct": "NIPAS (National Integrated Protected Areas System) and DENR Regional Offices maintain maps and information on protected areas, biodiversity hotspots, and sensitive ecosystems.",
         "takeaway": "Consult NIPAS and DENR Regional Offices to determine if a proposed site is in a protected or sensitive area before proceeding with design."
       },
-      "explanation": null,
+      "explanation": "Confuses site environmental status with architectural licensing; the Board of Architecture does not maintain environmental designations. Wrong agency; no such authority; environmental designations are maintained by DENR, not a construction industry authority. Wrong function; the Department of Budget and Management handles government finances, not environmental designations. NIPAS (National Integrated Protected Areas System) and DENR Regional Offices maintain maps and information on protected areas, biodiversity hotspots, and sensitive ecosystems. Consult NIPAS and DENR Regional Offices to determine if a proposed site is in a protected or sensitive area before proceeding with design.",
       "code_citation": "DENR, NIPAS",
       "bloom_level": "understand",
       "application_context": "client_scenario",
@@ -201,108 +351,8 @@
       "model_id": "ALE-PRAC-FRM-017-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1ffa8d06bed8863cce49eabc226290360cf3a76b7bb4cb456d2cb823331620ca"
-    },
-    {
-      "question_id": "a4b16a2b-deee-4415-9d4b-10d22a425829",
-      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
-      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
-      "text": "What should an architect do early in the pre-design phase regarding environmental requirements?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Ignore environmental concerns until later stages of the project when they become more apparent"
-        },
-        {
-          "id": "b",
-          "text": "Determine whether the site is in a sensitive ecological area and whether EIA is required"
-        },
-        {
-          "id": "c",
-          "text": "Only address environmental issues during construction, as they are not relevant in the design phase"
-        },
-        {
-          "id": "d",
-          "text": "Environmental concerns only matter in rural areas, where natural habitats are more prevalent"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Reckless approach; discovering EIA requirements after design is advanced wastes time and money.",
-        "c": "Too late; environmental constraints must inform the design, not be addressed after construction starts.",
-        "d": "Incorrect scope; urban and suburban projects also trigger EIA and environmental restrictions depending on site conditions and project type.",
-        "correct": "Architects must verify early whether a site is in a protected area or requires EIA; failure to do so can waste design time and cause costly project delays.",
-        "takeaway": "Before design begins, confirm EIA applicability and site environmental sensitivity to avoid redesigns or project denial later."
-      },
-      "explanation": null,
-      "code_citation": "DAO 2003-30",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-017-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:04055422161c963704ee50aed396d5a2e8f01a05956ce759c49d049fc1f4d90c"
-    },
-    {
-      "question_id": "e548ee77-5eb6-4501-86fe-48bbfa54d21d",
-      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
-      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
-      "text": "What happens if a project is located in a biodiversity-sensitive area?",
-      "options": [
-        {
-          "id": "a",
-          "text": "No restrictions apply, allowing full development without any environmental considerations"
-        },
-        {
-          "id": "b",
-          "text": "Development may be prohibited entirely or restricted to minimal footprint with specialized construction methods; environmental offsets may be required"
-        },
-        {
-          "id": "c",
-          "text": "The project can proceed without modification, as biodiversity concerns are not prioritized in such areas"
-        },
-        {
-          "id": "d",
-          "text": "Only flooding concerns matter, disregarding other environmental impacts such as habitat disruption"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Dangerously incorrect; protected areas and sensitive ecosystems have strict development restrictions.",
-        "c": "False; projects in sensitive areas cannot proceed without significant restrictions and environmental review.",
-        "d": "Incomplete; biodiversity and habitat protection are primary concerns beyond flooding in sensitive areas.",
-        "correct": "DENR heavily restricts or prohibits development in sensitive ecological areas; if allowed, projects face minimal footprint limits, specialized construction methods, and environmental offset requirements (reforestation, habitat restoration).",
-        "takeaway": "Biodiversity-sensitive sites face severe development restrictions or outright prohibition—confirm site eligibility before committing to design and budget."
-      },
-      "explanation": null,
-      "code_citation": "DAO 2003-30; DENR Protected Areas",
-      "bloom_level": "apply",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-017-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b3d8f3e5398793f942b0cbe8cbda348e27f1a4b4b9940c09a6cc1b3ed3d70a74"
+      "updated_at": "2026-05-06T15:55:59.684187+00:00",
+      "content_hash": "sha256:d46558410b9e800d41fb75fa07c994ea1e72e2c4e348908474508511e786a3ad"
     },
     {
       "question_id": "41c186e9-5b2d-4dbf-9f6f-60a504c8aac7",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:49.529462+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:be8ff449bd1bad90187645d901136a3ce47dd91c163bd48c1e239d71be3d4d93"
-    },
-    {
-      "question_id": "deb634a6-66af-485a-b3e3-7da8f984302a",
-      "article_id": "e61e81a9-c0e3-4e60-ab5e-6b3fe3026004",
-      "topic_id": "d4a88702-5cb9-4be3-ab41-d233f88173e1",
-      "text": "What environmental offset requirement might be imposed on a project that impacts habitat?",
-      "options": [
-        {
-          "id": "a",
-          "text": "No offsets are required unless the project exceeds a specific threshold of environmental impact as determined by local regulations"
-        },
-        {
-          "id": "b",
-          "text": "Reforestation elsewhere, habitat restoration, or conservation land dedication may be required"
-        },
-        {
-          "id": "c",
-          "text": "Only financial compensation is necessary if the project is within a designated urban area"
-        },
-        {
-          "id": "d",
-          "text": "Offsets are only for government projects, except when private projects are located in ecologically critical areas"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrectly assumes no responsibility; projects impacting habitat must provide environmental offsets.",
-        "c": "Incomplete; while financial contributions may be part of offsets, physical restoration (reforestation, habitat dedication) is typically required.",
-        "d": "Incorrect scope; both government and private projects must provide environmental offsets if habitat is impacted.",
-        "correct": "Environmental offsets for habitat impacts include reforestation, habitat restoration on the site or elsewhere, and dedication of conservation land—these are physical mitigation measures, not just financial.",
-        "takeaway": "Environmental offsets can require setting aside project land for conservation or restoring habitat elsewhere—impacts site planning and buildable area."
-      },
-      "explanation": null,
-      "code_citation": "DAO 2003-30",
-      "bloom_level": "apply",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-017-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e61b9743687836840d1770df5daec44416b9e7e69b962602f7324a39ce070fff"
     },
     {
       "question_id": "ff7e7e2a-e3e2-4bd2-9ff6-fe22ec9649f3",

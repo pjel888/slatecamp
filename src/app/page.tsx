@@ -7,10 +7,10 @@ import { siteConfig } from '@/lib/constants'
 export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
-  title: `${siteConfig.name} | Architecture Knowledge Atlas`,
+  title: `${siteConfig.name} | Architecture Resource Base`,
   description: siteConfig.description,
   openGraph: {
-    title: `${siteConfig.name} | Architecture Knowledge Atlas`,
+    title: `${siteConfig.name} | Architecture Resource Base`,
     description:
       'Find where architecture topics fit, understand them visually, check what stayed, and know what to revisit beside school, books, mentors, and review materials.',
     type: 'website',
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${siteConfig.name} | Architecture Knowledge Atlas`,
+    title: `${siteConfig.name} | Architecture Resource Base`,
     description:
       'Find where architecture topics fit, understand them visually, check what stayed, and know what to revisit beside school, books, mentors, and review materials.',
   },

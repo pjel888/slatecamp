@@ -1,0 +1,544 @@
+{
+  "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:1b09b7c69a9f470a9a0697de72d327c195109d921b5c4ea02413da095640c1ae",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "6d6aed54-61d9-4d27-b048-5bdc0e54dd0f",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "A fire station administrative area (office/community space) has an occupant load of 60 persons. The minimum exit width required, based on 7.6 millimeters per person, is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "300 mm"
+        },
+        {
+          "id": "b",
+          "text": "380 mm"
+        },
+        {
+          "id": "c",
+          "text": "456 mm"
+        },
+        {
+          "id": "d",
+          "text": "600 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Represents insufficient calculation (300 ÷ 60 ≠ 7.6 mm/person standard).",
+        "b": "Results from incorrect multiplication (60 × 6.3 ≈ 380, not 7.6).",
+        "c": "Correct: 60 persons × 7.6 mm/person = 456 mm. This width accommodates safe, rapid egress.",
+        "d": "Over-calculates; 600 mm would assume 10 mm/person, not the standard 7.6 mm.",
+        "correct": "Exit width (mm) = Occupant load × 7.6 mm/person = 60 × 7.6 = 456 mm minimum.",
+        "takeaway": "Fire code exit width formula: Exit width (mm) = Occupant load × 7.6 mm/person. At 60 persons, minimum exit width = 456 mm. This applies to doors, corridors, and stair widths in egress paths. Remember: 7.6 mm/person (not 5 mm, not 10 mm)."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule IV Section 1005",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "egress design",
+        "fire code provisions"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e6b4f1d04ab7f4937409f2e07f779a8aac378080b811d3601f0baf8dfbf34693"
+    },
+    {
+      "question_id": "1a5b8a57-4d2a-4123-bd59-4d671103f4d6",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "Fire stations are classified as which occupancy group under the NBCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group A (residential), which is incorrect as fire stations do not serve as living quarters for families"
+        },
+        {
+          "id": "b",
+          "text": "Group B (business/auxiliary)"
+        },
+        {
+          "id": "c",
+          "text": "Group E (mercantile/office), which is not applicable since fire stations are not commercial spaces"
+        },
+        {
+          "id": "d",
+          "text": "Group F (industrial), which is a misclassification as fire stations are not industrial facilities"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group A is residential (single/multi-family). Fire stations have institutional, not residential, classification despite dormitory functions.",
+        "c": "Group E is mercantile/office. While fire stations include administrative spaces, the overall occupancy classification is Group D.",
+        "d": "Group F is industrial. Fire stations are not manufacturing or industrial facilities.",
+        "correct": "Fire stations are Group D occupancies, classified as institutional/essential facilities. This classification is critical because it triggers seismic importance factor I=1.25.",
+        "takeaway": "Fire stations = Group D (institutional/essential facility). This classification drives seismic design with I=1.25. Do not confuse with Group A (residential) despite dormitory presence."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Section 302 Table 302-1 Group B-2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "occupancy groups",
+        "NBCP classification"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8bd3a0dfda6f1ee9fa5689c5b1153f5801c0b882eb154c82e8fa5e06011e248a"
+    },
+    {
+      "question_id": "8032806e-bb5a-439f-8076-4a839a599bc4",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "A fire station is designed with two apparatus bays. Each bay must accommodate one fire engine. If each apparatus bay must be 7.5 meters wide and 14.0 meters deep, what is the minimum combined width of the two bays arranged side-by-side?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14.0 meters"
+        },
+        {
+          "id": "b",
+          "text": "15.0 meters"
+        },
+        {
+          "id": "c",
+          "text": "21.0 meters"
+        },
+        {
+          "id": "d",
+          "text": "7.5 meters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "14.0 meters represents one bay depth, not combined width of two bays.",
+        "b": "Correct: 7.5m + 7.5m = 15.0m combined width for two bays side-by-side.",
+        "c": "21.0 meters over-calculates and does not follow the standard formula.",
+        "d": "7.5 meters is a single bay width, insufficient for two vehicles.",
+        "correct": "Two apparatus bays at 7.5m each side-by-side = 7.5m + 7.5m = 15.0m combined width minimum.",
+        "takeaway": "Apparatus bay dimension is 7.5m wide per vehicle. Two bays side-by-side = 15.0m combined width minimum."
+      },
+      "explanation": null,
+      "code_citation": "NBCP Group D Occupancy Standards; BFP Fire Station Guidelines",
+      "bloom_level": "remember",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c979760957e40e9cfc4f94d3858915953b32c2b55642be5165d33f580e65505d"
+    },
+    {
+      "question_id": "890824e7-92bb-4124-908e-d1b5042c996c",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "A fire station dormitory must accommodate 30 firefighters. Calculate: (1) the minimum dormitory floor area using 5.5 sqm/firefighter, and (2) assuming the dormitory has an occupant load of 30 persons, determine the minimum exit width using the 7.6 mm/person standard. What are the two answers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "165 sqm floor area; 228 mm exit width"
+        },
+        {
+          "id": "b",
+          "text": "150 sqm floor area; 228 mm exit width"
+        },
+        {
+          "id": "c",
+          "text": "165 sqm floor area; 456 mm exit width"
+        },
+        {
+          "id": "d",
+          "text": "180 sqm floor area; 228 mm exit width"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct: 30 × 5.5 = 165 sqm; 30 × 7.6 = 228 mm.",
+        "b": "Exit width is correct (228 mm), but floor area is under-calculated (150 vs. 165 sqm).",
+        "c": "Floor area is correct (165 sqm), but exit width over-calculates (456 mm would be for 60 persons).",
+        "d": "Floor area is over-calculated (180 sqm), and exit width is correct (228 mm).",
+        "correct": "Floor area: 30 firefighters × 5.5 sqm = 165 sqm. Exit width: 30 persons × 7.6 mm/person = 228 mm. Both calculations use multiplication of occupant count by respective standards.",
+        "takeaway": "Two-step calculation: (1) Dormitory area = occupants × 5.5 sqm/person. (2) Exit width = occupants × 7.6 mm/person. These are independent calculations using the same occupant count but different multipliers."
+      },
+      "explanation": null,
+      "code_citation": "NBCP Group D Occupancy Standards; Fire Egress Requirements",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [
+        "occupancy calculation",
+        "space allocation",
+        "egress formula"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b7b06cd40b89d2f1f150dcdda5cf31a185e1bdb35a6082b1f7aad8c74e90f4c3"
+    },
+    {
+      "question_id": "a06f51ac-bcd4-48fe-8240-9bd6c41a87b8",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "Explain why fire stations are assigned a seismic importance factor of I=1.25 rather than the standard I=1.0 used for most buildings. What does this classification indicate about structural design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fire stations require 25% stronger structural design due to continuous occupancy and critical emergency response function."
+        },
+        {
+          "id": "b",
+          "text": "Fire stations have heavier apparatus and equipment, so they require thicker concrete, which is not the primary reason for the increased importance factor"
+        },
+        {
+          "id": "c",
+          "text": "The I=1.25 factor applies only to the dormitory section, not the apparatus bay, which is incorrect as it applies to the entire facility"
+        },
+        {
+          "id": "d",
+          "text": "I=1.25 reduces the seismic design demand because fire stations are essential facilities that must be protected, which misinterprets the purpose of the importance factor"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While apparatus is heavy, the seismic importance factor is not driven by equipment weight alone. It reflects the building's critical function.",
+        "c": "The I=1.25 factor applies to the entire fire station structure, not selectively to dormitories.",
+        "d": "Misconception: I=1.25 INCREASES design demand (seismic forces), it does not reduce them. A higher I factor means stronger structural design.",
+        "correct": "Fire stations are designated as essential facilities (Group D). The I=1.25 factor increases structural design demands by 25%, ensuring the building remains operational and safe during seismic events. This allows continuous emergency response capability during disasters.",
+        "takeaway": "Seismic importance factor I=1.25 for fire stations (essential facilities) increases design earthquake forces by 25%. This ensures structural integrity and operational capability during seismic events. Higher I = more stringent structural design, not less."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 208.4 Table 208-1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "essential facility designation",
+        "seismic importance factors",
+        "structural design"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:958478952e51b5f1ef7c4c19ed0515a664e4a4b644b449556d8957952a2f10bc"
+    },
+    {
+      "question_id": "2ed6e050-80a3-4b9d-88c5-93183b657142",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "A fire station is proposed in a jurisdiction where fire code requires a maximum travel distance of 45 meters in unsprinklered buildings and 60 meters in sprinklered buildings. If the fire station design includes a dormitory and is unsprinklered, what is the maximum travel distance from the farthest point in the dormitory to an exit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 meters"
+        },
+        {
+          "id": "b",
+          "text": "45 meters"
+        },
+        {
+          "id": "c",
+          "text": "60 meters"
+        },
+        {
+          "id": "d",
+          "text": "75 meters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "30m is unnecessarily conservative; the standard allows 45m for unsprinklered occupancies.",
+        "b": "Correct: Unsprinklered buildings = 45m maximum travel distance to exit. Dormitory exit placement must not exceed this.",
+        "c": "60m is the standard for sprinklered buildings, not unsprinklered. Applying this to an unsprinklered building is non-compliant.",
+        "d": "75m far exceeds any NBCP standard and creates life safety hazard.",
+        "correct": "Unsprinklered buildings have a maximum travel distance of 45 meters. If the building is not sprinklered, the dormitory layout must ensure no point exceeds 45m travel distance to a compliant exit.",
+        "takeaway": "Travel distance limits: 45m unsprinklered, 60m sprinklered. For unsprinklered fire stations (common in many jurisdictions), 45m maximum is binding. Exit placement and dormitory layout must comply with this constraint."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule IV Section 1007",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "fire code egress",
+        "travel distance limits",
+        "sprinkler requirements"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8155c8bba219088815d3840ca07c95405f6126715cd360859d618a6e579133cc"
+    },
+    {
+      "question_id": "28c78930-692a-41bd-a3c6-6e4d910f32a4",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "A fire station dormitory houses 12 firefighters on one shift. Using the standard allocation of 5.5 square meters per firefighter, what is the minimum floor area required for this dormitory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "46 square meters"
+        },
+        {
+          "id": "b",
+          "text": "66 square meters"
+        },
+        {
+          "id": "c",
+          "text": "55 square meters"
+        },
+        {
+          "id": "d",
+          "text": "85 square meters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Result of incorrect multiplication (46 ≠ 12 × 5.5).",
+        "c": "Confuses the 5.5 sqm standard with total area, or miscalculates 12 × 5.5 as 60 rounded to 55.",
+        "d": "Over-calculates by adding unnecessary common space beyond the standard allocation.",
+        "correct": "Dormitory floor area = number of firefighters × 5.5 sqm/firefighter = 12 × 5.5 = 66 square meters minimum.",
+        "takeaway": "Fire station dormitory allocation: 5.5 sqm per firefighter. Multiply occupant count by 5.5 to derive minimum floor area. This standard includes bunk space, lockers, and basic common facilities."
+      },
+      "explanation": null,
+      "code_citation": "NBCP Group D Occupancy; Fire Station Design Standards",
+      "bloom_level": "remember",
+      "application_context": "calculation",
+      "practice_context": [
+        "occupancy load",
+        "space allocation standards"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8d4c32afc70b327ee48530bfcdcbcd1927788448fd2899a9e39f2c7b94bf105c"
+    },
+    {
+      "question_id": "ea95d847-aef2-4c91-86d9-0fc00c0b8a07",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "A fire station design includes a frontage apron (outdoor staging area) that must accommodate turning radius for apparatus deployment. The standard depth for this apron is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "10.0 meters"
+        },
+        {
+          "id": "b",
+          "text": "12.0 meters"
+        },
+        {
+          "id": "c",
+          "text": "15.0 meters"
+        },
+        {
+          "id": "d",
+          "text": "20.0 meters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Under-sized; insufficient for ladder truck turning radius and emergency staging.",
+        "b": "Insufficient; typical turning radius for fire engines requires minimum 15.0m.",
+        "c": "Correct: 15.0m apron depth is the standard for fire station frontage design.",
+        "d": "Over-sized; unnecessarily increases site requirements beyond operational needs.",
+        "correct": "Frontage apron standard depth: 15.0 meters from building face to street/driveway. This provides adequate turning radius and staging area for fire apparatus during rapid deployment.",
+        "takeaway": "Fire station frontage apron = 15.0m depth minimum. This accommodates apparatus turning radius and emergency vehicle staging. Critical for site layout and zoning compliance."
+      },
+      "explanation": null,
+      "code_citation": "BFP Fire Station Design Guidelines; NBCP Group D Standards",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "site layout",
+        "apparatus operational requirements"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6047daae53d4fa34f0ff58414daad9a87a70994b4b1cf042d81d183599340871"
+    },
+    {
+      "question_id": "c75167c2-77c3-4ecf-8e9d-491613d6765e",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "The overhead apparatus bay door for a fire station should have minimum dimensions of:",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.0m wide × 3.5m high"
+        },
+        {
+          "id": "b",
+          "text": "4.0m wide × 4.0m high"
+        },
+        {
+          "id": "c",
+          "text": "3.5m wide × 4.0m high"
+        },
+        {
+          "id": "d",
+          "text": "5.0m wide × 4.5m high"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Under-sized; would restrict larger apparatus (ladder trucks require full 4.0m × 4.0m clearance).",
+        "c": "Partial under-sizing; width is adequate at 3.5m for some apparatus, but 4.0m is standard for all vehicle types.",
+        "d": "Over-sized; unnecessarily increases door mechanism cost and energy loss.",
+        "correct": "Apparatus bay overhead door standard: 4.0m wide × 4.0m high. This accommodates fire engine and ladder truck deployment.",
+        "takeaway": "Apparatus bay door = 4.0m W × 4.0m H standard. This is distinct from the apparatus bay interior dimension (7.5m W × 14.0m D × 4.3m H). Door size directly relates to vehicle width and height requirements."
+      },
+      "explanation": null,
+      "code_citation": "BFP Fire Station Design Guidelines; NBCP Group D Standards",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [
+        "apparatus bay dimensions",
+        "clearance requirements"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7aed890ccfe528804503e64fb427a6a6a63dc7f2e689a1bcc950372509d8e271"
+    },
+    {
+      "question_id": "c9075134-1804-44ad-8313-0134b8d7b313",
+      "article_id": "20ac90a7-f0e9-49cf-9459-86353d538af9",
+      "topic_id": "5aa71ddf-0ab8-4587-bb1a-e9ebb2a65bd3",
+      "text": "A fire station design proposal specifies apparatus bays that are 7.5m wide, 14.0m deep, and 4.2m high. What is the critical issue with this design, and what is the correct height requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The height of 4.2m is acceptable; it is only 0.1m below the standard, which is often overlooked in practice"
+        },
+        {
+          "id": "b",
+          "text": "The height is deficient; the minimum required clear height is 4.3m. Ladder trucks and some aerial apparatus require this minimum clearance."
+        },
+        {
+          "id": "c",
+          "text": "The height specification is irrelevant; apparatus bay width (7.5m) is the critical dimension, as it affects vehicle maneuverability"
+        },
+        {
+          "id": "d",
+          "text": "The height should be increased to 4.5m to accommodate all possible future apparatus types, ensuring flexibility for future needs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "No: 0.1m shortfall is critical and creates safety/operational hazards. Standards exist for precise reasons.",
+        "b": "Correct: Minimum apparatus bay height = 4.3m. The design proposal's 4.2m is non-compliant.",
+        "c": "Incorrect: Vertical clearance is as critical as horizontal dimensions. Apparatus height (typically 3.8m–4.1m) requires adequate overhead clearance.",
+        "d": "Over-specification: 4.3m is the standard; 4.5m adds unnecessary cost without operational benefit.",
+        "correct": "Apparatus bay clear height must be minimum 4.3m. At 4.2m, the design is deficient and would not safely accommodate ladder trucks or apparatus with roof-mounted equipment. The 0.1m shortfall is significant for equipment clearance and safety.",
+        "takeaway": "Apparatus bay minimum clear height = 4.3m (width = 7.5m, depth = 14.0m). All three dimensions must be met. Deficiencies in height compromise operational safety and equipment compatibility."
+      },
+      "explanation": null,
+      "code_citation": "BFP Fire Station Design Guidelines; NBCP Group D Standards",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "design standards compliance",
+        "critical dimensions"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-005-13-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:00.291039+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0292f8be16f47d90c5cab64cc11c9677e6707b09add7269c62f519e082f73ed7"
+    }
+  ]
+}

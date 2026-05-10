@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 015 Data Privacy Act Ra 10173 The Architect S Obligations When Handling Client Information** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Data Privacy Act (RA 10173)—The Architect's Obligations When Handling Client Information
 
 ## Learning Goal
@@ -53,21 +60,39 @@ Professional disciplinary bodies (Board of Architecture) may also view serious p
 
 Architects should implement the following: (1) maintain a data inventory documenting what personal information is collected, why, and how long it is retained; (2) draft privacy notices to inform data subjects; (3) obtain written consent before collecting sensitive data; (4) implement confidentiality agreements with staff; (5) encrypt sensitive files; (6) restrict access to authorized personnel only; (7) maintain audit trails; (8) secure disposal of information when no longer needed; (9) have a breach response plan; and (10) provide staff training on data protection obligations.
 
-<LawCallout code="ra10173" section="Section 11 - Security of Personal Information">
-Legal Basis: RA 10173 (Data Privacy Act of 2012). Architects collecting/processing client personal data are 'personal information controllers' subject to NPC (National Privacy Commission) oversight.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra10173", section="Section 11 - Security of Personal Information"
+- Text: Legal Basis: RA 10173 (Data Privacy Act of 2012). Architects collecting/processing client personal data are 'personal information controllers' subject to NPC (National Privacy Commission) oversight.
+[/SLATECAMP_UI_BLOCK]
 
-<Warn />
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<Tip />
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
 
 
-<ArticleMedia id="media-lea-prac-frm-015-data-privacy--0" type="image" caption="Data Privacy Compliance for Architects — RA 10173 Workflow" description="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-frm-015-data-privacy--0", type="image", caption="Data Privacy Compliance for Architects — RA 10173 Workflow", description="Flowchart showing architect's data privacy obligations: Collect client data → Inform data subject (privacy notice) → Obtain consent → Process only for specified purpose → Implement security measures → Breach notification (if applicable) → Retention/destruction policy. Side panel shows architect's responsibilities as personal information controller, including NPC registration requirements."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)

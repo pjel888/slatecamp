@@ -158,4 +158,3 @@ Extracted summary:
 See also within Pre-Columbian & Indigenous American Architecture: **lea-hist-012-02-core-concept**, **lea-hist-012-03-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
-

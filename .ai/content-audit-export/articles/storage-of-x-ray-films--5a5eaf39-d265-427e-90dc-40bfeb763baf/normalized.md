@@ -343,4 +343,3 @@ If you paused on any of these, re-read Section 4 before proceeding.
 ## Cross‑References
 
 **Fire Extinguishing Systems**, **Fire Resistive Construction Ratings**, **Plastics In Construction**, **Sheet Metal And Spray Booths**
-

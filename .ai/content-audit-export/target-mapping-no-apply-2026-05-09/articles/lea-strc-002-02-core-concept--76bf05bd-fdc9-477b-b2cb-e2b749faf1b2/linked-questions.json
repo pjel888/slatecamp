@@ -1,0 +1,508 @@
+{
+  "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:125370b4354bfa0759d41ee2eb3cc50b28bffb07e4ea2b6b2a6364a82da24481",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "ed3d2c20-6362-4646-9a16-ef33a403a920",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "What is the primary function of a shear wall in lateral force resistance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To carry vertical loads only, without contributing to lateral stability"
+        },
+        {
+          "id": "b",
+          "text": "To resist horizontal (lateral) loads through in-plane shear and bending"
+        },
+        {
+          "id": "c",
+          "text": "To separate rooms and provide privacy, without structural contribution"
+        },
+        {
+          "id": "d",
+          "text": "To increase the thermal insulation of the building, enhancing energy efficiency"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Shear walls are vertical structural elements designed to transfer lateral forces (wind, seismic) from diaphragms down to the foundation through in-plane shear and bending action.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 202",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b74207fe69fa87c1b56a3b68806a7a0f809e9bf89cf9d2dd2640390086f46d79"
+    },
+    {
+      "question_id": "f43df552-293f-494d-86c2-20f6343cb6d8",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "A building has shear walls positioned asymmetrically (not centered on the floor plan). Why might collectors be required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collectors are always required in all buildings regardless of wall layout, as a standard practice"
+        },
+        {
+          "id": "b",
+          "text": "Asymmetric shear wall positions create a situation where diaphragm forces do not naturally align with wall locations; collectors redirect forces and prevent torsional imbalance"
+        },
+        {
+          "id": "c",
+          "text": "Collectors are only required if the building exceeds 10 stories, according to specific structural guidelines"
+        },
+        {
+          "id": "d",
+          "text": "Collectors are not necessary because shear walls can resist forces from any direction, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "When shear walls are offset from the center of the diaphragm, lateral forces must be actively redirected via collectors to ensure all forces reach the walls. Without collectors, portions of the diaphragm may be unbraced, causing torsion and load concentration.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 430; ASCE 7",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f51ad4baaf4da67cd274dc759b643e617b9040f0c64e9eebb12fe48ffe596884"
+    },
+    {
+      "question_id": "102f5ee2-5e2a-44f4-820f-6ad84a8cd9d5",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "An L-shaped building has shear walls concentrated on one leg of the L. The diaphragm must transfer forces from the other leg to the shear walls. What combination of structural elements ensures this load path?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the diaphragm is needed; it will naturally transfer all forces, assuming no irregularities in the structure"
+        },
+        {
+          "id": "b",
+          "text": "Collectors must bridge the gap between the loaded area and the shear walls, with the diaphragm distributing forces to those collectors"
+        },
+        {
+          "id": "c",
+          "text": "An additional shear wall in the unbraced leg is the only solution, which may not be feasible in all designs"
+        },
+        {
+          "id": "d",
+          "text": "No special provisions are needed; the structure will perform safely without collectors, which is a risky assumption"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In an L-shaped building with offset shear walls, collectors (drag struts) must span across the diaphragm to redirect forces toward the shear walls. The diaphragm distributes lateral loads to the collectors, which then transfer forces to the walls, ensuring continuity.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 430; ASCE 7",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f2530e5eeabd6c83d9a2dc17ec12d54b235ff890a3946af8bc2f4b48e2d9dd1e"
+    },
+    {
+      "question_id": "1a453b8a-12ad-41ba-8656-a06f8aa75c7a",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "What is a boundary element in a shear wall, and what is its critical function?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A boundary element is the edge of a shear wall; it requires additional reinforcement to prevent crushing and ensure proper confinement"
+        },
+        {
+          "id": "b",
+          "text": "A boundary element is only needed if the shear wall has openings, which is a common misconception in structural design"
+        },
+        {
+          "id": "c",
+          "text": "A boundary element is a non-structural trim used to finish the wall surface, often mistaken for a critical structural component"
+        },
+        {
+          "id": "d",
+          "text": "A boundary element is required only in walls shorter than 3 meters, which is not a standard practice in engineering"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Boundary elements are reinforced zones at shear wall edges and corners. They prevent premature crushing and buckling under high compressive stress and ensure transverse reinforcement confines the concrete.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 430 (Reinforced Concrete Shear Walls)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:37be09ff0865147bdd5c3a05ee0aa305141d4327ef30b4545dee2caa98391086"
+    },
+    {
+      "question_id": "506bd0ff-543b-4d86-ab0b-daf11784d056",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "Define a collector (drag strut) and explain when it is necessary.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A collector is a beam that connects two buildings; it is used in all multi-story structures to ensure lateral stability and load distribution"
+        },
+        {
+          "id": "b",
+          "text": "A collector transfers diaphragm forces to shear walls; it is necessary when shear walls are not directly aligned with diaphragm loads"
+        },
+        {
+          "id": "c",
+          "text": "A collector is a non-structural element used only for aesthetic purposes, often to enhance the visual appeal of a building's facade"
+        },
+        {
+          "id": "d",
+          "text": "A collector connects columns to foundations and is required in all frames to maintain structural integrity and load path continuity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Collectors are beams or trusses that channel forces from the diaphragm to shear walls, especially critical when the diaphragm geometry or shear wall layout requires force redirection to prevent torsion and load imbalance.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 202, 430",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b055257ad67a55827e9c0adb624c8888a99a751a90f6066c3cbfd8e38ad09790"
+    },
+    {
+      "question_id": "56fd7f92-a709-49a4-b148-1a69ff3d28e0",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "What is the role of a diaphragm in a lateral force-resisting system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To provide lateral resistance by spanning vertically between shear walls, ensuring stability during seismic events"
+        },
+        {
+          "id": "b",
+          "text": "To collect lateral inertial forces from the floor mass and distribute them to shear walls"
+        },
+        {
+          "id": "c",
+          "text": "To carry gravity loads from the structure above, which is not its primary function in lateral force resistance"
+        },
+        {
+          "id": "d",
+          "text": "To serve only as a floor and not participate in lateral design, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Diaphragms are horizontal structural elements that act as large beams, collecting inertial forces from floor masses during earthquakes and distributing them to vertical shear walls.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 202",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:331e45d0afaf91559c355b8d371307ca8f6c574c23235507a1a17fbf096aedd8"
+    },
+    {
+      "question_id": "63ce3d2e-8f55-489a-8c1b-f63094c42563",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "Distinguish between a rigid diaphragm and a flexible diaphragm in terms of lateral load distribution.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Rigid diaphragms are stronger and flexible diaphragms are weaker; rigid ones are always better, which is a common misconception in structural engineering"
+        },
+        {
+          "id": "b",
+          "text": "A rigid diaphragm distributes lateral loads to shear walls proportional to their stiffness; a flexible diaphragm distributes to the nearest walls only"
+        },
+        {
+          "id": "c",
+          "text": "Both rigid and flexible diaphragms distribute loads identically, which is incorrect as they have different load distribution characteristics"
+        },
+        {
+          "id": "d",
+          "text": "Flexible diaphragms are required for all buildings; rigid diaphragms are not allowed in seismic zones, which is a misunderstanding of building code requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Rigid diaphragms behave like plates that resist bending and distribute forces proportional to wall stiffness. Flexible diaphragms act as one-way slabs, distributing loads to the nearest shear walls only.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 430; ASCE 7 Chapter 12",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1d6e53a2a06ebad91d08685b8af34d7a26290b3a45795de7ed804872f81c4e7d"
+    },
+    {
+      "question_id": "a411ab2b-fcc4-4dc8-a9f2-d6bae7072a02",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "A floor plan shows shear walls on the perimeter of a building with an irregular boundary. How should collectors be configured to ensure proper load transfer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Collectors are not needed because shear walls on the perimeter are inherently symmetrical, which naturally balances the forces"
+        },
+        {
+          "id": "b",
+          "text": "Collectors should connect inboard diaphragm load concentrations to the perimeter shear walls to bridge any gaps in alignment and ensure continuous force transfer"
+        },
+        {
+          "id": "c",
+          "text": "All diaphragm forces naturally flow to perimeter shear walls without collectors, assuming uniform distribution of loads"
+        },
+        {
+          "id": "d",
+          "text": "Collectors are only required for interior shear walls, never for perimeter walls, unless specified by the structural engineer"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Irregular building boundaries can create zones where diaphragm loads do not naturally align with shear walls. Collectors bridge these gaps, ensuring that all inertial forces are positively transferred to the shear wall system.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 430",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3b9b6e6d1a7dcdd89e313e40d73e3ddf64582fca73740ebdac948e3be8a1a410"
+    },
+    {
+      "question_id": "bea82b7d-4622-4113-8d53-342507a336e8",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "In Seismic Zone 2, a concrete building has two shear walls separated by 8 meters and a monolithic concrete floor slab. What role does the floor slab serve in lateral design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The floor slab carries only gravity loads; lateral design is independent, which overlooks its role as a diaphragm"
+        },
+        {
+          "id": "b",
+          "text": "The floor slab acts as a diaphragm, collecting lateral inertial forces from the floor mass and transferring them to the two shear walls"
+        },
+        {
+          "id": "c",
+          "text": "The floor slab prevents lateral movement but shear walls provide lateral resistance, which is a partial understanding"
+        },
+        {
+          "id": "d",
+          "text": "The floor slab is non-structural and does not participate in lateral design, which is incorrect"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Monolithic concrete floor slabs function as rigid diaphragms in lateral systems. The slab collects inertial forces from the floor mass and transfers them to the shear walls, allowing the walls to resist the lateral forces.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 430; ASCE 7",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f50e8dd019a285bc1e9e9b36e8497bb47827d8973456783ede1b9e837cb06da8"
+    },
+    {
+      "question_id": "d4200585-ac93-4283-93cc-9c7f923fae59",
+      "article_id": "76bf05bd-fdc9-477b-b2cb-e2b749faf1b2",
+      "topic_id": "7918201c-c053-4054-8bd2-1481ade143d7",
+      "text": "What is the relationship between shear wall confinement reinforcement and boundary elements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Boundary elements are separate from confinement reinforcement; they serve different purposes, such as providing additional stability."
+        },
+        {
+          "id": "b",
+          "text": "Boundary elements provide the primary confinement reinforcement at shear wall edges and corners to prevent crushing and lateral buckling of the wall"
+        },
+        {
+          "id": "c",
+          "text": "Confinement reinforcement is only needed in columns, not in shear walls, which is a misunderstanding of structural requirements."
+        },
+        {
+          "id": "d",
+          "text": "Boundary elements are decorative features that do not affect structural performance, which is incorrect as they play a critical role in stability."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Boundary elements are reinforced zones that provide transverse reinforcement and confinement at shear wall perimeters. This confinement prevents premature concrete crushing and ensures ductile behavior under high compressive stress.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Section 430",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c83a799e0cae04f33421327f22e6d4c609a053e633a4a6625bab569a3715afb9"
+    }
+  ]
+}

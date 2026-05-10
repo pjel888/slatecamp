@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Eth 010 Introduction** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Introduction
 ## Learning Goal
 After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
@@ -16,7 +25,11 @@ Acceptable Practice → Gray Area → Professional Deviation → Violation
 
 **Acceptable Practice:** Actions within professional discretion, consistent with standards
 
-<ArticleMedia id="media-eth010-conflict-matrix" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Conflict of Interest — Analysis Matrix" description="Four-quadrant matrix crossing CONFLICT TYPE (Financial, Professional/Employment, Personal/Relationship, Role-based) against SEVERITY LEVEL (Disclosure sufficient, Consent sufficient, Recusal required, Always prohibited). Each cell shows representative scenarios. Bottom section shows the four-step mandatory process: Recognize → Disclose → Obtain Informed Consent → Recuse if irreconcilable." placementIntent="conflict-resolution" suggestedSearchQuery="architect conflict of interest matrix type severity disclosure recusal Code of Ethics" suggestedAsset="Diagram or reference image" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-eth010-conflict-matrix", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Conflict of Interest — Analysis Matrix", description="Four-quadrant matrix crossing CONFLICT TYPE (Financial, Professional/Employment, Personal/Relationship, Role-based) against SEVERITY LEVEL (Disclosure sufficient, Consent sufficient, Recusal required, Always prohibited). Each cell shows representative scenarios. Bottom section shows the four-step mandatory process: Recognize → Disclose → Obtain Informed Consent → Recuse if irreconcilable.", placementIntent="conflict-resolution", suggestedSearchQuery="architect conflict of interest matrix type severity disclosure recusal Code of Ethics", suggestedAsset="Diagram or reference image"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 **Gray Area:** Practices that may be questionable but have professional defenders
 **Professional Deviation:** Breach of clear standard but not egregious
 **Violation:** Clear breach that justifies discipline

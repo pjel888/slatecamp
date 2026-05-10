@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+  "dry_question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q02",
+  "target_article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "Consultation-as-compensable-input concept is not directly covered by existing SPP 201 questions.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "UAP SPP Document 201, Consultation, PDF p.42.",
+    "text": "Under SPP 201, why is consultation still compensable professional input even if the project is not pursued?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "The excerpt says the architect renders valuable inputs whether or not the client pursues the project.",
+      "distractors": {
+        "B": "Design-build is a different arrangement and not created by consultation.",
+        "C": "Consultation does not replace architectural documents.",
+        "D": "SPP 201 treats it as valuable professional input, not free marketing."
+      },
+      "takeaway": "Do not dismiss oral/written advice as non-service when SPP 201 classifies it."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "uap-consultation-q2",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "A",
+    "explanation": "UAP SPP Document 201, Consultation, PDF p.42.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "The architect renders advice, evaluation, appraisal, and direction whether or not the client proceeds."
+      },
+      {
+        "id": "B",
+        "text": "Consultation automatically creates a design-build contract."
+      },
+      {
+        "id": "C",
+        "text": "Consultation replaces signed and sealed architectural documents."
+      },
+      {
+        "id": "D",
+        "text": "Consultation is only free preliminary marketing."
+      }
+    ]
+  },
+  "sme_source_locator": "UAP SPP Document 201, Consultation, PDF p.42.",
+  "code_citation": "UAP SPP Document 201, Consultation, PDF p.42.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

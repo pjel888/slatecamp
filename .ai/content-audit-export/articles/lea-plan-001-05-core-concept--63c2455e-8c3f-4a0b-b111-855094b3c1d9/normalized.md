@@ -12,7 +12,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 ## Learning Goal
 Describe the CLUP process — data collection, public consultation, land use mapping, Sanggunian adoption, DHSUD review — apply the 10-year horizon and 3-year midterm review cycle, distinguish CLUP from zoning ordinance, and identify the Environmental Planner's statutory role.
 
-The Comprehensive Land Use Plan (CLUP) is the strategic planning instrument mandated by Philippine law for all local government units. 
+The Comprehensive Land Use Plan (CLUP) is the strategic planning instrument mandated by Philippine law for all local government units.
 
 ## Core Concept
 

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 003 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 The moduli—elasticity, rigidity, resilience, and toughness—are slope-based and energy-based measures of stiffness and energy capacity. Memorize their definitions and standard values. These appear in every calculation: deflection, lateral stability, foundation design.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-003-03-core-concept" type="image" caption="Modulus of Elasticity — Slope of the Stress-Strain Curve" description="Graphical illustration showing Modulus of Elasticity (E) as the slope of the linear-elastic region of the stress-strain curve. Three materials compared: steel (steepest slope, E=200 GPa), concrete (intermediate, E~4700√f'c), and timber (shallowest, E varies by grade). Shows how higher E means stiffer material — less strain for same stress." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-003-03-core-concept", type="image", caption="Modulus of Elasticity — Slope of the Stress-Strain Curve", description="Graphical illustration showing Modulus of Elasticity (E) as the slope of the linear-elastic region of the stress-strain curve. Three materials compared: steel (steepest slope, E=200 GPa), concrete (intermediate, E~4700√f'c), and timber (shallowest, E varies by grade). Shows how higher E means stiffer material — less strain for same stress.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A modulus is a measure of a material's resistance to deformation under a specific type of stress. Unlike strength (which measures capacity to resist failure), moduli measure the slope of response: how much deformation results from a unit of stress. Moduli are properties of the material, not the member. A stiff material has a high modulus; a soft material has a low modulus.
 
@@ -74,7 +87,11 @@ The NSCP mandates the use of Ec = 4,700√f'c for normal-weight concrete deflect
 
 **Pattern 4: Deflection Comparison.** Two beams: one steel (E = 200,000 MPa), one concrete (Ec ≈ 25,000 MPa). Same span, same load, same I. Which deflects more? Concrete: δ ∝ 1/E, so the concrete beam deflects (200,000 / 25,000) = 8 times more than the steel beam. Materials with lower E are more flexible.
 
-<Tip>Remember: E is in the denominator of deflection formulas. Lower E = more deflection. Steel (high E) is stiffer than concrete (lower E). Resilience = elastic energy only. Toughness = total energy (elastic + plastic). Every problem involving deflection, lateral stability, or buckling contains a hidden E.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Remember: E is in the denominator of deflection formulas. Lower E = more deflection. Steel (high E) is stiffer than concrete (lower E). Resilience = elastic energy only. Toughness = total energy (elastic + plastic). Every problem involving deflection, lateral stability, or buckling contains a hidden E.
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -82,6 +99,14 @@ See also: **Stress-Strain** (lea-strc-003-01) for where modulus appears as slope
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Assuming E varies by steel grade. E = 200,000 MPa for all structural steel grades. Only Fy and Fu vary. This is tested repeatedly.","Forgetting the √f'c in the concrete modulus formula. Ec = 4,700√f'c, not 4,700 × f'c. The square root is non-negotiable. For f'c = 25 MPa: Ec = 4,700 × 5 = 23,500 MPa (not 117,500 MPa).","Confusing Modulus of Resilience (elastic energy only, up to yield) with Modulus of Toughness (total energy, to rupture). Resilience uses the formula ER = Fy² / (2E). Toughness is always larger and requires integrating the entire stress-strain curve.","Using the wrong definition of Poisson's ratio. Poisson's ratio is lateral strain / longitudinal strain, not lateral stress / longitudinal stress. For steel, ν ≈ 0.30, meaning lateral strain is 30% of longitudinal strain.","Misapplying the G = E / (2(1 + ν)) relationship. For steel with ν = 0.30: G = E / 2.60, not E / 2.30 or other variations. The denominator is 2(1 + ν) = 2 × 1.30 = 2.60.","Treating moduli as constants across all concrete strengths. Ec depends on f'c. A 40 MPa concrete is stiffer than 25 MPa concrete: Ec(40) / Ec(25) = √40 / √25 = 6.32 / 5 ≈ 1.27×. The modulus increases with strength."] />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes=true, Assuming=true, E=true, varies=true, by=true, steel=true, grade=true, MPa=true, for=true, all=true, structural=true, grades=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

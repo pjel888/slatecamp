@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 005 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -12,11 +21,19 @@ Stormwater management addresses two challenges: (1) quantity—controlling peak 
 Detention basins temporarily hold stormwater, releasing it slowly; retention basins permanently store water (or infiltrate it). Both reduce peak flows and provide settling time for pollutant removal. Permeable pavements allow water to infiltrate rather than run off, reducing volume. Rain gardens (bioretention areas) filter runoff through soil and vegetation. Green roofs absorb rainfall, reducing runoff. Swleas (vegetated channels) convey and filter runoff.
 
 Site drainage design begins with watershed analysis: where does water come from (roof, pavement, slopes)? Where does it go (infiltration, detention, discharge)? Design rainfall events (commonly 10-year, 25-year, 100-year storm) determine basin sizing. Impervious surfaces (buildings, pavement) increase runoff; pervious surfaces decrease it. Site design can reduce runoff by: preserving vegetation, using permeable paving, implementing green roofs, and directing flow to retention areas.
-<ArticleMedia id="media-lea-plan-005-06-core-concept" type="image" caption="Stormwater Management — Detention Basins, Rain Gardens, and Permeable Pavement" description="Site drainage system diagram showing: detention/retention basin sizing, rain garden bioretention cell cross-section, permeable pavement (porous asphalt, interlocking pavers), green roof layers, and flow paths. RA 9275 water quality standards for discharge to water bodies." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-005-06-core-concept", type="image", caption="Stormwater Management — Detention Basins, Rain Gardens, and Permeable Pavement", description="Site drainage system diagram showing: detention/retention basin sizing, rain garden bioretention cell cross-section, permeable pavement (porous asphalt, interlocking pavers), green roof layers, and flow paths. RA 9275 water quality standards for discharge to water bodies.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-<WikiExamTable headers=["Drainage Component", "Function", "Site Planning Application"] rows=[["**Detention basin**", "Temporary storage; releases water slowly over hours/days", "Reduces peak stormwater flow to receiving waters; provides settling for sediment"], ["**Retention basin**", "Permanent storage or infiltration; water stays on-site or infiltrates", "Eliminates downstream flooding; recharges groundwater; may provide habitat"], ["**Permeable pavement**", "Porous concrete, permeable asphalt, gravel; allows infiltration", "Reduces runoff volume; recharges groundwater; suitable for low-traffic areas"], ["**Rain garden / Bioretention**", "Shallow vegetated depression; filters runoff through soil layers", "Removes pollutants; recharges groundwater; improves aesthetics"], ["**Green roof**", "Vegetation on building roof; absorbs rainfall", "Reduces runoff; insulates building; extends roof life"], ["**Swlea / Bioswlea**", "Vegetated channel conveying stormwater; provides infiltration", "Slows runoff velocity; filters water; provides habitat"], ["**Stormwater tree pit**", "Trees with surrounding soil basin", "Intercepts rainfall; provides shade; improves air quality"], ["**Design storm**", "Rainfall event with specified return period (10-year, 25-year, 100-year)", "Determines basin capacity; larger storms = larger basins"], ["**Impervious surface**", "Hard, non-infiltrating surface (concrete, asphalt, roofs)", "Increases runoff; site design should minimize impervious area"], ["**Runoff coefficient**", "Fraction of rainfall that runs off vs. infiltrates (varies 0.3\u20130.9)", "Higher coefficient = more runoff; guides detention sizing"]] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="[", Drainage=true, Component=true, Function=true, Site=true, Planning=true, Application=true, rows="[[", Detention=true, basin=true, Temporary=true, storage=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -30,7 +47,11 @@ Philippine tropical climate brings intense monsoon rainfall concentrated in June
 
 **Pattern 3 — Green infrastructure benefit:** "A project adds a rain garden to a parking lot. What does this accomplish?" → Captures and filters runoff; reduces peak flow; improves water quality; recharges groundwater.
 
-<Tip>**Detention = temporary storage (lowers peak flow); Retention = permanent storage/infiltration (eliminates runoff).** Permeable surfaces are cheaper and better than gray infrastructure. SuDS provides water quality AND quantity benefits.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Detention = temporary storage (lowers peak flow); Retention = permanent storage/infiltration (eliminates runoff).** Permeable surfaces are cheaper and better than gray infrastructure. SuDS provides water quality AND quantity benefits.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Storm frequency: 10-year storm = standard for site drainage design, 25-year or 100-year for critical infrastructure. Detention basins should drain within 24-48 hours. Retention basins maintain permanent water level. Know the distinction.
 
@@ -40,4 +61,8 @@ See **LEA-DSGN-012-03** (Grading and Drainage) for site drainage design, **LEA-P
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing detention (temporary) with retention (permanent); both reduce peak flows, but retention eliminates downstream runoff","Assuming detention basins pollute water; properly designed detention settles sediment and improves quality via settling time","Treating stormwater management as separate from site design; modern design integrates runoff reduction (permeable surfaces, retention, green roofs) throughout","Applying only gray infrastructure (pipes, concrete basins) when green infrastructure (rain gardens, permeable pavement, swleas) is more cost-effective and multifunctional","Forgetting that RA 9275 requires stormwater treatment (not just detention) from commercial and high-density residential developments"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing detention (temporary) with retention (permanent); both reduce peak flows, but retention eliminates downstream runoff\",\"Assuming detention basins pollute water; properly designed detention settles sediment and improves quality via settling time\",\"Treating stormwater management as separate from site design; modern design integrates runoff reduction (permeable surfaces, retention, green roofs) throughout\",\"Applying only gray infrastructure (pipes, concrete basins) when green infrastructure (rain gardens, permeable pavement, swleas) is more cost-effective and multifunctional\",\"Forgetting that RA 9275 requires stormwater treatment (not just detention) from commercial and high-density residential developments\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

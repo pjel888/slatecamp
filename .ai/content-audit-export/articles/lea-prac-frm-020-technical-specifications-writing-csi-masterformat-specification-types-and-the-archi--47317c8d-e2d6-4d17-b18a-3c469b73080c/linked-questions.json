@@ -1,9 +1,109 @@
 {
   "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:b9c384bab1d9144120efb763a8d4c3fb285839352ee4a9eb763080a213af782e",
+  "linked_questions_hash": "sha256:4bfd1d4f3926adaf10a90f74dd63aad21f5e2cda283516ce1c3006c8d3c98eef",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "ac205b04-4e0d-4001-b991-911c07649f27",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What is CSI MasterFormat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "construction cost index, which is used to estimate the financial requirements of a project"
+        },
+        {
+          "id": "b",
+          "text": "The standard organizational system for construction specifications using numbered divisions and sections"
+        },
+        {
+          "id": "c",
+          "text": "brand of paint, commonly used in commercial and residential projects for its durability"
+        },
+        {
+          "id": "d",
+          "text": "building code, which provides guidelines for construction practices and safety standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses MasterFormat with cost data; MasterFormat is an organizational system, not a cost index.",
+        "c": "Completely unrelated; MasterFormat is an organizational system, not a paint brand.",
+        "d": "Confuses MasterFormat with building codes; MasterFormat is a specification organization system, not a safety standard.",
+        "correct": "CSI MasterFormat is the Construction Specifications Institute standard system organizing trades into numbered divisions (01–48) and subsections, ensuring logical organization and industry standardization.",
+        "takeaway": "CSI MasterFormat (50 divisions) is the standard specification organization system—ensures everyone can locate information consistently."
+      },
+      "explanation": "Confuses MasterFormat with cost data; MasterFormat is an organizational system, not a cost index. Completely unrelated; MasterFormat is an organizational system, not a paint brand. Confuses MasterFormat with building codes; MasterFormat is a specification organization system, not a safety standard. CSI MasterFormat is the Construction Specifications Institute standard system organizing trades into numbered divisions (01–48) and subsections, ensuring logical organization and industry standardization. CSI MasterFormat (50 divisions) is the standard specification organization system—ensures everyone can locate information consistently.",
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T14:43:19.689383+00:00",
+      "content_hash": "sha256:15de327083cae30f11fe75fe393a4bfb63739ccb6e3473e1a4dccc8784f91508"
+    },
+    {
+      "question_id": "26e84cb0-c73f-42be-8054-e727667eb59a",
+      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
+      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
+      "text": "What is a performance specification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Specification with no standards or reference criteria for evaluating acceptable product performance"
+        },
+        {
+          "id": "b",
+          "text": "specification that defines the end result without prescribing specific materials; contractor innovation allowed"
+        },
+        {
+          "id": "c",
+          "text": "Only for government projects where open competitive bidding requires brand-neutral specifications"
+        },
+        {
+          "id": "d",
+          "text": "Never used in practice because prescriptive specifications are always preferred by design professionals"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; performance specifications include clear acceptance standards and testing requirements.",
+        "c": "Incorrect scope; performance specifications are used on both public and private projects.",
+        "d": "False; performance specifications are common for results dependent on methodology (acoustic, thermal, water-tightness performance).",
+        "correct": "Performance specifications define the desired outcome (e.g., water-tightness) and verification methods (testing standards) but allow contractors to choose materials and methods that achieve the result.",
+        "takeaway": "Performance = 'define the result'—lets contractors innovate; requires clear acceptance criteria and testing procedures."
+      },
+      "explanation": "False; performance specifications include clear acceptance standards and testing requirements. Incorrect scope; performance specifications are used on both public and private projects. False; performance specifications are common for results dependent on methodology (acoustic, thermal, water-tightness performance). Performance specifications define the desired outcome (e.g., water-tightness) and verification methods (testing standards) but allow contractors to choose materials and methods that achieve the result. Performance = 'define the result'—lets contractors innovate; requires clear acceptance criteria and testing procedures.",
+      "code_citation": "CSI MasterFormat",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-020-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T14:43:19.931391+00:00",
+      "content_hash": "sha256:3cfd7143f1ac50a564cbb50995d03ce7fbcc5879c35a42c4a0865263d9102ed2"
+    },
     {
       "question_id": "e889b717-92f9-456b-b21e-db8fb5186b75",
       "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
@@ -105,56 +205,6 @@
       "content_hash": "sha256:184bcb8fd02d70abbd44a11fc46530e0050ed5727055d3b8f9dbd80e22c49081"
     },
     {
-      "question_id": "ac205b04-4e0d-4001-b991-911c07649f27",
-      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
-      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
-      "text": "What is CSI MasterFormat?",
-      "options": [
-        {
-          "id": "a",
-          "text": "construction cost index, which is used to estimate the financial requirements of a project"
-        },
-        {
-          "id": "b",
-          "text": "The standard organizational system for construction specifications using numbered divisions and sections"
-        },
-        {
-          "id": "c",
-          "text": "brand of paint, commonly used in commercial and residential projects for its durability"
-        },
-        {
-          "id": "d",
-          "text": "building code, which provides guidelines for construction practices and safety standards"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses MasterFormat with cost data; MasterFormat is an organizational system, not a cost index.",
-        "c": "Completely unrelated; MasterFormat is an organizational system, not a paint brand.",
-        "d": "Confuses MasterFormat with building codes; MasterFormat is a specification organization system, not a safety standard.",
-        "correct": "CSI MasterFormat is the Construction Specifications Institute standard system organizing trades into numbered divisions (01–48) and subsections, ensuring logical organization and industry standardization.",
-        "takeaway": "CSI MasterFormat (50 divisions) is the standard specification organization system—ensures everyone can locate information consistently."
-      },
-      "explanation": null,
-      "code_citation": "CSI MasterFormat",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-020-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9d6176bd98417de215fd8c8e4ccd5ec4dcb86a7b339ce636bdd429d36227f2df"
-    },
-    {
       "question_id": "63a7b2d9-0902-4b49-95c5-710cb3cebe5e",
       "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
       "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
@@ -189,7 +239,7 @@
         "correct": "Design Development phase specifications may be preliminary and refined during detailed design; Construction Document specifications must be final and complete; any changes during construction must be issued through formal addenda or change orders.",
         "takeaway": "Update specs from DD to CD to finalize them; any changes during construction require formal addenda—informal changes create disputes."
       },
-      "explanation": null,
+      "explanation": "False; as design evolves from schematic to DD to CD, specifications require refinement. Dangerous; informal changes without notice create disputes and allow contractors to claim ambiguity. False; specifications can and should be updated through design phases to reflect design refinement. Design Development phase specifications may be preliminary and refined during detailed design; Construction Document specifications must be final and complete; any changes during construction must be issued through formal addenda or change orders. Update specs from DD to CD to finalize them; any changes during construction require formal addenda—informal changes create disputes.",
       "code_citation": "CSI MasterFormat",
       "bloom_level": "analyze",
       "application_context": "client_scenario",
@@ -201,58 +251,8 @@
       "model_id": "ALE-PRAC-FRM-020-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7a9631b61197180d52daf72ca3c52c0542f96fc67e75a006bead12e776f5b7e7"
-    },
-    {
-      "question_id": "26e84cb0-c73f-42be-8054-e727667eb59a",
-      "article_id": "47317c8d-e2d6-4d17-b18a-3c469b73080c",
-      "topic_id": "d1c5d6b6-e3d1-48a8-984c-cb00f9e2b5b3",
-      "text": "What is a performance specification?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Specification with no standards or reference criteria for evaluating acceptable product performance"
-        },
-        {
-          "id": "b",
-          "text": "specification that defines the end result without prescribing specific materials; contractor innovation allowed"
-        },
-        {
-          "id": "c",
-          "text": "Only for government projects where open competitive bidding requires brand-neutral specifications"
-        },
-        {
-          "id": "d",
-          "text": "Never used in practice because prescriptive specifications are always preferred by design professionals"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "False; performance specifications include clear acceptance standards and testing requirements.",
-        "c": "Incorrect scope; performance specifications are used on both public and private projects.",
-        "d": "False; performance specifications are common for results dependent on methodology (acoustic, thermal, water-tightness performance).",
-        "correct": "Performance specifications define the desired outcome (e.g., water-tightness) and verification methods (testing standards) but allow contractors to choose materials and methods that achieve the result.",
-        "takeaway": "Performance = 'define the result'—lets contractors innovate; requires clear acceptance criteria and testing procedures."
-      },
-      "explanation": null,
-      "code_citation": "CSI MasterFormat",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-020-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:49.529462+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4418d67ab5840c4e2ed75b07cb509573c6b904fd41dae1511c51d411c26acaa4"
+      "updated_at": "2026-05-06T14:43:19.817861+00:00",
+      "content_hash": "sha256:66f50bd6124e566f14350f9f91ffa75490efa535bc8163729195213a7d93c48c"
     },
     {
       "question_id": "83a8de7c-bc48-4cb5-8948-8080deac12ec",

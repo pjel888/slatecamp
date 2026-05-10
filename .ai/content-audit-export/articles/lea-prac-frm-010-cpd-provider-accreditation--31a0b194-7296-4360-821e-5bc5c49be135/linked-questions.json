@@ -1,9 +1,109 @@
 {
   "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6ab9b2c60118224c6cd44dad854976a16d0b528606eb49bf630cd4d378c63679",
+  "linked_questions_hash": "sha256:75c8d4042f6111c53b80f1b68c0eb9edaedf1a1f1dc65d1747bfc116ea433121",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "0cbc9241-4575-41dd-94f2-b7671d41b7b1",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What happens if a CPD provider's accreditation expires without renewal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Automatic extension for one additional year, provided certain conditions are met"
+        },
+        {
+          "id": "b",
+          "text": "Activities delivered lose accreditation; no valid CPD credits generated"
+        },
+        {
+          "id": "c",
+          "text": "Credits are valid for one year after expiration, allowing time for renewal"
+        },
+        {
+          "id": "d",
+          "text": "The provider is immediately re-accredited, assuming no violations occurred"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly grants automatic grace period; re-accreditation must be applied for before expiration.",
+        "c": "Falsely extends validity; accreditation expiration terminates credit validity immediately.",
+        "d": "Contradicts the requirement for application and evaluation; re-accreditation is not automatic.",
+        "correct": "After accreditation expiration without renewal, activities delivered do not generate valid CPD credits; architects cannot claim credit from expired providers.",
+        "takeaway": "CPD credits from providers become invalid immediately upon accreditation expiration—no grace period applies."
+      },
+      "explanation": "Incorrectly grants automatic grace period; re-accreditation must be applied for before expiration. Falsely extends validity; accreditation expiration terminates credit validity immediately. Contradicts the requirement for application and evaluation; re-accreditation is not automatic. After accreditation expiration without renewal, activities delivered do not generate valid CPD credits; architects cannot claim credit from expired providers. CPD credits from providers become invalid immediately upon accreditation expiration—no grace period applies.",
+      "code_citation": "RA 10912",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T15:55:56.666257+00:00",
+      "content_hash": "sha256:9ebf5eb519d923c8c1d96af6bef99ccdd6fcf4f5937674708a30db5126f878b4"
+    },
+    {
+      "question_id": "51508c33-d7db-4142-ad5b-6187e29ad740",
+      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
+      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
+      "text": "What is the architect's responsibility regarding CPD provider selection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects can enroll in any program and claim CPD credit, regardless of the provider's accreditation status."
+        },
+        {
+          "id": "b",
+          "text": "Architects must verify provider accreditation status before enrolling"
+        },
+        {
+          "id": "c",
+          "text": "The Board automatically notifies architects of approved providers, ensuring compliance with CPD requirements."
+        },
+        {
+          "id": "d",
+          "text": "All programs count equally regardless of provider status, simplifying the selection process for architects."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fails to apply the accreditation requirement; non-accredited programs generate no CPD credit.",
+        "c": "Reverses the responsibility; architects must proactively verify, not wait for Board notifications.",
+        "d": "Ignores the accreditation distinction; credits are valid only from accredited providers.",
+        "correct": "Architects must verify provider accreditation status before enrollment; only credits from accredited providers count toward the mandatory 45-unit requirement.",
+        "takeaway": "Architects are responsible for verifying provider accreditation before enrollment to ensure CPD credit validity."
+      },
+      "explanation": "Fails to apply the accreditation requirement; non-accredited programs generate no CPD credit. Reverses the responsibility; architects must proactively verify, not wait for Board notifications. Ignores the accreditation distinction; credits are valid only from accredited providers. Architects must verify provider accreditation status before enrollment; only credits from accredited providers count toward the mandatory 45-unit requirement. Architects are responsible for verifying provider accreditation before enrollment to ensure CPD credit validity.",
+      "code_citation": "RA 10912",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-010-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:48.361702+00:00",
+      "updated_at": "2026-05-06T15:55:56.798645+00:00",
+      "content_hash": "sha256:32f2121a1b5ba9f1c17256af83e5cf3a04dbc238dd39dc3a30680e336f81101f"
+    },
     {
       "question_id": "1ef83040-9fdb-4d13-97d5-2eb66764344d",
       "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
@@ -206,56 +306,6 @@
       "content_hash": "sha256:e0592bb3303492a5350edeb10d7abf3285446874f91e5ede94c106781ad39127"
     },
     {
-      "question_id": "0cbc9241-4575-41dd-94f2-b7671d41b7b1",
-      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
-      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
-      "text": "What happens if a CPD provider's accreditation expires without renewal?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Automatic extension for one additional year, provided certain conditions are met"
-        },
-        {
-          "id": "b",
-          "text": "Activities delivered lose accreditation; no valid CPD credits generated"
-        },
-        {
-          "id": "c",
-          "text": "Credits are valid for one year after expiration, allowing time for renewal"
-        },
-        {
-          "id": "d",
-          "text": "The provider is immediately re-accredited, assuming no violations occurred"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Incorrectly grants automatic grace period; re-accreditation must be applied for before expiration.",
-        "c": "Falsely extends validity; accreditation expiration terminates credit validity immediately.",
-        "d": "Contradicts the requirement for application and evaluation; re-accreditation is not automatic.",
-        "correct": "After accreditation expiration without renewal, activities delivered do not generate valid CPD credits; architects cannot claim credit from expired providers.",
-        "takeaway": "CPD credits from providers become invalid immediately upon accreditation expiration—no grace period applies."
-      },
-      "explanation": null,
-      "code_citation": "RA 10912",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-010-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8af18c0c4895693271048ae967de45064ae60e731d03f7366e3e6a4c4b54e9b6"
-    },
-    {
       "question_id": "ce238350-7798-4658-b66d-dd3a189143f3",
       "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
       "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
@@ -356,56 +406,6 @@
       "content_hash": "sha256:b24092d2791198028854d049330b1c45597f68f7f71e22b34a4130836b5b0fef"
     },
     {
-      "question_id": "51508c33-d7db-4142-ad5b-6187e29ad740",
-      "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
-      "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
-      "text": "What is the architect's responsibility regarding CPD provider selection?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Architects can enroll in any program and claim CPD credit, regardless of the provider's accreditation status."
-        },
-        {
-          "id": "b",
-          "text": "Architects must verify provider accreditation status before enrolling"
-        },
-        {
-          "id": "c",
-          "text": "The Board automatically notifies architects of approved providers, ensuring compliance with CPD requirements."
-        },
-        {
-          "id": "d",
-          "text": "All programs count equally regardless of provider status, simplifying the selection process for architects."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Fails to apply the accreditation requirement; non-accredited programs generate no CPD credit.",
-        "c": "Reverses the responsibility; architects must proactively verify, not wait for Board notifications.",
-        "d": "Ignores the accreditation distinction; credits are valid only from accredited providers.",
-        "correct": "Architects must verify provider accreditation status before enrollment; only credits from accredited providers count toward the mandatory 45-unit requirement.",
-        "takeaway": "Architects are responsible for verifying provider accreditation before enrollment to ensure CPD credit validity."
-      },
-      "explanation": null,
-      "code_citation": "RA 10912",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-010-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f01fb9de1678b8c01e5a75a80a27cfefe8d93047b2792591071f4ccd359d21af"
-    },
-    {
       "question_id": "ee299893-275e-4d36-928b-497ab3999138",
       "article_id": "31a0b194-7296-4360-821e-5bc5c49be135",
       "topic_id": "ce10dbc0-e018-4d37-8936-88dbcf3818dd",
@@ -440,7 +440,7 @@
         "correct": "CPD provider accreditation is valid for three years from issuance; providers must apply for re-accreditation before expiration.",
         "takeaway": "CPD provider accreditation is valid for three years and requires re-accreditation before expiration."
       },
-      "explanation": null,
+      "explanation": "Overly short duration; annual re-accreditation would impose excessive administrative burden. Undercounts the validity period; actual term is three years, not two. Overcounts; five years exceeds the three-year accreditation validity. CPD provider accreditation is valid for three years from issuance; providers must apply for re-accreditation before expiration. CPD provider accreditation is valid for three years and requires re-accreditation before expiration.",
       "code_citation": "RA 10912",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -452,8 +452,8 @@
       "model_id": "ALE-PRAC-FRM-010-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:48.361702+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0b5e829c7557f1724de7a9f63b877d74c0b69fb52b41aea3d2d89364ea15fea6"
+      "updated_at": "2026-05-06T15:55:56.926141+00:00",
+      "content_hash": "sha256:913d5a9b88e650d3fe9a15ff7e85b375928e1b54d77e06ee68a9927264c8a6c0"
     },
     {
       "question_id": "cf6f886e-14c9-41ae-b6fa-60fb19eb0e19",

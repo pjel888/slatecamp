@@ -1,21 +1,21 @@
 # Content Diff Report: fixtures-and-small-items-in-common-areas
 
-Generated: 2026-05-04T09:13:18.115Z
+Generated: 2026-05-10T00:34:28.613Z
 Article ID: 4985ca3b-6fc2-49b9-a7f5-64030c17b5d3
-Changed: false
+Changed: true
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:4d811e561cf74c4eb6d733287c0dc4406ac1c9ba31825a79fc0ca639d4c87e1a`
-- Normalized: `sha256:ed3e8d03cd9dd7fe38cd64400f596ab978caec2f27525e83f911f52e2be35a25`
-- Candidate: `sha256:4d811e561cf74c4eb6d733287c0dc4406ac1c9ba31825a79fc0ca639d4c87e1a`
+- Original: `sha256:ecc3aed6eb2cb9b49350bd974d587b9f53602bde51c7d222a47f6e03c8387d5c`
+- Normalized: `sha256:80d5b2e09d7dd196beb756ffcf222bd326fb72fcb64650afaf79613e43dc00cd`
+- Candidate: `sha256:aa41d88d4b09a38056c8dcbc300ee31d8a6f9c4b3ac4274a41f465e79d83368a`
 
 ## Line summary
 
-- Changed lines: 0
+- Changed lines: 296
 - Inserted lines: 0
-- Deleted lines: 0
+- Deleted lines: 6
 
 ## UI block preservation
 

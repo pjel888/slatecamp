@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Strc 002 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 By the end of this article, you will be able to:
@@ -10,7 +19,11 @@ By the end of this article, you will be able to:
 Space frames, long-span systems, and advanced structural forms represent sophisticated solutions for enclosing large unobstructed areas. Understanding their definitions, characteristics, and typical applications is important for recognizing system types on drawings and in building descriptions. Detailed design and analysis are not covered here—only definitions and concepts.
 
 ## Core Concept
-<ArticleMedia id="media-lea-strc-002-06-core-concept" type="image" caption="Long-Span Structural Systems — Space Frame, Cable, Arch, and Hybrid" description="Comparative illustration of long-span systems: (1) Space frame — 3D pyramidal triangulation, bi-directional load distribution; (2) Cable-stayed — cables from tower to deck; (3) Suspension — catenary main cables with hangers; (4) Barrel vault/arch — compression curve spanning large openings. Each shown with span range, primary force type, and typical Philippine application (airport, arena, convention center)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-strc-002-06-core-concept", type="image", caption="Long-Span Structural Systems — Space Frame, Cable, Arch, and Hybrid", description="Comparative illustration of long-span systems: (1) Space frame — 3D pyramidal triangulation, bi-directional load distribution; (2) Cable-stayed — cables from tower to deck; (3) Suspension — catenary main cables with hangers; (4) Barrel vault/arch — compression curve spanning large openings. Each shown with span range, primary force type, and typical Philippine application (airport, arena, convention center).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A **space frame** (or 3D truss) is a three-dimensional skeletal structure of members meeting at nodes, typically forming triangulated or pyramidal patterns. Unlike 2D trusses, space frames extend load-carrying capacity in all three dimensions, allowing efficient coverage of large areas with minimal depth. Members are primarily in axial stress (tension or compression).
 
@@ -52,7 +65,11 @@ Space frames are used in large warehouse roofs, exhibition halls, and airport te
 
 **Apply-level:** Given a project brief (span distance, functional requirement, architectural constraint), match an appropriate advanced system type and justify the choice.
 
-<Tip>**Memory aid:** Space frame = 3D truss (nodes); Cable-stayed = cables + tower (fan); Suspension = catenary (hang); Dome = sphere (balanced); Tensile = fabric (stretched); Arch = curve (compress); Folded = bent plate (stiff).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory aid:** Space frame = 3D truss (nodes); Cable-stayed = cables + tower (fan); Suspension = catenary (hang); Dome = sphere (balanced); Tensile = fabric (stretched); Arch = curve (compress); Folded = bent plate (stiff).
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
@@ -60,6 +77,14 @@ See also: **Trusses** (lea-strc-002-05) for the 2D foundation of space frame beh
 
 ## Common Mistakes
 
-<Warn>These are frequently tested traps. Memorize them to avoid losing easy points on exam day.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Confusing cable-stayed with suspension; cable-stayed cables run from towers to deck (fan pattern); suspension cables hang in catenary and support deck from above","Thinking arches are the most economical for all long spans; arches need buttressing and are best for moderate spans; cables/suspension are more economical for very long spans","Assuming advanced forms are purely aesthetic; they are structural solutions optimized for specific load and span conditions"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing cable-stayed with suspension; cable-stayed cables run from towers to deck (fan pattern); suspension cables hang in catenary and support deck from above\",\"Thinking arches are the most economical for all long spans; arches need buttressing and are best for moderate spans; cables/suspension are more economical for very long spans\",\"Assuming advanced forms are purely aesthetic; they are structural solutions optimized for specific load and span conditions\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

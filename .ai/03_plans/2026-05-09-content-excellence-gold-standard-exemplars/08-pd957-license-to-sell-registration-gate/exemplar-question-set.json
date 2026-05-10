@@ -1,0 +1,73 @@
+{
+  "pack_id": "08-pd957-license-to-sell-registration-gate",
+  "title": "PD 957 License to Sell Registration Gate",
+  "subject": "Planning / Housing / Building Laws",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_document_id": "PD957_IRR",
+  "locator_set_id": "pd957_license_to_sell",
+  "questions": [
+    {
+      "id": "pd957-license-q1",
+      "stem": "A subdivision project has been registered, but no license to sell has been issued. Under the cited PD 957 IRR excerpt, may the owner/dealer sell disposable lots or units?",
+      "options": {
+        "A": "Yes, registration is enough.",
+        "B": "Yes, if brochures have been submitted.",
+        "C": "No, the license to sell is still required.",
+        "D": "Yes, if the project has a billboard notice."
+      },
+      "correct_option_id": "C",
+      "rationale": {
+        "correct": "Section 11 says no owner or dealer shall sell without a license to sell issued by the Board.",
+        "distractors": {
+          "A": "Registration and selling authority are separate in the cited excerpt.",
+          "B": "Public-offering materials are part of application evidence, not the license itself.",
+          "D": "Posting/publication evidence does not replace the license to sell."
+        },
+        "takeaway": "When the stem asks selling authority, look for the license to sell."
+      },
+      "source_locator": "PD 957 IRR, Rule IV, Section 11, PDF p.47."
+    },
+    {
+      "id": "pd957-license-q2",
+      "stem": "The cited Section 11 ties issuance of the license to sell to which project event?",
+      "options": {
+        "A": "Within two weeks from registration of each project",
+        "B": "Within two weeks from final occupancy inspection",
+        "C": "Only after all units are fully paid",
+        "D": "Only after turnover of the condominium corporation"
+      },
+      "correct_option_id": "A",
+      "rationale": {
+        "correct": "The extracted Section 11 text says within two weeks from the registration of each project.",
+        "distractors": {
+          "B": "Occupancy inspection is not the event stated in the cited Section 11 text.",
+          "C": "Full payment by buyers is unrelated to license issuance in this excerpt.",
+          "D": "Condominium corporation turnover is not the cited timing trigger."
+        },
+        "takeaway": "Tie the timing to registration, then check the other application requirements."
+      },
+      "source_locator": "PD 957 IRR, Rule IV, Section 11, PDF p.47."
+    },
+    {
+      "id": "pd957-license-q3",
+      "stem": "Which document type is explicitly included among public-offering materials in the cited PD 957 application evidence?",
+      "options": {
+        "A": "A prospectus or brochure",
+        "B": "A plumbing fixture schedule",
+        "C": "A fire evacuation drill certificate",
+        "D": "A barangay zoning sketch only"
+      },
+      "correct_option_id": "A",
+      "rationale": {
+        "correct": "The excerpt lists circular, prospectus, brochure, advertisement, or communication for public offering.",
+        "distractors": {
+          "B": "A plumbing fixture schedule is not named in the cited public-offering list.",
+          "C": "A fire drill certificate is not named in the cited public-offering list.",
+          "D": "The cited list is broader and specifically names offering materials."
+        },
+        "takeaway": "Do not confuse sales/public-offering evidence with unrelated technical submittals."
+      },
+      "source_locator": "PD 957 IRR, application documentary requirement excerpt, PDF p.43."
+    }
+  ]
+}

@@ -1,9 +1,59 @@
 {
   "article_id": "7a53c305-43d6-424a-9a4d-fc4f86de1805",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:0c949319e7e5665e3cb1573115e9d556264ec2d8468a31519605f6a162d25f92",
+  "linked_questions_hash": "sha256:679117d05313693582bad76fa83ac0631e5af633564f24a469eb02f409a56f1e",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "2320173f-8c9c-44c5-bc2a-17a5b34ff8be",
+      "article_id": "7a53c305-43d6-424a-9a4d-fc4f86de1805",
+      "topic_id": "202eb8be-ced1-4680-bfc9-2d9343c4c9c4",
+      "text": "Comparing startup costs and expansion capacity, a sole proprietor has which advantage over corporate practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Higher capital requirements for corporate registration"
+        },
+        {
+          "id": "b",
+          "text": "Minimal startup costs and simpler registration procedures"
+        },
+        {
+          "id": "c",
+          "text": "Easier access to venture capital investment"
+        },
+        {
+          "id": "d",
+          "text": "Greater capacity to specialize in multiple disciplines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reverses the advantage—while corporations do have higher registration costs, that is not why sole proprietors have lower costs; it is because of simpler procedures.",
+        "c": "Contradicts the structure—sole proprietors cannot easily attract venture capital; investors prefer corporate structures with growth potential.",
+        "d": "Confuses specialization with expansion—specialty knowledge is individual, not structural; sole proprietorships limit multi-discipline teams.",
+        "correct": "Sole proprietorships have minimal startup costs and simpler registration procedures compared to corporations, though they lack the capacity to attract investment capital or easily expand operations.",
+        "takeaway": "Sole proprietorships offer low startup costs because they skip corporate formation formalities, but this simplicity limits growth capacity."
+      },
+      "explanation": "Reverses the advantage—while corporations do have higher registration costs, that is not why sole proprietors have lower costs; it is because of simpler procedures. Contradicts the structure—sole proprietors cannot easily attract venture capital; investors prefer corporate structures with growth potential. Confuses specialization with expansion—specialty knowledge is individual, not structural; sole proprietorships limit multi-discipline teams. Sole proprietorships have minimal startup costs and simpler registration procedures compared to corporations, though they lack the capacity to attract investment capital or easily expand operations. Sole proprietorships offer low startup costs because they skip corporate formation formalities, but this simplicity limits growth capacity.",
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-001-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-05-06T15:06:22.233702+00:00",
+      "content_hash": "sha256:1b5f9ef0337a5bb1ba203f6d72779dca7db7920c012da90613b24e0fa5d3278c"
+    },
     {
       "question_id": "23a7314d-0191-4196-8042-7679f21f88c5",
       "article_id": "7a53c305-43d6-424a-9a4d-fc4f86de1805",
@@ -53,56 +103,6 @@
       "created_at": "2026-03-23T19:27:47.923634+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:a6b5a782f4dd96330d6c2a8de891d16c70d165f479b44da32952fdd8327ec92b"
-    },
-    {
-      "question_id": "2320173f-8c9c-44c5-bc2a-17a5b34ff8be",
-      "article_id": "7a53c305-43d6-424a-9a4d-fc4f86de1805",
-      "topic_id": "202eb8be-ced1-4680-bfc9-2d9343c4c9c4",
-      "text": "Comparing startup costs and expansion capacity, a sole proprietor has which advantage over corporate practice?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Higher capital requirements for corporate registration"
-        },
-        {
-          "id": "b",
-          "text": "Minimal startup costs and simpler registration procedures"
-        },
-        {
-          "id": "c",
-          "text": "Easier access to venture capital investment"
-        },
-        {
-          "id": "d",
-          "text": "Greater capacity to specialize in multiple disciplines"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Reverses the advantage—while corporations do have higher registration costs, that is not why sole proprietors have lower costs; it is because of simpler procedures.",
-        "c": "Contradicts the structure—sole proprietors cannot easily attract venture capital; investors prefer corporate structures with growth potential.",
-        "d": "Confuses specialization with expansion—specialty knowledge is individual, not structural; sole proprietorships limit multi-discipline teams.",
-        "correct": "Sole proprietorships have minimal startup costs and simpler registration procedures compared to corporations, though they lack the capacity to attract investment capital or easily expand operations.",
-        "takeaway": "Sole proprietorships offer low startup costs because they skip corporate formation formalities, but this simplicity limits growth capacity."
-      },
-      "explanation": null,
-      "code_citation": "RA 9266",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-FRM-001-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dce896a42f81d45a7efb1252a709e74cc4a0a74efe0cd4839d7b71be729ac0e2"
     },
     {
       "question_id": "cff4b330-3fd4-4e08-aa1b-950290c18e0b",

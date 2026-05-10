@@ -178,34 +178,34 @@ Sum all grid cells across the site for total cut and fill volumes.
 ### Question 1
 A site has an elevation change of 8 meters over a horizontal distance of 50 meters. What is the slope expressed as a **percentage** and as a **ratio**?
 
-A. 16%, 1:6.25  
-B. 6.25%, 1:16  
-C. 16%, 1:8  
-D. 8%, 1:50  
+A. 16%, 1:6.25
+B. 6.25%, 1:16
+C. 16%, 1:8
+D. 8%, 1:50
 
-> **Answer: A. 16%, 1:6.25**  
+> **Answer: A. 16%, 1:6.25**
 > Slope (%) = (Rise / Run) × 100 = (8 / 50) × 100 = **16%**. Slope ratio = 1 : (Run / Rise) = 1 : (50 / 8) = **1:6.25**. Option B reverses the percentage and ratio. Option C incorrectly calculates the ratio as 1:8 (using only the rise). Option D divides rise by total distance rather than computing rise/run properly. At 16%, this site is in the "challenging" buildability range requiring stepped foundations or retaining walls.
 
 ### Question 2
 Using the Average End Area Method, calculate the cut volume between two stations **25 meters apart**, where Station A has a cut cross-section of 10 m² and Station B has a cut cross-section of 14 m².
 
-A. 250 m³  
-B. 300 m³  
-C. 350 m³  
-D. 600 m³  
+A. 250 m³
+B. 300 m³
+C. 350 m³
+D. 600 m³
 
-> **Answer: B. 300 m³**  
+> **Answer: B. 300 m³**
 > V = [(A₁ + A₂) / 2] × L = [(10 + 14) / 2] × 25 = [24 / 2] × 25 = 12 × 25 = **300 m³**. Option A (250) results from using only A₁ (10 × 25). Option C (350) results from using only A₂ (14 × 25). Option D (600) results from adding A₁ + A₂ without dividing by 2 and then multiplying by L. Always average the two end areas first, then multiply by the distance between stations.
 
 ### Question 3
 An architect excavates 400 m³ (bank volume) of clay soil with a swell factor of 30% and a compaction shrinkage factor of 15%. What is the **compacted fill volume** that this excavated material will produce?
 
-A. 400.0 m³  
-B. 442.0 m³  
-C. 520.0 m³  
-D. 340.0 m³  
+A. 400.0 m³
+B. 442.0 m³
+C. 520.0 m³
+D. 340.0 m³
 
-> **Answer: B. 442.0 m³**  
+> **Answer: B. 442.0 m³**
 > Step 1: Loose volume = 400 × 1.30 = 520 m³. Step 2: Compacted volume = 520 × (1 − 0.15) = 520 × 0.85 = **442.0 m³**. Option A assumes no volume change. Option C is the loose volume (before compaction). Option D incorrectly subtracts 15% from the bank volume. The correct sequence is: Bank → Swell → Loose → Compact → Compacted fill. This 442 m³ result means the 400 m³ cut produces more compacted fill than the original bank volume — because swell outweighs shrinkage in clay. If your fill requirement is only 400 m³, you have a 42 m³ surplus to dispose of.
 
 ---
@@ -236,4 +236,3 @@ Extracted summary:
 ## Cross‑References
 
 **Microclimate Analysis**, **Hydrology In Site Planning**, **Geological Hazards**, **Excavation Foundation And Veneer**
-

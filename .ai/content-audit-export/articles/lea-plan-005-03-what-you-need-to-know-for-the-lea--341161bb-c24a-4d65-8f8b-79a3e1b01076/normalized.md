@@ -7,7 +7,7 @@ Before memorizing details from this topic, state the task in one sentence: what 
 **Common mistake:** treating a familiar keyword in **Lea Plan 005 03 What You Need To Know For The Lea** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 
-Environmental and land-use planning in the Philippines is governed by a framework of Presidential Decrees and Republic Acts that establish easements, require environmental impact assessment, protect natural areas, manage water quality, and regulate solid waste. Landscape architects, planners, and developers must understand these laws to design compliant projects and avoid legal liability. 
+Environmental and land-use planning in the Philippines is governed by a framework of Presidential Decrees and Republic Acts that establish easements, require environmental impact assessment, protect natural areas, manage water quality, and regulate solid waste. Landscape architects, planners, and developers must understand these laws to design compliant projects and avoid legal liability.
 ## Learning Goal
 
 Identify the key provisions of the five core Philippine environmental laws (PD 1067, PD 1586, RA 7586, RA 9275, RA 9003) and apply easement distances, ECC requirements, and environmental constraints to site planning scenarios.

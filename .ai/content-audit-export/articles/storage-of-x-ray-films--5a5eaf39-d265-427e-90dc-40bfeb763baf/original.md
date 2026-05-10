@@ -1,6 +1,12 @@
 # Storage of X-Ray Films
-**Rule XIV, Sections 1401–1403 | PD 1096 & 2004 Revised IRR**
-**LEA Area 2 — Fire Protection / Materials | Occupancies: Group D Institutional (Hospitals, Imaging Centers), Group F Industrial**
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Storage of X-Ray Films** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
@@ -12,13 +18,17 @@ Apply the fire protection and storage requirements for X-ray film (nitrate-based
 
 ## 1. Hook / Opening Scenario
 
-<LawCallout code="pd1096" section="Rule IV - X-Ray Protection">
-National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule IV - X-Ray Protection"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
 
-<LawCallout code="pd1096" section="Rule IV - Hazardous Storage">
-National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule IV - Hazardous Storage"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
 
 The Building Official's inspector enters the basement radiology archive of a provincial hospital and finds a storage room stacked with unexposed X-ray film boxes on open shelving — no automatic fire extinguishing system in sight, a single portable light on an extension cord dangling over the nearest shelf, and a steam pipe running along the ceiling roughly 400 mm above the film. The room smells faintly of chemical processing. Three separate violations of Rule XIV are already on the clipboard before the inspector reaches the cabinet labeled "Negative Films — 500 kg." When the fire investigator later explains how a room like this became the origin point of an entire ward fire, every architect in the hearing room wishes they had memorized Sections 1401 through 1403.
 
@@ -213,8 +223,16 @@ NFPA 40 is the direct American analog to Rule XIV, Section 1401. The 2019 editio
 
 ### 5.2 IFC / IBC (International Fire Code / International Building Code)
 
-<Warn>Don't memorize every code section number — memorize the *rule*. The LEA tests application of code standards, not section number recall, except for major, frequently tested sections (e.g., Rule VII for occupancy, Rule VIII for light/ventilation).</Warn>
-<ExamTip>**LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Don't memorize every code section number — memorize the *rule*. The LEA tests application of code standards, not section number recall, except for major, frequently tested sections (e.g., Rule VII for occupancy, Rule VIII for light/ventilation).
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.
+[/SLATECAMP_UI_BLOCK]
 *(LEA Area 2 — Fire Protection; Topic: Exemptions and Negative Film Handling)*
 
 An architect is reviewing storage requirements for a hospital that stores: (i) dental X-ray film in the dental clinic, (ii) exposed medical X-ray negatives in Manila envelopes in the radiology archive, and (iii) amateur photographic roll film in original packages totaling 1.20 cu.m in the marketing department. Which of the following is correct under PD 1096, Rule XIV?
@@ -325,4 +343,3 @@ If you paused on any of these, re-read Section 4 before proceeding.
 ## Cross‑References
 
 **Fire Extinguishing Systems**, **Fire Resistive Construction Ratings**, **Plastics In Construction**, **Sheet Metal And Spray Booths**
-

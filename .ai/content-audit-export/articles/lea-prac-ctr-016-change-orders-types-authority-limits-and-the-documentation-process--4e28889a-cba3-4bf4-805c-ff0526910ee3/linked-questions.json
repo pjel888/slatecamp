@@ -1,9 +1,59 @@
 {
   "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:301fc9f44e3f9d78e2dbe4a625a17a691f8a04dc517a384b9408820d1d76c4a4",
+  "linked_questions_hash": "sha256:9c5fe20bcda453196035ee37c1958596ca86432d37094ca972ba895fff2bc8f0",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "b82974e7-8159-4c51-a6c7-35adaca31a63",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What information must be included in a change order proposal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the cost estimate for the changed work, excluding any schedule impacts or additional documentation"
+        },
+        {
+          "id": "b",
+          "text": "Description of the work change, specifications, drawings, cost estimate, and schedule impact analysis"
+        },
+        {
+          "id": "c",
+          "text": "Only the schedule delay impact, without any cost estimates or detailed descriptions"
+        },
+        {
+          "id": "d",
+          "text": "The change order cannot include drawings, as they are considered separate documents"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical information; proposals must include work description, specifications, drawings, and schedule impact.",
+        "c": "Omits cost information; proposals must include both cost and schedule impacts.",
+        "d": "Contradicts best practice; drawings are essential to communicate the scope change clearly.",
+        "correct": "A complete change order proposal documents the scope change, technical requirements, visual representation, cost estimate, and time impact.",
+        "takeaway": "Change order proposals must include work description, specifications, drawings, cost estimate, and schedule impact analysis."
+      },
+      "explanation": "Omits critical information; proposals must include work description, specifications, drawings, and schedule impact. Omits cost information; proposals must include both cost and schedule impacts. Contradicts best practice; drawings are essential to communicate the scope change clearly. A complete change order proposal documents the scope change, technical requirements, visual representation, cost estimate, and time impact. Change order proposals must include work description, specifications, drawings, cost estimate, and schedule impact analysis.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T14:40:21.03446+00:00",
+      "content_hash": "sha256:7b6021543d03c2fc99376cf74d83bf3d18cb7c569b47f6834b5a62f80acef91c"
+    },
     {
       "question_id": "10827527-4012-4090-b56f-2730c9447014",
       "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
@@ -139,7 +189,7 @@
         "correct": "Directive changes are owner directives for immediate scope modification when final impacts cannot be determined precisely beforehand.",
         "takeaway": "Directive changes are owner orders to proceed with modifications before costs are fully determined; final pricing comes later."
       },
-      "explanation": null,
+      "explanation": "Overly restrictive; directive changes can increase, decrease, or neutrally affect cost. Contradicts reality; directive changes affect schedule like any other scope modification. Contradicts best practice; directive changes require careful documentation since pricing is finalized later. Directive changes are owner directives for immediate scope modification when final impacts cannot be determined precisely beforehand. Directive changes are owner orders to proceed with modifications before costs are fully determined; final pricing comes later.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "apply",
       "application_context": "client_scenario",
@@ -151,8 +201,8 @@
       "model_id": "ALE-PRAC-CTR-016-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e98673c52c4eb6af2e1aca0db1ea71ab2838b57a4ca616a6658fa75c24642af7"
+      "updated_at": "2026-05-06T14:40:20.525795+00:00",
+      "content_hash": "sha256:bf8924a6f3383d8ec602bdc3b4498c1fe64bfc363ef80e8ff3e27e1060fc08b0"
     },
     {
       "question_id": "c7d65d1d-132a-499e-8c97-491fd7b7c95a",
@@ -203,56 +253,6 @@
       "created_at": "2026-03-23T19:27:47.526003+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:7388e290d3e9819875d4e11e0e0cd1a734a5ca449c40cafa912bc6396d02796e"
-    },
-    {
-      "question_id": "b82974e7-8159-4c51-a6c7-35adaca31a63",
-      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
-      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
-      "text": "What information must be included in a change order proposal?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Only the cost estimate for the changed work, excluding any schedule impacts or additional documentation"
-        },
-        {
-          "id": "b",
-          "text": "Description of the work change, specifications, drawings, cost estimate, and schedule impact analysis"
-        },
-        {
-          "id": "c",
-          "text": "Only the schedule delay impact, without any cost estimates or detailed descriptions"
-        },
-        {
-          "id": "d",
-          "text": "The change order cannot include drawings, as they are considered separate documents"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Omits critical information; proposals must include work description, specifications, drawings, and schedule impact.",
-        "c": "Omits cost information; proposals must include both cost and schedule impacts.",
-        "d": "Contradicts best practice; drawings are essential to communicate the scope change clearly.",
-        "correct": "A complete change order proposal documents the scope change, technical requirements, visual representation, cost estimate, and time impact.",
-        "takeaway": "Change order proposals must include work description, specifications, drawings, cost estimate, and schedule impact analysis."
-      },
-      "explanation": null,
-      "code_citation": "UAP Doc 301",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-016-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8aa3c0913a072fec59af73bebd763fb60f4b021b4de93cdba66245ba3ac1f0f2"
     },
     {
       "question_id": "cdc46758-169e-4b93-8518-1f9f9488511f",
@@ -339,7 +339,7 @@
         "correct": "Change orders must address both cost and schedule; time extensions are formalized to avoid liquidated damages for owner-directed delays.",
         "takeaway": "Change orders must quantify schedule impacts and establish revised completion dates to avoid liquidated damages disputes."
       },
-      "explanation": null,
+      "explanation": "Omits critical information; schedule impact documentation is essential to prevent disputes. Splits the change order inappropriately; both cost and schedule must be in the change order for complete documentation. Creates risk; owner-directed delays still require formal documentation to protect the contractor from liquidated damages. Change orders must address both cost and schedule; time extensions are formalized to avoid liquidated damages for owner-directed delays. Change orders must quantify schedule impacts and establish revised completion dates to avoid liquidated damages disputes.",
       "code_citation": "UAP Doc 301",
       "bloom_level": "analyze",
       "application_context": "client_scenario",
@@ -351,8 +351,8 @@
       "model_id": "ALE-PRAC-CTR-016-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b925bbef9f30cdd28742c3905c885e4a158c542c11d43ff02fba493ab5fb140a"
+      "updated_at": "2026-05-06T14:40:21.172406+00:00",
+      "content_hash": "sha256:420e91964a2d8a0c7ae9d4f74a8cb4f14aa8e70334e3da7c9a4c2013e34322e4"
     },
     {
       "question_id": "eb2681b4-ef67-4089-85bd-bc0b92319323",

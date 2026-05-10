@@ -1,4 +1,11 @@
 # Fixtures and Small Items in Common Areas
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Fixtures and Small Items in Common Areas** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Learning Goal
 After reading this article, you should be able to:
 
@@ -11,17 +18,17 @@ You are thirsty after a long trip through a busy transport terminal. The drinkin
 
 ---
 
-<LawCallout code="bp344">
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344"
+- Text: DFBA-E mnemonic: Drinking fountain spout at 750-900 mm AFF with knee clearance, public telephones max 1,200 mm controls, Benches at 450 mm seat height, ATMs controls at 900-1,200 mm, Exercise equipment requires 900×1,200 mm clear floor space.
+[/SLATECAMP_UI_BLOCK]
 
-DFBA-E mnemonic: Drinking fountain spout at 750-900 mm AFF with knee clearance, public telephones max 1,200 mm controls, Benches at 450 mm seat height, ATMs controls at 900-1,200 mm, Exercise equipment requires 900×1,200 mm clear floor space.
-
-</LawCallout>
-
-<ExamTip>
-
-LEA Pattern: Questions on fixtures test specific dimensional recall. Drinking fountain spout: 750-900 mm AFF with knee clearance min 750 mm high × 450 mm deep. Public phone controls: 1,200 mm max. ATM keypad: 900-1,200 mm. Benches: 450 mm seat height with back support.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: LEA Pattern: Questions on fixtures test specific dimensional recall. Drinking fountain spout: 750-900 mm AFF with knee clearance min 750 mm high × 450 mm deep. Public phone controls: 1,200 mm max. ATM keypad: 900-1,200 mm. Benches: 450 mm seat height with back support.
+[/SLATECAMP_UI_BLOCK]
 
 ## CORE MNEMONIC: **"DFBA-E"** — *"Drink From Benches And Exercise"*
 
@@ -187,13 +194,11 @@ Benches must appear **at least** every 30 m along accessible circulation routes.
 
 ### Legal Basis: BP 344 (2024 IRR) Section 12
 
-<LawCallout code="bp344" section="Section 14 - Fixtures">
-
-
-This section covers ATMs as a fixture — the machine's reach, clearance, and hardware. Signage and counter provisions are in Module 4/12.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 14 - Fixtures"
+- Text: This section covers ATMs as a fixture — the machine's reach, clearance, and hardware. Signage and counter provisions are in Module 4/12.
+[/SLATECAMP_UI_BLOCK]
 
 ### Complete Specification Table
 

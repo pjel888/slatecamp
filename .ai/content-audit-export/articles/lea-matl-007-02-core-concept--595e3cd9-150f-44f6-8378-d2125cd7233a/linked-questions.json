@@ -1,9 +1,109 @@
 {
   "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:612c91d2d413c44fc0389e8f06da30e7c15bc47b723a45aa1eb04d06a2c0fedb",
+  "linked_questions_hash": "sha256:dd47e7774be795183dc6a35850b581fdefbdfb7d8a1ea1da215231fbfb73f0ad",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "79a048fe-1a14-4567-9dcb-593fe8c52e7c",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "What is the typical dry film thickness (DFT) range for a paint primer according to ASTM standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 10-30µm"
+        },
+        {
+          "id": "b",
+          "text": "B) 30-50µm"
+        },
+        {
+          "id": "c",
+          "text": "C) 75-150µm"
+        },
+        {
+          "id": "d",
+          "text": "D) 200-300µm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10-30µm is too thin; primer would not adequately seal substrate.",
+        "c": "75-150µm is the topcoat range, not primer.",
+        "d": "200-300µm exceeds both primer and topcoat requirements.",
+        "correct": "Typical primer DFT is 25-50µm per manufacturer specifications and industry practice (not specified in ASTM D3359). This seals the substrate and promotes topcoat adhesion.",
+        "takeaway": "Primer 30-50µm; topcoat 75-150µm. Measure with wet-film thickness gauge during application."
+      },
+      "explanation": "10-30µm is too thin; primer would not adequately seal substrate. 75-150µm is the topcoat range, not primer. 200-300µm exceeds both primer and topcoat requirements. Typical primer DFT is 25-50µm per manufacturer specifications and industry practice (not specified in ASTM D3359). This seals the substrate and promotes topcoat adhesion. Primer 30-50µm; topcoat 75-150µm. Measure with wet-film thickness gauge during application.",
+      "code_citation": "ASTM D3359 Test Methods for Measuring Adhesion by Tape",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T13:22:16.353884+00:00",
+      "content_hash": "sha256:db6338f6f66062d9cadddbb87f0b3d50b5443c9699d31b72393b08134d6846b7"
+    },
+    {
+      "question_id": "766af87c-5846-4db9-903d-fb8aea71a759",
+      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
+      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
+      "text": "Why is it critical to maintain application conditions per ASTM D3276 (10°C minimum, <50% RH, no rain) during paint application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) To ensure the painter's comfort, which indirectly affects the quality of work performed."
+        },
+        {
+          "id": "b",
+          "text": "B) To achieve proper curing and prevent moisture entrapment during film formation"
+        },
+        {
+          "id": "c",
+          "text": "C) To reduce paint consumption per project, thereby lowering overall costs."
+        },
+        {
+          "id": "d",
+          "text": "D) To allow faster drying so recoats can be applied sooner, minimizing project delays."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Painter comfort is not relevant to coating performance.",
+        "c": "Faster drying does not ensure proper chemical cure; conditions matter more.",
+        "d": "Paint consumption is unaffected by application conditions.",
+        "correct": "ASTM D3276 conditions optimize curing kinetics. Low temperature (<10°C) slows evaporation, trapping moisture in the film. High RH (>50%) and rain introduce moisture into the forming film, causing blistering, delamination, and adhesion loss.",
+        "takeaway": "Poor conditions (high humidity, low temperature, rain) cause future failures. Delaying work is cheaper than repainting."
+      },
+      "explanation": "Painter comfort is not relevant to coating performance. Faster drying does not ensure proper chemical cure; conditions matter more. Paint consumption is unaffected by application conditions. ASTM D3276 conditions optimize curing kinetics. Low temperature (<10°C) slows evaporation, trapping moisture in the film. High RH (>50%) and rain introduce moisture into the forming film, causing blistering, delamination, and adhesion loss. Poor conditions (high humidity, low temperature, rain) cause future failures. Delaying work is cheaper than repainting.",
+      "code_citation": "ASTM D3276 Standard Practice for Paint Testing",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T13:22:16.647757+00:00",
+      "content_hash": "sha256:4fa3b1f53b267558d36caf9c91406fbff752d3dadfc8b12e9fa9ec1d0939df00"
+    },
     {
       "question_id": "cba1db3a-8f02-498e-b367-9dd1e1b4b9a3",
       "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
@@ -139,7 +239,7 @@
         "correct": "High-humidity bathrooms require fungicide-treated primer to prevent mold and mildew on the drywall substrate. Boysen and Davies offer fungicide-rich primers designed for tropical climates. Latex topcoat over fungicide primer provides durable, mold-resistant finish.",
         "takeaway": "High-humidity zones = fungicide primer + paint topcoat. Never skip primer. Boysen, Davies have proven fungicide formulations."
       },
-      "explanation": null,
+      "explanation": "Unprimed latex allows moisture absorption and mold on substrate. Wallpaper without fungicide base primer is unsuitable for high humidity. Unprimed enamel offers no substrate seal or mold protection. High-humidity bathrooms require fungicide-treated primer to prevent mold and mildew on the drywall substrate. Boysen and Davies offer fungicide-rich primers designed for tropical climates. Latex topcoat over fungicide primer provides durable, mold-resistant finish. High-humidity zones = fungicide primer + paint topcoat. Never skip primer. Boysen, Davies have proven fungicide formulations.",
       "code_citation": "Philippine paint brands (Boysen, Davies); humidity management practice",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -151,8 +251,8 @@
       "model_id": "ALE-MATL-007-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:16962594fb026933ff53ff18ad8421824343f3952ad5940c5af66e2d165daa98"
+      "updated_at": "2026-05-06T13:22:16.050357+00:00",
+      "content_hash": "sha256:95c9fde02c92e5bb2584e237296f723e9084e341b24d13b455287b5d8fe17c4f"
     },
     {
       "question_id": "f6f38d2c-0a92-46a1-87e6-afd1f273a3ac",
@@ -189,7 +289,7 @@
         "correct": "Drywall manufacturers (USG, National Gypsum) recommend 220-grit minimum for paint prep per industry practice. to ensure adequate surface roughness for paint adhesion and to remove contaminants.",
         "takeaway": "Always 220-grit minimum. Wipe dust-free after sanding. Coarse grit = poor adhesion = future delamination."
       },
-      "explanation": null,
+      "explanation": "80-120 grit leaves surface too coarse and leaves dust; fails D3276. 120-180 grit is insufficient; adhesion issues arise. 320 grit or higher is excessive for drywall; 220 is standard. Drywall manufacturers (USG, National Gypsum) recommend 220-grit minimum for paint prep per industry practice. to ensure adequate surface roughness for paint adhesion and to remove contaminants. Always 220-grit minimum. Wipe dust-free after sanding. Coarse grit = poor adhesion = future delamination.",
       "code_citation": "ASTM D3276 Standard Practice for Paint Testing",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -201,58 +301,8 @@
       "model_id": "ALE-MATL-007-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0de09700f9005c5242d0a811b1a1f460bf80b5d07fba763150092dec84fded86"
-    },
-    {
-      "question_id": "79a048fe-1a14-4567-9dcb-593fe8c52e7c",
-      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
-      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "What is the typical dry film thickness (DFT) range for a paint primer according to ASTM standards?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) 10-30µm"
-        },
-        {
-          "id": "b",
-          "text": "B) 30-50µm"
-        },
-        {
-          "id": "c",
-          "text": "C) 75-150µm"
-        },
-        {
-          "id": "d",
-          "text": "D) 200-300µm"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "10-30µm is too thin; primer would not adequately seal substrate.",
-        "c": "75-150µm is the topcoat range, not primer.",
-        "d": "200-300µm exceeds both primer and topcoat requirements.",
-        "correct": "Typical primer DFT is 25-50µm per manufacturer specifications and industry practice (not specified in ASTM D3359). This seals the substrate and promotes topcoat adhesion.",
-        "takeaway": "Primer 30-50µm; topcoat 75-150µm. Measure with wet-film thickness gauge during application."
-      },
-      "explanation": null,
-      "code_citation": "ASTM D3359 Test Methods for Measuring Adhesion by Tape",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-007-02-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:04a8b0a0f781db429f7e5b638447042028c2816e26fc7418ae040f952f3a9e78"
+      "updated_at": "2026-05-06T13:22:16.210137+00:00",
+      "content_hash": "sha256:7d0786ae6837a048baedc6ca233de0fc74caef2bd5037e4afe04ffe69656a094"
     },
     {
       "question_id": "12d32db4-e405-47cf-9939-ca441eea46a0",
@@ -289,7 +339,7 @@
         "correct": "Hardiflex (fiber cement) resists water, mold, and termites, unlike gypsum. HardiFlex NexGen with MoldBlock Technology is specifically engineered for moist environments. Gypsum absorbs moisture and deteriorates, requiring replacement.",
         "takeaway": "High-moisture zones (kitchens, bathrooms, flood-prone areas) = Hardiflex. Gypsum will fail; Hardiflex survives."
       },
-      "explanation": null,
+      "explanation": "Hardiflex costs 20-30% more than drywall; not cheaper. Fiber cement is harder to cut than drywall; requires saws. Paint adhesion is similar; the substrate durability is the advantage. Hardiflex (fiber cement) resists water, mold, and termites, unlike gypsum. HardiFlex NexGen with MoldBlock Technology is specifically engineered for moist environments. Gypsum absorbs moisture and deteriorates, requiring replacement. High-moisture zones (kitchens, bathrooms, flood-prone areas) = Hardiflex. Gypsum will fail; Hardiflex survives.",
       "code_citation": "James Hardie Philippines product literature; fiber cement properties",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -301,58 +351,8 @@
       "model_id": "ALE-MATL-007-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7c6585056d9fe4014ee42100dbd2998db15ece8ca9b3d701e33d4f09abfcda89"
-    },
-    {
-      "question_id": "766af87c-5846-4db9-903d-fb8aea71a759",
-      "article_id": "595e3cd9-150f-44f6-8378-d2125cd7233a",
-      "topic_id": "fefe5482-86e2-42f8-a219-ecfe40ac4b0f",
-      "text": "Why is it critical to maintain application conditions per ASTM D3276 (10°C minimum, <50% RH, no rain) during paint application?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A) To ensure the painter's comfort, which indirectly affects the quality of work performed."
-        },
-        {
-          "id": "b",
-          "text": "B) To achieve proper curing and prevent moisture entrapment during film formation"
-        },
-        {
-          "id": "c",
-          "text": "C) To reduce paint consumption per project, thereby lowering overall costs."
-        },
-        {
-          "id": "d",
-          "text": "D) To allow faster drying so recoats can be applied sooner, minimizing project delays."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Painter comfort is not relevant to coating performance.",
-        "c": "Faster drying does not ensure proper chemical cure; conditions matter more.",
-        "d": "Paint consumption is unaffected by application conditions.",
-        "correct": "ASTM D3276 conditions optimize curing kinetics. Low temperature (<10°C) slows evaporation, trapping moisture in the film. High RH (>50%) and rain introduce moisture into the forming film, causing blistering, delamination, and adhesion loss.",
-        "takeaway": "Poor conditions (high humidity, low temperature, rain) cause future failures. Delaying work is cheaper than repainting."
-      },
-      "explanation": null,
-      "code_citation": "ASTM D3276 Standard Practice for Paint Testing",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-007-02-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fce997fff40d4aace349731697336f51d769e971cc15fa17b2fa78f463f6df1b"
+      "updated_at": "2026-05-06T13:22:16.501264+00:00",
+      "content_hash": "sha256:d11f2ed6d6b4b2a31f3d671987ad2e32d1092e88000ff2301ce65d41c080fbcf"
     },
     {
       "question_id": "64caca33-4249-4624-8b58-7bd479f7db72",
@@ -439,7 +439,7 @@
         "correct": "ASTM D3359 defines rating 3 as 5-15% adhesion loss (moderate flaking). Rating 4 (<5% loss) is superior, but many specifications accept rating 3 as the minimum for interior walls. Ratings 0, 1, and 2 indicate higher loss and are generally rejected. Always refer to project-specific requirements.",
         "takeaway": "Spec minimum often rating 3 (5-15% loss). Rating 4 or better is preferred. Verify project requirements."
       },
-      "explanation": null,
+      "explanation": "0 is perfect adhesion (no loss); not the minimum, the ideal. 2 indicates 15-35% loss (ASTM D3359 classification), unacceptable per typical specifications. 5 is complete failure; rejected. ASTM D3359 defines rating 3 as 5-15% adhesion loss (moderate flaking). Rating 4 (<5% loss) is superior, but many specifications accept rating 3 as the minimum for interior walls. Ratings 0, 1, and 2 indicate higher loss and are generally rejected. Always refer to project-specific requirements. Spec minimum often rating 3 (5-15% loss). Rating 4 or better is preferred. Verify project requirements.",
       "code_citation": "ASTM D3359 Standard Test Methods",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -451,8 +451,8 @@
       "model_id": "ALE-MATL-007-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:400eee3125886b501e28c3e394c3226cf20fb8ccf5469487d63ec64b3dbc3b2f"
+      "updated_at": "2026-05-06T13:22:16.793707+00:00",
+      "content_hash": "sha256:3612aaafec7ee321423e6293b8faab633f46f2204ef121427240c08123da8f4e"
     },
     {
       "question_id": "48ee239e-7dfc-480f-926e-5b6276be4c19",

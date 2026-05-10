@@ -56,7 +56,7 @@ BP 344 prescribes minimum standards documented in the 2024 Revised IRR. The IRR 
 [SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
 Extracted summary:
 - Props: title="Ramp Slope - 2024 Revised IRR Standard"
-- Text: The 2024 Revised IRR updates the general maximum ramp slope from the old 1:12 standard to **1:20** (gradient not steeper than 1:20). The slope table is: - **1:20** -- no maximum length specified -- max rise 700mm (general standard) - **1:15** -- max 10m length -- for special cases only - Note: 1:12 now applies ONLY to swimming pool transfer walls, NOT general accessible ramps. Per the flagging report, the old 1:12 standard is a common error in pre-2024 exam materials. Students must use the 2024 
+- Text: The 2024 Revised IRR updates the general maximum ramp slope from the old 1:12 standard to **1:20** (gradient not steeper than 1:20). The slope table is: - **1:20** -- no maximum length specified -- max rise 700mm (general standard) - **1:15** -- max 10m length -- for special cases only - Note: 1:12 now applies ONLY to swimming pool transfer walls, NOT general accessible ramps. Per the flagging report, the old 1:12 standard is a common error in pre-2024 exam materials. Students must use the 2024
 [/SLATECAMP_UI_BLOCK]
 
 The architect must verify that the design meets these specific standards. This is not subjective judgment; standards are explicit. The architect should maintain a compliance checklist and verify each element. Doing so creates a documentation trail and demonstrates professional diligence.

@@ -1,0 +1,508 @@
+{
+  "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6a35e41742bac9c80e1ed2decec491dc46869107a8f4e10a98337946ad5baba2",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "18f9fb08-8589-46ce-b67b-a3e1a8a4c21e",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "In a coastal Philippine project, precast hollow-core slabs were assembled, then the cast-in-place topping and connections were placed. During the first rainy season, water infiltrated through joints between precast units, causing rust staining on the soffit and corrosion of reinforcement. This problem occurred because:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Precast concrete is inherently more porous than cast-in-place concrete"
+        },
+        {
+          "id": "b",
+          "text": "The joints between precast units were not properly sealed or grouted, allowing water infiltration to reach reinforcement in the tropical humid/salty environment"
+        },
+        {
+          "id": "c",
+          "text": "The project used ordinary reinforcing steel instead of stainless steel (not required but would have prevented corrosion)"
+        },
+        {
+          "id": "d",
+          "text": "Cast-in-place topping concrete was applied too quickly, before the precast units fully cured"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In coastal and tropical environments (common in the Philippines), water infiltration through unsealed or poorly grouted joints is the primary cause of corrosion failure. Joints between precast units must be sealed or grouted to prevent water from reaching reinforcement. The combination of humidity, salt spray, and water infiltration accelerates corrosion. This is a critical durability issue in Philippine precast construction.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapters 6 and Appendix D",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e026f4ebf40eaaec108bdccafecb19285493c79f11b7af939be13aab50c3063f"
+    },
+    {
+      "question_id": "2af2fd61-f674-4f03-8cac-2d39352e2a14",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "Precast concrete is defined as concrete that is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cast and cured at the construction site in temporary forms, which allows for immediate integration into the structure"
+        },
+        {
+          "id": "b",
+          "text": "Cast and cured at an off-site facility (precasting plant), then transported to the site for assembly"
+        },
+        {
+          "id": "c",
+          "text": "Prepared in a truck and poured continuously during construction, ensuring a seamless finish"
+        },
+        {
+          "id": "d",
+          "text": "Made from recycled concrete waste mixed with new cement, promoting sustainability in construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Precast concrete is manufactured at a dedicated facility (precasting plant) in controlled conditions, cured to full strength, and then transported to the construction site for placement. This is the definition and distinguishing characteristic of precast versus cast-in-place concrete.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 6",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b0cfcca42a164147d496b1ed148b34d2f07325d6a63a669c44b0d4a95b011f4b"
+    },
+    {
+      "question_id": "31644fc8-2c2f-46a4-b618-7d43e3ae3860",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "A composite beam system consists of a precast I-beam topped with cast-in-place concrete slab. During design load testing, the precast beam and CIP slab show different deflection patterns—the beam deflects more than the slab—indicating that the two are not acting compositely. What is the most likely cause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The concrete strengths are different, which prevents composite action due to incompatible material properties"
+        },
+        {
+          "id": "b",
+          "text": "The CIP slab thickness is too thin compared to the precast beam, leading to insufficient stiffness and load distribution"
+        },
+        {
+          "id": "c",
+          "text": "The interface is poorly bonded or lacks shear reinforcement (dowels), preventing force transfer between the elements"
+        },
+        {
+          "id": "d",
+          "text": "The project is over-designed and should have used a smaller beam to match the slab capacity, which would have ensured better composite action"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Differential deflection (beam and slab deflecting independently) indicates loss of composite action. This occurs when the interface cannot transfer shear: either the concrete-to-concrete bond is poor (smooth, contaminated surface) or shear reinforcement (dowels) is absent or insufficient. Without these connections, the elements act separately and the system is not composite. This is a failure of the connection design or execution.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.3",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5dc24d373cb556eb07af136b3679aed33e56a9e56d3df8ccb91e78af6cff4663"
+    },
+    {
+      "question_id": "f0a33b6a-0322-4c42-9835-9fa96a8b5f92",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "A design engineer specifies that construction joint shear reinforcement (dowels) be placed perpendicular to the joint surface and extending into both the old and new concrete. An inspector notices that some dowels are placed parallel (parallel to the joint plane) instead. Why is this error significant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Parallel dowels are more economical and should be accepted, as cost savings are prioritized over structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "Parallel dowels do not cross the joint interface and cannot transfer shear across the joint, making the connection ineffective and potentially causing joint failure"
+        },
+        {
+          "id": "c",
+          "text": "The orientation does not matter as long as the total steel area is correct, assuming uniform stress distribution"
+        },
+        {
+          "id": "d",
+          "text": "Parallel dowels are actually better because they allow more flexibility, accommodating potential movement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Dowels (shear reinforcement) must be perpendicular to the joint interface to mechanically transfer shear across the joint. If dowels are parallel to the joint plane, they lie entirely within one concrete layer and do not cross the interface—they do not connect the two concretes. This is a critical detailing error that makes the joint ineffective. Shear will cause slip and potential failure.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.4.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:30096f733c84b6a714fbbb8047519980d5a05e5f2d0844dc0b40f3ad57b1ddfc"
+    },
+    {
+      "question_id": "d0bc39af-b869-4994-86bc-210fcfd5340f",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "Precast members can typically be removed from forms and lifted when concrete strength reaches:",
+      "options": [
+        {
+          "id": "a",
+          "text": "20% of design f'c, which is generally insufficient for structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "50–70% of design f'c, or 10–14 MPa, whichever is higher"
+        },
+        {
+          "id": "c",
+          "text": "Exactly 100% of design f'c (full 28-day strength), ensuring maximum durability"
+        },
+        {
+          "id": "d",
+          "text": "80% of design f'c, allowing for early removal with caution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Precast members can be removed and lifted when they have gained sufficient strength to support self-weight plus handling and lifting stresses. This is typically 50–70% of design f'c, or 10–14 MPa minimum (whichever is higher). Sample cylinders cured with the member are tested to verify this strength is reached before removal.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.2",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e7297a83bcb25a7279dc208313c35429c01284e6a6992f07711aa06fc84b6dc4"
+    },
+    {
+      "question_id": "86266369-d20e-4284-b170-a8ee05378acf",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "A precast hollow-core slab is topped with cast-in-place concrete to create a composite slab system. The interface between the two concretes requires shear reinforcement (dowels) because:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The dowels add weight and stiffness to the slab, enhancing its load-bearing capacity"
+        },
+        {
+          "id": "b",
+          "text": "Dowels mechanically connect the precast and CIP concrete, allowing shear forces to be transferred between them without slipping, enabling composite action"
+        },
+        {
+          "id": "c",
+          "text": "Dowels are required by code even if composite action is not needed, ensuring compliance with structural standards"
+        },
+        {
+          "id": "d",
+          "text": "Dowels allow the two concretes to slide relative to each other, which improves flexibility, accommodating thermal expansion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Dowels (shear reinforcement crossing the interface) are essential to composite action. They prevent slipping between the precast and CIP concrete by mechanically connecting the two elements. Without dowels, the interface relies only on friction (roughened surface) and concrete-to-concrete bond, which may be insufficient in high-shear regions. Dowels ensure force transfer and true composite behavior.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.4",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ae571784c7bc3f3e05edc623f150466ca445df67a4430c0d88562211f4cfebd"
+    },
+    {
+      "question_id": "8b318858-ce00-42e1-8834-24600fe2dcc7",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "Before placing new concrete against an existing concrete surface at a construction joint, the most important preparation step is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Apply a waterproof coating to the old surface to prevent water infiltration, ensuring long-term durability"
+        },
+        {
+          "id": "b",
+          "text": "Clean, scarify, or sandblast the old surface to expose aggregate and create mechanical bond, removing laitance"
+        },
+        {
+          "id": "c",
+          "text": "Heat the old surface to dry it completely before new concrete is placed, preventing moisture-related issues"
+        },
+        {
+          "id": "d",
+          "text": "Apply a bond-breaking agent to allow independent movement of the two pours, avoiding stress transfer"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The old concrete surface must be cleaned (sandblasted, scarified, or wire-brushed) to expose aggregate and remove laitance (weak cement paste layer). This creates mechanical interlocking and friction between old and new concrete. The surface must be moist (but not saturated) to ensure good hydration of new paste but not slippery. This is the critical preparation that enables force transfer.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.4.1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed285f4482d29053a6f56fd2d610d9f74809aa3a8b6c953c9e731c1491928fcb"
+    },
+    {
+      "question_id": "31e66765-f6d2-4850-8d60-10e7006bbb4f",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "The primary advantage of using precast concrete in urban construction (such as in Manila) is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Precast always produces stronger concrete than cast-in-place, ensuring superior structural integrity in all conditions"
+        },
+        {
+          "id": "b",
+          "text": "Factory quality control, parallel construction scheduling, reduced site labor, and acceleration of project timeline"
+        },
+        {
+          "id": "c",
+          "text": "Precast eliminates the need for any construction joints in the building, which simplifies the construction process significantly"
+        },
+        {
+          "id": "d",
+          "text": "Precast members are always less expensive than cast-in-place alternatives, providing a cost-effective solution for large-scale projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Precast offers multiple advantages: (1) Factory quality control ensures consistent strength and durability; (2) Parallel scheduling—precasting occurs while site work proceeds; (3) Reduced on-site labor—assembly is faster than forming, pouring, and curing; (4) Faster occupancy—the critical path is shortened. These factors, combined, accelerate projects and reduce costs (indirectly, through schedule), especially in high-density urban environments like Manila.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; Construction Industry Practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7605833b7c7f2b986185f070f253be07d29770718bd4eb00b62e41159bab39c9"
+    },
+    {
+      "question_id": "3e1a8d73-4607-4f6a-b1b5-92b57584cd47",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "A composite concrete member (precast slab with cast-in-place topping) achieves composite action primarily through:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The weight of the topping providing lateral support to the precast member, which is crucial for stability in seismic zones"
+        },
+        {
+          "id": "b",
+          "text": "Mechanical bonding, interface roughness, and shear reinforcement (dowels or hooked bars) crossing the interface"
+        },
+        {
+          "id": "c",
+          "text": "Achieving the same compressive strength in both the precast and cast-in-place concrete, ensuring uniform load distribution"
+        },
+        {
+          "id": "d",
+          "text": "Using the same concrete mix design for both the precast and CIP portions to maintain consistency in material properties"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Composite action (two elements acting as a single structural unit) depends on:1) Mechanical bond (roughened interface), 2) Shear reinforcement crossing the interface (dowels or hooked bars), and 3) Adequate concrete strength in both materials. These elements ensure stress is transferred between the precast and CIP concrete without slipping.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 6",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c1ea7723d93da5770f179a406b94eb09649328194955d47d216474427bfcbb79"
+    },
+    {
+      "question_id": "b93e8503-4fd2-4b04-88db-ae58d784e6da",
+      "article_id": "5346c118-e05d-4588-8454-96ffd7556ef4",
+      "topic_id": "100ad3c2-f754-4f1e-bef1-1d21734fdaf4",
+      "text": "A construction joint is best defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "An unintended crack or separation in concrete due to poor workmanship, often leading to structural issues"
+        },
+        {
+          "id": "b",
+          "text": "A planned, designed discontinuity where two concrete pours meet, prepared to transfer shear and other forces"
+        },
+        {
+          "id": "c",
+          "text": "A flexible gap filled with sealant to relieve internal stresses and allow thermal movement, ensuring durability"
+        },
+        {
+          "id": "d",
+          "text": "A permanent separation between precast members that prevents composite action, maintaining individual integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A construction joint is a planned, intentional discontinuity (weak point) where concrete from two different pours meets. It is designed to transfer shear, normal stress, and moment across the interface through mechanical bonding, surface roughness, and shear reinforcement. It is not an error; it is a structural feature that simplifies construction scheduling.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Section 6.4",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a7c9a643085b3c828233e3038efacdbcb5c7174446ac4bf73b73d8f46aa04090"
+    }
+  ]
+}

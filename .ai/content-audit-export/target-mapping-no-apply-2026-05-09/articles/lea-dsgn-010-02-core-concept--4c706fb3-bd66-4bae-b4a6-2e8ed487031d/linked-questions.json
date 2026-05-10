@@ -1,0 +1,541 @@
+{
+  "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:e8e803a62730c3bbb0eb96af7cded540229b04ab8600181493d7340906d6b96a",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "ab583be5-5d61-48d2-b542-337cf2e13c39",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "In a parking structure with 90° perpendicular stalls and two-way traffic flow, what is the minimum drive aisle width required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5.0 m"
+        },
+        {
+          "id": "b",
+          "text": "5.5 m"
+        },
+        {
+          "id": "c",
+          "text": "6.1 m"
+        },
+        {
+          "id": "d",
+          "text": "7.5 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—5.0 m is too narrow for two-way traffic.",
+        "b": "Incorrect—5.5 m is minimum for one-way traffic at 90°, not two-way.",
+        "d": "Incorrect—7.5 m exceeds requirement (though not wrong, it is not the minimum).",
+        "correct": "PD 1096 Rule VII Sec. 904 specifies parking requirements including drive aisle widths: 90° parking, two-way drive aisle = 6.1 m minimum. This width accommodates oncoming vehicles at standard car width (2.5m) with sufficient clearance and maneuvering space.",
+        "takeaway": "90° two-way aisle = 6.1 m. If one-way, reduce to 5.5 m. Always confirm traffic direction before selecting aisle width."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 904 (Drive Aisle Widths by Parking Angle)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Aisle width standards",
+        "Parking angle specification"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4d109d4aa93e5d7e25b6785ca7eaf886fa577dff5f40cf0437c7b51f82f43a88"
+    },
+    {
+      "question_id": "f28ff3a2-9145-430c-b17f-9e06b2f01c42",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "What is the minimum vertical clearance required in a standard parking structure (not an accessible van route)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.0 m"
+        },
+        {
+          "id": "b",
+          "text": "2.2 m"
+        },
+        {
+          "id": "c",
+          "text": "2.4 m"
+        },
+        {
+          "id": "d",
+          "text": "2.75 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—2.0 m is too tight and does not meet code (ERR-DSGN-028).",
+        "b": "Incorrect—2.2 m is below the 2.4 m minimum.",
+        "d": "Incorrect—2.75 m is the requirement for accessible van ramp routes (higher clearance needed for van lifts), not standard areas.",
+        "correct": "PD 1096 specifies standard parking vertical clearance = 2.10 m minimum (Table IX.5.1).l vehicle height (~1.8–2.0m) plus weathering, corrosion, and structural deflection tolerances.",
+        "takeaway": "Standard parking clearance = 2.4 m. Accessible van route = 2.75 m (extra 0.35m for wheelchair lift). Do not confuse these two."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Vertical Clearance); BP 344; ERR-DSGN-028 (Common Error: 2.0m instead of 2.4m)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Vertical clearance standards",
+        "Standard vs. accessible distinction"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fa99d60f858d55dd0f78ab784808b2e7b5811c6f7f98e2f0c5edd9d5fe165404"
+    },
+    {
+      "question_id": "fd86f746-5708-4498-bce8-fe2d5686ef7f",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "A standard car entering a parking structure requires a minimum turning radius of _____ (inside wheel) to maneuver into a stall without excessive steering or clipping adjacent vehicles.",
+      "options": [
+        {
+          "id": "a",
+          "text": "4.0 m"
+        },
+        {
+          "id": "b",
+          "text": "5.0 m"
+        },
+        {
+          "id": "c",
+          "text": "6.1 m"
+        },
+        {
+          "id": "d",
+          "text": "8.0 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—4.0 m is too tight for most vehicles and will cause clipping.",
+        "b": "Incorrect—5.0 m is still below standard requirement.",
+        "d": "Incorrect—8.0 m is the radius for large trucks, not standard cars.",
+        "correct": "Standard sedan inside wheel turning radius = 6.1 m (per ASCE / ITE standards adopted in NBC practice). This radius accommodates typical steering geometry and ensures smooth entry into 90° stalls.",
+        "takeaway": "Standard car turning radius = 6.1 m (inside wheel). Note: This is the same as the 6.1m aisle width—coincidence reflects shared maneuvering space standard."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803; ASCE / ITE Parking Garage Design Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Turning radius specifications",
+        "Vehicle geometry constraints"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c78c3e0027828c49f40e907b0e64c66a1edef3d3388f2d72aa03f10fbb7e7ca"
+    },
+    {
+      "question_id": "6937b968-5e7d-4c2e-99ba-25a45f8089e2",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "A parking structure design shows: 90° stalls (2.5m × 5.0m), double-loaded bays with central two-way aisle (6.1m), and overhang allowance of 1.2m. A structural engineer proposes columns spaced at 15m intervals to support the deck. Will this column spacing conflict with parking layouts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No—15m spacing is ideal for one-bay parking module"
+        },
+        {
+          "id": "b",
+          "text": "Yes—15m spacing divides awkwardly; columns land in parking areas, not just aisles"
+        },
+        {
+          "id": "c",
+          "text": "Yes—15m spacing is too wide; columns must be at 6.1m intervals (aisle width)"
+        },
+        {
+          "id": "d",
+          "text": "No—column placement does not affect parking layout"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Partially correct concern, but if 15m aligns column-to-column through aisle centerlines (every 1.5 module widths), it can work.",
+        "c": "Incorrect—columns do NOT need to be at 6.1m intervals (that is aisle width, not column spacing).",
+        "d": "Incorrect—column placement absolutely affects parking efficiency; poor placement reduces usable stalls.",
+        "correct": "Module calculation: 6.2m (bay) + 6.1m (aisle) + 6.2m (bay) = 18.5m per full two-sided module. However, structural planning often simplifies to ~8.4m per bay or 15m increments. A 15m spacing approximates a repeating module and can work if columns align with aisle centerlines or perimeter walls (not within stall areas). The question tests understanding that structural grid must coordinate with parking geometry—ideally, columns land in aisles or at boundaries, not through stall areas.",
+        "takeaway": "Structural columns must coordinate with parking module. Ideal spacing is a multiple of module width (~8–15m) and should align with aisles or perimeter, not through stalls."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Parking Geometry); ASCE Parking Garage Design Manual (Structural Coordination)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Structural grid alignment",
+        "Column placement conflict avoidance",
+        "Module dimensioning"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ecd53845088f4f26bfb69644f25ba3fc59fd614c95c49a260749d81a1e2c55ef"
+    },
+    {
+      "question_id": "7c02cd24-0309-45e9-97c4-6b7a9e694ba3",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "A parking structure's design uses a spiral ramp with standard 1:6 gradient over 4 levels (each 3.0m apart). Approximately what is the total ramp length needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "36 m"
+        },
+        {
+          "id": "b",
+          "text": "54 m"
+        },
+        {
+          "id": "c",
+          "text": "72 m"
+        },
+        {
+          "id": "d",
+          "text": "108 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—36 m is half the required length.",
+        "b": "Incorrect—54 m is 1.5× the required length.",
+        "d": "Incorrect—108 m is 1.5× the correct calculation.",
+        "correct": "Vertical rise = 4 levels × 3.0m = 12.0 m. Ramp length at 1:6 gradient = 12.0 × 6 = 72.0 m total. (Note: This is the theoretical length; actual spiral ramp may be longer due to curve geometry, but 72m is the calculation baseline.)",
+        "takeaway": "Total vertical rise × 6 = ramp length for 1:6 gradient. For multi-story structures, sum all rises before applying ratio."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Vehicle Ramp Specifications)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Cumulative gradient calculation",
+        "Multi-level design"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9eece94cdae2c0fcf311b733a072b2e52a4e5b2dd6dab3a539c11ea806dfd812"
+    },
+    {
+      "question_id": "c4b2e780-2574-454f-baf0-799b577cf738",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "A parking structure has standard 2.5m × 5.0m stalls in a double-loaded bay (stalls on both sides of a central spine aisle). What is the approximate module width (load bay width + aisle width)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14.0 m (two bays + aisle)"
+        },
+        {
+          "id": "b",
+          "text": "18.5 m (two bays + aisle)"
+        },
+        {
+          "id": "c",
+          "text": "22.0 m (two bays + aisle)"
+        },
+        {
+          "id": "d",
+          "text": "25.0 m (two bays + aisle)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—14.0 m is close to simplified 15m module but slightly low.",
+        "c": "Incorrect—22.0 m is too wide; likely double-counting aisle.",
+        "d": "Incorrect—25.0 m is far too wide.",
+        "correct": "Calculation: Each loaded bay = stall (5.0m) + overhang/turnplate (1.2m) = 6.2m per side. Central aisle (two-way, 90°) = 6.1m. Total module = 6.2 + 6.1 + 6.2 = 18.5 m. (Common simplified module for structural planning: 8.4m per bay, 6.1m aisle = ~14.5m, often rounded to 15m.)",
+        "takeaway": "Double-loaded bay module = bay + aisle + bay. With 2.5 × 5.0 stalls and 1.2m overhang: (5.0+1.2) + 6.1 + (5.0+1.2) = 18.5m. Structural engineers often simplify to 8.4m bay + 6.1m aisle = 14.5m ≈ 15m repeating module."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Parking Structure Geometry); ASCE Parking Garage Design Manual",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Module calculation",
+        "Structural planning",
+        "Overhang and turnplate allowance"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:01a446cb9489a891ed200b738edd33e66c34ed80b45b63f32c9340597013b620"
+    },
+    {
+      "question_id": "d33e7760-a031-47e6-b19c-8094362a0513",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "A parking structure is designed with an accessible van parking route (ramp from ground to upper level). What vertical clearance must be provided?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.0 m"
+        },
+        {
+          "id": "b",
+          "text": "2.4 m (same as standard areas)"
+        },
+        {
+          "id": "c",
+          "text": "2.75 m"
+        },
+        {
+          "id": "d",
+          "text": "3.0 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—2.0 m does not meet any code standard.",
+        "b": "Incorrect—2.4 m is standard parking only; accessible van routes require additional clearance.",
+        "d": "Incorrect—3.0 m exceeds requirement (not wrong, but not minimum).",
+        "correct": "No specific vertical clearance beyond general NBC parking standards (2.10m) is mandated by BP 344 for accessible parking routes. The extra 0.35m above standard (2.4m) accommodates lift mechanisms.",
+        "takeaway": "Accessible van route = 2.75 m (NOT 2.4m). Access aisle width = 1.2m. These are critical distinctions for inclusive design."
+      },
+      "explanation": null,
+      "code_citation": "BP 344 (Accessibility Law); PD 1096 Rule VII Section 803",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "BP 344 requirements",
+        "Wheelchair lift accommodation"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5fe8d8099bd501b005204132a30e47b97f6739d93859594431f952f183791ee1"
+    },
+    {
+      "question_id": "3e6e01eb-4252-4aa2-982c-199779c9fc00",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "A parking structure level rises 3.0 meters. Using a standard vehicle ramp gradient of 1:6, what is the minimum ramp length required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "12.0 m"
+        },
+        {
+          "id": "b",
+          "text": "18.0 m"
+        },
+        {
+          "id": "c",
+          "text": "24.0 m"
+        },
+        {
+          "id": "d",
+          "text": "36.0 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—12.0 m is too short; would require 1:4 gradient.",
+        "c": "Incorrect—24.0 m would be 1:8 gradient (too shallow).",
+        "d": "Incorrect—36.0 m would be 1:12 gradient (old standard); current pedestrian standard is 1:20 maximum (2024 Revised IRR), not 1:6 vehicular.",
+        "correct": "Gradient 1:6 means for every 1 meter of vertical rise, 6 meters of ramp length are needed. For 3.0m rise: 3.0 × 6 = 18.0 m ramp length.",
+        "takeaway": "Ramp length = vertical rise × gradient denominator. For 1:6, multiply rise by 6. For 3.0m: 3.0 × 6 = 18.0m."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 803 (Vehicle Ramp Specifications)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Gradient ratio calculation",
+        "Vertical-to-horizontal conversion"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b887a348a87c775a38a222465f6b321e13ff2dfc7090636066c8d6721fd114ec"
+    },
+    {
+      "question_id": "5bed0a27-b385-49d6-9b23-e865f4a0c234",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "In a parking structure, what is the center-to-center distance required between two rows of 90° parked vehicles to permit a full two-car U-turn (one car turning into a stall, one car waiting)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8.0 m"
+        },
+        {
+          "id": "b",
+          "text": "10.0 m"
+        },
+        {
+          "id": "c",
+          "text": "12.2 m"
+        },
+        {
+          "id": "d",
+          "text": "15.0 m"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—8.0 m is too narrow.",
+        "b": "Incorrect—10.0 m is still insufficient for two full radii.",
+        "d": "Incorrect—15.0 m exceeds requirement.",
+        "correct": "For a vehicle to make a U-turn in a parking aisle with another car potentially waiting in the aisle, the center-to-center distance between stall rows must accommodate two turning radii: 6.1m + 6.1m = 12.2 m. This prevents deadlock situations where a turning vehicle blocks an oncoming car.",
+        "takeaway": "U-turn clearance (center-to-center rows) = 2 × turning radius = 2 × 6.1 = 12.2 m. This ensures smooth bidirectional traffic in parking structures."
+      },
+      "explanation": null,
+      "code_citation": "ASCE / ITE Parking Garage Design Manual; PD 1096 Rule VII Section 803 (implied through circulation standards)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Turning radius application",
+        "Two-way traffic coordination",
+        "Deadlock prevention"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:edbecde76bb4fef72c4ab4f4cc1b4184a83d9a5390dad7193761bee662ecd7c0"
+    },
+    {
+      "question_id": "e426a54f-6b8b-4c98-9004-50385e5c847e",
+      "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+      "topic_id": "305ba98f-2446-406d-9353-64692c35b3fb",
+      "text": "A parking structure is designed with a vehicle ramp gradient of 1:8 (12.5% slope) to minimize height loss. Will this design meet NBC standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes—1:8 is steeper than required, so it is safe and code-compliant, ensuring efficient use of space"
+        },
+        {
+          "id": "b",
+          "text": "Yes—1:8 (12.5%) complies as it is shallower than the maximum allowed gradient of 1:6 (16.7%)."
+        },
+        {
+          "id": "c",
+          "text": "No—the maximum allowed gradient is 1:20 (5%), same as pedestrian ramps, which prioritizes safety over space efficiency"
+        },
+        {
+          "id": "d",
+          "text": "Yes—1:8 is within the acceptable range of 1:6 to 1:20, providing a balance between safety and space utilization"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect—1:8 is actually shallower (easier/safer) than 1:6, not steeper. However, the code issue is that steeper slopes are permitted up to 1:6, so 1:8 is acceptable.",
+        "c": "Incorrect—1:20 (pedestrian/wheelchair ramp) is much shallower than vehicle ramp maximum of 1:6. Vehicles can handle steeper grades.",
+        "d": "Incorrect—there is no range 1:6 to 1:20; the standard is maximum 1:6 for vehicles (or 1:4.5 for short transitions).",
+        "correct": "PD 1096 specifies vehicle ramp maximum gradient = 1:6 (16.7% slope). A 1:8 gradient (12.5%) is SHALLOWER (easier), which might seem acceptable but is actually inefficient—it requires excessive ramp length and floor-to-floor height. The question tests whether students understand that flatter is not always better and that NBC sets a maximum steepness, not a range. (Note: The wording is slightly tricky—1:8 is shallower, not steeper, than 1:6. The correct answer is that 1:8 is acceptable from a vehicle safety standpoint but wasteful of space.)",
+        "takeaway": "Vehicle ramp max gradient = 1:6 (NOT 1:8, which is too shallow; NOT 1:20, which is pedestrian/wheelchair standard). Standard = 1:6; short transition = 1:4.5 max. (Note: This question may be testing understanding that 1:8 is permissible but inefficient—clarify context if ambiguous.)"
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 904; ERR-DSGN-026 (Common Error: 1:8 instead of 1:6)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Gradient specification",
+        "Steeper vs. shallower terminology"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-010-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.790366+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:04571489e1af8354f0a2073c02a74f8cef5d8d95caa04a3a5d9af03bdb3cbbbc"
+    }
+  ]
+}

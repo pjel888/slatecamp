@@ -428,4 +428,3 @@ Based on PD 1096 and typical Metro Manila commercial practice:
 See also within MEPF Coordination and Integration: **lea-util-008-01-core-concept**, **lea-util-008-03-core-concept**, **lea-util-008-04-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

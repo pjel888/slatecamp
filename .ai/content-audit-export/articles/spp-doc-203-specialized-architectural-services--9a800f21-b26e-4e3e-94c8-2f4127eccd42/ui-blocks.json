@@ -1,140 +1,14 @@
 {
   "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
   "slug": "spp-doc-203-specialized-architectural-services",
-  "normalized_created_at": "2026-05-04T09:10:35.502Z",
+  "normalized_created_at": "2026-05-09T17:04:22.557Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:f032df44330e102aa221ffa94b0edac80cd0495005382fb5b52e297fb6f028b1",
+  "original_content_hash": "sha256:705a960becd4340f7262da915ab6c51e8895008f2a33c0794eb563acdf28fb58",
   "normalized_content_hash": "sha256:705a960becd4340f7262da915ab6c51e8895008f2a33c0794eb563acdf28fb58",
-  "ui_block_count": 5,
-  "total_blocks": 5,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "Callout",
-      "raw": "<Callout variant=\"authority\" title=\"Legal Authority: R.A. No. 9266 — The Architecture Act of 2004\">\n\nThis SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.\n\n</Callout>",
-      "raw_hash": "sha256:912373ff00e2bbfaa96d349c16adabb8ba004ed01d6541f54810a55ade0adb2f",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"authority\", title=\"Legal Authority: R.A. No. 9266 — The Architecture Act of 2004\"\n- Text: This SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:529a8d735941aa3e4db20972b3a2430e65ae1d1e639666e01eaed11758589477",
-      "props": {
-        "variant": "authority",
-        "title": "Legal Authority: R.A. No. 9266 — The Architecture Act of 2004"
-      },
-      "props_json": {
-        "variant": "authority",
-        "title": "Legal Authority: R.A. No. 9266 — The Architecture Act of 2004"
-      },
-      "props_text": "variant=\"authority\" title=\"Legal Authority: R.A. No. 9266 — The Architecture Act of 2004\"",
-      "children_raw": "\n\nThis SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.\n\n",
-      "children_text": "This SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.",
-      "start_offset": 1515,
-      "end_offset": 1906,
-      "line_start": 19,
-      "line_end": 23,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "Callout",
-      "raw": "<Callout variant=\"note\">\n\n**Note:** AI under SPP 203 refers specifically to the architectural aspect of interiors — space planning, utility lay-outing, built-ins, and specifications — as distinct from the separate and separately licensed profession of **Interior Design**.\n\n</Callout>",
-      "raw_hash": "sha256:709a6572e0df99578123a5746dfdc18ef8a00954dc5004535cd5ce9cd15b5850",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"note\"\n- Text: **Note:** AI under SPP 203 refers specifically to the architectural aspect of interiors — space planning, utility lay-outing, built-ins, and specifications — as distinct from the separate and separately licensed profession of **Interior Design**.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:6f64795502ba04b14ca340f0d3598104025e0650a7805ca1596351c81b355ddd",
-      "props": {
-        "variant": "note"
-      },
-      "props_json": {
-        "variant": "note"
-      },
-      "props_text": "variant=\"note\"",
-      "children_raw": "\n\n**Note:** AI under SPP 203 refers specifically to the architectural aspect of interiors — space planning, utility lay-outing, built-ins, and specifications — as distinct from the separate and separately licensed profession of **Interior Design**.\n\n",
-      "children_text": "**Note:** AI under SPP 203 refers specifically to the architectural aspect of interiors — space planning, utility lay-outing, built-ins, and specifications — as distinct from the separate and separately licensed profession of **Interior Design**.",
-      "start_offset": 5624,
-      "end_offset": 5908,
-      "line_start": 69,
-      "line_end": 73,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "Callout",
-      "raw": "<Callout variant=\"note\">\n\n**Note:** CDP ideally requires the architect to also be a separately qualified and licensed **Environmental Planner (EnP)**. If not, the Architect must engage duly qualified professionals as Specialist Consultants.\n\n</Callout>",
-      "raw_hash": "sha256:5d2364917448f43f5e061332bbb6e37a7eecd04aa5f0facbd11dbd9f1dcd8bce",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"Callout\" status=\"preserved\"]\nExtracted summary:\n- Props: variant=\"note\"\n- Text: **Note:** CDP ideally requires the architect to also be a separately qualified and licensed **Environmental Planner (EnP)**. If not, the Architect must engage duly qualified professionals as Specialist Consultants.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:b4396a55342aa14bc83c9891d1c3275079511421eb8b241fd7287082177f5b6e",
-      "props": {
-        "variant": "note"
-      },
-      "props_json": {
-        "variant": "note"
-      },
-      "props_text": "variant=\"note\"",
-      "children_raw": "\n\n**Note:** CDP ideally requires the architect to also be a separately qualified and licensed **Environmental Planner (EnP)**. If not, the Architect must engage duly qualified professionals as Specialist Consultants.\n\n",
-      "children_text": "**Note:** CDP ideally requires the architect to also be a separately qualified and licensed **Environmental Planner (EnP)**. If not, the Architect must engage duly qualified professionals as Specialist Consultants.",
-      "start_offset": 12809,
-      "end_offset": 13061,
-      "line_start": 160,
-      "line_end": 164,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0004",
-      "block_type": "mdx_component",
-      "component_name": "ComparisonTable",
-      "raw": "<ComparisonTable>\n\n| No. | Sub-Service | Category | Compensation Basis |\n|---|---|---|---|\n| 203.1 | Architectural Interior (AI) Services | Design & Aesthetic | % of cost of AI work |\n| 203.2 | Acoustic Design Services | Design & Aesthetic | Based on complexity |\n| 203.3 | Architectural Lighting Layout and Design | Design & Aesthetic | Based on complexity / cost of fixtures |\n| 203.4 | Site Development Planning (SDP) | Planning | Based on estimated cost of civil/landscaping works |\n| 203.5 | Site and Physical Planning (incl. MDP, Subdivision, Urban Design) | Planning | As stated in Architect's Guidelines |\n| 203.6 | Comprehensive Development Planning (CDP) | Planning | Man-months × overhead factor |\n| 203.7 | Historic & Cultural Heritage Conservation and Planning | Heritage/Safety | Per Architect's Guidelines |\n| 203.8 | Security Evaluation and Planning (incl. FALAR) | Heritage/Safety | Per Architect's Guidelines |\n| 203.9 | Building Systems Design | Technical | Per Architect's Guidelines |\n| 203.10 | Facilities Maintenance Support | Technical | Per Architect's Guidelines |\n| 203.11 | Building Testing and Commissioning | Technical | Per Architect's Guidelines |\n| 203.12 | Building Environmental Certification | Technical | Per Architect's Guidelines |\n| 203.13 | Forensic Architecture | Technical | Per Architect's Guidelines |\n| 203.14 | Building Appraisal | Technical | Per Architect's Guidelines |\n| 203.15 | Structural Conceptualization | Technical | Per Architect's Guidelines |\n| 203.16 | Preliminary Services | Documentation | Per Architect's Guidelines |\n| 203.17 | Contract Documentation and Review | Documentation | Per Architect's Guidelines |\n| 203.18 | Post-Design Services (incl. Construction Services) | Documentation | Per Architect's Guidelines |\n| 203.19 | Dispute Avoidance and Resolution | Documentation | Per Architect's Guidelines |\n| 203.20 | Architectural Research Methods | Research/Mgmt | Per Architect's Guidelines |\n| 203.21 | Special Building/Facility Planning and Design | Research/Mgmt | Per Architect's Guidelines |\n| 203.22 | Building Components | Research/Mgmt | Per Architect's Guidelines |\n| 203.23 | Management of Architectural Practices | Research/Mgmt | Per Architect's Guidelines |\n\n</ComparisonTable>",
-      "raw_hash": "sha256:c7d330f75f87901958b38e5139e4237798dae4d132ce1701981c71ab63323f9d",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"ComparisonTable\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: | No. | Sub-Service | Category | Compensation Basis | |---|---|---|---| | 203.1 | Architectural Interior (AI) Services | Design & Aesthetic | % of cost of AI work | | 203.2 | Acoustic Design Services | Design & Aesthetic | Based on complexity | | 203.3 | Architectural Lighting Layout and Design | Design & Aesthetic | Based on complexity / cost of fixtures | | 203.4 | Site Development Planning (SDP) | Planning | Based on estimated cost of civil/landscaping works | | 203.5 | Site and Physical Plan\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:5708b2bf9daa4426b2f866f5fc108481faec6410b99cad28aa9ccb7a56b6d6ed",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": "\n\n| No. | Sub-Service | Category | Compensation Basis |\n|---|---|---|---|\n| 203.1 | Architectural Interior (AI) Services | Design & Aesthetic | % of cost of AI work |\n| 203.2 | Acoustic Design Services | Design & Aesthetic | Based on complexity |\n| 203.3 | Architectural Lighting Layout and Design | Design & Aesthetic | Based on complexity / cost of fixtures |\n| 203.4 | Site Development Planning (SDP) | Planning | Based on estimated cost of civil/landscaping works |\n| 203.5 | Site and Physical Planning (incl. MDP, Subdivision, Urban Design) | Planning | As stated in Architect's Guidelines |\n| 203.6 | Comprehensive Development Planning (CDP) | Planning | Man-months × overhead factor |\n| 203.7 | Historic & Cultural Heritage Conservation and Planning | Heritage/Safety | Per Architect's Guidelines |\n| 203.8 | Security Evaluation and Planning (incl. FALAR) | Heritage/Safety | Per Architect's Guidelines |\n| 203.9 | Building Systems Design | Technical | Per Architect's Guidelines |\n| 203.10 | Facilities Maintenance Support | Technical | Per Architect's Guidelines |\n| 203.11 | Building Testing and Commissioning | Technical | Per Architect's Guidelines |\n| 203.12 | Building Environmental Certification | Technical | Per Architect's Guidelines |\n| 203.13 | Forensic Architecture | Technical | Per Architect's Guidelines |\n| 203.14 | Building Appraisal | Technical | Per Architect's Guidelines |\n| 203.15 | Structural Conceptualization | Technical | Per Architect's Guidelines |\n| 203.16 | Preliminary Services | Documentation | Per Architect's Guidelines |\n| 203.17 | Contract Documentation and Review | Documentation | Per Architect's Guidelines |\n| 203.18 | Post-Design Services (incl. Construction Services) | Documentation | Per Architect's Guidelines |\n| 203.19 | Dispute Avoidance and Resolution | Documentation | Per Architect's Guidelines |\n| 203.20 | Architectural Research Methods | Research/Mgmt | Per Architect's Guidelines |\n| 203.21 | Special Building/Facility Planning and Design | Research/Mgmt | Per Architect's Guidelines |\n| 203.22 | Building Components | Research/Mgmt | Per Architect's Guidelines |\n| 203.23 | Management of Architectural Practices | Research/Mgmt | Per Architect's Guidelines |\n\n",
-      "children_text": "| No. | Sub-Service | Category | Compensation Basis | |---|---|---|---| | 203.1 | Architectural Interior (AI) Services | Design & Aesthetic | % of cost of AI work | | 203.2 | Acoustic Design Services | Design & Aesthetic | Based on complexity | | 203.3 | Architectural Lighting Layout and Design | Design & Aesthetic | Based on complexity / cost of fixtures | | 203.4 | Site Development Planning (SDP) | Planning | Based on estimated cost of civil/landscaping works | | 203.5 | Site and Physical Plan",
-      "start_offset": 21272,
-      "end_offset": 23532,
-      "line_start": 317,
-      "line_end": 345,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0005",
-      "block_type": "mdx_component",
-      "component_name": "ComparisonTable",
-      "raw": "<ComparisonTable>\n\n| SPP Document | Relationship to SPP 203 |\n|---|---|\n| **SPP Doc. 201** (Pre-Design) | SPP 203 services like Architectural Programming and Site Analysis are advanced extensions of pre-design tasks |\n| **SPP Doc. 202** (Regular Design) | SPP 203 services supplement and enhance the design delivered under SPP 202; the regular architectural plan falls under 202, while specialized components fall under 203 |\n| **SPP Doc. 204-A/B** (Construction) | SPP 203.18 (Post-Design Services) extends into construction and is performed in relation to SPP 204 obligations |\n| **SPP Doc. 205** (Post-Construction) | SPP 203.10 (Facilities Maintenance Support) and 203.13 (Forensic Architecture) relate closely to SPP 205 post-construction evaluations |\n| **SPP Doc. 206** (Comprehensive Services) | CAS packages SPP 201 through 205 together; SPP 203 is one of the bundled components |\n\n</ComparisonTable>",
-      "raw_hash": "sha256:80accd3c6ae52d85eab8cce51d399f647ed4d26a08af7db70b79e317fba0108a",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0005 component=\"ComparisonTable\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: | SPP Document | Relationship to SPP 203 | |---|---| | **SPP Doc. 201** (Pre-Design) | SPP 203 services like Architectural Programming and Site Analysis are advanced extensions of pre-design tasks | | **SPP Doc. 202** (Regular Design) | SPP 203 services supplement and enhance the design delivered under SPP 202; the regular architectural plan falls under 202, while specialized components fall under 203 | | **SPP Doc. 204-A/B** (Construction) | SPP 203.18 (Post-Design Services) extends into constr\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:cb205282c6e0b12da7db3e7d9626d1bc953370a2c53767acbe242a67fa5231d1",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": "\n\n| SPP Document | Relationship to SPP 203 |\n|---|---|\n| **SPP Doc. 201** (Pre-Design) | SPP 203 services like Architectural Programming and Site Analysis are advanced extensions of pre-design tasks |\n| **SPP Doc. 202** (Regular Design) | SPP 203 services supplement and enhance the design delivered under SPP 202; the regular architectural plan falls under 202, while specialized components fall under 203 |\n| **SPP Doc. 204-A/B** (Construction) | SPP 203.18 (Post-Design Services) extends into construction and is performed in relation to SPP 204 obligations |\n| **SPP Doc. 205** (Post-Construction) | SPP 203.10 (Facilities Maintenance Support) and 203.13 (Forensic Architecture) relate closely to SPP 205 post-construction evaluations |\n| **SPP Doc. 206** (Comprehensive Services) | CAS packages SPP 201 through 205 together; SPP 203 is one of the bundled components |\n\n",
-      "children_text": "| SPP Document | Relationship to SPP 203 | |---|---| | **SPP Doc. 201** (Pre-Design) | SPP 203 services like Architectural Programming and Site Analysis are advanced extensions of pre-design tasks | | **SPP Doc. 202** (Regular Design) | SPP 203 services supplement and enhance the design delivered under SPP 202; the regular architectural plan falls under 202, while specialized components fall under 203 | | **SPP Doc. 204-A/B** (Construction) | SPP 203.18 (Post-Design Services) extends into constr",
-      "start_offset": 24319,
-      "end_offset": 25228,
-      "line_start": 368,
-      "line_end": 378,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:532857e4ae407213a66b18d2862b2a03104b64365973c88121cea1cc288d69a4",
-  "normalized_content_hash_sha256": "sha256:705a960becd4340f7262da915ab6c51e8895008f2a33c0794eb563acdf28fb58"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

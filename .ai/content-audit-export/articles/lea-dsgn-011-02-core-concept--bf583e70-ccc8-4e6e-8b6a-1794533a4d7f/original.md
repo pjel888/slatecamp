@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 011 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -23,7 +32,11 @@ In exam scenarios, the LEA tests whether candidates can:
 2. Identify non-compliance errors (e.g., floor-to-floor ≠ 3.0 m, roof heights blocking sight lines)
 3. Determine interior headroom requirements (minimum 2.4 m finished ceiling height per NBC for habitable spaces)
 4. Relate elevations to floor plans (confirming fenestration alignment, structural grid consistency)
-<ArticleMedia id="media-lea-dsgn-011-02-core-concept" type="image" caption="Elevation and Section Drawing — Orthographic Projection Standards" description="Side-by-side comparison of building elevation (labeled by orientation, finish materials) and building section (showing finish floor levels, vertical dimensions, section cut reference on plan). Standard notation for materials, finishes, and levels." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-011-02-core-concept", type="image", caption="Elevation and Section Drawing — Orthographic Projection Standards", description="Side-by-side comparison of building elevation (labeled by orientation, finish materials) and building section (showing finish floor levels, vertical dimensions, section cut reference on plan). Standard notation for materials, finishes, and levels.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -58,12 +71,18 @@ An elevation shows five window bays; the corresponding floor plan shows four col
 **Pattern 3: Vertical clearance and accessibility**
 A section shows a stairwell with headroom of 1.9 m. The candidate must identify this as non-compliant with NBC minimum headroom (2.0 m) and specify the correction.
 
-<Tip>
-**Memory aid:** "3-2-4 rule" — Floor-to-floor=**3.0 m** (NBC standard), finished ceiling height≥**2.4 m** (habitable space), stairwell headroom≥**2.0 m** (accessibility). Always verify FFLs in sections before calculating buildable floor area or checking code compliance.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory aid:** "3-2-4 rule" — Floor-to-floor=**3.0 m** (NBC standard), finished ceiling height≥**2.4 m** (habitable space), stairwell headroom≥**2.0 m** (accessibility). Always verify FFLs in sections before calculating buildable floor area or checking code compliance.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Elevations must show finish floor elevations (FFL), finished ground line (FGL), roof ridge/gable heights, and material indications. Sections must show hidden elements (footings, beams above cut plane).
-<ArticleMedia id="media-lea-dsgn-011-02-core-concept" type="image" caption="Elevation and Section Graphics — Line Weights, Hatching, and Material Notation" description="Annotated building elevation and section showing: line weight hierarchy (profile 0.7mm, intermediate 0.35mm, hatching 0.18mm), standard material hatch patterns (concrete, masonry, wood, steel), finish floor level (FFL) indicators, section cut lines, and dimension strings. Key elevation symbols and material callouts labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-011-02-core-concept", type="image", caption="Elevation and Section Graphics — Line Weights, Hatching, and Material Notation", description="Annotated building elevation and section showing: line weight hierarchy (profile 0.7mm, intermediate 0.35mm, hatching 0.18mm), standard material hatch patterns (concrete, masonry, wood, steel), finish floor level (FFL) indicators, section cut lines, and dimension strings. Key elevation symbols and material callouts labeled.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -71,4 +90,8 @@ See **LEA-DSGN-011-01** (Floor Plans) for plan-section relationships, **LEA-DSGN
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["ERR-DSGN-009: Assuming floor-to-floor = 2.7 m or 3.5 m instead of the NBC standard 3.0 m. Always verify against the project standard before accepting a section.","Using dashed lines to show visible edges beyond a section cut (should use solid outlines for clarity).","Misaligning fenestration on elevation with the structural grid shown on the floor plan—always cross-reference the two.","Forgetting to label section cut locations on floor plans with clear arrows and matching labels on the section elevation.","Mixing elevation directions (labeling an east-facing elevation as 'Front' without confirming site orientation first).","Failing to show grade line and reference elevation data—sections are meaningless without vertical datum.","Crowding dimension annotations, making it unclear which height corresponds to which floor-to-floor distance."]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"ERR-DSGN-009: Assuming floor-to-floor = 2.7 m or 3.5 m instead of the NBC standard 3.0 m. Always verify against the project standard before accepting a section.\",\"Using dashed lines to show visible edges beyond a section cut (should use solid outlines for clarity).\",\"Misaligning fenestration on elevation with the structural grid shown on the floor plan—always cross-reference the two.\",\"Forgetting to label section cut locations on floor plans with clear arrows and matching labels on the section elevation.\",\"Mixing elevation directions (labeling an east-facing elevation as 'Front' without confirming site orientation first).\",\"Failing to show grade line and reference elevation data—sections are meaningless without vertical datum.\",\"Crowding dimension annotations, making it unclear which height corresponds to which floor-to-floor distance.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

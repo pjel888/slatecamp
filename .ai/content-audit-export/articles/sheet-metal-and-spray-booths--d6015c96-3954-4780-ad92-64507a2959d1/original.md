@@ -1,5 +1,12 @@
 # Sheet Metal and Spray Booths
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Sheet Metal and Spray Booths** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 **Rule XVII, Sections 1701–1704 — PD 1096 (National Building Code of the Philippines)**
 **LEA Relevance:** Area 2 (Utilities & Fire Protection) | Hazardous Occupancy | Group G Industrial Buildings
 
@@ -13,13 +20,17 @@ Identify the construction, ventilation, and fire protection requirements for she
 
 ## 1. Hook / Opening Scenario
 
-<LawCallout code="pd1096" section="Rule IV - Sheet Metal">
-National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule IV - Sheet Metal"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
 
-<LawCallout code="pd1096" section="Rule IV - Spray Booths">
-National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule IV - Spray Booths"
+- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.
+[/SLATECAMP_UI_BLOCK]
 
 A fire safety engineer inspects a new automotive refinishing shop in Caloocan. The spray booth uses a standard exhaust fan with steel blades, the motor is mounted inside the duct plenum, and the booth front opening measures 1.2 sq.m — with no fire curtain. The lighting fixtures are standard incandescent units set directly into the booth ceiling without glass panels. In thirty seconds of reading the plans, you can count four violations of Rule XVII. The LEA board exam will test whether you can catch every one of them.
 
@@ -220,8 +231,16 @@ The following checklist consolidates all prescriptive requirements of Sections 1
 
 ### Construction (Section 1701)
 
-<Warn>Don't memorize every code section number — memorize the *rule*. The LEA tests application of code standards, not section number recall, except for major, frequently tested sections (e.g., Rule VII for occupancy, Rule VIII for light/ventilation).</Warn>
-<ExamTip>**LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Don't memorize every code section number — memorize the *rule*. The LEA tests application of code standards, not section number recall, except for major, frequently tested sections (e.g., Rule VII for occupancy, Rule VIII for light/ventilation).
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Pattern:** Code questions often provide a scenario with specific dimensions or quantities. Identify whether the scenario complies with the code. Pay attention to units (meters vs. millimeters) and aggregate vs. individual limits.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -335,4 +354,3 @@ Return to this module in 3 days. If you can answer the Active Recall questions w
 ## Cross‑References
 
 **Plastics In Construction**, **Fire Extinguishing Systems**, **Vent Shafts And Ventilation**, **Electrical And Mechanical Regulations**
-

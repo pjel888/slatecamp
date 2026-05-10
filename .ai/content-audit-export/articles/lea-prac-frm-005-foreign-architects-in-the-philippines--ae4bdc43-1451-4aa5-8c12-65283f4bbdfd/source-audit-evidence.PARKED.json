@@ -1,0 +1,167 @@
+{
+  "audit_date": "2026-05-10",
+  "audit_mode": "local_source_audit_no_supabase",
+  "source_truth_protocols": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "extraction_method": "PyMuPDF via python fitz against raw PDFs in vitruvius-connection/001_Raw-Source-Layer; pdftotext unavailable in this environment.",
+  "supabase_apply_status": "not_applied",
+  "normalized_md_changes": "none_applied",
+  "canonical_article_root": ".ai/content-audit-export/articles",
+  "duplicate_export_note": "Matching folders also exist under target-mapping-no-apply-2026-05-09/articles; this audit wrote to the canonical .ai/content-audit-export/articles folders only.",
+  "audited_at": "2026-05-10T11:41:05+08:00",
+  "article_slug": "lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+  "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+  "article_title": "Foreign Architects in the Philippines",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+  "inspected_files": [
+    ".ai/content-audit-export/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/normalized.md",
+    ".ai/content-audit-export/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/linked-questions.json",
+    ".ai/content-audit-export/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/sources.json"
+  ],
+  "readiness_verdict": "PARKED_NOT_SOURCE_AUDITED_READY",
+  "source_audit_evidence_file_policy": "source-audit-evidence.json is intentionally not written because at least one blocker remains.",
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "sha256": "d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
+    },
+    {
+      "key": "prc_temp_permits",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+      "sha256": "7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64"
+    }
+  ],
+  "verified_major_claims": [
+    {
+      "claim": "RA 9266 IRR defines foreign architect as not Filipino, not registered/licensed in the Philippines, but duly registered/licensed in the home country.",
+      "scope": "article",
+      "raw_source_key": "ra9266_irr",
+      "pdf_page": 5,
+      "source_locator": "Section 3, item 30",
+      "evidence_excerpt": "not a Filipino citizen ... duly registered and licensed in his/her home country.",
+      "status": "verified"
+    },
+    {
+      "claim": "RA 9266 IRR defines Filipino counterpart as the local Philippine architect/entity that must work in association with the foreign architect/entity on Philippine soil.",
+      "scope": "article",
+      "raw_source_key": "ra9266_irr",
+      "pdf_page": 5,
+      "source_locator": "Section 3, item 31",
+      "evidence_excerpt": "must work in association with a foreign architect ... on a project on Philippine soil.",
+      "status": "verified"
+    },
+    {
+      "claim": "Section 38 requires foreign nationals to secure a special/temporary permit from the Board, subject to Commission approval, before assuming covered duties.",
+      "scope": "article and linked question c348de7a-021d-4ff6-9c91-c9673fb255f6",
+      "raw_source_key": "ra9266_irr",
+      "pdf_page": 20,
+      "source_locator": "Section 38",
+      "evidence_excerpt": "before assuming ... secure a special/temporary permit from the Board subject to approval of the Commission.",
+      "status": "verified"
+    },
+    {
+      "claim": "Appearance of a foreign person/firm name with architect/design consultant titles on architectural plans, specifications, construction documents, permits, advertisements, or billboards can be deemed practice.",
+      "scope": "article",
+      "raw_source_key": "ra9266_irr",
+      "pdf_page": 20,
+      "source_locator": "Section 38 proviso",
+      "evidence_excerpt": "whose name or company name ... appears on architectural plans ... shall be deemed practicing architecture.",
+      "status": "verified"
+    },
+    {
+      "claim": "Section 36 makes it unlawful for an unregistered person to collect fees for architectural services except as employee representative of a Registered Architect.",
+      "scope": "article",
+      "raw_source_key": "ra9266_irr",
+      "pdf_page": 20,
+      "source_locator": "Section 36",
+      "evidence_excerpt": "unlawful for any unregistered person to collect a fee ... except as an employee.",
+      "status": "verified"
+    },
+    {
+      "claim": "Temporary/Special Permit is for one project; another project requires separate application and fees.",
+      "scope": "linked question 1c94b42d-f325-4780-8ee6-4bb31ffae4ef",
+      "raw_source_key": "prc_temp_permits",
+      "pdf_page": 8,
+      "source_locator": "PRBoA Resolution 03 s.2008, Section 11",
+      "evidence_excerpt": "issued to a foreign architect for one (1) project alone.",
+      "status": "verified"
+    },
+    {
+      "claim": "Foreign architect with a temporary/special permit cannot act as Architect-of-record; signing/sealing responsibility is reserved to the Filipino counterpart.",
+      "scope": "linked questions c17e40b2-9252-4ee3-8c91-8b348746079a, 9e07d6a6-a5bf-4615-8aac-b58634d3584c",
+      "raw_source_key": "prc_temp_permits",
+      "pdf_page": 8,
+      "source_locator": "PRBoA Resolution 03 s.2008, Section 10",
+      "evidence_excerpt": "cannot act as the Architect-of-record ... reserved solely for the Filipino counterpart.",
+      "status": "verified"
+    },
+    {
+      "claim": "Section 27 reciprocity requires the foreign country to admit Filipino citizens to the same profession without restriction or on strict and absolute equality after examination.",
+      "scope": "linked questions ce906996-8079-4d29-be28-ff0467120340, 39ca179b-d99c-4af0-8dc9-ea438d4895e2, ec0b122b-f616-4935-85a7-bcdae844f387",
+      "raw_source_key": "ra9266_irr",
+      "pdf_pages": [
+        16,
+        17
+      ],
+      "source_locator": "Section 27",
+      "evidence_excerpt": "admits citizens of the Philippines ... without restriction ... strict and absolute equality.",
+      "status": "verified"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "RA9266-BLOCKER-001",
+      "severity": "high",
+      "type": "unsupported_distinction",
+      "affected_files": [
+        "linked-questions.json"
+      ],
+      "affected_question_ids": [
+        "dffb3280-babd-44e7-869c-c9de9b42335c"
+      ],
+      "finding": "The linked question distinguishes special permits from temporary permits as separate categories. The raw RA 9266 IRR and PRBoA Resolution inspected repeatedly use the combined phrase Temporary/Special Permit and do not verify the question distinction as written.",
+      "required_fix": "Provide primary source for the separate special-vs-temporary taxonomy or rewrite the question."
+    },
+    {
+      "id": "RA9266-BLOCKER-002",
+      "severity": "medium",
+      "type": "over-inferred_fee_claim",
+      "affected_files": [
+        "linked-questions.json"
+      ],
+      "affected_question_ids": [
+        "0161cbf0-c8cc-4130-92af-aa9d72060818"
+      ],
+      "finding": "The source verifies Section 36 fee-collection limits and Filipino counterpart requirements, but the option wording all compensation flows through the Filipino counterpart or employing firm is not stated directly in the inspected source.",
+      "required_fix": "Rephrase as a source-bounded conclusion or add a primary source that states the compensation channel."
+    },
+    {
+      "id": "RA9266-BLOCKER-003",
+      "severity": "medium",
+      "type": "documentation_requirement_scope_mismatch",
+      "affected_files": [
+        "linked-questions.json"
+      ],
+      "affected_question_ids": [
+        "edbae089-2b69-424c-8abd-4082fd647dcf"
+      ],
+      "finding": "Passport and Filipino-counterpart application details are verified in PRBoA Resolution Section 4; immigration/transcript requirements are clearly found under RA 9266 IRR Section 27 reciprocity/licensure-exam application, not Section 38 temporary permit application.",
+      "required_fix": "Separate Section 27 reciprocity exam documentation from Section 38 temporary/special permit application documentation."
+    },
+    {
+      "id": "RA9266-BLOCKER-004",
+      "severity": "medium",
+      "type": "empty_source_bundle",
+      "affected_files": [
+        "sources.json"
+      ],
+      "finding": "sources.json has source_count 0.",
+      "required_fix": "Populate source rows after full evidence verification."
+    }
+  ],
+  "required_next_action": "Resolve blockers, rerun raw-PDF claim ledger for article and linked questions, then write source-audit-evidence.json only if every material legal/code claim is verified."
+}

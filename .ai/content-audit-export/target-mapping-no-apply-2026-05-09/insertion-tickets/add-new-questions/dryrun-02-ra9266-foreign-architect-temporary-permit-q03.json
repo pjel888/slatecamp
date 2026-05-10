@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+  "dry_question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q03",
+  "target_article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "Filipino counterpart definition is adjacent to but not the same as the existing fee-flow question.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "RA 9266 IRR, Section 3, Item 31, PDF p.5.",
+    "text": "What is the Filipino counterpart in the RA 9266 IRR definition?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Section 3, Item 31 defines the Filipino Counterpart as the local Philippine architect, partnership, or corporation that must work in association with the foreign architect or firm on a project on Philippine soil.",
+      "distractors": {
+        "B": "Translation or staff support is not the legal counterpart role.",
+        "C": "The building official is a regulator, not the Filipino counterpart.",
+        "D": "The owner commissions the project but is not the counterpart defined by the IRR."
+      },
+      "takeaway": "Counterpart means local architectural association for the project, not a clerical or ownership role."
+    },
+    "bloom_level": "remember",
+    "value_tolerance": 0,
+    "model_id": "ra9266-foreign-q3",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "A",
+    "explanation": "RA 9266 IRR, Section 3, Item 31, PDF p.5.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "The local architect, partnership, or corporation that must work in association with the foreign architect on a Philippine project"
+      },
+      {
+        "id": "B",
+        "text": "Any Filipino employee assigned to translate the foreign architect's drawings"
+      },
+      {
+        "id": "C",
+        "text": "The building official who reviews the permit application"
+      },
+      {
+        "id": "D",
+        "text": "The project owner who pays the design fee"
+      }
+    ]
+  },
+  "sme_source_locator": "RA 9266 IRR, Section 3, Item 31, PDF p.5.",
+  "code_citation": "RA 9266 IRR, Section 3, Item 31, PDF p.5.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

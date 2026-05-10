@@ -97,4 +97,3 @@ Extracted summary:
 See also within Sustainable and Green Materials: **lea-matl-005-05-core-concept**, **lea-matl-005-07-core-concept**, **lea-matl-005-08-core-concept**, **lea-matl-005-10-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

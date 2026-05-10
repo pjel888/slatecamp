@@ -159,34 +159,34 @@ Extracted summary:
 ### Question 1
 Using the Rational Method, calculate the peak stormwater runoff (Q) for a 2-hectare site with a weighted runoff coefficient of 0.70 and a design storm rainfall intensity of 120 mm/hr.
 
-A. 0.47 m³/s  
-B. 0.58 m³/s  
-C. 168.0 m³/s  
-D. 0.33 m³/s  
+A. 0.47 m³/s
+B. 0.58 m³/s
+C. 168.0 m³/s
+D. 0.33 m³/s
 
-> **Answer: A. 0.47 m³/s**  
+> **Answer: A. 0.47 m³/s**
 > Using Q = (C × i × A) / 360 = (0.70 × 120 × 2.0) / 360 = 168 / 360 = 0.467 ≈ **0.47 m³/s**. Option C (168.0) is the numerator before dividing by 360 — a common error when students forget the metric conversion factor. Option B and D result from incorrect C or A values.
 
 ### Question 2
 Under PD 1067 (Water Code of the Philippines), what is the minimum easement from the banks of rivers and streams in **agricultural areas** where no structures may be built?
 
-A. 3 meters  
-B. 10 meters  
-C. 20 meters  
-D. 40 meters  
+A. 3 meters
+B. 10 meters
+C. 20 meters
+D. 40 meters
 
-> **Answer: C. 20 meters**  
+> **Answer: C. 20 meters**
 > Article 51 of PD 1067 establishes the following easement zones from river/stream banks: 3 meters in urban areas, 20 meters in agricultural areas, and 40 meters in forest areas. These are no-build zones subject to the easement of public use. Option A (3 m) is for urban areas; Option D (40 m) is for forest areas.
 
 ### Question 3
 A site planner converts a 100% grass lot (C = 0.15) into a 100% paved parking lot (C = 0.90). By what factor does the peak stormwater runoff increase, assuming the same storm event?
 
-A. 2 times  
-B. 4 times  
-C. 6 times  
-D. 9 times  
+A. 2 times
+B. 4 times
+C. 6 times
+D. 9 times
 
-> **Answer: C. 6 times**  
+> **Answer: C. 6 times**
 > Since Q = C × i × A, and both i and A remain constant, the ratio of post-development to pre-development runoff is simply C_post / C_pre = 0.90 / 0.15 = **6.0 times**. This dramatically illustrates why full imperviousness without detention/retention is unacceptable. The LEA uses this type of ratio question to test conceptual understanding of the Rational Method without requiring full computation.
 
 ---
@@ -201,4 +201,3 @@ Extracted summary:
 ## Cross‑References
 
 **Microclimate Analysis**, **Topography And Slope Analysis**, **Geological Hazards**, **Flora And Fauna In Site Development**
-

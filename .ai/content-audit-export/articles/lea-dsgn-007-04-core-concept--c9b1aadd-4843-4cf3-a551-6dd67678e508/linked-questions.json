@@ -1,9 +1,170 @@
 {
   "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:0cc90c83d96401c78bc86b40046d78a7e7d7d55a58ba1b48c55493d256dea2e0",
+  "linked_questions_hash": "sha256:5faa421cc09d14c3a59742e01e3fa8a7ebc72c006fba24385b06cf750dbca9b9",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "9ed943a2-3930-414e-9c8e-b1624e6f0e77",
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
+      "text": "During Construction Administration, an architect observes that a contractor is installing a different door type than specified in the Construction Documents. What is the architect's appropriate response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Issue a Request for Information (RFI) or stop-work notice to require compliance with specifications before proceeding."
+        },
+        {
+          "id": "b",
+          "text": "Immediately order the contractor to remove the installed doors without documentation, risking potential disputes and lack of record"
+        },
+        {
+          "id": "c",
+          "text": "Approve the change without notification to the client, as long as the door quality is acceptable, which may lead to client dissatisfaction"
+        },
+        {
+          "id": "d",
+          "text": "Ignore the discrepancy as Construction Administration has no authority over contractor decisions, which could lead to non-compliance issues"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct: RFI or directive to comply. The architect must document the issue and require resolution.",
+        "b": "Too aggressive: The architect observes and directs; does not order removal without documented process.",
+        "c": "Incorrect: The architect cannot approve changes unilaterally. Client/contractor agreement is required for substitutions.",
+        "d": "Incorrect: The architect has significant authority to verify compliance during Construction Administration.",
+        "correct": "The architect's role in Construction Administration is verification and observation. If a discrepancy is discovered, the architect issues an RFI (Request for Information) requiring explanation and correction, or directs stop-work until compliance is verified. The architect has authority to require compliance but does not supervise construction.",
+        "takeaway": "Construction Administration role: Observe, verify, document, require compliance. The architect does not supervise daily construction, but enforces specification compliance through RFIs and formal directives. Authority is verification-based, not supervisory."
+      },
+      "explanation": "Correct: RFI or directive to comply. The architect must document the issue and require resolution. Too aggressive: The architect observes and directs; does not order removal without documented process. Incorrect: The architect cannot approve changes unilaterally. Client/contractor agreement is required for substitutions. Incorrect: The architect has significant authority to verify compliance during Construction Administration. The architect's role in Construction Administration is verification and observation. If a discrepancy is discovered, the architect issues an RFI (Request for Information) requiring explanation and correction, or directs stop-work until compliance is verified. The architect has authority to require compliance but does not supervise construction. Construction Administration role: Observe, verify, document, require compliance. The architect does not supervise daily construction, but enforces specification compliance through RFIs and formal directives. Authority is verification-based, not supervisory.",
+      "code_citation": "UAP SPP; Construction Administration Definition; AIA Standard Practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "construction phase management",
+        "architect responsibilities"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-05-06T15:06:27.829412+00:00",
+      "content_hash": "sha256:df777e3f7473839343f3a7994efbc8233ae92dff885fc28f7bb7cc56ad9070bf"
+    },
+    {
+      "question_id": "9c3bc255-515b-41a0-b140-215f9176c94f",
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
+      "text": "Design Development phase begins after Schematic Design is approved. In Design Development, what is a key additional activity that was not prominent in Schematic Design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site selection and feasibility analysis, which is typically completed during the initial stages of project planning"
+        },
+        {
+          "id": "b",
+          "text": "Coordination with consultants (structural, MEP, fire protection engineers) to integrate building systems"
+        },
+        {
+          "id": "c",
+          "text": "Presenting multiple conceptual options to the client, allowing for a broader range of design possibilities to be considered"
+        },
+        {
+          "id": "d",
+          "text": "Final review of shop drawings during construction, ensuring that all design elements are accurately represented"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Site analysis is Pre-Design activity, not Design Development.",
+        "b": "Correct: Design Development emphasizes consultant coordination. Schematic design is largely architectural exploration; Design Development adds engineering.",
+        "c": "Multiple conceptual options are Schematic Design; Design Development refines one selected concept.",
+        "d": "Shop drawing review is Construction Administration, not Design Development.",
+        "correct": "Design Development refines the approved Schematic concept by integrating structural, mechanical, electrical, and fire protection systems. This phase adds technical depth through consultant coordination.",
+        "takeaway": "Schematic = architect-led exploration. Design Development = architect + consultants coordination. The shift from design to engineering is the key distinction between these phases."
+      },
+      "explanation": "Site analysis is Pre-Design activity, not Design Development. Correct: Design Development emphasizes consultant coordination. Schematic design is largely architectural exploration; Design Development adds engineering. Multiple conceptual options are Schematic Design; Design Development refines one selected concept. Shop drawing review is Construction Administration, not Design Development. Design Development refines the approved Schematic concept by integrating structural, mechanical, electrical, and fire protection systems. This phase adds technical depth through consultant coordination. Schematic = architect-led exploration. Design Development = architect + consultants coordination. The shift from design to engineering is the key distinction between these phases.",
+      "code_citation": "UAP SPP; Design Development Definition",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [
+        "design process phases",
+        "consultant coordination"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-05-06T15:06:27.952282+00:00",
+      "content_hash": "sha256:6602a5d9be8af1858b6beca1e107e5649ae26b96cc9261b2e6dea42c497ae9a3"
+    },
+    {
+      "question_id": "92428bec-df95-4f35-b33d-d34a2e887aaa",
+      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
+      "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
+      "text": "What is the primary purpose of the Schematic Design phase?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Produce final construction drawings ready for bidding, ensuring all details are finalized and compliant with regulations"
+        },
+        {
+          "id": "b",
+          "text": "Develop multiple conceptual solutions exploring different design directions"
+        },
+        {
+          "id": "c",
+          "text": "Coordinate with engineers and finalize all technical details, including structural and MEP systems"
+        },
+        {
+          "id": "d",
+          "text": "Verify construction compliance on the building site, ensuring all work adheres to the approved plans and specifications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is the purpose of Construction Documents phase, not Schematic Design.",
+        "b": "Correct: Schematic Design explores concepts. Multiple schemes are typical; detailed engineering comes later.",
+        "c": "This is the purpose of Design Development and Construction Documents phases.",
+        "d": "This is the purpose of Construction Administration phase.",
+        "correct": "Schematic Design is conceptual and exploratory. The architect presents multiple design approaches for spatial arrangement, massing, and materials. The client selects a preferred direction. Engineering coordination is minimal at this stage.",
+        "takeaway": "Schematic Design = exploration phase. Drawings are conceptual (typical scale 1:100 or smaller). Multiple concepts are okay. Detailed engineering is NOT part of Schematic; it comes in Design Development."
+      },
+      "explanation": "This is the purpose of Construction Documents phase, not Schematic Design. Correct: Schematic Design explores concepts. Multiple schemes are typical; detailed engineering comes later. This is the purpose of Design Development and Construction Documents phases. This is the purpose of Construction Administration phase. Schematic Design is conceptual and exploratory. The architect presents multiple design approaches for spatial arrangement, massing, and materials. The client selects a preferred direction. Engineering coordination is minimal at this stage. Schematic Design = exploration phase. Drawings are conceptual (typical scale 1:100 or smaller). Multiple concepts are okay. Detailed engineering is NOT part of Schematic; it comes in Design Development.",
+      "code_citation": "UAP Standard Practice Parameters; Schematic Design Definition",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "design process phases"
+      ],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-007-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:58.165968+00:00",
+      "updated_at": "2026-05-06T15:09:18.487031+00:00",
+      "content_hash": "sha256:5833d86eca2e706604155fba79db9e968a3e783aaefa4779852e244fb60bf1fd"
+    },
     {
       "question_id": "6725d0c2-6ccf-45a4-9e12-93984ac3f075",
       "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
@@ -40,7 +201,7 @@
         "correct": "Design Development is when consultant recommendations can still influence design. The architect presents the structural recommendation to the client, explaining cost/schedule/performance impacts. The client decides whether the benefit justifies revisiting the approved concept. This is when design decisions should be collaborative and informed.",
         "takeaway": "Design Development allows consultant recommendations to influence design while changes are still manageable. If a consultant recommends design changes, the architect presents the recommendation with analysis to the client for decision. Client approval is required to revise an approved concept."
       },
-      "explanation": null,
+      "explanation": "Rejects valuable input; Design Development is designed to incorporate consultant expertise. Correct: Present structural recommendation with cost/benefit analysis. Client decides on design revision. This is the appropriate time to make such decisions. Unilateral implementation without client consent violates the approval process. Construction Administration is too late; structural decisions must be made before Construction Documents. Design Development is when consultant recommendations can still influence design. The architect presents the structural recommendation to the client, explaining cost/schedule/performance impacts. The client decides whether the benefit justifies revisiting the approved concept. This is when design decisions should be collaborative and informed. Design Development allows consultant recommendations to influence design while changes are still manageable. If a consultant recommends design changes, the architect presents the recommendation with analysis to the client for decision. Client approval is required to revise an approved concept.",
       "code_citation": "UAP SPP; Design Development Guidelines; Professional Practice Standards",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -56,8 +217,8 @@
       "model_id": "ALE-DSGN-007-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d3df2d844ef7503da53b9d1cc65ff57249da93d3ac2a7961907f059b7f607915"
+      "updated_at": "2026-05-06T15:06:27.4465+00:00",
+      "content_hash": "sha256:e1e840f1bfde53d1a06fe6a2fd02db6af4854c017b01355b68dfe4b7241df646"
     },
     {
       "question_id": "83c86b93-3c04-456b-b13d-a199ba12515f",
@@ -95,7 +256,7 @@
         "correct": "Correct sequence: Pre-Design (program/feasibility) → Schematic (concepts) → Design Development (systems/engineering) → Construction Documents (complete specifications) → Construction Administration (site verification). Each phase builds on the previous.",
         "takeaway": "Architectural design process sequence is strict: Pre-Design → Schematic → Design Dev → Constr Docs → Constr Admin. Each phase has distinct objectives and deliverables. Do not skip phases or reorder them."
       },
-      "explanation": null,
+      "explanation": "Correct sequence and appropriate key deliverables for each phase. Incorrect sequence; Pre-Design cannot come after Schematic. Completely reversed sequence; Construction Documents cannot precede earlier phases. Deliverables are out of phase (cost estimate in Schematic, not Pre-Design; drawings in Design Dev, not Constr Docs). Correct sequence: Pre-Design (program/feasibility) → Schematic (concepts) → Design Development (systems/engineering) → Construction Documents (complete specifications) → Construction Administration (site verification). Each phase builds on the previous. Architectural design process sequence is strict: Pre-Design → Schematic → Design Dev → Constr Docs → Constr Admin. Each phase has distinct objectives and deliverables. Do not skip phases or reorder them.",
       "code_citation": "UAP Standard Practice Parameters; Architectural Design Process Framework",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -110,8 +271,8 @@
       "model_id": "ALE-DSGN-007-04-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3369644a60d7575a9c53301dd48f803c0c64dd94f2f58baf77cda18ac5231115"
+      "updated_at": "2026-05-06T15:06:27.571589+00:00",
+      "content_hash": "sha256:3fe3fbca41939795477f3efdcbf2959017e577c5f265d6dce8aadea6da1fca3c"
     },
     {
       "question_id": "b35a994c-9507-48d8-afe9-7d3c78717e4a",
@@ -310,7 +471,7 @@
         "correct": "Multiple design concepts are Schematic Design deliverables. Construction Documents present a SINGLE, complete design ready for construction.",
         "takeaway": "Schematic = multiple concepts. Design Development = one refined concept. Construction Documents = one finalized, detailed design. This sequence eliminates alternatives as the project progresses toward construction."
       },
-      "explanation": null,
+      "explanation": "Full-size technical drawings (typically 1:50 or 1:100 scale) are core Construction Documents. Comprehensive specifications are essential Construction Documents. Correct: Alternative concepts are Schematic Design. Construction Documents finalize ONE design with complete detail. Coordinated engineer plans are Construction Documents. Multiple design concepts are Schematic Design deliverables. Construction Documents present a SINGLE, complete design ready for construction. Schematic = multiple concepts. Design Development = one refined concept. Construction Documents = one finalized, detailed design. This sequence eliminates alternatives as the project progresses toward construction.",
       "code_citation": "UAP SPP; Construction Documents Definition",
       "bloom_level": "understand",
       "application_context": "client_scenario",
@@ -324,62 +485,8 @@
       "model_id": "ALE-DSGN-007-04-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a238a2a5441eddfbc237b363a7ffcf67838e473f22ae74b1a255f49a6f709e77"
-    },
-    {
-      "question_id": "9ed943a2-3930-414e-9c8e-b1624e6f0e77",
-      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
-      "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "During Construction Administration, an architect observes that a contractor is installing a different door type than specified in the Construction Documents. What is the architect's appropriate response?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Issue a Request for Information (RFI) or stop-work notice to require compliance with specifications before proceeding."
-        },
-        {
-          "id": "b",
-          "text": "Immediately order the contractor to remove the installed doors without documentation, risking potential disputes and lack of record"
-        },
-        {
-          "id": "c",
-          "text": "Approve the change without notification to the client, as long as the door quality is acceptable, which may lead to client dissatisfaction"
-        },
-        {
-          "id": "d",
-          "text": "Ignore the discrepancy as Construction Administration has no authority over contractor decisions, which could lead to non-compliance issues"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Correct: RFI or directive to comply. The architect must document the issue and require resolution.",
-        "b": "Too aggressive: The architect observes and directs; does not order removal without documented process.",
-        "c": "Incorrect: The architect cannot approve changes unilaterally. Client/contractor agreement is required for substitutions.",
-        "d": "Incorrect: The architect has significant authority to verify compliance during Construction Administration.",
-        "correct": "The architect's role in Construction Administration is verification and observation. If a discrepancy is discovered, the architect issues an RFI (Request for Information) requiring explanation and correction, or directs stop-work until compliance is verified. The architect has authority to require compliance but does not supervise construction.",
-        "takeaway": "Construction Administration role: Observe, verify, document, require compliance. The architect does not supervise daily construction, but enforces specification compliance through RFIs and formal directives. Authority is verification-based, not supervisory."
-      },
-      "explanation": null,
-      "code_citation": "UAP SPP; Construction Administration Definition; AIA Standard Practice",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "construction phase management",
-        "architect responsibilities"
-      ],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-007-04-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ce0b639f9c826544054a6498a498949d2e88d0d6d904fb17179b3f30747872ea"
+      "updated_at": "2026-05-06T15:06:27.701467+00:00",
+      "content_hash": "sha256:a4f501c5eff021bc7a94f0a36015a42f4b59e34e032ebaf8e884a665397c85ac"
     },
     {
       "question_id": "db0c1ac3-e9e7-495f-ada5-71833f3bdf6c",
@@ -434,113 +541,6 @@
       "created_at": "2026-03-23T19:28:58.165968+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:32c816bccd5ce274d50039221a4bfb6905b4ef8a33e34bd8a8d699ecafa1c627"
-    },
-    {
-      "question_id": "9c3bc255-515b-41a0-b140-215f9176c94f",
-      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
-      "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "Design Development phase begins after Schematic Design is approved. In Design Development, what is a key additional activity that was not prominent in Schematic Design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Site selection and feasibility analysis, which is typically completed during the initial stages of project planning"
-        },
-        {
-          "id": "b",
-          "text": "Coordination with consultants (structural, MEP, fire protection engineers) to integrate building systems"
-        },
-        {
-          "id": "c",
-          "text": "Presenting multiple conceptual options to the client, allowing for a broader range of design possibilities to be considered"
-        },
-        {
-          "id": "d",
-          "text": "Final review of shop drawings during construction, ensuring that all design elements are accurately represented"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Site analysis is Pre-Design activity, not Design Development.",
-        "b": "Correct: Design Development emphasizes consultant coordination. Schematic design is largely architectural exploration; Design Development adds engineering.",
-        "c": "Multiple conceptual options are Schematic Design; Design Development refines one selected concept.",
-        "d": "Shop drawing review is Construction Administration, not Design Development.",
-        "correct": "Design Development refines the approved Schematic concept by integrating structural, mechanical, electrical, and fire protection systems. This phase adds technical depth through consultant coordination.",
-        "takeaway": "Schematic = architect-led exploration. Design Development = architect + consultants coordination. The shift from design to engineering is the key distinction between these phases."
-      },
-      "explanation": null,
-      "code_citation": "UAP SPP; Design Development Definition",
-      "bloom_level": "understand",
-      "application_context": "client_scenario",
-      "practice_context": [
-        "design process phases",
-        "consultant coordination"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-007-04-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5f97268bec7ece68d621834dbcaa299c28f29e0c1f8f2c031792917330723768"
-    },
-    {
-      "question_id": "92428bec-df95-4f35-b33d-d34a2e887aaa",
-      "article_id": "c9b1aadd-4843-4cf3-a551-6dd67678e508",
-      "topic_id": "325cc696-9b36-4e19-9bd7-9f2105d29165",
-      "text": "What is the primary purpose of the Schematic Design phase?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Produce final construction drawings ready for bidding, ensuring all details are finalized and compliant with regulations"
-        },
-        {
-          "id": "b",
-          "text": "Develop multiple conceptual solutions exploring different design directions"
-        },
-        {
-          "id": "c",
-          "text": "Coordinate with engineers and finalize all technical details, including structural and MEP systems"
-        },
-        {
-          "id": "d",
-          "text": "Verify construction compliance on the building site, ensuring all work adheres to the approved plans and specifications"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This is the purpose of Construction Documents phase, not Schematic Design.",
-        "b": "Correct: Schematic Design explores concepts. Multiple schemes are typical; detailed engineering comes later.",
-        "c": "This is the purpose of Design Development and Construction Documents phases.",
-        "d": "This is the purpose of Construction Administration phase.",
-        "correct": "Schematic Design is conceptual and exploratory. The architect presents multiple design approaches for spatial arrangement, massing, and materials. The client selects a preferred direction. Engineering coordination is minimal at this stage.",
-        "takeaway": "Schematic Design = exploration phase. Drawings are conceptual (typical scale 1:100 or smaller). Multiple concepts are okay. Detailed engineering is NOT part of Schematic; it comes in Design Development."
-      },
-      "explanation": null,
-      "code_citation": "UAP Standard Practice Parameters; Schematic Design Definition",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "design process phases"
-      ],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-DSGN-007-04-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:58.165968+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0b700a9965945ace36f02ba03cfa0b4900fe59b047737221add2239a94b69d5b"
     }
   ]
 }

@@ -2,8 +2,10 @@
   "source_pack_id": "source-pack-ra-9266-irr",
   "source_family": "RA 9266 / Architecture Act IRR",
   "document_code": "RA 9266 IRR",
-  "document_title": "IRR of RA 9266 Architecture Act of 2004",
+  "document_title": "Implementing Rules and Regulations of RA 9266 Architecture Act of 2004",
   "version": "1.0.0",
+  "source_type": "curated_governed_source_pack",
+  "governed": true,
   "approval_record": {
     "approved_by": "user_governance_approval_this_run",
     "human_approval": "granted_by_user_this_run",
@@ -13,23 +15,31 @@
   },
   "approved_by": "user_governance_approval_this_run",
   "approval_basis": "governance_human_sme_approval_granted_by_user_this_run",
-  "source_evidence_links": [],
+  "source_evidence_links": [
+    ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/official-source-evidence.generated/source-anchor-audit.generated.json#remote_sources.ra9266_architectureboard_pdf",
+    ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/official-source-evidence.generated/source-anchor-audit.generated.json#remote_sources.ra9266_lawphil_act_html",
+    ".ai/03_plans/2026-05-09-content-excellence-gold-standard-exemplars/official-source-evidence.generated/source-anchor-audit.generated.json#local_sources.ra9266_local_prboa_irr_pdf"
+  ],
   "local_file_hashes": [
     "d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574"
   ],
-  "official_file_hashes": [],
-  "locator_policy": "locator_supported_chunks_preferred; local markdown fallback locator used when draft chunks are empty",
-  "chunking_policy": "deterministic local chunks promoted from draft excerpts or Vitruvius markdown conversions; no external provider upload",
+  "official_file_hashes": [
+    "9c725f42e14fe5b43359bbe9edc7f4c96bff15e49f4357492622e2d24dc6a1cd"
+  ],
+  "locator_policy": "section_locator_and_pdf_page_locator_required_for_exam-critical legal/code chunks",
+  "chunking_policy": "2026-05-09 source-governance repair: deterministic legal/code chunks rebuilt from verified local raw markdown aligned to hashed source-layer PDFs; no external provider upload",
   "provider_boundary": "LOCAL_REPO_SOURCE_PACK_NO_EXTERNAL_UPLOAD",
   "copyright_boundary": "internal_educational_validation_and_source_grounding",
   "created_at": "2026-05-06T05:27:44.538Z",
-  "generated_by_script_version": "promote-draft-source-packs.ts@2",
+  "repaired_at": "2026-05-09T10:35:18Z",
+  "generated_by_script_version": "repair-source-packs-and-ledgers@2026-05-09",
   "validation_status": "VALIDATION_GENERATED",
   "chunk_count": 2,
   "conflict_summary": {
     "conflict_flag": "false",
-    "conflict_type": "authority_host_unverified"
+    "conflict_type": "reconciled_architectureboard_official_pdf_verified_lawphil_supplementary"
   },
+  "source_reconciliation_status": "RECONCILED_FOR_CALIBRATION: ArchitectureBoard IRR PDF downloaded and hashed with Section 38 evidence; Lawphil RA 9266 Act anchor and local PRBoA IRR PDF remain supplementary/local anchors.",
   "draft_origin": "draft-ra-9266-irr",
-  "source_pack_hash": "70fbc02c2892e57f9adb02f1dc85a876c2ac34459322a32daef9042bab340235"
+  "source_pack_hash": "9150aaca9ce6e9a429b668a21039749b300d089f554e18779f503ad187a9a626"
 }

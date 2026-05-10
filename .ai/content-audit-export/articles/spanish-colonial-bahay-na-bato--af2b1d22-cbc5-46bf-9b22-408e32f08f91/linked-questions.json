@@ -1,9 +1,53 @@
 {
   "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6ac73347a67060f5c424200c7d0ecfd866ea8778f52ae683c5227a4186f161a7",
+  "linked_questions_hash": "sha256:41479cdaffe90666bf9a602b3e26a795be268047d4a63c47be6c803799408697",
   "question_count": 23,
   "questions": [
+    {
+      "question_id": "d10bc7ca-fd4a-4beb-95ee-3ae6998e6c3f",
+      "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "The volada in a bahay na bato serves multiple functions simultaneously. Which of the following best describes the volada and its purpose?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A sliding window panel with capiz-shell panes used for ventilation and light control, enhancing indoor comfort"
+        },
+        {
+          "id": "B",
+          "text": "A cantilevered wooden balcony projecting beyond the stone wall below, providing shade for the ground floor and creating outdoor living space"
+        },
+        {
+          "id": "C",
+          "text": "An enclosed mezzanine level above the zaguan used for storage and servant quarters, maximizing space utilization"
+        },
+        {
+          "id": "D",
+          "text": "A steeply pitched hip roof covered with Spanish clay tiles (teja de curva), offering protection from the elements"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The volada (literally 'thrown out' in Spanish) is a defining feature of the bahay na bato's upper floor. It is a cantilevered wooden balcony that projects outward beyond the masonry wall line of the ground floor — an engineering feat using timber brackets and balaustre (turned wooden balusters). Functionally, it shades the zaguan/silung below from sun and rain (extending the climate-responsive bahay kubo logic to the colonial hybrid), and provides outdoor living/social space for the household on the upper level.",
+      "explanation": "The volada (literally 'thrown out' in Spanish) is a defining feature of the bahay na bato's upper floor. It is a cantilevered wooden balcony that projects outward beyond the masonry wall line of the ground floor — an engineering feat using timber brackets and balaustre (turned wooden balusters). Functionally, it shades the zaguan/silung below from sun and rain (extending the climate-responsive bahay kubo logic to the colonial hybrid), and provides outdoor living/social space for the household on the upper level.",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:16.124736+00:00",
+      "updated_at": "2026-05-06T15:59:01.93495+00:00",
+      "content_hash": "sha256:295955c0469597ac8f5dc20e4f6a88026d4d9cc96ca86688b9cfa41e53952360"
+    },
     {
       "question_id": "857ee418-b529-40bd-bfd6-ea03d4fa15ab",
       "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
@@ -47,50 +91,6 @@
       "created_at": "2026-03-31T05:47:16.124736+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:49216f368fb0faeb5cdacebc3e780813593ce0bacdf246cccd311d9880fe94ca"
-    },
-    {
-      "question_id": "d1b399d5-9ff4-42e2-a30b-c75e5aa8057e",
-      "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "The bahay na bato is described as 'arquitectura mestiza' — a hybrid of Spanish and indigenous building traditions. Which specific element demonstrates the Austronesian contribution versus the Spanish contribution?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Spanish: stone ground floor (zaguan); Austronesian: the raised-floor upper level with capiz-shell windows inspired by the bahay kubo's elevated silong and ventilating windows"
-        },
-        {
-          "id": "B",
-          "text": "Spanish: steeply pitched hip roof with teja de curva tiles; Austronesian: the entire ground floor built with adobe brick, reflecting traditional construction methods"
-        },
-        {
-          "id": "C",
-          "text": "Spanish: the sala (grand living room); Austronesian: the zaguan (carriage passage), showcasing a blend of cultural influences"
-        },
-        {
-          "id": "D",
-          "text": "Spanish: cantilevered balcony (volada); Austronesian: the entire ground floor built with adobe brick, emphasizing local material use"
-        }
-      ],
-      "correct_option_id": "A",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "The bahay na bato is a true hybrid: (1) AUSTRONESIAN heritage: The raised upper floor on a stone base preserves the bahay kubo's fundamental climate logic — elevating the living space above flood level and allowing air circulation under the floor. The capiz-shell window panels (ventanillas) continue the bahay kubo's tradition of open, ventilating walls. (2) SPANISH contribution: Stone and masonry construction on the ground floor, formal room names (sala, comedor, cocina), and decorative elements. The genius of arquitectura mestiza is that the Spanish colonists accepted the raised-floor logic because it worked in the tropical seismic environment, while adding stone construction for durability and status.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.55,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:47:16.124736+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:acdc36a794966ea87e20ae36e4b99d65c6e84192bd4e493dc56a6d6aa36c6e78"
     },
     {
       "question_id": "657a571e-a0b7-432b-85df-4aabac600b15",
@@ -181,99 +181,48 @@
       "content_hash": "sha256:44db3f5787f2db23ba677dc5d3ab366408189f36f729d3c6f8fbe88247566270"
     },
     {
-      "question_id": "d10bc7ca-fd4a-4beb-95ee-3ae6998e6c3f",
+      "question_id": "d1b399d5-9ff4-42e2-a30b-c75e5aa8057e",
       "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
       "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "The volada in a bahay na bato serves multiple functions simultaneously. Which of the following best describes the volada and its purpose?",
+      "text": "The bahay na bato is described as 'arquitectura mestiza' — a hybrid of Spanish and indigenous building traditions. Which specific element demonstrates the Austronesian contribution versus the Spanish contribution?",
       "options": [
         {
           "id": "A",
-          "text": "A sliding window panel with capiz-shell panes used for ventilation and light control, enhancing indoor comfort"
+          "text": "Spanish: stone ground floor (zaguan); Austronesian: the raised-floor upper level with capiz-shell windows inspired by the bahay kubo's elevated silong and ventilating windows"
         },
         {
           "id": "B",
-          "text": "A cantilevered wooden balcony projecting beyond the stone wall below, providing shade for the ground floor and creating outdoor living space"
+          "text": "Spanish: steeply pitched hip roof with teja de curva tiles; Austronesian: the entire ground floor built with adobe brick, reflecting traditional construction methods"
         },
         {
           "id": "C",
-          "text": "An enclosed mezzanine level above the zaguan used for storage and servant quarters, maximizing space utilization"
+          "text": "Spanish: the sala (grand living room); Austronesian: the zaguan (carriage passage), showcasing a blend of cultural influences"
         },
         {
           "id": "D",
-          "text": "A steeply pitched hip roof covered with Spanish clay tiles (teja de curva), offering protection from the elements"
+          "text": "Spanish: cantilevered balcony (volada); Austronesian: the entire ground floor built with adobe brick, emphasizing local material use"
         }
       ],
-      "correct_option_id": "B",
+      "correct_option_id": "A",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
-      "rationale": "The volada (literally 'thrown out' in Spanish) is a defining feature of the bahay na bato's upper floor. It is a cantilevered wooden balcony that projects outward beyond the masonry wall line of the ground floor — an engineering feat using timber brackets and balaustre (turned wooden balusters). Functionally, it shades the zaguan/silung below from sun and rain (extending the climate-responsive bahay kubo logic to the colonial hybrid), and provides outdoor living/social space for the household on the upper level.",
-      "explanation": null,
+      "rationale": "The bahay na bato is a true hybrid: (1) AUSTRONESIAN heritage: The raised upper floor on a stone base preserves the bahay kubo's fundamental climate logic — elevating the living space above flood level and allowing air circulation under the floor. The capiz-shell window panels (ventanillas) continue the bahay kubo's tradition of open, ventilating walls. (2) SPANISH contribution: Stone and masonry construction on the ground floor, formal room names (sala, comedor, cocina), and decorative elements. The genius of arquitectura mestiza is that the Spanish colonists accepted the raised-floor logic because it worked in the tropical seismic environment, while adding stone construction for durability and status.",
+      "explanation": "The bahay na bato is a true hybrid: (1) AUSTRONESIAN heritage: The raised upper floor on a stone base preserves the bahay kubo's fundamental climate logic — elevating the living space above flood level and allowing air circulation under the floor. The capiz-shell window panels (ventanillas) continue the bahay kubo's tradition of open, ventilating walls. (2) SPANISH contribution: Stone and masonry construction on the ground floor, formal room names (sala, comedor, cocina), and decorative elements. The genius of arquitectura mestiza is that the Spanish colonists accepted the raised-floor logic because it worked in the tropical seismic environment, while adding stone construction for durability and status.",
       "code_citation": null,
       "bloom_level": null,
       "application_context": null,
       "practice_context": [],
-      "difficulty": 0.35,
+      "difficulty": 0.55,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
       "model_id": null,
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:47:16.124736+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:431a66262b9ec41b6ba6f74c76d1391b063b9543c079ef6da6cf18d349b8d69e"
-    },
-    {
-      "question_id": "6cd9be4e-9e12-4988-b8ad-f6304fdf2306",
-      "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
-      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
-      "text": "In a traditional bahay na bato, what is the zaguan, and what are its structural characteristics?",
-      "options": [
-        {
-          "id": "A",
-          "text": "A mezzanine level elevated approximately 1 meter above grade, used for storage, servants' quarters, or commercial space (bodega/tienda), typically constructed with wooden floors and partitions"
-        },
-        {
-          "id": "B",
-          "text": "A ground-floor carriage passageway with thick stone or brick walls approximately 2.40–3.00 meters thick, large enough for horse carriages and processional andas"
-        },
-        {
-          "id": "C",
-          "text": "A cantilevered wooden balcony that projects beyond the stone wall below, featuring turned wooden balusters (balaustre) on the upper floor, providing a decorative and functional outdoor space"
-        },
-        {
-          "id": "D",
-          "text": "An open rear terrace paved for drying laundry and outdoor living, located at the back of the upper-floor level, often used for family gatherings and leisure activities"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "summary": "The zaguan (from Arabic zaguán) is the ground-floor carriage passageway of a bahay na bato, built with thick stone/brick walls ~2.40–3.00 m thick, large enough for horse carriages and processional saint floats (andas).",
-        "explanation": "The zaguan is the main ground-floor entrance of the bahay na bato. From Arabic zaguán. Built with thick masonry walls ~2.40–3.00 m thick — adobe, brick, or coral stone. Accommodates horse carriages and processional saint floats (andas). Often confused with the entresuelo (mezzanine elevated ~1 m above ground) — the zaguan is at grade, the entresuelo is raised above ground.",
-        "common_misconceptions": [
-          "Confusing the zaguan with the entresuelo — zaguan is at grade (ground level carriage passage); entresuelo is a raised mezzanine ~1 m above ground",
-          "Assuming the zaguan is open air — it is enclosed by thick masonry walls, unlike the open silong of the bahay kubo"
-        ]
-      },
-      "explanation": "The zaguan is the defining ground-floor feature of the bahay na bato — enclosed masonry carriage passage, not open air. Zaguan ≠ entresuelo ≠ silong.",
-      "code_citation": "Philippine vernacular architecture / Spanish colonial period",
-      "bloom_level": "remember",
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.35,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T06:36:06.804067+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:10b7c3883714fa05bb20e9e2c299ec8d92f2968ae11eb492c325c17f43d6f501"
+      "updated_at": "2026-05-06T15:59:01.813059+00:00",
+      "content_hash": "sha256:81bedaacdc3a995377e99ccad32efb390daf42751b8ebb2350f30582fdc9d360"
     },
     {
       "question_id": "e32f084f-26a8-41f8-8ffd-d2fd51ea1b54",
@@ -325,6 +274,57 @@
       "created_at": "2026-03-31T06:36:06.804067+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:4afb33018529d136633367608575580592d6f6f24090ae50bb337e9f28cc0f61"
+    },
+    {
+      "question_id": "6cd9be4e-9e12-4988-b8ad-f6304fdf2306",
+      "article_id": "af2b1d22-cbc5-46bf-9b22-408e32f08f91",
+      "topic_id": "e6f9f02d-8550-495d-bec6-9455b653849e",
+      "text": "In a traditional bahay na bato, what is the zaguan, and what are its structural characteristics?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A mezzanine level elevated approximately 1 meter above grade, used for storage, servants' quarters, or commercial space (bodega/tienda), typically constructed with wooden floors and partitions"
+        },
+        {
+          "id": "B",
+          "text": "A ground-floor carriage passageway with thick stone or brick walls approximately 2.40–3.00 meters thick, large enough for horse carriages and processional andas"
+        },
+        {
+          "id": "C",
+          "text": "A cantilevered wooden balcony that projects beyond the stone wall below, featuring turned wooden balusters (balaustre) on the upper floor, providing a decorative and functional outdoor space"
+        },
+        {
+          "id": "D",
+          "text": "An open rear terrace paved for drying laundry and outdoor living, located at the back of the upper-floor level, often used for family gatherings and leisure activities"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The zaguan (from Arabic zaguán) is the ground-floor carriage passageway of a bahay na bato, built with thick stone/brick walls ~2.40–3.00 m thick, large enough for horse carriages and processional saint floats (andas).",
+        "explanation": "The zaguan is the main ground-floor entrance of the bahay na bato. From Arabic zaguán. Built with thick masonry walls ~2.40–3.00 m thick — adobe, brick, or coral stone. Accommodates horse carriages and processional saint floats (andas). Often confused with the entresuelo (mezzanine elevated ~1 m above ground) — the zaguan is at grade, the entresuelo is raised above ground.",
+        "common_misconceptions": [
+          "Confusing the zaguan with the entresuelo — zaguan is at grade (ground level carriage passage); entresuelo is a raised mezzanine ~1 m above ground",
+          "Assuming the zaguan is open air — it is enclosed by thick masonry walls, unlike the open silong of the bahay kubo"
+        ]
+      },
+      "explanation": "The zaguan is the defining ground-floor feature of the bahay na bato — enclosed masonry carriage passage, not open air. Zaguan ≠ entresuelo ≠ silong.",
+      "code_citation": "Philippine vernacular architecture / Spanish colonial period",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.804067+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:10b7c3883714fa05bb20e9e2c299ec8d92f2968ae11eb492c325c17f43d6f501"
     },
     {
       "question_id": "b3a6dd9b-72f6-4726-adec-7f3a6ab5f352",

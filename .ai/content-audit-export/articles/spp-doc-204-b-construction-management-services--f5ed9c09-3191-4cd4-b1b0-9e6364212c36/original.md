@@ -1,5 +1,14 @@
 # SPP Document 204-B: Standards of Professional Practice on Construction Management Services
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **SPP Document 204-B: Standards of Professional Practice on Construction Management Services** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 ## Overview
 
 **SPP Document 204-B** governs **Construction Management (CM) Services** — a broader, more managerial form of construction oversight that goes beyond the on-site inspection duties of the Construction Supervision Group (CSG) under SPP 204-A. It is part of the 2010 Standards of Professional Practice (SPP), promulgated as the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266** (The Architecture Act of 2004), and replaces the earlier **1979 UAP Doc. 204-B**.
@@ -16,11 +25,11 @@ Where SPP 204-A focuses on **on-site quality control and inspection**, SPP 204-B
 
 ## Legal and Regulatory Basis
 
-<Callout variant="authority" title="Legal Authority: R.A. No. 9266 — The Architecture Act of 2004">
-
-This SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="authority", title="Legal Authority: R.A. No. 9266 — The Architecture Act of 2004"
+- Text: This SPP document is promulgated as part of the Supplemental Implementing Rules and Regulations (IRR) of **Republic Act No. 9266**, approved 27 July 2010. Compliance is mandatory for all Registered and Licensed Architects (RLAs) and Architectural Firms (AFs) in the Philippines.
+[/SLATECAMP_UI_BLOCK]
 
 SPP 204-B is promulgated as part of the IRR of R.A. No. 9266. The Construction Manager must be a **State-regulated professional** — preferably a **Registered and Licensed Architect (RLA)** with managerial capabilities and extensive experience in the field of construction. Since construction management is **not part of the regular services of the Architect** under SPP 202, the services rendered by the Architect as Construction Manager shall be **separately compensated**.
 
@@ -100,16 +109,11 @@ The CM maintains comprehensive project records covering all management activitie
 
 ### CM Functions at a Glance
 
-<ComparisonTable>
-
-| Function | Core Activities | Who Benefits |
-|---|---|---|
-| **Coordination and Supervision** | All-party coordination, scheduling, interface management, procurement | Owner, Architect, Engineers |
-| **Cost and Time Control** | Budget tracking, change order management, billing review, forecasting | Owner |
-| **Quality Control of Work** | QCP oversight, submittals, testing, commissioning | Owner, End Users |
-| **Keeping of Records** | Files, progress reports, meeting minutes, change logs, as-builts | Owner, Legal Compliance |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0002 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Function | Core Activities | Who Benefits | |---|---|---| | **Coordination and Supervision** | All-party coordination, scheduling, interface management, procurement | Owner, Architect, Engineers | | **Cost and Time Control** | Budget tracking, change order management, billing review, forecasting | Owner | | **Quality Control of Work** | QCP oversight, submittals, testing, commissioning | Owner, End Users | | **Keeping of Records** | Files, progress reports, meeting minutes, change logs, as-bui
+[/SLATECAMP_UI_BLOCK]
 
 ***
 
@@ -158,14 +162,11 @@ This direct responsibility is broader than the CSG's field-level accountability 
 
 The CM **assumes no liability** for equipment failure or structural collapse under two specific conditions:
 
-<ComparisonTable>
-
-| Condition | Liability Exclusion |
-|---|---|
-| Equipment failure or building collapse due to **deficiencies in the plan/design** | CM is NOT liable, **provided the CM did not participate in the plan/design review and approval** |
-| Equipment failure or building collapse due to **deficiencies in the manner of construction** | CM is NOT liable, **provided the CM faithfully discharged his functions during construction/project implementation** |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Condition | Liability Exclusion | |---|---| | Equipment failure or building collapse due to **deficiencies in the plan/design** | CM is NOT liable, **provided the CM did not participate in the plan/design review and approval** | | Equipment failure or building collapse due to **deficiencies in the manner of construction** | CM is NOT liable, **provided the CM faithfully discharged his functions during construction/project implementation** |
+[/SLATECAMP_UI_BLOCK]
 
 These liability exclusions incentivize the CM to faithfully perform supervision duties (condition 2) while also staying out of design review (condition 1), unless separately retained as the Aor or design consultant. When the CM also serves as Aor, condition 1 no longer applies, and the CM-Aor faces full exposure under Article 1723 of the Civil Code.
 
@@ -187,18 +188,11 @@ The SPP notes that **architects who are also contractors, or who have been in re
 
 Since construction management is not part of the architect's regular services under SPP 202, CM services are **always separately compensated**. The same six methods applicable to SPP 204-A apply here:
 
-<ComparisonTable>
-
-| Method | Best Used For | Key Feature |
-|---|---|---|
-| **% of Project Construction Cost (PCC)** | All regular construction projects | Separate from SPP 202 design fee |
-| **MDPE** | Variable-scope management work | Multiplier 1.5–2.5 on personnel hours |
-| **Professional Fee + Expenses** | Ongoing/repeat client relationships | Fixed sum + reimbursements |
-| **Lump Sum / Fixed Fee** | Government projects; well-defined scope | Predictable total cost |
-| **Per Diem + Honorarium** | Short or limited-duration engagements | Daily rate + out-of-pocket |
-| **Mixed Methods** | Complex, multi-phase CM engagements | Combination of above methods |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Method | Best Used For | Key Feature | |---|---|---| | **% of Project Construction Cost (PCC)** | All regular construction projects | Separate from SPP 202 design fee | | **MDPE** | Variable-scope management work | Multiplier 1.5–2.5 on personnel hours | | **Professional Fee + Expenses** | Ongoing/repeat client relationships | Fixed sum + reimbursements | | **Lump Sum / Fixed Fee** | Government projects; well-defined scope | Predictable total cost | | **Per Diem + Honorarium** | Short or limit
+[/SLATECAMP_UI_BLOCK]
 
 The specific percentage rates for CM services under the PCC method are prescribed in the **Architect's Guidelines** and are distinct from — and in addition to — the fees for SPP 202 design services and SPP 204-A supervision services.
 
@@ -206,20 +200,11 @@ The specific percentage rates for CM services under the PCC method are prescribe
 
 ## SPP 204-A vs. SPP 204-B: Key Distinctions
 
-<ComparisonTable>
-
-| | SPP 204-A (Fulltime Supervision) | SPP 204-B (Construction Management) |
-|---|---|---|
-| **Primary Role** | On-site inspection and quality control | Project-wide management of cost, time, quality, and coordination |
-| **Scope** | CSG tasks: QC, evaluation, daily reports, filing | All CSG tasks + coordination, cost/time control, broader record keeping |
-| **Personnel** | CSG — qualified architects on-site daily | CM — senior professional overseeing the CSG and all parties |
-| **Reporting** | Daily Inspection Reports to Owner and Architect | Weekly/monthly management reports to Owner |
-| **Covers CSG?** | IS the CSG | INCLUDES and may employ the CSG |
-| **Contractual Liability** | CSG answerable to Owner and Architect | CM directly responsible to Owner on all construction aspects |
-| **Legal Liability** | Solidary liability under Art. 1723 if supervising | Excluded from liability if faithfully discharged and not in design review |
-| **Fee Basis** | % of PCC (separate from SPP 202) | % of PCC (separate from SPP 202 and 204-A) |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | | SPP 204-A (Fulltime Supervision) | SPP 204-B (Construction Management) | |---|---|---| | **Primary Role** | On-site inspection and quality control | Project-wide management of cost, time, quality, and coordination | | **Scope** | CSG tasks: QC, evaluation, daily reports, filing | All CSG tasks + coordination, cost/time control, broader record keeping | | **Personnel** | CSG — qualified architects on-site daily | CM — senior professional overseeing the CSG and all parties | | **Reporting** |
+[/SLATECAMP_UI_BLOCK]
 
 ***
 
@@ -238,16 +223,11 @@ The PM fee under SPP 206 is generally **2–5% of the Estimated Project Cost**, 
 
 ## Relationship to Other SPP Documents
 
-<ComparisonTable>
-
-| SPP Document | Relationship |
-|---|---|
-| **SPP Doc. 202** (Regular Design Services) | SPP 202 covers only periodic construction phase visits; SPP 204-B provides the full management overlay |
-| **SPP Doc. 204-A** (Fulltime Supervision) | SPP 204-B subsumes all of 204-A's CSG functions plus adds broader management responsibilities |
-| **SPP Doc. 205** (Post-Construction) | After project turnover, SPP 205 post-construction services take over from the CM's construction-phase role |
-| **SPP Doc. 206** (Comprehensive Services) | CAS packages all SPP documents including 204-B; the PM/CM role is the most prominent feature of CAS |
-
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0006 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | SPP Document | Relationship | |---|---| | **SPP Doc. 202** (Regular Design Services) | SPP 202 covers only periodic construction phase visits; SPP 204-B provides the full management overlay | | **SPP Doc. 204-A** (Fulltime Supervision) | SPP 204-B subsumes all of 204-A's CSG functions plus adds broader management responsibilities | | **SPP Doc. 205** (Post-Construction) | After project turnover, SPP 205 post-construction services take over from the CM's construction-phase role | | **SPP Doc. 2
+[/SLATECAMP_UI_BLOCK]
 
 ***
 

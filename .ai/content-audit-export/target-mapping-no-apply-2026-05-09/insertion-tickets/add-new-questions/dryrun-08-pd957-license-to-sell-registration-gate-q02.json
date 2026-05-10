@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+  "dry_question_id": "dryrun-08-pd957-license-to-sell-registration-gate-q02",
+  "target_article_id": null,
+  "ticket_target": "new-article-pd957-license-to-sell-registration-gate",
+  "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "PD 957 IRR, Rule IV, Section 11, PDF p.47.",
+    "text": "The cited Section 11 ties issuance of the license to sell to which project event?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "The extracted Section 11 text says within two weeks from the registration of each project.",
+      "distractors": {
+        "B": "Occupancy inspection is not the event stated in the cited Section 11 text.",
+        "C": "Full payment by buyers is unrelated to license issuance in this excerpt.",
+        "D": "Condominium corporation turnover is not the cited timing trigger."
+      },
+      "takeaway": "Tie the timing to registration, then check the other application requirements."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "pd957-license-q2",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "A",
+    "explanation": "PD 957 IRR, Rule IV, Section 11, PDF p.47.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "Within two weeks from registration of each project"
+      },
+      {
+        "id": "B",
+        "text": "Within two weeks from final occupancy inspection"
+      },
+      {
+        "id": "C",
+        "text": "Only after all units are fully paid"
+      },
+      {
+        "id": "D",
+        "text": "Only after turnover of the condominium corporation"
+      }
+    ]
+  },
+  "sme_source_locator": "PD 957 IRR, Rule IV, Section 11, PDF p.47.",
+  "code_citation": "PD 957 IRR, Rule IV, Section 11, PDF p.47.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

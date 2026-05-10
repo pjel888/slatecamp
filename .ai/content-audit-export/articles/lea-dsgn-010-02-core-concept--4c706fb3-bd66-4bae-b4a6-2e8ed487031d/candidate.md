@@ -10,7 +10,7 @@ Before memorizing details from this topic, state the task in one sentence: what 
 ## Learning Goal
 Design parking structure geometry — ramp grades (max 1:7), bay widths, aisle dimensions, column spacing, and turning radii — to accommodate vehicle maneuverability, verify accessible stall dimensions (3.7m × 5.0m), and apply structural and operational constraints.
 
-Parking structure geometry—ramp grades, bay widths, aisle dimensions, column spacing, and turning radii—determines whether a parking design is buildable and user-friendly. 
+Parking structure geometry—ramp grades, bay widths, aisle dimensions, column spacing, and turning radii—determines whether a parking design is buildable and user-friendly.
 ## Core Concept
 
 A parking structure must accommodate vehicle maneuverability, emergency egress, and structural efficiency. The geometry is constrained by:
@@ -84,12 +84,10 @@ See **LEA-DSGN-010-01** (Parking Requirements) for parking count calculation, **
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
+<WikiMistakeList mistakes={[
     'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',
     'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',
     'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',
     'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',
     'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',
-  ]}
-/>
+  ]} />

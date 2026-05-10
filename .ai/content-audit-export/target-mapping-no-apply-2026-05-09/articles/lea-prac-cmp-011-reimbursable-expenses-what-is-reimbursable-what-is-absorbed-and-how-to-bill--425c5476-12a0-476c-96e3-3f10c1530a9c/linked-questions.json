@@ -1,0 +1,508 @@
+{
+  "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9251b59633056729516c1b107cc3a5531c79817d6978044a43155e1cc56a4003",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "37e8d567-54b0-4d7f-a6b3-9a90fd52cd9c",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "What documentation should support reimbursable expenses in invoices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect's verbal assurance that costs were incurred"
+        },
+        {
+          "id": "b",
+          "text": "Receipts, invoices, and other evidence of actual costs"
+        },
+        {
+          "id": "c",
+          "text": "Only the total amount; itemization is not necessary"
+        },
+        {
+          "id": "d",
+          "text": "Documentation is optional if the amounts are small"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Verbal assurance is insufficient; written documentation is essential.",
+        "c": "Itemization with supporting documentation prevents disputes and demonstrates transparency.",
+        "d": "Documentation is mandatory for all amounts; small expenses lack no exemption.",
+        "correct": "All reimbursable expenses must be documented with receipts, invoices, or other evidence. This documentation allows the architect to substantiate costs and protects against disputes.",
+        "takeaway": "Maintain receipts and invoices for all reimbursable expenses to substantiate costs and demonstrate accountability."
+      },
+      "explanation": "Verbal assurance is insufficient; written documentation is essential. Itemization with supporting documentation prevents disputes and demonstrates transparency. Documentation is mandatory for all amounts; small expenses lack no exemption. All reimbursable expenses must be documented with receipts, invoices, or other evidence. This documentation allows the architect to substantiate costs and protects against disputes. Maintain receipts and invoices for all reimbursable expenses to substantiate costs and demonstrate accountability.",
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-05-06T16:22:33.399087+00:00",
+      "content_hash": "sha256:9ce5d92d9a5b369fb7a1a13c61ac8906a3cc51402903039adef1a81ce908b4c1"
+    },
+    {
+      "question_id": "1361eb39-035a-4e15-ba8d-143bff302f3d",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "When traveling to a project site for a client meeting, which expenses are typically reimbursable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Airfare, ground transportation, accommodation, and meals while traveling for the project"
+        },
+        {
+          "id": "b",
+          "text": "Only airfare; other travel costs are absorbed by the firm, which may affect the overall project budget"
+        },
+        {
+          "id": "c",
+          "text": "No travel costs are reimbursable; they are firm overhead, potentially impacting the firm's financial planning"
+        },
+        {
+          "id": "d",
+          "text": "Only hotel costs; other expenses are minor and absorbed, which may lead to discrepancies in expense reporting"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Incorrectly limits reimbursable travel to airfare only; other travel costs are equally reimbursable.",
+        "c": "Confuses project travel with general firm overhead; project-specific travel is reimbursable.",
+        "d": "Arbitrarily limits reimbursable travel to hotel only; all project travel costs are reimbursable.",
+        "correct": "Travel expenses for project-specific site visits and client meetings are reimbursable, including airfare, ground transportation, accommodation, and meal costs while traveling for the project.",
+        "takeaway": "Project-specific travel costs (airfare, ground transportation, hotels, meals) are reimbursable when incurred for client meetings or site observation."
+      },
+      "explanation": "Incorrectly limits reimbursable travel to airfare only; other travel costs are equally reimbursable. Confuses project travel with general firm overhead; project-specific travel is reimbursable. Arbitrarily limits reimbursable travel to hotel only; all project travel costs are reimbursable. Travel expenses for project-specific site visits and client meetings are reimbursable, including airfare, ground transportation, accommodation, and meal costs while traveling for the project. Project-specific travel costs (airfare, ground transportation, hotels, meals) are reimbursable when incurred for client meetings or site observation.",
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-05-06T16:22:33.278764+00:00",
+      "content_hash": "sha256:b683951be0e5a6a57b885b17ca033f7bacd82709f4f54ca72e1829c63022763e"
+    },
+    {
+      "question_id": "17ab93cd-dd74-4ffa-9fbc-360208fe3678",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "What typical markup is applied to reimbursable expenses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0%; expenses are billed at actual cost"
+        },
+        {
+          "id": "b",
+          "text": "A reasonable markup (if any) as agreed in the contract to cover administrative handling"
+        },
+        {
+          "id": "c",
+          "text": "50% above actual cost, which is typically applied to cover unforeseen administrative costs and ensure profitability"
+        },
+        {
+          "id": "d",
+          "text": "A flat fee per reimbursable item regardless of actual cost, which simplifies accounting but may not reflect true expenses"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "No-markup approach is legitimate but provides no compensation for administrative work.",
+        "c": "50% markup is excessive and likely unacceptable to clients.",
+        "d": "Flat-fee markup ignores actual costs and is inappropriate for variable-cost items.",
+        "correct": "Many architects apply a markup of 10–15% to reimbursable expenses to cover administrative handling and compliance costs, though some bill at actual cost.",
+        "takeaway": "A 10–15% markup on reimbursable expenses covers administrative handling; clients typically accept this as reasonable overhead."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fc022189e287050bd239200381b56ff14d3b53ba17868911b12ffb189406f0cc"
+    },
+    {
+      "question_id": "30379ab6-2c1a-49bd-8ff5-644e59918f3b",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "What should a contract establish regarding approval of significant reimbursable expenses?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Significant expenses require no pre-approval; the architect can bill them after incurring them, which streamlines the process but may lead to disputes"
+        },
+        {
+          "id": "b",
+          "text": "All reimbursable expenses require written client pre-approval before the architect incurs them"
+        },
+        {
+          "id": "c",
+          "text": "Pre-approval thresholds: major consultant fees and substantial travel require written approval; routine printing can be done without approval"
+        },
+        {
+          "id": "d",
+          "text": "The client must reimburse any expenses the architect incurs without prior approval, which can lead to unexpected financial obligations"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Permits unilateral major expense decisions; pre-approval protects both parties.",
+        "b": "Requires approval for all expenses, including minor routine items; this is unnecessarily burdensome.",
+        "d": "Permits unilateral major expenses; the architect should seek pre-approval for significant costs.",
+        "correct": "Effective contracts establish pre-approval mechanisms where significant consultant fees and major travel expenses require advance client authorization, while routine smaller expenses (printing below a threshold) can be incurred without separate approval.",
+        "takeaway": "Use pre-approval thresholds: require written approval for major expenses (consultant fees, travel) but allow routine expenses below a threshold without approval."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be90fc3c63b0e8e30d5e885b575d05f3941dc3901853d524808c32965f6fb0ad"
+    },
+    {
+      "question_id": "4c7619bb-77dc-45e2-afe9-105998d3db7e",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "How should design coordination with consultants be handled in billing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Billed as a separate reimbursable expense on top of the professional fee, ensuring transparency in additional costs incurred"
+        },
+        {
+          "id": "b",
+          "text": "Included in the professional fee; the architect's time coordinating consultants is part of design services"
+        },
+        {
+          "id": "c",
+          "text": "The consultant should bill directly to the client; the architect doesn't bill for coordination, maintaining clear separation of responsibilities"
+        },
+        {
+          "id": "d",
+          "text": "Design coordination is not included in either architect or consultant fees, requiring separate negotiation for these services"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Treats coordination time as separate reimbursable expense; it is part of design services.",
+        "c": "Consultants bill their services; the architect bills coordination as part of design.",
+        "d": "Coordination is definitely included in architect fees; this contradicts professional responsibility.",
+        "correct": "Consultant coordination is part of the architect's contracted design services and professional responsibility. The architect's time coordinating with consultants is covered by the professional fee, not billed separately.",
+        "takeaway": "Design coordination with consultants is the architect's professional responsibility and is absorbed in the architectural fee, not billed separately."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:42adad4241a02ab68c1f5fc4ded911d809d3cb636059dddd80cf521052c60dda"
+    },
+    {
+      "question_id": "a1116920-5d14-4702-b9ea-fdaef98fdbf6",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "Which expense category is NOT reimbursable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site investigation costs (soil borings, geotechnical surveys)"
+        },
+        {
+          "id": "b",
+          "text": "Permit and filing fees paid on the client's behalf"
+        },
+        {
+          "id": "c",
+          "text": "Professional development and training for firm staff"
+        },
+        {
+          "id": "d",
+          "text": "Printing costs for contract documents"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Site investigation costs are project-specific and reimbursable when arranged by the architect.",
+        "b": "Permit and filing fees are project costs and reimbursable when paid by the architect.",
+        "d": "Project-specific printing costs are reimbursable; only general office copying is absorbed.",
+        "correct": "Professional development and training are firm-wide benefits covered by the architect's overall fee structure and business model, not project-specific reimbursable expenses.",
+        "takeaway": "Professional development and training are absorbed as general business overhead, not charged to individual projects."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f9f04839379be722338877ba6b6e1aabee68ca14cdc78bc12a01fe55d3535a2"
+    },
+    {
+      "question_id": "884ed15f-cb22-484c-b13e-096ecd43dfc6",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "Which of the following is typically reimbursable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "General office rent and utilities, which are considered overhead costs"
+        },
+        {
+          "id": "b",
+          "text": "Project-specific consultant fees paid by the architect to external consultants"
+        },
+        {
+          "id": "c",
+          "text": "Administrative staff salaries, which are part of the firm's general expenses"
+        },
+        {
+          "id": "d",
+          "text": "General office software licenses, necessary for daily operations but not project-specific"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Office rent and utilities are fixed overhead, absorbed by the professional fee.",
+        "c": "Administrative salaries are general overhead, not project-specific reimbursable expenses.",
+        "d": "General software licenses are overhead costs, not project-specific reimbursable expenses.",
+        "correct": "Consultant fees retained by the architect for specialized services are typically reimbursable. Standard office overhead is absorbed by the architect's professional fee.",
+        "takeaway": "Project-specific consultant fees (structural, MEP, sustainability) are reimbursable; general office overhead is absorbed by the architect's fee."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fbdd76849c0afbb2651f69cb3c2cab5d8a85502653314af419ce5779f23b173d"
+    },
+    {
+      "question_id": "9318fb3d-26ef-4817-b470-e99c326f4eb3",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "An architect arranges a soil investigation costing 45,000 pesos on behalf of the client. The architect applies 15% markup for administrative handling. How should this be invoiced?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reimbursable Expense: 45,000 pesos (soil investigation)"
+        },
+        {
+          "id": "b",
+          "text": "Reimbursable Expense: 51,750 pesos (soil investigation 45,000 + 15% markup 6,750)"
+        },
+        {
+          "id": "c",
+          "text": "This cost should be billed as a professional service fee, not reimbursable"
+        },
+        {
+          "id": "d",
+          "text": "The architect should not invoice this; the client should pay the investigator directly"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fails to apply the agreed markup for administrative handling.",
+        "c": "Site investigations are project-specific reimbursable expenses, not professional service fees.",
+        "d": "The architect advances expenses; the client reimburses through architect invoicing.",
+        "correct": "Reimbursable expenses are typically invoiced at actual cost plus a reasonable markup (10–15%) to cover administrative handling. 45,000 × 1.15 = 51,750 pesos.",
+        "takeaway": "Apply the standard 10–15% markup to reimbursable expenses by multiplying the actual cost by 1.10 to 1.15 before invoicing."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bcc2a0d29d7881c90ce26ec07c325f94bf517b1196ba49f697f2350472019a72"
+    },
+    {
+      "question_id": "495b1532-4458-4892-8642-e5039ca832e2",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "An architect proposes a professional fee of 5 million pesos but indicates that printing costs (typically 200,000 pesos) and consultant fees (typically 300,000 pesos) will be billed separately as reimbursable. How should the client evaluate this proposal against a competitor's proposal of 5.5 million pesos all-inclusive?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The first architect is cheaper by 500,000 pesos, assuming no additional costs arise"
+        },
+        {
+          "id": "b",
+          "text": "The first architect proposes 5 million + estimated 500,000 reimbursable = 5.5 million total; both proposals are equivalent"
+        },
+        {
+          "id": "c",
+          "text": "Reimbursable expenses are not relevant to fee comparison, as they are standard practice in the industry"
+        },
+        {
+          "id": "d",
+          "text": "The all-inclusive 5.5 million proposal is always better, as it simplifies budgeting and avoids unexpected expenses"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely treats the proposals as different costs; when reimbursable expenses are included, costs are equivalent.",
+        "c": "Reimbursable expenses are critical to total cost comparison and must be evaluated.",
+        "d": "All-inclusive proposals are not always better; comparisons require equal fee structures.",
+        "correct": "Total cost includes professional fees plus reimbursable expenses. The first proposal totals approximately 5.5 million (5 million fee + 500,000 reimbursable), equivalent to the all-inclusive proposal. Fee comparisons require ensuring both proposals are structured identically.",
+        "takeaway": "When comparing fee proposals, calculate total cost including reimbursable expenses to ensure fair comparison."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca290e22e3f138fa274e92c53c4a5826434a5b1c89496acc03b775b39d7a62e7"
+    },
+    {
+      "question_id": "ab61c101-751e-4aa4-b2b5-ae62a9df9db0",
+      "article_id": "425c5476-12a0-476c-96e3-3f10c1530a9c",
+      "topic_id": "c1cb4a9a-81e2-4c93-a520-d4816cbac015",
+      "text": "What are reimbursable expenses in architecture practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect's professional fee for design services, which is separate from project-specific expenses"
+        },
+        {
+          "id": "b",
+          "text": "Costs the architect directly incurs for the specific project that are separate from the professional fee"
+        },
+        {
+          "id": "c",
+          "text": "General office overhead costs, which are typically not billed as reimbursable expenses"
+        },
+        {
+          "id": "d",
+          "text": "The architect's profit margin on the project, which is not considered a reimbursable expense"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses reimbursable expenses with the professional fee for design services.",
+        "c": "Mischaracterizes reimbursable expenses as general overhead; overhead is absorbed by fees, not reimbursed.",
+        "d": "Falsely describes reimbursable expenses as profit margin; they represent cost recovery only.",
+        "correct": "Reimbursable expenses are project-specific costs the architect advances on the client's behalf and recovers separately from the professional fee.",
+        "takeaway": "Reimbursable expenses are legitimate project costs, billed separately from the professional fee with documentation and typically a 10–15% markup."
+      },
+      "explanation": null,
+      "code_citation": "UAP SPP Document 206 (Conditions of Engagement)",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-011-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:138961347c5a6e0b332d2bb5c35ab90a5da345071c7cc0213b6bcb2a0c3666b8"
+    }
+  ]
+}

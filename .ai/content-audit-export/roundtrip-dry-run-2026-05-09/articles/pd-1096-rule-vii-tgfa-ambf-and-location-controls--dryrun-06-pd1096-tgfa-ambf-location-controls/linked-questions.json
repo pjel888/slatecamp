@@ -1,0 +1,181 @@
+{
+  "article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:19bddeb5f772818b70739cdbc3f28f86549ff8bd54a266d46ff8abd433f472cd",
+  "question_count": 3,
+  "questions": [
+    {
+      "question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q01",
+      "article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "topic_id": "dryrun-topic-06-pd1096-tgfa-ambf-location-controls",
+      "text": "Under PD 1096 Rule VII Section 704.1(a), which site condition is required before a building may be constructed?",
+      "options": [
+        {
+          "id": "A",
+          "text": "It must adjoin or directly access a public space, yard, or street on at least one side."
+        },
+        {
+          "id": "B",
+          "text": "It must be surrounded by streets on all sides."
+        },
+        {
+          "id": "C",
+          "text": "It must have no side yard if firewalls are used."
+        },
+        {
+          "id": "D",
+          "text": "It must use the maximum TGFA before any location check."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Section 704.1(a) states that the building must adjoin or have direct access to a public space, yard, or street on at least one side.",
+        "distractors": {
+          "B": "Section 704.1(a) requires at least one side, not all sides.",
+          "C": "Firewall/setback issues are separate controls; they do not replace the Section 704.1(a) location rule.",
+          "D": "TGFA comes under Section 705; it does not replace the Section 704.1(a) threshold location rule."
+        },
+        "takeaway": "Check Section 704.1(a) location/property access before doing area arithmetic."
+      },
+      "explanation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(a), PDF p.81.",
+      "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(a), PDF p.81.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "pd1096-tgfa-q1",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(a), PDF p.81.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:a68ad80ffa5b8f13a082249de03e33934d634f98024a2d210027d5d2c7eff468"
+    },
+    {
+      "question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q02",
+      "article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "topic_id": "dryrun-topic-06-pd1096-tgfa-ambf-location-controls",
+      "text": "A question asks for Allowable Maximum Total Gross Floor Area. Which abbreviation should control the computation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "AMBF"
+        },
+        {
+          "id": "B",
+          "text": "TGFA"
+        },
+        {
+          "id": "C",
+          "text": "FSEC"
+        },
+        {
+          "id": "D",
+          "text": "NPCP"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "TGFA means Total Gross Floor Area. Section 705.1-705.2 governs allowable floor areas and TGFA limitation.",
+        "distractors": {
+          "A": "AMBF is the Section 704.4 building-footprint control, not total gross floor area.",
+          "C": "FSEC is a Fire Safety Evaluation Clearance term, not the Rule VII area metric.",
+          "D": "NPCP is the plumbing code, not the NBCP floor-area control."
+        },
+        "takeaway": "Do not swap Section 705 TGFA and Section 704.4 AMBF; both appear in development-control questions."
+      },
+      "explanation": "PD 1096, 2004 Revised IRR, Rule VII, Section 705.1-705.2, PDF p.83.",
+      "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Section 705.1-705.2, PDF p.83.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "pd1096-tgfa-q2",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 705.1-705.2, PDF p.83.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:dc8931ee395f54a4253c70b106a79aa61381f54e24aa09e1f8c829166f3c507e"
+    },
+    {
+      "question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q03",
+      "article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "topic_id": "dryrun-topic-06-pd1096-tgfa-ambf-location-controls",
+      "text": "For eaves over required windows under PD 1096 Rule VII Section 704.1(c), what minimum distance from side and rear property lines is stated?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm"
+        },
+        {
+          "id": "B",
+          "text": "500 mm"
+        },
+        {
+          "id": "C",
+          "text": "750 mm"
+        },
+        {
+          "id": "D",
+          "text": "1200 mm"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Section 704.1(c) states that eaves over required windows shall not be less than 750 mm from the side and rear property lines.",
+        "distractors": {
+          "A": "300 mm is not the Section 704.1(c) value for eaves over required windows.",
+          "B": "500 mm is not the cited value.",
+          "D": "1200 mm is not the Section 704.1(c) eaves-over-required-windows distance."
+        },
+        "takeaway": "Attach 750 mm to the exact Section 704.1(c) condition: eaves over required windows, measured from side and rear property lines."
+      },
+      "explanation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81.",
+      "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "pd1096-tgfa-q3",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:582e4c6777829e0e96dc658bcfa73627b07712e0199c243e6cadac1e87541423"
+    }
+  ],
+  "dry_run_note": "Generated from SME-approved exemplar-question-set.json; do not edit linked-questions directly for real Supabase updates.",
+  "sme_guardrails": [
+    "Use PD 1096 2004 Revised IRR Rule VII Section 704.1(a) for the one-side public space/yard/street access rule.",
+    "Use PD 1096 2004 Revised IRR Rule VII Section 704.1(c) for the 750 mm eaves-over-required-windows distance from side and rear property lines.",
+    "Use Section 704.4 for AMBF/footprint analysis and Section 705.1-705.2/Table VII.1 for TGFA analysis; do not swap AMBF and TGFA."
+  ],
+  "source_provenance": {
+    "governing_source": "PD 1096, 2004 Revised IRR, Rule VII",
+    "official_source_status": "Local DPWH official PDF verified; remote DPWH access reconciled with anti-bot limitation.",
+    "learner_citation_style": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(a)/(c), Section 704.4, or Section 705.1-705.2, with PDF page."
+  }
+}

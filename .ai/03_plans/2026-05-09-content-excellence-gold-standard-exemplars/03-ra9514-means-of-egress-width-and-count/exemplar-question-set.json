@@ -1,0 +1,73 @@
+{
+  "pack_id": "03-ra9514-means-of-egress-width-and-count",
+  "title": "RA 9514 Means of Egress: Width, Count, and Illumination",
+  "subject": "Fire Code and Life Safety",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_document_id": "RA9514_RIRR_2019",
+  "locator_set_id": "ra9514_egress",
+  "questions": [
+    {
+      "id": "ra9514-egress-q1",
+      "stem": "Under the general RA 9514 RIRR means-of-egress rule, what minimum width applies unless a specific occupancy division provides otherwise?",
+      "options": {
+        "A": "760 mm",
+        "B": "815 mm",
+        "C": "915 mm",
+        "D": "1120 mm"
+      },
+      "correct_option_id": "C",
+      "rationale": {
+        "correct": "Section 10.2.5.2 paragraph F states that the width of any means of egress shall not be less than 915 mm except when specifically provided under Divisions 8 through 20.",
+        "distractors": {
+          "A": "760 mm appears in other dimensional contexts but is not this general minimum.",
+          "B": "815 mm is not the cited general egress minimum.",
+          "D": "1120 mm appears in the stair capacity equation context, not as the general minimum egress width."
+        },
+        "takeaway": "Keep the general width minimum separate from stair-capacity and occupancy-specific rules."
+      },
+      "source_locator": "RA 9514 RIRR 2019, Section 10.2.5.2(F), PDF p.95."
+    },
+    {
+      "id": "ra9514-egress-q2",
+      "stem": "A storey has an occupant load of 750. Under the general Section 10.2.5.2 rule, how many means of egress are required unless a specific occupancy rule changes the answer?",
+      "options": {
+        "A": "One",
+        "B": "Two",
+        "C": "Three",
+        "D": "Four"
+      },
+      "correct_option_id": "C",
+      "rationale": {
+        "correct": "For occupant load more than 500 but not more than 1000, the means of egress must not be less than three.",
+        "distractors": {
+          "A": "The general rule does not allow one for this load.",
+          "B": "Two is the baseline minimum, but 750 crosses the more-than-500 threshold.",
+          "D": "Four is triggered for occupant load in excess of 1000."
+        },
+        "takeaway": "More than 500 up to 1000 requires at least three means of egress."
+      },
+      "source_locator": "RA 9514 RIRR 2019, Section 10.2.5.2(G), PDF p.95."
+    },
+    {
+      "id": "ra9514-egress-q3",
+      "stem": "What minimum illumination value is stated for floors of means of egress at corridors, landings, and exit doors?",
+      "options": {
+        "A": "5 lux",
+        "B": "10.7 lux",
+        "C": "50 lux",
+        "D": "100 lux"
+      },
+      "correct_option_id": "B",
+      "rationale": {
+        "correct": "Section 10.2.5.11 states that floors of means of egress shall be illuminated at all points to values not less than 10.7 lux.",
+        "distractors": {
+          "A": "Below the cited Fire Code illumination value.",
+          "C": "A plausible lighting distractor, but not the cited egress-floor value.",
+          "D": "Too high for the cited egress-floor requirement."
+        },
+        "takeaway": "For Fire Code egress illumination, the key number in this excerpt is 10.7 lux."
+      },
+      "source_locator": "RA 9514 RIRR 2019, Section 10.2.5.11, PDF p.113."
+    }
+  ]
+}

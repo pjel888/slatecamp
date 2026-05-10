@@ -1,61 +1,9 @@
 {
   "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:fefdde9237f6ffd6beebb593f709447cc51355cc563392752275cf689e3c3315",
+  "linked_questions_hash": "sha256:98700878b0983a38558f31eec42258ddbcc3bac48d9bafe949cd6a87894be2ed",
   "question_count": 12,
   "questions": [
-    {
-      "question_id": "767d85bf-e4a5-4634-8020-a65f37527250",
-      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
-      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
-      "text": "A building employs slender, numerous colonnades appearing almost ephemeral through repetition, delicate pointed arches with detailed voussoirs, thin walls because decoration consumes visual attention, and stucco rather than stone. Which architectural tradition is being described?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Ottoman centralized dome tradition"
-        },
-        {
-          "id": "b",
-          "text": "Abbasid Mesopotamian brick construction"
-        },
-        {
-          "id": "c",
-          "text": "Andalusian intimate palace design"
-        },
-        {
-          "id": "d",
-          "text": "Mughal garden-complex integration"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Ottoman architecture emphasizes massive central domes and marble, not slender colonnades.",
-        "b": "Abbasid Mesopotamian architecture uses brick and iwans, not slender colonnades.",
-        "d": "Mughal architecture emphasizes white marble inlay and grand garden integration, not stucco and slender colonnades.",
-        "correct": "Andalusian architecture: 'Colonnades become slender and numerous—almost ephemeral in their repetition...Arches are not solid stone but delicate pointed arches with detailed voussoirs. Walls appear thin because decoration consumes visual attention...stucco, carved wood, glazed tile, and paint dominate.'",
-        "takeaway": "Walls appear thin because decoration consumes visual attention...stucco, carved wood, glazed tile, and paint dominate.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "recall",
-      "practice_context": [
-        "DESC"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-05-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:86f687bae5c47d2b0fdbee735db5b301fd789e7eebfd6e9cac910d7b03111fbb"
-    },
     {
       "question_id": "120e860e-08af-48d9-ae38-e9eec3ee0f3f",
       "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
@@ -91,7 +39,7 @@
         "correct": "Muhammad V (r. 1362–1391 in second reign; architects not definitively documented)' with 'Patio de los Leones begun 1362, completed by 1391' and 'most construction occurred during Muhammad V's second reign.'",
         "takeaway": "1362–1391 in second reign; architects not definitively documented)' with 'Patio de los Leones begun 1362, completed by 1391' and 'most construction occurred during Muhammad V's second reign.'."
       },
-      "explanation": null,
+      "explanation": "Abd al-Rahman I is the founder of the Umayyad dynasty in Spain (8th century), not a Nasrid ruler. Caliph al-Muizz is a Fatimid ruler of Cairo (10th century), not a Nasrid Granada ruler. Ahmad al-Mansur is a Moroccan Saadi ruler, not a Nasrid Granada ruler. Muhammad V (r. 1362–1391 in second reign; architects not definitively documented)' with 'Patio de los Leones begun 1362, completed by 1391' and 'most construction occurred during Muhammad V's second reign.' 1362–1391 in second reign; architects not definitively documented)' with 'Patio de los Leones begun 1362, completed by 1391' and 'most construction occurred during Muhammad V's second reign.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -105,8 +53,320 @@
       "model_id": "ALE-HIST-004-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7304d07984aa85bae534a4990b66b87a6853ed5bcddfd729d4e4a3f362a2990c"
+      "updated_at": "2026-05-06T14:56:48.029778+00:00",
+      "content_hash": "sha256:6c777bcc569ccf78d7e18c864e7ea8c113c323b530ebcd4fd8a2a02de8f179b4"
+    },
+    {
+      "question_id": "6220df08-25ef-4c20-b733-d1645009f950",
+      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
+      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
+      "text": "Water in Andalusian palace design serves functions beyond climate control and utility. What additional purposes does the article identify for water channels and fountains?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Water provides irrigation for exterior gardens and agricultural production, ensuring that the landscape remains lush and productive throughout the year"
+        },
+        {
+          "id": "b",
+          "text": "Water carries sound and scent through rooms, provides visual focus through reflective surfaces that dematerialize architecture, and integrates poetic function"
+        },
+        {
+          "id": "c",
+          "text": "Water primarily serves religious ablution requirements with no aesthetic purpose, focusing solely on the practical aspects of ritual cleansing"
+        },
+        {
+          "id": "d",
+          "text": "Water is decorative surface treatment with no functional significance, often used to enhance the visual appeal of courtyards and entryways"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Agricultural irrigation is not mentioned in the article's discussion of Andalusian water use.",
+        "c": "The article identifies aesthetic and poetic functions beyond ritual ablution.",
+        "d": "The article explicitly states water is 'integral to the palace's poetic function,' not merely decorative.",
+        "correct": "Channels (acequias) carry sound and scent through rooms; fountains provide visual focus; reflective surfaces in pools dematerialize architecture. Water is integral to the palace's poetic function, not a utility added afterward.'",
+        "takeaway": "Water is integral to the palace's poetic function, not a utility added afterward.'."
+      },
+      "explanation": "Agricultural irrigation is not mentioned in the article's discussion of Andalusian water use. The article identifies aesthetic and poetic functions beyond ritual ablution. The article explicitly states water is 'integral to the palace's poetic function,' not merely decorative. Channels (acequias) carry sound and scent through rooms; fountains provide visual focus; reflective surfaces in pools dematerialize architecture. Water is integral to the palace's poetic function, not a utility added afterward.' Water is integral to the palace's poetic function, not a utility added afterward.'.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-05-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:56:48.382033+00:00",
+      "content_hash": "sha256:ac13e234b309da57c2f07ae3c128052064634b3293a40f99d1456c66c0d93cd3"
+    },
+    {
+      "question_id": "04e830dd-eca3-41b8-b238-fc8abe1777d8",
+      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
+      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
+      "text": "Which decorative approach distinguishes Andalusian muqarnas from muqarnas in Persian or Central Asian traditions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andalusian muqarnas is simpler and less geometrically complex than Persian muqarnas, often using fewer tiers and simpler patterns"
+        },
+        {
+          "id": "b",
+          "text": "Andalusian muqarnas reaches its most delicate, ornamental expression as an ornamental rather than primarily structural element"
+        },
+        {
+          "id": "c",
+          "text": "Andalusian muqarnas uses brick as its primary material while Persian uses stone, reflecting regional material availability"
+        },
+        {
+          "id": "d",
+          "text": "Andalusian muqarnas serves primarily structural functions while Persian muqarnas is purely decorative, emphasizing aesthetic over function"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The article describes Andalusian muqarnas as highly intricate and ornamental, not simpler.",
+        "c": "Material composition of muqarnas (brick, stone, plaster) is not identified as the distinguishing factor.",
+        "d": "The article distinguishes by degree of ornamental refinement, not by structural versus decorative function.",
+        "correct": "Muqarnas reaches its most delicate, ornamental expression—ceiling surfaces fracture into intricate geometric patterns that seem to dematerialize.' This describes Andalusian emphasis on ornamental delicacy.",
+        "takeaway": "The article states: 'Muqarnas reaches its most delicate, ornamental expression—ceiling surfaces fracture into intricate geometric patterns that seem to dematerialize.' This describes Andalusian emphasis on ornamental delicacy."
+      },
+      "explanation": "The article describes Andalusian muqarnas as highly intricate and ornamental, not simpler. Material composition of muqarnas (brick, stone, plaster) is not identified as the distinguishing factor. The article distinguishes by degree of ornamental refinement, not by structural versus decorative function. Muqarnas reaches its most delicate, ornamental expression—ceiling surfaces fracture into intricate geometric patterns that seem to dematerialize.' This describes Andalusian emphasis on ornamental delicacy. The article states: 'Muqarnas reaches its most delicate, ornamental expression—ceiling surfaces fracture into intricate geometric patterns that seem to dematerialize.' This describes Andalusian emphasis on ornamental delicacy.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:56:48.497095+00:00",
+      "content_hash": "sha256:92ef7d13cb5dd7cc8d3c685646e9380834502a2408657b1f03178efc20716157"
+    },
+    {
+      "question_id": "ebf3ed24-c518-41fa-a309-538a416f8032",
+      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
+      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
+      "text": "How does the architectural structure of the Great Mosque of Córdoba, particularly its use of horseshoe arches, represent an adaptation specific to Andalusian Islamic tradition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Horseshoe arches are round arches that distribute weight evenly across broad spans, providing structural stability in large open spaces"
+        },
+        {
+          "id": "b",
+          "text": "Horseshoe arches extend beyond a full semicircle with a keyhole profile, allowing visual emphasis and structural expansion without height increase, becoming Andalusian's signature"
+        },
+        {
+          "id": "c",
+          "text": "Horseshoe arches are Byzantine modifications that connect Islamic and European traditions, symbolizing cultural exchange"
+        },
+        {
+          "id": "d",
+          "text": "Horseshoe arches are decorative elements with no structural function in the mosque, serving purely aesthetic purposes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Round arches do not extend beyond semicircles; the horseshoe arch's profile is distinctly different.",
+        "c": "The horseshoe arch is identified as characteristic of Visigothic pre-Islamic Spain, not primarily Byzantine.",
+        "d": "While decorative, the horseshoe arch serves structural functions in the Córdoba mosque's hypostyle system.",
+        "correct": "The article defines the horseshoe arch as extending 'beyond a full semicircle, creating a keyhole profile' that 'allows visual emphasis and structural expansion without height increase' and 'becomes defining feature of Andalusian style.'",
+        "takeaway": "The article defines the horseshoe arch as extending 'beyond a full semicircle, creating a keyhole profile' that 'allows visual emphasis and structural expansion without height increase' and 'becomes defining feature of Andalusian style.'."
+      },
+      "explanation": "Round arches do not extend beyond semicircles; the horseshoe arch's profile is distinctly different. The horseshoe arch is identified as characteristic of Visigothic pre-Islamic Spain, not primarily Byzantine. While decorative, the horseshoe arch serves structural functions in the Córdoba mosque's hypostyle system. The article defines the horseshoe arch as extending 'beyond a full semicircle, creating a keyhole profile' that 'allows visual emphasis and structural expansion without height increase' and 'becomes defining feature of Andalusian style.' The article defines the horseshoe arch as extending 'beyond a full semicircle, creating a keyhole profile' that 'allows visual emphasis and structural expansion without height increase' and 'becomes defining feature of Andalusian style.'.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:56:48.61699+00:00",
+      "content_hash": "sha256:be5006dc93fc74c0dfbaa7cb0788e6a1e27f8dffde8f14c2e7d9c21f9d6f4b43"
+    },
+    {
+      "question_id": "3f8492ec-0d48-4bd2-b66b-b7f41be033bc",
+      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
+      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
+      "text": "A courtyard features a central pool with water channels running through adjacent rooms, arcaded galleries on multiple sides, and slender colonnades that appear ephemeral through repetition. The courtyard name references a plant and contains a fountain as its focal point. Which courtyard of the Alhambra is being described?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Patio de los Leones (Court of the Lions)"
+        },
+        {
+          "id": "b",
+          "text": "Patio de Arrayanes (Court of Myrtles)"
+        },
+        {
+          "id": "c",
+          "text": "Diwan-i-Khas (Private audience hall)"
+        },
+        {
+          "id": "d",
+          "text": "Sahn (Mosque courtyard)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Patio de los Leones is the court for state reception and private royal quarters, not specifically for cooling and visual beauty through myrtles.",
+        "c": "Diwan-i-Khas is a Mughal architectural term (private audience hall), not an Alhambra courtyard.",
+        "d": "Sahn is the general term for mosque courtyards, not a specific Alhambra courtyard name.",
+        "correct": "The Patio de Arrayanes (Court of Myrtles) is described as providing 'cooling and visual beauty' with the plant reference in its name and fountain focus, contrasting with the lions courtyard's state reception function.",
+        "takeaway": "The Patio de Arrayanes (Court of Myrtles) is described as providing 'cooling and visual beauty' with the plant reference in its name and fountain focus, contrasting with the lions courtyard's state reception function."
+      },
+      "explanation": "The Patio de los Leones is the court for state reception and private royal quarters, not specifically for cooling and visual beauty through myrtles. Diwan-i-Khas is a Mughal architectural term (private audience hall), not an Alhambra courtyard. Sahn is the general term for mosque courtyards, not a specific Alhambra courtyard name. The Patio de Arrayanes (Court of Myrtles) is described as providing 'cooling and visual beauty' with the plant reference in its name and fountain focus, contrasting with the lions courtyard's state reception function. The Patio de Arrayanes (Court of Myrtles) is described as providing 'cooling and visual beauty' with the plant reference in its name and fountain focus, contrasting with the lions courtyard's state reception function.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:56:48.854907+00:00",
+      "content_hash": "sha256:7f5038472117a552c4c3cbaa99353dc2c071bc7969d4337d8cf8083ee0b9e44f"
+    },
+    {
+      "question_id": "83cb8503-04da-487c-a9ba-282085d69c80",
+      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
+      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
+      "text": "How does Andalusian palace architecture differ from Abbasid palace spatial strategy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Andalusian emphasizes intimate courtyards and private, inward-focused spaces; Abbasid emphasizes monumental iwans and expansive bureaucratic complexity with inward focus"
+        },
+        {
+          "id": "b",
+          "text": "Andalusian uses stone construction exclusively; Abbasid uses only brick, reflecting regional material availability"
+        },
+        {
+          "id": "c",
+          "text": "Andalusian employs figurative art; Abbasid avoids all human imagery, adhering to religious iconography restrictions"
+        },
+        {
+          "id": "d",
+          "text": "Andalusian palaces are desert fortifications; Abbasid palaces are urban centers, showcasing differing environmental adaptations"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The article specifies Andalusian uses 'stucco and tile' while Abbasid employs 'brick' in Mesopotamia; this distinction exists but is not the primary spatial difference.",
+        "c": "Both traditions avoid figurative imagery; this is not a distinguishing feature.",
+        "d": "Both periods include both desert and urban examples; geographic typology is not the defining distinction.",
+        "correct": "The article contrasts Abbasid architecture—characterized by 'monumental iwans, brick and stone, muqarnas as structural element'—with Andalusian's 'intimate courtyards, stucco and tile, poetic inscriptions, ephemeral colonnades.' The courtyard (patio) becomes the organizing principle in Andalusian design—not a utilitarian space but a poetic microcosm, contrasting with Abbasid monumental scale and bureaucratic complexity.",
+        "takeaway": "The article contrasts Abbasid architecture—characterized by 'monumental iwans, brick and stone, muqarnas as structural element'—with Andalusian's 'intimate courtyards, stucco and tile, poetic inscriptions, ephemeral colonnades.' The courtyard (patio) becomes the organizing principle in Andalusian design—not a utilitarian space but a poetic microcosm, contrasting with Abbasid monumental scale and bureaucratic complexity."
+      },
+      "explanation": "The article specifies Andalusian uses 'stucco and tile' while Abbasid employs 'brick' in Mesopotamia; this distinction exists but is not the primary spatial difference. Both traditions avoid figurative imagery; this is not a distinguishing feature. Both periods include both desert and urban examples; geographic typology is not the defining distinction. The article contrasts Abbasid architecture—characterized by 'monumental iwans, brick and stone, muqarnas as structural element'—with Andalusian's 'intimate courtyards, stucco and tile, poetic inscriptions, ephemeral colonnades.' The courtyard (patio) becomes the organizing principle in Andalusian design—not a utilitarian space but a poetic microcosm, contrasting with Abbasid monumental scale and bureaucratic complexity. The article contrasts Abbasid architecture—characterized by 'monumental iwans, brick and stone, muqarnas as structural element'—with Andalusian's 'intimate courtyards, stucco and tile, poetic inscriptions, ephemeral colonnades.' The courtyard (patio) becomes the organizing principle in Andalusian design—not a utilitarian space but a poetic microcosm, contrasting with Abbasid monumental scale and bureaucratic complexity.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:56:48.968516+00:00",
+      "content_hash": "sha256:74376f17b26ef8a3565754228626bb5f9b89c0ad4a09ef3c310bc790bc9adb3d"
+    },
+    {
+      "question_id": "767d85bf-e4a5-4634-8020-a65f37527250",
+      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
+      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
+      "text": "A building employs slender, numerous colonnades appearing almost ephemeral through repetition, delicate pointed arches with detailed voussoirs, thin walls because decoration consumes visual attention, and stucco rather than stone. Which architectural tradition is being described?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ottoman centralized dome tradition"
+        },
+        {
+          "id": "b",
+          "text": "Abbasid Mesopotamian brick construction"
+        },
+        {
+          "id": "c",
+          "text": "Andalusian intimate palace design"
+        },
+        {
+          "id": "d",
+          "text": "Mughal garden-complex integration"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ottoman architecture emphasizes massive central domes and marble, not slender colonnades.",
+        "b": "Abbasid Mesopotamian architecture uses brick and iwans, not slender colonnades.",
+        "d": "Mughal architecture emphasizes white marble inlay and grand garden integration, not stucco and slender colonnades.",
+        "correct": "Andalusian architecture: 'Colonnades become slender and numerous—almost ephemeral in their repetition...Arches are not solid stone but delicate pointed arches with detailed voussoirs. Walls appear thin because decoration consumes visual attention...stucco, carved wood, glazed tile, and paint dominate.'",
+        "takeaway": "Walls appear thin because decoration consumes visual attention...stucco, carved wood, glazed tile, and paint dominate.'."
+      },
+      "explanation": "Ottoman architecture emphasizes massive central domes and marble, not slender colonnades. Abbasid Mesopotamian architecture uses brick and iwans, not slender colonnades. Mughal architecture emphasizes white marble inlay and grand garden integration, not stucco and slender colonnades. Andalusian architecture: 'Colonnades become slender and numerous—almost ephemeral in their repetition...Arches are not solid stone but delicate pointed arches with detailed voussoirs. Walls appear thin because decoration consumes visual attention...stucco, carved wood, glazed tile, and paint dominate.' Walls appear thin because decoration consumes visual attention...stucco, carved wood, glazed tile, and paint dominate.'.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "recall",
+      "practice_context": [
+        "DESC"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-004-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.126756+00:00",
+      "updated_at": "2026-05-06T14:56:47.913874+00:00",
+      "content_hash": "sha256:6f1df620ef0191e299796f4cc31801e443e2daa871e5b70ce641122ae5214a55"
     },
     {
       "question_id": "cabfd998-0e0a-4bf4-90e9-891638de78f2",
@@ -143,7 +403,7 @@
         "correct": "The Nasrid Dynasty as 'Rulers of Granada (1238–1492 CE); produced the Alhambra; last Islamic state in medieval Spain.'",
         "takeaway": "The article identifies the Nasrid Dynasty as 'Rulers of Granada (1238–1492 CE); produced the Alhambra; last Islamic state in medieval Spain.'."
       },
-      "explanation": null,
+      "explanation": "1354 CE marks the beginning of major Alhambra construction, not the dynasty's establishment. 1362 CE marks the beginning of the Patio de los Leones construction, not the dynasty's start. 1391 CE marks the completion of the Patio de los Leones, not the dynasty's establishment. The Nasrid Dynasty as 'Rulers of Granada (1238–1492 CE); produced the Alhambra; last Islamic state in medieval Spain.' The article identifies the Nasrid Dynasty as 'Rulers of Granada (1238–1492 CE); produced the Alhambra; last Islamic state in medieval Spain.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -157,8 +417,8 @@
       "model_id": "ALE-HIST-004-05-012",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e8a6a624562e0f81b7677c5b69ee0e5a17a82e2ac5e417dc4c898ba3d49a7013"
+      "updated_at": "2026-05-06T14:56:48.152776+00:00",
+      "content_hash": "sha256:86494506a432f783ad206b25e6a5ed19aeb939915f448973c1c48696d4db9753"
     },
     {
       "question_id": "769adba6-d990-4ea4-9cba-21a752202d3b",
@@ -195,7 +455,7 @@
         "correct": "Andalusian architecture represents Islam at its most refined and most fragile...the Nasrid dynasty...had shrunk to a single city-state. With limited territory, the ruler invested in architectural magnificence rather than military expansion. The result is a palace so elaborate that every surface demands attention.'",
         "takeaway": "The result is a palace so elaborate that every surface demands attention.'."
       },
-      "explanation": null,
+      "explanation": "The article emphasizes increased architectural investment, not reduction. The Alhambra is described as highly elaborate, not simpler due to constraint. The article does not attribute material limitations to geographic isolation; stucco, tile, and stone were available. Andalusian architecture represents Islam at its most refined and most fragile...the Nasrid dynasty...had shrunk to a single city-state. With limited territory, the ruler invested in architectural magnificence rather than military expansion. The result is a palace so elaborate that every surface demands attention.' The result is a palace so elaborate that every surface demands attention.'.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -209,8 +469,8 @@
       "model_id": "ALE-HIST-004-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:eafbf9ee205e8d8a0707b6af134b42b8409b6e5c6b79c8f02536260ef5273ead"
+      "updated_at": "2026-05-06T14:56:48.264245+00:00",
+      "content_hash": "sha256:6fcb1b7c7b67ef54b9c6f0e735940cb84456ca1f8435c43e851bb77c11aa5f48"
     },
     {
       "question_id": "511052bd-4316-4cfb-bda2-2b9b79261a4b",
@@ -265,162 +525,6 @@
       "content_hash": "sha256:0380621ed0a868b4a5df6fe5b513791ec493a31d783275e51fe5c14765c136e1"
     },
     {
-      "question_id": "6220df08-25ef-4c20-b733-d1645009f950",
-      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
-      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
-      "text": "Water in Andalusian palace design serves functions beyond climate control and utility. What additional purposes does the article identify for water channels and fountains?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Water provides irrigation for exterior gardens and agricultural production, ensuring that the landscape remains lush and productive throughout the year"
-        },
-        {
-          "id": "b",
-          "text": "Water carries sound and scent through rooms, provides visual focus through reflective surfaces that dematerialize architecture, and integrates poetic function"
-        },
-        {
-          "id": "c",
-          "text": "Water primarily serves religious ablution requirements with no aesthetic purpose, focusing solely on the practical aspects of ritual cleansing"
-        },
-        {
-          "id": "d",
-          "text": "Water is decorative surface treatment with no functional significance, often used to enhance the visual appeal of courtyards and entryways"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Agricultural irrigation is not mentioned in the article's discussion of Andalusian water use.",
-        "c": "The article identifies aesthetic and poetic functions beyond ritual ablution.",
-        "d": "The article explicitly states water is 'integral to the palace's poetic function,' not merely decorative.",
-        "correct": "Channels (acequias) carry sound and scent through rooms; fountains provide visual focus; reflective surfaces in pools dematerialize architecture. Water is integral to the palace's poetic function, not a utility added afterward.'",
-        "takeaway": "Water is integral to the palace's poetic function, not a utility added afterward.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-05-011",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0bc349cb68bda93a7b2456735942e19648c3df5e777cf74fe1a6da06b652d24d"
-    },
-    {
-      "question_id": "04e830dd-eca3-41b8-b238-fc8abe1777d8",
-      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
-      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
-      "text": "Which decorative approach distinguishes Andalusian muqarnas from muqarnas in Persian or Central Asian traditions?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Andalusian muqarnas is simpler and less geometrically complex than Persian muqarnas, often using fewer tiers and simpler patterns"
-        },
-        {
-          "id": "b",
-          "text": "Andalusian muqarnas reaches its most delicate, ornamental expression as an ornamental rather than primarily structural element"
-        },
-        {
-          "id": "c",
-          "text": "Andalusian muqarnas uses brick as its primary material while Persian uses stone, reflecting regional material availability"
-        },
-        {
-          "id": "d",
-          "text": "Andalusian muqarnas serves primarily structural functions while Persian muqarnas is purely decorative, emphasizing aesthetic over function"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The article describes Andalusian muqarnas as highly intricate and ornamental, not simpler.",
-        "c": "Material composition of muqarnas (brick, stone, plaster) is not identified as the distinguishing factor.",
-        "d": "The article distinguishes by degree of ornamental refinement, not by structural versus decorative function.",
-        "correct": "Muqarnas reaches its most delicate, ornamental expression—ceiling surfaces fracture into intricate geometric patterns that seem to dematerialize.' This describes Andalusian emphasis on ornamental delicacy.",
-        "takeaway": "The article states: 'Muqarnas reaches its most delicate, ornamental expression—ceiling surfaces fracture into intricate geometric patterns that seem to dematerialize.' This describes Andalusian emphasis on ornamental delicacy."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-05-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d79ad9ea2c542c39c53f32d4ab518648e3b71d33c15b223fccb305d4500e624c"
-    },
-    {
-      "question_id": "ebf3ed24-c518-41fa-a309-538a416f8032",
-      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
-      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
-      "text": "How does the architectural structure of the Great Mosque of Córdoba, particularly its use of horseshoe arches, represent an adaptation specific to Andalusian Islamic tradition?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Horseshoe arches are round arches that distribute weight evenly across broad spans, providing structural stability in large open spaces"
-        },
-        {
-          "id": "b",
-          "text": "Horseshoe arches extend beyond a full semicircle with a keyhole profile, allowing visual emphasis and structural expansion without height increase, becoming Andalusian's signature"
-        },
-        {
-          "id": "c",
-          "text": "Horseshoe arches are Byzantine modifications that connect Islamic and European traditions, symbolizing cultural exchange"
-        },
-        {
-          "id": "d",
-          "text": "Horseshoe arches are decorative elements with no structural function in the mosque, serving purely aesthetic purposes"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Round arches do not extend beyond semicircles; the horseshoe arch's profile is distinctly different.",
-        "c": "The horseshoe arch is identified as characteristic of Visigothic pre-Islamic Spain, not primarily Byzantine.",
-        "d": "While decorative, the horseshoe arch serves structural functions in the Córdoba mosque's hypostyle system.",
-        "correct": "The article defines the horseshoe arch as extending 'beyond a full semicircle, creating a keyhole profile' that 'allows visual emphasis and structural expansion without height increase' and 'becomes defining feature of Andalusian style.'",
-        "takeaway": "The article defines the horseshoe arch as extending 'beyond a full semicircle, creating a keyhole profile' that 'allows visual emphasis and structural expansion without height increase' and 'becomes defining feature of Andalusian style.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "ST"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-05-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:84d1a2087201d77202753ecd139805ac935e480735889dd38f04343e55120586"
-    },
-    {
       "question_id": "ec839e10-0842-49ef-be72-53c62df1d6ce",
       "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
       "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
@@ -455,7 +559,7 @@
         "correct": "The Alhambra (1354–1391 CE) is explicitly identified as the 'apex of Andalusian palace design' with 'multiple interconnected courtyards...stucco and tile walls, muqarnas ceilings, water channels throughout, slender colonnades.'",
         "takeaway": "The Alhambra (1354–1391 CE) is explicitly identified as the 'apex of Andalusian palace design' with 'multiple interconnected courtyards...stucco and tile walls, muqarnas ceilings, water channels throughout, slender colonnades.'."
       },
-      "explanation": null,
+      "explanation": "The Great Mosque of Córdoba is an earlier Umayyad mosque with hypostyle plan and horseshoe arches, not a palace. The Alcázar of Seville is a palace complex but dates to the 14th century and shows Islamic-Christian fusion rather than pure Andalusian apex. Qasr al-Hayr al-Sharqi is a Umayyad desert palace in Syria, not an Andalusian or Nasrid building. The Alhambra (1354–1391 CE) is explicitly identified as the 'apex of Andalusian palace design' with 'multiple interconnected courtyards...stucco and tile walls, muqarnas ceilings, water channels throughout, slender colonnades.' The Alhambra (1354–1391 CE) is explicitly identified as the 'apex of Andalusian palace design' with 'multiple interconnected courtyards...stucco and tile walls, muqarnas ceilings, water channels throughout, slender colonnades.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -469,60 +573,8 @@
       "model_id": "ALE-HIST-004-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:02d59f8ba77b8f9ccb5f3334dae562873da42d6dd7e70f87176ed6793ebb84ab"
-    },
-    {
-      "question_id": "3f8492ec-0d48-4bd2-b66b-b7f41be033bc",
-      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
-      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
-      "text": "A courtyard features a central pool with water channels running through adjacent rooms, arcaded galleries on multiple sides, and slender colonnades that appear ephemeral through repetition. The courtyard name references a plant and contains a fountain as its focal point. Which courtyard of the Alhambra is being described?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Patio de los Leones (Court of the Lions)"
-        },
-        {
-          "id": "b",
-          "text": "Patio de Arrayanes (Court of Myrtles)"
-        },
-        {
-          "id": "c",
-          "text": "Diwan-i-Khas (Private audience hall)"
-        },
-        {
-          "id": "d",
-          "text": "Sahn (Mosque courtyard)"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The Patio de los Leones is the court for state reception and private royal quarters, not specifically for cooling and visual beauty through myrtles.",
-        "c": "Diwan-i-Khas is a Mughal architectural term (private audience hall), not an Alhambra courtyard.",
-        "d": "Sahn is the general term for mosque courtyards, not a specific Alhambra courtyard name.",
-        "correct": "The Patio de Arrayanes (Court of Myrtles) is described as providing 'cooling and visual beauty' with the plant reference in its name and fountain focus, contrasting with the lions courtyard's state reception function.",
-        "takeaway": "The Patio de Arrayanes (Court of Myrtles) is described as providing 'cooling and visual beauty' with the plant reference in its name and fountain focus, contrasting with the lions courtyard's state reception function."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "recall",
-      "practice_context": [
-        "DESC"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-05-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4e2f984bc80e5b7dcf6534a662f0896be4efada7d2d635348cbbfc3beb112065"
+      "updated_at": "2026-05-06T14:56:48.735863+00:00",
+      "content_hash": "sha256:19038fddc242fae3a15e42b2e561e5b899b0d14683346077d271682422ddc8d0"
     },
     {
       "question_id": "11a40156-8c18-4c21-a2d2-767a15077d16",
@@ -575,58 +627,6 @@
       "created_at": "2026-03-23T19:27:24.126756+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:60109e11524ee27964f971be3a2973c64f2de155b53004a75d916b282458a1d0"
-    },
-    {
-      "question_id": "83cb8503-04da-487c-a9ba-282085d69c80",
-      "article_id": "ea2f4f6d-dd27-4e75-b202-91a60858c1f1",
-      "topic_id": "a2387cc6-77a5-4e08-8ae3-84e9fb90a83c",
-      "text": "How does Andalusian palace architecture differ from Abbasid palace spatial strategy?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Andalusian emphasizes intimate courtyards and private, inward-focused spaces; Abbasid emphasizes monumental iwans and expansive bureaucratic complexity with inward focus"
-        },
-        {
-          "id": "b",
-          "text": "Andalusian uses stone construction exclusively; Abbasid uses only brick, reflecting regional material availability"
-        },
-        {
-          "id": "c",
-          "text": "Andalusian employs figurative art; Abbasid avoids all human imagery, adhering to religious iconography restrictions"
-        },
-        {
-          "id": "d",
-          "text": "Andalusian palaces are desert fortifications; Abbasid palaces are urban centers, showcasing differing environmental adaptations"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "The article specifies Andalusian uses 'stucco and tile' while Abbasid employs 'brick' in Mesopotamia; this distinction exists but is not the primary spatial difference.",
-        "c": "Both traditions avoid figurative imagery; this is not a distinguishing feature.",
-        "d": "Both periods include both desert and urban examples; geographic typology is not the defining distinction.",
-        "correct": "The article contrasts Abbasid architecture—characterized by 'monumental iwans, brick and stone, muqarnas as structural element'—with Andalusian's 'intimate courtyards, stucco and tile, poetic inscriptions, ephemeral colonnades.' The courtyard (patio) becomes the organizing principle in Andalusian design—not a utilitarian space but a poetic microcosm, contrasting with Abbasid monumental scale and bureaucratic complexity.",
-        "takeaway": "The article contrasts Abbasid architecture—characterized by 'monumental iwans, brick and stone, muqarnas as structural element'—with Andalusian's 'intimate courtyards, stucco and tile, poetic inscriptions, ephemeral colonnades.' The courtyard (patio) becomes the organizing principle in Andalusian design—not a utilitarian space but a poetic microcosm, contrasting with Abbasid monumental scale and bureaucratic complexity."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-004-05-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.126756+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:558ac5ef49fffe115682eb7ce025d9a7a6b5a7a363d03cceb75cd205066a1fc5"
     }
   ]
 }

@@ -1,0 +1,73 @@
+{
+  "pack_id": "04-npcp-fixture-unit-and-venting",
+  "title": "National Plumbing Code Fixture Units and Venting",
+  "subject": "Building Utilities",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_document_id": "NPCP_REVISED",
+  "locator_set_id": "npcp_fixture_unit_venting",
+  "questions": [
+    {
+      "id": "npcp-fixture-q1",
+      "stem": "In the Revised National Plumbing Code definition, one fixture unit is equivalent to what flow rate?",
+      "options": {
+        "A": "10.7 liters per minute",
+        "B": "18.0 liters per minute",
+        "C": "28.3 liters per minute",
+        "D": "38.0 liters per minute"
+      },
+      "correct_option_id": "C",
+      "rationale": {
+        "correct": "The definition states that one fixture unit is equivalent to a rate of flow at 28.3 liters per minute (1 cu. ft./minute).",
+        "distractors": {
+          "A": "10.7 is not the cited plumbing fixture-unit equivalent; the local fixture-unit definition points to 28.3 L/min.",
+          "B": "Not the cited fixture-unit equivalent.",
+          "D": "Not the cited fixture-unit equivalent."
+        },
+        "takeaway": "Fixture unit is a load/flow scale, and the cited equivalent is 28.3 L/min."
+      },
+      "source_locator": "Revised National Plumbing Code, Section 207.8, Fixture Unit, PDF p.24."
+    },
+    {
+      "id": "npcp-vent-q2",
+      "stem": "Which statement follows Section 311.4 of the Revised National Plumbing Code?",
+      "options": {
+        "A": "A vent pipe may be used as a soil pipe if it is oversized.",
+        "B": "A soil or waste pipe may be used as a vent if the branch is short.",
+        "C": "No vent pipe shall be used as a soil or waste pipe, nor shall any soil or waste pipe be used as a vent, except as provided in the cited Code sections.",
+        "D": "Single drainage and venting systems with unvented branch lines are allowed for small buildings."
+      },
+      "correct_option_id": "C",
+      "rationale": {
+        "correct": "Section 311.4 states the prohibition and points to exceptions in Sections 812, 813, and 814.",
+        "distractors": {
+          "A": "Oversizing is not the stated permission.",
+          "B": "Branch length is not the stated permission.",
+          "D": "The same section says single drainage and venting systems with unvented branch lines are prohibited."
+        },
+        "takeaway": "Do not turn a vent into drainage or drainage into venting unless the Code exception is actually cited."
+      },
+      "source_locator": "Revised National Plumbing Code, Section 311.4, PDF p.44."
+    },
+    {
+      "id": "npcp-loopvent-q3",
+      "stem": "A loop or circuit vent connects on a horizontal soil or waste branch at what location?",
+      "options": {
+        "A": "Upstream of the first fixture only",
+        "B": "At a point downstream of the last fixture connection",
+        "C": "At the water-service entrance",
+        "D": "At the fixture trap seal only"
+      },
+      "correct_option_id": "B",
+      "rationale": {
+        "correct": "The Code definition places the vertical vent connection downstream of the last fixture connection.",
+        "distractors": {
+          "A": "The definition says downstream of the last fixture, not upstream of the first.",
+          "C": "The water-service entrance is unrelated.",
+          "D": "The definition is not limited to the trap seal."
+        },
+        "takeaway": "For loop or circuit vent questions, locate the last fixture connection first."
+      },
+      "source_locator": "Revised National Plumbing Code, Definitions, Loop or Circuit Vent, PDF p.29."
+    }
+  ]
+}

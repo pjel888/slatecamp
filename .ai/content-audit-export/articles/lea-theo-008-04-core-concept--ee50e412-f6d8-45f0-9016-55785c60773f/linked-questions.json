@@ -1,7 +1,7 @@
 {
   "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:44b1b902fc3546cd92d518abb54f948026d93cc450855f74a636801bc4a09464",
+  "linked_questions_hash": "sha256:6e6c24066de90c81e6cfce5bda6618a359feff802d8ee47b81be2ae6041e62b2",
   "question_count": 10,
   "questions": [
     {
@@ -38,7 +38,7 @@
         "d": "Rejecting international engagement ignores the reality that ideas circulate globally; Filipino architects benefit from participating in broader conversations.",
         "correct": "architectural theory (and the broader design culture it describes) demonstrates that Nakpil, Mañosa, and Locsin achieved both local respect and international influence precisely through genuine cultural commitment. Kenneth Cobonpue's rattan furniture gains global acclaim because it represents authentic cultural expression, not exotic styling. Specificity and universality are compatible when rooted in genuine conviction."
       },
-      "explanation": null,
+      "explanation": "The examples show this false choice; both recognition and identity are achievable. Technical excellence without cultural grounding produces adequate but uninspired architecture; culture and quality are inseparable. Rejecting international engagement ignores the reality that ideas circulate globally; Filipino architects benefit from participating in broader conversations. architectural theory (and the broader design culture it describes) demonstrates that Nakpil, Mañosa, and Locsin achieved both local respect and international influence precisely through genuine cultural commitment. Kenneth Cobonpue's rattan furniture gains global acclaim because it represents authentic cultural expression, not exotic styling. Specificity and universality are compatible when rooted in genuine conviction.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -52,8 +52,161 @@
       "model_id": "ale-theo-008-04-q10",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d0cc14bad64a5f49e0fa1c481c1563e1e76e87d7d52c9e27fad9c14507240408"
+      "updated_at": "2026-05-06T15:09:19.561897+00:00",
+      "content_hash": "sha256:fd18fe596a9a041ad4bb7a394c3162b63d566ffe4606c44cbdb36ee70960ce2b"
+    },
+    {
+      "question_id": "5cc84913-5c62-4492-812f-b50d88c202a9",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "states that the future of Filipino architectural identity involves integrating climate crisis, digital tools, global supply chains, and rapid urbanization. How should emerging architects understand their role in this evolving conversation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Identity conversation is concluded; contemporary architects should focus purely on technical solutions to current problems, ignoring cultural and historical contexts"
+        },
+        {
+          "id": "b",
+          "text": "Emerging architects should abandon all reference to tradition and adopt whatever global trends are fashionable, regardless of local relevance or sustainability"
+        },
+        {
+          "id": "c",
+          "text": "Emerging architects should creatively engage established identity principles while responding to contemporary conditions, asking how tradition, sustainability, digital capability, and cultural values can synthesize to produce distinctively Filipino solutions to new challenges"
+        },
+        {
+          "id": "d",
+          "text": "Emerging architects should simply follow established precedents from Nakpil, Mañosa, and Locsin without modification, adhering strictly to past methodologies"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Technical problem-solving without cultural grounding risks disconnection from what makes Filipino architecture distinctive.",
+        "b": "Fashion-following would erase the conversations previous architects established.",
+        "d": "Simple replication would be cultural stasis, not authentic identity.",
+        "correct": "Identity as 'ongoing conversation,' not concluded project. Emerging architects inherit the foundation (Nakpil's cultural consciousness, Mañosa's material integrity, Locsin's synthesis) but must ask new questions: Can digital architecture be Filipino? How do indigenous materials sustain under climate pressure? This creative extension is their professional responsibility."
+      },
+      "explanation": "Technical problem-solving without cultural grounding risks disconnection from what makes Filipino architecture distinctive. Fashion-following would erase the conversations previous architects established. Simple replication would be cultural stasis, not authentic identity. Identity as 'ongoing conversation,' not concluded project. Emerging architects inherit the foundation (Nakpil's cultural consciousness, Mañosa's material integrity, Locsin's synthesis) but must ask new questions: Can digital architecture be Filipino? How do indigenous materials sustain under climate pressure? This creative extension is their professional responsibility.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q09",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:09:19.982263+00:00",
+      "content_hash": "sha256:7e25a235258f6cc5787ca73b224418f4bba11201620ad6510a81fbc01a7a5ccf"
+    },
+    {
+      "question_id": "ac98daa2-80de-4ac2-b9d7-a6e886fcaa16",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "What is the bahay kubo, and why is it significant in Filipino architectural identity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An urban housing project built by the government, aimed at providing affordable housing solutions"
+        },
+        {
+          "id": "b",
+          "text": "A modern apartment building style developed in the 1960s, reflecting the architectural trends of that era"
+        },
+        {
+          "id": "c",
+          "text": "A Spanish colonial house type used only for historical preservation, representing the colonial past of the Philippines"
+        },
+        {
+          "id": "d",
+          "text": "The traditional nipa hut characterized by elevated structure, deep overhangs, natural ventilation, and local materials; it became a design reference point for contemporary Filipino architects seeking cultural grounding"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bahay kubo is not a modern government program; it's traditional architecture.",
+        "b": "Bahay kubo is traditional vernacular, not modern apartment type.",
+        "c": "While preserved historically, its significance is conceptual for contemporary design.",
+        "correct": "The bahay kubo is a centuries-old vernacular form that contemporary Filipino architects reference for design principles: elevation for ventilation, deep overhangs managing tropical weather, responsive materials. It's not about literal copying but extracting principles applicable to modern design."
+      },
+      "explanation": "Bahay kubo is not a modern government program; it's traditional architecture. Bahay kubo is traditional vernacular, not modern apartment type. While preserved historically, its significance is conceptual for contemporary design. The bahay kubo is a centuries-old vernacular form that contemporary Filipino architects reference for design principles: elevation for ventilation, deep overhangs managing tropical weather, responsive materials. It's not about literal copying but extracting principles applicable to modern design.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q03",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:09:20.116747+00:00",
+      "content_hash": "sha256:195f36c43e312ff06d86664c9ed0191f8162574dc22a1788fa29610deecf8377"
+    },
+    {
+      "question_id": "e08706ec-8742-4aef-845d-c92b86eabeb3",
+      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
+      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
+      "text": "A contemporary Filipino architect is designing a residential complex using bamboo for primary structural elements, referencing bahay kubo principles for ventilation and spatial organization, and digital parametric tools to optimize structural geometry. From the perspective of the ongoing identity conversation, is this approach coherent with established Filipino architectural values?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, but only if no digital tools are used; technology and tradition are incompatible, which is a debated perspective"
+        },
+        {
+          "id": "b",
+          "text": "No; using digital tools violates traditional Filipino principles and represents cultural selling-out, according to some purists"
+        },
+        {
+          "id": "c",
+          "text": "Yes; this demonstrates evolutionary engagement with tradition—maintaining material and spatial principles while adopting contemporary tools that enable innovation and precision not available to earlier architects"
+        },
+        {
+          "id": "d",
+          "text": "No; bahay kubo reference is superficial unless the building looks identical to traditional structures, which is a narrow interpretation"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Tradition and digital tools are not inherently opposed; their integration can be generative.",
+        "b": "Digital tools are neutral; their appropriateness depends on how they serve design goals.",
+        "d": "Abstraction of principles, not literal copying; cultural authenticity doesn't require visual replication.",
+        "correct": "Filipino identity as dynamic and evolving, not static. Using bamboo and bahay kubo principles while leveraging parametric tools for optimization represents creative synthesis—maintaining cultural roots while responding to contemporary possibilities. This is continuation of the identity conversation, not betrayal of it."
+      },
+      "explanation": "Tradition and digital tools are not inherently opposed; their integration can be generative. Digital tools are neutral; their appropriateness depends on how they serve design goals. Abstraction of principles, not literal copying; cultural authenticity doesn't require visual replication. Filipino identity as dynamic and evolving, not static. Using bamboo and bahay kubo principles while leveraging parametric tools for optimization represents creative synthesis—maintaining cultural roots while responding to contemporary possibilities. This is continuation of the identity conversation, not betrayal of it.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-008-04-q06",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:55.809916+00:00",
+      "updated_at": "2026-05-06T15:09:20.25785+00:00",
+      "content_hash": "sha256:b4385c9dba9af92f0407bdf3419e82c7d54465ee782dfd7c1e9f34fe03949f5f"
     },
     {
       "question_id": "ff7f3d74-8d05-4ac8-863f-560ebd7a978f",
@@ -140,7 +293,7 @@
         "d": "Mañosa (National Artist) came later and represented materials approach.",
         "correct": "Juan Nakpil, named first National Artist for Architecture in 1973, founded the project of establishing distinctively Filipino architectural identity. His prolific output (200 buildings) demonstrated that Filipino identity could sustain an entire career."
       },
-      "explanation": null,
+      "explanation": "Pablo Antonio was an important Art Deco pioneer but not first National Artist for Architecture. Locsin (National Artist 1990) represented modernist synthesis approach. Mañosa (National Artist) came later and represented materials approach. Juan Nakpil, named first National Artist for Architecture in 1973, founded the project of establishing distinctively Filipino architectural identity. His prolific output (200 buildings) demonstrated that Filipino identity could sustain an entire career.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -154,8 +307,8 @@
       "model_id": "ale-theo-008-04-q01",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:42fd5a979c8184aabc298aa143435d8a013c041749533277c9007680af18eeb1"
+      "updated_at": "2026-05-06T15:09:19.709451+00:00",
+      "content_hash": "sha256:b495056fe90094a2483213b242af3dc8f18b746468997625192a9e97f442f53c"
     },
     {
       "question_id": "68dd059c-bbbb-4abe-befd-a68b8bd4e014",
@@ -191,7 +344,7 @@
         "d": "Nakpil established identity through formalism and cultural consciousness, not material advocacy.",
         "correct": "Francisco Mañosa's philosophy was 'I design Filipino, nothing else.' He used indigenous materials not decoratively but structurally, in works like the Coconut Palace and Amanpulo Resort. This approach demonstrated that cultural authenticity could achieve international acclaim."
       },
-      "explanation": null,
+      "explanation": "Locsin pursued modernist synthesis; material specificity was secondary to formal language. Mapua was first licensed Filipino architect, not primarily known for materials advocacy. Nakpil established identity through formalism and cultural consciousness, not material advocacy. Francisco Mañosa's philosophy was 'I design Filipino, nothing else.' He used indigenous materials not decoratively but structurally, in works like the Coconut Palace and Amanpulo Resort. This approach demonstrated that cultural authenticity could achieve international acclaim.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -205,110 +358,8 @@
       "model_id": "ale-theo-008-04-q04",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4be00a1f6fdd45fec94905d6449f7e227292895f6cc9442863b56d22d0eb0f63"
-    },
-    {
-      "question_id": "5cc84913-5c62-4492-812f-b50d88c202a9",
-      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
-      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "states that the future of Filipino architectural identity involves integrating climate crisis, digital tools, global supply chains, and rapid urbanization. How should emerging architects understand their role in this evolving conversation?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Identity conversation is concluded; contemporary architects should focus purely on technical solutions to current problems, ignoring cultural and historical contexts"
-        },
-        {
-          "id": "b",
-          "text": "Emerging architects should abandon all reference to tradition and adopt whatever global trends are fashionable, regardless of local relevance or sustainability"
-        },
-        {
-          "id": "c",
-          "text": "Emerging architects should creatively engage established identity principles while responding to contemporary conditions, asking how tradition, sustainability, digital capability, and cultural values can synthesize to produce distinctively Filipino solutions to new challenges"
-        },
-        {
-          "id": "d",
-          "text": "Emerging architects should simply follow established precedents from Nakpil, Mañosa, and Locsin without modification, adhering strictly to past methodologies"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Technical problem-solving without cultural grounding risks disconnection from what makes Filipino architecture distinctive.",
-        "b": "Fashion-following would erase the conversations previous architects established.",
-        "d": "Simple replication would be cultural stasis, not authentic identity.",
-        "correct": "Identity as 'ongoing conversation,' not concluded project. Emerging architects inherit the foundation (Nakpil's cultural consciousness, Mañosa's material integrity, Locsin's synthesis) but must ask new questions: Can digital architecture be Filipino? How do indigenous materials sustain under climate pressure? This creative extension is their professional responsibility."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "INT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ale-theo-008-04-q09",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b1970a54cbfd0594550835584ad73c17d734c8b709089a7ec57ceb6fbf87793e"
-    },
-    {
-      "question_id": "ac98daa2-80de-4ac2-b9d7-a6e886fcaa16",
-      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
-      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "What is the bahay kubo, and why is it significant in Filipino architectural identity?",
-      "options": [
-        {
-          "id": "a",
-          "text": "An urban housing project built by the government, aimed at providing affordable housing solutions"
-        },
-        {
-          "id": "b",
-          "text": "A modern apartment building style developed in the 1960s, reflecting the architectural trends of that era"
-        },
-        {
-          "id": "c",
-          "text": "A Spanish colonial house type used only for historical preservation, representing the colonial past of the Philippines"
-        },
-        {
-          "id": "d",
-          "text": "The traditional nipa hut characterized by elevated structure, deep overhangs, natural ventilation, and local materials; it became a design reference point for contemporary Filipino architects seeking cultural grounding"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Bahay kubo is not a modern government program; it's traditional architecture.",
-        "b": "Bahay kubo is traditional vernacular, not modern apartment type.",
-        "c": "While preserved historically, its significance is conceptual for contemporary design.",
-        "correct": "The bahay kubo is a centuries-old vernacular form that contemporary Filipino architects reference for design principles: elevation for ventilation, deep overhangs managing tropical weather, responsive materials. It's not about literal copying but extracting principles applicable to modern design."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "DEF"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ale-theo-008-04-q03",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1f0f9164532884732b8c0edc8c5e0327f4d489b0f201a75c10530230525c9d14"
+      "updated_at": "2026-05-06T15:09:19.843818+00:00",
+      "content_hash": "sha256:487887e574bcf890c1d50d499fe82d60883b696564cd1c70ca22f92c9ee46e88"
     },
     {
       "question_id": "f1568d63-148e-4440-b7c7-80ee5d9590b6",
@@ -362,57 +413,6 @@
       "content_hash": "sha256:0c37dcff989dd35b68fc0b2bbf3324d997aa4e0749b793623b808a9c476bb9e4"
     },
     {
-      "question_id": "e08706ec-8742-4aef-845d-c92b86eabeb3",
-      "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
-      "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
-      "text": "A contemporary Filipino architect is designing a residential complex using bamboo for primary structural elements, referencing bahay kubo principles for ventilation and spatial organization, and digital parametric tools to optimize structural geometry. From the perspective of the ongoing identity conversation, is this approach coherent with established Filipino architectural values?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Yes, but only if no digital tools are used; technology and tradition are incompatible, which is a debated perspective"
-        },
-        {
-          "id": "b",
-          "text": "No; using digital tools violates traditional Filipino principles and represents cultural selling-out, according to some purists"
-        },
-        {
-          "id": "c",
-          "text": "Yes; this demonstrates evolutionary engagement with tradition—maintaining material and spatial principles while adopting contemporary tools that enable innovation and precision not available to earlier architects"
-        },
-        {
-          "id": "d",
-          "text": "No; bahay kubo reference is superficial unless the building looks identical to traditional structures, which is a narrow interpretation"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Tradition and digital tools are not inherently opposed; their integration can be generative.",
-        "b": "Digital tools are neutral; their appropriateness depends on how they serve design goals.",
-        "d": "Abstraction of principles, not literal copying; cultural authenticity doesn't require visual replication.",
-        "correct": "Filipino identity as dynamic and evolving, not static. Using bamboo and bahay kubo principles while leveraging parametric tools for optimization represents creative synthesis—maintaining cultural roots while responding to contemporary possibilities. This is continuation of the identity conversation, not betrayal of it."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ale-theo-008-04-q06",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d9877d53bceb68b0fd00dc13838a2d136732548e8d16e42176ab04e1d73e8ad5"
-    },
-    {
       "question_id": "f6489584-a0d5-4e79-b617-527ca0ff3211",
       "article_id": "ee50e412-f6d8-45f0-9016-55785c60773f",
       "topic_id": "c585ad1d-f623-42f7-b7c6-9c3ccd58c8ed",
@@ -446,7 +446,7 @@
         "d": "Design identity operates across scales; furniture and interiors are equally legitimate expressions of Filipino values.",
         "correct": "Calma's significance is demonstrating that Filipino identity is coherent across scales and disciplines. Consistent principles (modernist clarity, material responsiveness, functional integrity) apply whether designing buildings, interiors, or furniture. This shows identity is philosophical orientation, not superficial material choice or formal style."
       },
-      "explanation": null,
+      "explanation": "Modernism is compatible with cultural specificity when pursued with genuine conviction. Calma's influence extended through evolutionary development, not static repetition; the identity conversation continued across his career. Design identity operates across scales; furniture and interiors are equally legitimate expressions of Filipino values. Calma's significance is demonstrating that Filipino identity is coherent across scales and disciplines. Consistent principles (modernist clarity, material responsiveness, functional integrity) apply whether designing buildings, interiors, or furniture. This shows identity is philosophical orientation, not superficial material choice or formal style.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -460,8 +460,8 @@
       "model_id": "ale-theo-008-04-q08",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:55.809916+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1bad9abafe03061d4e2b04fd95886481e28ef0a862eb2e89a637f71c77a62391"
+      "updated_at": "2026-05-06T15:09:20.393336+00:00",
+      "content_hash": "sha256:40ae4aca50ccbc04af8780fdabafe6dcbe500382018094d9e2fc78a26ab12263"
     },
     {
       "question_id": "f869900e-f50f-4c1d-99c9-6f165eab6220",

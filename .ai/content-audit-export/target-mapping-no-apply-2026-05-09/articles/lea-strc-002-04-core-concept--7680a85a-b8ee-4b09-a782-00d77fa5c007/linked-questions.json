@@ -1,0 +1,509 @@
+{
+  "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:aa6d17a3c5025dfe050e78764adf3a2e57c169bac836e92485130d8abdbba506",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "08787dff-085a-46c6-9592-85eafca7d1dd",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "In a seismic zone, a non-bearing curtain wall is attached to a moment-resisting frame. What is the primary structural concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The wall must carry the weight of the floors above, which requires additional structural support"
+        },
+        {
+          "id": "b",
+          "text": "The wall and its anchors must resist out-of-plane wind and seismic forces and accommodate building drift"
+        },
+        {
+          "id": "c",
+          "text": "The wall must be designed as a shear wall, providing lateral stability to the structure"
+        },
+        {
+          "id": "d",
+          "text": "Non-bearing walls are exempt from seismic design, as they do not contribute to the building's structural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "By definition, a non-bearing wall does not support the floors above.",
+        "c": "Shear walls are part of the lateral force-resisting system; a curtain wall is a non-structural component.",
+        "d": "NSCP Chapter 2 (Loads) and Chapter 6 (Wind) explicitly require seismic and wind design for non-structural components like cladding.",
+        "correct": "Curtain walls must be designed to 'drift' with the building frame during an earthquake. The anchors must prevent the wall from falling off (out-of-plane forces) while allowing for horizontal movement relative to the floors.",
+        "takeaway": "Curtain walls must accommodate inter-story drift and resist lateral pressures."
+      },
+      "explanation": "By definition, a non-bearing wall does not support the floors above. Shear walls are part of the lateral force-resisting system; a curtain wall is a non-structural component. NSCP Chapter 2 (Loads) and Chapter 6 (Wind) explicitly require seismic and wind design for non-structural components like cladding. Curtain walls must be designed to 'drift' with the building frame during an earthquake. The anchors must prevent the wall from falling off (out-of-plane forces) while allowing for horizontal movement relative to the floors. Curtain walls must accommodate inter-story drift and resist lateral pressures.",
+      "code_citation": "NSCP 2015 Section 208",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-05-06T15:15:20.151057+00:00",
+      "content_hash": "sha256:159eee691818f7e5c976cd341eafc5370c6e5dd43bd81952e6bb747bb7faaad2"
+    },
+    {
+      "question_id": "9f1fea3d-8917-489b-98ee-71ca19c3a4e2",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "What distinguishes a parapet wall from other wall types?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A parapet wall is any exterior wall of a building, typically designed to provide additional structural support"
+        },
+        {
+          "id": "b",
+          "text": "A parapet wall is the portion of a wall that extends above the roofline"
+        },
+        {
+          "id": "c",
+          "text": "A parapet wall is always load-bearing, ensuring stability against lateral forces"
+        },
+        {
+          "id": "d",
+          "text": "A parapet wall carries only seismic loads, specifically designed to resist earthquake forces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Exterior walls include the entire building envelope; a parapet is specifically the portion above the roof.",
+        "c": "Parapets are typically non-bearing as they do not support floor or roof loads above them.",
+        "d": "Parapets must resist both wind and seismic lateral forces.",
+        "correct": "A parapet is defined as that part of any wall entirely above the roof line. It is exposed to environmental loads (wind) on both sides and must be designed as a cantilever.",
+        "takeaway": "Parapet = portion of wall above the roof line."
+      },
+      "explanation": "Exterior walls include the entire building envelope; a parapet is specifically the portion above the roof. Parapets are typically non-bearing as they do not support floor or roof loads above them. Parapets must resist both wind and seismic lateral forces. A parapet is defined as that part of any wall entirely above the roof line. It is exposed to environmental loads (wind) on both sides and must be designed as a cantilever. Parapet = portion of wall above the roof line.",
+      "code_citation": "NSCP 2015 Section 202",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-05-06T15:15:20.295328+00:00",
+      "content_hash": "sha256:f35f80f2e3127338a34c34446e309aaec54b2df828a9f8d7a63328addc26f6c2"
+    },
+    {
+      "question_id": "d00a6b51-8903-4ebb-9596-d02c98a2e132",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "What is the bearing wall classification threshold per NSCP 2015?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Greater than 1.45 kN/m superimposed load"
+        },
+        {
+          "id": "b",
+          "text": "Greater than 2.90 kN/m superimposed load"
+        },
+        {
+          "id": "c",
+          "text": "Any vertical load in addition to its own weight"
+        },
+        {
+          "id": "d",
+          "text": "Only loads exceeding the weight of the wall itself"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.45 kN/m was the legacy NSCP 2010 threshold for light-frame bearing walls.",
+        "b": "2.90 kN/m was the legacy NSCP 2010 threshold for masonry/concrete bearing walls.",
+        "d": "The threshold is not a comparison to wall weight, but the presence of any superimposed vertical load.",
+        "correct": "The NSCP 2015 simplified the definition of a bearing wall in Section 202 to any wall supporting any vertical load in addition to its own weight, removing the specific kN/m thresholds found in previous editions.",
+        "takeaway": "NSCP 2015 removed numeric load thresholds for bearing wall definitions."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:110db85f2ab788ba83ec77e81fddf5b6267e6960938233736c2a1cd048efa903"
+    },
+    {
+      "question_id": "2f75d983-8b44-4bdf-a52b-300084fb59d2",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "A cavity wall has an air space of 120 mm. Does this comply with NSCP 2015 limits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, any air space larger than 50 mm is acceptable, provided it does not exceed the maximum allowable thickness for structural stability"
+        },
+        {
+          "id": "b",
+          "text": "No, the maximum thickness of the cavity is 115 mm"
+        },
+        {
+          "id": "c",
+          "text": "No, the maximum thickness is 75 mm, which is the standard for ensuring adequate thermal insulation and moisture control"
+        },
+        {
+          "id": "d",
+          "text": "Yes, if the wall is reinforced concrete, as this material can accommodate larger cavity spaces without compromising structural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While it satisfies the 50 mm minimum, it fails the 115 mm maximum.",
+        "c": "75 mm is a common practical width but not the legal maximum.",
+        "d": "Cavity wall requirements in Chapter 7 specifically apply to masonry construction.",
+        "correct": "Per NSCP 2015 Section 707.1.4.2, the maximum thickness of the cavity (air space) is 115 mm. A design of 120 mm exceeds this limit and would require special structural justification.",
+        "takeaway": "NSCP 2015 Cavity Wall Air Space: Maximum 115 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 707.1.4.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5a3f9acaf2a12c803586730ab19bd0f5c2484cbd0fa68ca21c631c3661670034"
+    },
+    {
+      "question_id": "1c4b9ae6-aef2-468e-8d84-159ccaffa478",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "A concrete masonry wall supports a 0.5 kN/m superimposed load. How is this wall classified per NSCP 2015?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-bearing because the load is very small"
+        },
+        {
+          "id": "b",
+          "text": "Bearing wall"
+        },
+        {
+          "id": "c",
+          "text": "Curtain wall"
+        },
+        {
+          "id": "d",
+          "text": "Non-structural partition"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is a common error based on legacy codes that had numeric minimums (like 2.90 kN/m). 2015 removes these minimums.",
+        "c": "A curtain wall is an exterior non-bearing wall supported by the building frame, not supporting superimposed loads.",
+        "d": "A partition wall is interior and typically non-bearing.",
+        "correct": "Under NSCP 2015 Section 202, any wall supporting any vertical load in addition to its own weight is a bearing wall. Even a small superimposed load of 0.5 kN/m triggers this classification.",
+        "takeaway": "If it carries any extra weight, it's legally a bearing wall."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ebc9e41b5d965e3381057085906fc4c0b5f5c52fe9bb2c3248ad6ab5e9d779cd"
+    },
+    {
+      "question_id": "bcc18f85-6c59-4dd7-8c8d-5f92b20a8e80",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "In retaining wall design, what is the difference between a counterfort and a buttress?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A counterfort is on the outer face; a buttress is on the inner face, which is a common misconception in structural design."
+        },
+        {
+          "id": "b",
+          "text": "A counterfort is on the inner (soil) face; a buttress is on the outer (exposed) face"
+        },
+        {
+          "id": "c",
+          "text": "Counterforts are for masonry; buttresses are for timber, which is not typically the case in modern construction practices."
+        },
+        {
+          "id": "d",
+          "text": "Counterforts resist gravity; buttresses resist wind, which oversimplifies their structural roles."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This reverses the correct orientation. Buttresses are visible; counterforts are buried.",
+        "b": "This is the standard engineering distinction based on which side of the wall the support rib is placed.",
+        "c": "Both are common in reinforced concrete retaining wall systems.",
+        "d": "Both are used to resist the lateral earth pressure of the retained soil.",
+        "correct": "Counterforts are structural ribs located on the soil side (back) of the wall and are in tension. Buttresses are located on the front (exposed) side and are in compression.",
+        "takeaway": "Counterfort = Soil side (Tension); Buttress = Exposed side (Compression)."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 413",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e47dd0c9dbae0099c5cf2c49277dc8c6477fd6a3907433a88fda53e409567d5a"
+    },
+    {
+      "question_id": "269078be-1120-48f1-b70c-0af9dc1ca40c",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "A wood stud wall supports a superimposed load of 2.0 kN/m. Is this wall classified as bearing or non-bearing per NSCP 2015?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-bearing (superimposed load is below numeric code thresholds), which is a common misinterpretation"
+        },
+        {
+          "id": "b",
+          "text": "Bearing (it supports vertical load in addition to its own weight)"
+        },
+        {
+          "id": "c",
+          "text": "Neither—walls are classified only by lateral resistance, which is not accurate for vertical load considerations"
+        },
+        {
+          "id": "d",
+          "text": "Bearing only if the wall is a shear wall, which is a misunderstanding of the classification criteria"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Numeric thresholds (like the 1.45 kN/m limit from NSCP 2010) are no longer used in the 2015 definition; any superimposed load triggers bearing status.",
+        "c": "Wall classification is primarily determined by vertical load transmission (bearing vs. non-bearing) and lateral load resistance.",
+        "d": "A wall can be bearing without being a shear wall. Bearing status refers to gravity loads, while shear status refers to lateral loads.",
+        "correct": "Per NSCP 2015 Section 202, a Bearing Wall is defined as any wall that supports any vertical load in addition to its own weight. Since the wall supports a superimposed load of 2.0 kN/m, it is classified as a bearing wall.",
+        "takeaway": "NSCP 2015 Definition: Bearing wall = supports any vertical load + own weight."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1f14a2296d6ce775d5d4cd8893406bda12ce4180c3d0ba7babbc353e0e90b3b6"
+    },
+    {
+      "question_id": "6214cf66-8bc9-4063-bd57-9b7797e96d2d",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "Why are bearing and non-bearing walls designed differently?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bearing walls must resist axial compression from gravity loads; non-bearing walls carry only self-weight and lateral loads"
+        },
+        {
+          "id": "b",
+          "text": "Non-bearing walls are not required to resist wind loads, which means they can be constructed with lighter materials and simpler connections"
+        },
+        {
+          "id": "c",
+          "text": "Bearing walls must be thicker than 200 mm by law, especially in high-rise buildings where additional stability is required"
+        },
+        {
+          "id": "d",
+          "text": "Only bearing walls require foundation anchoring, as they transfer significant loads to the foundation, unlike non-bearing walls"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "All exterior walls, including non-bearing ones, must be designed to resist wind pressure.",
+        "c": "Thickness depends on structural calculation and material (e.g., 150 mm for concrete), not a flat 200 mm rule for all types.",
+        "d": "All walls must be properly anchored to the building frame or foundation for stability.",
+        "correct": "Bearing walls are structural members designed to transmit vertical loads from the roof or upper floors to the foundation. Non-bearing walls are primarily partitions or cladding that must only support their own mass and resist out-of-plane wind or seismic loads.",
+        "takeaway": "Bearing walls transmit superimposed gravity loads; non-bearing walls do not."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:755afac02c14e69ea437679881588ca4d6f2933f236973f038073497260ea6be"
+    },
+    {
+      "question_id": "72946c68-ab67-4175-8096-a859728f31b0",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "A cavity wall is designed with an air space of 40 mm. Does this comply with NSCP 2015 limits for masonry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 40 mm is the standard required width for most applications, ensuring adequate insulation and moisture control."
+        },
+        {
+          "id": "b",
+          "text": "No, the minimum air space (cavity thickness) is 50 mm"
+        },
+        {
+          "id": "c",
+          "text": "No, the maximum air space is 25 mm, which is critical for structural stability and thermal performance."
+        },
+        {
+          "id": "d",
+          "text": "Yes, provided the wall is less than 3 meters high, which allows for some flexibility in design."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "40 mm is below the legal minimum required for moisture control and drainage.",
+        "c": "The maximum thickness is actually 115 mm, not 25 mm.",
+        "d": "The 50 mm minimum applies regardless of the wall height to ensure proper drainage and air circulation.",
+        "correct": "Per NSCP 2015 Section 707.1.4.2, the minimum thickness of the cavity (air space) in a cavity wall shall be 50 mm. A design of 40 mm is insufficient to satisfy this requirement.",
+        "takeaway": "NSCP 2015 Cavity Wall Air Space: Minimum 50 mm."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 707.1.4.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e4a52ef7d14a66b1c17fa4d1f51e71f20d6cc497ec189d630f427a6778d8adfd"
+    },
+    {
+      "question_id": "3889466b-4987-4d4c-87dc-b218207ebb1a",
+      "article_id": "7680a85a-b8ee-4b09-a782-00d77fa5c007",
+      "topic_id": "6f847f27-17d4-46cc-a4f5-9386c7906930",
+      "text": "A designer provides a wood stud wall that carries a 0.2 kN/m load from a decorative ceiling. Is this wall bearing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because the load is purely decorative and does not contribute to structural support."
+        },
+        {
+          "id": "b",
+          "text": "Yes, it supports vertical load in addition to its own weight"
+        },
+        {
+          "id": "c",
+          "text": "No, wood walls must carry at least 1.45 kN/m to be bearing, according to specific building codes."
+        },
+        {
+          "id": "d",
+          "text": "Only if the wall is taller than 2.4 meters, which is a common misconception about bearing walls."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The nature of the load (decorative vs. structural) does not change the classification; only the presence of load matters.",
+        "c": "1.45 kN/m is the legacy threshold from NSCP 2010 and is no longer part of the 2015 definition.",
+        "d": "Height is not a factor in the basic bearing/non-bearing classification.",
+        "correct": "NSCP 2015 Section 202 defines a bearing wall by the presence of any superimposed vertical load. Regardless of the load source (decorative or structural), the addition of 0.2 kN/m classifies it as a bearing wall.",
+        "takeaway": "Legacy load thresholds (1.45 and 2.90) are frequently tested as 'trap' answers; the 2015 code uses a qualitative trigger."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 202",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-002-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5b49238feb0a1ebc1d8c3887f61879f353ba4951643850891e34fe689f406560"
+    }
+  ]
+}

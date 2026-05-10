@@ -1,9 +1,109 @@
 {
   "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:79655ec4da5b363e517f55693b608a4f95cbe0a6ab6da5d9cb4187dfded3fa3c",
+  "linked_questions_hash": "sha256:a234f81deb56c742ab5fdac91c5c6cc6b5a16e7361a9b01688cfa23c5f39189f",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "cee7b716-cd29-4ef1-9e5c-214d6eb8be3b",
+      "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+      "topic_id": "f9525e21-ba0e-4621-8d2e-2a27cbb42b52",
+      "text": "A specification for interior partition walls reads: 'Or equivleant materials of equal or better quality may be used.' Which correction is most necessary to comply with Philippine specification standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Replace 'equal or better quality' with objective, measurable criteria such as material composition, fire rating, sound transmission class, and durability."
+        },
+        {
+          "id": "b",
+          "text": "Remove the 'or equivalent' clause entirely and mandate the specified product, ensuring compliance with the original design intent"
+        },
+        {
+          "id": "c",
+          "text": "Replace 'equal or better' with 'equal in all respects,' maintaining consistency with the specified performance standards"
+        },
+        {
+          "id": "d",
+          "text": "Add a cost limit to control contractor substitutions, preventing budget overruns due to material changes"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Removing the clause reduces flexibility but doesn't solve the underlying problem of vague language in the current specification.",
+        "c": "'Equal in all respects' is still subjective without stating the specific respects being compared.",
+        "d": "Cost limits control price, not performance conformance.",
+        "correct": "Subjective phrases like 'equal or better quality' create disputes because 'quality' is undefined. Objective criteria (STC rating, fire rating per ASTM, moisture resistance per ASTM D1141) are measurable and testable.",
+        "takeaway": "Philippine architects must avoid subjective language in 'or equal' clauses. The standard of equality must be objective and verifiable through testing or documentation."
+      },
+      "explanation": "Removing the clause reduces flexibility but doesn't solve the underlying problem of vague language in the current specification. 'Equal in all respects' is still subjective without stating the specific respects being compared. Cost limits control price, not performance conformance. Subjective phrases like 'equal or better quality' create disputes because 'quality' is undefined. Objective criteria (STC rating, fire rating per ASTM, moisture resistance per ASTM D1141) are measurable and testable. Philippine architects must avoid subjective language in 'or equal' clauses. The standard of equality must be objective and verifiable through testing or documentation.",
+      "code_citation": "CSI Specifying with Standards; RA 9266 (verify specific provisions on specification clarity); Philippine specification best practices.",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T15:42:49.520106+00:00",
+      "content_hash": "sha256:925b656f07b364c9b3ca73de74c1af32ba7b8247505ec8f8c7fee55ac29f9bb0"
+    },
+    {
+      "question_id": "f31d96d3-7317-4edf-a024-24ee4c6bff8c",
+      "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
+      "topic_id": "f9525e21-ba0e-4621-8d2e-2a27cbb42b52",
+      "text": "Which type of specification names a specific product but allows substitution if the alternative meets stated equality criteria?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Open proprietary specification"
+        },
+        {
+          "id": "b",
+          "text": "Prescriptive specification"
+        },
+        {
+          "id": "c",
+          "text": "Performance specification"
+        },
+        {
+          "id": "d",
+          "text": "Reference standard specification"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Prescriptive specs mandate the specific product with no substitution option.",
+        "c": "Performance specs define outcomes without naming products; contractor selects the means.",
+        "d": "Reference standard specs defer details to published standards, not specific products.",
+        "correct": "Open proprietary specifications identify a preferred product and include 'or equal' clauses permitting substitution when equality criteria are met objectively. Closed proprietary specifications name a specific product and prohibit substitutions.",
+        "takeaway": "Open proprietary specs balance certainty (named product) with flexibility (or equal option). This is the most common specification type in Philippine practice."
+      },
+      "explanation": "Prescriptive specs mandate the specific product with no substitution option. Performance specs define outcomes without naming products; contractor selects the means. Reference standard specs defer details to published standards, not specific products. Open proprietary specifications identify a preferred product and include 'or equal' clauses permitting substitution when equality criteria are met objectively. Closed proprietary specifications name a specific product and prohibit substitutions. Open proprietary specs balance certainty (named product) with flexibility (or equal option). This is the most common specification type in Philippine practice.",
+      "code_citation": "RA 9266 Architect Responsibilities; CSI MasterFormat specification types.",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-009-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T15:42:49.652788+00:00",
+      "content_hash": "sha256:8cd9123b04d1af50d51f7f58fc1dc5c4f4d9d71af100cdadb6b54e7957959658"
+    },
     {
       "question_id": "192e884c-c76e-4a6a-ad14-5594b7c40a7c",
       "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
@@ -89,7 +189,7 @@
         "correct": "Terms like 'high-strength' are subjective and vague. A performance specification must state: '28-day compressive strength per ASTM C39 of 42 MPa minimum.' Without numeric criteria, disputes over conformance are inevitable.",
         "takeaway": "Descriptive or vague specifications create disputes. Always state numeric values with reference standards (ASTM C39, NSCP) and testing frequency."
       },
-      "explanation": null,
+      "explanation": "The contractor's selection within ACI standards is reasonable; the problem is the architect's vague specification, not the contractor's compliance. Communication issues between engineer and architect are secondary; the specification should resolve this independently. The supplier delivered ACI Class A concrete (35 MPa), which is a defined standard; the problem is the specification didn't define 'high-strength.' Terms like 'high-strength' are subjective and vague. A performance specification must state: '28-day compressive strength per ASTM C39 of 42 MPa minimum.' Without numeric criteria, disputes over conformance are inevitable. Descriptive or vague specifications create disputes. Always state numeric values with reference standards (ASTM C39, NSCP) and testing frequency.",
       "code_citation": "CSI MasterFormat Specification Types; ASTM C39 Standard Test Method for Compressive Strength.",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -101,8 +201,8 @@
       "model_id": "ALE-MATL-009-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b601e86a1a7013b18a802203ab2ff46f8583009addc3bce19736717b30f181a2"
+      "updated_at": "2026-05-06T15:42:49.248977+00:00",
+      "content_hash": "sha256:2bba383d0b90eb4253d74435a3b18406efc2bddfff580440a7a510b0f2cc46bb"
     },
     {
       "question_id": "4dc896b9-2c05-45d5-a130-d3b9ca4dd0eb",
@@ -239,7 +339,7 @@
         "correct": "Citing a standard (ASHRAE 62.1) is not sufficient. The architect must also state measurable acceptance criteria: minimum SEER rating (e.g., 13), CFM output, filtration efficiency (MERV rating), and noise level (dB). The specification delegates too much judgment to the standards without stating how the contractor will demonstrate compliance.",
         "takeaway": "Reference standard specifications must still include project-specific performance metrics. Standards are tools, not substitutes for specification completeness."
       },
-      "explanation": null,
+      "explanation": "Published standards provide foundation but don't eliminate the need for specific project criteria. The architect must bridge the standard to the project needs. Prescriptive specs naming brands are appropriate for certain items but not required here; the problem is lack of measurable criteria. ASHRAE 62.1 covers indoor air quality ventilation; it doesn't define energy efficiency (SEER) or noise levels. The architect must specify these independently. Citing a standard (ASHRAE 62.1) is not sufficient. The architect must also state measurable acceptance criteria: minimum SEER rating (e.g., 13), CFM output, filtration efficiency (MERV rating), and noise level (dB). The specification delegates too much judgment to the standards without stating how the contractor will demonstrate compliance. Reference standard specifications must still include project-specific performance metrics. Standards are tools, not substitutes for specification completeness.",
       "code_citation": "CSI Specifying with Standards; ASHRAE 62.1 Standard.",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -251,58 +351,8 @@
       "model_id": "ALE-MATL-009-01-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:32c5ea1ca69c9ad609265c66dd392d167d10138ac484e6a99bfde23596a7ffe2"
-    },
-    {
-      "question_id": "cee7b716-cd29-4ef1-9e5c-214d6eb8be3b",
-      "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
-      "topic_id": "f9525e21-ba0e-4621-8d2e-2a27cbb42b52",
-      "text": "A specification for interior partition walls reads: 'Or equivleant materials of equal or better quality may be used.' Which correction is most necessary to comply with Philippine specification standards?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Replace 'equal or better quality' with objective, measurable criteria such as material composition, fire rating, sound transmission class, and durability."
-        },
-        {
-          "id": "b",
-          "text": "Remove the 'or equivalent' clause entirely and mandate the specified product, ensuring compliance with the original design intent"
-        },
-        {
-          "id": "c",
-          "text": "Replace 'equal or better' with 'equal in all respects,' maintaining consistency with the specified performance standards"
-        },
-        {
-          "id": "d",
-          "text": "Add a cost limit to control contractor substitutions, preventing budget overruns due to material changes"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Removing the clause reduces flexibility but doesn't solve the underlying problem of vague language in the current specification.",
-        "c": "'Equal in all respects' is still subjective without stating the specific respects being compared.",
-        "d": "Cost limits control price, not performance conformance.",
-        "correct": "Subjective phrases like 'equal or better quality' create disputes because 'quality' is undefined. Objective criteria (STC rating, fire rating per ASTM, moisture resistance per ASTM D1141) are measurable and testable.",
-        "takeaway": "Philippine architects must avoid subjective language in 'or equal' clauses. The standard of equality must be objective and verifiable through testing or documentation."
-      },
-      "explanation": null,
-      "code_citation": "CSI Specifying with Standards; RA 9266 (verify specific provisions on specification clarity); Philippine specification best practices.",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-009-01-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2e04145351a697dc318c35ad17ac0e23e4caea31c7f5b3c726fc8799bc01d135"
+      "updated_at": "2026-05-06T15:42:49.374754+00:00",
+      "content_hash": "sha256:a37c7a0d008ae4b1908b9dfbe6f0bb074fe499df57326969e97d48ced368720c"
     },
     {
       "question_id": "84244e30-e30a-41df-80ec-6e06b830ebc2",
@@ -403,56 +453,6 @@
       "created_at": "2026-03-23T19:27:28.926909+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:47ad4a51192a5451a6f6880b92bb2106af56b552cbf2737c2ae5a00bc275583a"
-    },
-    {
-      "question_id": "f31d96d3-7317-4edf-a024-24ee4c6bff8c",
-      "article_id": "f6bd1cea-ecd5-4587-80ba-3015beb4b820",
-      "topic_id": "f9525e21-ba0e-4621-8d2e-2a27cbb42b52",
-      "text": "Which type of specification names a specific product but allows substitution if the alternative meets stated equality criteria?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Open proprietary specification"
-        },
-        {
-          "id": "b",
-          "text": "Prescriptive specification"
-        },
-        {
-          "id": "c",
-          "text": "Performance specification"
-        },
-        {
-          "id": "d",
-          "text": "Reference standard specification"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Prescriptive specs mandate the specific product with no substitution option.",
-        "c": "Performance specs define outcomes without naming products; contractor selects the means.",
-        "d": "Reference standard specs defer details to published standards, not specific products.",
-        "correct": "Open proprietary specifications identify a preferred product and include 'or equal' clauses permitting substitution when equality criteria are met objectively. Closed proprietary specifications name a specific product and prohibit substitutions.",
-        "takeaway": "Open proprietary specs balance certainty (named product) with flexibility (or equal option). This is the most common specification type in Philippine practice."
-      },
-      "explanation": null,
-      "code_citation": "RA 9266 Architect Responsibilities; CSI MasterFormat specification types.",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-009-01-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.926909+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:397e27c17c86fc93708deeadc622131ebf9d981b2507b76ec2bf803a064b43e5"
     },
     {
       "question_id": "dc6bdc0a-f45d-4283-a195-d4feb0ac5c16",

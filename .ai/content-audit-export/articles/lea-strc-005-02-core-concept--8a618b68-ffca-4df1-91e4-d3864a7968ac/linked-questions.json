@@ -1,7 +1,7 @@
 {
   "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:bb04655c5bc8ecf9cb83553e2570e03b8b90dc55ab14072c0511f656617d58be",
+  "linked_questions_hash": "sha256:ec79b76ac25f4fef0817f78bf2dd58a3f09b62755981d09cad2de7d47056d361",
   "question_count": 10,
   "questions": [
     {
@@ -39,7 +39,7 @@
         "correct": "Flexure is a ductile failure mode; the steel reinforcement yields and elongates before the concrete crushes, providing visible warning. The highest φ factor (0.90) reflects this ductility.",
         "takeaway": "Review the correct answer and associated code provision."
       },
-      "explanation": null,
+      "explanation": "φ = 0.70 applies to tied axial compression and bearing, not flexure. φ = 0.75 applies to spirally reinforced axial compression. φ = 0.85 applies to shear, torsion, and post-tensioned anchorage. Flexure is a ductile failure mode; the steel reinforcement yields and elongates before the concrete crushes, providing visible warning. The highest φ factor (0.90) reflects this ductility. Review the correct answer and associated code provision.",
       "code_citation": "NSCP 2015, Section 4.2, Strength Reduction Factors",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -51,8 +51,58 @@
       "model_id": "ALE-STRC-005-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.277828+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6c6e7e504483e826dbab8e8aedd888772226b243911581b9fc034500a8ec68f0"
+      "updated_at": "2026-05-06T15:53:16.675233+00:00",
+      "content_hash": "sha256:dd8a22111b8616acc7a9d0e4926d678a6dd975f1c7a7fba28e1ee961bc93cb3e"
+    },
+    {
+      "question_id": "8a104f41-185d-4ab8-8f19-5906b53eb21e",
+      "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
+      "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
+      "text": "For a reinforced concrete column with rectangular tie reinforcement, what is the strength reduction factor for axial compression?",
+      "options": [
+        {
+          "id": "a",
+          "text": "φ = 0.75"
+        },
+        {
+          "id": "b",
+          "text": "φ = 0.70"
+        },
+        {
+          "id": "c",
+          "text": "φ = 0.85"
+        },
+        {
+          "id": "d",
+          "text": "φ = 0.90"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "φ = 0.75 applies to spirally reinforced (not tied) columns.",
+        "c": "φ = 0.85 applies to shear and torsion.",
+        "d": "φ = 0.90 applies to flexure and tension.",
+        "correct": "Tied columns have rectangular or square ties that confine the concrete core, but less effectively than spiral reinforcement. The lower φ = 0.70 reflects the reduced ductility and brittleness of this failure mode.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": "φ = 0.75 applies to spirally reinforced (not tied) columns. φ = 0.85 applies to shear and torsion. φ = 0.90 applies to flexure and tension. Tied columns have rectangular or square ties that confine the concrete core, but less effectively than spiral reinforcement. The lower φ = 0.70 reflects the reduced ductility and brittleness of this failure mode. Review the correct answer and associated code provision.",
+      "code_citation": "NSCP 2015, Section 409.2.2, Strength Reduction Factors for Compression",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T15:53:17.683166+00:00",
+      "content_hash": "sha256:2fa04c13429e94ba6fafcbe43adb0a1ccb89d9590f2e3e1ac0119a359a9c3823"
     },
     {
       "question_id": "869dc89f-4616-4130-89d3-8e3c27fb9947",
@@ -89,7 +139,7 @@
         "correct": "The continuous helical spiral reinforcement wraps the concrete core, preventing lateral expansion and concrete spalling. When axial load is applied, the spiral confines the core, allowing the column to sustain load even after the outer concrete cracks. This provides ductility and warning before collapse.",
         "takeaway": "Review the correct answer and associated code provision."
       },
-      "explanation": null,
+      "explanation": "Strength of the reinforcement steel is not the governing factor; confinement is. Column height and stability relate to slenderness, not the φ factor for a given failure mode. Code decisions are based on structural mechanics, not arbitrary preferences. The continuous helical spiral reinforcement wraps the concrete core, preventing lateral expansion and concrete spalling. When axial load is applied, the spiral confines the core, allowing the column to sustain load even after the outer concrete cracks. This provides ductility and warning before collapse. Review the correct answer and associated code provision.",
       "code_citation": "NSCP 2001, Section 4.2, Commentary on Strength Reduction Factors and Column Confinement",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -101,8 +151,8 @@
       "model_id": "ALE-STRC-005-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:48d149079d9775a9dc29a405c3f5939498c4257bdb2f752f5848c93f061d859d"
+      "updated_at": "2026-05-06T15:53:16.843523+00:00",
+      "content_hash": "sha256:95048723a11c9457201285c1bdcaadf52d08b81e7f84a24271c6c0d80833bac6"
     },
     {
       "question_id": "3c657ee2-5f0e-401a-8b1a-36f9f45c4c00",
@@ -139,7 +189,7 @@
         "correct": "Anchorage zones involve stress transfer that is partly ductile (concrete around the anchor deforms and redistributes stress) and partly prone to local bearing failure. The intermediate φ = 0.85 reflects this hybrid nature—less conservative than pure bearing (0.70), more conservative than pure flexure (0.90).",
         "takeaway": "Review the correct answer and associated code provision."
       },
-      "explanation": null,
+      "explanation": "Anchorage zones are not purely brittle; they benefit from stress redistribution in surrounding concrete. Material strength has no bearing on the φ factor; ductility and predictability do. The match to shear φ is coincidental; each φ is assigned based on failure mode characteristics. Anchorage zones involve stress transfer that is partly ductile (concrete around the anchor deforms and redistributes stress) and partly prone to local bearing failure. The intermediate φ = 0.85 reflects this hybrid nature—less conservative than pure bearing (0.70), more conservative than pure flexure (0.90). Review the correct answer and associated code provision.",
       "code_citation": "NSCP 2001, Section 4.2, Strength Reduction Factors and Anchorage Zone Design",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -151,8 +201,8 @@
       "model_id": "ALE-STRC-005-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:7f3ef064c7c4aac18ae71c9924f16f387d13b82306a93efe06286d413eb6fcd4"
+      "updated_at": "2026-05-06T15:53:17.010334+00:00",
+      "content_hash": "sha256:49b2e0d160c06b8cefad168c86180e73bf5b7620a0d6f93d634807bd9670b147"
     },
     {
       "question_id": "da1869ef-90e3-48b6-8d8c-37ea69e63e85",
@@ -189,7 +239,7 @@
         "correct": "Shear uses φ = 0.85. Design capacity = 0.85(300) = 255 kN. Required shear = 250 kN. Since 255 ≥ 250, the beam is adequate for shear.",
         "takeaway": "Review the correct answer and associated code provision."
       },
-      "explanation": null,
+      "explanation": "Flexure uses φ = 0.90, not shear. Spiral compression uses φ = 0.75. Tied compression and bearing use φ = 0.70. Shear uses φ = 0.85. Design capacity = 0.85(300) = 255 kN. Required shear = 250 kN. Since 255 ≥ 250, the beam is adequate for shear. Review the correct answer and associated code provision.",
       "code_citation": "NSCP 2001, Section 4.3, Shear Design and Reduction Factors",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -201,8 +251,8 @@
       "model_id": "ALE-STRC-005-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:371f709ad1393c3cfde66a7a135295dc133cd85657e60cd213f61ec908beed9e"
+      "updated_at": "2026-05-06T15:53:17.17463+00:00",
+      "content_hash": "sha256:baf9973c892e41aa04be6874a37fc6a48f74bbe7fff904da3ecbb9e68af90af3"
     },
     {
       "question_id": "9ac04b85-2eb6-4967-b05d-c039c3087424",
@@ -239,7 +289,7 @@
         "correct": "Both bearing on concrete and tied column compression are relatively brittle. Bearing failure occurs suddenly when the bearing stress exceeds the local concrete strength; there is no gradual plastic deformation to warn the structure. Tied columns lack the ductility of spirally reinforced columns. Both receive φ = 0.70 because they are less forgiving.",
         "takeaway": "Review the correct answer and associated code provision."
       },
-      "explanation": null,
+      "explanation": "Both are relatively brittle (not ductile) compared to flexure. Code provisions are based on structural behavior, not randomness. The calculation methods differ; the φ factor reflects similar levels of predictability and ductility. Both bearing on concrete and tied column compression are relatively brittle. Bearing failure occurs suddenly when the bearing stress exceeds the local concrete strength; there is no gradual plastic deformation to warn the structure. Tied columns lack the ductility of spirally reinforced columns. Both receive φ = 0.70 because they are less forgiving. Review the correct answer and associated code provision.",
       "code_citation": "NSCP 2001, Sections 4.2 and 4.4, Strength Reduction Factor Philosophy",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -251,8 +301,8 @@
       "model_id": "ALE-STRC-005-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:740d311af333a2a61e9c48c6036a2ba684810fdb47334840efd8653ae0320cfb"
+      "updated_at": "2026-05-06T15:53:17.337306+00:00",
+      "content_hash": "sha256:c78d4f7bb3fd6b8e23963a2d39f66708af62c89e9f86fdc649e3720ce5098a30"
     },
     {
       "question_id": "7febc9cf-73c8-486d-8fe9-29f9c714b462",
@@ -289,7 +339,7 @@
         "correct": "Shear and torsion failures are less ductile than flexure; they occur with less warning. The intermediate φ = 0.85 reflects this reduced ductility compared to flexure.",
         "takeaway": "Review the correct answer and associated code provision."
       },
-      "explanation": null,
+      "explanation": "φ = 0.70 applies to tied compression and bearing. φ = 0.75 applies to spiral compression. φ = 0.90 applies to flexure and tension. Shear and torsion failures are less ductile than flexure; they occur with less warning. The intermediate φ = 0.85 reflects this reduced ductility compared to flexure. Review the correct answer and associated code provision.",
       "code_citation": "NSCP 2001, Section 4.2, Strength Reduction Factors for Shear and Torsion",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -301,8 +351,8 @@
       "model_id": "ALE-STRC-005-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3b7a8c8c6b8f6089d9492b5c2c928b7bd24e9decba30794e6dcb1abe062e6902"
+      "updated_at": "2026-05-06T15:53:17.522054+00:00",
+      "content_hash": "sha256:0b6cf5f3b6a8da78adbf86d1dc38af7ff73bf958d8220cc5833a4a7a6a589e70"
     },
     {
       "question_id": "f36b62c4-3461-4043-a07d-3fa57804e653",
@@ -403,56 +453,6 @@
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:08253cc66d63b53f1745b3b30037d2132435e68bf18c6e6b177557fa1cc5c042"
-    },
-    {
-      "question_id": "8a104f41-185d-4ab8-8f19-5906b53eb21e",
-      "article_id": "8a618b68-ffca-4df1-91e4-d3864a7968ac",
-      "topic_id": "bed062ef-c227-444e-9885-ca924f7e74f1",
-      "text": "For a reinforced concrete column with rectangular tie reinforcement, what is the strength reduction factor for axial compression?",
-      "options": [
-        {
-          "id": "a",
-          "text": "φ = 0.75"
-        },
-        {
-          "id": "b",
-          "text": "φ = 0.70"
-        },
-        {
-          "id": "c",
-          "text": "φ = 0.85"
-        },
-        {
-          "id": "d",
-          "text": "φ = 0.90"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "φ = 0.75 applies to spirally reinforced (not tied) columns.",
-        "c": "φ = 0.85 applies to shear and torsion.",
-        "d": "φ = 0.90 applies to flexure and tension.",
-        "correct": "Tied columns have rectangular or square ties that confine the concrete core, but less effectively than spiral reinforcement. The lower φ = 0.70 reflects the reduced ductility and brittleness of this failure mode.",
-        "takeaway": "Review the correct answer and associated code provision."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015, Section 409.2.2, Strength Reduction Factors for Compression",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-005-02-002",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:037032a3ab11f3bf3d9271acba6072475cf44fdc45ffe7db2458f8343d8a1cf9"
     },
     {
       "question_id": "b8b8591e-b88c-47ed-b32d-39b646ae8623",

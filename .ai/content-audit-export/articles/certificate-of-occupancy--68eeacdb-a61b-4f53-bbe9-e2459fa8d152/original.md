@@ -1,5 +1,12 @@
 # Certificate of Occupancy
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Certificate of Occupancy** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -24,9 +31,17 @@ By the end of this module, you should be able to:
 
 ## The Real-World Hook
 
-<ArticleMedia id="media-certificate-of-occupancy-0" name="co-process-flowchain" type="diagram" caption="End-to-end procedural flowchart: Physical Completion → Certificate of Completion (notarized) → As-Built Plans → BFP Endorsement → FSIC within 5 working days → OBO Final Inspection → CO Issued within 30 calendar days. Include conditional CO bypass arrow when BFP is inactive. Use swimlane columns for Owner/Architect, OBO, and BFP." />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-certificate-of-occupancy-0", name="co-process-flowchain", type="diagram", caption="End-to-end procedural flowchart: Physical Completion → Certificate of Completion (notarized) → As-Built Plans → BFP Endorsement → FSIC within 5 working days → OBO Final Inspection → CO Issued within 30 calendar days. Include conditional CO bypass arrow when BFP is inactive. Use swimlane columns for Owner/Architect, OBO, and BFP."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-certificate-of-occupancy-1" name="co-timeline-comparison" type="diagram" caption="Timeline bar diagram comparing the 5 working day FSIC window vs the 30 calendar day CO issuance window. Show calendar grid with working days vs calendar days marked. Highlight what happens when each deadline expires." />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-certificate-of-occupancy-1", name="co-timeline-comparison", type="diagram", caption="Timeline bar diagram comparing the 5 working day FSIC window vs the 30 calendar day CO issuance window. Show calendar grid with working days vs calendar days marked. Highlight what happens when each deadline expires."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 It is 7:30 in the morning on a Thursday in Quezon City. A developer's newly completed nine-story mixed-use tower stands ready — lobby polished, elevators tested, retail spaces pre-leased and waiting for fit-out. The developer's leasing manager is pressing hard: "Can tenants start moving in this weekend?" The project architect quietly consults her construction logbook, cross-checks the as-built plans stacked on her desk, and shakes her head. "Not yet."
 
@@ -203,28 +218,28 @@ The CO cannot exist without its predecessor: the Building Permit issued under Se
 The process chain in full:
 
 ```
-Building Permit (Sec. 301) 
-      ↓ 
-Construction Begins 
-      ↓ 
-Full-Time Supervision + Construction Logbook (Sec. 308) 
-      ↓ 
-Physical Completion 
-      ↓ 
-Certificate of Completion prepared (signed/sealed by Arch/CE; notarized) 
-      ↓ 
-CO Application submitted: Certificate of Completion + Logbook + As-Built Plans + Inspection Sheets (Sec. 309.2) 
-      ↓ 
-OBO endorses to BFP/C/MFM for Fire Safety Inspection 
-      ↓ 
-BFP issues FSIC within 5 working days (or Building Official issues conditional CO if BFP inactive) (Sec. 309.4) 
-      ↓ 
-OBO conducts Final Inspection (Sec. 309.5) 
-      ↓ 
-Building Official issues Certificate of Occupancy within 30 days of final inspection (Sec. 309.6) 
-      ↓ 
-CO posted in conspicuous place on premises (Sec. 309.7) 
-      ↓ 
+Building Permit (Sec. 301)
+      ↓
+Construction Begins
+      ↓
+Full-Time Supervision + Construction Logbook (Sec. 308)
+      ↓
+Physical Completion
+      ↓
+Certificate of Completion prepared (signed/sealed by Arch/CE; notarized)
+      ↓
+CO Application submitted: Certificate of Completion + Logbook + As-Built Plans + Inspection Sheets (Sec. 309.2)
+      ↓
+OBO endorses to BFP/C/MFM for Fire Safety Inspection
+      ↓
+BFP issues FSIC within 5 working days (or Building Official issues conditional CO if BFP inactive) (Sec. 309.4)
+      ↓
+OBO conducts Final Inspection (Sec. 309.5)
+      ↓
+Building Official issues Certificate of Occupancy within 30 days of final inspection (Sec. 309.6)
+      ↓
+CO posted in conspicuous place on premises (Sec. 309.7)
+      ↓
 Building Legally Occupied
 ```
 
@@ -248,11 +263,11 @@ Remember the five components of the Certificate of Occupancy application:
 
 When the LEA asks "What documents must be submitted for a CO application?", run through **C-LABS** — you will have every element.
 
-<Tip>
-
-💡 Tip: The "S" in C-LABS (Sealed by licensed Architect/CE) applies to multiple documents — the Certificate of Completion, logbook, as-built plans, and Building Inspection Sheets all require the Architect/CE's seal. Only the Certificate of Completion additionally requires notarization.
-
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 💡 Tip: The "S" in C-LABS (Sealed by licensed Architect/CE) applies to multiple documents — the Certificate of Completion, logbook, as-built plans, and Building Inspection Sheets all require the Architect/CE's seal. Only the Certificate of Completion additionally requires notarization.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -267,13 +282,11 @@ Think: **"FIRE burns fast (5 days), FINAL takes time (30 days)."**
 
 If FIRE is late (BFP doesn't act in 5 working days), Building Official may issue CO conditionally. FINAL always follows FIRE.
 
-<LawCallout code="pd1096" section="Rule I - Certificate of Occupancy">
-
-
-🔑 The two critical timeframes are directly from PD 1096 Rule III, Sec. 309.4 (5 working days for FSIC) and Sec. 309.6 (30 calendar days for CO issuance after final inspection). These are the most tested numerical values in the CO topic.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule I - Certificate of Occupancy"
+- Text: 🔑 The two critical timeframes are directly from PD 1096 Rule III, Sec. 309.4 (5 working days for FSIC) and Sec. 309.6 (30 calendar days for CO issuance after final inspection). These are the most tested numerical values in the CO topic.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -301,11 +314,11 @@ If FIRE is late (BFP doesn't act in 5 working days), Building Official may issue
 
 **TRUTH:** Section 309.8 explicitly authorizes the Building Official to issue a **Partial Certificate of Occupancy** for portions of a building prior to completion of the entire building. Phased occupancy is a recognized and lawful practice under PD 1096. The Partial CO covers only the inspected and approved portions.
 
-<ExamTip>
-
-📌 On the LEA, expect a multi-option question asking which document(s) must be submitted with a CO application. The four required items are: (1) notarized Certificate of Completion, (2) construction logbook, (3) as-built plans, (4) Building Inspection Sheets. Wrong answers often omit the logbook or add extraneous documents.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: 📌 On the LEA, expect a multi-option question asking which document(s) must be submitted with a CO application. The four required items are: (1) notarized Certificate of Completion, (2) construction logbook, (3) as-built plans, (4) Building Inspection Sheets. Wrong answers often omit the logbook or add extraneous documents.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

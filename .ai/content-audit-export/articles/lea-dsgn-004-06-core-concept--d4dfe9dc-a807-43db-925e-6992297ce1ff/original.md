@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 004 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -21,7 +30,11 @@ The space program for libraries differs significantly from museums:
 This is a critical distinction from museums: library occupant load is **LOWER** (4.6 sqm/person) than galleries (2.8 sqm/person) because library patrons are stationary—seated reading, research, computer use—whereas museum visitors are mobile and clustering at displays.
 
 **Archive/Special Collections:** Climate-controlled restricted-access areas (18–21°C, 45–55% RH per national heritage standards, similar to museums) where the collection is preserved. These are mechanical support spaces and do not contribute to occupancy load.
-<ArticleMedia id="media-lea-dsgn-004-06-core-concept" type="image" caption="Library Space Program — Reading, Stacks, and Service Zones" description="Space programming bubble diagram for a library showing functional zones: reading areas (4.5 sqm/seat), open stacks, reference, circulation desk, children's section, and admin offices. Annotated with DepEd/PRC 2007 minimum area standards." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-004-06-core-concept", type="image", caption="Library Space Program — Reading, Stacks, and Service Zones", description="Space programming bubble diagram for a library showing functional zones: reading areas (4.5 sqm/seat), open stacks, reference, circulation desk, children's section, and admin offices. Annotated with DepEd/PRC 2007 minimum area standards.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
@@ -133,10 +146,18 @@ A **university library serving 10,000 students** (DepEd + academic standards):
 - Temperature exceeded target by 3°C (tolerance ±2°C)
 - **Result: DAMAGE RISK** — paper, ink, binding adhesives at risk; collection condition assessment required; potential molecular degradation
 
-<Tip>**Memory rule:** Library = Group **C** (education). School library = 1.5 sqm/student. Public library occupancy load = floor area ÷ 4.6 sqm/person (seated, low-movement). Archive storage = mechanical support (excluded). Temperature ±2°C/day, humidity ±5%.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory rule:** Library = Group **C** (education). School library = 1.5 sqm/student. Public library occupancy load = floor area ÷ 4.6 sqm/person (seated, low-movement). Archive storage = mechanical support (excluded). Temperature ±2°C/day, humidity ±5%.
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip — ERR-DSGN-018:** Library reading areas use 4.6 sqm/person (education rate), NOT 2.8 sqm/person (museum/gallery rate). Stack areas are NOT counted in occupant load. This is a frequently tested distinction.
-<ArticleMedia id="media-lea-dsgn-004-06-core-concept" type="image" caption="Library Zoning Diagram — Quiet, Active, and Service Zones" description="Space planning bubble diagram of a library showing three functional zones: quiet zone (reading carrels, stacks), active zone (circulation desk, children's area, group study), and service zone (admin offices, processing, storage). Annotated with DepEd/PRC 2007 minimum area standards and acoustic separation requirements." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-004-06-core-concept", type="image", caption="Library Zoning Diagram — Quiet, Active, and Service Zones", description="Space planning bubble diagram of a library showing three functional zones: quiet zone (reading carrels, stacks), active zone (circulation desk, children's area, group study), and service zone (admin offices, processing, storage). Annotated with DepEd/PRC 2007 minimum area standards and acoustic separation requirements.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -144,4 +165,8 @@ See **LEA-DSGN-004-05** (Museums) for Group C comparison, **LEA-DSGN-008-01** (F
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Classifying libraries as Group E (business/office) instead of Group C (education)","Using mercantile occupant load (1 per 18.58 sqm) instead of education-specific (1 per 4.6 sqm) for reading areas","Forgetting that archive/closed stacks are non-public and excluded from occupancy load calculation","Applying museum occupant load (2.8 sqm/person, mobile viewing) to libraries (4.6 sqm/person, stationary study)","Underestimating school library area by omitting the 1.5 sqm/student standard and 50% enrollment requirement","Using 1:10 ramp instead of 1:20 maximum (2024 Revised IRR) gradient (BP 344)","Mixing up standard stall (2.5×5.0 m) with accessible stall (3.7×5.0 m)"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Classifying libraries as Group E (business/office) instead of Group C (education)\",\"Using mercantile occupant load (1 per 18.58 sqm) instead of education-specific (1 per 4.6 sqm) for reading areas\",\"Forgetting that archive/closed stacks are non-public and excluded from occupancy load calculation\",\"Applying museum occupant load (2.8 sqm/person, mobile viewing) to libraries (4.6 sqm/person, stationary study)\",\"Underestimating school library area by omitting the 1.5 sqm/student standard and 50% enrollment requirement\",\"Using 1:10 ramp instead of 1:20 maximum (2024 Revised IRR) gradient (BP 344)\",\"Mixing up standard stall (2.5×5.0 m) with accessible stall (3.7×5.0 m)\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

@@ -56,7 +56,9 @@ The architect must verify that construction documents are complete, coordinated,
 
 Internal quality control processes include: design reviews by senior staff, code compliance checklists, consultant coordination reviews (MEP, structural, landscape integration), and final document review before issuance. These processes catch errors before they reach the client or the contractor.
 
-<Tip>**Five essential quality control processes:** (1) design reviews by senior staff; (2) code compliance checklists; (3) consultant coordination reviews (MEP, structural, landscape); (4) final document review before issuance; (5) constructability review with contractor input. These catch errors before they reach the client or contractor.</Tip>
+<Tip>
+**Five essential quality control processes:** (1) design reviews by senior staff; (2) code compliance checklists; (3) consultant coordination reviews (MEP, structural, landscape); (4) final document review before issuance; (5) constructability review with contractor input. These catch errors before they reach the client or contractor.
+</Tip>
 
 ### Consultant Coordination and Agreement Management
 

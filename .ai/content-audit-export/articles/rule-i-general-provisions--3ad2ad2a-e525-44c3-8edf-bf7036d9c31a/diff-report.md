@@ -1,21 +1,21 @@
 # Content Diff Report: rule-i-general-provisions
 
-Generated: 2026-05-04T09:13:39.003Z
+Generated: 2026-05-10T02:58:25.890Z
 Article ID: 3ad2ad2a-e525-44c3-8edf-bf7036d9c31a
-Changed: false
+Changed: true
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:fae62a72dd84fb9165cbc2620fcee7df5c5cfa3fafd50d0856fd0aee69ac189c`
-- Normalized: `sha256:8e333d45b43f3943e4d78be18b36dcba77039114f0e5073163a5b47fc983dc85`
-- Candidate: `sha256:fae62a72dd84fb9165cbc2620fcee7df5c5cfa3fafd50d0856fd0aee69ac189c`
+- Original: `sha256:6302ac06e5e3e5b05c8bc111b51a6ea42b186e53d12b9d6180066b36d540fc60`
+- Normalized: `sha256:c6d014bc465bfe1950ce58b18256af98dea3aae8fc7e523eecaca1f475124e72`
+- Candidate: `sha256:eb7adb6d51315a35cacd3f12ff48f27f473e14a7608a8b6a86e0ebed52a2c100`
 
 ## Line summary
 
-- Changed lines: 0
+- Changed lines: 446
 - Inserted lines: 0
-- Deleted lines: 0
+- Deleted lines: 1
 
 ## UI block preservation
 

@@ -1,0 +1,92 @@
+{
+  "artifact": "RA9266 foreign architects pilot source audit evidence",
+  "generated_at_utc": "2026-05-10T04:00:10Z",
+  "scope": {
+    "article_id": "lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+    "supabase_touched": false,
+    "local_only": true
+  },
+  "verdict": "PARK",
+  "reason": "Cannot truthfully write a PASS source-audit artifact because the local repo/export does not contain the target article body or linked question records, and the specifically requested RA-9266 IRR PDF plus PRBoA temporary-permits resolution PDF were not present locally and were not located/downloaded during this local run. Partial PRC STP raw PDFs were obtained and hashed, but they are not sufficient to verify/correct all article + linked questions.",
+  "raw_pdf_evidence_downloaded": [
+    {
+      "path": "audit-evidence/ra9266-foreign-architects/IAO-QRD-01__Rev._11_Application_for_Special_Temporary_Permit_%28STP%29_with_requriements.pdf",
+      "sha256": "c7606636d5d8abf3171f77216726cabc80feabd671db1011f2aabaf980bafa50",
+      "bytes": 332306
+    },
+    {
+      "path": "audit-evidence/ra9266-foreign-architects/PROFESSION-SPECIFIC_REQUIREMENTS_FOR_CATEGORIES_STP1_STP2_STP3.pdf",
+      "sha256": "e2da1822ea8e16d5e32fadb1d52e4f4eb8c416913c27e8a1baaecb976aaa9d66",
+      "bytes": 132988
+    }
+  ],
+  "extracted_text_files": [
+    "audit-evidence/ra9266-foreign-architects/profession-specific.txt",
+    "audit-evidence/ra9266-foreign-architects/stp.txt"
+  ],
+  "evidence_snippets": [
+    {
+      "text_file": "audit-evidence/ra9266-foreign-architects/stp.txt",
+      "term": "STP1:",
+      "snippet": "STP1: Foreign professionals to practice a profession in the Philippines under reciprocity or international agreements (Architecture, Agricultural and Biosystems Engineering, Environmental Planning, Geodetic Engineering, Landscape Architecture, Radiologic Technology, Real Estate Service) Note: If the profession is not mentioned in this category, they may fall either under category STP2, STP3 or STP4, depending on the activity/engagement of the foreign professionals in the Philippines. STP2: Foreign professionals who are to be engaged as consultants in foreign-funded, joint venture or foreign assisted projects of the government STP3: Foreign professionals who are to"
+    },
+    {
+      "text_file": "audit-evidence/ra9266-foreign-architects/stp.txt",
+      "term": "STP2:",
+      "snippet": "STP2: Foreign professionals who are to be engaged as consultants in foreign-funded, joint venture or foreign assisted projects of the government STP3: Foreign professionals who are to be employed by Philippine or foreign private firms or institutions STP4: Foreign professionals engaged in humanitarian or medical, dental or surgical missions for a limited period of time Exemption or Exclusion from the STP Requirement Part I – Personal Data Sex: Male Female Surname: Given Name: Middle Name: Citizenship: Contact number and/ or E-mail Address: BIR Tax Identification Number (for Categories STP1, STP2 and STP3"
+    },
+    {
+      "text_file": "audit-evidence/ra9266-foreign-architects/stp.txt",
+      "term": "STP3:",
+      "snippet": "STP3: Foreign professionals who are to be employed by Philippine or foreign private firms or institutions STP4: Foreign professionals engaged in humanitarian or medical, dental or surgical missions for a limited period of time Exemption or Exclusion from the STP Requirement Part I – Personal Data Sex: Male Female Surname: Given Name: Middle Name: Citizenship: Contact number and/ or E-mail Address: BIR Tax Identification Number (for Categories STP1, STP2 and STP3 only): Philippine Mailing Address: new Name of Sponsoring Entity/Individual in the Philippines: Contact number and/or E-mail"
+    },
+    {
+      "text_file": "audit-evidence/ra9266-foreign-architects/stp.txt",
+      "term": "Architecture",
+      "snippet": "Architecture, Agricultural and Biosystems Engineering, Environmental Planning, Geodetic Engineering, Landscape Architecture, Radiologic Technology, Real Estate Service) Note: If the profession is not mentioned in this category, they may fall either under category STP2, STP3 or STP4, depending on the activity/engagement of the foreign professionals in the Philippines. STP2: Foreign professionals who are to be engaged as consultants in foreign-funded, joint venture or foreign assisted projects of the government STP3: Foreign professionals who are to be employed by Philippine or foreign private firms or institutions STP4: Foreign professionals engaged in hu"
+    },
+    {
+      "text_file": "audit-evidence/ra9266-foreign-architects/stp.txt",
+      "term": "Filipino professional",
+      "snippet": "Filipino Professional counterpart for every foreign professional whose services will be engaged in the Philippines, who shall be employed for the same duration as the foreign national’s tenure with the company or firm; indicate the name of counterpart in the letter request supported by a contract of employment with a photocopy of current PRC Professional I.D. Card (The validity of the Professional ID Card must be within the duration of the practice of profession of the foreign national. However, with regard to the following: • Accountancy: If the foreign national is an ASEAN CPA, the counterpart should be a Filipino ASEAN CPA. • Electronics Engineering : There must be at least two ("
+    },
+    {
+      "text_file": "audit-evidence/ra9266-foreign-architects/profession-specific.txt",
+      "term": "Architecture",
+      "snippet": "Architecture There should be a locally –secured professional liability insurance or malpractice insurance or their acceptable equivalent in bond form commensurate with the nature and magnitude of his/her project involvement and compensation. Chemical Engineering There shall be documents submitted attesting that the foreign professional is recognized as expert in the specific field of c hemical engineering. Chemistry There must be documents submitted attesting to the expertise or competence of the foreign chemist in a specific field in Chem istry, provided, that he/she is invited by the Republic of the Philippines for consultation or for a specific pro"
+    },
+    {
+      "text_file": "audit-evidence/ra9266-foreign-architects/profession-specific.txt",
+      "term": "professional liability",
+      "snippet": "professional liability insurance or malpractice insurance or their acceptable equivalent in bond form commensurate with the nature and magnitude of his/her project involvement and compensation. Chemical Engineering There shall be documents submitted attesting that the foreign professional is recognized as expert in the specific field of c hemical engineering. Chemistry There must be documents submitted attesting to the expertise or competence of the foreign chemist in a specific field in Chem istry, provided, that he/she is invited by the Republic of the Philippines for consultation or for a specific project as evidenced by an Employment Contract or S"
+    },
+    {
+      "text_file": "audit-evidence/ra9266-foreign-architects/profession-specific.txt",
+      "term": "Filipino professional",
+      "snippet": "Filipino professional for the promotion or enhancement o f the profession in the Philippines. Electrical Engineering A certification issued by the Accredited Integrated Professional Organization of the PRC stating that no qualified Filipino i s available for the work or undertaking that the foreign professional is being hired or commissioned for. There must be proof showi ng that the requirements, standards and qualifications for obtaining a license or certificate of registration as an electrical engineer i n the country of which the foreign applicant is a citizen of must not be lower than those prescribed under R.A. No. 7920 (New Electrical Engineering Law). Electronics Engineeri"
+    }
+  ],
+  "blocker_findings": [
+    {
+      "id": "B1",
+      "status": "not_resolved",
+      "finding": "RA 9266 special-vs-temporary permit distinction remains unverified against requested RA-9266 IRR PDF and PRBoA temporary-permits resolution PDF."
+    },
+    {
+      "id": "B2",
+      "status": "partially_supported",
+      "finding": "PRC STP form identifies Special Temporary Permit categories. STP1 covers foreign professionals practicing under reciprocity/international agreements and explicitly lists Architecture; STP2 covers consultants in foreign-funded/joint venture/foreign-assisted projects; STP3 covers employees of Philippine/foreign private firms/institutions pursuant to law."
+    },
+    {
+      "id": "B3",
+      "status": "not_resolved",
+      "finding": "Fee-flow/documentation claims mixing Section 27 and Section 38 could not be validated in the target article/questions because those local records were not found. Profession-specific PRC STP requirements mention architecture professional liability/malpractice insurance or equivalent bond, but do not verify RA 9266 Sections 27/38 fee-flow claims."
+    }
+  ],
+  "repo_search_results": {
+    "target_slug_or_uuid_found_in_repo": false,
+    "linked_questions_found_locally": false,
+    "searched_backup": "scripts/backups/article-ref-backup-2026-04-01.json; RA9266 questions found there did not include the foreign-architects/temporary-permit blockers."
+  },
+  "recommended_next_action": "Keep article/questions parked. Supply or locate the exact local export for the article and linked questions plus the requested raw RA-9266 IRR and PRBoA temporary-permits resolution PDFs; then rerun source audit and only write PASS after every claim/question is verified or locally corrected."
+}

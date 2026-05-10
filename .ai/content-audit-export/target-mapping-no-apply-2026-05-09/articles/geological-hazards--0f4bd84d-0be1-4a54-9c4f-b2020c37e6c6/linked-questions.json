@@ -1,0 +1,1072 @@
+{
+  "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:0b343f54b604c842fd6d7745e6b3e819c8a2a171a7858bd3857f9087a1b4e4e4",
+  "question_count": 21,
+  "questions": [
+    {
+      "question_id": "497cf945-8f87-4ef4-a869-16d2cdd7a90c",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Based on the specifications in \"Geological Hazards\", if a project requires 200 m, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "200 m is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "200 m is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "200 m applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "200 m is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 200 m as the requirement. Context: The geotechnical engineer's preliminary report reveals that the site is within 2...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:16.555069+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c40be93987cc7f5d251ae7729aab8eaf985d22cb7a17179ef9686ed14818e57"
+    },
+    {
+      "question_id": "f2d82548-fd75-4b15-a610-53f7a48b4a69",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "According to PHIVOLCS guidelines, what is the minimum recommended buffer zone from the trace of an active fault line within which no permanent structures should be built?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 meters, which is the easement distance from urban river banks under PD 1067 Article 51"
+        },
+        {
+          "id": "B",
+          "text": "10 meters, which is a commonly cited but overstated interpretation of the PHIVOLCS recommendation"
+        },
+        {
+          "id": "C",
+          "text": "5 meters from both sides of the fault trace or the edge of the deformation zone"
+        },
+        {
+          "id": "D",
+          "text": "20 meters, which is the easement for agricultural land parcels under the Water Code"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PHIVOLCS recommends a minimum 5-meter buffer zone from both sides of the fault trace or edge of the deformation zone.",
+        "explanation": "PHIVOLCS recommends a minimum 5-meter buffer reckoned from both sides of the fault trace or from the edge of the deformation zone. This is a geohazard-based setback distinct from PD 1096 building setbacks. Option A (3 m) is the PD 1067 urban river easement. Option C (10 m) and Option D (20 m) are overestimates; 20 m is the agricultural river easement under PD 1067, not a fault buffer.",
+        "common_misconceptions": [
+          "Confusing the PHIVOLCS 5-meter fault buffer with PD 1096 building setback requirements",
+          "Conflating the fault buffer with river easement distances from PD 1067"
+        ]
+      },
+      "explanation": "The PHIVOLCS 5-meter fault buffer is a geohazard-specific setback, not a building code setback — a critical distinction on the LEA.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:96589e408f52ea03f83cfc2a33fb83156c7b9b32b2f3c2573027bff7c36fbf7b"
+    },
+    {
+      "question_id": "762a7f57-dccf-4730-9a2d-d30fc021fa0b",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site in Metro Manila has loose, saturated sand at 5 meters depth with a water table at 3 meters below grade, located within Seismic Zone 4. Which condition from this profile most directly indicates liquefaction susceptibility?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The water table at 3 meters and the loose, saturated sand combine to produce high liquefaction susceptibility in Seismic Zone 4"
+        },
+        {
+          "id": "B",
+          "text": "The site is within Metro Manila, which has uniform bedrock preventing liquefaction of upper soil layers"
+        },
+        {
+          "id": "C",
+          "text": "Seismic Zone 4 classification alone is sufficient to trigger liquefaction without reference to soil type or water table depth"
+        },
+        {
+          "id": "D",
+          "text": "Liquefaction susceptibility exists only at coastal sites and reclaimed land, not in inland Metro Manila locations"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Liquefaction requires loose, saturated granular soil + high water table (within 10 m) + strong ground shaking (Seismic Zone 4). All three are present here.",
+        "explanation": "Liquefaction occurs when saturated, loose, granular soils temporarily lose shear strength during strong ground shaking and behave like a liquid. The screening criteria are: loose, saturated sand or silt (SPT N-value < 15), water table within 10 meters of the surface, Seismic Zone 4 classification, and PGA ≥ 0.1g. This site meets all criteria. Option A is false — Metro Manila has extensive alluvial deposits prone to liquefaction. Option C is wrong — seismic zone alone is insufficient without susceptible soil. Option D is documented Trap 3 in the article: liquefaction occurs inland too (Marikina Valley, Pampanga, Central Cebu).",
+        "common_misconceptions": [
+          "Assuming liquefaction only occurs at coastal or reclaimed land sites",
+          "Treating Seismic Zone 4 classification alone as the sole liquefaction trigger"
+        ]
+      },
+      "explanation": "Liquefaction requires the combination of loose saturated granular soil, shallow water table, and strong ground shaking — not coastal location alone.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca409f32f65f60a86f2f0c7e8c8beaec0e3e1595d203f5a88efeab4ec9cd353d"
+    },
+    {
+      "question_id": "5fbeb262-0a26-424f-9af8-29a7db7601bf",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under NSCP 2015 Table 304.1, what is the presumptive allowable foundation pressure for medium-dense sand at the minimum footing dimension of 300 mm width at 300 mm depth?",
+      "options": [
+        {
+          "id": "A",
+          "text": "50 kPa, which is the designated value for medium-stiff clay in Table 304.1"
+        },
+        {
+          "id": "B",
+          "text": "100 kPa, the designated value for sand, silty sand, and clayey sand (medium-dense)"
+        },
+        {
+          "id": "C",
+          "text": "200 kPa, which falls between the sand and gravel-sand designations in Table 304.1"
+        },
+        {
+          "id": "D",
+          "text": "300 kPa, which is the designated value for sedimentary rock and well-cemented gravel"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "NSCP Table 304.1 designates 100 kPa for medium-dense sand at the baseline footing dimension of 300 mm × 300 mm.",
+        "explanation": "NSCP 2015, Table 304.1 assigns the following presumptive values: medium-stiff clay = 50 kPa; sand/silty sand/clayey sand (medium-dense) = 100 kPa; sedimentary rock and well-cemented gravel = 300 kPa; crystalline bedrock = 600 kPa. These values apply to footings of 300 mm width at 300 mm depth. Option A (50 kPa) is for medium-stiff clay. Option C (200 kPa) does not appear in Table 304.1. Option D (300 kPa) is for rock and cemented gravel.",
+        "common_misconceptions": [
+          "Citing PD 1096 as the source of bearing capacity values rather than the NSCP",
+          "Confusing medium-dense sand values with medium-stiff clay or sedimentary rock values"
+        ]
+      },
+      "explanation": "Bearing capacity values come from NSCP Table 304.1, not from PD 1096 — a key distinction the LEA consistently tests.",
+      "code_citation": "NSCP 2015, Table 304.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:00694eaec17cdd723a1823c304de8414ee094b02472601b5a434152c3b14d98a"
+    },
+    {
+      "question_id": "8de924c5-4caf-4d72-8687-aaf694778421",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Using the NSCP Section 304.2 presumptive bearing capacity adjustment rule, what is the adjusted allowable pressure for medium-dense sand (q_table = 100 kPa) with a footing 900 mm wide at 900 mm depth?",
+      "options": [
+        {
+          "id": "A",
+          "text": "120 kPa, calculated by applying only the additional width increments without counting depth increments"
+        },
+        {
+          "id": "B",
+          "text": "160 kPa, calculated by applying only two total additional increments instead of four"
+        },
+        {
+          "id": "C",
+          "text": "180 kPa, calculated using four additional 300-mm increments with the 20% increase rule"
+        },
+        {
+          "id": "D",
+          "text": "300 kPa, which is the maximum permitted value regardless of actual footing dimensions"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Additional width increments = 2, additional depth increments = 2, total n = 4. q_adjusted = 100 × [1 + 0.20 × 4] = 180 kPa.",
+        "explanation": "NSCP Sec. 304.2 allows a 20% increase for each additional 300 mm of width and/or depth beyond the 300 mm baseline. Width: (900 − 300) / 300 = 2 increments. Depth: (900 − 300) / 300 = 2 increments. Total n = 4. q_adjusted = 100 × [1 + 0.20 × 4] = 100 × 1.80 = 180 kPa. The cap is 3 × 100 = 300 kPa; 180 kPa is well below the cap. Option A counts only width (n=2). Option B uses n=2. Option D incorrectly applies the cap value as though it is always the result.",
+        "common_misconceptions": [
+          "Counting only width or only depth increments instead of summing both",
+          "Applying the 3× cap as the default answer rather than computing the actual adjustment"
+        ]
+      },
+      "explanation": "The NSCP 304.2 adjustment sums both width and depth increments beyond 300 mm, applying 20% per increment up to a 3× cap.",
+      "code_citation": "NSCP 2015, Sec. 304.2",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c40aa4c97a376ee022383b2d9ab517750f8be0603ac1c12cbfcce82655938f63"
+    },
+    {
+      "question_id": "af68db46-2419-4798-b072-1212d327bbde",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Which of the following correctly describes the relationship between PD 1096 and the NSCP regarding soil bearing capacity requirements for building permit applications?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PD 1096 provides the bearing capacity values in its RIRR tables; the NSCP provides only administrative procedures for permit filing"
+        },
+        {
+          "id": "B",
+          "text": "PD 1096 RIRR requires submission of a geotechnical report; the NSCP provides the technical standards for determining bearing capacity"
+        },
+        {
+          "id": "C",
+          "text": "The NSCP replaces PD 1096 entirely for all foundation-related requirements, making PD 1096 obsolete on this subject"
+        },
+        {
+          "id": "D",
+          "text": "PD 1096 and the NSCP are interchangeable references for soil bearing capacity determination on Philippine projects"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 RIRR mandates submission of a geotechnical report; the NSCP provides the technical engineering standards including Table 304.1 bearing capacity values.",
+        "explanation": "PD 1096 (National Building Code) through its RIRR 2004, Rule III, mandates that a written geotechnical investigation report — including soil boring results, load test data, and design bearing capacity — be submitted with the building permit application, prepared by a licensed civil or geotechnical engineer. However, the actual bearing capacity values, calculation formulas (including Terzaghi's equation), and presumptive capacities (Table 304.1) are found in the NSCP. PD 1096 is the administrative trigger; the NSCP is the engineering standard. They complement each other.",
+        "common_misconceptions": [
+          "Citing PD 1096 as the source of bearing capacity values when it only requires the report",
+          "Treating the NSCP as replacing rather than complementing PD 1096 on foundation matters"
+        ]
+      },
+      "explanation": "PD 1096 triggers the geotechnical report requirement; the NSCP supplies the technical standards — these roles are distinct and complementary.",
+      "code_citation": "PD 1096 RIRR 2004, Rule III; NSCP 2015",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:36cb703d4afdb9517fa059ba73aee0d2a2c658dc5c626ffeb11fddad02fcff10"
+    },
+    {
+      "question_id": "545bc007-a1ad-4f24-ac0d-c521a19937b6",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under the NSCP 2015, what is the presumptive allowable bearing capacity for crystalline bedrock at the minimum footing dimension per Table 304.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100 kPa, which is the value for medium-dense sand and silty sand in Table 304.1"
+        },
+        {
+          "id": "B",
+          "text": "300 kPa, which is the value for sedimentary rock and well-cemented gravel-sand mixtures"
+        },
+        {
+          "id": "C",
+          "text": "600 kPa, the highest value in Table 304.1 assigned to crystalline bedrock"
+        },
+        {
+          "id": "D",
+          "text": "200 kPa, an intermediate value representing the average of sandy and rocky soil types"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "NSCP Table 304.1 designates 600 kPa as the presumptive allowable bearing capacity for crystalline bedrock.",
+        "explanation": "NSCP 2015 Table 304.1 bearing capacities from lowest to highest: medium-stiff clay = 50 kPa; sand/silty sand (medium-dense) = 100 kPa; sedimentary rock / well-cemented gravel = 300 kPa; crystalline bedrock = 600 kPa. Crystalline bedrock (granite, basalt, gneiss) is the strongest foundation material and carries the highest presumptive capacity. Option A (100 kPa) is for medium-dense sand. Option B (300 kPa) is for sedimentary rock. Option D (200 kPa) does not appear in Table 304.1.",
+        "common_misconceptions": [
+          "Confusing the bearing capacity hierarchy between sand, sedimentary rock, and crystalline bedrock",
+          "Selecting the sedimentary rock value (300 kPa) when asked specifically about crystalline bedrock"
+        ]
+      },
+      "explanation": "Crystalline bedrock is assigned 600 kPa in NSCP Table 304.1 — the highest presumptive capacity among all listed soil and rock types.",
+      "code_citation": "NSCP 2015, Table 304.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:975a6c624cd662c2dd9741554827fa969665c054f82dde059b2c649ff4bfbdce"
+    },
+    {
+      "question_id": "7a850f9c-262a-4fa7-acc4-185cafa8d858",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Most of the Philippines is classified under which seismic zone designation per the NSCP 2015, Chapter 2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Seismic Zone 1, indicating low seismicity across most of the Philippine archipelago"
+        },
+        {
+          "id": "B",
+          "text": "Seismic Zone 2, indicating moderate seismicity similar to most Southeast Asian neighbors"
+        },
+        {
+          "id": "C",
+          "text": "Seismic Zone 3, indicating high seismicity in the Visayas but low seismicity in Luzon"
+        },
+        {
+          "id": "D",
+          "text": "Seismic Zone 4, the highest seismicity classification, applying to most of the Philippines"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Most of the Philippines is classified as Seismic Zone 4 — the highest seismicity designation under NSCP 2015, Chapter 2.",
+        "explanation": "The Philippines sits on the Pacific Ring of Fire with over 30 active fault systems and is classified under Seismic Zone 4 (highest seismicity) for most of its territory under NSCP 2015, Chapter 2. This drives the structural design requirements for buildings, including the need for geotechnical investigation and appropriate foundation design. Options A, B, and C all understate the seismic hazard facing the Philippine archipelago.",
+        "common_misconceptions": [
+          "Assuming the Philippines has variable seismic zones similar to the United States zoning system",
+          "Confusing NSCP seismic zone classifications with typhoon category designations"
+        ]
+      },
+      "explanation": "The Philippines is predominantly Seismic Zone 4 under the NSCP — the highest classification, reflecting its position on the Pacific Ring of Fire.",
+      "code_citation": "NSCP 2015, Chapter 2",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:217887ce6e65bdc9b290218495e4a4102664c42bc5f9529b66f10dd9c1db12f4"
+    },
+    {
+      "question_id": "b5141723-ada3-4cc5-9acf-21c99792a4ec",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "An architect is designing an 8-storey condominium on a site with confirmed liquefaction-susceptible alluvial deposits. Based on NSCP 2015 and geotechnical engineering practice, which foundation strategy is most appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Shallow spread footings bearing on the alluvial layer, sized using the 100 kPa medium-dense sand presumptive value"
+        },
+        {
+          "id": "B",
+          "text": "Deep pile foundations bearing on competent strata below the liquefiable layer, potentially with soil improvement techniques"
+        },
+        {
+          "id": "C",
+          "text": "Mat foundation at the surface with waterproofing membrane to prevent upward water pressure during seismic events"
+        },
+        {
+          "id": "D",
+          "text": "Grade beams connecting shallow footings with a perimeter drainage system to lower the local water table"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "In liquefaction-prone zones, deep foundations (piles) bearing below the liquefiable layer are required; soil improvement techniques may supplement this approach.",
+        "explanation": "NSCP 2015 and geotechnical engineering practice prescribe deep foundations (pile foundations) bearing on competent, non-liquefiable strata below the susceptible layer for sites with confirmed liquefaction risk. Soil improvement techniques — such as compaction grouting, stone columns, or dynamic compaction — may also be employed to densify the liquefiable soil. Shallow spread footings (A) would lose bearing capacity during liquefaction. A mat foundation at the surface (C) sits within the liquefiable zone and provides no benefit. Grade beams (D) are a structural connection system, not a liquefaction mitigation strategy.",
+        "common_misconceptions": [
+          "Assuming a thicker shallow foundation adequately compensates for liquefaction risk",
+          "Confusing drainage solutions with structural liquefaction mitigation"
+        ]
+      },
+      "explanation": "Liquefaction-susceptible sites require deep foundations to bypass the liquefiable layer — shallow foundations lose their bearing capacity during seismic events.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b34f5d02bd1593415b190d3839b954be231acf8609b31bb5716ff9490b5edb62"
+    },
+    {
+      "question_id": "1702aaa3-34fd-4fdb-a137-e830dc3a417d",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "The NSCP Sec. 304.2 allows a 20% increase in presumptive bearing capacity for each additional 300 mm of footing width or depth, subject to a maximum cap. What is the maximum adjusted value allowed for medium-stiff clay (q_table = 50 kPa)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100 kPa, equal to twice the table value regardless of footing dimensions"
+        },
+        {
+          "id": "B",
+          "text": "300 kPa, which is the absolute maximum cap regardless of soil type in Table 304.1"
+        },
+        {
+          "id": "C",
+          "text": "200 kPa, equal to 4 times the table value as an exception for clay soils"
+        },
+        {
+          "id": "D",
+          "text": "150 kPa, equal to 3 times the designated table value of 50 kPa"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The NSCP 304.2 maximum cap is 3 × q_table. For medium-stiff clay at 50 kPa, the maximum is 3 × 50 = 150 kPa.",
+        "explanation": "NSCP Sec. 304.2 states that the adjusted bearing capacity may not exceed 3 times the designated table value, regardless of footing dimensions. For medium-stiff clay with q_table = 50 kPa, the maximum is 3 × 50 = 150 kPa. Option A (100 kPa = 2×) undershoots the cap. Option C (200 kPa = 4×) exceeds the cap. Option D (300 kPa) is the maximum for sedimentary rock (q_table = 100 kPa), not the universal absolute cap — the cap is 3× the specific material's table value.",
+        "common_misconceptions": [
+          "Treating 300 kPa as a universal absolute maximum rather than the cap for 100 kPa soils",
+          "Confusing the 2× and 3× cap values when applying the adjustment rule"
+        ]
+      },
+      "explanation": "The NSCP 304.2 cap is always 3× the specific material's q_table value — not a universal 300 kPa ceiling for all soil types.",
+      "code_citation": "NSCP 2015, Sec. 304.2",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:077d10f7a2cddc782876589cc3b1e553cc3a7e704a81de7ebfcba21c7180e713"
+    },
+    {
+      "question_id": "8f1ece98-01de-4d70-84b8-f9566ab1897c",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site 150 meters from the West Valley Fault trace is proposed for an 8-storey residential building. Evaluating the PHIVOLCS buffer zone requirement and the geotechnical investigation mandate, what is the correct professional response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The project satisfies the 5-meter PHIVOLCS buffer but still requires a geotechnical investigation report per PD 1096 RIRR for building permit submission"
+        },
+        {
+          "id": "B",
+          "text": "The project is fully compliant because 150 meters far exceeds the PHIVOLCS 5-meter buffer; no additional study is needed, simplifying the approval process."
+        },
+        {
+          "id": "C",
+          "text": "The 150-meter proximity triggers an automatic project cancellation under PHIVOLCS hazard mapping protocols, preventing any further development on the site."
+        },
+        {
+          "id": "D",
+          "text": "PHIVOLCS buffer zones apply only to structures within 5 meters; sites beyond 5 meters are exempt from all seismic site assessment requirements, allowing for unrestricted construction."
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "At 150 m the PHIVOLCS 5-meter buffer is satisfied, but the PD 1096 RIRR geotechnical report requirement remains mandatory for all building permit applications on potentially hazardous sites.",
+        "explanation": "The PHIVOLCS 5-meter buffer applies to structures immediately adjacent to fault traces. At 150 meters, the buffer is satisfied. However, the PD 1096 RIRR 2004 (Rule III) independently mandates that a written geotechnical investigation report — including soil boring results, load test data, and design bearing capacity — be submitted with every building permit application for sites with potential geological or geotechnical hazards. Proximity to the West Valley Fault and alluvial deposits with liquefaction susceptibility both trigger this requirement. Option A incorrectly assumes distance alone eliminates all assessment obligations. Option C fabricates an automatic cancellation rule.",
+        "common_misconceptions": [
+          "Assuming the PHIVOLCS buffer distance is the only seismic site consideration for building design",
+          "Believing that exceeding the 5-meter buffer eliminates geotechnical investigation obligations"
+        ]
+      },
+      "explanation": "Satisfying the PHIVOLCS fault buffer does not eliminate the PD 1096 RIRR geotechnical report requirement — these are independent, complementary obligations.",
+      "code_citation": "PD 1096 RIRR 2004, Rule III; PHIVOLCS Recommendation",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:07.267532+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5cd03d0fec56fd8e8344ec0586abf6f6808512a57082a8a86555a8ac4fa42c0a"
+    },
+    {
+      "question_id": "825145b0-96fd-4a19-9497-361b73c40356",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site 150 meters from the West Valley Fault trace is proposed for an 8-storey residential building. Evaluating the PHIVOLCS buffer zone requirement and the geotechnical investigation mandate, what is the correct professional response?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The project satisfies the 5-meter PHIVOLCS buffer but still requires a geotechnical investigation report per PD 1096 RIRR for building permit submission"
+        },
+        {
+          "id": "B",
+          "text": "The project is fully compliant because 150 meters far exceeds the PHIVOLCS 5-meter buffer; no additional study is needed, which is a common misunderstanding"
+        },
+        {
+          "id": "C",
+          "text": "The 150-meter proximity triggers an automatic project cancellation under PHIVOLCS hazard mapping protocols, which is incorrect"
+        },
+        {
+          "id": "D",
+          "text": "PHIVOLCS buffer zones apply only to structures within 5 meters; sites beyond 5 meters are exempt from all seismic site assessment requirements, which is not accurate"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "At 150 m the PHIVOLCS 5-meter buffer is satisfied, but the PD 1096 RIRR geotechnical report requirement remains mandatory for all building permit applications on potentially hazardous sites.",
+        "explanation": "The PHIVOLCS 5-meter buffer applies to structures immediately adjacent to fault traces. At 150 meters, the buffer is satisfied. However, the PD 1096 RIRR 2004 (Rule III) independently mandates that a written geotechnical investigation report — including soil boring results, load test data, and design bearing capacity — be submitted with every building permit application for sites with potential geological or geotechnical hazards. Proximity to the West Valley Fault and alluvial deposits with liquefaction susceptibility both trigger this requirement. Option A incorrectly assumes distance alone eliminates all assessment obligations. Option C fabricates an automatic cancellation rule.",
+        "common_misconceptions": [
+          "Assuming the PHIVOLCS buffer distance is the only seismic site consideration for building design",
+          "Believing that exceeding the 5-meter buffer eliminates geotechnical investigation obligations"
+        ]
+      },
+      "explanation": "Satisfying the PHIVOLCS fault buffer does not eliminate the PD 1096 RIRR geotechnical report requirement — these are independent, complementary obligations.",
+      "code_citation": "PD 1096 RIRR 2004, Rule III; PHIVOLCS Recommendation",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:58f027dd8c11d4985db31355b389993324951bf4836604a7f146ee441fa9af74"
+    },
+    {
+      "question_id": "a236f14e-bc95-4d9a-a9db-7c3a90fc6d59",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under NSCP 2015 Table 304.1, what is the presumptive allowable foundation pressure for medium-dense sand at the minimum footing dimension of 300 mm width at 300 mm depth?",
+      "options": [
+        {
+          "id": "A",
+          "text": "50 kPa, which is the designated value for medium-stiff clay in Table 304.1"
+        },
+        {
+          "id": "B",
+          "text": "100 kPa, the designated value for sand, silty sand, and clayey sand (medium-dense)"
+        },
+        {
+          "id": "C",
+          "text": "200 kPa, which falls between the sand and gravel-sand designations in Table 304.1"
+        },
+        {
+          "id": "D",
+          "text": "300 kPa, which is the designated value for sedimentary rock and well-cemented gravel"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "NSCP Table 304.1 designates 100 kPa for medium-dense sand at the baseline footing dimension of 300 mm × 300 mm.",
+        "explanation": "NSCP 2015, Table 304.1 assigns the following presumptive values: medium-stiff clay = 50 kPa; sand/silty sand/clayey sand (medium-dense) = 100 kPa; sedimentary rock and well-cemented gravel = 300 kPa; crystalline bedrock = 600 kPa. These values apply to footings of 300 mm width at 300 mm depth. Option A (50 kPa) is for medium-stiff clay. Option C (200 kPa) does not appear in Table 304.1. Option D (300 kPa) is for rock and cemented gravel.",
+        "common_misconceptions": [
+          "Citing PD 1096 as the source of bearing capacity values rather than the NSCP",
+          "Confusing medium-dense sand values with medium-stiff clay or sedimentary rock values"
+        ]
+      },
+      "explanation": "Bearing capacity values come from NSCP Table 304.1, not from PD 1096 — a key distinction the LEA consistently tests.",
+      "code_citation": "NSCP 2015, Table 304.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:55cf5e459590c06ffd9581a31241bc08ddc1f62137661bf8b98cf3652f397975"
+    },
+    {
+      "question_id": "0c5a6378-3224-4a1a-9657-225f2eb7738e",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Using the NSCP Section 304.2 presumptive bearing capacity adjustment rule, what is the adjusted allowable pressure for medium-dense sand (q_table = 100 kPa) with a footing 900 mm wide at 900 mm depth?",
+      "options": [
+        {
+          "id": "A",
+          "text": "120 kPa, calculated by applying only the additional width increments without counting depth increments"
+        },
+        {
+          "id": "B",
+          "text": "160 kPa, calculated by applying only two total additional increments instead of four"
+        },
+        {
+          "id": "C",
+          "text": "180 kPa, calculated using four additional 300-mm increments with the 20% increase rule"
+        },
+        {
+          "id": "D",
+          "text": "300 kPa, which is the maximum permitted value regardless of actual footing dimensions"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Additional width increments = 2, additional depth increments = 2, total n = 4. q_adjusted = 100 × [1 + 0.20 × 4] = 180 kPa.",
+        "explanation": "NSCP Sec. 304.2 allows a 20% increase for each additional 300 mm of width and/or depth beyond the 300 mm baseline. Width: (900 − 300) / 300 = 2 increments. Depth: (900 − 300) / 300 = 2 increments. Total n = 4. q_adjusted = 100 × [1 + 0.20 × 4] = 100 × 1.80 = 180 kPa. The cap is 3 × 100 = 300 kPa; 180 kPa is well below the cap. Option A counts only width (n=2). Option B uses n=2. Option D incorrectly applies the cap value as though it is always the result.",
+        "common_misconceptions": [
+          "Counting only width or only depth increments instead of summing both",
+          "Applying the 3× cap as the default answer rather than computing the actual adjustment"
+        ]
+      },
+      "explanation": "The NSCP 304.2 adjustment sums both width and depth increments beyond 300 mm, applying 20% per increment up to a 3× cap.",
+      "code_citation": "NSCP 2015, Sec. 304.2",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:987e895d8b0edc3edf1105c2cad811251d4e6ee4337b1732aaef87eb1aaf0203"
+    },
+    {
+      "question_id": "9ec3cfe4-a5b5-4397-a2d9-73de7720874d",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Which of the following correctly describes the relationship between PD 1096 and the NSCP regarding soil bearing capacity requirements for building permit applications?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PD 1096 provides the bearing capacity values in its RIRR tables; the NSCP provides only administrative procedures for permit filing"
+        },
+        {
+          "id": "B",
+          "text": "PD 1096 RIRR requires submission of a geotechnical report; the NSCP provides the technical standards for determining bearing capacity"
+        },
+        {
+          "id": "C",
+          "text": "The NSCP replaces PD 1096 entirely for all foundation-related requirements, making PD 1096 obsolete on this subject"
+        },
+        {
+          "id": "D",
+          "text": "PD 1096 and the NSCP are interchangeable references for soil bearing capacity determination on Philippine projects"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 RIRR mandates submission of a geotechnical report; the NSCP provides the technical engineering standards including Table 304.1 bearing capacity values.",
+        "explanation": "PD 1096 (National Building Code) through its RIRR 2004, Rule III, mandates that a written geotechnical investigation report — including soil boring results, load test data, and design bearing capacity — be submitted with the building permit application, prepared by a licensed civil or geotechnical engineer. However, the actual bearing capacity values, calculation formulas (including Terzaghi's equation), and presumptive capacities (Table 304.1) are found in the NSCP. PD 1096 is the administrative trigger; the NSCP is the engineering standard. They complement each other.",
+        "common_misconceptions": [
+          "Citing PD 1096 as the source of bearing capacity values when it only requires the report",
+          "Treating the NSCP as replacing rather than complementing PD 1096 on foundation matters"
+        ]
+      },
+      "explanation": "PD 1096 triggers the geotechnical report requirement; the NSCP supplies the technical standards — these roles are distinct and complementary.",
+      "code_citation": "PD 1096 RIRR 2004, Rule III; NSCP 2015",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:94a390d742977ad06c6ee186dcb3d5ce1b36b79b70a0590c54a12a586fb0c35f"
+    },
+    {
+      "question_id": "e3564d6c-4288-4dec-ba82-3b8590862863",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "A site in Metro Manila has loose, saturated sand at 5 meters depth with a water table at 3 meters below grade, located within Seismic Zone 4. Which condition from this profile most directly indicates liquefaction susceptibility?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The water table at 3 meters and the loose, saturated sand combine to produce high liquefaction susceptibility in Seismic Zone 4"
+        },
+        {
+          "id": "B",
+          "text": "The site is within Metro Manila, which has uniform bedrock preventing liquefaction of upper soil layers"
+        },
+        {
+          "id": "C",
+          "text": "Seismic Zone 4 classification alone is sufficient to trigger liquefaction without reference to soil type or water table depth"
+        },
+        {
+          "id": "D",
+          "text": "Liquefaction susceptibility exists only at coastal sites and reclaimed land, not in inland Metro Manila locations"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Liquefaction requires loose, saturated granular soil + high water table (within 10 m) + strong ground shaking (Seismic Zone 4). All three are present here.",
+        "explanation": "Liquefaction occurs when saturated, loose, granular soils temporarily lose shear strength during strong ground shaking and behave like a liquid. The screening criteria are: loose, saturated sand or silt (SPT N-value < 15), water table within 10 meters of the surface, Seismic Zone 4 classification, and PGA ≥ 0.1g. This site meets all criteria. Option A is false — Metro Manila has extensive alluvial deposits prone to liquefaction. Option C is wrong — seismic zone alone is insufficient without susceptible soil. Option D is documented Trap 3 in the article: liquefaction occurs inland too (Marikina Valley, Pampanga, Central Cebu).",
+        "common_misconceptions": [
+          "Assuming liquefaction only occurs at coastal or reclaimed land sites",
+          "Treating Seismic Zone 4 classification alone as the sole liquefaction trigger"
+        ]
+      },
+      "explanation": "Liquefaction requires the combination of loose saturated granular soil, shallow water table, and strong ground shaking — not coastal location alone.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d772f7bdd3193a6ecb6db2382138d95c6e5f85e9d43513e0caf44e9ad464336f"
+    },
+    {
+      "question_id": "b4c790c7-73e8-4747-a1a7-06a03804f14f",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Under the NSCP 2015, what is the presumptive allowable bearing capacity for crystalline bedrock at the minimum footing dimension per Table 304.1?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100 kPa, which is the value for medium-dense sand and silty sand in Table 304.1"
+        },
+        {
+          "id": "B",
+          "text": "300 kPa, which is the value for sedimentary rock and well-cemented gravel-sand mixtures"
+        },
+        {
+          "id": "C",
+          "text": "600 kPa, the highest value in Table 304.1 assigned to crystalline bedrock"
+        },
+        {
+          "id": "D",
+          "text": "200 kPa, an intermediate value representing the average of sandy and rocky soil types"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "NSCP Table 304.1 designates 600 kPa as the presumptive allowable bearing capacity for crystalline bedrock.",
+        "explanation": "NSCP 2015 Table 304.1 bearing capacities from lowest to highest: medium-stiff clay = 50 kPa; sand/silty sand (medium-dense) = 100 kPa; sedimentary rock / well-cemented gravel = 300 kPa; crystalline bedrock = 600 kPa. Crystalline bedrock (granite, basalt, gneiss) is the strongest foundation material and carries the highest presumptive capacity. Option A (100 kPa) is for medium-dense sand. Option B (300 kPa) is for sedimentary rock. Option D (200 kPa) does not appear in Table 304.1.",
+        "common_misconceptions": [
+          "Confusing the bearing capacity hierarchy between sand, sedimentary rock, and crystalline bedrock",
+          "Selecting the sedimentary rock value (300 kPa) when asked specifically about crystalline bedrock"
+        ]
+      },
+      "explanation": "Crystalline bedrock is assigned 600 kPa in NSCP Table 304.1 — the highest presumptive capacity among all listed soil and rock types.",
+      "code_citation": "NSCP 2015, Table 304.1",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7f4822ec0c09425758070f98b5a76a000f94e19449de3dc07fc9fd35bdd4431f"
+    },
+    {
+      "question_id": "4bbf960b-7f87-4c69-8539-a546bf9dee47",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "Most of the Philippines is classified under which seismic zone designation per the NSCP 2015, Chapter 2?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Seismic Zone 1, indicating low seismicity across most of the Philippine archipelago"
+        },
+        {
+          "id": "B",
+          "text": "Seismic Zone 2, indicating moderate seismicity similar to most Southeast Asian neighbors"
+        },
+        {
+          "id": "C",
+          "text": "Seismic Zone 3, indicating high seismicity in the Visayas but low seismicity in Luzon"
+        },
+        {
+          "id": "D",
+          "text": "Seismic Zone 4, the highest seismicity classification, applying to most of the Philippines"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Most of the Philippines is classified as Seismic Zone 4 — the highest seismicity designation under NSCP 2015, Chapter 2.",
+        "explanation": "The Philippines sits on the Pacific Ring of Fire with over 30 active fault systems and is classified under Seismic Zone 4 (highest seismicity) for most of its territory under NSCP 2015, Chapter 2. This drives the structural design requirements for buildings, including the need for geotechnical investigation and appropriate foundation design. Options A, B, and C all understate the seismic hazard facing the Philippine archipelago.",
+        "common_misconceptions": [
+          "Assuming the Philippines has variable seismic zones similar to the United States zoning system",
+          "Confusing NSCP seismic zone classifications with typhoon category designations"
+        ]
+      },
+      "explanation": "The Philippines is predominantly Seismic Zone 4 under the NSCP — the highest classification, reflecting its position on the Pacific Ring of Fire.",
+      "code_citation": "NSCP 2015, Chapter 2",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1680a062cef4b8368fca18965e1136e0de0bf6c9f5b2859c1eb066b829fed031"
+    },
+    {
+      "question_id": "74726757-0fb8-4217-9ac6-1e83831cb6bf",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "An architect is designing an 8-storey condominium on a site with confirmed liquefaction-susceptible alluvial deposits. Based on NSCP 2015 and geotechnical engineering practice, which foundation strategy is most appropriate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Shallow spread footings bearing on the alluvial layer, sized using the 100 kPa medium-dense sand presumptive value"
+        },
+        {
+          "id": "B",
+          "text": "Deep pile foundations bearing on competent strata below the liquefiable layer, potentially with soil improvement techniques"
+        },
+        {
+          "id": "C",
+          "text": "Mat foundation at the surface with waterproofing membrane to prevent upward water pressure during seismic events"
+        },
+        {
+          "id": "D",
+          "text": "Grade beams connecting shallow footings with a perimeter drainage system to lower the local water table"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "In liquefaction-prone zones, deep foundations (piles) bearing below the liquefiable layer are required; soil improvement techniques may supplement this approach.",
+        "explanation": "NSCP 2015 and geotechnical engineering practice prescribe deep foundations (pile foundations) bearing on competent, non-liquefiable strata below the susceptible layer for sites with confirmed liquefaction risk. Soil improvement techniques — such as compaction grouting, stone columns, or dynamic compaction — may also be employed to densify the liquefiable soil. Shallow spread footings (A) would lose bearing capacity during liquefaction. A mat foundation at the surface (C) sits within the liquefiable zone and provides no benefit. Grade beams (D) are a structural connection system, not a liquefaction mitigation strategy.",
+        "common_misconceptions": [
+          "Assuming a thicker shallow foundation adequately compensates for liquefaction risk",
+          "Confusing drainage solutions with structural liquefaction mitigation"
+        ]
+      },
+      "explanation": "Liquefaction-susceptible sites require deep foundations to bypass the liquefiable layer — shallow foundations lose their bearing capacity during seismic events.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3cb3670e00ae3f82d9d27049f6e2f0b9931e6424147f82d094e0f752a72e3dc4"
+    },
+    {
+      "question_id": "343f8459-6a0f-413e-9c05-3252a310304c",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "The NSCP Sec. 304.2 allows a 20% increase in presumptive bearing capacity for each additional 300 mm of footing width or depth, subject to a maximum cap. What is the maximum adjusted value allowed for medium-stiff clay (q_table = 50 kPa)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100 kPa, equal to twice the table value regardless of footing dimensions"
+        },
+        {
+          "id": "B",
+          "text": "300 kPa, which is the absolute maximum cap regardless of soil type in Table 304.1"
+        },
+        {
+          "id": "C",
+          "text": "200 kPa, equal to 4 times the table value as an exception for clay soils"
+        },
+        {
+          "id": "D",
+          "text": "150 kPa, equal to 3 times the designated table value of 50 kPa"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The NSCP 304.2 maximum cap is 3 × q_table. For medium-stiff clay at 50 kPa, the maximum is 3 × 50 = 150 kPa.",
+        "explanation": "NSCP Sec. 304.2 states that the adjusted bearing capacity may not exceed 3 times the designated table value, regardless of footing dimensions. For medium-stiff clay with q_table = 50 kPa, the maximum is 3 × 50 = 150 kPa. Option A (100 kPa = 2×) undershoots the cap. Option C (200 kPa = 4×) exceeds the cap. Option D (300 kPa) is the maximum for sedimentary rock (q_table = 100 kPa), not the universal absolute cap — the cap is 3× the specific material's table value.",
+        "common_misconceptions": [
+          "Treating 300 kPa as a universal absolute maximum rather than the cap for 100 kPa soils",
+          "Confusing the 2× and 3× cap values when applying the adjustment rule"
+        ]
+      },
+      "explanation": "The NSCP 304.2 cap is always 3× the specific material's q_table value — not a universal 300 kPa ceiling for all soil types.",
+      "code_citation": "NSCP 2015, Sec. 304.2",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3a5edf4d11232d94432b113d70fd210b42a23228e08804361bcea436598a8677"
+    },
+    {
+      "question_id": "cf9b6581-8c90-4705-9013-ce1551e1fcea",
+      "article_id": "0f4bd84d-0be1-4a54-9c4f-b2020c37e6c6",
+      "topic_id": "cfea0378-0651-485d-b44e-ed8d038f440a",
+      "text": "According to PHIVOLCS guidelines, what is the minimum recommended buffer zone from the trace of an active fault line within which no permanent structures should be built?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 meters, which is the easement distance from urban river banks under PD 1067 Article 51"
+        },
+        {
+          "id": "B",
+          "text": "10 meters, which is a commonly cited but overstated interpretation of the PHIVOLCS recommendation"
+        },
+        {
+          "id": "C",
+          "text": "5 meters from both sides of the fault trace or the edge of the deformation zone"
+        },
+        {
+          "id": "D",
+          "text": "20 meters, which is the easement for agricultural land parcels under the Water Code"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PHIVOLCS recommends a minimum 5-meter buffer zone from both sides of the fault trace or edge of the deformation zone.",
+        "explanation": "PHIVOLCS recommends a minimum 5-meter buffer reckoned from both sides of the fault trace or from the edge of the deformation zone. This is a geohazard-based setback distinct from PD 1096 building setbacks. Option A (3 m) is the PD 1067 urban river easement. Option C (10 m) and Option D (20 m) are overestimates; 20 m is the agricultural river easement under PD 1067, not a fault buffer.",
+        "common_misconceptions": [
+          "Confusing the PHIVOLCS 5-meter fault buffer with PD 1096 building setback requirements",
+          "Conflating the fault buffer with river easement distances from PD 1067"
+        ]
+      },
+      "explanation": "The PHIVOLCS 5-meter fault buffer is a geohazard-specific setback, not a building code setback — a critical distinction on the LEA.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:57.016519+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2de5d615adc8df283b534985b9bbfe8c70cb5fd51b6352469199268a834efd03"
+    }
+  ]
+}

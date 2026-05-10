@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-09T16:24:34.633Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [
+    "Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.",
+    "Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.",
+    "--repair-placeholders treats --note as an operational note; it was not written to public updated_note."
+  ],
+  "updated_rows_count": 1,
+  "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+  "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:373e1210a83a41370263f3e00d7bdd2944e65476922de8c502fd61ec17732ba8",
+  "original_hash": "sha256:373e1210a83a41370263f3e00d7bdd2944e65476922de8c502fd61ec17732ba8",
+  "candidate_hash": "sha256:76da26e6e1ff34536813f3ef138cbf9daadf822523cc3567ded75b199f220246",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-06T10:35:50.672504+00:00",
+  "repair_mode": "placeholder_content",
+  "updated_at_after": "2026-05-09T16:24:36.764416+00:00"
+}

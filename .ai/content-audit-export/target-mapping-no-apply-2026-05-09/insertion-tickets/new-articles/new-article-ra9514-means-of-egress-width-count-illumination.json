@@ -1,0 +1,39 @@
+{
+  "ticket_type": "NEW_ARTICLE_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "ticket_id": "new-article-ra9514-means-of-egress-width-count-illumination",
+  "label": "RA 9514 Means of Egress Width, Count, and Illumination",
+  "dry_article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+  "proposed_slug": "ra-9514-means-of-egress-width-count-and-illumination",
+  "decision": "NEW_ARTICLE_TICKET",
+  "basis": "Fresh mirror has related Fire egress and PD 1096 egress articles, but no exact RA 9514 article combining general egress width, egress count thresholds, and means-of-egress illumination. Treat as new unless Philip approves a deliberate merge into Fire egress.",
+  "closest_existing": [
+    {
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "slug": "lea-dsgn-008-01-core-concept",
+      "title": "Fire egress",
+      "note": "strong egress overlap but broader travel-distance/dead-end coverage and lacks illumination focus"
+    },
+    {
+      "article_id": "93009368-9041-46e0-b93b-8786100311be",
+      "slug": "pd-1096-rule-xii-egress-and-corridors",
+      "title": "PD 1096 Rule XII Egress and Corridors",
+      "note": "egress overlap but different governing code"
+    }
+  ],
+  "status": "ticket_only_no_supabase_insert",
+  "dry_run_folder": "ra-9514-means-of-egress-width-count-and-illumination--dryrun-03-ra9514-means-of-egress-width-and-count",
+  "dry_run_article_metadata": {
+    "article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+    "title": "RA 9514 Means of Egress: Width, Count, and Illumination",
+    "slug": "ra-9514-means-of-egress-width-count-and-illumination",
+    "subject_label": "Fire Code and Life Safety",
+    "difficulty_label": "Calibration exemplar"
+  },
+  "candidate_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/ra-9514-means-of-egress-width-count-and-illumination--dryrun-03-ra9514-means-of-egress-width-and-count/candidate.md",
+  "normalized_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/ra-9514-means-of-egress-width-count-and-illumination--dryrun-03-ra9514-means-of-egress-width-and-count/normalized.md",
+  "candidate_hash": "sha256:c0ef90e3d88ced45e33563dfbfbaec0d85426e18d9c31402f288c664aad4acd7",
+  "candidate_word_count": 890,
+  "linked_question_count": 3,
+  "gate_lock": "No insert/apply command is authorized by this ticket."
+}

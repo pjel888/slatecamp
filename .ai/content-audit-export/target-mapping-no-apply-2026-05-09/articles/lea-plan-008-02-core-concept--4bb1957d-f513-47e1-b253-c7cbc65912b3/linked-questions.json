@@ -1,0 +1,518 @@
+{
+  "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a7c10f9787d8f8bb69a89b6ac82d9d37a57b898e3bbbc9448b93783de75aebc2",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "072c90a5-e8bc-4b40-807d-724b8b1dda68",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "A municipality uses GIS to overlay its zoning map with flood hazard zones and utility capacity zones. What planning question can this spatial analysis help answer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Which neighborhoods have the most residents who support development, based on recent community surveys and public meetings?"
+        },
+        {
+          "id": "b",
+          "text": "How many people were surveyed in the most recent census, and what demographic trends were identified?"
+        },
+        {
+          "id": "c",
+          "text": "What historical events shaped the current city boundary, considering past annexations and zoning changes?"
+        },
+        {
+          "id": "d",
+          "text": "Which areas are suitable for new development based on zoning, hazard avoidance, and adequate utility infrastructure?"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Public opinion requires surveys, not GIS spatial analysis.",
+        "b": "Census data is demographic, not spatial constraint analysis.",
+        "c": "Historical research uses archives, not GIS layer analysis.",
+        "d": "Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis.",
+        "correct": "Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis.",
+        "takeaway": "GIS spatial overlay = systematic identification of viable development sites meeting multiple constraints."
+      },
+      "explanation": "Public opinion requires surveys, not GIS spatial analysis. Census data is demographic, not spatial constraint analysis. Historical research uses archives, not GIS layer analysis. Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis. Overlaying zoning, hazard, and utility constraint layers reveals areas that satisfy all three criteria simultaneously—a core GIS planning function for site suitability analysis. GIS spatial overlay = systematic identification of viable development sites meeting multiple constraints.",
+      "code_citation": "GIS Spatial Analysis; Site Suitability Modeling",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-05-06T14:45:57.205+00:00",
+      "content_hash": "sha256:52580d16062478020b6e271cf0a1f3db9b536f20918fa212a634de14c5c7d963"
+    },
+    {
+      "question_id": "98f11a94-64f3-45da-bb3c-1cb1a297b346",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "Which of the following best describes a smart city approach to urban planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using integrated digital systems and real-time data to optimize urban services and inform planning decisions"
+        },
+        {
+          "id": "b",
+          "text": "Installing digital technology without integrating it into decision-making processes, often leading to inefficiencies"
+        },
+        {
+          "id": "c",
+          "text": "Replacing human planners with artificial intelligence systems, which can lead to a lack of human oversight"
+        },
+        {
+          "id": "d",
+          "text": "Focusing only on online engagement while ignoring traditional community participation, which can result in a disconnect"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions.",
+        "b": "Technology without integration is not smart; it is just infrastructure.",
+        "c": "Smart cities use AI and algorithms to support human decisions, not replace planners.",
+        "d": "Equitable smart cities use hybrid engagement (digital + traditional) to reach all populations.",
+        "correct": "Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions.",
+        "takeaway": "Smart city planning = data-informed, real-time responsive urban management."
+      },
+      "explanation": "Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions. Technology without integration is not smart; it is just infrastructure. Smart cities use AI and algorithms to support human decisions, not replace planners. Equitable smart cities use hybrid engagement (digital + traditional) to reach all populations. Smart cities integrate digital tools—sensors, GIS, data dashboards—into decision-making to optimize services and make planning responsive to real-time conditions. Smart city planning = data-informed, real-time responsive urban management.",
+      "code_citation": "World Economic Forum Smart City Framework; Smart City Definition",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-05-06T14:45:57.574316+00:00",
+      "content_hash": "sha256:ef6e07e21fc1a47894f3212954597f0bed5e1569b37c2effb0c40ead77f9c4cd"
+    },
+    {
+      "question_id": "67e46ca4-3ed3-4172-9eb0-3fac72beb1ac",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "A smart city dashboard shows that a newly developed commercial district is generating 40% more traffic than the CLUP's traffic impact assessment predicted. What should the planner do in response?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Analyze the discrepancy, assess road network adequacy, consider mitigation measures (transit, signal timing, use restrictions), and update traffic modeling for future CLUPs"
+        },
+        {
+          "id": "b",
+          "text": "Immediately shut down the commercial district, disregarding any economic or social impacts this action might have"
+        },
+        {
+          "id": "c",
+          "text": "Accept the higher traffic as a positive indicator of economic activity; no action needed, as the increased traffic is seen as beneficial"
+        },
+        {
+          "id": "d",
+          "text": "Replace the GIS system because the data is inaccurate, assuming that the system is the sole source of error without further investigation"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy.",
+        "b": "Shutting down an operational district is not proportionate; mitigation should be explored first.",
+        "c": "Higher-than-predicted congestion is a problem requiring response, not a success metric.",
+        "d": "Students blame the monitoring system when data contradicts predictions, but the confusion is methodological: incomplete planning assumptions (underestimating induced demand, underestimating density, external changes) cause discrepancies, not faulty sensors.",
+        "correct": "Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy.",
+        "takeaway": "Real-time monitoring enables adaptive planning—using live data to detect and respond to plan implementation gaps."
+      },
+      "explanation": "Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy. Shutting down an operational district is not proportionate; mitigation should be explored first. Higher-than-predicted congestion is a problem requiring response, not a success metric. Students blame the monitoring system when data contradicts predictions, but the confusion is methodological: incomplete planning assumptions (underestimating induced demand, underestimating density, external changes) cause discrepancies, not faulty sensors. Real-time data reveals implementation problems that were not anticipated. A planner responds by analyzing the cause, assessing infrastructure capacity, implementing mitigation measures, and updating future planning assumptions. This is adaptive planning—using live data to adjust strategy. Real-time monitoring enables adaptive planning—using live data to detect and respond to plan implementation gaps.",
+      "code_citation": "Real-time Urban Monitoring; Adaptive Planning",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-05-06T14:45:57.703968+00:00",
+      "content_hash": "sha256:38098e7de7c28de48892f610c559b35bc7b9a7b464cfc92b135434508a4e13d4"
+    },
+    {
+      "question_id": "d47c0aaf-a0bc-4af3-a0b4-2b2f956ea5df",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "What is a critical limitation of digital-only civic engagement in smart city planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Online platforms are too slow to provide real-time feedback, limiting immediate community response"
+        },
+        {
+          "id": "b",
+          "text": "Digital-only engagement excludes populations without internet access or digital literacy, reducing equity and excluding voices from low-income communities"
+        },
+        {
+          "id": "c",
+          "text": "Online participation requires approval from the national government before local implementation, delaying processes"
+        },
+        {
+          "id": "d",
+          "text": "Digital engagement provides no meaningful input compared to in-person consultations, which offer richer interaction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Modern platforms can provide rapid feedback; speed is not the limiting factor.",
+        "b": "Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement.",
+        "c": "Digital engagement tools are local government decisions, not subject to national approval.",
+        "d": "Online engagement can be high-quality and meaningful; the issue is inclusion, not quality.",
+        "correct": "Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement.",
+        "takeaway": "Smart city equity principle: hybrid analog-digital engagement ensures no demographic group is excluded from planning participation."
+      },
+      "explanation": "Modern platforms can provide rapid feedback; speed is not the limiting factor. Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement. Digital engagement tools are local government decisions, not subject to national approval. Online engagement can be high-quality and meaningful; the issue is inclusion, not quality. Smart city benefits are inequitably distributed if engagement is digital-only. Elderly residents, low-income populations without reliable internet, and non-digital-native groups are excluded. Equitable smart cities use hybrid analog-digital engagement. Smart city equity principle: hybrid analog-digital engagement ensures no demographic group is excluded from planning participation.",
+      "code_citation": "Digital Equity in Smart Cities; Participatory Planning Standards",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-05-06T14:45:57.831715+00:00",
+      "content_hash": "sha256:7ccd89fb114f929f2499ecb8df2025d08f4f47bfa5b08a2ce31e4efc6129a1ce"
+    },
+    {
+      "question_id": "2e21964b-43d2-4671-88ef-0803c2ff3399",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "How does digital planning support the integration of climate resilience into CLUPs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "By eliminating the need for DRRM provisions in zoning ordinances, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "By transferring all planning authority to artificial intelligence systems, which is not currently feasible or advisable"
+        },
+        {
+          "id": "c",
+          "text": "By enabling real-time monitoring of flood zones, water levels, and air quality to inform land use decisions and DRRM planning"
+        },
+        {
+          "id": "d",
+          "text": "By focusing only on technological solutions without land use restrictions, which overlooks the importance of comprehensive planning"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Digital tools support DRRM but do not reduce the need for it; resilience provisions remain mandatory.",
+        "b": "Digital systems support human decision-making; they do not replace human planning judgment.",
+        "c": "Real-time environmental monitoring (flood risk, water quality, air quality, heat) provides data that guides DRRM-informed zoning, infrastructure placement, and resilience strategy in CLUPs.",
+        "d": "Smart cities integrate technology with land use controls; technology alone is insufficient for resilience.",
+        "correct": "Real-time environmental monitoring (flood risk, water quality, air quality, heat) provides data that guides DRRM-informed zoning, infrastructure placement, and resilience strategy in CLUPs.",
+        "takeaway": "Digital monitoring + land use planning = integrated climate resilience strategy."
+      },
+      "explanation": null,
+      "code_citation": "Smart City Framework; Climate Resilience Planning Integration",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:46da656a5d5ac554ba5ba77a6ecb4c96da923aa0004c2c4ba8b6f6acb86b34e0"
+    },
+    {
+      "question_id": "f5785968-ecc8-4776-8bdd-006dc42a8ffe",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "What is the primary function of GIS (Geographic Information Systems) in urban planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To store historical records of past development projects, providing a comprehensive archive for future reference"
+        },
+        {
+          "id": "b",
+          "text": "To replace the Comprehensive Land Use Plan with digital maps, streamlining urban planning processes"
+        },
+        {
+          "id": "c",
+          "text": "To create spatial data layers that can be analyzed and overlaid to identify patterns and constraints"
+        },
+        {
+          "id": "d",
+          "text": "To eliminate the need for zoning ordinances, simplifying regulatory frameworks"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "GIS stores current and historical data but its primary function is analysis, not archiving.",
+        "b": "GIS tools support CLUP preparation; they do not replace the CLUP itself.",
+        "c": "GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions.",
+        "d": "GIS provides information for zoning; it does not eliminate the need for zoning ordinances.",
+        "correct": "GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions.",
+        "takeaway": "GIS is the digital equivalent of transparent map overlays—layer analysis for planning insights."
+      },
+      "explanation": "GIS stores current and historical data but its primary function is analysis, not archiving. GIS tools support CLUP preparation; they do not replace the CLUP itself. GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions. GIS provides information for zoning; it does not eliminate the need for zoning ordinances. GIS is a spatial analysis tool that organizes planning data (land use zones, hazard maps, infrastructure networks, constraints) into layers that can be overlaid and analyzed to support planning decisions. GIS is the digital equivalent of transparent map overlays—layer analysis for planning insights.",
+      "code_citation": "GIS Fundamentals in Planning; ISO 19115",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-05-06T14:45:57.337957+00:00",
+      "content_hash": "sha256:e51514daf839a3ab534febb36526d917caffa0c6b8ce3864b4634c5ef2b4b54d"
+    },
+    {
+      "question_id": "4e5ff8fd-644a-4e54-b257-dd5fabf12fa3",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "A planner uses GIS to identify that three competing zoning changes are proposed for the same area by different municipal departments. The GIS overlay shows that only one is compatible with existing utility capacity and hazard constraints. How does this exemplify smart city planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It shows that GIS can settle political conflicts without human input, which is an oversimplification of the tool's capabilities"
+        },
+        {
+          "id": "b",
+          "text": "It demonstrates how spatial data analysis enables evidence-based resolution of planning conflicts, prioritizing proposals that are implementable"
+        },
+        {
+          "id": "c",
+          "text": "It proves that digital tools eliminate the need for departmental coordination, which is a misunderstanding of the collaborative nature of planning"
+        },
+        {
+          "id": "d",
+          "text": "It allows the planner to veto all proposals and start over, which is not a typical or recommended use of GIS in planning"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "GIS informs decisions; human deliberation is still required.",
+        "b": "GIS reveals which proposals are feasible given real constraints (utility capacity, hazards). This does not eliminate politics or conflict, but it provides objective information to inform negotiation and decision-making among stakeholders.",
+        "c": "GIS supports coordination; it does not replace the need for inter-departmental dialogue.",
+        "d": "GIS provides information to guide choice among options, not to veto them unilaterally.",
+        "correct": "GIS reveals which proposals are feasible given real constraints (utility capacity, hazards). This does not eliminate politics or conflict, but it provides objective information to inform negotiation and decision-making among stakeholders.",
+        "takeaway": "Smart city planning = data-informed decision-making that gives stakeholders objective ground truth for negotiation."
+      },
+      "explanation": null,
+      "code_citation": "GIS in Planning Conflict Resolution; Evidence-Based Planning",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d28dda208fa9b0986dc023386c0e9ad83eaf94ff267f00db18bc2adba7b98286"
+    },
+    {
+      "question_id": "5fc8bb23-e697-4e5b-bd9a-7e9e8c78cc96",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "How should a smart city approach address the observation that GIS models predicted adequate traffic capacity but real-world data shows chronic congestion in a district that received more development than originally planned?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Conclude that GIS is unreliable and abandon it in favor of intuition-based planning, which may lead to subjective and inconsistent results"
+        },
+        {
+          "id": "b",
+          "text": "Assume the discrepancy is due to inaccurate sensor data and replace the monitoring system, potentially overlooking other contributing factors"
+        },
+        {
+          "id": "c",
+          "text": "Accept chronic congestion as an inevitable cost of economic growth, disregarding potential solutions that could alleviate the issue"
+        },
+        {
+          "id": "d",
+          "text": "Use the discrepancy as evidence that traffic assumptions were incomplete; update modeling to include induced demand, reassess the district's carrying capacity, and revise future development limits or implement congestion mitigation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "One inaccuracy does not invalidate GIS; rather, it shows how GIS reveals problems that paper planning would not catch as quickly.",
+        "b": "Before blaming data, investigate whether the underlying planning assumptions (traffic generation, mode choice, parking) were incomplete.",
+        "c": "Chronic congestion degrades livability and contradicts planning goals; it requires response.",
+        "d": "The value of smart city monitoring is not perfect prediction but rapid detection of implementation problems. When real data contradicts predictions, planners adapt by investigating root causes (in this case, likely induced demand or development density exceeding assumptions), updating models, and adjusting strategy.",
+        "correct": "The value of smart city monitoring is not perfect prediction but rapid detection of implementation problems. When real data contradicts predictions, planners adapt by investigating root causes (in this case, likely induced demand or development density exceeding assumptions), updating models, and adjusting strategy.",
+        "takeaway": "Smart city planning is adaptive: discrepancies between prediction and reality trigger model refinement and strategy adjustment, not system abandonment."
+      },
+      "explanation": null,
+      "code_citation": "Adaptive Smart City Planning; Real-time Data and Modeling",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c72c27d888d39391e29f93c4bc9b5875ee40416a4bf2c2c6d6a0bed83a0c22b1"
+    },
+    {
+      "question_id": "78dc6325-e27a-4334-a859-86b304fc7ad3",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "How does a digital civic engagement platform serve planning objectives under RA 7160 (Local Government Code)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It allows planners to announce decisions without community input, which may lead to public dissatisfaction"
+        },
+        {
+          "id": "b",
+          "text": "It provides an online channel for collecting community input on priorities, reporting infrastructure problems, and increasing planning transparency"
+        },
+        {
+          "id": "c",
+          "text": "It replaces the need for in-person public hearings and consultation, which can limit direct community interaction"
+        },
+        {
+          "id": "d",
+          "text": "It is optional and not required by RA 7160, though it can enhance community engagement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Engagement platforms should enable two-way communication, not one-way announcements.",
+        "b": "Digital platforms extend participation channels required by RA 7160 by making planning data accessible online and collecting community feedback, priorities, and ground-truth infrastructure data.",
+        "c": "Digital platforms supplement in-person consultations; they do not replace the value of face-to-face dialogue.",
+        "d": "While not explicitly mandated, digital engagement supports RA 7160's participatory planning requirement.",
+        "correct": "Digital platforms extend participation channels required by RA 7160 by making planning data accessible online and collecting community feedback, priorities, and ground-truth infrastructure data.",
+        "takeaway": "Digital engagement = expanded participation channels that support RA 7160's mandatory community involvement in planning."
+      },
+      "explanation": null,
+      "code_citation": "RA 7160; Digital Civic Engagement; Participatory Planning",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f4056b12a384d60fc6551aabcf52fafb9f682a78e74476dd3746ea35f756ff64"
+    },
+    {
+      "question_id": "7fcd5545-d063-4637-82a7-000e941fdb23",
+      "article_id": "4bb1957d-f513-47e1-b253-c7cbc65912b3",
+      "topic_id": "c26c798a-e0e4-4114-9c2b-29f74a1cc6bb",
+      "text": "A municipality implements IoT sensors throughout the city to track water consumption. Which of the following is the most direct planning benefit of this real-time data?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reducing the need for environmental impact statements, which are often costly and time-consuming to produce"
+        },
+        {
+          "id": "b",
+          "text": "Determining the historical origin of the city's water system, which can provide insights into past urban planning decisions"
+        },
+        {
+          "id": "c",
+          "text": "Identifying water-loss zones in distribution networks and avoiding development in areas where utilities cannot expand capacity"
+        },
+        {
+          "id": "d",
+          "text": "Enabling the municipality to bill residents more accurately, thereby improving revenue collection and financial planning"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Environmental impact statements are still required; IoT data may enhance them but does not replace them.",
+        "b": "Historical research is not directly served by real-time IoT data.",
+        "c": "Real-time utility consumption data reveals infrastructure bottlenecks and constraints. Planners use this to avoid directing new development to areas where utilities cannot serve it, and to prioritize infrastructure upgrades in CLUPs.",
+        "d": "Billing is a utility function, not a planning benefit.",
+        "correct": "Real-time utility consumption data reveals infrastructure bottlenecks and constraints. Planners use this to avoid directing new development to areas where utilities cannot serve it, and to prioritize infrastructure upgrades in CLUPs.",
+        "takeaway": "IoT utility monitoring informs land use decisions by revealing where growth is infrastructure-constrained."
+      },
+      "explanation": null,
+      "code_citation": "IoT and Smart Infrastructure; Utility-Informed Planning",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-008-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.512784+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9e9276e1bc0d945627a9a5daf9c5304c93547bb382adf180dfad390945ece6d0"
+    }
+  ]
+}

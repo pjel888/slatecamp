@@ -1,0 +1,518 @@
+{
+  "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:256aec80cfbaaf551b5425cafb9ff7f27ab28e3af0392d647932377a1247392a",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "81ef3b41-04f3-4b7a-89f3-74e77185088e",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "A site plan shows a parking area with 8 stalls, each dimensioned as 2.0 m × 4.5 m, and a single aisle running perpendicular to the stalls with width 3.0 m. What drawing error or code violation does this present?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No error; this is a compact parking layout that meets standards, assuming the site is designated for compact vehicles only"
+        },
+        {
+          "id": "b",
+          "text": "Parking stalls are 2.0 m × 4.5 m instead of the standard 2.5 m × 5.0 m, and the aisle width should be 3.5 m minimum for one-way traffic"
+        },
+        {
+          "id": "c",
+          "text": "The aisle width is correct; only the stall length (4.5 m) is incorrect, which may lead to inadequate space for larger vehicles"
+        },
+        {
+          "id": "d",
+          "text": "Parking dimensions are not regulated; any spacing is acceptable as long as vehicles can fit, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. This layout violates both parking stall and aisle width standards.",
+        "b": "Correct. You identified both the stall undersizing and aisle width violation.",
+        "c": "Incorrect. Both the stall width (2.0 m vs. 2.5 m) and aisle width (3.0 m vs. 3.5 m) are non-compliant.",
+        "d": "Incorrect. Parking dimensions are regulated by NBC Rule VII Section 707.",
+        "correct": "Standard parking stall: 2.5 m wide × 5.0 m long. The plan shows 2.0 m × 4.5 m (both too small). Minimum one-way aisle width is 3.5 m; the plan shows 3.0 m (too narrow). Both are non-compliant.",
+        "takeaway": "Standard parking stall = 2.5 m wide × 5.0 m long. One-way aisle = 3.5 m minimum. Two-way aisle = 6.0 m minimum. Always verify parking dimensions on site plans against these standards."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VII Section 707",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da7354f679754a4011e02e9163f0c3c87154653e7b4368c68f4a5b7d16551051"
+    },
+    {
+      "question_id": "0a6950bd-102f-4dd9-8f2b-0b235ac015c5",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "A site plan is drawn at 1:500 sclea. The property is 50 m wide and 80 m deep. On the drawing, what will be the dimensions of the property boundary rectangle in millimeters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 mm wide × 160 mm deep"
+        },
+        {
+          "id": "b",
+          "text": "50 mm wide × 80 mm deep"
+        },
+        {
+          "id": "c",
+          "text": "500 mm wide × 800 mm deep"
+        },
+        {
+          "id": "d",
+          "text": "5 mm wide × 8 mm deep"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct. You calculated the scale reduction accurately.",
+        "b": "Incorrect. This is 1:1000 scale division, not 1:500.",
+        "c": "Incorrect. This is oversized; it would correspond to 1:100 scale.",
+        "d": "Incorrect. This is far too small; it corresponds to 1:10,000 scale.",
+        "correct": "At 1:500 scale, 1 unit on the drawing represents 500 units in reality. Property width: 50 m ÷ 500 = 0.1 m = 100 mm. Depth: 80 m ÷ 500 = 0.16 m = 160 mm.",
+        "takeaway": "Scale conversion: Drawing dimension = Real dimension ÷ Scale factor. For 1:500, divide real dimensions by 500. Always convert meters to millimeters to ensure accuracy on drawings."
+      },
+      "explanation": null,
+      "code_citation": "Scaling and drawing conventions",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5d208e1a2eee4af9b60a622ea6d816ba865780b7121930e6d514b4d756c759a2"
+    },
+    {
+      "question_id": "019078f6-3e49-4d9d-99b1-d30bac029756",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "A site plan shows a 15 m tall building with a driveway aisle to accessible parking spaces that is 2.4 m wide. According to BP 344 accessibility standards, is this dimension adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 2.4 m is the standard accessible parking aisle width"
+        },
+        {
+          "id": "b",
+          "text": "No, this is only the *additional* width required for accessible aisles; the total aisle must also meet the one-way aisle standard (3.5 m + 2.4 m = 5.9 m)"
+        },
+        {
+          "id": "c",
+          "text": "No, accessible parking aisles should be 4.0 m wide"
+        },
+        {
+          "id": "d",
+          "text": "Accessible parking aisles are not regulated; this width is a designer's choice"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. 2.4 m is the width of the access buffer/loading zone, not the circulation aisle.",
+        "b": "Correct. You understood that the access aisle width is specific to the parking slot and does not replace the required circulation aisle width.",
+        "c": "Incorrect. 4.0 m is not the standard; the additive logic (3.5 + 2.4) is the correct code application.",
+        "d": "Incorrect. BP 344 mandates accessible parking dimensions to ensure PWD safety.",
+        "correct": "BP 344 2024 IRR specifies a clear access aisle width of 1.2 m for cars and 2.4 m for van-accessible slots. This width is for the 'loading/unloading' zone and must be provided in addition to the standard driveway/circulation aisle (3.5 m). Thus, a 2.4 m total width for the drive aisle is non-compliant.",
+        "takeaway": "Accessible parking involves two parts: the slot and the access aisle (1.2 m or 2.4 m). The circulation driveway must still meet standard NBC requirements (3.5 m min)."
+      },
+      "explanation": null,
+      "code_citation": "BP 344 IRR (2024 Revision)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2a85e2f59e497854a8abef757c7de09aeb82064c38b4571b92fbce2d229e530e"
+    },
+    {
+      "question_id": "4b8f3fb8-304c-43a0-82e4-84a9839355ae",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "A site plan shows a building footprint and parking layout. However, there is no clear indication of which edge of the site is the primary street frontage or access point. What drawing element is missing, and why is this a significant omission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Nothing is missing; the building footprint clearly shows primary access, which is typically indicated by the orientation of the main entrance"
+        },
+        {
+          "id": "b",
+          "text": "A north arrow is missing, which prevents readers from determining orientation and identifying the street frontage without additional context"
+        },
+        {
+          "id": "c",
+          "text": "Setback lines should be added to indicate which edge is the front, providing clarity on zoning compliance"
+        },
+        {
+          "id": "d",
+          "text": "A driveway label indicating 'Primary Access' or 'Main Entrance' should be added to guide vehicular and pedestrian traffic"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. The building footprint alone doesn't indicate street frontage or cardinal orientation.",
+        "b": "Correct. You identified the north arrow as critical for understanding site context and setback application.",
+        "c": "Incorrect. Setback lines show the *compliance zones*, but a north arrow is needed first to define which line is the 'front' setback.",
+        "d": "Incorrect. Access labels are helpful but secondary to cardinal orientation.",
+        "correct": "A north arrow is essential. Without orientation, readers cannot determine which property edge faces the primary street or which direction windows face. Setback definitions (front, side, rear) depend on this orientation. A missing north arrow makes the entire site plan difficult to interpret contextually.",
+        "takeaway": "Every site plan must include a clearly visible north arrow, preferably in the upper right corner. This is the foundation for interpreting all other site elements and understanding regulatory compliance."
+      },
+      "explanation": null,
+      "code_citation": "Architectural drawing standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3241ecb445c9662c13b9395213cea6b9ea0550d826aa2c3c225bde80953f02f6"
+    },
+    {
+      "question_id": "87c2e810-0a59-48ed-825f-8335aaeeddfd",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "What is the primary purpose of setback lines shown on a site plan?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To indicate the edge of the parking area, ensuring vehicles do not encroach on pedestrian pathways or landscaped zones"
+        },
+        {
+          "id": "b",
+          "text": "To show the minimum distance a building must be set back from property lines for light, air, and emergency access"
+        },
+        {
+          "id": "c",
+          "text": "To outline the extent of the landscaped area, including any required buffer zones for environmental protection"
+        },
+        {
+          "id": "d",
+          "text": "To define the structural grid for foundation design, which is crucial for load distribution and seismic considerations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Parking layout is shown separately, not by setback lines.",
+        "b": "Correct. You understand setbacks as regulatory zones protecting adjacent properties and public access.",
+        "c": "Incorrect. Landscape features are shown as separate elements, not defined by setback lines.",
+        "d": "Incorrect. The structural grid is an interior design consideration, not communicated by site plan setback lines.",
+        "correct": "Setback lines establish a zone between the property boundary and the building, ensuring adequate light, air circulation, and emergency egress pathways. This is a zoning regulation (PD 1096 in the Philippines).",
+        "takeaway": "Setbacks are regulatory buffers. Always show them clearly on site plans to demonstrate compliance and to communicate the usable building area within the property boundary."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:67959cc6195c2ceeac011318540a3506c945bf08f0d8c8717ffef6eaeeb22bce"
+    },
+    {
+      "question_id": "1d1190ea-c071-4775-b5cd-7249fda5b35b",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "A 10 m tall building is being placed on a property. A site plan shows side setbacks of 2.0 m from the adjacent property lines. According to PD 1096, what is the required side setback for this height?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.0 m; the design complies"
+        },
+        {
+          "id": "b",
+          "text": "3.0 m; the design is non-compliant by 1.0 m"
+        },
+        {
+          "id": "c",
+          "text": "2.5 m; the design is non-compliant by 0.5 m"
+        },
+        {
+          "id": "d",
+          "text": "Side setbacks are not regulated; only front and rear setbacks apply"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct. You correctly identified the setback requirement for the 9–12 m height category.",
+        "b": "Incorrect. The side setback for 9–12 m is 2.0 m, not 3.0 m (that applies to 12–15 m buildings).",
+        "c": "Incorrect. The requirement is 2.0 m, not 2.5 m.",
+        "d": "Incorrect. PD 1096 regulates side setbacks as well as front and rear.",
+        "correct": "PD 1096 setback table for buildings 9–12 m tall: side setback = 2.0 m. A 10 m tall building requires 2.0 m side setback, which complies with the plan shown.",
+        "takeaway": "For a 10 m tall building (9-12m): front=6.0m, side=2.0m, rear=2.0m (PD 1096 Rule VIII Table VIII.3). Always cross-reference the complete setback row for each height range."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096, Rule VIII",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fee2e40e1a4ea7622af9de737524366adab7f0f9f2d9430f298cd5e9e6e97ce9"
+    },
+    {
+      "question_id": "68107ab6-dc8f-4e17-b3eb-2625a57c76ae",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "A site plan shows an 8 m tall building with a front setback of 4.5 m from the property line. According to PD 1096, is this compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, the required front setback is 6.0 m for buildings 4.5-9.0 m tall (PD 1096 Rule VIII Table VIII.3)"
+        },
+        {
+          "id": "b",
+          "text": "No, the setback should be 6.0 m for an 8 m tall building, as specified in the local zoning ordinance for residential areas"
+        },
+        {
+          "id": "c",
+          "text": "No, the setback should be 3.0 m; 4.5 m is excessive, considering the typical urban lot dimensions"
+        },
+        {
+          "id": "d",
+          "text": "Setbacks are not regulated by PD 1096; this is a discretionary design choice, often left to the architect's judgment"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct. This identifies the correct height-based category and the resulting 6.0 m requirement.",
+        "b": "This identifies the correct dimension (6.0 m) but Option A is more precise as it cites the regulatory range and table.",
+        "c": "Incorrect. 3.0 m is insufficient for a building of this height under the NBCP.",
+        "d": "Incorrect. Setbacks are mandatory legal requirements under PD 1096 to ensure public safety and access to light and air.",
+        "correct": "According to PD 1096 Rule VIII Table VIII.3, buildings with a height of 4.5 m to 9.0 m require a minimum front setback of 6.0 m. An 8 m building falls into this category; therefore, a 4.5 m setback is non-compliant.",
+        "takeaway": "For buildings 4.5 m to 9.0 m tall: Front = 6.0 m, Side = 2.0 m, Rear = 2.0 m. Always check the height-to-setback ratio in Rule VIII."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule VIII Table VIII.3",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5697ccac433b2bdb561d3669de8666ff563fa0db77268f1aa93dc7e5882fb157"
+    },
+    {
+      "question_id": "6256020a-ef34-4816-92bd-b8210bcdc9f6",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "A site plan shows a property with water supply, sewer, electrical, and gas utility lines marked. However, the locations of these utilities are not verified against the city utility authority records. What risk does this present?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No risk; the utilities shown are typical and sufficient for planning purposes, assuming that standard practices have been followed"
+        },
+        {
+          "id": "b",
+          "text": "High risk; assumed utility locations may conflict with actual lines, leading to construction delays, damage to existing utilities, and cost overruns"
+        },
+        {
+          "id": "c",
+          "text": "Minor risk; utilities can always be relocated during construction at no significant cost, provided that the necessary permits are obtained"
+        },
+        {
+          "id": "d",
+          "text": "The architect is not responsible for verifying utility locations; this is a contractor's task, as outlined in the construction contract"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Utility locations are not generic; each site has specific utility lines that must be verified.",
+        "b": "Correct. You recognized that unverified utilities create construction risk and cost exposure.",
+        "c": "Incorrect. Relocating utilities is expensive and often requires permits and coordination with utility authorities.",
+        "d": "Incorrect. The architect has a professional responsibility to coordinate utilities and identify potential conflicts.",
+        "correct": "Unverified utility locations on a site plan create significant risk. During construction, actual utilities may differ from the plan, causing contractors to damage lines, delay work, incur change orders, and potentially create safety hazards. Utility verification is essential before finalizing site plans.",
+        "takeaway": "Always mark 'Utility Information per [Authority Name] as of [Date]' on site plans. Contact the local water, sewer, electrical, and gas authorities to mark and verify utility locations before finalizing design. This is a critical early-phase task."
+      },
+      "explanation": null,
+      "code_citation": "Professional practice; site coordination",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8029a7e4f92c234ae6bcf26b365d74277aa4984debd9a67b490ee478b4b39f0d"
+    },
+    {
+      "question_id": "fbbca616-97ef-4f76-a21a-b17e27125e37",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "A site plan includes a north arrow but is oriented with north pointing to the lower left corner of the page. Is this acceptable practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, the direction is correct as long as the north arrow is clearly labeled"
+        },
+        {
+          "id": "b",
+          "text": "No, north arrow should always point upward (north) on the page for clarity and standardization"
+        },
+        {
+          "id": "c",
+          "text": "It depends on the building orientation; if the building is oriented diagonally, the north arrow can point in any direction"
+        },
+        {
+          "id": "d",
+          "text": "Compass orientation on site plans is optional; readers can use the property lines to determine direction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. While the arrow is labeled, north pointing downward or sideways violates standard drawing conventions and causes confusion.",
+        "b": "Correct. You understand standard drawing convention: north typically points upward.",
+        "c": "Incorrect. Building orientation does not determine compass direction. The site itself has an absolute orientation regardless of the building placement.",
+        "d": "Incorrect. A north arrow is essential; plan readers should not have to infer direction from property lines alone.",
+        "correct": "By convention, north should point toward the top of the page whenever possible. This is the standard expectation in architectural drawings and prevents confusion. If site conditions require a different orientation, the north arrow must be clearly visible and labeled.",
+        "takeaway": "Always place the north arrow so north points toward the top of the page. If the site requires a tilted orientation, rotate the entire drawing so north is upward. This is a fundamental convention in architectural graphics."
+      },
+      "explanation": null,
+      "code_citation": "Architectural drawing standards",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:16dde8407d5a82ae8aced14fdae9c0603f7436ccf93404e3e5916dfc1794b695"
+    },
+    {
+      "question_id": "7aa5af67-3faf-41d4-8b57-7587a3d89bc1",
+      "article_id": "a25678f1-1d48-4938-8224-789315df40de",
+      "topic_id": "e3d30d87-80f4-4d2f-a715-6ed5cc884ec8",
+      "text": "A site plan shows a 13 m tall building. The rear setback dimension is noted as 2.5 m. According to PD 1096, what is the required rear setback for this height, and is the design compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Required = 2.0 m; design complies (2.5 m > 2.0 m), ensuring adequate space for light and ventilation"
+        },
+        {
+          "id": "b",
+          "text": "Required = 3.0 m; design is non-compliant (2.5 m < 3.0 m)"
+        },
+        {
+          "id": "c",
+          "text": "Required = 2.5 m; design exactly complies, meeting the minimum standards set forth by the code"
+        },
+        {
+          "id": "d",
+          "text": "Rear setbacks depend on the lot depth, not building height, which is a common misunderstanding"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. The 2.0 m rear setback applies to buildings up to 9 m tall, not 13 m.",
+        "b": "Correct. You identified the correct setback category (12–15 m) and recognized the non-compliance.",
+        "c": "Incorrect. The requirement is 3.0 m, not 2.5 m.",
+        "d": "Incorrect. PD 1096 setbacks are based on building height, not lot dimensions.",
+        "correct": "PD 1096 for buildings 12–15 m tall (13 m falls in this category): rear setback = 3.0 m. The plan shows 2.5 m, which is 0.5 m short of the required 3.0 m and is non-compliant.",
+        "takeaway": "For a 13 m tall building (12-15m): front=6.0m, side=3.0m, rear=3.0m (PD 1096 Rule VIII Table VIII.3). This height increases the side and rear setbacks significantly."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096, Rule VIII",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.575466+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6af79574add873c4f4e523ec4a5dcdeefc46f16db390aaeb59714582f5fde4d2"
+    }
+  ]
+}

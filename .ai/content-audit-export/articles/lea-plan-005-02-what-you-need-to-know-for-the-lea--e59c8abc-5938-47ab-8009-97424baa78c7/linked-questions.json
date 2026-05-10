@@ -1,9 +1,111 @@
 {
   "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:77b51f7c3d422f717b28e92871ce812d7442de2a9d2f9eed5df8a9e12ea15fc8",
+  "linked_questions_hash": "sha256:d434e91dadec7a460c402567cedfd958b0f1927c92c5fe7c3da1b22763899c2c",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "e19b9c3e-4e10-4e65-aa03-89b682e8090f",
+      "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
+      "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
+      "text": "A coastal landscape restoration project faces competing goals: one stakeholder prefers calamansi (citrus) fruit trees for income generation; another prioritizes native mangrove and coastal forest restoration. Analyze how these goals reflect different but legitimate uses of exotic vs. native species, and recommend an integrated approach:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Native species should be eliminated because they have no economic value compared to exotic fruits, focusing solely on income generation"
+        },
+        {
+          "id": "b",
+          "text": "The site should be divided: fruit production in one zone, native restoration in an ecologically protected zone, with designed boundaries minimizing competition and supporting both objectives"
+        },
+        {
+          "id": "c",
+          "text": "Calamansi trees are native to the Philippines, so their use is identical to native species restoration, ensuring ecological balance"
+        },
+        {
+          "id": "d",
+          "text": "Exotic species like calamansi are inherently invasive and should never be planted in the Philippines, prioritizing ecological integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Native species provide irreplaceable ecological services and cultural values that economic crops cannot replicate.",
+        "b": "Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict.",
+        "c": "Calamansi is exotic to the Philippines historically, though now naturalized in Philippine culture and agriculture.",
+        "d": "Calamansi is not recognized as invasive in the Philippines; it is a productive agricultural species. Invasive designation applies to species with uncontrolled spread and ecosystem damage.",
+        "correct": "Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict.",
+        "takeaway": "Integrated landscape design can support both economic and ecological objectives through thoughtful zoning and species placement."
+      },
+      "explanation": "Native species provide irreplaceable ecological services and cultural values that economic crops cannot replicate. Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict. Calamansi is exotic to the Philippines historically, though now naturalized in Philippine culture and agriculture. Calamansi is not recognized as invasive in the Philippines; it is a productive agricultural species. Invasive designation applies to species with uncontrolled spread and ecosystem damage. Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict. Integrated landscape design can support both economic and ecological objectives through thoughtful zoning and species placement.",
+      "code_citation": "Native vs. Exotic Species section; Biodiversity Conservation section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-05-06T14:48:23.948564+00:00",
+      "content_hash": "sha256:b12af9b7d50d674c262c78378362f8518f2f3b10a0d67306afad268166f84171"
+    },
+    {
+      "question_id": "7734ead8-6601-44ee-ada1-f11845dae0ea",
+      "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
+      "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
+      "text": "A landscape designer is planning a ecological restoration project in a secondary forest recovering on abandoned agricultural land. The site is currently dominated by pioneer species and exotic invasive shrubs. What successional planting strategy should guide the design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Remove all vegetation and start with monoculture planting of climax hardwood species, ensuring no pioneer species remain to compete"
+        },
+        {
+          "id": "b",
+          "text": "Leave the site alone because natural succession will eventually restore the forest without intervention, assuming no further human disturbance occurs"
+        },
+        {
+          "id": "c",
+          "text": "Remove invasive species, manage pioneer growth, and introduce shade-tolerant understory species to accelerate succession toward mature forest"
+        },
+        {
+          "id": "d",
+          "text": "Plant exotic fruit trees to generate income while the forest naturally restores, balancing economic and ecological goals"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Removing all vegetation and monoculturing climax species is costly, less resilient, and ignores successional processes.",
+        "b": "While natural succession occurs, it is slow (30–50+ years for mature forest). Active management achieves restoration faster.",
+        "c": "Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity.",
+        "d": "Exotic fruit trees compete with native restoration goals and may become invasive.",
+        "correct": "Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity.",
+        "takeaway": "Active successional management combines natural processes with strategic interventions for faster, more diverse restoration."
+      },
+      "explanation": "Removing all vegetation and monoculturing climax species is costly, less resilient, and ignores successional processes. While natural succession occurs, it is slow (30–50+ years for mature forest). Active management achieves restoration faster. Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity. Exotic fruit trees compete with native restoration goals and may become invasive. Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity. Active successional management combines natural processes with strategic interventions for faster, more diverse restoration.",
+      "code_citation": "Successional Planting and Ecological Restoration section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-005-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:08.090829+00:00",
+      "updated_at": "2026-05-06T14:48:24.318673+00:00",
+      "content_hash": "sha256:0d124c95f88c5f71ba4c8365c6b050193dd9cf488461ab967d23ffb6ad162f9b"
+    },
     {
       "question_id": "0e28044c-20d3-4ffe-889f-b59ab7ccbf88",
       "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
@@ -91,7 +193,7 @@
         "correct": "Mangrove species are salt-tolerant and adapted to waterlogged, tidal conditions. Rainforest species require well-drained soils and fresh water. Each has specific physiology and ecological requirements evolved for their ecosystem. Planting rainforest species in a mangrove habitat results in failure; the species cannot survive the salinity and waterlogging.",
         "takeaway": "Successful restoration matches species to ecosystem type, respecting evolved adaptations to environmental conditions."
       },
-      "explanation": null,
+      "explanation": "Native species are adapted to specific conditions; transplanting outside those conditions fails. Mangrove species are salt-tolerant and adapted to waterlogged, tidal conditions. Rainforest species require well-drained soils and fresh water. Each has specific physiology and ecological requirements evolved for their ecosystem. Planting rainforest species in a mangrove habitat results in failure; the species cannot survive the salinity and waterlogging. Using ecosystem-appropriate species (many species across multiple ecosystem types) maximizes biodiversity—not reduces it. Ecological restoration is fundamentally based on matching species to ecosystem conditions. Mangrove species are salt-tolerant and adapted to waterlogged, tidal conditions. Rainforest species require well-drained soils and fresh water. Each has specific physiology and ecological requirements evolved for their ecosystem. Planting rainforest species in a mangrove habitat results in failure; the species cannot survive the salinity and waterlogging. Successful restoration matches species to ecosystem type, respecting evolved adaptations to environmental conditions.",
       "code_citation": "Ecological Systems and Successional Processes section",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -103,8 +205,8 @@
       "model_id": "ALE-PLAN-005-02-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0d70824ad16f05a7d352be21ef1a3bb16fbfdfccacd061f740cdf5d584a0f688"
+      "updated_at": "2026-05-06T14:45:57.960239+00:00",
+      "content_hash": "sha256:dc1aca6a5189a2cb02d8b241f83c5731cbdea4aff48bf0863c4cbfdd2e574555"
     },
     {
       "question_id": "6a4deba3-9824-427d-85e4-09dfd634223e",
@@ -142,7 +244,7 @@
         "correct": "Nitrogen-fixing trees form symbiotic relationships with bacteria that convert atmospheric nitrogen into bioavailable forms, enriching soil. This improves conditions for other species to establish in degraded soils, supporting ecological restoration.",
         "takeaway": "Nitrogen-fixing trees like Narra improve soil conditions that enable diverse species establishment, supporting ecological succession."
       },
-      "explanation": null,
+      "explanation": "Nitrogen-fixing trees form symbiotic relationships with bacteria that convert atmospheric nitrogen into bioavailable forms, enriching soil. This improves conditions for other species to establish in degraded soils, supporting ecological restoration. Narra is valuable in mixed plantings, not as a monoculture replacement for all other species. While nitrogen-fixing trees contribute to soil health, they support rather than replace agricultural systems. Mangroves have distinct ecological roles and cannot be replaced by upland forest species. Nitrogen-fixing trees form symbiotic relationships with bacteria that convert atmospheric nitrogen into bioavailable forms, enriching soil. This improves conditions for other species to establish in degraded soils, supporting ecological restoration. Nitrogen-fixing trees like Narra improve soil conditions that enable diverse species establishment, supporting ecological succession.",
       "code_citation": "Narra as National Tree and Ecological Reference section",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -154,8 +256,8 @@
       "model_id": "ALE-PLAN-005-02-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:674b205c4015bee6d786e2769024322ab5482665c8092ae0eb8e38d309f18794"
+      "updated_at": "2026-05-06T14:48:23.538803+00:00",
+      "content_hash": "sha256:76db59c137b3f15741aae22f5433e6e509505b36354141925c50dccfeefc600b"
     },
     {
       "question_id": "ee780da5-104e-4683-86de-d3c92ea9625f",
@@ -193,7 +295,7 @@
         "correct": "Phase 1 pioneer planting (Albizia and similar nitrogen-fixing species) rapidly creates canopy shade and enriches soil through nitrogen fixation. These conditions prepare the site for Phase 2 understory establishment and eventual Phase 3 mature forest transition.",
         "takeaway": "Phase 1 pioneer planting creates conditions (soil improvement, shade) enabling subsequent successional phases."
       },
-      "explanation": null,
+      "explanation": "Full forest doesn't establish in Phase 1; forest develops progressively through multiple phases over decades. Grassland species decline as shade increases, but this is part of natural successional transition, not ecosystem collapse. Phase 1 pioneer planting (Albizia and similar nitrogen-fixing species) rapidly creates canopy shade and enriches soil through nitrogen fixation. These conditions prepare the site for Phase 2 understory establishment and eventual Phase 3 mature forest transition. Albizia and other pioneers used in restoration are typically native or non-invasive exotics chosen for ecological restoration, not invasive species. Phase 1 pioneer planting (Albizia and similar nitrogen-fixing species) rapidly creates canopy shade and enriches soil through nitrogen fixation. These conditions prepare the site for Phase 2 understory establishment and eventual Phase 3 mature forest transition. Phase 1 pioneer planting creates conditions (soil improvement, shade) enabling subsequent successional phases.",
       "code_citation": "Successional Planting and Ecological Restoration section",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -205,8 +307,8 @@
       "model_id": "ALE-PLAN-005-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:8ffc74f19bdbd2997960c0bf4eb3ad822b4641ccd15eb3c47b40a14ed526c9b9"
+      "updated_at": "2026-05-06T14:48:23.685795+00:00",
+      "content_hash": "sha256:1de9815f651bb4370abacf0a804ed934943c25d47d79b70af04be0ebcd9e3704"
     },
     {
       "question_id": "9d9ec5e4-b493-4abf-b4eb-e9e5fe6c887b",
@@ -244,7 +346,7 @@
         "correct": "Invasive species are those that spread rapidly beyond their intended range, outcompete natives, degrade ecosystems, and are difficult to control. Chromolaena odorata (an introduced species) exhibits all these behaviors in Philippine ecosystems, blocking native regeneration.",
         "takeaway": "Invasive species harm ecosystems through uncontrolled spread and competitive displacement of natives."
       },
-      "explanation": null,
+      "explanation": "Chromolaena odorata is not intentionally used in restoration; it is recognized as a problem species. Chromolaena is not native to the Philippines; it is an introduced exotic. Invasive species are those that spread rapidly beyond their intended range, outcompete natives, degrade ecosystems, and are difficult to control. Chromolaena odorata (an introduced species) exhibits all these behaviors in Philippine ecosystems, blocking native regeneration. While seed production is a factor, the defining characteristic of invasive species is their ecosystem impact, not just reproductive rate. Invasive species are those that spread rapidly beyond their intended range, outcompete natives, degrade ecosystems, and are difficult to control. Chromolaena odorata (an introduced species) exhibits all these behaviors in Philippine ecosystems, blocking native regeneration. Invasive species harm ecosystems through uncontrolled spread and competitive displacement of natives.",
       "code_citation": "Native vs. Exotic Species section",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -256,59 +358,8 @@
       "model_id": "ALE-PLAN-005-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e7de17027a471f654afc5007c921371ddabecb47812420602871a013e2a4f894"
-    },
-    {
-      "question_id": "e19b9c3e-4e10-4e65-aa03-89b682e8090f",
-      "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
-      "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "A coastal landscape restoration project faces competing goals: one stakeholder prefers calamansi (citrus) fruit trees for income generation; another prioritizes native mangrove and coastal forest restoration. Analyze how these goals reflect different but legitimate uses of exotic vs. native species, and recommend an integrated approach:",
-      "options": [
-        {
-          "id": "a",
-          "text": "Native species should be eliminated because they have no economic value compared to exotic fruits, focusing solely on income generation"
-        },
-        {
-          "id": "b",
-          "text": "The site should be divided: fruit production in one zone, native restoration in an ecologically protected zone, with designed boundaries minimizing competition and supporting both objectives"
-        },
-        {
-          "id": "c",
-          "text": "Calamansi trees are native to the Philippines, so their use is identical to native species restoration, ensuring ecological balance"
-        },
-        {
-          "id": "d",
-          "text": "Exotic species like calamansi are inherently invasive and should never be planted in the Philippines, prioritizing ecological integrity"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Native species provide irreplaceable ecological services and cultural values that economic crops cannot replicate.",
-        "b": "Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict.",
-        "c": "Calamansi is exotic to the Philippines historically, though now naturalized in Philippine culture and agriculture.",
-        "d": "Calamansi is not recognized as invasive in the Philippines; it is a productive agricultural species. Invasive designation applies to species with uncontrolled spread and ecosystem damage.",
-        "correct": "Both goals are legitimate in their contexts. Calamansi production supports livelihoods and food security; native restoration supports ecosystems and cultural heritage. Zoning separates them: fruit production in upland or disturbed areas; native coastal forest and mangrove in ecologically sensitive zones. This integrates economic and ecological objectives without conflict.",
-        "takeaway": "Integrated landscape design can support both economic and ecological objectives through thoughtful zoning and species placement."
-      },
-      "explanation": null,
-      "code_citation": "Native vs. Exotic Species section; Biodiversity Conservation section",
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-005-02-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5b0b54e45e4d74f680e632127c5d0f54299de688f1a0998177e294110ab31c39"
+      "updated_at": "2026-05-06T14:48:23.82014+00:00",
+      "content_hash": "sha256:635964e330ee3cf8978fe026f4f5c763ef826bfe3c936dc3363905ad0b56f62a"
     },
     {
       "question_id": "e7eed1b2-4d28-4ee2-bf85-abda02b11e88",
@@ -397,7 +448,7 @@
         "correct": "Native species naturally occur in a region through evolutionary processes and are adapted to local conditions. They have not been introduced by humans, distinguishing them from exotic species even if exotics are now common.",
         "takeaway": "Native status is determined by natural evolutionary occurrence, not current distribution or economic value."
       },
-      "explanation": null,
+      "explanation": "Current presence does not determine native status; some plants have been introduced and naturalized. Agricultural crops may be exotic and introduced by humans, not native. Endemic species are a subset of natives—all endemics are native, but not all natives are endemic. Native species naturally occur in a region through evolutionary processes and are adapted to local conditions. They have not been introduced by humans, distinguishing them from exotic species even if exotics are now common. Native species naturally occur in a region through evolutionary processes and are adapted to local conditions. They have not been introduced by humans, distinguishing them from exotic species even if exotics are now common. Native status is determined by natural evolutionary occurrence, not current distribution or economic value.",
       "code_citation": "Philippine Biodiversity and Native Species Framework section",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -409,8 +460,8 @@
       "model_id": "ALE-PLAN-005-02-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c25a09223739be556ca7498b3f8892c0f93a46399ef3b4cbe77f39c7da865b51"
+      "updated_at": "2026-05-06T14:48:24.086798+00:00",
+      "content_hash": "sha256:35be002f979851cce2713faaf21cae07320ab5bb9ae9f4ff92088a1f39db7c53"
     },
     {
       "question_id": "4ab9f3fc-dabd-446a-bca0-506fb581daa0",
@@ -448,7 +499,7 @@
         "correct": "Pioneer species are fast-growing, light-demanding, and often nitrogen-fixing. They rapidly colonize bare or disturbed land, improve soil, create shade, and establish conditions enabling slower-growing, shade-tolerant species to establish. They are transitional, not permanent.",
         "takeaway": "Pioneers transform conditions, making succession possible—they are essential stepping stones, not end states."
       },
-      "explanation": null,
+      "explanation": "Pioneer species are fast-growing, light-demanding, and often nitrogen-fixing. They rapidly colonize bare or disturbed land, improve soil, create shade, and establish conditions enabling slower-growing, shade-tolerant species to establish. They are transitional, not permanent. Pioneers are replaced during succession as shade-tolerant species establish. Many shade-tolerant and climax species also survive tropical climates; pioneers are distinguished by their role, not their climate tolerance. Seed productivity varies by species and context; pioneer value is their ecological role, not necessarily seed quality. Pioneer species are fast-growing, light-demanding, and often nitrogen-fixing. They rapidly colonize bare or disturbed land, improve soil, create shade, and establish conditions enabling slower-growing, shade-tolerant species to establish. They are transitional, not permanent. Pioneers transform conditions, making succession possible—they are essential stepping stones, not end states.",
       "code_citation": "Ecological Systems and Successional Processes section",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -460,59 +511,8 @@
       "model_id": "ALE-PLAN-005-02-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5f4c4bc5b1741b08ac5b0daa6974fba6ce4479d1ff43c082ba699904ad14fe8c"
-    },
-    {
-      "question_id": "7734ead8-6601-44ee-ada1-f11845dae0ea",
-      "article_id": "e59c8abc-5938-47ab-8009-97424baa78c7",
-      "topic_id": "2a0ffc3f-d4ef-413e-8ab4-d3e9061e0d96",
-      "text": "A landscape designer is planning a ecological restoration project in a secondary forest recovering on abandoned agricultural land. The site is currently dominated by pioneer species and exotic invasive shrubs. What successional planting strategy should guide the design?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Remove all vegetation and start with monoculture planting of climax hardwood species, ensuring no pioneer species remain to compete"
-        },
-        {
-          "id": "b",
-          "text": "Leave the site alone because natural succession will eventually restore the forest without intervention, assuming no further human disturbance occurs"
-        },
-        {
-          "id": "c",
-          "text": "Remove invasive species, manage pioneer growth, and introduce shade-tolerant understory species to accelerate succession toward mature forest"
-        },
-        {
-          "id": "d",
-          "text": "Plant exotic fruit trees to generate income while the forest naturally restores, balancing economic and ecological goals"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Removing all vegetation and monoculturing climax species is costly, less resilient, and ignores successional processes.",
-        "b": "While natural succession occurs, it is slow (30–50+ years for mature forest). Active management achieves restoration faster.",
-        "c": "Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity.",
-        "d": "Exotic fruit trees compete with native restoration goals and may become invasive.",
-        "correct": "Active successional management accelerates restoration: remove invasive species that block succession, manage pioneer growth to create appropriate shade conditions, and introduce native shade-tolerant understory and eventual climax species. This harnesses natural succession while reducing timeline and ensuring diversity.",
-        "takeaway": "Active successional management combines natural processes with strategic interventions for faster, more diverse restoration."
-      },
-      "explanation": null,
-      "code_citation": "Successional Planting and Ecological Restoration section",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-005-02-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:08.090829+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f902fb703bf33dca7fe428ddd51565f01be5848b37d25707e7dfcbc7f9b42b7a"
+      "updated_at": "2026-05-06T14:48:24.200335+00:00",
+      "content_hash": "sha256:d88dfd1b1b6cf25e57b1496ffaaa08d4b64d98a7f99845215851da197bd56976"
     }
   ]
 }

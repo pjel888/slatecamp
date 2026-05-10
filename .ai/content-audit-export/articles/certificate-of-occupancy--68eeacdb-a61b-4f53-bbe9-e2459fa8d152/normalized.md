@@ -218,28 +218,28 @@ The CO cannot exist without its predecessor: the Building Permit issued under Se
 The process chain in full:
 
 ```
-Building Permit (Sec. 301) 
-      ↓ 
-Construction Begins 
-      ↓ 
-Full-Time Supervision + Construction Logbook (Sec. 308) 
-      ↓ 
-Physical Completion 
-      ↓ 
-Certificate of Completion prepared (signed/sealed by Arch/CE; notarized) 
-      ↓ 
-CO Application submitted: Certificate of Completion + Logbook + As-Built Plans + Inspection Sheets (Sec. 309.2) 
-      ↓ 
-OBO endorses to BFP/C/MFM for Fire Safety Inspection 
-      ↓ 
-BFP issues FSIC within 5 working days (or Building Official issues conditional CO if BFP inactive) (Sec. 309.4) 
-      ↓ 
-OBO conducts Final Inspection (Sec. 309.5) 
-      ↓ 
-Building Official issues Certificate of Occupancy within 30 days of final inspection (Sec. 309.6) 
-      ↓ 
-CO posted in conspicuous place on premises (Sec. 309.7) 
-      ↓ 
+Building Permit (Sec. 301)
+      ↓
+Construction Begins
+      ↓
+Full-Time Supervision + Construction Logbook (Sec. 308)
+      ↓
+Physical Completion
+      ↓
+Certificate of Completion prepared (signed/sealed by Arch/CE; notarized)
+      ↓
+CO Application submitted: Certificate of Completion + Logbook + As-Built Plans + Inspection Sheets (Sec. 309.2)
+      ↓
+OBO endorses to BFP/C/MFM for Fire Safety Inspection
+      ↓
+BFP issues FSIC within 5 working days (or Building Official issues conditional CO if BFP inactive) (Sec. 309.4)
+      ↓
+OBO conducts Final Inspection (Sec. 309.5)
+      ↓
+Building Official issues Certificate of Occupancy within 30 days of final inspection (Sec. 309.6)
+      ↓
+CO posted in conspicuous place on premises (Sec. 309.7)
+      ↓
 Building Legally Occupied
 ```
 

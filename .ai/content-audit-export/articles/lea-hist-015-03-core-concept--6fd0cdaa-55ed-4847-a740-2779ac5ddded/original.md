@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Hist 015 03 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -8,54 +17,103 @@ Identify the three traditional Maori building types — whare (domestic), wharen
 **Māori** people inhabited Aotearoa (New Zealand) for over 1,000 years before European contact. Their architecture reflected climate, available materials, cultural values, and spiritual beliefs. The **whare** is a family dwelling—a simple timber structure with specific spatial organization and orientation reflecting Māori cosmology and kinship. The **wharenui** is a communal meeting house, richly carved and decorated, expressing iwi (tribal) identity and genealogy through visual narrative. The **pā** is a fortified settlement with palisaded defensive structures adapted to terrain and strategic position.
 
 
-<ArticleMedia id="media-hist-015-03-core-concept" layout="single" type="image" status="placeholder" alt="Interior and exterior of a traditional wharenui (Maori meeting house, Aotearoa New Zealand), showing the ridgepole with carved ancestors, woven tukutuku panels, and the intricate whakairo (carving) at the porch and gable of the house." caption="Wharenui — Maori Carved Meeting House" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-015-03-core-concept", layout="single", type="image", status="placeholder", alt="Interior and exterior of a traditional wharenui (Maori meeting house, Aotearoa New Zealand), showing the ridgepole with carved ancestors, woven tukutuku panels, and the intricate whakairo (carving) at the porch and gable of the house.", caption="Wharenui — Maori Carved Meeting House", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
-<Tip>Memory aid: **"Whare = Family; Wharenui = Tribe; Pā = Defense"** — three building types expressing different social scleas and purposes; all embedded with mana (spiritual power) and whakapapa (genealogy).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memory aid: **"Whare = Family; Wharenui = Tribe; Pā = Defense"** — three building types expressing different social scleas and purposes; all embedded with mana (spiritual power) and whakapapa (genealogy).
+[/SLATECAMP_UI_BLOCK]
 
 Traditional Māori building emphasized **whare tānga** (craft and technique), integration with landscape, and spiritual significance. Timber (kauri, rimu, totara) was the primary material—abundant, workable, and imbued with mana (spiritual power). Carving and weaving were integral to buildings; ornament was not decoration but narrative and spiritual expression. Buildings embodied whakapapa (genealogy) and told tribal history through visual form.
 
-<Note>Māori building is not merely functional—it is cultural repository. Carving tells genealogy; spatial organization expresses cosmology; material choice reflects spiritual significance. Buildings are physical manifestations of iwi identity and spiritual authority, not simply shelter.</Note>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Māori building is not merely functional—it is cultural repository. Carving tells genealogy; spatial organization expresses cosmology; material choice reflects spiritual significance. Buildings are physical manifestations of iwi identity and spiritual authority, not simply shelter.
+[/SLATECAMP_UI_BLOCK]
 
 **European colonization** (1840 onward) devastated Māori culture and building traditions. Colonial authorities suppressed Māori language, land ownership, and cultural practice. Mission schools imposed European values; Māori building traditions were dismissed as "primitive." By early 20th century, Māori material culture was fragmented and marginalized. The **Treaty of Waitangi** (1840) was breached systematically, and Māori faced cultural erasure.
 
-<Warn>Colonial suppression of Māori architecture was violence—Māori were forbidden to speak their language, practice traditional building, and occupy ancestral lands. Colonial architecture was a tool of cultural erasure and domination. Contemporary restoration is not aesthetic integration but cultural assertion and healing. Acknowledge this violence when discussing Māori architectural history.</Warn>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Colonial suppression of Māori architecture was violence—Māori were forbidden to speak their language, practice traditional building, and occupy ancestral lands. Colonial architecture was a tool of cultural erasure and domination. Contemporary restoration is not aesthetic integration but cultural assertion and healing. Acknowledge this violence when discussing Māori architectural history.
+[/SLATECAMP_UI_BLOCK]
 
 **Contemporary restoration** emerged in late 20th century. Māori communities reclaimed cultural identity through architecture. Contemporary Māori architects integrate traditional design principles with modernist materials and techniques. The **Māori Arts Movement** asserted carving, weaving, and storytelling as living practices. Contemporary wharenui combine traditional spatial organization and carved decoration with modern materials and climate control. Architects like **Hirini Melbourne** and collaborative firms integrate Māori values—manaakitanga (hospitality), kaitiakitanga (stewardship), aroha (compassion)—into architectural practice.
 
 Contemporary New Zealand architecture increasingly acknowledges dual cultural inheritance: European modernist tradition and Māori indigenous knowledge. Architecture becomes a site of cultural negotiation and potential synthesis.
 
 
-<ArticleMedia id="media-hist-015-03-core-concept" layout="single" type="image" status="placeholder" alt="Comparative illustration of the three major Maori building types: whare whakairo (carved meeting house with anthropomorphic ridgepole), pātaka (raised storehouse on a single post), and pā (fortified settlement on a terraced hill with palisades)." caption="Maori Building Types — Whare, Wharenui, Pā" suggestedAsset="Architectural reference image or diagram" placementIntent="Visual reference for architectural period/typology" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-015-03-core-concept", layout="single", type="image", status="placeholder", alt="Comparative illustration of the three major Maori building types: whare whakairo (carved meeting house with anthropomorphic ridgepole), pātaka (raised storehouse on a single post), and pā (fortified settlement on a terraced hill with palisades).", caption="Maori Building Types — Whare, Wharenui, Pā", suggestedAsset="Architectural reference image or diagram", placementIntent="Visual reference for architectural period/typology"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ## Key Facts and Testable Items
 
-<WikiExamTable headers={["Māori Building Type", "Function", "Traditional Materials", "Characteristics"]} rows={[['["**Whare (Dwelling)**", "Family residence", "Timber frame, plant materials", "Simple rectangular; central hearth; specific spatial orientation; spiritual significance"]', '["**Wharenui (Meeting House)**", "Community gathering, tribal identity", "Timber structure, carved decoration", "Elaborately carved interior and exterior; tells iwi genealogy; central gathering space"]', '["**Pā (Fortified Settlement)**", "Defense and settlement", "Timber palisade, earth ramparts", "Hilltop or strategic location; palisaded walls; internal structured arrangement"]', '["**Whare Kai (Food Store)**", "Food storage", "Elevated timber structure", "Elevated on posts; weathertight; protected from ground moisture and pests"]', '["**Wharepuni (Sleeping House)**", "Communal sleeping", "Timber frame; large central space", "Open interior; central fire; large windows/doors for light and ventilation"]']]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Māori Building Type\", \"Function\", \"Traditional Materials\", \"Characteristics\"]}", rows="{[['[\"**Whare (Dwelling)**\", \"Family residence\", \"Timber frame, plant materials\", \"Simple rectangular; central hearth; specific spatial orientation; spiritual significance\"]', '[\"**Wharenui (Meeting House)**\", \"Community gathering, tribal identity\", \"Timber structure, carved decoration\", \"Elaborately carved interior and exterior; tells iwi genealogy; central gathering space\"]', '[\"**Pā (Fortified Settlement)**\", \"Defense and settlement\", \"Timber palisade, earth ramparts\", \"Hilltop or strategic location; palisaded walls; internal structured arrangement\"]', '[\"**Whare Kai (Food Store)**\", \"Food storage\", \"Elevated timber structure\", \"Elevated on posts; weathertight; protected from ground moisture and pests\"]', '[\"**Wharepuni (Sleeping House)**\", \"Communal sleeping\", \"Timber frame; large central space\", \"Open interior; central fire; large windows/doors for light and ventilation\"]']]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 **Significant Contemporary Examples:**
 - **Ngāpuhi Wharenui** (Waitangi, multiple periods) — Traditional and contemporary wharenui; continuous cultural expression; meeting space
 - **Museum of New Zealand Te Papa Tongarewa** (Wellington, designed various architects including Māori consultation) — Integrated Māori and Pākehā (European) design; bicultural institution
 
 ## How It's Tested on the LEA
 
-<ExamTip>**Pattern 1: Māori Spatial and Cultural Principles**
-Questions ask about traditional Māori building organization: Why is the wharenui oriented a certain way? Why are internal spaces organized hierarchically? What does carving represent? You explain: spatial organization reflects cosmology, carving tells genealogy, materials have mana (spiritual power), buildings are cultural repositories, not merely functional shelters.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 1: Māori Spatial and Cultural Principles** Questions ask about traditional Māori building organization: Why is the wharenui oriented a certain way? Why are internal spaces organized hierarchically? What does carving represent? You explain: spatial organization reflects cosmology, carving tells genealogy, materials have mana (spiritual power), buildings are cultural repositories, not merely functional shelters.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 2: Colonial Suppression and Contemporary Restoration**
-Questions ask how colonization affected Māori architecture. You explain: colonial authorities suppressed Māori language and cultural practice, mission education denigrated traditional knowledge, land dispossession prevented building on ancestral lands, and Māori cultural traditions were marginalized. Contemporary restoration reasserts these traditions.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 2: Colonial Suppression and Contemporary Restoration** Questions ask how colonization affected Māori architecture. You explain: colonial authorities suppressed Māori language and cultural practice, mission education denigrated traditional knowledge, land dispossession prevented building on ancestral lands, and Māori cultural traditions were marginalized. Contemporary restoration reasserts these traditions.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>**Pattern 3: Cultural Integration in Contemporary Architecture**
-Questions ask how contemporary architects incorporate Māori principles into modernist design. You explain: spatial organization reflecting Māori values, carving and weaving integrated with contemporary materials, bicultural design processes involving Māori communities, architecture as site of cultural negotiation and healing.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pattern 3: Cultural Integration in Contemporary Architecture** Questions ask how contemporary architects incorporate Māori principles into modernist design. You explain: spatial organization reflecting Māori values, carving and weaving integrated with contemporary materials, bicultural design processes involving Māori communities, architecture as site of cultural negotiation and healing.
+[/SLATECAMP_UI_BLOCK]
 
-<Callout>The LEA tests your knowledge of **Māori architecture** and cultural building traditions in New Zealand, and the relationship between **indigenous design** and **contemporary New Zealand architecture**. Questions focus on traditional Māori structures (whare, wharenui, pā), the impact of European colonization on Māori building traditions, and how contemporary architects integrate Māori cultural principles with modernist design. You must understand colonialism's suppression of Māori culture and the current movement toward cultural restoration through architecture.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0010 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The LEA tests your knowledge of **Māori architecture** and cultural building traditions in New Zealand, and the relationship between **indigenous design** and **contemporary New Zealand architecture**. Questions focus on traditional Māori structures (whare, wharenui, pā), the impact of European colonization on Māori building traditions, and how contemporary architects integrate Māori cultural principles with modernist design. You must understand colonialism's suppression of Māori culture and the
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard mistake="Treating Māori architecture as only historical" correction="Students discuss traditional Māori building in past tense only. Māori architecture is living and evolving. Wharenui are still built; carving continues; contemporary architects practice with cultural intention." context="Say \"Māori architectural tradition\" (ongoing) not \"Māori architecture\" (past)." />
+[SLATECAMP_UI_BLOCK:ui_0011 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Treating Māori architecture as only historical", correction="Students discuss traditional Māori building in past tense only. Māori architecture is living and evolving. Wharenui are still built; carving continues; contemporary architects practice with cultural intention.", context="Say \\", M=true, ori=true, architectural=true, tradition=true, ongoing=true, not=true, architecture=true, past=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard mistake="Separating culture and structure" correction="Students describe Māori buildings functionally while ignoring cultural meaning. A wharenui's spatial organization isn't arbitrary—it expresses iwi relationships, genealogy, and cosmology. A whare's orientation isn't accidental—it aligns with spiritual and astronomical significance." context="Acknowledge cultural integration." />
+[SLATECAMP_UI_BLOCK:ui_0012 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Separating culture and structure", correction="Students describe Māori buildings functionally while ignoring cultural meaning. A wharenui's spatial organization isn't arbitrary—it expresses iwi relationships, genealogy, and cosmology. A whare's orientation isn't accidental—it aligns with spiritual and astronomical significance.", context="Acknowledge cultural integration."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList mistakes={["Overlooking colonialism's violence. Students describe Māori architecture neutrally without mentioning colonial suppression. Māori were forbidden to speak their language, practice their culture, and build traditionally. Colonial architecture was tool of cultural erasure. Acknowledge this when discussing Māori architectural history.", "Treating contemporary integration as simple. Students say contemporary Māori architecture \"just combines traditional and modern.\" Integration is complex—it requires Māori communities leading design, negotiating between traditions, asserting cultural authority, and challenging colonial hierarchies. It's not aesthetic fusion but cultural assertion."]} />
+[SLATECAMP_UI_BLOCK:ui_0013 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Overlooking colonialism's violence. Students describe Māori architecture neutrally without mentioning colonial suppression. Māori were forbidden to speak their language, practice their culture, and build traditionally. Colonial architecture was tool of cultural erasure. Acknowledge this when discussing Māori architectural history.\", \"Treating contemporary integration as simple. Students say contemporary Māori architecture \\\"just combines traditional and modern.\\\" Integration is complex—it requires Māori communities leading design, negotiating between traditions, asserting cultural authority, and challenging colonial hierarchies. It's not aesthetic fusion but cultural assertion.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Terms
 
@@ -79,11 +137,14 @@ Questions ask how contemporary architects incorporate Māori principles into mod
 
 **Treaty of Waitangi** — 1840 agreement between British Crown and Māori chiefs; systematically breached; foundational to understanding Māori historical dispossession and contemporary cultural reassertion.
 
-<ArticleMedia id="media-hist-015-03-core-concept-timeline" layout="single" type="image" status="placeholder" alt="Diagram of three traditional Māori building types: whare (domestic dwelling, timber and thatch), wharenui (meeting house, richly carved facade, ridgepole), and pā (fortified settlement, palisaded defensive terraces), showing social function and spatial organization." caption="Māori Architecture — Whare, Wharenui, Pā" suggestedAsset="Style comparison illustration" placementIntent="Style comparison for architectural period" />
+[SLATECAMP_UI_BLOCK:ui_0014 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-hist-015-03-core-concept-timeline", layout="single", type="image", status="placeholder", alt="Diagram of three traditional Māori building types: whare (domestic dwelling, timber and thatch), wharenui (meeting house, richly carved facade, ridgepole), and pā (fortified settlement, palisaded defensive terraces), showing social function and spatial organization.", caption="Māori Architecture — Whare, Wharenui, Pā", suggestedAsset="Style comparison illustration", placementIntent="Style comparison for architectural period"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also within Australia & New Zealand Architecture: **lea-hist-015-01-core-concept**, **lea-hist-015-02-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
-

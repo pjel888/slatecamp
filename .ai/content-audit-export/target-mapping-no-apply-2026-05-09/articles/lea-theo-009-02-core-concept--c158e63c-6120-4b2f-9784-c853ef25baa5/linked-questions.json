@@ -1,0 +1,528 @@
+{
+  "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6d66b783d4ac5d0ade54a2520b9684ea3ab9339053e5908a0c52487422e125c2",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "3a69f754-97b2-47bf-a2d5-65ccdf06b22f",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "A medical clinic program includes examination rooms, treatment room, laboratory, waiting area, reception, and administrative office. In the adjacency matrix, what should the relationship be between the laboratory and the mechanical equipment room?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D (Desirable) — proximity to mechanical systems can reduce operating costs"
+        },
+        {
+          "id": "b",
+          "text": "E (Essential) — laboratory equipment requires direct mechanical system access"
+        },
+        {
+          "id": "c",
+          "text": "U (Unimportant) — there is no functional relationship between laboratory and mechanical systems"
+        },
+        {
+          "id": "d",
+          "text": "X (Undesirable) — mechanical vibration and noise compromise sensitive laboratory work"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Proximity does not reduce costs enough to justify compromising lab performance.",
+        "b": "While lab equipment may connect to building systems, the space itself must be away from mechanical noise/vibration.",
+        "c": "The relationship is significant; it's undesirable rather than unimportant.",
+        "correct": "Vibration from mechanical equipment and noise compromise lab precision work. They must be separated or adequately isolated. This is an undesirable adjacency requiring intentional separation in the design.",
+        "takeaway": "This is an undesirable adjacency requiring intentional separation in the design."
+      },
+      "explanation": "Proximity does not reduce costs enough to justify compromising lab performance. While lab equipment may connect to building systems, the space itself must be away from mechanical noise/vibration. The relationship is significant; it's undesirable rather than unimportant. Vibration from mechanical equipment and noise compromise lab precision work. They must be separated or adequately isolated. This is an undesirable adjacency requiring intentional separation in the design. This is an undesirable adjacency requiring intentional separation in the design.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T14:43:20.172248+00:00",
+      "content_hash": "sha256:adf6547f433cc121db2c5937d327f1858a60026d52e72234829b6cb3409ef63e"
+    },
+    {
+      "question_id": "cd4bc609-41ab-46f9-ace4-8932e392655f",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "What critical distinction should an architect maintain when creating a bubble diagram?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bubbles must be drawn to scale so designers can measure exact dimensions from the diagram, ensuring precise planning"
+        },
+        {
+          "id": "b",
+          "text": "Bubbles represent spaces but should be abstract; the diagram constrains relationships but does not prescribe architectural form"
+        },
+        {
+          "id": "c",
+          "text": "Bubbles should include internal wall layouts and furniture to guide subsequent design decisions, providing a detailed preliminary plan"
+        },
+        {
+          "id": "d",
+          "text": "Bubbles must be circular; other shapes are inappropriate and confuse the design team, leading to potential misinterpretations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bubble diagrams are intentionally not to scale; size indicates approximate area relationship loosely, not precise dimensions.",
+        "c": "Including walls and furniture transforms a bubble diagram into a preliminary design sketch, conflating programming with design.",
+        "d": "Bubbles may be circles, squares, or irregular shapes; shape carries no architectural meaning.",
+        "correct": "Bubble diagrams are abstract analytical tools. They show which spaces must be adjacent and which must be separated, but intentionally avoid prescribing form. The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc.",
+        "takeaway": "The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc."
+      },
+      "explanation": "Bubble diagrams are intentionally not to scale; size indicates approximate area relationship loosely, not precise dimensions. Including walls and furniture transforms a bubble diagram into a preliminary design sketch, conflating programming with design. Bubbles may be circles, squares, or irregular shapes; shape carries no architectural meaning. Bubble diagrams are abstract analytical tools. They show which spaces must be adjacent and which must be separated, but intentionally avoid prescribing form. The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc. The designer interprets 'adjacent' through architectural language—shared wall, connecting door, open space, etc.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T14:45:50.118995+00:00",
+      "content_hash": "sha256:36fb1e32aa180924418180651bc9ef0ce1bc54190c65c0f327a5f1efef33a1da"
+    },
+    {
+      "question_id": "c74e7b54-9d7e-4a3d-adc5-87de989716f3",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "In a hospital program, the nursing station is coded as having an essential (E) adjacency to patient rooms, but the imaging/radiology department is coded as unimportant (U) or undesirable (X) to patient rooms. Which design strategy best respects both relationships?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Place all departments in one central location so they are equidistant from patient rooms"
+        },
+        {
+          "id": "b",
+          "text": "Create an open-plan design with nursing station in the center and all functions radiating outward equally"
+        },
+        {
+          "id": "c",
+          "text": "Prioritize patient convenience and co-locate all services adjacent to patient rooms regardless of the matrix"
+        },
+        {
+          "id": "d",
+          "text": "Place patient rooms in a linear hallway with nursing station at the end; locate imaging in a separate wing"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Equidistant placement ignores the difference between essential and undesirable relationships.",
+        "b": "Open-plan does not separate imaging from patients or allow nursing supervision of a defined zone.",
+        "c": "Patient convenience must be balanced against functional requirements; imaging separation is necessary for patient safety and rest.",
+        "correct": "Nursing stations need proximity to observe and access patient areas frequently (essential). Imaging creates noise, vibration, and radiation safety concerns requiring separation from patient rest areas. Linear hallway organization satisfies the first; separate wing satisfies the second.",
+        "takeaway": "Linear hallway organization satisfies the first; separate wing satisfies the second."
+      },
+      "explanation": "Equidistant placement ignores the difference between essential and undesirable relationships. Open-plan does not separate imaging from patients or allow nursing supervision of a defined zone. Patient convenience must be balanced against functional requirements; imaging separation is necessary for patient safety and rest. Nursing stations need proximity to observe and access patient areas frequently (essential). Imaging creates noise, vibration, and radiation safety concerns requiring separation from patient rest areas. Linear hallway organization satisfies the first; separate wing satisfies the second. Linear hallway organization satisfies the first; separate wing satisfies the second.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T14:45:50.60024+00:00",
+      "content_hash": "sha256:4f03a5e7b9869660e648298bce716788faf611bd4cd53c518c56bc48fd19b58e"
+    },
+    {
+      "question_id": "57b1474b-a6e0-4b3e-9fc4-c964a2647828",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "A completed bubble diagram satisfies all essential adjacencies and minimizes undesirable adjacencies. The diagram is presented to the client, who approves it. Does this approval authorize the designer to proceed directly to final design, or should additional steps occur?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Additional refinement is needed only if the site constraints make implementation impossible; otherwise the diagram is complete and ready for the next phase"
+        },
+        {
+          "id": "b",
+          "text": "The diagram should be validated through review by end users, testing against operational scenarios, and verification that no conflicts remain unresolved"
+        },
+        {
+          "id": "c",
+          "text": "Approval is sufficient; the diagram represents the complete program and design can proceed immediately"
+        },
+        {
+          "id": "d",
+          "text": "The diagram represents preliminary thinking; extensive design development and multiple iterations are normal before construction documents, ensuring all client needs are met"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Validation should occur regardless of site constraints; this ensures the program itself is complete and accurate.",
+        "c": "Client approval doesn't eliminate the need for rigorous validation; the diagram may contain latent conflicts.",
+        "d": "Extensive iteration occurs in design; the bubble diagram should be validated and stable before design begins.",
+        "correct": "Client approval is important but not sufficient. The bubble diagram should be tested through user review, operational scenario testing (e.g., patient flow simulation), and verification that all constraints have been adequately addressed. This validation mirrors Step 5 of Problem Seeking (Test the Problem).",
+        "takeaway": "This validation mirrors Step 5 of Problem Seeking (Test the Problem)."
+      },
+      "explanation": "Validation should occur regardless of site constraints; this ensures the program itself is complete and accurate. Client approval doesn't eliminate the need for rigorous validation; the diagram may contain latent conflicts. Extensive iteration occurs in design; the bubble diagram should be validated and stable before design begins. Client approval is important but not sufficient. The bubble diagram should be tested through user review, operational scenario testing (e.g., patient flow simulation), and verification that all constraints have been adequately addressed. This validation mirrors Step 5 of Problem Seeking (Test the Problem). This validation mirrors Step 5 of Problem Seeking (Test the Problem).",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "INT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T14:43:20.050312+00:00",
+      "content_hash": "sha256:4e86ffcd8ccf555a397fb978668e03983a2fb011e90b552c02bb7f3b90dc90c6"
+    },
+    {
+      "question_id": "411ef3e1-f35f-4b79-82ea-ebcae6e270ed",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "During bubble diagram development, the programmer discovers that two space groups with an essential adjacency cannot physically fit next to each other on the site without creating unacceptable circulation inefficiency. What is the appropriate next step?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Abandon the essential adjacency requirement and redesignate it as desirable, which may compromise the design intent"
+        },
+        {
+          "id": "b",
+          "text": "Increase the site area requirement to accommodate ideal adjacency, potentially making the project infeasible due to budget constraints"
+        },
+        {
+          "id": "c",
+          "text": "Accept that the constraint cannot be met and proceed with design anyway, which could lead to functional issues"
+        },
+        {
+          "id": "d",
+          "text": "Document this as a trade-off, explicitly acknowledging the constraint conflict and proposing design strategies to manage it"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Changing the program to fit the site reverses proper sequencing; the program should guide site selection or inform design trade-offs.",
+        "b": "This may not be practical; trade-off documentation is the appropriate programming response.",
+        "c": "Proceeding without acknowledging the constraint leads to inadequate design.",
+        "correct": "Not all constraints can always be simultaneously satisfied. When conflicts exist, the programmer should explicitly document the trade-off and propose solutions: perhaps vertical stacking, connecting corridors, or operational procedures to mitigate the adjacency loss. This allows the designer to work consciously within constraints.",
+        "takeaway": "This allows the designer to work consciously within constraints."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b4f3fd749b4c1d9d674048f57c14451b0d3a644219cd625c103f960336e248df"
+    },
+    {
+      "question_id": "86afc6db-a26c-4e4d-a7fa-314c69591cb2",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "A designer presents a bubble diagram in which all bubbles are arranged in a tight grid pattern with equal spacing, each bubble is drawn at precisely calculated sclea, and internal partitions are sketched inside each bubble. What error has the designer made?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The bubble sizes should be circular, not grid-aligned; irregular arrangement better represents functional relationships"
+        },
+        {
+          "id": "b",
+          "text": "The diagram should be color-coded by functional zone; monochromatic presentation lacks clarity"
+        },
+        {
+          "id": "c",
+          "text": "The spacing should vary to emphasize essential versus desirable adjacencies; equal spacing loses this information"
+        },
+        {
+          "id": "d",
+          "text": "The diagram has crossed the line from programming analysis into preliminary design; it includes design decisions prematurely"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Shape flexibility is appropriate; the error isn't about circularity but about including architectural form prematurely.",
+        "b": "Color-coding may aid clarity but isn't the fundamental issue; the core error is premature design detailing.",
+        "c": "While spacing could emphasize relationships, the primary error is including design decisions at all.",
+        "correct": "Bubble diagrams should remain abstract—showing relationships but not prescribing form. Exact scale, internal partitions, and grid arrangement are design decisions. Including them transforms the programming tool into a preliminary design sketch, conflating two separate phases.",
+        "takeaway": "Including them transforms the programming tool into a preliminary design sketch, conflating two separate phases."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed4e7fe04b60ee7f024840a23be96a19ba79eb78dc400c4195ccfbf6c9e43539"
+    },
+    {
+      "question_id": "beaf13aa-a088-4bc2-a93d-066b5f2d680c",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "Which adjacency relationship code indicates that two spaces must be separated to prevent functional conflict or safety risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "D (Desirable)"
+        },
+        {
+          "id": "b",
+          "text": "X (Undesirable)"
+        },
+        {
+          "id": "c",
+          "text": "U (Unimportant)"
+        },
+        {
+          "id": "d",
+          "text": "E (Essential)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "D indicates beneficial but non-mandatory proximity.",
+        "c": "U indicates no functional relationship or no proximity requirement.",
+        "d": "E indicates spaces that must be immediately adjacent or nearly connected.",
+        "correct": "Undesirable (X) relationships indicate required separation. For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies.",
+        "takeaway": "For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies."
+      },
+      "explanation": "D indicates beneficial but non-mandatory proximity. U indicates no functional relationship or no proximity requirement. E indicates spaces that must be immediately adjacent or nearly connected. Undesirable (X) relationships indicate required separation. For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies. For example, mechanical equipment must be separated from clean rooms; loading docks must be separated from customer lobbies.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T14:45:50.333077+00:00",
+      "content_hash": "sha256:0d7987d0fa06dc6030a05f12b74d77f2c94163832b5335a0b59b2ac0903ab34b"
+    },
+    {
+      "question_id": "4cb5065c-3c22-4b93-986d-0a421ce9eb75",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "What is the primary purpose of an adjacency matrix in architectural programming?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To systematically document spatial relationships between all programmed spaces using codes (E, D, U, X)"
+        },
+        {
+          "id": "b",
+          "text": "To specify material selections and construction details for each space, which is not the primary function"
+        },
+        {
+          "id": "c",
+          "text": "To create a visual representation of the final building design and floor layout, which is not the primary function"
+        },
+        {
+          "id": "d",
+          "text": "To calculate the total building area and cost estimates, which is not the primary function"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Material and construction details are design decisions, not programming content.",
+        "c": "Adjacency matrices are analytical tools; they do not prescribe final design form.",
+        "d": "Area calculation uses area summary tables, not adjacency matrices.",
+        "correct": "An adjacency matrix ensures all functional pairs are evaluated for their spatial relationship: Essential (E), Desirable (D), Unimportant (U), or Undesirable (X). This systematic approach prevents overlooking relationships and ensures comprehensive programming.",
+        "takeaway": "This systematic approach prevents overlooking relationships and ensures comprehensive programming."
+      },
+      "explanation": "Material and construction details are design decisions, not programming content. Adjacency matrices are analytical tools; they do not prescribe final design form. Area calculation uses area summary tables, not adjacency matrices. An adjacency matrix ensures all functional pairs are evaluated for their spatial relationship: Essential (E), Desirable (D), Unimportant (U), or Undesirable (X). This systematic approach prevents overlooking relationships and ensures comprehensive programming. This systematic approach prevents overlooking relationships and ensures comprehensive programming.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T14:45:50.46844+00:00",
+      "content_hash": "sha256:f42baddfdca0d9032cc44c9c569dc4cb37a59120cb214f660e053e5a15abc07d"
+    },
+    {
+      "question_id": "7e549119-0db1-4342-b417-e3c1fbac7e78",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "A proposed retail shopping center layout places the stockroom adjacent to the customer shopping floor, with only a thin partition separating them. The adjacency matrix codes this as an undesirable relationship. What specific problems does this layout create?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Noise from stockroom restocking activities may distract customers; lack of buffer zone creates operational conflicts"
+        },
+        {
+          "id": "b",
+          "text": "Both visual and operational problems; stockroom should be interior or semi-public, not visible from customer retail space"
+        },
+        {
+          "id": "c",
+          "text": "The layout creates a fire code violation requiring additional emergency exits from the stockroom"
+        },
+        {
+          "id": "d",
+          "text": "Visual clutter of stockroom visible from retail floor reduces customer perception of cleanliness and reduces sales appeal"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This identifies the operational problem but misses the aesthetic/perception dimension.",
+        "c": "While fire code matters, the adjacency issue is not primarily about code compliance; it's about functional separation.",
+        "d": "This identifies one problem but misses the operational dimension.",
+        "correct": "Undesirable adjacency between stockroom and customer retail creates both aesthetic problems (customers see work activity, clutter, or signage) and operational problems (storage noise, staff movement, loading conflicts). The stockroom should be interior, semi-public, or service zone—separated from customer view.",
+        "takeaway": "The stockroom should be interior, semi-public, or service zone—separated from customer view."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:70a7932ad0ab2b176f3f8333fd180fb2031ae19c6696544992cb6314bb9d9dd2"
+    },
+    {
+      "question_id": "d95f3476-5f1b-42e6-8202-c4593c011dc8",
+      "article_id": "c158e63c-6120-4b2f-9784-c853ef25baa5",
+      "topic_id": "ccea0a07-3d5e-483b-b6cc-fa61eb5bb98b",
+      "text": "A mixed-use building program requires retail (essential adjacency to customer entry), office (desirable adjacency to retail but requiring separate elevators), and residential (undesirable adjacency to retail noise). How should the bubble diagram and resulting design organize these competing adjacency requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create an open-plan structure where all uses mix freely to promote integration and reduce separation barriers, which may lead to conflicts in privacy and noise control."
+        },
+        {
+          "id": "b",
+          "text": "Arrange horizontally: retail on primary frontage, office alongside, residential in rear; shared elevators, which may compromise security and privacy for residential occupants."
+        },
+        {
+          "id": "c",
+          "text": "Prioritize retail visibility and customer flow; design office and residential as secondary tenants with minimal adjacency consideration, potentially leading to tenant dissatisfaction."
+        },
+        {
+          "id": "d",
+          "text": "Stack all uses vertically with retail at street level, office middle, residential top; separate elevator banks and service circulation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Open-plan violates the undesirable (X) adjacency between retail noise and residential; it increases conflict rather than managing it.",
+        "b": "Horizontal arrangement creates longer separation distances and shared elevators create mixing rather than separation.",
+        "c": "This treats office and residential as afterthoughts; their specific adjacency requirements demand strategic integration.",
+        "correct": "Vertical stacking satisfies all relationships: retail at street activates entry (E to customer circulation); office above benefits from retail proximity (D) but with separate elevators preventing customer/office conflicts; residential at top is physically separated from retail noise (X). Separate service circulation prevents operational conflict.",
+        "takeaway": "Separate service circulation prevents operational conflict."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:01e5b6131bcee3873bae07c80aa05dfcb3ea9be2fac5f523439bc55c4cdf4859"
+    }
+  ]
+}

@@ -388,4 +388,3 @@ Extracted summary:
 ## Cross‑References
 
 **Accessible Seating In Assembly Areas**, **Fixtures And Small Items In Common Areas**, **Fire Extinguishing Systems**, **Vertical Openings And Floor Roof Construction**
-

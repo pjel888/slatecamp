@@ -1,21 +1,21 @@
 # Content Diff Report: lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control
 
-Generated: 2026-05-04T09:13:54.531Z
+Generated: 2026-05-10T00:34:13.395Z
 Article ID: 85529595-d219-4b10-9bd9-383d125da8c3
-Changed: false
+Changed: true
 Safe to push locally: true
 
 ## Hashes
 
-- Original: `sha256:c395b5ac73caaed3a1f9e43b6730c65a8612524711eab1a7bb493e130addae2d`
-- Normalized: `sha256:c4529e9c733f18fd4d3fe1949ad6bccbb6448c35362862def0b6ea822ab50fc2`
-- Candidate: `sha256:c395b5ac73caaed3a1f9e43b6730c65a8612524711eab1a7bb493e130addae2d`
+- Original: `sha256:aea07e70189c4ce0fe6135eb1ab98e10e65a803723e5a5af837d51249d8b619b`
+- Normalized: `sha256:aea07e70189c4ce0fe6135eb1ab98e10e65a803723e5a5af837d51249d8b619b`
+- Candidate: `sha256:c81b179a626354f05152e8f88d60a663508a4eb2cf457f923c63bf830824911e`
 
 ## Line summary
 
-- Changed lines: 0
+- Changed lines: 35
 - Inserted lines: 0
-- Deleted lines: 0
+- Deleted lines: 6
 
 ## UI block preservation
 

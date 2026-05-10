@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>RA 9266 — Foreign Architects in the Philippines — SlateCamp Browser QA</title>
+  <style>
+    :root { color-scheme: light; --ink:#172033; --muted:#607089; --line:#d8e0ea; --blue:#1d4ed8; --bg:#f4f7fb; --card:#fff; --warn:#92400e; --ok:#166534; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--bg); color: var(--ink); font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; line-height: 1.65; }
+    .frame { max-width: 980px; margin: 0 auto; padding: 28px 24px 64px; }
+    .qa-banner { border: 1px solid #bfdbfe; background: #eff6ff; color: #1e3a8a; border-radius: 10px; padding: 12px 14px; font-size: 13px; margin-bottom: 18px; }
+    .meta { border: 1px solid var(--line); background: var(--card); border-radius: 12px; padding: 16px; margin-bottom: 22px; box-shadow: 0 1px 2px rgba(15,23,42,.04); }
+    .meta h1 { margin: 0 0 6px; font-size: 24px; line-height: 1.2; letter-spacing: -0.02em; }
+    .meta dl { display: grid; grid-template-columns: 160px minmax(0,1fr); gap: 4px 12px; margin: 12px 0 0; font-size: 13px; }
+    .meta dt { color: var(--muted); font-weight: 700; }
+    .meta dd { margin: 0; word-break: break-word; }
+    .prose { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 32px 38px; box-shadow: 0 10px 30px rgba(15,23,42,.06); }
+    .prose h1 { margin: 0 0 22px; font-size: 34px; line-height: 1.14; letter-spacing: -0.03em; }
+    .prose h2 { margin: 34px 0 10px; border-top: 1px solid #eef2f7; padding-top: 22px; font-size: 22px; line-height: 1.25; letter-spacing: -0.018em; }
+    .prose h3 { margin: 24px 0 8px; font-size: 18px; }
+    .prose p { margin: 0 0 14px; }
+    .prose ul, .prose ol { margin: 0 0 18px 1.35rem; padding: 0; }
+    .prose li { margin: 7px 0; }
+    .prose strong { color: #0f172a; }
+    .prose code { background: #f1f5f9; border: 1px solid #e2e8f0; border-radius: 5px; padding: .12em .35em; font-size: .92em; }
+    .prose blockquote { border-left: 4px solid #93c5fd; margin: 20px 0; padding: 8px 16px; background: #eff6ff; color: #1e3a8a; }
+    .prose table { width: 100%; border-collapse: collapse; font-size: 14px; margin: 18px 0; }
+    .prose th, .prose td { border: 1px solid #dbe4ef; padding: 8px 10px; vertical-align: top; }
+    .prose th { background: #f8fafc; text-align: left; }
+    .qa-json { white-space: pre-wrap; font: 11px/1.45 ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; color: #475569; margin-top: 18px; }
+    @media (max-width: 720px) { .frame { padding: 16px 12px 48px; } .prose { padding: 22px 18px; } .meta dl { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+  <main class="frame" data-qa-page="candidate-preview" data-article-id="ae4bdc43-1451-4aa5-8c12-65283f4bbdfd" data-slug="lea-prac-frm-005-foreign-architects-in-the-philippines">
+    <div class="qa-banner"><strong>Browser QA preview:</strong> locally rendered from <code>candidate.md</code> through SlateCamp <code>compileWikiArticleWithRenderer()</code>. No Supabase article/question mutation.</div>
+    <section class="meta" aria-label="QA metadata">
+      <h1>RA 9266 — Foreign Architects in the Philippines</h1>
+      <dl>
+        <dt>Article ID</dt><dd><code>ae4bdc43-1451-4aa5-8c12-65283f4bbdfd</code></dd>
+        <dt>Slug</dt><dd>lea-prac-frm-005-foreign-architects-in-the-philippines</dd>
+        <dt>Candidate words</dt><dd>1127</dd>
+        <dt>Candidate placeholders</dt><dd>0 open / 0 close</dd>
+      </dl>
+    </section>
+    <article class="prose prose-wiki" data-qa-article-body>
+      <h1>RA 9266 Foreign Architect and Temporary Permit Gate</h1>
+<h2 id="learning-objective">Learning objective</h2>
+<p>Given a professional-practice question prompt involving a foreign architect, decide whether the person may lawfully perform architectural services in the Philippines and which RA 9266 IRR requirement controls the answer. The safe exam method is to separate definition, association, and permit authority before accepting any answer that sounds administratively convenient.</p>
+<h2 id="governing-source">Governing source</h2>
+<p>Use the RA 9266 IRR, especially Section 3 for definitions and Section 38 for temporary or special permits. The definition items used here are from PDF p.5, and the permit gate is from PDF p.20. These are legal-process rules, not design-preference rules.</p>
+<h2 id="first-gate-definition-of-foreign-architect">First gate: definition of foreign architect</h2>
+<p>The RA 9266 IRR defines a foreign architect as an architect who is not a Filipino citizen and is not registered and licensed in the Philippines, but who is duly registered and licensed in the architect’s home country. The definition therefore has two sides. It does not mean “any foreign consultant,” and it does not mean “someone with Philippine registration.” It means the person is outside Philippine registration but has home-country architectural licensure.</p>
+<p>Source: RA 9266 IRR, Section 3, Item 30, PDF p.5.</p>
+<p>For exam purposes, this matters because many answer choices hide the issue behind broad words such as consultant, designer, or employee. The label is not enough. If the facts describe architectural services in the Philippines, and the person is a foreign national not registered and licensed here, the temporary/special-permit analysis becomes relevant.</p>
+<h2 id="second-gate-filipino-counterpart">Second gate: Filipino counterpart</h2>
+<p>The IRR also defines the Filipino counterpart as the local Philippine architect, partnership, or corporation that must work in association with the foreign architect, partnership, or corporation on a project on Philippine soil. This is not decorative wording. It tells you that the foreign architect scenario is not solved simply by saying that the person is qualified abroad.</p>
+<p>Source: RA 9266 IRR, Section 3, Item 31, PDF p.5.</p>
+<p>A question prompt may mention a foreign firm, an international design consultant, or a foreign architect whose name appears on project materials. The Filipino-counterpart requirement is a signal that Philippine practice is being regulated through a local professional association structure, not through home-country licensure alone.</p>
+<h2 id="third-gate-temporary-or-special-permit">Third gate: temporary or special permit</h2>
+<p>Section 38 is the controlling permit gate. It states that foreign nationals who have entered the Philippines to perform professional services as architects or consultants in foreign-funded or assisted government projects, or who are employed or engaged by Filipino or foreign contractors or private firms, must secure a special/temporary permit from the Board, subject to approval of the Commission, before assuming the duties, functions, and responsibilities as architects or consultants.</p>
+<p>Source: RA 9266 IRR, Section 38, PDF p.20.</p>
+<p>The phrase “before assuming” is important. A later permit is not the same as authority before practice. A contract, invitation, employment arrangement, or foreign license does not erase the requirement. If the question asks what must be secured before the foreign national assumes the architectural consultant role, the answer is the special/temporary permit from the Board subject to Commission approval.</p>
+<h2 id="name-on-documents-can-count-as-practice">Name on documents can count as practice</h2>
+<p>Section 38 also treats certain public project representations as practice. The cited provision states that a foreign national or foreign firm whose name or company name, with titles such as architect, architectural consultant, design consultant, consultant, or designer, appears on architectural plans, specifications, and related construction documents for building permits, licenses, government authority clearances, actual building construction in the Philippines, advertisements, or billboards, shall be deemed practicing architecture in the Philippines.</p>
+<p>Source: RA 9266 IRR, Section 38, PDF p.20.</p>
+<p>This is a frequent trap. A problem statement may avoid saying “the foreign architect designed the building” and instead say that the foreign consultant’s name appears on the plans or permit materials. Under the cited wording, that is not harmless marketing language if it places the person or firm in the role described by Section 38.</p>
+<h2 id="fee-and-authority-are-separate-issues">Fee and authority are separate issues</h2>
+<p>Section 36 of the RA 9266 IRR also states that it is unlawful for any unregistered person to collect a fee for architectural services except as an employee collecting a fee as representative of a Registered Architect.</p>
+<p>Source: RA 9266 IRR, Section 36, PDF p.20.</p>
+<p>Do not confuse this with the Section 38 permit gate. Section 36 helps you reject the idea that unregistered practice becomes valid simply because the person is paid through an arrangement. Section 38 answers the foreign-national permit question. Both point to the same exam habit: architectural practice authority is controlled by statute and IRR requirements, not by contract wording alone.</p>
+<h2 id="worked-application">Worked application</h2>
+<p>If a foreign architect is licensed in the architect’s home country, has been invited by a private developer in Manila, and will act as architectural consultant on Philippine project documents, the home-country license answers only one part of the facts. The person must still work through the required Philippine framework and must secure the special/temporary permit before assuming the duties. If the option says “allowed because the architect is licensed abroad,” it is incomplete. If the option says “allowed after securing the special/temporary permit from the Board, subject to Commission approval,” it tracks Section 38.</p>
+<h2 id="real-world-application">Real-World Application</h2>
+<p>Suppose a Cebu waterfront hotel owner hires a well-known foreign design consultant to prepare the brand concept for a renovation. During a coordination meeting, the marketing team places the consultant’s name on the presentation cover and asks whether the same name can appear on permit drawings because it will impress investors. Under RA 9266 practice logic, the architect of record cannot treat that as harmless branding. The first question is whether the person is a foreign architect within the meaning discussed in the article. The second question is whether a Filipino counterpart is properly involved. The third question is whether the required temporary or special permit gate has been cleared before the foreign architect performs acts that count as practice in the Philippines. The safe professional response is not to erase the consultant from collaboration, but to document roles, route the statutory practice functions through the proper Philippine professional authority, and prevent names on technical documents from implying unauthorized practice. The practical outcome is a project team that can use foreign design input without turning the permit set into an RA 9266 problem.</p>
+<h2 id="exam-traps">Exam traps</h2>
+<ul>
+<li><strong>Trap 1: foreign license equals Philippine practice authority.</strong> It does not.</li>
+<li><strong>Trap 2: Filipino counterpart is treated as optional networking.</strong> The definition says the counterpart must work in association with the foreign architect or firm on Philippine soil.</li>
+<li><strong>Trap 3: name on plans is treated as mere publicity.</strong> Section 38 can treat that appearance as practice.</li>
+<li><strong>Trap 4: permit timing is ignored.</strong> The permit is required before assuming duties, functions, and responsibilities.</li>
+</ul>
+    </article>
+    <details>
+      <summary>Static source QA stats</summary>
+      <pre class="qa-json">{
+  &quot;article_id&quot;: &quot;ae4bdc43-1451-4aa5-8c12-65283f4bbdfd&quot;,
+  &quot;label&quot;: &quot;RA 9266&quot;,
+  &quot;title&quot;: &quot;Foreign Architects in the Philippines&quot;,
+  &quot;slug&quot;: &quot;lea-prac-frm-005-foreign-architects-in-the-philippines&quot;,
+  &quot;folder&quot;: &quot;lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd&quot;,
+  &quot;candidate_path&quot;: &quot;.ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/candidate.md&quot;,
+  &quot;normalized_path&quot;: &quot;.ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/normalized.md&quot;,
+  &quot;word_count&quot;: 1127,
+  &quot;candidate_char_count&quot;: 7499,
+  &quot;candidate_placeholder_open_count&quot;: 0,
+  &quot;candidate_placeholder_close_count&quot;: 0,
+  &quot;normalized_placeholder_open_count&quot;: 0,
+  &quot;candidate_has_wiki_article_error_text&quot;: false,
+  &quot;candidate_component_tags&quot;: [],
+  &quot;candidate_heading_count&quot;: 11,
+  &quot;rendered_char_count&quot;: 8091,
+  &quot;rendered_placeholder_open_count&quot;: 0,
+  &quot;rendered_placeholder_close_count&quot;: 0,
+  &quot;rendered_has_extracted_props&quot;: false,
+  &quot;rendered_has_wiki_article_error&quot;: false,
+  &quot;compile_error&quot;: null
+}</pre>
+    </details>
+  </main>
+  <script>
+    window.__slatecampBrowserQa = (() => {
+      const body = document.querySelector('[data-qa-article-body]')
+      const text = body ? body.innerText : ''
+      const html = body ? body.innerHTML : ''
+      const headings = [...document.querySelectorAll('[data-qa-article-body] h1, [data-qa-article-body] h2, [data-qa-article-body] h3')].map(h => h.textContent.trim())
+      const images = [...document.images]
+      return {
+        url: location.href,
+        articleId: document.querySelector('[data-article-id]')?.getAttribute('data-article-id'),
+        slug: document.querySelector('[data-slug]')?.getAttribute('data-slug'),
+        rawPlaceholderOpenCount: html.split('[SLATECAMP_UI_BLOCK:').length - 1,
+        rawPlaceholderCloseCount: html.split('[/SLATECAMP_UI_BLOCK]').length - 1,
+        extractedPropsLineCount: text.split('Props: id=').length - 1,
+        hasWikiArticleError: text.includes('Unable to render article') || html.includes('WikiArticleError'),
+        articleTextLength: text.length,
+        h1Count: document.querySelectorAll('[data-qa-article-body] h1').length,
+        h2Count: document.querySelectorAll('[data-qa-article-body] h2').length,
+        h3Count: document.querySelectorAll('[data-qa-article-body] h3').length,
+        emptyHeadingCount: headings.filter(h => !h).length,
+        brokenImageCount: images.filter(img => img.complete && img.naturalWidth === 0).length,
+        horizontalOverflow: document.documentElement.scrollWidth > document.documentElement.clientWidth + 2,
+        viewport: { width: innerWidth, height: innerHeight },
+      }
+    })()
+  </script>
+</body>
+</html>

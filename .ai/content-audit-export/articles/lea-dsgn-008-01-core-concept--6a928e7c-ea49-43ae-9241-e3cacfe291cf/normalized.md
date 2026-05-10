@@ -8,7 +8,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 
 **Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
-Fire egress calculations determine exit count, width, and travel distance—all based on occupancy. 
+Fire egress calculations determine exit count, width, and travel distance—all based on occupancy.
 ## Learning Goal
 
 Calculate occupant load using RA 9514 load factors per use type, determine required exit count and aggregate width (OL × 7.6 mm/person), verify travel distance limits (45m/60m) and dead-end corridor lengths (6m/12m), and ensure each exit meets the 900mm minimum clear width.

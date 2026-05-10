@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 004 07 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -12,11 +21,19 @@ Regulatory and zoning analysis bridges planning law (CLUPs and zoning ordinances
 A zoning ordinance partitions a municipality into districts (residential, commercial, industrial, agricultural, etc.) and specifies what uses are permitted, permitted with conditions, or prohibited in each zone. Setback requirements, height limits, lot coverage ratios, and open space percentages are zone-specific. During site planning, the designer must answer: Is my proposed use permitted in this zone? What setbacks apply? What height limits? What open space must I provide?
 
 The zoning ordinance is the legal implementation tool of the CLUP, adopted by the Sanggunian and signed by the Mayor. It carries legal force; violations create grounds for denial of building permits. Understanding zoning is not optional—it is foundational to any site proposal.
-<ArticleMedia id="media-lea-plan-004-07-core-concept" type="image" caption="Zoning Compliance Workflow — Use, FAR, Lot Coverage Verification" description="Workflow diagram for zoning compliance: verify permitted use → calculate FAR (floor area ratio) → calculate lot coverage → verify height limits → check setback requirements → identify required variances/exceptions → prepare compliance documentation for building permit." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-004-07-core-concept", type="image", caption="Zoning Compliance Workflow — Use, FAR, Lot Coverage Verification", description="Workflow diagram for zoning compliance: verify permitted use → calculate FAR (floor area ratio) → calculate lot coverage → verify height limits → check setback requirements → identify required variances/exceptions → prepare compliance documentation for building permit.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-<WikiExamTable headers=["Zoning Component", "Function", "Site Planning Application"] rows=[["**Zoning Districts**", "Geographic partitioning (R-1, R-2, C, I, A, etc.)", "Identifies which uses are permitted on the site; determines setback, height, and density standards applicable"], ["**Permitted Uses**", "Uses allowed by right in each zone", "Verifies whether proposed use (residential, commercial, industrial, institutional) is legally permitted"], ["**Conditional Uses**", "Uses allowed with special approval (conditional use permit, development permit)", "If proposed use is not permitted outright, identifies conditions (traffic study, environmental impact, community agreement) required for approval"], ["**Prohibited Uses**", "Uses forbidden in a zone", "Confirms proposed use is not prohibited; if it is, site cannot proceed as planned unless zoning is changed"], ["**Setback Requirements**", "Distance from property line (front, side, rear)", "Determines building envelope; critical for site layout and maximum buildable area"], ["**Height Limits**", "Maximum number of stories or meters", "Controls building massing; affects density and urban skyline"], ["**Lot Coverage**", "Maximum percentage of lot buildable", "Combined with setbacks and height, determines total development potential"], ["**Open Space Requirement**", "Mandatory parks, playgrounds, community facilities (for subdivisions, PD 1216 requires 30% of gross area; zoning ordinances may specify different percentages based on zone and project type)", "Per zoning ordinance and applicable development laws; affects site design and amenities"], ["**Floor Area Ratio (FAR)**", "Ratio of total floor area to lot area", "Directly limits building bulk; e.g., FAR = 2.0 means total floors can be 2\u00d7 the lot area"]] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="[", Zoning=true, Component=true, Function=true, Site=true, Planning=true, Application=true, rows="[[", Districts=true, Geographic=true, partitioning=true, R-1=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -30,13 +47,11 @@ In Philippine municipal zoning ordinances, agricultural zones remain extensive i
 
 **Pattern 3 — Open space calculation:** "A 2-hectare site requires 25% open space per the zoning ordinance. How much area must be dedicated?" → 2 hectares × 0.25 = 0.5 hectares = 5,000 sq.m.
 
-<Tip>
-  **Zoning is your legal boundary.** Always check: Is my use permitted? What
-  setbacks, heights, and open space apply? If my proposal violates zoning, I
-  need a variance or conditional use permit—or the proposal must change.
-  Remember: PD 1067 water easements (3m urban/20m agricultural/40m forest) apply
-  regardless of zoning [citation:1][citation:6].
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Zoning is your legal boundary.** Always check: Is my use permitted? What setbacks, heights, and open space apply? If my proposal violates zoning, I need a variance or conditional use permit—or the proposal must change. Remember: PD 1067 water easements (3m urban/20m agricultural/40m forest) apply regardless of zoning [citation:1][citation:6].
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Apply zoning in order: (1) verify zone classification on zoning map, (2) verify proposed use is permitted in the zone, (3) check dimensional requirements (FAR, setbacks, height), (4) identify required variances. Process is tested.
 
@@ -46,12 +61,8 @@ See **LEA-PLAN-001-05** (CLUP Process) for CLUP and zoning ordinance background,
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    'Assuming zoning is merely a guide rather than a legal binding requirement for site design',
-    'Confusing the CLUP process (planning document) with the zoning ordinance (legal implementation); remember: CLUP is prepared by the LGU and submitted to DHSUD-LUAS for conformity review; Sanggunian adopts the CLUP ordinance; Sanggunian also adopts the zoning ordinance',
-    'Forgetting that if proposed use is not permitted in the zone, a conditional use permit or variance is required—projects cannot simply proceed as planned',
-    'Applying PD 1216 open space requirement (30% for subdivisions) to all projects when the specific zoning ordinance may require different percentages or the project may not be a subdivision',
-    'Not checking both municipal zoning ordinance AND provincial/national constraints (PD 1067 water easements: 3m urban/20m agricultural/40m forest; PHIVOLCS fault setbacks; post-Yolanda coastal restrictions) [citation:1][citation:6]',
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    'Assuming zoning is merely a guide rather than a legal binding requirement for site design',\n    'Confusing the CLUP process (planning document) with the zoning ordinance (legal implementation); remember: CLUP is prepared by the LGU and submitted to DHSUD-LUAS for conformity review; Sanggunian adopts the CLUP ordinance; Sanggunian also adopts the zoning ordinance',\n    'Forgetting that if proposed use is not permitted in the zone, a conditional use permit or variance is required—projects cannot simply proceed as planned',\n    'Applying PD 1216 open space requirement (30% for subdivisions) to all projects when the specific zoning ordinance may require different percentages or the project may not be a subdivision',\n    'Not checking both municipal zoning ordinance AND provincial/national constraints (PD 1067 water easements: 3m urban/20m agricultural/40m forest; PHIVOLCS fault setbacks; post-Yolanda coastal restrictions) [citation:1][citation:6]',\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

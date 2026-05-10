@@ -1,9 +1,111 @@
 {
   "article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:93800a4c61936a1a7727832714c834a1a47bf6583a3af0e2548801a93f0846d8",
+  "linked_questions_hash": "sha256:a273e121e495dc776dd546f5fc32de7723cd568912086bc9fa96316696a52ee1",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "6d31daa8-4a33-47a3-a307-9a547b31a54e",
+      "article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+      "topic_id": "af9b0afb-d78b-4674-a915-8a1c3f04d0bc",
+      "text": "A government agency directly develops and builds housing using budget allocations, targeting informal settlers and government employees on low salaries. Which delivery method is this agency using?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Balanced housing on-site development"
+        },
+        {
+          "id": "b",
+          "text": "NHA direct production"
+        },
+        {
+          "id": "c",
+          "text": "Pag-IBIG direct purchase program"
+        },
+        {
+          "id": "d",
+          "text": "Joint venture with private developers"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Balanced housing on-site is a private developer obligation, not an NHA responsibility.",
+        "b": "NHA (National Housing Authority) is the primary government producer of socialized and some economic housing. NHA directly develops using government budget, targeting informal settlers and low-income government employees. This is the definition of NHA direct production.",
+        "c": "Pag-IBIG direct purchase is financing for individual buyers to purchase from private developers, not NHA-built.",
+        "d": "NHA joint ventures partner with private developers but are not the only delivery method NHA uses.",
+        "correct": "NHA (National Housing Authority) is the primary government producer of socialized and some economic housing. NHA directly develops using government budget, targeting informal settlers and low-income government employees. This is the definition of NHA direct production.",
+        "takeaway": "NHA direct production is a core delivery method for socialized housing. It is financed through government budget, not by end-buyer loans or developer obligations."
+      },
+      "explanation": "Balanced housing on-site is a private developer obligation, not an NHA responsibility. NHA (National Housing Authority) is the primary government producer of socialized and some economic housing. NHA directly develops using government budget, targeting informal settlers and low-income government employees. This is the definition of NHA direct production. Pag-IBIG direct purchase is financing for individual buyers to purchase from private developers, not NHA-built. NHA joint ventures partner with private developers but are not the only delivery method NHA uses. NHA (National Housing Authority) is the primary government producer of socialized and some economic housing. NHA directly develops using government budget, targeting informal settlers and low-income government employees. This is the definition of NHA direct production. NHA direct production is a core delivery method for socialized housing. It is financed through government budget, not by end-buyer loans or developer obligations.",
+      "code_citation": "RA 10811 (2016), National Housing Authority Charter",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-05-06T15:59:03.005116+00:00",
+      "content_hash": "sha256:ddb4fc829a962d2b039bc428fa206a5e4c9247fd1fb0be34e79a314f7fb42c22"
+    },
+    {
+      "question_id": "2309b5fc-a042-4323-8996-adcdcffd775c",
+      "article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
+      "topic_id": "af9b0afb-d78b-4674-a915-8a1c3f04d0bc",
+      "text": "A urban poor community living on informal land occupies 2 hectares. Instead of being evicted and relocated, the community is enabled to collectively purchase the land through an SHFC mortgage. The community will then develop the land incrementally using Pag-IBIG financing for individual home improvements. What housing classification and delivery method best describes this scenario?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Economic housing classification, delivered through Community Mortgage Program (CMP)"
+        },
+        {
+          "id": "b",
+          "text": "Socialized housing classification, delivered through Community Mortgage Program (CMP)"
+        },
+        {
+          "id": "c",
+          "text": "Low-cost housing classification, delivered through NHA direct production"
+        },
+        {
+          "id": "d",
+          "text": "Open-market housing classification, delivered through Pag-IBIG direct purchase"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CMP can target socialized or economic, but informal settlers are socialized housing beneficiaries. Economic would be middle-income, not informal settlers.",
+        "b": "The community is informal settlers, meaning they target socialized housing eligibility (low income). CMP is the delivery method (SHFC financing for collective land purchase). The classification is socialized, and the delivery is CMP, which enables in-situ development without relocation.",
+        "c": "Incorrect — Low-cost is industry-recognized but not a statutory classification. NHA would be direct production, not CMP. CMP is SHFC-administered.",
+        "d": "Incorrect — Informal settlers are not open-market; Pag-IBIG direct purchase is for individual buyers purchasing completed units, not for community land acquisition.",
+        "correct": "The community is informal settlers, meaning they target socialized housing eligibility (low income). CMP is the delivery method (SHFC financing for collective land purchase). The classification is socialized, and the delivery is CMP, which enables in-situ development without relocation.",
+        "takeaway": "CMP is uniquely valuable for informal settlements because it enables in-place upgrading. The classification of the eventual housing depends on the community's income and the unit standards, but the delivery method is what makes CMP unique."
+      },
+      "explanation": "CMP can target socialized or economic, but informal settlers are socialized housing beneficiaries. Economic would be middle-income, not informal settlers. The community is informal settlers, meaning they target socialized housing eligibility (low income). CMP is the delivery method (SHFC financing for collective land purchase). The classification is socialized, and the delivery is CMP, which enables in-situ development without relocation. Incorrect — Low-cost is industry-recognized but not a statutory classification. NHA would be direct production, not CMP. CMP is SHFC-administered. Incorrect — Informal settlers are not open-market; Pag-IBIG direct purchase is for individual buyers purchasing completed units, not for community land acquisition. The community is informal settlers, meaning they target socialized housing eligibility (low income). CMP is the delivery method (SHFC financing for collective land purchase). The classification is socialized, and the delivery is CMP, which enables in-situ development without relocation. CMP is uniquely valuable for informal settlements because it enables in-place upgrading. The classification of the eventual housing depends on the community's income and the unit standards, but the delivery method is what makes CMP unique.",
+      "code_citation": "RA 7279 (1992), CMP program description; SHFC Charter",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-003-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-05-06T15:59:03.152163+00:00",
+      "content_hash": "sha256:9aa704bd291c9fd1ecda4f201d9be69366bb00eb3b35489745ff8ac6fb1144b2"
+    },
     {
       "question_id": "227b7948-69a6-4e36-8789-7623a308e833",
       "article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
@@ -156,57 +258,6 @@
       "created_at": "2026-03-23T19:29:06.930799+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:bab208d2b66d7738438366b74948489d2f89fd084d06e424f1e5a6819344765b"
-    },
-    {
-      "question_id": "6d31daa8-4a33-47a3-a307-9a547b31a54e",
-      "article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
-      "topic_id": "af9b0afb-d78b-4674-a915-8a1c3f04d0bc",
-      "text": "A government agency directly develops and builds housing using budget allocations, targeting informal settlers and government employees on low salaries. Which delivery method is this agency using?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Balanced housing on-site development"
-        },
-        {
-          "id": "b",
-          "text": "NHA direct production"
-        },
-        {
-          "id": "c",
-          "text": "Pag-IBIG direct purchase program"
-        },
-        {
-          "id": "d",
-          "text": "Joint venture with private developers"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Balanced housing on-site is a private developer obligation, not an NHA responsibility.",
-        "b": "NHA (National Housing Authority) is the primary government producer of socialized and some economic housing. NHA directly develops using government budget, targeting informal settlers and low-income government employees. This is the definition of NHA direct production.",
-        "c": "Pag-IBIG direct purchase is financing for individual buyers to purchase from private developers, not NHA-built.",
-        "d": "NHA joint ventures partner with private developers but are not the only delivery method NHA uses.",
-        "correct": "NHA (National Housing Authority) is the primary government producer of socialized and some economic housing. NHA directly develops using government budget, targeting informal settlers and low-income government employees. This is the definition of NHA direct production.",
-        "takeaway": "NHA direct production is a core delivery method for socialized housing. It is financed through government budget, not by end-buyer loans or developer obligations."
-      },
-      "explanation": null,
-      "code_citation": "RA 10811 (2016), National Housing Authority Charter",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-003-02-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:edfc550223e6fa46c3d4bd6fc30dc002d5643c0fcb0c54a32513025174f071b3"
     },
     {
       "question_id": "a675b69d-07f4-46a6-a971-6400a7f57adf",
@@ -462,57 +513,6 @@
       "created_at": "2026-03-23T19:29:06.930799+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:f818660cd6d35318c0181a76dbf5217df7bf30fed4507e01405ae5a120027121"
-    },
-    {
-      "question_id": "2309b5fc-a042-4323-8996-adcdcffd775c",
-      "article_id": "7c0e2fa5-7f3d-419a-b592-50346ac7ab2f",
-      "topic_id": "af9b0afb-d78b-4674-a915-8a1c3f04d0bc",
-      "text": "A urban poor community living on informal land occupies 2 hectares. Instead of being evicted and relocated, the community is enabled to collectively purchase the land through an SHFC mortgage. The community will then develop the land incrementally using Pag-IBIG financing for individual home improvements. What housing classification and delivery method best describes this scenario?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Economic housing classification, delivered through Community Mortgage Program (CMP)"
-        },
-        {
-          "id": "b",
-          "text": "Socialized housing classification, delivered through Community Mortgage Program (CMP)"
-        },
-        {
-          "id": "c",
-          "text": "Low-cost housing classification, delivered through NHA direct production"
-        },
-        {
-          "id": "d",
-          "text": "Open-market housing classification, delivered through Pag-IBIG direct purchase"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "CMP can target socialized or economic, but informal settlers are socialized housing beneficiaries. Economic would be middle-income, not informal settlers.",
-        "b": "The community is informal settlers, meaning they target socialized housing eligibility (low income). CMP is the delivery method (SHFC financing for collective land purchase). The classification is socialized, and the delivery is CMP, which enables in-situ development without relocation.",
-        "c": "Incorrect — Low-cost is industry-recognized but not a statutory classification. NHA would be direct production, not CMP. CMP is SHFC-administered.",
-        "d": "Incorrect — Informal settlers are not open-market; Pag-IBIG direct purchase is for individual buyers purchasing completed units, not for community land acquisition.",
-        "correct": "The community is informal settlers, meaning they target socialized housing eligibility (low income). CMP is the delivery method (SHFC financing for collective land purchase). The classification is socialized, and the delivery is CMP, which enables in-situ development without relocation.",
-        "takeaway": "CMP is uniquely valuable for informal settlements because it enables in-place upgrading. The classification of the eventual housing depends on the community's income and the unit standards, but the delivery method is what makes CMP unique."
-      },
-      "explanation": null,
-      "code_citation": "RA 7279 (1992), CMP program description; SHFC Charter",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.9,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-003-02-010",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e413251cb8c015a762fa720ed01496bf24441ad18bf8ee513336dcf81e441216"
     }
   ]
 }

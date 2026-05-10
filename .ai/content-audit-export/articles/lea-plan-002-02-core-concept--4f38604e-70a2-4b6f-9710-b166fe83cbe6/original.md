@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 002 02 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -22,11 +31,19 @@ The **Garden City** (**Ebenezer Howard, 1898**) was conceived as a self-sufficie
 **Smart Growth** (1990s–present) is a set of principles emphasizing compact, infill development; walkability; transit; mixed uses; and environmental protection. Smart Growth rejects sprawl and car-dependent patterns. It is applied planning strategy rather than a single theorist's framework.
 
 **Growth Pole Theory** (**François Perroux, 1955**) proposes that concentrated investment in a strategic economic sector or location generates "spread effects" to surrounding regions—agglomeration benefits that stimulate broader development. The Clark development corridor (New Clark City in Pampanga) and infrastructure investment corridors reflect growth pole thinking.
-<ArticleMedia id="media-lea-plan-002-02-core-concept" type="image" caption="Contemporary Urban Models — Garden City, TOD, New Urbanism, 15-Minute City" description="Comparison diagram of modern urban models: Garden City (30,000-60,000 pop, greenbelt), TOD (400m transit radius, density gradient), New Urbanism (5-minute walk, mixed-use), 15-Minute City (all amenities within 15 min walk/cycle), and CIAM (functional zoning tower-in-park)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-002-02-core-concept", type="image", caption="Contemporary Urban Models — Garden City, TOD, New Urbanism, 15-Minute City", description="Comparison diagram of modern urban models: Garden City (30,000-60,000 pop, greenbelt), TOD (400m transit radius, density gradient), New Urbanism (5-minute walk, mixed-use), 15-Minute City (all amenities within 15 min walk/cycle), and CIAM (functional zoning tower-in-park).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-<WikiExamTable headers={["Model/Approach","Theorist(s)","Year","Target Sclea or Radius","Key Principle"]} rows={[{"Model/Approach":"Garden City","Theorist(s)":"Ebenezer Howard","Year":"1898","Target Sclea or Radius":"30,000–60,000 people","Key Principle":"Self-sufficient new town combining city services with countryside amenities; community land ownership"},{"Model/Approach":"New Urbanism","Theorist(s)":"Duany, Plater-Zyberk, Calthorpe","Year":"1980s–present","Target Sclea or Radius":"400m (5-min walk)","Key Principle":"Walkable, mixed-use neighborhoods; all daily needs within walking distance; pedestrian-first design"},{"Model/Approach":"TOD","Theorist(s)":"Calthorpe et al.","Year":"1990s–present","Target Sclea or Radius":"400–800m from station","Key Principle":"Higher density, mixed-use development anchored to transit stations; reduced parking; active transport priority"},{"Model/Approach":"15-Minute City","Theorist(s)":"Carlos Moreno","Year":"2020","Target Sclea or Radius":"15 min walk/bike","Key Principle":"All daily needs (work, food, health, education, culture, parks) within 15-minute active transport radius"},{"Model/Approach":"CIAM / Athens Charter","Theorist(s)":"Le Corbusier, CIAM","Year":"1933","Target Sclea or Radius":"City-wide zoning","Key Principle":"Separation of four functions (living, working, recreation, transport) into distinct zones — OPPOSITE of mixed use"},{"Model/Approach":"Smart Growth","Theorist(s)":"Multiple practitioners","Year":"1990s–present","Target Sclea or Radius":"Urban-wide policy","Key Principle":"Compact infill, walkability, transit, mixed use, environmental conservation; anti-sprawl"}]} />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="{[\"Model/Approach\",\"Theorist(s)\",\"Year\",\"Target Sclea or Radius\",\"Key Principle\"]}", rows="{[{\"Model/Approach\":\"Garden City\",\"Theorist(s)\":\"Ebenezer Howard\",\"Year\":\"1898\",\"Target Sclea or Radius\":\"30,000–60,000 people\",\"Key Principle\":\"Self-sufficient new town combining city services with countryside amenities; community land ownership\"}", Model=true, Approach=true, New=true, Urbanism=true, Theorist=true, s=true, Duany=true, Plater-Zyberk=true, Calthorpe=true, Year=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -42,7 +59,11 @@ The Philippines adopted New Urbanism principles in Bonifacio Global City (mixed-
 
 4. **Application:** "Which contemporary model would best guide development around a new MRT station?" → TOD.
 
-<Tip>**Memory anchors:** HOWARD = **30,000–60,000** (Garden City population). New Urbanism = **400m walk** (NOT 800m; that is TOD's upper bound). CIAM = **SEPARATION** (the problem that contemporary models react against). MORENO = **15 MINUTES** (all daily needs within active-transport distance).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory anchors:** HOWARD = **30,000–60,000** (Garden City population). New Urbanism = **400m walk** (NOT 800m; that is TOD's upper bound). CIAM = **SEPARATION** (the problem that contemporary models react against). MORENO = **15 MINUTES** (all daily needs within active-transport distance).
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Know precise values: Garden City = 30,000-60,000 population (NOT 100,000). New Urbanism walk radius = 400m (NOT 800m). TOD = 400-800m transit radius. CIAM = separation of functions. 15-Minute City = all services within 15 min walk.
 
@@ -52,4 +73,8 @@ See **LEA-PLAN-002-01** (Classical Urban Models) for foundational models, **LEA-
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing New Urbanism's 5-minute walk radius (400m) with TOD's catchment (400–800m)—the upper TOD bound is double the New Urbanism standard","Stating Garden City target population as 100,000 instead of 30,000–60,000—students often round up to memorable large numbers","Thinking CIAM advocated mixed use—CIAM advocated SEPARATION of functions; mixed use is a contemporary critique of CIAM's legacy","Attributing Garden City to Howard but not stating the correct target population range—Howard's vision is specific about sclea for a reason"]} />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing New Urbanism's 5-minute walk radius (400m) with TOD's catchment (400–800m)—the upper TOD bound is double the New Urbanism standard\",\"Stating Garden City target population as 100,000 instead of 30,000–60,000—students often round up to memorable large numbers\",\"Thinking CIAM advocated mixed use—CIAM advocated SEPARATION of functions; mixed use is a contemporary critique of CIAM's legacy\",\"Attributing Garden City to Howard but not stating the correct target population range—Howard's vision is specific about sclea for a reason\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

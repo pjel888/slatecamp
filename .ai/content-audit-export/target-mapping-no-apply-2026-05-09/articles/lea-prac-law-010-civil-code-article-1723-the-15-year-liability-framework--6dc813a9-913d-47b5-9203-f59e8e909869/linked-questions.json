@@ -1,0 +1,508 @@
+{
+  "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:397847afa67604e38dff09ca584a3dc7736d8f1b23f51543fd05993d4be3fd92",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "76fe3143-368f-4db5-9bb9-348640000e3a",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "An architect was Architect-in-Charge of Construction and supervised the contractor's work. The contractor used inferior materials not visible in the final inspection. A structural failure occurs 8 years later. What is the architect's liability exposure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "None, because the architect was not present during all construction phases and had no control over material selection"
+        },
+        {
+          "id": "b",
+          "text": "Solidary liability with the contractor for failure to detect the inferior materials during supervision"
+        },
+        {
+          "id": "c",
+          "text": "Limited liability only if the architect can prove written notice to the contractor, documenting the observed deficiencies"
+        },
+        {
+          "id": "d",
+          "text": "No liability, because the contractor was solely responsible for material quality and compliance with specifications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misrepresents the supervisory standard; absence from all phases is irrelevant; the duty is to detect deficiencies during progress when opportunity exists.",
+        "c": "Overstates the burden of proof; notice to the contractor does not shield from liability; the architect's duty is to prevent/correct deficiencies, not just warn.",
+        "d": "Absolves the supervisor; Article 1723 imposes joint liability on both parties; the contractor's responsibility for materials does not exclude the architect's duty to supervise.",
+        "correct": "An Architect-in-Charge of Construction assumes a non-delegable supervisory duty: to verify conformance to plans and specifications and detect deficiencies during progress. Failure to discover inferior materials, despite opportunity, constitutes negligence and makes the architect solidarily liable with the contractor.",
+        "takeaway": "AiCC supervisory duty: non-delegable; failure to detect inferior materials = solidary liability with contractor for resulting structural failure."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0e4aacf283e323807a6cac9b3ae24a3aeef4f4174179771198011bb656278e2"
+    },
+    {
+      "question_id": "8578dc0a-0d66-42db-9904-5a6d4a700b46",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "Why does Article 1723 impose strict liability on architects for defective plans, regardless of whether the contractor followed specifications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To punish architects for choosing poor contractors, thereby ensuring accountability in the selection process"
+        },
+        {
+          "id": "b",
+          "text": "To recognize that design defects are within the architect's exclusive control and expertise"
+        },
+        {
+          "id": "c",
+          "text": "To transfer all construction risk to architects, making them solely responsible for any issues"
+        },
+        {
+          "id": "d",
+          "text": "To eliminate the need for building inspections during construction, simplifying the regulatory process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mispresents the purpose as punitive; the rule is corrective (allocating liability to the responsible party), not punitive.",
+        "c": "Overstates the scope; strict liability applies only to plan defects, not to all construction risk; contractors remain liable for their own deficiencies.",
+        "d": "Wrongly suggests inspections become unnecessary; strict liability for plan defects does not eliminate the need for competent supervision.",
+        "correct": "Strict liability for plan defects reflects the reality that architects, as design professionals, control the plans and specifications. Defects in design originate within the architect's exclusive expertise and authority; architects cannot escape liability by blaming contractors for poor workmanship if the design itself was fundamentally flawed.",
+        "takeaway": "Plan defect strict liability rationale: architects control design/specifications; design defects are within their exclusive expertise and responsibility."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4d5478c6711163a3cdd1553a70c46501ff984f2f4128cac3146b338be323ef77"
+    },
+    {
+      "question_id": "023017de-e780-41ba-aadd-3b647271ca32",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "How do the 15-year exposure window and the 10-year prescriptive period interact to create liability boundaries in Article 1723?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are redundant; either one determines the liability period, but not both simultaneously"
+        },
+        {
+          "id": "b",
+          "text": "The 15-year window sets the maximum exposure; the 10-year period from collapse prevents unlimited claims"
+        },
+        {
+          "id": "c",
+          "text": "Only the 10-year period applies; the 15-year reference is merely descriptive and does not affect liability"
+        },
+        {
+          "id": "d",
+          "text": "They operate independently with no practical relationship, each serving a different legal purpose"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Treats mechanisms as redundant; both serve distinct functions: the 15-year window caps exposure, the 10-year period caps filing time.",
+        "c": "Eliminates the 15-year boundary; the window is substantive, not descriptive; it determines whether liability exists at all.",
+        "d": "Fails to recognize the sequential interplay; the 15-year window must be satisfied before the 10-year period even matters.",
+        "correct": "The two clocks are independent but complementary: the 15-year window from completion is the outer boundary of exposure; if collapse occurs within that window, the 10-year statute of limitations from collapse governs filing deadlines. If no collapse by year 15, no liability exists regardless of later defects.",
+        "takeaway": "Two temporal clocks: 15-year exposure window (from completion) + 10-year filing deadline (from collapse) = liability boundaries."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4e22cb1ed1f6080ffa7e956f6e00192632b0a7a5a04b88e5933f9a4bdf53b243"
+    },
+    {
+      "question_id": "fee18dcf-2494-4930-b87f-aa50f7b703a6",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "Does acceptance of a completed building by the owner waive all rights to sue for defects discovered later?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, acceptance automatically waives all claims, unless otherwise stated in the contract or warranty"
+        },
+        {
+          "id": "b",
+          "text": "No, acceptance does not imply waiver of any cause of action for defects"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if the building passed all inspections and no defects were noted at the time of acceptance"
+        },
+        {
+          "id": "d",
+          "text": "No, but only defects discovered within 2 years remain actionable, unless extended by specific agreement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses acceptance mechanics; Article 1723 prevents implied waiver; express written waivers are possible but not automatic from acceptance.",
+        "c": "Invents an inspection exception; passing inspections does not waive latent defect claims; inspections may fail to detect deep structural problems.",
+        "d": "Adds a non-existent 2-year limit; Article 1723 allows suit within 10 years of collapse, not 2 years from discovery.",
+        "correct": "Article 1723 explicitly provides that acceptance of the building after completion does not imply waiver of any cause of action for defects, protecting owners from losing rights through mere acceptance.",
+        "takeaway": "Acceptance doctrine: acceptance of a building does not waive the right to sue for defects discovered later (within Article 1723 limits)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:868b11679370328b75ab398e8119f455bc8b211e0ed54fa3940dc04ecb474872"
+    },
+    {
+      "question_id": "4a71ac43-563a-48f4-b2cb-891a5dc3d61f",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "What type of liability exists between the contractor and the architect-supervisor when a building collapses due to construction defects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Joint and several (solidary) liability"
+        },
+        {
+          "id": "b",
+          "text": "Proportional liability based on percentage of fault"
+        },
+        {
+          "id": "c",
+          "text": "No liability if the architect approved the contractor's work"
+        },
+        {
+          "id": "d",
+          "text": "Only the contractor is liable"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Misstates liability structure; Article 1723 imposes solidary liability, not proportional apportionment; the plaintiff chooses whom to sue for full recovery.",
+        "c": "Creates a false defense; approval by the architect does not shield from liability if defects existed; the supervisory duty is non-delegable.",
+        "d": "Exonerates the supervising architect; supervisors assume dual responsibility to verify conformance and detect deficiencies; they cannot escape solidary liability.",
+        "correct": "Article 1723 provides that both the contractor and the architect who supervised construction bear liability solidarily (joint and several liability), meaning the injured party may sue either or both, and the defendants are jointly and severally liable for the entire judgment.",
+        "takeaway": "Construction defect liability: contractor and supervising architect bear solidary (joint and several) liability."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a6c1f38d99d10c91a120151a9403dfd92a68a41b7bedc904a1cf988f13db4664"
+    },
+    {
+      "question_id": "6e10941c-0f97-41d1-b596-f91b42f47356",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "A building was completed on June 1, 2015. On August 15, 2030, a structural defect in the foundation causes partial collapse. Can the owner sue for damages under Article 1723?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the 10-year statute of limitations has not yet expired"
+        },
+        {
+          "id": "b",
+          "text": "No, because the collapse occurred after the 15-year period from completion"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if the suit is filed within one year"
+        },
+        {
+          "id": "d",
+          "text": "No, because building owners have only 2 years to file after discovering defects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misapplies the statute of limitations; the 10-year period operates only if collapse occurs within the 15-year window; it cannot extend liability beyond that window.",
+        "c": "Invents a one-year sub-deadline; Article 1723 establishes a 10-year statute of limitations from collapse, not one year.",
+        "d": "States an incorrect limitations period; Article 1723 provides 10 years from collapse, not 2 years from discovery.",
+        "correct": "The 15-year exposure window runs from June 1, 2015 to June 1, 2030. The collapse on August 15, 2030 occurs after the window closed, so no liability attaches under Article 1723, regardless of the 10-year statute of limitations.",
+        "takeaway": "15-year exposure rule: no liability if collapse occurs after 15 years from completion, even if suit would be timely."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:932e4f156258c37bafec07bc568a4e62ce0767ac522aab895f1af063423be72a"
+    },
+    {
+      "question_id": "760d5fa8-81e7-4039-bccb-08b972eec248",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "A structural defect in a building causes collapse 12 years after the building's completion. From what date does the 10-year prescriptive period for filing suit begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "From the date of building completion (12 years prior)"
+        },
+        {
+          "id": "b",
+          "text": "From the date of building collapse (current date)"
+        },
+        {
+          "id": "c",
+          "text": "From the date the owner discovered the defect"
+        },
+        {
+          "id": "d",
+          "text": "From the date the architect approved the final inspection"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses the two temporal mechanisms; the 15-year window runs from completion, but the 10-year statute runs from collapse.",
+        "c": "Substitutes discovery for collapse; Article 1723 is strict on collapse date; discovery does not trigger the 10-year period.",
+        "d": "Ties the deadline to administrative events; architectural approval timing does not determine the statutory deadline; collapse date is controlling.",
+        "correct": "Article 1723 establishes a separate 10-year statute of limitations that runs from the date of collapse, not from completion or discovery. The collapse triggers the filing deadline.",
+        "takeaway": "10-year prescriptive period clock: runs from the date of collapse, not from completion or discovery of defects."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:11fb8e834b120987df35803a182fc736110368483a85d41ba593d8b749b4588b"
+    },
+    {
+      "question_id": "e4a0bc5f-3648-4ac0-ba70-3a46174589e7",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "Building A was completed on January 1, 2010. No collapse occurred by January 1, 2025 (the 15-year mark). On March 15, 2025, severe structural damage appears, and the building partially collapses. Can the owner file suit under Article 1723?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because collapse within 10 years of the defect becoming apparent is actionable"
+        },
+        {
+          "id": "b",
+          "text": "No, because the 15-year liability period expired on January 1, 2025"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if suit is filed by March 15, 2035"
+        },
+        {
+          "id": "d",
+          "text": "No, because the owner accepted the building over 15 years ago"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misunderstands the interaction of the two periods; the 15-year window is a hard deadline for exposure; defects manifesting after it are not covered.",
+        "c": "Wrongly extends liability beyond the 15-year window; once that window closes, no new liability arises, even if collapse occurs moments later.",
+        "d": "While acceptance alone doesn't waive rights, the primary barrier is the expired 15-year window, not the acceptance doctrine.",
+        "correct": "The 15-year exposure window is absolute: Article 1723 liability attaches only if collapse occurs by January 1, 2025. A collapse on March 15, 2025 falls outside the window, so no liability exists, regardless of whether the 10-year post-collapse filing period would be met.",
+        "takeaway": "15-year window is absolute: collapse after 15 years from completion bars all Article 1723 liability, even if timely suit is filed."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:703b6da3ac3d81bfae68be134e1ec196081ed592993328ed803887ff312de4d3"
+    },
+    {
+      "question_id": "e966f7b8-e605-4866-884d-60b4ee51c577",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "Who is liable for damages if a building collapses due to a defect in the structural design plans?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the contractor who performed construction"
+        },
+        {
+          "id": "b",
+          "text": "The architect or engineer who drew the plans"
+        },
+        {
+          "id": "c",
+          "text": "The building owner for poor maintenance"
+        },
+        {
+          "id": "d",
+          "text": "The municipality that issued the building permit"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Absolves the design professional; contractors execute plans but are not responsible for design flaws; the architect assumes design liability.",
+        "c": "Shifts responsibility to the owner; Article 1723 makes professionals liable, not owners, for structural design deficiencies.",
+        "d": "Confuses regulatory approval with liability; municipalities issue permits but do not assume design liability; the architect is responsible.",
+        "correct": "Article 1723 holds the architect or engineer who drew the plans and specifications liable for damages if the building collapses due to a defect in those plans, or due to defects in the ground.",
+        "takeaway": "Plan defect liability: architect/engineer who drew the plans bears strict liability for design defects causing collapse."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:46e615d2482246a9a52a5d68a774c05431e8e54dfd07684ad1d1f02c56c84d12"
+    },
+    {
+      "question_id": "f93a2068-4c06-44ed-b97e-3c43eacee196",
+      "article_id": "6dc813a9-913d-47b5-9203-f59e8e909869",
+      "topic_id": "9feda17a-aeae-4eaa-86b8-aff260a17ef9",
+      "text": "From what event does the 15-year period from completion within which collapse must occur under Civil Code Article 1723 begin?",
+      "options": [
+        {
+          "id": "a",
+          "text": "From the signing of the construction contract"
+        },
+        {
+          "id": "b",
+          "text": "From the issuance of the building permit"
+        },
+        {
+          "id": "c",
+          "text": "From the date of building completion and acceptance"
+        },
+        {
+          "id": "d",
+          "text": "From the date the contractor submitted the final bill"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses contract inception with project completion; the liability window is tied to the finished building's handover, not contract signature.",
+        "b": "Equates regulatory approval with project completion; building permits mark authorization to construct, not actual completion.",
+        "d": "Fixes the timeline to accounting events rather than physical completion; final billing is administrative and may precede or follow actual completion.",
+        "correct": "Civil Code Article 1723 establishes the 15-year liability period measured from the date of building completion and acceptance, not from contract signing or permit issuance.",
+        "takeaway": "Article 1723 15-year clock: starts from building completion and acceptance date, not contract signing or permit issuance."
+      },
+      "explanation": null,
+      "code_citation": "Civil Code Article 1723",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-010-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4febbfc25219f4691671d5bc8a164a66c8f5582ada8e00ee7fd7fa559c6af610"
+    }
+  ]
+}

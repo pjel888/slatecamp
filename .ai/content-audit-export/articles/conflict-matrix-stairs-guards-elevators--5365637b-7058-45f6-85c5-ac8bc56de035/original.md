@@ -1,4 +1,11 @@
 # Conflict Matrix Stairs Guards Elevators
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Conflict Matrix Stairs Guards Elevators** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -16,37 +23,33 @@ This is not a theoretical problem. In the LEA, the examiner will hand you exactl
 
 ## THE GOVERNING PRINCIPLE — KNOW THIS COLD
 
-<LawCallout code="pd1096" section="Rule XII - Stairs and Guards">
-
-
-When BP 344 and PD 1096 conflict, the MORE RESTRICTIVE (more accessibility-protective) provision governs.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="pd1096", section="Rule XII - Stairs and Guards"
+- Text: When BP 344 and PD 1096 conflict, the MORE RESTRICTIVE (more accessibility-protective) provision governs.
+[/SLATECAMP_UI_BLOCK]
 >
 > BP 344 is a special law protecting the rights of PWDs. PD 1096 is a general building regulation. Under the principle of *lex specialis derogat legi generali*, the special law prevails on matters of accessibility.
 >
-<LawCallout code="bp344" section="Section 10 - Elevators">
-
-
-Exception: Where PD 1096 sets a MORE restrictive dimension that also serves accessibility (e.g., greater guard height), the higher standard of both laws applies simultaneously.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 10 - Elevators"
+- Text: Exception: Where PD 1096 sets a MORE restrictive dimension that also serves accessibility (e.g., greater guard height), the higher standard of both laws applies simultaneously.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
-<Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ⚠️ Common Exam Trap: When PD 1096 and BP 344 both specify dimensions for the same element, do NOT simply average them. The stricter (more protective) standard always governs. Exception: if PD 1096 has a MORE restrictive dimension that also aids accessibility (e.g., higher guardrails), apply the higher of both standards.
+[/SLATECAMP_UI_BLOCK]
 
-⚠️ Common Exam Trap: When PD 1096 and BP 344 both specify dimensions for the same element, do NOT simply average them. The stricter (more protective) standard always governs. Exception: if PD 1096 has a MORE restrictive dimension that also aids accessibility (e.g., higher guardrails), apply the higher of both standards.
-
-</Warn>
-
-<ExamTip>
-
-LEA Strategy: Draw a small T-chart on scratch paper. Left column = PD 1096 dimension. Right column = BP 344 dimension. Circle the stricter value. That is your answer. For stairs: PD 1096 allows 1,100 mm width; BP 344 requires 1,500 mm for accessible means of egress.
-
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: LEA Strategy: Draw a small T-chart on scratch paper. Left column = PD 1096 dimension. Right column = BP 344 dimension. Circle the stricter value. That is your answer. For stairs: PD 1096 allows 1,100 mm width; BP 344 requires 1,500 mm for accessible means of egress.
+[/SLATECAMP_UI_BLOCK]
 
 ## CORE MNEMONIC: **"DUAL GRIP — 700 PLUS 900"**
 
@@ -145,11 +148,11 @@ A staircase in a public building may have been designed under PD 1096 with a lan
 | **PD 1096** | Equal to stair width, **max 1,200 mm** for straight stairs |
 | **Governing** | **BP 344 — 1,500 mm** |
 
-<Note>
-
-PD 1096's "max 1,200 mm" is a ceiling for straight stairs (to prevent oversized landings that waste space). BP 344's "min 1,500 mm" is a floor for accessibility. Since a larger landing is more accessible, BP 344's 1,500 mm requirement governs — even though it exceeds PD 1096's stated maximum for standard stairs. The accessibility requirement takes precedence.
-
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: PD 1096's "max 1,200 mm" is a ceiling for straight stairs (to prevent oversized landings that waste space). BP 344's "min 1,500 mm" is a floor for accessibility. Since a larger landing is more accessible, BP 344's 1,500 mm requirement governs — even though it exceeds PD 1096's stated maximum for standard stairs. The accessibility requirement takes precedence.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -341,11 +344,11 @@ ACCESSIBLE STAIRCASE COMPLIANCE CHECKLIST
 > **A1.** 700 mm (lower) and 900 mm (upper) above the nosing.
 
 **Q2.** PD 1096 permits a single handrail at 850 mm on a stair. Is this acceptable for an accessible route?
-<LawCallout code="bp344">
-
-A2. No. BP 344 governs and requires dual handrails at 700 mm and 900 mm.
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344"
+- Text: A2. No. BP 344 governs and requires dual handrails at 700 mm and 900 mm.
+[/SLATECAMP_UI_BLOCK]
 
 **Q3.** What is the maximum vertical rise between stair landings under BP 344?
 > **A3.** 3 m (3,000 mm).
@@ -354,11 +357,11 @@ A2. No. BP 344 governs and requires dual handrails at 700 mm and 900 mm.
 > **A4.** 3,600 mm (3.6 m).
 
 **Q5.** Which governs when they conflict?
-<LawCallout code="bp344">
-
-A5. BP 344 (the more restrictive, accessibility-protective standard).
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0007 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344"
+- Text: A5. BP 344 (the more restrictive, accessibility-protective standard).
+[/SLATECAMP_UI_BLOCK]
 
 **Q6.** What is the minimum landing depth under BP 344?
 > **A6.** 1,500 mm.
@@ -382,11 +385,11 @@ A5. BP 344 (the more restrictive, accessibility-protective standard).
 > **A12.** 900 × 1,200 mm.
 
 **Q13.** What is the minimum guard height where a drop exceeds 750 mm?
-<LawCallout code="bp344">
-
-A13. 1,100 mm (same in both BP 344 and PD 1096).
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0008 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344"
+- Text: A13. 1,100 mm (same in both BP 344 and PD 1096).
+[/SLATECAMP_UI_BLOCK]
 
 **Q14.** What horizontal extension is required at the top and bottom of each accessible stair handrail?
 > **A14.** 300 mm.
@@ -458,4 +461,3 @@ PD 1096 governs exit stair capacity (number of exits, occupant load, travel dist
 ## Cross‑References
 
 **Stairs Handrails Guardrails**, **Widths Slopes**, **Bp 344 Elevator Dimensions**, **Bp 344 Vs Pd 1096 Conflicts**
-

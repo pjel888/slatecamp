@@ -1,36 +1,14 @@
 {
   "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
   "slug": "lea-strc-009-01-core-concept",
-  "generated_at": "2026-05-04T09:10:36.608Z",
+  "generated_at": "2026-05-09T17:04:24.688Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 1,
-  "unknown_block_count": 1,
+  "warning_count": 0,
+  "unknown_block_count": 0,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [
-    {
-      "block_id": "ui_0001",
-      "component_name": "ArticleMedia",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0001",
-      "component_name": "ArticleMedia",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:e64ce94b12ad016922fd1ec5773687a66e296da5b9d2e150c2b0396077fff19e",
-      "line_start": 14,
-      "line_end": 14,
-      "warnings": [
-        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
+  "warnings": [],
+  "unknown_blocks": [],
   "critical_blocks": []
 }

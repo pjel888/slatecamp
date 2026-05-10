@@ -27,7 +27,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
 Extracted summary:
 - Props: headers="{[\"Material\", \"Primary Standard\", \"Key Properties\", \"Structural Limitations\"]}"
-- Text: Bamboo (Kawayan tinik, Bayog) ISO 22156:2021; ISO 22157 testing Allowable bending stress 6-10 MPa; compression parallel 4-8 MPa; tension parallel 8-15 MPa Limited to 1-2 storey residential; max 7 m height per ISO 22156 Coco Lumber FPRDI Standards; DPWH acceptance Working properties comparable to hardwood; moderate durability with preservation Grading and preservation required; not approved for primary seismic structural systems without verification testing Adobe (Volcanic Tuff Blocks) NBRC/NBCP 
+- Text: Bamboo (Kawayan tinik, Bayog) ISO 22156:2021; ISO 22157 testing Allowable bending stress 6-10 MPa; compression parallel 4-8 MPa; tension parallel 8-15 MPa Limited to 1-2 storey residential; max 7 m height per ISO 22156 Coco Lumber FPRDI Standards; DPWH acceptance Working properties comparable to hardwood; moderate durability with preservation Grading and preservation required; not approved for primary seismic structural systems without verification testing Adobe (Volcanic Tuff Blocks) NBRC/NBCP
 [/SLATECAMP_UI_BLOCK]
 
 ISO 22156:2021 covers bamboo structural DESIGN and applies to bamboo culm (pole) structures with round bamboo framing for residential, small commercial, institutional, and light industrial buildings not exceeding 7 meters in height and two storeys. Design may use allowable stress design (ASD), allowable capacity design (ACD), or partial safety factor methods. ISO 22157 covers bamboo physical and mechanical TESTING, specifying testing protocols for bamboo (modulus of rupture, compressive strength perpendicular and parallel to grain). Both are referenced in Philippine bamboo construction standards (PNS 16:2019).
@@ -99,4 +99,3 @@ Extracted summary:
 See also within Sustainable and Green Materials: **lea-matl-005-05-core-concept**, **lea-matl-005-07-core-concept**, **lea-matl-005-09-core-concept**, **lea-matl-005-10-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

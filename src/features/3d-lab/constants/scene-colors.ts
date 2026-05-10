@@ -3,6 +3,11 @@
 // DOM overlays should use Tailwind classes instead.
 
 export const SCENE_COLORS = {
+  // Shared viewport environment
+  skyWhite: '#ffffff',
+  groundGridCell: '#d1d5db',
+  groundGridSection: '#94a3b8',
+
   // Ground planes
   groundLight: '#f1f5f9',
   groundNeutral: '#e5e7eb',

@@ -1,9 +1,60 @@
 {
   "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:4407970f732125399c84de03bdeb5f55a44d3b879599d72f8b9c531a21ce5a2c",
+  "linked_questions_hash": "sha256:296a1b391c6b04f01dab0db26b49c78a7e1fadc431471cc34f0ae802cc13e0f7",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "dbd3fac4-a900-4772-bf0b-d6cd00a5365a",
+      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
+      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
+      "text": "A mixed-use development on a 60,000 SF urban site is programmed as a 10-story podium-tower. Ground floors 1–3 are retail (70,000 NSF); floors 4–10 are office (140,000 NSF). If the total GBA is calculated as 300,000 SF, what is the floor area ratio (FAR)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "FAR = 3.0"
+        },
+        {
+          "id": "b",
+          "text": "FAR = 7.5"
+        },
+        {
+          "id": "c",
+          "text": "FAR = 10.0"
+        },
+        {
+          "id": "d",
+          "text": "FAR = 5.0"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "FAR = 3.0 would result from 180,000 GBA; recheck calculation.",
+        "b": "FAR = 7.5 would result from 450,000 GBA; too high for this project.",
+        "c": "FAR = 10.0 would result from 600,000 GBA; double the stated GBA.",
+        "correct": "FAR = Total GBA ÷ Site Area = 300,000 SF ÷ 60,000 SF = 5.0. FAR of 5.0 indicates high-density urban development; FAR ranges 8–12 in dense city centers, 4–6 in mid-density urban, 1–2 in suburban contexts."
+      },
+      "explanation": "FAR = 3.0 would result from 180,000 GBA; recheck calculation. FAR = 7.5 would result from 450,000 GBA; too high for this project. FAR = 10.0 would result from 600,000 GBA; double the stated GBA. FAR = Total GBA ÷ Site Area = 300,000 SF ÷ 60,000 SF = 5.0. FAR of 5.0 indicates high-density urban development; FAR ranges 8–12 in dense city centers, 4–6 in mid-density urban, 1–2 in suburban contexts.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ale-theo-009-05-q05",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T15:46:05.730835+00:00",
+      "content_hash": "sha256:2633e9580d2ec38a17af3f307976f390c1a80eb26aeb8deb045e4e86abb99501"
+    },
     {
       "question_id": "142509a3-4f94-49c4-8ae8-b87768def2ee",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
@@ -311,57 +362,6 @@
       "content_hash": "sha256:3b60d47e961a07c5d34669ba702d876dd67a17cfb7b0e8d97049cc57d5078088"
     },
     {
-      "question_id": "dbd3fac4-a900-4772-bf0b-d6cd00a5365a",
-      "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
-      "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
-      "text": "A mixed-use development on a 60,000 SF urban site is programmed as a 10-story podium-tower. Ground floors 1–3 are retail (70,000 NSF); floors 4–10 are office (140,000 NSF). If the total GBA is calculated as 300,000 SF, what is the floor area ratio (FAR)?",
-      "options": [
-        {
-          "id": "a",
-          "text": "FAR = 3.0"
-        },
-        {
-          "id": "b",
-          "text": "FAR = 7.5"
-        },
-        {
-          "id": "c",
-          "text": "FAR = 10.0"
-        },
-        {
-          "id": "d",
-          "text": "FAR = 5.0"
-        }
-      ],
-      "correct_option_id": "d",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "FAR = 3.0 would result from 180,000 GBA; recheck calculation.",
-        "b": "FAR = 7.5 would result from 450,000 GBA; too high for this project.",
-        "c": "FAR = 10.0 would result from 600,000 GBA; double the stated GBA.",
-        "correct": "FAR = Total GBA ÷ Site Area = 300,000 SF ÷ 60,000 SF = 5.0. FAR of 5.0 indicates high-density urban development; FAR ranges 8–12 in dense city centers, 4–6 in mid-density urban, 1–2 in suburban contexts."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ale-theo-009-05-q05",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:92ceb78927d7979c6db42c1d26b4b5694ca7274e1d7c17f035eff67b1fa4f9e7"
-    },
-    {
       "question_id": "657c7ba8-2ba9-4c79-a49b-d7a745b2a439",
       "article_id": "a1df237f-7291-4549-93bd-e7ed43f27107",
       "topic_id": "c5576b7e-90dc-4ad3-b32b-9feec47e71a4",
@@ -395,7 +395,7 @@
         "c": "Modern acoustics help but cannot overcome the fundamental conflict; separation is more effective than treatment.",
         "correct": "Nightclub noise (105+ dB) is extreme; acoustic treatment alone cannot achieve adequate isolation for residential rest. Code typically requires separation or prohibition. incompatible uses must be separated; nightclub below residential violates program logic and is unacceptable even with treatment. Relocation to separate building or basement (isolated from residential) is proper solution."
       },
-      "explanation": null,
+      "explanation": "Residential can coexist with commercial if uses are compatible and properly separated; mixed-use isn't inherently problematic. While ground-floor retail is common, nightclubs specifically create noise conflicts that make them inappropriate for residential adjacency. Modern acoustics help but cannot overcome the fundamental conflict; separation is more effective than treatment. Nightclub noise (105+ dB) is extreme; acoustic treatment alone cannot achieve adequate isolation for residential rest. Code typically requires separation or prohibition. incompatible uses must be separated; nightclub below residential violates program logic and is unacceptable even with treatment. Relocation to separate building or basement (isolated from residential) is proper solution.",
       "code_citation": null,
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -409,8 +409,8 @@
       "model_id": "ale-theo-009-05-q07",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2c19baa146aa3c881ad0c7d3ba962e7c061dd462f95aac1b6a903883def0c4a5"
+      "updated_at": "2026-05-06T15:46:05.870645+00:00",
+      "content_hash": "sha256:2fc8584b5a71615d66c69b51486fc10307feb4d7ffe6b99a2b02986939c0eed2"
     },
     {
       "question_id": "d8b9d1ea-7e7e-4297-86e7-4484c68a58ad",

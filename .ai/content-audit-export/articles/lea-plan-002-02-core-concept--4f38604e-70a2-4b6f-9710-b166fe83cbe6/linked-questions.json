@@ -1,7 +1,7 @@
 {
   "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:c86746f095e5d55c4c01b9de89ec82d6724fce7fd173e538e6b6a4684e5ba887",
+  "linked_questions_hash": "sha256:9e076ea012784c5b3a0b0f6cedee766b67d7271e4d819461bddedcf001c76d80",
   "question_count": 10,
   "questions": [
     {
@@ -40,7 +40,7 @@
         "correct": "CIAM (1933) advocated zoning into four separate functional zones—the doctrine that caused urban dysfunction. New Urbanism (1980s+) is an explicit reaction AGAINST CIAM's separation, advocating mixed-use neighborhoods where residential, retail, services, and offices coexist. They represent opposite values.",
         "takeaway": "CIAM = separation (problems it caused: dead downtowns, isolation). New Urbanism = mixing (solution to CIAM's problems). Opposite philosophies."
       },
-      "explanation": null,
+      "explanation": "CIAM advocates separation (correct). New Urbanism advocates MIXING (opposite). CIAM (1933) advocated zoning into four separate functional zones—the doctrine that caused urban dysfunction. New Urbanism (1980s+) is an explicit reaction AGAINST CIAM's separation, advocating mixed-use neighborhoods where residential, retail, services, and offices coexist. They represent opposite values. Transit was not central to CIAM's Athens Charter doctrine (it was written pre-modern transit). New Urbanism incorporates transit integration. New Urbanism emerged as a critique and rejection of CIAM's legacy, not a refinement of it. CIAM (1933) advocated zoning into four separate functional zones—the doctrine that caused urban dysfunction. New Urbanism (1980s+) is an explicit reaction AGAINST CIAM's separation, advocating mixed-use neighborhoods where residential, retail, services, and offices coexist. They represent opposite values. CIAM = separation (problems it caused: dead downtowns, isolation). New Urbanism = mixing (solution to CIAM's problems). Opposite philosophies.",
       "code_citation": "Le Corbusier (1933); Duany et al. (2000); ERROR_REGISTRY.md ERR-PLAN-024",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -52,8 +52,161 @@
       "model_id": "ALE-PLAN-002-02-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0cd2f30e510d77f4c356782b887a5d021d5c074238ac82a67265c1b7146984b1"
+      "updated_at": "2026-05-06T14:45:56.452356+00:00",
+      "content_hash": "sha256:13d21e7194900fa2afc55e06f9e7f9d698293f49ece02f7da19ddfd1eb858b38"
+    },
+    {
+      "question_id": "336402f6-1899-4e9c-8b36-bde4e07d8d4c",
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
+      "text": "Carlos Moreno's 15-Minute City concept requires residents to access all daily needs—work, food, health, education, culture, and parks—within what time frame?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 minutes by foot"
+        },
+        {
+          "id": "b",
+          "text": "10 minutes by transit"
+        },
+        {
+          "id": "c",
+          "text": "15 minutes by foot or bike"
+        },
+        {
+          "id": "d",
+          "text": "20 minutes by any mode of transport"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 minutes is New Urbanism's neighborhood radius, not the 15-minute city.",
+        "b": "Moreno's concept prioritizes active transport (foot/bike), not transit time.",
+        "c": "Moreno (2020) defined the 15-Minute City as all daily needs accessible within 15 minutes by foot or bike. This extends the New Urbanism neighborhood concept to a more functionally complete daily-life radius while maintaining active transport priority.",
+        "d": "20 minutes is not part of Moreno's framework, and the concept allows 'any mode' (it specifies foot or bike).",
+        "correct": "Moreno (2020) defined the 15-Minute City as all daily needs accessible within 15 minutes by foot or bike. This extends the New Urbanism neighborhood concept to a more functionally complete daily-life radius while maintaining active transport priority.",
+        "takeaway": "15-Minute City = 15 min foot/bike access to all daily needs. Moreno, 2020. Newer than New Urbanism; more inclusive functionality."
+      },
+      "explanation": "5 minutes is New Urbanism's neighborhood radius, not the 15-minute city. Moreno's concept prioritizes active transport (foot/bike), not transit time. Moreno (2020) defined the 15-Minute City as all daily needs accessible within 15 minutes by foot or bike. This extends the New Urbanism neighborhood concept to a more functionally complete daily-life radius while maintaining active transport priority. 20 minutes is not part of Moreno's framework, and the concept allows 'any mode' (it specifies foot or bike). Moreno (2020) defined the 15-Minute City as all daily needs accessible within 15 minutes by foot or bike. This extends the New Urbanism neighborhood concept to a more functionally complete daily-life radius while maintaining active transport priority. 15-Minute City = 15 min foot/bike access to all daily needs. Moreno, 2020. Newer than New Urbanism; more inclusive functionality.",
+      "code_citation": "Moreno (2020); VERIFIED_REFERENCE.md Part 7",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-05-06T14:45:56.587097+00:00",
+      "content_hash": "sha256:4438bd2b0db606f5342046aaba7fe9a2510d7e7592d9b70c377d4d608adf08de"
+    },
+    {
+      "question_id": "dc8bb7ae-f790-4533-8bd4-59d5f2091c61",
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
+      "text": "Ebenezer Howard's Garden City concept targets a self-contained community of how many people?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10,000–20,000 people"
+        },
+        {
+          "id": "b",
+          "text": "32,000 people (maximum)"
+        },
+        {
+          "id": "c",
+          "text": "100,000 people"
+        },
+        {
+          "id": "d",
+          "text": "500,000+ people (metropolitan)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too small—10,000–20,000 would not support the range of services Howard envisioned.",
+        "b": "Howard's Garden City (1898) targeted 30,000–60,000 people—large enough for diverse services and employment, small enough to preserve community identity and green space. This specific range is fundamental to Howard's vision.",
+        "c": "ERR-PLAN-023 error—students often round up to 100,000. This is incorrect. Howard was explicit that massive size defeats the garden city purpose.",
+        "d": "500,000+ would be a metropolis, not a self-contained garden community.",
+        "correct": "REMOVE DUPLICATE (matches rationale.correct)",
+        "takeaway": "Garden City = 30,000–60,000. Exact range matters. Howard's vision: Goldilocks community size."
+      },
+      "explanation": "Too small—10,000–20,000 would not support the range of services Howard envisioned. Howard's Garden City (1898) targeted 30,000–60,000 people—large enough for diverse services and employment, small enough to preserve community identity and green space. This specific range is fundamental to Howard's vision. ERR-PLAN-023 error—students often round up to 100,000. This is incorrect. Howard was explicit that massive size defeats the garden city purpose. 500,000+ would be a metropolis, not a self-contained garden community. REMOVE DUPLICATE (matches rationale.correct) Garden City = 30,000–60,000. Exact range matters. Howard's vision: Goldilocks community size.",
+      "code_citation": "Howard (1898); VERIFIED_REFERENCE.md Part 8; ERROR_REGISTRY.md ERR-PLAN-023",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-05-06T14:45:56.801217+00:00",
+      "content_hash": "sha256:a956478602fdeed88b4cca0c9d0437c4f0f08987b908e3a698f40a833bd00b4f"
+    },
+    {
+      "question_id": "6ebab89d-5143-4659-a0f7-fcf297463b45",
+      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
+      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
+      "text": "A city implements policies promoting infill development, walkability, mixed-income housing, and environmental conservation while discouraging sprawl. This policy framework aligns most closely with which approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Garden City model—new town construction"
+        },
+        {
+          "id": "b",
+          "text": "Smart Growth principles—urban-scale anti-sprawl policy"
+        },
+        {
+          "id": "c",
+          "text": "Growth Pole Theory—concentrated investment and spread effects"
+        },
+        {
+          "id": "d",
+          "text": "CIAM zoning—functional separation strategy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Garden City is about building new self-contained towns, not infill in existing cities.",
+        "b": "Smart Growth is a comprehensive policy approach (1990s–present) featuring compact infill development, walkability, mixed uses, transit, mixed housing, and environmental protection—all anti-sprawl principles. This is broader than New Urbanism (which focuses on neighborhood design) and is explicitly policy-oriented.",
+        "c": "Growth Pole Theory focuses on concentrated sectoral investment generating spread effects—not anti-sprawl policy per se.",
+        "d": "CIAM zoning is the problem Smart Growth reacts against.",
+        "correct": "Smart Growth is a comprehensive policy approach (1990s–present) featuring compact infill development, walkability, mixed uses, transit, mixed housing, and environmental protection—all anti-sprawl principles. This is broader than New Urbanism (which focuses on neighborhood design) and is explicitly policy-oriented.",
+        "takeaway": "Smart Growth = urban policy framework emphasizing infill, walkability, transit, mixed use, environmental conservation, and anti-sprawl. Broader than New Urbanism."
+      },
+      "explanation": "Garden City is about building new self-contained towns, not infill in existing cities. Smart Growth is a comprehensive policy approach (1990s–present) featuring compact infill development, walkability, mixed uses, transit, mixed housing, and environmental protection—all anti-sprawl principles. This is broader than New Urbanism (which focuses on neighborhood design) and is explicitly policy-oriented. Growth Pole Theory focuses on concentrated sectoral investment generating spread effects—not anti-sprawl policy per se. CIAM zoning is the problem Smart Growth reacts against. Smart Growth is a comprehensive policy approach (1990s–present) featuring compact infill development, walkability, mixed uses, transit, mixed housing, and environmental protection—all anti-sprawl principles. This is broader than New Urbanism (which focuses on neighborhood design) and is explicitly policy-oriented. Smart Growth = urban policy framework emphasizing infill, walkability, transit, mixed use, environmental conservation, and anti-sprawl. Broader than New Urbanism.",
+      "code_citation": "THEORY_ATTRIBUTION_GUIDE.md Part 4; VERIFIED_REFERENCE.md Part 7",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.486658+00:00",
+      "updated_at": "2026-05-06T14:45:56.929331+00:00",
+      "content_hash": "sha256:46788ab1ba04c2c3d9161da118e683169c3a430e670f0a20fa74ee183ef1f1a2"
     },
     {
       "question_id": "50617027-2f64-44e5-9118-dcddb7529163",
@@ -158,57 +311,6 @@
       "content_hash": "sha256:6985e1bd9195cd0e3defb01e76cbd1bb9ba37180305d70c1cb77cac5afbcce30"
     },
     {
-      "question_id": "336402f6-1899-4e9c-8b36-bde4e07d8d4c",
-      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
-      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
-      "text": "Carlos Moreno's 15-Minute City concept requires residents to access all daily needs—work, food, health, education, culture, and parks—within what time frame?",
-      "options": [
-        {
-          "id": "a",
-          "text": "5 minutes by foot"
-        },
-        {
-          "id": "b",
-          "text": "10 minutes by transit"
-        },
-        {
-          "id": "c",
-          "text": "15 minutes by foot or bike"
-        },
-        {
-          "id": "d",
-          "text": "20 minutes by any mode of transport"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "5 minutes is New Urbanism's neighborhood radius, not the 15-minute city.",
-        "b": "Moreno's concept prioritizes active transport (foot/bike), not transit time.",
-        "c": "Moreno (2020) defined the 15-Minute City as all daily needs accessible within 15 minutes by foot or bike. This extends the New Urbanism neighborhood concept to a more functionally complete daily-life radius while maintaining active transport priority.",
-        "d": "20 minutes is not part of Moreno's framework, and the concept allows 'any mode' (it specifies foot or bike).",
-        "correct": "Moreno (2020) defined the 15-Minute City as all daily needs accessible within 15 minutes by foot or bike. This extends the New Urbanism neighborhood concept to a more functionally complete daily-life radius while maintaining active transport priority.",
-        "takeaway": "15-Minute City = 15 min foot/bike access to all daily needs. Moreno, 2020. Newer than New Urbanism; more inclusive functionality."
-      },
-      "explanation": null,
-      "code_citation": "Moreno (2020); VERIFIED_REFERENCE.md Part 7",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-002-02-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:86c5613c1ba0adacb65a675c55be3822d9069aa90fadb5a21b2f94dde9214502"
-    },
-    {
       "question_id": "68e914a6-f016-4582-833f-1191640e5d02",
       "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
       "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
@@ -258,57 +360,6 @@
       "created_at": "2026-03-23T19:29:06.486658+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:89bd85f03bbbea9572cf6bd2f616e82c6209df7f57755759f06400431e8f444f"
-    },
-    {
-      "question_id": "dc8bb7ae-f790-4533-8bd4-59d5f2091c61",
-      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
-      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
-      "text": "Ebenezer Howard's Garden City concept targets a self-contained community of how many people?",
-      "options": [
-        {
-          "id": "a",
-          "text": "10,000–20,000 people"
-        },
-        {
-          "id": "b",
-          "text": "32,000 people (maximum)"
-        },
-        {
-          "id": "c",
-          "text": "100,000 people"
-        },
-        {
-          "id": "d",
-          "text": "500,000+ people (metropolitan)"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Too small—10,000–20,000 would not support the range of services Howard envisioned.",
-        "b": "Howard's Garden City (1898) targeted 30,000–60,000 people—large enough for diverse services and employment, small enough to preserve community identity and green space. This specific range is fundamental to Howard's vision.",
-        "c": "ERR-PLAN-023 error—students often round up to 100,000. This is incorrect. Howard was explicit that massive size defeats the garden city purpose.",
-        "d": "500,000+ would be a metropolis, not a self-contained garden community.",
-        "correct": "REMOVE DUPLICATE (matches rationale.correct)",
-        "takeaway": "Garden City = 30,000–60,000. Exact range matters. Howard's vision: Goldilocks community size."
-      },
-      "explanation": null,
-      "code_citation": "Howard (1898); VERIFIED_REFERENCE.md Part 8; ERROR_REGISTRY.md ERR-PLAN-023",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-002-02-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:734d18568bfc50634ec56e9a153778f4293833687f0bb0b8ea2221baf1eb15e7"
     },
     {
       "question_id": "c12b8f34-f200-4f72-9d8d-fe668b8c6e66",
@@ -411,57 +462,6 @@
       "created_at": "2026-03-23T19:29:06.486658+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:b9475c60da21f84b9553bb418b0799244950df1d3e3bb984fb900dacb5b3b74b"
-    },
-    {
-      "question_id": "6ebab89d-5143-4659-a0f7-fcf297463b45",
-      "article_id": "4f38604e-70a2-4b6f-9710-b166fe83cbe6",
-      "topic_id": "ed88acd1-35ab-4704-b08d-2abbcc268688",
-      "text": "A city implements policies promoting infill development, walkability, mixed-income housing, and environmental conservation while discouraging sprawl. This policy framework aligns most closely with which approach?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Garden City model—new town construction"
-        },
-        {
-          "id": "b",
-          "text": "Smart Growth principles—urban-scale anti-sprawl policy"
-        },
-        {
-          "id": "c",
-          "text": "Growth Pole Theory—concentrated investment and spread effects"
-        },
-        {
-          "id": "d",
-          "text": "CIAM zoning—functional separation strategy"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Garden City is about building new self-contained towns, not infill in existing cities.",
-        "b": "Smart Growth is a comprehensive policy approach (1990s–present) featuring compact infill development, walkability, mixed uses, transit, mixed housing, and environmental protection—all anti-sprawl principles. This is broader than New Urbanism (which focuses on neighborhood design) and is explicitly policy-oriented.",
-        "c": "Growth Pole Theory focuses on concentrated sectoral investment generating spread effects—not anti-sprawl policy per se.",
-        "d": "CIAM zoning is the problem Smart Growth reacts against.",
-        "correct": "Smart Growth is a comprehensive policy approach (1990s–present) featuring compact infill development, walkability, mixed uses, transit, mixed housing, and environmental protection—all anti-sprawl principles. This is broader than New Urbanism (which focuses on neighborhood design) and is explicitly policy-oriented.",
-        "takeaway": "Smart Growth = urban policy framework emphasizing infill, walkability, transit, mixed use, environmental conservation, and anti-sprawl. Broader than New Urbanism."
-      },
-      "explanation": null,
-      "code_citation": "THEORY_ATTRIBUTION_GUIDE.md Part 4; VERIFIED_REFERENCE.md Part 7",
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-002-02-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:06.486658+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a31dfc369183e4e1cc1aa767c46cc4cb8e9475d747191d670a89f5f8ea53090d"
     },
     {
       "question_id": "d4176670-983c-4bae-bced-37fef0d6bd8b",

@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Eth 004 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -14,11 +23,17 @@ The architect-client relationship rests on good faith and the architect's unques
 
 Section 2 of the Code establishes that the architect-client relationship is "depended upon good faith" and that the architect's position "carries with it certain moral obligations to his Client and to himself." This creates a **fiduciary relationship** — the architect is a trusted adviser who places the client's interests above the architect's own profit.
 
-<LawCallout code="ra9266" section="Section 2 (a-j)" title="Client Obligations — The Fiduciary Standard">
-Section 2 of the Code establishes the architect's fiduciary duty to the client. Key subsections: (b) ascertain scope and fees at inception; (c) advise against impractical projects; (f) charge fair fees per Basic Minimum Fee standards; (g) cannot undertake fixed-sum construction of own designs; (h) shall not accept returns from any source other than the client; (i) disclose conflicts of interest; (j) include arbitration clause in agreements.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 2 (a-j)", title="Client Obligations — The Fiduciary Standard"
+- Text: Section 2 of the Code establishes the architect's fiduciary duty to the client. Key subsections: (b) ascertain scope and fees at inception; (c) advise against impractical projects; (f) charge fair fees per Basic Minimum Fee standards; (g) cannot undertake fixed-sum construction of own designs; (h) shall not accept returns from any source other than the client; (i) disclose conflicts of interest; (j) include arbitration clause in agreements.
+[/SLATECAMP_UI_BLOCK]
 
-<ArticleMedia id="media-eth004-client-duties" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Duties to the Client — Fiduciary Obligations" alt="Hub-and-spoke diagram centered on Fiduciary Duty to Client with six spokes: Absolute loyalty Section 2-h, Conflict disclosure Section 2-i, No third-party compensation Section 2-h, Confidentiality, Truthful advice Section 2-c, Fair fees Section 2-f. Each spoke includes key code reference and an exam-relevant note." placementIntent="ethics-framework" suggestedSearchQuery="architect fiduciary duties to client Code of Ethics Section 2 loyalty confidentiality" suggestedAsset="Diagram or reference image" alt="Hub-and-spoke diagram of fiduciary obligations to clients" caption="Future diagram: hub-and-spoke diagram of fiduciary obligations to clients" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-eth004-client-duties", layout="single", variant="contained", type="image", status="placeholder", aspectRatio="16:9", title="Duties to the Client — Fiduciary Obligations", alt="Hub-and-spoke diagram of fiduciary obligations to clients", placementIntent="ethics-framework", suggestedSearchQuery="architect fiduciary duties to client Code of Ethics Section 2 loyalty confidentiality", suggestedAsset="Diagram or reference image", caption="Future diagram: hub-and-spoke diagram of fiduciary obligations to clients"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 The obligation has six interconnected dimensions:
 
@@ -57,9 +72,11 @@ The PRBoA has consistently disciplined architects who accepted contractor paymen
 
 Architects employed by government agencies face heightened scrutiny: their loyalty obligation extends to the public (as taxpayers), not just to the government entity as contracting party.
 
-<Warn>
-  **Common Exam Trap:** The LEA frequently tests whether "small" gifts or discounts are acceptable if disclosed. The answer is NO under §2-h — ANY compensation from third parties is prohibited unless it is a market discount credited to the client under §4-b. Verbal disclosure to the client does not make it permissible; the architect must refuse or pass the benefit to the client.
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Common Exam Trap:** The LEA frequently tests whether "small" gifts or discounts are acceptable if disclosed. The answer is NO under §2-h — ANY compensation from third parties is prohibited unless it is a market discount credited to the client under §4-b. Verbal disclosure to the client does not make it permissible; the architect must refuse or pass the benefit to the client.
+[/SLATECAMP_UI_BLOCK]
 
 ## How It's Tested
 
@@ -75,24 +92,25 @@ Client requests design the architect knows is financially unfeasible. Architect 
 **Pattern 4: Fixed-Sum Construction Contract**
 Architect designs building, then agrees to construct it for fixed lump sum. Violation: §2-g (architect "shall not undertake, under a fixed contract sum agreement, the construction of any project based on plans prepared by him").
 
-<ExamTip>
-  **LEA Watch:** Apply the "FAIR" test for client obligation questions: (F)iduciary duty to act in client's best interest; (A)dvise truthfully even at cost to yourself; (I)nterested parties must be disclosed; (R)eceived only from client — no third-party compensation. Anything that weakens the architect's standing as "unprejudiced and honest adviser" violates §2-i.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Watch:** Apply the "FAIR" test for client obligation questions: (F)iduciary duty to act in client's best interest; (A)dvise truthfully even at cost to yourself; (I)nterested parties must be disclosed; (R)eceived only from client — no third-party compensation. Anything that weakens the architect's standing as "unprejudiced and honest adviser" violates §2-i.
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>**Memory Aid: "FAIR"—Fiduciary, Advised truthfully, Interested parties disclosed, Received only from client.** If a question involves third-party compensation, conflicts of interest, or impractical project advice, apply the FAIR test. Anything that weakens the architect's standing as "unprejudiced and honest adviser" violates §2-i.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Memory Aid: "FAIR"—Fiduciary, Advised truthfully, Interested parties disclosed, Received only from client.** If a question involves third-party compensation, conflicts of interest, or impractical project advice, apply the FAIR test. Anything that weakens the architect's standing as "unprejudiced and honest adviser" violates §2-i.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    "Believing 'small' supplier discounts or commissions are acceptable without disclosure — §2-h prohibits ANY compensation 'in whatever form from any interested source other than the Client' except market discounts credited to client per §4-b",
-    "Confusing 'market discount' with 'commission' — market discounts must be credited to the client and are the only permissible third-party benefit",
-    "Assuming conflicts of interest can be concealed if they 'don't affect this specific project' — §2-i requires disclosure of ANY business interest that 'affect[s] the interest of his Client' or 'weaken[s]... standing as unprejudiced adviser'",
-    "Thinking architect can advise client truthfully and still accept contractor/supplier payment — the two are incompatible under §2-h and §2-i",
-    "Accepting fixed-sum construction contracts thinking §2-g only applies if architect designed the building — §2-g explicitly prohibits this 'under a fixed contract sum agreement... based on plans prepared by him'",
-    "Overlooking confidentiality as part of client obligation — fiduciary duty includes protecting client information from competitors and third parties",
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    \"Believing 'small' supplier discounts or commissions are acceptable without disclosure — §2-h prohibits ANY compensation 'in whatever form from any interested source other than the Client' except market discounts credited to client per §4-b\",\n    \"Confusing 'market discount' with 'commission' — market discounts must be credited to the client and are the only permissible third-party benefit\",\n    \"Assuming conflicts of interest can be concealed if they 'don't affect this specific project' — §2-i requires disclosure of ANY business interest that 'affect[s] the interest of his Client' or 'weaken[s]... standing as unprejudiced adviser'\",\n    \"Thinking architect can advise client truthfully and still accept contractor/supplier payment — the two are incompatible under §2-h and §2-i\",\n    \"Accepting fixed-sum construction contracts thinking §2-g only applies if architect designed the building — §2-g explicitly prohibits this 'under a fixed contract sum agreement... based on plans prepared by him'\",\n    \"Overlooking confidentiality as part of client obligation — fiduciary duty includes protecting client information from competitors and third parties\",\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

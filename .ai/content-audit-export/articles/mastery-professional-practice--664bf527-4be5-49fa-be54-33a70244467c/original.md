@@ -1,9 +1,22 @@
 # Professional Practice & Jurisprudence — Mastery & Connections
 
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Professional Practice & Jurisprudence — Mastery & Connections** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+
 ## Learning Goal
 
 Achieve synthesis-level understanding of Professional Practice as a coherent professional framework. Trace the logical chain: RA 9266 (authorizes the profession) → Registration (establishes the practitioner) → Ethics (governs behavior) → Services (defines what architects do) → Fees (compensation) → Contracts (legal relationships). Connect Professional Practice to Laws & Codes, Architectural Design, and other LEA subjects.
-<ArticleMedia id="media-mastery-professional-practice" type="image" caption="Professional Practice — Internal Chain and Cross-Subject Connections" description="Two-part diagram: Top — Internal chain: RA 9266 → Registration → Ethics → Services → Fees → Contracts, shown as interconnected nodes with arrows running left to right. Bottom — Cross-subject connections: (1) Laws & Codes — RA 9266, PD 1096, RA 9514; (2) Architectural Design — SPP 202 phase deliverables; (3) Structural — load requirements from NSCP; (4) Materials — specification writing; (5) Planning — project approvals and permits. Chain runs in one direction but any link can be tested in combination with any other." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-mastery-professional-practice", type="image", caption="Professional Practice — Internal Chain and Cross-Subject Connections", description="Two-part diagram: Top — Internal chain: RA 9266 → Registration → Ethics → Services → Fees → Contracts, shown as interconnected nodes with arrows running left to right. Bottom — Cross-subject connections: (1) Laws & Codes — RA 9266, PD 1096, RA 9514; (2) Architectural Design — SPP 202 phase deliverables; (3) Structural — load requirements from NSCP; (4) Materials — specification writing; (5) Planning — project approvals and permits. Chain runs in one direction but any link can be tested in combination with any other.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## The Internal Chain: RA 9266 → Everything Else
 
@@ -19,7 +32,11 @@ Achieve synthesis-level understanding of Professional Practice as a coherent pro
 
 **Contracts define legal relationships.** Owner-architect and owner-contractor agreements formalize services into enforceable commitments.
 
-<Callout>The chain runs in one direction for most purposes: law → registration → ethics → services → fees → contracts. But the LEA can test any link in the chain and any connection between links. A question about an architect's fee dispute involves services, fees, and contracts simultaneously. A question about professional misconduct involves ethics, registration, and RA 9266 simultaneously. Train yourself to see the whole chain.</Callout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: The chain runs in one direction for most purposes: law → registration → ethics → services → fees → contracts. But the LEA can test any link in the chain and any connection between links. A question about an architect's fee dispute involves services, fees, and contracts simultaneously. A question about professional misconduct involves ethics, registration, and RA 9266 simultaneously. Train yourself to see the whole chain.
+[/SLATECAMP_UI_BLOCK]
 
 ## The SPP Document Chain in Detail
 
@@ -34,7 +51,11 @@ Achieve synthesis-level understanding of Professional Practice as a coherent pro
 - **SPP 208** — Design-Build Services
 - **SPP 301** — Standard Fee Guidelines
 
-<ExamTip>LEA questions about SPP documents often describe a service scenario and ask which SPP document governs it. The key is knowing what makes each document distinct: SPP 201 is pre-design, SPP 202 is regular design, SPP 208 is design-build, SPP 301 is fees. When in doubt, ask: what phase? what delivery method? what type of service?</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: LEA questions about SPP documents often describe a service scenario and ask which SPP document governs it. The key is knowing what makes each document distinct: SPP 201 is pre-design, SPP 202 is regular design, SPP 208 is design-build, SPP 301 is fees. When in doubt, ask: what phase? what delivery method? what type of service?
+[/SLATECAMP_UI_BLOCK]
 
 ## Connections to Laws & Codes
 
@@ -46,7 +67,11 @@ Other bridging laws: PD 1096 (architect's code compliance responsibility), RA 91
 
 Project delivery method shapes design decisions. In design-build, architect and contractor coordinate from earliest stages. In design-bid-build, design is complete before contractor input. Construction administration is the final phase of design — RFIs, shop drawings, change orders.
 
-<Tip>When studying construction administration, think of it as the final phase of design — not a separate activity. The RFI, the shop drawing review, the change order: each one is a moment where the design intent meets construction reality, and the architect's job is to ensure the intent survives the collision.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: When studying construction administration, think of it as the final phase of design — not a separate activity. The RFI, the shop drawing review, the change order: each one is a moment where the design intent meets construction reality, and the architect's job is to ensure the intent survives the collision.
+[/SLATECAMP_UI_BLOCK]
 
 ## Integration Patterns
 

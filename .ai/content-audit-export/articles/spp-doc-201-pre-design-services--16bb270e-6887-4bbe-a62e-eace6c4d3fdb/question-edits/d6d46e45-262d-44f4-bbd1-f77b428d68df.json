@@ -1,0 +1,43 @@
+{
+  "question_id": "d6d46e45-262d-44f4-bbd1-f77b428d68df",
+  "baseline_hash": "sha256:e013f06675ce8ad9322eab2b1a4e9be7f357e4ef8ace4c1a9285c67801d2f176",
+  "status": "proposed_source_audited_local_no_supabase",
+  "reason": "Rewrites Q8 to match SPP 201 raw PDF page 56 exactly.",
+  "approved_by": "source-audit-local-agent",
+  "approved_at": "2026-05-10T11:51:00+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+    "pdf_page": 56,
+    "quoted_pdf_excerpt": "MANNER OF PROVIDING SERVICES ▪As an individual ▪Architect’s own staff ▪By association, consultation or networking"
+  },
+  "proposed": {
+    "text": "Under SPP 201, what are the three manners of providing pre-design services?",
+    "options": [
+      {
+        "id": "a",
+        "text": "As an individual; through the Architect’s own staff; or by association, consultation, or networking"
+      },
+      {
+        "id": "b",
+        "text": "Independently; as part of regular design services; or through a separate pre-design contract"
+      },
+      {
+        "id": "c",
+        "text": "As lead consultant; as sub-consultant; or as joint venture partner"
+      },
+      {
+        "id": "d",
+        "text": "As principal architect; as consulting architect; or as design-build provider"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Correct. SPP 201 lists the manner of providing services as: as an individual, Architect’s own staff, and by association, consultation or networking.",
+      "b": "This was the prior unsupported wording; it does not match the SPP 201 raw PDF list for manner of providing services.",
+      "c": "These describe possible project roles, not the source-listed SPP 201 manners of providing services.",
+      "d": "These describe roles or procurement arrangements, not the SPP 201 list.",
+      "correct": "SPP 201 states that pre-design services may be provided as an individual, through the Architect’s own staff, or by association, consultation or networking.",
+      "takeaway": "SPP 201 manner of providing services: individual; Architect’s own staff; association/consultation/networking."
+    }
+  }
+}

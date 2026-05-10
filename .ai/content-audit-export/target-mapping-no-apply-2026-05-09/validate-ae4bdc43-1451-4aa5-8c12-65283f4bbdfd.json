@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-09T14:09:17.686Z",
+  "input": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+      "folder": "lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:373e1210a83a41370263f3e00d7bdd2944e65476922de8c502fd61ec17732ba8",
+        "normalized": "sha256:2cdc2ed40e8e06f760244189a2f68eb6f5309f69df74e9f6b9d6e921d6fc9848",
+        "candidate": "sha256:2cdc2ed40e8e06f760244189a2f68eb6f5309f69df74e9f6b9d6e921d6fc9848",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

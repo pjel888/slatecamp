@@ -40,13 +40,13 @@ Apply the provisions of RA 7277 (Magna Carta for Disabled Persons), RA 9442 (ame
 
 **Q6.** Name at least four categories where this 20% + 12% applies under RA 10754 and its IRR.
 
-> **A:**  
-> • Medicines and medical supplies;  
-> • Medical and dental services, diagnostics and laboratory fees;  
-> • Domestic air, sea, and land transport fares;  
-> • Hotel and similar lodging services;  
-> • Restaurants and recreation centers (cinemas, amusement, etc.);  
-> • Funeral and burial services;  
+> **A:**
+> • Medicines and medical supplies;
+> • Medical and dental services, diagnostics and laboratory fees;
+> • Domestic air, sea, and land transport fares;
+> • Hotel and similar lodging services;
+> • Restaurants and recreation centers (cinemas, amusement, etc.);
+> • Funeral and burial services;
 > • Certain educational expenses when directly for the PWD, as specified by revenue regulations.[web:18][web:19][web:29][web:30]
 
 **Q7.** Does RA 10754 itself contain **physical dimensions** (like ramp width)?
@@ -70,7 +70,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0002 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: code="bp344"
-- Text: A: An additional deduction from taxable income equivleant to 50% of the direct costs of improvements or modifications that provide reasonable accommodation for PWDs, only to the extent they go beyond what BP 344 already requires.[web:16][web:18][web:20][web:29]
+- Text: A: An additional deduction from taxable income equivalent to 50% of the direct costs of improvements or modifications that provide reasonable accommodation for PWDs, only to the extent they go beyond what BP 344 already requires.[web:16][web:18][web:20][web:29]
 [/SLATECAMP_UI_BLOCK]
 
 **Q10.** Which law is the primary basis for these tax incentives?
@@ -228,7 +228,7 @@ Would you like a separate ultra‑short “exam cram” version with just the Q 
 
 ## Exam Tip
 
-LEA Trap: Three laws with different privileges: RA 7277 = original Magna Carta (accessibility mandates), RA 9442 = added 20% discount/VAT exemption, RA 10754 = expanded to all PWD (removed the 70% disability threshold). The VA T exemption is ON TOP of the 20% discount — not a replacement. Total savings = 20% discount + VAT on the discounted amount.
+LEA Trap: Three laws with different privileges: RA 7277 = original Magna Carta (accessibility mandates), RA 9442 = added 20% discount/VAT exemption, RA 10754 = expanded to all PWD (removed the 70% disability threshold). The VAT exemption is ON TOP of the 20% discount — not a replacement. Total savings = 20% discount + VAT on the discounted amount.
 
 
 
@@ -236,7 +236,7 @@ LEA Trap: Three laws with different privileges: RA 7277 = original Magna Carta (
 
 ## Exam Tip
 
-ALE Trap: Three laws with different privileges: RA 7277 = original Magna Carta (accessibility mandates), RA 9442 = added 20% discount/VAT exemption, RA 10754 = expanded to all PWD (removed the 70% disability threshold). The VA T exemption is ON TOP of the 20% discount — not a replacement. Total savings = 20% discount + VAT on the discounted amount.
+ALE Trap: Three laws with different privileges: RA 7277 = original Magna Carta (accessibility mandates), RA 9442 = added 20% discount/VAT exemption, RA 10754 = expanded to all PWD (removed the 70% disability threshold). The VAT exemption is ON TOP of the 20% discount — not a replacement. Total savings = 20% discount + VAT on the discounted amount.
 
 ## Cross‑References
 

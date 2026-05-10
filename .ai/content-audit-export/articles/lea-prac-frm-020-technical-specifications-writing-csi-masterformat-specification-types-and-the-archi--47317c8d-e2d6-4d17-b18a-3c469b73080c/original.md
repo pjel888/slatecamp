@@ -1,8 +1,17 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 020 Technical Specifications Writing Csi Masterformat Specification Types And The Architect S Responsibility** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Technical Specifications Writing—CSI MasterFormat, Specification Types, and the Architect's Responsibility
 
-<ExamTip>
-Focus on the key concepts in this section for the Licensure Examination for Architects.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Focus on the key concepts in this section for the Licensure Examination for Architects.
+[/SLATECAMP_UI_BLOCK]
 
 ## Learning Goal
 
@@ -10,9 +19,11 @@ After studying this article, you should be able to:
 
 - Describe technical specification writing and the CSI MasterFormat system.
 
-<Tip>
-Memorize these items — they appear frequently on the exam.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Memorize these items — they appear frequently on the exam.
+[/SLATECAMP_UI_BLOCK]
 
 - Distinguish specification types: prescriptive, performance, proprietary.
 - Explain the architect's role in preparing specifications.
@@ -74,7 +85,11 @@ If a poorly written specification allows the contractor to supply inferior mater
 
 
 
-<ArticleMedia id="media-lea-prac-frm-020-technical-spe-0" type="image" caption="Technical Specifications — CSI MasterFormat Structure and Specification Types" description="Hierarchical diagram of CSI MasterFormat 50-division structure relevant to Philippine practice. Three specification types compared: Performance Specs (what building must achieve), Prescriptive Specs (exact materials/products), Proprietary Specs (brand-specific). Side panel shows architect's coordination with QS/cost estimator and specification integration with construction documents." />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-frm-020-technical-spe-0", type="image", caption="Technical Specifications — CSI MasterFormat Structure and Specification Types", description="Hierarchical diagram of CSI MasterFormat 50-division structure relevant to Philippine practice. Three specification types compared: Performance Specs (what building must achieve), Prescriptive Specs (exact materials/products), Proprietary Specs (brand-specific). Side panel shows architect's coordination with QS/cost estimator and specification integration with construction documents."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)
@@ -88,6 +103,8 @@ If a poorly written specification allows the contractor to supply inferior mater
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
 
-<Note>
-This article covers foundational material. Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards.
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: This article covers foundational material. Cross-reference with the latest NBCP, BP 344, and RA 9514 for current standards.
+[/SLATECAMP_UI_BLOCK]

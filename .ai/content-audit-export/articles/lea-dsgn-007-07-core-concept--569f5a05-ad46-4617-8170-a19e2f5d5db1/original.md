@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 007 07 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -25,7 +34,11 @@ Development control calculations translate three primary inputs—total lot area
     - **ISA (Impervious Surface Area)**: Paved open spaces (driveways, courts).
     - **USA (Unpaved Surface Area)**: Unpaved, landscaped, or grassy areas.
     - **TOSL (Total Open Space within Lot)**: The sum of ISA and USA, also expressed as \( TOSL = TLA - AMBF \).
-<ArticleMedia id="media-lea-dsgn-007-07-core-concept" type="image" caption="Space Programming Workflow — From Client Requirements to Net-to-Gross Ratios" description="Diagram showing the space programming process: program requirements → space adjacency matrix → bubble diagram → net area calculation → net-to-gross ratio → gross floor area. Annotated with typical N/G ratios for different building types." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-07-core-concept", type="image", caption="Space Programming Workflow — From Client Requirements to Net-to-Gross Ratios", description="Diagram showing the space programming process: program requirements → space adjacency matrix → bubble diagram → net area calculation → net-to-gross ratio → gross floor area. Annotated with typical N/G ratios for different building types.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -33,9 +46,9 @@ Development control calculations translate three primary inputs—total lot area
 
 **Given:**
 
-- Total Lot Area (TLA) = 600 sqm  
-- Zone = R-2 (Medium-Density Residential)  
-- **Zoning Parameters (for this problem):** PSO = 65%, BHL = 15.0 m, FLAR limit = 2.5  
+- Total Lot Area (TLA) = 600 sqm
+- Zone = R-2 (Medium-Density Residential)
+- **Zoning Parameters (for this problem):** PSO = 65%, BHL = 15.0 m, FLAR limit = 2.5
 - **Assumptions:** Floor-to-floor height = 3.0 m; ISA = 10% of TLA.
 
 **Step 1: Calculate potential floors from BHL**
@@ -52,22 +65,22 @@ Development control calculations translate three primary inputs—total lot area
 
 **Step 4: Check against FLAR constraint**
 
-- \( FLAR = 1{,}950 \div 600 = 3.25 \)  
-- Maximum FLAR allowed = 2.5  
+- \( FLAR = 1{,}950 \div 600 = 3.25 \)
+- Maximum FLAR allowed = 2.5
 - **RESULT:** \( 3.25 > 2.5 \) → **EXCEEDS LIMIT**. The BHL-based height is not permissible under this FLAR.
 
 **Step 5: Recalculate floors from FLAR constraint**
 
 - Maximum allowable \( TGFA = TLA \times \text{max FLAR} = 600 \times 2.5 = 1{,}500 \text{ sqm} \)
-- \( \text{New Floor Count} = 1{,}500 \div 390 = 3.84 \)  
-- **Final Count:** Round down to **3 floors**.  
-- Final \( TGFA = 390 \times 3 = 1{,}170 \text{ sqm} \)  
+- \( \text{New Floor Count} = 1{,}500 \div 390 = 3.84 \)
+- **Final Count:** Round down to **3 floors**.
+- Final \( TGFA = 390 \times 3 = 1{,}170 \text{ sqm} \)
 - Final \( FLAR = 1{,}170 \div 600 = 1.95 \) (within limit ✓)
 
 **Step 6: Calculate Open Space (Rule VIII)**
 
-- \( ISA = 600 \times 10\% = 60 \text{ sqm} \)  
-- \( TOSL = TLA - AMBF = 600 - 390 = 210 \text{ sqm} \)  
+- \( ISA = 600 \times 10\% = 60 \text{ sqm} \)
+- \( TOSL = TLA - AMBF = 600 - 390 = 210 \text{ sqm} \)
 - \( USA = TOSL - ISA = 210 - 60 = 150 \text{ sqm} \)
 
 **Key Finding**: Although the BHL allowed for 5 floors, the FLAR restricted the building to 3 floors. In dense urban zoning, FLAR is often the primary bottleneck.
@@ -88,9 +101,9 @@ Development control calculations translate three primary inputs—total lot area
 
 ### Typical Zoning Values (LGU-dependent)
 
-- **R-1**: PSO ≈ 50% \| FLAR ≈ 1.0–1.5  
-- **R-2**: PSO ≈ 65% \| FLAR ≈ 1.5–2.5  
-- **R-3**: PSO ≈ 70–75% \| FLAR ≈ 2.0–3.0  
+- **R-1**: PSO ≈ 50% \| FLAR ≈ 1.0–1.5
+- **R-2**: PSO ≈ 65% \| FLAR ≈ 1.5–2.5
+- **R-3**: PSO ≈ 70–75% \| FLAR ≈ 2.0–3.0
 - **C-3**: PSO ≈ 80% \| FLAR can reach high values (e.g., 9.0 and above in dense CBDs)
 
 Exact PSO and FLAR values are always taken from the specific LGU zoning ordinance or comprehensive land use plan (CLUP) cited in the problem.
@@ -100,7 +113,11 @@ Exact PSO and FLAR values are always taken from the specific LGU zoning ordinanc
 In the Philippines, development controls are a hybrid of the **National Building Code (PD 1096)** and **local zoning ordinances**. PD 1096 and its IRR provide general safety, light, and ventilation standards (notably Rule VII and Rule VIII), while the intensity-of-use controls (PSO, FLAR, BHL) come from the LGU’s zoning regulations or CLUP. For practice and in the LEA, candidates must read the problem carefully to use the given zoning parameters, even when they differ from “typical” values they have memorized.
 
 Most design failures in the LEA occur because candidates focus on height (BHL) and forget that the Floor Area Ratio (FLAR) often forces a reduction in the number of floors. Another frequent error is confusing AMBF- and TLA-based calculations, which leads to incorrect TGFA and FLAR values.
-<ArticleMedia id="media-lea-dsgn-007-07-core-concept" type="image" caption="Space Programming Matrix — Adjacency, Area, and Net-to-Gross Ratios" description="Space planning bubble diagram with adjacency matrix overlay for a typical building program. Shows: functional bubbles with area labels, desired adjacency weights (essential, desirable, neutral, negative), and net-to-gross ratio calculation (65-75% net for typical office)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-007-07-core-concept", type="image", caption="Space Programming Matrix — Adjacency, Area, and Net-to-Gross Ratios", description="Space planning bubble diagram with adjacency matrix overlay for a typical building program. Shows: functional bubbles with area labels, desired adjacency weights (essential, desirable, neutral, negative), and net-to-gross ratio calculation (65-75% net for typical office).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -108,13 +125,8 @@ See **LEA-DSGN-007-08** (Human Factors) for anthropometric space standards, **LE
 
 ## Common Mistakes
 
-<WikiMistakeList
-  mistakes={[
-    'ERR-DSGN-006: Applying an R-1 PSO of 60% as a default (many LGUs specify 50%; always follow the problem data or ordinance cited)',
-    'ERR-DSGN-007: Calculating TGFA as TLA × PSO × floors (incorrectly using TLA instead of AMBF)',
-    'ERR-DSGN-008: Calculating FLAR as TGFA ÷ AMBF (incorrectly using AMBF instead of TLA)',
-    'ERR-DSGN-009: Using non-standard floor-to-floor heights (e.g., 2.70 m) without explicit exam instructions, which skews the number of floors',
-    'ERR-DSGN-011: Confusing GFA (single floor) with TGFA (sum of all floors)',
-    'ERR-DSGN-012: Misidentifying TOSL as only the landscaped area (TOSL = ISA + USA, i.e., all open space within the lot)'
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n    'ERR-DSGN-006: Applying an R-1 PSO of 60% as a default (many LGUs specify 50%; always follow the problem data or ordinance cited)',\n    'ERR-DSGN-007: Calculating TGFA as TLA × PSO × floors (incorrectly using TLA instead of AMBF)',\n    'ERR-DSGN-008: Calculating FLAR as TGFA ÷ AMBF (incorrectly using AMBF instead of TLA)',\n    'ERR-DSGN-009: Using non-standard floor-to-floor heights (e.g., 2.70 m) without explicit exam instructions, which skews the number of floors',\n    'ERR-DSGN-011: Confusing GFA (single floor) with TGFA (sum of all floors)',\n    'ERR-DSGN-012: Misidentifying TOSL as only the landscaped area (TOSL = ISA + USA, i.e., all open space within the lot)'\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

@@ -1,9 +1,113 @@
 {
   "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:16bba51de98660fcc918a803a2dd476719b3db2e986e6ba5b9d044298e3cfa8d",
+  "linked_questions_hash": "sha256:07b11ebdff801e04b508c09a09cc3f5b9993e1033d9b60b0ce4be00a523dca27",
   "question_count": 12,
   "questions": [
+    {
+      "question_id": "b7d57e25-9da6-4a97-ac56-d5b13f5f2a7d",
+      "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
+      "text": "Which vaulting system is the primary structural solution in Romanesque churches, characterized as a continuous semicircular vault?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ribbed vault"
+        },
+        {
+          "id": "b",
+          "text": "Barrel vault"
+        },
+        {
+          "id": "c",
+          "text": "Groin vault"
+        },
+        {
+          "id": "d",
+          "text": "Fan vault"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ribbed vaults are primarily Gothic, though they appear in late Romanesque (Durham) as a transitional feature.",
+        "c": "Groin vaults (cross vaults) appear in aisles and smaller spaces but are not the primary system.",
+        "d": "Fan vaults are characteristic of later English Perpendicular Gothic, not Romanesque.",
+        "correct": "The barrel vault as the 'primary Romanesque structural system'—'a continuous semicircular vault spanning the entire nave.'",
+        "takeaway": "The article identifies the barrel vault as the 'primary Romanesque structural system'—'a continuous semicircular vault spanning the entire nave.'."
+      },
+      "explanation": "Ribbed vaults are primarily Gothic, though they appear in late Romanesque (Durham) as a transitional feature. Groin vaults (cross vaults) appear in aisles and smaller spaces but are not the primary system. Fan vaults are characteristic of later English Perpendicular Gothic, not Romanesque. The barrel vault as the 'primary Romanesque structural system'—'a continuous semicircular vault spanning the entire nave.' The article identifies the barrel vault as the 'primary Romanesque structural system'—'a continuous semicircular vault spanning the entire nave.'.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ST"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-05-06T11:57:17.258817+00:00",
+      "content_hash": "sha256:fb2aca0a2c200e30809401c9d89af96332fa5923f1b5fd94f19b05a9e8925420"
+    },
+    {
+      "question_id": "5882b9a7-dd90-427c-8514-2dbb0039065c",
+      "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
+      "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
+      "text": "The massive, dark interiors of Romanesque churches reflect what architectural and spiritual priorities of the period?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Economic limitation; builders lacked resources for large windows, which were costly and technically challenging to construct at the time."
+        },
+        {
+          "id": "b",
+          "text": "Spiritual intensity and enclosure created by fortress-like mass and reduced light; permanence and structural strength expressed in stone"
+        },
+        {
+          "id": "c",
+          "text": "Geometric experimentation; builders tested different vault forms, which often resulted in darker interiors due to structural constraints."
+        },
+        {
+          "id": "d",
+          "text": "Imitation of earlier Roman basilica designs, which influenced the architectural style and spatial organization of Romanesque churches."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Builders consciously chose reduced windows and thick walls; it was not an economic limitation but a structural and aesthetic decision.",
+        "c": "Geometric experimentation is not identified as the motivation for Romanesque design.",
+        "d": "Romanesque is distinct from Roman basilica design and represents a new Medieval architectural language.",
+        "correct": "Romanesque churches emphasize...Massive, dark interiors creating a sense of enclosure and spiritual intensity' and 'Fortress-like masses of stone expressing permanence and spiritual strength.' The darkness is intentional, reflecting spiritual and structural priorities of the feudal period.",
+        "takeaway": "The article states: 'Romanesque churches emphasize...Massive, dark interiors creating a sense of enclosure and spiritual intensity' and 'Fortress-like masses of stone expressing permanence and spiritual strength.' The darkness is intentional, reflecting spiritual and structural priorities of the feudal period."
+      },
+      "explanation": "Builders consciously chose reduced windows and thick walls; it was not an economic limitation but a structural and aesthetic decision. Geometric experimentation is not identified as the motivation for Romanesque design. Romanesque is distinct from Roman basilica design and represents a new Medieval architectural language. Romanesque churches emphasize...Massive, dark interiors creating a sense of enclosure and spiritual intensity' and 'Fortress-like masses of stone expressing permanence and spiritual strength.' The darkness is intentional, reflecting spiritual and structural priorities of the feudal period. The article states: 'Romanesque churches emphasize...Massive, dark interiors creating a sense of enclosure and spiritual intensity' and 'Fortress-like masses of stone expressing permanence and spiritual strength.' The darkness is intentional, reflecting spiritual and structural priorities of the feudal period.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-HIST-002-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:24.95449+00:00",
+      "updated_at": "2026-05-06T11:57:21.989477+00:00",
+      "content_hash": "sha256:a37fa6b7ebfddd10a5e5bd2eaaa3fc7ec6ed178802b1a0ddcfe60550b65db115"
+    },
     {
       "question_id": "be4d29c4-ef64-4a82-a073-7fa2292d2a23",
       "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
@@ -195,7 +299,7 @@
         "correct": "The article clearly states: 'Romanesque architecture (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches.'",
         "takeaway": "The article clearly states: 'Romanesque architecture (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches.'."
       },
-      "explanation": null,
+      "explanation": "The 9th–10th centuries precede the Romanesque period. The 10th–11th centuries include only the beginning of Romanesque. The 12th–13th centuries include the end of Romanesque and beginning of Gothic. The article clearly states: 'Romanesque architecture (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches.' The article clearly states: 'Romanesque architecture (11th–12th centuries) emerged in Western Europe as builders learned to construct massive stone vaults and arches.'.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -209,8 +313,8 @@
       "model_id": "ALE-HIST-002-02-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2a9661179983e6e219585e073ad1a4102c931d36731fbe87079c29544a7017c5"
+      "updated_at": "2026-05-06T11:48:51.279418+00:00",
+      "content_hash": "sha256:9b07aa743fabc1780d7a05be133c2cbecd77aafe6466331fee7f2c020352529e"
     },
     {
       "question_id": "021d04f4-ab24-4c4c-a6b0-fd54fcdccd94",
@@ -247,7 +351,7 @@
         "correct": "The article defines: 'Groin vault (cross vault): The intersection of two barrel vaults at right angles.' It notes these appear 'in aisles and smaller spaces' in Romanesque churches.",
         "takeaway": "The article defines: 'Groin vault (cross vault): The intersection of two barrel vaults at right angles.' It notes these appear 'in aisles and smaller spaces' in Romanesque churches."
       },
-      "explanation": null,
+      "explanation": "A single continuous semicircular vault is a barrel vault, not a groin vault. This describes a flying buttress, not a groin vault. Ribbed vaults with load-bearing ribs are primarily Gothic; Romanesque ribs are decorative. The article defines: 'Groin vault (cross vault): The intersection of two barrel vaults at right angles.' It notes these appear 'in aisles and smaller spaces' in Romanesque churches. The article defines: 'Groin vault (cross vault): The intersection of two barrel vaults at right angles.' It notes these appear 'in aisles and smaller spaces' in Romanesque churches.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -261,8 +365,8 @@
       "model_id": "ALE-HIST-002-02-011",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:db5c39f3c3b89e7b955b5531494449ce8cc70cb40216aba88b343c790ee09dbf"
+      "updated_at": "2026-05-06T11:57:14.637431+00:00",
+      "content_hash": "sha256:9f2c23d6d812d24fad658400e21e614f6006466a792bfda70cbfea4a402662fc"
     },
     {
       "question_id": "56b454bb-e93e-4392-9c93-efba614fe6da",
@@ -299,7 +403,7 @@
         "correct": "Pisa Cathedral was begun 1063 by architect Buscheto and completed 1180. The cathedral features the distinctive Pisan Romanesque arcade-tiered facade with striped marble.",
         "takeaway": "The cathedral features the distinctive Pisan Romanesque arcade-tiered facade with striped marble."
       },
-      "explanation": null,
+      "explanation": "Henry IV was the Holy Roman Emperor who patronized Speyer Cathedral, not Pisa Cathedral. Bonanno Pisano was a bronze sculptor who cast the cathedral doors in 1180, not the architect; he is often confused with the architect due to this contribution. Diego Peláez was the bishop-patron of Santiago de Compostela, not Pisa Cathedral. Pisa Cathedral was begun 1063 by architect Buscheto and completed 1180. The cathedral features the distinctive Pisan Romanesque arcade-tiered facade with striped marble. The cathedral features the distinctive Pisan Romanesque arcade-tiered facade with striped marble.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -313,60 +417,8 @@
       "model_id": "ALE-HIST-002-02-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:39f648a309be682b6c0bb46840c241706364e44d190f02f2b0143c72ec2884d1"
-    },
-    {
-      "question_id": "b7d57e25-9da6-4a97-ac56-d5b13f5f2a7d",
-      "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
-      "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
-      "text": "Which vaulting system is the primary structural solution in Romanesque churches, characterized as a continuous semicircular vault?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Ribbed vault"
-        },
-        {
-          "id": "b",
-          "text": "Barrel vault"
-        },
-        {
-          "id": "c",
-          "text": "Groin vault"
-        },
-        {
-          "id": "d",
-          "text": "Fan vault"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Ribbed vaults are primarily Gothic, though they appear in late Romanesque (Durham) as a transitional feature.",
-        "c": "Groin vaults (cross vaults) appear in aisles and smaller spaces but are not the primary system.",
-        "d": "Fan vaults are characteristic of later English Perpendicular Gothic, not Romanesque.",
-        "correct": "The barrel vault as the 'primary Romanesque structural system'—'a continuous semicircular vault spanning the entire nave.'",
-        "takeaway": "The article identifies the barrel vault as the 'primary Romanesque structural system'—'a continuous semicircular vault spanning the entire nave.'."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "ST"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-002-02-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c02408edf1f18b709068c7a16272d11edfcdb41f1787576bbe8f0ad89733d8c3"
+      "updated_at": "2026-05-06T11:57:16.294752+00:00",
+      "content_hash": "sha256:1cd33c22fa0ac0e7c3d6f23e87865b333ab14f41783c3a8b1a15fea35f86453e"
     },
     {
       "question_id": "2e916f14-03d0-4b76-b5ee-ad5033e361b5",
@@ -455,7 +507,7 @@
         "correct": "The article contrasts them: 'Romanesque barrel vaults require solid walls to contain thrust; Gothic ribbed vaults, combined with flying buttresses, create a skeletal frame allowing thinner walls and larger windows.' In Gothic, 'ribs carry vault weight to specific points...This concentration means the vault surface between ribs can be lighter.'",
         "takeaway": "The article contrasts them: 'Romanesque barrel vaults require solid walls to contain thrust; Gothic ribbed vaults, combined with flying buttresses, create a skeletal frame allowing thinner walls and larger windows.' In Gothic, 'ribs carry vault weight to specific points...This concentration means the vault surface between ribs can be lighter.'."
       },
-      "explanation": null,
+      "explanation": "Barrel vaults do not distribute weight evenly; they create continuous outward thrust. Both were used by their respective periods; the switch reflects structural evolution, not aesthetic preference. The systems are fundamentally different in load distribution and structural consequences. The article contrasts them: 'Romanesque barrel vaults require solid walls to contain thrust; Gothic ribbed vaults, combined with flying buttresses, create a skeletal frame allowing thinner walls and larger windows.' In Gothic, 'ribs carry vault weight to specific points...This concentration means the vault surface between ribs can be lighter.' The article contrasts them: 'Romanesque barrel vaults require solid walls to contain thrust; Gothic ribbed vaults, combined with flying buttresses, create a skeletal frame allowing thinner walls and larger windows.' In Gothic, 'ribs carry vault weight to specific points...This concentration means the vault surface between ribs can be lighter.'.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -469,8 +521,8 @@
       "model_id": "ALE-HIST-002-02-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f17f87837edfbc4e9125be929112e8e360dfaab04455abad03d2a2f2a3dd9546"
+      "updated_at": "2026-05-06T11:57:18.965521+00:00",
+      "content_hash": "sha256:aef688fdec89f91f7279d8e018ee55dbd534922be472c6e0509b7b7921a843c4"
     },
     {
       "question_id": "9672d9f0-6027-49dc-a064-79069981c214",
@@ -507,7 +559,7 @@
         "correct": "The article explicitly contrasts them: 'Early flying buttresses appear in Romanesque (e.g., Durham Cathedral)...they remain internal half-arches or external structures of modest scale. They do not yet define the structure.' In contrast, 'Mistake 1: Confusing Romanesque flying buttresses with Gothic ones. Romanesque flying buttresses are internal or modest external structures; they do not dominate the structural frame. Gothic flying buttresses are external, load-bearing, and define the skeleton.'",
         "takeaway": "Gothic flying buttresses are external, load-bearing, and define the skeleton.'."
       },
-      "explanation": null,
+      "explanation": "Romanesque flying buttresses are not primarily load-bearing; Gothic ones are. Location and structural function differ significantly between periods. Durham Cathedral and other Romanesque buildings do employ early flying buttresses, though modestly. The article explicitly contrasts them: 'Early flying buttresses appear in Romanesque (e.g., Durham Cathedral)...they remain internal half-arches or external structures of modest scale. They do not yet define the structure.' In contrast, 'Mistake 1: Confusing Romanesque flying buttresses with Gothic ones. Romanesque flying buttresses are internal or modest external structures; they do not dominate the structural frame. Gothic flying buttresses are external, load-bearing, and define the skeleton.' Gothic flying buttresses are external, load-bearing, and define the skeleton.'.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -521,8 +573,8 @@
       "model_id": "ALE-HIST-002-02-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c1cb8456fb6435eec617ef18c7e85e4c1f049ec86c705e08a3bf4467171464e6"
+      "updated_at": "2026-05-06T11:57:19.999305+00:00",
+      "content_hash": "sha256:0ff2ca251d2281fa59f2d39415438dc79d36cbc4cbe20878606417d3f207c21e"
     },
     {
       "question_id": "3ec40fbb-c347-4375-9de9-273808b4b665",
@@ -559,7 +611,7 @@
         "correct": "Romanesque barrel vaults require massive supporting walls to contain their outward thrust. Builders compensated by thickening walls, reducing window size, and concentrating weight downward.' This directly addresses the structural consequence of barrel vault design.",
         "takeaway": "Builders compensated by thickening walls, reducing window size, and concentrating weight downward.' This directly addresses the structural consequence of barrel vault design."
       },
-      "explanation": null,
+      "explanation": "While Romanesque interiors are dark, darkness is a consequence of reduced windows (a solution), not the primary challenge. Internal ribs are primarily a Gothic innovation; Romanesque ribs are decorative. Floor level adjustment is not mentioned as a Romanesque challenge or solution. Romanesque barrel vaults require massive supporting walls to contain their outward thrust. Builders compensated by thickening walls, reducing window size, and concentrating weight downward.' This directly addresses the structural consequence of barrel vault design. Builders compensated by thickening walls, reducing window size, and concentrating weight downward.' This directly addresses the structural consequence of barrel vault design.",
       "code_citation": null,
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -573,60 +625,8 @@
       "model_id": "ALE-HIST-002-02-004",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fe6fe573484dbf818c008aa76c39067e876bb12a465dc709d44a4e20e3eaf4f0"
-    },
-    {
-      "question_id": "5882b9a7-dd90-427c-8514-2dbb0039065c",
-      "article_id": "48580f1e-3497-48f9-a87e-0f67c6e476b6",
-      "topic_id": "37219652-074c-4aef-af93-83af5661dd73",
-      "text": "The massive, dark interiors of Romanesque churches reflect what architectural and spiritual priorities of the period?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Economic limitation; builders lacked resources for large windows, which were costly and technically challenging to construct at the time."
-        },
-        {
-          "id": "b",
-          "text": "Spiritual intensity and enclosure created by fortress-like mass and reduced light; permanence and structural strength expressed in stone"
-        },
-        {
-          "id": "c",
-          "text": "Geometric experimentation; builders tested different vault forms, which often resulted in darker interiors due to structural constraints."
-        },
-        {
-          "id": "d",
-          "text": "Imitation of earlier Roman basilica designs, which influenced the architectural style and spatial organization of Romanesque churches."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Builders consciously chose reduced windows and thick walls; it was not an economic limitation but a structural and aesthetic decision.",
-        "c": "Geometric experimentation is not identified as the motivation for Romanesque design.",
-        "d": "Romanesque is distinct from Roman basilica design and represents a new Medieval architectural language.",
-        "correct": "Romanesque churches emphasize...Massive, dark interiors creating a sense of enclosure and spiritual intensity' and 'Fortress-like masses of stone expressing permanence and spiritual strength.' The darkness is intentional, reflecting spiritual and structural priorities of the feudal period.",
-        "takeaway": "The article states: 'Romanesque churches emphasize...Massive, dark interiors creating a sense of enclosure and spiritual intensity' and 'Fortress-like masses of stone expressing permanence and spiritual strength.' The darkness is intentional, reflecting spiritual and structural priorities of the feudal period."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "CON"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-HIST-002-02-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:24.95449+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e1a81a20ab5e2ce854d1b0da81fce1a50738f5ffbe2736a91b317ca100d66e97"
+      "updated_at": "2026-05-06T11:57:20.901101+00:00",
+      "content_hash": "sha256:ca21c4530cc3ce0461018ed671200f0af6bb8a1e163fcc966a2bb79ea217c4bf"
     }
   ]
 }

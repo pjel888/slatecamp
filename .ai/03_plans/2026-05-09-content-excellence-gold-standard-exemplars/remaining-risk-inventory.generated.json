@@ -1,0 +1,132 @@
+[
+  {
+    "pack": "01-bp344-accessible-ramp-geometry",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "OFFICIAL_REMOTE_VERIFIED_LOCAL_HASH_RECONCILED",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 5,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "reconciled_ncda_local_webpage_pdf_vs_official_gazette_download_hash_mismatch"
+    ],
+    "source_reconciliation_closed_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_evidence": "official-source-evidence.generated/source-anchor-audit.generated.json"
+  },
+  {
+    "pack": "02-ra9266-foreign-architect-temporary-permit",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "OFFICIAL_ARCHITECTUREBOARD_VERIFIED_LOCAL_PRBOA_RECONCILED",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 2,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "reconciled_architectureboard_official_pdf_verified_lawphil_supplementary"
+    ],
+    "source_reconciliation_closed_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_evidence": "official-source-evidence.generated/source-anchor-audit.generated.json"
+  },
+  {
+    "pack": "03-ra9514-means-of-egress-width-and-count",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_BFP_OFFICIAL_PDF_VERIFIED_SOURCE_PACK_REBUILT",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 4,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "reconciled_bfp_remote_403_local_bfp_pdf_verified_source_pack_rebuilt"
+    ],
+    "source_reconciliation_closed_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_evidence": "official-source-evidence.generated/source-anchor-audit.generated.json"
+  },
+  {
+    "pack": "04-npcp-fixture-unit-and-venting",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY_NEEDS_EDITION_CHECK",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 3,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "edition/provenance not yet reconciled"
+    ]
+  },
+  {
+    "pack": "05-vitruvius-principles-and-departments",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY_THEORY_TEXT",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 3,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "translation/edition must be declared when used for theory claims"
+    ]
+  },
+  {
+    "pack": "06-pd1096-tgfa-ambf-location-controls",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_DPWH_OFFICIAL_PDF_VERIFIED_REMOTE_ANTIBOT_RECONCILED",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 4,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "reconciled_dpwh_remote_antibot_local_dpwh_official_pdf_verified"
+    ],
+    "source_reconciliation_closed_at": "2026-05-09T10:35:18Z",
+    "source_reconciliation_evidence": "official-source-evidence.generated/source-anchor-audit.generated.json"
+  },
+  {
+    "pack": "07-bp220-parks-playgrounds-road-pavement",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 4,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": []
+  },
+  {
+    "pack": "08-pd957-license-to-sell-registration-gate",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 3,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": []
+  },
+  {
+    "pack": "09-uap-spp201-pre-design-and-service-boundaries",
+    "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+    "source_status": "LOCAL_RAW_ONLY",
+    "sme_review_status": "llm_council_complete_for_calibration",
+    "claim_count": 4,
+    "unresolved_claim_risks": [],
+    "remaining_release_holds": [
+      "HOLD_FOR_DIRECT_PUBLICATION"
+    ],
+    "conflict_or_provenance_classes": [
+      "two-source-pack; no conflict detected by script"
+    ]
+  }
+]

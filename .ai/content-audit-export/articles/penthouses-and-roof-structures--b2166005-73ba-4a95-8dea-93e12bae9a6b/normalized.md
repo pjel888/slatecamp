@@ -255,10 +255,10 @@ Sec. 1209 requires incombustible railing materials for balconies, landings, and 
 
 A 20-storey condominium tower in Pasig City has a rooftop penthouse housing the elevator machine room. The supporting roof area measures 800 sq.m. The developer proposes a penthouse with a footprint of 220 sq.m and a height of 7.50 m above the roof deck. Evaluate the compliance of these dimensions under PD 1096, Rule XII, Sec. 1210.
 
-A. Both height and area are compliant — elevator rooms may rise 8.40 m and 220 sq.m is within 1/3 of 800 sq.m  
-B. Height is compliant but area is non-compliant — 220 sq.m exceeds 1/3 of 800 sq.m (266.67 sq.m maximum)  
-C. Area is compliant but height is non-compliant — 7.50 m exceeds the 3.60 m general limit  
-D. Both are non-compliant — elevator rooms are limited to 3.60 m height and 1/4 of roof area  
+A. Both height and area are compliant — elevator rooms may rise 8.40 m and 220 sq.m is within 1/3 of 800 sq.m
+B. Height is compliant but area is non-compliant — 220 sq.m exceeds 1/3 of 800 sq.m (266.67 sq.m maximum)
+C. Area is compliant but height is non-compliant — 7.50 m exceeds the 3.60 m general limit
+D. Both are non-compliant — elevator rooms are limited to 3.60 m height and 1/4 of roof area
 
 > **Answer: A — Both dimensions are compliant**
 >
@@ -270,10 +270,10 @@ D. Both are non-compliant — elevator rooms are limited to 3.60 m height and 1/
 
 A heritage conservation architect is designing a skylight over a 3-storey library atrium in Intramuros. The proposed skylight uses flat wired glass panels. A structural engineer asks what the maximum allowable span between support mullions is per PD 1096. Concurrently, a corrugated wired glass alternative is proposed for wider bays. What are the correct maximum spans for both glass types?
 
-A. Flat wired glass: 1.00 m; corrugated wired glass: 2.00 m  
-B. Flat wired glass: 625 mm; corrugated wired glass: 1.50 m  
-C. Flat wired glass: 500 mm; corrugated wired glass: 1.50 m  
-D. Flat wired glass: 625 mm; corrugated wired glass: 1.20 m  
+A. Flat wired glass: 1.00 m; corrugated wired glass: 2.00 m
+B. Flat wired glass: 625 mm; corrugated wired glass: 1.50 m
+C. Flat wired glass: 500 mm; corrugated wired glass: 1.50 m
+D. Flat wired glass: 625 mm; corrugated wired glass: 1.20 m
 
 > **Answer: B — Flat: 625 mm; Corrugated: 1.50 m**
 >
@@ -285,10 +285,10 @@ D. Flat wired glass: 625 mm; corrugated wired glass: 1.20 m
 
 A property developer converts the mechanical penthouse of a completed 15-storey office building in Makati CBD into a private dining club. The penthouse occupies 28% of the roof area and rises 3.20 m above the roof deck. The zoning ordinance limits the building to 15 storeys and a Floor Area Ratio of 12.0. Which of the following best describes the primary regulatory consequence of this conversion under PD 1096?
 
-A. The conversion is permitted provided the penthouse has proper fire exits, since 28% is within the 1/3 area limit and 3.20 m is within the 3.60 m height limit  
-B. The conversion is non-compliant because 28% exceeds the 25% maximum penthouse coverage allowed under Sec. 1210  
-C. The conversion causes the penthouse to be reclassified as an additional storey, potentially violating the 15-storey zoning limit and increasing the building's GFA toward the FAR ceiling  
-D. The conversion is permitted as a change of use under Rule VII, Sec. 702, subject only to Building Official approval and issuance of a Certificate of Use  
+A. The conversion is permitted provided the penthouse has proper fire exits, since 28% is within the 1/3 area limit and 3.20 m is within the 3.60 m height limit
+B. The conversion is non-compliant because 28% exceeds the 25% maximum penthouse coverage allowed under Sec. 1210
+C. The conversion causes the penthouse to be reclassified as an additional storey, potentially violating the 15-storey zoning limit and increasing the building's GFA toward the FAR ceiling
+D. The conversion is permitted as a change of use under Rule VII, Sec. 702, subject only to Building Official approval and issuance of a Certificate of Use
 
 > **Answer: C — Reclassification as an additional storey, triggering BHL and GFA/FAR violations**
 >
@@ -299,7 +299,7 @@ D. The conversion is permitted as a change of use under Rule VII, Sec. 702, subj
 [SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: code="pd1096", section="Rule VII - Penthouses"
-- Text: Per PD 1096, Rule XII, Sec. 1210, penthouses have two height tiers: (1) elevator machine rooms and water tanks in non-Type V construction: max 8.40 m above roof; (2) all other penthouses: max 3.60 m above roof. Additionally, the aggregate area of all penthouses and roof structures must not exceed 1/3 of the supporting roof area. A penthouse used for any purpose other than sheltering mechanical equipment or shaft openings is reclassified as an additional storey — cascading into BHL, GFA, and FAR 
+- Text: Per PD 1096, Rule XII, Sec. 1210, penthouses have two height tiers: (1) elevator machine rooms and water tanks in non-Type V construction: max 8.40 m above roof; (2) all other penthouses: max 3.60 m above roof. Additionally, the aggregate area of all penthouses and roof structures must not exceed 1/3 of the supporting roof area. A penthouse used for any purpose other than sheltering mechanical equipment or shaft openings is reclassified as an additional storey — cascading into BHL, GFA, and FAR
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
@@ -331,4 +331,3 @@ Extracted summary:
 ## Cross‑References
 
 **Ceiling Heights And Room Sizes**, **Allowable Floor Area Increases**, **Pd 1096 Rule Vii Height Limits**, **Exam Meta Deck Heights**
-

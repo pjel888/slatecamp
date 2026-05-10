@@ -1,0 +1,508 @@
+{
+  "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:052a25a34181214eafe07cf8a02ef45c6c55212e4f6624c3e9168cec71c8b2e8",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "4b69bb02-8caa-499c-a72a-3aadeb0bc19c",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "What does the requirement that drawings and specifications be 'sufficiently detailed for competitive bidding and construction execution' impose on the architect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect must specify the exact brand name and model of every material to be installed, ensuring no substitutions are made without approval"
+        },
+        {
+          "id": "b",
+          "text": "The architect must provide enough detail to enable contractors to bid accurately and execute the work in compliance with codes and standards without constant clarification"
+        },
+        {
+          "id": "c",
+          "text": "The architect must guarantee that all bids received will be within the owner's budget, regardless of market fluctuations"
+        },
+        {
+          "id": "d",
+          "text": "The architect must remain on site throughout construction to ensure compliance with the specifications, acting as a full-time supervisor"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overspecifies the requirement; specifications typically allow equivalent products unless specific performance requires a particular brand.",
+        "c": "Attributes budget control to the architect; document detail supports accurate bidding, but does not guarantee bids will fall within budget.",
+        "d": "Confuses document adequacy with on-site supervision; detailed documents reduce, rather than eliminate, the need for on-site verification.",
+        "correct": "The architect must prepare drawings and specifications that are sufficiently detailed for competitive bidding and construction execution. These documents must comply with all applicable laws, codes, and regulations, allowing contractors to bid accurately without constant clarification.",
+        "takeaway": "Documents must provide enough detail for accurate bidding and code-compliant execution; excessive brand specification is neither required nor typical practice."
+      },
+      "explanation": "Overspecifies the requirement; specifications typically allow equivalent products unless specific performance requires a particular brand. Attributes budget control to the architect; document detail supports accurate bidding, but does not guarantee bids will fall within budget. Confuses document adequacy with on-site supervision; detailed documents reduce, rather than eliminate, the need for on-site verification. The architect must prepare drawings and specifications that are sufficiently detailed for competitive bidding and construction execution. These documents must comply with all applicable laws, codes, and regulations, allowing contractors to bid accurately without constant clarification. Documents must provide enough detail for accurate bidding and code-compliant execution; excessive brand specification is neither required nor typical practice.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-05-06T16:22:33.152722+00:00",
+      "content_hash": "sha256:38a6e936debbc8e880b65381feb2abab4b3338da539f7d796e212a53da3b9d12"
+    },
+    {
+      "question_id": "0dd69157-c727-4956-b067-fd5210bf17a0",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "If a material project scope change occurs during Design Development, and the Owner-Architect agreement is silent on fee adjustment mechanisms, what is the likely outcome?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect must absorb all additional costs without adjustment to the fee, unless a separate agreement is negotiated"
+        },
+        {
+          "id": "b",
+          "text": "The agreement is automatically terminated, and the architect must refund all fees previously paid, which is unlikely without a breach"
+        },
+        {
+          "id": "c",
+          "text": "A dispute arises over the architect's entitlement to additional compensation, potentially requiring mediation or arbitration as specified in the contract"
+        },
+        {
+          "id": "d",
+          "text": "The owner may unilaterally reduce the architect's compensation by the amount of scope added, which would typically require mutual agreement"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Unfairly penalizes the architect; material scope changes justify fee adjustment, not absorption of cost.",
+        "b": "Overstates contractual consequences; contract silence on fee adjustment does not trigger automatic termination.",
+        "d": "Inverts the remedy; the owner cannot unilaterally reduce compensation for scope additions without the architect's consent.",
+        "correct": "Changes to the scope of design services are to be documented through formal change orders, which adjust the architect's fee and schedule if necessary. Without a change order, work performed outside the original scope becomes a source of dispute, resolved through negotiation, mediation, or arbitration.",
+        "takeaway": "Material scope changes without documented change orders create contractual disputes resolved through the agreement's dispute resolution process."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc919a78baf35ebebe3eb91ffc29937fe0eb20ad85ff85e40797712ff5cc821d"
+    },
+    {
+      "question_id": "4e69b118-7314-42ca-98cc-b57b78d7ed80",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "What is the architect's dual role during the design and construction phases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Advocate for the owner's interests exclusively throughout the project, which neglects the architect's duty to ensure fair contract administration"
+        },
+        {
+          "id": "b",
+          "text": "Owner's agent during design; impartial contract administrator during construction"
+        },
+        {
+          "id": "c",
+          "text": "Enforce the contractor's compliance with the performance bond requirements, which is not typically within the architect's scope of responsibilities"
+        },
+        {
+          "id": "d",
+          "text": "Supervise the contractor's workforce and determine work methods, which is a misinterpretation of the architect's role"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misrepresents the architect's role during construction; while the architect is the owner's agent during design, during construction the architect must be impartial, not exclusively advocating for the owner.",
+        "c": "Confuses contract administration with bond enforcement; the architect's role as contract administrator involves interpreting the contract and certifying compliance, not directly enforcing performance bonds, which are the surety's obligation.",
+        "d": "Exceeds the architect's authority; the architect verifies contractor compliance and conducts site visits, but does not supervise the contractor's workforce or determine work methods—that is the contractor's responsibility.",
+        "correct": "The architect serves as the Owner's agent during design and as an impartial contract administrator during construction, requiring clear definition to avoid conflicts of interest.",
+        "takeaway": "During design, the architect advocates for the owner; during construction, the architect acts as an impartial interpreter of the contract between owner and contractor."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e03167a0f8994d21d95753b249aa1d095f21ee47638091e6e3acd583e90cc0b7"
+    },
+    {
+      "question_id": "0388a435-8e3e-4751-8ce5-5c6519cc1bf5",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "How are the Owner's remedies typically different depending on whether the Owner suspends or terminates the Owner-Architect agreement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Suspension requires the owner to pay for the full remaining contract scope; termination releases the owner from all payment obligations"
+        },
+        {
+          "id": "b",
+          "text": "Suspension pauses work without terminating the contract; termination ends the relationship, with compensation limited to services rendered and consultant costs reimbursed"
+        },
+        {
+          "id": "c",
+          "text": "Both suspension and termination result in identical financial consequences to the architect"
+        },
+        {
+          "id": "d",
+          "text": "Termination is only available for cause; suspension is only available for convenience"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reverses the financial consequences; suspension requires continued compensation for eventual resumption, while termination limits payment to work completed.",
+        "c": "Obscures critical distinctions; suspension results in continued entitlement to compensation upon resumption, while termination results in final payment only for services rendered.",
+        "d": "Inverts the available remedies; both suspension and termination can be used for convenience, while termination for cause is a separate remedy.",
+        "correct": "Suspension does not terminate the contract but allows the Owner to pause work temporarily. Termination may be either for cause (breach of contract) or for convenience (Owner's election). Upon suspension or termination, the architect is compensated for services rendered up to that point and reimburses consultant fees, but does not continue to absorb overhead costs.",
+        "takeaway": "Suspension pauses the contract; termination ends it and limits payment to services completed plus consultant reimbursement."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:db2a12635a5d8323a55e1120d41c76c1528243b2ae7030827e3354dbff6a6e0e"
+    },
+    {
+      "question_id": "26fb03aa-0b04-4327-b209-f5b8fbd95b93",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "Why does the agreement typically require the architect to name the Owner as additional insured under professional liability insurance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To transfer all design liability to the owner, thereby absolving the architect of any future claims related to design errors"
+        },
+        {
+          "id": "b",
+          "text": "To ensure the owner has direct access to the architect's insurance coverage in case of claims arising from the architect's professional negligence"
+        },
+        {
+          "id": "c",
+          "text": "To eliminate the architect's responsibility for errors in the construction documents, ensuring that any mistakes are solely the owner's concern"
+        },
+        {
+          "id": "d",
+          "text": "To prevent the contractor from filing claims against the owner, which could otherwise complicate the project's legal landscape"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Distorts the effect; naming the owner as additional insured does not transfer liability—it merely extends access to the architect's insurance.",
+        "c": "Confuses insurance coverage with liability elimination; additional insured status does not absolve the architect of responsibility for document errors.",
+        "d": "Addresses wrong party; additional insured status protects the owner from the architect's negligence, not the contractor from the owner.",
+        "correct": "Professional liability insurance requirements are typically specified in the agreement, including coverage limits and the architect's obligation to name the Owner as additional insured, ensuring the Owner has direct access to coverage.",
+        "takeaway": "The owner as additional insured gains direct claim rights against the architect's insurance for losses caused by the architect's professional negligence."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a13bd2b4377cab520d911b2920cc57db4001a98c197c9b3d696cfb796ff756ae"
+    },
+    {
+      "question_id": "19b8b43b-5664-4808-b2d6-24baff8e5d78",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "In the Owner-Architect agreement, what does the distinction between Basic Services and Additional Services accomplish?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It allows the architect to charge different hourly rates for different types of work, depending on the complexity and duration of each task"
+        },
+        {
+          "id": "b",
+          "text": "It defines what work is included in the base fee and identifies separately-billed services to prevent scope disputes"
+        },
+        {
+          "id": "c",
+          "text": "It establishes which services require the owner's written approval before proceeding, ensuring that all parties are aligned on project scope"
+        },
+        {
+          "id": "d",
+          "text": "It determines whether the architect is liable for defects in construction, based on the nature of the services provided and the terms of the contract"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses the purpose of the Basic/Additional distinction with compensation method; while compensation structure may vary, the distinction's primary purpose is scope clarity, not rate differentiation.",
+        "c": "Confuses approval requirements with the Basic/Additional distinction; the purpose of the distinction is to clarify what is included in the fee, not to govern approval workflows.",
+        "d": "Conflates the scope definition with liability allocation; Basic and Additional Services distinctions determine what work is covered by the fee, not architect's liability for construction defects.",
+        "correct": "The agreement explicitly distinguishes Basic Services from Additional Services, with Basic Services encompassing SD through CA on a standard project, while Additional Services (such as BIM, renderings, specialized consulting) are separately defined and billed to prevent cost overruns and ensure both parties understand what is included in the base fee.",
+        "takeaway": "Basic Services are included in the base fee; Additional Services like BIM and specialized consulting are separately billed."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:102f6550952e5f2fe2e6bd51fa553fba1ceca4fe21a621378f629c15822fea4d"
+    },
+    {
+      "question_id": "6ffbc619-7639-4cb1-9b5b-e6457c65fd13",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "When an architect receives a change order request during design, what key action must occur before proceeding with the additional work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect must submit the request to the contractor for review, which is not the standard protocol"
+        },
+        {
+          "id": "b",
+          "text": "The owner must provide verbal authorization to begin immediately, which lacks formal documentation"
+        },
+        {
+          "id": "c",
+          "text": "The change order must be documented in writing, adjusting the architect's fee and schedule"
+        },
+        {
+          "id": "d",
+          "text": "The architect's liability insurance carrier must approve the scope expansion, which is not typically required"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misplaces responsibility; during the design phase, change orders are negotiated between the owner and architect, not submitted to the contractor for review.",
+        "b": "Permits informal authorization; verbal authorization is insufficient—the agreement requires formal written documentation to avoid disputes over scope and compensation.",
+        "d": "Imposes an unnecessary external requirement; insurance carrier approval is not a prerequisite to issuing a change order between owner and architect.",
+        "correct": "Changes to the scope of design services or project requirements are documented through formal change orders, which adjust the architect's fee and schedule if necessary. Without a change order, work performed outside the original scope becomes a source of dispute.",
+        "takeaway": "All scope changes must be documented in a formal written change order that adjusts both fee and schedule before work proceeds."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:298ea3791cfdd0216939fd183cf9e1a730712f84bc0764de212196586f4df7a1"
+    },
+    {
+      "question_id": "c2634b6b-2804-4195-98dd-7ee246772755",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "What is the significance of Article 1723 liability in relation to the Owner-Architect agreement's limitation of liability clause?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Article 1723 eliminates the need for professional liability insurance, as it provides a comprehensive framework for addressing structural defects"
+        },
+        {
+          "id": "b",
+          "text": "The agreement may cap liability at the architect's fee, but Article 1723 establishes a separate 15-year window for claims related to structural defects"
+        },
+        {
+          "id": "c",
+          "text": "Article 1723 applies only to the construction phase and does not affect design services, thereby limiting its scope to post-design activities"
+        },
+        {
+          "id": "d",
+          "text": "The architect's liability under Article 1723 is strictly limited to the compensation paid for design services, unless otherwise specified in the contract"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses statutory liability with insurance; Article 1723 establishes statutory exposure regardless of insurance, which remains necessary.",
+        "c": "Incorrectly limits Article 1723's scope; the statute applies to design and construction services that cause structural defects, not only construction phase.",
+        "d": "Misapplies Article 1723's reach; the statute establishes a 15-year window separate from contract limitations—the architect's liability is not restricted to the fee.",
+        "correct": "The agreement often caps total liability at the architect's fee or a specified dollar amount. However, these limitations do not eliminate the architect's exposure under Article 1723 of the Civil Code, which establishes a 15-year liability window for structural defects.",
+        "takeaway": "Contract liability caps cannot limit exposure under Article 1723, which provides a separate 15-year statutory liability period for structural defects."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7581d3d4b32c0b68036479384d362d4d734f4a086c38e51b7896376614c7a299"
+    },
+    {
+      "question_id": "83bcbf52-98e4-4c36-b460-26c1c6d35571",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "In defining compensation, why is it critical to specify the distribution of the architect's fee across the five design phases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To ensure the architect completes all phases in the same number of days, maintaining a consistent timeline for project delivery"
+        },
+        {
+          "id": "b",
+          "text": "To prevent disputes over payment timing and allow the architect to recover proportional cost for suspended or terminated work"
+        },
+        {
+          "id": "c",
+          "text": "To determine the order in which the architect must complete the design documents, ensuring a logical progression of work"
+        },
+        {
+          "id": "d",
+          "text": "To establish the architect's responsibility for construction cost overruns, thereby aligning financial accountability with project phases"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Conflates schedule with compensation; fee distribution across phases does not mandate equal time per phase—it only allocates the total fee.",
+        "c": "Misidentifies the purpose of distribution; the fee allocation does not determine work sequence—the project schedule and deliverables do.",
+        "d": "Assigns unrelated responsibility; fee distribution between phases has no bearing on architect's liability for construction cost overruns, which is a separate issue.",
+        "correct": "The Owner-Architect agreement must specify which compensation method applies and how that amount is distributed across the five phases. This allows the architect to recover proportional cost for suspended or terminated work and prevents disputes over payment timing.",
+        "takeaway": "Phase-based fee distribution enables the architect to claim payment proportional to work completed if the project is suspended or terminated early."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:17214020b26d61e75f096a7b8ebbeffcc121c4ffb32ad765b354522657b643df"
+    },
+    {
+      "question_id": "e90788ac-9077-4075-91d8-8cbaa0474110",
+      "article_id": "a96d6eed-5b52-47de-b752-83459747b468",
+      "topic_id": "f4c338ce-27dc-4d00-a74c-4a8d400d0c47",
+      "text": "The five-phase structure (SD, DD, CD, Bidding, CA) serves primarily to accomplish which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allocate the architect's effort proportionally and establish clear deliverables and compensation checkpoints at each stage"
+        },
+        {
+          "id": "b",
+          "text": "Minimize the total cost of design services by breaking work into smaller, more manageable components, which is not the primary purpose"
+        },
+        {
+          "id": "c",
+          "text": "Allow the owner to terminate the contract at any phase without financial obligation, which is not typically allowed"
+        },
+        {
+          "id": "d",
+          "text": "Enable the architect to subcontract portions of the work to other professionals, which is not the main intent"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Misattributes the primary purpose of phasing to cost minimization; the phase structure is designed for clarity of deliverables and work allocation, not inherently to reduce overall cost.",
+        "c": "Overstates the owner's rights; while suspension is possible, the phasing structure does not itself permit termination without financial obligation—only suspension or termination for cause/convenience under separate provisions.",
+        "d": "Confuses the phase structure with the architect's staffing authority; the five phases organize the architect's own work scope, not the architect's right to subcontract.",
+        "correct": "The five-phase structure divides design services into distinct phases, each with defined deliverables and compensation, allocating the architect's effort proportionally across the project timeline and preventing scope disputes.",
+        "takeaway": "Each phase (SD, DD, CD, Bidding, CA) has defined deliverables and compensation checkpoints to track architect effort and project progress."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-001-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6acfa3096b5f6f294a6ffe11d104dca2e54db60fad60c171ed3631bf71b1fbfd"
+    }
+  ]
+}

@@ -258,6 +258,41 @@ describe('content-audit push safety', () => {
     expect(eqCalls).toContainEqual(['content', '# Old\n'])
   })
 
+  test('placeholder repair apply can use updated_at compare-and-swap', async () => {
+    const eqCalls: Array<[string, unknown]> = []
+    const fakeSupabase = {
+      from(table: string) {
+        expect(table).toBe('wiki_articles')
+        return {
+          update(payload: Record<string, unknown>) {
+            expect(payload.content).toBe('# Repaired\n')
+            return this
+          },
+          eq(column: string, value: unknown) {
+            eqCalls.push([column, value])
+            return this
+          },
+          async select(columns: string) {
+            expect(columns).toBe('article_id,updated_at')
+            return { data: [{ article_id: 'article-1', updated_at: '2026-05-10T00:00:00Z' }], error: null }
+          },
+        }
+      },
+    }
+
+    await updateArticleContentIfUnchanged({
+      supabase: fakeSupabase,
+      articleId: 'article-1',
+      originalContent: '[SLATECAMP_UI_BLOCK:x]',
+      originalUpdatedAt: '2026-05-09T00:00:00Z',
+      updatePayload: { content: '# Repaired\n' },
+    })
+
+    expect(eqCalls).toContainEqual(['article_id', 'article-1'])
+    expect(eqCalls).toContainEqual(['updated_at', '2026-05-09T00:00:00Z'])
+    expect(eqCalls).not.toContainEqual(['content', '[SLATECAMP_UI_BLOCK:x]'])
+  })
+
   test('push refuses stale remote content and defaults to dry-run', () => {
     const original = '# A\n'
     const meta = metadata(original)

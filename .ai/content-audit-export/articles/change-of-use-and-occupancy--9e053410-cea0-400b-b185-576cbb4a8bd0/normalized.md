@@ -205,7 +205,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0010 component="LawCallout" status="preserved"]
 Extracted summary:
 - Props: code="nbcp", title="it determines whether full code compliance is needed before approval. Converting"
-- Text: no change in the character of occupancy that places a building in a different division or group shall be made without compliance with the Code requirements, and Building Official approval is required. The "less hazardous" exception does not eliminate the application and approval requirement — it determines whether full code compliance is needed before approval. Converting without filing NBC Form No. B-12 and obtaining a Certificate of Use is a direct violation of Sec. 702. The Building Official 
+- Text: no change in the character of occupancy that places a building in a different division or group shall be made without compliance with the Code requirements, and Building Official approval is required. The "less hazardous" exception does not eliminate the application and approval requirement — it determines whether full code compliance is needed before approval. Converting without filing NBC Form No. B-12 and obtaining a Certificate of Use is a direct violation of Sec. 702. The Building Official
 [/SLATECAMP_UI_BLOCK]
 
 ## Practice Questions

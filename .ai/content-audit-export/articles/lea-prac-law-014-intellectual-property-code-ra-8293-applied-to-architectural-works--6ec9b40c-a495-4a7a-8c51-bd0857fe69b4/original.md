@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Law 014 Intellectual Property Code Ra 8293 Applied To Architectural Works** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Intellectual Property Code (RA 8293) Applied to Architectural Works
 
 ## Learning Goal
@@ -52,13 +59,23 @@ Copyright infringement of architectural works occurs when a person reproduces, d
 
 The remedies available under RA 8293 include preliminary injunctions to stop ongoing infringement, delivery up of infringing materials, corrective advertising to restore the architect's reputation, payment of actual damages or profits derived from infringement, and in cases of willful infringement, statutory damages as determined by the court in accordance with RA 8293 Section 216. Criminal prosecution is available for commercial infringement with willful intent to defraud or profit, carrying penalties of fine and imprisonment.
 
-<LawCallout code="ra9266" section="Section 33 - Ownership of Plans">
-Function vs. Expression distinction: RA 8293 protects the ORIGINAL EXPRESSION (spatial arrangement, aesthetic proportions, facade design, unique structural concept). It does NOT protect FUNCTIONAL elements required by building code (stair dimensions, conduit sizing, minimum room areas).
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 33 - Ownership of Plans"
+- Text: Function vs. Expression distinction: RA 8293 protects the ORIGINAL EXPRESSION (spatial arrangement, aesthetic proportions, facade design, unique structural concept). It does NOT protect FUNCTIONAL elements required by building code (stair dimensions, conduit sizing, minimum room areas).
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<Tip />
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ---
 

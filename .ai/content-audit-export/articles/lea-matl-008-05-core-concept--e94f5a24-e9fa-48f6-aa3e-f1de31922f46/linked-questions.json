@@ -1,9 +1,159 @@
 {
   "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:60ae9bcd1cca2274193a5ceee2c7c9e92a35f23e3ffdce8a01ee5f421ba6ac44",
+  "linked_questions_hash": "sha256:201db794b73f5bab2e8504029dfd4bdd5c4c1adf45835c2e01f95706b7abd26e",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "658f2f0c-ed59-48d2-8ab0-6411ba3f8a4e",
+      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
+      "text": "A specification calls for applying silicone sealant on top of old acrylic sealant in an existing joint. What is the risk, and what should be done?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Silicone and acrylic are compatible; the new sealant will adhere immediately without any additional preparation or priming"
+        },
+        {
+          "id": "b",
+          "text": "Silicone will not adhere to acrylic due to chemical incompatibility; all old sealant must be removed to base material."
+        },
+        {
+          "id": "c",
+          "text": "The risk is air entrapment; primer is required between the two products to ensure proper adhesion and prevent future joint failure"
+        },
+        {
+          "id": "d",
+          "text": "No preparation is needed; the new sealant will chemically bond to the old product, forming a seamless and durable joint"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Compatibility is poor; adhesion will fail within weeks.",
+        "c": "Primer does not solve the incompatibility; substrate preparation (removal of old sealant) is required.",
+        "d": "No chemical bond occurs; mechanical adhesion is impossible.",
+        "correct": "Silicone and acrylic are chemically incompatible. Silicone has very low surface energy and does not wet acrylic. Complete removal of old sealant to bare substrate is mandatory.",
+        "takeaway": "When changing sealant types, remove old sealant completely. Never assume chemical compatibility."
+      },
+      "explanation": "Compatibility is poor; adhesion will fail within weeks. Primer does not solve the incompatibility; substrate preparation (removal of old sealant) is required. No chemical bond occurs; mechanical adhesion is impossible. Silicone and acrylic are chemically incompatible. Silicone has very low surface energy and does not wet acrylic. Complete removal of old sealant to bare substrate is mandatory. When changing sealant types, remove old sealant completely. Never assume chemical compatibility.",
+      "code_citation": "ASTM C920 Substrate Preparation and Sealant Compatibility Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:53:12.110332+00:00",
+      "content_hash": "sha256:798a0dfdf037c9fb1b983ec84437f4f98b11985a7d21edcb7035813869225f65"
+    },
+    {
+      "question_id": "40327fb6-c5dc-46e0-811e-bc1729bed4ee",
+      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
+      "text": "What type of adhesive is primarily used for bonding concrete-to-concrete or metal-to-concrete in structural applications?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pressure-sensitive adhesive"
+        },
+        {
+          "id": "b",
+          "text": "Epoxy adhesive"
+        },
+        {
+          "id": "c",
+          "text": "Polyurethane adhesive"
+        },
+        {
+          "id": "d",
+          "text": "Silicone adhesive"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Pressure-sensitive adhesives are for temporary bonding (tapes, labels).",
+        "c": "Polyurethane adhesives are more flexible; preferred for wood-to-wood applications.",
+        "d": "Silicone adhesives are flexible and not suitable for structural concrete bonding.",
+        "correct": "Epoxy adhesives are two-part, high-strength products specifically designed for rigid bonding of concrete and metal. They develop full strength after 24-48 hours.",
+        "takeaway": "Epoxy = structural bonding (concrete, metal); Polyurethane = wood-to-wood or movement-accommodating applications."
+      },
+      "explanation": "Pressure-sensitive adhesives are for temporary bonding (tapes, labels). Polyurethane adhesives are more flexible; preferred for wood-to-wood applications. Silicone adhesives are flexible and not suitable for structural concrete bonding. Epoxy adhesives are two-part, high-strength products specifically designed for rigid bonding of concrete and metal. They develop full strength after 24-48 hours. Epoxy = structural bonding (concrete, metal); Polyurethane = wood-to-wood or movement-accommodating applications.",
+      "code_citation": "ASTM D2382 Epoxy Adhesive Specifications",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:53:12.30848+00:00",
+      "content_hash": "sha256:12fb7a1926edd8fb81de4058fe48f1f292dc9b2924b6accfee1e0e8ab841c75e"
+    },
+    {
+      "question_id": "ecfcd7f3-6bfd-4986-961b-ed087bb7cc08",
+      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
+      "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
+      "text": "Which sealant type is moisture-curing and tolerates wet conditions during application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acrylic sealant, which is generally used for interior applications and not suitable for wet conditions"
+        },
+        {
+          "id": "b",
+          "text": "Polyurethane sealant"
+        },
+        {
+          "id": "c",
+          "text": "Butyl sealant, often used for roofing but not ideal for wet application"
+        },
+        {
+          "id": "d",
+          "text": "Polysulfide sealant, which is known for its chemical resistance but not specifically for moisture curing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Acrylic is water-based and sensitive to rain during cure; it requires 24-48 dry hours.",
+        "c": "Butyl sealants are non-hardening; they do not cure.",
+        "d": "Polysulfide sealants are moisture-tolerant but require longer cure times than polyurethane.",
+        "correct": "Polyurethane sealants are moisture-curing; water triggers the cure reaction, allowing application in humid conditions or during light rain.",
+        "takeaway": "Polyurethane = moisture-curing; ideal for tropical and humid climates."
+      },
+      "explanation": "Acrylic is water-based and sensitive to rain during cure; it requires 24-48 dry hours. Butyl sealants are non-hardening; they do not cure. Polysulfide sealants are moisture-tolerant but require longer cure times than polyurethane. Polyurethane sealants are moisture-curing; water triggers the cure reaction, allowing application in humid conditions or during light rain. Polyurethane = moisture-curing; ideal for tropical and humid climates.",
+      "code_citation": "ASTM C920 Sealant Product Specifications",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-008-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-05-06T15:53:12.477807+00:00",
+      "content_hash": "sha256:2ba0563d7eb311ad6fb3445a2154f242be1bb3931c372b68ca9e235ddedd6236"
+    },
     {
       "question_id": "55b5ab8f-f29e-45e6-937d-7d621933b95d",
       "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
@@ -139,7 +289,7 @@
         "correct": "Adhesives bond substrates rigidly; sealants remain elastic to accommodate joint movement and prevent air/water infiltration. This is the fundamental distinction.",
         "takeaway": "Adhesive = permanent rigid bond. Sealant = flexible, accommodates movement."
       },
-      "explanation": null,
+      "explanation": "The comparison is reversed; sealants are flexible. Both types are used for multiple substrates; application determines the choice. The terms are not interchangeable; they serve different functions. Adhesives bond substrates rigidly; sealants remain elastic to accommodate joint movement and prevent air/water infiltration. This is the fundamental distinction. Adhesive = permanent rigid bond. Sealant = flexible, accommodates movement.",
       "code_citation": "ASTM C920 Sealant Standard and ASTM D2382 Adhesive Standard",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -151,108 +301,8 @@
       "model_id": "ALE-MATL-008-05-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1a98f44f258ef506c08d7635205a30af3c80c4890ad3062b161a7b049a977707"
-    },
-    {
-      "question_id": "658f2f0c-ed59-48d2-8ab0-6411ba3f8a4e",
-      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
-      "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "A specification calls for applying silicone sealant on top of old acrylic sealant in an existing joint. What is the risk, and what should be done?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Silicone and acrylic are compatible; the new sealant will adhere immediately without any additional preparation or priming"
-        },
-        {
-          "id": "b",
-          "text": "Silicone will not adhere to acrylic due to chemical incompatibility; all old sealant must be removed to base material."
-        },
-        {
-          "id": "c",
-          "text": "The risk is air entrapment; primer is required between the two products to ensure proper adhesion and prevent future joint failure"
-        },
-        {
-          "id": "d",
-          "text": "No preparation is needed; the new sealant will chemically bond to the old product, forming a seamless and durable joint"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Compatibility is poor; adhesion will fail within weeks.",
-        "c": "Primer does not solve the incompatibility; substrate preparation (removal of old sealant) is required.",
-        "d": "No chemical bond occurs; mechanical adhesion is impossible.",
-        "correct": "Silicone and acrylic are chemically incompatible. Silicone has very low surface energy and does not wet acrylic. Complete removal of old sealant to bare substrate is mandatory.",
-        "takeaway": "When changing sealant types, remove old sealant completely. Never assume chemical compatibility."
-      },
-      "explanation": null,
-      "code_citation": "ASTM C920 Substrate Preparation and Sealant Compatibility Guidelines",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-05-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e5fd44c04f32099caadb657e784c43ae9ca5b06ee72ffa3cb1724816779d1e50"
-    },
-    {
-      "question_id": "40327fb6-c5dc-46e0-811e-bc1729bed4ee",
-      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
-      "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "What type of adhesive is primarily used for bonding concrete-to-concrete or metal-to-concrete in structural applications?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Pressure-sensitive adhesive"
-        },
-        {
-          "id": "b",
-          "text": "Epoxy adhesive"
-        },
-        {
-          "id": "c",
-          "text": "Polyurethane adhesive"
-        },
-        {
-          "id": "d",
-          "text": "Silicone adhesive"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Pressure-sensitive adhesives are for temporary bonding (tapes, labels).",
-        "c": "Polyurethane adhesives are more flexible; preferred for wood-to-wood applications.",
-        "d": "Silicone adhesives are flexible and not suitable for structural concrete bonding.",
-        "correct": "Epoxy adhesives are two-part, high-strength products specifically designed for rigid bonding of concrete and metal. They develop full strength after 24-48 hours.",
-        "takeaway": "Epoxy = structural bonding (concrete, metal); Polyurethane = wood-to-wood or movement-accommodating applications."
-      },
-      "explanation": null,
-      "code_citation": "ASTM D2382 Epoxy Adhesive Specifications",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-05-009",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:85c77a772f4dacfe4591af7ed8be1a2ff64e6a096a6cb58e4323ce99033ecb35"
+      "updated_at": "2026-05-06T15:46:06.782172+00:00",
+      "content_hash": "sha256:d73e7f1e972638dce2c8c6208f47c6a01603ab8dc3a73be1a2e96ff54b48f37c"
     },
     {
       "question_id": "f092ecd5-bd75-430a-86e3-faaca7a6b76d",
@@ -353,56 +403,6 @@
       "created_at": "2026-03-23T19:27:28.473222+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:232f7bd25086151db6f7b2c6d7859cf156e24350bb47e95ad37d05e276d49ab0"
-    },
-    {
-      "question_id": "ecfcd7f3-6bfd-4986-961b-ed087bb7cc08",
-      "article_id": "e94f5a24-e9fa-48f6-aa3e-f1de31922f46",
-      "topic_id": "4849de98-aa28-4b5e-9a2b-5b7ac71c44d9",
-      "text": "Which sealant type is moisture-curing and tolerates wet conditions during application?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Acrylic sealant, which is generally used for interior applications and not suitable for wet conditions"
-        },
-        {
-          "id": "b",
-          "text": "Polyurethane sealant"
-        },
-        {
-          "id": "c",
-          "text": "Butyl sealant, often used for roofing but not ideal for wet application"
-        },
-        {
-          "id": "d",
-          "text": "Polysulfide sealant, which is known for its chemical resistance but not specifically for moisture curing"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Acrylic is water-based and sensitive to rain during cure; it requires 24-48 dry hours.",
-        "c": "Butyl sealants are non-hardening; they do not cure.",
-        "d": "Polysulfide sealants are moisture-tolerant but require longer cure times than polyurethane.",
-        "correct": "Polyurethane sealants are moisture-curing; water triggers the cure reaction, allowing application in humid conditions or during light rain.",
-        "takeaway": "Polyurethane = moisture-curing; ideal for tropical and humid climates."
-      },
-      "explanation": null,
-      "code_citation": "ASTM C920 Sealant Product Specifications",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-008-05-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:28.473222+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:08cbbc40170f24b09f2bb566e295ede9eabf5e4d4e7094f2ee4eba9a03fe08cf"
     },
     {
       "question_id": "9ac51a05-5a1a-4b76-867e-bb6ebbf03193",

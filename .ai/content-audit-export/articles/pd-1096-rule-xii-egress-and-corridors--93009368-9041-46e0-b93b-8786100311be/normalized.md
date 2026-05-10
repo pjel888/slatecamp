@@ -75,7 +75,7 @@ Every other rule here — number of exits, width of exits, stairway dimensions, 
 OCCUPANT LOAD = Floor Area (sq.m) ÷ Unit Area per Occupant (from Table XII.1)
 ```
 
-**Section 1207(1)(a):**  
+**Section 1207(1)(a):**
 _“The occupant load permitted in any building or portion thereof shall be determined by dividing the floor area assigned to that use by the unit area allowed per occupant as shown on Table XII.1.”_[web:20][web:27]
 
 ### KEY RULES You Must Know
@@ -239,7 +239,7 @@ Reason: prevents a single localized fire from knocking out both exits at once.[w
 
 **TRAP:** The 1/2 diagonal rule belongs to IBC / Fire Code (RA 9514) — NOT PD 1096.[web:24]
 
-**Example:** 20 m × 30 m rectangle → perimeter = 100 m.  
+**Example:** 20 m × 30 m rectangle → perimeter = 100 m.
 Minimum separation between 2 required exits = 100 ÷ 5 = **20 m**.
 
 ---

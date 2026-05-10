@@ -100,13 +100,13 @@ Barangay halls are the civic infrastructure linking national and local governmen
 **Pattern 1: Occupancy Classification**
 
 \
-"A barangay hall with a 120-sqm multi-purpose hall plus administrative offices is classified as Group E or H depending on the dominant occupant load." 
+"A barangay hall with a 120-sqm multi-purpose hall plus administrative offices is classified as Group E or H depending on the dominant occupant load."
 
 **Pattern 2: Population-Scaled Sizing**
-"A barangay serving 8,000 persons requires a public counter with a minimum length of **16 meters** (2.0m × 8,000 / 1,000)." 
+"A barangay serving 8,000 persons requires a public counter with a minimum length of **16 meters** (2.0m × 8,000 / 1,000)."
 
 **Pattern 3: GI Zone Parking**
-"A barangay hall site has a total land area of 1,200 sqm. If zoned as GI with 50% PSO, the building footprint/parking area must align with the 50% threshold." 
+"A barangay hall site has a total land area of 1,200 sqm. If zoned as GI with 50% PSO, the building footprint/parking area must align with the 50% threshold."
 
 > **Memory Rule:** Captain = 9 sqm; SK = 10 sqm. Counter = 2.0m per 1k people. Exit width = 5.5 mm/person. Ramp = 1:20 (short) or 1:12 (long).
 

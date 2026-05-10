@@ -158,4 +158,3 @@ Extracted summary:
 See also within Innovation & Filipino Identity: **lea-theo-008-02-core-concept**, **lea-theo-008-03-core-concept**, **lea-theo-008-04-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

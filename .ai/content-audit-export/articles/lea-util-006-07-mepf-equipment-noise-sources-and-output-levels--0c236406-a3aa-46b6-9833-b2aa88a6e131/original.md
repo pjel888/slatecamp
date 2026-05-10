@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Util 006 07 Mepf Equipment Noise Sources And Output Levels** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,7 +16,11 @@ Identify MEPF equipment noise sources (chillers, pumps, AHUs, cooling towers, tr
 
 The primary noise-generating equipment in a typical building mechanical room produces the following acoustic power:
 
-<ArticleMedia id="media-lea-util-006-07-mepf-equipment-noise-sou" type="image" caption="MEPF Equipment Noise Levels — Chiller, Cooling Tower, Generator, AHU, Pump dB Chart" description="Bar chart showing typical noise output levels (dB(A) at 1m) by equipment type: Diesel generator (95-105 dB), Centrifugal chiller (85-95 dB), Cooling tower (75-85 dB), Pumps (70-85 dB), AHU (65-80 dB). NC (Noise Criteria) targets overlaid: residential NC 25-30 (≈40-45 dB(A)), office NC 30-40 (≈45-55 dB(A)), mechanical room NC 40-45 (≈50-60 dB(A)). DENR DAO 2000-81 ambient limits for Residential (55/45 dB day/night) and Commercial (60/50 dB) zones shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-006-07-mepf-equipment-noise-sou", type="image", caption="MEPF Equipment Noise Levels — Chiller, Cooling Tower, Generator, AHU, Pump dB Chart", description="Bar chart showing typical noise output levels (dB(A) at 1m) by equipment type: Diesel generator (95-105 dB), Centrifugal chiller (85-95 dB), Cooling tower (75-85 dB), Pumps (70-85 dB), AHU (65-80 dB). NC (Noise Criteria) targets overlaid: residential NC 25-30 (≈40-45 dB(A)), office NC 30-40 (≈45-55 dB(A)), mechanical room NC 40-45 (≈50-60 dB(A)). DENR DAO 2000-81 ambient limits for Residential (55/45 dB day/night) and Commercial (60/50 dB) zones shown.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 - **Centrifugal Chillers**: 85–95 dB(A) at full load, primarily at low frequencies (compressor discharge and condenser fan noise per ASHRAE Handbook—Fundamentals)
@@ -20,11 +33,23 @@ These sound levels are measured at 1 meter in a free-field condition. Indoor pla
 
 ---
 
-<KeyValues />
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<Tip />
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Regulatory Framework: PD 1096, PD 1058, and DENR DAO 2000-81
 
@@ -85,7 +110,11 @@ The LEA design process uses both metrics: NC for spectral compliance in occupied
 
 Noise from equipment reaches occupied spaces via three primary paths:
 
-<ArticleMedia id="media-lea-util-006-07-mepf-equipment-noise-sou" type="image" caption="Sound Transmission Paths — Airborne, Structure-Borne, Duct-Borne Noise Mitigation" description="Three-path acoustics diagram through a building section: (1) Airborne — noise through walls/ceilings, mitigation via STC-rated partitions (STC 50-60 for mechanical room walls); (2) Structure-borne — vibration through equipment mounts to structure, mitigation via spring isolators (2-8 Hz natural frequency) and inertia bases; (3) Duct-borne — noise regenerated in ductwork, mitigation via splitter silencers (15-35 dB) and duct lining. Floating floor system for equipment rooms above occupied spaces shown." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0005 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-006-07-mepf-equipment-noise-sou", type="image", caption="Sound Transmission Paths — Airborne, Structure-Borne, Duct-Borne Noise Mitigation", description="Three-path acoustics diagram through a building section: (1) Airborne — noise through walls/ceilings, mitigation via STC-rated partitions (STC 50-60 for mechanical room walls); (2) Structure-borne — vibration through equipment mounts to structure, mitigation via spring isolators (2-8 Hz natural frequency) and inertia bases; (3) Duct-borne — noise regenerated in ductwork, mitigation via splitter silencers (15-35 dB) and duct lining. Floating floor system for equipment rooms above occupied spaces shown.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ### 1. Airborne Transmission (Through Air)
@@ -555,4 +584,3 @@ Effective noise control requires analysis of all three transmission paths and in
 See also within Lighting and Acoustics: **lea-util-006-02-core-concept**, **lea-util-006-03-core-concept**, **lea-util-006-05-core-concept**, **lea-util-006-06-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

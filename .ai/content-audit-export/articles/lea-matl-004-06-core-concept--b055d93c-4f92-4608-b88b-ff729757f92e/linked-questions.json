@@ -1,7 +1,7 @@
 {
   "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:de7d1ab74746a26a26c37b870aa07e0aeac8b82244875ffda3037434137d260f",
+  "linked_questions_hash": "sha256:640d6e98e634f2f1e538de96d8ee13fde03980f4e686f72e9e03c4358555899e",
   "question_count": 10,
   "questions": [
     {
@@ -38,7 +38,7 @@
         "d": "Concrete placement and curing are integral to CIP.",
         "correct": "CIP construction consists of building temporary formwork, placing reinforcement per drawings, pouring concrete (by pump or bucket), vibrating to consolidate, and curing moisture/temperature-controlled on-site. All strength gain occurs in place, enabling site customization and monolithic structural behavior."
       },
-      "explanation": null,
+      "explanation": "Precast involves factory fabrication and on-site assembly, not in-place construction. CIP requires active curing processes, not passive delivery. Concrete placement and curing are integral to CIP. CIP construction consists of building temporary formwork, placing reinforcement per drawings, pouring concrete (by pump or bucket), vibrating to consolidate, and curing moisture/temperature-controlled on-site. All strength gain occurs in place, enabling site customization and monolithic structural behavior.",
       "code_citation": "ACI 349; NSCP 2015 Chapter 4",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -50,8 +50,106 @@
       "model_id": "ALE-MATL-004-06-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T14:48:27.419677+00:00",
+      "content_hash": "sha256:ac4db944dfe12ddf1d7143cac1ebf17d16f0a4c16f12237d6ec71da29fb59ba6"
+    },
+    {
+      "question_id": "d1ab2f34-ef26-49a2-b5d1-cbf06cca9f5d",
+      "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
+      "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
+      "text": "Concrete is over-vibrated during placement. What are the likely consequences?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Segregation (coarse aggregate settling), surface blowholes, and reduced strength in upper layers due to excessive air removal and paste separation."
+        },
+        {
+          "id": "b",
+          "text": "Improved consolidation; over-vibration always benefits concrete quality, leading to a denser and more uniform material"
+        },
+        {
+          "id": "c",
+          "text": "No effect; vibration duration is irrelevant, as concrete properties are unaffected by over-vibration"
+        },
+        {
+          "id": "d",
+          "text": "Enhanced bond with rebar; over-vibration is desirable, ensuring better structural integrity"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Over-vibration degrades quality, not improves it.",
+        "c": "Vibration duration has major impact on quality.",
+        "d": "Over-vibration reduces bond by causing paste separation.",
+        "correct": "Over-vibration causes segregation: coarse aggregate settles while paste rises, creating weak upper layers and voids below. Surface blowholes (small bubble cavities) indicate excess air removal and paste migration. Under-vibration leaves voids and poor consolidation. Proper vibration (20–30 seconds per placement zone) is optimum; operator training and equipment maintenance are critical for quality."
+      },
+      "explanation": "Over-vibration degrades quality, not improves it. Vibration duration has major impact on quality. Over-vibration reduces bond by causing paste separation. Over-vibration causes segregation: coarse aggregate settles while paste rises, creating weak upper layers and voids below. Surface blowholes (small bubble cavities) indicate excess air removal and paste migration. Under-vibration leaves voids and poor consolidation. Proper vibration (20–30 seconds per placement zone) is optimum; operator training and equipment maintenance are critical for quality.",
+      "code_citation": "ACI 301; NSCP 2015 Chapter 4",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T14:48:27.54394+00:00",
+      "content_hash": "sha256:03470980d70058d44555c598d9d038824b0c0a165ad988e11c9c9453f963e788"
+    },
+    {
+      "question_id": "70c37f31-945c-467d-8c10-5878ff9b1588",
+      "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
+      "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
+      "text": "ACI 347 specifies that formwork for horizontal spans should not be struck until concrete achieves approximately ___ percent of the design 28-day strength. Why is this timing critical in Philippine tropical climates?",
+      "options": [
+        {
+          "id": "a",
+          "text": "70%; Inadequate early strength risks sagging, cracking, and water ingress. Tropical high humidity and potential rain exposure during curing demand conservative strength targets before load application."
+        },
+        {
+          "id": "b",
+          "text": "50%; Lower strength is acceptable since tropical warmth accelerates curing, reducing the time needed for formwork removal"
+        },
+        {
+          "id": "c",
+          "text": "90%; Maximum curing delay, but necessary for durability, especially in environments with fluctuating temperatures and humidity"
+        },
+        {
+          "id": "d",
+          "text": "25%; Rapid form removal to accelerate schedule, although this may compromise structural integrity if not carefully managed"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "50% is too low; bending capacity is insufficient.",
+        "c": "90% is overly conservative; strength gain plateaus after 28 days.",
+        "d": "25% is dangerously low; failure is likely.",
+        "correct": "ACI 347 recommends 70% of 28-day strength before striking forms. In Philippine tropical climates with variable humidity, monsoon rain, and warm temperatures, early strength gain may be unpredictable. Conservative 70% threshold (achieved typically at 7–14 days for standard Portland cement) ensures safe form removal without risk of collapse or excessive deflection. Premature removal risks sagging, cracking, and water infiltration compromising durability."
+      },
+      "explanation": null,
+      "code_citation": "ACI 347R-14; NSCP 2015 Chapter 4",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-004-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1b754a13df66819f93d4c79c80573511c08d6dee6f9f316ad7ca66524ba3df94"
+      "content_hash": "sha256:655fc31ca5aa24995b900e39d9fe869baef38c184e46975f8eeeea87c15abfd6"
     },
     {
       "question_id": "6abfbae9-18fc-416a-a853-fe428f78abb2",
@@ -101,55 +199,6 @@
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:2ebb4f6f88c6612170e2578d1b145efdd89face897c86d14dc5b3f89efb15ab8"
-    },
-    {
-      "question_id": "d1ab2f34-ef26-49a2-b5d1-cbf06cca9f5d",
-      "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
-      "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "Concrete is over-vibrated during placement. What are the likely consequences?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Segregation (coarse aggregate settling), surface blowholes, and reduced strength in upper layers due to excessive air removal and paste separation."
-        },
-        {
-          "id": "b",
-          "text": "Improved consolidation; over-vibration always benefits concrete quality, leading to a denser and more uniform material"
-        },
-        {
-          "id": "c",
-          "text": "No effect; vibration duration is irrelevant, as concrete properties are unaffected by over-vibration"
-        },
-        {
-          "id": "d",
-          "text": "Enhanced bond with rebar; over-vibration is desirable, ensuring better structural integrity"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Over-vibration degrades quality, not improves it.",
-        "c": "Vibration duration has major impact on quality.",
-        "d": "Over-vibration reduces bond by causing paste separation.",
-        "correct": "Over-vibration causes segregation: coarse aggregate settles while paste rises, creating weak upper layers and voids below. Surface blowholes (small bubble cavities) indicate excess air removal and paste migration. Under-vibration leaves voids and poor consolidation. Proper vibration (20–30 seconds per placement zone) is optimum; operator training and equipment maintenance are critical for quality."
-      },
-      "explanation": null,
-      "code_citation": "ACI 301; NSCP 2015 Chapter 4",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-004-06-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fb86235cb4471f1956a3203519ceca3c5aa776f6bcfc6065cec97bd3762d3dec"
     },
     {
       "question_id": "2df09bb8-6825-4557-9bec-c792b7f29a33",
@@ -395,55 +444,6 @@
       "created_at": "2026-03-23T19:27:27.970051+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:4e9f07f330c9fd9825d404eef58892d6b967a5a185a1d84c0c3a1e7088e61922"
-    },
-    {
-      "question_id": "70c37f31-945c-467d-8c10-5878ff9b1588",
-      "article_id": "b055d93c-4f92-4608-b88b-ff729757f92e",
-      "topic_id": "fe06d85f-e319-4720-828b-e9f234448015",
-      "text": "ACI 347 specifies that formwork for horizontal spans should not be struck until concrete achieves approximately ___ percent of the design 28-day strength. Why is this timing critical in Philippine tropical climates?",
-      "options": [
-        {
-          "id": "a",
-          "text": "70%; Inadequate early strength risks sagging, cracking, and water ingress. Tropical high humidity and potential rain exposure during curing demand conservative strength targets before load application."
-        },
-        {
-          "id": "b",
-          "text": "50%; Lower strength is acceptable since tropical warmth accelerates curing, reducing the time needed for formwork removal"
-        },
-        {
-          "id": "c",
-          "text": "90%; Maximum curing delay, but necessary for durability, especially in environments with fluctuating temperatures and humidity"
-        },
-        {
-          "id": "d",
-          "text": "25%; Rapid form removal to accelerate schedule, although this may compromise structural integrity if not carefully managed"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "50% is too low; bending capacity is insufficient.",
-        "c": "90% is overly conservative; strength gain plateaus after 28 days.",
-        "d": "25% is dangerously low; failure is likely.",
-        "correct": "ACI 347 recommends 70% of 28-day strength before striking forms. In Philippine tropical climates with variable humidity, monsoon rain, and warm temperatures, early strength gain may be unpredictable. Conservative 70% threshold (achieved typically at 7–14 days for standard Portland cement) ensures safe form removal without risk of collapse or excessive deflection. Premature removal risks sagging, cracking, and water infiltration compromising durability."
-      },
-      "explanation": null,
-      "code_citation": "ACI 347R-14; NSCP 2015 Chapter 4",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-004-06-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.970051+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:655fc31ca5aa24995b900e39d9fe869baef38c184e46975f8eeeea87c15abfd6"
     },
     {
       "question_id": "587afd88-a79b-4f8b-a8c4-60c498a14927",

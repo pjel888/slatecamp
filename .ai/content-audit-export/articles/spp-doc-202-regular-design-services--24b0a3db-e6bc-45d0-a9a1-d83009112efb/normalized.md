@@ -319,7 +319,7 @@ All signboards placed at the project site during construction must be **approved
 [SLATECAMP_UI_BLOCK:ui_0011 component="ComparisonTable" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: | Preceding / Parallel Document | Relationship | |---|---| | **SPP Doc. 201** (Pre-Design Services) | Provides the Architectural Program and feasibility groundwork that feeds Phase 1 of SPP 202 | | **SPP Doc. 203** (Specialized Services) | Supplements SPP 202 for special areas (interiors, acoustic design, heritage conservation, etc.) — separately contracted and compensated | | **SPP Doc. 204-A** (Fulltime Supervision) | Engaged when the owner requires 8-hour on-site supervision beyond SPP 202's 
+- Text: | Preceding / Parallel Document | Relationship | |---|---| | **SPP Doc. 201** (Pre-Design Services) | Provides the Architectural Program and feasibility groundwork that feeds Phase 1 of SPP 202 | | **SPP Doc. 203** (Specialized Services) | Supplements SPP 202 for special areas (interiors, acoustic design, heritage conservation, etc.) — separately contracted and compensated | | **SPP Doc. 204-A** (Fulltime Supervision) | Engaged when the owner requires 8-hour on-site supervision beyond SPP 202's
 [/SLATECAMP_UI_BLOCK]
 
 ---
@@ -335,4 +335,3 @@ LEA Swipe: SPP 202 five phases and fee percentages: SD (Phase 1) = 15% of basic 
 ## Cross‑References
 
 **Spp Doc 201 Pre Design Services**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 206 Comprehensive Architectural Services**
-

@@ -131,7 +131,7 @@ Adaptive reuse often embodies fundamental tensions:
 [SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: The gentrification risk is real. Adaptive reuse in deteriorated neighborhoods often triggers property value increases, attracting investment, displacing existing residents and businesses through rising rents. Heritage preservation becomes gentrification mechanism. Without explicit anti-displacement protections (community land trusts, affordability covenants, community benefit agreements), "revitalization" erases the communities that inhabited and gave character to the district. Ethical adaptive 
+- Text: The gentrification risk is real. Adaptive reuse in deteriorated neighborhoods often triggers property value increases, attracting investment, displacing existing residents and businesses through rising rents. Heritage preservation becomes gentrification mechanism. Without explicit anti-displacement protections (community land trusts, affordability covenants, community benefit agreements), "revitalization" erases the communities that inhabited and gave character to the district. Ethical adaptive
 [/SLATECAMP_UI_BLOCK]
 
 ## Key Facts and Testable Items
@@ -224,4 +224,3 @@ Extracted summary:
 See also within Contemporary Movements & Discourse: **lea-theo-007-01-core-concept**, **lea-theo-007-02-core-concept**, **lea-theo-007-09-core-concept**, **lea-theo-007-10-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

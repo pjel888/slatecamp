@@ -1,9 +1,59 @@
 {
   "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:3e9f429459d64e780d6c6158791d78b4eedb1da8293df071456960c5c024ec48",
+  "linked_questions_hash": "sha256:3441d641b02efce749cd5eb8c001c22bc367c715d9909f71c0827747e60f1386",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "38bf0302-b729-4677-855c-48d8e3122419",
+      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
+      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
+      "text": "What is a repetitive design in architecture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Designing one unique building type, which does not involve repetition."
+        },
+        {
+          "id": "b",
+          "text": "Designing a prototype building and then reproducing that design or similar variations multiple times"
+        },
+        {
+          "id": "c",
+          "text": "A building that is designed by multiple architects, which is unrelated to repetitive design."
+        },
+        {
+          "id": "d",
+          "text": "A building with repetitive structural elements like repeated columns, which is a form of repetition but not the primary definition."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Describes designing only one building; repetitive design requires multiple versions.",
+        "c": "Multiple architects is a project management structure, not a definition of repetitive design.",
+        "d": "Refers to structural repetition (columns) within a single building, not design repetition across multiple buildings.",
+        "correct": "Repetitive designs involve designing a building prototype once and then reproducing that design or variations of it for multiple units or locations, such as apartment buildings with repeated units or residential subdivisions with the same house design.",
+        "takeaway": "Repetitive design means one prototype design is created and then reproduced (with adaptations) multiple times."
+      },
+      "explanation": "Describes designing only one building; repetitive design requires multiple versions. Multiple architects is a project management structure, not a definition of repetitive design. Refers to structural repetition (columns) within a single building, not design repetition across multiple buildings. Repetitive designs involve designing a building prototype once and then reproducing that design or variations of it for multiple units or locations, such as apartment buildings with repeated units or residential subdivisions with the same house design. Repetitive design means one prototype design is created and then reproduced (with adaptations) multiple times.",
+      "code_citation": "UAP SPP Document 205 / Architect's Guidelines",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-012-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.047156+00:00",
+      "updated_at": "2026-05-06T15:59:00.3319+00:00",
+      "content_hash": "sha256:013f73a7cc1908844d6152df951a457fefb2c504f639fff28c3e3ffb8ce2b272"
+    },
     {
       "question_id": "decdd89e-f41b-4917-94a5-4fd70a3e38a8",
       "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
@@ -453,56 +503,6 @@
       "created_at": "2026-03-23T19:27:47.047156+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:a11144c0edafb1cdc8eeffecc1acde8d4c140a51aeaef98fc07436b552e46926"
-    },
-    {
-      "question_id": "38bf0302-b729-4677-855c-48d8e3122419",
-      "article_id": "f95d5cc8-30d4-4f74-890f-1018d764da6e",
-      "topic_id": "85f4d10b-54b1-4602-93c9-1fb048d56936",
-      "text": "What is a repetitive design in architecture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Designing one unique building type, which does not involve repetition."
-        },
-        {
-          "id": "b",
-          "text": "Designing a prototype building and then reproducing that design or similar variations multiple times"
-        },
-        {
-          "id": "c",
-          "text": "A building that is designed by multiple architects, which is unrelated to repetitive design."
-        },
-        {
-          "id": "d",
-          "text": "A building with repetitive structural elements like repeated columns, which is a form of repetition but not the primary definition."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Describes designing only one building; repetitive design requires multiple versions.",
-        "c": "Multiple architects is a project management structure, not a definition of repetitive design.",
-        "d": "Refers to structural repetition (columns) within a single building, not design repetition across multiple buildings.",
-        "correct": "Repetitive designs involve designing a building prototype once and then reproducing that design or variations of it for multiple units or locations, such as apartment buildings with repeated units or residential subdivisions with the same house design.",
-        "takeaway": "Repetitive design means one prototype design is created and then reproduced (with adaptations) multiple times."
-      },
-      "explanation": null,
-      "code_citation": "UAP SPP Document 205 / Architect's Guidelines",
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CMP-012-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.047156+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d06e0b7eab670123ea2aad516c996b37b97500694022a35ebc607430389806b8"
     }
   ]
 }

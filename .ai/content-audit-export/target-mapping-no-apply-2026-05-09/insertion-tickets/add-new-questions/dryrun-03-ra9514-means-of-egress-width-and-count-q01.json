@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+  "dry_question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q01",
+  "target_article_id": null,
+  "ticket_target": "new-article-ra9514-means-of-egress-width-count-illumination",
+  "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "RA 9514 RIRR 2019, Section 10.2.5.2(F), PDF p.95.",
+    "text": "Under the general RA 9514 RIRR means-of-egress rule, what minimum width applies unless a specific occupancy division provides otherwise?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Section 10.2.5.2 paragraph F states that the width of any means of egress shall not be less than 915 mm except when specifically provided under Divisions 8 through 20.",
+      "distractors": {
+        "A": "760 mm appears in other dimensional contexts but is not this general minimum.",
+        "B": "815 mm is not the cited general egress minimum.",
+        "D": "1120 mm appears in the stair capacity equation context, not as the general minimum egress width."
+      },
+      "takeaway": "Keep the general width minimum separate from stair-capacity and occupancy-specific rules."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "ra9514-egress-q1",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "C",
+    "explanation": "RA 9514 RIRR 2019, Section 10.2.5.2(F), PDF p.95.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "760 mm"
+      },
+      {
+        "id": "B",
+        "text": "815 mm"
+      },
+      {
+        "id": "C",
+        "text": "915 mm"
+      },
+      {
+        "id": "D",
+        "text": "1120 mm"
+      }
+    ]
+  },
+  "sme_source_locator": "RA 9514 RIRR 2019, Section 10.2.5.2(F), PDF p.95.",
+  "code_citation": "RA 9514 RIRR 2019, Section 10.2.5.2(F), PDF p.95.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

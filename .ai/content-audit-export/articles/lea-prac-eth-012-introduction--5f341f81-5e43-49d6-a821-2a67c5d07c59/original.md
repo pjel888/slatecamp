@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Eth 012 Introduction** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## Introduction
 ## Learning Goal
 After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
@@ -5,24 +14,26 @@ After reading this article, you should understand the key concepts tested in the
 The distinction between ethically permissible fee-sharing and prohibited kickbacks is one of the most subtle issues in professional practice. On the surface, they appear identical: an architect receives money from a third party (supplier, contractor, or referral source) based on recommending or engaging that party's services. However, ethical analysis depends on disclosure, client benefit, and absence of profit motive that compromises professional judgment.
 
 This article examines the Code of Ethical Conduct provisions on referral fees and supplier arrangements, distinguishes legitimate cost-sharing from prohibited kickbacks, and establishes the disclosure and documentation requirements that transform questionable practices into ethical ones.
-<ArticleMedia id="media-lea-prac-eth-012-introduction" type="image" caption="Fee Arrangement Decision Matrix — Ethical vs Prohibited Payments" description="Matrix diagram with four quadrants: (1) Prohibited — Hidden commissions, contractor kickbacks, undisclosed referral fees; (2) Permitted — Disclosed cost-sharing with client credit, transparent volume discounts passed to client, disclosed commission with written consent; (3) Conditional — Referral fees where full disclosure and client consent obtained; (4) Always Prohibited — Kickbacks on government projects (RA 3019 anti-graft violations). Color-coded green/yellow/red zones." suggestedAsset="Diagram or reference image" status="placeholder" />
-<ArticleMedia id="media-lea-prac-eth-012-introduction" type="image" caption="Kickback vs Permitted Fee-Sharing — Comparison Framework" description="Two-column comparison diagram: Left column — Prohibited Kickback characteristics (hidden payment, client unaware, incentive compromises judgment, benefit to architect only, ethical violation); Right column — Permitted Fee-Sharing characteristics (full disclosure, client informed consent, merit-based recommendation, benefit to client through cost savings or credits, ethical when disclosed). Decision arrow at bottom showing that disclosure and client benefit are the key distinguishing factors." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-eth-012-introduction", type="image", caption="Fee Arrangement Decision Matrix — Ethical vs Prohibited Payments", description="Matrix diagram with four quadrants: (1) Prohibited — Hidden commissions, contractor kickbacks, undisclosed referral fees; (2) Permitted — Disclosed cost-sharing with client credit, transparent volume discounts passed to client, disclosed commission with written consent; (3) Conditional — Referral fees where full disclosure and client consent obtained; (4) Always Prohibited — Kickbacks on government projects (RA 3019 anti-graft violations). Color-coded green/yellow/red zones.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-eth-012-introduction", type="image", caption="Kickback vs Permitted Fee-Sharing — Comparison Framework", description="Two-column comparison diagram: Left column — Prohibited Kickback characteristics (hidden payment, client unaware, incentive compromises judgment, benefit to architect only, ethical violation); Right column — Permitted Fee-Sharing characteristics (full disclosure, client informed consent, merit-based recommendation, benefit to client through cost savings or credits, ethical when disclosed). Decision arrow at bottom showing that disclosure and client benefit are the key distinguishing factors.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Fundamental Principle: Client Interest Must Prevail
 
 The Code of Ethical Conduct (SPP Document 200) establishes that the architect's first duty is to the client's interest. Any arrangement with suppliers, referral sources, or consultants must satisfy this test:
 
-<Callout type="critical">
-**The Core Ethical Rule:** An architect may not accept compensation, commissions, or benefits from third parties in exchange for recommendations or referrals **unless:**
-1. The client is fully informed of the arrangement
-2. The client consents to the arrangement in writing
-3. The architect's recommendation is based on merit and client benefit, not the financial incentive
-4. All market discounts or benefits flow to the client, not the architect
-5. The arrangement does not compromise professional objectivity
-
-If any of these conditions cannot be satisfied, the arrangement is prohibited.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+Extracted summary:
+- Props: type="critical"
+- Text: **The Core Ethical Rule:** An architect may not accept compensation, commissions, or benefits from third parties in exchange for recommendations or referrals **unless:** 1. The client is fully informed of the arrangement 2. The client consents to the arrangement in writing 3. The architect's recommendation is based on merit and client benefit, not the financial incentive 4. All market discounts or benefits flow to the client, not the architect 5. The arrangement does not compromise professional
+[/SLATECAMP_UI_BLOCK]
 
 ## Category 1: Prohibited Kickbacks
 
@@ -47,13 +58,11 @@ A kickback is a payment or benefit provided to an architect in exchange for a re
 - **Ethical violation:** SPP Document 200 Article V (Responsibilities to Manufacturers, Delears, and Agents); RA 9266 Section 23 (Suspension and Revocation of Certificates of Registration)
 - **Discipline:** Suspension or revocation of license; mandatory restitution of all commissions received
 
-<ExamTip>
-  **LEA Test Point:** The harm isn't that Leax recommends the supplier—it's that
-  Leax recommends them for the wrong reason (the commission) rather than because
-  they best serve the client. If they were actually the best choice, the
-  recommendation would be ethical; the kickback makes it unethical because it
-  creates suspect motivation.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **LEA Test Point:** The harm isn't that Leax recommends the supplier—it's that Leax recommends them for the wrong reason (the commission) rather than because they best serve the client. If they were actually the best choice, the recommendation would be ethical; the kickback makes it unethical because it creates suspect motivation.
+[/SLATECAMP_UI_BLOCK]
 
 ### Type 1B: Contractor Kickbacks
 
@@ -91,13 +100,11 @@ A kickback is a payment or benefit provided to an architect in exchange for a re
 - **Ethical violation:** SPP Document 200 Article V (Responsibilities to Manufacturers, Delears, and Agents); RA 9266 Section 23
 - **Discipline:** Suspension; restitution of rebates received
 
-<Callout type='critical'>
-  **Note on Government Projects:** If any funding source is public (tax dollars,
-  government grants), kickback arrangements may violate anti-graft and corrupt
-  practices acts (such as RA 3019) beyond professional discipline. This can
-  result in criminal prosecution, imprisonment, and permanent disqualification
-  from public office or government projects.
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Callout" status="preserved"]
+Extracted summary:
+- Props: type="critical"
+- Text: **Note on Government Projects:** If any funding source is public (tax dollars, government grants), kickback arrangements may violate anti-graft and corrupt practices acts (such as RA 3019) beyond professional discipline. This can result in criminal prosecution, imprisonment, and permanent disqualification from public office or government projects.
+[/SLATECAMP_UI_BLOCK]
 
 ## Category 2: Permitted Fee-Sharing Arrangements
 
@@ -165,67 +172,19 @@ Fee-sharing is ethically permissible when:
 - Document that the recommended supplier was selected based on lowest cost and best quality, not commission
 - Consider whether commission structure undermines claims of objectivity
 
-<Callout type='important'>
-  **The Objectivity Test:** Even with disclosure and consent, a commission
-  arrangement is ethically questionable if the architect's financial incentive
-  contradicts the claim that the recommendation is merit-based. If an architect
-  receives 12% commission from Supplier A and nothing from Supplier B, can the
-  architect claim the recommendation of A is based purely on merit? Probably
-  not. Best practice is to avoid commission arrangements altogether, or if they
-  exist, to structure them so that the architect benefits only if the client's
-  interests are also served (e.g., cost savings shared equally).
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="Callout" status="preserved"]
+Extracted summary:
+- Props: type="important"
+- Text: **The Objectivity Test:** Even with disclosure and consent, a commission arrangement is ethically questionable if the architect's financial incentive contradicts the claim that the recommendation is merit-based. If an architect receives 12% commission from Supplier A and nothing from Supplier B, can the architect claim the recommendation of A is based purely on merit? Probably not. Best practice is to avoid commission arrangements altogether, or if they exist, to structure them so that the archi
+[/SLATECAMP_UI_BLOCK]
 
 ## Category 3: The Ethical Framework for Fee Arrangements
 
-<ProcessFlow>
-Use this framework to evaluate whether a fee arrangement is ethically permissible:
-
-**Step 1: Identify the arrangement**
-
-- What payment or benefit are you receiving?
-- From whom are you receiving it?
-- In exchange for what?
-
-**Step 2: Assess disclosure**
-
-- Is the client aware of the arrangement?
-- Is it in writing?
-- Does the client understand how it works?
-
-If disclosure is inadequate → **PROHIBITED**
-
-**Step 3: Assess client benefit**
-
-- Does the client benefit from the arrangement?
-- Does any cost saving or discount flow to the client?
-- Does the client receive fair value?
-
-If client receives no benefit and architect profits → **PROHIBITED**
-
-**Step 4: Assess objectivity**
-
-- Does the arrangement incentivize the recommendation independent of client benefit?
-- Could the architect's financial interest bias judgment?
-- Would the architect recommend this party if the fee arrangement didn't exist?
-
-If the financial incentive creates unreasonable bias risk → **QUESTIONABLE**
-
-**Step 5: Assess alternatives**
-
-- Could you serve the client without this arrangement?
-- Are there competing suppliers/consultants without the fee arrangement?
-- Are you being ethically selective about which parties offer fees and which don't?
-
-If you're biased toward parties that offer fees → **PROBLEMATIC**
-
-**Step 6: Decision framework**
-
-- All disclosure, client benefit, and objectivity criteria met → **PERMISSIBLE**
-- Disclosure inadequate → **PROHIBITED** (disclose immediately or cease arrangement)
-- Client receives no benefit → **PROHIBITED** (discontinue arrangement)
-- Objectivity compromised despite disclosure → **ETHICALLY QUESTIONABLE** (best practice is to cease arrangement)
-  </ProcessFlow>
+[SLATECAMP_UI_BLOCK:ui_0007 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Use this framework to evaluate whether a fee arrangement is ethically permissible: **Step 1: Identify the arrangement** - What payment or benefit are you receiving? - From whom are you receiving it? - In exchange for what? **Step 2: Assess disclosure** - Is the client aware of the arrangement? - Is it in writing? - Does the client understand how it works? If disclosure is inadequate → **PROHIBITED** **Step 3: Assess client benefit** - Does the client benefit from the arrangement? - Does any cost
+[/SLATECAMP_UI_BLOCK]
 
 ## Category 4: Specific Arrangements Under the Code of Ethics
 
@@ -247,12 +206,11 @@ Architect Helena specifies a structural steel supplier based on quality and pric
 2. **Document the discount** for each project
 3. **Not retain any portion** of the discount for her firm
 
-<Callout type='requirement'>
-  **Practical Implementation:** Best practice is to negotiate pricing that
-  already reflects volume discounts, rather than receiving discounts and
-  crediting them separately. This simplifies documentation and makes the benefit
-  transparent in the cost estimate.
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0008 component="Callout" status="preserved"]
+Extracted summary:
+- Props: type="requirement"
+- Text: **Practical Implementation:** Best practice is to negotiate pricing that already reflects volume discounts, rather than receiving discounts and crediting them separately. This simplifies documentation and makes the benefit transparent in the cost estimate.
+[/SLATECAMP_UI_BLOCK]
 
 ### Provision: Honest Representation in Professional Relationships
 
@@ -385,19 +343,11 @@ Some firms use this approach for project management scopes:
 
 The PRBoA enforces restrictions on kickbacks and commissions under RA 9266 Section 23:
 
-<ComparisonTable>
-  | Arrangement | Disclosure Status | Client Harm | Likely Discipline |
-  |---|---|---|---| | **Undisclosed kickback** | No disclosure | Significant
-  (overpayment) | Suspension or revocation; restitution | | **Hidden
-  commission** | No disclosure | Significant (biased recommendation) |
-  Suspension; restitution; potential civil liability | | **Disclosed arrangement
-  without client benefit** | Disclosed but client profits | Moderate to
-  significant | Suspension; restitution of unjust gain | | **Disclosed
-  arrangement with client benefit** | Disclosed; client benefits | Minimal
-  (client consents) | Likely no discipline if documentation clear | |
-  **Cost-sharing with client credit** | Disclosed; client receives discount |
-  None | No discipline if properly documented |
-</ComparisonTable>
+[SLATECAMP_UI_BLOCK:ui_0009 component="ComparisonTable" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: | Arrangement | Disclosure Status | Client Harm | Likely Discipline | |---|---|---|---| | **Undisclosed kickback** | No disclosure | Significant (overpayment) | Suspension or revocation; restitution | | **Hidden commission** | No disclosure | Significant (biased recommendation) | Suspension; restitution; potential civil liability | | **Disclosed arrangement without client benefit** | Disclosed but client profits | Moderate to significant | Suspension; restitution of unjust gain | | **Disclosed a
+[/SLATECAMP_UI_BLOCK]
 
 ## LEA Test Application
 

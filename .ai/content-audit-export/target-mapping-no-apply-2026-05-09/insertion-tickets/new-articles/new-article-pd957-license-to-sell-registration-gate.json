@@ -1,0 +1,39 @@
+{
+  "ticket_type": "NEW_ARTICLE_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "ticket_id": "new-article-pd957-license-to-sell-registration-gate",
+  "label": "PD 957 License to Sell Registration Gate",
+  "dry_article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+  "proposed_slug": "pd-957-license-to-sell-registration-gate",
+  "decision": "NEW_ARTICLE_TICKET",
+  "basis": "Fresh mirror found broad housing-law and DHSUD-regulatory articles, but no exact PD 957 project-registration/license-to-sell gate article.",
+  "closest_existing": [
+    {
+      "article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
+      "slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
+      "title": "Philippine Housing Law Framework",
+      "note": "broad PD 957 overview"
+    },
+    {
+      "article_id": "9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
+      "slug": "lea-plan-007-02-core-concept",
+      "title": "DHSUD is a regulatory and policy-formulating agency, not",
+      "note": "DHSUD/LTS overlap but agency-role focus"
+    }
+  ],
+  "status": "ticket_only_no_supabase_insert",
+  "dry_run_folder": "pd-957-license-to-sell-registration-gate--dryrun-08-pd957-license-to-sell-registration-gate",
+  "dry_run_article_metadata": {
+    "article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+    "title": "PD 957 License to Sell Registration Gate",
+    "slug": "pd-957-license-to-sell-registration-gate",
+    "subject_label": "Planning / Housing / Building Laws",
+    "difficulty_label": "Calibration exemplar"
+  },
+  "candidate_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/pd-957-license-to-sell-registration-gate--dryrun-08-pd957-license-to-sell-registration-gate/candidate.md",
+  "normalized_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/pd-957-license-to-sell-registration-gate--dryrun-08-pd957-license-to-sell-registration-gate/normalized.md",
+  "candidate_hash": "sha256:80e733f822e9deb994fedd44582da2fc3ed6774bafdb94e9a2bd50bebeb46d0f",
+  "candidate_word_count": 914,
+  "linked_question_count": 3,
+  "gate_lock": "No insert/apply command is authorized by this ticket."
+}

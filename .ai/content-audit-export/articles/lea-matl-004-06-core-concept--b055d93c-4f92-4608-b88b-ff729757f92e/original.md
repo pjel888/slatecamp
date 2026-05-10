@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 004 06 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -21,11 +30,11 @@ _Concrete Placement_ — Concrete is delivered by transit mixer (transit mixer c
 _Curing_ — Freshly placed concrete requires moisture and temperature control to develop strength. NSCP 2015 and ACI 318 specify minimum curing periods (typically 7 days for standard Portland cement) with maintained moisture (wet burlap, plastic sheeting, or curing compound spray). Strength gain follows a logarithmic curve: 28-day strength is the design reference, though strength continues to increase beyond.
 
 
-<ArticleMedia id="media-rc-section-diagram" layout="single" type="image" status="placeholder"
-  alt="Cross-section of a reinforced concrete beam showing rebar placement, cover, stirrups, and concrete zones in compression and tension"
-  caption="Future diagram: reinforced concrete beam cross-section — rebar layout, cover, and stress distribution"
-  suggestedAsset="Annotated cross-section of RC beam with compression/tension zones"
-  placementIntent="Visualizes how steel and concrete work compositely" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-rc-section-diagram", layout="single", type="image", status="placeholder", alt="Cross-section of a reinforced concrete beam showing rebar placement, cover, stirrups, and concrete zones in compression and tension", caption="Future diagram: reinforced concrete beam cross-section — rebar layout, cover, and stress distribution", suggestedAsset="Annotated cross-section of RC beam with compression/tension zones", placementIntent="Visualizes how steel and concrete work compositely"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Precast Concrete Construction
 
@@ -40,11 +49,11 @@ _Columns_ — Precast square or rectangular columns with embedded socket connect
 _Wall Panels_ — Large precast panels (e.g., 3–4 m wide × 4–6 m tall) form exterior cladding or load-bearing walls. Reduces on-site formwork significantly. Connections are typically bolted or grouted, requiring careful alignment.
 
 
-<ArticleMedia id="media-precast-connection-details" layout="single" type="image" status="placeholder"
-  alt="Detail drawings of precast connections: bolted, grouted, welded, and socket connections for beams, columns, and wall panels"
-  caption="Future diagram: precast concrete connection details — wet and dry connection types"
-  suggestedAsset="Architectural detail drawings of precast connections"
-  placementIntent="Shows how precast elements connect in the field" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-precast-connection-details", layout="single", type="image", status="placeholder", alt="Detail drawings of precast connections: bolted, grouted, welded, and socket connections for beams, columns, and wall panels", caption="Future diagram: precast concrete connection details — wet and dry connection types", suggestedAsset="Architectural detail drawings of precast connections", placementIntent="Shows how precast elements connect in the field"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Precast Connections
 
@@ -97,19 +106,34 @@ The LEA evaluates RC construction through:
 6. _Connection design_ — Specify wet or dry precast connections based on structural continuity requirements and schedule.
 7. _Philippine standards alignment_ — Apply NSCP 2015 Chapter 4 and precast provisions.
 
-<Tip>Cast-in-place dominates Philippine construction due to labor cost and site customization advantages. Precast excels for high-volume repetitive elements (hollow-core slabs, DT beams) where transportation and assembly logistics are favorable. Wet (grouted) connections are the norm for structural continuity; dry connections require precision fabrication and careful installation. ACI 347 stripping times (typically 70% of 28-day strength for horizontal spans) govern form removal scheduling.</Tip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Cast-in-place dominates Philippine construction due to labor cost and site customization advantages. Precast excels for high-volume repetitive elements (hollow-core slabs, DT beams) where transportation and assembly logistics are favorable. Wet (grouted) connections are the norm for structural continuity; dry connections require precision fabrication and careful installation. ACI 347 stripping times (typically 70% of 28-day strength for horizontal spans) govern form removal scheduling.
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard title="Insufficient Concrete Cover Allowing Early Corrosion" body="Rebar is placed only 20 mm from the surface instead of the specified 40–50 mm. Carbonation of exposed concrete (especially in humid, polluted urban environments like Metro Manila) reaches the rebar within 5–10 years, causing rust expansion and spalling. Always verify rebar placement against design drawings and specification." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Insufficient Concrete Cover Allowing Early Corrosion", body="Rebar is placed only 20 mm from the surface instead of the specified 40–50 mm. Carbonation of exposed concrete (especially in humid, polluted urban environments like Metro Manila) reaches the rebar within 5–10 years, causing rust expansion and spalling. Always verify rebar placement against design drawings and specification."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeCard title="Premature Form Removal Before Strength Gain" body="Forms are struck at 3 days (before ACI 347 minimum of ~70% strength) to accelerate schedule. Concrete sags, cracks develop in tension zones, and water ingress compromises durability. Strict adherence to ACI 347 strength-based removal criteria is essential, especially in tropical climates where variable curing conditions are common." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: title="Premature Form Removal Before Strength Gain", body="Forms are struck at 3 days (before ACI 347 minimum of ~70% strength) to accelerate schedule. Concrete sags, cracks develop in tension zones, and water ingress compromises durability. Strict adherence to ACI 347 strength-based removal criteria is essential, especially in tropical climates where variable curing conditions are common."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList items={["Assuming precast is always faster than CIP—precast requires factory production time, transportation logistics, and careful on-site assembly. Small projects may be faster with CIP; large repetitive projects favor precast.", "Omitting proper vibration or over-vibrating concrete—under-vibration leaves voids and weak zones; over-vibration causes segregation and surface blowholes. Operator training and equipment maintenance are critical.", "Specifying wet precast connections without accounting for grout curing delay—grouted joints require 7–14 days before load application. Schedule accordingly, or switch to dry (bolted) connections for immediate load transfer.", "Neglecting Philippine tropical curing conditions—high humidity reduces evaporation but rain exposure can wash off surface mortar. Curing compound spray is practical for Philippine rainy seasons.", "Over-specifying concrete strength (e.g., f'c = 35 MPa when f'c = 28 MPa suffices) to ensure durability—only increase strength if design loads or durability analysis (Section 402) requires it. Higher strength increases cost and heat of hydration."]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: items="{[\"Assuming precast is always faster than CIP—precast requires factory production time, transportation logistics, and careful on-site assembly. Small projects may be faster with CIP; large repetitive projects favor precast.\", \"Omitting proper vibration or over-vibrating concrete—under-vibration leaves voids and weak zones; over-vibration causes segregation and surface blowholes. Operator training and equipment maintenance are critical.\", \"Specifying wet precast connections without accounting for grout curing delay—grouted joints require 7–14 days before load application. Schedule accordingly, or switch to dry (bolted) connections for immediate load transfer.\", \"Neglecting Philippine tropical curing conditions—high humidity reduces evaporation but rain exposure can wash off surface mortar. Curing compound spray is practical for Philippine rainy seasons.\", \"Over-specifying concrete strength (e.g., f'c = 35 MPa when f'c = 28 MPa suffices) to ensure durability—only increase strength if design loads or durability analysis (Section 402) requires it. Higher strength increases cost and heat of hydration.\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also within Construction Systems and Methods: **lea-matl-004-07-core-concept**, **lea-matl-004-08-core-concept**, **lea-matl-004-09-core-concept**, **lea-matl-004-10-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

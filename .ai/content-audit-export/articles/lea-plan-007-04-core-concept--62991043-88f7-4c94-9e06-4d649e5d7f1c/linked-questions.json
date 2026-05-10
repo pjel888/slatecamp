@@ -1,9 +1,64 @@
 {
   "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:9a69b2952c10592d239d3b0fc48b99f61d02c3952cc4451d10263c1031c03004",
+  "linked_questions_hash": "sha256:c722ef7c9e467cc881bf436f41a82df18a3dd382d9f662e344186c94cd4e3e73",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "ffdb6c40-0702-406f-a7e6-33d778279630",
+      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
+      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
+      "text": "If a conflict arose between NHA's resettlement program and Pag-IBIG's loan affordability criteria in the 1990s–2010s, which body would have been responsible for mediating inter-agency conflict?",
+      "options": [
+        {
+          "id": "a",
+          "text": "HUDCC—the coordinating council designed to harmonize programs among housing agencies"
+        },
+        {
+          "id": "b",
+          "text": "The President's Cabinet alone, with no dedicated coordination mechanism, relying on executive intervention"
+        },
+        {
+          "id": "c",
+          "text": "HLURB—the regulatory board, tasked with overseeing compliance and resolving disputes"
+        },
+        {
+          "id": "d",
+          "text": "Individual agencies would resolve it directly without coordination, leading to potential inconsistencies"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "HUDCC's function was to bring agencies together to resolve conflicts and align programs. Inter-agency disputes over housing policy were within HUDCC's mandate.",
+        "b": "While the Cabinet could intervene, HUDCC was the designed mechanism for housing-specific coordination.",
+        "c": "HLURB regulated developers, not inter-agency conflicts.",
+        "d": "Uncoordinated individual agency actions could create conflicts—HUDCC existed to prevent this.",
+        "correct": "HUDCC's function was to bring agencies together to resolve conflicts and align programs. Inter-agency disputes over housing policy were within HUDCC's mandate.",
+        "takeaway": "HUDCC = inter-agency conflict resolution and policy harmonization."
+      },
+      "explanation": "HUDCC's function was to bring agencies together to resolve conflicts and align programs. Inter-agency disputes over housing policy were within HUDCC's mandate. While the Cabinet could intervene, HUDCC was the designed mechanism for housing-specific coordination. HLURB regulated developers, not inter-agency conflicts. Uncoordinated individual agency actions could create conflicts—HUDCC existed to prevent this. HUDCC's function was to bring agencies together to resolve conflicts and align programs. Inter-agency disputes over housing policy were within HUDCC's mandate. HUDCC = inter-agency conflict resolution and policy harmonization.",
+      "code_citation": "HUDCC charter and functions",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "coordination mechanisms",
+        "governance structure",
+        "agency collaboration"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-007-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:07.576522+00:00",
+      "updated_at": "2026-05-06T16:21:46.653747+00:00",
+      "content_hash": "sha256:2dadc8803948c27384a4207cda99b79815918e28983291580ad75072cf15e902"
+    },
     {
       "question_id": "09c55602-d84a-444a-8b4e-6a7085f1cbad",
       "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
@@ -94,7 +149,7 @@
         "correct": "A multi-agency system requires coordination because agencies have specialized but potentially conflicting mandates. HUDCC ensured NHA's resettlement targets, Pag-IBIG's loan affordability criteria, SHFC's community focus, and others aligned toward complementary rather than contradictory goals.",
         "takeaway": "HUDCC existed because specialization requires coordination to prevent conflicts."
       },
-      "explanation": null,
+      "explanation": "A multi-agency system requires coordination because agencies have specialized but potentially conflicting mandates. HUDCC ensured NHA's resettlement targets, Pag-IBIG's loan affordability criteria, SHFC's community focus, and others aligned toward complementary rather than contradictory goals. The agencies serve different functions; elimination of specialization would reduce effectiveness. HUDCC was a coordinating body, not a regulator. It had no authority over agencies. Specialization is maintained; coordination bridges the agencies. A multi-agency system requires coordination because agencies have specialized but potentially conflicting mandates. HUDCC ensured NHA's resettlement targets, Pag-IBIG's loan affordability criteria, SHFC's community focus, and others aligned toward complementary rather than contradictory goals. HUDCC existed because specialization requires coordination to prevent conflicts.",
       "code_citation": "Philippine housing governance structure",
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -110,8 +165,8 @@
       "model_id": "ALE-PLAN-007-04-007",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:dce98868c506a4da64dfd6d3b3ed4f369e8b09d813f3488b445288b40a99ecfb"
+      "updated_at": "2026-05-06T16:21:46.325543+00:00",
+      "content_hash": "sha256:1e66a7ab1423c37d9226c71bda02c9917648f48c414de88e5d2f793afde06ecd"
     },
     {
       "question_id": "7fa788b1-8c72-4ea9-996e-023cc8cd8a86",
@@ -149,7 +204,7 @@
         "correct": "A balanced housing system requires different agencies serving different segments. Without HUDCC coordination, NHA's resettlement could displace communities that SHFC/CMP was trying to upgrade in place. HUDCC aligned these different approaches toward complementary—not contradictory—outcomes.",
         "takeaway": "HUDCC coordination = specialized agencies achieving balanced, non-contradictory outcomes."
       },
-      "explanation": null,
+      "explanation": "Uncoordinated agencies risk conflicts (e.g., overlapping resettlement, duplicated funding). A balanced housing system requires different agencies serving different segments. Without HUDCC coordination, NHA's resettlement could displace communities that SHFC/CMP was trying to upgrade in place. HUDCC aligned these different approaches toward complementary—not contradictory—outcomes. Specialization was maintained; HUDCC coordinated specialized agencies. HUDCC preserved specialized roles while ensuring their alignment. A balanced housing system requires different agencies serving different segments. Without HUDCC coordination, NHA's resettlement could displace communities that SHFC/CMP was trying to upgrade in place. HUDCC aligned these different approaches toward complementary—not contradictory—outcomes. HUDCC coordination = specialized agencies achieving balanced, non-contradictory outcomes.",
       "code_citation": "HUDCC charter, Philippine housing policy",
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -165,8 +220,8 @@
       "model_id": "ALE-PLAN-007-04-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:63c94044b1ad9c42b5cdcf6dc8a9afe61d274133adac8bafc9a9013f712cd4cc"
+      "updated_at": "2026-05-06T16:21:46.517883+00:00",
+      "content_hash": "sha256:62e69c351b03fda1bcf93ef6fa0065a000a3b771e947b8e6cada2ebb3dd28051"
     },
     {
       "question_id": "d99723ed-9fc1-4231-8c18-f85de622e05c",
@@ -434,61 +489,6 @@
       "created_at": "2026-03-23T19:29:07.576522+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:4482d5e2d3fe523aa280671c6e24533757ee7cbe35476836571f8fae1fb84b65"
-    },
-    {
-      "question_id": "ffdb6c40-0702-406f-a7e6-33d778279630",
-      "article_id": "62991043-88f7-4c94-9e06-4d649e5d7f1c",
-      "topic_id": "41982ad6-9e91-402e-ad02-be8237e72f80",
-      "text": "If a conflict arose between NHA's resettlement program and Pag-IBIG's loan affordability criteria in the 1990s–2010s, which body would have been responsible for mediating inter-agency conflict?",
-      "options": [
-        {
-          "id": "a",
-          "text": "HUDCC—the coordinating council designed to harmonize programs among housing agencies"
-        },
-        {
-          "id": "b",
-          "text": "The President's Cabinet alone, with no dedicated coordination mechanism, relying on executive intervention"
-        },
-        {
-          "id": "c",
-          "text": "HLURB—the regulatory board, tasked with overseeing compliance and resolving disputes"
-        },
-        {
-          "id": "d",
-          "text": "Individual agencies would resolve it directly without coordination, leading to potential inconsistencies"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "HUDCC's function was to bring agencies together to resolve conflicts and align programs. Inter-agency disputes over housing policy were within HUDCC's mandate.",
-        "b": "While the Cabinet could intervene, HUDCC was the designed mechanism for housing-specific coordination.",
-        "c": "HLURB regulated developers, not inter-agency conflicts.",
-        "d": "Uncoordinated individual agency actions could create conflicts—HUDCC existed to prevent this.",
-        "correct": "HUDCC's function was to bring agencies together to resolve conflicts and align programs. Inter-agency disputes over housing policy were within HUDCC's mandate.",
-        "takeaway": "HUDCC = inter-agency conflict resolution and policy harmonization."
-      },
-      "explanation": null,
-      "code_citation": "HUDCC charter and functions",
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "coordination mechanisms",
-        "governance structure",
-        "agency collaboration"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-007-04-004",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:07.576522+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c784293fa248afc39f75ec2361edc897d9114d70d06f39939867f1e177ee7bbc"
     },
     {
       "question_id": "c0ae348b-fb1d-41de-8b7d-13761ef6f907",

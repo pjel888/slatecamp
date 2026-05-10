@@ -1,0 +1,38 @@
+{
+  "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "slug": "bp-344-ramp-slope-tiers",
+  "generated_at": "2026-05-09T16:22:19.930Z",
+  "old_hash": "sha256:3205392462f9fbf67cac6b71e6d34610d86edeb9a8181186837cf8431df8cc41",
+  "new_hash": "sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103",
+  "original_hash": "sha256:3205392462f9fbf67cac6b71e6d34610d86edeb9a8181186837cf8431df8cc41",
+  "normalized_hash": "sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103",
+  "candidate_hash": "sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103",
+  "changed": true,
+  "changed_line_count": 268,
+  "inserted_line_count": 0,
+  "deleted_line_count": 215,
+  "ui_blocks_original_count": 0,
+  "ui_blocks_candidate_count": 0,
+  "ui_blocks_changed_count": 0,
+  "ui_blocks_count": 0,
+  "unresolved_placeholders_count": 0,
+  "preserved_blocks_count": 0,
+  "changed_text_summary": {
+    "changed": 268,
+    "inserted": 0,
+    "deleted": 215,
+    "original_line_count": 280,
+    "candidate_line_count": 65
+  },
+  "changed_ui_blocks_summary": {
+    "missing_block_ids": [],
+    "changed_count": 0
+  },
+  "locally_safe_to_push": true,
+  "safe_to_push": true,
+  "blockers": [],
+  "warnings": [
+    "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+  ],
+  "summary": "Locally safe after recomposition; remote stale check still required before push."
+}

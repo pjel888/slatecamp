@@ -1,21 +1,23 @@
 {
-  "attempted_at": "2026-05-04T09:13:17.867Z",
+  "attempted_at": "2026-05-10T02:58:33.277Z",
   "dry_run": false,
   "apply": true,
-  "pushed": false,
-  "blockers": [
-    "candidate.md matches original.md; refusing no-op apply."
+  "pushed": true,
+  "blockers": [],
+  "warnings": [
+    "Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.",
+    "Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.",
+    "--repair-placeholders treats --note as an operational note; it was not written to public updated_note."
   ],
-  "warnings": [],
-  "updated_rows_count": 0,
+  "updated_rows_count": 1,
   "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
   "slug": "lea-prac-eth-010-introduction",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
-  "remote_hash_before": "sha256:f55b3c1d84f3bb345e6fe9494cf388c90daceedc99bda32cdba533f0310ccbb0",
-  "original_hash": "sha256:f55b3c1d84f3bb345e6fe9494cf388c90daceedc99bda32cdba533f0310ccbb0",
-  "candidate_hash": "sha256:f55b3c1d84f3bb345e6fe9494cf388c90daceedc99bda32cdba533f0310ccbb0",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:4e0bfeb574258e913d1232c3b7abffe1541282a0baddd0d245bf43a6ba75544c",
+  "original_hash": "sha256:4e0bfeb574258e913d1232c3b7abffe1541282a0baddd0d245bf43a6ba75544c",
+  "candidate_hash": "sha256:2c40a94542fcd72c6da28cf157eebbc1e71c50c5e8f2c209cf5bc1d5ac5c1336",
   "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-04T02:20:00.227022+00:00"
+  "remote_updated_at_before": "2026-05-06T09:32:49.689976+00:00",
+  "repair_mode": "placeholder_content",
+  "updated_at_after": "2026-05-10T02:58:33.63894+00:00"
 }

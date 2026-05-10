@@ -1,0 +1,508 @@
+{
+  "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:3b2b6afe53e8e979fbc7982768931072db9605c76fadcce405ca51437cc64d22",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "515ee63e-bb82-4862-96de-7ae8d95638e0",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "What is the minimum total length of a 180° hook on a 25 mm diameter bar, measured from the tip of one end to the tip of the other end?",
+      "options": [
+        {
+          "id": "a",
+          "text": "150 mm"
+        },
+        {
+          "id": "b",
+          "text": "200 mm"
+        },
+        {
+          "id": "c",
+          "text": "300 mm"
+        },
+        {
+          "id": "d",
+          "text": "400 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "150 mm is the absolute minimum for hook length (some codes use this as a minimum cap), but 12db = 300 mm for 25 mm bar.",
+        "b": "200 mm is too short for a 25 mm bar.",
+        "d": "400 mm exceeds 12db.",
+        "correct": "For a 25 mm bar (NSCP 7.1.1), the 180° hook total length is approximately 12db. So: 12 × 25 = 300 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 7.1.1 (Standard Hooks — 180° hook geometry)",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da2c12413dd1ed3006c1955942059ff1756d2bf020e2ad623fd0d29fc3461e40"
+    },
+    {
+      "question_id": "1ef88733-edbd-4739-95fd-f726a3cbef11",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "What is the minimum extension length from the inside of the bend for a 90° stirrup hook with 16 mm diameter ties?",
+      "options": [
+        {
+          "id": "a",
+          "text": "64 mm"
+        },
+        {
+          "id": "b",
+          "text": "96 mm"
+        },
+        {
+          "id": "c",
+          "text": "192 mm"
+        },
+        {
+          "id": "d",
+          "text": "128 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "64 mm = 4db, which is the inside bend diameter (not extension) for ≤16 mm stirrups.",
+        "c": "192 mm = 12db, which is the extension for 90° longitudinal hooks, not stirrup hooks.",
+        "d": "128 mm = 8db, which applies to 28 mm bars, not 16 mm ties.",
+        "correct": "For 90° stirrup hooks with ties ≤16 mm, the extension length is 6db (NSCP 7.1.1). For 16 mm ties: 6 × 16 = 96 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 7.1.1 (Standard Hooks — 90° stirrup hooks ≤16 mm)",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a4e99f0006ede92ed55ab1151f19675bd93f57ecd06d2908f7e9a70a74af65d2"
+    },
+    {
+      "question_id": "4646d684-00e6-4bd3-b296-b03ec949c810",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "For stirrup ties of 25 mm diameter with 90° hooks, what is the minimum inside bend diameter (db)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 mm"
+        },
+        {
+          "id": "b",
+          "text": "150 mm"
+        },
+        {
+          "id": "c",
+          "text": "200 mm"
+        },
+        {
+          "id": "d",
+          "text": "250 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "100 mm = 4db, which applies to stirrups ≤16 mm, not 20–25 mm.",
+        "c": "200 mm = 8db, which applies to longitudinal bars 28 mm and 32 mm.",
+        "d": "250 mm = 10db, which applies to 36 mm longitudinal bars.",
+        "correct": "For 90° stirrup hooks with ties 20–25 mm, the minimum inside diameter is 6db (NSCP 7.1.2). For a 25 mm tie: 6 × 25 = 150 mm. Larger stirrups require wider bends.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 7.1.2 (Minimum Bend Diameters — stirrups 20–25 mm)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9acc7eb43b7a5b2fd0ea0510d80966f0b299480d7cb625891da0bd27e2abced9"
+    },
+    {
+      "question_id": "64f3fba8-34f8-4bfd-b2e6-8f5facda2bd1",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "A 180° hook on a 16 mm diameter bar has a minimum extension length of __db. What is this value?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2db"
+        },
+        {
+          "id": "b",
+          "text": "4db"
+        },
+        {
+          "id": "c",
+          "text": "6db"
+        },
+        {
+          "id": "d",
+          "text": "8db"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2db is not a standard value in NSCP.",
+        "c": "6db is the extension for stirrup hooks ≤16 mm or seismic hooks.",
+        "d": "8db applies to 180° hooks with extensions on both sides (2 × 4db).",
+        "correct": "The extension length (measured from inside of bend to end of bar) for 180° hooks is 4db, regardless of bar size (NSCP 7.1.1). For a 16 mm bar: 4 × 16 = 64 mm. The extension on one side is 4db; since a 180° hook has extensions on both sides, total extension = 8db.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 7.1.1 (Standard Hooks — 180° extension length)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1f9727dfe38c3bcbabc4ad9888c94c46a51dc3f3078f45f517e80618085a20bc"
+    },
+    {
+      "question_id": "858c80c6-c604-4330-a4dc-400f40da07d7",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "A 180° standard hook is formed on a 20 mm diameter bar. What is the minimum inside bend diameter (db) required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80 mm"
+        },
+        {
+          "id": "b",
+          "text": "120 mm"
+        },
+        {
+          "id": "c",
+          "text": "240 mm"
+        },
+        {
+          "id": "d",
+          "text": "160 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "120 mm = 6db, which is for 90° longitudinal hooks or stirrups ≥20 mm, not 180° hooks.",
+        "c": "240 mm = 12db, which is for 90° longitudinal hooks (inside diameter), not 180° hooks.",
+        "d": "160 mm = 8db, which applies to 28 mm and 32 mm bars, not 20 mm.",
+        "correct": "For 180° hooks on 20 mm bars (Grade 50/60), the minimum inside diameter is 6db (NSCP 2015 §425.3.1 Table 425-3.1). For a 20 mm bar: 6 × 20 = 120 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 7.1.2 (Minimum Bend Diameters — 180° hook)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:66645ee55435caec0f5c54bf18d465b0506a8a631c5cd30f56215e07ae215591"
+    },
+    {
+      "question_id": "fb0ae8fc-f747-4f6b-8a7a-315179a37b37",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "A 36 mm diameter longitudinal bar requires a 90° hook at the end. What is the minimum inside bend diameter (db)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "144 mm"
+        },
+        {
+          "id": "b",
+          "text": "216 mm"
+        },
+        {
+          "id": "c",
+          "text": "360 mm"
+        },
+        {
+          "id": "d",
+          "text": "288 mm"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "144 mm = 4db, which applies to 180° hooks or small bars, not large 36 mm bars.",
+        "b": "216 mm = 6db, which applies to bars up to 25 mm, not 36 mm.",
+        "d": "288 mm = 8db, which applies to 28 mm and 32 mm bars, not 36 mm.",
+        "correct": "For 36 mm bars (#11), the minimum inside bend diameter for 90° hook is 8db (NSCP 2015 §425.3.1 Table 425-3.1). For a 36 mm bar: 8 × 36 = 288 mm. Larger bars require wider bends to prevent concrete crushing.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 7.1.2 (Minimum Bend Diameters — 36 mm bar)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:83be8337f4297bf11bfff7f38f564c304e6aab7aa1b7d9ddd71057b271802393"
+    },
+    {
+      "question_id": "897ab3f6-8a98-4471-9643-d721bbe5aee3",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "In seismic column design for an SMRF (Special Moment Resisting Frame), the confinement hoops require a seismic hook. What is the required bend angle and minimum extension length?",
+      "options": [
+        {
+          "id": "a",
+          "text": "90° bend, 4db extension, typically used in non-seismic zones where lateral forces are minimal"
+        },
+        {
+          "id": "b",
+          "text": "135° bend, 6db extension (min 75 mm)"
+        },
+        {
+          "id": "c",
+          "text": "180° bend, 8db extension, often specified for extreme seismic conditions to ensure maximum confinement"
+        },
+        {
+          "id": "d",
+          "text": "90° bend, 12db extension, which is generally applied in high-rise buildings to accommodate additional load"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "90° bend is standard for non-seismic stirrups, not seismic columns (ERR-STRC-014).",
+        "c": "180° bend is for longitudinal bar anchorage, not stirrup/hoop confinement.",
+        "d": "12db extension applies to longitudinal 90° hooks, not seismic hoops.",
+        "correct": "Seismic hoops in SMRF columns require 135° bend angle with 6db extension, with an absolute minimum of 75 mm (NSCP 12.13.5, ACI 318-19 § 18.6). This ensures tight, closed confinement and prevents bar buckling.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 12.13.5 (Seismic Column Confinement — SMRF)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:07a9ed0955f04c8ca5361c906a49b2d327304258f8db7ea83e5e712efa6f560c"
+    },
+    {
+      "question_id": "3ebec821-c978-47d0-bb83-969e334bd40d",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "A designer uses 90° hooks for column confinement hoops in a seismic frame. Is this correct per NSCP seismic provisions, and what should it be?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 90° is correct, as long as additional reinforcement is provided to compensate for the reduced hook angle"
+        },
+        {
+          "id": "b",
+          "text": "No; seismic hoops must use 135° hooks (ERR-STRC-014)."
+        },
+        {
+          "id": "c",
+          "text": "90° is acceptable if the extension is increased to 12db, provided that the overall structural integrity is not compromised"
+        },
+        {
+          "id": "d",
+          "text": "No; seismic hoops must use 180° hooks, ensuring maximum confinement and structural resilience during seismic events"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "90° hooks are standard for non-seismic stirrups, not seismic confinement.",
+        "c": "Increasing extension to 12db does not make 90° hooks compliant for seismic design.",
+        "d": "180° hooks are for longitudinal bar anchorage, not stirrups.",
+        "correct": "Seismic column confinement hoops in SMRF frames must use 135° bend angle, not 90° (NSCP 12.13.5). This error (ERR-STRC-014) is one of the most common seismic mistakes. The 135° hook closes the loop more tightly and prevents bar buckling.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": "90° hooks are standard for non-seismic stirrups, not seismic confinement. Increasing extension to 12db does not make 90° hooks compliant for seismic design. 180° hooks are for longitudinal bar anchorage, not stirrups. Seismic column confinement hoops in SMRF frames must use 135° bend angle, not 90° (NSCP 12.13.5). This error (ERR-STRC-014) is one of the most common seismic mistakes. The 135° hook closes the loop more tightly and prevents bar buckling. Review the correct answer and associated code provision.",
+      "code_citation": "NSCP 2015 § 12.13.5 (Seismic Confinement — 135° hooks required)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-05-06T15:06:23.380178+00:00",
+      "content_hash": "sha256:f5dc2dd7133cd6adf61d08abd6acf136a70f6c2f13efa6f1ac5a31052ac17681"
+    },
+    {
+      "question_id": "549ff6ec-d7c4-4fcf-8a3b-674f3c9e2632",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "An engineer specifies a 180° hook on a 20 mm bar with 40 mm extension length and 4db inside diameter. Is this hook compliant with NSCP minimum requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, compliant, as it meets the basic criteria for hook specifications"
+        },
+        {
+          "id": "b",
+          "text": "No; extension is too short (minimum 4db = 80 mm required)."
+        },
+        {
+          "id": "c",
+          "text": "Yes, but hook can be simplified to 90°, which may reduce material usage"
+        },
+        {
+          "id": "d",
+          "text": "No; inside diameter is too large (minimum 2db = 40 mm), which can affect structural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The hook violates the extension requirement.",
+        "c": "The hook is non-compliant due to insufficient extension; it cannot be simplified without meeting all requirements.",
+        "d": "Inside diameter 4db = 80 mm is correct; the problem is extension, not diameter.",
+        "correct": "The 180° hook requires 4db inside diameter (4 × 20 = 80 mm, compliant) and 4db extension (4 × 20 = 80 mm minimum required). The specified 40 mm extension is only half the code requirement. Hook is non-compliant; extension must be at least 80 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 7.1.1 (Standard Hooks — 180° requirements)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:68b75967117c825b7922b8deb4aa4e29b884d6db67457995b4428e1b4c650f64"
+    },
+    {
+      "question_id": "566dec00-4d8d-4f21-844b-cb975f49cd37",
+      "article_id": "916404b9-8f62-40ab-a275-335da247ce2e",
+      "topic_id": "58d08a85-4255-4666-a9d4-5e33b4434d93",
+      "text": "Compare the inside bend diameter requirements: a 90° longitudinal hook on a 20 mm bar vs. a 90° stirrup hook on a 20 mm tie.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both require 6db, ensuring consistency in bending requirements across different hook types"
+        },
+        {
+          "id": "b",
+          "text": "Longitudinal 12db; Stirrup 6db."
+        },
+        {
+          "id": "c",
+          "text": "Longitudinal 6db; Stirrup 4db, which is standard for smaller diameter ties"
+        },
+        {
+          "id": "d",
+          "text": "Longitudinal 4db; Stirrup 6db, reflecting the different stress conditions in ties"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both are NOT 6db; longitudinal is 12db.",
+        "c": "Reverses the values.",
+        "d": "Stirrup is 6db (20 mm = ≥20 mm tier), not 4db (which is ≤16 mm tier).",
+        "correct": "90° longitudinal hooks have inside bend diameter 6db, but extension length beyond bend is 12db (NSCP 2015 §425.3.1). 90° stirrup hooks on 20 mm ties have 6db (NSCP 7.1.2, tier: 20–25 mm). For a 20 mm bar: longitudinal = 240 mm, stirrup = 120 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 §425.3.1 Table 425-3.1 (Standard Hook Geometry - Longitudinal vs. Stirrup hooks)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:362b7ad5a90e8544b19252e5daf1686b256d7075b0f632fed193e070b30662ee"
+    }
+  ]
+}

@@ -26,7 +26,7 @@ Calculate minimum required widths for corridors, aisles, exit passageways, and r
 | **1:20** | 5.0%      | – (no rise limit stated) | –                | Landings every **15.0 m**.[file:2] |
 | **1:15** | 6.67%     | **10.50 m**              | **700 mm**       | Landings every **10.0 m**.[file:2] |
 
-- Formula: \(\text{Run} = \text{Rise} \times \text{Slope Ratio}\).  
+- Formula: \(\text{Run} = \text{Rise} \times \text{Slope Ratio}\).
   Example: \(700 \times 15 = 10{,}500\) mm = **10.50 m**.[file:2]
 
 **Landings**

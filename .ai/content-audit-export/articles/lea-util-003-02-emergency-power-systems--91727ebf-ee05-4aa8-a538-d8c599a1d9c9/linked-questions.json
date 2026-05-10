@@ -1,9 +1,109 @@
 {
   "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:dabf1c20e1a8c77af427307c79bf932f18ac5e49f3b1b684aab4ae1e098cd2b0",
+  "linked_questions_hash": "sha256:129e27a43b4ae11d56c4bb756a2b15c18348e03106e14ba6e8038bf85b36949e",
   "question_count": 15,
   "questions": [
+    {
+      "question_id": "d542544c-6183-4423-88ab-84e86b445fcc",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A diesel fuel storage tank for a building's emergency generator holds 20,000 liters. The tank is located in a dedicated fuel storage area within the generator room. According to Philippine environmental protection standards, what is the minimum secondary containment capacity required to prevent soil and groundwater contamination in case of tank rupture?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 16,000 liters (80% of tank capacity)"
+        },
+        {
+          "id": "b",
+          "text": "B. 20,000 liters (100% of tank capacity)"
+        },
+        {
+          "id": "c",
+          "text": "C. 22,000 liters (110% of tank capacity)"
+        },
+        {
+          "id": "d",
+          "text": "D. 30,000 liters (150% of tank capacity)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "80% containment is insufficient to prevent environmental contamination if tank ruptures.",
+        "b": "100% containment provides no safety margin and does not meet Philippine environmental protection standards.",
+        "d": "150% containment significantly exceeds environmental standards and represents unnecessary cost without proportional environmental benefit.",
+        "correct": "Philippine environmental protection standards and PEC generator installation guidelines require secondary containment sized for 110% of the tank volume. For a 20,000-liter tank: 20,000 liters × 1.10 = 22,000 liters minimum secondary containment. This 10% safety margin accommodates tank rupture or overflow while preventing fuel leaks from contaminating soil and groundwater. The containment area must be inspected annually and tested for structural integrity.",
+        "takeaway": "Fuel storage secondary containment must equal 110% of tank capacity per Philippine environmental standards to prevent soil and groundwater contamination during tank failure."
+      },
+      "explanation": "80% containment is insufficient to prevent environmental contamination if tank ruptures. 100% containment provides no safety margin and does not meet Philippine environmental protection standards. 150% containment significantly exceeds environmental standards and represents unnecessary cost without proportional environmental benefit. Philippine environmental protection standards and PEC generator installation guidelines require secondary containment sized for 110% of the tank volume. For a 20,000-liter tank: 20,000 liters × 1.10 = 22,000 liters minimum secondary containment. This 10% safety margin accommodates tank rupture or overflow while preventing fuel leaks from contaminating soil and groundwater. The containment area must be inspected annually and tested for structural integrity. Fuel storage secondary containment must equal 110% of tank capacity per Philippine environmental standards to prevent soil and groundwater contamination during tank failure.",
+      "code_citation": "Philippine Environmental Code; PEC Generator Installation Standards; Environmental Protection Requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T15:56:00.326621+00:00",
+      "content_hash": "sha256:899d37c499ebf13d4d64faa578b60664ffdceacba4cc35e32216741ecea334f0"
+    },
+    {
+      "question_id": "2ab35a6f-b37d-4dbd-b6fa-bea8a6ae4950",
+      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
+      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
+      "text": "A building's data center requires continuous protection from voltage disturbances and harmonics caused by Meralco fluctuations (±5-10% variation from nominal). Which UPS topology provides the highest protection level against these power quality issues despite efficiency trade-offs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Offline (standby) UPS with 98% efficiency and detection delay, suitable for non-critical applications"
+        },
+        {
+          "id": "b",
+          "text": "B. Line-interactive UPS with autotransformer voltage regulation and 94-97% efficiency, offering moderate protection"
+        },
+        {
+          "id": "c",
+          "text": "C. Online double conversion UPS with continuous AC-DC-AC conversion and 90-94% efficiency"
+        },
+        {
+          "id": "d",
+          "text": "D. Hybrid UPS combining offline and online modes for balanced efficiency, though it may not provide the highest level of protection"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Offline UPS provides no protection until failure detection occurs; it is unsuitable for sensitive equipment during Meralco voltage fluctuations.",
+        "b": "Line-interactive UPS offers good compromise between protection and efficiency but does not provide complete isolation from voltage disturbances like online UPS.",
+        "d": "Hybrid UPS modes switching between offline and online operation cannot guarantee continuous protection during rapid Meralco voltage changes.",
+        "correct": "Online double conversion UPS continuously converts incoming AC power to DC, then back to AC, providing maximum isolation from utility voltage disturbances, harmonics, and transients. This topology completely decouples the load from Meralco's ±5-10% voltage fluctuations and 8-12% harmonic distortion. Although efficiency is lower (90-94%), sensitive data center equipment justifies this trade-off to prevent data loss and hardware damage.",
+        "takeaway": "Online double conversion UPS topology is optimized for data centers in the Philippines where Meralco power quality issues require maximum protection against voltage fluctuations and harmonics."
+      },
+      "explanation": "Offline UPS provides no protection until failure detection occurs; it is unsuitable for sensitive equipment during Meralco voltage fluctuations. Line-interactive UPS offers good compromise between protection and efficiency but does not provide complete isolation from voltage disturbances like online UPS. Hybrid UPS modes switching between offline and online operation cannot guarantee continuous protection during rapid Meralco voltage changes. Online double conversion UPS continuously converts incoming AC power to DC, then back to AC, providing maximum isolation from utility voltage disturbances, harmonics, and transients. This topology completely decouples the load from Meralco's ±5-10% voltage fluctuations and 8-12% harmonic distortion. Although efficiency is lower (90-94%), sensitive data center equipment justifies this trade-off to prevent data loss and hardware damage. Online double conversion UPS topology is optimized for data centers in the Philippines where Meralco power quality issues require maximum protection against voltage fluctuations and harmonics.",
+      "code_citation": "IEEE 1100 Power Quality Standards; Schneider Electric UPS Performance Data; Meralco Power Quality Analysis",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-003-02-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-05-06T15:56:00.5908+00:00",
+      "content_hash": "sha256:de8c6a9eb7278333d695c87e3148f0d15041c8a2e827b3bb0a9ff5d13f383094"
+    },
     {
       "question_id": "dd564551-4368-45d9-a5d2-d80bb42b6890",
       "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
@@ -290,7 +390,7 @@
         "correct": "PEC generator installation standards mandate secondary containment sized for 110% of the fuel tank volume. This requirement directly prevents soil and groundwater contamination by capturing any fuel leaked from tank rupture, corrosion, or overflow. The secondary containment area must be properly sloped, impermeable, and inspected annually. This is the most effective engineered control for environmental protection in fuel storage design.",
         "takeaway": "Secondary containment sized for 110% of fuel tank capacity is the primary PEC requirement that prevents soil and groundwater contamination from fuel storage tank failure."
       },
-      "explanation": null,
+      "explanation": "While stainless steel construction improves tank durability, it does not eliminate containment needs and is not the primary PEC environmental protection requirement. Fuel quality testing prevents equipment damage but does not provide environmental protection against spills and contamination. Visual inspection detects corrosion but is a reactive measure; secondary containment is a proactive engineered control that prevents contamination. PEC generator installation standards mandate secondary containment sized for 110% of the fuel tank volume. This requirement directly prevents soil and groundwater contamination by capturing any fuel leaked from tank rupture, corrosion, or overflow. The secondary containment area must be properly sloped, impermeable, and inspected annually. This is the most effective engineered control for environmental protection in fuel storage design. Secondary containment sized for 110% of fuel tank capacity is the primary PEC requirement that prevents soil and groundwater contamination from fuel storage tank failure.",
       "code_citation": "PEC Generator Installation Standards; Philippine Environmental Code; Fuel Storage Design",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -302,8 +402,8 @@
       "model_id": "ALE-UTIL-003-02-018",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5e7b3e5e10333d272308137b9c406b63b06db57ce5a832c917f3d9d99226d110"
+      "updated_at": "2026-05-06T15:56:00.202648+00:00",
+      "content_hash": "sha256:4fe48fb3380f093280297de178535e2904073b940781c895bda613292848c70f"
     },
     {
       "question_id": "c4f63e05-e11d-4150-a48d-f8f4ece16db6",
@@ -354,56 +454,6 @@
       "created_at": "2026-03-23T19:27:58.533411+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:e261a05dd0aeb1fa16055de08acbcf06ead881ca547700f3a9edac06d33c2d32"
-    },
-    {
-      "question_id": "d542544c-6183-4423-88ab-84e86b445fcc",
-      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
-      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
-      "text": "A diesel fuel storage tank for a building's emergency generator holds 20,000 liters. The tank is located in a dedicated fuel storage area within the generator room. According to Philippine environmental protection standards, what is the minimum secondary containment capacity required to prevent soil and groundwater contamination in case of tank rupture?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A. 16,000 liters (80% of tank capacity)"
-        },
-        {
-          "id": "b",
-          "text": "B. 20,000 liters (100% of tank capacity)"
-        },
-        {
-          "id": "c",
-          "text": "C. 22,000 liters (110% of tank capacity)"
-        },
-        {
-          "id": "d",
-          "text": "D. 30,000 liters (150% of tank capacity)"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "80% containment is insufficient to prevent environmental contamination if tank ruptures.",
-        "b": "100% containment provides no safety margin and does not meet Philippine environmental protection standards.",
-        "d": "150% containment significantly exceeds environmental standards and represents unnecessary cost without proportional environmental benefit.",
-        "correct": "Philippine environmental protection standards and PEC generator installation guidelines require secondary containment sized for 110% of the tank volume. For a 20,000-liter tank: 20,000 liters × 1.10 = 22,000 liters minimum secondary containment. This 10% safety margin accommodates tank rupture or overflow while preventing fuel leaks from contaminating soil and groundwater. The containment area must be inspected annually and tested for structural integrity.",
-        "takeaway": "Fuel storage secondary containment must equal 110% of tank capacity per Philippine environmental standards to prevent soil and groundwater contamination during tank failure."
-      },
-      "explanation": null,
-      "code_citation": "Philippine Environmental Code; PEC Generator Installation Standards; Environmental Protection Requirements",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-003-02-017",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:40b4b01d824fec55cd394bb1bfc07e61e95d602afcfd2ac765178f19501925c3"
     },
     {
       "question_id": "d458fd34-49f0-4125-a13d-fb2baf6dced6",
@@ -590,7 +640,7 @@
         "correct": "UPS systems with battery backup provide instantaneous power during the ATS transfer delay before the generator reaches full output capacity. Online double conversion UPS (90-94% efficiency) offers maximum protection for sensitive equipment; line-interactive UPS (94-97% efficiency) provides regulated voltage; and offline UPS offers minimal protection but lowest cost. Battery duration typically ranges from 30 minutes for emergency lighting to 2-4 hours for critical data center equipment.",
         "takeaway": "UPS systems with battery backup bridge the ATS transfer delay, maintaining power to critical loads during the 10-second transfer from utility to generator operation."
       },
-      "explanation": null,
+      "explanation": "Fuel cell systems provide reliable backup power but cannot respond instantly to brief transfer delays; they are better suited for longer-term alternative power. Solar PV systems with battery storage are suitable for daytime load offset and alternative power but cannot guarantee instant response during nighttime outages. Voltage stabilizers regulate voltage but do not provide backup power during complete utility failure; flywheel storage has limited energy capacity for extended outages. UPS systems with battery backup provide instantaneous power during the ATS transfer delay before the generator reaches full output capacity. Online double conversion UPS (90-94% efficiency) offers maximum protection for sensitive equipment; line-interactive UPS (94-97% efficiency) provides regulated voltage; and offline UPS offers minimal protection but lowest cost. Battery duration typically ranges from 30 minutes for emergency lighting to 2-4 hours for critical data center equipment. UPS systems with battery backup bridge the ATS transfer delay, maintaining power to critical loads during the 10-second transfer from utility to generator operation.",
       "code_citation": "PEC Article 700.12; IEEE 1100 Power Quality Standards; UPS System Design",
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -602,8 +652,8 @@
       "model_id": "ALE-UTIL-003-02-014",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:03fd51b64b3bb72a25c20942d99b05559b04bb6c334352815c185bf74066dedc"
+      "updated_at": "2026-05-06T15:56:00.472668+00:00",
+      "content_hash": "sha256:51cc32cfcb6bf33cafdc944969ff90d44c4e388a3ed42ab971b9de2cd95c73f2"
     },
     {
       "question_id": "8012bb51-586a-4907-8818-89d6d177f600",
@@ -654,56 +704,6 @@
       "created_at": "2026-03-23T19:27:58.533411+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:cd2d185d7eefdb241cea0847efa988d6b97321f1276e8aa7ca2180a86e114922"
-    },
-    {
-      "question_id": "2ab35a6f-b37d-4dbd-b6fa-bea8a6ae4950",
-      "article_id": "91727ebf-ee05-4aa8-a538-d8c599a1d9c9",
-      "topic_id": "25b426af-3f59-49f9-a733-cd7231465799",
-      "text": "A building's data center requires continuous protection from voltage disturbances and harmonics caused by Meralco fluctuations (±5-10% variation from nominal). Which UPS topology provides the highest protection level against these power quality issues despite efficiency trade-offs?",
-      "options": [
-        {
-          "id": "a",
-          "text": "A. Offline (standby) UPS with 98% efficiency and detection delay, suitable for non-critical applications"
-        },
-        {
-          "id": "b",
-          "text": "B. Line-interactive UPS with autotransformer voltage regulation and 94-97% efficiency, offering moderate protection"
-        },
-        {
-          "id": "c",
-          "text": "C. Online double conversion UPS with continuous AC-DC-AC conversion and 90-94% efficiency"
-        },
-        {
-          "id": "d",
-          "text": "D. Hybrid UPS combining offline and online modes for balanced efficiency, though it may not provide the highest level of protection"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Offline UPS provides no protection until failure detection occurs; it is unsuitable for sensitive equipment during Meralco voltage fluctuations.",
-        "b": "Line-interactive UPS offers good compromise between protection and efficiency but does not provide complete isolation from voltage disturbances like online UPS.",
-        "d": "Hybrid UPS modes switching between offline and online operation cannot guarantee continuous protection during rapid Meralco voltage changes.",
-        "correct": "Online double conversion UPS continuously converts incoming AC power to DC, then back to AC, providing maximum isolation from utility voltage disturbances, harmonics, and transients. This topology completely decouples the load from Meralco's ±5-10% voltage fluctuations and 8-12% harmonic distortion. Although efficiency is lower (90-94%), sensitive data center equipment justifies this trade-off to prevent data loss and hardware damage.",
-        "takeaway": "Online double conversion UPS topology is optimized for data centers in the Philippines where Meralco power quality issues require maximum protection against voltage fluctuations and harmonics."
-      },
-      "explanation": null,
-      "code_citation": "IEEE 1100 Power Quality Standards; Schneider Electric UPS Performance Data; Meralco Power Quality Analysis",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-003-02-015",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:58.533411+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c7f8650b76812c51742f46616ade35323c001810760097b79ac54082f9a1c0e1"
     },
     {
       "question_id": "acf616f0-eb67-4456-84fe-4a2bd5a941f3",

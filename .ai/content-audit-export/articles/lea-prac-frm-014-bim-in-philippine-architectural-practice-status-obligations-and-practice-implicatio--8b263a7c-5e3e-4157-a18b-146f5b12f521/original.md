@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Frm 014 Bim In Philippine Architectural Practice Status Obligations And Practice Implications** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## BIM in Philippine Architectural Practice—Status, Obligations, and Practice Implications
 
 ## Learning Goal
@@ -24,23 +31,29 @@ The contract should clarify who owns the model, who has usage rights, and what h
 
 ### Obligations When BIM is Specified
 
-<ExamTip>
-  **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract standards), NBCP (building regulation). LEA questions test which law governs specific situations.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0001 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract standards), NBCP (building regulation). LEA questions test which law governs specific situations.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: **Exam Tip:** Know the hierarchy of Philippine architectural laws: RA 9266 (primary), Code of Ethical Conduct (professional conduct rules), SPP Documents (service standards), UAP Documents (contract s...
 
-<Warn>
-  ****Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequential, not parallel. Architects must advise clients on both sets of obligations or risk project delays and penalties.**
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: ****Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequential, not parallel. Architects must advise clients on both sets of obligations or risk project delays and penalties.**
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ **Warning:** Environmental compliance (EIA, ECC, CNC) is a distinct regulatory process from building permit requirements. An ECC is required before the building permit application — they are sequentia... — expect this as a trap answer on the LEA.
 
-<LawCallout code="irr" section="Regulatory Framework" title="Applicable Regulations">
-Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD 1096), and various specialty laws covering accessibility (BP 344), fire safety (RA 9514), and environmental compliance (PD 1586, DENR DAO).
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="Regulatory Framework", title="Applicable Regulations"
+- Text: Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD 1096), and various specialty laws covering accessibility (BP 344), fire safety (RA 9514), and environmental compliance (PD 1586, DENR DAO).
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: code=ra9266, section=Regulatory Framework, title=Applicable Regulations
 - Text: Philippine architectural practice operates under multiple regulatory instruments: RA 9266 (Architecture Act), the Code of Ethical Conduct, SPP Documents, UAP Documents, the National Building Code (PD ...
@@ -76,7 +89,11 @@ BIM training covers not just software but also modeling standards, clash detecti
 
 
 
-<ArticleMedia id="media-lea-prac-frm-014-bim-in-philip-0" type="image" caption="BIM Implementation in Philippine Architecture — Practice Workflow" description="Diagram showing BIM adoption levels in Philippine practice: Level 0 (2D CAD only), Level 1 (3D visualization, 2D documentation), Level 2 (collaborative BIM with federated models). Process flow showing BIM-enabled design workflow: Model development → Clash detection → Quantity takeoffs → Construction coordination. Status bars showing current adoption rates and regulatory obligations." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-frm-014-bim-in-philip-0", type="image", caption="BIM Implementation in Philippine Architecture — Practice Workflow", description="Diagram showing BIM adoption levels in Philippine practice: Level 0 (2D CAD only), Level 1 (3D visualization, 2D documentation), Level 2 (collaborative BIM with federated models). Process flow showing BIM-enabled design workflow: Model development → Clash detection → Quantity takeoffs → Construction coordination. Status bars showing current adoption rates and regulatory obligations."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [Sole Proprietorship](lea-prac-frm-001)
@@ -90,7 +107,8 @@ BIM training covers not just software but also modeling standards, clash detecti
 - [Government Procurement](lea-prac-frm-012)
 - [Environmental Laws](lea-prac-frm-017)
 
-<Note>
-null
-[/SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: null [/SLATECAMP_UI_BLOCK:ui_0001 component="JSX" status="preserved"]
+[/SLATECAMP_UI_BLOCK]

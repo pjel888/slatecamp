@@ -1,124 +1,14 @@
 {
   "article_id": "0c599071-cf6f-4b07-9d5f-a6230dd77b36",
   "slug": "lea-prac-cmp-004-schedule-of-payments-phase-percentages-and-the-architect-s-invoicing-timeline",
-  "normalized_created_at": "2026-05-04T09:10:36.327Z",
+  "normalized_created_at": "2026-05-09T17:04:24.281Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:c7487d6cdf41000b329efe2b0c54bf42eb30cd43752e8ce31c6178e141ffc2d5",
+  "original_content_hash": "sha256:92624b4d5b80790aff1e56b3e53e2b722335dba0d2c024eec49d5f1d6af32410",
   "normalized_content_hash": "sha256:92624b4d5b80790aff1e56b3e53e2b722335dba0d2c024eec49d5f1d6af32410",
-  "ui_block_count": 4,
-  "total_blocks": 4,
-  "blocks": [
-    {
-      "block_id": "ui_0001",
-      "block_type": "mdx_component",
-      "component_name": "LawCallout",
-      "raw": "<LawCallout code=\"uap\" section=\"SPP Doc. 202 - Schedule of Payments\">\nRA 9266, Section 22 — Architect's compensation based on percentage of construction cost or other agreed basis.\n</LawCallout>",
-      "raw_hash": "sha256:0108632086aa050b13a0ed7f5fe6a34fa223037cded95cb98bfd22374af89d6f",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"uap\", section=\"SPP Doc. 202 - Schedule of Payments\"\n- Text: RA 9266, Section 22 — Architect's compensation based on percentage of construction cost or other agreed basis.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:bf6ea8906f2c2a5ae5b027e767589865d663e68c60e582617ab255e0c268dad8",
-      "props": {
-        "code": "uap",
-        "section": "SPP Doc. 202 - Schedule of Payments"
-      },
-      "props_json": {
-        "code": "uap",
-        "section": "SPP Doc. 202 - Schedule of Payments"
-      },
-      "props_text": "code=\"uap\" section=\"SPP Doc. 202 - Schedule of Payments\"",
-      "children_raw": "\nRA 9266, Section 22 — Architect's compensation based on percentage of construction cost or other agreed basis.\n",
-      "children_text": "RA 9266, Section 22 — Architect's compensation based on percentage of construction cost or other agreed basis.",
-      "start_offset": 3476,
-      "end_offset": 3670,
-      "line_start": 31,
-      "line_end": 33,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0002",
-      "block_type": "mdx_component",
-      "component_name": "ExamTip",
-      "raw": "<ExamTip>**LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.</ExamTip>",
-      "raw_hash": "sha256:c37633673a49b38afe60ab9b622259bfda036a101c3b44d3826e4ea133914897",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: **LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:d037002e368f2f5ecf5bca53329b40cce93b5cfbdef08cdfe1f4afa7e46d004f",
-      "props": {},
-      "props_json": {},
-      "props_text": null,
-      "children_raw": "**LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.",
-      "children_text": "**LEA Pattern:** Given a project budget, determine the architect's fee. Common scenario: PCC = Php 10M × 12% fee = Php 1.2M. Watch for distractors that include land cost or architect's fee in the PCC calculation.",
-      "start_offset": 6157,
-      "end_offset": 6388,
-      "line_start": 48,
-      "line_end": 48,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0003",
-      "block_type": "mdx_component",
-      "component_name": "KeyValues",
-      "raw": "<KeyValues pairs={[[\"PCC Inclusions\", \"Labor, materials, equipment, contractor overhead and profit\"], [\"PCC Exclusions\", \"Architect's fee, land cost, contingency, legal fees\"], [\"Typical Fee\", \"10–15% of PCC depending on project complexity\"]]} />",
-      "raw_hash": "sha256:d1cb44de13ea637f961abe755c02ad76251570a2ee65c1de300ec8dc7c7dd61d",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"KeyValues\" status=\"preserved\"]\nExtracted summary:\n- Props: pairs=\"{[[\\\"PCC Inclusions\\\", \\\"Labor, materials, equipment, contractor overhead and profit\\\"], [\\\"PCC Exclusions\\\", \\\"Architect's fee, land cost, contingency, legal fees\\\"], [\\\"Typical Fee\\\", \\\"10–15% of PCC depending on project complexity\\\"]]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:f1299628ec23f174e6e3b6558850506cf1980fe59d35cdb6a94c0404abde47a6",
-      "props": {
-        "pairs": "{[[\"PCC Inclusions\", \"Labor, materials, equipment, contractor overhead and profit\"], [\"PCC Exclusions\", \"Architect's fee, land cost, contingency, legal fees\"], [\"Typical Fee\", \"10–15% of PCC depending on project complexity\"]]}"
-      },
-      "props_json": {
-        "pairs": "{[[\"PCC Inclusions\", \"Labor, materials, equipment, contractor overhead and profit\"], [\"PCC Exclusions\", \"Architect's fee, land cost, contingency, legal fees\"], [\"Typical Fee\", \"10–15% of PCC depending on project complexity\"]]}"
-      },
-      "props_text": "pairs={[[\"PCC Inclusions\", \"Labor, materials, equipment, contractor overhead and profit\"], [\"PCC Exclusions\", \"Architect's fee, land cost, contingency, legal fees\"], [\"Typical Fee\", \"10–15% of PCC depending on project complexity\"]]}",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 7982,
-      "end_offset": 8228,
-      "line_start": 63,
-      "line_end": 63,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    },
-    {
-      "block_id": "ui_0004",
-      "block_type": "mdx_component",
-      "component_name": "ArticleMedia",
-      "raw": "<ArticleMedia id=\"media-lea-prac-cmp-004-schedule-of-p-0\" type=\"image\" caption=\"SPP 202 Phase Fee Distribution — Timeline and Percentage Chart\" description=\"Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion.\" />",
-      "raw_hash": "sha256:50404c95725e0dd8d7de53f678a1c2653b00f3b8e1e59e5149102a25cecea089",
-      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0004 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-prac-cmp-004-schedule-of-p-0\", type=\"image\", caption=\"SPP 202 Phase Fee Distribution — Timeline and Percentage Chart\", description=\"Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion.\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
-      "placeholder_hash": "sha256:855622a6fce16deff175bfc1f9ec6c24f3e669a8613b196bc04b293c92277f2a",
-      "props": {
-        "id": "media-lea-prac-cmp-004-schedule-of-p-0",
-        "type": "image",
-        "caption": "SPP 202 Phase Fee Distribution — Timeline and Percentage Chart",
-        "description": "Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion."
-      },
-      "props_json": {
-        "id": "media-lea-prac-cmp-004-schedule-of-p-0",
-        "type": "image",
-        "caption": "SPP 202 Phase Fee Distribution — Timeline and Percentage Chart",
-        "description": "Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion."
-      },
-      "props_text": "id=\"media-lea-prac-cmp-004-schedule-of-p-0\" type=\"image\" caption=\"SPP 202 Phase Fee Distribution — Timeline and Percentage Chart\" description=\"Horizontal bar chart or process flow showing the five SPP 202 phases with their fee percentages: Schematic Design (15%), Design Development (20%), Contract Documents (50%), Bidding Assistance (5%), Construction Administration (10%). Shows cumulative fee progression and typical billing milestones at each phase completion.\"",
-      "children_raw": null,
-      "children_text": null,
-      "start_offset": 8587,
-      "end_offset": 9070,
-      "line_start": 71,
-      "line_end": 71,
-      "parser_confidence": "high",
-      "parse_status": "parsed",
-      "warnings": [],
-      "status": "preserved"
-    }
-  ],
+  "ui_block_count": 0,
+  "total_blocks": 0,
+  "blocks": [],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:644c3d4bfa101f008405f73c192f57227a8e2617dbb880ae1d6b6e27a6ab1a01",
-  "normalized_content_hash_sha256": "sha256:92624b4d5b80790aff1e56b3e53e2b722335dba0d2c024eec49d5f1d6af32410"
+  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
 }

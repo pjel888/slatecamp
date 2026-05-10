@@ -1,112 +1,70 @@
+# Vitruvius: Principles versus Departments of Architecture
 
+## Learning objective
 
-## Board Exam Quick Check
+Given a theory question prompt on Vitruvius, separate the fundamental principles of architecture from the departments of architecture. The board-exam trap is that both lists are real Vitruvian material, but they answer different questions.
 
-Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+## Governing source
 
-**Common mistake:** treating a familiar keyword in **Lea Theo 001 09 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+Use Vitruvius, *The Ten Books on Architecture*, translated by Morris Hicky Morgan. The principles list is in Book I, Chapter II, PDF pp.33-36. The departments list begins in Book I, Chapter III, PDF p.36. Because this is a historical theory source, the wording should be tied to the translation being used.
 
-**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
-## What You Need to Know for the LEA
+## The six fundamental principles
 
-## Learning Goal
+In Book I, Chapter II, Vitruvius states that architecture depends on Order, Arrangement, Eurythmy, Symmetry, Propriety, and Economy. These are the fundamental principles list for this topic.
 
-Identify and explain the Vitruvian Triad — firmitas (strength), utilitas (function), venustas (beauty) — as the foundational framework for architectural quality, and apply it to analyze how design decisions satisfy all three simultaneously.
-## Core Concept
+Source: Vitruvius, *The Ten Books on Architecture*, trans. Morris Hicky Morgan, Book I, Chapter II, PDF pp.33-36.
 
-|<ArticleMedia id="media-lea-theo-001-09-core-concept" type="image" caption="Vitruvian Triad — Firmitas, Utilitas, Venustas" description="Triangular diagram with interconnected nodes showing Vitruvius's three essential qualities of architecture: Firmitas (structural strength, durability, integrity), Utilitas (functional fitness, convenience, commodity), and Venustas (beauty, delight, aesthetic harmony). The center reads 'Architecture' — emphasizing that all three dimensions must be satisfied simultaneously for a building to be considered complete architecture." suggestedAsset="Diagram or reference image" status="placeholder" />
+The safest exam habit is to memorize the set as a set. If the question asks for the fundamental principles and an option gives “building, time-pieces, and machinery,” that option belongs to a different list. If the question asks for departments and an option gives “Order, Arrangement, Eurythmy,” that option is also crossing categories.
 
-<ArticleMedia id="media-lea-theo-001-09-core-concept-b" type="image" caption="Pantheon in Rome — Enduring Example of Firmitas, Utilitas, and Venustas" description="Cutaway diagram of the Pantheon showing how its concrete dome (firmitas), interior space for gathering and worship (utilitas), and harmonious proportions with oculus light (venustas) exemplify the Vitruvian Triad working simultaneously in a single building." suggestedAsset="Reference image or diagram" status="placeholder" />
+## Eurythmy and symmetry are related but not identical
 
-Nearly two thousand years ago, the Roman military engineer, architect, and theorist **Vitruvius** (Marcus Vitruvius Pollio, ca. 80–15 BCE) wrote the only surviving architectural treatise from antiquity: *De Architectura* (Ten Books on Architecture). Written during the reign of Caesar Augustus in the first century BCE, Vitruvius's Ten Books synthesized Greek architectural philosophy with Roman engineering practice and remain the foundation of architectural theory to this day. Within this monumental treatise, Vitruvius articulated a tripartite definition of architecture that has structured architectural thinking for two millennia: **firmitas, utilitas, and venustas**.
+Morgan’s translation defines eurythmy as beauty and fitness in the adjustments of the members. It is found when members of a work have height suited to breadth, breadth suited to length, and all parts correspond symmetrically. Symmetry is described as proper agreement between the members of the work itself and relation between the different parts and the whole general scheme, in accordance with a selected standard.
 
-**Firmitas** translates from Latin as "firmness" or "solidity," referring to the structural integrity and soundness of a building. A building possessing firmitas is one that stands, that does not collapse, that is constructed with proper materials selected for their strength and durability, with structural systems capable of bearing loads, with foundations adequate to the soil conditions, and with all elements proportioned and joined in ways that create a coherent, stable whole. Firmitas means that the building will endure; it speaks to the permanence and trustworthiness of the structure. In modern terminology, we might speak of structural adequacy, constructional integrity, or durability. A building lacking firmitas will fail—either catastrophically through collapse or gradually through deterioration. The architect's first responsibility is to ensure firmitas. Without it, aesthetic merit and functional excellence are irrelevant because the building will not survive.
+Source: Vitruvius, *The Ten Books on Architecture*, trans. Morris Hicky Morgan, Book I, Chapter II, PDF p.34.
 
-Firmitas addresses material knowledge, structural logic, and constructional practice. The ancient Romans achieved extraordinary firmitas through their understanding of materials (stone, brick, concrete, timber), their mastery of structural forms (arches, vaults, domes), and their attention to durability (proper drainage, protective detailing, appropriate joinery). The Pantheon in Rome, completed in 126 CE, demonstrates extraordinary firmitas: its concrete dome, constructed with decreasing aggregate density from base to crown, has endured nearly two millennia. The dome's oculus opening reduces weight while permitting light; the walls graduate in thickness to balance loads efficiently. This is not accidental; Vitruvian principles shaped the design.
+Do not flatten both terms into “proportion.” In exam language, eurythmy points to the pleasing fitness of adjusted parts; symmetry points to the agreement of parts with one another and with the whole. They overlap in architectural judgment, but they are not interchangeable labels.
 
-Modern architecture achieves firmitas through advanced materials science, structural analysis, building codes, and testing protocols unknown to Vitruvius. Steel and reinforced concrete permit thinner sections and longer spans than stone, but the principle remains: structural systems must be rational, materials must be appropriate, and details must ensure that forces flow safely to the ground. Contemporary architects relying on computers and engineering consultants sometimes lose sight of the fact that beneath every digitally optimized structure lies the same fundamental responsibility Vitruvius articulated: the building must stand.
+## Propriety is not personal taste
 
-**Utilitas** translates as "usefulness" or "utility," referring to the functional adequacy and commodity of the building—its fitness for its intended purpose. A building possessing utilitas performs its function efficiently and serves the needs of its occupants comfortably. Utilitas encompasses spatial organization (rooms arranged so work flows efficiently and movement is logical), proportions (rooms sized appropriately for their purpose), light and ventilation (adequate for health and comfort), accessibility (users can navigate the building intuitively), and durability (materials and finishes can withstand the wear and tear of intended use). A hospital lacking utilitas might be structurally sound (firmitas) and beautiful (venustas) but unable to move patients, equipment, and staff efficiently, or unable to maintain the sanitation necessary for medical practice. A home lacking utilitas might be a stunning sculpture but unlivable—too cold, too damp, kitchen and bedrooms distant and awkwardly arranged.
+In the same chapter, Vitruvius describes propriety as the perfection of style that comes when a work is authoritatively constructed on approved principles. The translation connects propriety with prescription, usage, or nature.
 
-Utilitas is not mere convenience; it speaks to the architect's obligation to understand the client's needs, the building's program, the users' workflows, and the environmental conditions necessary for health, safety, and productivity. The concept emerged from Vitruvius's military engineering background: military camps, fortifications, and infrastructure could not function without careful attention to practical efficiency. A fort without adequate water supply failed regardless of its defensive design. An aqueduct that did not reliably convey water was useless. This pragmatic orientation—that buildings must work, not merely exist—shaped Vitruvian philosophy.
+Source: Vitruvius, *The Ten Books on Architecture*, trans. Morris Hicky Morgan, Book I, Chapter II, PDF p.34.
 
-Modern utilitas encompasses both traditional spatial logic and contemporary performance metrics: daylighting analysis to ensure occupant wellness, acoustic design to control noise, climate control systems to maintain comfort, circulation analysis to minimize walking distances, accessibility design to accommodate users with disabilities, and security planning to protect occupants. The architect's responsibility to utilitas has expanded with contemporary building complexity, but the principle remains: buildings must perform their intended function reliably and comfortably.
+The exam trap is to read propriety as “what the designer personally likes.” In this source, propriety is tied to appropriateness under recognized principles, not private preference. A temple, house, public work, or specialized structure is judged by whether its character and treatment fit accepted principles and use.
 
-**Venustas** translates as "beauty," "grace," or "delight," referring to the aesthetic and emotional dimensions of architecture. A building possessing venustas engages the observer; it creates visual pleasure, emotional resonance, or a sense of awe or serenity. Venustas is not decoration applied superficially; rather, it emerges from the coherent resolution of form, proportion, material expression, and spatial experience. Venustas in a Greek temple derives from the harmonious relationships between column diameter, spacing, and height; from the subtle curvatures (entasis) in columns that prevent them from appearing to sag; from the warm color of marble; and from the building's relationship to its sacred landscape. Venustas in a medieval cathedral emerges from soaring interior heights, the play of light through stained glass, the culmination of the nave toward the altar, and the spiritual aspiration symbolized by reaching verticality.
+## Economy is not just cheapness
 
-Vitruvius himself was less eloquent about venustas than about firmitas and utilitas, and subsequent architectural theory has debated whether venustas means mere beauty, symbolic meaning, or a more profound "rightness" of proportions and forms. Renaissance architects, recovering Vitruvius's text in the 15th century, interpreted venustas through classical proportional systems (the golden ratio, modular relationships, harmonic progressions borrowed from music theory). Modern architects debate venustas as aesthetic expression, as the formal consequences of structural honesty, or as the emotional impact of spatial experience.
+Vitruvius explains economy as the proper management of materials and site, together with a thrifty balancing of cost and common sense in construction. He gives practical examples: not every place has plenty of pitsand, rubble, fir, clear fir, or marble; if a material is unavailable or costly to assemble, the architect solves the problem with suitable alternatives.
 
-The critical insight is that firmitas, utilitas, and venustas are not three separate, independent concerns that the architect must somehow balance. Rather, they are three dimensions of a unified whole. A building achieves architecture—true architecture—only when all three are present and integrated. The Pantheon works because its monumental dome (venustas) expresses and reveals the structural logic of its coffered concrete (firmitas) while creating an interior space of spiritual and intellectual power (utilitas for the purposes of gathering and worship). A contemporary office building achieves architecture when its structural system is expressed honestly in facade and interior (firmitas visible), when its floor plates, daylighting, and circulation support efficient work (utilitas), and when that expression of structure and function creates a dignified, pleasant, or inspiring workplace (venustas).
+Source: Vitruvius, *The Ten Books on Architecture*, trans. Morris Hicky Morgan, Book I, Chapter II, PDF p.36.
 
-In the Philippine context, the bahay na bato represents an integration of all three principles: its stone base and timber frame are rationally constructed with appropriate materials and joinery (firmitas); its spatial organization, elevated floor, broad eaves, and ventilation support comfortable tropical living (utilitas); and its proportions, material expression, and relationship to landscape create a graceful, dignified form (venustas).
+This is why “minimum cost” is too thin as an answer. Economy includes cost, but it also includes judgment about site, supply, construction sense, and suitable substitution. The best exam answer will treat economy as fit management of resources, not as cheap construction.
 
-The Vitruvian Triad remains the most reliable framework for architectural evaluation because it recognizes that buildings are simultaneously structural systems, functional instruments, and aesthetic and spiritual experiences. A building that fails in any one dimension has failed in its essential purpose, regardless of excellence in the other two.
+## The three departments of architecture
 
-<Tip>
-**FUV Hierarchy:** Firmitas (structural integrity) is foundational. Without it, utilitas (function) and venustas (beauty) are impossible. The architect's first responsibility is always ensuring the building will stand. Then utilitas and venustas are integrated simultaneously, not sequentially.
-</Tip>
+Book I, Chapter III begins a different list. Morgan’s translation states that there are three departments of architecture: the art of building, the making of time-pieces, and the construction of machinery. Building is then divided into public and private work categories.
 
-<Note>
-Venustas does NOT mean ornament or decoration. It emerges from coherent proportions, honest material expression, and spatial experience. A beautifully proportioned minimalist building possesses venustas just as fully as an ornately detailed classical building—what matters is coherence, not quantity of detail.
-</Note>
+Source: Vitruvius, *The Ten Books on Architecture*, trans. Morris Hicky Morgan, Book I, Chapter III, PDF p.36.
 
-<Warn>
-Critical error: Do NOT treat firmitas, utilitas, and venustas as equal concerns that can be traded off. Firmitas is foundational and non-negotiable. You cannot sacrifice structural integrity for aesthetic effect or functional optimization. An architect cannot present "we chose beauty over safety" as a legitimate design choice.
-</Warn>
+This list belongs to the scope or departments of architecture, not to the fundamental principles. A question prompt may exploit the unfamiliarity of “time-pieces” and “machinery.” Those words are not distractors when the prompt asks for departments. They are distractors only when the prompt asks for principles.
 
-## Key Facts and Testable Items
+## Worked application
 
-<WikiExamTable headers={["Principle", "Latin Translation", "Modern Equivleant", "Vitruvian Definition"]} rows={[["**Firmitas**", "Firmness, solidity, strength", "Structural integrity, durability, constructional adequacy", "Building must stand, not collapse; materials and structure appropriate to purpose"], ["**Utilitas**", "Usefulness, utility, functionality", "Functional adequacy, commodity, performance, fitness for purpose", "Building must serve its intended function efficiently and comfortably"], ["**Venustas**", "Beauty, grace, delight", "Aesthetic expression, spiritual resonance, visual coherence, proportional harmony", "Building must engage observers; form should be pleasing and express meaning"], ["**Integrated Application**", "The three principles together", "Holistic architecture that is simultaneously sound, functional, and beautiful", "Architecture achieves its purpose only when all three are present and unified"]]} />
+If the prompt asks, “Which set belongs to Vitruvius’s fundamental principles of architecture?” choose the option containing Order, Arrangement, Eurythmy, Symmetry, Propriety, and Economy. If the prompt asks, “Which item is one of the departments of architecture?” an option such as construction of machinery may be correct. The category word in the prompt controls the answer.
 
-## How It's Tested on the LEA
+## Memory map
 
-<ExamTip>**Pattern 1: Terminology and Definition.** The LEA directly tests whether you can define firmitas, utilitas, and venustas and explain them in contemporary architectural language. Example stem: "Firmitas in Vitruvian terms refers to which of the following?" Answer: Structural integrity and soundness; the building's ability to stand and endure. Common incorrect answers might cite aesthetic qualities or functional performance.</ExamTip>
+Use two boxes, not one. The first box is **principles**: Order, Arrangement, Eurythmy, Symmetry, Propriety, and Economy. This answers questions about what architecture depends on in Book I, Chapter II. The second box is **departments**: building, time-pieces, and machinery. This answers questions about the departments of architecture in Book I, Chapter III. If an answer choice pulls one item from each box, it is probably a category-mixing distractor. The source is not contradicting itself; the prompt is asking for a different list.
 
-<ExamTip>**Pattern 2: Integrated Principle Identification.** Questions ask you to identify which principle or principles a specific design decision addresses. Example stem: "When an architect specifies concrete strength and joint detailing in a structure, this primarily addresses which Vitruvian principle?" Answer: Firmitas, though the architect should understand that firmitas supports both utilitas and venustas. A building must be sound before it can be functional or beautiful.</ExamTip>
+Also watch for answer choices that sound more modern than the Morgan translation. The exam may modernize the wording, but the source categories remain the same. Match the concept to the cited list before judging the vocabulary.
 
-<ExamTip>**Pattern 3: Building Examples.** The LEA presents buildings or design problems and asks which principle is being served or violated. Example stem: "A hospital building with brilliant natural light, efficient circulation, and a facade that expresses its structural grid would be demonstrating excellence in which principle(s)?" Answer: All three—structural expression (firmitas visible), functional efficiency (utilitas), and aesthetic coherence (venustas). Alternatively, the question might ask what is missing if the building is structurally sound but confusing to navigate: utilitas is lacking.</ExamTip>
+## Real-World Application
 
-<ExamTip>**Pattern 4: Hierarchy and Priority.** The LEA tests whether you understand that firmitas is foundational. Example stem: "In the Vitruvian framework, which principle must be established before the architect can address the others?" Answer: Firmitas; without structural soundness, a building cannot function or be beautiful.</ExamTip>
+Imagine a board examinee critiquing a proposed barangay reading center in Baguio. The facade looks balanced, the roof form copies a familiar mountain resort image, and the client says the building “feels Vitruvian” because it looks classical enough. A stronger answer does not stop at appearance. The examinee can test the proposal against Vitruvius more carefully. Is the arrangement orderly enough for users to understand the plan? Does the proportion of parts create eurythmy, or is the balance only a front-view trick? Is the symmetry real in the relationship of parts, or only a centered door? Does the design show propriety for a public reading room in a cool, sloped city context, or is it borrowed costume? Does economy mean cheap materials, or wise use of resources for the building’s purpose? The practical outcome is a more precise critique: the examinee separates principles from the three departments of architecture and explains why a design can look formal but still fail the deeper Vitruvian test.
 
-<ExamTip>**Pattern 5: Modern Application.** Questions address how Vitruvian principles apply to contemporary architecture. Example stem: "Contemporary sustainable design, which minimizes energy use through passive design strategies, primarily addresses which Vitruvian principle?" Answer: Utilitas—the building performs its function (maintaining comfort) efficiently. Though sustainability also supports firmitas (durability) and venustas (honest expression of passive performance).</ExamTip>
+## Exam traps
 
-<Callout>
-The Vitruvian Triad is tested on virtually every Philippine Architecture Licensure Examination. You must know the three principles precisely, understand their Latin and English terminology, and be able to explain each with modern architectural examples. This is foundational theory that cannot be avoided or minimized. Examiners expect candidates to articulate clearly how firmitas, utilitas, and venustas interact to define architecture.
-</Callout>
-
-## Common Mistakes
-
-<WikiMistakeCard mistake="Treating the three principles as equal in priority" correction="Firmitas is foundational; without it, the other two are impossible. An architect cannot sacrifice structural integrity for aesthetic effect or functional optimization. Firmitas first; then utilitas and venustas are integrated simultaneously." context="Understanding this hierarchy prevents the false belief that design trade-offs between principles are legitimate. The LEA tests whether you recognize that structural soundness is non-negotiable." />
-
-<WikiMistakeCard mistake="Conflating venustas with ornament" correction="Venustas emerges from coherent proportions, material expression, and spatial experience—not from decorative details. A beautifully proportioned minimalist building possesses venustas just as fully as an ornately detailed classical building." context="This distinction prevents superficial understanding of beauty in architecture. The LEA tests whether you understand that venustas derives from integrity and coherence, not decoration." />
-
-<WikiMistakeList mistakes={["Interpreting utilitas narrowly as function: Utilitas includes comfortable spatial experience, appropriate proportion, light, ventilation, and efficiency. A building might be functionally possible but lack utilitas because conditions are unpleasant or inefficient.", "Assuming modern materials or technology eliminates firmitas concerns: Firmitas remains a fundamental responsibility. Structural failures still occur. Inappropriate material specifications, poor detailing, or inadequate understanding of structural behavior still cause failures. The architect's responsibility for firmitas has not diminished.", "Separating aesthetic and structural truth: When structure is expressed honestly, when materials are allowed to reveal their nature, when spatial efficiency creates coherent form, beauty emerges. The most profound venustas derives from the authentic expression of firmitas and utilitas.", "Ignoring venustas in technical discussions: All three principles must be addressed simultaneously. A purely technical solution that ignores aesthetic and spiritual dimensions has not achieved architecture."]} />
-
-## Key Terms
-
-**Firmitas** — Structural integrity and soundness; the building must stand through proper material selection, rational structural systems, and adequate proportioning and detailing.
-
-**Utilitas** — Functional adequacy and commodity; the building must serve its intended purpose efficiently and provide comfortable conditions for occupants.
-
-**Venustas** — Aesthetic beauty and delight; the building must engage observers through coherent proportions, material expression, and spatial experience that creates visual or spiritual resonance.
-
-**Vitruvian Triad** — The three-part framework (firmitas, utilitas, venustas) for evaluating and designing buildings, fundamental to architectural theory since antiquity.
-
-**Proportional Harmony** — The relationship between dimensions and spacing that creates visual coherence and aesthetic pleasure, often expressed through mathematical ratios.
-
-**Material Expression** — The honest revelation of a building's materials and their properties in its final appearance, without superficial disguise or misrepresentation.
-
-**Structural Integrity** — The soundness of a building's structural system, confirmed through proper analysis, testing, and detailing to ensure it will safely bear all loads.
-
-**Fitness for Purpose** — The degree to which a building's spaces, systems, and arrangement support its intended function and the comfort of its occupants.
-
-**Spatial Coherence** — The quality of a building's spaces and their relationships creating a unified, comprehensible whole rather than disconnected fragments.
-
-**Architectural Expression** — The translation of structural, functional, and aesthetic principles into visible form that communicates meaning and intention.
-
-## Related Articles
-
-See also within Nature of Architecture: **lea-theo-001-01-core-concept**, **lea-theo-001-07-core-concept**, **lea-theo-001-08-core-concept**, **lea-theo-001-10-core-concept**.
-
-> **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-
+- **Trap 1: mixing principles and departments.** Both lists are real, but they answer different prompts.
+- **Trap 2: reducing economy to cheapness.** The cited passage includes material, site, cost, and common sense.
+- **Trap 3: treating eurythmy and symmetry as identical.** The source gives distinct definitions.
+- **Trap 4: ignoring translation context.** Cite the Morgan translation when teaching this exact wording.

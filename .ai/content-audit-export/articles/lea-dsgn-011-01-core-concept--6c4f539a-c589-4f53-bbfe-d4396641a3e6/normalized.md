@@ -18,7 +18,7 @@ Architectural floor plans are the primary communication medium in building desig
 
 A floor plan is a horizontal slice (orthogonal view from above) through a building at a fixed height, typically 1.2–1.5m above floor level to capture door/window openings. Plans show the spatial organization, circulation, and relationships of rooms, and they govern permitting, construction, and maintenance.
 
-**Key Functions of Floor Plans:** 
+**Key Functions of Floor Plans:**
 
 - **Space identification:** Names, dimensions, and areas of each room.
 - **Egress verification:** Confirm that occupancy, fire exits, and travel distances meet code.
@@ -90,17 +90,17 @@ Permitting drawings for building permits must be sealed and signed by a licensed
 ## How It's Tested
 
 **Pattern 1: Egress Path Verification**
-Question: "A building has a maximum travel distance of 45m. On the plan, the measured path is 50m. Is it compliant?" 
+Question: "A building has a maximum travel distance of 45m. On the plan, the measured path is 50m. Is it compliant?"
 
 - **Answer:** No. Travel distance must be within code limits based on occupancy class.
 
 **Pattern 2: Door Width & Accessibility**
-Scenario: A floor plan shows an accessible entry door with a 0.80 m leaf width. Is this compliant with BP 344 2024? 
+Scenario: A floor plan shows an accessible entry door with a 0.80 m leaf width. Is this compliant with BP 344 2024?
 
 - **Answer:** **No.** While the clear opening must be 0.80 m, the door leaf itself should typically be **0.90 m** to ensure that hardware and stops do not reduce the clear width below the 0.80 m threshold.
 
 **Pattern 3: Accessible Route Compliance**
-Question: "What is the standard width for an accessible corridor?" 
+Question: "What is the standard width for an accessible corridor?"
 
 - **Answer:** 1.50 m. Using 1.20 m is a common mistake unless it is a "constrained existing condition".
 

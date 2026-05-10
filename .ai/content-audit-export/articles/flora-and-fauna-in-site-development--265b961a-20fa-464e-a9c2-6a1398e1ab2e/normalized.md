@@ -123,34 +123,34 @@ Extracted summary:
 ### Question 1
 A developer plans to build a resort adjacent to a DENR-classified watershed reserve. Which document must be secured from the DENR-EMB **before** applying for a building permit?
 
-A. Fire Safety Inspection Certificate (FSIC)  
-B. Environmental Compliance Certificate (ECC)  
-C. Locational Clearance from HLURB  
-D. Barangay Business Permit  
+A. Fire Safety Inspection Certificate (FSIC)
+B. Environmental Compliance Certificate (ECC)
+C. Locational Clearance from HLURB
+D. Barangay Business Permit
 
-> **Answer: B. Environmental Compliance Certificate (ECC)**  
+> **Answer: B. Environmental Compliance Certificate (ECC)**
 > Projects in or adjacent to Environmentally Critical Areas (ECAs) such as watersheds are required to secure an ECC under PD 1586 and DENR DAO 2003-30. The ECC certifies that the project's Environmental Management Plan (EMP) has been reviewed and approved. The FSIC (A) is under RA 9514 (Fire Code) and is obtained after construction, not before. Locational Clearance (C) is a zoning tool, not an environmental one.
 
 ### Question 2
 Under PD 1067 (Water Code of the Philippines), what is the required easement from the banks of rivers and streams in **urban areas** where no structures may be built?
 
-A. 5 meters  
-B. 20 meters  
-C. 3 meters  
-D. 40 meters  
+A. 5 meters
+B. 20 meters
+C. 3 meters
+D. 40 meters
 
-> **Answer: C. 3 meters**  
+> **Answer: C. 3 meters**
 > Article 51 of PD 1067 establishes easement zones of 3 meters in urban areas, 20 meters in agricultural areas, and 40 meters in forest areas from river/stream banks. These are no-build zones reserved for public use (recreation, navigation, salvage). The 5-meter figure (A) is a common confusion with the PHIVOLCS fault-line buffer, and 40 meters (D) applies to forest areas only.
 
 ### Question 3
 An architect's site survey reveals a mature Molave tree (DBH = 0.60 m) directly in the path of a proposed access road. Using the standard Root Protection Zone formula, what is the minimum radius that must be kept undisturbed around this tree?
 
-A. 3.60 meters  
-B. 6.00 meters  
-C. 7.20 meters  
-D. 12.00 meters  
+A. 3.60 meters
+B. 6.00 meters
+C. 7.20 meters
+D. 12.00 meters
 
-> **Answer: C. 7.20 meters**  
+> **Answer: C. 7.20 meters**
 > The RPZ radius = 12 × DBH = 12 × 0.60 m = 7.20 m. This means no excavation, grading, or compaction within 7.20 m of the trunk center. Option A (3.60 m) would result from incorrectly using 6× DBH. Option D (12 m) confuses the multiplier (12) with the result. The architect must either reroute the access road or justify tree removal through a DENR Tree Cutting Permit — but on the LEA, the safe answer is always to preserve and reroute.
 
 ---

@@ -1,317 +1,9 @@
 {
   "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:760fc64f5a8c45ce857f5aa338743e084547f0e067fd12f356a898bfaa502298",
+  "linked_questions_hash": "sha256:ceb63759e3250b0bf20d4c48de6ae0c032096122959a8234a29512a66804bdac",
   "question_count": 31,
   "questions": [
-    {
-      "question_id": "fa9b9540-10aa-4d18-9eb9-c2dc44400faf",
-      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "At what total aggregate weight of stored nitro-cellulose film does Sec. 1401 require the provision of a dedicated vented storage vault (or detached structure or roof vault)?",
-      "options": [
-        {
-          "id": "A",
-          "text": "110 kg"
-        },
-        {
-          "id": "B",
-          "text": "340 kg"
-        },
-        {
-          "id": "C",
-          "text": "450 kg"
-        },
-        {
-          "id": "D",
-          "text": "500 kg"
-        }
-      ],
-      "correct_option_id": "C",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "The 450 kg aggregate threshold is the critical vault trigger in Sec. 1401. A facility may use multiple cabinets, each within the 110 kg individual limit, up to but not exceeding 450 kg total without requiring vault construction. At 450 kg and above, the collective fire load exceeds cabinet containment capacity, requiring vault-standard construction with 4-hour fire-resistive doors.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:44:24.314623+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0c29f7089be5191bd69c5e9b387e811ad44ec5313e829bc6fd47819a1064c5e5"
-    },
-    {
-      "question_id": "039e4831-c6e9-4f10-ab2c-a74fcd641543",
-      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What is the maximum weight of nitro-cellulose film permitted in a single storage cabinet under PD 1096, Rule XIV (Sec. 1401)?",
-      "options": [
-        {
-          "id": "A",
-          "text": "100 kg"
-        },
-        {
-          "id": "B",
-          "text": "110 kg"
-        },
-        {
-          "id": "C",
-          "text": "340 kg"
-        },
-        {
-          "id": "D",
-          "text": "450 kg"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 1401 limits each storage cabinet to a maximum of 110 kg of nitro-cellulose film. This reflects thermal mass calculations: a properly insulated, vented cabinet can safely contain a fire within that mass. Note that multiple cabinets each within the 110 kg limit may be used without triggering vault requirements — the 450 kg aggregate threshold governs when a vault becomes mandatory.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:44:24.314623+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9da3a52f2b22d43b87d1fdb00f4acd7370c885272666d25d8186db53929b4147"
-    },
-    {
-      "question_id": "eb90a58e-ae9e-4896-a567-4d9cce56035c",
-      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "According to Sec. 1401, what is the maximum number of films permitted in a single Manila envelope for exposed film negative storage?",
-      "options": [
-        {
-          "id": "A",
-          "text": "8 films"
-        },
-        {
-          "id": "B",
-          "text": "10 films"
-        },
-        {
-          "id": "C",
-          "text": "12 films"
-        },
-        {
-          "id": "D",
-          "text": "15 films"
-        }
-      ],
-      "correct_option_id": "C",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 1401 explicitly limits each Manila envelope to a maximum of 12 film negatives. This compartmentalizes the fuel load so that a single envelope fire cannot grow into a larger mass fire. The prohibition on expanding (accordion-style) envelopes is absolute — they can be overfilled beyond 12 films without visible indication.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:44:24.314623+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c14bf275b2a406ed4ecfe5aebb7e2df1d51f585b537d23604bbd76eac46ef589"
-    },
-    {
-      "question_id": "ce27f982-4558-4f30-9b46-e968139b95bf",
-      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under Sec. 1401, an architect specifies a nitro-cellulose film storage vault to house 600 kg of film. What is the mandatory construction requirement for the vault door opening?",
-      "options": [
-        {
-          "id": "A",
-          "text": "A standard hollow-core metal door with a door closer, suitable for general use but not for high-risk storage"
-        },
-        {
-          "id": "B",
-          "text": "A solid-core wood door with a 2-hour fire rating, typically used in less hazardous environments"
-        },
-        {
-          "id": "C",
-          "text": "A vented storage vault door of 4-hour fire-resistive construction, kept closed except when in use"
-        },
-        {
-          "id": "D",
-          "text": "A fire-rated rolling shutter with a 1-hour fire rating, often used in commercial settings for moderate protection"
-        }
-      ],
-      "correct_option_id": "C",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 1401 is explicit: when total film storage exceeds 450 kg, a vented storage vault is required, and vault door openings must be of 4-hour fire-resistive construction. The vault must be vented (to prevent buildup of decomposition gases that precede ignition) and vault doors must be kept closed except when in use — a propped-open 4-hour door provides zero protection. This requirement applies at any mass above 450 kg aggregate.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:44:24.314623+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4320e34a117d347f5a4d4af3127b6b6129f95bd0dc8836545f44657ff6e49b31"
-    },
-    {
-      "question_id": "19184f39-0905-47b0-8417-1fc5a8c1006c",
-      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "What is the maximum capacity of films allowed on open shelving before specific Rule XIV storage regulations are triggered under Sec. 1401?",
-      "options": [
-        {
-          "id": "A",
-          "text": "0.14 cu.m"
-        },
-        {
-          "id": "B",
-          "text": "1.40 cu.m"
-        },
-        {
-          "id": "C",
-          "text": "14.00 cu.m"
-        },
-        {
-          "id": "D",
-          "text": "4.50 cu.m"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 1401 sets the open shelving threshold at 1.40 cu.m of shelving capacity — not actual film volume present. The 10:1 ratio vs. safety containers reflects that uncontained film is ten times more hazardous per unit volume. Note: shelving CAPACITY triggers, not current stock level.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:44:24.314623+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:1634005ab4adac01c3c5912f3b3b93bddf855d0827f621f5a792948d38247e8b"
-    },
-    {
-      "question_id": "fd797d53-f19e-4dc8-8016-d08adcb311ee",
-      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under Sec. 1401, which of the following represents a complete and compliant ignition source control program for a nitro-cellulose film storage room?",
-      "options": [
-        {
-          "id": "A",
-          "text": "Incandescent electric light with wire guards or vapor-proof globes; NO SMOKING signs posted; heat sources kept 600 mm away"
-        },
-        {
-          "id": "B",
-          "text": "LED lighting with protective diffusers; smoking permitted in designated areas with ventilation, which is not compliant"
-        },
-        {
-          "id": "C",
-          "text": "Fluorescent fixtures with standard diffusers; occasional smoking permitted outside storage hours, which poses a risk"
-        },
-        {
-          "id": "D",
-          "text": "Portable battery-powered lamps; no smoking signage required, which is insufficient for compliance"
-        }
-      ],
-      "correct_option_id": "A",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 1401's ignition source control program requires: (1) incandescent electric light only, protected by wire guards or vapor-proof globes; (2) conspicuous NO SMOKING signs throughout; (3) no heat sources within 600 mm. Extension cords and portable lights are absolutely prohibited. The permitted lighting restriction dates to an era when open-flame and spark-producing fixtures were the alternatives; the key protection requirement is the guard/globe requirement.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:44:24.314623+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:059632c2c44fb3ef9f38920f7d9701cbe324fbd2dbe2ed9f191d0a186b5f558a"
-    },
-    {
-      "question_id": "46202e34-3f19-434c-a643-8c33fdbe4d16",
-      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Which statement correctly describes the prohibition on lighting and extension cords in X-ray film storage areas under Rule XIV (Sec. 1401)?",
-      "options": [
-        {
-          "id": "A",
-          "text": "LED and fluorescent fixtures are preferred for their lower heat output; extension cords are permitted for temporary use during maintenance"
-        },
-        {
-          "id": "B",
-          "text": "Only incandescent electric light fixtures with wire guards or vapor-proof globes are permitted; portable lights on extension cords are absolutely prohibited"
-        },
-        {
-          "id": "C",
-          "text": "High-intensity discharge (HID) lamps are permitted as they provide even illumination; extension cords are allowed for fixed equipment installations"
-        },
-        {
-          "id": "D",
-          "text": "Natural light through skylights eliminates the need for electric fixtures; extension cords may be used for portable equipment during daylight hours"
-        }
-      ],
-      "correct_option_id": "B",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 1401 explicitly restricts film storage areas to incandescent electric light, protected by wire guards or vapor-proof globes. The prohibition on portable lights on extension cords is absolute — no exceptions. Extension cords create two hazards: cord damage at high-traffic floor level and the ability to reposition a light source directly adjacent to stored film. The behavioral control is as important as the technical restriction.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:44:24.314623+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:02c2daf91a4e7d7d989ae74d8a9c812ebebcc8760de8797feb5232a9d5c9ad9a"
-    },
     {
       "question_id": "fae2e5a8-325b-4b14-9a35-5c61d942608c",
       "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
@@ -355,50 +47,6 @@
       "created_at": "2026-03-31T05:44:24.314623+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:d4340ea42b76b3c27b5bc17ec55dde7ab28e00f5c738f869bad2c044fa4418ab"
-    },
-    {
-      "question_id": "ce5f01fd-2f89-442d-8751-04f74d460ec0",
-      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
-      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
-      "text": "Under Sec. 1401 of PD 1096, Rule XIV, requirements for the storage of photographic and X-ray films apply when the total volume of safety shipping containers exceeds what threshold?",
-      "options": [
-        {
-          "id": "A",
-          "text": "1.40 cu.m"
-        },
-        {
-          "id": "B",
-          "text": "4.50 cu.m"
-        },
-        {
-          "id": "C",
-          "text": "14.00 cu.m"
-        },
-        {
-          "id": "D",
-          "text": "110.00 cu.m"
-        }
-      ],
-      "correct_option_id": "C",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": "Sec. 1401 establishes a 10:1 ratio between containerized and open shelving storage. Safety shipping containers trigger suppression at 14.00 cu.m aggregate volume because the containers themselves provide passive fire protection. Open shelving — without that protection — triggers at 1.40 cu.m.",
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": null,
-      "application_context": null,
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": null,
-      "prompt_image_url": null,
-      "created_at": "2026-03-31T05:44:24.314623+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a21b52ead23d509975c902a6cebb40e70bbc491bdf900552abc5b5bd11a5310a"
     },
     {
       "question_id": "7d96a9f0-aad4-4146-b47d-88a458f5e34a",
@@ -445,6 +93,182 @@
       "content_hash": "sha256:6fd44b3e80104a88ebf9183b28094f904831db696b11b9e47f13bbd3d45965d8"
     },
     {
+      "question_id": "fa9b9540-10aa-4d18-9eb9-c2dc44400faf",
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "At what total aggregate weight of stored nitro-cellulose film does Sec. 1401 require the provision of a dedicated vented storage vault (or detached structure or roof vault)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "110 kg"
+        },
+        {
+          "id": "B",
+          "text": "340 kg"
+        },
+        {
+          "id": "C",
+          "text": "450 kg"
+        },
+        {
+          "id": "D",
+          "text": "500 kg"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 450 kg aggregate threshold is the critical vault trigger in Sec. 1401. A facility may use multiple cabinets, each within the 110 kg individual limit, up to but not exceeding 450 kg total without requiring vault construction. At 450 kg and above, the collective fire load exceeds cabinet containment capacity, requiring vault-standard construction with 4-hour fire-resistive doors.",
+      "explanation": "The 450 kg aggregate threshold is the critical vault trigger in Sec. 1401. A facility may use multiple cabinets, each within the 110 kg individual limit, up to but not exceeding 450 kg total without requiring vault construction. At 450 kg and above, the collective fire load exceeds cabinet containment capacity, requiring vault-standard construction with 4-hour fire-resistive doors.",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-05-06T13:14:23.724314+00:00",
+      "content_hash": "sha256:213774e90c15d8c47fd32c5969136862a14d5b7353d98ef28401ce55474ff8f4"
+    },
+    {
+      "question_id": "ce5f01fd-2f89-442d-8751-04f74d460ec0",
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1401 of PD 1096, Rule XIV, requirements for the storage of photographic and X-ray films apply when the total volume of safety shipping containers exceeds what threshold?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.40 cu.m"
+        },
+        {
+          "id": "B",
+          "text": "4.50 cu.m"
+        },
+        {
+          "id": "C",
+          "text": "14.00 cu.m"
+        },
+        {
+          "id": "D",
+          "text": "110.00 cu.m"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1401 establishes a 10:1 ratio between containerized and open shelving storage. Safety shipping containers trigger suppression at 14.00 cu.m aggregate volume because the containers themselves provide passive fire protection. Open shelving — without that protection — triggers at 1.40 cu.m.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a21b52ead23d509975c902a6cebb40e70bbc491bdf900552abc5b5bd11a5310a"
+    },
+    {
+      "question_id": "039e4831-c6e9-4f10-ab2c-a74fcd641543",
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the maximum weight of nitro-cellulose film permitted in a single storage cabinet under PD 1096, Rule XIV (Sec. 1401)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "100 kg"
+        },
+        {
+          "id": "B",
+          "text": "110 kg"
+        },
+        {
+          "id": "C",
+          "text": "340 kg"
+        },
+        {
+          "id": "D",
+          "text": "450 kg"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1401 limits each storage cabinet to a maximum of 110 kg of nitro-cellulose film. This reflects thermal mass calculations: a properly insulated, vented cabinet can safely contain a fire within that mass. Note that multiple cabinets each within the 110 kg limit may be used without triggering vault requirements — the 450 kg aggregate threshold governs when a vault becomes mandatory.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9da3a52f2b22d43b87d1fdb00f4acd7370c885272666d25d8186db53929b4147"
+    },
+    {
+      "question_id": "fd797d53-f19e-4dc8-8016-d08adcb311ee",
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1401, which of the following represents a complete and compliant ignition source control program for a nitro-cellulose film storage room?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Incandescent electric light with wire guards or vapor-proof globes; NO SMOKING signs posted; heat sources kept 600 mm away"
+        },
+        {
+          "id": "B",
+          "text": "LED lighting with protective diffusers; smoking permitted in designated areas with ventilation, which is not compliant"
+        },
+        {
+          "id": "C",
+          "text": "Fluorescent fixtures with standard diffusers; occasional smoking permitted outside storage hours, which poses a risk"
+        },
+        {
+          "id": "D",
+          "text": "Portable battery-powered lamps; no smoking signage required, which is insufficient for compliance"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1401's ignition source control program requires: (1) incandescent electric light only, protected by wire guards or vapor-proof globes; (2) conspicuous NO SMOKING signs throughout; (3) no heat sources within 600 mm. Extension cords and portable lights are absolutely prohibited. The permitted lighting restriction dates to an era when open-flame and spark-producing fixtures were the alternatives; the key protection requirement is the guard/globe requirement.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:059632c2c44fb3ef9f38920f7d9701cbe324fbd2dbe2ed9f191d0a186b5f558a"
+    },
+    {
       "question_id": "0e833c55-effa-44e7-9b20-691c3c33449e",
       "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
       "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
@@ -473,6 +297,50 @@
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": "Under the DENSE mnemonic (Dental, Establishments manufacturing, Neat original packages, Safety film, Enclosures/motion picture booths), amateur roll film in original packages below 1.40 cu.m, dental X-ray film, and safety film (identified by edge marking) are all exempt. Medical X-ray film negatives stored on open shelving at 2.50 cu.m — well above the 1.40 cu.m open shelving threshold and not in original packaging — are fully subject to Sec. 1401 requirements.",
+      "explanation": "Under the DENSE mnemonic (Dental, Establishments manufacturing, Neat original packages, Safety film, Enclosures/motion picture booths), amateur roll film in original packages below 1.40 cu.m, dental X-ray film, and safety film (identified by edge marking) are all exempt. Medical X-ray film negatives stored on open shelving at 2.50 cu.m — well above the 1.40 cu.m open shelving threshold and not in original packaging — are fully subject to Sec. 1401 requirements.",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-05-06T13:14:24.545714+00:00",
+      "content_hash": "sha256:d49b37cb00369decb2651a8101f6dccaade2104eda9fa20d0e050a48f8e22368"
+    },
+    {
+      "question_id": "46202e34-3f19-434c-a643-8c33fdbe4d16",
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which statement correctly describes the prohibition on lighting and extension cords in X-ray film storage areas under Rule XIV (Sec. 1401)?",
+      "options": [
+        {
+          "id": "A",
+          "text": "LED and fluorescent fixtures are preferred for their lower heat output; extension cords are permitted for temporary use during maintenance"
+        },
+        {
+          "id": "B",
+          "text": "Only incandescent electric light fixtures with wire guards or vapor-proof globes are permitted; portable lights on extension cords are absolutely prohibited"
+        },
+        {
+          "id": "C",
+          "text": "High-intensity discharge (HID) lamps are permitted as they provide even illumination; extension cords are allowed for fixed equipment installations"
+        },
+        {
+          "id": "D",
+          "text": "Natural light through skylights eliminates the need for electric fixtures; extension cords may be used for portable equipment during daylight hours"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1401 explicitly restricts film storage areas to incandescent electric light, protected by wire guards or vapor-proof globes. The prohibition on portable lights on extension cords is absolute — no exceptions. Extension cords create two hazards: cord damage at high-traffic floor level and the ability to reposition a light source directly adjacent to stored film. The behavioral control is as important as the technical restriction.",
       "explanation": null,
       "code_citation": null,
       "bloom_level": null,
@@ -486,7 +354,139 @@
       "prompt_image_url": null,
       "created_at": "2026-03-31T05:44:24.314623+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d2ea3a07520c501c375798684f27c42a817e12f3a0020800584f2c2f1606c557"
+      "content_hash": "sha256:02c2daf91a4e7d7d989ae74d8a9c812ebebcc8760de8797feb5232a9d5c9ad9a"
+    },
+    {
+      "question_id": "19184f39-0905-47b0-8417-1fc5a8c1006c",
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the maximum capacity of films allowed on open shelving before specific Rule XIV storage regulations are triggered under Sec. 1401?",
+      "options": [
+        {
+          "id": "A",
+          "text": "0.14 cu.m"
+        },
+        {
+          "id": "B",
+          "text": "1.40 cu.m"
+        },
+        {
+          "id": "C",
+          "text": "14.00 cu.m"
+        },
+        {
+          "id": "D",
+          "text": "4.50 cu.m"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1401 sets the open shelving threshold at 1.40 cu.m of shelving capacity — not actual film volume present. The 10:1 ratio vs. safety containers reflects that uncontained film is ten times more hazardous per unit volume. Note: shelving CAPACITY triggers, not current stock level.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1634005ab4adac01c3c5912f3b3b93bddf855d0827f621f5a792948d38247e8b"
+    },
+    {
+      "question_id": "ce27f982-4558-4f30-9b46-e968139b95bf",
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Sec. 1401, an architect specifies a nitro-cellulose film storage vault to house 600 kg of film. What is the mandatory construction requirement for the vault door opening?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A standard hollow-core metal door with a door closer, suitable for general use but not for high-risk storage"
+        },
+        {
+          "id": "B",
+          "text": "A solid-core wood door with a 2-hour fire rating, typically used in less hazardous environments"
+        },
+        {
+          "id": "C",
+          "text": "A vented storage vault door of 4-hour fire-resistive construction, kept closed except when in use"
+        },
+        {
+          "id": "D",
+          "text": "A fire-rated rolling shutter with a 1-hour fire rating, often used in commercial settings for moderate protection"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1401 is explicit: when total film storage exceeds 450 kg, a vented storage vault is required, and vault door openings must be of 4-hour fire-resistive construction. The vault must be vented (to prevent buildup of decomposition gases that precede ignition) and vault doors must be kept closed except when in use — a propped-open 4-hour door provides zero protection. This requirement applies at any mass above 450 kg aggregate.",
+      "explanation": "Sec. 1401 is explicit: when total film storage exceeds 450 kg, a vented storage vault is required, and vault door openings must be of 4-hour fire-resistive construction. The vault must be vented (to prevent buildup of decomposition gases that precede ignition) and vault doors must be kept closed except when in use — a propped-open 4-hour door provides zero protection. This requirement applies at any mass above 450 kg aggregate.",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-05-06T13:14:24.297195+00:00",
+      "content_hash": "sha256:f0aa2ec5430b5976c9d53ca9bd2b61022dcbbe1421c49948b1baaa166cf92126"
+    },
+    {
+      "question_id": "eb90a58e-ae9e-4896-a567-4d9cce56035c",
+      "article_id": "5a5eaf39-d265-427e-90dc-40bfeb763baf",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "According to Sec. 1401, what is the maximum number of films permitted in a single Manila envelope for exposed film negative storage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "8 films"
+        },
+        {
+          "id": "B",
+          "text": "10 films"
+        },
+        {
+          "id": "C",
+          "text": "12 films"
+        },
+        {
+          "id": "D",
+          "text": "15 films"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1401 explicitly limits each Manila envelope to a maximum of 12 film negatives. This compartmentalizes the fuel load so that a single envelope fire cannot grow into a larger mass fire. The prohibition on expanding (accordion-style) envelopes is absolute — they can be overfilled beyond 12 films without visible indication.",
+      "explanation": "Sec. 1401 explicitly limits each Manila envelope to a maximum of 12 film negatives. This compartmentalizes the fuel load so that a single envelope fire cannot grow into a larger mass fire. The prohibition on expanding (accordion-style) envelopes is absolute — they can be overfilled beyond 12 films without visible indication.",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-05-06T13:14:23.863777+00:00",
+      "content_hash": "sha256:295cb35bbdd3626d5bad09ceffb56b69853fe36c562cafccbb212e04fbc5680d"
     },
     {
       "question_id": "08d8f651-6080-40ee-aaa1-f1bfd009909b",

@@ -1,0 +1,508 @@
+{
+  "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:ac997acc5442e289fa094b96fff0a36fa1ca7e25f2b8202cb428660d4d952b3d",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "b3d6f710-676b-4588-91f1-56761f20ee38",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "An architect's registration is revoked for repeatedly sealing work not personally prepared. According to Section 24 of the IRR, what is required for the architect to reregister?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waiting two years from revocation, then applying for reinstatement automatically, assuming no further violations"
+        },
+        {
+          "id": "b",
+          "text": "Retaking and passing the licensure examination; waiting two years does not guarantee reinstatement without demonstrating remediation"
+        },
+        {
+          "id": "c",
+          "text": "Obtaining a letter from the Board Chair acknowledging the architect's rehabilitation, which must be supported by evidence of professional development"
+        },
+        {
+          "id": "d",
+          "text": "Settling any outstanding ethics complaints and paying reinstatement fees, ensuring all conditions are met for eligibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Two-year waiting period does not automatic reinstatement; the architect must demonstrate remediation and pass the examination.",
+        "c": "Letter from Board Chair is not part of the reinstatement process; the architect must demonstrate remediation of underlying conduct.",
+        "d": "Fee payment and complaint settlement do not substitute for passing the licensure examination and demonstrating remediation.",
+        "correct": "An architect whose registration is revoked for repeatedly sealing work not personally prepared would face revocation... The architect must retake and pass the licensure examination to reregister.' Also: 'The Board retains discretion to deny reinstatement if the architect has not genuinely remedied the conduct justifying revocation. A two-year waiting period alone does not guarantee reinstatement.'",
+        "takeaway": "Revoked architects must retake the licensing examination to reregister; two-year waiting does not guarantee reinstatement without demonstrated remediation."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:70d981d35f0a2c4bd3b7939377f0a40be1a5b51003921ec753fd2c284df17576"
+    },
+    {
+      "question_id": "edc79348-a89f-4dd0-ae20-c272683bb96c",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "An architect permits a non-licensed engineering technician to design structural systems independently while the architect reviews the completed work. The technician lacks engineering licensure. Under Section 23-b, has the architect aided unauthorized practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because the architect reviewed the work before it was used and ensured compliance with all relevant codes"
+        },
+        {
+          "id": "b",
+          "text": "No, because engineering design is not architectural work and falls outside the architect's responsibility"
+        },
+        {
+          "id": "c",
+          "text": "Yes, because the architect permitted independent design work by an unlicensed person"
+        },
+        {
+          "id": "d",
+          "text": "Yes, only if the technician's work contained defects or code violations that were not corrected"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Subsequent review does not cure the violation; aiding occurs by permitting independent work by unlicensed persons.",
+        "b": "Structural systems for buildings require appropriate licensure; if engineering licensure is required, an architect cannot permit independent design.",
+        "d": "Aiding occurs through permitting unauthorized practice; defects are not required to establish the violation.",
+        "correct": "The article's ALE test point states: 'An architect permits a non-licensed engineering technician to design structural systems independently, knowing the person lacks licensure. The architect reviews the work after completion. The architect aids unauthorized practice through permitting the independent design work.'",
+        "takeaway": "Section 23-b aiding occurs by permitting independent architectural or engineering work by unlicensed persons, regardless of subsequent review."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23-b",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d4909a3b6494f79ba31639df9014f5127088d5143633e29181f06af043698aed"
+    },
+    {
+      "question_id": "5d63ff24-f6fa-465d-947a-fefee59f2da0",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "Under RA 9266 Section 7, how may the Board of Architecture initiate investigation of potential suspension or revocation grounds?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only through written sworn complaints filed by clients or competitors, ensuring due process"
+        },
+        {
+          "id": "b",
+          "text": "Only when a formal charge is filed by the Commission on Higher Education, which is a rare occurrence"
+        },
+        {
+          "id": "c",
+          "text": "Motu proprio (on its own motion) without awaiting formal complaint, or based on sworn complaints"
+        },
+        {
+          "id": "d",
+          "text": "Only when the architect has been convicted of a related criminal offense, which is a stringent requirement"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Board has independent authority to investigate motu proprio; formal complaints are not required.",
+        "b": "The Board does not require Commission on Higher Education involvement; the Board has independent authority.",
+        "d": "Criminal conviction is not required; potential Code violations trigger investigation authority.",
+        "correct": "The Board may motu proprio (on its own motion) investigate conduct constituting sufficient grounds for suspension or revocation. The Board need not await formal complaint. Discovery of published work showing unsealed designs, notice of unsafe construction practices, or evidence of unlicensed persons performing architectural services all trigger Board investigation authority.'",
+        "takeaway": "The Board has motu proprio investigation authority independent of formal complaints; discovery of misconduct triggers investigation."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23; IRR Section 23",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d81625fb631dc42c4ed2eea90fffe7dbcce1039548fbaf17073900fd01cb5c91"
+    },
+    {
+      "question_id": "b8567397-e957-4c58-9548-7eaf89823e2b",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "Under RA 9266 Section 23-b, an architect 'aids unauthorized practice' when the architect takes which action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Supervises an unlicensed employee who performs administrative tasks only, which is generally permissible"
+        },
+        {
+          "id": "b",
+          "text": "Permits non-licensed staff to perform work only licensed architects may perform without reporting or intervention"
+        },
+        {
+          "id": "c",
+          "text": "Employs junior architects who have not yet passed the licensing examination, which is allowed under supervision"
+        },
+        {
+          "id": "d",
+          "text": "Subcontracts design work to another licensed architect without disclosing the subcontract to the client, which is not aiding unauthorized practice"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Administrative tasks may be performed by unlicensed staff; aiding occurs when architectural work is permitted.",
+        "c": "Junior architects in training under supervision may perform work; aiding occurs when unlicensed persons perform architect-only work.",
+        "d": "Subcontracting to another licensed architect does not constitute aiding unauthorized practice.",
+        "correct": "An architect who permits non-licensed staff to perform work only licensed architects may perform, without reporting or intervention, aids unauthorized practice... The architect's knowledge of the unauthorized practice creates liability regardless of benefit received.'",
+        "takeaway": "Section 23-b aiding occurs when architect permits unlicensed staff to perform work only architects may perform without reporting."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23-b",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:37e21a274d2cc7d2179712b2b8c30976085bc2cb17b527c911ffcfec9c06e16f"
+    },
+    {
+      "question_id": "f7d55217-14d9-485b-a78d-73d723319728",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "An architect discovers through internal quality assurance that two residential projects were selead with structural systems designed by an employee who lacks engineering licensure. The architect has not yet been subject to formal complaint or Board investigation. According to IRR Section 23, what action should the architect take?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wait for the Board to discover the violations through independent investigation, assuming no immediate risk is present"
+        },
+        {
+          "id": "b",
+          "text": "Self-report to the Board immediately and implement corrective supervision systems to demonstrate remediation efforts"
+        },
+        {
+          "id": "c",
+          "text": "Modify the sealed documents to obscure the unlicensed person's involvement, ensuring no trace of the original error remains"
+        },
+        {
+          "id": "d",
+          "text": "File a complaint against the unlicensed employee but not disclose the situation to the Board, hoping to resolve it internally"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Waiting for discovery allows the violation to continue and does not demonstrate remediation.",
+        "c": "Modifying sealed documents constitutes fraud and creates additional violations.",
+        "d": "Reporting only the employee without disclosing the architect's knowledge and failure to intervene omits material facts from the Board.",
+        "correct": "Self-reporting demonstrates remediation and may lead to lesser sanctions, though not explicitly required by RA 9266. The article discusses Board authority to investigate motu proprio and notes: 'An architect who discovers a contractor's in-house designer (unlicensed) is performing design work should report this to the Board rather than acquiescing silently.' Self-reporting allows opportunity for remedial suspension rather than revocation.",
+        "takeaway": "Architects who discover unlicensed work must report to the Board and implement corrective measures; awaiting discovery demonstrates failure to remediate."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23-b; IRR Section 23",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4462f7cf47a18c4f32c737915e348459256be84eb3d901274347346183007717"
+    },
+    {
+      "question_id": "fd15b249-13dc-4a96-86c6-5511f26d3a60",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "Under RA 9266 Section 23-a, what does 'direct supervision' of architectural work require?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Periodic review of completed work by the architect is sufficient supervision, provided it aligns with project milestones"
+        },
+        {
+          "id": "b",
+          "text": "The architect's personal involvement in design decisions throughout all critical design phases"
+        },
+        {
+          "id": "c",
+          "text": "Written approval of work by the architect before sealing documents, ensuring compliance with design intent"
+        },
+        {
+          "id": "d",
+          "text": "The architect's signature on all intermediate design documents, which serves as a record of oversight"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Periodic review of completed work is insufficient; direct supervision requires personal involvement during critical phases.",
+        "c": "Written approval after completion does not constitute direct supervision; involvement must occur during design phases.",
+        "d": "Signature on intermediate documents does not constitute personal involvement in design decisions.",
+        "correct": "\"Direct supervision\" requires the architect's personal involvement in design decisions, not merely administrative review of completed work. If the architect is absent during critical design phases, even with periodic check-ins afterward, direct supervision has not occurred.'",
+        "takeaway": "Section 23-a requires architect's personal involvement in design decisions during all critical phases, not review of completed work."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23-a",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1f1f631ff91784976445dd05e7aec775624ddb4fee015216c6303e65e56e0586"
+    },
+    {
+      "question_id": "652b4908-eb70-4af4-ab23-632ea52cba58",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "RA 9266 Section 23-c addresses improper solicitation. Which scenario represents a violation of this section?",
+      "options": [
+        {
+          "id": "a",
+          "text": "An architect publishes advertisements describing architectural services and accepts client inquiries, but requires written service agreements before beginning work, ensuring clarity and mutual understanding."
+        },
+        {
+          "id": "b",
+          "text": "An architect advertises architectural services publicly and then denies service obligations based on lack of written agreement with a client who inquired"
+        },
+        {
+          "id": "c",
+          "text": "An architect refers clients to other licensed architects when the architect lacks capacity, ensuring clients receive the best possible service."
+        },
+        {
+          "id": "d",
+          "text": "An architect offers reduced rates for services to nonprofit organizations, which is a common practice to support community initiatives."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Requiring written agreements before work begins complies with Section 23-c.",
+        "c": "Referrals to other architects do not violate solicitation requirements.",
+        "d": "Reduced rates for nonprofit services do not constitute improper solicitation.",
+        "correct": "An architect cannot advertise architectural expertise and then deny service obligations based on lack of written agreement... A legitimate service agreement must precede or immediately accompany the engagement offer.'",
+        "takeaway": "Section 23-c prohibits advertising services and then denying obligations based on lack of prior written agreement."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23-c",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0274e7573b82754872356850cad2d929499c8d4deb2b168ddae06d0bf4fec3ba"
+    },
+    {
+      "question_id": "b38b4c8d-0a6a-401e-af49-b07ea4c552f7",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "An architect reviews final construction documents prepared by junior architects but does not participate in schematic design or preliminary design phases. The junior architects' work is selead by the architect. Has the architect complied with Section 23-a direct supervision requirements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because the architect reviewed and approved the final documents before sealing, ensuring compliance with all necessary standards"
+        },
+        {
+          "id": "b",
+          "text": "Yes, because the architect holds ultimate responsibility for the sealed documents, which includes accountability for any errors or omissions"
+        },
+        {
+          "id": "c",
+          "text": "No, because direct supervision requires involvement in all critical design stages, not final review only"
+        },
+        {
+          "id": "d",
+          "text": "No, because the junior architects' work should not be sealed by the reviewing architect unless they have been directly supervised throughout the entire design process"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Final review constitutes administrative review, not the personal involvement in design decisions required by Section 23-a.",
+        "b": "Ultimate responsibility exists but does not satisfy the direct supervision requirement of personal involvement in design phases.",
+        "d": "The issue is not whether sealing is permissible but whether supervision was direct; if direct supervision occurred, sealing is permitted.",
+        "correct": "The article's ALE test point explicitly states: 'An architect reviews final construction documents prepared by junior architects but does not participate in schematic design or preliminary design phases. This is review, not supervision; direct supervision requires involvement in all critical design stages.'",
+        "takeaway": "Section 23-a direct supervision requires personal involvement in schematic and preliminary phases; final review alone is insufficient."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23-a",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2b65177e056068bb41e6bb862f0535ae900ba0359a9d6bf47ec420411f35294b"
+    },
+    {
+      "question_id": "b10b3f85-1a7b-434a-9777-7068ce7b7cbb",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "An architect accepts a building design project from a potential client on a verbal 'handshake agreement,' promising to work out compensation details later. The client completes the project but then refuses payment. Under Section 23-c, what is the architect's position?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect may claim exploitation and file a complaint against the client for breach of contract, although proving such a claim without a written agreement can be challenging"
+        },
+        {
+          "id": "b",
+          "text": "The architect created vulnerability to exploitation violation by accepting engagement without written service agreement"
+        },
+        {
+          "id": "c",
+          "text": "The architect may establish an oral contract by proving the client's initial agreement to pay, which can be difficult without documented evidence"
+        },
+        {
+          "id": "d",
+          "text": "The exploitation violation applies only if the client knew in advance they would refuse payment, which is hard to prove without clear intent"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While the architect may have a breach of contract claim, accepting work without written agreement creates vulnerability to Code violation.",
+        "c": "An oral contract might be established in civil court, but accepting architectural work without written service agreement violates Section 23-c regardless of payment outcome.",
+        "d": "The architect's vulnerability to exploitation exists at the moment of accepting work without written agreement; client intent to refuse payment is not required.",
+        "correct": "The article's ALE test point states: 'An architect discusses a building design project with a potential client, and the client requests the architect proceed on a handshake agreement... Accepting this engagement without written agreement creates vulnerability to exploitation violation.'",
+        "takeaway": "Section 23-c requires written service agreements before accepting architectural work; handshake agreements create exploitation vulnerability."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23-c",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:81691d9bbdaf7ffbbf77695648a8fd2f01e67c2d2369317e33926fc6c7629331"
+    },
+    {
+      "question_id": "b72282c0-da4a-4363-856a-fadd7a58025d",
+      "article_id": "4b4de57e-db7f-44d9-98f7-a0a1fe6e2428",
+      "topic_id": "28768336-6781-4b72-8598-4c0e453328d2",
+      "text": "What is the primary distinction between suspension and revocation of an architect's registration certificate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Suspension applies to intentional violations; revocation applies to unintentional violations, which are less severe"
+        },
+        {
+          "id": "b",
+          "text": "Suspension temporarily removes authority to practice; revocation permanently withdraws the certificate and requires retaking the licensure examination to reregister"
+        },
+        {
+          "id": "c",
+          "text": "Suspension is administrative only; revocation requires court approval and a formal hearing process"
+        },
+        {
+          "id": "d",
+          "text": "Suspension allows continued practice under Board supervision; revocation prohibits all professional activities, including consultancy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Intentional vs. unintentional is not the distinction; suspension applies to remedial violations while revocation applies to serious violations.",
+        "c": "Both suspension and revocation are administered by the Board within the administrative process.",
+        "d": "Suspension does not permit supervised practice; the architect's authority is temporarily removed.",
+        "correct": "The article explicitly states: 'Suspension temporarily removes the architect's legal authority to practice. The Certificate remains technically issued but inactive... Revocation permanently withdraws the Certificate. The architect loses all practice authority and must retake the licensure examination to reregister.'",
+        "takeaway": "Suspension is temporary with possibility of reinstatement; revocation is permanent and requires retaking the licensing examination."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266 Section 23; RA 9266 Section 23 & 24",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-ETH-008-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.117151+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:67f8c8902242178c0054b3d2199b76324cd4e556d73488686d8bb31a50a3073e"
+    }
+  ]
+}

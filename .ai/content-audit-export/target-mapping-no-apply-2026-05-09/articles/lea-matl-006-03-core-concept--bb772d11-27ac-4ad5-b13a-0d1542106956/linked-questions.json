@@ -1,0 +1,508 @@
+{
+  "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:71868966edadc92110364edad969c504f3df6e7d4fc688a81cfd1741bcf3b8b1",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "ca24ab09-70b5-4acf-90a3-306c93691bb8",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "A basement wall in a tropical coastal region experiences intermittent hydrostatic pressure during monsoon season. The engineer proposes negative-side (interior) waterproofing. What is the primary failure risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interior coating will fail because it cannot resist water pressure before infiltration"
+        },
+        {
+          "id": "b",
+          "text": "Exterior concrete will deteriorate from salt spray, leading to potential structural compromise over time"
+        },
+        {
+          "id": "c",
+          "text": "Interior drainage system will become overwhelmed with water, especially during peak rainfall events"
+        },
+        {
+          "id": "d",
+          "text": "Coating will fail to cure due to high humidity, which is prevalent in tropical coastal regions"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Salt spray affects exterior concrete but is secondary; primary issue is hydrostatic pressure.",
+        "c": "Interior drainage can be enhanced with pumps, but this does not address the core issue of pressure-driven infiltration.",
+        "d": "Humidity does slow cure but is a secondary concern; waterproofing failure is primary.",
+        "correct": "Negative-side waterproofing is applied after water infiltrates the concrete. In tropical climates with monsoon rainfall (200+ mm/hr), hydrostatic pressure forces water through concrete faster than interior drainage can handle. Negative-side systems are designed for non-hydrostatic damp conditions only.",
+        "takeaway": "Positive-side (exterior) waterproofing is mandatory for tropical hydrostatic conditions. Negative-side only for non-hydrostatic interior applications."
+      },
+      "explanation": "Salt spray affects exterior concrete but is secondary; primary issue is hydrostatic pressure. Interior drainage can be enhanced with pumps, but this does not address the core issue of pressure-driven infiltration. Humidity does slow cure but is a secondary concern; waterproofing failure is primary. Negative-side waterproofing is applied after water infiltrates the concrete. In tropical climates with monsoon rainfall (200+ mm/hr), hydrostatic pressure forces water through concrete faster than interior drainage can handle. Negative-side systems are designed for non-hydrostatic damp conditions only. Positive-side (exterior) waterproofing is mandatory for tropical hydrostatic conditions. Negative-side only for non-hydrostatic interior applications.",
+      "code_citation": "ASTM D6164, Tropical Waterproofing Design",
+      "bloom_level": "understand",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:17:31.508598+00:00",
+      "content_hash": "sha256:e7881a9c7eadd66ba80da817e664b9b472bc540d231de9f0b962d45ed88f73ba"
+    },
+    {
+      "question_id": "c82532e0-7b73-4891-9292-acf89dd2251f",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "Waterproofing applied on the water-facing surface of a basement wall (exterior) is classified as ___ waterproofing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Negative-side"
+        },
+        {
+          "id": "b",
+          "text": "Positive-side"
+        },
+        {
+          "id": "c",
+          "text": "Capillary-break"
+        },
+        {
+          "id": "d",
+          "text": "Damp-proof"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Negative-side is applied on the interior after water infiltration; cannot resist hydrostatic pressure.",
+        "c": "Capillary-break is a damp-proofing technique using absorbent materials; does not provide full waterproofing.",
+        "d": "Damp-proof blocks vapor transmission but allows liquid water penetration; lighter than waterproofing.",
+        "correct": "Positive-side waterproofing is applied directly on the surface exposed to water (exterior basement walls, roof decks). It resists hydrostatic pressure by blocking water before infiltration.",
+        "takeaway": "Positive-side = exterior/source side. Negative-side = interior. Tropical hydrostatic requires positive-side."
+      },
+      "explanation": "Negative-side is applied on the interior after water infiltration; cannot resist hydrostatic pressure. Capillary-break is a damp-proofing technique using absorbent materials; does not provide full waterproofing. Damp-proof blocks vapor transmission but allows liquid water penetration; lighter than waterproofing. Positive-side waterproofing is applied directly on the surface exposed to water (exterior basement walls, roof decks). It resists hydrostatic pressure by blocking water before infiltration. Positive-side = exterior/source side. Negative-side = interior. Tropical hydrostatic requires positive-side.",
+      "code_citation": "ASTM D6164, Waterproofing Design Principles",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T13:17:31.389+00:00",
+      "content_hash": "sha256:ff039def3e1bad33c7cf29eeae321e6bb874a6c4f6a04316701eef40b7dafa08"
+    },
+    {
+      "question_id": "d3f421c9-847a-4ad0-b6c4-ddc8b930db3e",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "According to ASTM D6083, the minimum dry film thickness for liquid-applied acrylic waterproofing is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.5 mm"
+        },
+        {
+          "id": "b",
+          "text": "1.5 mm"
+        },
+        {
+          "id": "c",
+          "text": "3.0 mm"
+        },
+        {
+          "id": "d",
+          "text": "5.0 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.5 mm is a primer or sealer; insufficient for waterproofing.",
+        "c": "3.0 mm is double-coating (two 1.5 mm layers) or thicker application for high-stress areas.",
+        "d": "5.0 mm exceeds typical specification and increases cost without performance benefit.",
+        "correct": "ASTM D6083 specifies minimum 1.5 mm dry film thickness to achieve adequate coverage and defect tolerance.",
+        "takeaway": "Acrylic waterproofing minimum = 1.5 mm DFT (dry film thickness). Typical range 1.5-2.5 mm."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D6083",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1ede6220a25ec9408332655849b89402241ac0ff39adabcaa48c5c5076496ffe"
+    },
+    {
+      "question_id": "ce7be606-4c04-4e42-bd2d-7e250aa6f6bd",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "A polyurethane liquid waterproofing (ASTM D7984) is specified for a damp basement wall (90% RH). An acrylic waterproofing (ASTM D6083) is an alternative at lower cost. What is the limiting factor for acrylic application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Acrylic is less durable in tropical salt spray, which can lead to premature degradation in coastal areas"
+        },
+        {
+          "id": "b",
+          "text": "Acrylic requires dry substrate (<85% RH); high humidity causes tackiness and delamination"
+        },
+        {
+          "id": "c",
+          "text": "Acrylic has lower tensile strength and cracks under concrete shrinkage, making it unsuitable for dynamic structures"
+        },
+        {
+          "id": "d",
+          "text": "Acrylic yellows and fades under UV exposure, affecting aesthetic longevity in sunlit areas"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Durability in salt spray is a concern but not the immediate limiting factor for damp substrate.",
+        "c": "Tensile strength and crack bridging are material properties; acrylic has adequate values for waterproofing.",
+        "d": "UV fade is a concern for exposed membranes; interior basement application has minimal UV exposure.",
+        "correct": "ASTM D6083 acrylic coatings are water-dispersed; they require <85% relative humidity for proper evaporative cure. At 90% RH, water evaporation is inhibited, causing tackiness, extended cure time (>14 days), and eventual delamination due to trapped moisture.",
+        "takeaway": "Acrylic waterproofing requires dry substrate. Polyurethane tolerates damp concrete and high humidity. Match material to substrate condition."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D6083, ASTM D7984 Cure Requirements",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:48d8678a3a73c3814c926e886550739f07cdd46a0b65eee3d0c6d3eb1c85405c"
+    },
+    {
+      "question_id": "2b4ac2db-bb95-4ac8-a4c5-9a91e45e3582",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "Torch-applied bituminous waterproofing cannot be installed over damp concrete because ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Flame heat causes moisture expansion and adhesive failure, leading to compromised waterproofing integrity"
+        },
+        {
+          "id": "b",
+          "text": "Bitumen emulsion does not bind to wet surfaces; moisture blocks adhesion"
+        },
+        {
+          "id": "c",
+          "text": "Damp concrete cures faster than bitumen can cure, creating delamination and potential for future leaks"
+        },
+        {
+          "id": "d",
+          "text": "High humidity slows bitumen curing time beyond 30 days, affecting the overall effectiveness of the waterproofing layer"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Moisture expansion occurs but is secondary; primary issue is adhesive failure.",
+        "c": "Concrete curing rate is independent of waterproofing; not a failure mechanism.",
+        "d": "Bitumen cure is primarily temperature-dependent, not humidity-dependent.",
+        "correct": "Torch-applied bituminous sheets (ASTM D2178) use heat-activated adhesive or contact cement. Moisture on concrete surface prevents adhesive bonding; water acts as a parting agent. Concrete must dry to <85% RH before application.",
+        "takeaway": "Torch-applied bituminous requires dry concrete (<85% RH). Polyurethane and cementitious systems tolerate damp. Match product to substrate condition."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D2178, Installation Guidelines",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d64e2fc474119dcc82e9b8773aec1d90817be2bc2dada9d1455ec8e728466da3"
+    },
+    {
+      "question_id": "9590a306-6a4b-43df-aee5-4eab728a63dd",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "An ASTM D6083 liquid acrylic waterproofing is specified at 1.5 mm dry film thickness on a 500 m² basement wall. The product contains 60% solids by weight and has a density of 1.2 kg/liter. Calculate the total wet volume (liters) required for application.",
+      "options": [
+        {
+          "id": "a",
+          "text": "450 liters"
+        },
+        {
+          "id": "b",
+          "text": "750 liters"
+        },
+        {
+          "id": "c",
+          "text": "1050 liters"
+        },
+        {
+          "id": "d",
+          "text": "1250 liters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "450 liters is 500 × 0.9 / 1.2; incorrect calculation.",
+        "b": "750 liters omits solids conversion; treats DFT directly as wet volume.",
+        "d": "1050 liters uses incorrect solids adjustment (e.g., 750 × 1.4 ≠ 1050).",
+        "correct": "DFT 1.5 mm on 500 m²: volume of dry coating = 500 m² × 0.0015 m = 0.75 m³ = 750 liters. Accounting for 60% solids: wet volume = 750 liters / 0.60 = 1250 liters. Weight = 1250 liters × 1.2 kg/liter = 1500 kg (1.5 tons). Answer closest to 1250 liters.",
+        "takeaway": "Calculate DFT volume in m³, convert to liters, then divide by solids % to get wet volume required. Polyurethane and acrylic require this calculation for pricing and logistics."
+      },
+      "explanation": null,
+      "code_citation": "Coating Specification and Estimation Standards",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:29870e661cd42d2a54387f17625a870c0f69cea055d45980812fa4247dec9f08"
+    },
+    {
+      "question_id": "3996c993-d015-431d-a982-eaa8573a59a2",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "A 2000 m² flat roof in Quezon City is specified for 4-ply torch-applied bituminous waterproofing (BUR) with a cap sheet. The engineer specifies positive-side application (membrane exposed to weather) without a reflective topcoat. What is the critical performance risk in a tropical climate, and what specification change is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Membrane will cure too slowly in high humidity; apply topcoat accelerator to enhance curing speed and ensure proper adhesion"
+        },
+        {
+          "id": "b",
+          "text": "Exposed bituminous membrane will blister from moisture vapor pressure; apply reflective elastomeric topcoat per ASTM D6083 to reduce osmotic pressure and UV degradation"
+        },
+        {
+          "id": "c",
+          "text": "BUR is not suitable for tropical roofs; change to PVC membrane, which offers better resistance to high temperatures and UV exposure"
+        },
+        {
+          "id": "d",
+          "text": "Positive-side application will cause leaking at seams; use negative-side (interior) system instead, which is more effective in preventing water ingress"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cure speed is secondary; blistering and UV are primary failure modes.",
+        "c": "PVC is suitable but not mandatory; topcoat resolution is more economical.",
+        "d": "Positive-side is correct; negative-side would allow water infiltration through seams.",
+        "correct": "Torch-applied bituminous (ASTM D2178) exposed to tropical sun without reflective topcoat undergoes rapid thermal cycling, causing blistering from trapped moisture vapor and UV degradation (bitumen hardening, cracking). ASTM D6083 reflective elastomeric topcoat (white acrylic or silicone) reduces surface temperature (70°C vs 80°C+), minimizes moisture vapor drive, and extends service life from 10 to 20+ years.",
+        "takeaway": "Tropical exposed BUR requires reflective topcoat to prevent blistering and UV degradation. Exposed bituminous membrane fails within 10 years without topcoat; with topcoat, 20+ years achievable."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D2178, ASTM D6083, Tropical Waterproofing Durability Studies",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:60c58bfef05123a3bb3f88159bc910c2a81b68c8b459c0165f61a569316cab45"
+    },
+    {
+      "question_id": "743de1a4-bafa-4929-b0be-8fca30a58446",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "A concrete basement wall in Manila (coastal, salt spray environment) shows efflorescence and salt deposits before waterproofing application. The contractor proposes to apply ASTM D6083 liquid acrylic directly over the deposits to save time. What is the expected failure mode and correct procedure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Coating will fail within 1 year due to salt-induced osmotic blistering and delamination; substrate must be cleaned per ASTM D4259"
+        },
+        {
+          "id": "b",
+          "text": "Efflorescence is cosmetic; acrylic will perform adequately over deposits, although this may not address underlying issues"
+        },
+        {
+          "id": "c",
+          "text": "Coating cure will be accelerated by salt catalysts; no cleaning needed, which is a misconception about the curing process"
+        },
+        {
+          "id": "d",
+          "text": "Efflorescence will penetrate the coating and cause capillary wicking of salts; apply thicker coat (2.5 mm) to attempt mitigation"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Efflorescence is functional, not cosmetic; delamination risk is high.",
+        "c": "Salt does not accelerate cure; it inhibits adhesion and promotes blistering.",
+        "d": "Thicker coating does not solve adhesion failure; substrate cleaning is required.",
+        "correct": "Efflorescence (calcium carbonate, potassium/sodium salts) creates an incompatible surface for adhesion. ASTM D4259 specifies wire brushing or chemical cleaning to remove deposits. Salts trap moisture beneath the coating, causing osmotic pressure (blistering) within 6-12 months. Acrylic at 1.5-2.5 mm cannot bridge osmotic failure; substrate preparation is mandatory.",
+        "takeaway": "Tropical coastal concrete requires ASTM D4259 cleaning before waterproofing. Efflorescence and salt deposits must be removed. Skipping cleaning results in 1-year failure from osmotic blistering."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D4259 (Cleaning Concrete), ASTM D6083, Tropical Waterproofing Durability",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aec8ab49e7099e437339c1837f6286a820e4c5ab3e9681f1e92208a37837d5c1"
+    },
+    {
+      "question_id": "a615ce9f-571a-4071-b60b-35b2d3d31539",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "The minimum seam overlap for membrane waterproofing sheets is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 mm"
+        },
+        {
+          "id": "b",
+          "text": "50 mm"
+        },
+        {
+          "id": "c",
+          "text": "75 mm"
+        },
+        {
+          "id": "d",
+          "text": "100 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "25 mm is insufficient for tolerance; water can bypass thin overlap.",
+        "c": "75 mm is upper end of range; acceptable but less economical than 50 mm.",
+        "d": "100 mm exceeds standard and increases material waste.",
+        "correct": "Installation standards require 50-75 mm seam overlap to prevent water bypass at sheet edges. Minimum 50 mm ensures coverage of slight misalignment.",
+        "takeaway": "Membrane overlap = 50-75 mm minimum. Tropical high-intensity rain justifies 75 mm for added security."
+      },
+      "explanation": null,
+      "code_citation": "Installation Standards, ASTM D4434",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1b669a4218c13a6971a93cb475e53933607379b3d282d4e8b6c1c313b09c73c6"
+    },
+    {
+      "question_id": "6fc3290a-b8ac-4f00-8f88-a2375566a0cb",
+      "article_id": "bb772d11-27ac-4ad5-b13a-0d1542106956",
+      "topic_id": "ad0b3055-4674-47d5-b228-35c0b4480af0",
+      "text": "Philippine typhoons deliver rainfall intensities exceeding ___ mm/hour, creating hydrostatic pressure on below-grade structures.",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 mm/hr"
+        },
+        {
+          "id": "b",
+          "text": "100 mm/hr"
+        },
+        {
+          "id": "c",
+          "text": "200 mm/hr"
+        },
+        {
+          "id": "d",
+          "text": "300 mm/hr"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "50 mm/hr is moderate tropical rain; does not exceed design storm.",
+        "b": "100 mm/hr is heavy rain; below typhoon intensity.",
+        "d": "300 mm/hr exceeds typical Philippine storms (200-250 mm/hr is upper range).",
+        "correct": "Tropical typhoons in the Philippines deliver 200+ mm/hr rainfall, creating sustained hydrostatic pressure on foundations. This extreme intensity is a critical design driver for positive-side waterproofing.",
+        "takeaway": "Philippine typhoon rainfall = 200+ mm/hr; drives positive-side waterproofing requirement. Interior drainage alone cannot manage this intensity."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Meteorological and Geophysical Administration (PAGASA), NSCP 2015",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:925c87782d0237a85f0b43a792a441935d5e8892953007c59557e538e58f3a72"
+    }
+  ]
+}

@@ -1,0 +1,1284 @@
+{
+  "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:209c9856e2aa5aa55ec0a35bf2f2b52f963b95f3f2caf8e8faef31f0090b95fe",
+  "question_count": 29,
+  "questions": [
+    {
+      "question_id": "5a1db50d-da47-464e-b5e7-2c35bf3a5c60",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building has a sloped roof with a pitch of 100mm/300mm (1:3 slope). Per PD 1096, Rule XIII, Section 1301, what is the minimum vertical clearance for a service drop above this roof?",
+      "options": [
+        {
+          "id": "em-016-a",
+          "text": "0.50 m"
+        },
+        {
+          "id": "em-016-b",
+          "text": "1.00 m"
+        },
+        {
+          "id": "em-016-c",
+          "text": "2.50 m"
+        },
+        {
+          "id": "em-016-d",
+          "text": "3.00 m"
+        }
+      ],
+      "correct_option_id": "em-016-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 1:3 slope threshold (100mm rise per 300mm run) represents a moderately steep pitched roof. At this slope, the service drop naturally passes above the ridge at a greater distance, justifying the reduced clearance compared to a flat roof where a person standing on the roof could reach higher.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ba8c620f4ab663c90a8343c659c0b1e2e2158482431f9dd0e928f066055cc2f"
+    },
+    {
+      "question_id": "6a26f091-27fb-44cc-883e-9833923903f1",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Using the 'Two-Five-Zero, Add a Hundred, Then Slow Down' mnemonic for PD 1096 Rule VI, what are the minimum RC column dimensions (all faces exposed) for 1, 2, 3, and 4 hours respectively?",
+      "options": [
+        {
+          "id": "a",
+          "text": "200 mm, 250 mm, 350 mm, 400 mm"
+        },
+        {
+          "id": "b",
+          "text": "200 mm, 300 mm, 400 mm, 450 mm"
+        },
+        {
+          "id": "c",
+          "text": "150 mm, 250 mm, 350 mm, 500 mm"
+        },
+        {
+          "id": "d",
+          "text": "175 mm, 275 mm, 375 mm, 450 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 450 mm minimum column size for Type V construction has major architectural implications — it forces a grid of substantial concrete piers occupying 4.5% of a 10 m structural bay, significantly constraining floor plan flexibility.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.057007+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a1fb88d12064781e94c81bfd3b9ae1755682b1e3e7873f339faeb6b0fdd3e7ac"
+    },
+    {
+      "question_id": "3d0d33bf-b1db-4adf-a7a5-d7a23ae6c014",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 1604 (2004 IRR), what is the minimum required distance from upper-floor plastic-glazed openings to enclosed or outside stairways and exit passageways?",
+      "options": [
+        {
+          "id": "pl-012-a",
+          "text": "1.50 m"
+        },
+        {
+          "id": "pl-012-b",
+          "text": "2.00 m"
+        },
+        {
+          "id": "pl-012-c",
+          "text": "3.00 m"
+        },
+        {
+          "id": "pl-012-d",
+          "text": "5.00 m"
+        }
+      ],
+      "correct_option_id": "pl-012-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 3.00 m horizontal distance from stairways protects the primary egress path from fire originating at upper-floor plastic windows. This is distinct from the 45 m / 30 m travel distance rule in the same section.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.702597+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6cf2485a7a38e1cca7243d14cd3d0beba4104838c8ca38b43bceacee97094910"
+    },
+    {
+      "question_id": "58bce2bb-5178-44e6-ae8a-3e1115158769",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1206, what is the minimum wind load that roof construction and covering must resist, and how is it applied?",
+      "options": [
+        {
+          "id": "vo-004-a",
+          "text": "120 kg/m² applied to the total inclined roof surface area"
+        },
+        {
+          "id": "vo-004-b",
+          "text": "120 kg/m² applied to the vertical projection of the roof"
+        },
+        {
+          "id": "vo-004-c",
+          "text": "100 kg/m² applied to the vertical projection of the roof"
+        },
+        {
+          "id": "vo-004-d",
+          "text": "150 kg/m² applied to the total inclined roof surface area"
+        }
+      ],
+      "correct_option_id": "vo-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "For a flat roof, the vertical projection equals the plan area. For a sloped roof, the vertical projection is the gable-end silhouette area, not the slope area. The vertical projection approach is the standard wind engineering convention because wind pressure acts horizontally on vertical surfaces, and the roof's vertical shadow is its effective wind-catching profile.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e282af723718b3045030e7d3f172d3275d7a851fbef7100308c2b931ebee18d3"
+    },
+    {
+      "question_id": "f1b880cd-aa8e-42ad-8545-bab2a2352d90",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, what is the required fire-resistive rating of a vertical enclosure wall for floor openings in a 3-hour occupancy separation zone, and what rating is required for the fire assembly at the enclosure's openings?",
+      "options": [
+        {
+          "id": "vo-005-a",
+          "text": "Enclosure wall: 3-hour; fire assembly: 3-hour"
+        },
+        {
+          "id": "vo-005-b",
+          "text": "Enclosure wall: 2-hour; fire assembly: 3-hour"
+        },
+        {
+          "id": "vo-005-c",
+          "text": "Enclosure wall: 2-hour; fire assembly: 2-hour"
+        },
+        {
+          "id": "vo-005-d",
+          "text": "Enclosure wall: 1-hour; fire assembly: 3-hour"
+        }
+      ],
+      "correct_option_id": "vo-005-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2-hour enclosure wall / 3-hour assembly arrangement reflects a rational engineering approach: the shaft wall itself can be of moderate fire resistance because it is contained within the building's broader fire compartments, but the opening assembly must match the full separation requirement of the adjacent occupancies because that is the direct fire barrier.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d0a05b8a790360e440effd1d49eeef617b56a70a9d2661ce200426889e29eb66"
+    },
+    {
+      "question_id": "7087014d-b50d-40ef-a659-d50c3742018d",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, for a 3-hour occupancy separation wall, the vertical enclosure protecting floor-level openings must have a minimum fire-resistive rating of 2 hours. What is the key design rationlea for the enclosure wall being rated lower (2-hour) than the occupancy separation it serves (3-hour)?",
+      "options": [
+        {
+          "id": "vo-014-a",
+          "text": "The occupancy separation wall bears more load and requires higher fire resistance than the enclosure"
+        },
+        {
+          "id": "vo-014-b",
+          "text": "The fire assembly at the enclosure opening is rated at 3 hours, compensating for the lower 2-hour wall rating"
+        },
+        {
+          "id": "vo-014-c",
+          "text": "The occupancy separation wall is exterior and exposed to more fire exposure; the interior enclosure needs less fire resistance"
+        },
+        {
+          "id": "vo-014-d",
+          "text": "The 2-hour rating is a drafting error in the code; all 3-hour separation components should be 3-hour"
+        }
+      ],
+      "correct_option_id": "vo-014-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This layered approach is common in fire protection engineering: a somewhat lower-rated barrier (the shaft wall) plus a fully rated opening protective (the 3-hour assembly) equals the required separation. This is more economical than requiring the entire shaft wall to be rated at the full 3-hour level when the critical fire barrier is actually the opening.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6c236601f98c4be9fa4636254ab7bd4b514a453c5927cda4a45a394f82b60987"
+    },
+    {
+      "question_id": "0085beeb-aee8-4da1-96a5-5c90d8a938b8",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1205, what structural duty does floor construction have regarding beams and girders?",
+      "options": [
+        {
+          "id": "vo-003-a",
+          "text": "Floor construction must provide a means to prevent lateral buckling of beams and girders"
+        },
+        {
+          "id": "vo-003-b",
+          "text": "Floor construction must resist all vertical loads from upper storeys without beam assistance"
+        },
+        {
+          "id": "vo-003-c",
+          "text": "Floor construction has no specific duty regarding lateral buckling of beams"
+        },
+        {
+          "id": "vo-003-d",
+          "text": "Floor construction must provide thermal insulation between floors but not structural lateral support"
+        }
+      ],
+      "correct_option_id": "vo-003-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Long-span steel transfer beams that do not have a floor slab bearing directly on them must have discrete lateral braces at prescribed intervals per the NSCP. Timber floor systems require blocking between joists or lateral bridging. The exam will not ask for specific bracing intervals (those are in NSCP/AISC) but will ask whether floor construction has this duty — the answer is definitively yes.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4fb95f03653592ba1fe779157932883a48648d8c1b3d9c758c4b001fb591b842"
+    },
+    {
+      "question_id": "8c9fbe61-7d14-453b-931a-0d9683273bdb",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1205, the duty of floor construction to prevent lateral buckling of beams is most effectively satisfied in which of the following structural systems?",
+      "options": [
+        {
+          "id": "vo-009-a",
+          "text": "Steel beams with discrete lateral braces at every third panel point"
+        },
+        {
+          "id": "vo-009-b",
+          "text": "Reinforced concrete slab cast monolithically with steel beams"
+        },
+        {
+          "id": "vo-009-c",
+          "text": "Timber joist floor with no blocking between joists"
+        },
+        {
+          "id": "vo-009-d",
+          "text": "Steel beams without a floor slab bearing directly on them"
+        }
+      ],
+      "correct_option_id": "vo-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The monolithic concrete slab-beam connection is the most common and efficient means of satisfying the lateral buckling requirement in Philippine construction practice. The composite action between the slab and beam also improves the beam's flexural stiffness and strength, providing a second structural benefit beyond just lateral restraint.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2252e9b55e588da50a0df60744e3b210afb16296f1f9769cc7698fc41aed2ce5"
+    },
+    {
+      "question_id": "7a5c6b62-391b-49fa-8b39-bbade43fefba",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1210.c, what is the regulatory consequence if a penthouse is used for purposes other than sheltering mechanical equipment or enclosing vertical shaft openings?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A fine is imposed but the penthouse remains classified as a penthouse, provided it does not exceed the maximum allowable height"
+        },
+        {
+          "id": "B",
+          "text": "The penthouse is reclassified as an additional storey, triggering BHL recalculation, GFA inclusion, and additional egress requirements"
+        },
+        {
+          "id": "C",
+          "text": "The Building Official may order the space vacated but no height recalculation is required unless the use changes permanently"
+        },
+        {
+          "id": "D",
+          "text": "The penthouse is exempt from all code requirements if used as habitable space, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1210.c, penthouses may only be used to shelter mechanical equipment or enclose vertical shaft openings. Any other use — including habitable, commercial, or residential use — causes the penthouse to be legally reclassified as an additional storey. This triggers cascading effects: BHL recalculation (potentially violating zoning height limits), GFA addition (potentially violating FAR), fire-rating upgrades, and additional egress requirements.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:11.283396+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ffda49cef48dc426b55d91f9e5c9b02c771abcd04791708be0c263eab0acb3c"
+    },
+    {
+      "question_id": "53986655-03f5-4508-b38d-5fcee434d96a",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, a wall requiring 3-hour fire-resistive occupancy separation is 18.00 m long. What is the maximum aggregate width of all openings, and what is the maximum size of any single opening?",
+      "options": [
+        {
+          "id": "vo-002-a",
+          "text": "Maximum aggregate 4.50 m total width (25% of wall length); maximum single opening 10.00 sq.m"
+        },
+        {
+          "id": "vo-002-b",
+          "text": "Maximum aggregate 25% of total wall area; maximum single opening 14.50 sq.m"
+        },
+        {
+          "id": "vo-002-c",
+          "text": "Maximum aggregate 6.00 m total width (33% of wall length); maximum single opening 10.00 sq.m"
+        },
+        {
+          "id": "vo-002-d",
+          "text": "No openings are permitted in walls requiring 3-hour fire-resistive separation under any circumstances"
+        }
+      ],
+      "correct_option_id": "vo-002-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1204, in walls requiring 3-hour separation: (1) aggregate openings must not exceed 25% of the total wall length — 25% of 18.00 m = 4.50 m; (2) no single opening may exceed 10.00 sq.m. Note: the 25% limit applies to wall length (linear dimension), not wall area. A single opening of 12.00 sq.m would violate the 10.00 sq.m cap even if the aggregate percentage is below 25%. The USA IBC applies 25% to wall area rather than length — a critical PH-vs-USA distinction.",
+      "explanation": "The length-based (not area-based) 25% calculation is the most misapplied detail in Sec. 1204. For an 18.00 m wall: 0.25 × 18 = 4.50 m total opening width is permitted. The two limits (25% of length and 10.00 sq.m single opening) operate independently — both must be satisfied simultaneously.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bf0ca3d6df7f914dd2ac28c4bbbca9aad04c221e55fc09f6a3713093bca6dd72"
+    },
+    {
+      "question_id": "5dc99e4c-622c-4330-be10-17b6cb47389b",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, what is the purpose of requiring elevator shafts to be enclosed, and how does PD 1096 determine the fire-resistance rating of the enclosure?",
+      "options": [
+        {
+          "id": "vo-009-a",
+          "text": "Purpose: protecting elevator mechanical equipment from fire damage; rating determined by the number of floors the elevator serves, ensuring adequate protection"
+        },
+        {
+          "id": "vo-009-b",
+          "text": "Purpose: containing fire and smoke within the shaft while protecting passengers; rating determined by occupancy separation hours applicable between the floors served"
+        },
+        {
+          "id": "vo-009-c",
+          "text": "Purpose: providing structural stability of the hoistway under seismic and wind loads; rating is a fixed 2-hour for all buildings regardless of occupancy, ensuring uniform safety standards"
+        },
+        {
+          "id": "vo-009-d",
+          "text": "Purpose: preventing chimney-effect smoke migration between floors; rating is a fixed 1-hour for all buildings with fewer than 15 storeys, maintaining consistent safety measures"
+        }
+      ],
+      "correct_option_id": "vo-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1204, elevator shaft enclosures serve dual purposes: (1) containing fire and smoke within the shaft (preventing chimney-effect spread between floors) and (2) protecting passengers from falling objects and mechanical hazards. The fire-resistance rating is tied to the occupancy separation hours applicable between the floors served — not a story count as in the IBC. A shaft serving floors with 3-hour occupancy separation between them triggers a higher enclosure rating than one serving floors with 1-hour separation, regardless of building height.",
+      "explanation": "The occupancy-separation-based rating method makes PH shaft design more nuanced than the IBC story-count rule. An architect must first determine the occupancy groups of all floors served, determine the required separation hours between those occupancies (from Rule VI), and then use that separation rating as the enclosure rating. This requires cross-referencing Rule VI before applying Sec. 1204.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ebe7873f72adff5c4140323f6f997abac2f93120c0237a2d2329455ee07c873a"
+    },
+    {
+      "question_id": "4eb08cb2-74eb-4e90-a9ba-8109a5af38e9",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, what are the three numerical requirements for escalator draft curtains and the perimeter sprinkler ring?",
+      "options": [
+        {
+          "id": "vo-001-a",
+          "text": "Draft curtain ≥ 150 mm on two sides of opening; sprinklers within 800 mm of curtain at max 2.00 m spacing between heads"
+        },
+        {
+          "id": "vo-001-b",
+          "text": "Draft curtain ≥ 200 mm on all sides of opening; sprinklers within 600 mm of curtain at max 1.80 m center-to-center spacing"
+        },
+        {
+          "id": "vo-001-c",
+          "text": "Draft curtain ≥ 250 mm on all sides of opening; sprinklers within 500 mm of curtain at max 2.50 m spacing between heads"
+        },
+        {
+          "id": "vo-001-d",
+          "text": "Draft curtain ≥ 200 mm on two sides of opening; sprinklers within 900 mm of curtain at max 1.50 m spacing between heads"
+        }
+      ],
+      "correct_option_id": "vo-001-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1204 requires: (1) draft curtain of at least 200 mm on all sides of the escalator opening — not just two sides; (2) automatic sprinklers within 600 mm of the draft curtain face (measured horizontally); (3) maximum sprinkler spacing of 1.80 m center to center along the perimeter. The memory aid '200-600-1.8' captures all three in sequence. Together, the curtain (passive) and sprinkler ring (active) create a compartmentalization barrier without requiring a full shaft enclosure.",
+      "explanation": "Escalators create an open vertical chimney between floors that can spread fire and smoke within seconds. The draft curtain confines smoke at ceiling level while the sprinkler water curtain suppresses spread. The 'all sides' requirement for the curtain is a frequent trap — two sides is insufficient.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8ed49865601d3605c54237fe653c30047eb37cbbd880cec66757061133ab08e0"
+    },
+    {
+      "question_id": "a8eba143-8716-4c94-bff1-2ead29adde11",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, floor-level openings within a 3-hour separation zone must be enclosed by vertical enclosures with what fire rating, and what fire assembly rating is required for openings within those enclosure walls?",
+      "options": [
+        {
+          "id": "vo-003-a",
+          "text": "Vertical enclosures: 1-hour fire-resistive; opening assemblies within enclosure: 1.5-hour fire assembly"
+        },
+        {
+          "id": "vo-003-b",
+          "text": "Vertical enclosures: 2-hour fire-resistive; opening assemblies within enclosure: 3-hour fire assembly"
+        },
+        {
+          "id": "vo-003-c",
+          "text": "Vertical enclosures: 3-hour fire-resistive; opening assemblies within enclosure: 3-hour fire assembly"
+        },
+        {
+          "id": "vo-003-d",
+          "text": "Vertical enclosures: 2-hour fire-resistive; opening assemblies within enclosure: 1.5-hour fire assembly"
+        }
+      ],
+      "correct_option_id": "vo-003-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1204, vertical enclosure walls protecting floor-level openings within 3-hour separation zones must have minimum 2-hour fire-resistive construction. However, the openings within those 2-hour enclosure walls must be protected by 3-hour fire assemblies — a fire door or shutter rated to match the occupancy separation requirement, even though the enclosure wall itself has a lower rating. This asymmetry (2-hour wall with 3-hour door) is a deliberate layered protection strategy unique to this provision.",
+      "explanation": "The 2-hour enclosure wall with 3-hour opening assembly is the opposite of what most candidates expect (usually, opening assemblies are rated lower than the wall). The logic: the wall provides the passive barrier while the door must match the full occupancy separation rating — the more active/vulnerable element must be rated higher.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:36e50d917c8e535914701edb2f0e7185e3b37d60356d2ac7080c0150cf3615b9"
+    },
+    {
+      "question_id": "fadb2793-c9e4-4b63-a4f1-79e11c2e30a5",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1205, what structural duty does the code explicitly assign to floor construction regarding beams and girders?",
+      "options": [
+        {
+          "id": "vo-004-a",
+          "text": "Floor construction must resist all vertical loads without relying on beam action at all"
+        },
+        {
+          "id": "vo-004-b",
+          "text": "Floor construction must provide a means to prevent lateral buckling of beams and girders"
+        },
+        {
+          "id": "vo-004-c",
+          "text": "Floor construction must provide thermal insulation between levels but has no lateral structural duty"
+        },
+        {
+          "id": "vo-004-d",
+          "text": "Floor construction must transfer all seismic loads to the lateral force-resisting system but has no anti-buckling duty"
+        }
+      ],
+      "correct_option_id": "vo-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1205 mandates that floor construction must provide a means to prevent lateral buckling of beams and girders. Lateral-torsional buckling is the failure mode of long unbraced flexural members: under vertical load, the compression flange buckles sideways before reaching full flexural capacity. A concrete slab monolithic with or composite-connected to steel beams provides continuous lateral restraint. Timber floor systems require blocking or bridging. The code mandates this duty explicitly — it does not merely permit it.",
+      "explanation": "This requirement is frequently overlooked because engineers often treat lateral bracing as an NSCP matter. Section 1205 establishes the Building Code obligation — the NSCP then provides the specific bracing intervals and methods. The code-level mandate is in PD 1096; the engineering detail is in NSCP.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1205",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e4ff0987086787ac9bedbfc195305c9236bc5b7e0165e84c15b673badad1f78"
+    },
+    {
+      "question_id": "5df5a703-d2cc-47a9-bec4-169079bfea41",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1206, what is the minimum wind load that roof construction must resist, and to what area is it applied?",
+      "options": [
+        {
+          "id": "vo-005-a",
+          "text": "120 kg/sq.m applied to the total inclined roof surface area"
+        },
+        {
+          "id": "vo-005-b",
+          "text": "100 kg/sq.m applied to the vertical projection of the roof"
+        },
+        {
+          "id": "vo-005-c",
+          "text": "120 kg/sq.m applied to the vertical projection of the roof"
+        },
+        {
+          "id": "vo-005-d",
+          "text": "150 kg/sq.m applied to the total plan area of the roof structure"
+        }
+      ],
+      "correct_option_id": "vo-005-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1206, roof construction and covering must resist a minimum wind load of 120 kg/sq.m applied to the vertical projection of the roof — the silhouette area as seen from the windward direction, not the actual inclined surface area. For a flat roof, these are equal. For a sloped roof, the vertical projection is the gable-end silhouette, which is smaller than the total inclined area. The 120 kg/sq.m is a code floor — actual typhoon-zone wind loads per NSCP will be substantially higher.",
+      "explanation": "The vertical projection application method is the standard wind engineering convention for determining wind force on a structure. It equals horizontal wind pressure × projected vertical area. Typhoon-prone regions in the Philippines (Visayas, Eastern Luzon, Bicol) regularly require design wind loads of 200–300 kg/sq.m per NSCP — well above the 120 kg/sq.m code minimum.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1206",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:97531c49a8df8180a011ae5930b61d6f8dac7682b67e7675f92bd03464685273"
+    },
+    {
+      "question_id": "bf982012-0228-4204-98ed-5096d2a8f8b0",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The PH Code (PD 1096) and the USA IBC assign fire ratings to elevator shaft enclosures using fundamentally different methods. What is the key difference?",
+      "options": [
+        {
+          "id": "vo-006-a",
+          "text": "PH assigns shaft ratings by number of stories served (1-hour for ≤3 stories; 2-hour for ≥4); IBC ties ratings to occupancy separation requirements of the served floors"
+        },
+        {
+          "id": "vo-006-b",
+          "text": "PH ties shaft ratings to occupancy separation requirements of the areas served; IBC assigns ratings by number of stories served (1-hour for ≤3 stories; 2-hour for ≥4)"
+        },
+        {
+          "id": "vo-006-c",
+          "text": "Both PH and IBC use number of stories served as the rating basis; they differ only in the story threshold applied (PH threshold: 4 stories; IBC threshold: 3 stories)"
+        },
+        {
+          "id": "vo-006-d",
+          "text": "PH does not require enclosure for elevator shafts in buildings under 15 storeys; IBC requires enclosure for all elevators regardless of building height"
+        }
+      ],
+      "correct_option_id": "vo-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The key philosophical difference: PD 1096 ties elevator shaft enclosure ratings to the occupancy separation requirements applicable between the floors served — meaning the rating depends on what is on each side of the shaft, not how tall the building is. IBC Sec. 713.4 uses a story-count rule: 1-hour for shafts serving ≤3 stories, 2-hour for shafts serving ≥4 stories. The PH approach is more nuanced but harder to apply mechanically; the IBC approach is simpler but may over- or under-prescribe in unusual occupancy mixes.",
+      "explanation": "Under PH practice, a mixed Group E/Group H building with 3-hour occupancy separation triggers a higher shaft rating than a pure Group B building with 1-hour separation — regardless of building height. Under IBC, both would use 1-hour if the shaft serves ≤3 stories. This difference is a consistent LEA board exam topic on PH-vs-international code distinctions.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204; IBC Sec. 713.4",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:32cf0fcbc2676694e49902018b568c699a40936c6efcf352c412c97099e82d5c"
+    },
+    {
+      "question_id": "247ee080-18df-4b35-8c9d-86dd272538c5",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building's escalator opening has no draft curtain installed, and the perimeter sprinklers are spaced at 2.20 m center to center. Per PD 1096, Rule XII, Section 1204, how many requirements are violated?",
+      "options": [
+        {
+          "id": "vo-007-a",
+          "text": "One — only the missing draft curtain violates Section 1204; sprinkler spacing is not regulated"
+        },
+        {
+          "id": "vo-007-b",
+          "text": "One — only the sprinkler spacing violates Section 1204; a draft curtain is optional if sprinklers are present"
+        },
+        {
+          "id": "vo-007-c",
+          "text": "Two — both the missing draft curtain and the 2.20 m sprinkler spacing (exceeds 1.80 m maximum) violate Section 1204"
+        },
+        {
+          "id": "vo-007-d",
+          "text": "Zero — Section 1204 requires only one of the two measures (curtain or sprinklers), not both simultaneously"
+        }
+      ],
+      "correct_option_id": "vo-007-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1204, both the draft curtain AND the sprinkler ring are independently mandatory — neither substitutes for the other. The draft curtain (≥200 mm on all sides) is absent — violation 1. The sprinkler spacing of 2.20 m exceeds the maximum 1.80 m center-to-center spacing — violation 2. Section 1204 requires both countermeasures simultaneously. Option D incorrectly treats them as alternatives; they are simultaneous, independent requirements.",
+      "explanation": "The draft curtain (passive containment) and sprinkler ring (active suppression) are a system — each addresses a different failure mode. The curtain prevents horizontal smoke spread before sprinkler activation; the sprinklers provide the water curtain after activation. Neither is optional. Two violations exist in this scenario.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f9788f6600c577fb9633ab8a30847938f2659638275abc47fe416f250aae02c"
+    },
+    {
+      "question_id": "257c0369-4c58-452b-a398-6cce7b866fc5",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1206, in typhoon-prone regions of the Philippines, which standard ultimately governs roof wind load design when it produces a higher load than the Section 1206 minimum?",
+      "options": [
+        {
+          "id": "vo-008-a",
+          "text": "Section 1206 is the absolute governing standard — 120 kg/sq.m is both a minimum and a maximum for design purposes"
+        },
+        {
+          "id": "vo-008-b",
+          "text": "The NSCP wind load provisions govern when the calculated design wind load exceeds the 120 kg/sq.m NBCP minimum"
+        },
+        {
+          "id": "vo-008-c",
+          "text": "The local government's building ordinance governs when it specifies a wind load different from both Section 1206 and NSCP"
+        },
+        {
+          "id": "vo-008-d",
+          "text": "The architect of record has discretion to select either Section 1206 or NSCP wind loads depending on project budget"
+        }
+      ],
+      "correct_option_id": "vo-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1206, the 120 kg/sq.m is a floor value — a mandatory minimum. The NSCP wind load provisions, which calculate actual design wind pressures using wind speed maps of the Philippines, govern whenever they produce a higher value. In typhoon-prone regions (Visayas, Eastern Luzon, Bicol), NSCP design wind loads regularly reach 200–300 kg/sq.m — well above the 120 kg/sq.m NBCP minimum. The NSCP figure always governs when it exceeds the NBCP baseline. Section 1206 is the administrative floor; NSCP is the engineering ceiling.",
+      "explanation": "This question tests the referral code relationship: PD 1096 sets the administrative minimum; the NSCP (a referral code under IRR Sec. 103) provides the engineering calculation that supersedes it whenever the engineering value is higher. PD 1096 and NSCP work in tandem — whichever produces the more demanding requirement governs.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1206; NSCP Chapter 2",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8b2940af7416c06773cf1339de28298abe7072cd83a85dcbd253f3312efd6ab6"
+    },
+    {
+      "question_id": "83cfef08-affe-4fe8-9534-6a61f1642aa0",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Using the memory aid '200-600-1.8' for escalator protection under Section 1204, which of the following correctly applies all three numbers to a specific design scenario?",
+      "options": [
+        {
+          "id": "vo-010-a",
+          "text": "Draft curtain 200 mm deep on all sides; nearest sprinkler head 600 mm from curtain face; adjacent sprinkler heads spaced 1.80 m apart along the perimeter"
+        },
+        {
+          "id": "vo-010-b",
+          "text": "Draft curtain 200 mm deep on two sides; nearest sprinkler head 600 mm above the floor; adjacent sprinkler heads spaced 1.80 m apart at ceiling level"
+        },
+        {
+          "id": "vo-010-c",
+          "text": "Draft curtain 200 mm deep on all sides; nearest sprinkler head 600 mm above the curtain bottom edge; maximum 1.80 m between curtain and escalator handrail"
+        },
+        {
+          "id": "vo-010-d",
+          "text": "Draft curtain 200 mm wide at ceiling; sprinkler coverage radius 600 mm; maximum 1.80 m between sprinkler and escalator edge"
+        }
+      ],
+      "correct_option_id": "vo-010-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The '200-600-1.8' mnemonic represents three sequential escalator protection requirements: 200 mm = minimum depth of draft curtain on all sides of the escalator opening (downward from ceiling); 600 mm = maximum horizontal distance from the draft curtain face to the nearest sprinkler head; 1.80 m = maximum center-to-center spacing between adjacent sprinkler heads along the escalator perimeter. Option A correctly applies all three in their proper context. Options B, C, and D misassign the measurements to incorrect elements or incorrect directions.",
+      "explanation": "The three numbers must be memorized with their correct dimensional context: 200 mm is a depth (curtain hangs down from ceiling); 600 mm is a horizontal distance (from curtain face to sprinkler head); 1.80 m is a spacing interval (between adjacent sprinkler heads). Each describes a different geometric relationship in the escalator cross-section.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:06.060204+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:60e08decf3082bfaeab4fc50c867c4ca2bbf93f9fc362599721d8ed9b698f163"
+    },
+    {
+      "question_id": "25637f66-c6a0-47bc-b032-c8c8936dba88",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, what is the purpose of requiring elevator shafts to be enclosed, and how does PD 1096 determine the fire-resistance rating of the enclosure?",
+      "options": [
+        {
+          "id": "vo-009-a",
+          "text": "Purpose: protecting elevator mechanical equipment from fire damage; rating determined by the number of floors the elevator serves, ensuring that taller buildings have more robust protection"
+        },
+        {
+          "id": "vo-009-b",
+          "text": "Purpose: containing fire and smoke within the shaft while protecting passengers; rating determined by occupancy separation hours applicable between the floors served"
+        },
+        {
+          "id": "vo-009-c",
+          "text": "Purpose: providing structural stability of the hoistway under seismic and wind loads; rating is a fixed 2-hour for all buildings regardless of occupancy, ensuring uniform safety standards"
+        },
+        {
+          "id": "vo-009-d",
+          "text": "Purpose: preventing chimney-effect smoke migration between floors; rating is a fixed 1-hour for all buildings with fewer than 15 storeys, balancing safety with practical construction considerations"
+        }
+      ],
+      "correct_option_id": "vo-009-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1204, elevator shaft enclosures serve dual purposes: (1) containing fire and smoke within the shaft (preventing chimney-effect spread between floors) and (2) protecting passengers from falling objects and mechanical hazards. The fire-resistance rating is tied to the occupancy separation hours applicable between the floors served — not a story count as in the IBC. A shaft serving floors with 3-hour occupancy separation between them triggers a higher enclosure rating than one serving floors with 1-hour separation, regardless of building height.",
+      "explanation": "The occupancy-separation-based rating method makes PH shaft design more nuanced than the IBC story-count rule. An architect must first determine the occupancy groups of all floors served, determine the required separation hours between those occupancies (from Rule VI), and then use that separation rating as the enclosure rating. This requires cross-referencing Rule VI before applying Sec. 1204.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59ae9feb82b84eff257452f407528fff19df872b73ef9f1ed0db55aec6f02ab5"
+    },
+    {
+      "question_id": "a7a11ca7-3e25-4727-b96c-50ad8d83c7c5",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1206, in typhoon-prone regions of the Philippines, which standard ultimately governs roof wind load design when it produces a higher load than the Section 1206 minimum?",
+      "options": [
+        {
+          "id": "vo-008-a",
+          "text": "Section 1206 is the absolute governing standard — 120 kg/sq.m is both a minimum and a maximum for design purposes"
+        },
+        {
+          "id": "vo-008-b",
+          "text": "The NSCP wind load provisions govern when the calculated design wind load exceeds the 120 kg/sq.m NBCP minimum"
+        },
+        {
+          "id": "vo-008-c",
+          "text": "The local government's building ordinance governs when it specifies a wind load different from both Section 1206 and NSCP"
+        },
+        {
+          "id": "vo-008-d",
+          "text": "The architect of record has discretion to select either Section 1206 or NSCP wind loads depending on project budget"
+        }
+      ],
+      "correct_option_id": "vo-008-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1206, the 120 kg/sq.m is a floor value — a mandatory minimum. The NSCP wind load provisions, which calculate actual design wind pressures using wind speed maps of the Philippines, govern whenever they produce a higher value. In typhoon-prone regions (Visayas, Eastern Luzon, Bicol), NSCP design wind loads regularly reach 200–300 kg/sq.m — well above the 120 kg/sq.m NBCP minimum. The NSCP figure always governs when it exceeds the NBCP baseline. Section 1206 is the administrative floor; NSCP is the engineering ceiling.",
+      "explanation": "This question tests the referral code relationship: PD 1096 sets the administrative minimum; the NSCP (a referral code under IRR Sec. 103) provides the engineering calculation that supersedes it whenever the engineering value is higher. PD 1096 and NSCP work in tandem — whichever produces the more demanding requirement governs.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1206; NSCP Chapter 2",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a8203ef2bb2797af7d76d0db160d723d719ec729cc5e8f86ca4419516c5fa574"
+    },
+    {
+      "question_id": "8de59c7d-fdbb-4df6-96f8-7d4daa49ac06",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1206, what is the minimum wind load that roof construction must resist, and to what area is it applied?",
+      "options": [
+        {
+          "id": "vo-005-a",
+          "text": "120 kg/sq.m applied to the total inclined roof surface area"
+        },
+        {
+          "id": "vo-005-b",
+          "text": "100 kg/sq.m applied to the vertical projection of the roof"
+        },
+        {
+          "id": "vo-005-c",
+          "text": "120 kg/sq.m applied to the vertical projection of the roof"
+        },
+        {
+          "id": "vo-005-d",
+          "text": "150 kg/sq.m applied to the total plan area of the roof structure"
+        }
+      ],
+      "correct_option_id": "vo-005-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1206, roof construction and covering must resist a minimum wind load of 120 kg/sq.m applied to the vertical projection of the roof — the silhouette area as seen from the windward direction, not the actual inclined surface area. For a flat roof, these are equal. For a sloped roof, the vertical projection is the gable-end silhouette, which is smaller than the total inclined area. The 120 kg/sq.m is a code floor — actual typhoon-zone wind loads per NSCP will be substantially higher.",
+      "explanation": "The vertical projection application method is the standard wind engineering convention for determining wind force on a structure. It equals horizontal wind pressure × projected vertical area. Typhoon-prone regions in the Philippines (Visayas, Eastern Luzon, Bicol) regularly require design wind loads of 200–300 kg/sq.m per NSCP — well above the 120 kg/sq.m code minimum.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1206",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b4cd751bd7b4ff6d7d4a82d9eb71d70fbdf26fd899e721de0a74338ea7fb57f5"
+    },
+    {
+      "question_id": "2fce4327-5b21-416e-a5dd-d1f8f9e0d5ad",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, a wall requiring 3-hour fire-resistive occupancy separation is 18.00 m long. What is the maximum aggregate width of all openings, and what is the maximum size of any single opening?",
+      "options": [
+        {
+          "id": "vo-002-a",
+          "text": "Maximum aggregate 4.50 m total width (25% of wall length); maximum single opening 10.00 sq.m"
+        },
+        {
+          "id": "vo-002-b",
+          "text": "Maximum aggregate 25% of total wall area; maximum single opening 14.50 sq.m"
+        },
+        {
+          "id": "vo-002-c",
+          "text": "Maximum aggregate 6.00 m total width (33% of wall length); maximum single opening 10.00 sq.m"
+        },
+        {
+          "id": "vo-002-d",
+          "text": "No openings are permitted in walls requiring 3-hour fire-resistive separation under any circumstances"
+        }
+      ],
+      "correct_option_id": "vo-002-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1204, in walls requiring 3-hour separation: (1) aggregate openings must not exceed 25% of the total wall length — 25% of 18.00 m = 4.50 m; (2) no single opening may exceed 10.00 sq.m. Note: the 25% limit applies to wall length (linear dimension), not wall area. A single opening of 12.00 sq.m would violate the 10.00 sq.m cap even if the aggregate percentage is below 25%. The USA IBC applies 25% to wall area rather than length — a critical PH-vs-USA distinction.",
+      "explanation": "The length-based (not area-based) 25% calculation is the most misapplied detail in Sec. 1204. For an 18.00 m wall: 0.25 × 18 = 4.50 m total opening width is permitted. The two limits (25% of length and 10.00 sq.m single opening) operate independently — both must be satisfied simultaneously.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:467192431eaf06ed81ec89835ca649e836152062f59556b9effd64f5f2378c30"
+    },
+    {
+      "question_id": "fa19fd2f-3d1e-4726-82e1-1300a17010b7",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Using the memory aid '200-600-1.8' for escalator protection under Section 1204, which of the following correctly applies all three numbers to a specific design scenario?",
+      "options": [
+        {
+          "id": "vo-010-a",
+          "text": "Draft curtain 200 mm deep on all sides; nearest sprinkler head 600 mm from curtain face; adjacent sprinkler heads spaced 1.80 m apart along the perimeter"
+        },
+        {
+          "id": "vo-010-b",
+          "text": "Draft curtain 200 mm deep on two sides; nearest sprinkler head 600 mm above the floor; adjacent sprinkler heads spaced 1.80 m apart at ceiling level"
+        },
+        {
+          "id": "vo-010-c",
+          "text": "Draft curtain 200 mm deep on all sides; nearest sprinkler head 600 mm above the curtain bottom edge; maximum 1.80 m between curtain and escalator handrail"
+        },
+        {
+          "id": "vo-010-d",
+          "text": "Draft curtain 200 mm wide at ceiling; sprinkler coverage radius 600 mm; maximum 1.80 m between sprinkler and escalator edge"
+        }
+      ],
+      "correct_option_id": "vo-010-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The '200-600-1.8' mnemonic represents three sequential escalator protection requirements: 200 mm = minimum depth of draft curtain on all sides of the escalator opening (downward from ceiling); 600 mm = maximum horizontal distance from the draft curtain face to the nearest sprinkler head; 1.80 m = maximum center-to-center spacing between adjacent sprinkler heads along the escalator perimeter. Option A correctly applies all three in their proper context. Options B, C, and D misassign the measurements to incorrect elements or incorrect directions.",
+      "explanation": "The three numbers must be memorized with their correct dimensional context: 200 mm is a depth (curtain hangs down from ceiling); 600 mm is a horizontal distance (from curtain face to sprinkler head); 1.80 m is a spacing interval (between adjacent sprinkler heads). Each describes a different geometric relationship in the escalator cross-section.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:69bcac244537716cbc39b92fd577b4c31b7ee732a78b34138d9fdd64d2996895"
+    },
+    {
+      "question_id": "c01be123-9c8e-4a24-92ea-f6f47a05c486",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, what are the three numerical requirements for escalator draft curtains and the perimeter sprinkler ring?",
+      "options": [
+        {
+          "id": "vo-001-a",
+          "text": "Draft curtain ≥ 150 mm on two sides of opening; sprinklers within 800 mm of curtain at max 2.00 m spacing, ensuring adequate coverage"
+        },
+        {
+          "id": "vo-001-b",
+          "text": "Draft curtain ≥ 200 mm on all sides of opening; sprinklers within 600 mm of curtain at max 1.80 m center-to-center spacing"
+        },
+        {
+          "id": "vo-001-c",
+          "text": "Draft curtain ≥ 250 mm on all sides of opening; sprinklers within 500 mm of curtain at max 2.50 m spacing, providing optimal fire suppression"
+        },
+        {
+          "id": "vo-001-d",
+          "text": "Draft curtain ≥ 200 mm on two sides of opening; sprinklers within 900 mm of curtain at max 1.50 m spacing, which may not meet all safety standards"
+        }
+      ],
+      "correct_option_id": "vo-001-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1204 requires: (1) draft curtain of at least 200 mm on all sides of the escalator opening — not just two sides; (2) automatic sprinklers within 600 mm of the draft curtain face (measured horizontally); (3) maximum sprinkler spacing of 1.80 m center to center along the perimeter. The memory aid '200-600-1.8' captures all three in sequence. Together, the curtain (passive) and sprinkler ring (active) create a compartmentalization barrier without requiring a full shaft enclosure.",
+      "explanation": "Escalators create an open vertical chimney between floors that can spread fire and smoke within seconds. The draft curtain confines smoke at ceiling level while the sprinkler water curtain suppresses spread. The 'all sides' requirement for the curtain is a frequent trap — two sides is insufficient.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:259a3023872608947a0da0c0296ec4c7db17e443bf4e614af405b67850885d89"
+    },
+    {
+      "question_id": "d8d017c6-2bd0-40ac-9586-595b757a7119",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, floor-level openings within a 3-hour separation zone must be enclosed by vertical enclosures with what fire rating, and what fire assembly rating is required for openings within those enclosure walls?",
+      "options": [
+        {
+          "id": "vo-003-a",
+          "text": "Vertical enclosures: 1-hour fire-resistive; opening assemblies within enclosure: 1.5-hour fire assembly"
+        },
+        {
+          "id": "vo-003-b",
+          "text": "Vertical enclosures: 2-hour fire-resistive; opening assemblies within enclosure: 3-hour fire assembly"
+        },
+        {
+          "id": "vo-003-c",
+          "text": "Vertical enclosures: 3-hour fire-resistive; opening assemblies within enclosure: 3-hour fire assembly"
+        },
+        {
+          "id": "vo-003-d",
+          "text": "Vertical enclosures: 2-hour fire-resistive; opening assemblies within enclosure: 1.5-hour fire assembly"
+        }
+      ],
+      "correct_option_id": "vo-003-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1204, vertical enclosure walls protecting floor-level openings within 3-hour separation zones must have minimum 2-hour fire-resistive construction. However, the openings within those 2-hour enclosure walls must be protected by 3-hour fire assemblies — a fire door or shutter rated to match the occupancy separation requirement, even though the enclosure wall itself has a lower rating. This asymmetry (2-hour wall with 3-hour door) is a deliberate layered protection strategy unique to this provision.",
+      "explanation": "The 2-hour enclosure wall with 3-hour opening assembly is the opposite of what most candidates expect (usually, opening assemblies are rated lower than the wall). The logic: the wall provides the passive barrier while the door must match the full occupancy separation rating — the more active/vulnerable element must be rated higher.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ac4e3a09e7a453e66761bc25b16bc5daeab67ffb5536f820a9ffb2066de16a3"
+    },
+    {
+      "question_id": "3e2fa601-39ce-4553-8509-26c4230588b2",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1205, what structural duty does the code explicitly assign to floor construction regarding beams and girders?",
+      "options": [
+        {
+          "id": "vo-004-a",
+          "text": "Floor construction must resist all vertical loads without relying on beam action at all"
+        },
+        {
+          "id": "vo-004-b",
+          "text": "Floor construction must provide a means to prevent lateral buckling of beams and girders"
+        },
+        {
+          "id": "vo-004-c",
+          "text": "Floor construction must provide thermal insulation between levels but has no lateral structural duty"
+        },
+        {
+          "id": "vo-004-d",
+          "text": "Floor construction must transfer all seismic loads to the lateral force-resisting system but has no anti-buckling duty"
+        }
+      ],
+      "correct_option_id": "vo-004-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 1205 mandates that floor construction must provide a means to prevent lateral buckling of beams and girders. Lateral-torsional buckling is the failure mode of long unbraced flexural members: under vertical load, the compression flange buckles sideways before reaching full flexural capacity. A concrete slab monolithic with or composite-connected to steel beams provides continuous lateral restraint. Timber floor systems require blocking or bridging. The code mandates this duty explicitly — it does not merely permit it.",
+      "explanation": "This requirement is frequently overlooked because engineers often treat lateral bracing as an NSCP matter. Section 1205 establishes the Building Code obligation — the NSCP then provides the specific bracing intervals and methods. The code-level mandate is in PD 1096; the engineering detail is in NSCP.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1205",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3278294b5200f30956950fb3346b519fc169364be9dd5a489dba25d31afd10c5"
+    },
+    {
+      "question_id": "e553129f-0a94-495b-b55d-645b7dd19d04",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The PH Code (PD 1096) and the USA IBC assign fire ratings to elevator shaft enclosures using fundamentally different methods. What is the key difference?",
+      "options": [
+        {
+          "id": "vo-006-a",
+          "text": "PH assigns shaft ratings by number of stories served (1-hour for ≤3 stories; 2-hour for ≥4); IBC ties ratings to occupancy separation requirements of the served floors"
+        },
+        {
+          "id": "vo-006-b",
+          "text": "PH ties shaft ratings to occupancy separation requirements of the areas served; IBC assigns ratings by number of stories served (1-hour for ≤3 stories; 2-hour for ≥4)"
+        },
+        {
+          "id": "vo-006-c",
+          "text": "Both PH and IBC use number of stories served as the rating basis; they differ only in the story threshold applied (PH threshold: 4 stories; IBC threshold: 3 stories)"
+        },
+        {
+          "id": "vo-006-d",
+          "text": "PH does not require enclosure for elevator shafts in buildings under 15 storeys; IBC requires enclosure for all elevators regardless of building height"
+        }
+      ],
+      "correct_option_id": "vo-006-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The key philosophical difference: PD 1096 ties elevator shaft enclosure ratings to the occupancy separation requirements applicable between the floors served — meaning the rating depends on what is on each side of the shaft, not how tall the building is. IBC Sec. 713.4 uses a story-count rule: 1-hour for shafts serving ≤3 stories, 2-hour for shafts serving ≥4 stories. The PH approach is more nuanced but harder to apply mechanically; the IBC approach is simpler but may over- or under-prescribe in unusual occupancy mixes.",
+      "explanation": "Under PH practice, a mixed Group E/Group H building with 3-hour occupancy separation triggers a higher shaft rating than a pure Group B building with 1-hour separation — regardless of building height. Under IBC, both would use 1-hour if the shaft serves ≤3 stories. This difference is a consistent LEA board exam topic on PH-vs-international code distinctions.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204; IBC Sec. 713.4",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f9ee34a004d309a8730bda5a6a1d21401a2de4508d5045e18e3fe77177b4f66a"
+    },
+    {
+      "question_id": "b0381d6c-68f8-419d-b2dc-6ab62111eeb4",
+      "article_id": "66b5fe8b-8fda-4483-aa77-37d52adec286",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building's escalator opening has no draft curtain installed, and the perimeter sprinklers are spaced at 2.20 m center to center. Per PD 1096, Rule XII, Section 1204, how many requirements are violated?",
+      "options": [
+        {
+          "id": "vo-007-a",
+          "text": "One — only the missing draft curtain violates Section 1204; sprinkler spacing is not regulated"
+        },
+        {
+          "id": "vo-007-b",
+          "text": "One — only the sprinkler spacing violates Section 1204; a draft curtain is optional if sprinklers are present"
+        },
+        {
+          "id": "vo-007-c",
+          "text": "Two — both the missing draft curtain and the 2.20 m sprinkler spacing (exceeds 1.80 m maximum) violate Section 1204"
+        },
+        {
+          "id": "vo-007-d",
+          "text": "Zero — Section 1204 requires only one of the two measures (curtain or sprinklers), not both simultaneously"
+        }
+      ],
+      "correct_option_id": "vo-007-c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Section 1204, both the draft curtain AND the sprinkler ring are independently mandatory — neither substitutes for the other. The draft curtain (≥200 mm on all sides) is absent — violation 1. The sprinkler spacing of 2.20 m exceeds the maximum 1.80 m center-to-center spacing — violation 2. Section 1204 requires both countermeasures simultaneously. Option D incorrectly treats them as alternatives; they are simultaneous, independent requirements.",
+      "explanation": "The draft curtain (passive containment) and sprinkler ring (active suppression) are a system — each addresses a different failure mode. The curtain prevents horizontal smoke spread before sprinkler activation; the sprinklers provide the water curtain after activation. Neither is optional. Two violations exist in this scenario.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1204",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:55.766414+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:72348c1641ad77a888eaff3c5ab904fcffbc42de66040c40c8f0e63504cf4738"
+    }
+  ]
+}

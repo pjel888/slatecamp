@@ -1,4 +1,11 @@
 # Translating PWD Rights
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Translating PWD Rights** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Learning Goal
 
 After reading this article, you should be able to:
@@ -50,11 +57,11 @@ A CHED inspector walks through a newly completed state university campus in Mind
 | **Accessible toilets at terminals** | Min 1800 × 2250 mm cubicle; 900 mm door; grab bars; accessible route from terminal concourse | BP 344 Sec. 6 |
 | **Queue management / waiting areas** | 5% of waiting seats designated PWD priority; accessible path to ticket counter; two-level counter | BP 344 Sec. 18.2.b.iii |
 
-<Callout variant="lea-watch" title="Trap Leart">
-
-"Level boarding" does NOT mean the platform is just paved. It means the platform edge height exactly (within ±25 mm) matches the vehicle floor height to eliminate the gap. A platform that requires a portable ramp is NOT level boarding.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="Trap Leart"
+- Text: "Level boarding" does NOT mean the platform is just paved. It means the platform edge height exactly (within ±25 mm) matches the vehicle floor height to eliminate the gap. A platform that requires a portable ramp is NOT level boarding.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -77,11 +84,11 @@ A CHED inspector walks through a newly completed state university campus in Mind
 | **ATM kiosk signage** | Max 2400 mm AFF; Braille + tactile + audio output | BP 344 Sec. 12.2, 12.10 |
 | **Frameless glass door marking** | Visual markers between 900 mm and 1500 mm AFF to prevent collision | BP 344 |
 
-<Callout variant="lea-watch" title="faster flashing can trigger seizures in photosensitive persons. The exam may off">
-
-The "≤3 flashes/sec" for strobe alarms refers to the maximum flash rate — faster flashing can trigger seizures in photosensitive persons. The exam may offer "5 flashes/sec" or "at least 3 flashes/sec" as distractors. Correct: no more than 3 flashes/sec.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="faster flashing can trigger seizures in photosensitive persons. The exam may off"
+- Text: The "≤3 flashes/sec" for strobe alarms refers to the maximum flash rate — faster flashing can trigger seizures in photosensitive persons. The exam may offer "5 flashes/sec" or "at least 3 flashes/sec" as distractors. Correct: no more than 3 flashes/sec.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -120,11 +127,11 @@ The "≤3 flashes/sec" for strobe alarms refers to the maximum flash rate — fa
 | **Stage / presentation areas** | Accessible route to stage/podium; ramp if stage is elevated; min 900 mm width on stage access path | BP 344 |
 | **Dormitory accessibility** | 2% of total rooms as accessible rooms (2024 IRR); lever handles; accessible toilet; visual alarms | BP 344 Sec. 17 (2024 IRR) |
 
-<Callout variant="lea-watch" title="not &quot;one per building&quot; or &quot;one per school.&quot; A 4-storey school must have an acces">
-
-"Per floor" means each floor has an accessible toilet — not "one per building" or "one per school." A 4-storey school must have an accessible toilet on all 4 floors.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0003 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="not &quot;one per building&quot; or &quot;one per school.&quot; A 4-storey school must have an acces"
+- Text: "Per floor" means each floor has an accessible toilet — not "one per building" or "one per school." A 4-storey school must have an accessible toilet on all 4 floors.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -161,11 +168,11 @@ The "≤3 flashes/sec" for strobe alarms refers to the maximum flash rate — fa
 | **Accessible Balechers/grandstands** | Accessible route to all sections; ramps or lifts where level changes; handrails at all ramps and stairs | BP 344 |
 | **Spectator restrooms** | At least one accessible WC per gender per facility level; 1800 × 2250 mm cubicle | BP 344 Sec. 6 |
 
-<Callout variant="lea-watch" title="50 seats → 2 spaces; 51–300 → 4; 301–500 → 6) was">
-
-The old tiered table (4–50 seats → 2 spaces; 51–300 → 4; 301–500 → 6) was replaced in the 2024 IRR by the flat 3% rule. The old table may still appear in exams — know BOTH. If the question says "2024 IRR" or "current standard," use 3%. If it says "old IRR" or gives numbers matching the old table, use the old table.
-
-</Callout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Callout" status="preserved"]
+Extracted summary:
+- Props: variant="lea-watch", title="50 seats → 2 spaces; 51–300 → 4; 301–500 → 6) was"
+- Text: The old tiered table (4–50 seats → 2 spaces; 51–300 → 4; 301–500 → 6) was replaced in the 2024 IRR by the flat 3% rule. The old table may still appear in exams — know BOTH. If the question says "2024 IRR" or "current standard," use 3%. If it says "old IRR" or gives numbers matching the old table, use the old table.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -249,7 +256,7 @@ The old tiered table (4–50 seats → 2 spaces; 51–300 → 4; 301–500 → 6
    │    ──────────────────────────────────────    │
    │                                              │
    │    LOWER LEVEL: 750 mm AFF                   │ ← for wheelchair users
-   │    [KNEE CLEARANCE: 700 mm high × 480 mm deep]   
+   │    [KNEE CLEARANCE: 700 mm high × 480 mm deep]
    │    ──────────────────────────────────────    │
    │                                              │
    │    COUNTER WIDTH: min 900 mm                 │
@@ -279,11 +286,11 @@ The old tiered table (4–50 seats → 2 spaces; 51–300 → 4; 301–500 → 6
 
 **Q1.** A subway station is being designed. What architectural feature translates the Right to Transport (RA 7277 Sec. 25) into a physical element at the platform edge?
 
-<Warn>
-
-A: A level boarding platform — the platform floor height must match the vehicle (train/bus) floor height within ±25 mm, eliminating the vertical gap. TGSI warning domes must be installed 300 mm back from the platform edge to provide a tactile safety warning.
-
-</Warn>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: A: A level boarding platform — the platform floor height must match the vehicle (train/bus) floor height within ±25 mm, eliminating the vertical gap. TGSI warning domes must be installed 300 mm back from the platform edge to provide a tactile safety warning.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -303,13 +310,11 @@ A: A level boarding platform — the platform floor height must match the vehicl
 
 **Q4.** A private university claims it does not need accessible toilets on every floor because "the elevator goes to all floors." Is this correct under the Right to Education?
 
-<LawCallout code="bp344" section="Section 2 - PWD Rights">
-
-
-A: No. BP 344 requires at least one accessible toilet on each floor served by the building — the elevator provides access to the floor, but the accessible toilet must be on that floor. A PWD should not have to go to a different floor to use an accessible toilet.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0006 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 2 - PWD Rights"
+- Text: A: No. BP 344 requires at least one accessible toilet on each floor served by the building — the elevator provides access to the floor, but the accessible toilet must be on that floor. A PWD should not have to go to a different floor to use an accessible toilet.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -353,13 +358,11 @@ A: No. BP 344 requires at least one accessible toilet on each floor served by th
 
 > **Why does every right need a physical translation?**
 >
-<LawCallout code="bp344" section="Section 3 - Scope">
-
-
-Rights written in law are abstractions until they are expressed in stone, concrete, and steel. RA 7277 grants PWDs the right to education — but a school with no ramps and narrow corridors makes that right a legal fiction. RA 10754 gives PWDs a 20% discount — but a pharmacy counter at 900 mm with no knee clearance denies a wheelchair user the ability to stand at that counter long enough to claim it. The architect is the translator: the person who converts abstract rights into millimeter dimensions, slope ratios, and grab bar locations. When you understand that each detail in BP 344 is a physical embodiment of a constitutional right, you stop treating accessibility as a compliance checklist and start treating it as the craft of justice.
-
-
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0007 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="bp344", section="Section 3 - Scope"
+- Text: Rights written in law are abstractions until they are expressed in stone, concrete, and steel. RA 7277 grants PWDs the right to education — but a school with no ramps and narrow corridors makes that right a legal fiction. RA 10754 gives PWDs a 20% discount — but a pharmacy counter at 900 mm with no knee clearance denies a wheelchair user the ability to stand at that counter long enough to claim it. The architect is the translator: the person who converts abstract rights into millimeter dimension
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -445,4 +448,3 @@ LEA Trap: Key design translations from PWD laws: RA 7277 = accessible parking (1
 ## Cross‑References
 
 **Law Qa Deck Ra 7277 9442 10754**, **Ra 9442 Pwd Privileges And Incentives**, **Accessible Seating In Assembly Areas**, **Wheelchair Maneuvering And Parking**
-

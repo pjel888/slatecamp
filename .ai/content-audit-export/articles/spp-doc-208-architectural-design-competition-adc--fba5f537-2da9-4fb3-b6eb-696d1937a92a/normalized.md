@@ -471,4 +471,3 @@ LEA Trap: Competition types: (1) OPEN = any qualified architect, (2) INVITED = s
 ## Cross‑References
 
 **Spp Doc 207 Design Build Services**, **Spp Doc 209 Architectural Consulting Services Pacs**, **Spp Doc 202 Regular Design Services**, **Uap Spp Doc Standards Of Professional Practice For Philippine Architects**
-

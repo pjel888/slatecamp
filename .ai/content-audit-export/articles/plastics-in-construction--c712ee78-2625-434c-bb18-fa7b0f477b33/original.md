@@ -1,5 +1,12 @@
 # Plastics in Construction
-**LEA Review | Area 2: Materials & Construction | PD 1096 Rule XVI, Sections 1601–1609**
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Plastics in Construction** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
+
 
 ## Learning Goal
 
@@ -121,7 +128,7 @@ Per PD 1096 Section 1601 (as clarified by the 2004 Revised IRR), three fire-perf
 
 1. **Flame-spread rating ≤ 225.** This is a relatively permissive threshold compared to the IBC's CC2 ceiling of 75. The Philippine standard aligns with the recognition that many functional plastics (acrylics, polycarbonates, PVC) fall in the 25–225 range. A plastic with a flame-spread rating above 225 is categorically disallowed, regardless of other merits.
 
-2. **Smoke density ≤ untreated wood.** Rather than assigning a numeric index, the PH code uses untreated wood as a comparative benchmark — a practical standard given the prevleance of wood construction in the Philippines. In practice, manufacturers must provide test data showing smoke density does not exceed wood under the same test conditions.
+2. **Smoke density ≤ untreated wood.** Rather than assigning a numeric index, the PH code uses untreated wood as a comparative benchmark — a practical standard given the prevalence of wood construction in the Philippines. In practice, manufacturers must provide test data showing smoke density does not exceed wood under the same test conditions.
 
 3. **Combustion toxicity ≤ untreated wood.** Again, wood is the comparative benchmark. This provision is critical in occupied spaces (retail malls, schools, offices) where smoke inhalation is a primary life-safety concern.
 
@@ -389,12 +396,7 @@ A polycarbonate sheet has a tested flame-spread index of 190. Under which standa
 - D. Approved under IBC 2021 only; PD 1096 does not address flame-spread numerically
 
 <LawCallout code="pd1096" section="Rule IV - Plastics in Construction">
-
-
-Correct Answer: A — Approved under PD 1096 only; fails IBC 2021 requirements.
-PD 1096 Section 1601 (2004 IRR) requires flame-spread ≤ 225; a rating of 190 is compliant under Philippine law. IBC 2021 Section 2606 classifies light-transmitting plastics as CC1 (0–25) or CC2 (26–75); a rating of 190 exceeds the CC2 ceiling of 75 and is therefore not an approved light-transmitting plastic under the IBC. This illustrates one of the most significant divergences between PH and US standards.
-
-
+Correct Answer: A — Approved under PD 1096 only; fails IBC 2021 requirements. PD 1096 Section 1601 (2004 IRR) requires flame-spread ≤ 225; a rating of 190 is compliant under Philippine law. IBC 2021 Section 2606 classifies light-transmitting plastics as CC1 (0–25) or CC2 (26–75); a rating of 190 exceeds the CC2 ceiling of 75 and is therefore not an approved light-transmitting plastic under the IBC. This illustrates one of the most significant divergences between PH and US standards.
 </LawCallout>
 
 ---
@@ -456,9 +458,12 @@ Return to this module in **3 days**. If you can answer the three Active Recall q
 
 ## Exam Tip
 
-LEA Trap: Foam plastic insulation requires a 15-minute thermal barrier unless protected by 1/2″ gypsum board. Maximum permitted foam plastic area in interior finish = 10% of wall/celling area (for foam plastic not covered by thermal barrier). The 15-minute thermal barrier is the key safety requirement.
+LEA Trap: Foam plastic insulation requires a 15-minute thermal barrier unless protected by 1/2″ gypsum board. Maximum permitted foam plastic area in interior finish = 10% of wall/ceiling area (for foam plastic not covered by thermal barrier). The 15-minute thermal barrier is the key safety requirement.
 
 ## Cross‑References
 
 **Prefabricated Constructions**, **Sheet Metal And Spray Booths**, **Lathing And Plastering**, **Fire Resistive Construction Ratings**
 
+## Real-World Application
+
+Suppose an architect is reviewing a proposed neighborhood commercial building in Iloilo with translucent plastic skylights over the retail concourse and plastic light diffusers along the corridor ceiling. The first move is not to approve the material because it looks lightweight or economical. The architect must identify the specific plastic use: skylight, diffuser, veneer, or interior finish. Each use has a different fire-safety limit under Rule XVI, so the drawing notes should separate the areas and show the tested flame-spread, smoke, and toxicity data supplied by the manufacturer. If the skylight area pushes the aggregate roof-plastic limit, the architect coordinates with the fire-protection designer instead of hiding the issue in a generic materials schedule. The board-exam lesson is the same: classify the plastic application first, then test the area, separation, height, and protection requirement. Do not answer from the word “plastic” alone.

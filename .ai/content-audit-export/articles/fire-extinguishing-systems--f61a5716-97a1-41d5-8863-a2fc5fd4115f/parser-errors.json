@@ -1,36 +1,14 @@
 {
   "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
   "slug": "fire-extinguishing-systems",
-  "generated_at": "2026-05-04T09:10:36.466Z",
+  "generated_at": "2026-05-09T17:04:24.563Z",
   "parser_version": "ui-block-parser-v1",
   "error_count": 0,
-  "warning_count": 1,
-  "unknown_block_count": 1,
+  "warning_count": 0,
+  "unknown_block_count": 0,
   "critical_block_count": 0,
   "errors": [],
-  "warnings": [
-    {
-      "block_id": "ui_0001",
-      "component_name": "ArticleMedia",
-      "status": "unknown",
-      "parse_status": "unknown_block",
-      "messages": [
-        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
-  "unknown_blocks": [
-    {
-      "block_id": "ui_0001",
-      "component_name": "ArticleMedia",
-      "block_type": "mdx_component",
-      "raw_hash": "sha256:53a91a095756af2d2039e500855f5a4eb79b7c97b4e81604c34d90298f6972fc",
-      "line_start": 23,
-      "line_end": 23,
-      "warnings": [
-        "No closing tag found for ArticleMedia; preserved opening line as unknown custom block."
-      ]
-    }
-  ],
+  "warnings": [],
+  "unknown_blocks": [],
   "critical_blocks": []
 }

@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Svc 019 Design Build Services Overview Rationlea And Architect S Role** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## Design-Build Services: Overview, Rationale, and Architect's Role
 
 ## Learning Goal
@@ -14,7 +21,11 @@ After studying this article, you should be able to:
 
 in practice, the time-cost-quality triangle is most effectively achieved through Design-Build Services. This delivery method simplifies and expedites the project process while providing creative, cost-effective solutions. The architect's education, training, and expertise qualify the professional to take a direct role in projects from conceptualization through implementation.
 
-<ArticleMedia id="media-lea-prac-svc-019-design-build-services-o" type="image" caption="Design-Build vs. Design-Bid-Build — Delivery Method Comparison" description="Comparison diagram showing Design-Build (single entity, integrated, overlapping phases, compressed schedule, shared risk) versus traditional Design-Bid-Build (sequential phases, separate design and construction contracts, competitive bidding, longer timeline). Highlights architect role, cost certainty, and schedule implications of each approach." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-svc-019-design-build-services-o", type="image", caption="Design-Build vs. Design-Bid-Build — Delivery Method Comparison", description="Comparison diagram showing Design-Build (single entity, integrated, overlapping phases, compressed schedule, shared risk) versus traditional Design-Bid-Build (sequential phases, separate design and construction contracts, competitive bidding, longer timeline). Highlights architect role, cost certainty, and schedule implications of each approach.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 A Design-Build arrangement simplifies and expedites project delivery
 
@@ -46,22 +57,29 @@ This integrated approach requires clear contractual definition of responsibiliti
 
 Design-Build represents an evolution in how architects and builders collaborate, positioning both parties as partners in achieving optimal project outcomes rather than adversaries in traditional bidding scenarios. The method reflects modern understanding that design and construction expertise must integrate to deliver projects efficiently and effectively.
 
-<SPP207RefServices />
+[SLATECAMP_UI_BLOCK:ui_0002 component="SPP207RefServices" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ProcessFlow>
-<ol>
-  <li><strong>Project Definition</strong> — Problem identification</li>
-  <li><strong>Schematic Design</strong> — 15% fee; conceptual design</li>
-  <li><strong>Design Development</strong> — 20% fee; detailed design</li>
-  <li><strong>Contract Documents</strong> — 50% fee; construction docs</li>
-  <li><strong>Bidding/Negotiation</strong> — 5% fee; contractor selection</li>
-  <li><strong>Construction Admin.</strong> — 10% fee; site visits</li>
-</ol>
-</ProcessFlow>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ProcessFlow" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Project Definition — Problem identification Schematic Design — 15% fee; conceptual design Design Development — 20% fee; detailed design Contract Documents — 50% fee; construction docs Bidding/Negotiation — 5% fee; contractor selection Construction Admin. — 10% fee; site visits
+[/SLATECAMP_UI_BLOCK]
 
-<LawCallout code="irr" section="SPP Documents" title="Professional Practice Framework">SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0004 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="irr", section="SPP Documents", title="Professional Practice Framework"
+- Text: SPP Documents 201–209 establish standards for architectural services scope, fee structures, and professional responsibilities under RA 9266.
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0005 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Fee distribution: SD=15%, DD=20%, CD=50%, BA=5%, CA=10%. Contract Documents (50%) is the largest phase. Cumulative: 15%→35%→85%→90%→100%.
+[/SLATECAMP_UI_BLOCK]
 
 ---
 
@@ -78,4 +96,8 @@ Design-Build represents an evolution in how architects and builders collaborate,
 - [Fee Compensation Methods](lea-prac-cmp-001)
 - [Owner-Architect Agreement](lea-prac-ctr-001)
 
-<KeyValues items={[{"value": "15%", "label": "Schematic Design"}, {"value": "20%", "label": "Design Development"}, {"value": "50%", "label": "Contract Docs"}, {"value": "5%", "label": "Bidding Assist"}, {"value": "10%", "label": "Constr. Admin."}]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="{[{\"value\": \"15%\", \"label\": \"Schematic Design\"}", value=true, label=true, Design=true, Development=true, Contract=true, Docs=true, Bidding=true, Assist=true, Constr=true, Admin=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

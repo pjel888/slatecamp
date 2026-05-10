@@ -1,9 +1,159 @@
 {
   "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:778b728fe8b7f9b91ae658f21279cff06730ace90ab8798b9460ee87b27c6e39",
+  "linked_questions_hash": "sha256:bcdb1e022f28d5ac49bf7920611d9606c30a1f54efbfa71a6d23bca1290374ff",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "a28736fd-a64a-4693-8f9e-f03504743dcd",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "Inadequate curing of concrete leads to several long-term consequences. Which of the following is NOT a typical result of insufficient curing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increased aggregate exposure and surface erosion due to insufficient cement binder, leading to a rough and uneven surface"
+        },
+        {
+          "id": "b",
+          "text": "Low permeability and excellent water resistance due to reduced hydration"
+        },
+        {
+          "id": "c",
+          "text": "Rebar corrosion from water infiltration and carbonation, which compromises structural integrity over time"
+        },
+        {
+          "id": "d",
+          "text": "Differential cracking from uneven curing, resulting in potential structural weaknesses and aesthetic issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Aggregate exposure occurs when cement binder is weak; this is a typical result.",
+        "c": "Rebar corrosion follows from high permeability and water ingress.",
+        "d": "Differential curing creates local weak zones prone to stress concentration and cracking.",
+        "correct": "Inadequate curing results in HIGH permeability, not low. Incomplete hydration leaves porous concrete, allowing water infiltration. High permeability is the defining consequence of inadequate curing.",
+        "takeaway": "Inadequate curing = weak + porous + permeable + durable. Do not confuse the consequences. Poor curing compromises durability and service life."
+      },
+      "explanation": "Aggregate exposure occurs when cement binder is weak; this is a typical result. Rebar corrosion follows from high permeability and water ingress. Differential curing creates local weak zones prone to stress concentration and cracking. Inadequate curing results in HIGH permeability, not low. Incomplete hydration leaves porous concrete, allowing water infiltration. High permeability is the defining consequence of inadequate curing. Inadequate curing = weak + porous + permeable + durable. Do not confuse the consequences. Poor curing compromises durability and service life.",
+      "code_citation": "ACI 308R-16; concrete durability principles",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:42:45.976338+00:00",
+      "content_hash": "sha256:c76178924260891f223abfda95bed6b849fda15f1fa03d6e3628c5568ffcaeb9"
+    },
+    {
+      "question_id": "3961ee9c-0195-47a5-bb85-8274de6dbe9a",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "Curing compound (ASTM C309) is typically ___—___% as effective as continuous moist water curing for strength development.",
+      "options": [
+        {
+          "id": "a",
+          "text": "70 to 80"
+        },
+        {
+          "id": "b",
+          "text": "95 to 100"
+        },
+        {
+          "id": "c",
+          "text": "50 to 60"
+        },
+        {
+          "id": "d",
+          "text": "40 to 50"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Compounds are not equivalent to moist curing; 95—100% is overstated.",
+        "c": "50—60% is too low and suggests defective application.",
+        "d": "40—50% is too low; compounds are more effective than this.",
+        "correct": "ACI 308R data shows curing compounds (when properly applied) develop 70—80% of the strength of continuous moist curing. They are a practical alternative but not equivalent.",
+        "takeaway": "Moist curing > Compound curing. For critical applications or maximum strength, prefer water curing (ponding, spray). Compounds are acceptable when water curing is impractical, if properly applied."
+      },
+      "explanation": "Compounds are not equivalent to moist curing; 95—100% is overstated. 50—60% is too low and suggests defective application. 40—50% is too low; compounds are more effective than this. ACI 308R data shows curing compounds (when properly applied) develop 70—80% of the strength of continuous moist curing. They are a practical alternative but not equivalent. Moist curing > Compound curing. For critical applications or maximum strength, prefer water curing (ponding, spray). Compounds are acceptable when water curing is impractical, if properly applied.",
+      "code_citation": "ACI 308R-16; ASTM C309",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:42:46.22903+00:00",
+      "content_hash": "sha256:b59e3368445d14439e35679adf9cf7289d91ecb2929ef096f068d06fce431e58"
+    },
+    {
+      "question_id": "2e5a3725-71fd-4477-abf0-c93cc7dedd68",
+      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
+      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
+      "text": "ASTM C309 Type 2 curing compound is ___ to reflect solar radiation, reducing concrete surface temperature during hot-weather curing.",
+      "options": [
+        {
+          "id": "a",
+          "text": "white-pigmented"
+        },
+        {
+          "id": "b",
+          "text": "clear with UV absorbers"
+        },
+        {
+          "id": "c",
+          "text": "translucent green"
+        },
+        {
+          "id": "d",
+          "text": "dark-pigmented"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Type 1A is translucent/clear with water-based formulation; it does not reflect heat.",
+        "c": "Green tint does not reflect radiation as effectively as white.",
+        "d": "Dark pigment absorbs heat, making thermal conditions worse.",
+        "correct": "Type 2 (white-pigmented) curing compound reflects solar radiation and reduces surface temperature rise. Type 1 is clear or translucent and does not reflect heat.",
+        "takeaway": "Type 2 = white = reflects heat. Use for tropical/hot climates. Type 1 = clear = allows inspection but no heat reflection. Use for cooler climates or when appearance monitoring is critical."
+      },
+      "explanation": "Type 1A is translucent/clear with water-based formulation; it does not reflect heat. Green tint does not reflect radiation as effectively as white. Dark pigment absorbs heat, making thermal conditions worse. Type 2 (white-pigmented) curing compound reflects solar radiation and reduces surface temperature rise. Type 1 is clear or translucent and does not reflect heat. Type 2 = white = reflects heat. Use for tropical/hot climates. Type 1 = clear = allows inspection but no heat reflection. Use for cooler climates or when appearance monitoring is critical.",
+      "code_citation": "ASTM C309 Standard Specification; ACI 308R-16",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-002-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T15:42:45.844268+00:00",
+      "content_hash": "sha256:a4fb85688560830777aaed6478f89255b85e3c69de3c8d84459620d9196383da"
+    },
     {
       "question_id": "77268107-c2c6-4ec6-a89a-f2f369fb96a6",
       "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
@@ -39,7 +189,7 @@
         "correct": "White-pigmented compound (Type 2) reflects solar heat, preventing excessive surface temperature rise that causes thermal cracking. It requires minimal maintenance, prevents evaporation despite high humidity, and can be applied to any surface orientation. This is the most practical and effective choice for tropical Philippines.",
         "takeaway": "Tropical Philippines best practice: White-pigmented curing compound (Type 2), complete coverage, applied within 30 minutes of finishing. This balances effectiveness, practicality, and cost."
       },
-      "explanation": null,
+      "explanation": "Clear compound does not reflect solar heat; surface temperature rises excessively (50—60°C). Tropical rainfall is unpredictable; it cannot be relied upon for curing. High humidity (70—90%) reduces but does not prevent evaporation. High temperature accelerates hydration but also increases evaporation. Without moisture retention, curing is compromised. White-pigmented compound (Type 2) reflects solar heat, preventing excessive surface temperature rise that causes thermal cracking. It requires minimal maintenance, prevents evaporation despite high humidity, and can be applied to any surface orientation. This is the most practical and effective choice for tropical Philippines. Tropical Philippines best practice: White-pigmented curing compound (Type 2), complete coverage, applied within 30 minutes of finishing. This balances effectiveness, practicality, and cost.",
       "code_citation": "ACI 305.1-06 (hot-weather concreting); ACI 308R-16; NSCP 2015 Section 1901",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -51,8 +201,8 @@
       "model_id": "ALE-MATL-002-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:c0abecae6b5da4f30cd3fb8ad563efee0165aa1370a865e9335ca0ed844f1799"
+      "updated_at": "2026-05-06T15:42:45.702317+00:00",
+      "content_hash": "sha256:561f729235103ac9a0884380e467100feb38d129baf86c47bd0bab0b1b271f85"
     },
     {
       "question_id": "011fb596-d634-4daa-aa74-947ffa99b70c",
@@ -103,56 +253,6 @@
       "created_at": "2026-03-23T19:27:26.09657+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:14f71d1a0e825d12948519c2e12da2a3b9e64d0e856a9a315b6c79a3ff462a19"
-    },
-    {
-      "question_id": "2e5a3725-71fd-4477-abf0-c93cc7dedd68",
-      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
-      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
-      "text": "ASTM C309 Type 2 curing compound is ___ to reflect solar radiation, reducing concrete surface temperature during hot-weather curing.",
-      "options": [
-        {
-          "id": "a",
-          "text": "white-pigmented"
-        },
-        {
-          "id": "b",
-          "text": "clear with UV absorbers"
-        },
-        {
-          "id": "c",
-          "text": "translucent green"
-        },
-        {
-          "id": "d",
-          "text": "dark-pigmented"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Type 1A is translucent/clear with water-based formulation; it does not reflect heat.",
-        "c": "Green tint does not reflect radiation as effectively as white.",
-        "d": "Dark pigment absorbs heat, making thermal conditions worse.",
-        "correct": "Type 2 (white-pigmented) curing compound reflects solar radiation and reduces surface temperature rise. Type 1 is clear or translucent and does not reflect heat.",
-        "takeaway": "Type 2 = white = reflects heat. Use for tropical/hot climates. Type 1 = clear = allows inspection but no heat reflection. Use for cooler climates or when appearance monitoring is critical."
-      },
-      "explanation": null,
-      "code_citation": "ASTM C309 Standard Specification; ACI 308R-16",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-002-05-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:fb085274bca6ff1a960146c036243e88f83ff255c47fab6246f8aa8f20d15dde"
     },
     {
       "question_id": "ec6c4c3d-ab81-4b28-8a1a-15b117c45e0f",
@@ -255,56 +355,6 @@
       "content_hash": "sha256:2bb61a85dd66ec27d3cc535b6c58401feb5eff3c2344b18f94383088f698b3ac"
     },
     {
-      "question_id": "a28736fd-a64a-4693-8f9e-f03504743dcd",
-      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
-      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
-      "text": "Inadequate curing of concrete leads to several long-term consequences. Which of the following is NOT a typical result of insufficient curing?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Increased aggregate exposure and surface erosion due to insufficient cement binder, leading to a rough and uneven surface"
-        },
-        {
-          "id": "b",
-          "text": "Low permeability and excellent water resistance due to reduced hydration"
-        },
-        {
-          "id": "c",
-          "text": "Rebar corrosion from water infiltration and carbonation, which compromises structural integrity over time"
-        },
-        {
-          "id": "d",
-          "text": "Differential cracking from uneven curing, resulting in potential structural weaknesses and aesthetic issues"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Aggregate exposure occurs when cement binder is weak; this is a typical result.",
-        "c": "Rebar corrosion follows from high permeability and water ingress.",
-        "d": "Differential curing creates local weak zones prone to stress concentration and cracking.",
-        "correct": "Inadequate curing results in HIGH permeability, not low. Incomplete hydration leaves porous concrete, allowing water infiltration. High permeability is the defining consequence of inadequate curing.",
-        "takeaway": "Inadequate curing = weak + porous + permeable + durable. Do not confuse the consequences. Poor curing compromises durability and service life."
-      },
-      "explanation": null,
-      "code_citation": "ACI 308R-16; concrete durability principles",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-002-05-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:0bcae15b928d5217b122a9bbbd81ba6bc4753ba8e2e2906c39d06a594105b5a4"
-    },
-    {
       "question_id": "53b1f308-aba0-4227-a426-e7127fb0cd90",
       "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
       "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
@@ -339,7 +389,7 @@
         "correct": "Curing compound must form a continuous, complete seal to prevent evaporation. Patchy coverage (20% uncovered) allows rapid moisture loss from uncovered areas. Differential drying creates local weak zones and internal stress concentrations, leading to random cracking and reduced durability.",
         "takeaway": "Curing compound application is all-or-nothing. Patchy or incomplete coverage is worse than no compound (since it may give false confidence). Always inspect coverage and reapply to achieve 100% seal."
       },
-      "explanation": null,
+      "explanation": "80% coverage is not sufficient; the compound must completely seal the surface. Faster curing in uncovered areas actually creates differential drying (not beneficial); interior is still hydrating while exposed areas have dried. Patchy application is a critical defect; it voids the curing benefits. Curing compound must form a continuous, complete seal to prevent evaporation. Patchy coverage (20% uncovered) allows rapid moisture loss from uncovered areas. Differential drying creates local weak zones and internal stress concentrations, leading to random cracking and reduced durability. Curing compound application is all-or-nothing. Patchy or incomplete coverage is worse than no compound (since it may give false confidence). Always inspect coverage and reapply to achieve 100% seal.",
       "code_citation": "ACI 308R-16; ASTM C309 application requirements",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -351,58 +401,8 @@
       "model_id": "ALE-MATL-002-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:205740d250a3cd9abc036d2cddec822a7aa557ccb3e606277691222e98bc035d"
-    },
-    {
-      "question_id": "3961ee9c-0195-47a5-bb85-8274de6dbe9a",
-      "article_id": "12358cd2-1836-4726-9e6a-4f49d8fac2db",
-      "topic_id": "a96918fd-35cd-4234-87e8-1b383b20d201",
-      "text": "Curing compound (ASTM C309) is typically ___—___% as effective as continuous moist water curing for strength development.",
-      "options": [
-        {
-          "id": "a",
-          "text": "70 to 80"
-        },
-        {
-          "id": "b",
-          "text": "95 to 100"
-        },
-        {
-          "id": "c",
-          "text": "50 to 60"
-        },
-        {
-          "id": "d",
-          "text": "40 to 50"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Compounds are not equivalent to moist curing; 95—100% is overstated.",
-        "c": "50—60% is too low and suggests defective application.",
-        "d": "40—50% is too low; compounds are more effective than this.",
-        "correct": "ACI 308R data shows curing compounds (when properly applied) develop 70—80% of the strength of continuous moist curing. They are a practical alternative but not equivalent.",
-        "takeaway": "Moist curing > Compound curing. For critical applications or maximum strength, prefer water curing (ponding, spray). Compounds are acceptable when water curing is impractical, if properly applied."
-      },
-      "explanation": null,
-      "code_citation": "ACI 308R-16; ASTM C309",
-      "bloom_level": "understand",
-      "application_context": "recall",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-002-05-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:d4fec47d7aba559043f913424804182fb1235f4d805d1480445c2b690b2f46d9"
+      "updated_at": "2026-05-06T15:42:46.101655+00:00",
+      "content_hash": "sha256:22cb2969ad61409a39fe34d378ee5ee3c927e020d1f79adc60bbf7dca871782a"
     },
     {
       "question_id": "72c8e2cf-8d4c-42b1-80bf-daa514c7e292",

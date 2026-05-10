@@ -54,11 +54,11 @@ describe('landing page marketing surface', () => {
   it('explains SlateCamp clearly for first-time Filipino architecture learners', () => {
     render(<HeroSection ctaHref='/register' ctaLabel='Open the atlas' />)
 
-    expect(screen.getByText(/Architecture knowledge atlas/i)).toBeInTheDocument()
+    expect(screen.getByText(/Architecture resource base/i)).toBeInTheDocument()
     expect(screen.getByRole('heading', { name: /know you’ll win/i })).toBeInTheDocument()
-    expect(screen.getByText(/SlateCamp is a supplementary architecture learning resource/i)).toBeInTheDocument()
-    expect(screen.getByText(/wiki notes, code explainers, quizzes, 3D visuals, and tools/i)).toBeInTheDocument()
-    expect(screen.getByText(/Use it beside your books, notes, mentors, and review materials\./i)).toBeInTheDocument()
+    expect(screen.getByText(/SlateCamp shows you how PD 1096, RA 9514, and BP 344 actually work/i)).toBeInTheDocument()
+    expect(screen.getByText(/in 3D, with quizzes that explain why/i)).toBeInTheDocument()
+    expect(screen.getByText(/quick free check that points you to what to study next/i)).toBeInTheDocument()
     expect(screen.getAllByText(/Knowledge Wiki/i).length).toBeGreaterThanOrEqual(1)
     expect(screen.getAllByText(/Practice Questions/i).length).toBeGreaterThanOrEqual(1)
     expect(screen.getAllByText(/3D Lab/i).length).toBeGreaterThanOrEqual(1)

@@ -120,7 +120,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Pattern 1: International Project with Cultural Considerations** Stem: "Design a corporate office for a German multinational company's Manila branch. The company is accustomed to clearly defined private offices and formal spatial hierarchy. How would you accommodate the company's low-context spatial culture while serving Filipino employees and clients from high-context culture?" Expected response: Recognition of German preference for private offices and clear hierarchy; Filipino preference for 
+- Text: **Pattern 1: International Project with Cultural Considerations** Stem: "Design a corporate office for a German multinational company's Manila branch. The company is accustomed to clearly defined private offices and formal spatial hierarchy. How would you accommodate the company's low-context spatial culture while serving Filipino employees and clients from high-context culture?" Expected response: Recognition of German preference for private offices and clear hierarchy; Filipino preference for
 [/SLATECAMP_UI_BLOCK]
 
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
@@ -200,4 +200,3 @@ Extracted summary:
 See also within Design Perception: **lea-theo-003-01-core-concept**, **lea-theo-003-02-core-concept**, **lea-theo-003-03-core-concept**, **lea-theo-003-04-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

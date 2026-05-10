@@ -1,0 +1,508 @@
+{
+  "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:63dc30de334df64797bd098cfb286fef7a38433e1314ca4d0d1d296550d6f2f3",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "8a7e1f04-76b5-41c5-9c43-dc9e74d5c3fb",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "The concrete crushing strain in reinforced concrete design is defined as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.001 (1 part per thousand)"
+        },
+        {
+          "id": "b",
+          "text": "0.003 (3 parts per thousand)"
+        },
+        {
+          "id": "c",
+          "text": "0.0021 (2.1 parts per thousand)"
+        },
+        {
+          "id": "d",
+          "text": "0.010 (10 parts per thousand)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The ultimate compressive strain of concrete is ε_u = 0.003 (3 parts per thousand). This is the strain at which concrete is assumed to crush in design calculations. This value is fixed and is used across all reinforced concrete design standards (PNSC, ACI 318).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 3.2",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e5411cb944912f776d9952bc1182220799496a5484873be274135e67cca18494"
+    },
+    {
+      "question_id": "4d7e99ff-b57c-4bba-8571-d25439ec21fa",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "A balanced reinforced concrete section is defined as the condition where:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The reinforcement ratio equals the percentage of concrete area, ensuring equal stress distribution"
+        },
+        {
+          "id": "b",
+          "text": "The steel and concrete reach their ultimate strains (0.0021 and 0.003, respectively) at the same time"
+        },
+        {
+          "id": "c",
+          "text": "The bending moment is equally distributed between steel and concrete, maintaining structural equilibrium"
+        },
+        {
+          "id": "d",
+          "text": "The section contains equal amounts (by weight) of steel and concrete, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A balanced section is the transition case where the steel reaches its yield strain (ε_s = 0.0021 for Grade 60) exactly as the concrete reaches its crushing strain (ε_c = 0.003). At this point, both materials are at their limits simultaneously. The balanced reinforcement ratio (ρ_b) is a specific calculated value for each concrete grade and steel grade combination.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 10.3",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:845edb3a1cfe2fc1de3720bb2abe732f13e7ba89e528451ec01ba9ae26bff541"
+    },
+    {
+      "question_id": "32e6ba83-baa0-4058-bd03-d1ba4341b1f9",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "A design engineer calculates that a beam requires 4,500 mm² of longitudinal reinforcement. The balanced reinforcement area for this section is 3,600 mm². By comparing actual to balanced, the designer can infer:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The beam is balanced and optimally designed"
+        },
+        {
+          "id": "b",
+          "text": "The beam is underreinforced and will fail ductilely"
+        },
+        {
+          "id": "c",
+          "text": "The beam is overreinforced and will fail suddenly"
+        },
+        {
+          "id": "d",
+          "text": "Cannot determine without knowing the concrete strength and bar size"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "If the actual reinforcement (4,500 mm²) exceeds the balanced reinforcement (3,600 mm²), the section has more steel than the balanced point. This means the concrete will reach crushing strain (0.003) before the steel reaches yield strain. The section is overreinforced and will fail in a brittle manner (concrete crushes first).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 10.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3e0c1285156cfcb7255346d7efe916ebbbd679dcbb608a04a9d7a26b0aed40bf"
+    },
+    {
+      "question_id": "adf18fe4-61e2-403c-9cfb-cb6aaf9b903a",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "An underreinforced concrete beam section is characterized by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The concrete reaches its crushing strain (0.003) before the steel reaches its yield strain, indicating a brittle failure mode"
+        },
+        {
+          "id": "b",
+          "text": "The steel reaches its yield strain (≈0.0021) before the concrete reaches its crushing strain (0.003)"
+        },
+        {
+          "id": "c",
+          "text": "Both steel and concrete reach their ultimate strains simultaneously, which is not typical for underreinforced sections"
+        },
+        {
+          "id": "d",
+          "text": "The reinforcement ratio is below the minimum allowed by code, leading to potential structural inadequacy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In an underreinforced section, the steel yields first (at ε_s ≈ 0.0021), allowing plastic deformation and large deflection. Only after steel yields does the concrete continue to strain and eventually crush (at ε_c = 0.003). This sequence provides visible warning (large deflection) before failure—a ductile behavior preferred in code design.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Chapter 10",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:57b8d2747f35eb287be8f64d58fc3d824d15184fe215e366a0befab8f3253c73"
+    },
+    {
+      "question_id": "f71fc536-952c-4314-9c74-c16ce53cf754",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "In a detailed strength design analysis, an engineer finds that for a critical high-rise column in a seismic region, the design requires an overreinforced section to meet the required axial load and moment. The engineer proposes to use this overreinforced design to save space and reduce concrete size. What should the structural designer do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approve the design because the strength requirement is met and overreinforced sections carry higher loads, which can be beneficial in certain scenarios"
+        },
+        {
+          "id": "b",
+          "text": "Reject the overreinforced design and redesign with a larger section or concrete strength to achieve underreinforced behavior, even if it means more material. Ductility and seismic safety take precedence over cost savings."
+        },
+        {
+          "id": "c",
+          "text": "Use the overreinforced design but add special spiraling to improve ductility, ensuring that the structure can withstand seismic forces"
+        },
+        {
+          "id": "d",
+          "text": "Accept the design but require more inspection and testing to ensure it meets quality standards, particularly in high-risk seismic areas"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In seismic design, ductility is non-negotiable. Code requirements and good engineering practice mandate underreinforced or balanced behavior to ensure the structure can absorb earthquake energy and warn occupants. An overreinforced section violates this principle, regardless of load-carrying capacity. The design must be revised to achieve ductile behavior, even if it requires increasing the member size or concrete strength.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Chapter 10; Seismic Design Principles",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b592458bd2eed52e9e6c512adf213c6308053e780d1ff43e626da5d06564c0b1"
+    },
+    {
+      "question_id": "9ebeb33b-0b42-4328-8351-cd32b3962c01",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "A reinforced concrete T-beam is analyzed and the calculated steel strain at ultimate is 0.0018 (1.8 parts per thousand), which is less than the Grade 60 yield strain of 0.0021. The section is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Underreinforced, and will fail in a ductile manner, allowing for significant deformation before failure"
+        },
+        {
+          "id": "b",
+          "text": "Overreinforced, and will fail in a brittle manner when concrete crushes"
+        },
+        {
+          "id": "c",
+          "text": "Balanced, because the steel strain is close to 0.0021, indicating a proportionate failure mode between steel and concrete"
+        },
+        {
+          "id": "d",
+          "text": "Cannot be classified without knowing the concrete strain, as both steel and concrete properties are crucial for accurate assessment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "If the steel strain (0.0018) is less than the yield strain (0.0021) at ultimate, the concrete has reached crushing strain (0.003) before the steel yields. This is the definition of overreinforced: concrete crushes first, with no plastic deformation in the steel. The section will fail suddenly and brittle.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 10.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:73ef5695d512b0dcf282e631b28161d3f40363aaaf797e5597420fac66278dc0"
+    },
+    {
+      "question_id": "2c357b48-3367-4292-9263-3ef24985542d",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "An overreinforced concrete beam section fails in a brittle manner because:",
+      "options": [
+        {
+          "id": "a",
+          "text": "The excessive reinforcement reduces concrete strength, leading to premature failure without warning"
+        },
+        {
+          "id": "b",
+          "text": "The concrete crushes before the steel yields, providing no plastic deformation or visible warning"
+        },
+        {
+          "id": "c",
+          "text": "The beam is too stiff and cannot accommodate environmental movements, which can lead to unexpected cracking"
+        },
+        {
+          "id": "d",
+          "text": "Excessive reinforcement causes early bond failure between steel and concrete, compromising structural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In an overreinforced section, the concrete strain reaches 0.003 (crushing) while the steel strain is still below 0.0021 (yield). The steel is still in the elastic range when concrete suddenly crushes. There is no plastic deformation, no visible deflection warning, and no time for evacuation or repair. Failure is sudden and brittle—undesirable.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Section 10.3",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9a3f40db22ed3a55f76b945303f5436b1b6092b8b2c22c3991ae684d45a99a45"
+    },
+    {
+      "question_id": "652cfeb6-9fe2-423d-ab06-9b9091f242e6",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "Why are underreinforced and balanced sections preferred in seismic design over overreinforced sections?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They use less reinforcement, reducing cost, which is beneficial for budget-conscious projects."
+        },
+        {
+          "id": "b",
+          "text": "They are easier to construct and require no special inspection, simplifying the construction process."
+        },
+        {
+          "id": "c",
+          "text": "They provide ductility (large deformation capacity before failure) and visible warning of distress, allowing energy dissipation and time for evacuation"
+        },
+        {
+          "id": "d",
+          "text": "They have higher ultimate strength, which is often misunderstood as the primary factor in seismic design."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In seismic design, structures must absorb earthquake energy through controlled deformation without sudden collapse. Underreinforced and balanced sections fail in a ductile manner (steel yields first, concrete continues to strain), providing large deformations, visible cracking, and time for occupants to react. Overreinforced sections fail suddenly (concrete crushes, no warning) and are dangerous in earthquakes.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Chapter 10",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed28583f1de9889ffda385ec49c4ffd1a7c9eeb14391e16d3afb4a3325c246b2"
+    },
+    {
+      "question_id": "41b435a7-37af-4095-9116-0d3af76b423d",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "During a pushover test of a reinforced concrete frame structure in a high-rise building in Manila, the corner column shows small cracks at low load levels but continues to carry load with large deflections until failure. A similar column nearby fails suddenly at a slightly higher load with no visible cracking prior to failure. Based on these observations, what can be inferred about the reinforcement in each column?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both columns are underreinforced; the difference is due to concrete quality and not reinforcement"
+        },
+        {
+          "id": "b",
+          "text": "The first column is likely underreinforced (ductile); the second column is likely overreinforced (brittle) and poses greater risk in earthquakes"
+        },
+        {
+          "id": "c",
+          "text": "The second column is stronger because it carries more load before failure, indicating superior material properties"
+        },
+        {
+          "id": "d",
+          "text": "The difference is due to the direction of loading and has nothing to do with reinforcement, which is consistent across both columns"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The first column (cracks visible, large deflection before failure) exhibits ductile behavior characteristic of underreinforced design. The second column (sudden failure, no cracking) exhibits brittle behavior characteristic of overreinforced design. In seismic/earthquake conditions, the first column is safer because it provides warning and absorbs energy through deformation. The second column is dangerous because it fails without warning.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 5; ACI 318, Chapter 10",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5f37ab714bf73f3b81ad91f294b0fa1a7accd15af05c304e9fc5c302e3ee45a4"
+    },
+    {
+      "question_id": "627f1624-6508-4794-a8ef-ef18938735bb",
+      "article_id": "2240c4ba-140c-4310-b097-e8c9197e2d8f",
+      "topic_id": "2807f083-e0d4-448c-882c-94df8b27ca01",
+      "text": "Grade 60 reinforcing steel reaches its yield strain at approximately:",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.003 (same as concrete crushing), which indicates a high level of deformation before failure"
+        },
+        {
+          "id": "b",
+          "text": "0.0021 (about 2.1 parts per thousand)"
+        },
+        {
+          "id": "c",
+          "text": "0.005 (5 parts per thousand), suggesting a significant margin of safety in structural applications"
+        },
+        {
+          "id": "d",
+          "text": "0.001 (1 part per thousand), a relatively low strain indicating early yield under stress"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Yield strain = Fy / E = 414 MPa / 200,000 MPa = 0.00207 ≈ 0.0021. This is the strain at which Grade 60 steel enters the plastic region and begins permanent deformation. This value is less than concrete crushing strain (0.003), which is why steel yields before concrete in underreinforced sections.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Section 5.1; ACI 318, Section 3.2",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c653c048789aaa19e06a4e002af52bb887ef452958f7a96b1e5803e6076f512d"
+    }
+  ]
+}

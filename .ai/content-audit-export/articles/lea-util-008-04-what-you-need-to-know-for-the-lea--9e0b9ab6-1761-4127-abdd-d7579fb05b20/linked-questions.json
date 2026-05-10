@@ -1,9 +1,59 @@
 {
   "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:6ce5f273854348bff78e3591ab9e9b7c30f56fc6d6ea2904e913b9c2ac9d3332",
+  "linked_questions_hash": "sha256:e41d6332fdabe2258598f2aaf7fd8fd782ca7c511e23ae5eb95109f844b25d5e",
   "question_count": 15,
   "questions": [
+    {
+      "question_id": "46b5d235-5848-4cb4-9309-67cdd3259870",
+      "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
+      "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
+      "text": "According to the Philippine Electrical Code (PEC), what is the maximum GFCI trip threshold for personnel protection in wet locations such as bathrooms and outdoor areas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 mA (milliamperes)"
+        },
+        {
+          "id": "b",
+          "text": "<30 mA (milliamperes)"
+        },
+        {
+          "id": "c",
+          "text": "75 mA (milliamperes)"
+        },
+        {
+          "id": "d",
+          "text": "100 mA (milliamperes)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "50 mA is a higher threshold used in dry locations, not wet locations where more stringent protection is required.",
+        "c": "75 mA exceeds the safe protection level for wet locations and would not comply with PEC requirements.",
+        "d": "100 mA is far too high for wet location protection and violates electrical safety standards.",
+        "correct": "The Philippine Electrical Code (PEC), based on NEC/NFPA 70 standards, specifies that electrical fault current protection in wet locations must not exceed 30 mA (less than 30 mA). This lower threshold in wet locations provides enhanced protection against electrical shock hazards where moisture is present, reducing the time delay for circuit disconnection in fault conditions.",
+        "takeaway": "Wet locations (bathrooms, outdoor) require <30 mA fault current protection per PEC; this is a critical numerical standard for electrical safety."
+      },
+      "explanation": "50 mA is a higher threshold used in dry locations, not wet locations where more stringent protection is required. 75 mA exceeds the safe protection level for wet locations and would not comply with PEC requirements. 100 mA is far too high for wet location protection and violates electrical safety standards. The Philippine Electrical Code (PEC), based on NEC/NFPA 70 standards, specifies that electrical fault current protection in wet locations must not exceed 30 mA (less than 30 mA). This lower threshold in wet locations provides enhanced protection against electrical shock hazards where moisture is present, reducing the time delay for circuit disconnection in fault conditions. Wet locations (bathrooms, outdoor) require <30 mA fault current protection per PEC; this is a critical numerical standard for electrical safety.",
+      "code_citation": "LEA-UTIL-008-04.mdx: Summary of Key Numerical Standards section, line 204",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-008-04-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:04.724704+00:00",
+      "updated_at": "2026-05-06T15:59:04.586837+00:00",
+      "content_hash": "sha256:3b2bc3b2673460abe3c0ca1dc4a9fa874a1d0ca65d3ad5cfe277b1376fb4a424"
+    },
     {
       "question_id": "253ea8ab-aee8-40d3-a579-42c9cb98df05",
       "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
@@ -39,7 +89,7 @@
         "correct": "The Philippine Electrical Code (PEC) Part 7 establishes that emergency lighting systems must maintain a minimum illumination level of 10 lux throughout evacuation routes and exit areas. This illumination level enables safe movement and wayfinding during fire emergencies when normal lighting may fail. This numerical standard is critical for life safety compliance.",
         "takeaway": "Emergency lighting must maintain 10 lux minimum per PEC Part 7; this is a foundational life safety numerical standard."
       },
-      "explanation": null,
+      "explanation": "5 lux is insufficient for safe evacuation and does not meet regulatory requirements. 20 lux exceeds the minimum required standard; while acceptable, 10 lux is the baseline threshold. 30 lux is above the minimum emergency lighting requirement. The Philippine Electrical Code (PEC) Part 7 establishes that emergency lighting systems must maintain a minimum illumination level of 10 lux throughout evacuation routes and exit areas. This illumination level enables safe movement and wayfinding during fire emergencies when normal lighting may fail. This numerical standard is critical for life safety compliance. Emergency lighting must maintain 10 lux minimum per PEC Part 7; this is a foundational life safety numerical standard.",
       "code_citation": "LEA-UTIL-008-04.mdx: Summary of Key Numerical Standards section, line 201",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -51,8 +101,8 @@
       "model_id": "ALE-UTIL-008-04-016",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ce570a7b1bb6f318666433270ec9d98d090821de33f8edb5b823dfbbf158124b"
+      "updated_at": "2026-05-06T15:59:04.465937+00:00",
+      "content_hash": "sha256:f149053616361531718c5575aeb6e1174aca56582ef6eb28b4f1c2f4b9f3094a"
     },
     {
       "question_id": "81c040bd-ec0d-4a75-bb72-141ee602749b",
@@ -303,56 +353,6 @@
       "created_at": "2026-03-23T19:28:04.724704+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:9298c61b3bc18c6e843dcb23c812837159d2084e3b05e5649fee4f12773c6a2e"
-    },
-    {
-      "question_id": "46b5d235-5848-4cb4-9309-67cdd3259870",
-      "article_id": "9e0b9ab6-1761-4127-abdd-d7579fb05b20",
-      "topic_id": "75bd8317-d8bf-47d7-a2f8-8fde6a870b35",
-      "text": "According to the Philippine Electrical Code (PEC), what is the maximum GFCI trip threshold for personnel protection in wet locations such as bathrooms and outdoor areas?",
-      "options": [
-        {
-          "id": "a",
-          "text": "50 mA (milliamperes)"
-        },
-        {
-          "id": "b",
-          "text": "<30 mA (milliamperes)"
-        },
-        {
-          "id": "c",
-          "text": "75 mA (milliamperes)"
-        },
-        {
-          "id": "d",
-          "text": "100 mA (milliamperes)"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "50 mA is a higher threshold used in dry locations, not wet locations where more stringent protection is required.",
-        "c": "75 mA exceeds the safe protection level for wet locations and would not comply with PEC requirements.",
-        "d": "100 mA is far too high for wet location protection and violates electrical safety standards.",
-        "correct": "The Philippine Electrical Code (PEC), based on NEC/NFPA 70 standards, specifies that electrical fault current protection in wet locations must not exceed 30 mA (less than 30 mA). This lower threshold in wet locations provides enhanced protection against electrical shock hazards where moisture is present, reducing the time delay for circuit disconnection in fault conditions.",
-        "takeaway": "Wet locations (bathrooms, outdoor) require <30 mA fault current protection per PEC; this is a critical numerical standard for electrical safety."
-      },
-      "explanation": null,
-      "code_citation": "LEA-UTIL-008-04.mdx: Summary of Key Numerical Standards section, line 204",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-UTIL-008-04-015",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:28:04.724704+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:e3115a21d7f00514e3b7ef9b8c27edd3bff66b10f7c1aaac30a3cf16c60ea31e"
     },
     {
       "question_id": "c5fe4c99-47d8-4b5f-bce3-88d652cfcc3c",

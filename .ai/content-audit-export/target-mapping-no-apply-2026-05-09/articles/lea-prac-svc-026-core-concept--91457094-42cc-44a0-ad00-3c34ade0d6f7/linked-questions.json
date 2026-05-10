@@ -1,0 +1,508 @@
+{
+  "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:ce09011ee67dc86028b743ec13d18039fb87f60e185e8c1b8ed95b6a919b06d3",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "73bd0b6e-94b9-4d9d-8294-4535d864f2ec",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "Under SPP 203.4, what does the term 'softscape' in Site Development Planning refer to?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Planting and turf elements"
+        },
+        {
+          "id": "b",
+          "text": "Paving and walls, which are considered hardscape elements and not part of softscape."
+        },
+        {
+          "id": "c",
+          "text": "Water features only, excluding any plant-based elements typically associated with softscape."
+        },
+        {
+          "id": "d",
+          "text": "Civil drainage and utility lines, which are part of infrastructure planning rather than softscape."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Paving and walls are hardscape, not softscape.",
+        "c": "Water features are hardscape (constructed), not softscape (vegetative).",
+        "d": "Civil drainage and utilities are civil works, not softscape landscape components.",
+        "correct": "SPP 203.4 defines softscape as vegetative elements including planting and turf, distinguished from hardscape (constructed elements like paving and walls).",
+        "takeaway": "Softscape = plants and turf; hardscape = constructed features like paving, walls, and water features."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4b513574fde4eefcd722b7bc84c10e9e65434fcc9f59cb5f5903753a22f8ad20"
+    },
+    {
+      "question_id": "7873bcdc-ff83-499b-b934-7dabf40d206a",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "An architect argues that because she is providing Professional Architectural Consulting Services (PACS) under SPP 209 for a real estate development project, landscape and hardscape planning is outside the scope of her engagement and should be handled by a separate landscape consulting firm. Based on SPP 203.4, what is the error in this reasoning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Site Development Planning (SDP) under SPP 203.4 includes landscape and hardscape planning integrated with civil works; PACS (SPP 209) is a different service that does not include SDP scope"
+        },
+        {
+          "id": "b",
+          "text": "SPP 209 explicitly includes landscape and hardscape as part of PACS services; the architect cannot exclude them without violating the scope"
+        },
+        {
+          "id": "c",
+          "text": "SPP 203.4 and SPP 209 are identical services; the numbering difference is administrative only and does not affect service scope"
+        },
+        {
+          "id": "d",
+          "text": "Landscape planning is always outside all architectural service scopes and must be handled by Landscape Architects only, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP 209 does not include landscape/hardscape planning in the way SDP does; PACS is architectural consulting, not SDP.",
+        "c": "SPP 203.4 and SPP 209 are separate service categories with different scopes; they are not identical.",
+        "d": "Landscape planning on small SDP projects is the architect's responsibility, not exclusively a Landscape Architect function.",
+        "correct": "SPP 203.4 (SDP) is a distinct sub-service under SPP 203 that includes landscape/hardscape planning integrated with civil works under the architect's scope. SPP 209 (PACS) is a different service category. Confusing these services is a critical exam error.",
+        "takeaway": "SDP (SPP 203.4) ≠ PACS (SPP 209). SDP includes landscape/hardscape planning; PACS does not."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4; SPP Doc 209",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e05f0ed63c2b9a97fcd14a526333a0022e3b62ddded8f2aeb9adfab9ed6c01b0"
+    },
+    {
+      "question_id": "4a984cc9-dd1e-41ce-bc1d-516f6e945389",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "An architect is engaged to provide Site Development Planning services. The client separately engages a Landscape Architect to perform landscape design and detailing. Under SPP 203.4, how is the Landscape Architect's fee handled in relation to the architect's SDP compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The client-engaged Landscape Architect's fee is charged to the client's account; it is not deducted from the architect's SDP compensation"
+        },
+        {
+          "id": "b",
+          "text": "The client-engaged Landscape Architect's fee is deducted from the architect's SDP fee as a cost offset, ensuring budget adherence"
+        },
+        {
+          "id": "c",
+          "text": "The architect and Landscape Architect split the SDP fee equally, regardless of project size, to promote collaboration"
+        },
+        {
+          "id": "d",
+          "text": "The client-engaged Landscape Architect's fee is added to the architect's SDP fee to avoid duplication of work, ensuring comprehensive service"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The client-engaged Landscape Architect fee is NOT deducted from architect's SDP compensation; it remains the client's direct cost.",
+        "c": "The fee split arrangement is not determined by SDP rules; on large projects, the architect hires an RLP as SC (different from client-engaged scenario).",
+        "d": "The client-engaged fee is separate; it does not get added to architect's SDP fee.",
+        "correct": "SPP 203.4 Section 4.2 explicitly states that if the client separately engages a Landscape Architect, that Landscape Architect's fee is the client's account and is not deducted from the architect's SDP compensation.",
+        "takeaway": "Client-engaged Landscape Architect fee = client's account, not deducted from architect's SDP compensation."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6803b5392bd8f2721f7c71d183e28cc2bb46e0762ec855761cb5c88aa1296950"
+    },
+    {
+      "question_id": "078289cd-2f90-4419-b541-f9173199efc4",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "An architect holds both Professional Architect and Landscape Architect licenses and provides Site Development Planning services on a large commercial project. Under SPP 203.4, how does the dual expertise affect the SDP fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The SDP fee increases to reflect the dual expertise of Architect and Landscape Architect"
+        },
+        {
+          "id": "b",
+          "text": "The SDP fee remains unchanged; licensed discipline does not affect compensation"
+        },
+        {
+          "id": "c",
+          "text": "The architect must still hire a separate RLP Specialist Consultant and cannot claim dual expertise credit"
+        },
+        {
+          "id": "d",
+          "text": "The SDP fee is doubled because the architect is performing both roles"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Licensed discipline and expertise directly affect compensation; dual licensing creates a fee increase.",
+        "c": "If the architect is an RLP, the architect can perform landscape work as architect (not as SC); the fee increases due to dual expertise.",
+        "d": "The fee increases to reflect dual expertise, not doubles; the increase is determined by SPP formula, not a simple doubling.",
+        "correct": "SPP 203.4 provides that if the architect also holds a Landscape Architect license, the SDP fee increases to reflect the dual expertise and expanded professional capability.",
+        "takeaway": "Architect with dual license (Architect + Landscape Architect) receives fee increase reflecting dual expertise for SDP services."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2cdf91f23716d721b57b27acbf2530b8d3be1002e5ce6f0a49375dc3c3556b72"
+    },
+    {
+      "question_id": "c0fca0ce-4250-43a5-b5b9-a997ff438b85",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "On a small residential development project, who is responsible for preparing the landscaping layout as part of Site Development Planning services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect prepares the landscaping layout directly"
+        },
+        {
+          "id": "b",
+          "text": "A Registered Landscape Professional (RLP) must be hired as Specialist Consultant"
+        },
+        {
+          "id": "c",
+          "text": "The client must separately engage a Landscape Architect"
+        },
+        {
+          "id": "d",
+          "text": "The civil engineer integrates landscaping into the grading plan"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "On small projects, an RLP Specialist Consultant is optional. On large projects, the RLP becomes mandatory.",
+        "c": "The client may separately engage a Landscape Architect, but on small projects the architect's scope includes landscaping layout.",
+        "d": "The civil engineer coordinates with the architect on grading and utilities, but landscaping layout design is the architect's responsibility on small SDP projects.",
+        "correct": "SPP 203.4 specifies that on small projects, the architect prepares the landscaping layout directly as part of SDP services; no separate Landscape Architect is required.",
+        "takeaway": "Small SDP projects: architect does landscaping layout. Large SDP projects: architect must hire RLP Landscape Architect as SC."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e9af8633f1f96471b9e2759a193239e8fc273ccd27ddfeebc4e55921cdeec543"
+    },
+    {
+      "question_id": "2af8ab33-3dd0-472a-95a7-6c3d49ea0fe0",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "An architect provides Site Development Planning services and engages a Registered Landscape Professional (RLP) as Specialist Consultant on a large commercial project. The client also separately hires a landscape consultant for site-specific horticultural recommendations. Under SPP 203.4, what is the correct accounting of professional fees and responsibilities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect-engaged RLP fee is part of the architect's overhead for large SDP projects; the client-hired landscape consultant's fee is the client's separate account"
+        },
+        {
+          "id": "b",
+          "text": "Both the architect-engaged RLP and the client-hired landscape consultant fees are deducted from the architect's SDP compensation, which may affect the overall project budget"
+        },
+        {
+          "id": "c",
+          "text": "The architect-engaged RLP becomes unnecessary because the client has already hired a landscape consultant, potentially leading to redundancy in services"
+        },
+        {
+          "id": "d",
+          "text": "The architect-engaged RLP and client-hired consultant must combine fees into a single landscape contract to avoid conflicts, ensuring a unified approach"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The architect-engaged RLP is the architect's cost as SC on large projects. The client-hired consultant's fee is separate and not deducted from architect's SDP compensation.",
+        "c": "On large projects, the architect-engaged RLP is mandatory for SDP scope. Client-hired additional landscape services do not eliminate this requirement.",
+        "d": "The architect-engaged RLP (required for SDP large projects) and client-hired consultant (optional additional services) are separate engagements with distinct roles.",
+        "correct": "On large SDP projects, the architect must engage an RLP as SC (architect's cost/overhead). If the client separately engages a landscape consultant for additional services, that client-engaged fee is the client's account and does not affect the architect-engaged RLP cost structure.",
+        "takeaway": "Large SDP: architect-engaged RLP is architect's cost. Client-hired consultants are client's separate cost for additional services."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e24479eb4bba015438a886779c2b3502234c21a0fe1e6ec9fb021bc63e218692"
+    },
+    {
+      "question_id": "9e051673-b13e-4e46-9347-8f9f46277866",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "Under SPP 203.4, what is the fee base used to calculate compensation for Site Development Planning services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The sum of estimated civil works cost and estimated landscaping works cost (hardscape + softscape)"
+        },
+        {
+          "id": "b",
+          "text": "Civil works cost only; landscaping is charged separately, unless otherwise agreed upon in the contract"
+        },
+        {
+          "id": "c",
+          "text": "Hardscape cost only; softscape is excluded from SDP scope, which may lead to additional charges"
+        },
+        {
+          "id": "d",
+          "text": "The estimated total project construction cost including structural work, as well as any additional site-specific requirements"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Both civil works and landscaping works (hardscape and softscape) form the fee base; landscaping is not charged separately from SDP.",
+        "c": "Both hardscape and softscape are included in landscaping works, which are part of the SDP fee base.",
+        "d": "SDP fee is based on civil works and landscaping only, not total project cost including structural/building costs.",
+        "correct": "SPP 203.4 Section 4.1 specifies that SDP compensation depends on the sum of estimated costs: civil works cost plus landscaping works (hardscape and softscape combined).",
+        "takeaway": "SDP fee base = civil works cost + (hardscape cost + softscape cost)."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:60a01a8619d8c56153abba4eafa021baf9c9c48142a9a7fca8245c24e94b184e"
+    },
+    {
+      "question_id": "b8250a57-8c92-4754-a429-64c4628d0b5c",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "An architect serves as Consulting Architect for Site Development Planning on a large commercial mixed-use development. Under SPP 203.4, what responsibility must the architect assume regarding landscape design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The architect must hire a Registered Landscape Professional as Specialist Consultant for landscaping design"
+        },
+        {
+          "id": "b",
+          "text": "The architect may perform detailed landscape design independently on large projects"
+        },
+        {
+          "id": "c",
+          "text": "The architect prepares general landscape layout and the client must hire a Landscape Architect for planting details"
+        },
+        {
+          "id": "d",
+          "text": "Landscape design is outside SDP scope; coordination with civil engineer is sufficient"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Large projects require an RLP Specialist Consultant. The architect cannot independently perform detailed landscape design; this is mandatory, not optional.",
+        "c": "On large projects, the architect does not perform landscape layout at all; an RLP must be engaged by the architect (or client separately).",
+        "d": "Landscape design and hardscape/softscape planning are core SDP components, not outside scope. Coordination is necessary but does not substitute for landscape professional engagement on large projects.",
+        "correct": "SPP 203.4 mandates that on large projects, the architect must hire a Registered Landscape Professional (RLP) as Specialist Consultant; the architect cannot perform landscape design alone on large SDP projects.",
+        "takeaway": "Large SDP projects mandate RLP Specialist Consultant; architect cannot do landscape design alone on large projects."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ae26865773dc21daf162d1ebe12f4bdb76f2edc897e50db6fa4bafeb28b18e77"
+    },
+    {
+      "question_id": "731a7a60-fd34-4707-9a3e-72572752c5ed",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "Which SPP document governs Site Development Planning (SDP) services as a professional architectural sub-service?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SPP 203, sub-service #4"
+        },
+        {
+          "id": "b",
+          "text": "SPP 209, Professional Architectural Consulting Services"
+        },
+        {
+          "id": "c",
+          "text": "Architect's Guidelines, Project Classification"
+        },
+        {
+          "id": "d",
+          "text": "SPP 202, Preliminary Services"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "SPP 209 governs PACS (Professional Architectural Consulting Services), which does not include landscape/hardscape planning in the same way as SDP.",
+        "c": "The Architect's Guidelines provide project classification and overhead factors but does not govern SDP service content.",
+        "d": "SPP 202 governs preliminary design services, not site development planning.",
+        "correct": "SDP is sub-service #4 under SPP 203 (Professional Architectural Services), covering landscape and hardscape planning integrated with civil works under the architect's scope.",
+        "takeaway": "SDP is SPP 203.4, not SPP 209 or other documents."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c07339e6b48600f279079222057612ab179a58c8d41631e375a0816859dc8a5c"
+    },
+    {
+      "question_id": "241ddc8c-c915-4d4b-9e75-35388a925489",
+      "article_id": "91457094-42cc-44a0-ad00-3c34ade0d6f7",
+      "topic_id": "a376324b-61e0-4d5f-9d29-3d3f0bf6a757",
+      "text": "A site development plan includes estimated civil works cost of PHP 5,000,000 and estimated landscaping works (hardscape and softscape) of PHP 1,500,000. The project is classified as Group 8 per the Architect's Guidelines. Which of the following correctly identifies the fee base for calculating the architect's SDP compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PHP 6,500,000 (civil works + landscaping works)"
+        },
+        {
+          "id": "b",
+          "text": "PHP 5,000,000 (civil works only)"
+        },
+        {
+          "id": "c",
+          "text": "PHP 1,500,000 (landscaping works only)"
+        },
+        {
+          "id": "d",
+          "text": "PHP 6,500,000 minus any separately-engaged Landscape Architect fee"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Civil works alone is insufficient; landscaping works (hardscape + softscape) must be included in the fee base.",
+        "c": "Landscaping cost alone is not the fee base; civil works must be included.",
+        "d": "A separately-engaged Landscape Architect fee is the client's account and is not deducted from the architect's SDP fee base calculation.",
+        "correct": "SPP 203.4 specifies that compensation depends on estimated cost of civil works (PHP 5M) plus estimated cost of landscaping works (hardscape + softscape: PHP 1.5M) = PHP 6.5M total fee base.",
+        "takeaway": "SDP fee base = civil works cost + landscaping works cost (hardscape + softscape combined)."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 203, Section 203.4",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-026-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:abe2c4d37aeff1b7a384d2efdfa270ce5d699912a7f1b5c35a9a21fc1fc1e4ec"
+    }
+  ]
+}

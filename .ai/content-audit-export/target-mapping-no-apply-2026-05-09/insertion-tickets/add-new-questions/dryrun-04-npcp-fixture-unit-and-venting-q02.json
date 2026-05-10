@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+  "dry_question_id": "dryrun-04-npcp-fixture-unit-and-venting-q02",
+  "target_article_id": null,
+  "ticket_target": "new-article-npcp-fixture-units-and-venting",
+  "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 311.4, PDF p.44.",
+    "text": "Which statement follows Section 311.4 of the Revised National Plumbing Code of the Philippines?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Section 311.4 states the prohibition and names the exception path in Sections 812, 813, and 814.",
+      "distractors": {
+        "A": "Oversizing is not the stated permission.",
+        "B": "Branch length is not the stated permission.",
+        "D": "The same section says single drainage and venting systems with unvented branch lines are prohibited."
+      },
+      "takeaway": "Do not turn a vent into drainage or drainage into venting unless the Code exception is actually cited."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "npcp-vent-q2",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "C",
+    "explanation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 311.4, PDF p.44.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "A vent pipe may be used as a soil pipe if it is oversized."
+      },
+      {
+        "id": "B",
+        "text": "A soil or waste pipe may be used as a vent if the branch is short."
+      },
+      {
+        "id": "C",
+        "text": "No vent pipe shall be used as a soil or waste pipe, nor shall any soil or waste pipe be used as a vent, except as provided in the cited Code sections."
+      },
+      {
+        "id": "D",
+        "text": "Single drainage and venting systems with unvented branch lines are allowed for small buildings."
+      }
+    ]
+  },
+  "sme_source_locator": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 311.4, PDF p.44.",
+  "code_citation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 311.4, PDF p.44.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

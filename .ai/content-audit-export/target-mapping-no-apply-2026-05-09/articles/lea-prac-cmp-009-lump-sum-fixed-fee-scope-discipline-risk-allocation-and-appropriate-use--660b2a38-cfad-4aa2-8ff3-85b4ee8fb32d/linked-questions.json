@@ -1,0 +1,508 @@
+{
+  "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a13ebbb94dde38ad8a8c2b97cf67ca6c85e449fe4f0e87ef66eb18ad4928a8d9",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "62b63d45-27d3-4984-a532-db9edcd8a980",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "How should an architect handle scope changes during a Lump Sum Fixed Fee project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Absorb all scope changes within the fixed fee to maintain client relations, even if it results in a financial loss for the firm"
+        },
+        {
+          "id": "b",
+          "text": "Refuse to make any changes once the fee is fixed, regardless of the client's needs or project requirements"
+        },
+        {
+          "id": "c",
+          "text": "Issue a change order documenting additional scope and additional fee for work beyond the documented scope"
+        },
+        {
+          "id": "d",
+          "text": "Request the client to pay a separate hourly rate for changes, ensuring that all additional work is compensated fairly"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sacrifices architect profitability and encourages scope creep; unsustainable approach.",
+        "b": "Excessively rigid; clients will request changes; the contract must provide procedures to handle them fairly.",
+        "d": "Inconsistent with lump sum structure; change orders should specify the fee, not switch to hourly billing.",
+        "correct": "The contract should establish clear procedures for handling scope changes. Services beyond documented scope should be addressed through change orders specifying additional scope and additional fees.",
+        "takeaway": "Change orders protect both parties by explicitly documenting what additional work is required and what additional fees apply."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:19cf15c04321b93fa9786ec5342b90b7cfaf19fa5c297c430300d64bfdc796b3"
+    },
+    {
+      "question_id": "2a74c38c-6810-48d4-8f2d-8b28ee94f1ab",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "An architect estimates 800 design hours plus 200 coordination hours at 500 pesos per fully-loaded hourly rate, applying a 2.2 multiplier and 15% contingency. What is the appropriate Lump Sum Fixed Fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "800,000 pesos"
+        },
+        {
+          "id": "b",
+          "text": "1,100,000 pesos"
+        },
+        {
+          "id": "c",
+          "text": "1,265,000 pesos"
+        },
+        {
+          "id": "d",
+          "text": "1,500,000 pesos"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fails to apply multiplier and contingency; counts only hours at base rate without overhead.",
+        "b": "Applies multiplier but omits the 15% contingency step.",
+        "d": "Overestimates by failing to apply the multiplier correctly or using wrong base calculation.",
+        "correct": "Calculation: 1,000 hours × 500 pesos = 500,000 pesos (effort cost). × 2.2 multiplier = 1,100,000 pesos. + 15% contingency = 1,100,000 × 1.15 = 1,265,000 pesos.",
+        "takeaway": "Lump sum fee calculation: (hours × rate × overhead multiplier) × (1 + contingency percentage) = final fee."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5dc64b82dac4c15d1bf5ed686d6331a345e99d4488c6260ef6e03224b3e67327"
+    },
+    {
+      "question_id": "49712336-6d8d-4c4f-b18b-06dc2f7ee7ad",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "What is the primary advantage of Lump Sum Fixed Fee compensation for the client?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The client can request unlimited scope changes"
+        },
+        {
+          "id": "b",
+          "text": "Budget certainty and elimination of surprise invoicing"
+        },
+        {
+          "id": "c",
+          "text": "The fee automatically adjusts if construction costs change"
+        },
+        {
+          "id": "d",
+          "text": "The architect assumes no risk for project performance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely suggests unlimited changes; lump sum requires scope discipline and change orders for expansions.",
+        "c": "Confuses lump sum with percentage-of-PCC; lump sum fees never adjust.",
+        "d": "Misrepresents risk: lump sum places risk entirely on the architect, not eliminating architect risk.",
+        "correct": "The primary advantage for clients is budget certainty and the elimination of variable invoicing based on changing hours or costs.",
+        "takeaway": "Lump sum provides clients with predictable costs and no surprise invoicing, even as the project develops."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:20d3b9ad5e4bab9004af58b3cb9e8d70ce5faeadfd6f0862e690f686cd4088c0"
+    },
+    {
+      "question_id": "f236646c-39ad-4ca2-a446-8a6fc0a5f95a",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "Which project type is most appropriate for Lump Sum Fixed Fee compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A renovation project with uncertain existing conditions, which may lead to unforeseen costs"
+        },
+        {
+          "id": "b",
+          "text": "An innovative design project with emerging program requirements, which requires flexibility in budgeting"
+        },
+        {
+          "id": "c",
+          "text": "A straightforward residential project with clearly defined, stable scope"
+        },
+        {
+          "id": "d",
+          "text": "A Design-Build project with evolving scope, which may necessitate adjustments in fee structure"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Renovation uncertainty makes lump sum risky; MDPE is more appropriate for uncertain conditions.",
+        "b": "Emerging program requirements create scope uncertainty; lump sum is inappropriate.",
+        "d": "Evolving scope in Design-Build makes lump sum risky; percentage-of-PCC or MDPE are better choices.",
+        "correct": "Lump sum fees are appropriate for projects with clearly defined, stable scope where the architect has extensive experience and high confidence in estimating effort.",
+        "takeaway": "Lump sum works only for straightforward projects with fixed scope where the architect has completed similar projects and can confidently estimate effort."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e66de8f03d64d331634d55cff4f141aae1c2363838eb2225812253c6b5039368"
+    },
+    {
+      "question_id": "bbdc5fcf-5d03-439f-8a28-ea1fec1e6a84",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "What should the Owner-Architect Agreement specify regarding payment structure for Lump Sum Fixed Fees?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The entire fee is due upon contract signing, ensuring immediate financial commitment and project initiation without phased payments."
+        },
+        {
+          "id": "b",
+          "text": "50% is due upfront; 50% is due at project completion, providing a balanced approach to financial management and project delivery."
+        },
+        {
+          "id": "c",
+          "text": "SPP 202 phase percentages (as specified in the standard document) should apply to invoicing milestones even though the total fee is fixed"
+        },
+        {
+          "id": "d",
+          "text": "Payment timing is not specified; it is negotiated separately, allowing flexibility in financial arrangements based on mutual agreement."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Front-loads payment and creates cash flow imbalance; inappropriate for lump sum structure.",
+        "b": "Creates cash flow burden; does not align payment with work completion milestones.",
+        "d": "Leaves payment timing ambiguous; the contract must clearly specify milestone-based invoicing.",
+        "correct": "Even with lump sum fees, the contract should establish invoicing based on SPP 202 phase percentages (15% at Schematic Design, 20% at Design Development, etc.) to ensure payment as milestones are achieved rather than invoicing the entire fee in advance.",
+        "takeaway": "Lump sum fees should still follow phase-based invoicing milestones to ensure the architect receives payment as work is completed."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:794dd714b9506bf19e3b2d05250080d16b382cc3a913a5a6ff6635effe306a2e"
+    },
+    {
+      "question_id": "e761a6a8-df27-4045-945b-e73882b6776e",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "Comparing Lump Sum Fixed Fee with MDPE for the same project: if MDPE fee is estimated at 1.5 million pesos, what should be the approximate Lump Sum Fixed Fee to reflect the architect's risk assumption?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.5 million pesos; both methods should produce identical fees, assuming no additional risk factors"
+        },
+        {
+          "id": "b",
+          "text": "1.2–1.35 million pesos (10–20% lower) to reflect risk transfer to the architect"
+        },
+        {
+          "id": "c",
+          "text": "1.8–1.95 million pesos (20% higher) for risk compensation, accounting for potential project uncertainties"
+        },
+        {
+          "id": "d",
+          "text": "Lump sum fees cannot be compared to MDPE estimates due to differing risk and scope assumptions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly assumes both methods should produce identical fees; risk transfer justifies lower lump sum fees.",
+        "c": "Reverses the principle: lump sum should be lower, not higher, than MDPE.",
+        "d": "Falsely suggests comparison is impossible; both can be compared to identify appropriate fee levels.",
+        "correct": "Lump sum fees should be equal to or 10–20% higher than equivalent MDPE fees to compensate the architect for assuming scope and cost risk that MDPE shares through hourly billing.",
+        "takeaway": "Lump sum fees are typically 10–20% lower than MDPE because the architect assumes fixed-scope risk that MDPE doesn't."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12136d2c228764f36ac681e657c2819e10f0a7cfc007a92c94ecf28b735aeefd"
+    },
+    {
+      "question_id": "a6152e0b-9d96-4774-a845-7195b938263f",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "What percentage contingency should an architect include in a Lump Sum Fixed Fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0%; lump sum fees cannot include contingency, as they are fixed and predetermined"
+        },
+        {
+          "id": "b",
+          "text": "5%; lump sum fees already account for all variables, including minor unforeseen conditions"
+        },
+        {
+          "id": "c",
+          "text": "10–20% depending on project uncertainty; straightforward projects justify lower contingency"
+        },
+        {
+          "id": "d",
+          "text": "30–40% to ensure the architect covers all risks, including potential design changes and client requests"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely suggests no contingency is needed; scope variations always occur.",
+        "b": "Sets contingency too low; 5% is insufficient to cover likely variations.",
+        "d": "Sets contingency unreasonably high; 30–40% suggests insufficient confidence in effort estimation.",
+        "correct": "Architects should include contingency—typically 10–20%—to cover minor scope variations and unexpected coordination requirements. Straightforward projects justify lower contingency; complex projects justify higher contingency.",
+        "takeaway": "Even with lump sum fees, include 10–20% contingency to protect against minor scope variations within the overall scope definition."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:98b995f54554350ef940a5e4aca3c59057dabb72dccf8a52970f58f89da48d7f"
+    },
+    {
+      "question_id": "a87ed2ef-477d-4e28-a3e0-52c3f2f93825",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "What is the most critical element required for successful Lump Sum Fixed Fee compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A low fee to compete with other architects, potentially compromising on quality"
+        },
+        {
+          "id": "b",
+          "text": "Exceptionally detailed scope documentation specifying deliverables, coordination, revision cycles, and change procedures"
+        },
+        {
+          "id": "c",
+          "text": "An agreement that the client will not request changes, ensuring project stability"
+        },
+        {
+          "id": "d",
+          "text": "A high contingency percentage to absorb all possible variations, providing financial flexibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely assumes low fees are necessary; appropriate fees reflecting risk are more critical.",
+        "c": "Unrealistic expectation that clients won't request changes; the contract must handle changes through change orders.",
+        "d": "Excessive contingency suggests poor estimation; clear scope definition prevents the need for excessive contingency.",
+        "correct": "Detailed scope documentation is critical because it prevents scope creep and disputes about what services are included. The contract must specify deliverables, coordination, review cycles, and change order procedures.",
+        "takeaway": "Detailed scope documentation is essential to lump sum success because it defines the boundary between included and excluded work."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d391774028b68a2b2710d47a3de6abfa38cf65770a7d60c40eec0d738d95b6ab"
+    },
+    {
+      "question_id": "60e46a69-ef6f-4aa7-8ee0-665ce8889298",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "When should an architect use a Lump Sum Fixed Fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "For all projects to provide clients with budget certainty, regardless of project complexity or scope changes."
+        },
+        {
+          "id": "b",
+          "text": "Only when scope is absolutely clear, the architect has high confidence in estimating effort, and contingencies are modest"
+        },
+        {
+          "id": "c",
+          "text": "For projects with uncertain scope to encourage efficiency, although this may lead to disputes over scope changes."
+        },
+        {
+          "id": "d",
+          "text": "Only for small projects under 5 million pesos construction cost, where financial risk is minimal."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly assumes lump sum is universally appropriate; it is risky for uncertain projects.",
+        "c": "Reverses the principle: uncertain scope makes lump sum inappropriate and risky.",
+        "d": "Bases appropriateness on project cost rather than scope clarity and effort estimation confidence.",
+        "correct": "Lump sum fees transfer scope and cost risk to the architect and are appropriate only when scope is absolutely clear, effort can be confidently estimated, and contingencies are modest.",
+        "takeaway": "Lump sum is only appropriate when the architect can confidently estimate all effort because the fixed fee transfers risk entirely to the architect."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dbf7ba526a6231002e0e40d1a48067ad903464cb1114fb4f7af7ee1434ddfd3b"
+    },
+    {
+      "question_id": "b8d6bd84-3ed0-40c2-a082-512fe8760bfb",
+      "article_id": "660b2a38-cfad-4aa2-8ff3-85b4ee8fb32d",
+      "topic_id": "1e4262ad-3708-451a-a664-630171f30717",
+      "text": "What is a Lump Sum Fixed Fee in architect compensation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A percentage of the project construction cost, typically ranging from 5% to 15% depending on project complexity"
+        },
+        {
+          "id": "b",
+          "text": "An hourly rate multiplied by estimated hours, which may vary based on the architect's experience and project location"
+        },
+        {
+          "id": "c",
+          "text": "A single, predetermined amount that does not adjust regardless of hours worked or scope variations"
+        },
+        {
+          "id": "d",
+          "text": "A fee that increases if the project extends beyond the estimated schedule, subject to client approval and contract terms"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses lump sum with percentage-of-PCC, which adjusts with construction cost changes.",
+        "b": "Describes MDPE (hourly-based), not lump sum fixed fees.",
+        "d": "Misunderstands lump sum structure; fees never increase regardless of schedule changes.",
+        "correct": "Lump Sum Fixed Fee is a single, non-adjustable predetermined amount for all design services. It does not increase if hours increase or scope changes, and does not decrease if the project is completed more efficiently.",
+        "takeaway": "Lump sum fees are fixed and do not adjust based on hours worked or actual costs—the architect assumes all scope and cost risk."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 202",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CMP-009-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.63473+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:913d71e2b9c407fcfc5fcddd70a701abc91a0aeb2505ba08eef7e75a69cb8220"
+    }
+  ]
+}

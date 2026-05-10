@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Law 016 The Contract Document Package Who Draws And Who Signs Each Component** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## The Contract Document Package — Who Draws and Who Signs Each Component
 
 ## Learning Goal
@@ -52,19 +59,29 @@ When a professional signs and seals a document, that professional assumes direct
 
 This responsibility makes the direct supervision requirement essential. An architect cannot safely delegate signing and sealing to others or sign documents without thorough review and personal responsibility. The professional's insurance carrier (professional liability insurance) covers claims arising from negligence in the preparation of documents, but only if the professional exercised the care and diligence required of a competent professional. Documents signed without proper supervision or review, or documents containing obvious errors that reasonable review would have caught, may fall outside insurance coverage and expose the professional to uninsured personal liability.
 
-<LawCallout code="ra9266" section="Section 33 - Signing and Sealing">
-Legal Basis: RA 9266 (Architecture Act of 2004), Section 20(c), defining the contract document package: architectural plans, specifications, bill of materials, cost estimates, general conditions, and bidding documents.
-</LawCallout>
+[SLATECAMP_UI_BLOCK:ui_0001 component="LawCallout" status="preserved"]
+Extracted summary:
+- Props: code="ra9266", section="Section 33 - Signing and Sealing"
+- Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 20(c), defining the contract document package: architectural plans, specifications, bill of materials, cost estimates, general conditions, and bidding documents.
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: code="ra9266" title="RA 9266 Section 20(c) — Contract Document Package"
 - Text: Legal Basis: RA 9266 (Architecture Act of 2004), Section 20(c), defining the contract document package: architectural plans, specifications, bill of materials, cost estimates, general conditions, and bidding documents.
 
-<Warn />
+[SLATECAMP_UI_BLOCK:ui_0002 component="Warn" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: ⚠️ The architect signs and seals ONLY architectural documents. Structural, electrical, mechanical, and plumbing documents are signed by the respective professional engineers. But the architect as AoR retains overall coordination responsibility for the entire package. — expect this as a trap answer on the LEA.
 
-<ExamTip />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 Extracted summary:
 - Props: (none)
 - Text: Document responsibility breakdown: Architect = plans, specs, BOM, estimates, conditions, bidding docs (signs/seals all). Structural Eng = structural design/calculations. Electrical Eng = electrical systems. MEP Eng = mechanical/plumbing. Architects COORDINATE but don't sign engineering documents.
@@ -73,7 +90,11 @@ Extracted summary:
 
 
 
-<ArticleMedia id="media-lea-prac-law-016-the-contract--0" type="image" caption="Contract Document Package — Drawings, Specifications, and Who Signs Each" description="Diagram showing the complete contract document package: Architectural drawings (architect signs/seals), Structural drawings (structural engineer signs), MEP drawings (MEP engineer signs), Specifications (architect/consultant signs), Bill of Quantities (QS signs). Each document type shows who prepares, who seals, and who is legally responsible. Distinction between design intent documents and construction documents." />
+[SLATECAMP_UI_BLOCK:ui_0004 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-prac-law-016-the-contract--0", type="image", caption="Contract Document Package — Drawings, Specifications, and Who Signs Each", description="Diagram showing the complete contract document package: Architectural drawings (architect signs/seals), Structural drawings (structural engineer signs), MEP drawings (MEP engineer signs), Specifications (architect/consultant signs), Bill of Quantities (QS signs). Each document type shows who prepares, who seals, and who is legally responsible. Distinction between design intent documents and construction documents."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ## Related Articles
 
 - [RA 9266: Structure and Key Definitions](lea-prac-law-001)
@@ -85,7 +106,8 @@ Extracted summary:
 - [Code of Ethical Conduct](lea-prac-eth-001)
 - [Professional Practice Forms](lea-prac-frm-001)
 
-<Note>
-(none detected)
-[/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
-</Note>
+[SLATECAMP_UI_BLOCK:ui_0005 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: (none detected) [/SLATECAMP_UI_BLOCK:ui_0001 component="AuthorityContent" status="preserved"]
+[/SLATECAMP_UI_BLOCK]

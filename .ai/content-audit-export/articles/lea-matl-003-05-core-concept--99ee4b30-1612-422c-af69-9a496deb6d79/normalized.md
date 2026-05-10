@@ -181,4 +181,3 @@ Extracted summary:
 See also within Metals, Glass, and Glazing: **lea-matl-003-04-core-concept**, **lea-matl-003-07-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

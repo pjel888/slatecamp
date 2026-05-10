@@ -1,0 +1,297 @@
+{
+  "generated_at": "2026-05-09T13:29:42Z",
+  "dry_run_root": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09",
+  "article_count": 9,
+  "question_count": 27,
+  "source_count": 9,
+  "taxonomy_count": 9,
+  "changed_candidates": [
+    "dryrun-01-bp344-accessible-ramp-geometry",
+    "dryrun-02-ra9266-foreign-architect-temporary-permit",
+    "dryrun-03-ra9514-means-of-egress-width-and-count",
+    "dryrun-04-npcp-fixture-unit-and-venting",
+    "dryrun-05-vitruvius-principles-and-departments",
+    "dryrun-06-pd1096-tgfa-ambf-location-controls",
+    "dryrun-07-bp220-parks-playgrounds-road-pavement",
+    "dryrun-08-pd957-license-to-sell-registration-gate",
+    "dryrun-09-uap-spp201-pre-design-and-service-boundaries"
+  ],
+  "unchanged_candidates": [],
+  "validation": {
+    "valid": true,
+    "blockers": [],
+    "warnings": [],
+    "article_count": 9
+  },
+  "release_readiness_audit": {
+    "path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/roundtrip-release-readiness-audit-2026-05-09.json",
+    "content_flags_count": 0,
+    "question_issues_count": 0,
+    "summary_hash_issues_count": 0,
+    "depth_floor_min_words": 904,
+    "articles_below_900_words": [],
+    "depth_floor_min_words_method": "shell wc -w on generated candidate.md",
+    "regex_depth_floor_min_words": 912,
+    "articles_below_900_words_by_wc_w": [],
+    "articles_below_900_words_by_regex": []
+  },
+  "raw_placeholder_hits": [],
+  "hash_mismatches": [],
+  "question_shape_errors": [],
+  "supabase_push_artifacts_present": [],
+  "reviewer_request_fixes": [
+    "Stripped learner-visible governance/source-control/release-status wording from normalized.md/candidate.md layers; release boundary remains only in review reports.",
+    "Cleaned learner-facing question jargon: no visible \"stem/stems\" term remains in candidate content or linked question text/rationales.",
+    "Corrected PD 1096 Q3 rationale guardrail: correct option C is no longer listed as a distractor; distractor keys are A/B/D only.",
+    "Tightened PD 1096 locators to Rule VII Section 704.1(a), 704.1(c), and Section 705.1-705.2 where relevant.",
+    "Added NPCP source-provenance metadata anchoring the bundle to the Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99.",
+    "Synchronized export-summary linked-question hashes to the actual linked-questions.json hashes for all 9 bundles.",
+    "Resolved BP 220 word-count mismatch: generated candidate now measures 940 words by shell wc -w and 955 by regex audit counter; exemplar-article.md and dry-run normalized.md were aligned, then candidate was recomposed."
+  ],
+  "guardrail_checks": {
+    "learner_visible_cleanliness": {
+      "status": "PASS",
+      "evidence": [
+        "candidate.md/normalized.md governance/source-control text hits: 0",
+        "candidate.md/normalized.md raw UI placeholder hits: 0",
+        "candidate.md/normalized.md learner-visible stem/stems hits: 0"
+      ]
+    },
+    "question_integrity": {
+      "status": "PASS",
+      "evidence": [
+        "27 linked MCQs checked for 4 options, valid correct option, source locator, explanation, and rationale shape",
+        "question issues: 0"
+      ]
+    },
+    "depth_gate": {
+      "status": "PASS",
+      "evidence": [
+        "Minimum candidate word count by shell wc -w: 904",
+        "Minimum candidate word count by regex audit counter: 912",
+        "Candidates below 900 words by either counter: 0",
+        "BP 220 reconciliation: 896 wc -w before, 940 wc -w after."
+      ]
+    },
+    "04_npcp": {
+      "status": "PASS",
+      "evidence": [
+        "NPCP provenance labels the Revised National Plumbing Code of the Philippines and PRC Board Resolution No. 04-99",
+        "Locator scope records Section 207.8, Section 311.4, and Loop or Circuit Vent definition coverage"
+      ],
+      "source_provenance": {
+        "governing_source_label": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99",
+        "locator_scope": "Section 207.8 for Fixture Unit; Section 311.4 for vent/soil/waste-pipe interchange; Definitions entry for Loop or Circuit Vent.",
+        "local_source_status": "Local raw PDF used for Section 207.8, Section 311.4, and Loop or Circuit Vent locators; learner-facing wording cites the Code and section/definition, not OCR workflow details.",
+        "learner_citation_style": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section/definition, PDF page."
+      }
+    },
+    "06_pd1096": {
+      "status": "PASS",
+      "evidence": [
+        "Candidate cites Rule VII Section 704.1(a) and 704.1(c) where practical",
+        "Q3 correct option: C",
+        "Q3 distractor keys: A, B, D",
+        "Q3 source locator: PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81."
+      ]
+    },
+    "summary_hash_sync": {
+      "status": "PASS",
+      "evidence": [
+        "manifest.json, export-summary.json, article-metadata.json, and linked-questions.json linked-question hashes are synchronized",
+        "summary hash issues: 0"
+      ]
+    }
+  },
+  "bundle_rows": [
+    {
+      "article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+      "title": "BP 344 Accessible Ramp Geometry",
+      "slug": "bp-344-accessible-ramp-geometry",
+      "candidate_changed": true,
+      "linked_questions": 3,
+      "sources": 1,
+      "diff_safe": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "candidate_hash": "sha256:44cc083ba14200dc43012e6f8a54405ce3900e8204b743da7bce4340e02fa540",
+      "linked_questions_hash": "sha256:bc97c74ca6b1fb900c3660cfdbcc71365ba8f0d5938e88ec9870fd8d2aeb46ce",
+      "bundle_path": "articles/bp-344-accessible-ramp-geometry--dryrun-01-bp344-accessible-ramp-geometry",
+      "word_count": 947,
+      "word_count_method": "wc -w",
+      "word_count_regex": 958
+    },
+    {
+      "article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "title": "RA 9266 Foreign Architect and Temporary Permit Gate",
+      "slug": "ra-9266-foreign-architect-and-temporary-permit-gate",
+      "candidate_changed": true,
+      "linked_questions": 3,
+      "sources": 1,
+      "diff_safe": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "candidate_hash": "sha256:2cdc2ed40e8e06f760244189a2f68eb6f5309f69df74e9f6b9d6e921d6fc9848",
+      "linked_questions_hash": "sha256:fe87bb13412274ba1c045d96436106688cb413e085415e98d1d640c0906183eb",
+      "bundle_path": "articles/ra-9266-foreign-architect-and-temporary-permit-gate--dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "word_count": 944,
+      "word_count_method": "wc -w",
+      "word_count_regex": 942
+    },
+    {
+      "article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+      "title": "RA 9514 Means of Egress: Width, Count, and Illumination",
+      "slug": "ra-9514-means-of-egress-width-count-and-illumination",
+      "candidate_changed": true,
+      "linked_questions": 3,
+      "sources": 1,
+      "diff_safe": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "candidate_hash": "sha256:c0ef90e3d88ced45e33563dfbfbaec0d85426e18d9c31402f288c664aad4acd7",
+      "linked_questions_hash": "sha256:2e3d233c86c836304a42475bb19e6241c8a96fdad3f9acb8088e43e2290420f0",
+      "bundle_path": "articles/ra-9514-means-of-egress-width-count-and-illumination--dryrun-03-ra9514-means-of-egress-width-and-count",
+      "word_count": 904,
+      "word_count_method": "wc -w",
+      "word_count_regex": 944
+    },
+    {
+      "article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+      "title": "National Plumbing Code Fixture Units and Venting",
+      "slug": "national-plumbing-code-fixture-units-and-venting",
+      "candidate_changed": true,
+      "linked_questions": 3,
+      "sources": 1,
+      "diff_safe": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "candidate_hash": "sha256:c560a1842651d962e95fa2621d88b7fd3694528450449b3631f2601b92ff9e3f",
+      "linked_questions_hash": "sha256:8c7bf848c1c7a0f1b660c5bd1d3eea1e912d43cebdc885bb08967095a18d5d08",
+      "bundle_path": "articles/national-plumbing-code-fixture-units-and-venting--dryrun-04-npcp-fixture-unit-and-venting",
+      "word_count": 925,
+      "word_count_method": "wc -w",
+      "word_count_regex": 934
+    },
+    {
+      "article_id": "dryrun-05-vitruvius-principles-and-departments",
+      "title": "Vitruvius: Principles versus Departments of Architecture",
+      "slug": "vitruvius-principles-versus-departments-of-architecture",
+      "candidate_changed": true,
+      "linked_questions": 3,
+      "sources": 1,
+      "diff_safe": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "candidate_hash": "sha256:8656cf9d5f866c418bff47816b68e968c0202d63d312169ca7f3a3e0cadf6c6a",
+      "linked_questions_hash": "sha256:44ca33b10a05e3577429905c6fcec08758467e154d99c73e2249cc798ff855a7",
+      "bundle_path": "articles/vitruvius-principles-versus-departments-of-architecture--dryrun-05-vitruvius-principles-and-departments",
+      "word_count": 920,
+      "word_count_method": "wc -w",
+      "word_count_regex": 912
+    },
+    {
+      "article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "title": "PD 1096 Rule VII: TGFA, AMBF, and Location Controls",
+      "slug": "pd-1096-rule-vii-tgfa-ambf-and-location-controls",
+      "candidate_changed": true,
+      "linked_questions": 3,
+      "sources": 1,
+      "diff_safe": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "candidate_hash": "sha256:1d4b306a267335074b5b87914cfd83dbbc141a0075d82253230b081555daab94",
+      "linked_questions_hash": "sha256:19bddeb5f772818b70739cdbc3f28f86549ff8bd54a266d46ff8abd433f472cd",
+      "bundle_path": "articles/pd-1096-rule-vii-tgfa-ambf-and-location-controls--dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "word_count": 926,
+      "word_count_method": "wc -w",
+      "word_count_regex": 965
+    },
+    {
+      "article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "title": "BP 220 Parks, Playgrounds, and Road Pavement",
+      "slug": "bp-220-parks-playgrounds-and-road-pavement",
+      "candidate_changed": true,
+      "linked_questions": 3,
+      "sources": 1,
+      "diff_safe": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "candidate_hash": "sha256:9b4e286bee63efaf11ec68780cc2901f47c4a77ec793df78b2532d32d23199da",
+      "linked_questions_hash": "sha256:6e6a2e7696719cd544d9a2510a33a2cdfdfc5cd2e7d420bb53ee6d2a73617286",
+      "bundle_path": "articles/bp-220-parks-playgrounds-and-road-pavement--dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "word_count": 940,
+      "word_count_method": "wc -w",
+      "word_count_regex": 955
+    },
+    {
+      "article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+      "title": "PD 957 License to Sell Registration Gate",
+      "slug": "pd-957-license-to-sell-registration-gate",
+      "candidate_changed": true,
+      "linked_questions": 3,
+      "sources": 1,
+      "diff_safe": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "candidate_hash": "sha256:80e733f822e9deb994fedd44582da2fc3ed6774bafdb94e9a2bd50bebeb46d0f",
+      "linked_questions_hash": "sha256:77cdf0bca267a32567c05eb5b3ace66b5d700939cb6592f3ee591d313f74e181",
+      "bundle_path": "articles/pd-957-license-to-sell-registration-gate--dryrun-08-pd957-license-to-sell-registration-gate",
+      "word_count": 929,
+      "word_count_method": "wc -w",
+      "word_count_regex": 921
+    },
+    {
+      "article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "title": "UAP SPP 201 Pre-Design and Service Boundaries",
+      "slug": "uap-spp-201-pre-design-and-service-boundaries",
+      "candidate_changed": true,
+      "linked_questions": 3,
+      "sources": 1,
+      "diff_safe": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ],
+      "candidate_hash": "sha256:136c0a9fac67a1f38786c0ee981a4dac4bc53951a7f1d982357714cc82ecc5dc",
+      "linked_questions_hash": "sha256:2fada831448750760a4b81946dc6e534b9d8f102b442187a874a8c977e75c9f1",
+      "bundle_path": "articles/uap-spp-201-pre-design-and-service-boundaries--dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "word_count": 942,
+      "word_count_method": "wc -w",
+      "word_count_regex": 949
+    }
+  ],
+  "publication_boundary": {
+    "status": "HOLD_FOR_LIVE_APPLY_OR_PUBLICATION",
+    "approved_next_step": "controlled no-apply full dry-run/mapping pass only",
+    "not_approved": [
+      "content-audit:push:apply",
+      "content-audit:push-question:apply",
+      "public learner-facing publication"
+    ],
+    "required_before_apply": [
+      "fresh Supabase mirror",
+      "exact real article/question ID mapping",
+      "question-edits or approved insertion candidates",
+      "compose/diff/validate",
+      "Supabase push dry-run checks",
+      "rendered browser QA",
+      "Philip final approval"
+    ]
+  }
+}

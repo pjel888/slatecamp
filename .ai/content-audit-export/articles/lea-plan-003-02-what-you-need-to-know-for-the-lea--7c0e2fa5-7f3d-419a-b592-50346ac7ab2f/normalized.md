@@ -157,7 +157,7 @@ Pag-IBIG members use their accumulated fund balance to purchase socialized or ec
 Questions often ask: "Under what delivery method is socialized housing produced?" Students must not confuse the classification (socialized) with the delivery method (on-site, off-site, NHA, CMP, Pag-IBIG, etc.). The classification is fixed by law; the delivery method is a policy choice.
 
 Example:
-- **Question:** "A developer builds 300 units of socialized housing using Pag-IBIG financing. What housing classification is this?" 
+- **Question:** "A developer builds 300 units of socialized housing using Pag-IBIG financing. What housing classification is this?"
 - **Answer:** Socialized housing (classification is determined by BP 220 standards, not financing source).
 - **Not the Answer:** "Pag-IBIG housing" — this incorrectly treats the financing method as a classification.
 

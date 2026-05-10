@@ -1,7 +1,7 @@
 {
   "article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:05297592dbfa315353e4b9bffc6c0e308fb74d46e357d3d05b0979726398c70f",
+  "linked_questions_hash": "sha256:1b6df1c404e0e5718f6f4cb2c2db244878d8e20ae44b5f866f9bdaed7450498e",
   "question_count": 10,
   "questions": [
     {
@@ -56,57 +56,110 @@
       "content_hash": "sha256:90b79cebc80bbc0d3dae3c7cc0f9602ddb70aa4ff599b5ad116e1d7c694eeb16"
     },
     {
-      "question_id": "24247123-2cbc-4e46-be38-b3a0c2795a92",
+      "question_id": "60889c28-ee6d-4f2c-aeb2-91d0c815c229",
       "article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
       "topic_id": "d6b3f418-3f3a-46a7-a001-d878832719a9",
-      "text": "The Rizal Monument in Luneta Park is a distinctive tall structure visible from multiple approaches to the city, regularly used by residents and visitors to describe location ('near the Rizal Monument'). Which Lynch element is this primarily functioning as?",
+      "text": "Why does Kevin Lynch argue that understanding cities' mental map elements (paths, edges, districts, nodes, landmarks) is important for urban planners?",
       "options": [
         {
           "id": "a",
-          "text": "Node—a gathering point for public assembly, often characterized by a concentration of activities and interactions"
+          "text": "Because planners must match the mental maps of ordinary people to make cities more legible, navigable, and memorable"
         },
         {
           "id": "b",
-          "text": "Path—a major organizing route through the city, serving as a primary channel for movement and navigation"
+          "text": "Because Lynch's elements are the only legal way to design streets and zoning, which is a misinterpretation of their purpose"
         },
         {
           "id": "c",
-          "text": "Landmark—an external visual reference point for orientation"
+          "text": "Because understanding elements allows planners to eliminate informal settlements, which oversimplifies their role"
         },
         {
           "id": "d",
-          "text": "District—a large area with distinctive character, typically defined by a unique identity or function within the urban fabric"
+          "text": "Because mental maps determine property values and tax revenue, which is an incorrect assumption of their impact"
         }
       ],
-      "correct_option_id": "c",
+      "correct_option_id": "a",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Though Rizal Monument area does host gatherings, its identifying characteristic in Lynch's framework is as a visual reference point (landmark), not as a hub or transfer point (node).",
-        "b": "The monument is not a movement channel or path.",
-        "c": "While Rizal Monument may serve other functions (gathering point, historical site), its PRIMARY function as a Lynch element is landmark. People use it as a visual reference ('meet me near Rizal Monument') to describe and navigate location. It is distinctively visible and used for orientation without being entered.",
-        "d": "While Luneta/Rizal Park is an area, the monument itself is a specific object/landmark, not a large district.",
-        "correct": "While Rizal Monument may serve other functions (gathering point, historical site), its PRIMARY function as a Lynch element is landmark. People use it as a visual reference ('meet me near Rizal Monument') to describe and navigate location. It is distinctively visible and used for orientation without being entered.",
-        "takeaway": "A place can serve multiple urban functions, but in Lynch's element system, identify the DOMINANT perceptual function. Rizal Monument = landmark (visual reference)."
+        "a": "Lynch's research shows that people use these five elements to understand and navigate cities. If planners ignore these perceptual realities, they design cities that are confusing, hard to navigate, and disconnected from how people actually experience the built environment. Designing WITH these elements in mind creates more legible, human-scaled, memorable cities.",
+        "b": "Lynch's framework is descriptive/analytical (explaining how people perceive cities), not prescriptive law. It is not 'the only way' to design; it is a tool for understanding.",
+        "c": "Lynch's framework addresses city legibility and navigation. Informal settlement resolution is a social/legal issue, not an outcome of applying Lynch elements.",
+        "d": "While land value and perception are related, Lynch's primary argument is about human experience and legibility, not economic valuation.",
+        "correct": "Lynch's research shows that people use these five elements to understand and navigate cities. If planners ignore these perceptual realities, they design cities that are confusing, hard to navigate, and disconnected from how people actually experience the built environment. Designing WITH these elements in mind creates more legible, human-scaled, memorable cities.",
+        "takeaway": "Lynch elements reveal how ordinary people perceive cities. Designers who understand and respect these perceptions create more navigable, livable cities."
       },
-      "explanation": null,
-      "code_citation": "Kevin Lynch, The Image of the City (1960); Philippine urban examples",
+      "explanation": "Lynch's research shows that people use these five elements to understand and navigate cities. If planners ignore these perceptual realities, they design cities that are confusing, hard to navigate, and disconnected from how people actually experience the built environment. Designing WITH these elements in mind creates more legible, human-scaled, memorable cities. Lynch's framework is descriptive/analytical (explaining how people perceive cities), not prescriptive law. It is not 'the only way' to design; it is a tool for understanding. Lynch's framework addresses city legibility and navigation. Informal settlement resolution is a social/legal issue, not an outcome of applying Lynch elements. While land value and perception are related, Lynch's primary argument is about human experience and legibility, not economic valuation. Lynch's research shows that people use these five elements to understand and navigate cities. If planners ignore these perceptual realities, they design cities that are confusing, hard to navigate, and disconnected from how people actually experience the built environment. Designing WITH these elements in mind creates more legible, human-scaled, memorable cities. Lynch elements reveal how ordinary people perceive cities. Designers who understand and respect these perceptions create more navigable, livable cities.",
+      "code_citation": "Kevin Lynch, The Image of the City (1960); planning methodology",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
-        "Urban legibility"
+        "Design thinking"
       ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-PLAN-002-05-006",
+      "model_id": "ALE-PLAN-002-05-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a6b96b379f2bc6d36dc202c99d2dd019094f09edce196b81c4468692582a4f25"
+      "updated_at": "2026-05-06T15:53:19.331433+00:00",
+      "content_hash": "sha256:423eb297422ab498c1f9cbf14c43624a80b1b729aa4e188a0498bd2f36efa1d3"
+    },
+    {
+      "question_id": "12c2e70c-c8b6-45c0-81e2-bac0bc29ca74",
+      "article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
+      "topic_id": "d6b3f418-3f3a-46a7-a001-d878832719a9",
+      "text": "A church is located at the corner of two major intersecting streets. Residents gather there for religious services AND use it as a visual wayfinding reference ('turn left at the church'). In Lynch's framework, which element(s) is it functioning as?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only path, as it guides movement through the urban environment"
+        },
+        {
+          "id": "b",
+          "text": "Only node, serving as a focal point for community activities"
+        },
+        {
+          "id": "c",
+          "text": "Only landmark, providing a visual reference point for navigation"
+        },
+        {
+          "id": "d",
+          "text": "Both node (gathering point) and landmark (visual reference), depending on context"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The church is not a movement channel.",
+        "b": "The church functions as a landmark when used for wayfinding (looking at it), not just as a node.",
+        "c": "The church also functions as a node (gathering point).",
+        "d": "The same physical object can serve multiple Lynch element functions. The church serves as a node (people go there to gather for services) and as a landmark (it is used visually for navigation). Lynch's framework recognizes that elements are cognitive/perceptual, not strictly physical. The SAME building can serve different element functions depending on how people use and perceive it.",
+        "correct": "The same physical object can serve multiple Lynch element functions. The church serves as a node (people go there to gather for services) and as a landmark (it is used visually for navigation). Lynch's framework recognizes that elements are cognitive/perceptual, not strictly physical. The SAME building can serve different element functions depending on how people use and perceive it.",
+        "takeaway": "Lynch elements are cognitive. Same object can serve multiple element functions. Identify the function the object is serving in a specific context."
+      },
+      "explanation": "The church is not a movement channel. The church functions as a landmark when used for wayfinding (looking at it), not just as a node. The church also functions as a node (gathering point). The same physical object can serve multiple Lynch element functions. The church serves as a node (people go there to gather for services) and as a landmark (it is used visually for navigation). Lynch's framework recognizes that elements are cognitive/perceptual, not strictly physical. The SAME building can serve different element functions depending on how people use and perceive it. The same physical object can serve multiple Lynch element functions. The church serves as a node (people go there to gather for services) and as a landmark (it is used visually for navigation). Lynch's framework recognizes that elements are cognitive/perceptual, not strictly physical. The SAME building can serve different element functions depending on how people use and perceive it. Lynch elements are cognitive. Same object can serve multiple element functions. Identify the function the object is serving in a specific context.",
+      "code_citation": "Kevin Lynch, The Image of the City (1960)",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "Element identification"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-05-06T15:53:19.66113+00:00",
+      "content_hash": "sha256:1995504c45f235742345eaeb0e5f480c5c08569c858bdb183e2d1d01c348f6d7"
     },
     {
       "question_id": "e24d0d10-5e86-4058-892d-9d395c1cb664",
@@ -297,7 +350,7 @@
         "correct": "This is the fundamental distinction. Nodes are strategic focal points where you GO TO, GATHER, or PASS THROUGH (decision points, hubs, junctions). Landmarks are external reference points you LOOK AT for orientation without entering. The key: nodes are entered/participated in; landmarks are observed/referenced.",
         "takeaway": "Node = place you go TO or THROUGH. Landmark = thing you look AT. This distinction is the core of Lynch element accuracy."
       },
-      "explanation": null,
+      "explanation": "Size is not the defining characteristic. A small plaza can be a node; a tall building can be a landmark. Conversely, a large district is neither node nor landmark. This is the fundamental distinction. Nodes are strategic focal points where you GO TO, GATHER, or PASS THROUGH (decision points, hubs, junctions). Landmarks are external reference points you LOOK AT for orientation without entering. The key: nodes are entered/participated in; landmarks are observed/referenced. Historic vs. modern is irrelevant to Lynch's classification. Any object can be a landmark if it serves as a visual reference. Location (center vs. periphery) is not the defining characteristic. This is the fundamental distinction. Nodes are strategic focal points where you GO TO, GATHER, or PASS THROUGH (decision points, hubs, junctions). Landmarks are external reference points you LOOK AT for orientation without entering. The key: nodes are entered/participated in; landmarks are observed/referenced. Node = place you go TO or THROUGH. Landmark = thing you look AT. This distinction is the core of Lynch element accuracy.",
       "code_citation": "Kevin Lynch, The Image of the City (1960); ERROR_REGISTRY.md (ERR-PLAN-022: Node ≠ Landmark distinction)",
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -311,61 +364,8 @@
       "model_id": "ALE-PLAN-002-05-009",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:95186f076bcabf855d38772e46e3b38f1e7e29bab0a263e3443c4b090e3af59e"
-    },
-    {
-      "question_id": "60889c28-ee6d-4f2c-aeb2-91d0c815c229",
-      "article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
-      "topic_id": "d6b3f418-3f3a-46a7-a001-d878832719a9",
-      "text": "Why does Kevin Lynch argue that understanding cities' mental map elements (paths, edges, districts, nodes, landmarks) is important for urban planners?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Because planners must match the mental maps of ordinary people to make cities more legible, navigable, and memorable"
-        },
-        {
-          "id": "b",
-          "text": "Because Lynch's elements are the only legal way to design streets and zoning, which is a misinterpretation of their purpose"
-        },
-        {
-          "id": "c",
-          "text": "Because understanding elements allows planners to eliminate informal settlements, which oversimplifies their role"
-        },
-        {
-          "id": "d",
-          "text": "Because mental maps determine property values and tax revenue, which is an incorrect assumption of their impact"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Lynch's research shows that people use these five elements to understand and navigate cities. If planners ignore these perceptual realities, they design cities that are confusing, hard to navigate, and disconnected from how people actually experience the built environment. Designing WITH these elements in mind creates more legible, human-scaled, memorable cities.",
-        "b": "Lynch's framework is descriptive/analytical (explaining how people perceive cities), not prescriptive law. It is not 'the only way' to design; it is a tool for understanding.",
-        "c": "Lynch's framework addresses city legibility and navigation. Informal settlement resolution is a social/legal issue, not an outcome of applying Lynch elements.",
-        "d": "While land value and perception are related, Lynch's primary argument is about human experience and legibility, not economic valuation.",
-        "correct": "Lynch's research shows that people use these five elements to understand and navigate cities. If planners ignore these perceptual realities, they design cities that are confusing, hard to navigate, and disconnected from how people actually experience the built environment. Designing WITH these elements in mind creates more legible, human-scaled, memorable cities.",
-        "takeaway": "Lynch elements reveal how ordinary people perceive cities. Designers who understand and respect these perceptions create more navigable, livable cities."
-      },
-      "explanation": null,
-      "code_citation": "Kevin Lynch, The Image of the City (1960); planning methodology",
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "Design thinking"
-      ],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PLAN-002-05-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:4a6655b0d242276260a045619724b610c86e6f5686e7cc829c5985606b4ec441"
+      "updated_at": "2026-05-06T15:53:19.167248+00:00",
+      "content_hash": "sha256:afb7ceb0a845d4843ef5e6c58c51c90dc9ea1ca6db321bf2102a01fbcee55d9c"
     },
     {
       "question_id": "4d7b9926-3a43-459f-bf63-27a0c6fa4fbf",
@@ -403,7 +403,7 @@
         "correct": "A node is a strategic focal point—a junction, hub, or concentration where you go TO or pass THROUGH. Major intersections, transit stations, and gathering points are nodes because they are decision points and transfer hubs.",
         "takeaway": "Node = junction, hub, transfer point, decision point. Place you go TO or pass THROUGH."
       },
-      "explanation": null,
+      "explanation": "Landmarks are things you look AT for orientation (not entered). An intersection is a place you GO TO and PASS THROUGH—that is a node. Districts are larger sections with distinctive character. An intersection is a point, not an area. Paths pass THROUGH nodes. The intersection is the focal point where paths converge; it is not the path itself. A node is a strategic focal point—a junction, hub, or concentration where you go TO or pass THROUGH. Major intersections, transit stations, and gathering points are nodes because they are decision points and transfer hubs. A node is a strategic focal point—a junction, hub, or concentration where you go TO or pass THROUGH. Major intersections, transit stations, and gathering points are nodes because they are decision points and transfer hubs. Node = junction, hub, transfer point, decision point. Place you go TO or pass THROUGH.",
       "code_citation": "Kevin Lynch, The Image of the City (1960)",
       "bloom_level": "understand",
       "application_context": "recall",
@@ -415,61 +415,61 @@
       "model_id": "ALE-PLAN-002-05-003",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:00129eb413af4f8b587c84034f7f29cd41d20f89b1d007a7df054ed20ca7aad6"
+      "updated_at": "2026-05-06T15:53:19.496426+00:00",
+      "content_hash": "sha256:f078452339b3b1f7cbdd892ce9254189fe3dc05fb0d5b9ee3f9bf837b053fa77"
     },
     {
-      "question_id": "12c2e70c-c8b6-45c0-81e2-bac0bc29ca74",
+      "question_id": "24247123-2cbc-4e46-be38-b3a0c2795a92",
       "article_id": "1a6a6df8-8f58-42aa-a38b-e59fe737716f",
       "topic_id": "d6b3f418-3f3a-46a7-a001-d878832719a9",
-      "text": "A church is located at the corner of two major intersecting streets. Residents gather there for religious services AND use it as a visual wayfinding reference ('turn left at the church'). In Lynch's framework, which element(s) is it functioning as?",
+      "text": "The Rizal Monument in Luneta Park is a distinctive tall structure visible from multiple approaches to the city, regularly used by residents and visitors to describe location ('near the Rizal Monument'). Which Lynch element is this primarily functioning as?",
       "options": [
         {
           "id": "a",
-          "text": "Only path, as it guides movement through the urban environment"
+          "text": "Node—a gathering point for public assembly, often characterized by a concentration of activities and interactions"
         },
         {
           "id": "b",
-          "text": "Only node, serving as a focal point for community activities"
+          "text": "Path—a major organizing route through the city, serving as a primary channel for movement and navigation"
         },
         {
           "id": "c",
-          "text": "Only landmark, providing a visual reference point for navigation"
+          "text": "Landmark—an external visual reference point for orientation"
         },
         {
           "id": "d",
-          "text": "Both node (gathering point) and landmark (visual reference), depending on context"
+          "text": "District—a large area with distinctive character, typically defined by a unique identity or function within the urban fabric"
         }
       ],
-      "correct_option_id": "d",
+      "correct_option_id": "c",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "The church is not a movement channel.",
-        "b": "The church functions as a landmark when used for wayfinding (looking at it), not just as a node.",
-        "c": "The church also functions as a node (gathering point).",
-        "d": "The same physical object can serve multiple Lynch element functions. The church serves as a node (people go there to gather for services) and as a landmark (it is used visually for navigation). Lynch's framework recognizes that elements are cognitive/perceptual, not strictly physical. The SAME building can serve different element functions depending on how people use and perceive it.",
-        "correct": "The same physical object can serve multiple Lynch element functions. The church serves as a node (people go there to gather for services) and as a landmark (it is used visually for navigation). Lynch's framework recognizes that elements are cognitive/perceptual, not strictly physical. The SAME building can serve different element functions depending on how people use and perceive it.",
-        "takeaway": "Lynch elements are cognitive. Same object can serve multiple element functions. Identify the function the object is serving in a specific context."
+        "a": "Though Rizal Monument area does host gatherings, its identifying characteristic in Lynch's framework is as a visual reference point (landmark), not as a hub or transfer point (node).",
+        "b": "The monument is not a movement channel or path.",
+        "c": "While Rizal Monument may serve other functions (gathering point, historical site), its PRIMARY function as a Lynch element is landmark. People use it as a visual reference ('meet me near Rizal Monument') to describe and navigate location. It is distinctively visible and used for orientation without being entered.",
+        "d": "While Luneta/Rizal Park is an area, the monument itself is a specific object/landmark, not a large district.",
+        "correct": "While Rizal Monument may serve other functions (gathering point, historical site), its PRIMARY function as a Lynch element is landmark. People use it as a visual reference ('meet me near Rizal Monument') to describe and navigate location. It is distinctively visible and used for orientation without being entered.",
+        "takeaway": "A place can serve multiple urban functions, but in Lynch's element system, identify the DOMINANT perceptual function. Rizal Monument = landmark (visual reference)."
       },
-      "explanation": null,
-      "code_citation": "Kevin Lynch, The Image of the City (1960)",
+      "explanation": "Though Rizal Monument area does host gatherings, its identifying characteristic in Lynch's framework is as a visual reference point (landmark), not as a hub or transfer point (node). The monument is not a movement channel or path. While Rizal Monument may serve other functions (gathering point, historical site), its PRIMARY function as a Lynch element is landmark. People use it as a visual reference ('meet me near Rizal Monument') to describe and navigate location. It is distinctively visible and used for orientation without being entered. While Luneta/Rizal Park is an area, the monument itself is a specific object/landmark, not a large district. While Rizal Monument may serve other functions (gathering point, historical site), its PRIMARY function as a Lynch element is landmark. People use it as a visual reference ('meet me near Rizal Monument') to describe and navigate location. It is distinctively visible and used for orientation without being entered. A place can serve multiple urban functions, but in Lynch's element system, identify the DOMINANT perceptual function. Rizal Monument = landmark (visual reference).",
+      "code_citation": "Kevin Lynch, The Image of the City (1960); Philippine urban examples",
       "bloom_level": "apply",
       "application_context": "design_application",
       "practice_context": [
-        "Element identification"
+        "Urban legibility"
       ],
       "difficulty": 0.7,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
-      "model_id": "ALE-PLAN-002-05-007",
+      "model_id": "ALE-PLAN-002-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a41ba2de4de0a4272b95fa451f637926f25764a50bfdbacc1364b0bea16aa04c"
+      "updated_at": "2026-05-06T15:53:18.996844+00:00",
+      "content_hash": "sha256:5b73afe0bbc5c2b1efc9a13019d12db517913c684468a1e1dec29a2d04fdfbea"
     },
     {
       "question_id": "152fa07a-8165-49dd-b97e-051a50febb81",
@@ -507,7 +507,7 @@
         "correct": "The church serves purely as a visual reference for navigation ('there is the church, so I know where I am'). It is not a gathering hub (node) and people do not enter it for transit purposes. This is the classic landmark function: external visual reference used for orientation.",
         "takeaway": "When a place is solely used as a visual wayfinding reference and not entered for functional purposes, it is a landmark."
       },
-      "explanation": null,
+      "explanation": "Nodes are gathering or transfer hubs—places you go to with functional purpose. This church is explicitly NOT used for gathering or transit. The church serves purely as a visual reference for navigation ('there is the church, so I know where I am'). It is not a gathering hub (node) and people do not enter it for transit purposes. This is the classic landmark function: external visual reference used for orientation. Districts are large areas with common character. A single building is not a district. Paths are movement channels, not visual references from multiple directions. The church serves purely as a visual reference for navigation ('there is the church, so I know where I am'). It is not a gathering hub (node) and people do not enter it for transit purposes. This is the classic landmark function: external visual reference used for orientation. When a place is solely used as a visual wayfinding reference and not entered for functional purposes, it is a landmark.",
       "code_citation": "Kevin Lynch, The Image of the City (1960); Philippine town context",
       "bloom_level": "analyze",
       "application_context": "design_application",
@@ -521,8 +521,8 @@
       "model_id": "ALE-PLAN-002-05-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:29:06.930799+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:ab9aaf5625cca437874461abbe5a1e744382292432a1ef12078a911073800674"
+      "updated_at": "2026-05-06T15:53:19.828204+00:00",
+      "content_hash": "sha256:83c9e4349e4b4fb90363e2b72edff085e95e70e2606ec0ca1a66013576982546"
     }
   ]
 }

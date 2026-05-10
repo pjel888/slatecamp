@@ -256,7 +256,7 @@ Extracted summary:
 - Text: (none detected)
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
-- Props: 
+- Props:
 - Text: Tropical passive design prioritizes ventilation over thermal mass, shading over orientation, and lightweight construction over heavyweight enclosure. The bahay kubo exemplifies all these principles: e
 
 ## Common Mistakes
@@ -317,4 +317,3 @@ Extracted summary:
 See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-07-core-concept**, **lea-theo-004-08-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

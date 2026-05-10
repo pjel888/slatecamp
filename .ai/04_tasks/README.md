@@ -11,4 +11,4 @@ Use this folder for actionable task breakdowns, punchlists, execution packets, q
 
 ## Current gap
 
-There is no active task packet set in this folder right now. Keep `04_tasks/` for current actionable task packs only; archive completed task campaigns out of this folder.
+~~There is no active task packet set in this folder right now.~~ **Resolved 2026-05-09:** The canonical task list is now `.ai/TASKS.md`. This folder is preserved for task artifacts, checklists, and punchlists. New task work should start at `.ai/TASKS.md`.

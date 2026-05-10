@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Plan 003 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -20,13 +29,25 @@ Housing production methods describe HOW housing is delivered to beneficiaries, a
 **Market Subdivision Delivery** involves private developers creating residential subdivisions for slea to individual buyers (open market). These projects are regulated under **PD 957** and must meet the balanced housing requirement under **RA 10884** (15–20% of project cost dedicated to socialized housing). Market subdivisions are not direct government production but are shaped by regulation.
 
 These methods are not mutually exclusive; integrated housing projects often combine elements—a government project may provide core housing with sites-and-services land for expansion, supported by CMP financing.
-<ArticleMedia id="media-lea-plan-003-04-core-concept" type="image" caption="Housing Production Methods — Sites-and-Services, Core Housing, MRBs" description="Comparison diagram of housing production methods: sites-and-services (land + infrastructure, self-built), core housing (expandable core unit), medium-rise buildings (4-5 storey walk-ups), and self-help (sweat equity). Implementing agency (NHA) and delivery model per method." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-plan-003-04-core-concept", type="image", caption="Housing Production Methods — Sites-and-Services, Core Housing, MRBs", description="Comparison diagram of housing production methods: sites-and-services (land + infrastructure, self-built), core housing (expandable core unit), medium-rise buildings (4-5 storey walk-ups), and self-help (sweat equity). Implementing agency (NHA) and delivery model per method.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Key Provisions
 
-<WikiExamTable headers=["Production Method", "Who Provides", "Beneficiary Investment", "Timeline", "Land Use Efficiency", "Philippine Agency"] rows=[["**Sites-and-Services**", "Government (NHA)", "Family builds own structure", "Extended (incremental)", "Efficient (distributed)", "NHA"], ["**Core Housing**", "Government (NHA)", "Family expands/improves", "Medium (shell provided)", "Efficient (multi-story)", "NHA"], ["**Medium-Rise**", "Government (NHA)", "Move-in ready", "Immediate", "High (vertical density)", "NHA"], ["**Self-Help**", "Community-driven (SHFC/CMP support)", "Community labor + materials", "Variable", "Contextual", "SHFC/NHA partnership"], ["**Market Subdivisions**", "Private developers", "Individual buyers at market rates", "Varies", "Regulated (30% open space)", "DHSUD (formerly HLURB)"]] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="[", Production=true, Method=true, Who=true, Provides=true, Beneficiary=true, Investment=true, Timeline=true, Land=true, Use=true, Efficiency=true, Philippine=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiExamTable headers=["Concept", "Meaning", "Policy Implication"] rows=[["**In-Situ Upgrading**", "Improve settlements where communities exist rather than relocate", "Favored under RA 7279; supports community continuity"], ["**Relocation Approach**", "Resettle communities to newly developed sites", "Last resort; requires certified adequate resettlement site (RA 7279)"], ["**Incremental Development**", "Phased site/housing improvement; owner/community-driven expansion", "Low initial capital; extended time horizon"], ["**Balanced Housing**", "Developers integrate socialized units or funding (15\u201320% per RA 10884)", "Ensures affordability within market projects"]] />
+[SLATECAMP_UI_BLOCK:ui_0003 component="WikiExamTable" status="preserved"]
+Extracted summary:
+- Props: headers="[", Concept=true, Meaning=true, Policy=true, Implication=true, rows="[[", In-Situ=true, Upgrading=true, Improve=true, settlements=true, where=true, communities=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Philippine Context
 
@@ -40,7 +61,11 @@ The Philippines' housing shortage (estimated at 5+ million units as of 2020s) ha
 
 **Pattern 3 — Trade-off Analysis:** "Sites-and-services maximizes affordability by shifting construction cost to families. What is the primary disadvantage?" → Extended timeline; occupancy delays; governance risks if materials unavailable. "Medium-rise maximizes density and immediate occupancy. What is the primary constraint?" → Higher upfront government capital; smaller unit sizes.
 
-<Tip>NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15–20% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: NHA produces housing (sites-and-services, core, medium-rise). RA 10884 requires developers to dedicate 15–20% of project cost to balanced housing. Self-help succeeds when community organization is strong (Turner principle: Housing by People).
+[/SLATECAMP_UI_BLOCK]
 
 **Exam Tip:** Sites-and-services = serviced lot + core house (NHA). Core housing = expandable starter unit (NHA). Medium-rise = walk-up 4-5 story (NHA). Self-help = sweat equity (community). Match method to description.
 
@@ -50,4 +75,8 @@ See **LEA-PLAN-003-06** (Informal Settlements) for upgrading context, **LEA-PLAN
 
 ## Common Mistakes
 
-<WikiMistakeList mistakes={["Confusing sites-and-services (land only) with core housing (basic structure provided)","Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)","Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)","Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)","Misremembering balanced housing percentage as 10% or 25% (it is 15–20%)"]} />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\"Confusing sites-and-services (land only) with core housing (basic structure provided)\",\"Assuming NHA only builds high-rise towers (NHA also does sites-and-services and core housing)\",\"Thinking RA 10884 applies to NHA projects (it applies to PRIVATE developer projects)\",\"Believing in-situ upgrading is the same as relocation (in-situ = no relocation; relocation = moving to a new site)\",\"Misremembering balanced housing percentage as 10% or 25% (it is 15–20%)\"]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

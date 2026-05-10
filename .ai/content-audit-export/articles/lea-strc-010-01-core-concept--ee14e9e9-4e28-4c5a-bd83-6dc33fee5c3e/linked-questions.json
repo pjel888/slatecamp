@@ -1,9 +1,209 @@
 {
   "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:318c35be1dede9bbf735f601b94665ae554770a5c4fd9df4d688205eabd01e43",
+  "linked_questions_hash": "sha256:79a88fdc0758155987d6fa3601deeb33eb2787cbf38c877be7152f76ffc6aaa9",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "9e85e893-bcbc-4d2e-8af3-3114c5458738",
+      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+      "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
+      "text": "In concrete hollow block (CHB) masonry, which of the following best describes a cell?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The horizontal mortar joint between courses, which provides stability and alignment for the masonry units"
+        },
+        {
+          "id": "b",
+          "text": "The air space between two wythes, often used for insulation or to accommodate reinforcement bars"
+        },
+        {
+          "id": "c",
+          "text": "The enclosed void within an individual masonry unit"
+        },
+        {
+          "id": "d",
+          "text": "The bond pattern connecting units, which can vary to enhance structural integrity and aesthetic appeal"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is a bed joint.",
+        "b": "This is a cavity or collar joint.",
+        "d": "Bond patterns refer to the arrangement of units (e.g., Running, Stack).",
+        "correct": "Cells (or cores) are the hollow voids in CHBs. Per NSCP 2015, these are often reinforced with vertical bars and filled with grout to enhance structural capacity. [cite: 23, 44]",
+        "takeaway": "Cell = core/void in a hollow unit."
+      },
+      "explanation": "This is a bed joint. This is a cavity or collar joint. Bond patterns refer to the arrangement of units (e.g., Running, Stack). Cells (or cores) are the hollow voids in CHBs. Per NSCP 2015, these are often reinforced with vertical bars and filled with grout to enhance structural capacity. [cite: 23, 44] Cell = core/void in a hollow unit.",
+      "code_citation": "NSCP 2015 Section 702",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T15:42:43.453261+00:00",
+      "content_hash": "sha256:1e92c89d22639e6ac9ccb9263f8db3c6231834067d9934d6459cee923f7a34e4"
+    },
+    {
+      "question_id": "12a09035-e746-41da-b8f4-7cc4be9eabc7",
+      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+      "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
+      "text": "Which bond pattern requires specific continuous horizontal reinforcement in Seismic Zone 4 (high seismic risk) because of its lack of natural interlock?",
+      "options": [
+        {
+          "id": "a",
+          "text": "English bond"
+        },
+        {
+          "id": "b",
+          "text": "Flemish bond"
+        },
+        {
+          "id": "c",
+          "text": "Stack bond"
+        },
+        {
+          "id": "d",
+          "text": "Running bond"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "English bond provides strong mechanical interlock through alternating header/stretcher courses.",
+        "b": "Flemish bond provides interlock through alternating units in each course.",
+        "d": "Running bond is the standard interlocking pattern where head joints are offset by at least 1/4 of the unit length.",
+        "correct": "Stack bond has vertical head joints that align. In high seismic zones (Seismic Zone 4), the NSCP 2015 requires stack bond walls to have continuous horizontal reinforcement to compensate for the lack of overlapping units. [cite: 42, 44]",
+        "takeaway": "Stack bond lacks overlap and requires extra reinforcement in high seismic zones."
+      },
+      "explanation": "English bond provides strong mechanical interlock through alternating header/stretcher courses. Flemish bond provides interlock through alternating units in each course. Running bond is the standard interlocking pattern where head joints are offset by at least 1/4 of the unit length. Stack bond has vertical head joints that align. In high seismic zones (Seismic Zone 4), the NSCP 2015 requires stack bond walls to have continuous horizontal reinforcement to compensate for the lack of overlapping units. [cite: 42, 44] Stack bond lacks overlap and requires extra reinforcement in high seismic zones.",
+      "code_citation": "NSCP 2015 Section 707.2.2.2; PD 1096 Rule VIII",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T15:42:43.605449+00:00",
+      "content_hash": "sha256:16f9da70c10944c1ea4b7ca2bc258222e5f82b368694293172f16c1a0e35f3b9"
+    },
+    {
+      "question_id": "cef523d7-e9b8-42c2-84ac-c8c890c9cae9",
+      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+      "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
+      "text": "A structural engineer specifies that for a building in Seismic Zone 4, cells at header courses must be solid-grouted. What is the structural rationlea for this in a cavity wall?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Grout in header course cells increases the axial load capacity of headers and provides lateral continuity."
+        },
+        {
+          "id": "b",
+          "text": "Grout creates vertical load paths and solidifies the lateral tie between wythes."
+        },
+        {
+          "id": "c",
+          "text": "Grouting increases the compressive strength uniformly across all wythes."
+        },
+        {
+          "id": "d",
+          "text": "Grouting cells eliminates the need for wall ties."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While it increases axial capacity, the main seismic concern is shear transfer and wythe continuity.",
+        "c": "Compressive strength increase is a benefit, but the spacing and placement targets lateral stability.",
+        "d": "Grouting header cells complements but does not necessarily eliminate the requirement for metal wall ties unless specifically engineered as a bonded wall.",
+        "correct": "In Seismic Zone 4, the integration of grout and reinforcement is critical. Solidly grouting the cells where headers occur ensures that the 'bridge' between the two wythes is stiff and capable of transferring seismic shear forces. [cite: 2, 44]",
+        "takeaway": "Grout at headers ensures wythes act together during seismic sway."
+      },
+      "explanation": "While it increases axial capacity, the main seismic concern is shear transfer and wythe continuity. Compressive strength increase is a benefit, but the spacing and placement targets lateral stability. Grouting header cells complements but does not necessarily eliminate the requirement for metal wall ties unless specifically engineered as a bonded wall. In Seismic Zone 4, the integration of grout and reinforcement is critical. Solidly grouting the cells where headers occur ensures that the 'bridge' between the two wythes is stiff and capable of transferring seismic shear forces. [cite: 2, 44] Grout at headers ensures wythes act together during seismic sway.",
+      "code_citation": "NSCP 2015 Section 707.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T15:42:43.750847+00:00",
+      "content_hash": "sha256:acaeaa3106b0a3f5ebb40c18a444eae25c93b6cd5b97cfdaa7543ddb2774eaf5"
+    },
+    {
+      "question_id": "ddee1d6a-c697-4a37-b17e-bc64ab417afa",
+      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
+      "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
+      "text": "What is the structural difference between cavity wall construction and single-wythe masonry in terms of lateral load resistance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Single-wythe walls act as a monolithic unit; cavity walls require mechanical headers or ties to prevent wythes from acting independently."
+        },
+        {
+          "id": "b",
+          "text": "Cavity walls have inherently greater strength because of the air space insulation, which provides additional thermal resistance and moisture control."
+        },
+        {
+          "id": "c",
+          "text": "Headers function identically in both; they are used only for aesthetic texture, and do not contribute to structural integrity or lateral load resistance."
+        },
+        {
+          "id": "d",
+          "text": "Cavity walls do not require ties if the cavity is filled with moisture-resistant insulation, which is assumed to provide sufficient structural stability."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Air space provides thermal and moisture benefits, but actually complicates structural load transfer.",
+        "c": "Headers in single-wythe walls are purely decorative; in multi-wythe walls, they are structural ties.",
+        "d": "Insulation has no structural bonding capacity; mechanical ties or headers are always required.",
+        "correct": "A single-wythe wall is a solid, continuous mass. A cavity wall consists of two distinct leaves; without headers or ties, each leaf would buckle or sway independently, significantly reducing the total lateral resistance. [cite: 2, 7, 15]",
+        "takeaway": "Composite action in cavity walls requires mechanical connection."
+      },
+      "explanation": "Air space provides thermal and moisture benefits, but actually complicates structural load transfer. Headers in single-wythe walls are purely decorative; in multi-wythe walls, they are structural ties. Insulation has no structural bonding capacity; mechanical ties or headers are always required. A single-wythe wall is a solid, continuous mass. A cavity wall consists of two distinct leaves; without headers or ties, each leaf would buckle or sway independently, significantly reducing the total lateral resistance. [cite: 2, 7, 15] Composite action in cavity walls requires mechanical connection.",
+      "code_citation": "NSCP 2015 Section 707.2",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T15:42:43.896862+00:00",
+      "content_hash": "sha256:dc649ce4bc593b1f3a5fc610053ce99ba75a1cdde50ddf0cb6e807c28a01eac7"
+    },
     {
       "question_id": "9f0b64cd-6c2a-4b40-ac80-ee955fe93d39",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
@@ -39,7 +239,7 @@
         "correct": "Headers are units laid perpendicular to the wall plane. Their primary job is to provide a mechanical tie between parallel wythes so the wall resists loads as a single structural unit. [cite: 7, 20]",
         "takeaway": "Headers = Wythe bonding/composite action."
       },
-      "explanation": null,
+      "explanation": "Tension in masonry is primarily handled by reinforcement, not the orientation of units. Header courses do not significantly reduce mortar consumption. Bed joints are always required in standard masonry regardless of the unit orientation. Headers are units laid perpendicular to the wall plane. Their primary job is to provide a mechanical tie between parallel wythes so the wall resists loads as a single structural unit. [cite: 7, 20] Headers = Wythe bonding/composite action.",
       "code_citation": "NSCP 2015 Section 707.2; PD 1096 Rule VIII Section 804",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -51,8 +251,8 @@
       "model_id": "ALE-STRC-010-01-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:700d78b02c67f490592cfa8b16b4b57e3d428a73e307dfd4df8368f21d2e05fb"
+      "updated_at": "2026-05-06T15:39:34.893328+00:00",
+      "content_hash": "sha256:8e5d00214ea3fc29f0a5820c9046276ce0e811fa6d0efa4723f26891eae7627b"
     },
     {
       "question_id": "0b57197a-6c6b-4fd3-8f0e-761841149ef3",
@@ -89,7 +289,7 @@
         "correct": "English bond consists of alternating courses of all-headers and all-stretchers, resulting in a high density of transverse ties. Flemish bond alternates headers and stretchers within the same course, providing strong but less frequent bonding than the English bond. [cite: 7, 13]",
         "takeaway": "English Bond = maximum transverse header frequency."
       },
-      "explanation": null,
+      "explanation": "Mortar quantity does not dictate structural superiority; the arrangement of units (bond) does. Stack bond is the weakest of all patterns and is restricted in Zone 4. While Running Bond is the most common, English and Flemish bonds are legally permissible and structurally sound. English bond consists of alternating courses of all-headers and all-stretchers, resulting in a high density of transverse ties. Flemish bond alternates headers and stretchers within the same course, providing strong but less frequent bonding than the English bond. [cite: 7, 13] English Bond = maximum transverse header frequency.",
       "code_citation": "NSCP 2015 Section 702; PD 1096 Rule VIII Section 804",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -101,8 +301,8 @@
       "model_id": "ALE-STRC-010-01-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:aa312a5858295906c667fc0c1c68147e0139dc78d0f47db43d29f039864fc106"
+      "updated_at": "2026-05-06T15:42:43.263657+00:00",
+      "content_hash": "sha256:a550e2cc851afd2c7d1e51b65273a8ae2d4e21fadb054ae3ece72f4f145b0c16"
     },
     {
       "question_id": "7f30a350-0792-44c3-8b0f-ff508684f01f",
@@ -155,56 +355,6 @@
       "content_hash": "sha256:6053cf655621d0a9c1270b5c78dab7ab540d27c53ac3c94d0e9dbcf625d6fc65"
     },
     {
-      "question_id": "9e85e893-bcbc-4d2e-8af3-3114c5458738",
-      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
-      "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "In concrete hollow block (CHB) masonry, which of the following best describes a cell?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The horizontal mortar joint between courses, which provides stability and alignment for the masonry units"
-        },
-        {
-          "id": "b",
-          "text": "The air space between two wythes, often used for insulation or to accommodate reinforcement bars"
-        },
-        {
-          "id": "c",
-          "text": "The enclosed void within an individual masonry unit"
-        },
-        {
-          "id": "d",
-          "text": "The bond pattern connecting units, which can vary to enhance structural integrity and aesthetic appeal"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This is a bed joint.",
-        "b": "This is a cavity or collar joint.",
-        "d": "Bond patterns refer to the arrangement of units (e.g., Running, Stack).",
-        "correct": "Cells (or cores) are the hollow voids in CHBs. Per NSCP 2015, these are often reinforced with vertical bars and filled with grout to enhance structural capacity. [cite: 23, 44]",
-        "takeaway": "Cell = core/void in a hollow unit."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 702",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-010-01-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5d2226d0dcab6e59b456237cc821fff40d1c2bdcfe30641e269a38c4624e3e1f"
-    },
-    {
       "question_id": "f75f1764-4c73-430a-b061-769779596de2",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
@@ -255,56 +405,6 @@
       "content_hash": "sha256:f198994d13550df47e09a7bd16b3591a787281f3aeadcf2cfaa3c75bc9f03691"
     },
     {
-      "question_id": "12a09035-e746-41da-b8f4-7cc4be9eabc7",
-      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
-      "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "Which bond pattern requires specific continuous horizontal reinforcement in Seismic Zone 4 (high seismic risk) because of its lack of natural interlock?",
-      "options": [
-        {
-          "id": "a",
-          "text": "English bond"
-        },
-        {
-          "id": "b",
-          "text": "Flemish bond"
-        },
-        {
-          "id": "c",
-          "text": "Stack bond"
-        },
-        {
-          "id": "d",
-          "text": "Running bond"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "English bond provides strong mechanical interlock through alternating header/stretcher courses.",
-        "b": "Flemish bond provides interlock through alternating units in each course.",
-        "d": "Running bond is the standard interlocking pattern where head joints are offset by at least 1/4 of the unit length.",
-        "correct": "Stack bond has vertical head joints that align. In high seismic zones (Seismic Zone 4), the NSCP 2015 requires stack bond walls to have continuous horizontal reinforcement to compensate for the lack of overlapping units. [cite: 42, 44]",
-        "takeaway": "Stack bond lacks overlap and requires extra reinforcement in high seismic zones."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 707.2.2.2; PD 1096 Rule VIII",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-010-01-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:39302911fdb303133bc30a1846a71a171e37e5c2f18fc0450b8c771560f6f5b4"
-    },
-    {
       "question_id": "b64a1601-0c37-4a02-a85c-1fafc63a8275",
       "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
       "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
@@ -353,106 +453,6 @@
       "created_at": "2026-03-23T19:27:52.700869+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:a24b0a27cb33fdd3f9f762c048e6dd35460164c24ae907bc38a6bc3fdad58dea"
-    },
-    {
-      "question_id": "cef523d7-e9b8-42c2-84ac-c8c890c9cae9",
-      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
-      "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "A structural engineer specifies that for a building in Seismic Zone 4, cells at header courses must be solid-grouted. What is the structural rationlea for this in a cavity wall?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Grout in header course cells increases the axial load capacity of headers and provides lateral continuity."
-        },
-        {
-          "id": "b",
-          "text": "Grout creates vertical load paths and solidifies the lateral tie between wythes."
-        },
-        {
-          "id": "c",
-          "text": "Grouting increases the compressive strength uniformly across all wythes."
-        },
-        {
-          "id": "d",
-          "text": "Grouting cells eliminates the need for wall ties."
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "While it increases axial capacity, the main seismic concern is shear transfer and wythe continuity.",
-        "c": "Compressive strength increase is a benefit, but the spacing and placement targets lateral stability.",
-        "d": "Grouting header cells complements but does not necessarily eliminate the requirement for metal wall ties unless specifically engineered as a bonded wall.",
-        "correct": "In Seismic Zone 4, the integration of grout and reinforcement is critical. Solidly grouting the cells where headers occur ensures that the 'bridge' between the two wythes is stiff and capable of transferring seismic shear forces. [cite: 2, 44]",
-        "takeaway": "Grout at headers ensures wythes act together during seismic sway."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 707.1",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-010-01-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:de4eb6873304f206c2b95a95bdebe8637ff089a9ff459c2f82d64e300234ebb8"
-    },
-    {
-      "question_id": "ddee1d6a-c697-4a37-b17e-bc64ab417afa",
-      "article_id": "ee14e9e9-4e28-4c5a-bd83-6dc33fee5c3e",
-      "topic_id": "d6e8448d-7a90-4eb7-a726-63ead8840e69",
-      "text": "What is the structural difference between cavity wall construction and single-wythe masonry in terms of lateral load resistance?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Single-wythe walls act as a monolithic unit; cavity walls require mechanical headers or ties to prevent wythes from acting independently."
-        },
-        {
-          "id": "b",
-          "text": "Cavity walls have inherently greater strength because of the air space insulation, which provides additional thermal resistance and moisture control."
-        },
-        {
-          "id": "c",
-          "text": "Headers function identically in both; they are used only for aesthetic texture, and do not contribute to structural integrity or lateral load resistance."
-        },
-        {
-          "id": "d",
-          "text": "Cavity walls do not require ties if the cavity is filled with moisture-resistant insulation, which is assumed to provide sufficient structural stability."
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Air space provides thermal and moisture benefits, but actually complicates structural load transfer.",
-        "c": "Headers in single-wythe walls are purely decorative; in multi-wythe walls, they are structural ties.",
-        "d": "Insulation has no structural bonding capacity; mechanical ties or headers are always required.",
-        "correct": "A single-wythe wall is a solid, continuous mass. A cavity wall consists of two distinct leaves; without headers or ties, each leaf would buckle or sway independently, significantly reducing the total lateral resistance. [cite: 2, 7, 15]",
-        "takeaway": "Composite action in cavity walls requires mechanical connection."
-      },
-      "explanation": null,
-      "code_citation": "NSCP 2015 Section 707.2",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-STRC-010-01-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:52.700869+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:5f60362cb201fae7bde924d453ca6c666b631a71de6ca6115cb31f5d3ff2874d"
     },
     {
       "question_id": "f1569344-0da1-4a0b-abad-ca1f8509ed83",

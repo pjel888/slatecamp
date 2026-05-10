@@ -1,21 +1,14 @@
 {
-  "attempted_at": "2026-05-04T09:13:54.528Z",
-  "dry_run": false,
-  "apply": true,
+  "attempted_at": "2026-05-10T00:34:13.692Z",
+  "dry_run": true,
+  "apply": false,
   "pushed": false,
   "blockers": [
-    "candidate.md matches original.md; refusing no-op apply."
+    "Failed to fetch current remote article: Error: Was there a typo in the url or port?"
   ],
   "warnings": [],
   "updated_rows_count": 0,
   "article_id": "85529595-d219-4b10-9bd9-383d125da8c3",
   "slug": "lea-prac-frm-019-project-management-in-an-architectural-firm-scope-schedule-budget-and-communication-control",
-  "preparation_actions": [
-    "auto_generated_diff"
-  ],
-  "remote_hash_before": "sha256:c395b5ac73caaed3a1f9e43b6730c65a8612524711eab1a7bb493e130addae2d",
-  "original_hash": "sha256:c395b5ac73caaed3a1f9e43b6730c65a8612524711eab1a7bb493e130addae2d",
-  "candidate_hash": "sha256:c395b5ac73caaed3a1f9e43b6730c65a8612524711eab1a7bb493e130addae2d",
-  "stale_check_passed": true,
-  "remote_updated_at_before": "2026-05-04T02:33:35.641904+00:00"
+  "preparation_actions": []
 }

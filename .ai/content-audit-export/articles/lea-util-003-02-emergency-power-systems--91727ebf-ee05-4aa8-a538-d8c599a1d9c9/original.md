@@ -1,3 +1,10 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the task in one sentence: what concept is being identified, compared, sequenced, or applied? Then anchor your answer to the article's stated scope and avoid importing details from a different topic.
+
+**Common mistake:** treating a familiar keyword in **Lea Util 003 02 Emergency Power Systems** as enough to answer. For exam practice, first identify the exact concept being asked, then choose the option that matches that concept.
 ## What You Need to Know for the LEA
 
 ## Learning Goal
@@ -7,7 +14,11 @@ Design emergency and standby power systems — generator sizing based on life-sa
 
 Emergency power systems provide backup electricity when the primary utility source fails. They maintain critical functions including fire protection, life safety, egress lighting, and emergency communications.
 
-<ArticleMedia id="media-lea-util-003-02-emergency-power-systems" type="image" caption="Emergency Power System — Generator, ATS, UPS, and Life Safety Loads" description="Single-line riser diagram showing: diesel generator with fuel storage tank (8-hour minimum), automatic transfer switch (ATS, 10-second max transfer per PEC 700.12), UPS (online double-conversion for critical loads), and distribution to emergency circuits (fire pump, emergency lighting, elevator, fire alarm). Generator room requirements annotated: 2-hour fire rating, ventilation, sound attenuation, secondary containment for fuel (110% of tank capacity)." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-util-003-02-emergency-power-systems", type="image", caption="Emergency Power System — Generator, ATS, UPS, and Life Safety Loads", description="Single-line riser diagram showing: diesel generator with fuel storage tank (8-hour minimum), automatic transfer switch (ATS, 10-second max transfer per PEC 700.12), UPS (online double-conversion for critical loads), and distribution to emergency circuits (fire pump, emergency lighting, elevator, fire alarm). Generator room requirements annotated: 2-hour fire rating, ventilation, sound attenuation, secondary containment for fuel (110% of tank capacity).", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 ### Standby Generators
@@ -16,15 +27,23 @@ Diesel generators are the primary emergency power source in the Philippines due 
 
 **Generator Sizing:**
 
-<KeyValues items=[{"value": "15-20%", "label": "Panel Efficiency"}, {"value": "25-30yr", "label": "Warranty Life"}, {"value": "Grid-Tie", "label": "Most Common"}, {"value": "1.2-1.5", "label": "DC/AC Ratio"}] />
+[SLATECAMP_UI_BLOCK:ui_0002 component="KeyValues" status="preserved"]
+Extracted summary:
+- Props: items="[", value=true, label=true, Panel=true, Efficiency=true, Warranty=true, Life=true, Grid-Tie=true, Most=true, Common=true, DC=true, AC=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<ExamTip>
-  **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
-</ExamTip>
+[SLATECAMP_UI_BLOCK:ui_0003 component="ExamTip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Exam Tip:** LEA questions on building utilities test code compliance and minimum standards. Memorize key thresholds: 25Ω max ground resistance, 6 ACH kitchen exhaust, 300-500 lx office lighting, NC 30-40 office noise criteria. Always reference the applicable code (PEC, Mechanical Code, NBCP, Fire Code) when answering.
+[/SLATECAMP_UI_BLOCK]
 
-<Tip>
-**Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
-</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: **Pro Tip:** When designing MEPF systems, always reserve adequate ceiling plenum space. Typical suspended ceiling depth requires 450-600mm above the finished ceiling to accommodate ductwork, conduit, piping, and fire protection systems. Coordinate all MEPF routing before finalizing structural slab-to-slab heights.
+[/SLATECAMP_UI_BLOCK]
 Emergency generators must be sized to support the emergency load, defined as the total connected load of circuits designated for emergency operation. This includes fire pumps, emergency elevators, exit lighting, emergency communications, and life safety equipment. The PEC requires that generator capacity must not be less than the sum of the rated loads of all equipment that must operate during an outage (PEC Article 700.4).
 
 **Transfer Time:**
@@ -151,4 +170,3 @@ Documentation of all tests must be retained for at least 3 years and provided to
 See also within Electrical Systems: **lea-util-003-03-core-concept**, **lea-util-003-04-core-concept**, **lea-util-003-05-core-concept**, **lea-util-003-06-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

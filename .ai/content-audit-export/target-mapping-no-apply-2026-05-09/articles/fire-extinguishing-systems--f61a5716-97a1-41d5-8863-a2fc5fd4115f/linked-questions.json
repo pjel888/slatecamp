@@ -1,0 +1,1812 @@
+{
+  "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:34fa60bded4c740d9e7b150e302bb47fce691ca9276e6bed7be18a5161ef9e50",
+  "question_count": 41,
+  "questions": [
+    {
+      "question_id": "858f204c-5ac2-45c5-a3d5-572528ec749f",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Cellulose nitrate film fires cannot be extinguished by smothering (CO₂ or inert gas systems). What fundamental chemical property of cellulose nitrate makes conventional gas-based suppression ineffective?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Self-oxidizing — the film contains its own chemically bound oxygen and continues burning without external air supply"
+        },
+        {
+          "id": "B",
+          "text": "High surface-area-to-mass ratio — the film burns too quickly for smothering agents to take effect before combustion completes"
+        },
+        {
+          "id": "C",
+          "text": "Thermoplastic behavior — the film melts and flows, spreading fire even after surface oxygen is depleted by suppression"
+        },
+        {
+          "id": "D",
+          "text": "Catalytic decomposition — heat from suppression agents accelerates rather than suppresses combustion through exothermic reaction"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Cellulose nitrate contains oxygen chemically bound within the nitrate ester groups of its polymer chain. This means it burns vigorously even in an oxygen-depleted atmosphere and cannot be extinguished by CO₂, Halon, or any smothering agent. Water or water solutions are the specified first aid agents because they absorb heat and reduce spread rate — the only effective approach against a self-oxidizing fire. The 1929 Cleveland Clinic disaster (123 deaths from toxic gas inhalation) was the historical catalyst for international film storage standards.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.314623+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9bcb4ba2e32d7599ab8377b487dd0ac0afec6fd1937d09c494e80bb8c63ea707"
+    },
+    {
+      "question_id": "944f0f23-e4a5-4366-881b-cf06c7f741ff",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the IBC sprinkler increase factor (Is) for a MULTI-STORY building with a full NFPA 13 sprinkler system, and what is the factor for a SINGLE-STORY building with the same system?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multi-story: 2.00; Single-story: 2.00"
+        },
+        {
+          "id": "b",
+          "text": "Multi-story: 2.00; Single-story: 3.00"
+        },
+        {
+          "id": "c",
+          "text": "Multi-story: 3.00; Single-story: 2.00"
+        },
+        {
+          "id": "d",
+          "text": "Multi-story: 1.50; Single-story: 2.00"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option A applies the same factor regardless of building height — this is the most common error. The distinction between single-story and multi-story sprinkler bonuses reflects fire physics: in a single-story building, sprinklers control the fire in the horizontal plane without the complication of vertical smoke and flame travel through multiple floors. The 1.00-point difference between Is = 2.00 and Is = 3.00 is significant in area calculations.",
+      "explanation": "Option A applies the same factor regardless of building height — this is the most common error. The distinction between single-story and multi-story sprinkler bonuses reflects fire physics: in a single-story building, sprinklers control the fire in the horizontal plane without the complication of vertical smoke and flame travel through multiple floors. The 1.00-point difference between Is = 2.00 and Is = 3.00 is significant in area calculations.",
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-05-06T15:39:34.488085+00:00",
+      "content_hash": "sha256:f1602ab06138748e99747ef64d1e635bafc171b675553572e5c8cd99c865d667"
+    },
+    {
+      "question_id": "bfaf2a4a-d742-484a-ba17-c25db1aa0f22",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A Type III-A office building (Group B occupancy, multi-story) has a tabular area (At) of 19,000 sq ft per IBC Table 506.2. The frontage increase factor (If) is calculated as 0.375, and the building has a full NFPA 13 sprinkler system. What is the allowable building area per floor (Aa)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "19,000 sq ft"
+        },
+        {
+          "id": "b",
+          "text": "37,125 sq ft"
+        },
+        {
+          "id": "c",
+          "text": "64,125 sq ft"
+        },
+        {
+          "id": "d",
+          "text": "71,250 sq ft"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option B (37,125) applies only the frontage increase (19,000 + 7,125) — forgetting the sprinkler increase. Option D (71,250) appears to use Is = 3.00 (single-story factor) on a multi-story building. This is a classic trap — always confirm whether the building is single-story or multi-story before selecting Is.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d7129f9c147bbfdf74a6b7f40567725eaa9fc6e8e678fe104ce813e7e7b12db"
+    },
+    {
+      "question_id": "c9cc5aed-0064-4a80-b151-d8e406600b96",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under the IBC Section 506 combined formula, can the frontage increase (If) and sprinkler increase (Is) be applied simultaneously?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No — only one increase factor can be applied at a time, which limits the potential for maximizing building area."
+        },
+        {
+          "id": "b",
+          "text": "Yes — both factors are additive in the formula Aa = At + (At × If) + (At × Is)"
+        },
+        {
+          "id": "c",
+          "text": "Yes — both factors are multiplicative: Aa = At × (1 + If) × (1 + Is), allowing for a compounded increase in allowable area."
+        },
+        {
+          "id": "d",
+          "text": "Only if the sprinkler system is NFPA 13D; NFPA 13R does not qualify, which affects the applicability of the formula."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Option C is the compounding trap — applying (1 + If) × (1 + Is) would produce a significantly larger result. For multi-story with If = 0.75 and Is = 2.00: additive gives 19,000 + 14,250 + 38,000 = 71,250; multiplicative gives 19,000 × 1.75 × 3.00 = 99,750 — a 425% difference. The IBC explicitly uses additive form.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8f5570e477685d443856b6382a2d38079324836985874e243c427af478f68931"
+    },
+    {
+      "question_id": "f51bd590-3b9b-4ea5-b008-d93ec0265e75",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A developer is constructing a 6-storey commercial building in Makati. Each floor plate is 210 sq.m with an occupant load of 25 persons. No sprinkler system is currently planned. Under PD 1096, Rule XII, Sec. 1212, which statement is most accurate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No fire-extinguishing system is required because the building is primarily commercial, not residential occupancy"
+        },
+        {
+          "id": "b",
+          "text": "A fire-extinguishing system is required because each floor meets both the 200 sq.m area and the > 20 occupant load thresholds"
+        },
+        {
+          "id": "c",
+          "text": "A fire-extinguishing system is only required at the basement level, not at the upper floors of the building"
+        },
+        {
+          "id": "d",
+          "text": "A fire-extinguishing system is required only if the building exceeds 8 storeys under PD 1096 Rule XII"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The dual-trigger rule (both area ≥ 200 sq.m AND occupant load > 20) must be satisfied simultaneously. 'Habitation' in the PH code covers commercial, office, and retail spaces — not just residential.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ae8b87b5c339dabb36d695e99083afcdbc3a1977b8885466099fa8825fce5e7"
+    },
+    {
+      "question_id": "35d0056c-cd57-4386-a9f7-1e0c94b0be78",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A dry standpipe system in a Philippine building must be tested to what minimum water pressure under PD 1096 Rule XII, Sec. 1212?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 kg/sq.cm"
+        },
+        {
+          "id": "b",
+          "text": "20 kg/sq.cm"
+        },
+        {
+          "id": "c",
+          "text": "2 kg/sq.cm"
+        },
+        {
+          "id": "d",
+          "text": "50 kg/sq.cm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 20 kg/sq.cm test pressure for dry standpipes reflects the extreme pressure that fire department pump trucks can generate when charging a standpipe from street level.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:489496c84df69def5cf2d27289c1285b518fc5ca04e9f9ac9badf3264fe1f669"
+    },
+    {
+      "question_id": "7edc64fa-9362-4058-97c3-fbca7e4cab62",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the dry standpipe outlet diameter for fire department use, and what is the wet standpipe outlet diameter for occupant first-aid use under PD 1096 Rule XII, Sec. 1212?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dry standpipe: 38 mm; Wet standpipe: 63 mm"
+        },
+        {
+          "id": "b",
+          "text": "Dry standpipe: 50 mm; Wet standpipe: 38 mm"
+        },
+        {
+          "id": "c",
+          "text": "Dry standpipe: 63 mm; Wet standpipe: 38 mm"
+        },
+        {
+          "id": "d",
+          "text": "Dry standpipe: 100 mm; Wet standpipe: 63 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Use the mnemonic: 'DRY = 63, WET = 38.' The dry system is for professional attack — bigger hose, bigger outlet. The wet system is for first response — smaller, manageable hose reel.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:202574b1437aaaf92ed53a005318c9df813a3e2cf50985208f21a87ba052584e"
+    },
+    {
+      "question_id": "aea865fe-a4fd-4bd8-9f88-e35a8a587fa1",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "According to the '100-2, 125-3, 150-4' Siamese connection sizing rule under PD 1096 Rule XII, Sec. 1212, what does the pattern represent?",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 mm pipe → 2-way Siamese; 125 mm pipe → 3-way Siamese; 150 mm pipe → 4-way Siamese"
+        },
+        {
+          "id": "b",
+          "text": "100 mm pipe → 3-way Siamese; 125 mm pipe → 4-way Siamese; 150 mm pipe → 5-way Siamese"
+        },
+        {
+          "id": "c",
+          "text": "100 mm pipe → 2-way Siamese; 125 mm pipe → 4-way Siamese; 150 mm pipe → 6-way Siamese"
+        },
+        {
+          "id": "d",
+          "text": "100 mm pipe → 1-way Siamese; 125 mm pipe → 2-way Siamese; 150 mm pipe → 3-way Siamese"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The pattern is straightforward: each additional 25 mm of pipe diameter requires one additional inlet on the Siamese connection. Think of it as the pipe needing proportionally more charging points as it gets larger.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:782ca7236aedee8f5f2be081fab201b5dafb44a47659a04cb08e3a79eddee171"
+    },
+    {
+      "question_id": "24aa53f1-6fed-4c0c-9c03-3c4c8fabef56",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "At what height above floor level must the dry standpipe floor outlet be positioned under PD 1096 Rule XII, Sec. 1212?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Maximum 600 mm above floor"
+        },
+        {
+          "id": "b",
+          "text": "Maximum 1.20 m above floor"
+        },
+        {
+          "id": "c",
+          "text": "Minimum 1.50 m above floor"
+        },
+        {
+          "id": "d",
+          "text": "Minimum 2.00 m above floor"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 1.20 m maximum height is the same for both dry (63 mm outlet) and wet (38 mm outlet) standpipes. This uniform height standardizes outlet positioning across the building regardless of system type.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:402237cd38b1c41abb4d8739aefdee1ec18ec7a74188662b9bdb2bdb2ae2083d"
+    },
+    {
+      "question_id": "eb3ce0e5-a720-45eb-8881-4f8db4f43606",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum design flow rate for a dry standpipe system under PD 1096 Rule XII, Sec. 1212?",
+      "options": [
+        {
+          "id": "a",
+          "text": "190 L/min"
+        },
+        {
+          "id": "b",
+          "text": "500 L/min"
+        },
+        {
+          "id": "c",
+          "text": "900 L/min"
+        },
+        {
+          "id": "d",
+          "text": "1,500 L/min"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The dry standpipe's 900 L/min design flow is roughly 4.7× the wet standpipe's 190 L/min, reflecting the difference between fire department professional attack operations and occupant first-aid response.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:268004cc9f1b62ef693f35dee314f099598ae75598d8e28f2c97311394703ec4"
+    },
+    {
+      "question_id": "dcb1d738-ff81-4e48-89be-1bafd0627e6f",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum flow rate and minimum pressure for a fire pump under PD 1096 Rule XII, Sec. 1212?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum flow: 1,500 L/min; Minimum pressure: 2 kg/sq.cm"
+        },
+        {
+          "id": "b",
+          "text": "Minimum flow: 1,000 L/min; Minimum pressure: 2 kg/sq.cm"
+        },
+        {
+          "id": "c",
+          "text": "Minimum flow: 900 L/min; Minimum pressure: 10 kg/sq.cm"
+        },
+        {
+          "id": "d",
+          "text": "Minimum flow: 1,000 L/min; Minimum pressure: 10 kg/sq.cm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Gravity tanks (1,500 L/min) need higher flow than fire pumps (1,000 L/min) because tanks rely entirely on head pressure without mechanical assistance. Pumps can be modulated as needed.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d73c19fce590c7cce848bcd389abb80e85d39a10a8eb0c3132a447a36fc6d65"
+    },
+    {
+      "question_id": "a1f1b80d-7c78-44bf-8dc9-771875698fa7",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum water pressure for a wet standpipe system under PD 1096 Rule XII, Sec. 1212?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 kg/sq.cm"
+        },
+        {
+          "id": "b",
+          "text": "2 kg/sq.cm"
+        },
+        {
+          "id": "c",
+          "text": "5 kg/sq.cm"
+        },
+        {
+          "id": "d",
+          "text": "20 kg/sq.cm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2 kg/sq.cm minimum pressure ensures adequate spray distance and effectiveness for the 38 mm hose reel outlets used by building occupants in the wet standpipe system.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eed7f27d4bfb54ce42734861a72c24072901e266028d169781082c1a8f9a8a6c"
+    },
+    {
+      "question_id": "78b250f8-ca86-4ff4-b933-406423a82d01",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building's dry standpipe uses a 125 mm galvanized steel pipe. What type of Siamese connection is required at the street-front inlet, and at what height above grade must it be installed under PD 1096 Rule XII, Sec. 1212?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2-way Siamese connection, 600 mm to 1.50 m above grade"
+        },
+        {
+          "id": "b",
+          "text": "3-way Siamese connection, 300 mm to 1.20 m above grade"
+        },
+        {
+          "id": "c",
+          "text": "4-way Siamese connection, 300 mm to 1.20 m above grade"
+        },
+        {
+          "id": "d",
+          "text": "3-way Siamese connection, 600 mm to 1.50 m above grade"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The Siamese sizing follows the pattern: 100 mm → 2-way, 125 mm → 3-way, 150 mm → 4-way. Each 25 mm increase in pipe diameter adds one inlet. The height range 300 mm to 1.20 m matches the fire department's standard truck connection equipment.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3082c6e375bc86e722af0d6b8ffd3ea2745a8c0dc4851edc8319620f5a1a0ce8"
+    },
+    {
+      "question_id": "92e35a3e-50ae-4fd6-9b43-a517fb1cc619",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A gravity tank for a fire protection system must supply at least what flow rate for what minimum duration under PD 1096 Rule XII, Sec. 1212?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,000 L/min for at least 10 minutes"
+        },
+        {
+          "id": "b",
+          "text": "1,500 L/min for at least 10 minutes"
+        },
+        {
+          "id": "c",
+          "text": "1,500 L/min for at least 30 minutes"
+        },
+        {
+          "id": "d",
+          "text": "2,000 L/min for at least 15 minutes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Use the 'GravTank vs. FirePump' mnemonic: GravTank = 1,500 L/min (passive, gravity-fed, bigger reserve flow); FirePump = 1,000 L/min (active, mechanical).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e3b68f18480f49c9cc4cff7ea18f3fa0d186485227436d7cd5ebc894642c61cf"
+    },
+    {
+      "question_id": "88e80958-6678-416a-b54a-3f9071348f9b",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A 5-storey office building has a floor plate of 195 sq.m with 18 occupants per floor. No sprinkler system is planned. Under PD 1096 Rule XII, Sec. 1212, is a fire-extinguishing system required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because it is a 5-storey building, which typically necessitates additional fire safety measures."
+        },
+        {
+          "id": "b",
+          "text": "Yes, because 195 sq.m is approximately equal to 200 sq.m, which is a common threshold for fire safety requirements."
+        },
+        {
+          "id": "c",
+          "text": "No, because both the area (195 sq.m < 200 sq.m) and occupant load (18 ≤ 20) thresholds are below their respective trigger values"
+        },
+        {
+          "id": "d",
+          "text": "No, but one is required by RA 9514 regardless of floor area and occupant load, ensuring compliance with broader fire safety regulations."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is a precision test of the dual-trigger rule. A building can be 5 storeys (triggering dry standpipe) but NOT trigger fire-extinguishing systems if neither storey meets both the area and occupant load thresholds.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7a842248ba8333b687fb1233b42054cd15f670097bede335b8db2ed227191e1b"
+    },
+    {
+      "question_id": "e3dfe7ec-69be-487c-b454-5259e7b2d6ea",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Using the '2 Hundred, 20 People' memory aid under PD 1096 Rule XII, Sec. 1212, which of the following correctly states the dual trigger for fire-extinguishing systems in habitation areas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≥ 200 sq.m AND ≥ 20 occupants"
+        },
+        {
+          "id": "b",
+          "text": "≥ 200 sq.m AND > 20 occupants"
+        },
+        {
+          "id": "c",
+          "text": "> 200 sq.m AND > 20 occupants"
+        },
+        {
+          "id": "d",
+          "text": "≥ 200 sq.m AND > 20 occupants, with the system required only on the floor where both thresholds are exceeded"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This is the most frequently tested trap in Section 1212. The asymmetric threshold (≥ for area, > for occupants) is intentional and testable. A 200 sq.m office with exactly 20 occupants does NOT trigger the requirement.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.843208+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a712ceb7dba2e3e9141c165a844f43cdd3eada55c6d4bc76c69ef5f5e401ce1b"
+    },
+    {
+      "question_id": "5aab16f7-7fef-49ec-93e2-01fe5f46ea75",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1204, what are the required specifications for draft curtains and sprinkler rings at escalator openings?",
+      "options": [
+        {
+          "id": "vo-001-a",
+          "text": "150 mm draft curtain on two sides; sprinklers within 800 mm at max 2.00 m spacing"
+        },
+        {
+          "id": "vo-001-b",
+          "text": "200 mm draft curtain on all sides; sprinklers within 600 mm at max 1.80 m spacing"
+        },
+        {
+          "id": "vo-001-c",
+          "text": "250 mm draft curtain on all sides; sprinklers within 500 mm at max 2.50 m spacing"
+        },
+        {
+          "id": "vo-001-d",
+          "text": "200 mm draft curtain on two sides; sprinklers within 900 mm at max 1.50 m spacing"
+        }
+      ],
+      "correct_option_id": "vo-001-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Escalators create a continuous open path between floor levels — a chimney effect that can rapidly spread fire, smoke, and toxic gases. The draft curtain (passive) confines smoke at ceiling level while the sprinkler ring (active) provides suppression. Together they create a compartmentalization barrier without requiring a full shaft enclosure.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.225527+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b7bbf65a1cc0796e8226a5d3989c9074888324f3a1276982c13f58f243fa337c"
+    },
+    {
+      "question_id": "37a171e3-0068-401d-a9ca-114b3ece7878",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1210.e, at what cross-sectional area does a rooftop tower require its supporting structural frame to extend all the way to the ground?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Exceeding 5.00 sq.m"
+        },
+        {
+          "id": "B",
+          "text": "Exceeding 10.00 sq.m"
+        },
+        {
+          "id": "C",
+          "text": "Exceeding 25.00 sq.m"
+        },
+        {
+          "id": "D",
+          "text": "Exceeding 50.00 sq.m"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1210.e, if a tower's cross-sectional area exceeds 10.00 sq.m at any point above the roof, its supporting structural frame must extend down to the ground level — not just to the roof. Large towers generate substantial overturning moments from wind and seismic forces that require continuous load path to the foundation.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:11.283396+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6b607b06d7821e772bfcacd0075d1da6e8b195d1638d16eb175c364c3a81aefb"
+    },
+    {
+      "question_id": "d941bf63-5b8e-4f2c-b6b6-a0e95cb09a57",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1210.e, what is the maximum base area for a rooftop tower or spire, and what is the exception to this limit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150 sq.m maximum; exception: towers that also function as neon sign skeleton towers, which are exempt from the base area restriction."
+        },
+        {
+          "id": "B",
+          "text": "150 sq.m maximum; exception: towers that conform to the Type of Construction requirements for the entire building"
+        },
+        {
+          "id": "C",
+          "text": "300 sq.m maximum; exception: decorative clock towers of any size, provided they do not interfere with structural integrity."
+        },
+        {
+          "id": "D",
+          "text": "150 sq.m maximum; exception: towers located entirely within 1.50 m of the building's exterior wall, allowing for architectural embellishments."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1210.e, the base area of a tower or spire must not exceed 150 sq.m unless the tower itself conforms to the Type of Construction requirements for the entire building. If the tower is designed as a fully compliant building structure, the 150 sq.m limit does not apply.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:11.283396+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c38a03cb70d50ccf667bc1629eb91814eca32bec95241f36db5ac372c87290ac"
+    },
+    {
+      "question_id": "63983fab-611d-4c14-8e35-cf714e86b9b4",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096 Rule XII, Sec. 1210.e, what is the maximum base width of a rooftop tower or spire relative to the building's street frontage?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Not more than 1/3 of the street frontage"
+        },
+        {
+          "id": "B",
+          "text": "Not more than 1/4 of the street frontage"
+        },
+        {
+          "id": "C",
+          "text": "Not more than 1/2 of the street frontage"
+        },
+        {
+          "id": "D",
+          "text": "Not more than 150 sq.m regardless of frontage"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Per Rule XII, Sec. 1210.e, the base width of any tower or spire must not exceed 1/4 of the street frontage of the building. This fraction limit controls the visual and structural impact of rooftop towers on the streetscape and adjacent properties.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:11.283396+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b7447fe1f967a05f8bd11628df0c5d226f4499bf0504638c32f4d35d936cbdbf"
+    },
+    {
+      "question_id": "51eead7a-0b53-4a2d-a0ff-c31b523dafba",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per the mnemonic 'SS≠' for Section 904, what does it stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Sewer System ≠ Sanitary System"
+        },
+        {
+          "id": "B",
+          "text": "Storm Sewer ≠ Sanitary Sewer"
+        },
+        {
+          "id": "C",
+          "text": "Safe Site ≠ Standard Site"
+        },
+        {
+          "id": "D",
+          "text": "Soil System ≠ Sanitary System"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "SS≠ = Storm Sewer ≠ Sanitary Sewer. They are parallel, separate, never-mixing infrastructure systems. Sky water (rain, roof runoff, area drains) → storm drain. Fixture water (grey water, black water from WCs) → sanitary drain. Never cross the streams.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 1,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:12.033224+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:958ba1a285c956213c195f908d14a6e97c548b7f70ec5d247be7469a4a09fe8e"
+    },
+    {
+      "question_id": "0b2f239d-a7dd-4445-b7c4-dff727df536d",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building's fire pump must deliver a minimum flow of 1,000 liters per minute. A gravity tank is also being considered as the sole water supply. What is the critical minimum tank capacity requirement that would allow the gravity tank to replace the fire pump?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The gravity tank must hold at least 9,000 liters to supply 10 minutes at pump flow"
+        },
+        {
+          "id": "B",
+          "text": "The gravity tank must supply 1,500 liters per minute for a minimum of 10 minutes"
+        },
+        {
+          "id": "C",
+          "text": "The gravity tank must hold at least 15,000 liters and maintain 2.0 kg/sq.cm at the outlet"
+        },
+        {
+          "id": "D",
+          "text": "The gravity tank must supply 1,000 liters per minute for a minimum of 30 minutes"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 specifies that when a gravity tank serves as the water supply, it must be capable of delivering 1,500 L/min for not less than 10 minutes. This is a higher flow rate than the fire pump minimum (1,000 L/min) to account for gravity supply pressure limitations.",
+      "explanation": "The gravity tank's 1,500 L/min threshold is 50% higher than the fire pump's 1,000 L/min minimum because gravity tanks lack the pressure consistency of active pumps. The 10-minute minimum duration ensures at least initial fire suppression while the fire department responds. A tank sized only for the pump flow rate (1,000 L/min × 10 min = 10,000 L) would be non-compliant; the tank must be sized for 15,000 L minimum.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e00493942f64cb574199b62d4992356412177b16d41817430dcc4e24123f474"
+    },
+    {
+      "question_id": "73359a85-6548-4215-b5e6-dadee36ecbc6",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Sec. 1212, what is the minimum floor area threshold that triggers automatic sprinkler requirements for habitation occupancies?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150 square meters of gross floor area per storey"
+        },
+        {
+          "id": "B",
+          "text": "200 square meters of gross floor area per storey"
+        },
+        {
+          "id": "C",
+          "text": "250 square meters of gross floor area per storey"
+        },
+        {
+          "id": "D",
+          "text": "300 square meters of gross floor area per storey"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 specifies a dual trigger: floor area must be 200 sq.m or more AND occupant load must exceed 20 persons. Both conditions must be met for habitation occupancies.",
+      "explanation": "The 200 sq.m threshold is only half the trigger. The occupant load condition (>20 persons for habitation, >10 for workshops) must also be satisfied. A 250 sq.m space with only 5 occupants would not trigger the sprinkler requirement.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0ddde2805704b602e1a1bf48f0b2beab91e323e3805b7d6e41a238cb510c522"
+    },
+    {
+      "question_id": "20639203-33b0-4735-bdb5-d7bab486332e",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A dry standpipe system must be hydrostatically tested to what pressure before being placed in service?",
+      "options": [
+        {
+          "id": "A",
+          "text": "10 kilograms per square centimeter for 30 minutes"
+        },
+        {
+          "id": "B",
+          "text": "15 kilograms per square centimeter for 15 minutes"
+        },
+        {
+          "id": "C",
+          "text": "20 kilograms per square centimeter for the required duration"
+        },
+        {
+          "id": "D",
+          "text": "25 kilograms per square centimeter for the required duration"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 requires dry standpipe systems to be hydrostatically tested at 20 kg/sq.cm before being declared serviceable for fire-fighting operations.",
+      "explanation": "The 20 kg/sq.cm test pressure is significantly higher than normal operating pressure to ensure the system can withstand surge pressures from fire pump activation. Failure at this test pressure indicates defective pipe joints or fittings.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:29d93d592fe3b6ea40fc708cc9994ee96f2a58f7e9282b8594d4ea36082a776b"
+    },
+    {
+      "question_id": "ff6136d9-b858-442d-9152-c6e17e42f59b",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which building condition independently triggers the requirement for a dry standpipe system under PD 1096?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A building whose footprint exceeds 500 square meters on any single floor"
+        },
+        {
+          "id": "B",
+          "text": "A building with four or more storeys above grade"
+        },
+        {
+          "id": "C",
+          "text": "A building with basement parking of more than two levels"
+        },
+        {
+          "id": "D",
+          "text": "A building whose total gross floor area exceeds 1,000 square meters"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Under Sec. 1212, a dry standpipe system is required in any building four storeys or more in height, regardless of floor area or occupancy load.",
+      "explanation": "The four-storey threshold is height-based and stands alone as a trigger. A four-storey 400 sq.m building with few occupants still requires a dry standpipe because manual hose access to upper floors from ground-level fire trucks becomes impractical.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e1da628784400cdaeadccdf8e4fcc050e52c048c72117534548337b151c26ba7"
+    },
+    {
+      "question_id": "0d2ff4eb-1e90-4f75-a50e-5ce81df7ebed",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A six-storey building installs a dry standpipe with a 100mm diameter riser. How many inlets must the Siamese connection provide at street level?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One 100mm inlet, matching the riser diameter"
+        },
+        {
+          "id": "B",
+          "text": "Two inlets, as required for a 100mm standpipe"
+        },
+        {
+          "id": "C",
+          "text": "Three inlets, as required for a 100mm standpipe"
+        },
+        {
+          "id": "D",
+          "text": "Four inlets, as required for a 100mm standpipe"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 specifies Siamese connection inlet count by riser diameter: 100mm standpipe requires a 2-way Siamese, 125mm requires 3-way, and 150mm requires 4-way.",
+      "explanation": "The inlet count scleas with standpipe diameter because larger risers demand more simultaneous water supply from fire department pumper trucks. A 100mm riser at 900 L/min can be fed by two 63mm fire hose connections, making the 2-way Siamese the correct choice.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e0252ded099c10e7db68c963cbe2c4445f21e291850fbd67b97924a9c19c544f"
+    },
+    {
+      "question_id": "c47e0509-969a-4985-a8be-184a4d5538d9",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A wet standpipe system's hose outlet must deliver water at what minimum flow rate and pressure combination at the most hydraulically disadvantaged outlet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150 liters per minute at 1.5 kilograms per square centimeter minimum pressure"
+        },
+        {
+          "id": "B",
+          "text": "190 liters per minute at 2.0 kilograms per square centimeter minimum pressure"
+        },
+        {
+          "id": "C",
+          "text": "250 liters per minute at 2.5 kilograms per square centimeter minimum pressure"
+        },
+        {
+          "id": "D",
+          "text": "300 liters per minute at 3.0 kilograms per square centimeter minimum pressure"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 establishes the wet standpipe performance standard as 190 L/min at a minimum residual pressure of 2.0 kg/sq.cm at the hydraulically most disadvantaged outlet.",
+      "explanation": "The 190 L/min at 2.0 kg/sq.cm represents the minimum acceptable fire-fighting flow at the worst-case outlet (typically the highest floor, farthest from the pump). Systems must be designed to exceed this at all other outlets when this condition is met.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:40a86e44fd65b1acef9a2ffb2c8e2b8a705dcba7232421b1bee8e3d61997bef1"
+    },
+    {
+      "question_id": "88742453-a584-469f-a770-7032a32de27c",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "At what maximum height above the finished floor must a dry standpipe hose outlet valve be installed to remain within firefighter reach?",
+      "options": [
+        {
+          "id": "A",
+          "text": "900 millimeters above the finished floor level"
+        },
+        {
+          "id": "B",
+          "text": "1,050 millimeters above the finished floor level"
+        },
+        {
+          "id": "C",
+          "text": "1,200 millimeters above the finished floor level"
+        },
+        {
+          "id": "D",
+          "text": "1,500 millimeters above the finished floor level"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 specifies that dry standpipe hose outlet valves must be located no higher than 1.20m above the floor to ensure firefighters in full gear can operate them quickly under stress.",
+      "explanation": "The 1.20m maximum height accounts for ergonomic reach while wearing firefighting equipment and gloves. Valves installed too high create dangerous delays during emergency response. The same 300mm to 1.20m range applies to Siamese connection heights above exterior grade.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:06757588d7271ab40b7d40f3084e2c412010bd36f687834e87351d3f6afbc7a0"
+    },
+    {
+      "question_id": "e88ab2e1-d8de-4fbf-833f-2e6595d28a09",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building is provided with an automatic sprinkler system throughout. By how much does this extend the allowable travel distance to the nearest exit compared to a non-sprinklered building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The travel distance increases from 30 meters to 45 meters"
+        },
+        {
+          "id": "B",
+          "text": "The travel distance increases from 45 meters to 60 meters"
+        },
+        {
+          "id": "C",
+          "text": "The travel distance increases from 60 meters to 75 meters"
+        },
+        {
+          "id": "D",
+          "text": "The travel distance increases from 45 meters to 90 meters"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Under Sec. 1207 read together with Sec. 1212, the allowable travel distance without sprinklers is 45m. Full sprinkler coverage extends this to 60m, a 33% increase reflecting the additional evacuation time sprinklers provide.",
+      "explanation": "Sprinklers allow the 45m→60m travel distance extension because they suppress or control a fire, buying occupants additional safe evacuation time. This trade-off is frequently used in large open-plan offices or shopping centers where placing exits at 45m intervals would be architecturally disruptive.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1207 and Sec. 1212",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4b1ddcdeb51f2b5b26a3e645f985fb354384133b81e26370d40b6a03aea36eb8"
+    },
+    {
+      "question_id": "12f56e4f-0ddc-4708-b0ac-f5c25b22268b",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A roof-level fire standpipe outlet must be fitted with what configuration to allow simultaneous connection of fire department equipment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A single 63mm gate valve outlet with a pressure gauge"
+        },
+        {
+          "id": "B",
+          "text": "A 2-way 63mm Siamese connection with two gate valves"
+        },
+        {
+          "id": "C",
+          "text": "A single 100mm butterfly valve outlet at roof parapet level"
+        },
+        {
+          "id": "D",
+          "text": "A 3-way 50mm hose connection with individual shut-off valves"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 requires the roof termination of a dry standpipe to have a 2-way Siamese connection with 63mm outlets, enabling helicopter-assisted fire-fighting operations and rooftop cooling water supply.",
+      "explanation": "The 2-way 63mm roof outlet matches the diameter specified for hose connections throughout the dry standpipe system. The dual-outlet Siamese configuration allows two hose lines to be deployed from the roof simultaneously, which is essential for top-down fire attack on upper floors.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4870ceabd15129afed92fca8891992d52eaba38ff92c0140a5b7ac6af572b712"
+    },
+    {
+      "question_id": "2606020a-6128-408e-9a7b-2b029cc177b2",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An assembly hall with 600 occupants has its dispersal area located 20 meters from the nearest exit. Does this hall require an automatic sprinkler system under PD 1096?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No, because the dispersal area is less than 30 meters from the exit"
+        },
+        {
+          "id": "B",
+          "text": "Yes, because the occupant load alone exceeds 500 persons"
+        },
+        {
+          "id": "C",
+          "text": "Yes, because both conditions — over 500 occupants and exits over 30 meters from dispersal — must be evaluated independently"
+        },
+        {
+          "id": "D",
+          "text": "No, because assembly halls are exempt from sprinkler requirements under Sec. 1212"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Assembly halls trigger the sprinkler requirement only when BOTH conditions are met: occupant load exceeds 500 AND exits are more than 30m from the dispersal area. With exits only 20m away, the second condition is not satisfied even though the occupant load exceeds 500.",
+      "explanation": "This is a conjunction (AND) condition, not a disjunction (OR). The occupant load threshold alone is insufficient — the physical distance from the dispersal area to the exit must also exceed 30m. When exits are close to the dispersal area, rapid occupant egress makes the sprinkler requirement unnecessary for assembly halls specifically.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:02.523405+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4f71c95777d04a2f52b4d6c02336bed1dc0684ba6f94016912a45ec526444f9c"
+    },
+    {
+      "question_id": "9bf46c42-7b80-4b78-b8ac-463786f48ae4",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A six-storey building installs a dry standpipe with a 100mm diameter riser. How many inlets must the Siamese connection provide at street level?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One 100mm inlet, matching the riser diameter"
+        },
+        {
+          "id": "B",
+          "text": "Two inlets, as required for a 100mm standpipe"
+        },
+        {
+          "id": "C",
+          "text": "Three inlets, as required for a 100mm standpipe"
+        },
+        {
+          "id": "D",
+          "text": "Four inlets, as required for a 100mm standpipe"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 specifies Siamese connection inlet count by riser diameter: 100mm standpipe requires a 2-way Siamese, 125mm requires 3-way, and 150mm requires 4-way.",
+      "explanation": "The inlet count scleas with standpipe diameter because larger risers demand more simultaneous water supply from fire department pumper trucks. A 100mm riser at 900 L/min can be fed by two 63mm fire hose connections, making the 2-way Siamese the correct choice.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9fe2ab09c6a151b2cc2459d6504ad90771bbfa13aff8236ed17211f036079bfa"
+    },
+    {
+      "question_id": "3a6c9ad9-030b-4814-8a4c-1ec8c4905337",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "At what maximum height above the finished floor must a dry standpipe hose outlet valve be installed to remain within firefighter reach?",
+      "options": [
+        {
+          "id": "A",
+          "text": "900 millimeters above the finished floor level"
+        },
+        {
+          "id": "B",
+          "text": "1,050 millimeters above the finished floor level"
+        },
+        {
+          "id": "C",
+          "text": "1,200 millimeters above the finished floor level"
+        },
+        {
+          "id": "D",
+          "text": "1,500 millimeters above the finished floor level"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 specifies that dry standpipe hose outlet valves must be located no higher than 1.20m above the floor to ensure firefighters in full gear can operate them quickly under stress.",
+      "explanation": "The 1.20m maximum height accounts for ergonomic reach while wearing firefighting equipment and gloves. Valves installed too high create dangerous delays during emergency response. The same 300mm to 1.20m range applies to Siamese connection heights above exterior grade.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:07c7eab78980d05b1efc5eee0159fbbc701cc09e82eab7275c8885d3ff15c245"
+    },
+    {
+      "question_id": "6bf023e0-f3c2-4842-960a-956b4c85f784",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Sec. 1212, what is the minimum floor area threshold that triggers automatic sprinkler requirements for habitation occupancies?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150 square meters of gross floor area per storey"
+        },
+        {
+          "id": "B",
+          "text": "200 square meters of gross floor area per storey"
+        },
+        {
+          "id": "C",
+          "text": "250 square meters of gross floor area per storey"
+        },
+        {
+          "id": "D",
+          "text": "300 square meters of gross floor area per storey"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 specifies a dual trigger: floor area must be 200 sq.m or more AND occupant load must exceed 20 persons. Both conditions must be met for habitation occupancies.",
+      "explanation": "The 200 sq.m threshold is only half the trigger. The occupant load condition (>20 persons for habitation, >10 for workshops) must also be satisfied. A 250 sq.m space with only 5 occupants would not trigger the sprinkler requirement.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9914853d247d24e4759b124d3fb1270baf4e825b8f9863c0b51ab89d38583f4b"
+    },
+    {
+      "question_id": "345b827f-e13a-4e3d-8807-4072ca0573c0",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building's fire pump must deliver a minimum flow of 1,000 liters per minute. A gravity tank is also being considered as the sole water supply. What is the critical minimum tank capacity requirement that would allow the gravity tank to replace the fire pump?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The gravity tank must hold at least 9,000 liters to supply 10 minutes at pump flow"
+        },
+        {
+          "id": "B",
+          "text": "The gravity tank must supply 1,500 liters per minute for a minimum of 10 minutes"
+        },
+        {
+          "id": "C",
+          "text": "The gravity tank must hold at least 15,000 liters and maintain 2.0 kg/sq.cm at the outlet"
+        },
+        {
+          "id": "D",
+          "text": "The gravity tank must supply 1,000 liters per minute for a minimum of 30 minutes"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 specifies that when a gravity tank serves as the water supply, it must be capable of delivering 1,500 L/min for not less than 10 minutes. This is a higher flow rate than the fire pump minimum (1,000 L/min) to account for gravity supply pressure limitations.",
+      "explanation": "The gravity tank's 1,500 L/min threshold is 50% higher than the fire pump's 1,000 L/min minimum because gravity tanks lack the pressure consistency of active pumps. The 10-minute minimum duration ensures at least initial fire suppression while the fire department responds. A tank sized only for the pump flow rate (1,000 L/min × 10 min = 10,000 L) would be non-compliant; the tank must be sized for 15,000 L minimum.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e4f83a078f228690dfd9904b7d67e78cf097a4692600e99a57c3283e82711d3f"
+    },
+    {
+      "question_id": "f69c9c16-4b85-4b89-af7c-96aaef1d95f1",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "An assembly hall with 600 occupants has its dispersal area located 20 meters from the nearest exit. Does this hall require an automatic sprinkler system under PD 1096?",
+      "options": [
+        {
+          "id": "A",
+          "text": "No, because the dispersal area is less than 30 meters from the exit"
+        },
+        {
+          "id": "B",
+          "text": "Yes, because the occupant load alone exceeds 500 persons"
+        },
+        {
+          "id": "C",
+          "text": "Yes, because both conditions — over 500 occupants and exits over 30 meters from dispersal — must be evaluated independently"
+        },
+        {
+          "id": "D",
+          "text": "No, because assembly halls are exempt from sprinkler requirements under Sec. 1212"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Assembly halls trigger the sprinkler requirement only when BOTH conditions are met: occupant load exceeds 500 AND exits are more than 30m from the dispersal area. With exits only 20m away, the second condition is not satisfied even though the occupant load exceeds 500.",
+      "explanation": "This is a conjunction (AND) condition, not a disjunction (OR). The occupant load threshold alone is insufficient — the physical distance from the dispersal area to the exit must also exceed 30m. When exits are close to the dispersal area, rapid occupant egress makes the sprinkler requirement unnecessary for assembly halls specifically.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:53480e5f639aedd522667676c5e53998ce744e25e05034f73487e6b7cf354e0d"
+    },
+    {
+      "question_id": "32c80363-5733-4575-b815-f698538ff53e",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A roof-level fire standpipe outlet must be fitted with what configuration to allow simultaneous connection of fire department equipment?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A single 63mm gate valve outlet with a pressure gauge"
+        },
+        {
+          "id": "B",
+          "text": "A 2-way 63mm Siamese connection with two gate valves"
+        },
+        {
+          "id": "C",
+          "text": "A single 100mm butterfly valve outlet at roof parapet level"
+        },
+        {
+          "id": "D",
+          "text": "A 3-way 50mm hose connection with individual shut-off valves"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 requires the roof termination of a dry standpipe to have a 2-way Siamese connection with 63mm outlets, enabling helicopter-assisted fire-fighting operations and rooftop cooling water supply.",
+      "explanation": "The 2-way 63mm roof outlet matches the diameter specified for hose connections throughout the dry standpipe system. The dual-outlet Siamese configuration allows two hose lines to be deployed from the roof simultaneously, which is essential for top-down fire attack on upper floors.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cc39333a6d1dfca46f5d7e1009ba3a29a3808001fbbf6f4e69bdc2cf0d35ee33"
+    },
+    {
+      "question_id": "b055aae8-0a73-4377-94a7-8b16f3c5eb6b",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which building condition independently triggers the requirement for a dry standpipe system under PD 1096?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A building whose footprint exceeds 500 square meters on any single floor"
+        },
+        {
+          "id": "B",
+          "text": "A building with four or more storeys above grade"
+        },
+        {
+          "id": "C",
+          "text": "A building with basement parking of more than two levels"
+        },
+        {
+          "id": "D",
+          "text": "A building whose total gross floor area exceeds 1,000 square meters"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Under Sec. 1212, a dry standpipe system is required in any building four storeys or more in height, regardless of floor area or occupancy load.",
+      "explanation": "The four-storey threshold is height-based and stands alone as a trigger. A four-storey 400 sq.m building with few occupants still requires a dry standpipe because manual hose access to upper floors from ground-level fire trucks becomes impractical.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0110a4aca18960d8d15248fcc3bfbbda5ea7bcc658ee22d5be3862c15b1d261e"
+    },
+    {
+      "question_id": "65f7aa10-0c99-4a47-aa61-10d586816e52",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A dry standpipe system must be hydrostatically tested to what pressure before being placed in service?",
+      "options": [
+        {
+          "id": "A",
+          "text": "10 kilograms per square centimeter for 30 minutes"
+        },
+        {
+          "id": "B",
+          "text": "15 kilograms per square centimeter for 15 minutes"
+        },
+        {
+          "id": "C",
+          "text": "20 kilograms per square centimeter for the required duration"
+        },
+        {
+          "id": "D",
+          "text": "25 kilograms per square centimeter for the required duration"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 requires dry standpipe systems to be hydrostatically tested at 20 kg/sq.cm before being declared serviceable for fire-fighting operations.",
+      "explanation": "The 20 kg/sq.cm test pressure is significantly higher than normal operating pressure to ensure the system can withstand surge pressures from fire pump activation. Failure at this test pressure indicates defective pipe joints or fittings.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e48d58f5b3f04a542182261c3294ad28c93cc9b688be40905cb657539cd2dc27"
+    },
+    {
+      "question_id": "ddf15ba1-b238-4aa3-9b06-1074614dab16",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A building is provided with an automatic sprinkler system throughout. By how much does this extend the allowable travel distance to the nearest exit compared to a non-sprinklered building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The travel distance increases from 30 meters to 45 meters"
+        },
+        {
+          "id": "B",
+          "text": "The travel distance increases from 45 meters to 60 meters"
+        },
+        {
+          "id": "C",
+          "text": "The travel distance increases from 60 meters to 75 meters"
+        },
+        {
+          "id": "D",
+          "text": "The travel distance increases from 45 meters to 90 meters"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Under Sec. 1207 read together with Sec. 1212, the allowable travel distance without sprinklers is 45m. Full sprinkler coverage extends this to 60m, a 33% increase reflecting the additional evacuation time sprinklers provide.",
+      "explanation": "Sprinklers allow the 45m→60m travel distance extension because they suppress or control a fire, buying occupants additional safe evacuation time. This trade-off is frequently used in large open-plan offices or shopping centers where placing exits at 45m intervals would be architecturally disruptive.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1207 and Sec. 1212",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0523af21e0c0816852d3dc69edf8537d0fffe0154009110d26533530d954d8dd"
+    },
+    {
+      "question_id": "bb0c7d80-dd92-44be-8708-ca7e73595f90",
+      "article_id": "f61a5716-97a1-41d5-8863-a2fc5fd4115f",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A wet standpipe system's hose outlet must deliver water at what minimum flow rate and pressure combination at the most hydraulically disadvantaged outlet?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150 liters per minute at 1.5 kilograms per square centimeter minimum pressure"
+        },
+        {
+          "id": "B",
+          "text": "190 liters per minute at 2.0 kilograms per square centimeter minimum pressure"
+        },
+        {
+          "id": "C",
+          "text": "250 liters per minute at 2.5 kilograms per square centimeter minimum pressure"
+        },
+        {
+          "id": "D",
+          "text": "300 liters per minute at 3.0 kilograms per square centimeter minimum pressure"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 1212 establishes the wet standpipe performance standard as 190 L/min at a minimum residual pressure of 2.0 kg/sq.cm at the hydraulically most disadvantaged outlet.",
+      "explanation": "The 190 L/min at 2.0 kg/sq.cm represents the minimum acceptable fire-fighting flow at the worst-case outlet (typically the highest floor, farthest from the pump). Systems must be designed to exceed this at all other outlets when this condition is met.",
+      "code_citation": "PD 1096, Rule XII, Sec. 1212",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:52.363437+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:26ef69e4ccaf427d4630cd9ded3b4bad68c5e8afabd765b34c3cd6120a8024af"
+    }
+  ]
+}

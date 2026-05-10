@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+  "dry_question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q02",
+  "target_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "AMTGFA/TGFA abbreviation-control item is useful and not the same as existing TGFA/GFA/AMBF calculation items.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Section 705.1-705.2, PDF p.83.",
+    "text": "A question asks for Allowable Maximum Total Gross Floor Area. Which abbreviation should control the computation?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "TGFA means Total Gross Floor Area. Section 705.1-705.2 governs allowable floor areas and TGFA limitation.",
+      "distractors": {
+        "A": "AMBF is the Section 704.4 building-footprint control, not total gross floor area.",
+        "C": "FSEC is a Fire Safety Evaluation Clearance term, not the Rule VII area metric.",
+        "D": "NPCP is the plumbing code, not the NBCP floor-area control."
+      },
+      "takeaway": "Do not swap Section 705 TGFA and Section 704.4 AMBF; both appear in development-control questions."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "pd1096-tgfa-q2",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "B",
+    "explanation": "PD 1096, 2004 Revised IRR, Rule VII, Section 705.1-705.2, PDF p.83.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "AMBF"
+      },
+      {
+        "id": "B",
+        "text": "TGFA"
+      },
+      {
+        "id": "C",
+        "text": "FSEC"
+      },
+      {
+        "id": "D",
+        "text": "NPCP"
+      }
+    ]
+  },
+  "sme_source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 705.1-705.2, PDF p.83.",
+  "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Section 705.1-705.2, PDF p.83.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

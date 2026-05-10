@@ -1,36 +1,42 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Dsgn 010 01 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 
 ## Learning Goal
 Calculate minimum parking requirements per occupancy type using NBC ratios, identify accessible and compact space allocations, apply parking ratios per PD 1096 (e.g., 1 slot/room for de luxe hotels), and verify compliance for mixed-use projects.
 
-Parking requirements determine the minimum number of vehicle spaces a building must provide based on occupancy type and size. 
+Parking requirements determine the minimum number of vehicle spaces a building must provide based on occupancy type and size.
 
 ## Core Concept
 
 Parking demand scales with building use. The National Building Code (NBC) prescribes minimum ratios—expressed as spaces per unit, per square meter of floor area, or per occupancy measure—that reflect typical peak demand. These ratios balance operational feasibility against public policy, such as reducing on-street parking pressure.
 
 The primary calculation formula is:
-<FormulaBlock
-  label="Parking Calculation — Mixed-Use NBC Method"
-  steps={[
-    { variable: "Total Slots", operator: "=", operands: ["Σ(Use Type ÷ Ratio)", "Accessible Spaces"] },
-    { variable: "Office", operator: "=", operands: ["800 m²", "125 m²/slot"], comment: "6.4 → 7 slots" },
-    { variable: "Restaurant", operator: "=", operands: ["200 m² dining", "30 m²/slot"], comment: "6.7 → 7 slots" },
-  ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0001 component="FormulaBlock" status="preserved"]
+Extracted summary:
+- Props: label="Parking Calculation — Mixed-Use NBC Method", steps="{[\n    { variable: \"Total Slots\", operator: \"=\", operands: [\"Σ(Use Type ÷ Ratio)\", \"Accessible Spaces\"] }", variable=true, Office=true, operator=true, operands=true, m=true, slot=true, comment=true, slots=true, Restaurant=true, dining=true
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 
 
 A proposed building contains:
 
-- **Office space:** 800 m² GFA 
-- **Restaurant (dining area):** 200 m² of dining space 
+- **Office space:** 800 m² GFA
+- **Restaurant (dining area):** 200 m² of dining space
 
-**Step 1: Apply NBC Ratios (PD 1096 Rule XIX, Section 1903)** 
+**Step 1: Apply NBC Ratios (PD 1096 Rule XIX, Section 1903)**
 
-- **Office:** 800 m² ÷ 125 m²/slot = **6.4 → 7 slots** 
-- **Restaurant dining:** 200 m² ÷ 30 m²/slot = **6.67 → 7 slots** 
-- **Subtotal = 14 slots** 
+- **Office:** 800 m² ÷ 125 m²/slot = **6.4 → 7 slots**
+- **Restaurant dining:** 200 m² ÷ 30 m²/slot = **6.67 → 7 slots**
+- **Subtotal = 14 slots**
 
 **Step 2: Add Accessible Parking (BP 344 & Rule XIX)**
 
@@ -101,8 +107,16 @@ An office building requires only 48 slots by GFA. How many accessible spaces are
 - Answer: **2 slots**. Even though 1% of 48 is 0.48, the law mandates a minimum of 2.
 
 **Exam Tip — ERR-DSGN-013:** Parking minimums are per PD 1096 Rule XVIII and local zoning ordinances, not the same nationwide. Accessible stalls must be provided at a minimum of 1 per 50 standard stalls (BP 344).
-<ArticleMedia id="media-lea-dsgn-010-01-core-concept" type="image" caption="Parking Lot Layout — 90°, 60°, and Parallel Parking Configurations" alt="Plan diagrams comparing parking configurations: 90° (standard, high density, 2.5m × 5.0m), 60° (angled, narrower aisle), and parallel (curbside). Minimum aisle widths for each angle, accessible stall dimensions (3.7m × 5.0m), and compact car stall allowances labeled." suggestedAsset="Diagram or reference image" status="placeholder" />
-<ArticleMedia id="media-lea-dsgn-010-01-core-concept" type="image" caption="Parking Ratio Reference — NBC Minimum Parking Requirements by Occupancy" alt="Reference infographic showing minimum parking ratios per PD 1096 Section 803: residential (1 slot/unit), hotel de luxe (1 slot/room), office (1 slot/100 sqm), retail (1 slot/50 sqm), assembly (1 slot/10 seats). Accessible parking allocation (1 per 50, min. 1 at 3.7m × 5.0m) and compact stall dimensions noted." suggestedAsset="Diagram or reference image" status="placeholder" />
+[SLATECAMP_UI_BLOCK:ui_0002 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-010-01-core-concept", type="image", caption="Parking Lot Layout — 90°, 60°, and Parallel Parking Configurations", alt="Plan diagrams comparing parking configurations: 90° (standard, high density, 2.5m × 5.0m), 60° (angled, narrower aisle), and parallel (curbside). Minimum aisle widths for each angle, accessible stall dimensions (3.7m × 5.0m), and compact car stall allowances labeled.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-lea-dsgn-010-01-core-concept", type="image", caption="Parking Ratio Reference — NBC Minimum Parking Requirements by Occupancy", alt="Reference infographic showing minimum parking ratios per PD 1096 Section 803: residential (1 slot/unit), hotel de luxe (1 slot/room), office (1 slot/100 sqm), retail (1 slot/50 sqm), assembly (1 slot/10 seats). Accessible parking allocation (1 per 50, min. 1 at 3.7m × 5.0m) and compact stall dimensions noted.", suggestedAsset="Diagram or reference image", status="placeholder"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Cross-References
 
@@ -110,13 +124,8 @@ See **LEA-DSGN-010-02** (Parking Geometry) for stall and aisle dimensions, **LEA
 
 ## Common Mistakes
 
-<WikiMistakeList
- mistakes={[
- 'Using Rule VII or VIII for parking (Correct: Rule XIX).',
- 'ERR-DSGN-027: Using 1/100 sqm for Office instead of 1/125 sqm.',
- 'ERR-DSGN-025: Using 2.0m width for standard stalls instead of 2.5m.',
- 'Applying 1% for accessibility without enforcing the minimum 2 slots rule.',
- 'Applying restaurant ratios to the total building area instead of just the dining area.',
- 'Using 1/200 sqm for Warehouse parking (Correct: 1/1,000 sqm GFA).',
- ]}
-/>
+[SLATECAMP_UI_BLOCK:ui_0004 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: mistakes="{[\n 'Using Rule VII or VIII for parking (Correct: Rule XIX).',\n 'ERR-DSGN-027: Using 1/100 sqm for Office instead of 1/125 sqm.',\n 'ERR-DSGN-025: Using 2.0m width for standard stalls instead of 2.5m.',\n 'Applying 1% for accessibility without enforcing the minimum 2 slots rule.',\n 'Applying restaurant ratios to the total building area instead of just the dining area.',\n 'Using 1/200 sqm for Warehouse parking (Correct: 1/1,000 sqm GFA).',\n ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]

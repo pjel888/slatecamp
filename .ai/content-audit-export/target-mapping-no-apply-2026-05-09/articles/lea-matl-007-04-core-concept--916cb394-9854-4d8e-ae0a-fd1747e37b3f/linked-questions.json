@@ -1,0 +1,508 @@
+{
+  "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:44a2fd0aab2205af1f522ea0002f1eb387ce39e95e245ef27da7655ad903dae9",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2cf1eed7-790f-4002-8d93-d6879f5fad7d",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "What is the VOC limit for interior latex paint per EPA and ASTM standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) <100 g/L, which is the standard for low-VOC paints in most residential applications"
+        },
+        {
+          "id": "b",
+          "text": "B) <200 g/L, typically used for commercial-grade paints where higher durability is required"
+        },
+        {
+          "id": "c",
+          "text": "A) <100 g/L or B) <200 g/L (depending on specific standard; federal flat limit 250 g/L)"
+        },
+        {
+          "id": "d",
+          "text": "D) <500 g/L, generally considered too high for most indoor environments due to health concerns"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "<100 g/L is ultra-low VOC; rare and cost-prohibitive.",
+        "b": "<200 g/L is achievable but not standard; 300 is the recognized threshold.",
+        "d": "<500 g/L is for oil enamels and high-VOC products.",
+        "correct": "<250 g/L per EPA federal limit for flat architectural coatings (40 CFR Part 59). Low-VOC typically <50 g/L per industry/Green Seal. This balances indoor air quality with paint performance.",
+        "takeaway": "Interior latex = <300 g/L. Oil enamel = 300-650 g/L (high VOC). Know the difference for occupied vs. exterior applications."
+      },
+      "explanation": "<100 g/L is ultra-low VOC; rare and cost-prohibitive. <200 g/L is achievable but not standard; 300 is the recognized threshold. <500 g/L is for oil enamels and high-VOC products. <250 g/L per EPA federal limit for flat architectural coatings (40 CFR Part 59). Low-VOC typically <50 g/L per industry/Green Seal. This balances indoor air quality with paint performance. Interior latex = <300 g/L. Oil enamel = 300-650 g/L (high VOC). Know the difference for occupied vs. exterior applications.",
+      "code_citation": "ASTM D3960 VOC Measurement; EPA guidelines",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T13:14:19.115159+00:00",
+      "content_hash": "sha256:1f011de749c71b5202449a507b6515da13560ead361892ece6b0130d2bf8a14a"
+    },
+    {
+      "question_id": "57faa581-99fa-4ba9-a995-6a61c1c2ad68",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "A steel column in a coastal high-rise (salt-air environment) requires paint. Which primer should be specified for corrosion resistance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Latex primer, which is generally used for interior applications and not recommended for high-salt environments"
+        },
+        {
+          "id": "b",
+          "text": "B) Oil-based enamel primer, suitable for moderate conditions but not ideal for high-salt exposure"
+        },
+        {
+          "id": "c",
+          "text": "C) Epoxy or rust-inhibiting primer"
+        },
+        {
+          "id": "d",
+          "text": "D) Standard universal primer, which provides basic protection but may not withstand harsh coastal conditions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Latex primer lacks salt-spray durability.",
+        "b": "Oil-based enamel primer is acceptable but epoxy is superior.",
+        "d": "Universal primer is general-purpose; insufficient for coastal corrosion.",
+        "correct": "Epoxy or specialized rust-inhibiting primer provides superior corrosion protection in salt-air/marine environments. Latex or standard primers offer insufficient salt-spray resistance per ASTM B117.",
+        "takeaway": "Coastal/marine = epoxy or rust-inhibiting primer mandatory. Freshwater/sheltered = standard primer acceptable. Match primer to environmental exposure."
+      },
+      "explanation": "Latex primer lacks salt-spray durability. Oil-based enamel primer is acceptable but epoxy is superior. Universal primer is general-purpose; insufficient for coastal corrosion. Epoxy or specialized rust-inhibiting primer provides superior corrosion protection in salt-air/marine environments. Latex or standard primers offer insufficient salt-spray resistance per ASTM B117. Coastal/marine = epoxy or rust-inhibiting primer mandatory. Freshwater/sheltered = standard primer acceptable. Match primer to environmental exposure.",
+      "code_citation": "ASTM B117 (salt-spray testing); corrosion-resistant paint systems",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T13:14:19.250897+00:00",
+      "content_hash": "sha256:2e88f0662a0c479e5b03aa1bca95815c4e4cfa149e27a1a69d86421cf340fddb"
+    },
+    {
+      "question_id": "13b9b3e9-3eb1-4eab-819e-a1a66131cd6e",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "What type of primer is typically specified for drywall surface preparation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Oil-based enamel primer, which is generally used for surfaces requiring a hard, durable finish"
+        },
+        {
+          "id": "b",
+          "text": "B) Epoxy primer, often specified for metal surfaces due to its excellent adhesion and corrosion resistance"
+        },
+        {
+          "id": "c",
+          "text": "C) Latex or universal primer"
+        },
+        {
+          "id": "d",
+          "text": "D) Intumescent primer, primarily used for fireproofing applications on structural steel"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Oil-based primer has higher VOC; acceptable but not standard for drywall.",
+        "b": "Epoxy is for metal in corrosive environments.",
+        "d": "Intumescent is for structural fire protection.",
+        "correct": "Latex or universal primer is standard for drywall. It seals the porous substrate and promotes topcoat adhesion without the VOC and recoat-time issues of oil primers.",
+        "takeaway": "Drywall = latex/universal primer. Metal = epoxy or rust-inhibiting. Fire protection = intumescent. Match primer to substrate."
+      },
+      "explanation": "Oil-based primer has higher VOC; acceptable but not standard for drywall. Epoxy is for metal in corrosive environments. Intumescent is for structural fire protection. Latex or universal primer is standard for drywall. It seals the porous substrate and promotes topcoat adhesion without the VOC and recoat-time issues of oil primers. Drywall = latex/universal primer. Metal = epoxy or rust-inhibiting. Fire protection = intumescent. Match primer to substrate.",
+      "code_citation": "ASTM D3276; paint system design",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T13:14:18.736963+00:00",
+      "content_hash": "sha256:92960bd69ea0ee420620e98e26c44d353e54165a214b9777a125ef6c790921db"
+    },
+    {
+      "question_id": "505dbdd9-66bd-4247-a4e6-0d3b256bbc25",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "What is the typical recoat time for interior latex paint at standard conditions (23°C, <50% RH)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 30 minutes"
+        },
+        {
+          "id": "b",
+          "text": "B) 1-2 hours"
+        },
+        {
+          "id": "c",
+          "text": "C) 2-4 hours"
+        },
+        {
+          "id": "d",
+          "text": "D) 16-24 hours"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "30 minutes is too fast; paint is not fully cured.",
+        "b": "1-2 hours is possible in ideal conditions but 2-4 hours is safer standard.",
+        "d": "16-24 hours is oil-based enamel recoat time.",
+        "correct": "Latex paint recoat time is 2-4 hours at standard conditions (23°C, <50% RH). This is one of latex's advantages over oil enamel.",
+        "takeaway": "Latex = fast (2-4 hrs). Oil enamel = slow (16-24 hrs). Budget schedule accordingly. High humidity/temperature extends times."
+      },
+      "explanation": "30 minutes is too fast; paint is not fully cured. 1-2 hours is possible in ideal conditions but 2-4 hours is safer standard. 16-24 hours is oil-based enamel recoat time. Latex paint recoat time is 2-4 hours at standard conditions (23°C, <50% RH). This is one of latex's advantages over oil enamel. Latex = fast (2-4 hrs). Oil enamel = slow (16-24 hrs). Budget schedule accordingly. High humidity/temperature extends times.",
+      "code_citation": "Paint manufacturer specifications; standard application conditions",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T13:14:18.860002+00:00",
+      "content_hash": "sha256:9e112946451df05aa2d6b0cd26957bd2a89800cde536dfdaba7fce8cadb57006"
+    },
+    {
+      "question_id": "80b07487-5a8d-4a9e-a44d-90e20589ce9e",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "What is the typical spreading rate (coverage) for interior latex paint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 4-6 m²/L"
+        },
+        {
+          "id": "b",
+          "text": "B) 8-12 m²/L"
+        },
+        {
+          "id": "c",
+          "text": "C) 15-20 m²/L"
+        },
+        {
+          "id": "d",
+          "text": "D) 25-30 m²/L"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "4-6 m²/L indicates thick/poor coverage; exceeds specifications.",
+        "c": "15-20 m²/L is optimistic; indicates under-application.",
+        "d": "25-30 m²/L is unrealistic.",
+        "correct": "8-12 m²/L is standard coverage for interior latex paint. This determines volume needed and project cost. Varies by surface texture and paint quality.",
+        "takeaway": "Calculate paint volume: (area in m² / coverage in m²/L) × number of coats. Budget contingency for waste."
+      },
+      "explanation": null,
+      "code_citation": "Manufacturer paint specifications; industry standard",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f32cfc7ba8771338d7cd21a51cd0b82b29ecc90248cf280db01f37cd637adfe3"
+    },
+    {
+      "question_id": "57ddd270-7dde-43ef-be87-99b05738d44d",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "A wood wall is to be stained with opaque stain. What surface preparation and primer strategy is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Sand with 80-grit; apply stain directly, ensuring even coverage and absorption"
+        },
+        {
+          "id": "b",
+          "text": "B) Sand with 120-150 grit to open grain; apply stain without primer, as the wood's natural oils will suffice"
+        },
+        {
+          "id": "c",
+          "text": "C) Sand with 120-150 grit; apply stain-blocking primer first to prevent tannin bleed-through, then stain"
+        },
+        {
+          "id": "d",
+          "text": "D) No sanding required; apply stain to as-delivered wood, which may result in uneven finish"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "80-grit is too coarse; leaves scratches.",
+        "b": "No primer allows tannins to bleed, causing yellowing/browning through stain.",
+        "d": "As-delivered wood has surface contaminants; requires sanding.",
+        "correct": "Sand to 120-150 grit to open grain and remove contaminants. Apply stain-blocking primer (shellac or latex) to prevent tannins (natural wood color-bleeders) from migrating through stain, causing discoloration. Then apply stain. Proper sequence prevents color failure.",
+        "takeaway": "Wood stain sequence: sand → primer (stain-blocker) → stain. Skipping primer = tannin bleed and color failure."
+      },
+      "explanation": "80-grit is too coarse; leaves scratches. No primer allows tannins to bleed, causing yellowing/browning through stain. As-delivered wood has surface contaminants; requires sanding. Sand to 120-150 grit to open grain and remove contaminants. Apply stain-blocking primer (shellac or latex) to prevent tannins (natural wood color-bleeders) from migrating through stain, causing discoloration. Then apply stain. Proper sequence prevents color failure. Wood stain sequence: sand → primer (stain-blocker) → stain. Skipping primer = tannin bleed and color failure.",
+      "code_citation": "Wood finishing standards; ASTM D3276",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T13:14:18.993597+00:00",
+      "content_hash": "sha256:1c7b8170fcf03efb205fd1fd0e9e49dd59f623e74cd90c88f5f53ee4ba14a6bf"
+    },
+    {
+      "question_id": "459f76fa-0eff-4f4f-95ff-0350dae9a802",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "Why is intumescent paint required for structural steel in high-rise buildings, and what distinguishes it from standard fire-rated paint?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Intumescent paint is cheaper; standard paint is adequate for fire safety in all structural steel applications including high-rise buildings"
+        },
+        {
+          "id": "b",
+          "text": "B) Intumescent paint expands when heated, protecting steel from temperature rise; standard paint offers only surface fire rating, not structural protection"
+        },
+        {
+          "id": "c",
+          "text": "C) Both provide identical protection; choice depends on aesthetic preference and the architect's specification for surface finish quality"
+        },
+        {
+          "id": "d",
+          "text": "D) Intumescent paint is only for exterior structures exposed to weather and does not apply to interior structural steel members"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Intumescent is more expensive; cost is not the driver.",
+        "c": "They provide different protection levels; aesthetics do not determine choice.",
+        "d": "Intumescent is mandatory for interior structural steel in high-rises per PBCode.",
+        "correct": "Intumescent paint expands at elevated temperatures, creating an insulating barrier that slows heat transfer to steel, maintaining structural strength during fire. Standard paint (Class A fire-rated) only controls surface flame spread and smoke; it does not protect steel integrity. These are two different requirements.",
+        "takeaway": "Structural fire rating (steel) = intumescent paint per ASTM E119, verified by testing. Surface fire rating (finishing) = Class A paint. Specify both separately; clarify requirement with fire engineer."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Rule X / RA 9514 2019 IRR (structural fire protection); ASTM E119",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3bdbda9896c0bddc7289635c9794bc2f0311468d0fb8ed6aba2af020884b89a2"
+    },
+    {
+      "question_id": "bdec829a-7639-4e67-8d3b-15cb5144479b",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "Specify a complete paint system for a 15-story office building in coastal Cebu including structural steel columns, drywall interior walls, and accessible exterior ramp (BP 344 compliance). Address: (1) steel corrosion, (2) interior VOC, (3) slip resistance on ramp.",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Standard latex throughout for cost efficiency, ignoring specific environmental challenges"
+        },
+        {
+          "id": "b",
+          "text": "B) Steel: epoxy rust-inhibiting primer + enamel topcoat for salt-spray resistance; interior walls: low-VOC latex (<300 g/L) + fungicide primer for humidity; ramp: anti-slip paint (150-250µm DFT with silica aggregate, COF tested per ANSI A137.1 or NBC Rule VIII)"
+        },
+        {
+          "id": "c",
+          "text": "C) Oil enamel throughout for durability, without addressing VOC or slip resistance"
+        },
+        {
+          "id": "d",
+          "text": "D) Latex primer/topcoat for all surfaces; no specialized ramp treatment, which may not meet BP 344 requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Standard latex lacks coastal steel corrosion protection and ramp slip resistance.",
+        "c": "Oil enamel is high-VOC and inappropriate for interior occupied spaces.",
+        "d": "No specialized ramp treatment violates accessibility/safety requirements (COF per ANSI A137.1 or NBC Rule VIII).",
+        "correct": "Option B addresses each requirement: epoxy primer protects coastal steel from salt-spray corrosion (ASTM B117); low-VOC latex interior paint meets occupant IAQ and tropical humidity needs; anti-slip paint with measured DFT and COF testing ensures ramp safety compliance under NBC Rule VIII and accessibility requirements. This three-part system is cost-effective and code-compliant.",
+        "takeaway": "Specify paint systems by exposure/occupancy: coastal corrosion = epoxy, interior occupied = low-VOC, accessible paths = anti-slip with verification. One paint type does not fit all applications."
+      },
+      "explanation": null,
+      "code_citation": "Integrated paint specification; ASTM B117, EPA VOC guidelines, NBC Rule VIII, ANSI A137.1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b68ab32639bc95ba604ca9b65bddde301cc1caa702b0740676765b168703bd19"
+    },
+    {
+      "question_id": "f8ac3693-3320-4498-a348-18b0208bf945",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "An interior occupied office building requires 5000 m² of wall painting at 2 coats. Latex paint coverage is 10 m²/L. How many liters are needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 500L"
+        },
+        {
+          "id": "b",
+          "text": "B) 750L"
+        },
+        {
+          "id": "c",
+          "text": "C) 1000L"
+        },
+        {
+          "id": "d",
+          "text": "D) 1500L"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "500L is one coat only.",
+        "b": "750L is incorrect intermediate.",
+        "d": "1500L indicates overstocking or error.",
+        "correct": "(5000 m² × 2 coats) / 10 m²/L = 1000L. This calculation determines project cost, supplier volume, and logistics.",
+        "takeaway": "Volume = (total area × coats) / coverage. Budget 5-10% contingency for waste. Pricing and scheduling depend on accuracy."
+      },
+      "explanation": null,
+      "code_citation": "Paint volume calculation",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:03fe13444fc82425a8592142d48a1ae9a7f2d2a96b3a714ebe4aed106f4fa53d"
+    },
+    {
+      "question_id": "888958aa-5c04-4f46-a222-474c6b965767",
+      "article_id": "916cb394-9854-4d8e-ae0a-fd1747e37b3f",
+      "topic_id": "c9186b88-5bb1-4627-9117-44c3d6b8c931",
+      "text": "Specify paint for a modern high-rise office in Metro Manila with high occupancy. Environmental constraints include indoor air quality (IAQ) and tropical heat. Which paint system is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) High-VOC oil enamel for durability, despite its negative impact on indoor air quality and longer drying times."
+        },
+        {
+          "id": "b",
+          "text": "B) Low-VOC latex acrylic paint (<300 g/L), rapid recoat (2-4 hrs) for schedule efficiency, low odor for occupied building"
+        },
+        {
+          "id": "c",
+          "text": "C) Intumescent paint throughout for fire safety, although it is typically used only in specific areas requiring fire resistance."
+        },
+        {
+          "id": "d",
+          "text": "D) Standard mineral latex with fungicide primer for humidity, which may not address all IAQ concerns in high-occupancy settings."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "High-VOC oil creates occupant complaints and IAQ violations in occupied building.",
+        "c": "Intumescent is not for aesthetic finishing; reserved for structural protection.",
+        "d": "Fungicide addresses mold risk (good practice) but paint type is the primary decision.",
+        "correct": "Low-VOC latex acrylic (<300 g/L per ASTM D3960) balances occupant health, schedule efficiency (rapid recoat), and acceptable durability for interior. Boysen Permacoat or Davies low-VOC latex are appropriate. High-VOC oil would degrade IAQ in occupied building; intumescent is for structural steel only; fungicide primer addresses humidity separately.",
+        "takeaway": "Interior occupied = low-VOC latex. Exterior exposed = oil enamel or high-performance latex. Match paint type to environment and occupancy."
+      },
+      "explanation": null,
+      "code_citation": "EPA IAQ guidelines; architectural paint standards",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-04-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3655d644f97d29698777a48d3284339f2ebcaeef20cfcefcf298c6ec65f835d2"
+    }
+  ]
+}

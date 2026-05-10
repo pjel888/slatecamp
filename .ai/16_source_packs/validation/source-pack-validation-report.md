@@ -3,7 +3,7 @@
 Result: PASS
 
 Source packs: 7
-Chunks: 12
+Chunks: 14
 
 - PASS: index_exists
 - PASS: packs_present
@@ -100,6 +100,12 @@ Chunks: 12
 - PASS: source-pack-pd-1096-irr-chunk-0002_chunk_hash_recomputes
 - PASS: source-pack-pd-1096-irr-chunk-0002_no_dupe
 - PASS: source-pack-pd-1096-irr-chunk-0002_not_article
+- PASS: source-pack-pd-1096-irr-chunk-0003_has_hashes
+- PASS: source-pack-pd-1096-irr-chunk-0003_text_non_empty
+- PASS: source-pack-pd-1096-irr-chunk-0003_text_hash_recomputes
+- PASS: source-pack-pd-1096-irr-chunk-0003_chunk_hash_recomputes
+- PASS: source-pack-pd-1096-irr-chunk-0003_no_dupe
+- PASS: source-pack-pd-1096-irr-chunk-0003_not_article
 - PASS: source-pack-ra-9514-rirr_has_id
 - PASS: source-pack-ra-9514-rirr_has_hash
 - PASS: source-pack-ra-9514-rirr_has_approval
@@ -121,6 +127,12 @@ Chunks: 12
 - PASS: source-pack-ra-9514-rirr-chunk-0002_chunk_hash_recomputes
 - PASS: source-pack-ra-9514-rirr-chunk-0002_no_dupe
 - PASS: source-pack-ra-9514-rirr-chunk-0002_not_article
+- PASS: source-pack-ra-9514-rirr-chunk-0003_has_hashes
+- PASS: source-pack-ra-9514-rirr-chunk-0003_text_non_empty
+- PASS: source-pack-ra-9514-rirr-chunk-0003_text_hash_recomputes
+- PASS: source-pack-ra-9514-rirr-chunk-0003_chunk_hash_recomputes
+- PASS: source-pack-ra-9514-rirr-chunk-0003_no_dupe
+- PASS: source-pack-ra-9514-rirr-chunk-0003_not_article
 - PASS: source-pack-ra-9266-irr_has_id
 - PASS: source-pack-ra-9266-irr_has_hash
 - PASS: source-pack-ra-9266-irr_has_approval

@@ -1,0 +1,456 @@
+---
+name: slatecamp-3d-performance-engineer
+description: >
+  SlateCamp's 3D Performance Engineer — R3F optimization for 60fps on mid-range Android.
+  Activate for: draw call reduction, GLB/Draco/KTX2 compression, gltf-transform pipeline,
+  texture optimization, memory management, disposal patterns, instancing, LOD, on-demand
+  rendering (frameloop="demand"), WebGPU fallback, mobile GPU profiling, stats-gl,
+  renderer.info, bundle splitting, lazy loading models, PerformanceMonitor adaptive DPR.
+  Trigger on: "slow 3D", "fps drop", "draw calls", "GLB compression", "memory leak",
+  "dispose", "optimize scene", "polygon count", "mobile 3D", "asset pipeline".
+---
+
+# SlateCamp — 3D Performance Engineering Guide
+
+## The Performance Mandate
+
+SlateCamp's median user is on a mid-range Android phone (Realme/Samsung A series) with 4G
+connection, 4-6GB RAM, and a mobile GPU. The 3D Lab must hit these targets or students
+will abandon it:
+
+| Metric | Target | Hard Fail |
+|---|---|---|
+| First meaningful render | < 3s on 4G | > 5s |
+| Sustained FPS | 60fps laptop / 30fps mobile | < 20fps |
+| GLB file size (per module) | < 2MB ideal | > 5MB |
+| Triangle count (per module) | < 30K ideal | > 50K |
+| GPU draw calls per frame | < 50 ideal | > 100 |
+| Texture VRAM per module | < 16MB | > 32MB |
+| JS heap during 3D session | < 100MB | > 200MB |
+| Time to interactive | < 4s | > 6s |
+
+**The governing rule:** If a student's phone can't run it smoothly, the module doesn't ship.
+
+---
+
+## The R3F Performance Model
+
+React Three Fiber adds React's reconciliation on top of Three.js. This creates specific
+performance pitfalls that pure Three.js doesn't have.
+
+### Rule 1: Mutations in useFrame, Never in State
+
+```tsx
+// ❌ CATASTROPHIC — triggers React re-render 60x/second
+const [rotation, setRotation] = useState(0)
+useFrame(() => setRotation(r => r + 0.01))
+
+// ✅ CORRECT — direct mutation, zero React overhead
+const meshRef = useRef<THREE.Mesh>(null)
+useFrame((_, delta) => {
+  if (meshRef.current) {
+    meshRef.current.rotation.y += delta * 0.5
+  }
+})
+```
+
+Any value that changes every frame (position, rotation, scale, opacity, color, uniform)
+must be mutated via refs, never via useState/setState.
+
+### Rule 2: On-Demand Rendering for Static Scenes
+
+Most 3D Lab modules are interactive but NOT continuously animated. Use `frameloop="demand"`:
+
+```tsx
+<Canvas
+  frameloop="demand"
+  camera={{ position: [3, 2, 5], fov: 45 }}
+>
+```
+
+When the user interacts (orbit, slider change), trigger a re-render:
+
+```tsx
+import { useThree } from '@react-three/fiber'
+
+function ParametricModel({ riseHeight }: { riseHeight: number }) {
+  const invalidate = useThree(state => state.invalidate)
+
+  useEffect(() => {
+    invalidate() // re-render when parameter changes
+  }, [riseHeight, invalidate])
+
+  return <mesh>...</mesh>
+}
+```
+
+**Impact:** Idle GPU usage drops from 100% to ~0%. Battery drain eliminated when not interacting.
+
+### Rule 3: Object Reuse — Never Allocate in useFrame
+
+```tsx
+// ❌ Creates garbage every frame — GC stutter
+useFrame(() => {
+  mesh.position.copy(new THREE.Vector3(1, 2, 3))
+  mesh.lookAt(new THREE.Vector3(0, 0, 0))
+})
+
+// ✅ Allocate once, reuse forever
+const targetPos = useMemo(() => new THREE.Vector3(1, 2, 3), [])
+const lookTarget = useMemo(() => new THREE.Vector3(0, 0, 0), [])
+
+useFrame(() => {
+  mesh.position.copy(targetPos)
+  mesh.lookAt(lookTarget)
+})
+```
+
+This applies to Vector3, Quaternion, Matrix4, Color, Box3, Raycaster — anything
+constructed with `new`.
+
+### Rule 4: Avoid Re-renders from Parent Components
+
+```tsx
+// ❌ SliderPanel re-renders → Canvas re-renders → entire scene re-renders
+function LabModule() {
+  const [rise, setRise] = useState(0.18)
+  return (
+    <div>
+      <SliderPanel value={rise} onChange={setRise} />
+      <Canvas>
+        <StairwayModel rise={rise} />
+      </Canvas>
+    </div>
+  )
+}
+
+// ✅ Decouple with Zustand — Canvas never re-renders from slider
+// stores/useLabStore.ts
+export const useLabStore = create<LabState>((set) => ({
+  rise: 0.18,
+  setRise: (v: number) => set({ rise: v }),
+}))
+
+// Inside Canvas — subscribe with selector, only re-renders when rise changes
+function StairwayModel() {
+  const rise = useLabStore(s => s.rise)
+  const invalidate = useThree(s => s.invalidate)
+  useEffect(() => invalidate(), [rise, invalidate])
+  // ... build geometry from rise
+}
+```
+
+---
+
+## GLB Asset Pipeline
+
+### Optimization Workflow
+
+Every GLB goes through this pipeline before shipping:
+
+```
+Blender Export → gltf-transform optimize → Size audit → Supabase upload
+```
+
+### gltf-transform Commands (Production Pipeline)
+
+```bash
+# Install globally
+npm install -g @gltf-transform/cli
+
+# Full optimization pipeline for SlateCamp modules
+gltf-transform optimize input.glb output.glb \
+  --compress draco \
+  --texture-compress webp \
+  --texture-resize 1024
+
+# For modules with no textures (parametric geometry only)
+gltf-transform optimize input.glb output.glb \
+  --compress draco
+
+# Nuclear option — maximum compression for large models
+gltf-transform optimize input.glb output.glb \
+  --compress draco \
+  --texture-compress ktx2 \
+  --texture-resize 512 \
+  --simplify --simplify-ratio 0.5
+```
+
+### Compression Decision Matrix
+
+| Model Type | Geometry Compression | Texture Format | Texture Size |
+|---|---|---|---|
+| Parametric (generated) | None (already minimal) | None | N/A |
+| Architectural detail | Draco | WebP | 1024×1024 |
+| Complex assembly | Draco | KTX2 (UASTC) | 512×512 |
+| Historical building | Draco | WebP | 1024×1024 |
+
+### Draco Decoder Setup for R3F
+
+```tsx
+import { useGLTF } from '@react-three/drei'
+
+// Set decoder path once at app level (in layout or provider)
+useGLTF.setDecoderPath('/draco/')
+
+// Copy decoder files to public/draco/:
+// draco_decoder.wasm
+// draco_wasm_wrapper.js
+// draco_decoder.js
+```
+
+### KTX2 Decoder Setup
+
+```tsx
+import { useGLTF, useKTX2 } from '@react-three/drei'
+
+// For models with KTX2 textures, drei handles decoding automatically
+// Ensure basis_transcoder files are in public/basis/:
+// basis_transcoder.wasm
+// basis_transcoder.js
+```
+
+---
+
+## Draw Call Reduction
+
+Every mesh = 1 draw call. Target: < 50 per frame.
+
+### Technique 1: Geometry Merging in Blender
+
+Before export, select all static meshes → Join (Ctrl+J). One mesh = one draw call.
+Only separate meshes that need independent interaction (clickable parts, animated parts).
+
+### Technique 2: Instancing for Repeated Elements
+
+```tsx
+import { Instances, Instance } from '@react-three/drei'
+
+function StairSteps({ count, rise, run }: StepProps) {
+  return (
+    <Instances limit={count}>
+      <boxGeometry args={[run, rise, 1.2]} />
+      <meshStandardMaterial color="#E8E8E8" />
+      {Array.from({ length: count }, (_, i) => (
+        <Instance
+          key={i}
+          position={[i * run, (i + 0.5) * rise, 0]}
+        />
+      ))}
+    </Instances>
+  )
+}
+// 20 steps = 1 draw call instead of 20
+```
+
+### Technique 3: LOD (Level of Detail)
+
+```tsx
+import { Detailed } from '@react-three/drei'
+
+function ArchitecturalModel() {
+  return (
+    <Detailed distances={[0, 15, 30]}>
+      <HighPolyModel />   {/* Close: full detail */}
+      <MedPolyModel />    {/* Medium: simplified */}
+      <LowPolyModel />    {/* Far: box proxy */}
+    </Detailed>
+  )
+}
+```
+
+For SlateCamp 3D Lab modules (single-model focus), LOD is rarely needed.
+Use it only for scene-level modules like Floor Plan Egress.
+
+---
+
+## Memory Management
+
+### Mandatory Disposal Pattern
+
+Every component that loads a GLB or creates geometry MUST dispose on unmount:
+
+```tsx
+useEffect(() => {
+  return () => {
+    scene.traverse((child) => {
+      if ((child as THREE.Mesh).isMesh) {
+        const mesh = child as THREE.Mesh
+        mesh.geometry.dispose()
+        if (Array.isArray(mesh.material)) {
+          mesh.material.forEach(m => {
+            disposeTextures(m)
+            m.dispose()
+          })
+        } else {
+          disposeTextures(mesh.material)
+          mesh.material.dispose()
+        }
+      }
+    })
+  }
+}, [scene])
+
+function disposeTextures(material: THREE.Material) {
+  const mat = material as THREE.MeshStandardMaterial
+  mat.map?.dispose()
+  mat.normalMap?.dispose()
+  mat.roughnessMap?.dispose()
+  mat.metalnessMap?.dispose()
+  mat.aoMap?.dispose()
+  mat.emissiveMap?.dispose()
+}
+```
+
+### useGLTF Cleanup
+
+drei's `useGLTF` caches models. To clear cache when navigating away:
+
+```tsx
+useEffect(() => {
+  return () => {
+    useGLTF.clear()  // Clear all cached models
+    // Or clear specific: useGLTF.clear('/models/stairway.glb')
+  }
+}, [])
+```
+
+---
+
+## Profiling Toolkit
+
+### In-Development Profiling
+
+```tsx
+// Add to Canvas during development — REMOVE before production
+import { Perf } from 'r3f-perf'
+
+<Canvas>
+  {process.env.NODE_ENV === 'development' && <Perf position="top-left" />}
+  {/* ... scene */}
+</Canvas>
+```
+
+`r3f-perf` shows: FPS, draw calls, triangles, textures, shaders, GPU time.
+
+### Programmatic Monitoring
+
+```tsx
+function PerformanceGuard() {
+  const { gl } = useThree()
+
+  useFrame(() => {
+    const info = gl.info.render
+    if (info.calls > 100) {
+      console.warn(`Draw calls: ${info.calls} — exceeds budget of 100`)
+    }
+    if (info.triangles > 100000) {
+      console.warn(`Triangles: ${info.triangles} — exceeds budget`)
+    }
+  })
+
+  return null
+}
+```
+
+### Performance Audit Checklist
+
+Before any 3D module ships:
+
+```
+ASSET SIZE
+[ ] GLB file < 2MB (< 5MB absolute max)
+[ ] Textures ≤ 1024×1024
+[ ] Total module JS bundle < 200KB (excluding Three.js shared chunk)
+
+RUNTIME
+[ ] Draw calls < 50 per frame
+[ ] Triangle count < 30K (< 50K max)
+[ ] 60fps on M1 MacBook Air
+[ ] 30fps on Realme C55 / Samsung A14
+[ ] No GC stutters visible in Chrome DevTools Performance tab
+
+MEMORY
+[ ] Disposal runs on unmount (verify with Chrome Memory tab)
+[ ] No growing heap over 60s of interaction
+[ ] useGLTF cache cleared on route change
+
+LOADING
+[ ] Model preloaded with useGLTF.preload() at module level
+[ ] Suspense fallback shows skeleton, not blank
+[ ] First meaningful render < 3s on throttled 4G (Chrome DevTools)
+```
+
+---
+
+## Lazy Loading Strategy
+
+### Route-Level Code Splitting
+
+```tsx
+// src/app/dashboard/3d-lab/[moduleSlug]/page.tsx
+import dynamic from 'next/dynamic'
+
+const ModuleViewer = dynamic(
+  () => import('@/components/3d-lab/ModuleViewer'),
+  {
+    ssr: false,  // Three.js is client-only
+    loading: () => <ModuleViewerSkeleton />,
+  }
+)
+```
+
+### Progressive Model Loading
+
+For complex modules with multiple sub-models:
+
+```tsx
+function FloorPlanModule() {
+  const [loadFurniture, setLoadFurniture] = useState(false)
+
+  return (
+    <Canvas>
+      <FloorPlanBase />  {/* Always load — small geometry */}
+      {loadFurniture && (
+        <Suspense fallback={null}>
+          <FurnitureLayer />  {/* Load on demand */}
+        </Suspense>
+      )}
+    </Canvas>
+  )
+}
+```
+
+---
+
+## WebGPU Readiness (2026+)
+
+Three.js r171+ supports WebGPU with automatic WebGL 2 fallback. For future-proofing:
+
+```tsx
+<Canvas
+  gl={async (props) => {
+    try {
+      const { WebGPURenderer } = await import('three/webgpu')
+      const renderer = new WebGPURenderer(props)
+      await renderer.init()
+      return renderer
+    } catch {
+      return new THREE.WebGLRenderer(props)
+    }
+  }}
+>
+```
+
+**Current recommendation for SlateCamp:** Stay on WebGL2 for Phase 1. WebGPU adoption
+when R3F v9 stabilizes and mobile WebGPU coverage exceeds 70%.
+
+---
+
+## Reference Files
+
+| File | When to Read |
+|---|---|
+| `references/r3f-performance-patterns.md` | Copy-paste optimization patterns for common R3F scenarios |
+| `references/glb-pipeline-scripts.md` | Shell scripts for batch GLB optimization |
+| `references/mobile-gpu-benchmarks.md` | FPS baselines per device for SlateCamp target audience |

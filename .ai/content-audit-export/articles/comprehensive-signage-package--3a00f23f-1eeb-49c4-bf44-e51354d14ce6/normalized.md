@@ -221,7 +221,7 @@ For a blind person, a flat embossed plan is like a photograph — informative on
 
     Person: ~1900-2000 mm tall with luggage
     Buffer: ≥200 mm above head = SAFE
-    
+
     If sign bottom < 2200 mm → HEAD HAZARD
 ```
 
@@ -420,4 +420,3 @@ You are reviewing a new 5-story office building's signage package. The submittal
 ## Cross‑References
 
 **Signs Design And Construction**, **Bp 344 Tactile And Visual Alarms**, **Accessible Seating In Assembly Areas**, **Public Service Counters And Atms**
-

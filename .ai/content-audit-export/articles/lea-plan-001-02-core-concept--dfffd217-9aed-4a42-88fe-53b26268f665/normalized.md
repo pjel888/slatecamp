@@ -12,7 +12,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 ## Learning Goal
 Distinguish planning by scale (national to site), time horizon (strategic 10+ yr, tactical 1-5 yr, operational 0-1 yr), and approach (rational comprehensive, incremental, advocacy, communicative, radical), and classify given planning scenarios by each dimension.
 
-Planning classifies into distinct types based on scale (how large an area), time horizon (how far ahead), and approach (how decisions are made). 
+Planning classifies into distinct types based on scale (how large an area), time horizon (how far ahead), and approach (how decisions are made).
 
 ## Core Concept
 

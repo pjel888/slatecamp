@@ -1,9 +1,113 @@
 {
   "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:f3d6dfc280ab663ae87e0e2709608ff60a292d3c38cb1e9190d9142847114c2b",
+  "linked_questions_hash": "sha256:849ecc949541eb71e976afdbc765c9b9e0783df86457bfe203e979e1be387c8d",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "188c051c-c50d-4244-a498-58551c2a4b8d",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "A hospital program organizes zones vertically: ambulatory care (ground floor), inpatient units (floors 2–5), intensive care and surgery (floors 6–8), and administrative offices (floors 9–10). Does this vertical stacking effectively apply zoning logic, or are there problems with this organization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "This is effective; vertical stacking minimizes horizontal circulation and maintains clear zone separation throughout the building, optimizing operational efficiency"
+        },
+        {
+          "id": "b",
+          "text": "This creates problems; intensive care and surgery (service-intensive, restricted access) should be mid-building to serve multiple patient floors efficiently, not isolated at the top"
+        },
+        {
+          "id": "c",
+          "text": "This is ideal; administrative offices above clinical areas maintain oversight and management control, ensuring streamlined operations"
+        },
+        {
+          "id": "d",
+          "text": "This is inefficient; all medical functions should be on one floor to minimize vertical circulation and equipment movement, reducing logistical complexity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While separation is good, the specific arrangement isn't optimal.",
+        "c": "Administrative oversight doesn't require vertical positioning above clinical areas.",
+        "d": "Single-floor concentration eliminates the benefits of vertical separation.",
+        "correct": "Vertical stacking can work, but ICU and surgery (specialized, equipment-intensive, restricted access) should serve multiple inpatient floors efficiently. Placing them at the top isolates them from patients they serve. Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location.",
+        "takeaway": "Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location."
+      },
+      "explanation": "While separation is good, the specific arrangement isn't optimal. Administrative oversight doesn't require vertical positioning above clinical areas. Single-floor concentration eliminates the benefits of vertical separation. Vertical stacking can work, but ICU and surgery (specialized, equipment-intensive, restricted access) should serve multiple inpatient floors efficiently. Placing them at the top isolates them from patients they serve. Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location. Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T15:00:17.43292+00:00",
+      "content_hash": "sha256:731dd091b2ff78726bf1e87a9be3153f9df872e165f3f346cf6e4d566e37f72c"
+    },
+    {
+      "question_id": "dd37f9ef-1b66-481d-8b06-52b2abfa191c",
+      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
+      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
+      "text": "In a mixed-use building with ground-floor retail and residential units above, the program states that mechanical equipment rooms must be separated from residential units to minimize noise transmission. Which zoning strategy and buffer approach best addresses this adjacency problem?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Distribute mechanical rooms throughout the building adjacent to each use they serve, accepting minor noise impacts as a trade-off for convenience"
+        },
+        {
+          "id": "b",
+          "text": "Locate mechanical rooms in the basement or rooftop; ensure residential units are stacked vertically above retail without mechanical proximity"
+        },
+        {
+          "id": "c",
+          "text": "Place mechanical rooms on residential floors, separated by thick walls and acoustic treatment; locate retail separately to minimize interference"
+        },
+        {
+          "id": "d",
+          "text": "Consolidate retail and mechanical together to reduce the number of separate zones, simplifying maintenance and operational logistics"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This violates the undesirable (X) adjacency requirement between mechanical and residential.",
+        "c": "Placing mechanical on residential floors increases noise impact despite wall treatment.",
+        "d": "Consolidating retail and mechanical creates different problems; retail already conflicts with residential without adding mechanical noise.",
+        "correct": "Mechanical rooms belong in service zones (basement or rooftop). Residential units stack above, with retail at ground level. This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces.",
+        "takeaway": "This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces."
+      },
+      "explanation": "This violates the undesirable (X) adjacency requirement between mechanical and residential. Placing mechanical on residential floors increases noise impact despite wall treatment. Consolidating retail and mechanical creates different problems; retail already conflicts with residential without adding mechanical noise. Mechanical rooms belong in service zones (basement or rooftop). Residential units stack above, with retail at ground level. This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces. This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-04-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T15:00:17.605338+00:00",
+      "content_hash": "sha256:4bb80eace20eac12952723888aedf1a70d9be4fd84d43bae7520830936547e03"
+    },
     {
       "question_id": "def18a61-47ba-426b-b327-ec2c1358b57d",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
@@ -213,58 +317,6 @@
       "content_hash": "sha256:04ff14718c85b0f1faeef6780b399b6a0ad820e418183e92c6eb0f1c23df6960"
     },
     {
-      "question_id": "188c051c-c50d-4244-a498-58551c2a4b8d",
-      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
-      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "A hospital program organizes zones vertically: ambulatory care (ground floor), inpatient units (floors 2–5), intensive care and surgery (floors 6–8), and administrative offices (floors 9–10). Does this vertical stacking effectively apply zoning logic, or are there problems with this organization?",
-      "options": [
-        {
-          "id": "a",
-          "text": "This is effective; vertical stacking minimizes horizontal circulation and maintains clear zone separation throughout the building, optimizing operational efficiency"
-        },
-        {
-          "id": "b",
-          "text": "This creates problems; intensive care and surgery (service-intensive, restricted access) should be mid-building to serve multiple patient floors efficiently, not isolated at the top"
-        },
-        {
-          "id": "c",
-          "text": "This is ideal; administrative offices above clinical areas maintain oversight and management control, ensuring streamlined operations"
-        },
-        {
-          "id": "d",
-          "text": "This is inefficient; all medical functions should be on one floor to minimize vertical circulation and equipment movement, reducing logistical complexity"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "While separation is good, the specific arrangement isn't optimal.",
-        "c": "Administrative oversight doesn't require vertical positioning above clinical areas.",
-        "d": "Single-floor concentration eliminates the benefits of vertical separation.",
-        "correct": "Vertical stacking can work, but ICU and surgery (specialized, equipment-intensive, restricted access) should serve multiple inpatient floors efficiently. Placing them at the top isolates them from patients they serve. Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location.",
-        "takeaway": "Better organization: ambulatory at ground (public), inpatient units middle (semi-public), specialized services (ICU, OR) mid-level serving inpatient floors, administrative top or separate location."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "analyze",
-      "application_context": "code_interpretation",
-      "practice_context": [
-        "ATT"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-009-04-008",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:9b3b28bfb31b8ca70a98ddbe04ccd3144a64d3200cb77a93d239d2b6fa3428ea"
-    },
-    {
       "question_id": "a9b4d635-7bbf-451b-bc39-d044c1c5ee2f",
       "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
       "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
@@ -367,58 +419,6 @@
       "created_at": "2026-03-23T19:27:57.369425+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:22ba60449cb92eaf4189a0f3d2c5a04b8aa6eb0665d9c7f26b30f11ae61192ff"
-    },
-    {
-      "question_id": "dd37f9ef-1b66-481d-8b06-52b2abfa191c",
-      "article_id": "bcb4ca34-92b0-4fd6-8b0d-b8f45c44bb5f",
-      "topic_id": "76982178-d513-42b8-97b7-187f819a8b3d",
-      "text": "In a mixed-use building with ground-floor retail and residential units above, the program states that mechanical equipment rooms must be separated from residential units to minimize noise transmission. Which zoning strategy and buffer approach best addresses this adjacency problem?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Distribute mechanical rooms throughout the building adjacent to each use they serve, accepting minor noise impacts as a trade-off for convenience"
-        },
-        {
-          "id": "b",
-          "text": "Locate mechanical rooms in the basement or rooftop; ensure residential units are stacked vertically above retail without mechanical proximity"
-        },
-        {
-          "id": "c",
-          "text": "Place mechanical rooms on residential floors, separated by thick walls and acoustic treatment; locate retail separately to minimize interference"
-        },
-        {
-          "id": "d",
-          "text": "Consolidate retail and mechanical together to reduce the number of separate zones, simplifying maintenance and operational logistics"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "This violates the undesirable (X) adjacency requirement between mechanical and residential.",
-        "c": "Placing mechanical on residential floors increases noise impact despite wall treatment.",
-        "d": "Consolidating retail and mechanical creates different problems; retail already conflicts with residential without adding mechanical noise.",
-        "correct": "Mechanical rooms belong in service zones (basement or rooftop). Residential units stack above, with retail at ground level. This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces.",
-        "takeaway": "This vertical separation is the most effective strategy; mechanical equipment at building extremities minimizes transmission to occupied residential spaces."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "APP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-THEO-009-04-005",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:57.369425+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:2b15e9dedf28d7af3645edcb568a8c7d4c8fb14cd30cf0c5fae12a55986f994a"
     },
     {
       "question_id": "91aca2d0-cf49-4ee3-bd54-352d2dc91fbe",

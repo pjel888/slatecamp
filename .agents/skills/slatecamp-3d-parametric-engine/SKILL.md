@@ -1,0 +1,491 @@
+---
+name: slatecamp-3d-parametric-engine
+description: >
+  SlateCamp's Parametric Geometry Engine — generates code-compliant 3D architectural
+  geometry at runtime using Three.js BufferGeometry and Blender Python scripting. Translates
+  PD 1096, RA 9514, BP 344, NSCP dimensions into interactive parametric models. Activate
+  for: runtime geometry from sliders, Float32Array BufferGeometry, Blender bpy scripts,
+  stairway rise/run generation, ramp slope calculation, wall assemblies, structural bays,
+  plumbing traps, code dimension validation. Trigger on: "parametric geometry",
+  "BufferGeometry", "generate mesh", "stairway geometry", "ramp geometry", "riser height",
+  "Blender Python", "bpy", "code-compliant model", "PD 1096 dimensions", "BP 344
+  dimensions", "building code 3D".
+---
+
+# SlateCamp — Parametric Geometry Engine Guide
+
+## The Precision Mandate
+
+Every dimension in a SlateCamp 3D model is a building code citation. A stairway riser
+height of 200mm is not a design choice — it is PD 1096 Section 4.08. Students learn
+code values by manipulating these models. If the geometry is imprecise, the learning
+is wrong, and the student fails the exam.
+
+**Units:** All internal geometry uses meters. Display values in millimeters.
+**Coordinate system:** Y-up (Three.js default). Floor at Y=0.
+
+---
+
+## Two Geometry Pipelines
+
+### Pipeline 1: Runtime BufferGeometry (Preferred for Parametric)
+
+Generate geometry directly in the browser from parameters. No GLB needed.
+Used when: the model's shape changes based on user input (sliders).
+
+**Advantages:** Instant response to parameter changes, zero network requests, tiny bundle.
+**Disadvantages:** Limited to procedural shapes (no organic forms).
+
+### Pipeline 2: Blender Python → GLB (For Complex Base Models)
+
+Generate the base model in Blender via Python script, export as GLB, load in R3F.
+Used when: the model is too complex for procedural generation (historical buildings,
+detailed assemblies) but parameters modify material/visibility/annotations, not shape.
+
+**Advantages:** Unlimited visual complexity, proper UV mapping, baked textures.
+**Disadvantages:** Static geometry, can't reshape at runtime.
+
+### Hybrid Pipeline (Most Common for SlateCamp)
+
+Blender generates the base assembly (walls, floor, fixtures).
+Runtime BufferGeometry generates the parametric elements (stairway steps, ramp surface).
+Both live in the same scene.
+
+---
+
+## Runtime BufferGeometry Patterns
+
+### Pattern 1: Stairway from Rise/Run Parameters
+
+```tsx
+'use client'
+
+import { useMemo } from 'react'
+import * as THREE from 'three'
+import { useLabStore } from '@/stores/useLabStore'
+
+// PD 1096 Section 4.08 — Stairway Requirements
+const CODE_BOUNDS = {
+  riseMax: 0.200,      // 200mm max riser height
+  riseMin: 0.100,      // 100mm min riser height
+  runMin: 0.250,        // 250mm min tread depth
+  widthMin: 1.100,      // 1,100mm min clear width (public buildings)
+  headroomMin: 2.100,   // 2,100mm min headroom
+  handrailHeight: 0.900, // 900mm handrail height
+}
+
+interface StairParams {
+  rise: number    // meters per step
+  run: number     // meters per step
+  width: number   // meters
+  numSteps: number
+}
+
+export function useStairGeometry(params: StairParams): THREE.BufferGeometry {
+  return useMemo(() => {
+    const { rise, run, width, numSteps } = params
+    const geometry = new THREE.BufferGeometry()
+
+    // Each step = a box with 6 faces = 12 triangles = 36 vertices
+    const verticesPerStep = 36
+    const totalVertices = numSteps * verticesPerStep
+
+    const positions = new Float32Array(totalVertices * 3)
+    const normals = new Float32Array(totalVertices * 3)
+
+    for (let i = 0; i < numSteps; i++) {
+      const x0 = i * run             // Front edge of tread
+      const x1 = (i + 1) * run       // Back edge of tread
+      const y0 = i * rise            // Bottom of riser
+      const y1 = (i + 1) * rise      // Top of riser / tread surface
+      const z0 = 0                    // Left edge
+      const z1 = width               // Right edge
+
+      const baseIdx = i * verticesPerStep * 3
+
+      // Top face (tread surface) — the most visible face
+      addQuad(positions, normals, baseIdx + 0,
+        [x0, y1, z0], [x1, y1, z0], [x1, y1, z1], [x0, y1, z1],
+        [0, 1, 0] // Normal up
+      )
+
+      // Front face (riser)
+      addQuad(positions, normals, baseIdx + 18,
+        [x0, y0, z0], [x0, y1, z0], [x0, y1, z1], [x0, y0, z1],
+        [-1, 0, 0] // Normal facing viewer
+      )
+
+      // Right side face
+      addQuad(positions, normals, baseIdx + 36,
+        [x0, y0, z1], [x0, y1, z1], [x1, y1, z1], [x1, y0, z1],
+        [0, 0, 1]
+      )
+
+      // Left side face
+      addQuad(positions, normals, baseIdx + 54,
+        [x1, y0, z0], [x1, y1, z0], [x0, y1, z0], [x0, y0, z0],
+        [0, 0, -1]
+      )
+
+      // Bottom face
+      addQuad(positions, normals, baseIdx + 72,
+        [x0, y0, z1], [x1, y0, z1], [x1, y0, z0], [x0, y0, z0],
+        [0, -1, 0]
+      )
+
+      // Back face
+      addQuad(positions, normals, baseIdx + 90,
+        [x1, y0, z1], [x1, y1, z1], [x1, y1, z0], [x1, y0, z0],
+        [1, 0, 0]
+      )
+    }
+
+    geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3))
+    geometry.setAttribute('normal', new THREE.BufferAttribute(normals, 3))
+    geometry.computeBoundingBox()
+
+    return geometry
+  }, [params.rise, params.run, params.width, params.numSteps])
+}
+
+// Helper: Add a quad (2 triangles, 6 vertices) to typed arrays
+function addQuad(
+  positions: Float32Array,
+  normals: Float32Array,
+  offset: number,
+  v0: number[], v1: number[], v2: number[], v3: number[],
+  normal: number[]
+) {
+  // Triangle 1: v0, v1, v2
+  const verts = [v0, v1, v2, v0, v2, v3]
+  for (let i = 0; i < 6; i++) {
+    const idx = offset + i * 3
+    positions[idx] = verts[i][0]
+    positions[idx + 1] = verts[i][1]
+    positions[idx + 2] = verts[i][2]
+    normals[idx] = normal[0]
+    normals[idx + 1] = normal[1]
+    normals[idx + 2] = normal[2]
+  }
+}
+```
+
+### Pattern 2: Ramp from Slope Parameters
+
+```tsx
+// BP 344 (2024 Revised IRR) — Accessible Ramp Requirements
+const RAMP_CODE = {
+  maxSlope: 1 / 12,           // 1:12 maximum slope (8.33%)
+  maxRisePerRun: 0.750,       // 750mm max rise per run
+  minWidth: 1.200,            // 1,200mm min clear width
+  landingLength: 1.500,       // 1,500mm min landing length
+  handrailHeight: 0.900,      // 900mm handrail height
+  edgeProtectionHeight: 0.050, // 50mm edge protection
+}
+
+export function useRampGeometry(params: {
+  totalRise: number  // Total height change
+  slope: number      // Rise/run ratio (e.g., 1/12 = 0.0833)
+  width: number
+}): THREE.BufferGeometry {
+  return useMemo(() => {
+    const { totalRise, slope, width } = params
+    const runLength = totalRise / slope
+    const numSegments = Math.ceil(totalRise / RAMP_CODE.maxRisePerRun)
+    const risePerSegment = totalRise / numSegments
+    const runPerSegment = risePerSegment / slope
+
+    const geometry = new THREE.BufferGeometry()
+    const vertices: number[] = []
+    const normals: number[] = []
+
+    let currentX = 0
+    let currentY = 0
+
+    for (let seg = 0; seg < numSegments; seg++) {
+      // Ramp surface (sloped quad)
+      const x0 = currentX
+      const y0 = currentY
+      const x1 = currentX + runPerSegment
+      const y1 = currentY + risePerSegment
+
+      // Calculate surface normal for slope
+      const slopeNormal = new THREE.Vector3(-risePerSegment, runPerSegment, 0).normalize()
+
+      // Sloped surface
+      pushQuad(vertices, normals,
+        [x0, y0, 0], [x1, y1, 0], [x1, y1, width], [x0, y0, width],
+        [slopeNormal.x, slopeNormal.y, slopeNormal.z]
+      )
+
+      // Side walls (edge protection)
+      pushQuad(vertices, normals,
+        [x0, y0, 0], [x1, y1, 0], [x1, y1 - 0.15, 0], [x0, y0 - 0.15, 0],
+        [0, 0, -1]
+      )
+
+      // Landing between segments (if not last)
+      if (seg < numSegments - 1) {
+        const landingEnd = x1 + RAMP_CODE.landingLength
+        pushQuad(vertices, normals,
+          [x1, y1, 0], [landingEnd, y1, 0], [landingEnd, y1, width], [x1, y1, width],
+          [0, 1, 0]
+        )
+        currentX = landingEnd
+      } else {
+        currentX = x1
+      }
+      currentY = y1
+    }
+
+    const posArray = new Float32Array(vertices)
+    const normArray = new Float32Array(normals)
+    geometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3))
+    geometry.setAttribute('normal', new THREE.BufferAttribute(normArray, 3))
+    geometry.computeBoundingBox()
+
+    return geometry
+  }, [params.totalRise, params.slope, params.width])
+}
+
+function pushQuad(
+  verts: number[], norms: number[],
+  v0: number[], v1: number[], v2: number[], v3: number[],
+  n: number[]
+) {
+  const tris = [v0, v1, v2, v0, v2, v3]
+  for (const v of tris) {
+    verts.push(v[0], v[1], v[2])
+    norms.push(n[0], n[1], n[2])
+  }
+}
+```
+
+---
+
+## Blender Python Script Patterns
+
+### Script Template for SlateCamp Modules
+
+```python
+import bpy
+import bmesh
+import math
+import sys
+import os
+
+# ══════════════════════════════════════════════════════
+# SlateCamp Blender Export Script — [Module Name]
+# Code Reference: [PD 1096 Sec X.XX / BP 344 etc.]
+# ══════════════════════════════════════════════════════
+
+# Clear scene
+bpy.ops.object.select_all(action='SELECT')
+bpy.ops.object.delete(use_global=False)
+
+# ── PARAMETERS (Code-cited) ──────────────────────────
+RISE = 0.180      # PD 1096: max 200mm, min 100mm
+RUN = 0.270       # PD 1096: min 250mm
+WIDTH = 1.200     # PD 1096: min 1,100mm (public)
+NUM_STEPS = 12
+HANDRAIL_H = 0.900  # PD 1096: 900mm
+NOSING = 0.025    # PD 1096: max 38mm nosing projection
+
+# ── MATERIALS ────────────────────────────────────────
+def create_material(name, color, roughness=0.8):
+    mat = bpy.data.materials.new(name)
+    mat.use_nodes = True
+    bsdf = mat.node_tree.nodes["Principled BSDF"]
+    bsdf.inputs['Base Color'].default_value = (*color, 1.0)
+    bsdf.inputs['Roughness'].default_value = roughness
+    return mat
+
+mat_concrete = create_material("Concrete", (0.82, 0.80, 0.77), 0.9)
+mat_metal = create_material("Metal_Handrail", (0.55, 0.55, 0.55), 0.3)
+mat_nosing = create_material("Nosing_Accent", (0.95, 0.65, 0.14), 0.5)
+
+# ── GEOMETRY GENERATION ──────────────────────────────
+def create_stairway():
+    """Generate PD 1096 compliant stairway geometry."""
+    bm = bmesh.new()
+
+    for i in range(NUM_STEPS):
+        # Tread + Riser as single extrusion
+        x0 = i * RUN - NOSING
+        x1 = (i + 1) * RUN
+        y_bottom = i * RISE
+        y_top = (i + 1) * RISE
+
+        # Create step profile vertices
+        verts = [
+            bm.verts.new((x0, 0, y_top)),
+            bm.verts.new((x1, 0, y_top)),
+            bm.verts.new((x1, WIDTH, y_top)),
+            bm.verts.new((x0, WIDTH, y_top)),
+            bm.verts.new((x0, 0, y_bottom)),
+            bm.verts.new((x1, 0, y_bottom)),
+            bm.verts.new((x1, WIDTH, y_bottom)),
+            bm.verts.new((x0, WIDTH, y_bottom)),
+        ]
+
+        # Top face (tread)
+        bm.faces.new([verts[0], verts[1], verts[2], verts[3]])
+        # Front face (riser)
+        bm.faces.new([verts[0], verts[3], verts[7], verts[4]])
+
+    mesh = bpy.data.meshes.new("Stairway")
+    bm.to_mesh(mesh)
+    bm.free()
+
+    obj = bpy.data.objects.new("Stairway", mesh)
+    bpy.context.collection.objects.link(obj)
+    obj.data.materials.append(mat_concrete)
+
+    return obj
+
+def create_handrail(side_offset):
+    """Generate handrail along stair slope."""
+    total_rise = NUM_STEPS * RISE
+    total_run = NUM_STEPS * RUN
+    angle = math.atan2(total_rise, total_run)
+
+    # Handrail as a cylinder following the slope
+    length = math.sqrt(total_rise**2 + total_run**2)
+
+    bpy.ops.mesh.primitive_cylinder_add(
+        radius=0.020,  # 40mm diameter handrail
+        depth=length,
+        location=(total_run / 2, side_offset, total_rise / 2 + HANDRAIL_H),
+        rotation=(0, -angle, 0)
+    )
+    handrail = bpy.context.object
+    handrail.name = f"Handrail_{'Left' if side_offset < WIDTH/2 else 'Right'}"
+    handrail.data.materials.append(mat_metal)
+
+    return handrail
+
+# ── BUILD SCENE ──────────────────────────────────────
+stairway = create_stairway()
+handrail_left = create_handrail(0.05)
+handrail_right = create_handrail(WIDTH - 0.05)
+
+# ── NAMING FOR HOTSPOT MAPPING ───────────────────────
+# Name meshes so R3F can find them for hotspot placement
+stairway.name = "stairway_main"
+handrail_left.name = "handrail_left"
+handrail_right.name = "handrail_right"
+
+# Add custom properties for hotspot metadata
+stairway["hotspot_riser"] = f"Riser: {RISE*1000:.0f}mm (PD 1096 max: 200mm)"
+stairway["hotspot_tread"] = f"Tread: {RUN*1000:.0f}mm (PD 1096 min: 250mm)"
+stairway["hotspot_width"] = f"Width: {WIDTH*1000:.0f}mm (PD 1096 min: 1,100mm)"
+
+# ── EXPORT ───────────────────────────────────────────
+output_path = os.path.join(os.path.dirname(bpy.data.filepath), "stairway-pd1096.glb")
+
+bpy.ops.export_scene.gltf(
+    filepath=output_path,
+    export_format='GLB',
+    export_apply=True,
+    export_materials='EXPORT',
+    export_image_format='WEBP',
+    export_draco_mesh_compression_enable=True,
+    export_draco_mesh_compression_level=6,
+)
+
+print(f"✅ Exported: {output_path}")
+```
+
+---
+
+## Building Code Dimension Reference
+
+Quick reference for the 10 priority modules:
+
+### PD 1096 — Stairways (Sec. 4.08)
+| Parameter | Value | Unit |
+|---|---|---|
+| Max riser height | 200 | mm |
+| Min tread depth | 250 | mm |
+| Min clear width (public) | 1,100 | mm |
+| Min clear width (residential) | 900 | mm |
+| Min headroom | 2,100 | mm |
+| Handrail height | 900 | mm |
+| Max nosing projection | 38 | mm |
+
+### BP 344 (2024 IRR) — Accessible Ramp
+| Parameter | Value | Unit |
+|---|---|---|
+| Max slope | 1:12 | ratio |
+| Max rise per run | 750 | mm |
+| Min clear width | 1,200 | mm |
+| Landing length (min) | 1,500 | mm |
+| Handrail height | 900 | mm |
+| Edge protection | 50 | mm min |
+
+### BP 344 (2024 IRR) — Accessible Toilet
+| Parameter | Value | Unit |
+|---|---|---|
+| Min floor area | 1,500 × 1,500 | mm |
+| Door clear width | 900 | mm min |
+| Grab bar height | 800–900 | mm |
+| Toilet centerline from wall | 460 | mm |
+| Lavatory knee clearance | 680 | mm min |
+| Wheelchair turning radius | 1,500 | mm |
+
+### RA 9514 — Fire Exit Travel Distance
+| Occupancy | Max Travel (Sprinklered) | Max Travel (Unsprinklered) |
+|---|---|---|
+| Business | 90 | 60 | m |
+| Assembly | 75 | 45 | m |
+| Residential | 60 | 45 | m |
+| High-rise | 60 | N/A | m |
+
+### NSCP 2015 — Structural Bay Spans
+| Element | Common Span Range | Unit |
+|---|---|---|
+| One-way slab | 3,000–6,000 | mm |
+| Two-way slab | 4,000–8,000 | mm |
+| Simply supported beam | 6,000–12,000 | mm |
+| Column spacing (typical) | 6,000–9,000 | mm |
+
+---
+
+## Geometry Validation
+
+Before any parametric model ships, validate:
+
+```typescript
+function validateStairwayParams(params: StairParams): ValidationResult {
+  const errors: string[] = []
+  const warnings: string[] = []
+
+  if (params.rise > 0.200) errors.push('Riser exceeds PD 1096 max (200mm)')
+  if (params.rise < 0.100) errors.push('Riser below PD 1096 min (100mm)')
+  if (params.run < 0.250) errors.push('Tread below PD 1096 min (250mm)')
+  if (params.width < 1.100) errors.push('Width below PD 1096 min for public (1,100mm)')
+  if (params.width < 0.900) errors.push('Width below PD 1096 min for residential (900mm)')
+
+  // 2R + T rule (comfort formula)
+  const twoRplusT = (2 * params.rise + params.run) * 1000
+  if (twoRplusT < 600) warnings.push(`2R+T = ${twoRplusT.toFixed(0)}mm (comfort min: 600mm)`)
+  if (twoRplusT > 650) warnings.push(`2R+T = ${twoRplusT.toFixed(0)}mm (comfort max: 650mm)`)
+
+  return {
+    isValid: errors.length === 0,
+    errors,
+    warnings,
+  }
+}
+```
+
+---
+
+## Reference Files
+
+| File | When to Read |
+|---|---|
+| `references/geometry-recipes.md` | BufferGeometry patterns for each module type |
+| `references/blender-scripts/` | Complete Blender Python scripts for all 10 priority modules |
+| `references/code-dimensions.md` | Full building code dimension tables for all referenced codes |
+| `references/material-presets.md` | PBR material settings for concrete, metal, wood, glass |

@@ -1,0 +1,73 @@
+{
+  "pack_id": "09-uap-spp201-pre-design-and-service-boundaries",
+  "title": "UAP SPP 201 Pre-Design and Service Boundaries",
+  "subject": "Professional Practice",
+  "status": "PASS_FOR_CALIBRATION_HOLD_FOR_DIRECT_PUBLICATION",
+  "source_document_id": "UAP_SPP_201_AND_DOC_401_402",
+  "locator_set_id": "uap_spp201_401402_boundaries",
+  "questions": [
+    {
+      "id": "uap-predesign-q1",
+      "stem": "Which listed service is clearly a Pre-design Service under SPP Document 201?",
+      "options": {
+        "A": "Architectural programming",
+        "B": "Fulltime Construction Supervision",
+        "C": "Design-Build construction work",
+        "D": "Issuance of a Fire Safety Evaluation Clearance"
+      },
+      "correct_option_id": "A",
+      "rationale": {
+        "correct": "SPP 201 identifies Architectural Programming as a pre-design service.",
+        "distractors": {
+          "B": "Fulltime Construction Supervision is separately identified as not covered by the 401-402 agreement.",
+          "C": "Design-Build is explicitly not the 401-402 agreement and is a different service arrangement.",
+          "D": "FSEC is a fire-code clearance process, not the cited SPP 201 pre-design service."
+        },
+        "takeaway": "Classify the service family before answering."
+      },
+      "source_locator": "UAP SPP Document 201, Architectural Programming, PDF p.48."
+    },
+    {
+      "id": "uap-consultation-q2",
+      "stem": "Under SPP 201, why is consultation still compensable professional input even if the project is not pursued?",
+      "options": {
+        "A": "The architect renders advice, evaluation, appraisal, and direction whether or not the client proceeds.",
+        "B": "Consultation automatically creates a design-build contract.",
+        "C": "Consultation replaces signed and sealed architectural documents.",
+        "D": "Consultation is only free preliminary marketing."
+      },
+      "correct_option_id": "A",
+      "rationale": {
+        "correct": "The excerpt says the architect renders valuable inputs whether or not the client pursues the project.",
+        "distractors": {
+          "B": "Design-build is a different arrangement and not created by consultation.",
+          "C": "Consultation does not replace architectural documents.",
+          "D": "SPP 201 treats it as valuable professional input, not free marketing."
+        },
+        "takeaway": "Do not dismiss oral/written advice as non-service when SPP 201 classifies it."
+      },
+      "source_locator": "UAP SPP Document 201, Consultation, PDF p.42."
+    },
+    {
+      "id": "uap-boundary-q3",
+      "stem": "Under UAP Document 401-402, which service is explicitly not covered by the agreement?",
+      "options": {
+        "A": "Fulltime Construction Supervision",
+        "B": "Periodic visits during construction phase service",
+        "C": "Preparation of plans and specifications",
+        "D": "Contract document forms as part of construction phase service"
+      },
+      "correct_option_id": "A",
+      "rationale": {
+        "correct": "Document 401-402 states the agreement does not cover Fulltime Construction Supervision, among other services.",
+        "distractors": {
+          "B": "The excerpt includes periodic visits in the 5% construction-phase service, not the separately engaged fulltime supervision.",
+          "C": "Preparation of plans/specifications is the primary service described in the excerpt.",
+          "D": "Contract document forms are listed under the 5% construction-phase service."
+        },
+        "takeaway": "Separate periodic construction-phase service from fulltime construction supervision."
+      },
+      "source_locator": "UAP Document 401-402, Articles 5-6 and 7.08, PDF pp.1 and 8."
+    }
+  ]
+}

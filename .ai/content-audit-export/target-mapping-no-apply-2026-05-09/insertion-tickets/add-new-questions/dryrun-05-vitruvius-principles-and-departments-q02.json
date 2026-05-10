@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-05-vitruvius-principles-and-departments",
+  "dry_question_id": "dryrun-05-vitruvius-principles-and-departments-q02",
+  "target_article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "Book I Chapter III departments distinction is not directly covered by existing triad-focused questions.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter III, PDF p.36.",
+    "text": "In Book I, Chapter III, which item is one of Vitruvius's three departments of architecture?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Chapter III lists the art of building, the making of time-pieces, and the construction of machinery.",
+      "distractors": {
+        "A": "Eurythmy is in the principles list.",
+        "B": "Propriety is in the principles list.",
+        "D": "Contracts are not one of the cited departments."
+      },
+      "takeaway": "Departments and principles are both Vitruvian, but they are not interchangeable."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "vitruvius-departments-q2",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "C",
+    "explanation": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter III, PDF p.36.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "Eurythmy"
+      },
+      {
+        "id": "B",
+        "text": "Propriety"
+      },
+      {
+        "id": "C",
+        "text": "The making of time-pieces"
+      },
+      {
+        "id": "D",
+        "text": "The selection of building contracts"
+      }
+    ]
+  },
+  "sme_source_locator": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter III, PDF p.36.",
+  "code_citation": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter III, PDF p.36.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

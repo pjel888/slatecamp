@@ -425,3 +425,7 @@ This article is part of the SlateCamp Professional Practice Content Engine for L
 - [Conflict of Interest](lea-prac-eth-010)
 - [Scope of Practice](lea-prac-law-002)
 - [Signing and Sealing Prohibition](lea-prac-law-017)
+
+## Real-World Application
+
+Suppose a young architect in Cebu is asked by a relative to “just sign” a small commercial fit-out prepared by an unlicensed drafter. The ethical problem is not only family pressure. The architect must decide whether the documents were prepared under responsible professional control, whether the scope is honestly represented, and whether signing would mislead the client, the building official, or the public. A proper response is to review the work, identify missing code and coordination checks, explain what professional responsibility requires, and either take over the work lawfully or refuse the signature. In LEA questions, this kind of situation usually tests the difference between loyalty to a client and duty to the public. When the choices look personal, translate them into professional obligations: competence, honesty, accountability, and protection of life, health, and property.

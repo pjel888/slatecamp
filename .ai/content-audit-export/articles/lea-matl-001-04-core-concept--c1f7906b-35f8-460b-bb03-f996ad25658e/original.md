@@ -1,3 +1,12 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Matl 001 04 Core Concept** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
 ## What You Need to Know for the LEA
 ## Learning Goal
 
@@ -11,11 +20,11 @@ Wood preservation involves applying protective chemicals through pressure treatm
 ## Preservative Types and Standards
 
 
-<ArticleMedia id="media-wood-preservation-process" layout="single" type="image" status="placeholder"
-  alt="Illustration of pressure treatment cycle showing vacuum, pressure, and preservative penetration phases"
-  caption="Future diagram: pressure treatment process — vacuum and pressure cycle"
-  suggestedAsset="Process flow diagram showing the pressure treatment cycle"
-  placementIntent="Visualizes the industrial wood preservation process described in the article" />
+[SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-wood-preservation-process", layout="single", type="image", status="placeholder", alt="Illustration of pressure treatment cycle showing vacuum, pressure, and preservative penetration phases", caption="Future diagram: pressure treatment process — vacuum and pressure cycle", suggestedAsset="Process flow diagram showing the pressure treatment cycle", placementIntent="Visualizes the industrial wood preservation process described in the article"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ### Pressure-Treated Lumber: Overview
 
@@ -27,7 +36,11 @@ AWPA (American Wood Protection Association) Standard U1 specifies retention leve
 
 CCA was the dominant preservative worldwide from the 1970s through early 2000s. It is a copper-based fungicide combined with chromium and arsenic for comprehensive protection against decay and insects.
 
-<Note>CCA is now restricted or banned in many countries due to arsenic content and environmental concerns. In the Philippines and many developed nations, CCA-treated wood for residential use (ground contact, play structures) is restricted. CCA remains approved for marine and non-residential applications in some jurisdictions, but new specifications generally exclude it.</Note>
+[SLATECAMP_UI_BLOCK:ui_0002 component="Note" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: CCA is now restricted or banned in many countries due to arsenic content and environmental concerns. In the Philippines and many developed nations, CCA-treated wood for residential use (ground contact, play structures) is restricted. CCA remains approved for marine and non-residential applications in some jurisdictions, but new specifications generally exclude it.
+[/SLATECAMP_UI_BLOCK]
 
 **Properties:** CCA develops high retention levels (0.4 lb/ft³ for UC3 exposure, 0.6 lb/ft³ for ground contact). The wood acquires a greenish tint. Fasteners must be corrosion-resistant because the copper oxidizes standard steel.
 
@@ -76,11 +89,11 @@ The wood is immersed in preservative solution for a brief period (minutes to hou
 ## Wood Drying Methods
 
 
-<ArticleMedia id="media-wood-drying-chart" layout="single" type="image" status="placeholder"
-  alt="Comparison of kiln drying and air drying methods showing moisture content reduction, duration, and wood quality outcomes"
-  caption="Future chart: wood drying methods comparison — kiln drying vs. air drying"
-  suggestedAsset="Comparison table or process diagram for wood drying methods"
-  placementIntent="Helps learners understand wood moisture management and its effect on preservation" />
+[SLATECAMP_UI_BLOCK:ui_0003 component="ArticleMedia" status="preserved"]
+Extracted summary:
+- Props: id="media-wood-drying-chart", layout="single", type="image", status="placeholder", alt="Comparison of kiln drying and air drying methods showing moisture content reduction, duration, and wood quality outcomes", caption="Future chart: wood drying methods comparison — kiln drying vs. air drying", suggestedAsset="Comparison table or process diagram for wood drying methods", placementIntent="Helps learners understand wood moisture management and its effect on preservation"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 ### Kiln Drying
 
 Wood is dried in a heated chamber under controlled temperature and humidity. Kiln drying reduces moisture content to 12—15%, the optimal level for most construction and woodworking applications.
@@ -159,28 +172,28 @@ The LEA expects you to:
 
 Typical questions present a building application (exterior deck, ground-contact beam, interior wall) and ask what preservative treatment and fastener type are appropriate, or ask you to explain why an existing treatment is inadequate.
 
-<Tip>Always consider climate and exposure: tropical Philippines demands more aggressive treatment and fastener corrosion resistance than temperate regions. Never specify standard steel fasteners in treated wood; always require hot-dipped galvanized minimum (stainless preferred).</Tip>
+[SLATECAMP_UI_BLOCK:ui_0004 component="Tip" status="preserved"]
+Extracted summary:
+- Props: (none)
+- Text: Always consider climate and exposure: tropical Philippines demands more aggressive treatment and fastener corrosion resistance than temperate regions. Never specify standard steel fasteners in treated wood; always require hot-dipped galvanized minimum (stainless preferred).
+[/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
 
-<WikiMistakeCard
-  mistake="Assuming borate-treated wood is suitable for exterior exposed applications in the Philippines"
-  correction="Borates leach out in wet tropical environments within 5—10 years. Borates are only appropriate for interior, always-dry applications (UC1). For any exposure to rain or ground contact, use pressure-treated copper-based preservatives (ACQ or CA)."
-  context="Candidates see 'preservative treatment' and assume all types are equivleant; they overlook climate-specific durability limitations." />
+[SLATECAMP_UI_BLOCK:ui_0005 component="WikiMistakeCard" status="preserved"]
+Extracted summary:
+- Props: mistake="Assuming borate-treated wood is suitable for exterior exposed applications in the Philippines", correction="Borates leach out in wet tropical environments within 5—10 years. Borates are only appropriate for interior, always-dry applications (UC1). For any exposure to rain or ground contact, use pressure-treated copper-based preservatives (ACQ or CA).", context="Candidates see 'preservative treatment' and assume all types are equivleant; they overlook climate-specific durability limitations."
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
-<WikiMistakeList
-  title="Treatment and Fastener Specification Errors"
-  items={[
-    "Specifying standard steel fasteners in ACQ-treated wood: ACQ is 5× more corrosive than CCA; standard steel fasteners will rust within 3—5 years. Always require ASTM A 153 Class D galvanized minimum; stainless is preferred.",
-    "Confusing pressure treatment with surface treatment: A brush-coated preservative on lumber provides only thin surface protection and does not meet code for structural exterior or ground-contact applications. Pressure treatment (AWPA U1) is required.",
-    "Failing to account for moisture content in determining treatment adequacy: Green wood (above 30% moisture) does not accept preservative penetration uniformly. Dry lumber (12—20% moisture) is the standard for pressure treatment.",
-    "Using CCA-treated lumber for residential applications in the Philippines: CCA is restricted for residential use due to arsenic and environmental regulations. Specify ACQ or CA-B instead.",
-    "Neglecting finish coats and regular maintenance: Preservative treatment extends durability, but the wood still requires paint/stain every 3—5 years to maintain the moisture barrier. Exposed treated wood without finish fails sooner than preservative design life."
-  ]} />
+[SLATECAMP_UI_BLOCK:ui_0006 component="WikiMistakeList" status="preserved"]
+Extracted summary:
+- Props: title="Treatment and Fastener Specification Errors", items="{[\n    \"Specifying standard steel fasteners in ACQ-treated wood: ACQ is 5× more corrosive than CCA; standard steel fasteners will rust within 3—5 years. Always require ASTM A 153 Class D galvanized minimum; stainless is preferred.\",\n    \"Confusing pressure treatment with surface treatment: A brush-coated preservative on lumber provides only thin surface protection and does not meet code for structural exterior or ground-contact applications. Pressure treatment (AWPA U1) is required.\",\n    \"Failing to account for moisture content in determining treatment adequacy: Green wood (above 30% moisture) does not accept preservative penetration uniformly. Dry lumber (12—20% moisture) is the standard for pressure treatment.\",\n    \"Using CCA-treated lumber for residential applications in the Philippines: CCA is restricted for residential use due to arsenic and environmental regulations. Specify ACQ or CA-B instead.\",\n    \"Neglecting finish coats and regular maintenance: Preservative treatment extends durability, but the wood still requires paint/stain every 3—5 years to maintain the moisture barrier. Exposed treated wood without finish fails sooner than preservative design life.\"\n  ]}"
+- Text: (none detected)
+[/SLATECAMP_UI_BLOCK]
 
 ## Related Articles
 
 See also within Wood and Timber Products: **lea-matl-001-03-core-concept**, **lea-matl-001-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

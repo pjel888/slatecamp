@@ -1,7 +1,7 @@
 # Complete Route Map
 
 **Last audit:** 2026-05-01
-**Post-route-cleanup counts:** 128 `page.tsx` routes, 15 layouts, 105 loading states, 8 error boundaries.
+**Post-route-cleanup counts:** 128 `page.tsx` routes, 15 layouts, **104** loading states, **8** error boundaries.
 
 This file is the canonical route inventory for the current codebase. It was refreshed after Quiz moved back under `/dashboard/quiz` so the dashboard sidebar shell remains visible; `/quiz/*` and `/dashboard/drills*` are redirect-only compatibility. Route groups in parentheses are omitted from URL paths. Dynamic params are shown with bracket syntax.
 

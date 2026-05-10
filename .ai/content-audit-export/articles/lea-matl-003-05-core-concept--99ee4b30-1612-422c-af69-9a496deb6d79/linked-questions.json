@@ -1,9 +1,58 @@
 {
   "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:44c3c325f1d81fac77c5218794117d5e06927b43bb3c6ffda83c20cad0b68642",
+  "linked_questions_hash": "sha256:65361880f3ad5377098bb6ee7ece9fa843e1e05dbbfc8c479893abd369589fe3",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "648065a2-3d3f-489a-8e2f-e4d57d1a4b25",
+      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
+      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
+      "text": "Which welding process uses a consumable electrode coated with flux and is most commonly specified for field structural work in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "GMAW (MIG)"
+        },
+        {
+          "id": "b",
+          "text": "GTAW (TIG)"
+        },
+        {
+          "id": "c",
+          "text": "SMAW (Stick)"
+        },
+        {
+          "id": "d",
+          "text": "FCAW (Flux Cored)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "GMAW requires external shielding gas supply and is sensitive to wind; better suited for controlled shop environments and production welding.",
+        "b": "GTAW produces superior weld quality but is slow and requires very high operator skill; used for specialty applications (aluminum, stainless, thin sections), not structural field work.",
+        "d": "FCAW is suitable for production work and outdoor applications but is less versatile than SMAW for Philippine field conditions.",
+        "correct": "SMAW (Shielded Metal Arc Welding) uses a consumable flux-coated electrode, requires minimal equipment, tolerates windy outdoor conditions, and works in all positions. It is the foundation of TESDA NC II certification and dominates Philippine field structural work."
+      },
+      "explanation": "GMAW requires external shielding gas supply and is sensitive to wind; better suited for controlled shop environments and production welding. GTAW produces superior weld quality but is slow and requires very high operator skill; used for specialty applications (aluminum, stainless, thin sections), not structural field work. FCAW is suitable for production work and outdoor applications but is less versatile than SMAW for Philippine field conditions. SMAW (Shielded Metal Arc Welding) uses a consumable flux-coated electrode, requires minimal equipment, tolerates windy outdoor conditions, and works in all positions. It is the foundation of TESDA NC II certification and dominates Philippine field structural work.",
+      "code_citation": "AWS D1.1; TESDA NC II; NSCP 2015 Chapter 5",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-003-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-05-06T16:21:04.736104+00:00",
+      "content_hash": "sha256:c6c27795804d1ac22e96514ed0c480d0ddeb8ca37fbd952e963c59dab360d9bc"
+    },
     {
       "question_id": "2f77fb95-144b-4a41-a3a1-773329618ac0",
       "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
@@ -87,7 +136,7 @@
         "d": "Magnetic Particle Testing (MT) detects surface and near-surface defects in ferrous materials but does not reveal deep internal voids like UT does.",
         "correct": "Ultrasonic Testing (UT) uses sound waves to detect internal defects. It is non-destructive, relatively quick, and effective for structural work. UT is increasingly preferred over RT (radiography) due to safety and cost advantages."
       },
-      "explanation": null,
+      "explanation": "Visual Inspection detects only surface defects; it cannot reveal internal voids or lack of fusion. Radiographic Testing (RT) reveals internal defects but requires safety protocols, longer exposure time, and specialized equipment. UT is faster and safer. Magnetic Particle Testing (MT) detects surface and near-surface defects in ferrous materials but does not reveal deep internal voids like UT does. Ultrasonic Testing (UT) uses sound waves to detect internal defects. It is non-destructive, relatively quick, and effective for structural work. UT is increasingly preferred over RT (radiography) due to safety and cost advantages.",
       "code_citation": "AWS D1.1; NSCP 2015 Chapter 5",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -99,8 +148,8 @@
       "model_id": "ALE-MATL-003-05-006",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a79045924aa077efe778ca20158431185b6e669d50e7e7bf683a93649dce0478"
+      "updated_at": "2026-05-06T16:21:04.474316+00:00",
+      "content_hash": "sha256:30cb50777aeac4bee5a652578a1145207232898514dd0358c57929ae5c571ffa"
     },
     {
       "question_id": "bbbe3d4c-e2bf-44d5-958c-f4db8b8990e2",
@@ -136,7 +185,7 @@
         "c": "GMAW does not use flux coating; this describes SMAW, which has a lower deposition rate.",
         "correct": "GMAW employs external shielding gas (typically argon-CO₂ mixture) and achieves a higher deposition rate than SMAW, making it economical for production shop welding of high-volume structural members."
       },
-      "explanation": null,
+      "explanation": "GMAW does not rely on flux coating; the flux is in SMAW electrodes. While GMAW uses external gas, the deposition rate is higher, not lower. GMAW does not use flux coating; this describes SMAW, which has a lower deposition rate. GMAW employs external shielding gas (typically argon-CO₂ mixture) and achieves a higher deposition rate than SMAW, making it economical for production shop welding of high-volume structural members.",
       "code_citation": "AWS D1.1",
       "bloom_level": "remember",
       "application_context": "recall",
@@ -148,8 +197,8 @@
       "model_id": "ALE-MATL-003-05-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:de159b357b319c6a3bf1c8f810e4ef7f98c64729c8919da076addc65aba8aa19"
+      "updated_at": "2026-05-06T16:21:04.619504+00:00",
+      "content_hash": "sha256:24c17cfc763755fd7aa3cd8a4bdabb69f193c35f10ca495f43e8a8ee86c6d297"
     },
     {
       "question_id": "f8c4fecf-8b7d-4bb2-878e-7f81e32de408",
@@ -299,55 +348,6 @@
       "content_hash": "sha256:f84d0578af598c6a326d42858f2085e0c6af4ddc054ddddd8ef33fac528ecb84"
     },
     {
-      "question_id": "648065a2-3d3f-489a-8e2f-e4d57d1a4b25",
-      "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
-      "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
-      "text": "Which welding process uses a consumable electrode coated with flux and is most commonly specified for field structural work in the Philippines?",
-      "options": [
-        {
-          "id": "a",
-          "text": "GMAW (MIG)"
-        },
-        {
-          "id": "b",
-          "text": "GTAW (TIG)"
-        },
-        {
-          "id": "c",
-          "text": "SMAW (Stick)"
-        },
-        {
-          "id": "d",
-          "text": "FCAW (Flux Cored)"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "GMAW requires external shielding gas supply and is sensitive to wind; better suited for controlled shop environments and production welding.",
-        "b": "GTAW produces superior weld quality but is slow and requires very high operator skill; used for specialty applications (aluminum, stainless, thin sections), not structural field work.",
-        "d": "FCAW is suitable for production work and outdoor applications but is less versatile than SMAW for Philippine field conditions.",
-        "correct": "SMAW (Shielded Metal Arc Welding) uses a consumable flux-coated electrode, requires minimal equipment, tolerates windy outdoor conditions, and works in all positions. It is the foundation of TESDA NC II certification and dominates Philippine field structural work."
-      },
-      "explanation": null,
-      "code_citation": "AWS D1.1; TESDA NC II; NSCP 2015 Chapter 5",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.3,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-MATL-003-05-001",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:388d80ce33d74175e30aa97f2f2ba09ad7adf6ea48a9e86d100dbaeb9374ec38"
-    },
-    {
       "question_id": "75ff7635-bfbe-4065-b770-5f6ebd9baffc",
       "article_id": "99ee4b30-1612-422c-af69-9a496deb6d79",
       "topic_id": "2a341f5f-5e24-428f-9ec6-34a3baf37249",
@@ -430,7 +430,7 @@
         "d": "Material cost is not affected; the concern is qualification testing cost and schedule impact.",
         "correct": "Prequalified joints have been extensively tested and are approved by AWS D1.1 without requiring individual qualification. Non-prequalified joints must undergo custom testing (tension, bend, CVN impact tests) to demonstrate compliance—a costly process that delays fabrication. For cost and schedule efficiency, designers should default to prequalified joints unless there is a compelling reason otherwise."
       },
-      "explanation": null,
+      "explanation": "Philippine standards allow non-prequalified joints if properly qualified; they are not prohibited. Prequalified joints meet a defined standard; non-prequalified joints may be equally strong if properly qualified, but qualification is expensive. Material cost is not affected; the concern is qualification testing cost and schedule impact. Prequalified joints have been extensively tested and are approved by AWS D1.1 without requiring individual qualification. Non-prequalified joints must undergo custom testing (tension, bend, CVN impact tests) to demonstrate compliance—a costly process that delays fabrication. For cost and schedule efficiency, designers should default to prequalified joints unless there is a compelling reason otherwise.",
       "code_citation": "AWS D1.1",
       "bloom_level": "apply",
       "application_context": "design_application",
@@ -442,8 +442,8 @@
       "model_id": "ALE-MATL-003-05-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:27.434371+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:98e4b515b14e921bcd53ab2c60741739f104b482b8bb66c16b28e595f73900c8"
+      "updated_at": "2026-05-06T16:21:04.866958+00:00",
+      "content_hash": "sha256:d3e1a94b6351ba2d64ae7fce307f706cc10a87a591896dc694e8fb25bde46a86"
     },
     {
       "question_id": "403f9d18-5f2a-4550-ba1e-025a96df41fa",

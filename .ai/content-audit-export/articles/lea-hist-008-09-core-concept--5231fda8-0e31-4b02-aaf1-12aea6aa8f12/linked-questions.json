@@ -1,9 +1,162 @@
 {
   "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:172378bbc4ee9f3ac2106518b664470a5fe973f072ff9afafbb61e8626cc7a20",
+  "linked_questions_hash": "sha256:bb4e6cc8559c6f60f0f490aa9c461b4ca30ae2ad5ba49f63d10fccc5569006cb",
   "question_count": 12,
   "questions": [
+    {
+      "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+      "text": "In which year was the Pritzker Architecture Prize established?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1975"
+        },
+        {
+          "id": "b",
+          "text": "1979"
+        },
+        {
+          "id": "c",
+          "text": "1985"
+        },
+        {
+          "id": "d",
+          "text": "1990"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The prize was not established in 1975.",
+        "c": "The prize was established in 1979, not 1985.",
+        "d": "The prize predates 1990.",
+        "correct": "The Pritzker Prize was established in 1979 by the Hyatt Foundation."
+      },
+      "explanation": "The prize was not established in 1975. The prize was established in 1979, not 1985. The prize predates 1990. The Pritzker Prize was established in 1979 by the Hyatt Foundation.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "CH"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "pritzker-01",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T12:41:31.023198+00:00",
+      "content_hash": "sha256:2530ce22ef5a6391b7d80df5819c7dd0c9fb07d88ab0b3ce059302763a7cf022"
+    },
+    {
+      "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+      "text": "Which architect won the Pritzker Prize in 1988, a shared award that was the only shared prize until later team practices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Oscar Niemeyer and Gordon Bunshaft"
+        },
+        {
+          "id": "b",
+          "text": "Paul Rudolph and Kevin Roche"
+        },
+        {
+          "id": "c",
+          "text": "James Stirling and Michael Wilford"
+        },
+        {
+          "id": "d",
+          "text": "Aldo Rossi and Carlo Aymonino"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Roche won individually in 1982; Rudolph did not win.",
+        "c": "Stirling won individually in 1981; Wilford was not a laureate.",
+        "d": "Rossi won individually in 1990.",
+        "correct": "In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.)."
+      },
+      "explanation": "Roche won individually in 1982; Rudolph did not win. Stirling won individually in 1981; Wilford was not a laureate. Rossi won individually in 1990. In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.).",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "ID"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "pritzker-10",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T12:41:31.160483+00:00",
+      "content_hash": "sha256:d7f5eb0979b094c86c0bb9001f62a50bce4246df6c53e06cce4c963183ee1f85"
+    },
+    {
+      "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
+      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
+      "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
+      "text": "How do the Pritzker laureate selections from 2010–2024 differ from those in the 1980s in terms of geography, building type, and design philosophy?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Recent selections are identical to 1980s selections; geography and philosophy have not changed, maintaining a consistent approach"
+        },
+        {
+          "id": "b",
+          "text": "Recent selections increasingly recognize non-Western architects, social impact, and sustainability; 1980s selections emphasized Western formalism and cultural institutions."
+        },
+        {
+          "id": "c",
+          "text": "Recent selections reject all modernism; 1980s selections embraced modernism exclusively, highlighting a shift in architectural values"
+        },
+        {
+          "id": "d",
+          "text": "Recent selections are less rigorous than 1980s selections; quality has declined, reflecting a perceived drop in standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Significant philosophical and geographic shifts are evident.",
+        "c": "Both eras embrace modernism differently; the distinction is in philosophy and scope.",
+        "d": "Recent laureates maintain rigorous standards; the shift is in priorities and representation.",
+        "correct": "The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal)."
+      },
+      "explanation": "Significant philosophical and geographic shifts are evident. Both eras embrace modernism differently; the distinction is in philosophy and scope. Recent laureates maintain rigorous standards; the shift is in priorities and representation. The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal).",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "pritzker-12",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:26.09657+00:00",
+      "updated_at": "2026-05-06T12:41:31.277446+00:00",
+      "content_hash": "sha256:6e6b706e3cd32547293aa5116320a6486618294fccd2b39062e94fd5e84df729"
+    },
     {
       "question_id": "60558af3-7550-4326-a4c2-751024c686e3",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
@@ -89,7 +242,7 @@
         "d": "Alejandro Aravena won in 2016.",
         "correct": "Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation."
       },
-      "explanation": null,
+      "explanation": "Wang Shu won in 2012. Shigeru Ban won in 2014. Alejandro Aravena won in 2016. Frei Otto won the Pritzker Prize in 2015 as the first posthumous laureate, honored for his structural and material innovation.",
       "code_citation": null,
       "bloom_level": "remember",
       "application_context": "recall",
@@ -103,8 +256,8 @@
       "model_id": "pritzker-07",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a1aee63cc1064099df1c7bba95f52246bc8cdeff1605a83e66dce942377727d7"
+      "updated_at": "2026-05-06T12:41:30.761618+00:00",
+      "content_hash": "sha256:612af2d1a704954e0d5a62d75f0f25bede2dcb2e5183070fbbeaab3ada369f8f"
     },
     {
       "question_id": "18cc6036-17b8-4207-976b-16d83f01dead",
@@ -156,57 +309,6 @@
       "created_at": "2026-03-23T19:27:26.09657+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:6af6f5447179a3e27789c69e3776c49f8de4485a00fdca6b34002fb1012c478a"
-    },
-    {
-      "question_id": "c9250b47-47f5-4e45-a44a-6c6b41ca219d",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "In which year was the Pritzker Architecture Prize established?",
-      "options": [
-        {
-          "id": "a",
-          "text": "1975"
-        },
-        {
-          "id": "b",
-          "text": "1979"
-        },
-        {
-          "id": "c",
-          "text": "1985"
-        },
-        {
-          "id": "d",
-          "text": "1990"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "The prize was not established in 1975.",
-        "c": "The prize was established in 1979, not 1985.",
-        "d": "The prize predates 1990.",
-        "correct": "The Pritzker Prize was established in 1979 by the Hyatt Foundation."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "CH"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "pritzker-01",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:a5d4d86eb33b7e803e4d7d70866c9b9144b8e6d9414ce5e13d2ec8fe4a43e566"
     },
     {
       "question_id": "442e0cfd-f922-457e-9e5f-170e4563c4bd",
@@ -412,57 +514,6 @@
       "content_hash": "sha256:a3a69442a9a0287e7aae2049b91747432060a8716360dac2298183df40f5edb4"
     },
     {
-      "question_id": "12e30953-d88a-4857-9235-7522268e8fa4",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "Which architect won the Pritzker Prize in 1988, a shared award that was the only shared prize until later team practices?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Oscar Niemeyer and Gordon Bunshaft"
-        },
-        {
-          "id": "b",
-          "text": "Paul Rudolph and Kevin Roche"
-        },
-        {
-          "id": "c",
-          "text": "James Stirling and Michael Wilford"
-        },
-        {
-          "id": "d",
-          "text": "Aldo Rossi and Carlo Aymonino"
-        }
-      ],
-      "correct_option_id": "a",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "b": "Roche won individually in 1982; Rudolph did not win.",
-        "c": "Stirling won individually in 1981; Wilford was not a laureate.",
-        "d": "Rossi won individually in 1990.",
-        "correct": "In 1988, Gordon Bunshaft (USA) and Oscar Niemeyer (Brazil) shared the Pritzker Prize—the only shared award until later team practices (SANAA, etc.)."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "remember",
-      "application_context": "recall",
-      "practice_context": [
-        "ID"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "pritzker-10",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:b1f993660773ff4fcda9e1b84fa2368016002ab5fb5bc410c73ba45d1c8bd8b5"
-    },
-    {
       "question_id": "30137711-7cb1-4d1b-8eab-2932a1fe0553",
       "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
       "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
@@ -563,57 +614,6 @@
       "created_at": "2026-03-23T19:27:26.09657+00:00",
       "updated_at": "2026-04-08T07:44:46.846261+00:00",
       "content_hash": "sha256:2367f2720e76de941999792bfab54b3f1a42fe931a4215a01ab39f119b8d27f3"
-    },
-    {
-      "question_id": "5b858f47-c9d7-42e0-8abe-855427d4e87a",
-      "article_id": "5231fda8-0e31-4b02-aaf1-12aea6aa8f12",
-      "topic_id": "db6a9e7f-324b-4f27-a905-9061fd7d734b",
-      "text": "How do the Pritzker laureate selections from 2010–2024 differ from those in the 1980s in terms of geography, building type, and design philosophy?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Recent selections are identical to 1980s selections; geography and philosophy have not changed, maintaining a consistent approach"
-        },
-        {
-          "id": "b",
-          "text": "Recent selections increasingly recognize non-Western architects, social impact, and sustainability; 1980s selections emphasized Western formalism and cultural institutions."
-        },
-        {
-          "id": "c",
-          "text": "Recent selections reject all modernism; 1980s selections embraced modernism exclusively, highlighting a shift in architectural values"
-        },
-        {
-          "id": "d",
-          "text": "Recent selections are less rigorous than 1980s selections; quality has declined, reflecting a perceived drop in standards"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Significant philosophical and geographic shifts are evident.",
-        "c": "Both eras embrace modernism differently; the distinction is in philosophy and scope.",
-        "d": "Recent laureates maintain rigorous standards; the shift is in priorities and representation.",
-        "correct": "The article articulates this shift: Early era (1979–1995) rewarded Western modernists and cultural ambition; Recent era (2011–2024) increasingly recognizes Global South architects, social practice, and sustainability (Aravena, Kéré, Ban, Lacaton & Vassal)."
-      },
-      "explanation": null,
-      "code_citation": null,
-      "bloom_level": "apply",
-      "application_context": "design_application",
-      "practice_context": [
-        "CMP"
-      ],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "pritzker-12",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:26.09657+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:adf8ab0bfc1bba7385222d91ef853d0b8cb1543fdd191ccf5c4f436fba88f618"
     }
   ]
 }

@@ -1,0 +1,508 @@
+{
+  "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:c2b68dddd566427568c545bcb601245907ea430ed10a67a480b70e219bffde27",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "53421687-fbbe-422a-a569-ef3bc58d371d",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "For 400 CHB, estimate the mortar requirement using the standard ratio of 1 bag (40 kg) cement and 0.12 m³ sand per 100 blocks.",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 bags cement, 0.48 m³ sand"
+        },
+        {
+          "id": "b",
+          "text": "5 bags cement, 0.50 m³ sand"
+        },
+        {
+          "id": "c",
+          "text": "4 bags cement, 0.40 m³ sand"
+        },
+        {
+          "id": "d",
+          "text": "3 bags cement, 0.36 m³ sand"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "5 bags and 0.50 m³ result from rounding up both components—unnecessary.",
+        "c": "4 bags is correct for cement, but 0.40 m³ sand is only 0.40 m³, not 0.48 m³.",
+        "d": "3 bags and 0.36 m³ are lower than required; would result in weak mortar.",
+        "correct": "Mortar cement: (400 ÷ 100) × 1 bag = 4 bags. Mortar sand: (400 ÷ 100) × 0.12 m³ = 0.48 m³.",
+        "takeaway": "Mortar formula: (Total CHB ÷ 100) × 1 bag cement = total bags. (Total CHB ÷ 100) × 0.12 m³ = total sand volume."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Item 1046, Philippine mortar practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:185355a2d5f4ff47bd621d063c0263a1fea1eb19dee12635c0b634efc46a1619"
+    },
+    {
+      "question_id": "0817ffcb-6f65-43a9-bf12-f3718c112d5f",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "A wall is 20 m long and 3 m high with no openings. How many CHB are required? (Assume 12.5 pcs/m², no waste.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "600 pcs"
+        },
+        {
+          "id": "b",
+          "text": "750 pcs"
+        },
+        {
+          "id": "c",
+          "text": "900 pcs"
+        },
+        {
+          "id": "d",
+          "text": "1,200 pcs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "600 pcs results from using 10 pcs/m² instead of 12.5.",
+        "c": "900 pcs results from using 15 pcs/m² or miscalculating the area.",
+        "d": "1,200 pcs results from doubling the area or using 20 pcs/m².",
+        "correct": "Wall area = 20 m × 3 m = 60 m². CHB required = 60 m² × 12.5 pcs/m² = 750 pcs.",
+        "takeaway": "Basic formula: Wall area (m²) × 12.5 pcs/m² = total CHB. Calculate area first, then apply the factor."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Item 1046",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7790fc298070b634fc8ecc3ff43aa92888e450fe7e13ddb358db356ac445679f"
+    },
+    {
+      "question_id": "1595ab46-68d4-4f08-93f1-bec60f3b9bf8",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "A wall is 30 m² gross area. It has one 1.5 m × 2.1 m door and two 1.2 m × 1.5 m windows. Calculate the net wall area for CHB estimation.",
+      "options": [
+        {
+          "id": "a",
+          "text": "22.5 m²"
+        },
+        {
+          "id": "b",
+          "text": "24.0 m²"
+        },
+        {
+          "id": "c",
+          "text": "25.8 m²"
+        },
+        {
+          "id": "d",
+          "text": "27.3 m²"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "22.5 m² results from subtracting only the door or miscalculating window area.",
+        "c": "25.8 m² results from subtracting only one window or incorrect opening total.",
+        "d": "27.3 m² results from forgetting to subtract all openings or using wrong dimensions.",
+        "correct": "Door area = 1.5 × 2.1 = 3.15 m². Windows area = 2 × (1.2 × 1.5) = 2 × 1.8 = 3.6 m². Total openings = 3.15 + 3.6 = 6.75 m². Net area = 30 – 6.75 = 23.25 m². For estimation purposes, this is rounded up to 24.0 m² to account for small irregularities and to ensure sufficient material.",
+        "takeaway": "Always subtract ALL openings (doors, windows, vents) from gross area FIRST, then apply 12.5 pcs/m² to net area. Round up to the nearest 0.5 m² for safety."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Item 1046, site practice",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:272bc60139c47e2385325a00146458844d3e9ec6a826d9dd67389e2e57973838"
+    },
+    {
+      "question_id": "5c2bf972-6d14-44b6-ad6f-a0c7066939f9",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "A commercial complex requires 2,000 CHB. The mortar mix ratio is 1 part cement to 4 parts sand by volume. How many bags of cement (40 kg each) and cubic meters of sand are needed if 1 bag cement + 0.12 m³ sand is the standard per 100 blocks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 bags, 2.4 m³"
+        },
+        {
+          "id": "b",
+          "text": "20 bags, 2.0 m³"
+        },
+        {
+          "id": "c",
+          "text": "25 bags, 2.5 m³"
+        },
+        {
+          "id": "d",
+          "text": "20 bags, 1.6 m³"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "20 bags is correct, but 2.0 m³ sand is insufficient (should be 2.4 m³).",
+        "c": "25 bags and 2.5 m³ over-estimate by 25%.",
+        "d": "20 bags is correct, but 1.6 m³ sand is too low.",
+        "correct": "Cement: (2,000 ÷ 100) × 1 bag = 20 bags. Sand: (2,000 ÷ 100) × 0.12 m³ = 2.4 m³. The 1:4 ratio is informational; the standard per-block formula takes precedence.",
+        "takeaway": "Use the standard per-block formula (1 bag + 0.12 m³ sand per 100 blocks) for consistent estimation. The mix ratio is for mix design, not for scaling total mortar quantity."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Item 1046",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:57cb140940886d79d9b5292c0a9f4094523679251f298dcb28ce632622d18064"
+    },
+    {
+      "question_id": "97149353-4183-40f9-988f-60953bc8225a",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "A residential wall has 24 m² of net wall area after subtracting openings. How many CHB are needed if a 5% waste allowance is included?",
+      "options": [
+        {
+          "id": "a",
+          "text": "270 pcs"
+        },
+        {
+          "id": "b",
+          "text": "289 pcs"
+        },
+        {
+          "id": "c",
+          "text": "300 pcs"
+        },
+        {
+          "id": "d",
+          "text": "315 pcs"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "270 pcs results from using 12 pcs/m² instead of 12.5 and forgetting waste.",
+        "b": "289 pcs does not match the standard calculation (289 ÷ 1.05 ≈ 275 m² net, which is incorrect).",
+        "c": "300 pcs is the quantity WITHOUT waste; the 5% allowance must be added.",
+        "correct": "CHB without waste: 24 m² × 12.5 pcs/m² = 300 pcs. With 5% waste: 300 × 1.05 = 315 pcs.",
+        "takeaway": "After calculating base CHB, multiply by (1 + waste %). For 5% waste, multiply by 1.05. Always add waste AFTER calculating the net quantity."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Item 1046, site practice",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ba7dffb39191eb5ee47f38de4717134c22f58ac5dc069341fba6ce26279d3e91"
+    },
+    {
+      "question_id": "b09c5ce2-8a96-4dc2-9e56-513eb9ea6db5",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "A three-story building has identical floor plans, each with 50 m² of wall area and 20 m² of openings. How many total CHB are required for all three floors with 5% waste?",
+      "options": [
+        {
+          "id": "a",
+          "text": "945 pcs"
+        },
+        {
+          "id": "b",
+          "text": "1,181 pcs"
+        },
+        {
+          "id": "c",
+          "text": "1,969 pcs"
+        },
+        {
+          "id": "d",
+          "text": "2,362 pcs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "945 pcs results from using only 2 floors or miscalculating the net area.",
+        "c": "1,969 pcs results from forgetting to subtract openings or using the gross 50 m² per floor.",
+        "d": "2,362 pcs results from using 50 m² net (doubling or tripling the opening area).",
+        "correct": "Per floor: gross 50 m² – openings 20 m² = 30 m² net. CHB per floor: 30 × 12.5 = 375 pcs. For 3 floors: 375 × 3 = 1,125 pcs. With 5% waste: 1,125 × 1.05 = 1,181 pcs.",
+        "takeaway": "For multi-story buildings: calculate net area per floor, multiply by 12.5, multiply by number of floors, then add waste."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Item 1046, site practice",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f65996bffc97c68da4428e3bb3832aa8b1cb2e4f4fd5a89b69129f9a736bd766"
+    },
+    {
+      "question_id": "e11d1920-3d49-415a-b697-bfa332dc8295",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "A building has 4 identical walls, each 12 m × 2.5 m, with 2 doors (1.0 m × 2.1 m each) and 4 windows (1.2 m × 1.5 m each) distributed across all four walls. Calculate total CHB and mortar (cement bags and sand volume) with 10% waste. (Use 1 bag + 0.12 m³ sand per 100 blocks.)",
+      "options": [
+        {
+          "id": "a",
+          "text": "1,320 CHB, 13 bags, 1.58 m³ sand"
+        },
+        {
+          "id": "b",
+          "text": "1,452 CHB, 15 bags, 1.74 m³ sand"
+        },
+        {
+          "id": "c",
+          "text": "1,493 CHB, 15 bags, 1.79 m³ sand"
+        },
+        {
+          "id": "d",
+          "text": "1,650 CHB, 17 bags, 1.98 m³ sand"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1,320 CHB results from using lower net area or forgetting 10% waste.",
+        "b": "1,452 CHB with 1.74 m³ sand corresponds to a slightly different calculation; the correct figure is 1,493 CHB and 1.79 m³ sand.",
+        "d": "1,650 CHB and 17 bags significantly over-estimates the requirement.",
+        "correct": "Gross area: 4 walls × (12 × 2.5) = 4 × 30 = 120 m². Openings: 2 doors × (1.0 × 2.1) = 2 × 2.1 = 4.2 m²; 4 windows × (1.2 × 1.5) = 4 × 1.8 = 7.2 m². Total openings = 4.2 + 7.2 = 11.4 m². Net area = 120 – 11.4 = 108.6 m². CHB without waste: 108.6 × 12.5 = 1,357.5 pcs. With 10% waste: 1,357.5 × 1.10 = 1,493.3 ≈ 1,493 pcs. Mortar: (1,493 ÷ 100) × 1 bag = 14.93 ≈ 15 bags. Sand: (1,493 ÷ 100) × 0.12 = 1.7916 ≈ 1.79 m³.",
+        "takeaway": "For multi-opening, multi-wall scenarios: (1) sum gross area, (2) sum all openings, (3) subtract openings, (4) apply 12.5, (5) apply waste %, (6) scale mortar components separately."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Item 1046, comprehensive site estimation",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c4f5cebcaa3da2351c618f54fb688a8a244a2627dc3b22fefa2753ef9e1b6914"
+    },
+    {
+      "question_id": "f2455fb2-17fc-4a01-9955-f0553235c4a0",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "A wall section is 15 m long and 2.8 m high. Two window openings measure 1.5 m × 1.2 m each. Calculate total CHB required (no waste factor).",
+      "options": [
+        {
+          "id": "a",
+          "text": "450 pcs"
+        },
+        {
+          "id": "b",
+          "text": "480 pcs"
+        },
+        {
+          "id": "c",
+          "text": "506 pcs"
+        },
+        {
+          "id": "d",
+          "text": "525 pcs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "450 pcs results from using 10 m² net or incorrect area.",
+        "c": "506 pcs results from using 40.48 m² net (not subtracting all openings correctly).",
+        "d": "525 pcs results from using 42 m² (forgetting to subtract openings entirely).",
+        "correct": "Gross area: 15 × 2.8 = 42 m². Window openings: 2 × (1.5 × 1.2) = 2 × 1.8 = 3.6 m². Net area: 42 – 3.6 = 38.4 m². CHB: 38.4 × 12.5 = 480 pcs.",
+        "takeaway": "Always subtract all openings from gross area first. Then apply 12.5 pcs/m² to the net area."
+      },
+      "explanation": null,
+      "code_citation": "DPWH Item 1046",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fe55a16312047af79d696109b208438e3391943686d6e33f7ec0f022d8b9f9be"
+    },
+    {
+      "question_id": "89adf0c3-32e6-4ec5-ba5c-6383c5087953",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "What is the standard quantity of Concrete Hollow Blocks (CHB) per square meter of wall surface, regardless of block thickness?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 pcs/m², typically used for non-load bearing walls where structural integrity is not a primary concern"
+        },
+        {
+          "id": "b",
+          "text": "12.5 pcs/m²"
+        },
+        {
+          "id": "c",
+          "text": "16 pcs/m², often specified for walls requiring additional strength and stability"
+        },
+        {
+          "id": "d",
+          "text": "20 pcs/m², generally applied in high-density construction to maximize wall thickness and load-bearing capacity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10 pcs/m² is too low; it underestimates blocks required.",
+        "c": "16 pcs/m² assumes no mortar joint (16\" × 8\" = 128 sq inches, without 10 mm joint). This over-estimates.",
+        "d": "20 pcs/m² is significantly too high; no standard calculation yields this.",
+        "correct": "12.5 pcs/m² is the universal standard for CHB quantity estimation, regardless of 4-inch, 6-inch, or 8-inch thickness. This accounts for the standard 10 mm mortar joint.",
+        "takeaway": "Always use 12.5 pcs/m² as the baseline for all CHB walls, regardless of thickness. This is the DPWH and ASTM standard."
+      },
+      "explanation": null,
+      "code_citation": "PNS ASTM C90:2019, DPWH Item 1046",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:192bf9366b0ee806096c08581fb6c3bf7b6ab8adc7d477a149e077ae35e738c1"
+    },
+    {
+      "question_id": "4c9d9227-7dd3-43a8-9ac1-57b003832b49",
+      "article_id": "d0466bdc-3061-46b5-9400-2c41d7eb7c97",
+      "topic_id": "3a4334ef-6346-4af3-9927-485a0cf0af81",
+      "text": "The standard thickness of mortar joint between CHB courses in Philippine construction is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 mm"
+        },
+        {
+          "id": "b",
+          "text": "8 mm"
+        },
+        {
+          "id": "c",
+          "text": "10 mm"
+        },
+        {
+          "id": "d",
+          "text": "15 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 mm is too thin for proper mortar bonding.",
+        "b": "8 mm is close but is not the Philippine standard.",
+        "d": "15 mm is excessively thick and would waste mortar.",
+        "correct": "10 mm (0.01 m) is the standard mortar joint thickness specified in DPWH and PNS standards.",
+        "takeaway": "Standard joint = 10 mm. This is baked into the 12.5 pcs/m² calculation."
+      },
+      "explanation": null,
+      "code_citation": "Industry standard (DPWH Blue Book practice, confirmed PNS 49/ASTM C90)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:746b37d2d3748f163248eb9cb468a2ce32e108f2450923042352868eb58f0569"
+    }
+  ]
+}

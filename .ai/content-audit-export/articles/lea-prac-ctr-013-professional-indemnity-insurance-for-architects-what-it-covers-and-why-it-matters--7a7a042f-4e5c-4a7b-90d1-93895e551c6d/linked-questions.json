@@ -1,9 +1,159 @@
 {
   "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:bb282151b953c3d7e23bae04ce1724533529936e68b40905cc651dc67969cdbe",
+  "linked_questions_hash": "sha256:467041b2f1dc7e9a363e32ddf16fb12d5b44fe68c3c64482a5acff000b275d09",
   "question_count": 10,
   "questions": [
+    {
+      "question_id": "f8db0a13-b15a-445f-a317-93ac760f7e34",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+      "text": "What is an example of a professional error typically covered by professional indemnity insurance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The contractor's failure to pay workers, which can lead to project delays and legal disputes"
+        },
+        {
+          "id": "b",
+          "text": "A design defect requiring costly remediation discovered after construction begins"
+        },
+        {
+          "id": "c",
+          "text": "Damage caused by acts of God, such as earthquakes or floods, which are typically excluded from coverage"
+        },
+        {
+          "id": "d",
+          "text": "The owner's decision to halt the project, resulting in financial losses for the contractor"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses contractor obligations with architect professional services; the contractor's labor disputes are not architect professional failures.",
+        "c": "Acts of God are natural disasters beyond anyone's control and not covered by professional indemnity; insurance covers only the architect's professional errors.",
+        "d": "An owner's business decision to halt a project is not an architect professional error; professional indemnity covers only the architect's design, specification, or supervision failures.",
+        "correct": "Design errors, specification mistakes, and inadequate supervision are professional failures covered by the architect's professional indemnity insurance.",
+        "takeaway": "Design defects, specification errors, and inadequate supervision are architect professional failures covered by indemnity insurance."
+      },
+      "explanation": "Confuses contractor obligations with architect professional services; the contractor's labor disputes are not architect professional failures. Acts of God are natural disasters beyond anyone's control and not covered by professional indemnity; insurance covers only the architect's professional errors. An owner's business decision to halt a project is not an architect professional error; professional indemnity covers only the architect's design, specification, or supervision failures. Design errors, specification mistakes, and inadequate supervision are professional failures covered by the architect's professional indemnity insurance. Design defects, specification errors, and inadequate supervision are architect professional failures covered by indemnity insurance.",
+      "code_citation": "SPP Document 202 / General Practice Standards",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-013-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T13:20:05.18573+00:00",
+      "content_hash": "sha256:df099222d4523bd185b4c98099d1b9761e17e60f45d451c04fb9e3fc72f2d206"
+    },
+    {
+      "question_id": "9c53ef70-fbeb-4b3d-9f89-3206c581ab11",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+      "text": "What role does the insurance company play once a claim is reported?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The insurance company has no involvement in the claim defense"
+        },
+        {
+          "id": "b",
+          "text": "The insurance company assigns defense counsel and generally controls the defense strategy while the architect must cooperate fully"
+        },
+        {
+          "id": "c",
+          "text": "The insurance company always pays the claim immediately without investigation or any further delay"
+        },
+        {
+          "id": "d",
+          "text": "The architect determines the defense strategy independently without any input from the insurance company"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misunderstands the insurer's role; the insurer takes an active role in claim investigation and defense strategy.",
+        "c": "Insurers do not pay claims immediately without investigation; they investigate to determine coverage and then defend at trial or settle.",
+        "d": "The architect does not control defense independently; the insurer controls the strategy and the architect must cooperate with the insurer's chosen approach.",
+        "correct": "Upon claim notice, the insurer typically assigns counsel and directs the defense, with the architect's obligation to cooperate fully with investigation and defense efforts.",
+        "takeaway": "The insurer controls the claim defense strategy and assigns counsel; the architect must fully cooperate but cannot unilaterally direct the defense."
+      },
+      "explanation": "Misunderstands the insurer's role; the insurer takes an active role in claim investigation and defense strategy. Insurers do not pay claims immediately without investigation; they investigate to determine coverage and then defend at trial or settle. The architect does not control defense independently; the insurer controls the strategy and the architect must cooperate with the insurer's chosen approach. Upon claim notice, the insurer typically assigns counsel and directs the defense, with the architect's obligation to cooperate fully with investigation and defense efforts. The insurer controls the claim defense strategy and assigns counsel; the architect must fully cooperate but cannot unilaterally direct the defense.",
+      "code_citation": "SPP Document 202 / General Practice Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-013-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T13:20:05.319085+00:00",
+      "content_hash": "sha256:755df22eaf9730aa4f38533b03f165e8435ac565031b4bf2fb999fc430a25c09"
+    },
+    {
+      "question_id": "92d70317-d9d8-44cd-8485-c081cb875e3a",
+      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
+      "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
+      "text": "What should an architect do immediately upon learning that a claim against their professional services is likely?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Attempt to settle the claim privately without informing the insurer"
+        },
+        {
+          "id": "b",
+          "text": "Wait to see if the claim actually materializes before notifying anyone"
+        },
+        {
+          "id": "c",
+          "text": "Promptly notify the insurer within required timeframes to preserve coverage"
+        },
+        {
+          "id": "d",
+          "text": "Assume the claim is too minor to require insurance involvement"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Private settlement without insurer notice breaches the policy and forfeits coverage; the insurer controls the defense strategy.",
+        "b": "Waiting for claim materialization violates notice requirements; policies require notice of circumstances indicating a likely claim, not just actual claims.",
+        "d": "Assuming a claim is minor risks coverage denial; the architect must notify the insurer of all potential claims, regardless of perceived severity.",
+        "correct": "The architect must provide timely notice to the insurer when a claim arises or circumstances suggest a potential claim; failure to do so can result in coverage denial.",
+        "takeaway": "Immediate notice to the insurer is required to preserve coverage—late notice can void the claim even if coverage would otherwise apply."
+      },
+      "explanation": "Private settlement without insurer notice breaches the policy and forfeits coverage; the insurer controls the defense strategy. Waiting for claim materialization violates notice requirements; policies require notice of circumstances indicating a likely claim, not just actual claims. Assuming a claim is minor risks coverage denial; the architect must notify the insurer of all potential claims, regardless of perceived severity. The architect must provide timely notice to the insurer when a claim arises or circumstances suggest a potential claim; failure to do so can result in coverage denial. Immediate notice to the insurer is required to preserve coverage—late notice can void the claim even if coverage would otherwise apply.",
+      "code_citation": "SPP Document 202 / General Practice Standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-013-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T13:20:05.583935+00:00",
+      "content_hash": "sha256:f42c4341445fdd5092376ad88c5040d74aaabc6076805ff1cc9c3667f5f2ada3"
+    },
     {
       "question_id": "8733cefd-e7e3-4d80-8ae1-5a13d44f3b53",
       "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
@@ -89,7 +239,7 @@
         "correct": "A deductible requires the architect to pay the first portion of each claim, with the insurer covering costs beyond the deductible up to policy limits.",
         "takeaway": "The deductible is the amount the architect pays out-of-pocket on each claim; the insurer covers the remainder up to policy limits."
       },
-      "explanation": null,
+      "explanation": "Deductibles serve risk allocation, not administrative efficiency; they require the insured to share in loss, not reduce the insurer's costs. Deductibles relate to claim cost-sharing, not coverage period; they do not extend or reduce policy duration. Deductibles are per-claim thresholds, not aggregate limits; the total coverage limit is separate from the deductible requirement. A deductible requires the architect to pay the first portion of each claim, with the insurer covering costs beyond the deductible up to policy limits. The deductible is the amount the architect pays out-of-pocket on each claim; the insurer covers the remainder up to policy limits.",
       "code_citation": "SPP Document 202 / General Practice Standards",
       "bloom_level": "understand",
       "application_context": "code_interpretation",
@@ -101,8 +251,8 @@
       "model_id": "ALE-PRAC-CTR-013-005",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:f7ff9c9457c68db246e31d42edb9399d1f9492c32e32f82be2f7c8254324ee6c"
+      "updated_at": "2026-05-06T13:20:04.920753+00:00",
+      "content_hash": "sha256:4678246930ec622e74805b3dab091583305dcda498c97fb43a91dd603f3a68d3"
     },
     {
       "question_id": "972cab95-683e-4066-849f-c99f6efbc1c6",
@@ -189,7 +339,7 @@
         "correct": "Professional indemnity insurance covers claims from multiple parties—owners, contractors, consultants, and third parties—injured by the architect's professional failures.",
         "takeaway": "Professional indemnity insurance covers claims from any party harmed by the architect's negligence, not just the owner."
       },
-      "explanation": null,
+      "explanation": "Incorrectly restricts coverage to the owner; professional indemnity protects against claims from contractors, consultants, and third parties as well. Incorrectly restricts coverage to contractors only; the policy covers claims from owners, third parties, and consultants as well as contractors. Misunderstands claimants; professional indemnity insurance covers claims from parties who suffered damage, not regulatory agencies. Professional indemnity insurance covers claims from multiple parties—owners, contractors, consultants, and third parties—injured by the architect's professional failures. Professional indemnity insurance covers claims from any party harmed by the architect's negligence, not just the owner.",
       "code_citation": "SPP Document 202 / General Practice Standards",
       "bloom_level": "remember",
       "application_context": "code_interpretation",
@@ -201,108 +351,8 @@
       "model_id": "ALE-PRAC-CTR-013-002",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:49ac65de9d092eaea24da9c47cdb47cf030ad15cfbe0016c4be3e27a8f025c46"
-    },
-    {
-      "question_id": "f8db0a13-b15a-445f-a317-93ac760f7e34",
-      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
-      "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
-      "text": "What is an example of a professional error typically covered by professional indemnity insurance?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The contractor's failure to pay workers, which can lead to project delays and legal disputes"
-        },
-        {
-          "id": "b",
-          "text": "A design defect requiring costly remediation discovered after construction begins"
-        },
-        {
-          "id": "c",
-          "text": "Damage caused by acts of God, such as earthquakes or floods, which are typically excluded from coverage"
-        },
-        {
-          "id": "d",
-          "text": "The owner's decision to halt the project, resulting in financial losses for the contractor"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Confuses contractor obligations with architect professional services; the contractor's labor disputes are not architect professional failures.",
-        "c": "Acts of God are natural disasters beyond anyone's control and not covered by professional indemnity; insurance covers only the architect's professional errors.",
-        "d": "An owner's business decision to halt a project is not an architect professional error; professional indemnity covers only the architect's design, specification, or supervision failures.",
-        "correct": "Design errors, specification mistakes, and inadequate supervision are professional failures covered by the architect's professional indemnity insurance.",
-        "takeaway": "Design defects, specification errors, and inadequate supervision are architect professional failures covered by indemnity insurance."
-      },
-      "explanation": null,
-      "code_citation": "SPP Document 202 / General Practice Standards",
-      "bloom_level": "understand",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.5,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-013-003",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:52f4d7d0b70b7d2a99eaef5d9d5cc0a322476378d15fcd1eda52425ffb5ddf06"
-    },
-    {
-      "question_id": "9c53ef70-fbeb-4b3d-9f89-3206c581ab11",
-      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
-      "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
-      "text": "What role does the insurance company play once a claim is reported?",
-      "options": [
-        {
-          "id": "a",
-          "text": "The insurance company has no involvement in the claim defense"
-        },
-        {
-          "id": "b",
-          "text": "The insurance company assigns defense counsel and generally controls the defense strategy while the architect must cooperate fully"
-        },
-        {
-          "id": "c",
-          "text": "The insurance company always pays the claim immediately without investigation or any further delay"
-        },
-        {
-          "id": "d",
-          "text": "The architect determines the defense strategy independently without any input from the insurance company"
-        }
-      ],
-      "correct_option_id": "b",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Misunderstands the insurer's role; the insurer takes an active role in claim investigation and defense strategy.",
-        "c": "Insurers do not pay claims immediately without investigation; they investigate to determine coverage and then defend at trial or settle.",
-        "d": "The architect does not control defense independently; the insurer controls the strategy and the architect must cooperate with the insurer's chosen approach.",
-        "correct": "Upon claim notice, the insurer typically assigns counsel and directs the defense, with the architect's obligation to cooperate fully with investigation and defense efforts.",
-        "takeaway": "The insurer controls the claim defense strategy and assigns counsel; the architect must fully cooperate but cannot unilaterally direct the defense."
-      },
-      "explanation": null,
-      "code_citation": "SPP Document 202 / General Practice Standards",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-013-007",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:092cc90474a995c1c4162446ca107629fa7b6454b60edff51bf9d1755bba3f06"
+      "updated_at": "2026-05-06T13:20:05.057995+00:00",
+      "content_hash": "sha256:7d23d6d255cbf0ce0c6d24881141f49538d0fe596eeea2f61a7fe15d362ee028"
     },
     {
       "question_id": "a3121d4d-bc77-4a38-bd2c-bfd9a732ddc8",
@@ -339,7 +389,7 @@
         "correct": "Professional indemnity policies specify per-occurrence limits (maximum per claim) and aggregate limits (maximum total coverage per policy period).",
         "takeaway": "Professional indemnity policies have two limits: per-claim maximum and annual aggregate maximum—both caps on insurer exposure."
       },
-      "explanation": null,
+      "explanation": "Unlimited coverage is unrealistic; insurers always set maximum exposure through per-claim and aggregate limits. Single-limit structures do not exist; policies distinguish between per-claim limits and aggregate annual limits to manage exposure. While some negotiation occurs, limits are not entirely flexible; policies establish fixed per-claim and aggregate amounts for the coverage period. Professional indemnity policies specify per-occurrence limits (maximum per claim) and aggregate limits (maximum total coverage per policy period). Professional indemnity policies have two limits: per-claim maximum and annual aggregate maximum—both caps on insurer exposure.",
       "code_citation": "SPP Document 202 / General Practice Standards",
       "bloom_level": "apply",
       "application_context": "code_interpretation",
@@ -351,58 +401,8 @@
       "model_id": "ALE-PRAC-CTR-013-008",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:60347c32f09619205b9b675ff96643e9143d9f3b3cfdd15e3c216f895df79d79"
-    },
-    {
-      "question_id": "92d70317-d9d8-44cd-8485-c081cb875e3a",
-      "article_id": "7a7a042f-4e5c-4a7b-90d1-93895e551c6d",
-      "topic_id": "d21977ed-fef2-47e5-8be1-ba2f34eb14a1",
-      "text": "What should an architect do immediately upon learning that a claim against their professional services is likely?",
-      "options": [
-        {
-          "id": "a",
-          "text": "Attempt to settle the claim privately without informing the insurer"
-        },
-        {
-          "id": "b",
-          "text": "Wait to see if the claim actually materializes before notifying anyone"
-        },
-        {
-          "id": "c",
-          "text": "Promptly notify the insurer within required timeframes to preserve coverage"
-        },
-        {
-          "id": "d",
-          "text": "Assume the claim is too minor to require insurance involvement"
-        }
-      ],
-      "correct_option_id": "c",
-      "correct_value": null,
-      "accepted_answers": null,
-      "value_tolerance": 0,
-      "question_type": "mcq",
-      "rationale": {
-        "a": "Private settlement without insurer notice breaches the policy and forfeits coverage; the insurer controls the defense strategy.",
-        "b": "Waiting for claim materialization violates notice requirements; policies require notice of circumstances indicating a likely claim, not just actual claims.",
-        "d": "Assuming a claim is minor risks coverage denial; the architect must notify the insurer of all potential claims, regardless of perceived severity.",
-        "correct": "The architect must provide timely notice to the insurer when a claim arises or circumstances suggest a potential claim; failure to do so can result in coverage denial.",
-        "takeaway": "Immediate notice to the insurer is required to preserve coverage—late notice can void the claim even if coverage would otherwise apply."
-      },
-      "explanation": null,
-      "code_citation": "SPP Document 202 / General Practice Standards",
-      "bloom_level": "apply",
-      "application_context": "code_interpretation",
-      "practice_context": [],
-      "difficulty": 0.7,
-      "difficulty_rating": null,
-      "discrimination_rating": null,
-      "is_assessment": false,
-      "model_id": "ALE-PRAC-CTR-013-006",
-      "prompt_image_url": null,
-      "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:23d0a882a1c11367139f69198029c2be5b480c3718e95c5d2e9c3b944fec31e8"
+      "updated_at": "2026-05-06T13:20:05.457061+00:00",
+      "content_hash": "sha256:b56fdb922105959a2f03c0ac0ced3c1e273427f4b4e1fd3cdedda1e0b43a1173"
     },
     {
       "question_id": "d0c464f2-adfa-4861-ac0c-e3b468e98f09",
@@ -439,7 +439,7 @@
         "correct": "Even diligent architects face claims from design or supervision failures; professional indemnity insurance provides essential financial protection ensuring firm solvency despite major claims.",
         "takeaway": "Even careful architects face claims; professional indemnity insurance is essential to survive a major claim without firm bankruptcy."
       },
-      "explanation": null,
+      "explanation": "Competence does not prevent claims; careful architects can still face claims from design inadequacies or supervision errors discovered later. Professional indemnity insurance provides essential practical protection against catastrophic financial loss, not merely legal compliance. Insurance does not eliminate all risk; it covers financial losses from claims but does not prevent claims from arising or eliminate reputational harm. Even diligent architects face claims from design or supervision failures; professional indemnity insurance provides essential financial protection ensuring firm solvency despite major claims. Even careful architects face claims; professional indemnity insurance is essential to survive a major claim without firm bankruptcy.",
       "code_citation": "SPP Document 202 / General Practice Standards",
       "bloom_level": "analyze",
       "application_context": "code_interpretation",
@@ -451,8 +451,8 @@
       "model_id": "ALE-PRAC-CTR-013-010",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.526003+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:6de302d48cd18e7a6ee096bdcb04d8f96ec6647a3ad4720d97fea238cf1a2a74"
+      "updated_at": "2026-05-06T13:20:05.709981+00:00",
+      "content_hash": "sha256:fdc3a3880ea280ffe91337711fc40eae915b21160074ac91cca334d8933a4bfa"
     },
     {
       "question_id": "b25048dd-53fd-47d2-9918-68272abe1532",

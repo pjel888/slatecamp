@@ -1,0 +1,508 @@
+{
+  "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:d3583524733c43c5d9d372934d5b1d033dc355f9e5e771f3d0e5ade5f8a770b4",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "8532bdb6-bdd8-4f4f-bd6e-1e5a9d11211c",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "An architect retains a structural engineer to design the building frame. The engineer makes an error; the architect does not review the structural plans for compliance with the overall design. Is the architect liable under quasi-delict?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because the structural engineer is an independent professional, which is a common defense."
+        },
+        {
+          "id": "b",
+          "text": "No, if the engineer was CHED-licensed and recognized, which may not absolve liability."
+        },
+        {
+          "id": "c",
+          "text": "Yes, under Article 2180, unless the client explicitly approved the engineer and assumed responsibility"
+        },
+        {
+          "id": "d",
+          "text": "No, because the architect's service agreement may disclaim liability for contracted professionals, though this may not hold in all cases."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely grants independence; contracted professionals' work is the architect's responsibility to the client.",
+        "b": "Wrongly assumes licensing eliminates liability; professional licensing does not shield the hiring architect from responsibility.",
+        "d": "Invents a disclaimer defense; Article 2189 prevents contractual liability waivers; the architect bears responsibility unless client assumes it.",
+        "correct": "Article 1723 provides that the architect and persons who prepared plans, specifications, and who executed the work are liable for defects; responsibility for work by others may be assumed by the owner. The architect's duty to ensure coordinated, compliant design cannot be delegated away.",
+        "takeaway": "Contracted professional liability: architect remains liable unless client explicitly approved professional and assumed responsibility."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8638ec4117b1d529d9800a25775686ce88e889f59975c929895c9261df3bdd6e"
+    },
+    {
+      "question_id": "35208cbe-8610-483e-b362-655d7c2b62ff",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "Can a neighboring property owner sue an architect for quasi-delict damages if the architect's negligent design harms the neighbor's property?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, only the client has standing to sue, as the contract is between the client and the architect"
+        },
+        {
+          "id": "b",
+          "text": "Yes, because quasi-delict allows third parties without contract privity to recover"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if the neighbor hired the architect, establishing a direct contractual relationship"
+        },
+        {
+          "id": "d",
+          "text": "No, unless the neighboring property was explicitly referenced in the building's design, creating a direct link to the architect's duty of care"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly restricts standing; quasi-delict operates independently of contract and applies to any injured third party.",
+        "c": "Adds an unnecessary contract requirement; quasi-delict does not require the third party to be a client.",
+        "d": "Requires impossible advance notice; design professionals cannot avoid liability to neighbors by omitting property references.",
+        "correct": "Quasi-delict liability extends to third parties not in contractual privity with the architect. Neighboring property owners harmed by design defects affecting lateral support, environmental damage, drainage, or vibration transmission have standing to sue under quasi-delict.",
+        "takeaway": "Quasi-delict standing: third parties without contract privity may sue for negligence-caused harm; not limited to direct clients."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c1e2127c34b22be567f9d9b4a432f20880c8a0f3bc02ad2c3824f54f276e2087"
+    },
+    {
+      "question_id": "1dbc01e7-9b74-4914-8257-9b3130c2cf3b",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "What standard of care do architects owe to their clients and third parties under the quasi-delict framework?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Best professional effort without regard to standard practices, ensuring that all client needs are met regardless of industry norms"
+        },
+        {
+          "id": "b",
+          "text": "The degree of skill, diligence, and knowledge ordinarily exercised by licensed architects"
+        },
+        {
+          "id": "c",
+          "text": "Absolute perfection in all technical aspects, leaving no room for error in any phase of the project"
+        },
+        {
+          "id": "d",
+          "text": "Reasonable effort to meet project deadlines, focusing on timely delivery rather than technical precision"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Substitutes subjective effort for objective standard; the law requires conformance to professional norms, not personal best efforts.",
+        "c": "Overstates the requirement; the standard is reasonable professional care, not absolute perfection.",
+        "d": "Narrows the focus to deadlines; the professional standard encompasses all aspects of competent design and execution, not just schedule.",
+        "correct": "The professional standard of care is measured against the degree of skill, diligence, and knowledge ordinarily exercised by licensed architects in the Philippines under similar circumstances. Deviation from accepted professional practices, code violations, or failure to consult specialists when necessary breaches this standard.",
+        "takeaway": "Professional standard of care: skill, diligence, and knowledge ordinarily exercised by licensed architects under similar circumstances."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a16be84d38f8e763f675a4ea73e293d2e7f7f7fc1e84a01a57d74e633b12afb3"
+    },
+    {
+      "question_id": "00550971-f954-4b5c-a520-3e0642ed4bb0",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "What is the statute of limitations for filing a quasi-delict claim based on negligent architectural work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 years from discovery of damage"
+        },
+        {
+          "id": "b",
+          "text": "4 years from discovery of damage"
+        },
+        {
+          "id": "c",
+          "text": "10 years from the negligent act"
+        },
+        {
+          "id": "d",
+          "text": "15 years from completion of the building"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Understates the period; Article 1155 allows 4 years from discovery, not 2.",
+        "c": "Confuses the measurement point; the 4-year period runs from discovery of damage, not from the negligent act.",
+        "d": "Applies Article 1723 timeline; quasi-delict uses the 4-year discovery period, not the 15-year completion window.",
+        "correct": "Article 1155 establishes that civil actions upon a quasi-delict must be instituted within four years (from the time the right of action accrues)., creating a discovery-based statute of limitations distinct from Article 1723's post-collapse period.",
+        "takeaway": "Quasi-delict statute of limitations: 4 years from discovery of damage (distinct from Article 1723's 10-year post-collapse deadline)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:72be2d62cd10faa7a20de0a25d80d00ec60f91b305e4585c7800568110b6940e"
+    },
+    {
+      "question_id": "711b2326-c131-4f2d-8bab-df99e20111fc",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "What is the key procedural advantage of filing a claim under Article 1723 rather than quasi-delict for a building that collapsed due to defective architectural plans?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Article 1723 allows for higher damages, potentially covering both direct and consequential losses"
+        },
+        {
+          "id": "b",
+          "text": "Article 1723 does not require proof of negligence—the defective plan itself establishes liability"
+        },
+        {
+          "id": "c",
+          "text": "Article 1723 has a longer statute of limitations than quasi-delict, providing more time to file a claim"
+        },
+        {
+          "id": "d",
+          "text": "Article 1723 applies only to government buildings, limiting its applicability to public projects"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Both frameworks allow for actual damages; Article 1723's advantage is not the amount but the burden of proof (strict liability vs. negligence requirement).",
+        "c": "Incorrect. Article 1723 applies for 15 years from completion; quasi-delict runs 4 years from discovery. Article 1723 is actually longer in absolute time, but the key advantage is strict liability, not duration.",
+        "d": "Incorrect. Article 1723 applies to all buildings (private, public, commercial, residential), not government buildings only.",
+        "correct": "Article 1723 creates strict liability for the architect who drew the defective plans—if the building collapses within 15 years of completion, the defective design itself establishes liability without requiring separate proof of negligence. Under quasi-delict (Art. 2176), the claimant must independently prove negligence in the architect's conduct, raising the evidentiary burden.",
+        "takeaway": "Article 1723 advantage: strict liability for structural collapse (no negligence proof needed); quasi-delict requires proving negligence separately."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ec12fed88d65f90294dc05cb0c5e3dc2f7aec9fb47c9d012a031e916b56b4301"
+    },
+    {
+      "question_id": "4f65b525-c205-4509-b789-f3f5f6713bed",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "How do Article 1723 and quasi-delict liability function together in protecting clients and the public from architectural negligence?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are redundant; only Article 1723 applies to architects, and it covers all necessary legal aspects without the need for additional frameworks"
+        },
+        {
+          "id": "b",
+          "text": "Article 1723 provides strict liability for structural collapse; quasi-delict covers broader negligence-based claims and extends to third parties"
+        },
+        {
+          "id": "c",
+          "text": "Quasi-delict provides strict liability; Article 1723 requires proof of negligence, making it less applicable in cases where immediate action is needed"
+        },
+        {
+          "id": "d",
+          "text": "They apply only if the client explicitly chooses one framework in the service agreement, which is a rare occurrence in standard architectural contracts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Falsely equates the two; they operate independently with different scopes and standards.",
+        "c": "Reverses the standards; Article 1723 is strict, quasi-delict requires negligence proof.",
+        "d": "Eliminates statutory rights; both frameworks apply by operation of law, not by client choice or contract.",
+        "correct": "The two frameworks are complementary: Article 1723 imposes strict liability for structural collapse within 15 years (no negligence proof needed), while quasi-delict covers broader negligence-based damages (functional defects, cost overruns, third-party claims) under a different statute of limitations.",
+        "takeaway": "Complementary liability: Article 1723 (structural collapse, strict liability, 15 years) + quasi-delict (negligence, 4 years from discovery) protect clients and third parties."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ad6670a0b10425698f8548969702346b71f246e346350f89be6ea91198c56276"
+    },
+    {
+      "question_id": "f857ab41-1fea-4427-82e3-872b52cc036b",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "An architect's design violates applicable building code provisions for seismic safety, but no earthquake occurs and no damage results during the architect's lifetime. After 16 years, an earthquake causes building failure. Can the architect be held liable under quasi-delict despite the 15-year Article 1723 window expiring?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because both regimes have expired 16 years after completion, and no legal action can be pursued"
+        },
+        {
+          "id": "b",
+          "text": "Yes, if filed within 4 years of discovering seismic damage, on the basis of negligent code violation"
+        },
+        {
+          "id": "c",
+          "text": "No, because Article 1723 is the exclusive remedy for structural failures, and it has already expired"
+        },
+        {
+          "id": "d",
+          "text": "Yes, but only if the client can prove the architect knew of the code violation, which can be difficult to establish"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly treats both frameworks as expiring together; quasi-delict's 4-year clock runs from discovery, not completion.",
+        "c": "Overstates Article 1723's exclusivity; quasi-delict provides independent liability for negligence, not limited by Article 1723.",
+        "d": "Adds a knowledge requirement not in quasi-delict; negligent code violation is actionable regardless of intent; breach of standard of care is sufficient.",
+        "correct": "Article 1723's 15-year window bars recovery, but quasi-delict liability (with its 4-year discovery-based statute of limitations) remains available. A negligent code violation is separately actionable under quasi-delict as long as suit is filed within 4 years of discovering damage.",
+        "takeaway": "Beyond Article 1723: quasi-delict allows 4-year discovery-based recovery for negligent code violations even after 15-year window expires."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:99649780daabe4ccc02ec4c271778e7a795abfec25dd3c84b4bfcafb63ade5a6"
+    },
+    {
+      "question_id": "f8f86770-b545-4522-ad8e-7039ef6954d5",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "An architect fails to conduct adequate geotechnical investigation before designing foundations for a building in a known subsidence area. The resulting differential settlement causes cracking and functional defects (no collapse) eight years later. Is this a quasi-delict claim or Article 1723 claim?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Article 1723 only, because it involves foundation defects, which are specifically addressed under this article"
+        },
+        {
+          "id": "b",
+          "text": "Quasi-delict, because it involves negligence in site investigation (non-structural failure), but must be filed within 4 years of discovering damage"
+        },
+        {
+          "id": "c",
+          "text": "Both claims apply, with Article 1723 providing strict liability and quasi-delict requiring proof of negligence"
+        },
+        {
+          "id": "d",
+          "text": "Neither, because no collapse occurred, and the defects do not meet the threshold for legal action"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrongly isolates Article 1723; foundation defects triggering negligence claims fall within quasi-delict scope too.",
+        "b": "Understates the available remedies; both frameworks apply; the architect faces both strict liability (if structural) and negligence liability.",
+        "d": "Wrongly excludes damages; settlement-caused cracking and functional defects are recoverable under quasi-delict.",
+        "correct": "The scenario involves both frameworks: if differential settlement caused structural failure, Article 1723 applies (strict liability within 15-year window); quasi-delict applies for negligence in site investigation independent of structural outcome. Both claims may be pursued—Article 1723 provides strict liability, quasi-delict requires negligence proof.",
+        "takeaway": "Complementary frameworks: both Article 1723 (structural defects, strict liability) and quasi-delict (negligence-based broader claims) may apply simultaneously."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:911c57a9302f0448acded05eb5051c27772a839db44354e7ee0e224cd3e289b0"
+    },
+    {
+      "question_id": "910c48ef-07df-4cb2-b8ba-3de4399cf720",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "An architect's junior designer, supervised by the architect, makes a critical error in structural calculations that causes a building's premature deterioration (not collapse). Who bears liability under quasi-delict?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the junior designer, as they directly performed the calculations without oversight"
+        },
+        {
+          "id": "b",
+          "text": "The architect, as responsible for employees' negligent acts under Article 2180"
+        },
+        {
+          "id": "c",
+          "text": "Only the client for failing to hire a more experienced architect, which is a common oversight in project management"
+        },
+        {
+          "id": "d",
+          "text": "No one, because it is not a structural collapse, and thus not typically actionable under standard liability clauses"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ignores vicarious liability; the architect bears responsibility for supervised employees' conduct.",
+        "c": "Transfers fault to the client; hiring decisions do not shield the architect from vicarious liability for employee negligence.",
+        "d": "Wrongly excludes non-collapse defects; quasi-delict covers premature deterioration and functional defects, not just structural collapse.",
+        "correct": "Article 2180 provides that architects are responsible for damages caused by their employees' negligent acts performed in the course of work. The architect bears vicarious liability and must maintain professional standards in recruiting, training, and supervising staff.",
+        "takeaway": "Vicarious liability (Article 2180): architect responsible for employees' negligent acts; damages recoverable under quasi-delict."
+      },
+      "explanation": null,
+      "code_citation": "RA 9266",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d97bd7cf3729596e39add3f77365b34a19871fa480b13c736887100973a66d72"
+    },
+    {
+      "question_id": "dd46ef55-bdfa-4a92-86af-e53a68bd65d0",
+      "article_id": "82862aca-27a6-4121-ba3f-6d53160d2e3c",
+      "topic_id": "732d06ea-5d2d-4321-9c80-b70bbfcd718c",
+      "text": "What is the foundational principle of quasi-delict liability under Civil Code Article 2176?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Strict liability for all structural defects, regardless of the presence of negligence or intent"
+        },
+        {
+          "id": "b",
+          "text": "Liability based on negligence, regardless of contractual relationship"
+        },
+        {
+          "id": "c",
+          "text": "Liability only when a service contract exists, limiting responsibility to contractual obligations"
+        },
+        {
+          "id": "d",
+          "text": "Liability limited to direct employees of the architect, excluding subcontractors and third-party consultants"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses quasi-delict with Article 1723; quasi-delict requires negligence proof, not strict liability.",
+        "c": "Wrongly requires contract; Article 2176 is broader and operates even without contractual privity.",
+        "d": "Confuses respondeat superior with the framework itself; quasi-delict applies broadly to any negligent actor.",
+        "correct": "Civil Code Article 2176 establishes that any person who causes damage to another through fault or negligence is obligated to pay for the damage, independent of contract and independent of the relationship between the parties.",
+        "takeaway": "Quasi-delict foundation: liability for negligence exists independently of contract; applies to anyone owed a duty of care."
+      },
+      "explanation": null,
+      "code_citation": "Civil Code Articles 2176, 1155, 1723, 2180",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-LAW-012-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:44.366479+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:df0b6f14adfd3350c1cec5e671bead1f8a7eb3d258d6d0439a7558613aaefadf"
+    }
+  ]
+}
