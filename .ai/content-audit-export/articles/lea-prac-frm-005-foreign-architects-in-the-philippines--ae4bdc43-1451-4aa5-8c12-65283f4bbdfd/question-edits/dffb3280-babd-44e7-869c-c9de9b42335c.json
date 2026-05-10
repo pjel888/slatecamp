@@ -1,0 +1,55 @@
+{
+  "question_id": "dffb3280-babd-44e7-869c-c9de9b42335c",
+  "baseline_hash": "sha256:f38d430307456f1ff49086420850f7de41327239127eb91f1b0e96aa0327ef8a",
+  "status": "proposed_source_audited_local_no_supabase",
+  "reason": "Replaces an unsupported special-versus-temporary permit distinction with the source-supported scope rule for a Temporary/Special Permit.",
+  "approved_by": "source-audit-local-agent",
+  "approved_at": "2026-05-10T12:40:00+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+    "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+    "pdf_pages": [
+      4,
+      8
+    ],
+    "source_locator": "PRBoA Resolution No. 03 s.2008, Definition of Temporary/Special Permit and Section 11",
+    "quoted_pdf_excerpt": "Temporary/Special Permit can only be issued to an individual foreign architect ... issued to a foreign architect for one (1) project alone."
+  },
+  "proposed": {
+    "text": "Under PRBoA Resolution No. 03 s.2008, what is the scope of a Temporary/Special Permit issued to a foreign architect?",
+    "options": [
+      {
+        "id": "a",
+        "text": "It is issued to an individual foreign architect and is limited to one project"
+      },
+      {
+        "id": "b",
+        "text": "It is issued to a foreign architectural firm and covers all Philippine projects for one year"
+      },
+      {
+        "id": "c",
+        "text": "It is a permanent Philippine license once the foreign architect has a Filipino counterpart"
+      },
+      {
+        "id": "d",
+        "text": "It allows independent signing and sealing as Architect-of-record"
+      }
+    ],
+    "correct_option_id": "a",
+    "code_citation": "PRBoA Resolution No. 03 s.2008, Temporary/Special Permit Guidelines, PDF pp.4 and 8.",
+    "rationale": {
+      "a": "Correct. The source states that a Temporary/Special Permit is issued to an individual foreign architect and Section 11 limits the permit to one project.",
+      "b": "The source states the permit can only be issued to an individual foreign architect, not a foreign architectural firm.",
+      "c": "A Temporary/Special Permit is limited in period and scope; it is not permanent registration.",
+      "d": "Section 10 states that the Architect-of-record role is reserved to the Filipino counterpart.",
+      "correct": "PRBoA Resolution No. 03 s.2008 treats the Temporary/Special Permit as an individual, project-limited authority for a foreign architect.",
+      "takeaway": "Temporary/Special Permit = individual foreign architect + one project."
+    }
+  },
+  "baseline_refresh": {
+    "reason": "Remote Supabase question row differed from stale linked-questions export; refreshed exact baseline hash before dry-run/apply, without changing proposed source-audited fields.",
+    "previous_baseline_hash": "sha256:f38d430307456f1ff49086420850f7de41327239127eb91f1b0e96aa0327ef8a",
+    "remote_hash_verified_before_apply": "sha256:f38d430307456f1ff49086420850f7de41327239127eb91f1b0e96aa0327ef8a",
+    "verified_at": "2026-05-10T12:58:00+08:00"
+  }
+}

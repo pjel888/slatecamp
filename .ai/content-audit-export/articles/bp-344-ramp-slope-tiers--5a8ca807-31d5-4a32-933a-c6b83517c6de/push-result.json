@@ -1,0 +1,32 @@
+{
+  "attempted_at": "2026-05-10T04:58:25.744Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": false,
+  "blockers": [
+    "candidate.md matches original.md; refusing no-op apply."
+  ],
+  "warnings": [
+    "No Supabase mutation was performed in this batch.",
+    "One linked-question correction is staged in question-edits; linked-questions.json remains the exported baseline."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "slug": "bp-344-ramp-slope-tiers",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103",
+  "original_hash": "sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103",
+  "candidate_hash": "sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103",
+  "stale_check_passed": true,
+  "source_audit": {
+    "legal_or_code_candidate": true,
+    "source_audit_required": true,
+    "source_audit_status": "PASS",
+    "blockers": [],
+    "warnings": [
+      "No Supabase mutation was performed in this batch.",
+      "One linked-question correction is staged in question-edits; linked-questions.json remains the exported baseline."
+    ]
+  },
+  "remote_updated_at_before": "2026-05-09T16:24:34.190588+00:00"
+}

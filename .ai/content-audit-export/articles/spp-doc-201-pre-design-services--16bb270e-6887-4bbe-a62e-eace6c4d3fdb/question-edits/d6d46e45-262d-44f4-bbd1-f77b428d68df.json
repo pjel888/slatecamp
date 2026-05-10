@@ -39,5 +39,11 @@
       "correct": "SPP 201 states that pre-design services may be provided as an individual, through the Architect’s own staff, or by association, consultation or networking.",
       "takeaway": "SPP 201 manner of providing services: individual; Architect’s own staff; association/consultation/networking."
     }
+  },
+  "baseline_refresh": {
+    "reason": "Remote Supabase question row differed from stale linked-questions export; refreshed exact baseline hash before dry-run/apply, without changing proposed source-audited fields.",
+    "previous_baseline_hash": "sha256:e013f06675ce8ad9322eab2b1a4e9be7f357e4ef8ace4c1a9285c67801d2f176",
+    "remote_hash_verified_before_apply": "sha256:e013f06675ce8ad9322eab2b1a4e9be7f357e4ef8ace4c1a9285c67801d2f176",
+    "verified_at": "2026-05-10T12:58:00+08:00"
   }
 }

@@ -1,15 +1,22 @@
 {
   "question_id": "a1eaf1c8-47ba-4a12-97a4-72dbda1dd150",
-  "attempted_at": "2026-05-10T03:10:37.433Z",
+  "attempted_at": "2026-05-10T04:25:55.172Z",
   "dry_run": false,
   "apply": true,
-  "pushed": true,
-  "blockers": [],
+  "pushed": false,
+  "blockers": [
+    "Missing source-audit-evidence.json in parent article folder; question edits require raw-source audit before apply."
+  ],
   "warnings": [],
-  "updated_rows_count": 1,
+  "updated_rows_count": 0,
   "article_id": "c712ee78-2625-434c-bb18-fa7b0f477b33",
   "article_folder": "plastics-in-construction--c712ee78-2625-434c-bb18-fa7b0f477b33",
-  "exported_hash": "sha256:d1086a87a942115bd3eb0f1554983cfbf70ca324fb6e1ccef76621c681da4f7f",
+  "exported_hash": "sha256:9ba8f418d37746fd00ca73f6bde56b21aa3c40070a902c69b4d8953013dc2849",
+  "source_audit": {
+    "source_audit_status": null,
+    "safe_for_supabase_upload": null,
+    "question_claim_found": false
+  },
   "proposed_field_names": [
     "accepted_answers",
     "application_context",
@@ -28,8 +35,7 @@
     "text",
     "value_tolerance"
   ],
-  "remote_hash_before": "sha256:d1086a87a942115bd3eb0f1554983cfbf70ca324fb6e1ccef76621c681da4f7f",
-  "expected_baseline_hash": "sha256:d1086a87a942115bd3eb0f1554983cfbf70ca324fb6e1ccef76621c681da4f7f",
-  "stale_check_passed": true,
-  "updated_at_after": "2026-05-10T03:10:38.398164+00:00"
+  "remote_hash_before": "sha256:9ba8f418d37746fd00ca73f6bde56b21aa3c40070a902c69b4d8953013dc2849",
+  "expected_baseline_hash": "sha256:9ba8f418d37746fd00ca73f6bde56b21aa3c40070a902c69b4d8953013dc2849",
+  "stale_check_passed": true
 }

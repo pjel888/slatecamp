@@ -1,0 +1,226 @@
+{
+  "artifact_type": "source-audit-evidence",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T12:52:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md"
+  ],
+  "target": {
+    "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+    "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+    "title": "Foreign Architects in the Philippines",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/candidate.md",
+    "candidate_sha256": "sha256:76da26e6e1ff34536813f3ef138cbf9daadf822523cc3567ded75b199f220246",
+    "normalized_sha256": "sha256:76da26e6e1ff34536813f3ef138cbf9daadf822523cc3567ded75b199f220246",
+    "linked_questions_sha256": "sha256:d68c022b3d7688259bd9e314005fec64120c4d6ab578fffc4005d674324bf627"
+  },
+  "classification": {
+    "content_type": "professional_practice_law_article",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_audited": 10,
+    "question_edits_created": [
+      "dffb3280-babd-44e7-869c-c9de9b42335c",
+      "0161cbf0-c8cc-4130-92af-aa9d72060818",
+      "edbae089-2b69-424c-8abd-4082fd647dcf"
+    ]
+  },
+  "raw_sources": [
+    {
+      "key": "ra9266_irr",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "extraction_method": "PyMuPDF local text extraction from raw PDF",
+      "pages_checked": [
+        5,
+        16,
+        17,
+        20
+      ]
+    },
+    {
+      "key": "prboa_resolution_03_2008_tsp",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+      "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+      "extraction_method": "PyMuPDF local text extraction from raw PDF",
+      "pages_checked": [
+        1,
+        4,
+        6,
+        8,
+        14,
+        16,
+        17
+      ]
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "RA9266-FOREIGN-001",
+      "claim_text": "Article: a foreign architect is not Filipino, not registered/licensed in the Philippines, and is duly registered/licensed in the home country.",
+      "claim_class": "definition",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_pdf_page": 5,
+        "source_locator": "RA 9266 IRR, Section 3, item 30",
+        "quoted_pdf_excerpt": "not a Filipino citizen nor an Architect registered and licensed in the Philippines ... duly registered and licensed in his/her home country."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-002",
+      "claim_text": "Article: Filipino counterpart means the local Philippine architect, partnership, or corporation that must work in association with the foreign architect or entity on Philippine soil.",
+      "claim_class": "definition",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_pdf_page": 5,
+        "source_locator": "RA 9266 IRR, Section 3, item 31",
+        "quoted_pdf_excerpt": "local Philippine architect, partnership or corporation that must work in association with a foreign architect ... on a project on Philippine soil."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-003",
+      "claim_text": "Article and question c348de7a-021d-4ff6-9c91-c9673fb255f6: Section 38 requires a special/temporary permit from the Board, subject to Commission approval, before assuming duties.",
+      "claim_class": "permit_gate",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_pdf_page": 20,
+        "source_locator": "RA 9266 IRR, Section 38",
+        "quoted_pdf_excerpt": "before assuming the duties, functions and responsibilities ... secure a special/temporary permit from the Board subject to approval of the Commission."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-004",
+      "claim_text": "Article: a foreign person or firm whose name appears with architect/design consultant titles on plans, specifications, permits, advertisements, or billboards is deemed practicing architecture in the Philippines.",
+      "claim_class": "practice_deeming_rule",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_pdf_page": 20,
+        "source_locator": "RA 9266 IRR, Section 38 proviso",
+        "quoted_pdf_excerpt": "whose name or company name ... appears on architectural plans ... shall be deemed practicing architecture in the Philippines."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-005",
+      "claim_text": "Article and question edit 0161cbf0-c8cc-4130-92af-aa9d72060818: Section 36 prohibits unregistered fee collection for architectural services except as an employee representative of a Registered Architect.",
+      "claim_class": "question_edit_fee_rule",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_pdf_page": 20,
+        "source_locator": "RA 9266 IRR, Section 36",
+        "quoted_pdf_excerpt": "unlawful for any unregistered person to collect a fee for architectural services except as an employee."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-006",
+      "claim_text": "Questions ce906996-8079-4d29-be28-ff0467120340 and 39ca179b-d99c-4af0-8dc9-ea438d4895e2: Section 27 reciprocity requires foreign-country admission of Filipino citizens without restriction or on strict and absolute equality after examination.",
+      "claim_class": "reciprocity",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_pdf_page": 16,
+        "source_locator": "RA 9266 IRR, Section 27",
+        "quoted_pdf_excerpt": "admits citizens of the Philippines to the practice of the same profession without restriction ... strict and absolute equality."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-007",
+      "claim_text": "Question 1c94b42d-f325-4780-8ee6-4bb31ffae4ef and question edit dffb3280-babd-44e7-869c-c9de9b42335c: Temporary/Special Permit is issued to an individual foreign architect and is project-limited.",
+      "claim_class": "question_edit_permit_scope",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+        "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+        "raw_pdf_page": 4,
+        "source_locator": "PRBoA Resolution No. 03 s.2008, Temporary/Special Permit definition",
+        "quoted_pdf_excerpt": "can only be issued to an individual foreign architect ... not to foreign architectural firms."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-008",
+      "claim_text": "Question edit dffb3280-babd-44e7-869c-c9de9b42335c: a Temporary/Special Permit is for one project alone.",
+      "claim_class": "question_edit_permit_scope",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+        "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+        "raw_pdf_page": 8,
+        "source_locator": "PRBoA Resolution No. 03 s.2008, Section 11",
+        "quoted_pdf_excerpt": "issued to a foreign architect for one (1) project alone."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-009",
+      "claim_text": "Questions c17e40b2-9252-4ee3-8c91-8b348746079a and 9e07d6a6-a5bf-4615-8aac-b58634d3584c: a foreign architect holding a Temporary/Special Permit cannot act as Architect-of-record; the role is reserved to the Filipino counterpart.",
+      "claim_class": "architect_of_record_rule",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+        "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+        "raw_pdf_page": 8,
+        "source_locator": "PRBoA Resolution No. 03 s.2008, Section 10",
+        "quoted_pdf_excerpt": "cannot act as the Architect-of-record (Aor), as this position is reserved solely for the Filipino counterpart."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-010",
+      "claim_text": "Question edit edbae089-2b69-424c-8abd-4082fd647dcf: the PRBoA TSP application form requests passport number/issuing country-state and architect registration details.",
+      "claim_class": "question_edit_application_form",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PRC/PRBoAres03,s08_temporary Permits for Foreign Architects.pdf",
+        "raw_pdf_sha256": "sha256:7f2933dbe8914fd908cfb5b746d9f32b340fbf8ac053633db1010bc11d0d8b64",
+        "raw_pdf_page": 14,
+        "source_locator": "PRBoA Resolution No. 03 s.2008, Annex A",
+        "quoted_pdf_excerpt": "Passport Number & Issuing Country/state ... Details of Registration of Architect."
+      }
+    },
+    {
+      "claim_id": "RA9266-FOREIGN-011",
+      "claim_text": "Question ec0b122b-f616-4935-85a7-bcdae844f387: foreign applicants from reciprocity countries must establish reciprocity with official proof.",
+      "claim_class": "reciprocity_documentation",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+        "raw_pdf_page": 17,
+        "source_locator": "RA 9266 IRR, Section 27",
+        "quoted_pdf_excerpt": "desires to take the licensure examination ... shall initiate the establishment of reciprocity ... by presenting/submitting a letter or any document."
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "NOT_REQUIRED"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "No Supabase mutation was performed in this batch.",
+      "sources.json remains source_count 0 in the export; raw source evidence is recorded in this audit artifact.",
+      "Three linked-question corrections are staged in question-edits; linked-questions.json remains the exported baseline."
+    ]
+  }
+}
