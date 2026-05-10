@@ -2,6 +2,9 @@ import { createHash } from 'node:crypto'
 import { readFileSync, writeFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { createContentAuditSupabaseClient, loadEnvLocal } from './lib'
+import type { Database } from '../../src/types/supabase'
+
+type WikiArticleUpdate = Database['public']['Tables']['wiki_articles']['Update']
 
 const articleId = process.argv[2]
 const note = process.argv.slice(3).join(' ') || null
@@ -28,7 +31,7 @@ const beforeHash = 'sha256:' + createHash('sha256').update(before.content ?? '')
 const placeholderCount = (candidate.match(/\[SLATECAMP_UI_BLOCK:/g) ?? []).length
 if (placeholderCount) throw new Error(`candidate has ${placeholderCount} raw placeholders`)
 
-const payload: Record<string, unknown> = { content: candidate, updated_at: new Date().toISOString() }
+const payload: WikiArticleUpdate = { content: candidate, updated_at: new Date().toISOString() }
 if (note) payload.updated_note = note
 const { data: updated, error: updateError } = await supabase
   .from('wiki_articles')

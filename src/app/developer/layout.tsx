@@ -8,6 +8,9 @@ export const metadata: Metadata = {
   },
   description: 'Internal documentation, API reference, architecture guides, and dev tools for SlateCamp.',
 }
+
+export const dynamic = 'force-dynamic'
+
 import { ROUTES } from '@/lib/routes'
 import { DevPortalShell } from './_components/DevPortalShell'
 import { getViewerEntitlements } from '@/lib/entitlements/get-viewer-entitlements'

@@ -9,6 +9,8 @@ export const metadata = {
   title: 'CEO Dashboard — SlateCamp',
 }
 
+export const dynamic = 'force-dynamic'
+
 export default async function CeoLayout({
   children,
 }: {
