@@ -1,0 +1,118 @@
+{
+  "artifact_type": "source-audit-evidence.PARKED",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T13:18:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "946e44ee-e4d7-452d-a00a-066bae0f273c",
+    "slug": "lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-ranges",
+    "title": "MDPE Multipliers Overhead Profit Non Technical Factors",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-007-mdpe-multipliers-overhead-profit-non-technical-factors-and-philippine-practice-rang--946e44ee-e4d7-452d-a00a-066bae0f273c/candidate.md",
+    "candidate_sha256": null,
+    "normalized_sha256": "sha256:e9109bc9e3d449949a6974cc6b74b0e5d5bbbf1567492fbce08d425096da5519",
+    "linked_questions_sha256": "sha256:812a7fecbb6e683c8bd18a1dca5fd0a136760811141155335db7b011766b471c"
+  },
+  "classification": {
+    "content_type": "professional_practice_compensation_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": []
+  },
+  "raw_sources": [
+    {
+      "key": "uap_spp_2010_compilation",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "pages_checked": [18, 19, 39]
+    }
+  ],
+  "gate_results": {
+    "compose": "PARKED: Auto-compose blocked by unresolved placeholders ui_0001, ui_0002, ui_0003, ui_0004, ui_0005.",
+    "validate": "PARKED: validation reported unresolved placeholders ui_0001 through ui_0005; candidate.md is absent.",
+    "push_dry_run": "PARKED: dry-run push stopped before Supabase fetch because auto-compose failed on the same unresolved placeholders.",
+    "supabase_mutation": "not_attempted"
+  },
+  "raw_pdf_evidence_obtained": [
+    {
+      "claim": "For regular design services, SPP 202 gives a 1.5 to 2.5 multiplier range.",
+      "raw_source_key": "uap_spp_2010_compilation",
+      "pdf_page": 18,
+      "source_locator": "SPP Document 202, Section 5.2 Multiple of Direct Personnel Expenses",
+      "evidence_excerpt": "The multiplier ranges from 1.5 to 2.5 depending on the office set-up, overhead and experience of the Architect and the complexity of the Project."
+    },
+    {
+      "claim": "The source formula recognizes overhead and reasonable profit, not the article's detailed decomposition bands.",
+      "raw_source_key": "uap_spp_2010_compilation",
+      "pdf_page": 19,
+      "source_locator": "SPP Document 202, Section 5.2 Formula",
+      "evidence_excerpt": "M = Multiplier to account for overhead and reasonable profit."
+    },
+    {
+      "claim": "The same 1.5 to 2.5 wording appears in the fulltime supervision compensation section, showing the general SPP formula pattern but not supporting higher article ranges.",
+      "raw_source_key": "uap_spp_2010_compilation",
+      "pdf_page": 39,
+      "source_locator": "SPP Document 204-A compensation formula excerpt in same compilation",
+      "evidence_excerpt": "The value may range from 1.5 to 2.5 depending on the set-up of the Architect's office and the complexity of the Project."
+    }
+  ],
+  "blockers": [
+    {
+      "id": "CMP007-BLOCKER-001",
+      "severity": "critical",
+      "type": "compose_blocker",
+      "finding": "candidate.md cannot be generated because normalized.md references ui_0001 through ui_0005 but the current ui-block mapping does not resolve those placeholders."
+    },
+    {
+      "id": "CMP007-BLOCKER-002",
+      "severity": "critical",
+      "type": "unsupported_multiplier_ranges",
+      "finding": "The article states standard MDPE multipliers of 1.0-2.0 and broader Philippine market guidance beyond 2.5. The checked SPP source supports 1.5-2.5 only."
+    },
+    {
+      "id": "CMP007-BLOCKER-003",
+      "severity": "high",
+      "type": "unsupported_decomposition",
+      "finding": "The article provides overhead/profit/non-technical decomposition examples and incremental adjustment values such as +0.1-0.3. These values were not found in the checked raw SPP source."
+    },
+    {
+      "id": "CMP007-BLOCKER-004",
+      "severity": "high",
+      "type": "content_quality_defect",
+      "finding": "normalized.md contains the learner-facing typo 'Equivleance' and a truncated preserved Note block. This fails content-quality and compose gates before source PASS can be considered."
+    },
+    {
+      "id": "CMP007-BLOCKER-005",
+      "severity": "medium",
+      "type": "empty_source_bundle",
+      "finding": "sources.json has source_count 0."
+    }
+  ],
+  "linked_question_audit": {
+    "status": "PARKED_NOT_FULLY_AUDITED",
+    "question_ids_observed": [
+      "6c238891-06d7-40cc-b7e3-dd87d108937d",
+      "c345f793-1b09-4d19-9f2d-e045303bff54",
+      "79672571-9965-4604-b18d-9f4a18aa978b",
+      "e8d5bd9e-79ea-460b-9487-c2e0050fdd80",
+      "e5b1465f-86fe-4e33-a1a6-bbe6c557d297",
+      "5cf56df2-5967-4f67-98ab-d325ee7011c0",
+      "330e717d-6e2f-42e1-835e-d6de97657b7f",
+      "1b739814-7580-462e-83d4-7f4aca631188",
+      "2e5a5502-1f77-4d4d-a09d-e0f3e5bbaef0",
+      "04d1074d-a52a-4812-8150-5fa13dee221b"
+    ],
+    "finding": "Question edits were not created because the article's multiplier framework is not raw-source-clean."
+  },
+  "overall": {
+    "source_audit_status": "PARKED",
+    "safe_for_supabase_upload": false,
+    "next_required_action": "Resolve UI blocks, remove unsupported multiplier decompositions/ranges, and source-audit linked questions against a generated candidate."
+  }
+}
