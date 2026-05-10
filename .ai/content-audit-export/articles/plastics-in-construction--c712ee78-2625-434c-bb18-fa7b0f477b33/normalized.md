@@ -37,13 +37,13 @@ A plastic is "approved" under PD 1096 only if it meets all three criteria simult
 **Principle 2 — Structural Adequacy Is Non-Negotiable (Sec. 1602)**
 Plastic components must be supported by technical data demonstrating adequate strength and durability for design loads (dead, live, wind, seismic). Per the 2004 Revised IRR, fastenings must account for both internal and external stresses, and proper allowances must be made when plastics bear against or are in contact with dissimilar materials (thermal expansion differentials are significant in the Philippine tropical climate).
 
-**Principle 3 — Location and Area Limits Control Fire-Zone Risk (Secs. 1603–1607)**
-Every plastic application — veneer, glazing, awnings, diffusers, skylights — has a **maximum area**, **minimum separation**, and **height or distance** restriction that scales with Fire Zone restrictiveness. The less restrictive the Fire Zone, the more plastic area is permitted.
+**Principle 3 — Location and Area Limits Control Fire-Zone Risk (Secs. 1603–1609)**
+Every plastic application — glazing, skylights, monitors, diffusers, partitions, veneer, awnings — has a **maximum area**, **minimum separation**, and **height or distance** restriction that scales with Fire Zone restrictiveness. The less restrictive the Fire Zone, the more plastic area is permitted.
 
-**Principle 4 — Overhead Plastics Require Active Fire Suppression or Proven Fire Venting (Sec. 1607)**
+**Principle 4 — Overhead Plastics Require Active Fire Suppression or Proven Fire Venting (Sec. 1604)**
 Plastic skylights in occupied Groups A, B, C, E, F, H-I, and J-I must be protected by automatic fire-extinguishing systems — unless a qualifying exception applies (approved fire venting, Type IV 1-hr construction, or 1-storey without a required fire-resistive ceiling).
 
-**Principle 5 — Aggregate Area Cap Ties Skylights, Monitors, and Sawtooth Roofs Together (Secs. 1607–1608)**
+**Principle 5 — Aggregate Area Cap Ties Skylights, Monitors, and Sawtooth Roofs Together (Secs. 1604–1605)**
 The total combined area of plastic skylights, plastic panels in monitors, and plastic panels in sawtooth roofs shall **not exceed 20% of the floor area** served. This is a shared cap — not independent limits per element type.
 
 ### Master Mnemonic: **"FAVSA"**
@@ -62,7 +62,7 @@ The total combined area of plastic skylights, plastic panels in monitors, and pl
 | Smoke density | ≤ untreated wood (qualitative) | Specific smoke-developed index per classification |
 | Combustion toxicity | ≤ untreated wood (qualitative) | Tested per ASTM E84 or similar |
 
-### Table 2: Exterior Plastic Veneer (Sec. 1603 IRR vs. IBC 2612)
+### Table 2: Exterior Plastic Veneer (Sec. 1608 IRR vs. IBC 2612)
 
 | Parameter | PD 1096 / 2004 IRR | IBC 2021 (Sec. 2612) |
 |---|---|---|
@@ -73,7 +73,7 @@ The total combined area of plastic skylights, plastic panels in monitors, and pl
 | Min vertical separation between sections | 1.20 m | 4 ft (1.22 m) |
 | Min horizontal separation between sections | 600 mm | 4 ft (1.22 m) |
 
-### Table 3: Glazing of Openings (Sec. 1604 PH vs. IBC 2608)
+### Table 3: Glazing of Openings (Sec. 1603 PH vs. IBC 2608)
 
 | Parameter | PD 1096 / 2004 IRR | IBC 2021 (Sec. 2608) |
 |---|---|---|
@@ -86,7 +86,7 @@ The total combined area of plastic skylights, plastic panels in monitors, and pl
 | Entrance/exit doors | Must NOT be plastic | Must NOT be plastic |
 | Upper floor: distance from stairways | ≥ 3.00 m horizontal | Not directly specified |
 
-### Table 4: Plastic Skylights (Sec. 1607 PH vs. IBC 2610)
+### Table 4: Plastic Skylights (Sec. 1604 PH vs. IBC 2610)
 
 | Parameter | PD 1096 / 2004 IRR | IBC 2021 (Sec. 2610) |
 |---|---|---|
@@ -108,7 +108,7 @@ The total combined area of plastic skylights, plastic panels in monitors, and pl
 | Thermal stability requirement | Must not detach at 65°C for 15 min | ASTM E2264 or equivalent |
 | Sprinkler interaction exemption | Yes — for Groups A, B, C, E, F, H, I (not public corridors) | Yes — with test confirmation |
 
-### Table 6: Light-Transmitting Panels in Monitors/Sawtooth Roofs (Sec. 1608)
+### Table 6: Light-Transmitting Panels in Monitors/Sawtooth Roofs (Sec. 1605)
 
 | Parameter | PD 1096 / 2004 IRR | IBC 2021 |
 |---|---|---|
@@ -128,7 +128,7 @@ Per PD 1096 Section 1601 (as clarified by the 2004 Revised IRR), three fire-perf
 
 1. **Flame-spread rating ≤ 225.** This is a relatively permissive threshold compared to the IBC's CC2 ceiling of 75. The Philippine standard aligns with the recognition that many functional plastics (acrylics, polycarbonates, PVC) fall in the 25–225 range. A plastic with a flame-spread rating above 225 is categorically disallowed, regardless of other merits.
 
-2. **Smoke density ≤ untreated wood.** Rather than assigning a numeric index, the PH code uses untreated wood as a comparative benchmark — a practical standard given the prevleance of wood construction in the Philippines. In practice, manufacturers must provide test data showing smoke density does not exceed wood under the same test conditions.
+2. **Smoke density ≤ untreated wood.** Rather than assigning a numeric index, the PH code uses untreated wood as a comparative benchmark — a practical standard given the prevalence of wood construction in the Philippines. In practice, manufacturers must provide test data showing smoke density does not exceed wood under the same test conditions.
 
 3. **Combustion toxicity ≤ untreated wood.** Again, wood is the comparative benchmark. This provision is critical in occupied spaces (retail malls, schools, offices) where smoke inhalation is a primary life-safety concern.
 
@@ -356,7 +356,7 @@ For section areas: "15 standard, plus 50% = 22.5 in less restrictive zones."
 ## 8. Active Recall Questions
 
 **Question 1**
-*(LEA Area 2 — Materials; PD 1096 Rule XVI Sec. 1607)*
+*(LEA Area 2 — Materials; PD 1096 Rule XVI Sec. 1604)*
 
 Under PD 1096 Rule XVI, what is the maximum **aggregate** area of plastic light-transmitting elements (skylights, monitors, and sawtooth panels combined) permitted over any given floor area?
 
@@ -371,7 +371,7 @@ Under PD 1096 Rule XVI, what is the maximum **aggregate** area of plastic light-
 ---
 
 **Question 2**
-*(LEA Area 2 — Materials; PD 1096 Rule XVI Sec. 1603 — PH vs. USA)*
+*(LEA Area 2 — Materials; PD 1096 Rule XVI Sec. 1608 — PH vs. USA)*
 
 An architect is designing a retail strip in a less restrictive Fire Zone. The plastic veneer is proposed at 18.00 sq.m per section at 9.00 m above grade. Under the **Philippine** 2004 Revised IRR, which statement is correct?
 
@@ -410,9 +410,9 @@ The permitted use of plastic skylights is **explicitly conditioned** on construc
 
 ### Rule XVI × Rule V (Fire Zones)
 Fire Zone restrictiveness directly modifies three Rule XVI provisions:
-- Exterior veneer height exception (Sec. 1603): available only outside highly restrictive zones
-- Exterior veneer area increase (Sec. 1603): +50% in less restrictive zones
-- Greenhouse plastics replacing glass (Sec. 1605): permitted only in less restrictive zones
+- Exterior veneer height exception (Sec. 1608): available only outside highly restrictive zones
+- Exterior veneer area increase (Sec. 1608): +50% in less restrictive zones
+- Greenhouse plastics replacing glass (Sec. 1609): permitted only in less restrictive zones
 
 Architects must map the project's Fire Zone before finalizing any plastic element — a building straddling zone boundaries requires zone-specific analysis for each facade.
 
@@ -460,9 +460,12 @@ Return to this module in **3 days**. If you can answer the three Active Recall q
 
 ## Exam Tip
 
-LEA Trap: Foam plastic insulation requires a 15-minute thermal barrier unless protected by 1/2″ gypsum board. Maximum permitted foam plastic area in interior finish = 10% of wall/celling area (for foam plastic not covered by thermal barrier). The 15-minute thermal barrier is the key safety requirement.
+LEA Trap: Foam plastic insulation requires a 15-minute thermal barrier unless protected by 1/2″ gypsum board. Maximum permitted foam plastic area in interior finish = 10% of wall/ceiling area (for foam plastic not covered by thermal barrier). The 15-minute thermal barrier is the key safety requirement.
 
 ## Cross‑References
 
 **Prefabricated Constructions**, **Sheet Metal And Spray Booths**, **Lathing And Plastering**, **Fire Resistive Construction Ratings**
 
+## Real-World Application
+
+Suppose an architect is reviewing a proposed neighborhood commercial building in Iloilo with translucent plastic skylights over the retail concourse and plastic light diffusers along the corridor ceiling. The first move is not to approve the material because it looks lightweight or economical. The architect must identify the specific plastic use: skylight, diffuser, veneer, or interior finish. Each use has a different fire-safety limit under Rule XVI, so the drawing notes should separate the areas and show the tested flame-spread, smoke, and toxicity data supplied by the manufacturer. If the skylight area pushes the aggregate roof-plastic limit, the architect coordinates with the fire-protection designer instead of hiding the issue in a generic materials schedule. The board-exam lesson is the same: classify the plastic application first, then test the area, separation, height, and protection requirement. Do not answer from the word “plastic” alone.
