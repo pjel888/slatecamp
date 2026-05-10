@@ -1,0 +1,144 @@
+{
+  "artifact_type": "source-audit-evidence.PARKED",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T13:32:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+    "slug": "lea-dsgn-010-02-core-concept",
+    "title": "Parking Structure Design",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-010-02-core-concept--4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-010-02-core-concept--4c706fb3-bd66-4bae-b4a6-2e8ed487031d/candidate.md",
+    "candidate_sha256": "sha256:c9b6fbf25c3fe2b23f6db955f5cf0960e94be9ca522bbd530270052ca57aa6b2",
+    "normalized_sha256": "sha256:c62eec49d881eba38edfbde1926477389bffa923e34d7d2b72df1a1a57eb9e8c",
+    "linked_questions_sha256": "sha256:ddd6dbe356ba6d5d5be7d57374f1db2f24476927be4859a92187df57ef126fe5"
+  },
+  "classification": {
+    "content_type": "design_parking_structure_code_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": []
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_irr",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "pages_checked": [31, 97, 119, 132, 141, 148, 228]
+    },
+    {
+      "key": "bp344_2024_irr",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "raw_pdf_sha256": "sha256:63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "pages_checked": [2, 10, 12]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: candidate recomposed with 0 blockers.",
+    "validate": "PARKED: original.md, sync-state, ui-blocks.json, and diff-report hashes are stale against the current bundle.",
+    "push_dry_run": "PARKED: dry-run did not mutate Supabase and failed while fetching remote article: Error: Was there a typo in the url or port?",
+    "supabase_mutation": "not_attempted"
+  },
+  "raw_pdf_evidence_obtained": [
+    {
+      "claim": "PD 1096 2004 Revised IRR Rule XIX is The Use of Computers, not off-street parking.",
+      "raw_source_key": "pd1096_2004_irr",
+      "pdf_page": 228,
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XIX, Section 1901",
+      "evidence_excerpt": "RULE XIX - THE USE OF COMPUTERS SECTION 1901. General Rule."
+    },
+    {
+      "claim": "PD 1096 parking slot requirements are in Rule VII parking/loading provisions, and average automobile slot size is 2.50 m by 5.00 m for perpendicular or diagonal parking.",
+      "raw_source_key": "pd1096_2004_irr",
+      "pdf_page": 97,
+      "source_locator": "PD 1096 2004 Revised IRR, Rule VII, Parking Slot, Parking Area and Loading/Unloading Space Requirements",
+      "evidence_excerpt": "The size of an average automobile (car) parking slot must be computed at 2.50 meters by 5.00 meters for perpendicular or diagonal parking."
+    },
+    {
+      "claim": "PD 1096 Section 803 is Percentage of Site Occupancy, not parking geometry.",
+      "raw_source_key": "pd1096_2004_irr",
+      "pdf_page": 119,
+      "source_locator": "PD 1096 2004 Revised IRR, Rule VIII, Section 803",
+      "evidence_excerpt": "SECTION 803. Percentage of Site Occupancy."
+    },
+    {
+      "claim": "PD 1096 Section 904 is Storm Drainage System, not drive aisle widths.",
+      "raw_source_key": "pd1096_2004_irr",
+      "pdf_page": 41,
+      "source_locator": "PD 1096 2004 Revised IRR, Rule IX, Section 904",
+      "evidence_excerpt": "SECTION 904. Storm Drainage System."
+    },
+    {
+      "claim": "BP 344 2024 supports accessible parking slot size of 4000 mm by 5000 mm.",
+      "raw_source_key": "bp344_2024_irr",
+      "pdf_page": 10,
+      "source_locator": "BP 344 2024 Revised IRR, Accessible Parking Slots",
+      "evidence_excerpt": "Accessible parking slots shall have: A minimum width of 4000 mm and a length of 5000 mm."
+    }
+  ],
+  "blockers": [
+    {
+      "id": "PARKING-BLOCKER-001",
+      "severity": "critical",
+      "type": "wrong_rule_locator",
+      "finding": "sources.json and linked questions cite PD 1096 Rule XIX as Off-Street Parking. Raw PD 1096 shows Rule XIX is The Use of Computers."
+    },
+    {
+      "id": "PARKING-BLOCKER-002",
+      "severity": "critical",
+      "type": "wrong_section_locator",
+      "finding": "Linked questions cite PD 1096 Sections 803 and 904 for parking geometry/aisle widths. Raw PD 1096 shows Section 803 is Percentage of Site Occupancy and Section 904 is Storm Drainage System."
+    },
+    {
+      "id": "PARKING-BLOCKER-003",
+      "severity": "high",
+      "type": "unsupported_vehicle_geometry",
+      "finding": "Claims for 6.1 m aisle width, 1:6 or 1:7 vehicle ramp gradients, 6.1 m inside-wheel turning radius, 18.5 m structural module, and 2.40 m parking clearance were not verified from the checked raw PD 1096 pages."
+    },
+    {
+      "id": "PARKING-BLOCKER-004",
+      "severity": "high",
+      "type": "internal_conflict",
+      "finding": "The article simultaneously states max 1:7 in the learning goal/media and max 1:6 in the core concept/questions; no raw-source support was found for either as a PD 1096 vehicle-ramp rule."
+    },
+    {
+      "id": "PARKING-BLOCKER-005",
+      "severity": "critical",
+      "type": "validation_blocker",
+      "finding": "Bundle validation failed because original.md, sync-state, ui-blocks.json, and diff-report hashes are stale against the current files."
+    },
+    {
+      "id": "PARKING-BLOCKER-006",
+      "severity": "medium",
+      "type": "dry_run_environment_blocker",
+      "finding": "content-audit:push:dry-run failed during remote fetch with 'Was there a typo in the url or port?'. No Supabase mutation occurred."
+    }
+  ],
+  "linked_question_audit": {
+    "status": "PARKED_NOT_FULLY_AUDITED",
+    "question_ids_observed": [
+      "ab583be5-5d61-48d2-b542-337cf2e13c39",
+      "f28ff3a2-9145-430c-b17f-9e06b2f01c42",
+      "fd86f746-5708-4498-bce8-fe2d5686ef7f",
+      "6937b968-5e7d-4c2e-99ba-25a45f8089e2",
+      "7c02cd24-0309-45e9-97c4-6b7a9e694ba3",
+      "c4b2e780-2574-454f-baf0-799b577cf738",
+      "d33e7760-a031-47e6-b19c-8094362a0513",
+      "3e6e01eb-4252-4aa2-982c-199779c9fc00",
+      "5bed0a27-b385-49d6-9b23-e865f4a0c234",
+      "e426a54f-6b8b-4c98-9004-50385e5c847e"
+    ],
+    "finding": "Question edits were not created because the parent article uses wrong PD 1096 locators and unsupported parking-geometry values."
+  },
+  "overall": {
+    "source_audit_status": "PARKED",
+    "safe_for_supabase_upload": false,
+    "next_required_action": "Rebuild the parking article from verified PD 1096 Rule VII parking provisions and a separate accepted parking-design standard for aisle/ramp geometry before creating question edits."
+  }
+}

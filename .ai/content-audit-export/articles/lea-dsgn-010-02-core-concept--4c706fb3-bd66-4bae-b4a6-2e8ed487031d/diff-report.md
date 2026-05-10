@@ -1,15 +1,15 @@
 # Content Diff Report: lea-dsgn-010-02-core-concept
 
-Generated: 2026-05-10T00:35:33.716Z
+Generated: 2026-05-10T05:25:22.608Z
 Article ID: 4c706fb3-bd66-4bae-b4a6-2e8ed487031d
 Changed: true
-Safe to push locally: true
+Safe to push locally: false
 
 ## Hashes
 
-- Original: `sha256:5b32d7281e45b6a341a4b0fe04144344cf11c2a4d0568aac0fb11dc2ecaf48b6`
-- Normalized: `sha256:5b32d7281e45b6a341a4b0fe04144344cf11c2a4d0568aac0fb11dc2ecaf48b6`
-- Candidate: `sha256:f8101a250e8a18732f0d347552d286cce2bc4f1442e0298ade4f581ad8a98319`
+- Original: `sha256:c62eec49d881eba38edfbde1926477389bffa923e34d7d2b72df1a1a57eb9e8c`
+- Normalized: `sha256:c62eec49d881eba38edfbde1926477389bffa923e34d7d2b72df1a1a57eb9e8c`
+- Candidate: `sha256:c9b6fbf25c3fe2b23f6db955f5cf0960e94be9ca522bbd530270052ca57aa6b2`
 
 ## Line summary
 
@@ -26,7 +26,7 @@ Safe to push locally: true
 
 ## Blockers
 
-- None
+- original.md hash does not match article metadata export hash.
 
 ## Warnings
 

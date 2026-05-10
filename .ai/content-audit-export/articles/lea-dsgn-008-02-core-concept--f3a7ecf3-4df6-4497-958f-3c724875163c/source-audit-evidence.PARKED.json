@@ -1,0 +1,138 @@
+{
+  "artifact_type": "source-audit-evidence.PARKED",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T13:32:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "f3a7ecf3-4df6-4497-958f-3c724875163c",
+    "slug": "lea-dsgn-008-02-core-concept",
+    "title": "Fire-Rated Separation",
+    "article_folder": ".ai/content-audit-export/articles/lea-dsgn-008-02-core-concept--f3a7ecf3-4df6-4497-958f-3c724875163c",
+    "candidate_path": ".ai/content-audit-export/articles/lea-dsgn-008-02-core-concept--f3a7ecf3-4df6-4497-958f-3c724875163c/candidate.md",
+    "candidate_sha256": "sha256:77ad93b9221fd6ce3378224ba2c1375bf24be6d36449850a8354fbbf850dbddf",
+    "normalized_sha256": "sha256:2891fc5b3e3cbe25bce8f63542480c32b03b9f4b75887c7ca3a0b95b32c0654f",
+    "linked_questions_sha256": "sha256:8a2c0d579358475bd30942d5c6ed8a2124dea2ebdfb9a8fc6dc759682086a1eb"
+  },
+  "classification": {
+    "content_type": "fire_code_design_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": []
+  },
+  "raw_sources": [
+    {
+      "key": "pd1096_2004_irr",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+      "pages_checked": [45, 47, 48, 49]
+    },
+    {
+      "key": "ra9514_2019_rirr",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+      "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+      "pages_checked": [58, 59, 65, 94, 96, 105, 130]
+    }
+  ],
+  "gate_results": {
+    "compose": "PASS: candidate recomposed with 0 blockers.",
+    "validate": "PARKED: original.md, sync-state, ui-blocks.json, and diff-report hashes are stale against the current bundle.",
+    "push_dry_run": "PARKED: dry-run did not mutate Supabase and failed while fetching remote article: Error: Was there a typo in the url or port?",
+    "supabase_mutation": "not_attempted"
+  },
+  "raw_pdf_evidence_obtained": [
+    {
+      "claim": "PD 1096 Rule VI defines fire-resistive rating and fire-resistive time period rating.",
+      "raw_source_key": "pd1096_2004_irr",
+      "pdf_page": 45,
+      "source_locator": "PD 1096 2004 Revised IRR, Rule VI, Sections 601-602",
+      "evidence_excerpt": "Fire-resistive rating means the degree to which a material can withstand fire ... Fire-resistive time period rating is the length of time a material can withstand being burned."
+    },
+    {
+      "claim": "PD 1096 Group D is Institutional, not Storage.",
+      "raw_source_key": "pd1096_2004_irr",
+      "pdf_page": 47,
+      "source_locator": "PD 1096 2004 Revised IRR, Rule VII, Section 701, Group D",
+      "evidence_excerpt": "Group D - Institutional ... mental hospitals, mental sanitaria, jails, prisons, reformatories."
+    },
+    {
+      "claim": "PD 1096 Group G is Storage and Hazardous, including storage and handling of hazardous or flammable material.",
+      "raw_source_key": "pd1096_2004_irr",
+      "pdf_page": 48,
+      "source_locator": "PD 1096 2004 Revised IRR, Rule VII, Section 701, Group G",
+      "evidence_excerpt": "Group G - Storage and Hazardous ... Storage and handling of hazardous and highly flammable material."
+    },
+    {
+      "claim": "RA 9514 supports four-hour fire resistance or automatic fire protection for hazards greater than normal occupancy.",
+      "raw_source_key": "ra9514_2019_rirr",
+      "pdf_page": 130,
+      "source_locator": "RA 9514 2019 RIRR, Section 10.2.6.10(A)",
+      "evidence_excerpt": "Any process, operation or storage having a degree of hazard greater than that normal ... shall be enclosed with construction having at least a four-hour fire resistance rating."
+    },
+    {
+      "claim": "RA 9514 supports two-hour fire resistance for protected exit separation in the checked egress provision.",
+      "raw_source_key": "ra9514_2019_rirr",
+      "pdf_page": 94,
+      "source_locator": "RA 9514 2019 RIRR, Section 10.2.5.2(B)",
+      "evidence_excerpt": "When an exit is required to be protected by separation ... construction ... shall have at least a two-hour fire resistance rating."
+    }
+  ],
+  "blockers": [
+    {
+      "id": "FIRESEP-BLOCKER-001",
+      "severity": "critical",
+      "type": "wrong_occupancy_group",
+      "finding": "Article and linked questions repeatedly state 'Group D (Storage)'. Raw PD 1096 shows Group D is Institutional; Group G is Storage and Hazardous."
+    },
+    {
+      "id": "FIRESEP-BLOCKER-002",
+      "severity": "critical",
+      "type": "validation_blocker",
+      "finding": "Bundle validation failed because original.md, sync-state, ui-blocks.json, and diff-report hashes are stale against the current files."
+    },
+    {
+      "id": "FIRESEP-BLOCKER-003",
+      "severity": "high",
+      "type": "unsupported_section_locator",
+      "finding": "The article attributes exit stairwell walls and 1-hour doors to PD 1096 Rule VII Section 805. The raw-source checks found relevant exit protection in RA 9514 Section 10.2.5.2 and PD 1096 Rule XII egress provisions, while PD 1096 Section 805 is a Rule VIII ceiling-height section."
+    },
+    {
+      "id": "FIRESEP-BLOCKER-004",
+      "severity": "high",
+      "type": "unsupported_material_rating",
+      "finding": "Claims such as 150 mm CHB typically yielding a 2-hour rating and Type X gypsum layer ratings were not verified against a raw 001 source in this pass."
+    },
+    {
+      "id": "FIRESEP-BLOCKER-005",
+      "severity": "medium",
+      "type": "dry_run_environment_blocker",
+      "finding": "content-audit:push:dry-run failed during remote fetch with 'Was there a typo in the url or port?'. No Supabase mutation occurred."
+    }
+  ],
+  "linked_question_audit": {
+    "status": "PARKED_NOT_FULLY_AUDITED",
+    "question_ids_observed": [
+      "d04a7162-6802-4652-ba60-ce5ce072fd3e",
+      "798a01cb-ce49-4c22-bf47-1ffa389bf773",
+      "8ddcca80-026d-4f78-b762-6094701455e5",
+      "26c11ad8-3179-4a6f-ba38-2e8c21626313",
+      "f5221eb0-c916-4136-a133-cc779ac3d3a5",
+      "9ca5402c-d13c-4aa8-aab3-abd037d41f1a",
+      "2f9d001a-d81b-4a88-ad0c-1ac1e75ec905",
+      "207d3a2a-6a2e-466a-b84a-a50c25347f17",
+      "4a042acc-e141-4956-af63-4891be445ae0",
+      "56bb0700-c655-4755-bb77-aa107a78cc69"
+    ],
+    "finding": "Question edits were not created because the parent article has a wrong occupancy-family premise and stale bundle validation blockers."
+  },
+  "overall": {
+    "source_audit_status": "PARKED",
+    "safe_for_supabase_upload": false,
+    "next_required_action": "Rebuild the bundle baseline, correct the Group D/Group G premise, verify each fire-rating claim against RA 9514/PD 1096/accepted testing standards, then stage question edits from a corrected parent article."
+  }
+}
