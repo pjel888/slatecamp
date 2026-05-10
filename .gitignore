@@ -102,3 +102,10 @@ vitruvius-connection/
 .ai/13_research/vizcodeph-comprehensive-audit-*/
 vizcode-analysis/
 .vizcode-analysis/
+
+# Local runtime state; not source-controlled
+/data/state_store.db/
+
+# Raw third-party capture HTML can contain transient cookie/token page state.
+# Commit sanitized reports/assets instead of raw HTML dumps.
+.ai/13_research/archris-facebook-photo-audit-*/raw/*.html
