@@ -1,0 +1,81 @@
+{
+  "artifact": "BP344 accessible washrooms pilot pass/park source audit",
+  "generated_at_utc": "2026-05-10T04:04:37Z",
+  "scope": {
+    "article_id": "bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+    "local_only": true,
+    "supabase_touched": false,
+    "source_audit_evidence_json_written": false,
+    "source_audit_evidence_json_reason": "Per instruction, source-audit-evidence.json is reserved for fully verified/corrected PASS output. This run is PARK because the target article normalized.md and linked local question-edit records were not found locally."
+  },
+  "verdict": "PARK",
+  "reason": "Raw BP 344 2024 Revised IRR evidence was found and extracted locally, and the listed blocker dimensions/citations were audited against it. However, the target article body (normalized.md) and local linked question-edit records were not present in the local repo/export, so I could not safely edit/correct them or claim a fully verified PASS.",
+  "raw_pdf_evidence": [
+    {
+      "source_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "local_copy_path": "audit-evidence/bp344-accessible-washrooms/bp344-2024-revised-irr.pdf",
+      "sha256": "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953",
+      "bytes": 1529007,
+      "pages_extracted": 78,
+      "extracted_text_path": "audit-evidence/bp344-accessible-washrooms/bp344-2024-revised-irr.txt"
+    }
+  ],
+  "blocker_audit": [
+    {
+      "blocker": "Unsupported Sec 6.x locators",
+      "status": "resolved_as_unsupported",
+      "finding": "Accessible toilet requirements are under Part C, Section 6, 'Toilets and Baths' in the extracted raw PDF. Bare 'Sec 6.x' sublocators are not stable in the extracted text for the cited washroom dimensions; use 'BP 344 2024 Revised IRR, Part C, Sec. 6, Toilets and Baths' plus the specific requirement text/page evidence instead.",
+      "evidence": ["txt lines 1130-1143 (PDF page 36) introduce Part C Sec. 6 Toilets and Baths and minimum accessible cubicle area"]
+    },
+    {
+      "blocker": "Stale/unsupported 1800 x 2250 accessible toilet dimension",
+      "status": "correct_to_1800_x_1800_minimum_area_or_dimension_context",
+      "finding": "The raw 2024 IRR text supports a minimum accessible toilet cubicle area of 1800 mm x 1800 mm and an outside-cubicle wheelchair turning space of 1800 mm x 1800 mm. No 1800 x 2250 accessible toilet minimum was found in the audited section.",
+      "evidence": ["txt lines 1142-1143: 'Accessible toilet cubicles... minimum area of 1800 mm x 1800 mm'", "txt lines 1171-1172: turning space minimum 1800 x 1800 mm outside water closet cubicles", "txt lines 1204-1205: lavatories installed outside 1800 mm x 1800 mm minimum inner-to-inner clear dimensions"]
+    },
+    {
+      "blocker": "Stale/unsupported 900 x 1500 WC clearance",
+      "status": "correct_to_750mm_adjacent_transfer_space_when_not_directly_accessible",
+      "finding": "For toilets not directly accessed, the raw PDF requires a 1800 x 1800 mm turning space and clear transfer space of at least 750 mm adjacent to the water closet. The 900 x 1500 mm WC-clearance claim was not supported in the accessible toilet section.",
+      "evidence": ["txt lines 1185-1186: 'turning space of 1800mm x 1800mm and clear transfer space of at least 750mm adjacent to the water closet'"]
+    },
+    {
+      "blocker": "450 side transfer",
+      "status": "correct_context",
+      "finding": "The 450 mm value in the raw PDF is not side-transfer clearance; it is the sidewall-to-water-closet-centerline installation dimension and the toilet-seat height. Transfer space is at least 750 mm where required.",
+      "evidence": ["txt lines 1159-1160: water closet installed 450 mm from sidewall finished face to WC centerline", "txt line 1199: toilet seat height shall be 450 mm", "txt lines 1185-1186: transfer space at least 750 mm adjacent to WC"]
+    },
+    {
+      "blocker": "750-850 grab bars",
+      "status": "unsupported_for_accessible_toilet_grab_bar_height",
+      "finding": "The raw PDF supports toilet grab bars installed 300 mm above the top of the toilet seat, not a blanket 750-850 mm above finished floor. It also specifies an L-type vertical leg extending 750 mm above the horizontal grab bar.",
+      "evidence": ["txt lines 1145-1148: L-type grab bar geometry; vertical leg extends 750 mm above horizontal grab bar", "txt lines 1151-1154: both grab bars installed 300 mm high from top of toilet seat to top of grab bars"]
+    },
+    {
+      "blocker": "1.3 kN capacity",
+      "status": "unsupported_stale_replace_with_200kg_for_flip_up_bar",
+      "finding": "The raw PDF supports a flip-up grab bar capable of fully supporting a minimum weight of 200 kg. The 1.3 kN capacity claim was not supported in the audited accessible toilet section.",
+      "evidence": ["txt lines 1149-1152: flip-up grab bar anchored on back wall, robust screws, capable of fully supporting minimum weight of 200 kg"]
+    },
+    {
+      "blocker": "[file:]/[web:] artifacts",
+      "status": "not_verifiable_in_target_article",
+      "finding": "Repo-wide search found no local target article normalized.md, article UUID/slug content file, or linked question-edit file to inspect/remove artifacts from. No Supabase read/write was performed."
+    }
+  ],
+  "repo_search_results": {
+    "target_slug_or_uuid_found_in_repo": false,
+    "normalized_md_found": false,
+    "local_question_edits_found": false,
+    "searched_paths": ["/Users/philiplewis/slatecamp", "/Users/philiplewis"]
+  },
+  "safe_local_correction_guidance_if_article_export_is_supplied": [
+    "Replace unsupported 1800 x 2250 accessible toilet minimum with 1800 mm x 1800 mm minimum accessible toilet cubicle area / inner-to-inner clear dimension, with lavatory outside that clear dimension when inside the accessible toilet.",
+    "Replace 900 x 1500 WC-clearance claims with the raw-PDF requirement: 1800 x 1800 mm turning space and at least 750 mm clear transfer space adjacent to the water closet where the toilet facility cannot be directly accessed.",
+    "Clarify 450 mm as WC sidewall-to-centerline and toilet-seat height, not transfer clearance.",
+    "Replace 750-850 grab-bar height claims with 300 mm above top of toilet seat for toilet grab bars; retain 750 mm only as L-type vertical-leg extension above the horizontal grab bar.",
+    "Replace 1.3 kN grab-bar capacity with flip-up grab bar supports minimum 200 kg, only where discussing the flip-up bar in accessible toilet cubicles.",
+    "Use citations in the form 'BP 344 2024 Revised IRR, Part C, Sec. 6, Toilets and Baths' plus text/page evidence, rather than unsupported bare Sec. 6.x locators."
+  ],
+  "recommended_next_action": "Keep the article/questions parked until the target normalized.md and local linked question-edit records are present. Then apply the safe corrections locally, remove [file:]/[web:] artifacts, validate with this raw-PDF evidence, and only then emit source-audit-evidence.json as PASS."
+}
