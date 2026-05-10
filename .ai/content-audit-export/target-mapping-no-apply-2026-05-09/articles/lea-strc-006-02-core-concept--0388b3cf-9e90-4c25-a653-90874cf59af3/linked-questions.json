@@ -1,0 +1,508 @@
+{
+  "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:85ad8973bf423d4b7f4a5bdadd0518258a4b2fd20e0bcafbc29d679fa0e51ce4",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "9556ec7e-e872-4a67-81c8-7bba8f856370",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "An engineer specifies stirrups in the web of a column rather than ties, and the column subsequently shows longitudinal bar buckling during a load test. What is the primary reason for this failure mode?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Stirrups are too weak and cannot carry shear, especially in columns with high axial loads"
+        },
+        {
+          "id": "b",
+          "text": "Stirrups (designed for shear resistance in beams) do not provide lateral confinement of the longitudinal bars; only ties (closed loops at the perimeter) can prevent bar buckling in a column"
+        },
+        {
+          "id": "c",
+          "text": "The concrete was improperly cured, causing weak bonding with the stirrups, leading to inadequate support"
+        },
+        {
+          "id": "d",
+          "text": "Grade 60 bars are not compatible with stirrups; Grade 40 must be used to ensure proper interaction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "This is a critical error. Stirrups are designed for shear resistance in beams; they are not closed perimeter loops like ties. When used in a column, stirrups do not provide lateral confinement of the longitudinal reinforcement. Under axial compression, the longitudinal bars buckle outward without lateral support from proper ties. The column fails due to a fundamental detailing mistake: wrong element for wrong location.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ERR-STRC-013",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:32fb4de70e56b7da256d4041456de9a2238ed726b3594fb961d62e6d82f6ef33"
+    },
+    {
+      "question_id": "01b5a138-9b27-41b0-a643-13df3b69a44e",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "In a seismic design context in the Philippines, why are spiral columns preferred over tied columns in high-rise structures?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Spiral columns are less expensive and require less reinforcement overall"
+        },
+        {
+          "id": "b",
+          "text": "Spiral columns provide continuous uniform confinement, increasing strength and ductility (deformability before collapse), which is critical for absorbing earthquake energy"
+        },
+        {
+          "id": "c",
+          "text": "Tied columns are not permitted by PNSC in seismic regions"
+        },
+        {
+          "id": "d",
+          "text": "Spiral columns require no longitudinal reinforcement, reducing overall complexity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In seismic design, structures must dissipate earthquake energy through controlled deformation (ductility). A spiral column's continuous helical reinforcement provides superior confinement, preventing core concrete spalling and longitudinal bar buckling over large strain cycles. This makes spiral columns much more ductile than tied columns, allowing the structure to absorb seismic energy without sudden collapse.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 10",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:09bab82cc372e33a277eec4ec73eddaf748999c436d2d6be8e981dbefb0e96a4"
+    },
+    {
+      "question_id": "0913e1c6-52f4-4967-b941-6afedcdabc3e",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "The modulus of elasticity of reinforcing steel (all grades) is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "E = 200 MPa (same as concrete), which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "E = 200,000 MPa (approximately 9-10 times that of concrete)"
+        },
+        {
+          "id": "c",
+          "text": "E = 100,000 MPa (half that of concrete), which is incorrect for standard grades"
+        },
+        {
+          "id": "d",
+          "text": "E varies by grade: Grade 40 has E = 180,000 MPa; Grade 60 has E = 220,000 MPa, which is not standard practice"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The modulus of elasticity for reinforcing steel is E = 200,000 MPa regardless of grade. This value is much higher than concrete (Ec ≈ 20,000–25,000 MPa for typical f'c), meaning steel is much stiffer and carries most of the tension in reinforced concrete.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Section 7.1; ACI 318, Section 3.2",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:087f6d12ed79048d4e36e4f17f0db7a731dd1bd34c3e7976cba23a820531c989"
+    },
+    {
+      "question_id": "4987d103-c0cf-4912-ba97-42804ee56f6d",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "The primary function of stirrups in a reinforced concrete beam is to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Support the longitudinal reinforcement and prevent it from buckling, which is critical for structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "Resist shear forces and confine the concrete core against diagonal tension cracking"
+        },
+        {
+          "id": "c",
+          "text": "Carry the entire bending moment independently, which is a misconception about their role"
+        },
+        {
+          "id": "d",
+          "text": "Reduce concrete shrinkage and prevent surface cracking, although this is not their main purpose"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Stirrups are closed transverse reinforcement loops placed perpendicular to the longitudinal axis of a beam. They primarily resist shear (diagonal tension) by providing internal ties across potential shear cracks. They also confine the concrete core, preventing spalling and improving ductility.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 11",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:214bed337271ff248a0075db684e4544bf7174a9e20678c81b3db02ee455a11c"
+    },
+    {
+      "question_id": "5946cd54-365a-47bb-8e06-0b43480bfac9",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "A designer has placed vertical reinforcement spaced 40 mm apart in a circular column. The longitudinal bar diameter is 20 mm. Is this reinforcement arrangement acting as a spiral or a tied column?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is a tied column because the bars are vertical longitudinal reinforcement arranged at uniform spacing around the perimeter"
+        },
+        {
+          "id": "b",
+          "text": "It is a spiral column because the 40 mm spacing is typical pitch for spiral reinforcement in circular compression members"
+        },
+        {
+          "id": "c",
+          "text": "Cannot determine from the given information; the confinement element (spiral or tie) is not described"
+        },
+        {
+          "id": "d",
+          "text": "It must be a tied column because 40 mm is too small for spiral pitch according to standard reinforcement detailing practices"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The given information describes only the longitudinal vertical bars and their spacing. A spiral or tie is a separate transverse reinforcement element that confines the core. The spacing of longitudinal bars does not indicate whether confinement is provided by a spiral (continuous helical) or ties (discrete loops). Both could potentially use a circular column with these longitudinal bars; the confinement type must be explicitly specified in the design.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:47d0d70d438a4ebe9de8902323c794f500931ebf114adfaa9a38cac622f5bf29"
+    },
+    {
+      "question_id": "b9b5597d-f7a4-46d7-9822-c6690e8d8ceb",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "Grade 60 reinforcing steel (Fy = 414 MPa) has a yield strain of approximately:",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.003 (3 parts per thousand), typically used in high-strength applications"
+        },
+        {
+          "id": "b",
+          "text": "0.00207 or 0.0021 (about 2.1 parts per thousand)"
+        },
+        {
+          "id": "c",
+          "text": "0.001 (1 part per thousand), suitable for low-stress environments"
+        },
+        {
+          "id": "d",
+          "text": "0.005 (5 parts per thousand), often considered for seismic design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Yield strain = Fy / E = 414 MPa / 200,000 MPa = 0.00207 ≈ 0.0021. This is a fundamental property used in strain-based section analysis (balanced section, underreinforced, overreinforced classifications).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Section 7.1; ACI 318, Section 3.2",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0132b3cdccd7d2dba6c71ac4de9f52f8eb5658dd7d4cfeaaa0d50423a3fa38b1"
+    },
+    {
+      "question_id": "7044eee0-f6aa-4583-a5d5-0855fc76271c",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "A spiral column differs from a tied column in that the spiral:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uses smaller diameter bars and tighter spacing to save cost, which may affect structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "Is a continuous helical loop that provides uniform confinement in all directions and increases ductility"
+        },
+        {
+          "id": "c",
+          "text": "Can only be used in square columns, while ties are for rectangular columns, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "Provides the same level of confinement as a single-layer tie at the perimeter, which is not accurate for all cases"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A spiral is continuous helical reinforcement wound around a circular column core. Each complete loop encircles the core, providing uniform pressure from all sides (unlike ties, which only confine at the corners/edges). This continuous confinement makes spiral columns significantly stronger and more ductile (capable of larger deformations before collapse) than tied columns.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318, Chapter 10",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aef9fad5be6327f2f5afa9f919bc208b99505e0cb8990d78a9ea63dbd173cc7f"
+    },
+    {
+      "question_id": "fb30219c-aa24-41b2-86df-7949b948d963",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "Ties in a reinforced concrete column are distinguished from stirrups by:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ties use 90-degree bends while stirrups use 135-degree bends, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Ties are used in columns to confine the core and prevent bar buckling; stirrups are used in beams to resist shear"
+        },
+        {
+          "id": "c",
+          "text": "Ties are welded while stirrups are not, which is not a standard practice"
+        },
+        {
+          "id": "d",
+          "text": "Ties can be spaced farther apart and do not require corner bends, which is incorrect for structural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The key distinction is structural location and function: Ties confine the concrete core in columns and prevent longitudinal bar buckling under compression. Stirrups resist shear in beams. Ties typically have 135-degree corner bends (not 90 degrees), which provide better confinement. This distinction is critical for correct detailing.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 7; ACI 318",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6965e8cea7de4cebe90d6dee60b4a85554f8c51eaf84904e88cb87c9c4b5af07"
+    },
+    {
+      "question_id": "e4998612-b0ea-4188-9cd5-e236b11b4800",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "A 20 mm diameter deformed bar has a cross-sectional area of approximately:",
+      "options": [
+        {
+          "id": "a",
+          "text": "201 mm²"
+        },
+        {
+          "id": "b",
+          "text": "314 mm²"
+        },
+        {
+          "id": "c",
+          "text": "400 mm²"
+        },
+        {
+          "id": "d",
+          "text": "491 mm²"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The cross-sectional area of a 20 mm bar is 314 mm² (π × 10² ≈ 314). The standard values for common bar sizes are: 10mm=78.5, 12mm=113, 16mm=201, 20mm=314, 25mm=491, 32mm=804 mm². These must be memorized for quick calculations.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PS 249:2008; PNSC 2015",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9a63ba28926e3fafda0800bd9437db16ec827a4b652a443fc84994a2ffc3a9b0"
+    },
+    {
+      "question_id": "8852de17-7b38-4835-ae07-f6291c1eaaa8",
+      "article_id": "0388b3cf-9e90-4c25-a653-90874cf59af3",
+      "topic_id": "cda10a77-8b77-4115-bd09-ffc9f3615f78",
+      "text": "Deformed reinforcing bars have ribs rolled onto their surface primarily to:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduce the weight of the bar and lower cost, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Improve mechanical bonding with concrete and prevent slip under load"
+        },
+        {
+          "id": "c",
+          "text": "Increase the cross-sectional area available to carry tension, which is not the primary purpose"
+        },
+        {
+          "id": "d",
+          "text": "Protect the bar from corrosion by creating a barrier layer, although this is not the main function"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Deformed bars have rolled ribs that mechanically interlock with concrete surrounding the bar. This prevents slip and allows stress transfer without relying on surface friction alone. The ribs are the defining feature that distinguishes 'deformed' bars from smooth bars.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PS 249:2008; PNSC 2015, Chapter 7",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:29bc21a5088163684117d456e05d959fb60c8ec22f4224c81e2588bfb05e8455"
+    }
+  ]
+}

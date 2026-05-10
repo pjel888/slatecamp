@@ -78,7 +78,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0007 component="ExamTip" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Pattern 1: Dome System Recognition** "A mosque contains a massive central dome flanked by four half-domes, with additional smaller domes in the corners. Windows beneath the dome flood the interior with light, creating a sense of weightless geometric purity. Identify the Ottoman architect most responsible for perfecting this system, and explain why it differs structurally from Byzantine or earlier Islamic domes." (Answer: **Mimar Sinan**; Ottoman domes are supported by cascading half-domes and 
+- Text: **Pattern 1: Dome System Recognition** "A mosque contains a massive central dome flanked by four half-domes, with additional smaller domes in the corners. Windows beneath the dome flood the interior with light, creating a sense of weightless geometric purity. Identify the Ottoman architect most responsible for perfecting this system, and explain why it differs structurally from Byzantine or earlier Islamic domes." (Answer: **Mimar Sinan**; Ottoman domes are supported by cascading half-domes and
 [/SLATECAMP_UI_BLOCK]
 [SLATECAMP_UI_BLOCK:ui_0008 component="ExamTip" status="preserved"]
 Extracted summary:
@@ -166,4 +166,3 @@ Extracted summary:
 See also within Islamic Architecture: **lea-hist-004-01-core-concept**, **lea-hist-004-02-core-concept**, **lea-hist-004-05-core-concept**, **lea-hist-004-07-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
-

@@ -1,0 +1,508 @@
+{
+  "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:34fb9136def24b540452db76826f570a5c8f3962fb96e7a7ed5f4d4599c85867",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1d3caf7f-8bf2-4d2f-b377-e5a86b5e78c8",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "A building has 150 m² interior walls and 200 m² exterior walls. Interior: 10 m²/L per coat (2 coats). Exterior: 12 m²/L per coat (2 coats, rough concrete reduces by 15%). Calculate total paint needed with 5% waste.",
+      "options": [
+        {
+          "id": "a",
+          "text": "47.2 liters"
+        },
+        {
+          "id": "b",
+          "text": "55.3 liters"
+        },
+        {
+          "id": "c",
+          "text": "61.5 liters"
+        },
+        {
+          "id": "d",
+          "text": "72.8 liters"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "47.2 L is too low; may omit one surface or coat.",
+        "b": "55.3 L is intermediate; possibly missing exterior roughness adjustment.",
+        "c": "61.5 L may result from applying waste incorrectly or using wrong coverage.",
+        "correct": "Interior: (150 ÷ 10) × 2 = 30 L. Exterior adjusted coverage = 12 × 0.85 = 10.2 m²/L. Exterior: (200 ÷ 10.2) × 2 = 39.2 L. Total base = 30 + 39.2 = 69.2 L. With 5% waste: 69.2 × 1.05 = 72.66 L ≈ 72.8 L.",
+        "takeaway": "For mixed surfaces: calculate each type separately (adjusting coverage for condition), sum, then apply waste factor."
+      },
+      "explanation": null,
+      "code_citation": "Complex paint estimation",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:df34c10901050882f535975bfdf0ed703cefdb456b23c2ea342e1c1f14eb4943"
+    },
+    {
+      "question_id": "973c6797-5ee9-4fd6-a473-ef78dc90be08",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "The formula for paint required is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Paint (L) = Area (m²) × Coverage rate (m²/L)"
+        },
+        {
+          "id": "b",
+          "text": "Paint (L) = Area (m²) ÷ Coverage rate (m²/L)"
+        },
+        {
+          "id": "c",
+          "text": "Paint (L) = Area (m²) + Coverage rate (m²/L)"
+        },
+        {
+          "id": "d",
+          "text": "Paint (L) = Coverage rate (m²/L) ÷ Area (m²)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Multiplying area by coverage rate would give m⁴/L (incorrect units).",
+        "c": "Adding area and coverage rate is meaningless mathematically.",
+        "d": "Dividing coverage rate by area gives L/m⁴ (inverse and incorrect).",
+        "correct": "Paint required (liters) = Total area (m²) ÷ Coverage rate (m²/L). Dividing area by the coverage rate gives liters needed.",
+        "takeaway": "Always divide area by coverage rate: Paint (L) = Area ÷ Coverage rate."
+      },
+      "explanation": null,
+      "code_citation": "Paint coverage calculation methodology",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6362a3a894ef63f8726c2b50a07dc73c4ce200cf74787a8581d876504f2f586a"
+    },
+    {
+      "question_id": "d983e8b8-b0e3-412f-b106-6a232898aaf1",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "When paint coverage is reduced due to surface roughness, the factor applied is typically ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Multiply coverage rate by 0.70–0.80"
+        },
+        {
+          "id": "b",
+          "text": "Multiply coverage rate by 1.15–1.20 to account for increased surface area and ensure adequate coverage"
+        },
+        {
+          "id": "c",
+          "text": "Divide area by 1.15–1.20, adjusting for the rough texture that increases paint consumption"
+        },
+        {
+          "id": "d",
+          "text": "Add 15–20% to paint volume to compensate for the additional material needed on rough surfaces"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Multiplying by >1 would increase coverage, which is incorrect.",
+        "c": "Dividing area by a factor is an alternative approach, but the standard method is to adjust the coverage rate downward.",
+        "d": "Adding a percentage to paint volume is a result, not the direct adjustment factor.",
+        "correct": "Rough surfaces reduce effective coverage. If coverage is 10 m²/L and roughness reduces it by 20%, then effective coverage = 10 × 0.80 = 8 m²/L. This increases paint needed.",
+        "takeaway": "To account for rough surfaces, reduce the coverage rate by 15–20% (multiply by 0.80–0.85)."
+      },
+      "explanation": null,
+      "code_citation": "Paint estimation methodology",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:517ebe94d09e9d7783c66e0feb48a37cc8c143313bd99ac8d1c79e4dd64f6e15"
+    },
+    {
+      "question_id": "7d30ab11-a40d-4392-9e9b-5d6ff12bb34e",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "How much interior latex paint (at 10 m²/L coverage) is needed for 100 m² of wall with one coat?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 liters"
+        },
+        {
+          "id": "b",
+          "text": "10 liters"
+        },
+        {
+          "id": "c",
+          "text": "50 liters"
+        },
+        {
+          "id": "d",
+          "text": "100 liters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 liters results from dividing by 20 (incorrect).",
+        "c": "50 liters results from multiplying 100 × coverage rate (inverse formula).",
+        "d": "100 liters is the total area, not paint volume.",
+        "correct": "Paint = 100 m² ÷ 10 m²/L = 10 liters.",
+        "takeaway": "Use the formula: Area ÷ Coverage rate = Paint needed."
+      },
+      "explanation": null,
+      "code_citation": "Paint coverage calculation",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:98eabc16b1bb14bcf40574b6c275b1fb70995b7f1102a3f54edcd670f0d143d0"
+    },
+    {
+      "question_id": "8649ffb1-0895-47ed-959d-d86483282fc4",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "A commercial complex requires 500 m² of interior wall coating (primer + finish) at 10 m²/L coverage per coat, plus 600 m² of exterior wall coating (rough concrete, one coat only, nominal coverage 12 m²/L, reduce by 25% for roughness). Calculate total paint needed with 10% waste and determine the number of 20-liter containers required.",
+      "options": [
+        {
+          "id": "a",
+          "text": "125 L, 7 containers"
+        },
+        {
+          "id": "b",
+          "text": "167 L, 9 containers"
+        },
+        {
+          "id": "c",
+          "text": "184 L, 10 containers"
+        },
+        {
+          "id": "d",
+          "text": "220 L, 12 containers"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "125 L and 7 containers is too low; may omit a coat or misapply waste.",
+        "b": "167 L and 9 containers is close to base amount but misses waste and rounding.",
+        "d": "220 L and 12 containers over‑estimates paint needed.",
+        "correct": "Interior: (500 ÷ 10) × 2 = 100 L. Exterior adjusted coverage = 12 × 0.75 = 9 m²/L. Exterior: 600 ÷ 9 = 66.67 L (one coat). Total base = 100 + 66.67 = 166.67 L. With 10% waste: 166.67 × 1.10 = 183.33 L ≈ 184 L. 20‑liter containers: 184 ÷ 20 = 9.2 → round up to 10 containers.",
+        "takeaway": "Multi‑area, multi‑coat systems: calculate each area and coat combination separately, sum, apply waste, then convert to container count rounding up."
+      },
+      "explanation": null,
+      "code_citation": "Comprehensive paint estimation",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ec41b8897879b38d7f26a9a5b51bc273abccd37b37579506c185c6d3f4df8f6"
+    },
+    {
+      "question_id": "8e2bb8dd-925e-4c86-8277-cc9bb6c97d3d",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "A rough concrete wall (60 m²) requires painting. The coverage rate is normally 10 m²/L, but rough surfaces reduce coverage by 20%. How much paint is needed for two coats?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 liters"
+        },
+        {
+          "id": "b",
+          "text": "12 liters"
+        },
+        {
+          "id": "c",
+          "text": "15 liters"
+        },
+        {
+          "id": "d",
+          "text": "18 liters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "6 L is one coat on smooth surface (60 ÷ 10).",
+        "b": "12 L is two coats on smooth surface without adjusting for roughness.",
+        "d": "18 L may result from applying a waste factor or incorrectly doubling the adjustment.",
+        "correct": "Adjusted coverage = 10 m²/L × 0.80 = 8 m²/L. Per coat: 60 ÷ 8 = 7.5 L. Two coats: 7.5 × 2 = 15 L.",
+        "takeaway": "Adjust coverage rate for surface condition BEFORE calculating paint volume. Rough surfaces reduce effective coverage by 15–20%."
+      },
+      "explanation": null,
+      "code_citation": "Paint estimation with surface adjustments",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:43bbec949d2ab1c89a7ff505c41199b7c68fd87157efd91014c42280fb5fd1ed"
+    },
+    {
+      "question_id": "da533000-a54d-4880-a079-9af79599fa8b",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "A contractor estimates 40 liters of paint at 550 pesos per liter. How many 4-liter cans are needed, and what is the total cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10 cans, 22,000 pesos"
+        },
+        {
+          "id": "b",
+          "text": "11 cans, 22,000 pesos"
+        },
+        {
+          "id": "c",
+          "text": "11 cans, 24,200 pesos"
+        },
+        {
+          "id": "d",
+          "text": "12 cans, 26,400 pesos"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10 cans at 22,000 pesos assumes no waste, but rounding up for waste is standard practice.",
+        "b": "11 cans at 22,000 pesos incorrectly uses 40 L for cost while rounding cans up.",
+        "d": "12 cans and 26,400 pesos over-estimates waste.",
+        "correct": "Base estimate is 40 L, but a 10% waste allowance (common in painting) brings total to 44 L. 44 L ÷ 4 L/can = 11 cans. Cost = 44 L × 550 pesos/L = 24,200 pesos.",
+        "takeaway": "Always account for waste (typically 5–10%) and round up to full cans. Cost = total liters × price per liter."
+      },
+      "explanation": null,
+      "code_citation": "Paint can conversion and cost",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:873129e923bb2558671799e4336d73ea7e4e74e3ffa79fa92e3cbaddea977528"
+    },
+    {
+      "question_id": "76bc2dc6-ea5b-416f-885b-c9b06e9ee394",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "A project requires 80 m² of wall painting with primer (11 m²/L) and finish coat (10 m²/L). How many total liters are needed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14.5 liters"
+        },
+        {
+          "id": "b",
+          "text": "15.3 liters"
+        },
+        {
+          "id": "c",
+          "text": "18 liters"
+        },
+        {
+          "id": "d",
+          "text": "28.6 liters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "14.5 L is too low; may result from using an average coverage without correct division.",
+        "c": "18 L may include a waste factor not stated in the problem.",
+        "d": "28.6 L results from adding 80 ÷ 11 + 80 ÷ 10 incorrectly or using the wrong formula.",
+        "correct": "Primer: 80 ÷ 11 ≈ 7.27 L. Finish: 80 ÷ 10 = 8 L. Total = 15.27 L ≈ 15.3 L.",
+        "takeaway": "For multi-coat systems, calculate each coat's paint volume separately, then sum."
+      },
+      "explanation": null,
+      "code_citation": "Multi-coat paint estimation",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:896473a531f930c3e93dd17855f5df63b6f8249dd6711578bce574d7fbd6e1e0"
+    },
+    {
+      "question_id": "ae8111d4-21cf-425c-a92b-e0e01940e245",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "A typical coverage rate for interior latex paint is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 m²/L"
+        },
+        {
+          "id": "b",
+          "text": "8 m²/L"
+        },
+        {
+          "id": "c",
+          "text": "10 m²/L"
+        },
+        {
+          "id": "d",
+          "text": "15 m²/L"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5 m²/L is too low; applies only to specialty coatings or epoxy.",
+        "b": "8 m²/L is low-end; applies to rough surfaces or specialty products.",
+        "d": "15 m²/L is high; applies to thin primer or water-based stains, not standard latex.",
+        "correct": "Interior latex paint typically covers 10 m²/L on smooth surfaces. This is a standard benchmark.",
+        "takeaway": "Standard interior latex paint covers approximately 10 m²/L per coat on smooth surfaces."
+      },
+      "explanation": null,
+      "code_citation": "Boysen, Mapua Philippines paint specifications",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:71050adaa50ab47b6609bf0ec16d9db3a350eed8370c2a31664ccef94c167341"
+    },
+    {
+      "question_id": "84389357-cb5f-49d8-9791-23bad8e5bdc4",
+      "article_id": "40dc0d6d-ae04-49de-b43a-36e9288a0622",
+      "topic_id": "39de56df-1888-433a-882a-3b0772fa395d",
+      "text": "A standard paint can size in the Philippines is ___.",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.5 liters, 2 liters, 5 liters"
+        },
+        {
+          "id": "b",
+          "text": "1 liter, 4 liters, 20 liters"
+        },
+        {
+          "id": "c",
+          "text": "2 liters, 10 liters, 50 liters"
+        },
+        {
+          "id": "d",
+          "text": "1 gallon (3.78 L), 5 gallons (18.9 L)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.5 L, 2 L, 5 L are less common sizes.",
+        "c": "2 L, 10 L, 50 L are non-standard in Philippines.",
+        "d": "Gallon sizes are sometimes used, but the common local standard is metric: 1 L, 4 L, 20 L.",
+        "correct": "Philippine standard paint cans are 1 L (single/small), 4 L (1 gallon equivalent), and 20 L (5 gallons or bulk). These are the market standard sizes.",
+        "takeaway": "Philippine paint cans: 1 L, 4 L, 20 L. These are the sizes to convert liter estimates into can quantities."
+      },
+      "explanation": "0.5 L, 2 L, 5 L are less common sizes. 2 L, 10 L, 50 L are non-standard in Philippines. Gallon sizes are sometimes used, but the common local standard is metric: 1 L, 4 L, 20 L. Philippine standard paint cans are 1 L (single/small), 4 L (1 gallon equivalent), and 20 L (5 gallons or bulk). These are the market standard sizes. Philippine paint cans: 1 L, 4 L, 20 L. These are the sizes to convert liter estimates into can quantities.",
+      "code_citation": "Philippine construction practice",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-010-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T16:22:30.59468+00:00",
+      "content_hash": "sha256:175b6b3d64a3bf876495c4ea40ae5f0727d7cb97efaa5d519e9a381280633d54"
+    }
+  ]
+}

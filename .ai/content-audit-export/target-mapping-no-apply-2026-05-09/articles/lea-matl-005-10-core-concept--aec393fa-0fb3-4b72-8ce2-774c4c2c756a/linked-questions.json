@@ -1,0 +1,508 @@
+{
+  "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:14c1ff70816d26ec470750e1328a8c9d7cc334b49d81f0483d134d518cf557bc",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "c8e7e98f-a73d-4d1e-a27c-314a6f7e3c33",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "According to EN 15978, what are the four primary lifecycle stages (modules) of a building, and which one typically dominates total lifecycle carbon emissions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Product stage (A1-A3), Construction stage (A4-A5), Use stage (B1-B7), End-of-life (C1-C4), and Module D (beyond boundary); Use stage (B6-B7 operational energy) typically dominates at 70-85% of total lifecycle carbon over 50 years"
+        },
+        {
+          "id": "b",
+          "text": "Raw materials (A1-A2), Manufacturing (A3-A4), Construction (A5), and Demolition (B1); Manufacturing dominates at 80-90%, primarily due to energy-intensive processes"
+        },
+        {
+          "id": "c",
+          "text": "Extraction (A1), Processing (A2-A3), Service life (A4-B7), and Disposal (C1-C4); Service life dominates at 60-75%, influenced by operational energy use"
+        },
+        {
+          "id": "d",
+          "text": "Design (A1), Construction (A2-A5), Operation (B1-B7), and End-of-life (C1-C4); Design dominates based on architect decisions, impacting material selection and energy efficiency"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While manufacturing (A3-A4) is significant, it does not dominate. Operational energy (B6-B7) is much larger due to 50-year accumulation.",
+        "c": "Service life includes both operational carbon (dominant) and maintenance/replacement (minor). Operational energy is the largest component of service-life stage.",
+        "d": "Design decisions influence material choices and operational efficiency, but design itself does not generate carbon. Carbon generation occurs during product manufacturing (A1-A3), transportation (A4), operation (B6-B7), and end-of-life (C1-C4).",
+        "correct": "EN 15978 defines four primary stages: Product (A1-A3), Construction (A4-A5), Use (B1-B7), End-of-life (C1-C4), and Module D (beyond boundary). Use stage dominates lifecycle carbon because B6-B7 (operational energy for heating, cooling, lighting) accumulates over 50 years, typically 3-5 times larger than embodied carbon (A1-A3).",
+        "takeaway": "Operational carbon (B6-B7) dominates building lifecycle emissions at 70-85 percent. Embodied carbon (A1-A3) is 15-30 percent. This distinction guides decarbonization strategy priorities."
+      },
+      "explanation": null,
+      "code_citation": "EN 15978 Building Lifecycle Assessment; GSA Life Cycle Assessment Guide",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.473222+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:60c5c2fb92c9e227a4069e121285e3b2edea7694ec4de1e106e21588e42a8673"
+    },
+    {
+      "question_id": "85838bf6-e180-4782-96c2-cb7f7cc57b39",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "A project team is evaluating two material options with EPD data: Material A (imported from Germany) A1-A3 embodied carbon 0.8 kg CO2e/kg with A4 transport 0.15 kg CO2e/kg; Material B (sourced locally) A1-A3 embodied carbon 0.9 kg CO2e/kg with A4 transport 0.05 kg CO2e/kg. Total project material mass is 500,000 kg. Which material has lower total embodied carbon (A1-A5), and by how much?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Material B total (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Material A total: (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Totals are equivalent; local sourcing benefits (A4 reduction) offset higher A1-A3 production emissions (Material B is preferred for Philippine context due to local supply chain)"
+        },
+        {
+          "id": "b",
+          "text": "Material A is lower; imported material always has lower embodied carbon than locally sourced because manufacturing efficiency in developed countries outweighs transport emissions"
+        },
+        {
+          "id": "c",
+          "text": "Material B is significantly lower; local sourcing reduces embodied carbon by 50% compared to import due to eliminated shipping and customs handling processes"
+        },
+        {
+          "id": "d",
+          "text": "Embodied carbon cannot be compared between imported and locally sourced materials; EPD values are incompatible across different national certification and testing standards"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Imported material's A4 transport (0.15) exceeds local sourcing (0.05); when summed, both options have identical total if A1-A3 differs by 0.1.",
+        "c": "Material B does not reduce embodied carbon by 50%; the reduction is approximately 10% in A1-A3 offset by lower A4.",
+        "d": "EPDs are standardized and comparable via ISO 14025 framework. Comparing imported and local materials is legitimate and often reveals A4 transport benefits of local sourcing.",
+        "correct": "Material A (A1-A5): (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Material B (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Totals are equivalent numerically. However, Material B is preferred because local sourcing reduces A4 transport emissions (important for resilience and supply chain risk) and supports local economy despite slightly higher A1-A3 production impact.",
+        "takeaway": "Local sourcing often has marginally higher A1-A3 production emissions but significantly lower A4 transport emissions. Total embodied carbon may be equivalent or favoring local sourcing, with additional supply chain resilience and economic benefits."
+      },
+      "explanation": "Imported material's A4 transport (0.15) exceeds local sourcing (0.05); when summed, both options have identical total if A1-A3 differs by 0.1. Material B does not reduce embodied carbon by 50%; the reduction is approximately 10% in A1-A3 offset by lower A4. EPDs are standardized and comparable via ISO 14025 framework. Comparing imported and local materials is legitimate and often reveals A4 transport benefits of local sourcing. Material A (A1-A5): (0.8 + 0.15) × 500,000 = 475,000 kg CO2e. Material B (A1-A5): (0.9 + 0.05) × 500,000 = 475,000 kg CO2e. Totals are equivalent numerically. However, Material B is preferred because local sourcing reduces A4 transport emissions (important for resilience and supply chain risk) and supports local economy despite slightly higher A1-A3 production impact. Local sourcing often has marginally higher A1-A3 production emissions but significantly lower A4 transport emissions. Total embodied carbon may be equivalent or favoring local sourcing, with additional supply chain resilience and economic benefits.",
+      "code_citation": "ICE Embodied Carbon Database; EPD Comparison Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T14:40:18.105376+00:00",
+      "content_hash": "sha256:02e8b007027cdee186e07fad72a00aeb595f3f4b760c07f5d3d86c7ff1a1f243"
+    },
+    {
+      "question_id": "bb095102-5db7-4396-a559-74d4494411ac",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "Why is Module D (benefits beyond system boundary) considered separately from modules A1-C4 in EN 15978, and what risk arises from overestimating Module D benefits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Module D credits potential reuse and recycling benefits but is not mandatory to include in building LCA; overestimating recycling potential (assuming 100% success) without verifying local facility availability overstates lifecycle carbon benefits by 10-30%, especially problematic in Philippines with low recycling rates"
+        },
+        {
+          "id": "b",
+          "text": "Module D is mandatory and always credits 100% of material value; no risk of overestimation exists"
+        },
+        {
+          "id": "c",
+          "text": "Module D is unused in building LCA; it applies only to product manufacturing, not buildings"
+        },
+        {
+          "id": "d",
+          "text": "Module D has no effect on lifecycle carbon calculations; it is included only for marketing purposes"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Module D is optional, not mandatory. Recycling potential varies by location and market; assumed vs. actual recycling differs significantly.",
+        "c": "Module D is part of EN 15978 building lifecycle assessment and can influence total embodied carbon credits.",
+        "d": "Module D is a legitimate assessment module, not a marketing artifact. It represents material value at end-of-life when reuse or recycling occurs.",
+        "correct": "Module D is optional and credits future reuse, recycling, and recovery potential. If 100% of segregated material is assumed to be recycled without verifying local infrastructure, LCA overstates carbon benefits. Philippines recycles less than 5% of C&D waste; optimistic Module D assumptions risk inflating embodied carbon credits by 10-30%.",
+        "takeaway": "Module D credits are legitimate but must be conservative and based on realistic recycling infrastructure. Candidates must not assume 100% recycling success, particularly in Philippines where recycling capacity is limited."
+      },
+      "explanation": null,
+      "code_citation": "EN 15978 Building Lifecycle Assessment; DENR Recycling Infrastructure Assessment",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0bb9923b95674b920beb45fc96b820401093299bf154f8da020d658b40a3c123"
+    },
+    {
+      "question_id": "132ed755-7a92-4d48-ab9a-d635ec84c46a",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "In EN 15978, which modules (B2-B5) represent maintenance, repair, replacement, and refurbishment of the building during its occupancy, and why do these contribute to total lifecycle carbon?",
+      "options": [
+        {
+          "id": "a",
+          "text": "B2 (maintenance), B3 (repair), B4 (replacement due to wear/age), B5 (refurbishment); these add embodied carbon of replacement materials beyond the initial A1-A5 construction phase, potentially increasing lifecycle carbon by 5-15%"
+        },
+        {
+          "id": "b",
+          "text": "These modules represent only labor costs with no carbon impact; material embodied carbon is counted only once in A1-A5 baseline, assuming no further material use"
+        },
+        {
+          "id": "c",
+          "text": "B2-B5 phases are not part of EN 15978; they were removed in the 2021 standard update, reflecting a shift in lifecycle assessment focus"
+        },
+        {
+          "id": "d",
+          "text": "These modules are assumed to be zero and do not contribute; all building materials are assumed to have infinite lifespan, negating any need for replacement or refurbishment"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Replacement materials generate embodied carbon; labor impacts are typically small. Replacement is significant for short-lived components (roof, HVAC, windows).",
+        "c": "B2-B5 are part of EN 15978 standard since 2011 and remain in current standard.",
+        "d": "Building components have finite service lives (50-100+ years for structure; 15-50 years for MEP, envelope); replacement adds lifecycle carbon.",
+        "correct": "B2-B5 represent maintenance and replacement activities during 50-year building life. B4 (component replacement due to wear exceeding design life) adds embodied carbon of replacement materials (e.g., roof membrane at 25 years, HVAC at 15-20 years). These can increase total lifecycle carbon by 5-15% depending on component lifespans.",
+        "takeaway": "Modules B2-B5 (maintenance through refurbishment) add embodied carbon during building occupancy through material replacement. Candidates must account for component service lives when calculating total lifecycle carbon."
+      },
+      "explanation": null,
+      "code_citation": "EN 15978 Building Lifecycle Assessment",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:51c1c1663bc5e8ef5c310a771d73107f8bfc36c41e2ee5db6383be59cc2887be"
+    },
+    {
+      "question_id": "6e8c5c2b-8bc9-4d36-8da8-7c320801b967",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "A concrete building's total lifecycle carbon (A1-C4) is estimated at 500 kg CO2e/m², with A1-A3 embodied carbon of 80 kg CO2e/m² and B6-B7 operational carbon of 350 kg CO2e/m² over 50 years. A material substitution (fly ash concrete) reduces embodied carbon (A1-A3) by 25%. What is the approximate total lifecycle carbon reduction percentage?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Approximately 4% total reduction [(80 × 0.75 - 80) / 500 = -20/500 = 4%]; embodied carbon reduction is significant for material choice but represents only 4% of total lifecycle carbon due to operational dominance"
+        },
+        {
+          "id": "b",
+          "text": "Approximately 25% total reduction; the embodied carbon reduction percentage applies directly to total lifecycle carbon, which is a common misconception"
+        },
+        {
+          "id": "c",
+          "text": "Approximately 80% total reduction; fly ash concrete nearly eliminates all carbon in the building, which is an exaggerated claim"
+        },
+        {
+          "id": "d",
+          "text": "No reduction; operational carbon (B6-B7) is unaffected by material embodied carbon choices, highlighting the importance of operational efficiency"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "25% embodied reduction applies only to A1-A3 (16% of total); the 25% percentage does not scale to total lifecycle.",
+        "c": "While operational carbon is typically 3-5 times larger than embodied carbon, material choices do influence total lifecycle through B4 (replacement) considerations and embodied carbon of replacement materials.",
+        "d": "Operating efficiency (HVAC, envelope) affects B6-B7; material embodied carbon affects A1-A3 primarily. Both contribute to total lifecycle.",
+        "correct": "Embodied carbon reduction: 80 × 0.25 = 20 kg CO2e/m² savings. New total: 500 - 20 = 480 kg CO2e/m². Reduction percentage: 20/500 = 4%. This illustrates that while 25% embodied carbon reduction is significant for material selection, it affects only 4% of total lifecycle carbon when operational carbon dominates.",
+        "takeaway": "Embodied carbon reduction is important for material selection but typically affects only 4-6% of total lifecycle carbon when operational carbon dominates. Candidates must understand that operational efficiency investments often provide larger absolute carbon reduction than embodied carbon optimization alone."
+      },
+      "explanation": null,
+      "code_citation": "EN 15978 Lifecycle Assessment; Embodied Carbon 101 (RMI)",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:570c263e39bed556fafe3ddd2be91ba48bfda61c962852e54e02e59dd1bc5e63"
+    },
+    {
+      "question_id": "48e24168-922d-430c-b600-31d9a796c272",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "What does 'carbon sequestration' in timber represent, and when is this carbon-neutral benefit valid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Trees absorb CO2 during growth and store it as cellulose/lignin; harvested timber retains stored carbon for 50+ years in-use. Carbon is climate-neutral only if the forest is replanted and regrows, ensuring net-zero deforestation."
+        },
+        {
+          "id": "b",
+          "text": "Carbon sequestration means all carbon in timber is permanent and climate-beneficial regardless of forest management or reforestation, which is a common misconception."
+        },
+        {
+          "id": "c",
+          "text": "Timber contains no sequestered carbon; all forest biomass carbon is released when trees are harvested and processed, which is incorrect."
+        },
+        {
+          "id": "d",
+          "text": "Carbon sequestration is a marketing term with no scientific basis; timber embodied carbon equals mineral materials like concrete, which is misleading."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While timber stores carbon, assuming all stored carbon is permanent is incorrect without reforestation. Deforestation (no regrowth) means carbon storage is temporary; net climate impact is negative.",
+        "c": "Timber does contain sequestered carbon; studies confirm photosynthetic carbon uptake. However, the climate benefit requires sustainable forest management.",
+        "d": "Timber embodied carbon is significantly lower (typically negative, -0.46 kg CO2e/kg) than mineral materials (concrete 0.11-0.15 kg CO2e/kg) due to sequestration offset.",
+        "correct": "Trees sequester atmospheric CO2 during photosynthetic growth, storing carbon in wood fiber. Harvested timber retains this stored carbon during in-use life (50+ years structural service). Net climate benefit requires forest regrowth; if permanent deforestation occurs (forest not replanted), stored carbon is temporary.",
+        "takeaway": "Timber carbon sequestration is climate-beneficial only when coupled with sustainable forestry (certification: FSC, PEFC). Candidates must verify forest management and regrowth before claiming carbon credit."
+      },
+      "explanation": null,
+      "code_citation": "Carbon Sequestration in Wood Products (USDA Forest Products Laboratory); FSC and PEFC Certification Standards",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:249a46cd3cc47b2763dd922f034427e9a04bd9b25cb70ec371d2dd01c972db14"
+    },
+    {
+      "question_id": "dc5ba8ac-b4af-4e55-863f-fdcebf4c6016",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "What is an Environmental Product Declaration (EPD) per ISO 14025, and which lifecycle modules does a typical EPD report?",
+      "options": [
+        {
+          "id": "a",
+          "text": "EPD is standardized quantification of material environmental impacts (embodied carbon, water, eutrophication) per ISO 14025; typical EPDs report A1-A3 (cradle-to-gate) or A1-A5 (including construction), enabling like-for-like material comparison"
+        },
+        {
+          "id": "b",
+          "text": "EPD is a manufacturer's marketing claim without third-party verification or standardized methodology, often leading to inconsistencies"
+        },
+        {
+          "id": "c",
+          "text": "EPD reports only operational carbon (B6-B7), not production embodied carbon (A1-A3), which limits its comprehensive environmental assessment"
+        },
+        {
+          "id": "d",
+          "text": "All EPDs report identical A1-C4 full-lifecycle data; variations in EPD values indicate manufacturer deception, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "EPDs are standardized and third-party-verified; marketing claims without verification are not true EPDs.",
+        "c": "EPDs include A1-A3 product embodied carbon; operational carbon (B6-B7) is not the EPD focus.",
+        "d": "EPDs vary based on assumed lifespans, end-of-life scenarios, and system boundaries. Variation reflects legitimate differences in product use, not necessarily deception.",
+        "correct": "EPDs per ISO 14025 are third-party-verified declarations of environmental impacts including embodied carbon (kg CO2e per functional unit, e.g., per kilogram or per m²). Typical EPDs report A1-A3 (most common for comparison) or A1-A5; some include full A1-C4. EPDs enable standardized comparison of equivalent materials.",
+        "takeaway": "EPDs are standardized, third-party-verified declarations enabling material comparison. Candidates must verify which modules (A1-A3, A1-A5, or A1-C4) are included in an EPD before using it for comparison."
+      },
+      "explanation": null,
+      "code_citation": "ISO 14025 Environmental Labels and Declarations; ICE Database; One Click LCA",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7fcf0d9af022e9843d38ea227d4a7574b5c823dd864e3ad020a106af2754dcea"
+    },
+    {
+      "question_id": "3e0c3cc1-afa8-4d03-a617-5a29e56f223c",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "What is the distinction between 'embodied carbon' (A1-A3) and 'operational carbon' (B6-B7) in building lifecycle assessment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Embodied carbon (A1-A3) is product manufacturing emissions from extraction through packaging; operational carbon (B6-B7) is energy and water consumption during building occupancy, accumulating over 50-year life"
+        },
+        {
+          "id": "b",
+          "text": "Embodied carbon includes all lifecycle phases A1-C4; operational carbon is only electricity use, excluding water and gas, focusing on energy efficiency"
+        },
+        {
+          "id": "c",
+          "text": "They are equivalent terms; embodied carbon and operational carbon are measured identically and summed without distinction, simplifying assessment"
+        },
+        {
+          "id": "d",
+          "text": "Embodied carbon applies only to concrete and steel; operational carbon applies only to HVAC and lighting systems, limiting scope"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "A1-C4 includes end-of-life demolition and disposal, not just product manufacturing (A1-A3). Operational carbon includes all B6-B7 consumption, not only electricity.",
+        "c": "The terms are distinct and not equivalent. Embodied carbon is a one-time production impact; operational carbon is a recurring annual impact.",
+        "d": "Both material types (concrete, steel) generate embodied carbon during manufacturing. Many building systems contribute to operational carbon, not only HVAC and lighting; plug loads and water heating are significant.",
+        "correct": "Embodied carbon (A1-A3, cradle-to-gate) represents materials manufacturing emissions before installation. Operational carbon (B6-B7) represents ongoing energy and water use during 50-year building occupancy. Over a building's life, operational carbon is typically 3-5 times larger than embodied carbon.",
+        "takeaway": "Embodied carbon is production-phase emissions (A1-A3); operational carbon is occupancy-phase consumption (B6-B7). Understanding this distinction guides decarbonization priority: operational efficiency typically offers largest carbon reduction per dollar invested."
+      },
+      "explanation": null,
+      "code_citation": "EN 15978; GSA Life Cycle Assessment; Embodied Carbon 101 (RMI)",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0c11e4633735bed63407b14e1c3b1802881947d66a7489d0608454768aa3dc8e"
+    },
+    {
+      "question_id": "081141d5-4fee-4b19-9833-4d20a23f6bee",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "The Philippine electricity grid composition (2023) includes approximately what percentage of coal, and how does this affect operational carbon (B6-B7) compared to grid-decarbonized countries?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Philippines approximately 60-65% coal (2023 DOE data), 20-25% natural gas, 20-25% renewable, 5% other; coal-heavy grid results in higher operational carbon per kWh (approximately 0.6-0.8 kg CO2e/kWh) versus grid-decarbonized countries like Denmark (50%+ renewable, 0.2-0.3 kg CO2e/kWh)"
+        },
+        {
+          "id": "b",
+          "text": "Philippines has 0% coal; grid is entirely renewable, resulting in zero operational carbon from electricity, which is not currently feasible"
+        },
+        {
+          "id": "c",
+          "text": "Philippines has 80%+ coal; operational carbon is extremely high, making embodied carbon selection irrelevant in most cases"
+        },
+        {
+          "id": "d",
+          "text": "Grid composition is not tracked or regulated in Philippines; operational carbon estimates are not available, leading to uncertainty in carbon accounting"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Philippines grid is not 0% coal and not 100% renewable. Coal remains dominant fuel source despite renewable energy expansion targets.",
+        "c": "Grid is not 80%+ coal. While coal is significant, gas and renewables represent 40-50% combined, providing decarbonization pathway.",
+        "d": "Philippine Department of Energy (DOE) tracks grid composition and publishes annual energy statistics. Operational carbon estimates are available and should inform building design.",
+        "correct": "2023 Philippine grid: ~40-45% coal, ~20-25% natural gas, ~20-25% renewable (hydro, wind, solar, geothermal), ~5% other. This coal-heavy mix results in higher operational carbon per kWh consumed. Operational efficiency (HVAC, envelope, renewable on-site) becomes critical decarbonization lever in Philippines.",
+        "takeaway": "Philippine electricity grid composition (40-45% coal) results in higher operational carbon per kWh than grid-decarbonized countries. This makes embodied carbon reduction a higher priority and increases importance of on-site renewable energy and efficiency in Philippine buildings."
+      },
+      "explanation": "Philippines grid is not 0% coal and not 100% renewable. Coal remains dominant fuel source despite renewable energy expansion targets. Grid is not 80%+ coal. While coal is significant, gas and renewables represent 40-50% combined, providing decarbonization pathway. Philippine Department of Energy (DOE) tracks grid composition and publishes annual energy statistics. Operational carbon estimates are available and should inform building design. 2023 Philippine grid: ~40-45% coal, ~20-25% natural gas, ~20-25% renewable (hydro, wind, solar, geothermal), ~5% other. This coal-heavy mix results in higher operational carbon per kWh consumed. Operational efficiency (HVAC, envelope, renewable on-site) becomes critical decarbonization lever in Philippines. Philippine electricity grid composition (40-45% coal) results in higher operational carbon per kWh than grid-decarbonized countries. This makes embodied carbon reduction a higher priority and increases importance of on-site renewable energy and efficiency in Philippine buildings.",
+      "code_citation": "Philippine Department of Energy Grid Composition; BERDE Rating System Context",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-05-06T14:40:17.965009+00:00",
+      "content_hash": "sha256:1188162e3b71b018bf998c2fd4cbf1126636d3b8a7e1606b77104cd67d487257"
+    },
+    {
+      "question_id": "6b94dd89-2065-47fb-ac22-1b95c4862def",
+      "article_id": "aec393fa-0fb3-4b72-8ce2-774c4c2c756a",
+      "topic_id": "79bfd7c5-bbd8-4acc-ab15-ba437f394e57",
+      "text": "The Green Building Code of the Philippines and BERDE rating system address embodied carbon reduction primarily through which approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "BERDE allocates 8-9% of points to sustainable materials credit, recognizing embodied carbon reduction (15-20% reduction vs. baseline) BERDE v5.0 allocates 12 credits (~12%) to Materials & Resources... Green Building Code Section 7 encourages sustainable materials but does not mandate embodied carbon documentationes"
+        },
+        {
+          "id": "b",
+          "text": "Embodied carbon is not addressed in Philippine building codes; only operational efficiency is evaluated, focusing on energy consumption and water use"
+        },
+        {
+          "id": "c",
+          "text": "BERDE allocates 50%+ of points to embodied carbon; all buildings must achieve net-negative embodied carbon, which is a challenging target for most projects"
+        },
+        {
+          "id": "d",
+          "text": "Philippines requires 100% recycled content in all building materials regardless of durability or performance, which can lead to issues with material longevity"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Embodied carbon is addressed in both BERDE and Green Building Code; it is not ignored.",
+        "c": "While embodied carbon is a significant credit, 8-9% allocation reflects that operational efficiency (energy, water) typically has larger overall impact.",
+        "d": "100% recycled content is neither required nor feasible in all materials; recycled content is encouraged where durability and performance requirements permit.",
+        "correct": "BERDE Version 5 allocates 8-9% of points to materials and resources, including embodied carbon reduction documentation and local sourcing. Green Building Code Section 7 addresses sustainable material selection, requiring consideration of embodied carbon and lifecycle impacts.",
+        "takeaway": "BERDE and the Green Building Code integrate embodied carbon considerations; 15-20% reduction from baseline and local sourcing are recognized pathways to credits. Candidates must understand how embodied carbon documentation supports green building certification in the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "BERDE Version 5.0 User Guide; Green Building Code of the Philippines",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-005-10-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:28.926909+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f66d538e56dceb2d5aae2daaf3f02826b3468e85a55dd44d349dcd9e2285d9fc"
+    }
+  ]
+}

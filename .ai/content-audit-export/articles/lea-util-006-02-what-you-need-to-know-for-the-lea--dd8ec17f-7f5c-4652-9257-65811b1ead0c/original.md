@@ -62,4 +62,3 @@ See also within Lighting and Acoustics: **lea-util-006-03-core-concept**, **lea-
 Extracted summary:
 - Props: title="Sabine vs. Eyring Formula" variant="info"
 - Text: The Sabine Formula assumes low to moderate absorption (average α < 0.3). For highly absorptive rooms, use the _Eyring Formula_: $$RT60 = 0.161 \times \frac )}$$ Where ā is the mean absorption coefficient across all surfaces and S is total surface area. The Eyring Formula is more accurate for conference rooms, recording studios, and anechoic chambers common in Philippine media production facilities.
-

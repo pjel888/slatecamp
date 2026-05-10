@@ -1,0 +1,508 @@
+{
+  "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:8da3d3eb7b21da8db30748eb9f6c24a702bacc7e9255bae3d8881afaeee1a2bf",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "21ac38fe-0c4b-4939-91a7-2616add69fee",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "Lateral stiffness of Story 3 is 8000 kN/mm. Lateral stiffness of Story 4 (above Story 3) is 10,000 kN/mm. Is Story 3 a soft story?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because 8000 < 10,000, indicating a significant reduction in stiffness"
+        },
+        {
+          "id": "b",
+          "text": "No, because 8000 ÷ 10,000 = 0.80 = 80%, which exceeds the 70% threshold."
+        },
+        {
+          "id": "c",
+          "text": "Yes, because 8000 ÷ 10,000 = 0.80, which is less than the 90% threshold, indicating potential vulnerability"
+        },
+        {
+          "id": "d",
+          "text": "Cannot determine without knowing the story height, as height affects stiffness calculations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A soft story is one where stiffness is less than 70% of the story above. Here, K3 / K4 = 8000 / 10,000 = 80% = 0.80. Since 0.80 > 0.70, Story 3 is not a soft story. It must exceed 70% to avoid being soft.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.2.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a15eaae4a6c8c1e42e6fc6018b882541cdcd5968522b6f4644525d15e8f513bf"
+    },
+    {
+      "question_id": "d0c80a4a-a257-462e-97f7-800baae751bd",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "Which statement correctly distinguishes a soft story from a weak story?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A soft story has lower strength; a weak story has lower stiffness."
+        },
+        {
+          "id": "b",
+          "text": "A soft story has lower stiffness; a weak story has lower strength."
+        },
+        {
+          "id": "c",
+          "text": "Both terms describe the same condition and are used interchangeably."
+        },
+        {
+          "id": "d",
+          "text": "A soft story is a vertical alignment deficiency; a weak story is a horizontal alignment deficiency."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Soft story refers to insufficient lateral stiffness (< 70%); weak story refers to insufficient lateral strength (< 80%). Stiffness and strength are distinct properties.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.2.3",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de7231e9a6dc9a3fb6741e5d69e50ae415bcb195e534d5322f8224dc52be11d1"
+    },
+    {
+      "question_id": "1f26030b-db3a-4a24-b673-e9aa1b580cac",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "What is the relationship between story drift and P-delta (second-order) effects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Story drift and P-delta are unrelated; P-delta is caused by axial loads alone, independent of lateral displacement, and does not influence structural stability"
+        },
+        {
+          "id": "b",
+          "text": "As story drift increases, gravity loads (P) create additional overturning moment (delta effect) that amplifies lateral displacement. Excessive drift triggers P-delta and can cause instability."
+        },
+        {
+          "id": "c",
+          "text": "P-delta effects reduce story drift by stiffening the structure laterally, providing additional resistance against lateral forces"
+        },
+        {
+          "id": "d",
+          "text": "Story drift limits are set independently of P-delta; they serve different purposes and are not related, ensuring separate compliance checks"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "When a building sways laterally (story drift), gravity loads (P) on columns create an additional overturning moment (P × Δ). This moment amplifies the lateral displacement beyond what base shear alone would cause. Large drift → large P-delta moment → potential instability or failure. The 0.02H drift limit is partly set to keep P-delta effects manageable.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 208C.5",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:883f69e3adb35b49b2748910a98810ac39a91ee269da412742b24136de34e70a"
+    },
+    {
+      "question_id": "e7309a24-ee5e-496e-b23e-98cc7d41ad22",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "A soft story is defined as a story where lateral stiffness is less than _____ percent of the story immediately above it.",
+      "options": [
+        {
+          "id": "a",
+          "text": "60%"
+        },
+        {
+          "id": "b",
+          "text": "70%"
+        },
+        {
+          "id": "c",
+          "text": "80%"
+        },
+        {
+          "id": "d",
+          "text": "90%"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The NSCP defines a soft story as one where lateral stiffness is less than 70% of the story above. Lateral stiffness is the force per unit displacement (kN/mm).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 208, Table 208-1",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c1a046ea32c8d3ca800a6a9c78eae552afe70f663d1ac92a6b44d41c495b169e"
+    },
+    {
+      "question_id": "c2583859-e4e3-461f-afa6-e23b25c95ca9",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "A weak story is defined as a story where lateral strength is less than _____ percent of the story immediately above it.",
+      "options": [
+        {
+          "id": "a",
+          "text": "70%"
+        },
+        {
+          "id": "b",
+          "text": "75%"
+        },
+        {
+          "id": "c",
+          "text": "80%"
+        },
+        {
+          "id": "d",
+          "text": "85%"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The NSCP defines a weak story as one where lateral strength (shear capacity) is less than 80% of the story above.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.2.3",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:affb0c9836afa1b0e6137ef19b66053cdb4f66f44c08d658241cf78a20834879"
+    },
+    {
+      "question_id": "7e6afa0b-d788-4814-af95-5e02042545d5",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "A structural engineer identifies a weak story at mid-height of a 10-story building. The shear capacity of the story is 3500 kN, and the story above it has a capacity of 4500 kN. Is this a weak story, and what is the recommended remediation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because 3500 < 4500 but the difference is small. Proceed with construction, as the variance is within acceptable limits"
+        },
+        {
+          "id": "b",
+          "text": "Yes, because 3500 ÷ 4500 = 77.8%, which is less than the 80% threshold. Remediation: increase the weak story's shear capacity (via additional walls, diagonal bracing) or redesign the system."
+        },
+        {
+          "id": "c",
+          "text": "Yes, but remediation is not necessary because weak stories are common and acceptable in certain design contexts"
+        },
+        {
+          "id": "d",
+          "text": "No, because 4500 ÷ 3500 = 1.29, which does not violate any code threshold, allowing construction to continue"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Weak story is defined as V(this) / V(above) < 0.80. Here, 3500 / 4500 = 0.778 = 77.8% < 80%. This is a weak story. The code requires remediation: strengthen the story to at least 0.80 × 4500 = 3600 kN, or redesign the lateral system to eliminate the irregularity.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 208, Table 208-1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:199c3c3d918c2f3ca5c779ae1a3e6d569d594ca433505e3180c83118a80af301"
+    },
+    {
+      "question_id": "c913ff2f-b49a-406e-a4cb-7fc81ef17281",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "What is story drift, and what is the typical code limit for story drift in the NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Story drift is the permanent displacement remaining after an earthquake; limit is 0.01H, which is a conservative estimate"
+        },
+        {
+          "id": "b",
+          "text": "Story drift is the lateral displacement of one story relative to the story below; limit is 0.02H (0.02 times story height)."
+        },
+        {
+          "id": "c",
+          "text": "Story drift is the cumulative horizontal displacement from base to roof; limit is 0.03H, which is rarely exceeded in practice"
+        },
+        {
+          "id": "d",
+          "text": "Story drift is the vertical settlement of a story; limit is 0.01H, although this is not typically a concern in modern buildings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Story drift (Δ) is the lateral displacement of one story relative to the story immediately below. The NSCP limit is Δ ≤ 0.02H, where H is the story height. For a 4 m story, the limit is 80 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 208C.5 or 503.5",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:623cfd48b28eb82ab4d1ccf5a78be2a415c9343df67243fe33927be72ec21849"
+    },
+    {
+      "question_id": "5ba16c9b-db5a-4237-9971-5da68f194fe3",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "A commercial building has a ground floor designed as open space (retail) with minimal lateral bracing. The stories above (2–5) are enclosed office spaces with perimeter shear walls. Which structural condition is most likely present?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A weak story at the ground floor due to lower strength."
+        },
+        {
+          "id": "b",
+          "text": "A soft story at the ground floor due to lower stiffness."
+        },
+        {
+          "id": "c",
+          "text": "A regular building with no irregularities."
+        },
+        {
+          "id": "d",
+          "text": "A strong story, which is beneficial and requires no special design."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The open ground floor (minimal bracing) has much lower lateral stiffness than the enclosed upper floors with perimeter shear walls. The ground story stiffness is likely less than 70% of Story 2's stiffness, making it a soft story.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.2.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:182a2cd1fb4a220b1f705f5a4e9f1041d6795bc9ba0c8d014ffc6dd92bfc2110"
+    },
+    {
+      "question_id": "3fd534c8-f322-4d9b-932c-14313dce0157",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "A building story has a story height of 4 meters. What is the maximum allowable story drift according to the NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Δ ≤ 40 mm (0.01 × 4000 mm)"
+        },
+        {
+          "id": "b",
+          "text": "Δ ≤ 80 mm (0.02 × 4000 mm)"
+        },
+        {
+          "id": "c",
+          "text": "Δ ≤ 100 mm (0.025 × 4000 mm)"
+        },
+        {
+          "id": "d",
+          "text": "Δ ≤ 120 mm (0.03 × 4000 mm)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The NSCP drift limit is Δ ≤ 0.02 × H. For H = 4 m = 4000 mm, the limit is 0.02 × 4000 = 80 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.8.11",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2eb6198d692542b578dbfa7bbb031eb962073b713ac43e027c2d889773b8152b"
+    },
+    {
+      "question_id": "dcd667af-af41-4696-80dc-8c865ea07cfe",
+      "article_id": "1650d23e-b703-48f4-87a3-839f9209e7a0",
+      "topic_id": "cbf40a01-af81-4eee-9a1f-19eebeb2dbae",
+      "text": "A building has a soft story at the second floor. What is the most likely structural consequence during a seismic event?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The top floors experience excessive damage; the soft story is protected, which is contrary to typical structural behavior during seismic events"
+        },
+        {
+          "id": "b",
+          "text": "Lateral displacement concentrates at the soft story, causing disproportionately large story drift and non-structural damage in that story."
+        },
+        {
+          "id": "c",
+          "text": "The base shear is reduced by 30% because of the soft story, which is not a typical outcome of having a soft story"
+        },
+        {
+          "id": "d",
+          "text": "The soft story distributes seismic forces more evenly across all floors, improving the structure, which is a misconception about soft story behavior"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A soft story is more flexible. Lateral displacement concentration there is a consequence of lower stiffness. The softer the story, the more it deforms relative to surrounding stories. This causes cracking in partitions, window breakage, and potential failure of the soft-story columns if moment-rotation capacity is exceeded.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015, Section 5.2.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-004-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.277828+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7c8bb216f0b2aa3e9d25fe4f30eb9b7659aa98ebf650fceaae4229f86214a35f"
+    }
+  ]
+}

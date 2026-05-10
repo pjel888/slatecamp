@@ -1,0 +1,508 @@
+{
+  "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a67bd5107b733afa9b3be267cd159ca2d254e9e3653a636a35ec783923d15c24",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1ec258c0-4d69-4821-9f70-e1da7bb3b03d",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "What distinguishes an Open Competition from an Invited Competition in architectural design contests?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Open competitions are only for major public buildings, typically those exceeding 10,000 square meters in floor area"
+        },
+        {
+          "id": "b",
+          "text": "Open competitions invite all qualified architects; invited competitions limit participation to selected architects"
+        },
+        {
+          "id": "c",
+          "text": "Invited competitions always pay more than open competitions, with a minimum fee differential of 20% to attract top talent"
+        },
+        {
+          "id": "d",
+          "text": "There is no distinction between open and invited competitions; both follow the same procedural guidelines and eligibility criteria"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both open and invited competitions can occur for various project types.",
+        "c": "Compensation varies by competition, not by type.",
+        "d": "The distinction in eligibility is fundamental.",
+        "correct": "Open competitions invite participation from all qualified architects without restrictions. Invited competitions limit participation to a selected group of architects, typically those with relevant experience or reputation. SPP 206.",
+        "takeaway": "Open accepts all; invited limits to selected."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:22308fec2a5a8429640a2f7074d3d5d6ff7b48588d7c561c5b88420680bc3744"
+    },
+    {
+      "question_id": "b8d26b89-bdee-456d-8a5a-92a30793fced",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "What right do architects have regarding ownership of their unpaid competition designs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects forfeit all rights when submitting to a competition, which is not typically the case"
+        },
+        {
+          "id": "b",
+          "text": "The competition sponsor automatically owns all unpaid designs, which is not a standard rule"
+        },
+        {
+          "id": "c",
+          "text": "Architects retain ownership of unpaid competition designs unless rules explicitly transfer ownership"
+        },
+        {
+          "id": "d",
+          "text": "Architects and sponsors share equal ownership of all designs, which is not a common practice"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architects maintain ownership unless explicitly transferred.",
+        "b": "Sponsors have no automatic rights to unpaid designs.",
+        "d": "Ownership is not shared; architects retain it unless transferred.",
+        "correct": "Architects have the right to control intellectual property in their unpaid competition designs. They retain ownership unless competition rules explicitly transfer ownership to the client. SPP 206.",
+        "takeaway": "Architects own unpaid designs unless rules transfer rights."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5ac797d9e8750446514fbcfc6254477b53c3ecaea19cef28392c0bf5c540e2f3"
+    },
+    {
+      "question_id": "589d8fc8-7187-428d-ab6f-eebebd2d5e2b",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "An architect is evaluating participation in a detail design competition that requires developing construction documents but offers minimal compensation. What ethical consideration should guide the decision?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept any competition that offers any payment, regardless of compensation-to-effort ratio, as long as it provides exposure and potential future opportunities."
+        },
+        {
+          "id": "b",
+          "text": "Avoid competitions requiring extensive design development without adequate compensation to prevent unfair appropriation of professional services"
+        },
+        {
+          "id": "c",
+          "text": "Design complexity has no bearing on fair compensation, which should be based solely on the market rate for architectural services."
+        },
+        {
+          "id": "d",
+          "text": "Professional ethics don't address competition compensation, leaving architects to decide based on personal judgment and career goals."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Minimal compensation for extensive work is exploitative.",
+        "c": "Design complexity directly impacts required compensation.",
+        "d": "Professional ethics specifically address fair competition practices.",
+        "correct": "Architects should avoid competitions requiring extensive design development without compensation. Clients benefiting from architect expertise without payment create unfair appropriation of professional services. SPP 206.",
+        "takeaway": "Avoid uncompensated extensive design work."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fa146ea7d3f96d1b9b4ce1a4fea89e272fb6f3ed2144a55a2caa7160b6d37260"
+    },
+    {
+      "question_id": "6797cb39-0d7c-4114-9419-71d858b0e7c0",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "What is a key consideration regarding intellectual property rights in architectural competitions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Architects automatically lose all rights to their designs upon submission, regardless of the competition's outcome or subsequent use of the designs by the organizers"
+        },
+        {
+          "id": "b",
+          "text": "Competition rules should clearly specify ownership of designs, rights to construct, and retention of rights by unsuccessful competitors"
+        },
+        {
+          "id": "c",
+          "text": "All submitted designs become public property, available for use by any entity without compensation to the original designer"
+        },
+        {
+          "id": "d",
+          "text": "Intellectual property rights are never addressed in competitions, leaving designers without any legal recourse or protection"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Architects may retain rights depending on competition terms.",
+        "c": "IPR ownership depends on explicit agreement.",
+        "d": "IPR clarification is essential to ethical competitions.",
+        "correct": "Intellectual property rights are critical competition considerations. Rules should clearly specify design ownership, whether winning architect grants construction rights, and whether unsuccessful competitors retain design rights. SPP 206.",
+        "takeaway": "Competition rules must clarify IP ownership."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b1c489f952179b5b8e1a72e094407c319080ea41f298c630e20f7238378e9cda"
+    },
+    {
+      "question_id": "e18e133f-b49d-4468-bba7-dd8ef6f99173",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "What ethical obligation applies when architects serve as judges in design competitions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Judges have no special obligations beyond providing a decision, allowing them to focus solely on the outcome"
+        },
+        {
+          "id": "b",
+          "text": "Judges assume obligations to evaluate fairly and maintain confidentiality regarding designs reviewed"
+        },
+        {
+          "id": "c",
+          "text": "Judges can freely discuss reviewed designs with other professionals, sharing insights and feedback"
+        },
+        {
+          "id": "d",
+          "text": "Judges have the right to use ideas from submissions in their own future projects, provided they credit the original designers"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Judges have significant ethical obligations.",
+        "c": "Confidentiality protects competitors' intellectual property.",
+        "d": "Using competitors' ideas violates professional ethics.",
+        "correct": "When architects evaluate others' designs as judges, they assume obligations to evaluate fairly and maintain confidentiality regarding designs reviewed. Professional ethics require protecting reviewed designs. SPP 206.",
+        "takeaway": "Judges must evaluate fairly and maintain confidentiality."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6a69c563adcb5551dfe1f8568bbc9e9185a629f178222289526140810e5664d0"
+    },
+    {
+      "question_id": "24a03a45-a8d8-4870-993c-ff4e4e90e12c",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "What framework should architects use to ethically evaluate whether to participate in a specific architectural competition?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Accept all competitions offering any compensation regardless of terms, as financial gain is the primary consideration"
+        },
+        {
+          "id": "b",
+          "text": "Evaluate whether competition participation offers sufficient compensation or professional benefit to justify invested effort while assessing fairness of IP terms and design development requirements"
+        },
+        {
+          "id": "c",
+          "text": "Professional ethics do not provide guidance on competition selection, leaving the decision entirely to personal discretion"
+        },
+        {
+          "id": "d",
+          "text": "Architects should only participate in competitions with guaranteed prize money, ensuring a return on investment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Selective participation based on fair terms is appropriate.",
+        "c": "Professional ethics specifically guide competition participation.",
+        "d": "Competitions without prizes may offer valuable professional benefits.",
+        "correct": "Architects should assess whether competition participation offers sufficient compensation or benefit to justify effort, ensure favorable IP terms, and verify design development requirements are proportional to compensation. This ethical framework guides participation decisions. SPP 206.",
+        "takeaway": "Assess effort-to-benefit ratio and IP terms."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9cf118a4156bd77d48b5c52740520703355a5f0556a36cc6dd9e1637e2469594"
+    },
+    {
+      "question_id": "efa82c83-bcb6-4744-809d-50f117cd3dcf",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "What distinguishes single-stage competitions from multi-stage competitions in terms of architect participation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Single-stage is more expensive for architects to enter due to higher initial submission requirements and fees"
+        },
+        {
+          "id": "b",
+          "text": "Single-stage selects winners through one evaluation round; multi-stage uses preliminary rounds to reduce entries before final judging"
+        },
+        {
+          "id": "c",
+          "text": "Multi-stage competitions only accept established firms, excluding new entrants from participating in initial rounds"
+        },
+        {
+          "id": "d",
+          "text": "Single-stage and multi-stage are identical processes, with no real distinction in terms of evaluation or entry requirements"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost differences depend on submission requirements, not stage structure.",
+        "c": "Both formats accept firms based on competition-specific criteria.",
+        "d": "The evaluation structure is fundamentally different.",
+        "correct": "Single-stage competitions conduct one evaluation round. Multi-stage competitions employ preliminary rounds to reduce entry numbers before final judging. Multi-stage formats reduce judge workload but require architects to invest effort in multiple rounds. SPP 206.",
+        "takeaway": "Multi-stage uses preliminary rounds to narrow entries."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ef8977a7c45d7fce92349607bd8a97cf0b73a1f01faf770ab3249de184e577e6"
+    },
+    {
+      "question_id": "0281c044-6579-48f1-b4d5-e02e2e724922",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "What is the purpose of anonymous competitions in architectural design selection?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To hide the names of judges from competitors, ensuring impartiality in the judging process"
+        },
+        {
+          "id": "b",
+          "text": "To prevent architects from knowing the competition rules, thereby increasing the challenge"
+        },
+        {
+          "id": "c",
+          "text": "To ensure judging based purely on design merit without architect names or reputation influencing evaluation"
+        },
+        {
+          "id": "d",
+          "text": "To reduce the total number of design submissions, making the competition more manageable"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Anonymity refers to competitor identity, not judge identity.",
+        "b": "Anonymity doesn't conceal rules; it protects competitor identity.",
+        "d": "Anonymity aims to ensure fair evaluation, not reduce entries.",
+        "correct": "Anonymous competitions use designs identified by number or pseudonym rather than architect names, theoretically ensuring judging based purely on design merit without reputation bias. SPP 206.",
+        "takeaway": "Anonymous competitions prevent reputation bias."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b3c1f419d79111baf8105c15c20202653467969df0864ab1a2dfcc2a196d8497"
+    },
+    {
+      "question_id": "47beebb8-9fe7-4c5b-915b-044262110f3f",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "How does competition participation benefit architects' professional development throughout their careers?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Competitions only benefit established architects seeking high-profile projects, limiting opportunities for emerging professionals."
+        },
+        {
+          "id": "b",
+          "text": "Early-career architects develop design thinking and portfolio; established firms expand into new markets; all benefit from showcasing innovation and establishing credibility"
+        },
+        {
+          "id": "c",
+          "text": "Competitions provide no professional value beyond potential project acquisition, which can be a risky investment of time and resources."
+        },
+        {
+          "id": "d",
+          "text": "Competitions are deprecated in modern architectural practice, as collaborative and integrated design processes gain prominence."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Competitions benefit architects at all career stages.",
+        "c": "Competitions offer multiple professional benefits beyond project acquisition.",
+        "d": "Competitions remain important in contemporary practice.",
+        "correct": "Competitions serve legitimate purposes across career stages. Early-career architects benefit as portfolio development and networking opportunities. Established firms use competitions to expand into new markets. All benefit from showcasing innovation and establishing credibility. SPP 206.",
+        "takeaway": "Competitions develop careers across all stages."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2932d5925a318c6a8d6bced5cd192733228c7bc587bfa4d67e82c2fff0b88567"
+    },
+    {
+      "question_id": "59cde2f6-e25c-43aa-a08d-58705228c70f",
+      "article_id": "2660de04-9a95-4581-83c1-792b09b79d48",
+      "topic_id": "43ffa23f-2daa-49cc-baee-5eff4a76ae54",
+      "text": "What professional standards are recommended for ethical architectural competitions by progressive organizations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Competitions should minimize architect input and compensation, focusing on cost-saving measures rather than rewarding creative effort"
+        },
+        {
+          "id": "b",
+          "text": "Competitions should offer monetary awards recognizing architect work, provide honorariums to finalists, and maintain supervised conditions with published rules and qualified judges"
+        },
+        {
+          "id": "c",
+          "text": "Standards exist only for open competitions, not invited ones, which operate under different guidelines and expectations"
+        },
+        {
+          "id": "d",
+          "text": "Professional standards don't address competition ethics, leaving it to individual discretion and market forces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Progressive standards emphasize fair compensation.",
+        "c": "Standards apply to all competition types.",
+        "d": "Professional standards specifically address competition conduct.",
+        "correct": "Professional standards recommend competitions offer monetary awards particularly for detail design, provide honorariums to finalists, occur under supervised conditions with published rules, qualified judges, and clear selection procedures. SPP 206.",
+        "takeaway": "Standards require fair pay and clear procedures."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-022-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ed1a8c5374c9e3e66fd360959864bb8b76f89a7656d36584aa5b1e97a0ba62bf"
+    }
+  ]
+}

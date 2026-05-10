@@ -102,4 +102,3 @@ Extracted summary:
 See also within Hardware, Joints, and Fasteners: **lea-matl-008-01-core-concept**, **lea-matl-008-02-core-concept**, **lea-matl-008-04-core-concept**, **lea-matl-008-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

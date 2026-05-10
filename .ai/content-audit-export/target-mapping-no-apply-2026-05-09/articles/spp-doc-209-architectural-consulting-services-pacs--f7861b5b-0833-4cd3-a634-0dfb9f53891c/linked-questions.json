@@ -1,0 +1,518 @@
+{
+  "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6044139ebb38fe748a55c17cc4c4e0490c70dcf5e3b3bdfda8eddc44f8e2d2cb",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "78c797ef-44b4-4174-963b-87e1f8d8c1e3",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the minimum Salary Cost multiplier for Professional Architectural Consulting Services (PACS) under SPP 209?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.5"
+        },
+        {
+          "id": "b",
+          "text": "2.0"
+        },
+        {
+          "id": "c",
+          "text": "2.5"
+        },
+        {
+          "id": "d",
+          "text": "3.0"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.5 is within the MDPE range for SPP 201 pre-design services, not the SPP 209 salary cost multiplier.",
+        "b": "2.0 is too low. The SPP 209 multiplier starts higher to account for the specialized expertise of consulting architects.",
+        "c": "2.5 is the upper end of the SPP 201 MDPE range, not the SPP 209 minimum.",
+        "d": "Correct. The minimum Salary Cost multiplier for PACS under SPP 209 is 3.0, reflecting the premium for specialized consulting expertise, overhead, and professional liability.",
+        "correct": "SPP 209 sets the minimum Salary Cost multiplier at 3.0 for PACS, significantly higher than the 1.5-2.5 MDPE range in SPP 201. This reflects the premium expertise, specialized knowledge, and elevated professional responsibility of consulting architects.",
+        "takeaway": "SPP 209 Salary Cost multiplier minimum = 3.0 (not 1.5-2.5 like SPP 201)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3cf844425827969de24bb77d31e1307bd8cef28d9b881a3232da0d970e792067"
+    },
+    {
+      "question_id": "28bfac69-3fe2-4aa9-963c-6bce718767ff",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How many compensation methods are available for PACS under SPP 209?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3"
+        },
+        {
+          "id": "b",
+          "text": "4"
+        },
+        {
+          "id": "c",
+          "text": "5"
+        },
+        {
+          "id": "d",
+          "text": "6"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3 methods is too few. SPP 209 provides more flexibility for consulting compensation.",
+        "b": "4 methods is incorrect. SPP 209 specifies 5 compensation methods.",
+        "c": "Correct. SPP 209 provides 5 compensation methods for PACS, giving flexibility to structure payment based on the nature and duration of consulting engagements.",
+        "d": "6 methods is for SPP 204-A fulltime supervision, not SPP 209 consulting.",
+        "correct": "SPP 209 offers 5 compensation methods for Professional Architectural Consulting Services, providing flexibility to match the fee structure to the specific nature, duration, and complexity of each consulting engagement.",
+        "takeaway": "SPP 209 has 5 compensation methods for PACS."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cda941d8d69da6fb990c2d304da1ffa5388c63545a3fd9a283fc27596d875ec8"
+    },
+    {
+      "question_id": "0e99ef65-ec45-4de4-a9aa-577395892a9b",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How many PACS service types are listed under SPP 209?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10"
+        },
+        {
+          "id": "b",
+          "text": "12"
+        },
+        {
+          "id": "c",
+          "text": "16"
+        },
+        {
+          "id": "d",
+          "text": "20"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10 service types is too few for the comprehensive PACS listing.",
+        "b": "12 service types is incorrect. SPP 209 lists more.",
+        "c": "Correct. SPP 209 lists 16 PACS service types, covering a wide range of architectural consulting activities.",
+        "d": "20 service types exceeds the SPP 209 specification.",
+        "correct": "SPP 209 lists 16 PACS service types, covering a comprehensive range of architectural consulting activities from project management consulting to expert witness services.",
+        "takeaway": "SPP 209 lists 16 PACS service types."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:631278dd0d507bfced10a46119a55bcc098aaeea5d94873ccdfbf4b31f6fe664"
+    },
+    {
+      "question_id": "c8e7fd57-b2b8-490f-8cee-05ae9e1dc9d1",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What organizational membership is required for a Professional Consulting Architect under SPP 209?",
+      "options": [
+        {
+          "id": "a",
+          "text": "SEC registration only"
+        },
+        {
+          "id": "b",
+          "text": "PRC registration and DTI permit"
+        },
+        {
+          "id": "c",
+          "text": "IAPOA member in good standing"
+        },
+        {
+          "id": "d",
+          "text": "UAP chapter membership only"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "SEC registration is for business entities, not individual professional membership.",
+        "b": "PRC registration and DTI are licensing requirements, not the organizational membership specified in SPP 209.",
+        "c": "Correct. A PCA must be an IAPOA member in good standing, ensuring they are part of the organized profession and subject to professional standards.",
+        "d": "UAP chapter membership is local. The requirement is IAPOA membership, which is the national accredited organization level.",
+        "correct": "SPP 209 requires Professional Consulting Architects to be IAPOA members in good standing. This ensures they are part of the recognized professional organization, adhere to professional standards, and have access to the support and accountability structures of organized practice.",
+        "takeaway": "PCA must be IAPOA member in good standing."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0c4194542897964d0bd5c3f9a0317d77c28147506f9345638a8adf077fd26ce"
+    },
+    {
+      "question_id": "43a2b1da-c7d9-4549-8d54-394665f362e6",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is a Non-Qualified Entity (NQE) under SPP 209, and what is its status?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A foreign firm with temporary registration — allowed to practice under specific conditions set by the governing body"
+        },
+        {
+          "id": "b",
+          "text": "An unregistered entity attempting to provide consulting services — prohibited"
+        },
+        {
+          "id": "c",
+          "text": "A newly graduated architect without experience — restricted from offering professional services until licensed"
+        },
+        {
+          "id": "d",
+          "text": "A retired architect — allowed only advisory roles, provided they do not engage in active design work"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Foreign firms with TSP are not NQEs. An NQE is an entity without proper qualifications.",
+        "b": "Correct. An NQE is an unregistered entity attempting to provide professional consulting services. NQEs are prohibited under SPP 209, as only qualified, registered professionals may provide PACS.",
+        "c": "New graduates without experience are not NQEs. They may be registered but lack consulting qualifications.",
+        "d": "Retired architects are not NQEs. They may still hold valid registration.",
+        "correct": "Under SPP 209, a Non-Qualified Entity (NQE) is any organization or individual that lacks the proper professional qualifications and registration to provide architectural consulting services. NQEs are strictly prohibited from offering PACS, protecting the public and the profession.",
+        "takeaway": "NQE = unregistered entity providing consulting services — PROHIBITED."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3b801978c41e262dd07e3ac0c388189c8e4a316883321ebd1dd8943d73da1899"
+    },
+    {
+      "question_id": "c1d66ccf-e159-4dec-a5b0-cf11e28b0b1b",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is SPP 209's position within the 2010 SPP series?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is the introductory document of the series, setting the foundational guidelines for subsequent documents"
+        },
+        {
+          "id": "b",
+          "text": "It is a mid-series specialized document, focusing on specific aspects of architectural practice"
+        },
+        {
+          "id": "c",
+          "text": "It is the capstone/final document of the 2010 SPP series"
+        },
+        {
+          "id": "d",
+          "text": "It is an annex appended to the series, providing additional information and clarifications"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The introductory document is SPP 200 (Overview), not SPP 209.",
+        "b": "SPP 209 is not mid-series. It is the last numbered document.",
+        "c": "Correct. SPP 209 is the capstone/final document of the 2010 SPP series, addressing professional consulting at the highest level and completing the comprehensive framework of architectural services.",
+        "d": "The annex is Annex A (Interior Design Fee Schedule). SPP 209 is a full numbered document.",
+        "correct": "SPP 209 is the capstone and final document of the 2010 SPP series. As the last numbered document, it addresses the most advanced form of professional practice — consulting services — and completes the comprehensive SPP framework from pre-design (201) through consulting (209).",
+        "takeaway": "SPP 209 = capstone/final document of the 2010 SPP series."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9fc2ff65e14b85f1f9757458fd055152cb83ebd5d83035e8404e50ea897220a7"
+    },
+    {
+      "question_id": "e988f6a5-b5c4-438e-b0bf-a43eb7120182",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What does LoI No. 1000 (1980) establish regarding consulting services, as referenced in SPP 209?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Standard fee rates for government projects, ensuring consistency across all public sector engagements"
+        },
+        {
+          "id": "b",
+          "text": "Priority to APO (Accredited Professional Organization) members for consulting engagements"
+        },
+        {
+          "id": "c",
+          "text": "Mandatory insurance requirements for consultants, providing a safety net for professional liabilities"
+        },
+        {
+          "id": "d",
+          "text": "Registration requirements for foreign consultants, aimed at regulating international participation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fee rates are covered by the SPP documents themselves, not LoI No. 1000.",
+        "b": "Correct. LoI No. 1000 (1980) establishes priority for members of APOs (Accredited Professional Organizations) in government consulting engagements, supporting the preference for organized professionals.",
+        "c": "Insurance requirements are not the subject of LoI No. 1000.",
+        "d": "Foreign consultant registration is governed by R.A. 9266 and PRC regulations, not LoI No. 1000.",
+        "correct": "LoI (Letter of Instruction) No. 1000 (1980) establishes priority for APO (Accredited Professional Organization) members in consulting engagements, particularly government projects. This supports the organized professional practice and the role of the IAPOA.",
+        "takeaway": "LoI No. 1000 = priority to APO members for consulting."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:66aff83fed6e79c9371b67f3d496351835cd43288b861b397f7e8889ab14c812"
+    },
+    {
+      "question_id": "29b5c8fd-0c52-4092-b917-ca20356bb5a5",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the constitutional basis for prioritizing Filipino PCA (Professional Consulting Architect) services under SPP 209?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Article II, Section 9 (promotion of social justice), which emphasizes equitable opportunities"
+        },
+        {
+          "id": "b",
+          "text": "Article XII, Section 14 (preference for Filipino professionals)"
+        },
+        {
+          "id": "c",
+          "text": "Article XIV, Section 1 (education protection), focusing on the safeguarding of educational standards"
+        },
+        {
+          "id": "d",
+          "text": "Article III, Section 1 (due process and equal protection), ensuring fairness in legal proceedings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Article II, Section 9 addresses social justice broadly, not the specific preference for Filipino professionals.",
+        "b": "Correct. Article XII, Section 14 of the 1987 Constitution provides the basis for prioritizing Filipino professionals, including architects, in the practice of their professions.",
+        "c": "Article XIV, Section 1 addresses education, not professional practice priority.",
+        "d": "Article III, Section 1 addresses due process, not professional practice priority.",
+        "correct": "The Filipino PCA priority rule under SPP 209 is grounded in Article XII, Section 14 of the 1987 Philippine Constitution, which provides for the preferential treatment of Filipino professionals in the practice of their professions within the Philippines.",
+        "takeaway": "Filipino PCA priority = Art. XII, Sec. 14 of the Constitution."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209 / 1987 Constitution",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bff45c69f517e7b603e0952161edf2c513d80ab9d336c2bee063583556e62164"
+    },
+    {
+      "question_id": "3d685689-611d-498a-abcd-0c39aa58fa0d",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the three-condition framework for foreign consultants providing PACS under SPP 209?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Visa, work permit, and insurance, ensuring legal compliance and protection for both the consultant and the client."
+        },
+        {
+          "id": "b",
+          "text": "TSP (Temporary/Special Permit), DoLE certification, and collaboration with local RLA"
+        },
+        {
+          "id": "c",
+          "text": "IAPOA membership, PRC registration, and UAP endorsement, which are necessary for professional recognition and practice."
+        },
+        {
+          "id": "d",
+          "text": "Board exam waiver, SEC registration, and DTI permit, which facilitate business operations and legal compliance."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Visa and insurance are general requirements, not the SPP 209 three-condition framework.",
+        "b": "Correct. Foreign consultants must satisfy three conditions: (1) TSP from PRC, (2) DoLE certification, and (3) collaboration with a local RLA — the same framework as the general foreign architect requirements.",
+        "c": "IAPOA membership and UAP endorsement are not the statutory requirements for foreign consultants.",
+        "d": "Board exam waiver is not part of the framework. Foreign consultants do not take the Philippine board exam.",
+        "correct": "Foreign consultants must satisfy three conditions under SPP 209: (1) obtain a Temporary/Special Permit from PRC, (2) secure DoLE work certification, and (3) collaborate with a local Registered Licensed Architect. This framework mirrors the general foreign architect requirements.",
+        "takeaway": "Foreign consultant framework: TSP + DoLE + local RLA collaboration."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209 / R.A. 9266",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0fa260545aa505876b137231283f1babc59888a80dc3ded17547d26e77d2681e"
+    },
+    {
+      "question_id": "c0583aab-3475-4822-8421-5852dac895fd",
+      "article_id": "f7861b5b-0833-4cd3-a634-0dfb9f53891c",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is QBS (Qualifications-Based Selection) under SPP 209, and which law governs it?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A price-based bidding process under R.A. 9266, which focuses on cost over qualifications"
+        },
+        {
+          "id": "b",
+          "text": "A selection method based on professional qualifications under R.A. 9184 (Government Procurement Reform Act)"
+        },
+        {
+          "id": "c",
+          "text": "A competitive design process under SPP 208, emphasizing creativity and innovation"
+        },
+        {
+          "id": "d",
+          "text": "A merit-based ranking under R.A. 9285 (ADR Act), prioritizing dispute resolution skills"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "QBS is the opposite of price-based bidding. It selects based on qualifications, not price.",
+        "b": "Correct. QBS is a selection method that evaluates consultants primarily on their professional qualifications, experience, and capability, governed by R.A. 9184 (Government Procurement Reform Act).",
+        "c": "QBS is distinct from ADC. It is a consultant selection method, not a design competition.",
+        "d": "R.A. 9285 governs dispute resolution, not procurement selection methods.",
+        "correct": "QBS (Qualifications-Based Selection) under SPP 209 selects consultants based on professional qualifications rather than lowest price. It is governed by R.A. 9184 (Government Procurement Reform Act), which recognizes that professional services should be procured based on competence, not cost alone.",
+        "takeaway": "QBS = selection by qualifications under R.A. 9184 (Procurement Act)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 209 / R.A. 9184",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:48.614246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a22110e8f9314598f370ebeb4831609720e6c4e1ab9064c2a917fbed7a8a02fb"
+    }
+  ]
+}

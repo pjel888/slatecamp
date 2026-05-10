@@ -1,0 +1,1072 @@
+{
+  "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:98b476cbe9c802d39cc10bacdb121957ca2b0d0175f5d37cb802a726b3256eea",
+  "question_count": 21,
+  "questions": [
+    {
+      "question_id": "7bc8e242-85f7-4802-b69e-6dd7d7441224",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Transport Nodes Escalators Walkways\", if a project requires 804 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "804 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "804 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "804 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "804 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 804 mm as the requirement. Context: ator parameters confirmed and cited:**\r    - The values you listed (S800 tread ~...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:12.153046+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d328579a663be2d6e623073a9e83672d66134dd23f07cd71f4cb58ce71e1bbfb"
+    },
+    {
+      "question_id": "1183bb56-d613-4684-b791-0411f8b866e8",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A designer is laying out the tactile path network in a new LRT station. At the elevator, the tactile path terminates. What element must be present at the elevator termination point to allow a visually impaired user to find and operate the lift independently?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A directional tactile bar strip leading directly into the elevator car, plus audio chime only, ensuring clear guidance without additional tactile feedback"
+        },
+        {
+          "id": "B",
+          "text": "A warning tactile strip 300 mm in front of the elevator door, plus Braille and tactile labels at controls and door jambs"
+        },
+        {
+          "id": "C",
+          "text": "An ISA sign at 1800 mm AFF beside the elevator, plus a 600 mm tactile strip at the door sill, providing visual and tactile cues for orientation"
+        },
+        {
+          "id": "D",
+          "text": "A warning tactile strip 600 mm in front of the elevator door, plus a tactile map of the floor plan, offering comprehensive spatial information"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Elevator tactile termination: 300 mm warning strip before the door, Braille/tactile at controls and jambs.",
+        "explanation": "The tactile path terminates at a warning tactile strip 300 mm in front of the elevator door, alerting the user that the lift is immediately ahead. Braille and tactile labels on the COP (at 900–1200 mm AFF) and on both door jambs allow independent floor selection. The 600 mm depth rule applies to the warning field before escalators and platform edges; at elevator doors the specific element is the 300 mm setback warning strip.",
+        "common_misconceptions": [
+          "Using a 600 mm warning strip in front of the elevator door — the 600 mm refers to depth at escalator/platform edges, not elevator door setback",
+          "Relying on audio chimes alone without tactile controls — visually impaired users need tactile labels to operate the elevator"
+        ]
+      },
+      "explanation": "Elevator tactile termination requires a 300 mm warning strip before the door plus Braille/tactile at controls and jambs.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:46af19ccb3aa11d22b9308195229a12fc988034590b0110e21fe0fadc10d0200"
+    },
+    {
+      "question_id": "598e798a-7d0c-4862-b07c-506672eb0bed",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344, how many horizontal (level) steps must be provided at both the top and bottom of an accessible escalator to allow safe transition onto and off the moving steps?",
+      "options": [
+        {
+          "id": "A",
+          "text": "At least 2 horizontal steps at the bottom and 1 at the top entry zone"
+        },
+        {
+          "id": "B",
+          "text": "At least 3 horizontal steps at both the top and bottom entry/exit zones"
+        },
+        {
+          "id": "C",
+          "text": "At least 5 horizontal steps at both the top and bottom entry/exit zones"
+        },
+        {
+          "id": "D",
+          "text": "At least 1 horizontal step at both top and bottom, plus a tactile warning strip"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR requires at least 3 horizontal steps at both the top and bottom of an escalator.",
+        "explanation": "The 3 horizontal steps at each end create a level transition zone where users can gain or release their footing before the steps begin rising or after they flatten. Fewer steps reduce safe boarding time, particularly for users with mobility impairments. This is an escalator-specific requirement distinct from the tactile depth specification.",
+        "common_misconceptions": [
+          "Thinking the horizontal step count differs between top and bottom — it is 3 at both ends",
+          "Confusing horizontal steps with tactile warning block depth (600 mm)"
+        ]
+      },
+      "explanation": "3 horizontal steps at top and bottom is the BP 344 IRR escalator requirement for safe PWD transition.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:364b2d5bcbf42958af5176671791677962717043f7ffb251e4a6df0376d4bc07"
+    },
+    {
+      "question_id": "b5902efa-9f90-40b5-855e-2ad14518fb7a",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the maximum angle of inclination permitted for an accessible escalator under the BP 344 IRR escalator specifications?",
+      "options": [
+        {
+          "id": "A",
+          "text": "30 degrees to the horizontal"
+        },
+        {
+          "id": "B",
+          "text": "45 degrees to the horizontal"
+        },
+        {
+          "id": "C",
+          "text": "35 degrees to the horizontal"
+        },
+        {
+          "id": "D",
+          "text": "25 degrees to the horizontal"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR sets the maximum escalator inclination at 30 degrees to the horizontal.",
+        "explanation": "A 30° maximum inclination balances passenger throughput with stability for users who have difficulty maintaining balance on steeper slopes. Escalators steeper than 30° are not considered compatible with PWD-friendly use under BP 344. This value pairs with the S800-type tread (~804 mm) and 30 m/min speed limit.",
+        "common_misconceptions": [
+          "Confusing the 30° escalator angle with the 1:12 (approximately 5°) ramp slope maximum",
+          "Thinking that 45° is a common escalator standard — it exceeds the BP 344 limit"
+        ]
+      },
+      "explanation": "BP 344 IRR caps escalator inclination at 30° to the horizontal for PWD-compatible use.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:41f8d8edc13b009f5c387f1df268205ef5ebf4b14d553ece6ff010141a3f63b6"
+    },
+    {
+      "question_id": "73580627-d46d-44bd-9acf-db82d82fe393",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "BP 344 specifies warning tactile blocks before escalators and passenger conveyors. What are the required depth of the tactile strip and its setback distance from the landing plate or hazard edge?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm depth installed 300 mm before the hazard, spanning the full width of the escalator"
+        },
+        {
+          "id": "B",
+          "text": "300 mm depth installed 600 mm before the hazard, spanning the full width of the escalator"
+        },
+        {
+          "id": "C",
+          "text": "600 mm depth installed 300 mm before the hazard, centered on the escalator only"
+        },
+        {
+          "id": "D",
+          "text": "600 mm depth installed 300 mm before the hazard, spanning the full width of the escalator"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Escalator tactile: 600 mm depth, 300 mm setback from hazard, full-width coverage.",
+        "explanation": "The mnemonic from the article is '600 deep, 300 back, full width.' The 600 mm depth gives a visually impaired user sufficient tactile surface to detect the warning before reaching the moving steps. The 300 mm setback keeps the strip clear of the metal landing plate. Full-width coverage prevents bypass. Option B inverts the two numbers — the most common exam trap.",
+        "common_misconceptions": [
+          "Inverting the numbers: 300 mm depth and 600 mm setback instead of 600 mm depth and 300 mm setback",
+          "Thinking the strip only needs to cover the center lane rather than the full width"
+        ]
+      },
+      "explanation": "Escalator tactile rule: 600 mm depth, 300 mm setback, full width — never invert these two numbers.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:42a19ca7290c1e88b048f9c6e574a8c533a9dacdfbbae56e8c4cbdb6343d4809"
+    },
+    {
+      "question_id": "b6757ce0-7acb-456f-ac68-6fba926bc0f5",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The BP 344 IRR limits escalator speed for PWD-compatible use. What is the maximum speed specified?",
+      "options": [
+        {
+          "id": "A",
+          "text": "50 metres per minute"
+        },
+        {
+          "id": "B",
+          "text": "45 metres per minute"
+        },
+        {
+          "id": "C",
+          "text": "30 metres per minute"
+        },
+        {
+          "id": "D",
+          "text": "20 metres per minute"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR sets 30 m/minute as the maximum escalator speed for PWD-friendly operation.",
+        "explanation": "30 m/min allows users with mobility impairments enough time to step on and off the moving steps safely. Higher speeds reduce the available boarding/alighting window and increase the risk of falls. This value pairs with the 3 horizontal steps requirement and the S800-type tread specification.",
+        "common_misconceptions": [
+          "Thinking 45 m/min is the standard — that is a typical commercial escalator speed, not the BP 344 PWD-compatible maximum",
+          "Confusing m/min with m/sec — 30 m/min is 0.5 m/sec"
+        ]
+      },
+      "explanation": "Maximum escalator speed for PWD-compatible use under BP 344 is 30 metres per minute.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b8bfc289abcd00447a9df791fc9aa1ce07c4c937e382d8592eb9e1c3beb0392a"
+    },
+    {
+      "question_id": "62139968-0d89-46cb-b1db-7d3b2c5dae23",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Passenger conveyors (walkalators) in airports must follow the same tactile warning geometry as escalators. Which statement correctly describes the tactile requirement at a walkalator entry and exit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "600 mm deep warning tactile blocks placed 300 mm before the belt start and end, covering the full clear width"
+        },
+        {
+          "id": "B",
+          "text": "300 mm deep warning tactile blocks placed 600 mm before the belt start and end, covering the full clear width"
+        },
+        {
+          "id": "C",
+          "text": "600 mm deep warning tactile blocks placed 600 mm before the belt start and end, covering only the centerline"
+        },
+        {
+          "id": "D",
+          "text": "900 mm deep warning tactile blocks placed 300 mm before the belt start and end, covering the full clear width"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Walkalators follow the same 600 mm depth / 300 mm setback / full-width rule as escalators.",
+        "explanation": "The article explicitly states that passenger conveyors follow the same 600 mm / 300 mm tactile rule as escalators and ramps. The approach areas must also be level, surfaces slip-resistant, and handrails provided on both sides at accessible heights. Walkalators are essentially 'flat escalators' for tactile and safety logic.",
+        "common_misconceptions": [
+          "Assuming walkalators have different tactile requirements than escalators because they are horizontal",
+          "Using 900 mm depth — this is not a BP 344 tactile dimension"
+        ]
+      },
+      "explanation": "Walkalators use the same 600 mm depth / 300 mm setback / full-width tactile rule as escalators per BP 344.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ec9b440e368ba250759da4865cd6176de5d8df6c14be3a6806937700732d798"
+    },
+    {
+      "question_id": "2eeff351-44c9-4787-9b83-43d28d63b562",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 IRR, what is the goal for the vertical relationship between a transit platform edge and the floor of the transit vehicle at boarding?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The platform may be up to 150 mm below the vehicle floor, bridged by a portable ramp on request"
+        },
+        {
+          "id": "B",
+          "text": "The platform shall be level with the transit vehicle floor, with horizontal and vertical gaps minimized"
+        },
+        {
+          "id": "C",
+          "text": "The platform shall be 25 mm above the vehicle floor to prevent water ingress from the track area"
+        },
+        {
+          "id": "D",
+          "text": "The platform shall be at least 300 mm above the vehicle floor to reduce the boarding step height"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR requires boarding platforms to be level with the transit vehicle floor, avoiding noticeable gaps.",
+        "explanation": "The BP 344 IRR explicitly states that 'boarding platforms shall be leveled with the finished floor of the transit vehicles, avoiding noticeable horizontal and vertical gaps.' Any unavoidable gap must be minimized and mitigated with ramps or gap fillers — a portable ramp is a mitigation, not an acceptable design solution. Level boarding eliminates the step that prevents wheelchair users from self-boarding.",
+        "common_misconceptions": [
+          "Accepting a 150 mm gap bridged by a portable ramp as a compliant design solution",
+          "Confusing the ±25 mm level boarding tolerance (from the Translating PWD Rights article) with a 25 mm step height"
+        ]
+      },
+      "explanation": "BP 344 IRR requires platform and vehicle floor to be level — gaps must be minimized, not designed around.",
+      "code_citation": "BP 344 IRR",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:118fd7ddcf8f8244e18b182fb876b92a67b6719f43621fd9297f39018273b02e"
+    },
+    {
+      "question_id": "27db2b54-35a6-47ed-8252-f568be0d059f",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An architect places warning tactile domes along a transit platform. BP 344 specifies the domes must be a 600 mm deep field set parallel to and at a specific distance from the platform edge. What is that distance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150 mm away from the platform edge, parallel to the edge along its full length"
+        },
+        {
+          "id": "B",
+          "text": "600 mm away from the platform edge, parallel to the edge along its full length"
+        },
+        {
+          "id": "C",
+          "text": "300 mm away from the platform edge, parallel to the edge along its full length"
+        },
+        {
+          "id": "D",
+          "text": "500 mm away from the platform edge, parallel to the edge along its full length"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Warning tactile domes: 600 mm deep field, placed 300 mm from the platform edge.",
+        "explanation": "The 600 mm deep tactile dome field is placed 300 mm back from the platform edge — this is the same 600/300 rule applied at escalator entries. The 300 mm setback gives a user approaching the edge a 300 mm safety buffer after detecting the tactile warning before reaching the drop. Placing domes at 600 mm from the edge creates an excessively large exclusion zone and is not the specified distance.",
+        "common_misconceptions": [
+          "Swapping depth and setback: placing the domes 600 mm from the edge with a 300 mm field",
+          "Using 150 mm or 500 mm setback distances not found in BP 344"
+        ]
+      },
+      "explanation": "Warning tactile domes at platform edges: 600 mm deep field, set 300 mm from the edge per BP 344.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:15a50d54641202fc1bac5fb34ff3c099e79818730c54488a3a3d002f919401a8"
+    },
+    {
+      "question_id": "4cc6197c-84ed-4ab5-a3aa-ac6c39d08e96",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A transport terminal plan shows escalators connecting three levels but no ramps or elevators. The building official notes a compliance failure. Which BP 344 principle does this violate, and what is the required remedy?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Escalators alone are not sufficient — an elevator or accessible ramp alternative must also be provided on every accessible route"
+        },
+        {
+          "id": "B",
+          "text": "Escalators are fully compliant if they meet the S800 tread, 30° inclination, and 30 m/min speed requirements, which is not sufficient for accessibility"
+        },
+        {
+          "id": "C",
+          "text": "Escalators are sufficient if they have tactile warning blocks, handrails, and audible announcements, which does not meet accessibility standards"
+        },
+        {
+          "id": "D",
+          "text": "Escalators are compliant for commercial buildings; hospitals are the only typology requiring a ramp or elevator alternative, which is incorrect"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Escalators are not a substitute for accessible vertical circulation — an elevator or ramp is always additionally required.",
+        "explanation": "BP 344 is explicit: an escalator alone does not constitute accessible vertical circulation because wheelchair users and many ambulatory disabled persons cannot use moving steps safely. An elevator (car minimum 1200 × 1400 mm) or accessible ramp (minimum 1200 mm wide, ≤1:12 slope) must be provided as an alternative on every floor level served. This applies to all building typologies — malls, transport terminals, schools, and hospitals alike.",
+        "common_misconceptions": [
+          "Believing that a code-compliant escalator satisfies the accessible vertical circulation requirement",
+          "Thinking the ramp/elevator alternative is only required in hospitals"
+        ]
+      },
+      "explanation": "Escalators cannot serve as the sole accessible vertical circulation — an elevator or ramp alternative is always required by BP 344.",
+      "code_citation": "BP 344 IRR",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2101a5a3b2d8c55e6c7723fb1b8118c832d69a5b087edf056526f380973e85dd"
+    },
+    {
+      "question_id": "9e3a002b-236e-489a-a893-be883432162c",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "In an accessible transit station, directional tactile bars form a continuous accessible path. To which destination points must this tactile path connect, according to BP 344?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Drop-offs, ticketing, and emergency exits only — other routes use ISA signage instead, which is considered sufficient for wayfinding"
+        },
+        {
+          "id": "B",
+          "text": "Drop-offs, main entrance, and platform boarding zones only, ensuring that the most critical areas are accessible"
+        },
+        {
+          "id": "C",
+          "text": "Elevator lobbies and platform boarding zones only, with warning domes at all other hazards to alert visually impaired users"
+        },
+        {
+          "id": "D",
+          "text": "Drop-offs, security, ticketing, ticket gates, stairs, escalators, elevators, and platform boarding zones"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The tactile path must link all key station nodes: drop-offs, security, ticketing, gates, stairs, escalators, elevators, and boarding zones.",
+        "explanation": "BP 344 requires directional tactile bars to form a continuous route linking every functional node a transit passenger must navigate — from drop-off and entrance through security, ticketing, and gates to vertical circulation and the platform. Partial networks (only entrance-to-platform or only elevator lobbies) leave visually impaired users unable to independently navigate the station.",
+        "common_misconceptions": [
+          "Assuming only the elevator and platform need tactile connections",
+          "Thinking ISA signage can replace tactile paths for non-elevator segments"
+        ]
+      },
+      "explanation": "The tactile path must be a complete network linking all functional station nodes per BP 344.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:57.938504+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:10380b7eee7f231dfff360a0d1520a9152d090af4111d10fa68091c632ba2cdd"
+    },
+    {
+      "question_id": "a713c0ad-37cd-438c-b948-fa0c90ec9780",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "In an accessible transit station, directional tactile bars form a continuous accessible path. To which destination points must this tactile path connect, according to BP 344?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Drop-offs, ticketing, and emergency exits only — other routes use ISA signage instead, which may not provide full accessibility"
+        },
+        {
+          "id": "B",
+          "text": "Drop-offs, main entrance, and platform boarding zones only, which may not cover all necessary areas for accessibility"
+        },
+        {
+          "id": "C",
+          "text": "Elevator lobbies and platform boarding zones only, with warning domes at all other hazards, ensuring safety but not full connectivity"
+        },
+        {
+          "id": "D",
+          "text": "Drop-offs, security, ticketing, ticket gates, stairs, escalators, elevators, and platform boarding zones"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The tactile path must link all key station nodes: drop-offs, security, ticketing, gates, stairs, escalators, elevators, and boarding zones.",
+        "explanation": "BP 344 requires directional tactile bars to form a continuous route linking every functional node a transit passenger must navigate — from drop-off and entrance through security, ticketing, and gates to vertical circulation and the platform. Partial networks (only entrance-to-platform or only elevator lobbies) leave visually impaired users unable to independently navigate the station.",
+        "common_misconceptions": [
+          "Assuming only the elevator and platform need tactile connections",
+          "Thinking ISA signage can replace tactile paths for non-elevator segments"
+        ]
+      },
+      "explanation": "The tactile path must be a complete network linking all functional station nodes per BP 344.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d884c0dab250ad1277cde8524ec4c931f5bd421ffae5c16a43d1bb73f794bcfa"
+    },
+    {
+      "question_id": "e60f6e23-72b6-4801-abb0-992f0df65d05",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The BP 344 IRR limits escalator speed for PWD-compatible use. What is the maximum speed specified?",
+      "options": [
+        {
+          "id": "A",
+          "text": "50 metres per minute"
+        },
+        {
+          "id": "B",
+          "text": "45 metres per minute"
+        },
+        {
+          "id": "C",
+          "text": "30 metres per minute"
+        },
+        {
+          "id": "D",
+          "text": "20 metres per minute"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR sets 30 m/minute as the maximum escalator speed for PWD-friendly operation.",
+        "explanation": "30 m/min allows users with mobility impairments enough time to step on and off the moving steps safely. Higher speeds reduce the available boarding/alighting window and increase the risk of falls. This value pairs with the 3 horizontal steps requirement and the S800-type tread specification.",
+        "common_misconceptions": [
+          "Thinking 45 m/min is the standard — that is a typical commercial escalator speed, not the BP 344 PWD-compatible maximum",
+          "Confusing m/min with m/sec — 30 m/min is 0.5 m/sec"
+        ]
+      },
+      "explanation": "Maximum escalator speed for PWD-compatible use under BP 344 is 30 metres per minute.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc5b3b46eb1922a67714ec1dca86d985b4878378b7d98b0eea273cb125fff50a"
+    },
+    {
+      "question_id": "824cf8cd-8889-499c-a781-346a32bf22c3",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the maximum angle of inclination permitted for an accessible escalator under the BP 344 IRR escalator specifications?",
+      "options": [
+        {
+          "id": "A",
+          "text": "30 degrees to the horizontal"
+        },
+        {
+          "id": "B",
+          "text": "45 degrees to the horizontal"
+        },
+        {
+          "id": "C",
+          "text": "35 degrees to the horizontal"
+        },
+        {
+          "id": "D",
+          "text": "25 degrees to the horizontal"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR sets the maximum escalator inclination at 30 degrees to the horizontal.",
+        "explanation": "A 30° maximum inclination balances passenger throughput with stability for users who have difficulty maintaining balance on steeper slopes. Escalators steeper than 30° are not considered compatible with PWD-friendly use under BP 344. This value pairs with the S800-type tread (~804 mm) and 30 m/min speed limit.",
+        "common_misconceptions": [
+          "Confusing the 30° escalator angle with the 1:12 (approximately 5°) ramp slope maximum",
+          "Thinking that 45° is a common escalator standard — it exceeds the BP 344 limit"
+        ]
+      },
+      "explanation": "BP 344 IRR caps escalator inclination at 30° to the horizontal for PWD-compatible use.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9320cc3aad661f1956d4052bbb677f11f0583096cccaa8c4673df653c50b060f"
+    },
+    {
+      "question_id": "b4ce84a6-afd5-4d25-b65f-ab8cf284da13",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344, how many horizontal (level) steps must be provided at both the top and bottom of an accessible escalator to allow safe transition onto and off the moving steps?",
+      "options": [
+        {
+          "id": "A",
+          "text": "At least 2 horizontal steps at the bottom and 1 at the top entry zone"
+        },
+        {
+          "id": "B",
+          "text": "At least 3 horizontal steps at both the top and bottom entry/exit zones"
+        },
+        {
+          "id": "C",
+          "text": "At least 5 horizontal steps at both the top and bottom entry/exit zones"
+        },
+        {
+          "id": "D",
+          "text": "At least 1 horizontal step at both top and bottom, plus a tactile warning strip"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR requires at least 3 horizontal steps at both the top and bottom of an escalator.",
+        "explanation": "The 3 horizontal steps at each end create a level transition zone where users can gain or release their footing before the steps begin rising or after they flatten. Fewer steps reduce safe boarding time, particularly for users with mobility impairments. This is an escalator-specific requirement distinct from the tactile depth specification.",
+        "common_misconceptions": [
+          "Thinking the horizontal step count differs between top and bottom — it is 3 at both ends",
+          "Confusing horizontal steps with tactile warning block depth (600 mm)"
+        ]
+      },
+      "explanation": "3 horizontal steps at top and bottom is the BP 344 IRR escalator requirement for safe PWD transition.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4c463aa3f5ebb26ea28241332b9ef06443ccb2abf43e874573cacc92ab6ee417"
+    },
+    {
+      "question_id": "c1485305-99e9-4830-8fed-9bf92a6078aa",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "BP 344 specifies warning tactile blocks before escalators and passenger conveyors. What are the required depth of the tactile strip and its setback distance from the landing plate or hazard edge?",
+      "options": [
+        {
+          "id": "A",
+          "text": "300 mm depth installed 300 mm before the hazard, spanning the full width of the escalator"
+        },
+        {
+          "id": "B",
+          "text": "300 mm depth installed 600 mm before the hazard, spanning the full width of the escalator"
+        },
+        {
+          "id": "C",
+          "text": "600 mm depth installed 300 mm before the hazard, centered on the escalator only"
+        },
+        {
+          "id": "D",
+          "text": "600 mm depth installed 300 mm before the hazard, spanning the full width of the escalator"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Escalator tactile: 600 mm depth, 300 mm setback from hazard, full-width coverage.",
+        "explanation": "The mnemonic from the article is '600 deep, 300 back, full width.' The 600 mm depth gives a visually impaired user sufficient tactile surface to detect the warning before reaching the moving steps. The 300 mm setback keeps the strip clear of the metal landing plate. Full-width coverage prevents bypass. Option B inverts the two numbers — the most common exam trap.",
+        "common_misconceptions": [
+          "Inverting the numbers: 300 mm depth and 600 mm setback instead of 600 mm depth and 300 mm setback",
+          "Thinking the strip only needs to cover the center lane rather than the full width"
+        ]
+      },
+      "explanation": "Escalator tactile rule: 600 mm depth, 300 mm setback, full width — never invert these two numbers.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c3f465b197c198afb2df5106d471b0f3c7bce2932ec733361621e13a99be00a0"
+    },
+    {
+      "question_id": "0f9c3679-3429-460a-978e-849da53cf488",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Passenger conveyors (walkalators) in airports must follow the same tactile warning geometry as escalators. Which statement correctly describes the tactile requirement at a walkalator entry and exit?",
+      "options": [
+        {
+          "id": "A",
+          "text": "600 mm deep warning tactile blocks placed 300 mm before the belt start and end, covering the full clear width"
+        },
+        {
+          "id": "B",
+          "text": "300 mm deep warning tactile blocks placed 600 mm before the belt start and end, covering the full clear width"
+        },
+        {
+          "id": "C",
+          "text": "600 mm deep warning tactile blocks placed 600 mm before the belt start and end, covering only the centerline"
+        },
+        {
+          "id": "D",
+          "text": "900 mm deep warning tactile blocks placed 300 mm before the belt start and end, covering the full clear width"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Walkalators follow the same 600 mm depth / 300 mm setback / full-width rule as escalators.",
+        "explanation": "The article explicitly states that passenger conveyors follow the same 600 mm / 300 mm tactile rule as escalators and ramps. The approach areas must also be level, surfaces slip-resistant, and handrails provided on both sides at accessible heights. Walkalators are essentially 'flat escalators' for tactile and safety logic.",
+        "common_misconceptions": [
+          "Assuming walkalators have different tactile requirements than escalators because they are horizontal",
+          "Using 900 mm depth — this is not a BP 344 tactile dimension"
+        ]
+      },
+      "explanation": "Walkalators use the same 600 mm depth / 300 mm setback / full-width tactile rule as escalators per BP 344.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:867e55878363d8985dcaa7aa8b711105acb9dc9ab5c4a829f59cfd8528c91d62"
+    },
+    {
+      "question_id": "37dcf2c3-94a0-4bb6-b12a-5874a88ff4d1",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 IRR, what is the goal for the vertical relationship between a transit platform edge and the floor of the transit vehicle at boarding?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The platform may be up to 150 mm below the vehicle floor, bridged by a portable ramp on request"
+        },
+        {
+          "id": "B",
+          "text": "The platform shall be level with the transit vehicle floor, with horizontal and vertical gaps minimized"
+        },
+        {
+          "id": "C",
+          "text": "The platform shall be 25 mm above the vehicle floor to prevent water ingress from the track area"
+        },
+        {
+          "id": "D",
+          "text": "The platform shall be at least 300 mm above the vehicle floor to reduce the boarding step height"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR requires boarding platforms to be level with the transit vehicle floor, avoiding noticeable gaps.",
+        "explanation": "The BP 344 IRR explicitly states that 'boarding platforms shall be leveled with the finished floor of the transit vehicles, avoiding noticeable horizontal and vertical gaps.' Any unavoidable gap must be minimized and mitigated with ramps or gap fillers — a portable ramp is a mitigation, not an acceptable design solution. Level boarding eliminates the step that prevents wheelchair users from self-boarding.",
+        "common_misconceptions": [
+          "Accepting a 150 mm gap bridged by a portable ramp as a compliant design solution",
+          "Confusing the ±25 mm level boarding tolerance (from the Translating PWD Rights article) with a 25 mm step height"
+        ]
+      },
+      "explanation": "BP 344 IRR requires platform and vehicle floor to be level — gaps must be minimized, not designed around.",
+      "code_citation": "BP 344 IRR",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:83f7100f38aa2e0338c514c4948bd31dd87b3c6309f574428139a3e43e83e8d1"
+    },
+    {
+      "question_id": "88cc76d3-3de6-4030-951f-bc108fc383c8",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An architect places warning tactile domes along a transit platform. BP 344 specifies the domes must be a 600 mm deep field set parallel to and at a specific distance from the platform edge. What is that distance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150 mm away from the platform edge, parallel to the edge along its full length"
+        },
+        {
+          "id": "B",
+          "text": "600 mm away from the platform edge, parallel to the edge along its full length"
+        },
+        {
+          "id": "C",
+          "text": "300 mm away from the platform edge, parallel to the edge along its full length"
+        },
+        {
+          "id": "D",
+          "text": "500 mm away from the platform edge, parallel to the edge along its full length"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Warning tactile domes: 600 mm deep field, placed 300 mm from the platform edge.",
+        "explanation": "The 600 mm deep tactile dome field is placed 300 mm back from the platform edge — this is the same 600/300 rule applied at escalator entries. The 300 mm setback gives a user approaching the edge a 300 mm safety buffer after detecting the tactile warning before reaching the drop. Placing domes at 600 mm from the edge creates an excessively large exclusion zone and is not the specified distance.",
+        "common_misconceptions": [
+          "Swapping depth and setback: placing the domes 600 mm from the edge with a 300 mm field",
+          "Using 150 mm or 500 mm setback distances not found in BP 344"
+        ]
+      },
+      "explanation": "Warning tactile domes at platform edges: 600 mm deep field, set 300 mm from the edge per BP 344.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0904c2f3726040dc3577f7727ecd17ba3bf2c974a4341f0cd544dfda371de844"
+    },
+    {
+      "question_id": "84875579-dd5b-423c-82f2-d8c2e2b9374e",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A designer is laying out the tactile path network in a new LRT station. At the elevator, the tactile path terminates. What element must be present at the elevator termination point to allow a visually impaired user to find and operate the lift independently?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A directional tactile bar strip leading directly into the elevator car, plus audio chime only, which may not be sufficient for all users"
+        },
+        {
+          "id": "B",
+          "text": "A warning tactile strip 300 mm in front of the elevator door, plus Braille and tactile labels at controls and door jambs"
+        },
+        {
+          "id": "C",
+          "text": "An ISA sign at 1800 mm AFF beside the elevator, plus a 600 mm tactile strip at the door sill, which may not provide adequate guidance"
+        },
+        {
+          "id": "D",
+          "text": "A warning tactile strip 600 mm in front of the elevator door, plus a tactile map of the floor plan, offering comprehensive orientation"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Elevator tactile termination: 300 mm warning strip before the door, Braille/tactile at controls and jambs.",
+        "explanation": "The tactile path terminates at a warning tactile strip 300 mm in front of the elevator door, alerting the user that the lift is immediately ahead. Braille and tactile labels on the COP (at 900–1200 mm AFF) and on both door jambs allow independent floor selection. The 600 mm depth rule applies to the warning field before escalators and platform edges; at elevator doors the specific element is the 300 mm setback warning strip.",
+        "common_misconceptions": [
+          "Using a 600 mm warning strip in front of the elevator door — the 600 mm refers to depth at escalator/platform edges, not elevator door setback",
+          "Relying on audio chimes alone without tactile controls — visually impaired users need tactile labels to operate the elevator"
+        ]
+      },
+      "explanation": "Elevator tactile termination requires a 300 mm warning strip before the door plus Braille/tactile at controls and jambs.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b5f8e36cbd8d73c553b1eeb2549d5fcdecefef777bb6fe1f401f18568e854011"
+    },
+    {
+      "question_id": "8635f4c6-f508-46f7-b8ba-7c41c6a5f36b",
+      "article_id": "f6fe1a69-b3c0-4c94-8341-9291c71c5006",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A transport terminal plan shows escalators connecting three levels but no ramps or elevators. The building official notes a compliance failure. Which BP 344 principle does this violate, and what is the required remedy?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Escalators alone are not sufficient — an elevator or accessible ramp alternative must also be provided on every accessible route"
+        },
+        {
+          "id": "B",
+          "text": "Escalators are fully compliant if they meet the S800 tread, 30° inclination, and 30 m/min speed requirements, ensuring safety and efficiency"
+        },
+        {
+          "id": "C",
+          "text": "Escalators are sufficient if they have tactile warning blocks, handrails, and audible announcements, providing accessibility features"
+        },
+        {
+          "id": "D",
+          "text": "Escalators are compliant for commercial buildings; hospitals are the only typology requiring a ramp or elevator alternative, focusing on healthcare accessibility"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Escalators are not a substitute for accessible vertical circulation — an elevator or ramp is always additionally required.",
+        "explanation": "BP 344 is explicit: an escalator alone does not constitute accessible vertical circulation because wheelchair users and many ambulatory disabled persons cannot use moving steps safely. An elevator (car minimum 1200 × 1400 mm) or accessible ramp (minimum 1200 mm wide, ≤1:12 slope) must be provided as an alternative on every floor level served. This applies to all building typologies — malls, transport terminals, schools, and hospitals alike.",
+        "common_misconceptions": [
+          "Believing that a code-compliant escalator satisfies the accessible vertical circulation requirement",
+          "Thinking the ramp/elevator alternative is only required in hospitals"
+        ]
+      },
+      "explanation": "Escalators cannot serve as the sole accessible vertical circulation — an elevator or ramp alternative is always required by BP 344.",
+      "code_citation": "BP 344 IRR",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.806316+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a51cf4af18409f3f950ba842994025d65124f139b7a6ea19e6cfd6d6392dcd30"
+    }
+  ]
+}

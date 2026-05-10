@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-09T14:09:17.895Z",
+  "input": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "slug": "lea-theo-001-09-core-concept",
+      "folder": "lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:58b9a06a02d675b2312a378c3a59d7b231806c0dcd5d2a6f5193b9d1609db699",
+        "normalized": "sha256:8656cf9d5f866c418bff47816b68e968c0202d63d312169ca7f3a3e0cadf6c6a",
+        "candidate": "sha256:8656cf9d5f866c418bff47816b68e968c0202d63d312169ca7f3a3e0cadf6c6a",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

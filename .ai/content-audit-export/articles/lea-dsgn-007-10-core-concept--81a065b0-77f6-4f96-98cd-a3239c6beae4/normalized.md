@@ -12,38 +12,38 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 ## Learning Goal
 Verify design compliance with PD 1096, RA 9514, BP 344, and applicable codes at each design phase, identify code violations in plans and specifications, prepare code compliance checklists, and apply for variances where necessary.
 
-Vertical circulation — stairs and elevators — is designed using precise dimensional and egress rules. 
+Vertical circulation — stairs and elevators — is designed using precise dimensional and egress rules.
 ---
 
 ## Core Concept
 
 **Stair Design** is governed by several core factors:
 
-1. **Riser and Tread Proportions (PD 1096 / 2004 IRR)**  
-   - **Maximum riser height**: 200 mm  
-   - **Minimum tread depth (run)**: 280 mm (measured nosing to nosing)  
+1. **Riser and Tread Proportions (PD 1096 / 2004 IRR)**
+   - **Maximum riser height**: 200 mm
+   - **Minimum tread depth (run)**: 280 mm (measured nosing to nosing)
    - These are legal limits; actual design often uses more conservative dimensions for comfort.
 
-2. **Blondel’s Formula** (ergonomic guideline, not a code mandate)  
-   - \( R + T \approx 430\text{–}450 \text{ mm} \)  
-   - This range is widely accepted as comfortable proportioning for stairs.  
+2. **Blondel’s Formula** (ergonomic guideline, not a code mandate)
+   - \( R + T \approx 430\text{–}450 \text{ mm} \)
+   - This range is widely accepted as comfortable proportioning for stairs.
    - **PD 1096** enforces only the maximum riser and minimum tread; Blondel is a design aid, not a legal requirement.
 
-3. **Number of Risers from Floor Height**  
-   - \( \text{Number of risers} = \dfrac{\text{Floor height}}{\text{Riser height}} \) (always round **up** to the next whole integer).  
-   - Example: Floor height 3.0 m  
+3. **Number of Risers from Floor Height**
+   - \( \text{Number of risers} = \dfrac{\text{Floor height}}{\text{Riser height}} \) (always round **up** to the next whole integer).
+   - Example: Floor height 3.0 m
      - \( 3{,}000 \text{ mm} \div 180 \text{ mm} = 16.67 \rightarrow 17 \text{ risers} \).
 
-4. **Stair Width (RA 9514 / Fire Code IRR)**  
-   - Minimum clear width is governed by occupant load and use.  
-   - RA 9514 IRR gives typical minimum widths such as:  
-     - For new stairs serving a total cumulative occupant load **less than 2,000 persons**: **1,120 mm** minimum width.  
-     - For **2,000 persons or more**: **1,420 mm** minimum width.  
+4. **Stair Width (RA 9514 / Fire Code IRR)**
+   - Minimum clear width is governed by occupant load and use.
+   - RA 9514 IRR gives typical minimum widths such as:
+     - For new stairs serving a total cumulative occupant load **less than 2,000 persons**: **1,120 mm** minimum width.
+     - For **2,000 persons or more**: **1,420 mm** minimum width.
    - For smaller occupancies, the minimum stair width may be lower but must still satisfy both PD 1096 and RA 9514.
 
-5. **Stair Flight Limits and Landings**  
-   - Landings are required at the top and bottom of every flight and at required intermediate levels.  
-   - RA 9514 sets a **maximum height between landings** of 3.60 m and a minimum headroom of 2.0 m.  
+5. **Stair Flight Limits and Landings**
+   - Landings are required at the top and bottom of every flight and at required intermediate levels.
+   - RA 9514 sets a **maximum height between landings** of 3.60 m and a minimum headroom of 2.0 m.
    - Landing depth must be at least equal to the stair width for safe movement.
 [SLATECAMP_UI_BLOCK:ui_0001 component="ArticleMedia" status="preserved"]
 Extracted summary:
@@ -57,8 +57,8 @@ Extracted summary:
 
 **Given:**
 
-- Floor-to-floor height: 3.0 m = 3,000 mm  
-- Occupant load served by stair: 120 persons  
+- Floor-to-floor height: 3.0 m = 3,000 mm
+- Occupant load served by stair: 120 persons
 - Proposed riser: 180 mm
 
 **Step 1: Calculate number of risers**
@@ -87,7 +87,7 @@ Using RA 9514 IRR, an occupant load of 120 persons is well below 2,000 persons, 
 
 **Step 4: Flights and landings**
 
-- With 17 risers, a common arrangement is a dogleg stair (for example, 9 risers + landing + 8 risers).  
+- With 17 risers, a common arrangement is a dogleg stair (for example, 9 risers + landing + 8 risers).
 - Ensure the **vertical height between landings** does not exceed 3.60 m and that the **landing length** is at least equal to the chosen stair width.
 
 ---
@@ -96,14 +96,14 @@ Using RA 9514 IRR, an occupant load of 120 persons is well below 2,000 persons, 
 
 Under the **2024 Revised IRR of BP 344** and related accessibility guidance, elevators that serve as accessible vertical circulation must satisfy specific minimum internal dimensions and door clearances.
 
-1. **Accessible Elevator Car**  
-   - Minimum clear **depth**: 1,400 mm  
-   - Minimum clear **width**: in the range of 1,200–1,500 mm depending on the configuration; a commonly adopted accessible layout is **1,400 mm (depth) × 1,500 mm (width)**.  
-   - Clear door opening: **at least 900 mm**.  
+1. **Accessible Elevator Car**
+   - Minimum clear **depth**: 1,400 mm
+   - Minimum clear **width**: in the range of 1,200–1,500 mm depending on the configuration; a commonly adopted accessible layout is **1,400 mm (depth) × 1,500 mm (width)**.
+   - Clear door opening: **at least 900 mm**.
    - Control panel height: generally **900–1,200 mm** above the finished floor.
 
-2. **Service and Fireman’s Elevator Considerations**  
-   - For high-rise and critical-use buildings, separate service or fireman’s elevators are often required by fire and building regulations or by project brief.  
+2. **Service and Fireman’s Elevator Considerations**
+   - For high-rise and critical-use buildings, separate service or fireman’s elevators are often required by fire and building regulations or by project brief.
    - The hoistway must provide adequate clearances around the car to accommodate guide rails, safety gear, and tolerances; final dimensions are set by the elevator manufacturer and applicable standards rather than a single fixed code number.
 
 ---

@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+  "dry_question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q01",
+  "target_article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "Basic pre-design service identification is useful and not exact duplicate of existing specific-service questions.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "UAP SPP Document 201, Architectural Programming, PDF p.48.",
+    "text": "Which listed service is clearly a Pre-design Service under SPP Document 201?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "SPP 201 identifies Architectural Programming as a pre-design service.",
+      "distractors": {
+        "B": "Fulltime Construction Supervision is separately identified as not covered by the 401-402 agreement.",
+        "C": "Design-Build is explicitly not the 401-402 agreement and is a different service arrangement.",
+        "D": "FSEC is a fire-code clearance process, not the cited SPP 201 pre-design service."
+      },
+      "takeaway": "Classify the service family before answering."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "uap-predesign-q1",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "A",
+    "explanation": "UAP SPP Document 201, Architectural Programming, PDF p.48.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "Architectural programming"
+      },
+      {
+        "id": "B",
+        "text": "Fulltime Construction Supervision"
+      },
+      {
+        "id": "C",
+        "text": "Design-Build construction work"
+      },
+      {
+        "id": "D",
+        "text": "Issuance of a Fire Safety Evaluation Clearance"
+      }
+    ]
+  },
+  "sme_source_locator": "UAP SPP Document 201, Architectural Programming, PDF p.48.",
+  "code_citation": "UAP SPP Document 201, Architectural Programming, PDF p.48.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

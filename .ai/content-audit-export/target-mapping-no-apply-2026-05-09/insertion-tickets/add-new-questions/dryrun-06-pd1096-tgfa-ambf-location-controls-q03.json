@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+  "dry_question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q03",
+  "target_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "Section 704.1(c) eaves-distance item is now taught by the mapped article, but needs duplicate review before insertion.",
+  "duplicate_watch": "A similar existing question exists outside the mapped target: 2e393cbc-69e8-4130-b2ed-96f5f065d060.",
+  "proposed_question": {
+    "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81.",
+    "text": "For eaves over required windows under PD 1096 Rule VII Section 704.1(c), what minimum distance from side and rear property lines is stated?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Section 704.1(c) states that eaves over required windows shall not be less than 750 mm from the side and rear property lines.",
+      "distractors": {
+        "A": "300 mm is not the Section 704.1(c) value for eaves over required windows.",
+        "B": "500 mm is not the cited value.",
+        "D": "1200 mm is not the Section 704.1(c) eaves-over-required-windows distance."
+      },
+      "takeaway": "Attach 750 mm to the exact Section 704.1(c) condition: eaves over required windows, measured from side and rear property lines."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "pd1096-tgfa-q3",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "C",
+    "explanation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "300 mm"
+      },
+      {
+        "id": "B",
+        "text": "500 mm"
+      },
+      {
+        "id": "C",
+        "text": "750 mm"
+      },
+      {
+        "id": "D",
+        "text": "1200 mm"
+      }
+    ]
+  },
+  "sme_source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81.",
+  "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

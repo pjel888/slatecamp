@@ -1,0 +1,520 @@
+{
+  "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:657a87bb59db5fe9b09ec34bb708500b7f656fa5ecb65b3a6a8cbb8c2c80da42",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "a9c96a9e-72d9-426c-a08a-b882d95ffe2e",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "A programmer specifies a secondary bedroom as 9 feet × 10 feet (90 SF), claiming this is code-compliant under PD 1096. Why is this inadequate as standard practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The bedroom would fail accessibility standards requiring larger dimensions for wheelchair access, especially in multi-story buildings"
+        },
+        {
+          "id": "b",
+          "text": "Code minimum and design standard practice are different; minimum code dimensions produce cramped, inadequate spaces"
+        },
+        {
+          "id": "c",
+          "text": "PD 1096 does not establish bedroom dimensions; this dimension violates code entirely, leading to potential legal issues"
+        },
+        {
+          "id": "d",
+          "text": "This size cannot accommodate standard bed dimensions and basic furniture movement, making it impractical for regular use"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Accessibility applies to specific spaces; typical bedrooms are not required to be wheelchair-accessible unless specified.",
+        "c": "PD 1096 does establish minimum bedroom dimensions (though smaller than practice standard); this dimension would comply with code but not practice.",
+        "d": "90 SF can accommodate a bed and minimal furniture; the issue is comfort and functionality, not impossibility.",
+        "correct": "WWhile PD 1096 requires light/ventilation but no area minimum, standard design practice allocates 120 SF for secondary bedrooms...s to accommodate a bed, dresser, desk/chair, and comfortable circulation without forced layout. Code minimum and design standard are distinct; this is a common ALE mistake.",
+        "takeaway": "Code minimum and design standard are distinct; this is a common ALE mistake."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:01bae7c0ec083c3e1eef119a62b4bccc70c37f8c25ddceb91d7063572f470005"
+    },
+    {
+      "question_id": "ce51345d-5cbc-4dcc-9e71-d7810524bfe8",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "A school library program must accommodate 100 simultaneous student study positions, 10,000 book volumes, and staff workspace. Using standards (15 SF per student reader, 0.1 SF per volume, 100 SF for staff desk/office), calculate minimum NAA. Then, considering library circulation requirements (0.65 efficiency factor typical), what is the anticipated GBA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NAA = 2,600 SF; GBA = 4,000 SF"
+        },
+        {
+          "id": "b",
+          "text": "NAA = 2,500 SF; GBA = 3,846 SF"
+        },
+        {
+          "id": "c",
+          "text": "NAA = 1,600 SF; GBA = 2,462 SF"
+        },
+        {
+          "id": "d",
+          "text": "NAA = 2,600 SF; GBA = 3,380 SF"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "2,500 SF omits the 100 SF staff workspace component. GBA of 3,846 SF follows from this undercount (2,500 ÷ 0.65 = 3,846).",
+        "c": "1,600 SF miscalculates the volume allocation as 10,000 × 0.06 = 600 SF instead of the correct 10,000 × 0.1 = 1,000 SF, then omits staff space. This is the most common student error.",
+        "d": "While NAA is correctly calculated at 2,600 SF, GBA of 3,380 SF uses a 0.77 efficiency factor (typical for offices) instead of the 0.65 factor specified for library circulation requirements.",
+        "correct": "NAA = (100 readers × 15 SF) + (10,000 volumes × 0.1 SF) + 100 SF staff = 1,500 + 1,000 + 100 = 2,600 SF. GBA = 2,600 ÷ 0.65 = 4,000 SF. Library efficiency factors account for circulation aisles, reference desks, and stack access paths.",
+        "takeaway": "Library efficiency factors account for circulation aisles, reference desks, and stack access paths."
+      },
+      "explanation": "2,500 SF omits the 100 SF staff workspace component. GBA of 3,846 SF follows from this undercount (2,500 ÷ 0.65 = 3,846). 1,600 SF miscalculates the volume allocation as 10,000 × 0.06 = 600 SF instead of the correct 10,000 × 0.1 = 1,000 SF, then omits staff space. This is the most common student error. While NAA is correctly calculated at 2,600 SF, GBA of 3,380 SF uses a 0.77 efficiency factor (typical for offices) instead of the 0.65 factor specified for library circulation requirements. NAA = (100 readers × 15 SF) + (10,000 volumes × 0.1 SF) + 100 SF staff = 1,500 + 1,000 + 100 = 2,600 SF. GBA = 2,600 ÷ 0.65 = 4,000 SF. Library efficiency factors account for circulation aisles, reference desks, and stack access paths. Library efficiency factors account for circulation aisles, reference desks, and stack access paths.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T15:59:04.71005+00:00",
+      "content_hash": "sha256:4063b779b7eb5b6fc0b45c502cd7b4a0bc094a94295e86c0a618f793971a50ae"
+    },
+    {
+      "question_id": "c4744db4-0d45-4993-a11f-f701c6a87f0c",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "According to standard residential practice in standard practice, what is the minimum appropriate dimension for a primary (master) bedroom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "14 feet × 16 feet (224 SF)"
+        },
+        {
+          "id": "b",
+          "text": "12 feet × 14 feet (168 SF)"
+        },
+        {
+          "id": "c",
+          "text": "10 feet × 12 feet (120 SF)"
+        },
+        {
+          "id": "d",
+          "text": "10 feet × 10 feet (100 SF)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While luxury bedrooms reach this size, it exceeds the minimum standard.",
+        "c": "This is appropriate for secondary bedrooms (120 SF), not primary bedrooms.",
+        "d": "This is below minimum practice; 100 SF is too small for comfortable primary bedroom.",
+        "correct": "Standard practice specifies 12 feet × 14 feet (168 SF) minimum for a primary bedroom to accommodate a queen bed, bedside tables, dresser, circulation, and door swing without forced furniture layout.",
+        "takeaway": "Standard practice specifies 12 feet × 14 feet (168 SF) minimum for a primary bedroom to accommodate a queen bed, bedside tables, dresser, circulation, and door swing without forced furniture layout."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6087c81e1b3bba1c0f57eeebccb6cf9bf622fb7f27ea61b598dc06b3fbfbf35a"
+    },
+    {
+      "question_id": "295a0582-404f-4ce5-bee1-ac9526cca0ad",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "What is the minimum dimension standard for a full bathroom (toilet, sink, and shower/tub) in contemporary design practice?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 feet × 5 feet (25 SF)"
+        },
+        {
+          "id": "b",
+          "text": "5 feet × 8 feet (40 SF)"
+        },
+        {
+          "id": "c",
+          "text": "8 feet × 9 feet (72 SF)"
+        },
+        {
+          "id": "d",
+          "text": "10 feet × 12 feet (120 SF)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is a powder room (toilet and sink only), not a full bathroom.",
+        "b": "This is appropriate for a half-bathroom without tub/shower.",
+        "d": "This exceeds standard practice; it represents luxury or primary bathroom with extra amenities.",
+        "correct": "Standard practice allocates 8 feet × 9 feet (72 SF) minimum for a comfortable full bathroom with fixtures on opposing walls. While code minimum in some contexts is lower, professional standards require this for functionality and comfort.",
+        "takeaway": "While code minimum in some contexts is lower, professional standards require this for functionality and comfort."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4c491b7beb9e239afc2bf57f1f928c0ee0677a27776c7ba6eb13263c01955399"
+    },
+    {
+      "question_id": "73a6caed-ed81-4968-bb20-8cb44561f7ed",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "Standard residential kitchens should accommodate appliances and counter workspace. What is the minimum dimension for a standard residential kitchen?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8 feet × 8 feet (64 SF)"
+        },
+        {
+          "id": "b",
+          "text": "12 feet × 14 feet (168 SF)"
+        },
+        {
+          "id": "c",
+          "text": "10 feet × 12 feet (120 SF)"
+        },
+        {
+          "id": "d",
+          "text": "8 feet × 10 feet (80 SF)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "64 SF is too small for standard appliance and counter requirements.",
+        "b": "This exceeds standard practice; it represents large or luxury kitchens.",
+        "d": "80 SF is minimal and uncomfortable; not standard practice.",
+        "correct": "10 feet × 12 feet (120 SF) is standard practice minimum, accommodating refrigerator, stove, sink, counters on multiple walls, and island or additional workspace. PD 1096 does not specify kitchen dimensions; code focuses on light/ventilation while practice requires minimum 120 SF for functionality.",
+        "takeaway": "PD 1096 does not specify kitchen dimensions; code focuses on light/ventilation while practice requires minimum 120 SF for functionality."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:51d6ca6a0b21a2a5f6e359a3be1c9af349bbceb16ddcef1d77bd62a720cea781"
+    },
+    {
+      "question_id": "db16a5dc-5c7a-4bbc-bac3-686a7a605572",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "A residential programmer calculates a 3-bedroom, 2-bath home program: primary bedroom 168 SF, two secondary bedrooms 120 SF each, two full bathrooms 72 SF each, kitchen 120 SF, living room 200 SF, dining room 120 SF, hallways and circulation 150 SF. What is the total NAA, and using an efficiency factor of 0.75, what is the anticipated GBA?",
+      "options": [
+        {
+          "id": "a",
+          "text": "NAA = 1,300 SF; GBA = 1,733 SF"
+        },
+        {
+          "id": "b",
+          "text": "NAA = 1,220 SF; GBA = 1,627 SF"
+        },
+        {
+          "id": "c",
+          "text": "NAA = 1,070 SF; GBA = 1,427 SF"
+        },
+        {
+          "id": "d",
+          "text": "NAA = 1,142 SF; GBA = 1,523 SF"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This overestimates NAA; recount spaces and areas against listed program.",
+        "b": "This overestimates NAA; check individual space dimensions against standards.",
+        "c": "This underestimates NAA; calculation is missing components or dimensions.",
+        "correct": "NAA = 168 + 120 + 120 + 72 + 72 + 120 + 200 + 120 + 150 = 1,142 SF. GBA = 1,142 ÷ 0.75 = 1,523 SF. The efficiency factor accounts for walls, mechanical chases, and structural elements.",
+        "takeaway": "The efficiency factor accounts for walls, mechanical chases, and structural elements."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4ffebe57b23c539e795e19efaf93713da3966ba19a49afb551c67b2f0e884ec2"
+    },
+    {
+      "question_id": "c8d4be55-c2d1-4fd4-b39a-b4c2406e7cda",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "A designer proposes a hotel guest room of 12 feet × 20 feet (240 SF) for double occupancy. According to standards (250–300 SF minimum), is this adequate, and what is the professional concern?",
+      "options": [
+        {
+          "id": "a",
+          "text": "This exceeds standards for budget hotels and represents luxurious allocation; overly generous for typical hospitality projects, potentially increasing costs unnecessarily"
+        },
+        {
+          "id": "b",
+          "text": "This falls below standard minimum (250 SF); while close, inadequate space compromises guest comfort and competitive positioning"
+        },
+        {
+          "id": "c",
+          "text": "Size matters less than layout quality; excellent design can make 240 SF feel spacious if partitioned well, though it may not meet all regulatory requirements"
+        },
+        {
+          "id": "d",
+          "text": "This is adequate; 240 SF approaches the 250 SF minimum and represents efficient design, balancing space and functionality"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "250–300 SF is industry standard, not luxury; budget hotels may be smaller, but this 240 SF proposal is below even that.",
+        "c": "Layout helps but cannot compensate for fundamental area insufficiency; the room lacks area for all required functions.",
+        "d": "While 240 SF approaches minimum, it still falls short; approaching a minimum is not the same as meeting standard.",
+        "correct": "Standard practice is 220–250 SF net for double-occupancy hotel rooms including bathroom. At 240 SF, this room falls short and risks inadequate space for luggage storage, movement around furniture, and guest satisfaction. In competitive markets, undersizing relative to standard creates disadvantage.",
+        "takeaway": "In competitive markets, undersizing relative to standard creates disadvantage."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "ATT"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b1f60f03b803fb4fb8b29fe4f2832df4a10af588b9e317f34d53ecc0fcee9ccb"
+    },
+    {
+      "question_id": "31bfbd84-bcca-44c6-a47f-05ff4fd6386d",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "In commercial office space, what area allocation per workstation is typical in modern open-plan offices?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50–70 SF per workstation"
+        },
+        {
+          "id": "b",
+          "text": "100–150 SF per workstation"
+        },
+        {
+          "id": "c",
+          "text": "35–50 SF per workstation"
+        },
+        {
+          "id": "d",
+          "text": "70–100 SF per workstation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Philippine practice often uses this, but international standards recommend higher.",
+        "b": "This exceeds typical open-plan allocation; it approaches private office sizing.",
+        "c": "This is below standard minimum and represents high-density, low-comfort allocation.",
+        "correct": "Time-Saver Standards reference 70–100 SF per person in modern open office. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF.",
+        "takeaway": "Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF."
+      },
+      "explanation": "Philippine practice often uses this, but international standards recommend higher. This exceeds typical open-plan allocation; it approaches private office sizing. This is below standard minimum and represents high-density, low-comfort allocation. Time-Saver Standards reference 70–100 SF per person in modern open office. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF. Philippine commercial practice allocates 50–70 SF due to density expectations, but the international standard is 70–100 SF.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-05-06T15:59:04.829702+00:00",
+      "content_hash": "sha256:1676eed3fec2b5340bb2cec4f1641f73cd2f80c9f9cc00d40fd3655610cadb6b"
+    },
+    {
+      "question_id": "a541b08f-849c-43e2-960d-93979b1c5b33",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "A clinic program specifies four 80 SF examination rooms per AIA guidelines (Neufert minimum) for a physician-led practice. The clinic operator argues this meets code and should be adequate. What additional consideration should the programmer raise?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Neufert standards (80 SF minimum) apply only to teaching clinics; private practices require larger spaces to accommodate additional equipment and staff"
+        },
+        {
+          "id": "b",
+          "text": "80 SF is code-acceptable minimum but constrains physician comfort; AIA standards recommend 120 SF minimum for contemporary infection control and physician workspace optimization"
+        },
+        {
+          "id": "c",
+          "text": "AIA guidelines recommend 150 SF minimum for all exam rooms regardless of practice type; 80 SF violates AIA standards and may not support modern medical equipment"
+        },
+        {
+          "id": "d",
+          "text": "80 SF exam rooms are standard; the operator's argument is valid and no additional space is necessary, assuming no future expansion"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "AIA standards apply across practice types; they are not limited to teaching settings.",
+        "c": "150 SF exceeds AIA recommendations; 120 SF is the referenced standard.",
+        "d": "While 80 SF may be code-acceptable, it is below contemporary practice standard; the programmer should document this trade-off.",
+        "correct": "Neufert establishes 80 SF minimum but AIA guidelines recommend 120 SF for physician comfort and infection control compliance. This distinction between minimum (adequate but tight) and standard practice (comfortable and professional) is testable on the ALE.",
+        "takeaway": "This distinction between minimum (adequate but tight) and standard practice (comfortable and professional) is testable on the ALE."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "CMP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-009-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:126fb4acefb66efe9473236df6997b89a9b72da3046c76e8600c6255cfb329d2"
+    },
+    {
+      "question_id": "cd54f247-3358-4e7e-b374-7cbfd9ed3952",
+      "article_id": "249aff40-df16-413b-8b16-b78190fafeff",
+      "topic_id": "8b29b669-5a15-4d7c-9f74-521d224c39b5",
+      "text": "PD 1096 specifies a minimum kitchen area of approximately 63 SF (5.9 m²) for single-family dwellings. A developer proposes kitchens at exactly this code minimum for a mid-range residential condominium. What is the primary professional concern with this approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Code minimum kitchens cannot accommodate standard appliance configurations and counter workspace; standard practice requires 10 feet × 12 feet (120 SF) minimum for functional residential kitchens"
+        },
+        {
+          "id": "b",
+          "text": "63 SF kitchens are adequate for condominium units since compact living is expected in multi-family residential, aligning with urban living trends"
+        },
+        {
+          "id": "c",
+          "text": "PD 1096 kitchen minimums apply only to single-family dwellings and cannot legally be used for condominium design, which requires separate standards"
+        },
+        {
+          "id": "d",
+          "text": "The minimum is acceptable if the developer provides a separate pantry or utility area adjacent to the kitchen, enhancing overall functionality"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": null,
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-04-01T17:10:27.309183+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eab0cc423bbda108b042018d9bb449439a569231cf6a045e1bdc81ff0cb91ec1"
+    }
+  ]
+}

@@ -1,0 +1,1116 @@
+{
+  "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:93ce6c151bfbf8da5e005bad80101d75b6ac1869f9afd555c54ec928bebd2832",
+  "question_count": 22,
+  "questions": [
+    {
+      "question_id": "b3dae66f-c749-4e92-ba0a-06f013187ece",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Typology Checklists and Plan Checking\", if a project requires 5000 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5000 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "5000 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "5000 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "5000 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 5000 mm as the requirement. Context: mm + 1200 mm aisle)                                 | 1:25 (if provided; 3700 × ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:12.290845+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d2fa916748ff101035875838b8fdb41ef76439d916637991c495017f468d8e58"
+    },
+    {
+      "question_id": "2f237adf-1cb8-4341-9c49-aeb6919d4a7e",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The mnemonic \"FIRE\" presented in \"Typology Checklists and Plan Checking\" helps remember:",
+      "options": [
+        {
+          "id": "A",
+          "text": "NO"
+        },
+        {
+          "id": "C",
+          "text": "An outdated standard no longer in use that was replaced by the 2019 revised fire code implementation guidelines"
+        },
+        {
+          "id": "D",
+          "text": "A trap commonly tested on the ALE that misleads candidates into selecting incorrect fire protection classifications"
+        },
+        {
+          "id": "A",
+          "text": "NO"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The mnemonic \"FIRE\" was specifically designed to help remember NO.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:12.290845+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7032bd3ff6a1921023e0231f7505a5899ccbb781f5181898a7e3d608e5590f61"
+    },
+    {
+      "question_id": "35abdd2d-e166-4b2a-929a-d1661848194f",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A hospital serves 18 mlea cubicles and 18 femlea cubicles on a single floor. Under BP 344 Sec. 6, what is the minimum accessible toilet provision required on that floor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 unisex accessible cubicle shared between male and female users on that floor"
+        },
+        {
+          "id": "B",
+          "text": "2 accessible male cubicles and 2 accessible female cubicles on that floor"
+        },
+        {
+          "id": "C",
+          "text": "1 accessible male cubicle and 1 accessible female cubicle on that floor"
+        },
+        {
+          "id": "D",
+          "text": "1 accessible male cubicle and 1 accessible female cubicle per building, not per floor"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 Sec. 6: at least 1 accessible male + 1 accessible female cubicle per floor for every 20 or fewer gendered cubicles.",
+        "explanation": "With 18 cubicles of each gender (both under the 20-cubicle threshold), exactly 1 accessible cubicle per gender is required on that floor. A second pair would only be triggered if cubicle count exceeded 20. The requirement is per floor, not per building — a building with 4 floors must have the provision on all 4 floors.",
+        "common_misconceptions": [
+          "Adding a second accessible pair at 18 cubicles — the trigger for a second pair is exceeding 20, not approaching it",
+          "Counting the building as a whole rather than applying the rule floor by floor"
+        ]
+      },
+      "explanation": "18 cubicles per gender (under the 20-cubicle threshold) = 1 accessible per gender per floor per BP 344 Sec. 6.",
+      "code_citation": "BP 344 Sec. 6",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1af460aa6e3068d676a35d22b68b484a9b25bf100889a6516dc53ee415e5fdd4"
+    },
+    {
+      "question_id": "34a2ea03-cd2c-4c34-a9b0-5a09208f1fff",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under Step 8 (Signage and Tactile Paths), ISA signs and general accessible element signs must be mounted with their center at or below a maximum height. What is this maximum mounting height, and what is the exception?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum 1500 mm AFF center height for all signs; ATM signage also at 1500 mm AFF maximum, ensuring uniformity"
+        },
+        {
+          "id": "B",
+          "text": "Maximum 1200 mm AFF center height for all signs including elevator Braille panels, which is a standard for accessibility"
+        },
+        {
+          "id": "C",
+          "text": "Maximum 1800 mm AFF center height for all signs; no exceptions permitted, maintaining consistency across installations"
+        },
+        {
+          "id": "D",
+          "text": "Maximum 1500 mm AFF center height for most signs; exception is dressing room signs at 1800 mm AFF"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sign center maximum: 1500 mm AFF for most signs; dressing room signs are the exception at 1800 mm AFF. ATM signage max is 2400 mm AFF.",
+        "explanation": "The 1500 mm AFF center height ensures signs are readable from a seated wheelchair position. The dressing room exception (1800 mm) is the only general signage exception noted in the checklist. ATM signage has a separate maximum of 2400 mm AFF (because ATMs are used standing but must include accessible controls at 900–1200 mm). Option D incorrectly limits ATM signage to 1500 mm.",
+        "common_misconceptions": [
+          "Applying the 1500 mm limit to ATM signage — ATMs have a separate 2400 mm AFF maximum",
+          "Using 1200 mm as the general sign center height — 1200 mm is the Braille elevator jamb height, not the general sign center"
+        ]
+      },
+      "explanation": "Sign center max: 1500 mm AFF (exception: dressing rooms at 1800 mm); ATM signage has a separate 2400 mm max.",
+      "code_citation": "BP 344 Signage",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4ddceb0f8cc3d979474ff20bff8834924be1055372710221eae26fb075c33b98"
+    },
+    {
+      "question_id": "da2beda5-2980-4802-9943-1330fddd6598",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "In the sequential plan-checking workflow (Section D), what are the Step 1 accessible parking stall dimensions and ratio requirement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stall 3700 × 5000 mm with 1200 mm aisle; minimum ratio of 1 accessible stall per 25 regular spaces"
+        },
+        {
+          "id": "B",
+          "text": "Stall 4000 × 5000 mm with 1800 mm aisle; minimum ratio of 1 accessible stall per 25 regular spaces"
+        },
+        {
+          "id": "C",
+          "text": "Stall 4000 × 5000 mm with 1200 mm aisle; minimum ratio of 1 accessible stall per 20 regular spaces"
+        },
+        {
+          "id": "D",
+          "text": "Stall 3700 × 5000 mm with 1800 mm aisle; minimum ratio of 1 accessible stall per 50 regular spaces"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Typology Checklists article's Step 1 specifies 3700 × 5000 mm stalls with 1200 mm aisles at a 1:25 ratio.",
+        "explanation": "The checklist tables in the article consistently cite 3700 × 5000 mm stall with 1200 mm aisle at 1 per 25 spaces. This is the value given across all three typologies (hospital, mall, school). Note: The Wheelchair Maneuvering article uses 4000 × 5000 mm with 1800 mm aisle — examinees must use the value from the specific article being tested.",
+        "common_misconceptions": [
+          "Using the 4000 mm × 1800 mm values from the Wheelchair Maneuvering article — this article's checklists cite 3700 mm × 1200 mm",
+          "Using a 1:20 or 1:50 ratio instead of the 1:25 ratio"
+        ]
+      },
+      "explanation": "This article's parking checklists specify 3700 × 5000 mm stalls with 1200 mm aisles at 1 per 25 spaces.",
+      "code_citation": "BP 344 Parking",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:63e223a7f48b8702519eddcab44b61d62ae3f7e2a5b77e496fb8c11012bff1a6"
+    },
+    {
+      "question_id": "ce6b602f-7351-43ff-8d69-0255f8de3f30",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The plan-checking workflow Step 3 covers accessible entrances. What is the maximum threshold height at an accessible entrance, and what must the vestibule area provide?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum 20 mm threshold (beveled if over 10 mm); vestibule 1500 mm deep × 1500 mm wide, level"
+        },
+        {
+          "id": "B",
+          "text": "Maximum 12 mm threshold (beveled if 6–12 mm); vestibule 1800 mm deep × 1800 mm wide, level"
+        },
+        {
+          "id": "C",
+          "text": "Maximum 12 mm threshold (beveled if 6–12 mm); vestibule 1500 mm deep × 1500 mm wide, level"
+        },
+        {
+          "id": "D",
+          "text": "Maximum 6 mm threshold (no bevel required); vestibule 1800 mm deep × 1800 mm wide, level"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible entrance: 12 mm max threshold (beveled 6–12 mm range); vestibule 1800 × 1800 mm level.",
+        "explanation": "The 12 mm maximum threshold is strict — thresholds between 6 and 12 mm must be beveled to ease wheelchair rolling. Thresholds above 12 mm are non-compliant regardless of bevel. The vestibule must be 1800 × 1800 mm — large enough for a full wheelchair turning radius — and must be level (no slope). A 1500 × 1500 mm vestibule is insufficient.",
+        "common_misconceptions": [
+          "Allowing a 20 mm threshold with a bevel — the absolute maximum is 12 mm",
+          "Using 1500 × 1500 mm as the vestibule size — 1800 × 1800 mm is the Step 3 requirement"
+        ]
+      },
+      "explanation": "Step 3: 12 mm max threshold (bevel 6–12 mm), 1800 × 1800 mm level vestibule per BP 344.",
+      "code_citation": "BP 344 Doors",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2ee75d3907249a0b7afa641e48bd0730553a03ebd7ac1927bca92ae19ad38fb2"
+    },
+    {
+      "question_id": "28a93d7c-57f2-4efa-8ce4-7c0b79ce5508",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Step 4 of the plan-checking workflow covers horizontal circulation. At what maximum interval must 1800 × 1800 mm turning spaces be provided on an accessible route corridor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every 20 m maximum along the accessible route, and at all corridor intersections only"
+        },
+        {
+          "id": "B",
+          "text": "Every 10 m maximum along the accessible route, at intersections only"
+        },
+        {
+          "id": "C",
+          "text": "Every 15 m maximum along the accessible route, and within 5000 mm of dead ends"
+        },
+        {
+          "id": "D",
+          "text": "Every 12 m maximum along the accessible route, and at all corridor intersections and dead ends"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Turning spaces: 1800 × 1800 mm at every corridor intersection, dead end, and maximum every 12 m on straight runs.",
+        "explanation": "The 12 m maximum interval ensures wheelchair users are never trapped on a long straight corridor segment without a place to turn around. Turning spaces are also required at every intersection on the accessible route and at dead ends (within 3500 mm per Appendix B). The 12 m interval is distinct from the ramp landing interval (every 10.5 m run on a 1:15 ramp).",
+        "common_misconceptions": [
+          "Confusing the 12 m turning space interval with ramp landing intervals (10.5 m or 15 m)",
+          "Thinking intersections alone are sufficient without the 12 m straight-run spacing"
+        ]
+      },
+      "explanation": "Turning spaces: 1800 × 1800 mm at intersections, dead ends, and maximum every 12 m per BP 344.",
+      "code_citation": "BP 344 Routes",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:87c9f2bce62053e54f48abd298e4ab62dba5cd42b515160f48a64ad03a5833d1"
+    },
+    {
+      "question_id": "612373e0-a100-4b0e-89c6-3f3b894ecb6a",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A mall cinema has 280 seats. Using the wheelchair seating table cited in the Typology Checklists article (Section B, cinema checklist), how many wheelchair spaces are required and what is the minimum clear size of each space?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 wheelchair spaces (4–50 seat tier); each space minimum 800 mm × 1100 mm clear"
+        },
+        {
+          "id": "B",
+          "text": "6 wheelchair spaces (3% × 280, rounded up); each space minimum 900 mm × 1200 mm clear"
+        },
+        {
+          "id": "C",
+          "text": "4 wheelchair spaces (51–300 seat tier); each space minimum 800 mm × 1100 mm clear"
+        },
+        {
+          "id": "D",
+          "text": "8 wheelchair spaces (3% × 280 rounded up); each space minimum 800 mm × 1100 mm clear"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The article's cinema checklist cites the tiered table: 51–300 seats = 4 spaces at 800 × 1100 mm each.",
+        "explanation": "The Typology Checklists article (Section B, checklist item 14) explicitly uses the tiered table: 4–50 = 2 spaces, 51–300 = 4 spaces, 301–500 = 6 spaces. With 280 seats (within the 51–300 tier), 4 spaces are required. The article also states each space is ≥800 mm × 1100 mm — note this differs from the 3% rule (900 × 1200 mm) used in the Translating PWD Rights article. Use the value from the tested article.",
+        "common_misconceptions": [
+          "Applying the 2024 IRR 3% rule (8 spaces) when this checklist uses the tiered table (4 spaces)",
+          "Using 900 × 1200 mm dimensions from the 3% rule instead of the 800 × 1100 mm from this checklist"
+        ]
+      },
+      "explanation": "Tiered table (used in this article): 51–300 seats = 4 wheelchair spaces at 800 × 1100 mm each.",
+      "code_citation": "BP 344 Sec. 4 App. D",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0f281c04fac2894d33f83f5e67310353303af57487e00a83bbc233fc2617e67f"
+    },
+    {
+      "question_id": "83509fba-b2c1-42dd-88ff-577f1d1dcde2",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Step 5 of the plan-checking workflow covers ramp vertical circulation. What are the three permitted ramp slopes listed, in order from preferred to maximum?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:12 preferred, 1:10 acceptable, 1:8 absolute maximum for space-constrained conditions"
+        },
+        {
+          "id": "B",
+          "text": "1:20 preferred, 1:15 acceptable, 1:12 absolute maximum for space-constrained conditions"
+        },
+        {
+          "id": "C",
+          "text": "1:20 preferred, 1:12 acceptable, 1:8 absolute maximum for space-constrained conditions"
+        },
+        {
+          "id": "D",
+          "text": "1:15 preferred, 1:12 acceptable, 1:10 absolute maximum for space-constrained conditions"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Ramp slopes: 1:20 preferred, 1:15 acceptable (max for new work), 1:12 absolute maximum only under space constraints.",
+        "explanation": "The three-tier slope hierarchy is critical: 1:20 is ideal and requires landings every 15 m; 1:15 is the maximum for new construction with a 10.5 m max run and 700 mm max rise; 1:12 is an absolute limit only acceptable where space prevents the gentler slopes. Anything steeper than 1:12 is non-compliant for accessible ramps regardless of conditions.",
+        "common_misconceptions": [
+          "Treating 1:12 as the preferred slope rather than the absolute maximum",
+          "Omitting the 1:15 acceptable tier and jumping directly from 1:20 to 1:12"
+        ]
+      },
+      "explanation": "Three-tier ramp slope hierarchy: 1:20 preferred → 1:15 acceptable → 1:12 absolute maximum per BP 344.",
+      "code_citation": "BP 344 Ramps",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ca94cb5be72fedde27bf3bda56f3aa2e8d7ec6eee1ba9166ad475eccb1bcea1d"
+    },
+    {
+      "question_id": "63b5a81f-d850-4c8d-bb8c-c7ce212f60f2",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under Step 5's elevator requirements in the plan-checking workflow, what are the minimum car dimensions, door clear width, and lobby size for an accessible elevator?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Car 1200 mm wide × 1400 mm deep; door clear 900 mm; lobby 1800 × 1800 mm clear"
+        },
+        {
+          "id": "B",
+          "text": "Car 1000 mm wide × 1200 mm deep; door clear 800 mm; lobby 1500 × 1500 mm clear"
+        },
+        {
+          "id": "C",
+          "text": "Car 1400 mm wide × 1200 mm deep; door clear 900 mm; lobby 1500 × 1800 mm clear"
+        },
+        {
+          "id": "D",
+          "text": "Car 1200 mm wide × 1500 mm deep; door clear 1000 mm; lobby 1800 × 1800 mm clear"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible elevator: car 1200 W × 1400 D mm, door 900 mm clear, lobby 1800 × 1800 mm.",
+        "explanation": "The 1200 mm car width accommodates a standard wheelchair, and 1400 mm depth allows a wheelchair to enter without requiring a 180° turn inside the car (the user can face the door). The 900 mm door clear width matches all other accessible door requirements. The 1800 × 1800 mm lobby provides the turning space outside the car. A 1500 × 1500 mm lobby is insufficient for a wheelchair user waiting and maneuvering.",
+        "common_misconceptions": [
+          "Using 1000 mm car width — this is too narrow for most wheelchairs with the user's elbows",
+          "Confusing the turning space inside the car (1500 × 1500 mm) with the lobby size (1800 × 1800 mm)"
+        ]
+      },
+      "explanation": "Accessible elevator: 1200 × 1400 mm car, 900 mm door, 1800 × 1800 mm lobby per BP 344 Sec. 5.",
+      "code_citation": "BP 344 Sec. 5",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc474f57edd44fdd3aeecb8f7c927094673ddae3f20afa4aff03489edd865edf"
+    },
+    {
+      "question_id": "bf638c92-6cec-46df-8eb6-e1ef9bdafa4c",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A school corridor on an accessible route is 1200 mm wide. A building official flags it as non-compliant. What is the correct minimum width for an accessible route corridor in a school, and from which standard does it come?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1200 mm minimum clear width per PD 1096 — this is also the BP 344 accessible route minimum"
+        },
+        {
+          "id": "B",
+          "text": "1500 mm minimum clear width per BP 344 — wider than PD 1096's general minimum of 1100 mm"
+        },
+        {
+          "id": "C",
+          "text": "1100 mm minimum clear width per PD 1096 — BP 344 defers to PD 1096 for school corridors"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm minimum clear width per BP 344 — all school corridors must allow two wheelchairs to pass"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible route corridors in schools require 1500 mm clear width per BP 344 — exceeding PD 1096's 1100 mm general minimum.",
+        "explanation": "PD 1096 sets a general corridor minimum of 1100 mm for schools, but BP 344 requires 1500 mm on accessible routes. When BP 344 and PD 1096 conflict, the more stringent (BP 344) governs for accessibility. A 1200 mm corridor satisfies neither — it exceeds the PD 1096 minimum but falls short of the BP 344 accessible route requirement. The 1200 mm figure is the ramp clear width, not the corridor width.",
+        "common_misconceptions": [
+          "Using 1200 mm as the accessible corridor width — 1200 mm is the ramp width, not the corridor width",
+          "Defaulting to PD 1096's 1100 mm as the governing standard when BP 344 requires 1500 mm"
+        ]
+      },
+      "explanation": "School accessible route corridors: 1500 mm minimum per BP 344, overriding PD 1096's 1100 mm general minimum.",
+      "code_citation": "BP 344 Routes",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a2ad646b94a43b6d4c309c74cf480c1b4d9a18f3346a8024dac9379257258693"
+    },
+    {
+      "question_id": "43cbfa12-edeb-467b-9f3e-203afda97c4c",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A plan checker reviewing a commercial building notes that the food court has dining tables at 900 mm height and no lower alternatives. Under the Typology Checklist for malls (Section B), what correction is required and what percentage of tables must be brought into compliance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "All dining tables must be adjustable between 750 mm and 900 mm AFF"
+        },
+        {
+          "id": "B",
+          "text": "5% of dining tables must be at 750 mm height with 650 mm knee clearance × 500 mm deep"
+        },
+        {
+          "id": "C",
+          "text": "10% of dining tables must be at 750 mm height with 700 mm knee clearance × 480 mm deep"
+        },
+        {
+          "id": "D",
+          "text": "20% of dining tables must be at 750 mm height with 700 mm knee clearance × 480 mm deep"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 Sec. 16 requires 10% of food court/dining tables at 750 mm height with 700 mm knee clearance × 480 mm deep.",
+        "explanation": "The 10% accessible dining table requirement is specified in BP 344 Sec. 16 and appears in both the mall checklist and the master reference card. Tables must be at 750 mm (matching the lower service counter height) with 700 mm × 480 mm knee clearance beneath. 5% is the priority seating proportion in waiting areas — a different and commonly confused standard.",
+        "common_misconceptions": [
+          "Using 5% (the priority seating proportion) instead of 10% (the accessible dining table proportion)",
+          "Using 650 mm knee clearance — the workstation/table standard is 700 mm, not 650 mm"
+        ]
+      },
+      "explanation": "10% of dining tables must be at 750 mm height with 700 × 480 mm knee clearance per BP 344 Sec. 16.",
+      "code_citation": "BP 344 Sec. 16",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.088607+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7de1036409a8a7a352fe6a004c17b6489a8447b6433328a5752ace2f6e59643f"
+    },
+    {
+      "question_id": "6c6c0312-535c-4eec-adc9-91277fe89d1b",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The plan-checking workflow Step 3 covers accessible entrances. What is the maximum threshold height at an accessible entrance, and what must the vestibule area provide?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum 20 mm threshold (beveled if over 10 mm); vestibule 1500 mm deep × 1500 mm wide, level"
+        },
+        {
+          "id": "B",
+          "text": "Maximum 12 mm threshold (beveled if 6–12 mm); vestibule 1800 mm deep × 1800 mm wide, level"
+        },
+        {
+          "id": "C",
+          "text": "Maximum 12 mm threshold (beveled if 6–12 mm); vestibule 1500 mm deep × 1500 mm wide, level"
+        },
+        {
+          "id": "D",
+          "text": "Maximum 6 mm threshold (no bevel required); vestibule 1800 mm deep × 1800 mm wide, level"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible entrance: 12 mm max threshold (beveled 6–12 mm range); vestibule 1800 × 1800 mm level.",
+        "explanation": "The 12 mm maximum threshold is strict — thresholds between 6 and 12 mm must be beveled to ease wheelchair rolling. Thresholds above 12 mm are non-compliant regardless of bevel. The vestibule must be 1800 × 1800 mm — large enough for a full wheelchair turning radius — and must be level (no slope). A 1500 × 1500 mm vestibule is insufficient.",
+        "common_misconceptions": [
+          "Allowing a 20 mm threshold with a bevel — the absolute maximum is 12 mm",
+          "Using 1500 × 1500 mm as the vestibule size — 1800 × 1800 mm is the Step 3 requirement"
+        ]
+      },
+      "explanation": "Step 3: 12 mm max threshold (bevel 6–12 mm), 1800 × 1800 mm level vestibule per BP 344.",
+      "code_citation": "BP 344 Doors",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3cebdef5aa22804863352dfb754fea08f8bbb5b6bdfd65cbdcaca7eaaa398e9d"
+    },
+    {
+      "question_id": "4af7be48-3c28-4c27-ac8e-cfe3d9fcc9c3",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A plan checker reviewing a commercial building notes that the food court has dining tables at 900 mm height and no lower alternatives. Under the Typology Checklist for malls (Section B), what correction is required and what percentage of tables must be brought into compliance?",
+      "options": [
+        {
+          "id": "A",
+          "text": "All dining tables must be adjustable between 750 mm and 900 mm AFF"
+        },
+        {
+          "id": "B",
+          "text": "5% of dining tables must be at 750 mm height with 650 mm knee clearance × 500 mm deep"
+        },
+        {
+          "id": "C",
+          "text": "10% of dining tables must be at 750 mm height with 700 mm knee clearance × 480 mm deep"
+        },
+        {
+          "id": "D",
+          "text": "20% of dining tables must be at 750 mm height with 700 mm knee clearance × 480 mm deep"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 Sec. 16 requires 10% of food court/dining tables at 750 mm height with 700 mm knee clearance × 480 mm deep.",
+        "explanation": "The 10% accessible dining table requirement is specified in BP 344 Sec. 16 and appears in both the mall checklist and the master reference card. Tables must be at 750 mm (matching the lower service counter height) with 700 mm × 480 mm knee clearance beneath. 5% is the priority seating proportion in waiting areas — a different and commonly confused standard.",
+        "common_misconceptions": [
+          "Using 5% (the priority seating proportion) instead of 10% (the accessible dining table proportion)",
+          "Using 650 mm knee clearance — the workstation/table standard is 700 mm, not 650 mm"
+        ]
+      },
+      "explanation": "10% of dining tables must be at 750 mm height with 700 × 480 mm knee clearance per BP 344 Sec. 16.",
+      "code_citation": "BP 344 Sec. 16",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5f3d36a03f12b0a70cf2f044d31954609b139c4101c95c450c7a18daf3273dcd"
+    },
+    {
+      "question_id": "8bee15df-da62-4494-a63e-add60204accf",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under Step 5's elevator requirements in the plan-checking workflow, what are the minimum car dimensions, door clear width, and lobby size for an accessible elevator?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Car 1200 mm wide × 1400 mm deep; door clear 900 mm; lobby 1800 × 1800 mm clear"
+        },
+        {
+          "id": "B",
+          "text": "Car 1000 mm wide × 1200 mm deep; door clear 800 mm; lobby 1500 × 1500 mm clear"
+        },
+        {
+          "id": "C",
+          "text": "Car 1400 mm wide × 1200 mm deep; door clear 900 mm; lobby 1500 × 1800 mm clear"
+        },
+        {
+          "id": "D",
+          "text": "Car 1200 mm wide × 1500 mm deep; door clear 1000 mm; lobby 1800 × 1800 mm clear"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible elevator: car 1200 W × 1400 D mm, door 900 mm clear, lobby 1800 × 1800 mm.",
+        "explanation": "The 1200 mm car width accommodates a standard wheelchair, and 1400 mm depth allows a wheelchair to enter without requiring a 180° turn inside the car (the user can face the door). The 900 mm door clear width matches all other accessible door requirements. The 1800 × 1800 mm lobby provides the turning space outside the car. A 1500 × 1500 mm lobby is insufficient for a wheelchair user waiting and maneuvering.",
+        "common_misconceptions": [
+          "Using 1000 mm car width — this is too narrow for most wheelchairs with the user's elbows",
+          "Confusing the turning space inside the car (1500 × 1500 mm) with the lobby size (1800 × 1800 mm)"
+        ]
+      },
+      "explanation": "Accessible elevator: 1200 × 1400 mm car, 900 mm door, 1800 × 1800 mm lobby per BP 344 Sec. 5.",
+      "code_citation": "BP 344 Sec. 5",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cfd39e329dcd87b1db4d9b8adbdc22ebf541f6f8b42797ee93d2d4c04b6a83ae"
+    },
+    {
+      "question_id": "d208b426-cca6-41a3-9b05-47b8f751d5a4",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Step 5 of the plan-checking workflow covers ramp vertical circulation. What are the three permitted ramp slopes listed, in order from preferred to maximum?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1:12 preferred, 1:10 acceptable, 1:8 absolute maximum for space-constrained conditions"
+        },
+        {
+          "id": "B",
+          "text": "1:20 preferred, 1:15 acceptable, 1:12 absolute maximum for space-constrained conditions"
+        },
+        {
+          "id": "C",
+          "text": "1:20 preferred, 1:12 acceptable, 1:8 absolute maximum for space-constrained conditions"
+        },
+        {
+          "id": "D",
+          "text": "1:15 preferred, 1:12 acceptable, 1:10 absolute maximum for space-constrained conditions"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Ramp slopes: 1:20 preferred, 1:15 acceptable (max for new work), 1:12 absolute maximum only under space constraints.",
+        "explanation": "The three-tier slope hierarchy is critical: 1:20 is ideal and requires landings every 15 m; 1:15 is the maximum for new construction with a 10.5 m max run and 700 mm max rise; 1:12 is an absolute limit only acceptable where space prevents the gentler slopes. Anything steeper than 1:12 is non-compliant for accessible ramps regardless of conditions.",
+        "common_misconceptions": [
+          "Treating 1:12 as the preferred slope rather than the absolute maximum",
+          "Omitting the 1:15 acceptable tier and jumping directly from 1:20 to 1:12"
+        ]
+      },
+      "explanation": "Three-tier ramp slope hierarchy: 1:20 preferred → 1:15 acceptable → 1:12 absolute maximum per BP 344.",
+      "code_citation": "BP 344 Ramps",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9e25cada9353c209821d35d4d73a91687014e255fa850fdafc15ea3add455a06"
+    },
+    {
+      "question_id": "d36a73fa-3922-46d8-a304-35085d3d37f7",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A school corridor on an accessible route is 1200 mm wide. A building official flags it as non-compliant. What is the correct minimum width for an accessible route corridor in a school, and from which standard does it come?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1200 mm minimum clear width per PD 1096 — this is also the BP 344 accessible route minimum"
+        },
+        {
+          "id": "B",
+          "text": "1500 mm minimum clear width per BP 344 — wider than PD 1096's general minimum of 1100 mm"
+        },
+        {
+          "id": "C",
+          "text": "1100 mm minimum clear width per PD 1096 — BP 344 defers to PD 1096 for school corridors"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm minimum clear width per BP 344 — all school corridors must allow two wheelchairs to pass"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible route corridors in schools require 1500 mm clear width per BP 344 — exceeding PD 1096's 1100 mm general minimum.",
+        "explanation": "PD 1096 sets a general corridor minimum of 1100 mm for schools, but BP 344 requires 1500 mm on accessible routes. When BP 344 and PD 1096 conflict, the more stringent (BP 344) governs for accessibility. A 1200 mm corridor satisfies neither — it exceeds the PD 1096 minimum but falls short of the BP 344 accessible route requirement. The 1200 mm figure is the ramp clear width, not the corridor width.",
+        "common_misconceptions": [
+          "Using 1200 mm as the accessible corridor width — 1200 mm is the ramp width, not the corridor width",
+          "Defaulting to PD 1096's 1100 mm as the governing standard when BP 344 requires 1500 mm"
+        ]
+      },
+      "explanation": "School accessible route corridors: 1500 mm minimum per BP 344, overriding PD 1096's 1100 mm general minimum.",
+      "code_citation": "BP 344 Routes",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8b9caaf2ec3da29a8828eaabf90fc70de54eb23dbb957b0b17021b3f03f8e985"
+    },
+    {
+      "question_id": "699ac3ed-320a-470b-a540-38d250f7b7f2",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A mall cinema has 280 seats. Using the wheelchair seating table cited in the Typology Checklists article (Section B, cinema checklist), how many wheelchair spaces are required and what is the minimum clear size of each space?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2 wheelchair spaces (4–50 seat tier); each space minimum 800 mm × 1100 mm clear"
+        },
+        {
+          "id": "B",
+          "text": "6 wheelchair spaces (3% × 280, rounded up); each space minimum 900 mm × 1200 mm clear"
+        },
+        {
+          "id": "C",
+          "text": "4 wheelchair spaces (51–300 seat tier); each space minimum 800 mm × 1100 mm clear"
+        },
+        {
+          "id": "D",
+          "text": "8 wheelchair spaces (3% × 280 rounded up); each space minimum 800 mm × 1100 mm clear"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The article's cinema checklist cites the tiered table: 51–300 seats = 4 spaces at 800 × 1100 mm each.",
+        "explanation": "The Typology Checklists article (Section B, checklist item 14) explicitly uses the tiered table: 4–50 = 2 spaces, 51–300 = 4 spaces, 301–500 = 6 spaces. With 280 seats (within the 51–300 tier), 4 spaces are required. The article also states each space is ≥800 mm × 1100 mm — note this differs from the 3% rule (900 × 1200 mm) used in the Translating PWD Rights article. Use the value from the tested article.",
+        "common_misconceptions": [
+          "Applying the 2024 IRR 3% rule (8 spaces) when this checklist uses the tiered table (4 spaces)",
+          "Using 900 × 1200 mm dimensions from the 3% rule instead of the 800 × 1100 mm from this checklist"
+        ]
+      },
+      "explanation": "Tiered table (used in this article): 51–300 seats = 4 wheelchair spaces at 800 × 1100 mm each.",
+      "code_citation": "BP 344 Sec. 4 App. D",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0f387d0eec4cad3fa60fd0ef22971e5489c97d4125355cd8d1a9c7857f5ed605"
+    },
+    {
+      "question_id": "b8f3f61f-8152-4f9f-b7f5-e54b5c9f0023",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under Step 8 (Signage and Tactile Paths), ISA signs and general accessible element signs must be mounted with their center at or below a maximum height. What is this maximum mounting height, and what is the exception?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum 1500 mm AFF center height for all signs; ATM signage also at 1500 mm AFF maximum, ensuring uniformity"
+        },
+        {
+          "id": "B",
+          "text": "Maximum 1200 mm AFF center height for all signs including elevator Braille panels, to accommodate universal design standards"
+        },
+        {
+          "id": "C",
+          "text": "Maximum 1800 mm AFF center height for all signs; no exceptions permitted, maintaining consistency across installations"
+        },
+        {
+          "id": "D",
+          "text": "Maximum 1500 mm AFF center height for most signs; exception is dressing room signs at 1800 mm AFF"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sign center maximum: 1500 mm AFF for most signs; dressing room signs are the exception at 1800 mm AFF. ATM signage max is 2400 mm AFF.",
+        "explanation": "The 1500 mm AFF center height ensures signs are readable from a seated wheelchair position. The dressing room exception (1800 mm) is the only general signage exception noted in the checklist. ATM signage has a separate maximum of 2400 mm AFF (because ATMs are used standing but must include accessible controls at 900–1200 mm). Option D incorrectly limits ATM signage to 1500 mm.",
+        "common_misconceptions": [
+          "Applying the 1500 mm limit to ATM signage — ATMs have a separate 2400 mm AFF maximum",
+          "Using 1200 mm as the general sign center height — 1200 mm is the Braille elevator jamb height, not the general sign center"
+        ]
+      },
+      "explanation": "Sign center max: 1500 mm AFF (exception: dressing rooms at 1800 mm); ATM signage has a separate 2400 mm max.",
+      "code_citation": "BP 344 Signage",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1cee3294fc3837b98e0ffc6c79862ea9d8031de2682f5558a86d964caa899bf7"
+    },
+    {
+      "question_id": "b9a46dda-9405-4ee8-93a0-5092d97ee2bc",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Step 4 of the plan-checking workflow covers horizontal circulation. At what maximum interval must 1800 × 1800 mm turning spaces be provided on an accessible route corridor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Every 20 m maximum along the accessible route, and at all corridor intersections only, ensuring compliance with accessibility standards"
+        },
+        {
+          "id": "B",
+          "text": "Every 10 m maximum along the accessible route, at intersections only, which may not meet all accessibility requirements"
+        },
+        {
+          "id": "C",
+          "text": "Every 15 m maximum along the accessible route, and within 5000 mm of dead ends, to ensure maneuverability"
+        },
+        {
+          "id": "D",
+          "text": "Every 12 m maximum along the accessible route, and at all corridor intersections and dead ends"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Turning spaces: 1800 × 1800 mm at every corridor intersection, dead end, and maximum every 12 m on straight runs.",
+        "explanation": "The 12 m maximum interval ensures wheelchair users are never trapped on a long straight corridor segment without a place to turn around. Turning spaces are also required at every intersection on the accessible route and at dead ends (within 3500 mm per Appendix B). The 12 m interval is distinct from the ramp landing interval (every 10.5 m run on a 1:15 ramp).",
+        "common_misconceptions": [
+          "Confusing the 12 m turning space interval with ramp landing intervals (10.5 m or 15 m)",
+          "Thinking intersections alone are sufficient without the 12 m straight-run spacing"
+        ]
+      },
+      "explanation": "Turning spaces: 1800 × 1800 mm at intersections, dead ends, and maximum every 12 m per BP 344.",
+      "code_citation": "BP 344 Routes",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0665984eab88119f28f4fd51a0e82b77847583a6658b4aae3e197e625a3bb58e"
+    },
+    {
+      "question_id": "3c1ffbf7-b963-4d6c-9f98-27d2ecbb259f",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A hospital serves 18 mlea cubicles and 18 femlea cubicles on a single floor. Under BP 344 Sec. 6, what is the minimum accessible toilet provision required on that floor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1 unisex accessible cubicle shared between male and female users on that floor"
+        },
+        {
+          "id": "B",
+          "text": "2 accessible male cubicles and 2 accessible female cubicles on that floor"
+        },
+        {
+          "id": "C",
+          "text": "1 accessible male cubicle and 1 accessible female cubicle on that floor"
+        },
+        {
+          "id": "D",
+          "text": "1 accessible male cubicle and 1 accessible female cubicle per building, not per floor"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 Sec. 6: at least 1 accessible male + 1 accessible female cubicle per floor for every 20 or fewer gendered cubicles.",
+        "explanation": "With 18 cubicles of each gender (both under the 20-cubicle threshold), exactly 1 accessible cubicle per gender is required on that floor. A second pair would only be triggered if cubicle count exceeded 20. The requirement is per floor, not per building — a building with 4 floors must have the provision on all 4 floors.",
+        "common_misconceptions": [
+          "Adding a second accessible pair at 18 cubicles — the trigger for a second pair is exceeding 20, not approaching it",
+          "Counting the building as a whole rather than applying the rule floor by floor"
+        ]
+      },
+      "explanation": "18 cubicles per gender (under the 20-cubicle threshold) = 1 accessible per gender per floor per BP 344 Sec. 6.",
+      "code_citation": "BP 344 Sec. 6",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f66e5efa7e07540e0dd15ec9d17702927df9810249fdf1be194859d7c47e0924"
+    },
+    {
+      "question_id": "df82a691-aa4c-4182-b5f0-c3450542f8a0",
+      "article_id": "4256d28b-076b-4c68-ad2d-9e27fdbcdf6b",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "In the sequential plan-checking workflow (Section D), what are the Step 1 accessible parking stall dimensions and ratio requirement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Stall 3700 × 5000 mm with 1200 mm aisle; minimum ratio of 1 accessible stall per 25 regular spaces"
+        },
+        {
+          "id": "B",
+          "text": "Stall 4000 × 5000 mm with 1800 mm aisle; minimum ratio of 1 accessible stall per 25 regular spaces"
+        },
+        {
+          "id": "C",
+          "text": "Stall 4000 × 5000 mm with 1200 mm aisle; minimum ratio of 1 accessible stall per 20 regular spaces"
+        },
+        {
+          "id": "D",
+          "text": "Stall 3700 × 5000 mm with 1800 mm aisle; minimum ratio of 1 accessible stall per 50 regular spaces"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Typology Checklists article's Step 1 specifies 3700 × 5000 mm stalls with 1200 mm aisles at a 1:25 ratio.",
+        "explanation": "The checklist tables in the article consistently cite 3700 × 5000 mm stall with 1200 mm aisle at 1 per 25 spaces. This is the value given across all three typologies (hospital, mall, school). Note: The Wheelchair Maneuvering article uses 4000 × 5000 mm with 1800 mm aisle — examinees must use the value from the specific article being tested.",
+        "common_misconceptions": [
+          "Using the 4000 mm × 1800 mm values from the Wheelchair Maneuvering article — this article's checklists cite 3700 mm × 1200 mm",
+          "Using a 1:20 or 1:50 ratio instead of the 1:25 ratio"
+        ]
+      },
+      "explanation": "This article's parking checklists specify 3700 × 5000 mm stalls with 1200 mm aisles at 1 per 25 spaces.",
+      "code_citation": "BP 344 Parking",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:47.983951+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b32e660dd6d91ec4e2d2cba5e2999a1e05bdfe0520e5d6fc59a2c23c011a32d2"
+    }
+  ]
+}

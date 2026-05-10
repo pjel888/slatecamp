@@ -1,14 +1,61 @@
 {
   "article_id": "265185c0-c1ac-4f40-8db0-bde23084f634",
   "slug": "lea-prac-eth-010-introduction",
-  "normalized_created_at": "2026-05-09T04:02:41.136Z",
+  "normalized_created_at": "2026-05-09T17:04:22.510Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:4e0bfeb574258e913d1232c3b7abffe1541282a0baddd0d245bf43a6ba75544c",
-  "normalized_content_hash": "sha256:4e0bfeb574258e913d1232c3b7abffe1541282a0baddd0d245bf43a6ba75544c",
-  "ui_block_count": 0,
-  "total_blocks": 0,
-  "blocks": [],
+  "normalized_content_hash": "sha256:05a7db9fffd4b1b3b91ca8e5b93830d87835a10d98f595f5a7cbd8ba9125a6b5",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-eth010-conflict-matrix\" layout=\"single\" variant=\"contained\" type=\"image\" status=\"placeholder\" aspectRatio=\"16:9\" title=\"Conflict of Interest — Analysis Matrix\" description=\"Four-quadrant matrix crossing CONFLICT TYPE (Financial, Professional/Employment, Personal/Relationship, Role-based) against SEVERITY LEVEL (Disclosure sufficient, Consent sufficient, Recusal required, Always prohibited). Each cell shows representative scenarios. Bottom section shows the four-step mandatory process: Recognize → Disclose → Obtain Informed Consent → Recuse if irreconcilable.\" placementIntent=\"conflict-resolution\" suggestedSearchQuery=\"architect conflict of interest matrix type severity disclosure recusal Code of Ethics\" suggestedAsset=\"Diagram or reference image\" />",
+      "raw_hash": "sha256:a927071f811788eba34baa75cc15ac4c1e627b7dc441b848f0478be20d711859",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-eth010-conflict-matrix\", layout=\"single\", variant=\"contained\", type=\"image\", status=\"placeholder\", aspectRatio=\"16:9\", title=\"Conflict of Interest — Analysis Matrix\", description=\"Four-quadrant matrix crossing CONFLICT TYPE (Financial, Professional/Employment, Personal/Relationship, Role-based) against SEVERITY LEVEL (Disclosure sufficient, Consent sufficient, Recusal required, Always prohibited). Each cell shows representative scenarios. Bottom section shows the four-step mandatory process: Recognize → Disclose → Obtain Informed Consent → Recuse if irreconcilable.\", placementIntent=\"conflict-resolution\", suggestedSearchQuery=\"architect conflict of interest matrix type severity disclosure recusal Code of Ethics\", suggestedAsset=\"Diagram or reference image\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:1cc5fa36922057c3f0dbaf6b89d90b8b6e9eddddfd06a84d63af39759b262032",
+      "props": {
+        "id": "media-eth010-conflict-matrix",
+        "layout": "single",
+        "variant": "contained",
+        "type": "image",
+        "status": "placeholder",
+        "aspectRatio": "16:9",
+        "title": "Conflict of Interest — Analysis Matrix",
+        "description": "Four-quadrant matrix crossing CONFLICT TYPE (Financial, Professional/Employment, Personal/Relationship, Role-based) against SEVERITY LEVEL (Disclosure sufficient, Consent sufficient, Recusal required, Always prohibited). Each cell shows representative scenarios. Bottom section shows the four-step mandatory process: Recognize → Disclose → Obtain Informed Consent → Recuse if irreconcilable.",
+        "placementIntent": "conflict-resolution",
+        "suggestedSearchQuery": "architect conflict of interest matrix type severity disclosure recusal Code of Ethics",
+        "suggestedAsset": "Diagram or reference image"
+      },
+      "props_json": {
+        "id": "media-eth010-conflict-matrix",
+        "layout": "single",
+        "variant": "contained",
+        "type": "image",
+        "status": "placeholder",
+        "aspectRatio": "16:9",
+        "title": "Conflict of Interest — Analysis Matrix",
+        "description": "Four-quadrant matrix crossing CONFLICT TYPE (Financial, Professional/Employment, Personal/Relationship, Role-based) against SEVERITY LEVEL (Disclosure sufficient, Consent sufficient, Recusal required, Always prohibited). Each cell shows representative scenarios. Bottom section shows the four-step mandatory process: Recognize → Disclose → Obtain Informed Consent → Recuse if irreconcilable.",
+        "placementIntent": "conflict-resolution",
+        "suggestedSearchQuery": "architect conflict of interest matrix type severity disclosure recusal Code of Ethics",
+        "suggestedAsset": "Diagram or reference image"
+      },
+      "props_text": "id=\"media-eth010-conflict-matrix\" layout=\"single\" variant=\"contained\" type=\"image\" status=\"placeholder\" aspectRatio=\"16:9\" title=\"Conflict of Interest — Analysis Matrix\" description=\"Four-quadrant matrix crossing CONFLICT TYPE (Financial, Professional/Employment, Personal/Relationship, Role-based) against SEVERITY LEVEL (Disclosure sufficient, Consent sufficient, Recusal required, Always prohibited). Each cell shows representative scenarios. Bottom section shows the four-step mandatory process: Recognize → Disclose → Obtain Informed Consent → Recuse if irreconcilable.\" placementIntent=\"conflict-resolution\" suggestedSearchQuery=\"architect conflict of interest matrix type severity disclosure recusal Code of Ethics\" suggestedAsset=\"Diagram or reference image\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 1854,
+      "end_offset": 2777,
+      "line_start": 28,
+      "line_end": 32,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:e75b915649c57f27b54b31cb0142ca89fbcf4c0aed684af344ab9a631d339527"
 }

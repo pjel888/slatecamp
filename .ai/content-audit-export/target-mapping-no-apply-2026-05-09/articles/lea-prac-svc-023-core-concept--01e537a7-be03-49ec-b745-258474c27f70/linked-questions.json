@@ -1,0 +1,508 @@
+{
+  "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:8e11b4888f3c29e4ada0b98cae42b3fd233f2f824decc058c0edd5dddb78a038",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2a63aece-29bd-4924-89d8-ae63cbf61fd3",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "How many methods of compensation are established in the Architect's Guidelines for architectural services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Four methods"
+        },
+        {
+          "id": "b",
+          "text": "Five methods"
+        },
+        {
+          "id": "c",
+          "text": "Six methods"
+        },
+        {
+          "id": "d",
+          "text": "Eight methods"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Four understates the count. The Guidelines establish six distinct methods, not four.",
+        "b": "Five is close but omits Mixed Methods, which is the sixth recognized compensation method.",
+        "d": "Eight overstates the count. There are exactly six methods of compensation in the Architect's Guidelines.",
+        "correct": "The Architect's Guidelines establish Multiple methods of compensation established in the Architect's Guidelines (formerly 1979 UAP Doc 208-b) and distributed across SPP 201-209, including but not limited to Percentage of PCC, MDPE, Professional Fee + Expenses, Per Diem/Honorarium + Reimbursables, Lump Sum/Fixed Fee, Retainer, Mixed Methods, and service-specific methods like value-based pricing.",
+        "takeaway": "Six methods of compensation: % of PCC, MDPE, Professional Fee + Expenses, Per Diem + Reimbursable, Lump Sum/Fixed Fee, and Mixed Methods."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines (formerly 1979 UAP Doc 208-b)",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b2d547fb64fbedfb80757738a756b23e1338f2f563de3056640ae17e450db412"
+    },
+    {
+      "question_id": "2d235697-4189-416f-b270-5a201bd27507",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "An architect is asked to provide expert testimony on a construction dispute. The engagement is expected to last 5 days. Which compensation method is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Percentage of Project Construction Cost"
+        },
+        {
+          "id": "b",
+          "text": "Per Diem + Reimbursable Expenses"
+        },
+        {
+          "id": "c",
+          "text": "Multiple of Direct Personnel Expense (MDPE)"
+        },
+        {
+          "id": "d",
+          "text": "Professional Fee + Expenses"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Percentage of PCC applies to design services where effort correlates with construction cost. Expert testimony has no relationship to a project's construction cost.",
+        "c": "MDPE could work but is designed for longer effort-based engagements like feasibility studies. Per Diem is more appropriate for a defined short-duration engagement.",
+        "d": "Professional Fee + Expenses is used for single-architect project series — ongoing engagements, not a 5-day testimony assignment.",
+        "correct": "Per Diem + Reimbursable Expenses (Method 4) is designed for short-duration consulting, expert testimony, site visits, and advisory services where the engagement period is known but total effort is uncertain. A 5-day expert testimony engagement is a textbook application.",
+        "takeaway": "Per Diem = short-duration, known-period engagements like expert testimony and site visits. MDPE = longer effort-based engagements with uncertain scope."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Per Diem Method",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a0f775d91b9bd0f42408b63d6cf1d5fbd850daa33c7f64ace2d6fa69629ea7a"
+    },
+    {
+      "question_id": "71d16c66-b75f-4de9-b4f9-f8f25487b6ce",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "An architect's firm assigns 3 staff members to a pre-design feasibility study. Staff Member A works 200 hours at ₱500/hour, Staff Member B works 150 hours at ₱400/hour, and Staff Member C works 100 hours at ₱350/hour. The agreed MDPE multiplier is 2.0, and reimbursable expenses total ₱100,000. What is the total MDPE fee?",
+      "options": [
+        {
+          "id": "a",
+          "text": "₱390,000"
+        },
+        {
+          "id": "b",
+          "text": "₱490,000"
+        },
+        {
+          "id": "c",
+          "text": "₱590,000"
+        },
+        {
+          "id": "d",
+          "text": "₱295,000"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "₱390,000 is the result of applying the multiplier to DPE (₱195,000 × 2.0) but forgetting to add the ₱100,000 reimbursable expenses.",
+        "c": "₱590,000 results from applying the multiplier to the total of DPE plus reimbursables ((₱195,000 + ₱100,000) × 2.0 = ₱590,000) instead of adding reimbursables after the multiplier.",
+        "d": "₱295,000 results from adding DPE and reimbursables without applying the multiplier (₱195,000 + ₱100,000 = ₱295,000).",
+        "correct": "Step 1: Calculate direct personnel expense. A = 200 × ₱500 = ₱100,000. B = 150 × ₱400 = ₱60,000. C = 100 × ₱350 = ₱35,000. Total DPE = ₱195,000. Step 2: Apply multiplier. ₱195,000 × 2.0 = ₱390,000. Step 3: Add reimbursables. ₱390,000 + ₱100,000 = ₱490,000.",
+        "takeaway": "MDPE formula: sum all (manhours × rates), multiply the total by the multiplier, THEN add reimbursables — reimbursables are added after the multiplier, not multiplied."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, MDPE Formula",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c62e456ac77b89f6ad0ddbcacf8c77ba1f7b1dc21e17e8233e00288b120a445b"
+    },
+    {
+      "question_id": "5e86bf41-a2b3-4916-8555-1e66ea55e925",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "Why is the Lump Sum or Fixed Fee method commonly used for government architectural projects in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because government projects are always smaller than private projects, making lump sum fees more manageable"
+        },
+        {
+          "id": "b",
+          "text": "Because RA 9184 (Government Procurement Reform Act) requires price certainty before contract award, making fixed fees necessary"
+        },
+        {
+          "id": "c",
+          "text": "Because government architects are salaried and do not charge percentage fees, simplifying the budgeting process"
+        },
+        {
+          "id": "d",
+          "text": "Because the PRBoA mandates lump sum fees for all publicly funded projects, ensuring consistency across government contracts"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Government projects are not inherently smaller. Large government complexes, hospitals, and infrastructure projects are often very large. The method choice relates to procurement requirements, not project size.",
+        "c": "Government architects working in-house are salaried, but private architects commissioned for government projects are paid through the procurement system, which requires fixed pricing.",
+        "d": "The PRBoA does not mandate a specific compensation method for government projects. The lump sum preference derives from RA 9184 procurement requirements, not PRBoA regulation.",
+        "correct": "Government procurement under RA 9184 requires predetermined contract amounts for budget appropriation and audit compliance. The lump sum method provides the price certainty needed for government financial processes. The Architect's Guidelines note this method involves more paperwork and is more time-consuming due to the need for precise scope definition.",
+        "takeaway": "Lump sum/fixed fee for government projects = RA 9184 procurement requirement for price certainty, not a PRBoA mandate."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; RA 9184",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f2bbda1a3a74502d67e0e721fc3f619244c268327ca9dcf6d616c70f6b546d6f"
+    },
+    {
+      "question_id": "73eb1ab5-3175-411c-888d-37f2f4337871",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "An architect is negotiating compensation for a complex engagement involving site feasibility analysis (3 months), full building design (Group 2, ₱60M PCC), and post-construction building evaluation. The client insists on a single percentage-of-PCC fee covering all three service components. What is the architect's strongest argument against this approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Percentage of PCC is prohibited for any service other than Regular Design Services, as per the guidelines set by the PRBoA"
+        },
+        {
+          "id": "b",
+          "text": "The three services fall under different SPP documents (SPP 201, 202, and 205) with different recommended compensation methods — pre-design and post-construction effort is independent of construction cost, making percentage-of-PCC inappropriate for those components"
+        },
+        {
+          "id": "c",
+          "text": "The PRBoA requires separate contracts for each service phase, ensuring clarity and compliance with professional standards"
+        },
+        {
+          "id": "d",
+          "text": "Percentage of PCC always results in a lower total fee than MDPE for pre-design services, which can affect the quality of the initial project phases"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Percentage of PCC is not prohibited for other services — it is simply not the recommended method. The argument should be about appropriateness, not prohibition.",
+        "c": "There is no PRBoA requirement for separate contracts per service phase. The contract structure is negotiated between architect and client.",
+        "d": "Fee comparison between methods depends on project specifics. The argument against single-method compensation is about fairness and appropriateness, not which method yields a higher fee.",
+        "correct": "Each service component falls under a different SPP document with a different compensation logic. SPP 201 (Pre-Design) uses MDPE because feasibility analysis effort is independent of construction cost. SPP 202 (Regular Design) uses percentage of PCC. SPP 205 (Post-Construction) uses salary basis or percentage of gross rentals. Forcing all three into a single percentage-of-PCC fee would undercompensate the architect for pre-design and post-construction work, which bear no relationship to PCC.",
+        "takeaway": "Multi-service engagements spanning different SPP documents require Mixed Methods because each service type has a different relationship between effort and construction cost."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; SPP Doc 201; SPP Doc 202; SPP Doc 205",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9877a58b1d65102b20186bcbf4d6dc3ed140794bcfd4c62e4f68beab710388b2"
+    },
+    {
+      "question_id": "82a1cbaa-1d41-464f-b4fe-526a1c2092e3",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "An architect is engaged to provide both pre-design feasibility studies and full Regular Design Services for the same project. Which compensation method is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Percentage of PCC for all services combined, which may not accurately reflect the effort involved in pre-design studies"
+        },
+        {
+          "id": "b",
+          "text": "MDPE for all services combined, which could lead to undercompensation for the design phase"
+        },
+        {
+          "id": "c",
+          "text": "Mixed Methods — MDPE for pre-design services and percentage of PCC for design services"
+        },
+        {
+          "id": "d",
+          "text": "Lump Sum for all services combined, which might not account for variations in project scope and complexity"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Percentage of PCC is appropriate for SPP 202 design services but not for SPP 201 pre-design services, which precede construction cost determination.",
+        "b": "MDPE works for pre-design services but is not the standard method for Regular Design Services, where percentage of PCC is the established approach.",
+        "d": "Lump sum could be negotiated but is not the recommended approach for a multi-service engagement spanning different SPP documents with different compensation logics.",
+        "correct": "When a single commission spans multiple service types, the Mixed Methods approach (Method 6) applies. Pre-design services under SPP 201 use MDPE because their scope is effort-based. Regular Design Services under SPP 202 use percentage of PCC because design effort correlates with construction cost. Combining both within one engagement requires mixed methods.",
+        "takeaway": "Mixed Methods (Method 6) exists precisely for multi-service engagements where different phases require different compensation approaches."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, Mixed Methods; SPP Doc 201; SPP Doc 202",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cb5d0e2459436ef6f13c5452593271edf85ff3912533ac32d9b9d3870bf8198d"
+    },
+    {
+      "question_id": "33905c86-e9f4-40b5-9d1d-7c21273c8058",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "A student cites 'SPP Document 210 — Methods of Compensation and Schedule of Fees' as the source of the six methods of compensation. Why is this citation incorrect?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because SPP 210 was repealed by RA 9266 in 2004, which means it is no longer valid for current architectural practice"
+        },
+        {
+          "id": "b",
+          "text": "Because SPP 210 does not exist — the 2010 SPP series ends at SPP 209 (Professional Architectural Consulting Services), and compensation methods are distributed across individual SPP documents and the Architect's Guidelines"
+        },
+        {
+          "id": "c",
+          "text": "Because SPP 210 covers only the MDPE method, not all six methods, which are detailed in separate documents"
+        },
+        {
+          "id": "d",
+          "text": "Because SPP 210 was renumbered to SPP 208 in the 2010 revision, which caused confusion in referencing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "SPP 210 was not repealed because it never existed. RA 9266 did not address SPP document numbering.",
+        "c": "SPP 210 does not cover any method because the document does not exist.",
+        "d": "SPP 208 in the 2010 series is Architectural Design Competitions, not a renumbering of a compensation document.",
+        "correct": "The Standards of Professional Practice (SPP) series comprises SPP 200 through SPP 209. There is no SPP 210. The compensation methods and fee schedules are distributed across individual SPP documents (SPP 201–209), with each specifying its own compensation method. The Architect's Guidelines (formerly 1979 UAP Doc 208-b) serve as the overarching reference for compensation principles.",
+        "takeaway": "SPP 210 does not exist. The SPP series ends at SPP 209. Compensation methods come from the Architect's Guidelines and individual SPP documents."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines; 2010 SPP Series (SPP 200–209)",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1d64bfdd9ff7a3ea811b0f92b794ddfe06aeffac80ef74771fa1b8a9c9de165f"
+    },
+    {
+      "question_id": "483b9ab9-98e3-467e-bb91-f7ab2ea6f719",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "What does the multiplier in the MDPE formula represent, and what is its typical range?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It represents the percentage of PCC and ranges from 5% to 15%, which is crucial for determining the project's financial feasibility."
+        },
+        {
+          "id": "b",
+          "text": "It represents a factor covering office overhead, profit, and project complexity, ranging from 1.5 to 2.5"
+        },
+        {
+          "id": "c",
+          "text": "It represents the number of architects assigned to the project, ranging from 1 to 5, which can impact project timelines and resource allocation."
+        },
+        {
+          "id": "d",
+          "text": "It represents the inflation adjustment factor, ranging from 1.0 to 3.0, ensuring that cost estimates remain relevant over time."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The percentage of PCC is a separate compensation method entirely. The MDPE multiplier applies to personnel costs, not to construction cost.",
+        "c": "The multiplier is not a headcount factor. It is a financial multiplier applied to direct personnel expense to cover overhead and profit.",
+        "d": "The multiplier is not an inflation adjustment. It covers overhead, profit, and complexity — factors that exist regardless of inflation.",
+        "correct": "The MDPE multiplier (1.5 to 2.5) covers office set-up costs, overhead, the architect's experience, and the complexity of the project. It transforms the direct personnel cost into a fee that sustains the practice. The formula is: Fee = ((manhour × rate) × multiplier) + reimbursable expenses.",
+        "takeaway": "MDPE multiplier (1.5–2.5) = overhead + profit + complexity factor applied to direct personnel costs — it is NOT a percentage of PCC."
+      },
+      "explanation": null,
+      "code_citation": "Architect's Guidelines, MDPE Method",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:846654be23f7807b274a3e66e43d18bac76b2c8b4aff12fb4100f3ab1a08a35c"
+    },
+    {
+      "question_id": "c37a6a68-0ab4-4464-bad5-4cf36f66c7b1",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "Why is the percentage-of-PCC method appropriate for Regular Design Services under SPP 202 but not for Pre-Design Services under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Because SPP 202 services are more expensive than SPP 201 services, typically involving more complex design phases and coordination"
+        },
+        {
+          "id": "b",
+          "text": "Because design effort under SPP 202 correlates with construction cost, while pre-design effort under SPP 201 is independent of construction cost"
+        },
+        {
+          "id": "c",
+          "text": "Because the PRBoA prohibits percentage-based fees for pre-design services, ensuring that fees are fixed or based on hourly rates"
+        },
+        {
+          "id": "d",
+          "text": "Because pre-design services always cost less than 1% of PCC, making percentage-based fees impractical for accurate billing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The relative cost of services does not determine the compensation method. The method is chosen based on whether effort correlates with construction cost.",
+        "c": "There is no PRBoA prohibition on percentage-based fees for pre-design services. The Architect's Guidelines recommend MDPE as the appropriate method, but this is professional guidance, not a regulatory prohibition.",
+        "d": "Pre-design service costs are not defined by a fixed percentage relationship to PCC. They are effort-based, which is precisely why MDPE is the recommended method.",
+        "correct": "The percentage-of-PCC method works when the architect's effort scales with project size. In SPP 202 Regular Design Services, a larger building requires more drawings, more coordination, and more detailed specifications. In SPP 201 Pre-Design Services, feasibility studies and site analysis require effort based on the complexity of the investigation, not the eventual construction cost.",
+        "takeaway": "% of PCC works when effort scales with project size (design services). MDPE works when effort is independent of construction cost (pre-design, consulting)."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201; SPP Doc 202; Architect's Guidelines",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1d59fb4ad23f0bcc103d0ea419ef997c7a80bd1df9cbc57378390a2a910e3abe"
+    },
+    {
+      "question_id": "cc3106c7-7c4b-4281-867c-4d1d447c462f",
+      "article_id": "01e537a7-be03-49ec-b745-258474c27f70",
+      "topic_id": "18219cc7-27f4-4c6e-bed0-4571bf8dbfd2",
+      "text": "What is the primary compensation method specified by SPP 201 for Pre-Design Services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Percentage of Project Construction Cost, which is a common method but not the primary one for Pre-Design Services"
+        },
+        {
+          "id": "b",
+          "text": "Multiple of Direct Personnel Expense (MDPE)"
+        },
+        {
+          "id": "c",
+          "text": "Lump Sum or Fixed Fee, often used for projects with clearly defined scopes and budgets"
+        },
+        {
+          "id": "d",
+          "text": "Per Diem + Reimbursable Expenses, typically used for short-term engagements or specific tasks"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Percentage of PCC is the primary method for SPP 202 (Regular Design Services), not SPP 201. Pre-design services occur before construction cost is determined.",
+        "c": "Lump Sum or Fixed Fee is used primarily for government projects and engagements with clearly defined scope — not the typical method for pre-design consulting.",
+        "d": "Per Diem is used for short-duration consulting, not the full scope of pre-design services covered by SPP 201.",
+        "correct": "SPP 201 specifies MDPE as the primary compensation method for Pre-Design Services because the scope of pre-design work (feasibility studies, site analysis, space programming) is effort-based and difficult to tie to construction cost.",
+        "takeaway": "Pre-Design Services (SPP 201) use MDPE because design effort cannot be measured as a percentage of construction cost before the project is defined."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201, Pre-Design Services; Architect's Guidelines",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-023-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:51e089e44d9fb8919f978dd2f04d946a9ec1581284b5898fd817ec385816f13e"
+    }
+  ]
+}

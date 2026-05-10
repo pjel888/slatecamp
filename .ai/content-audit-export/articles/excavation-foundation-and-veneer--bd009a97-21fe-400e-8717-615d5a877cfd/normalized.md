@@ -276,4 +276,3 @@ Extracted summary:
 ## Cross‑References
 
 **Geological Hazards**, **Location On Property And Exterior Walls**, **Topography And Slope Analysis**, **Sanitation And Water Supply**
-

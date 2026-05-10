@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+  "dry_question_id": "dryrun-08-pd957-license-to-sell-registration-gate-q01",
+  "target_article_id": null,
+  "ticket_target": "new-article-pd957-license-to-sell-registration-gate",
+  "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "PD 957 IRR, Rule IV, Section 11, PDF p.47.",
+    "text": "A subdivision project has been registered, but no license to sell has been issued. Under the cited PD 957 IRR excerpt, may the owner/dealer sell disposable lots or units?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Section 11 says no owner or dealer shall sell without a license to sell issued by the Board.",
+      "distractors": {
+        "A": "Registration and selling authority are separate in the cited excerpt.",
+        "B": "Public-offering materials are part of application evidence, not the license itself.",
+        "D": "Posting/publication evidence does not replace the license to sell."
+      },
+      "takeaway": "When the question prompt asks selling authority, look for the license to sell."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "pd957-license-q1",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "C",
+    "explanation": "PD 957 IRR, Rule IV, Section 11, PDF p.47.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "Yes, registration is enough."
+      },
+      {
+        "id": "B",
+        "text": "Yes, if brochures have been submitted."
+      },
+      {
+        "id": "C",
+        "text": "No, the license to sell is still required."
+      },
+      {
+        "id": "D",
+        "text": "Yes, if the project has a billboard notice."
+      }
+    ]
+  },
+  "sme_source_locator": "PD 957 IRR, Rule IV, Section 11, PDF p.47.",
+  "code_citation": "PD 957 IRR, Rule IV, Section 11, PDF p.47.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

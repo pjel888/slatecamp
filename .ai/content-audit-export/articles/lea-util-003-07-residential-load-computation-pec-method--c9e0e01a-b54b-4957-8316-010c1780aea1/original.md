@@ -253,4 +253,3 @@ Extracted summary:
 - LEA-UTIL-003-02: Wire Sizing and Ampacity Tables
 - LEA-UTIL-003-06: Power Factor and Reactive Power
 - LEA-UTIL-003-08: Service Entrance and Meter Installation
-

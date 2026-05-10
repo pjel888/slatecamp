@@ -1,14 +1,71 @@
 {
   "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
   "slug": "rule-i-general-provisions",
-  "normalized_created_at": "2026-05-09T04:02:55.296Z",
+  "normalized_created_at": "2026-05-09T17:04:23.828Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:6302ac06e5e3e5b05c8bc111b51a6ea42b186e53d12b9d6180066b36d540fc60",
-  "normalized_content_hash": "sha256:6302ac06e5e3e5b05c8bc111b51a6ea42b186e53d12b9d6180066b36d540fc60",
-  "ui_block_count": 0,
-  "total_blocks": 0,
-  "blocks": [],
+  "normalized_content_hash": "sha256:c6d014bc465bfe1950ce58b18256af98dea3aae8fc7e523eecaca1f475124e72",
+  "ui_block_count": 2,
+  "total_blocks": 2,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule I - Section 106 - Permits\">\nNational Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n</LawCallout>",
+      "raw_hash": "sha256:4a4ae739ef4185f404d0b2cc2939db91580f647ac2627d84abae722246db01bc",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\", section=\"Rule I - Section 106 - Permits\"\n- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:bdab5265172325d6d2ed547a087653175047c84fef99f5ca607d9c0063f71729",
+      "props": {
+        "code": "pd1096",
+        "section": "Rule I - Section 106 - Permits"
+      },
+      "props_json": {
+        "code": "pd1096",
+        "section": "Rule I - Section 106 - Permits"
+      },
+      "props_text": "code=\"pd1096\" section=\"Rule I - Section 106 - Permits\"",
+      "children_raw": "\nNational Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n",
+      "children_text": "National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.",
+      "start_offset": 980,
+      "end_offset": 1282,
+      "line_start": 21,
+      "line_end": 25,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"pd1096\" section=\"Rule I - Section 101 - Scope\">\nNational Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n</LawCallout>",
+      "raw_hash": "sha256:42186617922c7570faff2cc92ae3d56071c7888858e1954d1a76b31b7cea10ce",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"pd1096\", section=\"Rule I - Section 101 - Scope\"\n- Text: National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d3e3682f3c9ac3d474c987294f74a95d788638015f8f1290fda152a384619811",
+      "props": {
+        "code": "pd1096",
+        "section": "Rule I - Section 101 - Scope"
+      },
+      "props_json": {
+        "code": "pd1096",
+        "section": "Rule I - Section 101 - Scope"
+      },
+      "props_text": "code=\"pd1096\" section=\"Rule I - Section 101 - Scope\"",
+      "children_raw": "\nNational Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.\n",
+      "children_text": "National Building Code of the Philippines (PD 1096) — Primary legislation governing building design and construction.",
+      "start_offset": 1284,
+      "end_offset": 1584,
+      "line_start": 27,
+      "line_end": 31,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:bf0bd32299d59e365ce790668116d4f7e7e718fa3a9445722129941117fa7583"
 }

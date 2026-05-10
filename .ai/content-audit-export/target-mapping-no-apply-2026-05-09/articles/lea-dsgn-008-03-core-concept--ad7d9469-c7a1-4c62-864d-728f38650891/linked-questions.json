@@ -1,0 +1,511 @@
+{
+  "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:db14f20ba95cfa30c4e17f078e740273c0e673cb571a59b5dd5fd67bf2d732cb",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1e5828a9-5aaf-432b-a06b-12060b93ec43",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "An architect designs a 3-story, 8,000 m² office building with no sprinkler system. According to RA 9514, which of the following statements is TRUE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sprinklers are required because the floor area exceeds 5,000 m², which is a critical threshold for fire safety compliance"
+        },
+        {
+          "id": "b",
+          "text": "Sprinklers are not required because the building is only 3 stories tall, although this may not meet all safety standards"
+        },
+        {
+          "id": "c",
+          "text": "Sprinklers are not required, but the building must use 45 m travel distance (no 60 m bonus)."
+        },
+        {
+          "id": "d",
+          "text": "Sprinklers are required because the floor area approaches 10,000 m², nearing the upper limit for non-sprinklered buildings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The floor area threshold is 10,000 m², not 5,000 m². This building at 8,000 m² does not trigger the area-based requirement.",
+        "b": "Correct that the building is exempt due to height, but this statement seems to accept option (c) is more complete.",
+        "d": "The threshold is >10,000 m², not approaching 10,000 m². At 8,000 m², the area requirement is not triggered.",
+        "correct": "This 3-story, 8,000 m² building does NOT meet the height threshold (4+ stories) or the area threshold (>10,000 m²) for sprinkler requirement, so sprinklers are optional. However, without sprinklers, egress design is limited to 45 m travel distance and 6 m dead-end corridors.",
+        "takeaway": "Sprinkler requirements have defined thresholds. This building is exempt on both height (3 stories < 4) and area (8,000 < 10,000). But opt-out does not eliminate the egress penalties for being unsprinklered; 45/6 limits still apply."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Sections 701, 703",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:15ba77549ca2405237dac798a04652160be26695f433405d55b65f11b26e6e6b"
+    },
+    {
+      "question_id": "4b5e2585-4ab6-4939-88fb-b18cc42ef79d",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "In a sprinklered building, what is the maximum permissible length of a dead-end corridor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 m, which is typically allowed in non-sprinklered buildings under certain conditions"
+        },
+        {
+          "id": "b",
+          "text": "8 m, often considered in buildings with partial sprinkler coverage"
+        },
+        {
+          "id": "c",
+          "text": "10 m, applicable in some jurisdictions with specific fire safety measures"
+        },
+        {
+          "id": "d",
+          "text": "12 m"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "6 m is the unsprinklered limit.",
+        "b": "8 m is not a standard code value.",
+        "c": "10 m exceeds the sprinklered limit but does not quite reach it.",
+        "d": "Correct—sprinklers extend the dead-end corridor limit to 12 m, a 2× multiplier from the 6 m baseline.",
+        "correct": "Dead-end corridors in sprinklered buildings are permitted up to Verify per RA 9514 2019 IRR (likely occupancy-specific, not 12m). This is double the unsprinklered limit, reflecting the safety margin provided by automatic suppression.",
+        "takeaway": "The dead-end bonus from sprinklers (6 m → 12 m) is more generous than the travel distance bonus (45 m → 60 m). This reflects the high risk of dead-end conditions where no cross-circulation is available."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Section 707",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0724d3abd04500af22474ac9d1b4483e723de3ffc52516e15df429ef17b53987"
+    },
+    {
+      "question_id": "0e4cfadf-f36d-48a5-b66d-ff014628d95a",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "A 5-story office building currently has no automatic sprinkler system. According to RA 9514, is a sprinkler system required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, sprinklers are optional for office buildings."
+        },
+        {
+          "id": "b",
+          "text": "Yes, all buildings 4 stories or taller must have automatic sprinklers."
+        },
+        {
+          "id": "c",
+          "text": "No, only hospital and institutional buildings require sprinklers."
+        },
+        {
+          "id": "d",
+          "text": "It depends on the floor area; sprinklers are only required if floor area exceeds 10,000 m²."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Office buildings are not exempt; height-based requirement applies.",
+        "c": "Hospitals are mandatory, but the height threshold applies to all occupancy types.",
+        "d": "Floor area is an additional trigger for some occupancies, but height (4+ stories) is a universal requirement.",
+        "correct": "Depends on occupancy, area, height per RA 9514 Division 10 Section 1003. A 5-story office building exceeds this threshold and must have sprinklers.",
+        "takeaway": "Sprinkler requirements have multiple triggers: height (4+ stories, universal), fVerify specific thresholds per RA 9514 2019 IRR Division 10² in commercial), occupancy type (institutional, high-hazard, storage). A building must satisfy ALL applicable requirements."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Section 703",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:75a385580eb3dc2756f0a3da189b27a36632fe0c1acac159ff08f8d6330bf435"
+    },
+    {
+      "question_id": "95130e59-4a0e-4116-8037-7db66a491fac",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "A floor plan shows a dead-end corridor 8 m long in an unsprinklered building. To make this design compliant, which of the following would be acceptable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduce the dead-end to 6 m"
+        },
+        {
+          "id": "b",
+          "text": "Install automatic sprinkler systems"
+        },
+        {
+          "id": "c",
+          "text": "Add a second exit to the dead-end"
+        },
+        {
+          "id": "d",
+          "text": "Any of the above"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is one valid solution.",
+        "b": "This is one valid solution.",
+        "c": "This is one valid solution.",
+        "d": "Correct—the designer has multiple tools to achieve compliance. The choice depends on cost, feasibility, and project goals.",
+        "correct": "All three options are valid compliance pathways: (a) shortening the dead-end to ≤6 m; (b) adding sprinklers to allow 12 m; (c) adding an exit makes it no longer dead-end. Any single solution satisfies the code.",
+        "takeaway": "Code compliance is about meeting _minimum standards_, not following a single pathway. Always recognize multiple solutions and choose the most practical for the project context."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Sections 701, 707",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1e7cfb576b6301c075ceadc45b9795bfa4502260a0b7cb8ea1db7860b752f84a"
+    },
+    {
+      "question_id": "3900a4f9-8883-4fe4-b80c-9c2a00b010f7",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "In a building with automatic sprinkler systems, what is the maximum allowable travel distance from any occupied space to the nearest exit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Depends on occupancy (e.g. Business: 46 m without sprinklers), but generally less than with sprinklers"
+        },
+        {
+          "id": "b",
+          "text": "50 m, which is a standard measure for certain occupancy types without specific modifications"
+        },
+        {
+          "id": "c",
+          "text": "Depends on occupancy (e.g. Business: 61 m with sprinklers)"
+        },
+        {
+          "id": "d",
+          "text": "75 m, applicable only in specific cases where additional safety measures are in place"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "45 m is the unsprinklered limit, not the sprinklered limit.",
+        "b": "50 m is not a standard code value.",
+        "d": "75 m exceeds both sprinklered and unsprinklered limits.",
+        "correct": "Sprinklered buildings are permitted a maximum travel distance of 60 m per RA 9514 Section 701. This is 33% longer than unsprinklered buildings (45 m) because sprinklers suppress fire growth and extend the safe egress window.",
+        "takeaway": "Remember the pair: 45 m unsprinklered, 60 m sprinklered. The 33% bonus is code's reward for automatic suppression."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Section 701",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1ef0e31be60166db871af70c51d1ce96ea333cee2207f209290554570442bd0c"
+    },
+    {
+      "question_id": "df6deecd-50e5-4a62-82ae-4cba791235d3",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "A building does NOT have automatic sprinklers. According to RA 9514, what is the maximum allowable travel distance from any occupied space to the nearest exit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30 m"
+        },
+        {
+          "id": "b",
+          "text": "45 m"
+        },
+        {
+          "id": "c",
+          "text": "60 m"
+        },
+        {
+          "id": "d",
+          "text": "No limit; only dead-end corridors are restricted."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "30 m is too restrictive and not a code standard.",
+        "c": "60 m applies only to sprinklered buildings.",
+        "d": "Travel distance limits apply to all buildings.",
+        "correct": "Unsprinklered buildings are limited to a maximum travel distance of 45 m per RA 9514 Section 701. This is the baseline code requirement.",
+        "takeaway": "45 m is the baseline. When sprinklers are added, it becomes 60 m. This is one of the most important code relationships in fire safety design."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Section 701",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:267789a6f393af9c1e283bc941cfc49b1f1dda9762b9d0bbcb5b2e20acf64aae"
+    },
+    {
+      "question_id": "518161ed-ef55-43db-acfe-3b98d1dac562",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "A hospital building of 8 stories and 12,000 m² must be evaluated for sprinkler system requirement. Which of the following best describes the sprinkler requirement for this facility?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sprinklers are optional; only height or area must trigger the requirement, unless specified otherwise by local amendments"
+        },
+        {
+          "id": "b",
+          "text": "Sprinklers are required because hospitals must have them regardless of size or height, as per standard safety protocols"
+        },
+        {
+          "id": "c",
+          "text": "Sprinklers are required because the building is 8 stories tall AND it is an institutional occupancy."
+        },
+        {
+          "id": "d",
+          "text": "Sprinklers are not required for hospitals under RA 9514, unless additional local regulations apply"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Both height AND occupancy type trigger requirements; this building satisfies multiple triggers.",
+        "b": "While hospitals do require sprinklers, the answer should cite the specific code sections and recognize that height also matters.",
+        "c": "Correct and complete. The 8-story height and institutional classification are both independent reasons for the requirement.",
+        "d": "Hospitals are explicitly required to have automatic sprinklers per RA 9514 Section 703.",
+        "correct": "This hospital would require sprinklers for two independent reasons: (1) 8 stories ≥ 4 stories (height threshold per Section 703), and (2) Required based on specific criteria in Division 10, not universally. The building easily exceeds the requirement.",
+        "takeaway": "Some buildings trigger multiple sprinkler requirements. A tall hospital building is doubly mandated: by height (4+ stories) and occupancy (institutional). Understanding all triggers prevents design errors."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Section 703",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:68671b759296ae72e899f29827651e0098573c8c976f93154ed4ae7dea814f9e"
+    },
+    {
+      "question_id": "14db98aa-6127-428b-af32-ed555d832e17",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "In an unsprinklered building, what is the maximum permissible length of a dead-end corridor before an exit is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4 m"
+        },
+        {
+          "id": "b",
+          "text": "6 m"
+        },
+        {
+          "id": "c",
+          "text": "8 m"
+        },
+        {
+          "id": "d",
+          "text": "10 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "4 m is too restrictive.",
+        "c": "8 m exceeds the unsprinklered limit but would be acceptable with sprinklers (12 m limit).",
+        "d": "10 m exceeds both limits.",
+        "correct": "Dead-end corridors in unsprinklered buildings are limited to Verify per RA 9514 2019 IRR Division 7 dead-end provisions (occupancy-specific).",
+        "takeaway": "6 m unsprinklered, 12 m sprinklered. Dead-end corridors are the second parameter affected by sprinkler presence."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Section 707",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9342dcf26c778d3541778669edefb461efe37f97c070ef0aec7a8fa1ff5cb2fc"
+    },
+    {
+      "question_id": "71f6e828-bfc8-49de-9d8b-ae94ff2bf5dd",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "A floor plan shows an office area located 55 m from the nearest exit, with no sprinkler system installed. Is this design compliant?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 55 m is within acceptable travel distance, assuming no additional safety measures are required"
+        },
+        {
+          "id": "b",
+          "text": "No, the travel distance exceeds the occupancy-specific limit per RA 9514 Table 802 (e.g. Business: 46 m)."
+        },
+        {
+          "id": "c",
+          "text": "No, but it would be compliant if sprinklers were added, as they allow for extended travel distances"
+        },
+        {
+          "id": "d",
+          "text": "It depends on the occupancy type; some groups allow longer distances, particularly with enhanced fire safety features"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "55 m exceeds the 45 m unsprinklered limit.",
+        "c": "This is correct analysis of the non-compliance, but option (b) is the primary answer identifying the violation.",
+        "d": "Travel distance limits apply equally to all occupancy types under the same sprinkler condition.",
+        "correct": "The design is non-compliant. Unsprinklered buildings are limited to 45 m travel distance per RA 9514 Section 701. The 55 m distance exceeds this limit.",
+        "takeaway": "A 55 m distance requires sprinklers (which extend the limit to 60 m) or must be reduced below 45 m. Sprinkler retrofit is the most practical solution in this scenario."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Section 701",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eed25f8b2d744f43372aa4f50a2f5109212c02d1ceda5d3e68e6fd696fcf6dc5"
+    },
+    {
+      "question_id": "ee36195a-6b60-4475-8b2e-62fb629b2b58",
+      "article_id": "ad7d9469-c7a1-4c62-864d-728f38650891",
+      "topic_id": "6400d65c-25f2-42e1-9976-2bc07f8ac2af",
+      "text": "A designer claims that installing a fire alarm system (smoke detectors, horn/strobe panels, pull stations) without sprinklers will extend egress travel distances from 45 m to 60 m. Is this claim correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, fire alarms provide the same benefit as sprinklers."
+        },
+        {
+          "id": "b",
+          "text": "No, fire alarms alone do not extend travel distances; only sprinklers do."
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if the alarm is monitored by a 24/7 central station."
+        },
+        {
+          "id": "d",
+          "text": "It depends on the type of occupancy; some groups allow alarm-based extensions."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fire alarms and sprinklers are not equivalent for egress distance purposes. Alarms alert; sprinklers suppress.",
+        "c": "Central station monitoring improves alarm reliability but does not grant egress bonuses.",
+        "d": "The rule is uniform across all occupancies: suppression (sprinklers) = bonus; detection (alarms) = no bonus.",
+        "correct": "Fire alarms (detection and notification only) do NOT extend egress distances. Only _automatic suppression_ (sprinklers) provides this bonus per RA 9514 Section 701. Alarms alert occupants faster but do not suppress fire growth.",
+        "takeaway": "Separation is critical: Fire Detection System (FDS) alerts people to the hazard. Automatic Sprinkler System (ASS) suppresses the hazard. Only suppression earns egress length bonuses. Do not conflate the two."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 Section 701",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.962535+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d321e37d4ced7d021bd454e66ed3478566d193832bdf0021b34c3e0e46ecc938"
+    }
+  ]
+}

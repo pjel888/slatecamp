@@ -1,0 +1,758 @@
+{
+  "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:113c4abe3f3b4706b5421a3eb1c203d80c3d621cb33794aa216986de061c722c",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "cd0bfe37-56d5-4bff-85e0-cb06b999b74f",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "A plumbing contractor in Davao prepares a permit application for a 12-story commercial building. Compared to the US Uniform Plumbing Code (UPC), the Philippine code presents several material, technical, and operational differences. Which statement best synthesizes these differences and their implications for design practice in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The Philippine code is less stringent than the UPC; designers may adopt UPC standards if they are more convenient, provided local building officials approve the deviation and the project meets all safety requirements"
+        },
+        {
+          "id": "b",
+          "text": "The Philippine code uses metric units, permits PVC/HDPE for cold water (historically restricted in UPC), specifies stricter vent terminal clearances (30 cm within 3 meters vs. UPC's 10 feet in some cases), and mandates more prescriptive backflow prevention for high-hazard scenarios—reflecting Philippine health, tropical climate, and seismic contexts"
+        },
+        {
+          "id": "c",
+          "text": "The Philippine code and UPC are substantially equivalent; any differences are minor and do not affect design calculations or specification decisions, making them interchangeable in most cases"
+        },
+        {
+          "id": "d",
+          "text": "The UPC is the binding standard in the Philippines because international construction practice supersedes local statutory requirements, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Philippine code is not less stringent than the UPC in all respects; in fact, it is more stringent in several areas (vent clearances, backflow prevention). Designer discretion cannot override statutory requirements.",
+        "c": "The codes differ significantly in metrics, material approvals, venting, and hazard assessment. Designers must apply Philippine standards specifically, not UPC equivalents.",
+        "d": "International standards inform practice but do not supersede Philippine statutory requirements. RA 1378 and PD 1096 are binding in Philippine jurisdictions.",
+        "correct": "The article explicitly outlines key differences: (1) metric units vs. imperial in UPC; (2) PVC/HDPE approval for cold water (vs. UPC's historical restriction); (3) stricter vent terminal clearances (30 cm within 3 meters vs. UPC's 10 feet/3.048 m in some cases); (4) more prescriptive backflow prevention in high-hazard scenarios; and (5) seismic and climate adaptations. These differences are substantive and mandatory in Philippine practice.",
+        "takeaway": "The Philippine code reflects metric units, distinct material approvals, more stringent vent clearances, prescriptive backflow prevention, and tropical/seismic adaptations. Designers must apply Philippine standards specifically, not substitute international codes."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Key Differences from the US Uniform Plumbing Code section",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1cf16a171afc925b8821f8d0e6e66bae9c4535659c07cc7a05c95da7e31ecd9a"
+    },
+    {
+      "question_id": "861a5c04-47c9-49fb-84b8-ab9c3b641664",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "A building engineer in Cebu is designing plumbing for a coastal residential tower in a typhoon-prone zone. Considering the Revised National Plumbing Code's climate adaptation provisions and RA 1378 framework, which design consideration most directly addresses Philippine-specific risks NOT typically mandated in temperate-zone plumbing codes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Installing all piping with doubled wall thickness to withstand seismic acceleration in typhoon-force winds, ensuring structural integrity"
+        },
+        {
+          "id": "b",
+          "text": "Specifying underground drainage systems with special sealing and backflow prevention (sump pump discharge) to prevent contamination from typhoon-driven water surges and flooding"
+        },
+        {
+          "id": "c",
+          "text": "Eliminating all venting requirements within 500 meters of the coast to prevent salt spray corrosion of vent terminals, reducing maintenance needs"
+        },
+        {
+          "id": "d",
+          "text": "Requiring all hot water supply to be stored in sealed pressure vessels rather than conventional tanks, regardless of building size, to prevent contamination"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While seismic considerations exist in PD 1096, the concern is building structural integration, not doubled pipe wall thickness. Flexible connections address seismic risk, not wall thickness increases.",
+        "c": "Venting requirements are not eliminated in coastal zones; salt spray corrosion is addressed through material selection (e.g., stainless steel terminals), not elimination of venting.",
+        "d": "Hot water storage requirements are not dependent on coastal proximity; conventional tanks serve most applications. Pressure vessel requirements apply to specific industrial or commercial contexts, not to general coastal residential design.",
+        "correct": "The Revised National Plumbing Code explicitly addresses Philippine climate factors. Underground drainage systems in flood-prone (typhoon-prone) zones require special sealing and backflow prevention at sump pump discharge points to prevent contamination from typhoon-driven water surges. This provision is a direct Philippine-specific adaptation not commonly found in temperate-zone codes.",
+        "takeaway": "The Philippine code's typhoon-related provisions (special sealing and backflow prevention for underground drainage in flood-prone zones) directly address tropical climate risks unique to the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Climate Adaptations section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f2e09384c3997fd849a614e2107a865db2400b76c433719b1f876448174d94ae"
+    },
+    {
+      "question_id": "295294fe-0afc-4da8-a0a6-b3930cf7eb5e",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "An engineer designs a plumbing system for a university research facility in the Philippines. The design includes low-flow fixtures (toilets at 4.8 L/flush, faucets at 6 L/minute per recent amendments), a greywater recycling system for non-potable uses, and rainwater harvesting for landscape irrigation. When preparing the design for permit submission, the engineer must ensure alignment with which set of regulatory instruments?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RA 1378 foundational standards alone; recent amendments addressing water conservation and alternative sources are voluntary guidelines without regulatory force, which may not be sufficient for compliance"
+        },
+        {
+          "id": "b",
+          "text": "RA 1378 as amended (incorporating water conservation provisions and alternative water systems), PNSDW standards for potable water portions, and PD 1096 for building integration; a professional engineer signature is optional if a licensed master plumber supervises installation"
+        },
+        {
+          "id": "c",
+          "text": "PD 1096 exclusively; specialized plumbing statutes have been superseded by the comprehensive National Building Code framework, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "International green building standards (LEED, BREEAM); Philippine codes are not specific enough to govern advanced water conservation technologies, which is not entirely accurate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Recent amendments are not voluntary guidelines; they represent binding regulatory updates to RA 1378. Water conservation and alternative water systems are now codified requirements.",
+        "c": "RA 1378 and PD 1096 remain in effect alongside PD 1096; neither supersedes the other. Both must be applied concurrently. International standards may inform practice but do not override Philippine requirements.",
+        "d": "The Philippine code is sufficiently detailed to address advanced water conservation and alternative systems through its recent amendments. International standards are supplementary, not primary.",
+        "correct": "Water conservation, greywater, and rainwater provisions are in PD 1096 Revised IRR (2008) and National Green Building Code, not amendments to RA 1378. The design must comply with: (1) RA 1378 as amended (water conservation thresholds); (2) PNSDW for potable water quality; and (3) PD 1096 for building integration (structural, electrical, fire-life safety coordination). A licensed master plumber must supervise; an engineer signature does not substitute for required professional licensing.",
+        "takeaway": "Modern Philippine plumbing design must align with RA 1378 as amended (including water conservation and alternative systems), PNSDW standards, and PD 1096 integration requirements. Recent amendments have expanded the code's scope to encompass sustainable water practices."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Recent Updates and Modernization section",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b7d374f8916af40732e42fe10741736c364afe96b2ccda1d301c59e46e956464"
+    },
+    {
+      "question_id": "5ce67afb-bab6-4bf5-9a8d-561bdbb0fd7c",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "A master plumber installs a plumbing system that passes all three mandatory inspections (rough-in, final, and operational) and receives an occupancy permit. Two years later, the system develops a crack in a main water supply line, causing water damage to the building. When pursuing liability, what is the most accurate assessment of the master plumber's professional accountability under RA 1378 and related enforcement frameworks?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The master plumber has no liability because the system passed all inspections and received occupancy approval, which is considered final acceptance of work"
+        },
+        {
+          "id": "b",
+          "text": "The master plumber may be held liable for repairs and damages within a reasonable defect period (typically 2–5 years) because master plumbers carry professional liability for their work quality"
+        },
+        {
+          "id": "c",
+          "text": "Liability rests solely with the building owner, who is responsible for ongoing maintenance and inspection regardless of installation quality, unless otherwise stated in the contract"
+        },
+        {
+          "id": "d",
+          "text": "The local building official who approved the system is primarily liable; the master plumber's responsibility ends upon occupancy permit issuance, unless negligence is proven"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Inspection passage and occupancy approval document code compliance at the time of approval; they do not shield a master plumber from liability for defects in workmanship or materials within the reasonable defect period.",
+        "c": "While ongoing maintenance is the owner's responsibility, a crack developing within two years likely reflects installation defects, not maintenance failures. The master plumber bears primary liability for such defects.",
+        "d": "Building officials certify code compliance; they do not assume liability for contractor workmanship. The master plumber, as the licensed professional responsible for the installation, bears the liability.",
+        "correct": "The article explicitly states: 'Master plumbers carry professional liability for their work. If a plumbing system fails or causes damage within a reasonable period (typically 2–5 years, depending on the defect type), the master plumber may be held liable for repairs and damages.' This two-year failure falls within the typical liability window and represents a material defect attributable to installation quality, not maintenance negligence.",
+        "takeaway": "Master plumbers carry professional liability for system failures within 2–5 years of installation, independent of inspection or occupancy approval. This accountability ensures quality work and protects building owners."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Enforcement and Professional Accountability section",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0ee4bcd792b4359bd8ad51929ec392bee5f282071488138f6d581260f4696b80"
+    },
+    {
+      "question_id": "75f54ed4-0084-4442-b066-51fa3a75c904",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "During a plumbing permit application review for a commercial building in the Philippines, an official notes that a proposed design specifies vent terminals terminating 20 cm above windows within 4 meters. The master plumber's design drawings reference international standards and claim Philippine code flexibility. Under the Revised National Plumbing Code, what is the correct regulatory position?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The 20 cm clearance is acceptable because the code allows engineer judgment when international standards are referenced"
+        },
+        {
+          "id": "b",
+          "text": "The design violates the code requirement of 30 cm above the highest window, skylight, or ventilation opening within 3 meters; the design must be revised to comply"
+        },
+        {
+          "id": "c",
+          "text": "The 4-meter reference distance is correct; the code specifies 4 meters, not 3 meters, so the application requires revision only if the clearance were below 30 cm"
+        },
+        {
+          "id": "d",
+          "text": "Vent terminal height is not specifically regulated by the Philippine code; local building officials have discretion to approve or reject based on site conditions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Revised National Plumbing Code is prescriptive regarding vent terminal height; international standards do not supersede RA 1378 requirements. Professional judgment cannot override explicit code provisions.",
+        "c": "While 30 cm clearance is correct, the code specifies 3 meters as the reference distance, not 4 meters. A 4-meter distance would be non-compliant for this reason as well.",
+        "d": "The code explicitly regulates vent terminal height; building officials enforce the 30 cm / 3-meter standard and do not have discretion to waive the requirement.",
+        "correct": "The Revised National Plumbing Code explicitly specifies that vent terminals must extend through the roof and terminate not less than 30 cm above the highest window, skylight, or ventilation opening within 3 meters horizontally. The proposed design (20 cm clearance, 4-meter reference distance) fails both criteria. International standards cannot override the Philippine code; the design must be revised to achieve 30 cm clearance within 3 meters.",
+        "takeaway": "Philippine code vent terminal requirements (30 cm above openings within 3 meters) are non-negotiable and override international standards or designer discretion."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Article on Venting section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:92e66e89d1805595272f715d128eccf76684a674725c448ced1bcaa6a4b5bdb5"
+    },
+    {
+      "question_id": "25b0beaa-37a7-4231-92af-7d3b3d4eaa5e",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "A commercial kitchen has a main waste stack serving three branches, with all connections to occur within a 2-meter vertical section. According to the Revised National Plumbing Code's venting requirements, which arrangement complies with code standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All three branches share a single vent stack extending through the roof without individual branch vents"
+        },
+        {
+          "id": "b",
+          "text": "Each branch requires its own individual vent extending to the roof; shared venting is not permitted for simultaneous discharge"
+        },
+        {
+          "id": "c",
+          "text": "Only the uppermost branch requires venting; lower branches rely on trap seals alone"
+        },
+        {
+          "id": "d",
+          "text": "Branches may share a common vent if total fixture units do not exceed 12 and vent pipe is sized for the combined load"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While shared venting is permitted, omitting individual branch vents entirely without proper vent sizing calculations would not comply; vent arrangement must be engineered relative to load.",
+        "b": "The code does not mandate individual venting for all branches; common venting is permitted when properly designed. This overstates the requirement.",
+        "c": "All fixtures require proper venting; relying on trap seals alone without vent connection violates anti-siphonage provisions and creates odor/health hazards.",
+        "correct": "The Philippine code permits branches to share common vent stacks when properly sized relative to connected load, provided that vent sizing calculations account for the combined fixture unit load. Individual venting is required only in certain conditions (typically where siphonage risk is high or fixture combinations create anti-siphonage challenges). A 12-unit threshold is reasonable for common vent applicability in many code interpretations.",
+        "takeaway": "Venting requirements are based on fixture load and siphonage risk; proper vent sizing and arrangement allow shared venting when load calculations support the design."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Venting Requirements section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dbaf03f8841956bc8712a0929c230fb30bb77f1dea6eecb8cc4865749be9e290"
+    },
+    {
+      "question_id": "502fe8b0-b4f6-4f39-ac56-7e9d8dfbba26",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "An engineer designs a new commercial building in Manila requiring potable water supply. Under the Revised National Plumbing Code, which material option is explicitly APPROVED for cold water supply piping in this application?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PVC (polyvinyl chloride) for both hot and cold water supply"
+        },
+        {
+          "id": "b",
+          "text": "HDPE (high-density polyethylene) for cold water supply only"
+        },
+        {
+          "id": "c",
+          "text": "Copper piping for cold water supply, with a minimum wall thickness of 0.8 mm"
+        },
+        {
+          "id": "d",
+          "text": "Galvanized steel exclusively; PVC and HDPE are prohibited for supply lines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While PVC is approved for cold water supply, it is NOT approved for hot water systems. This option incorrectly implies dual-use approval.",
+        "c": "Copper is an approved material but the code does not mandate specific wall thickness minimums in this context; HDPE is equally valid for cold water.",
+        "d": "Galvanized steel is approved, but PVC and HDPE are explicitly permitted for cold water supply in the Philippine code, contradicting the 'exclusively' claim.",
+        "correct": "The Revised National Plumbing Code explicitly approves HDPE for cold water supply in residential and commercial buildings. This represents a Philippine code provision that differs from some international standards. Hot water requires copper, galvanized steel, or stainless steel due to temperature exposure.",
+        "takeaway": "The Philippine code explicitly approves PVC and HDPE for cold water supply, representing a notable difference from some US plumbing codes that historically restricted these materials to drainage applications."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Key Differences from the US Uniform Plumbing Code section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0e09f24baaf152a70b28d57267c1d5acc6842307728600d4023803bade862f0b"
+    },
+    {
+      "question_id": "58076a87-22b2-4f56-84ce-84cbcb58ae2c",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "Which organization is authorized by RA 1378 to examine, license, and regulate master plumbers in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Department of Public Works and Highways (DPWH)"
+        },
+        {
+          "id": "b",
+          "text": "Professional Regulation Commission (PRC)"
+        },
+        {
+          "id": "c",
+          "text": "National Building Authority (NBA)"
+        },
+        {
+          "id": "d",
+          "text": "Bureau of Construction Code Compliance (BCCC)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The DPWH handles public works infrastructure but does not regulate professional plumbing licenses under RA 1378.",
+        "c": "No National Building Authority exists as the regulatory body for master plumber licensing; this is a distracter name.",
+        "d": "The BCCC is not the statutory body designated in RA 1378 for professional licensing; the PRC is the authorized regulator.",
+        "correct": "A Board of Examiners for Master Plumbers is created by RA 1378 (Sec. 3) under the Commissioner of Civil Service to administer examinations; certificates are issued by the Office of the President (Sec. 15). The PRC ensures that licensed professionals meet comprehensive knowledge standards.",
+        "takeaway": "The Professional Regulation Commission (PRC) is the sole authorized body for master plumber licensing, examination, and professional oversight in the Philippines."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Master Plumber Licensing and Professional Requirements section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:504eede9c32a9b5b12e05a87e1e5723633365d64dd0ea69175e1d2c6f14f814a"
+    },
+    {
+      "question_id": "9a8754a3-792a-4e9a-90ac-fd6e428e8455",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "According to the National Building Code PD 1096 Rule IX (Sanitation Provisions), calculate the total fixture unit load for a residential bathroom containing a toilet (4 units), washbasin (1 unit), bathtub with shower (2 units), and washing machine drain (2 units).",
+      "options": [
+        {
+          "id": "a",
+          "text": "7 fixture units"
+        },
+        {
+          "id": "b",
+          "text": "8 fixture units"
+        },
+        {
+          "id": "c",
+          "text": "9 fixture units"
+        },
+        {
+          "id": "d",
+          "text": "10 fixture units"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A sum of 7 units omits the washing machine drain load or miscounts the bathtub/shower unit value.",
+        "b": "A sum of 8 units would result from excluding the washbasin or underestimating another fixture's unit value.",
+        "d": "A sum of 10 units would occur if a fixture unit value were incorrectly incremented or an additional fixture were assumed.",
+        "correct": "Total fixture units = 4 (toilet) + 1 (washbasin) + 2 (bathtub/shower) + 2 (washing machine) = 9 fixture units. Fixture unit calculations are essential for sizing drainage and vent pipes according to Philippine code specifications.",
+        "takeaway": "Fixture unit methodology is the standardized approach for calculating drainage system loads; accurate summation ensures proper pipe sizing and code compliance."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Scope and Applicability section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4cf90dc31cc71161815450eb598186c85bfb99389b2500765cc3510b8eb47ae6"
+    },
+    {
+      "question_id": "a052ed0a-bbcc-4b68-af79-0bc30e8d702b",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "A plumbing system in a multi-story residential building has a horizontal branch drain with a 1:150 slope (approximately 0.67 cm per meter). An inspection reveals sediment deposits in sections of the branch. A design engineer proposes increasing the slope to 1:75 (1.33 cm per meter) to flush deposits. Considering the Revised National Plumbing Code's drainage design principles, what is the most appropriate technical assessment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The 1:150 slope is substandard; the code requires 1:75 minimum, and the engineer's proposal to increase slope is correct and necessary for compliance"
+        },
+        {
+          "id": "b",
+          "text": "The 1:150 slope violates the code minimum of 1:100; increasing to 1:75 over-corrects and may create scouring velocity that erodes pipe interiors and fittings"
+        },
+        {
+          "id": "c",
+          "text": "Slope steepness does not affect sediment deposition; the issue is pipe sizing, and slope modification will not resolve sediment accumulation"
+        },
+        {
+          "id": "d",
+          "text": "The 1:150 slope is acceptable because residential drain loads are lower than commercial systems, and the code does not mandate slope increases beyond 1:200 for residential applications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While 1:150 is indeed substandard (below the 1:100 minimum), the proposed 1:75 over-corrects and introduces scouring risk, which the code's 1:100 minimum standard is designed to prevent.",
+        "c": "Slope significantly affects sedimentation; gravity drainage relies on adequate pitch to transport solids. Pipe sizing is also relevant, but slope modification is a valid corrective approach.",
+        "d": "The code applies consistent slope standards across residential and commercial applications. A 1:200 minimum is too shallow and would worsen sediment issues. The 1:100 standard is universal.",
+        "correct": "The Revised National Plumbing Code specifies a minimum pitch of 1:100. A 1:150 slope is substandard and does contribute to sedimentation. However, the proposed 1:75 slope over-corrects. The code's 1:100 standard balances gravity drainage efficiency against scouring velocity. Excessive slope (approaching 1:50 or steeper) accelerates water but may create erosive conditions damaging pipes and fittings. The proper correction is to achieve 1:100, not exceed it.",
+        "takeaway": "The code's 1:100 minimum slope standard optimizes gravity drainage without scouring. Slopes below 1:100 risk sedimentation; slopes much steeper than 1:100 risk pipe erosion and fitting damage."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Scope and Applicability and Drainage and Sanitary Systems sections",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bcbeeb2a36bf66f03c01108ff40087df240134aece3bdf7189882ce9af199cf5"
+    },
+    {
+      "question_id": "aa8235c6-312d-40cc-bfef-e867ab8594d7",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "A conflict arises between RA 1378 (Revised National Plumbing Code) and PD 1096 (National Building Code) regarding the fire safety compartmentalization of a plumbing penetration in a residential building. RA 1378 specifies a 2-hour fire-rated sleeve; PD 1096 specifies a 3-hour fire-rated sleeve for the same penetration type. Under the established regulatory framework, which provision applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "RA 1378 provision applies; plumbing-specific statutes supersede building code requirements"
+        },
+        {
+          "id": "b",
+          "text": "PD 1096 provision applies; the National Building Code takes precedence over specialized codes"
+        },
+        {
+          "id": "c",
+          "text": "The more stringent requirement applies; the 3-hour fire-rated sleeve must be installed"
+        },
+        {
+          "id": "d",
+          "text": "Local building officials may choose which standard to enforce; there is no definitive hierarchy"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While RA 1378 is specialized, it does not automatically supersede PD 1096 in all cases. The explicit hierarchy rule requires application of the more stringent standard.",
+        "b": "PD 1096 does not automatically take precedence; the conflict resolution mechanism prioritizes the stricter requirement regardless of which statute imposes it.",
+        "d": "The regulatory framework is not discretionary; building officials must apply the more stringent standard as explicitly stated in RA 1378.",
+        "correct": "The Revised National Plumbing Code explicitly states that 'in cases of conflict between RA 1378 and PD 1096, the more stringent requirement applies.' A 3-hour fire-rated sleeve is more stringent (higher level of protection) than a 2-hour sleeve. Therefore, the 3-hour standard must be implemented to ensure the highest level of fire safety compliance.",
+        "takeaway": "When RA 1378 and PD 1096 conflict, the more stringent requirement applies. This ensures comprehensive safety by preventing either statute from inadvertently allowing a lower standard of protection."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Relationship to PD 1096 section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0f20dae45688ca1bd2228203c97818e7a1c6ad782db11ee3fb8e469da19f1b40"
+    },
+    {
+      "question_id": "c7dd538d-f298-42f3-97ba-59fca77e8643",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "In what year was Republic Act 1378 enacted, and what major legislation did it precede by how many years?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Enacted in 1957; preceded Presidential Decree 1096 by 20 years"
+        },
+        {
+          "id": "b",
+          "text": "Enacted in 1957; preceded Presidential Decree 1096 by 10 years"
+        },
+        {
+          "id": "c",
+          "text": "Enacted in 1947; preceded Presidential Decree 1096 by 30 years"
+        },
+        {
+          "id": "d",
+          "text": "Enacted in 1960; preceded Presidential Decree 1096 by 17 years"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While 1957 is correct, the interval of 10 years is incorrect; PD 1096 came 20 years later in 1977.",
+        "c": "Neither the enactment year (1947) nor the interval (30 years) is accurate to the actual legislative timeline.",
+        "d": "The enactment year of 1960 is inaccurate, and the 17-year interval does not match the actual spread between RA 1378 (1957) and PD 1096 (1977).",
+        "correct": "RA 1378 was enacted in 1957. PD 1096 was issued in 1977, which is exactly 20 years later. This timeline is crucial for understanding the legislative progression of Philippine plumbing regulation.",
+        "takeaway": "RA 1378 (1957) established the foundational plumbing framework 20 years before PD 1096 (1977) integrated plumbing into the comprehensive National Building Code."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Historical Context and Legislative Authority section",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4434f8ead0f837a9845ea57c9183891fa1f32b96498bca5b9a1e6eb3b2b6f88b"
+    },
+    {
+      "question_id": "cfe5f85a-da9b-4a32-a309-599416229a9a",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "The Philippine National Standards for Drinking Water (PNSDW) specify a disinfection residual chlorine range for potable water. What is the typical acceptable free residual chlorine level?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.05–0.2 mg/L"
+        },
+        {
+          "id": "b",
+          "text": "0.2–1.0 mg/L"
+        },
+        {
+          "id": "c",
+          "text": "1.0–2.0 mg/L"
+        },
+        {
+          "id": "d",
+          "text": "2.0–3.5 mg/L"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A range of 0.05–0.2 mg/L is too low to maintain adequate disinfection residual in extended distribution systems.",
+        "c": "A range of 1.0–2.0 mg/L exceeds the typical target and risks unacceptable taste, odor, and formation of disinfection byproducts.",
+        "d": "A range of 2.0–3.5 mg/L is substantially above PNSDW limits and would violate water quality standards.",
+        "correct": "PNSDW specifies a free residual chlorine level of typically 0.2–1.0 mg/L to maintain disinfection effectiveness throughout the distribution system. This range balances protection against microbial contamination with avoiding excessive chlorination that could produce disinfection byproducts.",
+        "takeaway": "PNSDW-compliant plumbing design must maintain chlorine residual in the 0.2–1.0 mg/L range through proper system layout, materials selection, and operational controls."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Water Quality Standards section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4abe3a656a91e824e68dfb111c8ec9de886cd9554ea9fc948f73d48cc36e966a"
+    },
+    {
+      "question_id": "dde4bc7e-d82c-44b1-b77c-2905f64fc8a6",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "A plumbing designer must incorporate backflow prevention for a building with three distinct water use scenarios: (1) a laboratory with chemical analysis sinks (high hazard), (2) a fire sprinkler system served from the potable supply (medium hazard), and (3) a standard bathroom group (low hazard). According to the Revised National Plumbing Code's hazard-based backflow prevention framework, which combination of devices is most appropriate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Single reduced pressure principle (RPP) device at the meter protects all three scenarios, ensuring comprehensive safety"
+        },
+        {
+          "id": "b",
+          "text": "RPP device for the lab, double-check valve for the sprinkler system, and atmospheric vacuum breaker or no device for the bathroom"
+        },
+        {
+          "id": "c",
+          "text": "Air gap at all three points; mechanical backflow prevention devices are not permitted in the Philippine code, ensuring compliance"
+        },
+        {
+          "id": "d",
+          "text": "Check valve assembly at the meter; individual fixture protection is unnecessary if main-line protection is provided, simplifying installation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While a single RPP at the meter would protect all scenarios, it over-specifies protection for low and medium-hazard applications, creating unnecessary expense and maintenance burden.",
+        "c": "Air gaps are acceptable for high-hazard scenarios, but the Philippine code permits mechanical devices (RPP, double-check) as alternatives. Mechanical devices are not prohibited; they are the standard approach.",
+        "d": "A check valve alone at the meter provides insufficient protection for high-hazard scenarios (the lab) without individual fixture-level protection. Hazard-based design requires scenario-specific devices.",
+        "correct": "The Philippine code mandates hazard-specific backflow prevention. High-hazard scenarios (lab chemicals) require the highest protection level (RPP device or air gap). Medium-hazard scenarios (fire sprinklers) permit double-check valves. Low-hazard scenarios (standard fixtures) require only atmospheric vacuum breakers or are exempt if siphonage risk is minimal. This differentiated approach is cost-effective and code-compliant.",
+        "takeaway": "Philippine code backflow prevention is hazard-based; high-hazard cross-connections require RPP devices or air gaps; medium-hazard scenarios permit double-check valves; low-hazard scenarios require minimal protection."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Cross-Connection and Backflow Prevention section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:57.369425+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cc7deaa309377998ef07e2b67453b76c14e128ac71208670185079b4a63f8fe1"
+    },
+    {
+      "question_id": "34314c27-6aa2-45bc-9834-421cf350e129",
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "topic_id": "9d30979c-004b-4eff-b17d-88f223de644c",
+      "text": "A large shopping mall project in the Philippines involves a complex plumbing system with multiple water supply zones, a greywater recycling system, backflow prevention at three hazard levels, underground drainage in a typhoon-prone flood zone, fixture count exceeding 500, and a design timeline of 8 months prior to construction. Based on the Revised National Plumbing Code's permit, inspection, and professional requirements, which project management approach best ensures regulatory compliance and professional accountability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Engage a licensed master plumber early in design to ensure RA 1378 and PD 1096 alignment; prepare modular drawings for concurrent submittals; schedule pre-permit meetings with local building officials; allocate 3–5 weeks for plan review and coordinate all three mandatory inspections (rough-in, final, operational); maintain compliance documentation throughout the project lifecycle"
+        },
+        {
+          "id": "b",
+          "text": "Hire an international consulting firm experienced in US standards to adapt UPC practices to the Philippine context; submit all drawings at once for faster processing; assume inspection timelines will not exceed 2 weeks; greywater systems do not require PRC-licensed oversight if designed by non-licensed engineers"
+        },
+        {
+          "id": "c",
+          "text": "Design independently using standard practices from previous projects; submit permits without detailed backflow prevention specifications, allowing inspectors to specify devices during the rough-in inspection; master plumber involvement is optional if the contractor employs experienced workers"
+        },
+        {
+          "id": "d",
+          "text": "Prioritize cost reduction by using non-approved materials if they are functionally similar to code-approved options; consolidate all plumbing work into a single 'super-inspection' to reduce inspection fees; ignore climate adaptation requirements if the project is not directly on the coast"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Adopting UPC practices without Philippine code adaptation creates non-compliance risks. Inspection timelines cannot be compressed below 5–15 working days per code. Treating greywater systems and backflow prevention as optional or post-design decisions violates RA 1378 and creates liability.",
+        "c": "Using non-approved materials, even if 'functionally similar,' violates PRC approval requirements. Consolidating inspections contradicts the code's three-stage mandatory inspection framework. Climate adaptation is not optional; typhoon provisions apply to all flood-prone zones regardless of coastal proximity.",
+        "d": "Cost reduction that compromises code compliance exposes the master plumber to liability, project delay, and regulatory penalties. RA 1378 mandates specific inspection and approval pathways that cannot be circumvented.",
+        "correct": "This approach integrates all critical compliance elements: (1) licensed master plumber involvement from design inception (RA 1378 mandate); (2) explicit RA 1378 and PD 1096 alignment in design; (3) pre-permit coordination with building officials to clarify expectations; (4) realistic allocation of 3–5 weeks for plan review; (5) scheduling for three mandatory inspections (rough-in, final, operational) with adequate time contingencies; (6) comprehensive documentation. This systematic approach prevents costly redesigns and ensures professional accountability throughout the 8-month timeline.",
+        "takeaway": "Complex Philippine plumbing projects require early master plumber engagement, explicit RA 1378/PD 1096 design integration, realistic permitting timelines (3–5 weeks plus three inspections), hazard-based backflow planning, climate adaptation, and comprehensive documentation. Regulatory compliance and professional accountability are non-negotiable."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-001-08.mdx, Plumbing Permit Requirements, Plumbing Inspection Requirements, Practical Implications for the LEA sections",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-001-08-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:58.533411+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ba44bbb191d56dbc2f1e9a7960207a04e4a9895dc93614b8b5f233ae52e5b225"
+    }
+  ]
+}

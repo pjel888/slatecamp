@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-09T16:24:33.045Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [
+    "Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.",
+    "Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.",
+    "--repair-placeholders treats --note as an operational note; it was not written to public updated_note."
+  ],
+  "updated_rows_count": 1,
+  "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "slug": "bp-344-ramp-slope-tiers",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:3205392462f9fbf67cac6b71e6d34610d86edeb9a8181186837cf8431df8cc41",
+  "original_hash": "sha256:3205392462f9fbf67cac6b71e6d34610d86edeb9a8181186837cf8431df8cc41",
+  "candidate_hash": "sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-06T09:20:55.234065+00:00",
+  "repair_mode": "placeholder_content",
+  "updated_at_after": "2026-05-09T16:24:34.190588+00:00"
+}

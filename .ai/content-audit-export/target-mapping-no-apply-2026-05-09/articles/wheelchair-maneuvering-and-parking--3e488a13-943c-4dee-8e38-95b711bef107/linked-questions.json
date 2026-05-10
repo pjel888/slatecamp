@@ -1,0 +1,1072 @@
+{
+  "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:276c7bbb7a63eab724a340e7a8b4e8b1551912e44d17073ce3d463e2d69bd01a",
+  "question_count": 21,
+  "questions": [
+    {
+      "question_id": "07cde6fb-8569-462c-87bb-dfc7911a7eec",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Wheelchair Maneuvering and Parking\", if a project requires 4.0 m, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4.0 m is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "4.0 m is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "4.0 m applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "4.0 m is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 4.0 m as the requirement. Context: ## 6. Minimal Exam Mnemonic Stack\r \r ```text\r PARKING\r - Stall width          = ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:12.566202+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:583b129582291bffbfbb467e0dc2035923d2be961816076519ee51ceb76d2ac1"
+    },
+    {
+      "question_id": "cc3f0f11-3827-4736-9c76-ebb24afc0873",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A multi-level hospital car park is being designed. What minimum vertical clearance must be maintained over accessible parking bays and their approach routes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2000 mm minimum vertical clearance, matching the accessible corridor headroom"
+        },
+        {
+          "id": "B",
+          "text": "2300 mm minimum vertical clearance to accommodate raised-roof accessible vans"
+        },
+        {
+          "id": "C",
+          "text": "2500 mm minimum vertical clearance for all parking levels, not just accessible bays"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm minimum vertical clearance, equal to the access aisle width dimension"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Vertical clearance over accessible bays must be 2300 mm minimum for raised-roof vans.",
+        "explanation": "Accessible vans often have raised roofs or roof-mounted equipment that standard 2000 mm clearances cannot accommodate. The 2300 mm minimum clearance applies to the accessible bay and its access route. This is part of the article's mnemonic: 4.0 m stall – 1.8 m aisle – 2.3 m clearance.",
+        "common_misconceptions": [
+          "Using 2000 mm clearance — that is the accessible corridor headroom, not parking vertical clearance",
+          "Applying the 2300 mm only to the bay itself and not to the access route approaching it"
+        ]
+      },
+      "explanation": "Accessible parking vertical clearance: 2300 mm minimum for raised-roof accessible vans per BP 344.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a13c50dd2b0b8b143be5bf8840387516f9d5c751e412fa4988ecddb1333dd56"
+    },
+    {
+      "question_id": "74c7c149-b73e-434f-a1a9-1e22ec30fb15",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An accessible route corridor inside a building must accommodate two-way wheelchair and pedestrian traffic. What is the minimum clear width required, and what additional element must be provided at dead ends?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1800 mm minimum clear width; no additional turnabout required if the corridor is wide enough"
+        },
+        {
+          "id": "B",
+          "text": "1200 mm minimum clear width; a 1500 × 1500 mm turnabout space within 5000 mm of the dead end"
+        },
+        {
+          "id": "C",
+          "text": "1500 mm minimum clear width; a 1800 × 1800 mm turnabout space within 3500 mm of the dead end"
+        },
+        {
+          "id": "D",
+          "text": "1500 mm minimum clear width; a 1500 × 1500 mm turnabout space anywhere along the corridor"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible corridor: 1500 mm wide; 1800 × 1800 mm turnabout within 3500 mm of dead end.",
+        "explanation": "The 1500 mm corridor width supports two-way wheelchair and pedestrian movement. At dead ends, a 1800 × 1800 mm turnabout space must be provided within 3500 mm of the end so a wheelchair user does not have to reverse the full corridor length. The 3500 mm proximity requirement is explicit in the BP 344 Appendix B text. A 1500 × 1500 mm space is insufficient for a full 180° wheelchair turn.",
+        "common_misconceptions": [
+          "Using 1200 mm as the corridor width — 1200 mm is the accessible ramp width",
+          "Placing the turnabout anywhere along the corridor rather than within 3500 mm of the dead end"
+        ]
+      },
+      "explanation": "Accessible corridor: 1500 mm wide; 1800 × 1800 mm turnabout within 3500 mm of dead end per BP 344.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f31bc75e6ff2b302a3e4400b543b641985870b0587713e065248c779c9a4a6cd"
+    },
+    {
+      "question_id": "4e8c3031-8284-485c-8105-84c017490b3f",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "On a busy accessible pathway where two wheelchairs must pass each other, what width is required at those passing points, and what is the minimum dimension of a rest/turn space on a lengthy route?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1800 mm wide where two wheelchairs must pass; rest/turn space minimum 1800 mm clear dimension"
+        },
+        {
+          "id": "B",
+          "text": "1500 mm wide where two wheelchairs must pass; rest/turn space minimum 1500 mm clear dimension"
+        },
+        {
+          "id": "C",
+          "text": "2000 mm wide where two wheelchairs must pass; rest/turn space minimum 1800 mm clear dimension"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm wide where two wheelchairs must pass; rest/turn space minimum 1500 mm clear dimension"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Two-wheelchair passing width = 1800 mm; rest/turn space minimum clear dimension = 1800 mm.",
+        "explanation": "The article's passing space is described as 1800 mm (two-wheelchair width) and a 1800 × 2000 mm rectangle for a full passing space. The rest/turn space on lengthy routes also has a minimum clear dimension of 1800 mm. Both the passing width and the rest space share the 1800 mm figure. The 1500 mm corridor is the baseline single-direction accessible route width.",
+        "common_misconceptions": [
+          "Using 1500 mm as the two-wheelchair passing width — that is the single-direction baseline corridor",
+          "Using 1500 mm as the rest/turn space size — the minimum clear dimension is 1800 mm"
+        ]
+      },
+      "explanation": "Two-wheelchair width = 1800 mm; rest/turn space minimum = 1800 mm clear dimension per BP 344.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b1b83bb52ab9e4087922ef0b86bed8e9ed8b71bb3954a3a66d8dd003066d241"
+    },
+    {
+      "question_id": "8475d9eb-8f55-4019-914b-7bfb5a90a677",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An accessible ramp on a new school building has a slope of 1:15 and a continuous run of 12 metres with no intermediate landing. Is this compliant under BP 344, and why?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compliant — the 12 m run is within the 15 m landing interval permitted for 1:15 slopes"
+        },
+        {
+          "id": "B",
+          "text": "Compliant — a 1:15 ramp has no maximum run length under BP 344 new-work provisions"
+        },
+        {
+          "id": "C",
+          "text": "Non-compliant — a 1:15 ramp may have a maximum run of 10.5 m before an intermediate landing is required"
+        },
+        {
+          "id": "D",
+          "text": "Non-compliant — the 1:15 slope itself is too steep; only 1:20 is permitted for new school construction"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "A 1:15 ramp has a maximum run of 10.5 m; a 12 m run without a landing is non-compliant.",
+        "explanation": "BP 344 Table A.1.1 specifies that a 1:15 ramp (maximum for new work) has a maximum run of 10.5 m (700 mm rise × 15 = 10,500 mm) before an intermediate landing of at least 1800 mm is required. A 12 m run on a 1:15 ramp exceeds both the run limit and the corresponding 700 mm rise limit. The 15 m landing interval applies to the gentler 1:20 slope, not 1:15.",
+        "common_misconceptions": [
+          "Applying the 15 m landing interval to a 1:15 ramp — that interval belongs to the 1:20 slope",
+          "Thinking 1:15 is too steep for schools — it is the BP 344 maximum for new work generally, including schools"
+        ]
+      },
+      "explanation": "1:15 ramp maximum run = 10.5 m; a 12 m run without a landing is non-compliant per BP 344 Table A.1.1.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:96be78945666a1b35b042a23fc9dec0476f14147d05de00cbb6bece6a269ce4a"
+    },
+    {
+      "question_id": "74087161-e1a1-4f0b-924a-31be39e7cadc",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An architect proposes a preferred accessible ramp with slope 1:20. What is the maximum interval between landings on a continuous run at this slope, and what is the minimum landing length?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Landing interval every 12.0 m of ramp run; minimum landing length 1500 mm"
+        },
+        {
+          "id": "B",
+          "text": "Landing interval every 10.5 m of ramp run; minimum landing length 1800 mm"
+        },
+        {
+          "id": "C",
+          "text": "Landing interval every 15.0 m of ramp run; minimum landing length 1800 mm"
+        },
+        {
+          "id": "D",
+          "text": "Landing interval every 15.0 m of ramp run; minimum landing length 1200 mm"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "1:20 slope: landing every 15 m; landing minimum length 1800 mm.",
+        "explanation": "BP 344 Table A.1.1 assigns the 15.0 m interval to the gentler 1:20 preferred slope. The steeper 1:15 maximum slope has the shorter 10.5 m interval. In both cases the landing minimum length is 1800 mm. The 15 m vs 10.5 m distinction is the most commonly tested ramp comparison in the ALE.",
+        "common_misconceptions": [
+          "Applying the 10.5 m landing interval to the 1:20 slope — that belongs to the 1:15 slope",
+          "Using 1200 mm or 1500 mm as the landing length — the standard is 1800 mm for all ramp landings"
+        ]
+      },
+      "explanation": "1:20 preferred ramp: landings every 15.0 m maximum; each landing minimum 1800 mm per BP 344 Table A.1.1.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d9fa75a2aca09c5ca530b391b7fb1cdb6e687b11492e80c25d94a4d71dc5bc96"
+    },
+    {
+      "question_id": "4be787cf-f8ce-4b78-9110-09993135782e",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "'s mnemonic stack (4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2), what does each value represent in sequence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Corridor width, turnabout side, stall width, access aisle, vertical clearance, ramp width — all in metres"
+        },
+        {
+          "id": "B",
+          "text": "Ramp width, corridor width, stall width, aisle width, landing length, clearance — all in metres"
+        },
+        {
+          "id": "C",
+          "text": "Stall length, stall width, aisle width, corridor width, landing length, ramp width — all in metres"
+        },
+        {
+          "id": "D",
+          "text": "Stall width, access aisle, vertical clearance, corridor width, turnabout side, ramp width — all in metres"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Mnemonic 4–1.8–2.3–1.5–1.8–1.2 = stall width, access aisle, vertical clearance, corridor, turnabout, ramp.",
+        "explanation": "The article presents this six-number mnemonic as the complete wheelchair circulation reference: 4.0 m = parking stall width; 1.8 m = access aisle; 2.3 m = vertical clearance; 1.5 m = accessible corridor clear width; 1.8 m = turnabout/rest space side; 1.2 m = accessible ramp clear width. Understanding what each number represents is essential for applying them correctly in exam scenarios.",
+        "common_misconceptions": [
+          "Confusing 1.8 m (access aisle) with 1.8 m (turnabout side) — both appear but represent different elements",
+          "Misassigning 1.5 m to ramp width when it is the corridor width"
+        ]
+      },
+      "explanation": "Mnemonic: 4.0 stall, 1.8 aisle, 2.3 clearance, 1.5 corridor, 1.8 turnabout, 1.2 ramp — all in metres.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:632d66fcd87d1ebce0bcd20b07f1742d8994b08e2b43dd1e32698d559793efa9"
+    },
+    {
+      "question_id": "e572cd61-756d-4776-b217-67cc4f3bdba8",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Appendix C, what are the width and length dimensions of an accessible parking stall, and where must it be located relative to the building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4000 mm wide × 5000 mm long; located nearest to the accessible entrance on the shortest direct route"
+        },
+        {
+          "id": "B",
+          "text": "3600 mm wide × 5000 mm long; located anywhere within 50 m of the accessible entrance"
+        },
+        {
+          "id": "C",
+          "text": "4000 mm wide × 6000 mm long; located nearest to the accessible entrance on the shortest direct route"
+        },
+        {
+          "id": "D",
+          "text": "3000 mm wide × 5000 mm long; located nearest to the accessible entrance on the shortest direct route"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible stall: 4000 mm wide × 5000 mm long; nearest to the accessible entrance.",
+        "explanation": "BP 344 2024 IRR Appendix C specifies a 4000 mm (4.0 m) stall width and 5000 mm (5.0 m) stall length for the vehicle space alone, excluding the access aisle. The stall must be on the shortest route to the accessible entrance with no level changes that lack a ramp. A wider 4000 mm stall accommodates side-transfer from a wheelchair without requiring the user to enter traffic lanes.",
+        "common_misconceptions": [
+          "Using 3600 mm width — this is insufficient for side-transfer with ramp deployment",
+          "Assuming any nearby location is acceptable — the requirement is specifically the shortest direct route"
+        ]
+      },
+      "explanation": "Accessible stall: 4000 × 5000 mm, nearest to accessible entrance per BP 344 Appendix C.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fd0c98cbf63fa2a410b8f1c255ca72501c74fdeaf824580a4c361ab1d723e5a4"
+    },
+    {
+      "question_id": "0861fa62-232d-463f-befe-e7c721d4f972",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A ramp landing at the top of an accessible ramp must provide a level maneuvering area in the direction of travel. What is the minimum length of this landing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1200 mm in the direction of travel, matching the ramp clear width requirement"
+        },
+        {
+          "id": "B",
+          "text": "1800 mm in the direction of travel, providing level maneuvering space for a wheelchair"
+        },
+        {
+          "id": "C",
+          "text": "1500 mm in the direction of travel, matching the accessible corridor width standard"
+        },
+        {
+          "id": "D",
+          "text": "1000 mm in the direction of travel, consistent with door approach clearance requirements"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Ramp landings at top and bottom must be at least 1800 mm in the direction of travel.",
+        "explanation": "The 1800 mm landing length at both the upper and lower ends of a ramp provides the necessary depth for a wheelchair to complete its approach and fully exit the ramp before reaching a door or corridor. The same 1800 mm applies to intermediate landings on long ramps. This is consistent with the turnabout space minimum dimension of 1800 mm.",
+        "common_misconceptions": [
+          "Using 1200 mm as the landing length — that is the ramp clear width, not landing length",
+          "Using 1500 mm as the landing length — that is the accessible corridor width"
+        ]
+      },
+      "explanation": "Ramp landing (top, bottom, intermediate): minimum 1800 mm in the direction of travel per BP 344 Appendix A.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c51fc8d87f8ec808700f0049445e5c624b0bca8b9e1f97a9702651a0ad6e42c"
+    },
+    {
+      "question_id": "c6b1ec05-dbb3-4582-a943-e8901fbef11f",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the required width of the access aisle beside an accessible parking stall, and what is its purpose?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2000 mm wide; to allow a wheelchair user to perform a full turning circle beside the car"
+        },
+        {
+          "id": "B",
+          "text": "1200 mm wide; to allow a pedestrian to walk beside the vehicle door when open"
+        },
+        {
+          "id": "C",
+          "text": "1500 mm wide; to match the accessible corridor width required inside the building"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm wide; to allow ramp deployment from the vehicle and side transfer into a wheelchair"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Access aisle = 1800 mm wide for ramp deployment and side transfer.",
+        "explanation": "The 1800 mm access aisle is wider than a standard pedestrian aisle because it must accommodate the deployment of a vehicle-mounted wheelchair ramp and the lateral transfer movement from the car seat to the wheelchair. Two stalls can share one aisle (4.0 + 1.8 + 4.0 = 9.8 m total). The 1200 mm figure is the accessible ramp clear width — a different element.",
+        "common_misconceptions": [
+          "Using 1200 mm — this is the accessible ramp width, not the parking aisle width",
+          "Using 1500 mm — this is the accessible corridor interior width, not the parking aisle"
+        ]
+      },
+      "explanation": "Access aisle = 1800 mm for ramp deployment and side transfer per BP 344 Appendix C.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:32f89efa1f8af1eb7accebbd054fd999b381cb4465e4f0719718537a0f282e70"
+    },
+    {
+      "question_id": "403be275-614c-40a9-8b3d-af7cd7d0f044",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A design review compares the footprint of two accessible parking configurations. Configuration A has two stalls sharing one aisle; Configuration B has two stalls each with their own aisle. What is the total width of Configuration A?",
+      "options": [
+        {
+          "id": "A",
+          "text": "9800 mm total — two 4000 mm stalls sharing one 1800 mm access aisle (4.0 + 1.8 + 4.0)"
+        },
+        {
+          "id": "B",
+          "text": "11600 mm total — two 4000 mm stalls each with a 1800 mm aisle (4.0 + 1.8 + 4.0 + 1.8)"
+        },
+        {
+          "id": "C",
+          "text": "8000 mm total — two 4000 mm stalls with no shared aisle requirement"
+        },
+        {
+          "id": "D",
+          "text": "9600 mm total — two 4800 mm stalls sharing one 1200 mm aisle (4.8 + 1.2 + 4.8 is incorrect)"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Two stalls sharing one aisle: 4000 + 1800 + 4000 = 9800 mm total width.",
+        "explanation": "The article explicitly states this calculation: one stall + aisle = 4.0 + 1.8 = 5.8 m; two stalls sharing one aisle = 4.0 + 1.8 + 4.0 = 9.8 m. The shared aisle allows vehicles on both sides to deploy ramps into the same aisle space. Configuration B (each stall with its own aisle) would be 4.0 + 1.8 + 4.0 + 1.8 = 11.6 m — wider and less efficient.",
+        "common_misconceptions": [
+          "Adding an aisle to each stall (11.6 m) when the shared-aisle configuration only requires one 1800 mm aisle between them",
+          "Using 1200 mm aisle width instead of 1800 mm"
+        ]
+      },
+      "explanation": "Two stalls sharing one aisle: 4000 + 1800 + 4000 = 9800 mm total per BP 344 Appendix C calculation.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.37566+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:afc0d6c76a4a2876bd1c8d4d9d4ac6e1f213c15bcc4df0f41616ba5532adbb5f"
+    },
+    {
+      "question_id": "ef8fd92e-1ec4-468c-8a1e-c59fcc261801",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An architect proposes a preferred accessible ramp with slope 1:20. What is the maximum interval between landings on a continuous run at this slope, and what is the minimum landing length?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Landing interval every 12.0 m of ramp run; minimum landing length 1500 mm"
+        },
+        {
+          "id": "B",
+          "text": "Landing interval every 10.5 m of ramp run; minimum landing length 1800 mm"
+        },
+        {
+          "id": "C",
+          "text": "Landing interval every 15.0 m of ramp run; minimum landing length 1800 mm"
+        },
+        {
+          "id": "D",
+          "text": "Landing interval every 15.0 m of ramp run; minimum landing length 1200 mm"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "1:20 slope: landing every 15 m; landing minimum length 1800 mm.",
+        "explanation": "BP 344 Table A.1.1 assigns the 15.0 m interval to the gentler 1:20 preferred slope. The steeper 1:15 maximum slope has the shorter 10.5 m interval. In both cases the landing minimum length is 1800 mm. The 15 m vs 10.5 m distinction is the most commonly tested ramp comparison in the ALE.",
+        "common_misconceptions": [
+          "Applying the 10.5 m landing interval to the 1:20 slope — that belongs to the 1:15 slope",
+          "Using 1200 mm or 1500 mm as the landing length — the standard is 1800 mm for all ramp landings"
+        ]
+      },
+      "explanation": "1:20 preferred ramp: landings every 15.0 m maximum; each landing minimum 1800 mm per BP 344 Table A.1.1.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:52e83920930ca143347ef7823a82f9976dc3dfcc783399d5ebbbfe70128c1fb1"
+    },
+    {
+      "question_id": "89b86fef-6a87-4356-9c87-a77bc063fc81",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A multi-level hospital car park is being designed. What minimum vertical clearance must be maintained over accessible parking bays and their approach routes?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2000 mm minimum vertical clearance, matching the accessible corridor headroom"
+        },
+        {
+          "id": "B",
+          "text": "2300 mm minimum vertical clearance to accommodate raised-roof accessible vans"
+        },
+        {
+          "id": "C",
+          "text": "2500 mm minimum vertical clearance for all parking levels, not just accessible bays"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm minimum vertical clearance, equal to the access aisle width dimension"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Vertical clearance over accessible bays must be 2300 mm minimum for raised-roof vans.",
+        "explanation": "Accessible vans often have raised roofs or roof-mounted equipment that standard 2000 mm clearances cannot accommodate. The 2300 mm minimum clearance applies to the accessible bay and its access route. This is part of the article's mnemonic: 4.0 m stall – 1.8 m aisle – 2.3 m clearance.",
+        "common_misconceptions": [
+          "Using 2000 mm clearance — that is the accessible corridor headroom, not parking vertical clearance",
+          "Applying the 2300 mm only to the bay itself and not to the access route approaching it"
+        ]
+      },
+      "explanation": "Accessible parking vertical clearance: 2300 mm minimum for raised-roof accessible vans per BP 344.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a7ce9211275b795a2d585baad059dfd8ec23206ea332da077cc1e8c5aa9847e3"
+    },
+    {
+      "question_id": "63125245-216e-4977-be5d-b3d5d6ed37d0",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An accessible route corridor inside a building must accommodate two-way wheelchair and pedestrian traffic. What is the minimum clear width required, and what additional element must be provided at dead ends?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1800 mm minimum clear width; no additional turnabout required if the corridor is wide enough"
+        },
+        {
+          "id": "B",
+          "text": "1200 mm minimum clear width; a 1500 × 1500 mm turnabout space within 5000 mm of the dead end"
+        },
+        {
+          "id": "C",
+          "text": "1500 mm minimum clear width; a 1800 × 1800 mm turnabout space within 3500 mm of the dead end"
+        },
+        {
+          "id": "D",
+          "text": "1500 mm minimum clear width; a 1500 × 1500 mm turnabout space anywhere along the corridor"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible corridor: 1500 mm wide; 1800 × 1800 mm turnabout within 3500 mm of dead end.",
+        "explanation": "The 1500 mm corridor width supports two-way wheelchair and pedestrian movement. At dead ends, a 1800 × 1800 mm turnabout space must be provided within 3500 mm of the end so a wheelchair user does not have to reverse the full corridor length. The 3500 mm proximity requirement is explicit in the BP 344 Appendix B text. A 1500 × 1500 mm space is insufficient for a full 180° wheelchair turn.",
+        "common_misconceptions": [
+          "Using 1200 mm as the corridor width — 1200 mm is the accessible ramp width",
+          "Placing the turnabout anywhere along the corridor rather than within 3500 mm of the dead end"
+        ]
+      },
+      "explanation": "Accessible corridor: 1500 mm wide; 1800 × 1800 mm turnabout within 3500 mm of dead end per BP 344.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cfe51f6a782363f4644cead61ef952f3e24d35c0e906b2b4c51720c8e15d6b2a"
+    },
+    {
+      "question_id": "75816d26-6469-45c7-81d2-ae4d53021780",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "'s mnemonic stack (4 – 1.8 – 2.3 – 1.5 – 1.8 – 1.2), what does each value represent in sequence?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Corridor width, turnabout side, stall width, access aisle, vertical clearance, ramp width — all in metres"
+        },
+        {
+          "id": "B",
+          "text": "Ramp width, corridor width, stall width, aisle width, landing length, clearance — all in metres"
+        },
+        {
+          "id": "C",
+          "text": "Stall length, stall width, aisle width, corridor width, landing length, ramp width — all in metres"
+        },
+        {
+          "id": "D",
+          "text": "Stall width, access aisle, vertical clearance, corridor width, turnabout side, ramp width — all in metres"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Mnemonic 4–1.8–2.3–1.5–1.8–1.2 = stall width, access aisle, vertical clearance, corridor, turnabout, ramp.",
+        "explanation": "The article presents this six-number mnemonic as the complete wheelchair circulation reference: 4.0 m = parking stall width; 1.8 m = access aisle; 2.3 m = vertical clearance; 1.5 m = accessible corridor clear width; 1.8 m = turnabout/rest space side; 1.2 m = accessible ramp clear width. Understanding what each number represents is essential for applying them correctly in exam scenarios.",
+        "common_misconceptions": [
+          "Confusing 1.8 m (access aisle) with 1.8 m (turnabout side) — both appear but represent different elements",
+          "Misassigning 1.5 m to ramp width when it is the corridor width"
+        ]
+      },
+      "explanation": "Mnemonic: 4.0 stall, 1.8 aisle, 2.3 clearance, 1.5 corridor, 1.8 turnabout, 1.2 ramp — all in metres.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f4fbd4dba5baeeefb965e8c5ec4ee81d9e73973845aae468cc01d9318bfc7a79"
+    },
+    {
+      "question_id": "ed9caa2f-5204-428c-8e1e-ea4c85f1dbf9",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "On a busy accessible pathway where two wheelchairs must pass each other, what width is required at those passing points, and what is the minimum dimension of a rest/turn space on a lengthy route?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1800 mm wide where two wheelchairs must pass; rest/turn space minimum 1800 mm clear dimension"
+        },
+        {
+          "id": "B",
+          "text": "1500 mm wide where two wheelchairs must pass; rest/turn space minimum 1500 mm clear dimension"
+        },
+        {
+          "id": "C",
+          "text": "2000 mm wide where two wheelchairs must pass; rest/turn space minimum 1800 mm clear dimension"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm wide where two wheelchairs must pass; rest/turn space minimum 1500 mm clear dimension"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Two-wheelchair passing width = 1800 mm; rest/turn space minimum clear dimension = 1800 mm.",
+        "explanation": "The article's passing space is described as 1800 mm (two-wheelchair width) and a 1800 × 2000 mm rectangle for a full passing space. The rest/turn space on lengthy routes also has a minimum clear dimension of 1800 mm. Both the passing width and the rest space share the 1800 mm figure. The 1500 mm corridor is the baseline single-direction accessible route width.",
+        "common_misconceptions": [
+          "Using 1500 mm as the two-wheelchair passing width — that is the single-direction baseline corridor",
+          "Using 1500 mm as the rest/turn space size — the minimum clear dimension is 1800 mm"
+        ]
+      },
+      "explanation": "Two-wheelchair width = 1800 mm; rest/turn space minimum = 1800 mm clear dimension per BP 344.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4daaa597c2b5892fa2a438bf1899cfccf347c1ce8c224e6226d5b51e2bc6dd63"
+    },
+    {
+      "question_id": "ccd59bbc-c129-4084-8f91-16b445172dbc",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 2024 IRR Appendix C, what are the width and length dimensions of an accessible parking stall, and where must it be located relative to the building?",
+      "options": [
+        {
+          "id": "A",
+          "text": "4000 mm wide × 5000 mm long; located nearest to the accessible entrance on the shortest direct route"
+        },
+        {
+          "id": "B",
+          "text": "3600 mm wide × 5000 mm long; located anywhere within 50 m of the accessible entrance"
+        },
+        {
+          "id": "C",
+          "text": "4000 mm wide × 6000 mm long; located nearest to the accessible entrance on the shortest direct route"
+        },
+        {
+          "id": "D",
+          "text": "3000 mm wide × 5000 mm long; located nearest to the accessible entrance on the shortest direct route"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Accessible stall: 4000 mm wide × 5000 mm long; nearest to the accessible entrance.",
+        "explanation": "BP 344 2024 IRR Appendix C specifies a 4000 mm (4.0 m) stall width and 5000 mm (5.0 m) stall length for the vehicle space alone, excluding the access aisle. The stall must be on the shortest route to the accessible entrance with no level changes that lack a ramp. A wider 4000 mm stall accommodates side-transfer from a wheelchair without requiring the user to enter traffic lanes.",
+        "common_misconceptions": [
+          "Using 3600 mm width — this is insufficient for side-transfer with ramp deployment",
+          "Assuming any nearby location is acceptable — the requirement is specifically the shortest direct route"
+        ]
+      },
+      "explanation": "Accessible stall: 4000 × 5000 mm, nearest to accessible entrance per BP 344 Appendix C.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:044f02846cb6529e1f32f8979e9be57c9c436b79827e9f24e0160fd529a4fb94"
+    },
+    {
+      "question_id": "b7d5e742-cbc0-4546-ba88-cf4664a489b2",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the required width of the access aisle beside an accessible parking stall, and what is its purpose?",
+      "options": [
+        {
+          "id": "A",
+          "text": "2000 mm wide; to allow a wheelchair user to perform a full turning circle beside the car"
+        },
+        {
+          "id": "B",
+          "text": "1200 mm wide; to allow a pedestrian to walk beside the vehicle door when open"
+        },
+        {
+          "id": "C",
+          "text": "1500 mm wide; to match the accessible corridor width required inside the building"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm wide; to allow ramp deployment from the vehicle and side transfer into a wheelchair"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Access aisle = 1800 mm wide for ramp deployment and side transfer.",
+        "explanation": "The 1800 mm access aisle is wider than a standard pedestrian aisle because it must accommodate the deployment of a vehicle-mounted wheelchair ramp and the lateral transfer movement from the car seat to the wheelchair. Two stalls can share one aisle (4.0 + 1.8 + 4.0 = 9.8 m total). The 1200 mm figure is the accessible ramp clear width — a different element.",
+        "common_misconceptions": [
+          "Using 1200 mm — this is the accessible ramp width, not the parking aisle width",
+          "Using 1500 mm — this is the accessible corridor interior width, not the parking aisle"
+        ]
+      },
+      "explanation": "Access aisle = 1800 mm for ramp deployment and side transfer per BP 344 Appendix C.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.45,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a5b88877f53cfd03b2009df4bc0cb02e095541703f3f611f8711f6ee9db514d8"
+    },
+    {
+      "question_id": "72796d5e-8ebb-43d0-ac4b-b255fca47b18",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An accessible ramp on a new school building has a slope of 1:15 and a continuous run of 12 metres with no intermediate landing. Is this compliant under BP 344, and why?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compliant — the 12 m run is within the 15 m landing interval permitted for 1:15 slopes"
+        },
+        {
+          "id": "B",
+          "text": "Compliant — a 1:15 ramp has no maximum run length under BP 344 new-work provisions"
+        },
+        {
+          "id": "C",
+          "text": "Non-compliant — a 1:15 ramp may have a maximum run of 10.5 m before an intermediate landing is required"
+        },
+        {
+          "id": "D",
+          "text": "Non-compliant — the 1:15 slope itself is too steep; only 1:20 is permitted for new school construction"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "A 1:15 ramp has a maximum run of 10.5 m; a 12 m run without a landing is non-compliant.",
+        "explanation": "BP 344 Table A.1.1 specifies that a 1:15 ramp (maximum for new work) has a maximum run of 10.5 m (700 mm rise × 15 = 10,500 mm) before an intermediate landing of at least 1800 mm is required. A 12 m run on a 1:15 ramp exceeds both the run limit and the corresponding 700 mm rise limit. The 15 m landing interval applies to the gentler 1:20 slope, not 1:15.",
+        "common_misconceptions": [
+          "Applying the 15 m landing interval to a 1:15 ramp — that interval belongs to the 1:20 slope",
+          "Thinking 1:15 is too steep for schools — it is the BP 344 maximum for new work generally, including schools"
+        ]
+      },
+      "explanation": "1:15 ramp maximum run = 10.5 m; a 12 m run without a landing is non-compliant per BP 344 Table A.1.1.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fe9819a588f2fb5ea62bee7834fbcd927c278dbddb51fda1f4a5c3205aa36135"
+    },
+    {
+      "question_id": "6ac53d2b-fd5f-4d33-b7bb-7c50de900d68",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A ramp landing at the top of an accessible ramp must provide a level maneuvering area in the direction of travel. What is the minimum length of this landing?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1200 mm in the direction of travel, matching the ramp clear width requirement"
+        },
+        {
+          "id": "B",
+          "text": "1800 mm in the direction of travel, providing level maneuvering space for a wheelchair"
+        },
+        {
+          "id": "C",
+          "text": "1500 mm in the direction of travel, matching the accessible corridor width standard"
+        },
+        {
+          "id": "D",
+          "text": "1000 mm in the direction of travel, consistent with door approach clearance requirements"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Ramp landings at top and bottom must be at least 1800 mm in the direction of travel.",
+        "explanation": "The 1800 mm landing length at both the upper and lower ends of a ramp provides the necessary depth for a wheelchair to complete its approach and fully exit the ramp before reaching a door or corridor. The same 1800 mm applies to intermediate landings on long ramps. This is consistent with the turnabout space minimum dimension of 1800 mm.",
+        "common_misconceptions": [
+          "Using 1200 mm as the landing length — that is the ramp clear width, not landing length",
+          "Using 1500 mm as the landing length — that is the accessible corridor width"
+        ]
+      },
+      "explanation": "Ramp landing (top, bottom, intermediate): minimum 1800 mm in the direction of travel per BP 344 Appendix A.",
+      "code_citation": "BP 344 Appendix A",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7d702bb34f32c34c6a074b7a1fce19ef6e97f6718b204e4c004b1260bd15e826"
+    },
+    {
+      "question_id": "beb5fa2e-fcfe-4f61-98a5-7baf6bfa5fdd",
+      "article_id": "3e488a13-943c-4dee-8e38-95b711bef107",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A design review compares the footprint of two accessible parking configurations. Configuration A has two stalls sharing one aisle; Configuration B has two stalls each with their own aisle. What is the total width of Configuration A?",
+      "options": [
+        {
+          "id": "A",
+          "text": "9800 mm total — two 4000 mm stalls sharing one 1800 mm access aisle (4.0 + 1.8 + 4.0)"
+        },
+        {
+          "id": "B",
+          "text": "11600 mm total — two 4000 mm stalls each with a 1800 mm aisle (4.0 + 1.8 + 4.0 + 1.8)"
+        },
+        {
+          "id": "C",
+          "text": "8000 mm total — two 4000 mm stalls with no shared aisle requirement"
+        },
+        {
+          "id": "D",
+          "text": "9600 mm total — two 4800 mm stalls sharing one 1200 mm aisle (4.8 + 1.2 + 4.8 is incorrect)"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Two stalls sharing one aisle: 4000 + 1800 + 4000 = 9800 mm total width.",
+        "explanation": "The article explicitly states this calculation: one stall + aisle = 4.0 + 1.8 = 5.8 m; two stalls sharing one aisle = 4.0 + 1.8 + 4.0 = 9.8 m. The shared aisle allows vehicles on both sides to deploy ramps into the same aisle space. Configuration B (each stall with its own aisle) would be 4.0 + 1.8 + 4.0 + 1.8 = 11.6 m — wider and less efficient.",
+        "common_misconceptions": [
+          "Adding an aisle to each stall (11.6 m) when the shared-aisle configuration only requires one 1800 mm aisle between them",
+          "Using 1200 mm aisle width instead of 1800 mm"
+        ]
+      },
+      "explanation": "Two stalls sharing one aisle: 4000 + 1800 + 4000 = 9800 mm total per BP 344 Appendix C calculation.",
+      "code_citation": "BP 344 2024 IRR Appendix C",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.254507+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a63fc47bc45570c6238e7e79be897039c38158801b0fdba4df430c55fb773df3"
+    }
+  ]
+}

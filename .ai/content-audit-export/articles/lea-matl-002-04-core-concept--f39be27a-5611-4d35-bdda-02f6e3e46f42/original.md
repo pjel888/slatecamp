@@ -226,4 +226,3 @@ ity and higher absorption make it unsuitable for exposed exterior in wet or indu
 See also within Masonry and Concrete: **lea-matl-002-03-core-concept**, **lea-matl-002-05-core-concept**, **lea-matl-002-06-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

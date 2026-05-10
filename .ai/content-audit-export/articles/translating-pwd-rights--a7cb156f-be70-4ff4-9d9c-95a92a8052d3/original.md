@@ -448,4 +448,3 @@ LEA Trap: Key design translations from PWD laws: RA 7277 = accessible parking (1
 ## Cross‑References
 
 **Law Qa Deck Ra 7277 9442 10754**, **Ra 9442 Pwd Privileges And Incentives**, **Accessible Seating In Assembly Areas**, **Wheelchair Maneuvering And Parking**
-

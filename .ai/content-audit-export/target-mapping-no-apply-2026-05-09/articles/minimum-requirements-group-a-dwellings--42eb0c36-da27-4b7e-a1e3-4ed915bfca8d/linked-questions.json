@@ -1,0 +1,1592 @@
+{
+  "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:0e54d31b0aa10e068a97ca3544d658171f897b41f5034d411017bfb8902c7bce",
+  "question_count": 36,
+  "questions": [
+    {
+      "question_id": "3d04f3d1-35bf-4e4a-954a-6ea4c2968cc9",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per Sec. 809-b, if a vent shaft does not open directly to outer air at the top, what is the minimum free area requirement for the skylight or fixed louver covering?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Equal to the minimum required shaft area (1.00 sq.m.), ensuring adequate ventilation and compliance with natural light requirements."
+        },
+        {
+          "id": "B",
+          "text": "At least 50% of the shaft cross-sectional area, which is necessary to maintain airflow and prevent moisture accumulation."
+        },
+        {
+          "id": "C",
+          "text": "Not less than the maximum required cross-sectional area of the shaft"
+        },
+        {
+          "id": "D",
+          "text": "Twice the actual cross-sectional area of the shaft to ensure redundancy in ventilation and light penetration."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section 809-b requires that the net free area of the skylight or louver opening equal or exceed the maximum required cross-sectional area of the shaft — not a reduced or minimum value. The code says 'maximum required' specifically to prevent designers from covering a large shaft with a small louvered panel. A shaft requiring 1.50 sq.m. must have covering with at least 1.50 sq.m. of free area.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c9db622ff0fc3804c1f537cab8d39ebcfb153612cb445292b4ae44362db61692"
+    },
+    {
+      "question_id": "2ec69fcf-6835-4a5a-b297-cf6e02e615b4",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "At what specific shaft height does the Sec. 809-a formula (0.10 sq.m. per meter) exactly equal the absolute minimum area requirement of 1.00 sq.m.?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 meters"
+        },
+        {
+          "id": "B",
+          "text": "6 meters"
+        },
+        {
+          "id": "C",
+          "text": "10 meters"
+        },
+        {
+          "id": "D",
+          "text": "12 meters"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "At exactly 10.00 m height: 0.10 sq.m. × 10.00 m = 1.00 sq.m. — the formula result equals the absolute minimum. Below 10.00 m, the absolute minimum of 1.00 sq.m. governs (the formula would yield less). Above 10.00 m, the formula result governs. This 10-meter threshold is a key reference point for board exam calculations.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:44:24.648216+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4a1819d0284f4329a175a1d208ca8a6d8be77924200194b9f9a2948b4809b902"
+    },
+    {
+      "question_id": "c3fc6e2d-a135-4000-a4f4-00b874124498",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "According to PD 1096 Rule VII, Section 708, what is the maximum PSO for Group A Dwellings on a corner lot versus an inside lot?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corner lot: 80%; Inside lot: 90%"
+        },
+        {
+          "id": "b",
+          "text": "Corner lot: 85%; Inside lot: 80%"
+        },
+        {
+          "id": "c",
+          "text": "Corner lot: 90%; Inside lot: 80%"
+        },
+        {
+          "id": "d",
+          "text": "Corner lot: 75%; Inside lot: 70%"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The inside lot (80%) and corner lot (90%) PSO limits for Group A are the reverse of what many candidates assume. The confusion arises because in other occupancy groups, corner lots typically have HIGHER PSO allowances (e.g., R-1 corner = 55% vs. R-1 inside = 50%). But for Group A dwellings specifically, Section 708 overrides the general table with these higher residential coverage allowances.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:13.304811+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6e7c3cb7ab72a875299107fc2ac2362b6727b02e5505e3314291414ff05edb11"
+    },
+    {
+      "question_id": "22e9cc59-a3fa-4dc8-8d95-62cd6daa5f96",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A residential apartment (Group D) is being converted to a nightclub (Group A-2, assembly for entertainment). What is the most likely outcome under Sec. 702?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The change is automatically approved as a change within the same general category, provided the existing structure meets basic safety standards"
+        },
+        {
+          "id": "b",
+          "text": "Full code compliance for Group A-2 assembly occupancy is required before the Building Official may approve the change"
+        },
+        {
+          "id": "c",
+          "text": "The Building Official must approve the change as less hazardous regardless of the occupancy classification, assuming no significant structural alterations are needed"
+        },
+        {
+          "id": "d",
+          "text": "No application is needed because both are Group A, which simplifies the approval process significantly"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "This tests the hazard hierarchy. Assembly occupancies (A) are among the highest-risk groups — large numbers of occupants unfamiliar with the space, alcohol-affected patrons, complex egress requirements. Residential (D) is lower risk. The nightclub conversion requires full compliance with Group A-2 requirements: wider exits, higher fire ratings, sprinkler systems, etc.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.323908+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b0e13c7766cb0320140b4d725e21ff65912e769a1beccfc9714a6fa8ba5280d9"
+    },
+    {
+      "question_id": "8d8d21b1-8b5b-4760-8b98-7c3a7b446ed9",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A masonry chimney in a two-storey Group A residential building is being corbeled at the second storey. The chimney wall is 250 mm thick. Which of the following corbeling scenarios is permitted under the 2004 Revised IRR, Rule XII, Section 1211?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A total corbel of 200 mm using 25 mm projections per brick course, since the wall is at the second storey, which is a common practice in residential buildings."
+        },
+        {
+          "id": "b",
+          "text": "A total corbel of 150 mm using 25 mm projections per brick course, as the wall meets the 300 mm threshold, which is a standard requirement for structural stability."
+        },
+        {
+          "id": "c",
+          "text": "A total corbel of 150 mm using 25 mm projections per brick course, permitted under the two-storey Group A exception."
+        },
+        {
+          "id": "d",
+          "text": "No corbeling is permitted because the wall is less than 300 mm thick, which is a critical dimension for ensuring safety and compliance."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The two-storey Group A exception is the critical distinction here. Candidates frequently fail to recognize this exception and incorrectly apply the general 300 mm minimum wall rule.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:15.61155+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0116e4ed10eeeb0d6819622a8c70b1242c29cbe8d7ce372cbbb7c050082058a0"
+    },
+    {
+      "question_id": "05a03094-bfc1-4a01-af40-ed2d38c56ef2",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XIII, Section 1302, boiler rooms must comply with which of the following minimum requirements?",
+      "options": [
+        {
+          "id": "em-010-a",
+          "text": "1.00 m clearance from walls; 1 exit, which may be used in low-occupancy scenarios only"
+        },
+        {
+          "id": "em-010-b",
+          "text": "1.00 m clearance from walls; 2 exits, ensuring safe egress in case of emergency"
+        },
+        {
+          "id": "em-010-c",
+          "text": "2.00 m clearance from walls; 2 exits, providing additional safety and compliance with fire codes"
+        },
+        {
+          "id": "em-010-d",
+          "text": "1.00 m clearance from walls; 2 exits; minimum 3.00 m from exterior wall in non-fire-resistive buildings"
+        }
+      ],
+      "correct_option_id": "em-010-d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Boilers represent both fire and explosion hazards. The 1.00 m wall clearance provides maintenance access and prevents heat buildup against walls. The 2-exit requirement ensures that a boiler room fire does not trap occupants. The 3.00 m exterior wall clearance in non-fire-resistive buildings prevents an external fire from directly threatening the boiler.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.162931+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6a1e8c73ed7a0d51b9256af7fb39e11e8e2c539f9ec7ef5426bcba5943562881"
+    },
+    {
+      "question_id": "66b2e342-bc30-497a-a124-62fe020df3b3",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the minimum trench depth that triggers the requirement for exit provisions, and what is the maximum spacing between exits under PD 1096 Rule XII, Sec. 1202.2.n?",
+      "options": [
+        {
+          "id": "a",
+          "text": "≥ 1.00 m deep; exits every 10.00 m"
+        },
+        {
+          "id": "b",
+          "text": "≥ 1.50 m deep; exits every 7.50 m"
+        },
+        {
+          "id": "c",
+          "text": "≥ 2.00 m deep; exits every 5.00 m"
+        },
+        {
+          "id": "d",
+          "text": "≥ 1.50 m deep; exits every 10.00 m"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 1.50 m threshold and 7.50 m spacing are frequently tested together. For exam purposes, commit these two numbers to memory: 'trenches 1.5 meters deep need exits every 7.5 meters.'",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:16.422029+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd97db179db3687337ae56c564f3fb916018827508e9b60ebbc18b252f80d79e"
+    },
+    {
+      "question_id": "663ffde0-a298-476c-9449-0fd20ef1fbce",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Which of the following correctly identifies the minimum fire resistivity requirements for a Fire Restrictive Zone under PD 1096 Rule V, Sec. 507(b)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exterior walls: at least 2-hour fire resistivity; Building as a whole: at least 1-hour fire-resistivity throughout"
+        },
+        {
+          "id": "b",
+          "text": "Exterior walls: at least 1-hour fire resistivity; Building as a whole: at least 2-hour fire-resistivity throughout"
+        },
+        {
+          "id": "c",
+          "text": "Exterior walls: at least 4-hour fire resistivity; Building as a whole: at least 3-hour fire-resistivity throughout"
+        },
+        {
+          "id": "d",
+          "text": "No fire resistivity required for either exterior walls or interior construction"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2-hour exterior / 1-hour interior standard reflects the zone's primary threat: fire spreading between adjacent properties. The exterior wall is the last line of defense against conflagration.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.213019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a0e9be57bf99d7d40e8f47b2e83f22d591312bad665dce3db61c2a3526e9ce9c"
+    },
+    {
+      "question_id": "82b49a21-bb6f-4f62-8895-3651c4854c24",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under Section 1804 (2004 IRR), what is the minimum edge finish required for all exposed glass edges in jalousie windows, and why is this requirement significant in Philippine practice?",
+      "options": [
+        {
+          "id": "gg-012-a",
+          "text": "Edges must be sealed with silicone sealant; significant because it prevents water infiltration and ensures long-term durability of the window assembly"
+        },
+        {
+          "id": "gg-012-b",
+          "text": "Edges must be smooth (ground or polished); significant because it prevents laceration of hands during operation"
+        },
+        {
+          "id": "gg-012-c",
+          "text": "Edges must be chamfered at 45 degrees; significant because it improves ventilation performance and enhances the aesthetic appeal of the window"
+        },
+        {
+          "id": "gg-012-d",
+          "text": "No specific edge finish is required by the code, allowing for flexibility in design and material choice"
+        }
+      ],
+      "correct_option_id": "gg-012-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The smooth edge requirement is frequently overlooked in practice. Raw-cut glass edges — even from factory cutting — are not acceptable if the cut edge is exposed to occupant contact. Ground or polished edges require secondary processing at the fabrication stage.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:17.362249+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d41f8efc539ab98c993cc2254f7861bace43787f16562797b308ef96f5b927aa"
+    },
+    {
+      "question_id": "3fbc7504-56f0-47c9-8b3c-e5a24f9e65fc",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A hospital accommodates 200 non-ambulatory patients. Under PD 1096, what is the correct Occupancy Group and Division?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group D, Div. 1, which is typically assigned to educational facilities"
+        },
+        {
+          "id": "b",
+          "text": "Group D, Div. 2"
+        },
+        {
+          "id": "c",
+          "text": "Group D, Div. 3, which is generally used for industrial occupancies"
+        },
+        {
+          "id": "d",
+          "text": "Group B, which is often associated with business occupancies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Group D Div. 1 = mental hospitals, jails, prisons, reformatories (liberty restrained). Div. 2 = non-ambulatory patients in hospitals (under care, limited mobility). Div. 3 = nursing homes for ambulatory patients.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:83210a27f14e741e25a51aff3d51b5c0b1b3b2ac85697d081ee0b73339d7f6b9"
+    },
+    {
+      "question_id": "a70cbae0-1017-40d1-ba7e-8c6c53e0f61f",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "What is the CRITICAL distinguishing number of persons that separates Group A (Residential Dwellings) from Group B (Residentials, Hotels, and Apartments)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 persons"
+        },
+        {
+          "id": "b",
+          "text": "10 persons"
+        },
+        {
+          "id": "c",
+          "text": "20 persons"
+        },
+        {
+          "id": "d",
+          "text": "50 persons"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "A convent with 12 nuns → Group B. A dorm with 9 students → Group A. The threshold of 'more than 10 persons' determines the classification and, consequently, all dependent egress, fire-resistive, and area requirements.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.093315+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ef35f8b6e95a3b11312b939b7b69a29871e45cb94d3456ad31316aac8841055a"
+    },
+    {
+      "question_id": "fd8d4c3a-1e4d-4295-a409-a3762bc9ec68",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096 Rule VIII, Section 806, what is the minimum least dimension for a habitable room, and why is this requirement as important as the floor area minimum?",
+      "options": [
+        {
+          "id": "lv-013-a",
+          "text": "1.50 m; important because it ensures adequate walking space and allows for basic furniture arrangement"
+        },
+        {
+          "id": "lv-013-b",
+          "text": "2.00 m; important because it prevents long, narrow 'corridor rooms' that technically meet area minimums but are functionally useless for habitation"
+        },
+        {
+          "id": "lv-013-c",
+          "text": "2.50 m; important because it ensures furniture placement is possible and provides flexibility in room layout"
+        },
+        {
+          "id": "lv-013-d",
+          "text": "1.20 m; important because it matches the minimum doorway width, ensuring easy access and egress"
+        }
+      ],
+      "correct_option_id": "lv-013-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2.00 m least dimension for habitable rooms equals the minimum corridor width for wheelchair access (Rule VIII accessible design principles) and the minimum court horizontal dimension (Sec. 804). The convergence of the 2.00 m figure across multiple sections helps with recall.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.238687+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c513e278a4b5737999efd5fd9981ab70a34d86e41cb683f8aa290b232b789b64"
+    },
+    {
+      "question_id": "e85fe73e-2c43-4e3b-9a73-fb550140f30e",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "How many standardized lot types does the 2004 Revised IRR identify, and which lot type has the lowest TOSL requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5 lot types; Through Lots have the lowest TOSL, typically requiring less than 10% of the total lot area"
+        },
+        {
+          "id": "b",
+          "text": "7 lot types; Corner-Through Lot and Corner lot abutting 3+ streets have the lowest TOSL (approximately 5% for all groups)"
+        },
+        {
+          "id": "c",
+          "text": "6 lot types; Corner Lot has the lowest TOSL, often requiring less than 15% of the total lot area"
+        },
+        {
+          "id": "d",
+          "text": "8 lot types; Interior Lot has the lowest TOSL, generally requiring less than 20% of the total lot area"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 7 lot types range from Interior Lots (50%/20% TOSL for Groups A–D,J/E–I) to Corner-Through Lots (~5% for all groups). The more public frontages a lot has, the lower its required internal open space.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.389139+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:17d09847c0b43ce68450d7a05b20ea779dbe0e5e05d6cde8e8a56f4c72392a22"
+    },
+    {
+      "question_id": "98e59a2d-897a-42d9-b1ad-20e2aeec1e76",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The Building Official of a municipality issues a Stop Work Order for a construction site where the contractor has erected a 1.50 m-high plywood fence instead of the required fence. Under PD 1096 Rule XI, what is the minimum required fence height, and does the BO have discretion to waive this requirement?",
+      "options": [
+        {
+          "id": "pp-013-a",
+          "text": "2.40 m; the BO may waive the fence requirement for short-duration work on side streets"
+        },
+        {
+          "id": "pp-013-b",
+          "text": "2.40 m; the BO cannot waive the fence requirement — the minimum height is a fixed code requirement"
+        },
+        {
+          "id": "pp-013-c",
+          "text": "1.80 m; the BO may authorize a reduced fence height for residential projects"
+        },
+        {
+          "id": "pp-013-d",
+          "text": "2.00 m; the BO may authorize a reduced fence height if the adjacent pedestrian traffic is light"
+        }
+      ],
+      "correct_option_id": "pp-013-b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2.40 m fence height is one of the few prescriptive minimums in Rule XI that carries no exception mechanism. The BO's discretion is limited to authorizing the use of public property and configuring protection — not reducing minimum dimensions.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:18.540429+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:751c328d6b0620393b39b3899d53391692372800af3828bac53f341276cf9717"
+    },
+    {
+      "question_id": "00023dd0-c56b-4979-b54d-4eaf49d9671a",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule XII, Section 1213.7, stage exits must comply with which of the following minimum requirements?",
+      "options": [
+        {
+          "id": "sp-012-a",
+          "text": "At least 1 exit of ≥ 900 mm wide from each side of the stage, leading directly to a street-accessible passageway"
+        },
+        {
+          "id": "sp-012-b",
+          "text": "At least 2 exits of ≥ 750 mm wide from each side of the stage, leading to the auditorium seating area or an adjacent enclosed lobby"
+        },
+        {
+          "id": "sp-012-c",
+          "text": "At least 1 exit of ≥ 750 mm wide from each side of the stage, accessible via the gridiron or a protected service corridor above"
+        },
+        {
+          "id": "sp-012-d",
+          "text": "At least 2 exits of ≥ 900 mm wide from each side of the stage, connecting to the orchestra pit through a fire-rated passageway"
+        }
+      ],
+      "correct_option_id": "sp-012-a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Dressing rooms also require 2 means of egress, each not less than 750 mm wide, per Section 1213.7. Fly gallery stairs must be not less than 750 mm wide. The stage egress system must be independent of the audience egress system — performers must be able to exit even if the auditorium is compromised during a fire.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:52:19.019496+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:381176cd121d68889ecd0bb35c5d5d3bdc936d0a28581bef212c61c4058865c2"
+    },
+    {
+      "question_id": "7395181d-4df6-4392-bdf4-1c6662e074a5",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per the mnemonic 'PASTED' for Rule I, what do the letters stand for?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Policy, Application, Scope, Title, Exceptions, Definitions"
+        },
+        {
+          "id": "B",
+          "text": "Policy, Application, Site, Title, Exceptions, Definitions"
+        },
+        {
+          "id": "C",
+          "text": "Permits, Architecture, Structural, Technology, Engineering, Design"
+        },
+        {
+          "id": "D",
+          "text": "Policy, Amendments, Standards, Title, Enforcement, Definitions"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "PASTED = P: Policy (minimum standards, Sec. 102); A: Application (all buildings, 7 disciplines, Sec. 103); S: Site (sanitary/hygienic/safe, Sec. 105); T: Title (IRR of PD 1096, Sec. 101); E: Exceptions (indigenous dwellings, BP 220, Sec. 103); D: Definitions (vocabulary of the entire Code, Sec. 106 applies to ALL rules).",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 2,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:53:11.788686+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:360c14a428a1e9ea61a3c1703dbee656f7ba8c47267866f15b8608140920b139"
+    },
+    {
+      "question_id": "5e21dc7c-4adc-423f-94e6-9d3864c7a564",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, Rule VII, Sec. 708(a), a Group A dwelling must be at least 2 meters from the property line. An architect proposes a corner lot development of 8 m x 12 m (96 sq.m.) with maximum lot coverage. What is the actual achievable building footprint considering BOTH the 90% coverage limit and the 2-meter setback requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "86 sq.m. — 90% of 96 sq.m., applying only the lot coverage percentage"
+        },
+        {
+          "id": "b",
+          "text": "32 sq.m. — (8−4) x (12−4) = 4 m x 8 m = 32 sq.m. after applying 2 m setback on all sides"
+        },
+        {
+          "id": "c",
+          "text": "48 sq.m. — applying a single 2 m setback on only the two street-facing sides of the corner lot"
+        },
+        {
+          "id": "d",
+          "text": "64 sq.m. — (8−2) x (12−2) = 6 m x 10 m = 60 sq.m., applying the setback on only two sides"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2-meter setback applies on all sides per Sec. 708(a). On an 8 m x 12 m lot with 2 m setback on all four sides, the buildable area is (8−4) x (12−4) = 4 m x 8 m = 32 sq.m. The 90% coverage maximum would allow 86 sq.m., but the setback constraint (32 sq.m.) is far more restrictive and governs. This illustrates the critical trap: the coverage percentage and setback minimum are independent constraints, and the more restrictive one governs.",
+      "explanation": "Two independent constraints: (1) lot coverage max (90% corner) = 86 sq.m. max; (2) 2 m setback all sides = (8−4) x (12−4) = 32 sq.m. The more restrictive governs: 32 sq.m. On small lots, the 2-meter setback becomes the binding constraint, not the coverage percentage. This is a high-frequency LEA trap.",
+      "code_citation": "PD 1096, Rule VII, Sec. 708(a)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:49d4c730bc0e38a847c4f0ea3faa4c5d0c54035153a4051538140482cde21570"
+    },
+    {
+      "question_id": "6098f97c-42a5-4542-8fba-ffd9e58ff49a",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, Rule VIII, Sec. 807, what is the minimum air space per person required for habitable rooms in a Group A dwelling, and how much floor area is needed in a room with a 2.70 m ceiling to legally accommodate 2 persons?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10.00 cu.m. per person; a room of 7.40 sq.m. with 2.70 m ceiling provides 20.00 cu.m. for 2 persons"
+        },
+        {
+          "id": "b",
+          "text": "14.00 cu.m. per person; a room needs at least 10.37 sq.m. floor area at 2.70 m ceiling height for 2 persons"
+        },
+        {
+          "id": "c",
+          "text": "14.00 cu.m. per person; a room with 2.70 m ceiling needs 6.00 sq.m. minimum for any number of persons"
+        },
+        {
+          "id": "d",
+          "text": "12.00 cu.m. per person; a room needs at least 8.89 sq.m. floor area at 2.70 m ceiling height for 2 persons"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 807 requires 14.00 cu.m. of air space per person. For 2 persons: 2 x 14.00 = 28.00 cu.m. needed. With a 2.70 m ceiling: floor area = 28.00 ÷ 2.70 = 10.37 sq.m. minimum. Option A uses the wrong 10 cu.m. value. Option C incorrectly states 6.00 sq.m. is sufficient for any number of persons (6.00 sq.m. is only the minimum area, not an occupancy-independent standard). Option D uses the wrong 12 cu.m. value.",
+      "explanation": "Sec. 807: 14.00 cu.m. air space per person. Formula: required floor area = (persons x 14.00) ÷ ceiling height. A 6.00 sq.m. room at 2.70 m contains 16.20 cu.m. — enough for exactly 1 person (14 cu.m. needed). For 2 persons: 28.00 ÷ 2.70 = 10.37 sq.m. The minimum floor area (6.00 sq.m.) and the air space rule (14.00 cu.m./person) are independent constraints.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9df15f8ffa8c82a21056c6cf451fa2e41dbd943caa1669b7d1486e7ceec47dab"
+    },
+    {
+      "question_id": "fa2bff60-c961-4cd2-a209-d258092ba734",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VII, Sec. 708(a), what are the maximum lot coverage percentages for a Group A single-family dwelling on a corner lot versus an inside lot?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80% for corner lots and 70% for inside lots — reflecting the stricter setback requirements on inside lots"
+        },
+        {
+          "id": "b",
+          "text": "90% for corner lots and 80% for inside lots — corner lots have two street frontages allowing more generous coverage"
+        },
+        {
+          "id": "c",
+          "text": "70% for corner lots and 60% for inside lots — the Philippine standard aligning with typical US residential zoning"
+        },
+        {
+          "id": "d",
+          "text": "90% for both lot types — PD 1096 does not distinguish between corner and inside lots for Group A dwellings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 708(a) specifies 90% maximum for corner lots and 80% maximum for inside lots. Corner lots have frontage on two streets, giving greater access and light, hence the more generous 90% allowance. Option A reverses the values. Option C is not supported by PD 1096. Option D is incorrect — Sec. 708(a) explicitly distinguishes by lot type.",
+      "explanation": "Corner lot max: 90%; Inside lot max: 80%. Both are far higher than typical US residential zoning (30–60%), reflecting the denser land use pressures in Philippine urban areas. The 90%/80% values are the most tested figures from Sec. 708 on the LEA.",
+      "code_citation": "PD 1096, Rule VII, Sec. 708(a)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c9d865c8bdfdf484b88aecdb90438848b9200e373bf1f9d1f8686060c85cd39f"
+    },
+    {
+      "question_id": "66ccecba-c3c4-415c-bf90-92fa9f1e70f2",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A Group A dwelling is naturally ventilated throughout. Per PD 1096, Rule VIII, Sec. 805, what is the minimum ceiling height for the bedroom on the second floor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.10 m — the minimum for upper floors in multi-storey buildings under Rule VIII, Sec. 805, applicable only when artificial ventilation is used"
+        },
+        {
+          "id": "b",
+          "text": "2.40 m — the minimum for the second storey under the artificial ventilation provisions, which does not apply to naturally ventilated spaces"
+        },
+        {
+          "id": "c",
+          "text": "2.70 m — the minimum for ALL habitable rooms in naturally ventilated buildings regardless of floor level"
+        },
+        {
+          "id": "d",
+          "text": "1.80 m — the mezzanine clearance which applies to second-floor rooms in compact dwellings, typically used in space-constrained urban areas"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 805 specifies: for buildings with natural ventilation, all habitable rooms require a minimum ceiling height of 2.70 m regardless of floor level. The descending scale (2.70 m → 2.40 m → 2.10 m) only applies to multi-storey buildings with artificial (mechanical) ventilation. A naturally ventilated second-floor bedroom must still comply with the 2.70 m minimum. Options A and B apply the artificial ventilation scale to a naturally ventilated building. Option D applies the mezzanine clearance.",
+      "explanation": "Natural ventilation: all floors = 2.70 m minimum. Artificial ventilation only: 1st floor = 2.70 m, 2nd floor = 2.40 m, 3rd+ floor = 2.10 m. The most common trap is applying the 2.40 m second-floor standard to a naturally ventilated house. Mezzanine clear height (above and below) = 1.80 m, regardless of ventilation type.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:585042109a380b8f344818f104dba9a4950dc2f2f2cf200859918141dfc6446b"
+    },
+    {
+      "question_id": "d72dd2a6-8668-4165-8610-c44c4b5331f1",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Sec. 806(1)(a), which pair of minimum requirements must BOTH be simultaneously satisfied for a room to qualify as a habitable room in a Group A dwelling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum 6.00 sq.m. floor area AND minimum 2.00 m least dimension — both conditions independently required"
+        },
+        {
+          "id": "b",
+          "text": "Minimum 6.00 sq.m. floor area only — the least dimension is a recommended guideline, not a mandatory requirement"
+        },
+        {
+          "id": "c",
+          "text": "Minimum 7.00 sq.m. floor area AND minimum 2.40 m least dimension — the Philippine standard aligned with IRC 2021"
+        },
+        {
+          "id": "d",
+          "text": "Minimum 8.00 sq.m. floor area AND minimum 2.00 m least dimension — applying the larger-room standard for tropical climates"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 806(1)(a) establishes two simultaneous requirements: 6.00 sq.m. minimum floor area AND 2.00 m minimum least dimension. Both must be met — a room passing area but failing dimension (e.g., 4.0 m x 1.5 m = 6.0 sq.m., least dim 1.5 m < 2.00 m) is non-compliant. Option B incorrectly treats the least dimension as optional. Options C and D cite wrong values.",
+      "explanation": "Two conditions, both mandatory: area (6.00 sq.m.) AND least dimension (2.00 m). A 6.0 m x 1.0 m room fails on least dimension despite meeting the area. A 2.4 m x 2.4 m room (5.76 sq.m.) fails on area despite exceeding the dimension. The combined mnemonic is '6 by 2' for habitable rooms.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806(1)(a)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a5c07f267a70baa873a7a5542d6732ab8d5c29066388e5c9682b4e8cde0b30bd"
+    },
+    {
+      "question_id": "eff3b897-d597-4a0c-bf25-f79d16bb193d",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A Group A dwelling has a kitchen that measures 2.00 m x 1.50 m (3.00 sq.m.). Does this kitchen comply with PD 1096, Rule VIII, Sec. 806(1)(b)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No — the kitchen fails because the minimum kitchen area is 4.50 sq.m. with a least dimension of 1.80 m"
+        },
+        {
+          "id": "b",
+          "text": "Yes — the kitchen meets the minimum 3.00 sq.m. floor area requirement but must be checked further for the 1.50 m least dimension"
+        },
+        {
+          "id": "c",
+          "text": "Yes — the kitchen satisfies both the 3.00 sq.m. minimum area and the 1.50 m minimum least dimension simultaneously"
+        },
+        {
+          "id": "d",
+          "text": "No — the kitchen fails because 1.50 m is below the 2.00 m least dimension required for all habitable rooms including kitchens"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 806(1)(b) requires kitchens to have a minimum floor area of 3.00 sq.m. with a minimum least dimension of 1.50 m (not 2.00 m — that is the habitable room standard). A 2.00 m x 1.50 m kitchen = 3.00 sq.m. and has a least dimension of exactly 1.50 m. Both criteria are met exactly. Option A cites wrong values. Option D incorrectly applies the habitable room least dimension (2.00 m) to kitchens.",
+      "explanation": "Kitchen minimums: 3.00 sq.m. area AND 1.50 m least dimension. Contrast with habitable rooms (6.00 sq.m. / 2.00 m) and bath/toilet (1.20 sq.m. / 900 mm). The mnemonic chain is '6-3-1.2 / 2.00-1.50-0.90' — each space type has its own paired area and dimension standard.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806(1)(b)",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bee67c1d3f3e64bf954b276ae3671a052e60bee8b384d81ad2bd49c7158ed55a"
+    },
+    {
+      "question_id": "584b70c0-b9e8-4b56-8356-d48c57767fd7",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The Building Official inspects a Group A dwelling and finds that the combined toilet and bath room measures 1.05 m x 1.10 m. What is the Code compliance finding under PD 1096, Rule VIII, Sec. 806(1)(c)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant — 1.05 m x 1.10 m = 1.155 sq.m., which exceeds the 1.00 sq.m. minimum for bath/toilet rooms"
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant — the area (1.155 sq.m.) exceeds 1.20 sq.m. minimum but the 900 mm least dimension is not met"
+        },
+        {
+          "id": "c",
+          "text": "Non-compliant — the area (1.155 sq.m.) is below the 1.20 sq.m. minimum, and the least dimension (1.05 m) is above 900 mm"
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant — both the area (1.155 sq.m. < 1.20 sq.m.) and the dimension (1.05 m > 900 mm) fail the minimum"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 806(1)(c) requires bath/toilet rooms to have a minimum area of 1.20 sq.m. AND a minimum least dimension of 900 mm. Area: 1.05 x 1.10 = 1.155 sq.m. — this is BELOW the 1.20 sq.m. minimum, so the room fails on area. Least dimension: 1.05 m = 1050 mm — this exceeds the 900 mm minimum, so it passes on dimension. Non-compliant because area test fails. Option A uses a wrong 1.00 sq.m. threshold. Option D incorrectly states the dimension also fails.",
+      "explanation": "Bath/toilet: minimum 1.20 sq.m. AND minimum 900 mm least dimension. 1.155 sq.m. < 1.20 sq.m. → fails area. 1050 mm > 900 mm → passes dimension. One failure is enough for non-compliance. The 1.20 sq.m. bath/toilet minimum is the most frequently tested specific number from Sec. 806.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806(1)(c)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e84e9b0bb5c26f27b32cc15d0934f44047c4a113c5d127da51100d14b44a8bcf"
+    },
+    {
+      "question_id": "f93a569b-da4f-4d0f-babd-22a666cd9ba4",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Sec. 811, what is the minimum natural ventilation window area required for a habitable room with a floor area of 20 sq.m.?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.80 sq.m. — 4% of 20 sq.m., the IBC standard adopted in the Philippine Code"
+        },
+        {
+          "id": "b",
+          "text": "1.00 sq.m. — the absolute minimum regardless of floor area, applied because 10% of 20 sq.m. equals 2.00 sq.m. but the minimum floor governs"
+        },
+        {
+          "id": "c",
+          "text": "2.00 sq.m. — 10% of the 20 sq.m. floor area per Sec. 811, which exceeds the 1.00 sq.m. absolute minimum"
+        },
+        {
+          "id": "d",
+          "text": "1.60 sq.m. — 8% of 20 sq.m., the IRC standard referenced in the Philippine Code"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 811 requires natural ventilation window area of at least 10% of the room's floor area, with an absolute minimum of 1.00 sq.m. For a 20 sq.m. room: 10% x 20 = 2.00 sq.m. Since 2.00 sq.m. > 1.00 sq.m. absolute minimum, the percentage rule governs — 2.00 sq.m. is required. Option B incorrectly applies the 1.00 sq.m. floor when the percentage calculation exceeds it. Options A and D apply the IBC and IRC standards respectively, not PD 1096.",
+      "explanation": "Ventilation window area = the greater of: (a) 10% of floor area, or (b) 1.00 sq.m. absolute minimum. For a 20 sq.m. room: 10% = 2.00 sq.m. > 1.00 sq.m., so 2.00 sq.m. required. For a 6 sq.m. room: 10% = 0.60 sq.m. < 1.00 sq.m., so 1.00 sq.m. governs. Toilet/bath ventilation: 5% of floor area minimum, not less than 240 sq.mm.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 811",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a8c97107d6d876736589f5ce220a63d6c7f17029888f9d3ed1c00a8ed63109cd"
+    },
+    {
+      "question_id": "f8366187-7119-44e4-a095-8d3403ad5bc5",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VII, Sec. 708(c), what is the minimum sanitation provision required for EVERY Group A dwelling, regardless of size or number of occupants?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One sanitary toilet plus adequate washing facilities and adequate drainage facilities — all three elements are mandatory"
+        },
+        {
+          "id": "b",
+          "text": "One sanitary toilet only — washing and drainage facilities are required only for dwellings with more than 4 occupants"
+        },
+        {
+          "id": "c",
+          "text": "Two sanitary toilets plus one laundry area — reflecting the minimum for a standard Philippine family dwelling"
+        },
+        {
+          "id": "d",
+          "text": "One sanitary toilet and one kitchen sink — the kitchen is counted as the washing facility under Sec. 708(c)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 708(c) requires every Group A dwelling to have: (1) at least one sanitary toilet, (2) adequate washing facilities, and (3) adequate drainage facilities — all three elements are mandatory with no occupancy-based exception. Option B incorrectly limits washing/drainage to larger households. Option C cites a quantity not in the Code. Option D's interpretation of the kitchen sink as the washing facility is not how Sec. 708(c) is applied.",
+      "explanation": "CLOCK mnemonic for Sec. 708: C=Coverage, L=Light/Ventilation, O=One sanitary toilet (+ washing + drainage), C=Ceiling heights, K=Kind of ground (firm). The 'O' provision — one toilet plus adequate washing and drainage — applies to every Group A dwelling with no size exceptions.",
+      "code_citation": "PD 1096, Rule VII, Sec. 708(c)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c7e6ceda7e6369177924a3b62b99759879de88f3c3bb5f6fcec26bdd686b2820"
+    },
+    {
+      "question_id": "3508fac1-13c5-4aaf-839f-6d48b2353b26",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A board exam question states: 'A bedroom in a multi-storey Group A dwelling on the third floor with mechanical air conditioning has a ceiling height of 2.20 m. Is this compliant?' Which answer is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-compliant — a 2.70 m minimum applies to all habitable rooms in all Group A dwellings regardless of floor level or ventilation type"
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant — the third storey minimum for artificially ventilated buildings is 2.40 m, which 2.20 m does not meet"
+        },
+        {
+          "id": "c",
+          "text": "Compliant — the third storey and above minimum for artificially ventilated buildings is 2.10 m; 2.20 m exceeds this threshold"
+        },
+        {
+          "id": "d",
+          "text": "Compliant — mezzanine clearance rules (1.80 m) apply to third-floor rooms with low ceilings in compact dwellings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 805 sets a descending scale for artificially ventilated multi-storey buildings: 1st floor = 2.70 m, 2nd floor = 2.40 m, 3rd floor and above = 2.10 m (unobstructed headroom clearance). A third-floor room at 2.20 m exceeds the 2.10 m minimum — compliant. Option A incorrectly applies the 2.70 m natural ventilation standard to all floors. Option B applies the second-floor 2.40 m minimum to the third floor. Option D applies the mezzanine rule incorrectly.",
+      "explanation": "Artificial ventilation ceiling heights by floor: 1st = 2.70 m; 2nd = 2.40 m; 3rd+ = 2.10 m. The 2.10 m minimum for upper floors recognizes that mechanical systems compensate for reduced ceiling volume. 2.20 m > 2.10 m = compliant. The critical exam skill is distinguishing natural ventilation (2.70 m all floors) from artificial ventilation (descending sclea) correctly.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:03.539337+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6a9f46ed92da87ff50ccb0403246ea02ff68a72a96748611847bab8de8397e2c"
+    },
+    {
+      "question_id": "6aa9d02b-93e7-4bb0-b4f7-fee52ece76dc",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VII, Sec. 708(c), what is the minimum sanitation provision required for EVERY Group A dwelling, regardless of size or number of occupants?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One sanitary toilet plus adequate washing facilities and adequate drainage facilities — all three elements are mandatory"
+        },
+        {
+          "id": "b",
+          "text": "One sanitary toilet only — washing and drainage facilities are required only for dwellings with more than 4 occupants"
+        },
+        {
+          "id": "c",
+          "text": "Two sanitary toilets plus one laundry area — reflecting the minimum for a standard Philippine family dwelling"
+        },
+        {
+          "id": "d",
+          "text": "One sanitary toilet and one kitchen sink — the kitchen is counted as the washing facility under Sec. 708(c)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 708(c) requires every Group A dwelling to have: (1) at least one sanitary toilet, (2) adequate washing facilities, and (3) adequate drainage facilities — all three elements are mandatory with no occupancy-based exception. Option B incorrectly limits washing/drainage to larger households. Option C cites a quantity not in the Code. Option D's interpretation of the kitchen sink as the washing facility is not how Sec. 708(c) is applied.",
+      "explanation": "CLOCK mnemonic for Sec. 708: C=Coverage, L=Light/Ventilation, O=One sanitary toilet (+ washing + drainage), C=Ceiling heights, K=Kind of ground (firm). The 'O' provision — one toilet plus adequate washing and drainage — applies to every Group A dwelling with no size exceptions.",
+      "code_citation": "PD 1096, Rule VII, Sec. 708(c)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:73f73f8cd770fbd2b0c28ef6f3da08260e67e88b08d00ead1ac1a1cfc81dfd05"
+    },
+    {
+      "question_id": "66f04e4f-9c9e-430a-bbb1-fdea67a9b529",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A board exam question states: 'A bedroom in a multi-storey Group A dwelling on the third floor with mechanical air conditioning has a ceiling height of 2.20 m. Is this compliant?' Which answer is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-compliant — a 2.70 m minimum applies to all habitable rooms in all Group A dwellings regardless of floor level or ventilation type"
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant — the third storey minimum for artificially ventilated buildings is 2.40 m, which 2.20 m does not meet"
+        },
+        {
+          "id": "c",
+          "text": "Compliant — the third storey and above minimum for artificially ventilated buildings is 2.10 m; 2.20 m exceeds this threshold"
+        },
+        {
+          "id": "d",
+          "text": "Compliant — mezzanine clearance rules (1.80 m) apply to third-floor rooms with low ceilings in compact dwellings"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 805 sets a descending scale for artificially ventilated multi-storey buildings: 1st floor = 2.70 m, 2nd floor = 2.40 m, 3rd floor and above = 2.10 m (unobstructed headroom clearance). A third-floor room at 2.20 m exceeds the 2.10 m minimum — compliant. Option A incorrectly applies the 2.70 m natural ventilation standard to all floors. Option B applies the second-floor 2.40 m minimum to the third floor. Option D applies the mezzanine rule incorrectly.",
+      "explanation": "Artificial ventilation ceiling heights by floor: 1st = 2.70 m; 2nd = 2.40 m; 3rd+ = 2.10 m. The 2.10 m minimum for upper floors recognizes that mechanical systems compensate for reduced ceiling volume. 2.20 m > 2.10 m = compliant. The critical exam skill is distinguishing natural ventilation (2.70 m all floors) from artificial ventilation (descending sclea) correctly.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a8e6575b38a264de650a3fbcd4f15860dbc35b82fa20ad15e598d0129b2d86f"
+    },
+    {
+      "question_id": "e55f1d30-7e99-4f6c-b247-80c21e7a4e23",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Sec. 806(1)(a), which pair of minimum requirements must BOTH be simultaneously satisfied for a room to qualify as a habitable room in a Group A dwelling?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Minimum 6.00 sq.m. floor area AND minimum 2.00 m least dimension — both conditions independently required"
+        },
+        {
+          "id": "b",
+          "text": "Minimum 6.00 sq.m. floor area only — the least dimension is a recommended guideline, not a mandatory requirement"
+        },
+        {
+          "id": "c",
+          "text": "Minimum 7.00 sq.m. floor area AND minimum 2.40 m least dimension — the Philippine standard aligned with IRC 2021"
+        },
+        {
+          "id": "d",
+          "text": "Minimum 8.00 sq.m. floor area AND minimum 2.00 m least dimension — applying the larger-room standard for tropical climates"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 806(1)(a) establishes two simultaneous requirements: 6.00 sq.m. minimum floor area AND 2.00 m minimum least dimension. Both must be met — a room passing area but failing dimension (e.g., 4.0 m x 1.5 m = 6.0 sq.m., least dim 1.5 m < 2.00 m) is non-compliant. Option B incorrectly treats the least dimension as optional. Options C and D cite wrong values.",
+      "explanation": "Two conditions, both mandatory: area (6.00 sq.m.) AND least dimension (2.00 m). A 6.0 m x 1.0 m room fails on least dimension despite meeting the area. A 2.4 m x 2.4 m room (5.76 sq.m.) fails on area despite exceeding the dimension. The combined mnemonic is '6 by 2' for habitable rooms.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806(1)(a)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5fcf6e4ad0e4a6cd8fcf811f7af0dd5109ba3a5f6ec53d5219ac9dde2370ae54"
+    },
+    {
+      "question_id": "2c86bbde-3990-4b1f-bf79-54bd0e051c06",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A Group A dwelling has a kitchen that measures 2.00 m x 1.50 m (3.00 sq.m.). Does this kitchen comply with PD 1096, Rule VIII, Sec. 806(1)(b)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No — the kitchen fails because the minimum kitchen area is 4.50 sq.m. with a least dimension of 1.80 m"
+        },
+        {
+          "id": "b",
+          "text": "Yes — the kitchen meets the minimum 3.00 sq.m. floor area requirement but must be checked further for the 1.50 m least dimension"
+        },
+        {
+          "id": "c",
+          "text": "Yes — the kitchen satisfies both the 3.00 sq.m. minimum area and the 1.50 m minimum least dimension simultaneously"
+        },
+        {
+          "id": "d",
+          "text": "No — the kitchen fails because 1.50 m is below the 2.00 m least dimension required for all habitable rooms including kitchens"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 806(1)(b) requires kitchens to have a minimum floor area of 3.00 sq.m. with a minimum least dimension of 1.50 m (not 2.00 m — that is the habitable room standard). A 2.00 m x 1.50 m kitchen = 3.00 sq.m. and has a least dimension of exactly 1.50 m. Both criteria are met exactly. Option A cites wrong values. Option D incorrectly applies the habitable room least dimension (2.00 m) to kitchens.",
+      "explanation": "Kitchen minimums: 3.00 sq.m. area AND 1.50 m least dimension. Contrast with habitable rooms (6.00 sq.m. / 2.00 m) and bath/toilet (1.20 sq.m. / 900 mm). The mnemonic chain is '6-3-1.2 / 2.00-1.50-0.90' — each space type has its own paired area and dimension standard.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806(1)(b)",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0f08c47af88bd977d2c67cf7ecb3aac2cb72516ae057b05c9bfcbe1fddf953d4"
+    },
+    {
+      "question_id": "064b483e-860d-4323-93f4-9c45d1ad6004",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "A Group A dwelling is naturally ventilated throughout. Per PD 1096, Rule VIII, Sec. 805, what is the minimum ceiling height for the bedroom on the second floor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "2.10 m — the minimum for upper floors in multi-storey buildings under Rule VIII, Sec. 805, applicable only to artificially ventilated spaces"
+        },
+        {
+          "id": "b",
+          "text": "2.40 m — the minimum for the second storey under the artificial ventilation provisions, which does not apply to naturally ventilated buildings"
+        },
+        {
+          "id": "c",
+          "text": "2.70 m — the minimum for ALL habitable rooms in naturally ventilated buildings regardless of floor level"
+        },
+        {
+          "id": "d",
+          "text": "1.80 m — the mezzanine clearance which applies to second-floor rooms in compact dwellings, provided the total floor area does not exceed 50 sqm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 805 specifies: for buildings with natural ventilation, all habitable rooms require a minimum ceiling height of 2.70 m regardless of floor level. The descending scale (2.70 m → 2.40 m → 2.10 m) only applies to multi-storey buildings with artificial (mechanical) ventilation. A naturally ventilated second-floor bedroom must still comply with the 2.70 m minimum. Options A and B apply the artificial ventilation scale to a naturally ventilated building. Option D applies the mezzanine clearance.",
+      "explanation": "Natural ventilation: all floors = 2.70 m minimum. Artificial ventilation only: 1st floor = 2.70 m, 2nd floor = 2.40 m, 3rd+ floor = 2.10 m. The most common trap is applying the 2.40 m second-floor standard to a naturally ventilated house. Mezzanine clear height (above and below) = 1.80 m, regardless of ventilation type.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 805",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c82816cd3359724ca7edd653b35a6989e7f6569ec17d00a4733ec0554a05cc18"
+    },
+    {
+      "question_id": "24e823b0-4b19-44e8-bba3-30eec81441e7",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VII, Sec. 708(a), what are the maximum lot coverage percentages for a Group A single-family dwelling on a corner lot versus an inside lot?",
+      "options": [
+        {
+          "id": "a",
+          "text": "80% for corner lots and 70% for inside lots — reflecting the stricter setback requirements on inside lots"
+        },
+        {
+          "id": "b",
+          "text": "90% for corner lots and 80% for inside lots — corner lots have two street frontages allowing more generous coverage"
+        },
+        {
+          "id": "c",
+          "text": "70% for corner lots and 60% for inside lots — the Philippine standard aligning with typical US residential zoning"
+        },
+        {
+          "id": "d",
+          "text": "90% for both lot types — PD 1096 does not distinguish between corner and inside lots for Group A dwellings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 708(a) specifies 90% maximum for corner lots and 80% maximum for inside lots. Corner lots have frontage on two streets, giving greater access and light, hence the more generous 90% allowance. Option A reverses the values. Option C is not supported by PD 1096. Option D is incorrect — Sec. 708(a) explicitly distinguishes by lot type.",
+      "explanation": "Corner lot max: 90%; Inside lot max: 80%. Both are far higher than typical US residential zoning (30–60%), reflecting the denser land use pressures in Philippine urban areas. The 90%/80% values are the most tested figures from Sec. 708 on the LEA.",
+      "code_citation": "PD 1096, Rule VII, Sec. 708(a)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.35,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d562ea4df5e1e618afb312ddb1b8f5d0aec5eb7b72c1ce4b8aaddb7ccd7bd7bf"
+    },
+    {
+      "question_id": "cda82dd1-4437-489a-be26-7f5b72009030",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "The Building Official inspects a Group A dwelling and finds that the combined toilet and bath room measures 1.05 m x 1.10 m. What is the Code compliance finding under PD 1096, Rule VIII, Sec. 806(1)(c)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant — 1.05 m x 1.10 m = 1.155 sq.m., which exceeds the 1.00 sq.m. minimum for bath/toilet rooms"
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant — the area (1.155 sq.m.) exceeds 1.20 sq.m. minimum but the 900 mm least dimension is not met"
+        },
+        {
+          "id": "c",
+          "text": "Non-compliant — the area (1.155 sq.m.) is below the 1.20 sq.m. minimum, and the least dimension (1.05 m) is above 900 mm"
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant — both the area (1.155 sq.m. < 1.20 sq.m.) and the dimension (1.05 m > 900 mm) fail the minimum"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 806(1)(c) requires bath/toilet rooms to have a minimum area of 1.20 sq.m. AND a minimum least dimension of 900 mm. Area: 1.05 x 1.10 = 1.155 sq.m. — this is BELOW the 1.20 sq.m. minimum, so the room fails on area. Least dimension: 1.05 m = 1050 mm — this exceeds the 900 mm minimum, so it passes on dimension. Non-compliant because area test fails. Option A uses a wrong 1.00 sq.m. threshold. Option D incorrectly states the dimension also fails.",
+      "explanation": "Bath/toilet: minimum 1.20 sq.m. AND minimum 900 mm least dimension. 1.155 sq.m. < 1.20 sq.m. → fails area. 1050 mm > 900 mm → passes dimension. One failure is enough for non-compliance. The 1.20 sq.m. bath/toilet minimum is the most frequently tested specific number from Sec. 806.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 806(1)(c)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.65,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a9970b37ac569573761c1d66e176aa2516cbc64c2197e4639feed3d28cff74fc"
+    },
+    {
+      "question_id": "5263abc7-9147-404d-aca7-620f369e81a2",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Per PD 1096, Rule VIII, Sec. 811, what is the minimum natural ventilation window area required for a habitable room with a floor area of 20 sq.m.?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.80 sq.m. — 4% of 20 sq.m., the IBC standard adopted in the Philippine Code"
+        },
+        {
+          "id": "b",
+          "text": "1.00 sq.m. — the absolute minimum regardless of floor area, applied because 10% of 20 sq.m. equals 2.00 sq.m. but the minimum floor governs"
+        },
+        {
+          "id": "c",
+          "text": "2.00 sq.m. — 10% of the 20 sq.m. floor area per Sec. 811, which exceeds the 1.00 sq.m. absolute minimum"
+        },
+        {
+          "id": "d",
+          "text": "1.60 sq.m. — 8% of 20 sq.m., the IRC standard referenced in the Philippine Code"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 811 requires natural ventilation window area of at least 10% of the room's floor area, with an absolute minimum of 1.00 sq.m. For a 20 sq.m. room: 10% x 20 = 2.00 sq.m. Since 2.00 sq.m. > 1.00 sq.m. absolute minimum, the percentage rule governs — 2.00 sq.m. is required. Option B incorrectly applies the 1.00 sq.m. floor when the percentage calculation exceeds it. Options A and D apply the IBC and IRC standards respectively, not PD 1096.",
+      "explanation": "Ventilation window area = the greater of: (a) 10% of floor area, or (b) 1.00 sq.m. absolute minimum. For a 20 sq.m. room: 10% = 2.00 sq.m. > 1.00 sq.m., so 2.00 sq.m. required. For a 6 sq.m. room: 10% = 0.60 sq.m. < 1.00 sq.m., so 1.00 sq.m. governs. Toilet/bath ventilation: 5% of floor area minimum, not less than 240 sq.mm.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 811",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1438f4729651d512c8f1556cdce21dc1efb9ae011aebac6248754f06f3b55a00"
+    },
+    {
+      "question_id": "cc01076a-c00c-4704-951c-d0057846cdcd",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, Rule VII, Sec. 708(a), a Group A dwelling must be at least 2 meters from the property line. An architect proposes a corner lot development of 8 m x 12 m (96 sq.m.) with maximum lot coverage. What is the actual achievable building footprint considering BOTH the 90% coverage limit and the 2-meter setback requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "86 sq.m. — 90% of 96 sq.m., applying only the lot coverage percentage"
+        },
+        {
+          "id": "b",
+          "text": "32 sq.m. — (8−4) x (12−4) = 4 m x 8 m = 32 sq.m. after applying 2 m setback on all sides"
+        },
+        {
+          "id": "c",
+          "text": "48 sq.m. — applying a single 2 m setback on only the two street-facing sides of the corner lot"
+        },
+        {
+          "id": "d",
+          "text": "64 sq.m. — (8−2) x (12−2) = 6 m x 10 m = 60 sq.m., applying the setback on only two sides"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2-meter setback applies on all sides per Sec. 708(a). On an 8 m x 12 m lot with 2 m setback on all four sides, the buildable area is (8−4) x (12−4) = 4 m x 8 m = 32 sq.m. The 90% coverage maximum would allow 86 sq.m., but the setback constraint (32 sq.m.) is far more restrictive and governs. This illustrates the critical trap: the coverage percentage and setback minimum are independent constraints, and the more restrictive one governs.",
+      "explanation": "Two independent constraints: (1) lot coverage max (90% corner) = 86 sq.m. max; (2) 2 m setback all sides = (8−4) x (12−4) = 32 sq.m. The more restrictive governs: 32 sq.m. On small lots, the 2-meter setback becomes the binding constraint, not the coverage percentage. This is a high-frequency LEA trap.",
+      "code_citation": "PD 1096, Rule VII, Sec. 708(a)",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:202cf4709d33b808e76993fecdf9cd3a8490eee7a070ef18b2edf0d8d327e261"
+    },
+    {
+      "question_id": "aba5abc9-81d2-451b-9621-d1cea12a8f77",
+      "article_id": "42eb0c36-da27-4b7e-a1e3-4ed915bfca8d",
+      "topic_id": "86d67299-2a9c-4505-8f8a-0815f8b74c77",
+      "text": "Under PD 1096, Rule VIII, Sec. 807, what is the minimum air space per person required for habitable rooms in a Group A dwelling, and how much floor area is needed in a room with a 2.70 m ceiling to legally accommodate 2 persons?",
+      "options": [
+        {
+          "id": "a",
+          "text": "10.00 cu.m. per person; a room of 7.40 sq.m. with 2.70 m ceiling provides 20.00 cu.m. for 2 persons"
+        },
+        {
+          "id": "b",
+          "text": "14.00 cu.m. per person; a room needs at least 10.37 sq.m. floor area at 2.70 m ceiling height for 2 persons"
+        },
+        {
+          "id": "c",
+          "text": "14.00 cu.m. per person; a room with 2.70 m ceiling needs 6.00 sq.m. minimum for any number of persons"
+        },
+        {
+          "id": "d",
+          "text": "12.00 cu.m. per person; a room needs at least 8.89 sq.m. floor area at 2.70 m ceiling height for 2 persons"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Sec. 807 requires 14.00 cu.m. of air space per person. For 2 persons: 2 x 14.00 = 28.00 cu.m. needed. With a 2.70 m ceiling: floor area = 28.00 ÷ 2.70 = 10.37 sq.m. minimum. Option A uses the wrong 10 cu.m. value. Option C incorrectly states 6.00 sq.m. is sufficient for any number of persons (6.00 sq.m. is only the minimum area, not an occupancy-independent standard). Option D uses the wrong 12 cu.m. value.",
+      "explanation": "Sec. 807: 14.00 cu.m. air space per person. Formula: required floor area = (persons x 14.00) ÷ ceiling height. A 6.00 sq.m. room at 2.70 m contains 16.20 cu.m. — enough for exactly 1 person (14 cu.m. needed). For 2 persons: 28.00 ÷ 2.70 = 10.37 sq.m. The minimum floor area (6.00 sq.m.) and the air space rule (14.00 cu.m./person) are independent constraints.",
+      "code_citation": "PD 1096, Rule VIII, Sec. 807",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:53.343218+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ba47e792a1afba07a47b7edff325b3c2ce2e65dd86409f578ef609e4fd1033fd"
+    }
+  ]
+}

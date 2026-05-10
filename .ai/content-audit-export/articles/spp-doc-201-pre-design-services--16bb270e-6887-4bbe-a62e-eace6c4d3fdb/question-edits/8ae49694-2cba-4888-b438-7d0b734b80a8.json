@@ -1,0 +1,47 @@
+{
+  "question_id": "8ae49694-2cba-4888-b438-7d0b734b80a8",
+  "baseline_hash": "sha256:fed9e59f7ddd8ebf15f25334946cf6352583f37f158cd51979283647e5ddf230",
+  "status": "proposed_source_audited_local_no_supabase",
+  "reason": "Replaces the unverified written-proposal claim with a raw-PDF-verified SPP 201 compensation-method question.",
+  "approved_by": "source-audit-local-agent",
+  "approved_at": "2026-05-10T11:51:00+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+    "pdf_pages": [
+      25,
+      28,
+      58
+    ],
+    "quoted_pdf_excerpt": "The computation is made by adding all costs of technical services (man hours x rate) and then multiplying it by a multiplier to cover overhead and profit. The multiplier ranges from 1.5 to 2.5."
+  },
+  "proposed": {
+    "text": "Under SPP 201, how is compensation computed using the Multiple of Direct Personnel Expenses method?",
+    "options": [
+      {
+        "id": "a",
+        "text": "By adding all costs of technical services and multiplying by a multiplier to cover overhead and profit"
+      },
+      {
+        "id": "b",
+        "text": "By applying a fixed percentage to the Project Construction Cost"
+      },
+      {
+        "id": "c",
+        "text": "By paying only reimbursable transportation, housing, and living allowance expenses"
+      },
+      {
+        "id": "d",
+        "text": "By using only the Architect’s hourly rate without overhead or profit"
+      }
+    ],
+    "correct_option_id": "a",
+    "rationale": {
+      "a": "Correct. SPP 201 states that this method adds all costs of technical services and multiplies the total by a multiplier to cover overhead and profit.",
+      "b": "Percentage of Project Construction Cost is not the source-described Multiple of Direct Personnel Expenses method in SPP 201.",
+      "c": "Reimbursable expenses are separately described, but they are not the computation method itself.",
+      "d": "SPP 201 includes a multiplier for overhead and reasonable profit, not only the Architect’s hourly rate.",
+      "correct": "For Multiple of Direct Personnel Expenses, SPP 201 computes compensation by adding all costs of technical services (man-hours times rates) and multiplying by a multiplier for overhead and profit; the multiplier ranges from 1.5 to 2.5.",
+      "takeaway": "Multiple of Direct Personnel Expenses = technical service costs × overhead/profit multiplier."
+    }
+  }
+}

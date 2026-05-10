@@ -126,7 +126,7 @@ Extracted summary:
 [SLATECAMP_UI_BLOCK:ui_0015 component="Callout" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Modernist architecture is dominated by a small number of visionary architects whose philosophies are *extensively tested* on the LEA through quote-to-architect matching, identification of theoretical concepts, and analysis of key works. The LEA tests exact attribution of famous quotes—Le Corbusier's "A house is a machine for living," Mies van der Rohe's "Less is more," Louis Sullivan's "Form follows function," and dozens of others. You must know the precise wording of each quote and its correct 
+- Text: Modernist architecture is dominated by a small number of visionary architects whose philosophies are *extensively tested* on the LEA through quote-to-architect matching, identification of theoretical concepts, and analysis of key works. The LEA tests exact attribution of famous quotes—Le Corbusier's "A house is a machine for living," Mies van der Rohe's "Less is more," Louis Sullivan's "Form follows function," and dozens of others. You must know the precise wording of each quote and its correct
 [/SLATECAMP_UI_BLOCK]
 
 ## Common Mistakes
@@ -218,4 +218,3 @@ Extracted summary:
 See also within Architectural Philosophies: **lea-theo-005-01-core-concept**, **lea-theo-005-04-core-concept**, **lea-theo-005-05-core-concept**, **lea-theo-005-08-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

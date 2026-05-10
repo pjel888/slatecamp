@@ -287,4 +287,3 @@ LEA Trap: Vertical openings ≤ 1.0 m² may be UNPROTECTED if they do not connec
 ## Cross‑References
 
 **Fire Resistive Construction Ratings**, **Stairs Handrails Guardrails**, **Vent Shafts And Ventilation**, **Penthouses And Roof Structures**
-

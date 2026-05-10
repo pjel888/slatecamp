@@ -1,0 +1,508 @@
+{
+  "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:52d1fdbec256b9ed3d62e5b70b47607ad1c5ec8f078d7348858c28c6857c30a8",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "16be0c8c-fd08-4975-9161-30aca7bd6545",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "What is the relationship between the punch list and the architect's Substantial Completion certification?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The punch list is prepared before Substantial Completion to determine if Substantial Completion can be certified, ensuring all major work is complete"
+        },
+        {
+          "id": "b",
+          "text": "The punch list is a formal document issued simultaneously with or immediately after Substantial Completion certification, establishing remaining contractor obligations"
+        },
+        {
+          "id": "c",
+          "text": "The punch list replaces the Substantial Completion certificate as the official project completion document, which is not a standard practice"
+        },
+        {
+          "id": "d",
+          "text": "The punch list is an optional preliminary list that becomes formal only if the contractor disputes punch items, which rarely occurs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. While owner approval may be desired, the architect's professional responsibility is to conduct independent inspection and verification. The architect cannot delegate this verification duty to the owner.",
+        "c": "Incorrect. The punch list does not replace Substantial Completion certification. Both documents are issued; they serve different purposes.",
+        "d": "Incorrect. The punch list is not optional or preliminary. It is a formal, binding contract document creating enforceable contractor obligations.",
+        "correct": "The punch list flows from the Substantial Completion inspection and is issued contemporaneously with or immediately after the Substantial Completion certificate. The two documents work together: Substantial Completion certifies occupancy readiness despite outstanding items; the punch list itemizes those outstanding items and binds the contractor to complete them.",
+        "takeaway": "The punch list is issued contemporaneously with Substantial Completion certification and itemizes remaining contractor obligations in a formal, binding document."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d574479b36bb98865d9e0767410e1fca8cb4b348ade5624e2b8ad9d21763e8fa"
+    },
+    {
+      "question_id": "40fd65a6-0f02-4394-9cad-70c262cda3ff",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "What is the professional significance of the architect's inspection and certification of the punch list and Final Completion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It is an administrative formality with no liability implications for the architect, unless otherwise specified in the contract"
+        },
+        {
+          "id": "b",
+          "text": "It represents the architect's professional representation that all work is complete and compliant with contract documents, and creates architect liability if defects are later discovered in punch list items"
+        },
+        {
+          "id": "c",
+          "text": "It guarantees that no defects will appear in the building for one year after Final Completion, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "It transfers full warranty responsibility from contractor to owner for all punch items, which may not be legally enforceable"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. The punch list is not prepared before Substantial Completion; it is generated during the Substantial Completion inspection and issued contemporaneously with the Substantial Completion certificate.",
+        "c": "Incorrect. The architect's certification does not guarantee defect-free work; it certifies that work was completed per contract documents. Latent defects may still appear later.",
+        "d": "Incorrect. Warranty responsibility remains with the contractor under the Guarantee Bond. Final Completion certification does not transfer warranty from contractor to owner.",
+        "correct": "The architect's certification of Final Completion is a professional representation with significant liability implications. By certifying that all punch list items are properly completed, the architect is representing professional judgment that work is compliant and acceptable. If defects are later discovered in punch items that the architect certified as complete, the architect may face claims for failure to properly inspect and certify. The certification creates both professional and potential legal liability.",
+        "takeaway": "The architect's Final Completion certification represents professional judgment that all work is complete and compliant—failure to properly inspect and verify creates architect liability."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de0b3d0dfcc6a490e25ca00255623d728c0e576a279a0d44dff738cc8ddc4faa"
+    },
+    {
+      "question_id": "afb1c9d5-6350-46d2-9bc4-72504a6bf400",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "The architect's punch list contains 47 items, categorized by trade and location. The contractor completes items 1–46 properly, but item 47 (testing and balancing of HVAC systems) appears to have been skipped entirely. The contractor claims the item is the MEP engineer's responsibility, not the contractor's. Can the architect issue Final Completion certificate without this item being completed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, because 46 of 47 items are complete, which constitutes substantial performance, allowing for finalization"
+        },
+        {
+          "id": "b",
+          "text": "No, the architect cannot issue Final Completion if any punch list item is incomplete, regardless of who is responsible for it"
+        },
+        {
+          "id": "c",
+          "text": "Only if the architect documents the MEP engineer's agreement to complete the item after occupancy, ensuring accountability"
+        },
+        {
+          "id": "d",
+          "text": "Yes, because MEP testing is a specialized service outside contractor scope, typically handled separately"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. The architect's Final Completion certification is issued only after verification that all punch list items are properly completed. If items were not completed when the certificate was issued, the architect failed to properly verify before certification.",
+        "c": "Incorrect. Deferring completion to after occupancy contradicts Final Completion definition and extends uncertainty about contractor obligations.",
+        "d": "Incorrect. If the MEP testing is listed on the punch list, it is part of the architect-defined remaining work and must be completed before Final Completion, regardless of who performs it.",
+        "correct": "The architect cannot issue Final Completion certificate if any punch list item is incomplete or uncorrected. Final Completion signifies that all work is done and acceptable. If one item remains undone, the project is not finally complete. The architect must address who is responsible for the incomplete item (contractor, MEP engineer, or other) but cannot issue Final Completion without resolution.",
+        "takeaway": "The architect cannot issue Final Completion if any punch list item is incomplete—all items must be resolved regardless of who is responsible for completion."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:91ee36a0b43b2fa98f853099b1c033765e97c7e7ba7f4968811266564a367590"
+    },
+    {
+      "question_id": "7535c69b-0458-4bf1-959e-b59e4d075151",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "A contractor completes all work except for items on the architect's punch list. The contractor states that completing the punch list items will require additional labor costs and requests a change order to cover these costs. Can the architect grant this change order for punch list work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, if the punch list items are more extensive than originally expected, requiring significant additional resources"
+        },
+        {
+          "id": "b",
+          "text": "No, punch list items are part of the original contract scope—the contractor must complete them at no additional cost"
+        },
+        {
+          "id": "c",
+          "text": "Yes, if the owner agrees to pay for the additional work, provided that the agreement is documented in a formal contract amendment"
+        },
+        {
+          "id": "d",
+          "text": "Only if the architect agrees in writing that the items are beyond the contractor's original scope and the owner consents to the change"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Delivering the punch list 7 days after Substantial Completion certification delays contractor notice and creates ambiguity about the official punch list. The punch list must be delivered contemporaneously with Substantial Completion certification to provide prompt notice.",
+        "c": "Incorrect. Owner consent does not change the contractor's binding obligation to complete original scope work. The contractor cannot demand additional payment for original contract obligations.",
+        "d": "Incorrect. The architect does not have authority to excuse punch list completion or grant change orders for original scope work. The punch list is binding on the contractor.",
+        "correct": "Punch list items are incomplete work from the original contract scope, not new or additional work. The contractor's obligation is to complete all contract work before Substantial Completion. Items identified on the punch list are work the contractor agreed to complete under the original contract and must be finished without additional compensation.",
+        "takeaway": "Punch list items are original contract scope work—the contractor must complete them at no additional cost and without change orders."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4749d6e17b3e4c8364fc7169e7a4fe8c2ed40cfaa90ddae96feef94186314a35"
+    },
+    {
+      "question_id": "454575e9-2358-4cc9-8053-99ed9eb9b830",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "The punch list specifies a 30-day deadline for the contractor to complete all items. On day 31, several items remain unfinished, and the contractor requests a 15-day extension. Can the architect grant the extension without formal change order or contract amendment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, architects routinely grant reasonable extension requests to maintain project relationships, especially when delays are minor and do not impact the overall project timeline"
+        },
+        {
+          "id": "b",
+          "text": "No, the architect may grant reasonable extensions in writing with owner consent, but must document the extension and enforce the revised deadline"
+        },
+        {
+          "id": "c",
+          "text": "Yes, without owner consent, if the contractor explains the delay reason and provides a detailed plan for completion within the extended period"
+        },
+        {
+          "id": "d",
+          "text": "No, the punch list deadline is absolute, and the contractor's only remedy for delay is to pay the owner damages, unless a formal amendment is agreed upon"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. While architects may grant extensions in practice, informal extensions without documentation and owner consent create ambiguity about contractor obligations and delay enforcement.",
+        "c": "Incorrect. Owner consent is required because delay in punch list completion delays Final Completion and extends the Guarantee Bond period start date. The owner's interests are affected.",
+        "d": "Incorrect. While the deadline is binding, the architect has authority to grant reasonable extensions in writing. The contractor is not limited to paying damages; documented extension is the normal remedy.",
+        "correct": "The architect may grant reasonable extensions to punch list deadlines in writing with owner consent, but must document the new deadline and enforce it. Extensions are a practical construction management tool, but they must be formal (in writing), authorized (with owner approval), and enforced. An informal extension creates ambiguity about contractor obligations.",
+        "takeaway": "The architect may grant punch list extensions in writing with owner consent, but must document the revised deadline and enforce it—informal extensions create ambiguity about obligations."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d5296f89fae1214ec76dd19bd4834e2997cd1ba2230f7aaaccdf9847660692a9"
+    },
+    {
+      "question_id": "801b6a9a-99be-47d5-ab33-d9f4d99c0adb",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "The architect has just certified Substantial Completion and is preparing the punch list. When should the architect deliver the punch list to the contractor to establish clear notice of required work?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Within 7 days of Substantial Completion certification while items are fresh in the architect's inspection notes"
+        },
+        {
+          "id": "b",
+          "text": "At Final Completion, after all work is finished, as documentation of what was completed"
+        },
+        {
+          "id": "c",
+          "text": "Contemporaneously with Substantial Completion certification to give prompt contractor notice"
+        },
+        {
+          "id": "d",
+          "text": "Only if the contractor requests it in writing"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Final Completion requires that all punch list items are completed, not merely most items. Substantial performance is insufficient; the architect cannot issue Final Completion with any item incomplete.",
+        "b": "Incorrect. Delivering the punch list after Final Completion is retrospective and provides no notice or opportunity for the contractor to plan work. This defeats the punch list's purpose as a management tool.",
+        "d": "Incorrect. The architect is obligated to prepare and deliver the punch list as part of professional supervision; it is not contingent on contractor request.",
+        "correct": "Best practice and professional standard require the architect to deliver the punch list contemporaneously (at the same time or immediately) with the Substantial Completion certification. This timing ensures the contractor has prompt, official notice of required work and a clear deadline to complete items before Final Completion.",
+        "takeaway": "The architect must deliver the punch list contemporaneously with Substantial Completion certification to provide prompt contractor notice of required work and establish a clear completion deadline."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b0e3cc77e581e9c62a2f4abe744f8af458e1728ddde640f1695afeed4291162"
+    },
+    {
+      "question_id": "d1a2e253-2506-43a3-a2e5-03c8526600cf",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "During the Substantial Completion inspection, the architect identifies the following items in the building: two door latches require adjustment, interior wall paint has one 2-square-meter unpainted patch, electrical outlet covers are missing in four locations, and the mechanical system requires complete reinstallation due to improper connection. Which item should NOT appear on the punch list?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Door latch adjustments, which are minor and typically addressed during final touch-ups"
+        },
+        {
+          "id": "b",
+          "text": "Interior wall paint patch, as it is a cosmetic issue that can be resolved post-completion"
+        },
+        {
+          "id": "c",
+          "text": "Electrical outlet cover installation, a standard safety requirement that must be completed"
+        },
+        {
+          "id": "d",
+          "text": "Complete mechanical system reinstallation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. The architect's Final Completion certification is not an administrative formality; it is a professional representation with liability implications. The architect is responsible for proper inspection and verification.",
+        "b": "Paint touch-up is a standard punch list item—minor cosmetic work that does not affect occupancy or functionality.",
+        "c": "Outlet covers are typically punch list items—completing hardware and fixtures is minor work.",
+        "correct": "A punch list contains minor, incomplete work items consistent with Substantial Completion definition. A complete mechanical system reinstallation is a major defect suggesting the system was never properly completed and indicates Substantial Completion may have been certified prematurely. This is not punch list work; it is a substantial deficiency that questions whether occupancy should have been certified.",
+        "takeaway": "Punch list items are minor items remaining after Substantial Completion—complete system reinstallation is a major defect that should prevent Substantial Completion certification."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12bfa8ca6b76ba8bf2a1afb980c0126c556ba784339486269ea6b81f79188728"
+    },
+    {
+      "question_id": "d37851d7-dd68-480b-8783-1aa5ce3fbdc8",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "The contractor has completed all punch list items to the architect's satisfaction. What must the architect do before issuing the Certificate of Final Completion?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Obtain the owner's written approval of the completed punch items, which ensures all parties are satisfied"
+        },
+        {
+          "id": "b",
+          "text": "Conduct a final inspection to verify that all punch list items are properly corrected and consistent with contract documents"
+        },
+        {
+          "id": "c",
+          "text": "Request the contractor's affidavit confirming all work is complete, which is a standard procedure"
+        },
+        {
+          "id": "d",
+          "text": "Forward the completed punch list to the PRBoA for final review and approval, which is not typically required"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Even if punch list items are more extensive than expected, they remain original contract scope work. The contractor cannot demand additional payment for original contract obligations, regardless of scope extent.",
+        "c": "Incorrect. Contractor affidavit is not a substitute for architect professional inspection and verification.",
+        "d": "Incorrect. PRBoA review is not required for punch list verification. The architect's professional responsibility and certification authority are sufficient.",
+        "correct": "The architect's professional obligation requires conducting a final inspection to verify that all punch list items have been properly corrected and comply with contract documents and original specifications. This inspection is the architect's verification step before issuing Final Completion certification.",
+        "takeaway": "Before issuing Certificate of Final Completion, the architect must conduct a final inspection to verify that all punch list items are properly corrected and comply with contract specifications."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:50fd8165658ddee9ad2c77a7a14efe9f05c7574f5aabecefc08441b334e69774"
+    },
+    {
+      "question_id": "ebd969ea-b72f-4003-b914-5bf486f93ed2",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "After the architect issues the Certificate of Final Completion, the owner discovers that one punch list item—installation of window screens—was never actually completed. The contractor's response is that the screens were not installed because they appear to have been omitted from the drawings. Should the owner be able to hold the contractor liable for this omission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No, because the architect already issued Final Completion, and further claims are now barred, unless a latent defect is discovered within the warranty period"
+        },
+        {
+          "id": "b",
+          "text": "No, because window screens were omitted from the drawings, so they were not originally part of the contract scope, unless specified in a change order"
+        },
+        {
+          "id": "c",
+          "text": "Yes, because the architect's issuance of Final Completion certifies that the punch list item was properly completed per the punch list document"
+        },
+        {
+          "id": "d",
+          "text": "Yes, because window screens are the contractor's responsibility regardless of drawing inclusion, as they are considered standard in residential projects"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Door latch adjustments are standard punch list items—minor hardware adjustments that do not affect occupancy or functionality and are typical loose ends identified during substantial completion inspection.",
+        "b": "Incorrect. If the item was on the punch list, it was established as a required item. The architect's punch list determination binds both contractor and owner.",
+        "d": "Incorrect reasoning (though correct conclusion). The issue is not contractor responsibility in general, but whether the architect properly verified punch list completion before issuing Final Completion.",
+        "correct": "The architect's Certificate of Final Completion is a professional representation that all punch list items have been properly completed. If the architect issued Final Completion, that certificate stands as evidence that the window screen item was addressed. If the item was on the punch list and not completed, the architect failed to properly verify the item before issuing the certificate, and the owner has a claim against the contractor for incomplete punch list work. The architect's certification creates liability.",
+        "takeaway": "The architect's Final Completion certification represents that all punch list items are properly completed; if items were not completed, the architect's certification creates liability for failure to verify."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b4e8ac884dfb2701540cfb73f6e1cc7da9c979630001e66336feb9547c8e273"
+    },
+    {
+      "question_id": "f6761609-3506-4e9c-b35c-772a2f9125d7",
+      "article_id": "5e99dd5d-1394-46bc-998e-8915e2595b0b",
+      "topic_id": "eafde61a-27d1-4d8b-81f0-8e45e5848022",
+      "text": "During the architect's final inspection, the architect discovers that two punch list items—wall paint and door hardware—were completed properly, but a third item (fixing a plumbing leak) was corrected in a manner inconsistent with the contract specifications. What should the architect do?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Issue the Certificate of Final Completion because most punch items are properly corrected, minimizing project delays and facilitating occupancy"
+        },
+        {
+          "id": "b",
+          "text": "Withhold the Final Completion certificate and require the contractor to correct the improperly finished plumbing work per contract specifications"
+        },
+        {
+          "id": "c",
+          "text": "Issue a partial final completion certificate for the paint and hardware items only, ensuring compliance with the contract terms for those elements"
+        },
+        {
+          "id": "d",
+          "text": "Request the owner to accept the plumbing repair as-is to avoid further delays, considering the potential impact on project timelines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Final Completion certification requires that all punch list items are properly completed and compliant. Partial compliance does not satisfy the architect's verification obligation.",
+        "c": "Incorrect. Final Completion is binary—all work is complete and compliant, or it is not. Partial certification is not standard practice and creates ambiguity about remaining obligations.",
+        "d": "Incorrect. The architect cannot authorize owner acceptance of non-compliant work as a substitute for contract compliance. The plumbing repair must meet contract specifications.",
+        "correct": "The architect's responsibility is to verify that all punch list items are completed in compliance with contract documents and specifications. If any punch item is corrected improperly or non-compliant, the architect must withhold the Final Completion certificate and require the contractor to re-correct the item to meet contract standards. The certificate is issued only when all items are proper.",
+        "takeaway": "The architect must withhold Final Completion certification if any punch list item is improperly corrected or non-compliant—all items must meet contract specifications before certification is issued."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-018-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.923634+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:069cdb11d29b7b89fb4375eff64cea246ef04adebfcd47c7002743c1703f6e7d"
+    }
+  ]
+}

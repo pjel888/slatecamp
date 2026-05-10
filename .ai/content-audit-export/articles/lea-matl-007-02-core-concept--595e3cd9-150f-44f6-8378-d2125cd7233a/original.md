@@ -99,4 +99,3 @@ is optional for topcoat adhesion\", \"Mixing incompatible binders (latex over en
 See also within Interior Finishes: **lea-matl-007-01-core-concept**, **lea-matl-007-03-core-concept**, **lea-matl-007-04-core-concept**, **lea-matl-007-05-core-concept**.
 
 > **Overview:** See **overview-building-materials** for the full curriculum structure and study strategy. See **mastery-building-materials** for connections across topics.
-

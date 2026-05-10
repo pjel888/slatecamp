@@ -12,7 +12,7 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 ## Learning Goal
 Calculate minimum parking requirements per occupancy type using NBC ratios, identify accessible and compact space allocations, apply parking ratios per PD 1096 (e.g., 1 slot/room for de luxe hotels), and verify compliance for mixed-use projects.
 
-Parking requirements determine the minimum number of vehicle spaces a building must provide based on occupancy type and size. 
+Parking requirements determine the minimum number of vehicle spaces a building must provide based on occupancy type and size.
 
 ## Core Concept
 
@@ -29,14 +29,14 @@ Extracted summary:
 
 A proposed building contains:
 
-- **Office space:** 800 m² GFA 
-- **Restaurant (dining area):** 200 m² of dining space 
+- **Office space:** 800 m² GFA
+- **Restaurant (dining area):** 200 m² of dining space
 
-**Step 1: Apply NBC Ratios (PD 1096 Rule XIX, Section 1903)** 
+**Step 1: Apply NBC Ratios (PD 1096 Rule XIX, Section 1903)**
 
-- **Office:** 800 m² ÷ 125 m²/slot = **6.4 → 7 slots** 
-- **Restaurant dining:** 200 m² ÷ 30 m²/slot = **6.67 → 7 slots** 
-- **Subtotal = 14 slots** 
+- **Office:** 800 m² ÷ 125 m²/slot = **6.4 → 7 slots**
+- **Restaurant dining:** 200 m² ÷ 30 m²/slot = **6.67 → 7 slots**
+- **Subtotal = 14 slots**
 
 **Step 2: Add Accessible Parking (BP 344 & Rule XIX)**
 

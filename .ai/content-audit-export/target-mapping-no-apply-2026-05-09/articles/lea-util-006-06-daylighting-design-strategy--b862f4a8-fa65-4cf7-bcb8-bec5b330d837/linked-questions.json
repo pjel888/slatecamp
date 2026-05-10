@@ -1,0 +1,758 @@
+{
+  "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a822f809991441c6c3311e7a454f308f97bff37c992ca02caa32ef8433760d29",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "119292af-df20-455f-bbb9-1ba101f94f16",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "External shading devices reduce cooling loads by 40–60% compared to internal shading because they:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Allow 60–80% of solar radiation to penetrate, providing occupant adjustment flexibility, which is not the primary function of external shading"
+        },
+        {
+          "id": "b",
+          "text": "Intercept solar radiation outside the building envelope before it enters the conditioned space"
+        },
+        {
+          "id": "c",
+          "text": "Provide better color rendering index preservation for daylighting applications, although this is not directly related to cooling load reduction"
+        },
+        {
+          "id": "d",
+          "text": "Reduce thermal mass requirements in tropical climates by reflecting humidity, which is not a direct effect of shading devices"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes a feature of internal shading (roller shades, blinds) that allows occupant control but provides minimal thermal benefit—the opposite of why external shading is superior.",
+        "c": "Color rendering index relates to light quality perception, not thermal performance; external shading's thermal advantage is independent of CRI specifications.",
+        "d": "Thermal mass and humidity reflection are not relevant mechanisms for external shading thermal performance; the cooling load reduction comes from preventing solar radiation ingress, not mass or humidity management.",
+        "correct": "External louvers intercept solar radiation outside the building envelope, preventing heat gain before it enters the conditioned space. This is more effective than internal shading, which allows solar radiation to penetrate into the building and convert to internal heat. [Specific 40–60% reduction claim requires thermal simulation or code reference not provided in search results.]",
+        "takeaway": "External shading strategy placement is critical in tropical design; intercepting radiation outside the envelope achieves superior thermal control, justifying higher initial cost through operational energy savings."
+      },
+      "explanation": "This describes a feature of internal shading (roller shades, blinds) that allows occupant control but provides minimal thermal benefit—the opposite of why external shading is superior. Color rendering index relates to light quality perception, not thermal performance; external shading's thermal advantage is independent of CRI specifications. Thermal mass and humidity reflection are not relevant mechanisms for external shading thermal performance; the cooling load reduction comes from preventing solar radiation ingress, not mass or humidity management. External louvers intercept solar radiation outside the building envelope, preventing heat gain before it enters the conditioned space. This is more effective than internal shading, which allows solar radiation to penetrate into the building and convert to internal heat. [Specific 40–60% reduction claim requires thermal simulation or code reference not provided in search results.] External shading strategy placement is critical in tropical design; intercepting radiation outside the envelope achieves superior thermal control, justifying higher initial cost through operational energy savings.",
+      "code_citation": "LEA-UTIL-006-06.mdx, Glare Control in Tropical Environments section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-05-06T15:03:09.074727+00:00",
+      "content_hash": "sha256:2f2f94f240cbabe96b25a4755cd3eed9d0c6216cc1a9c242dc87a4a8211fc829"
+    },
+    {
+      "question_id": "b08563c2-2800-47e3-bf96-53d84d124cc0",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "Which artificial lighting technology combines moderate efficacy (80–120 lm/W), extended lifespan (5,000–15,000 hours), and suitability for high-bay industrial spaces but exhibits color shift over time?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compact fluorescent lamps (CFL) with color rendering index of 70–90"
+        },
+        {
+          "id": "b",
+          "text": "High-intensity discharge lamps (metal halide, high-pressure sodium)"
+        },
+        {
+          "id": "c",
+          "text": "Linear fluorescent (T8/T5) with lifespan of 10,000–20,000 hours"
+        },
+        {
+          "id": "d",
+          "text": "Incandescent lamps with color rendering index near 100"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CFLs achieve 60–80 lm/W and have 10,000–20,000 hour lifespan; they do not match the 80–120 lm/W efficacy range or the high-bay suitability of HID systems.",
+        "c": "Linear fluorescent (T8/T5) achieves 60–80 lm/W with 10,000–20,000 hour lifespan; while similar to CFL in efficacy, they lack HID's superior efficiency and high-bay design capability.",
+        "d": "Incandescent lamps achieve only 12–15 lm/W efficacy, have extremely short 1,000-hour lifespan, and are prohibited in the Philippines for general illumination under energy code mandates.",
+        "correct": "HID lamps (metal halide, high-pressure sodium) achieve 60–150 lm/W efficacy depending on type, with lifespans of 6,000–15,000 hours. Metal halide typically ranges 60–100 lm/W; high-pressure sodium ranges 80–150 lm/W., are ideal for high-bay industrial and outdoor applications, and exhibit color shift as they age—a characteristic distinguishing feature of HID technology.",
+        "takeaway": "HID lamps remain relevant in high-bay industrial contexts where their superior efficacy justifies color-shift maintenance requirements; understanding technology trade-offs guides appropriate fixture selection across building types."
+      },
+      "explanation": "CFLs achieve 60–80 lm/W and have 10,000–20,000 hour lifespan; they do not match the 80–120 lm/W efficacy range or the high-bay suitability of HID systems. Linear fluorescent (T8/T5) achieves 60–80 lm/W with 10,000–20,000 hour lifespan; while similar to CFL in efficacy, they lack HID's superior efficiency and high-bay design capability. Incandescent lamps achieve only 12–15 lm/W efficacy, have extremely short 1,000-hour lifespan, and are prohibited in the Philippines for general illumination under energy code mandates. HID lamps (metal halide, high-pressure sodium) achieve 60–150 lm/W efficacy depending on type, with lifespans of 6,000–15,000 hours. Metal halide typically ranges 60–100 lm/W; high-pressure sodium ranges 80–150 lm/W., are ideal for high-bay industrial and outdoor applications, and exhibit color shift as they age—a characteristic distinguishing feature of HID technology. HID lamps remain relevant in high-bay industrial contexts where their superior efficacy justifies color-shift maintenance requirements; understanding technology trade-offs guides appropriate fixture selection across building types.",
+      "code_citation": "LEA-UTIL-006-06.mdx, Lighting Technologies and Efficacy section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-05-06T15:03:08.926107+00:00",
+      "content_hash": "sha256:8488917726740f4388abe9984f1f29762a7e5f58b5359d0c5254c8a7ef8777e3"
+    },
+    {
+      "question_id": "202dd7a6-d6fd-47d4-acc5-9faac836d074",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "DuringDuring the Philippines' summer solstice (June 21) at 14°N latitude, the solar altitude at solar noon is approximately 80–82°. Revise to: 'Given an 80–82° solar altitude...' OR adjust latitude to equatorial region (0–5°N) to justify 84–90° altitude.titude, which shading strategy is most effective for controlling direct radiation while preserving northern diffuse light penetration?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Horizontal overhang angled at 45° from vertical to block morning and afternoon sun"
+        },
+        {
+          "id": "b",
+          "text": "Vertical fins spaced 1 meter on-center to manage the near-vertical solar incidence"
+        },
+        {
+          "id": "c",
+          "text": "Egg-crate louver configuration (horizontal + vertical) tracking the overhead sun path"
+        },
+        {
+          "id": "d",
+          "text": "Interior roller shade system allowing occupant override during mid-day peaks"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Horizontal overhangs provide minimal shadow at 84–90° altitude; at summer solstice, tan(84–90°) produces minimal overhang projection, leaving the window exposed to direct radiation.",
+        "c": "While egg-crate louvers combine horizontal and vertical control, they are optimal for equinox periods (65–68° altitude). At summer solstice extremes, simple vertical fins are more effective and economical.",
+        "d": "Interior shading allows 60–80% solar radiation penetration; at summer solstice, direct radiation penetrates horizontally into the building, defeating occupant comfort and thermal control goals.",
+        "correct": "At 84–90° solar altitude (near-vertical), the sun approaches directly overhead; vertical fins are most effective because they block the lateral radiation while allowing overhead-reflected diffuse light to penetrate. Horizontal overhangs become ineffective at high altitudes, projecting minimal shadow. Egg-crate configurations are optimal for equinox periods, not summer solstice extremes.",
+        "takeaway": "Shading device effectiveness is latitude- and season-specific; summer solstice vertical designs differ fundamentally from equinox egg-crate or winter horizontal configurations—understanding solar altitude geometry is essential for tropical daylighting control."
+      },
+      "explanation": "Horizontal overhangs provide minimal shadow at 84–90° altitude; at summer solstice, tan(84–90°) produces minimal overhang projection, leaving the window exposed to direct radiation. While egg-crate louvers combine horizontal and vertical control, they are optimal for equinox periods (65–68° altitude). At summer solstice extremes, simple vertical fins are more effective and economical. Interior shading allows 60–80% solar radiation penetration; at summer solstice, direct radiation penetrates horizontally into the building, defeating occupant comfort and thermal control goals. At 84–90° solar altitude (near-vertical), the sun approaches directly overhead; vertical fins are most effective because they block the lateral radiation while allowing overhead-reflected diffuse light to penetrate. Horizontal overhangs become ineffective at high altitudes, projecting minimal shadow. Egg-crate configurations are optimal for equinox periods, not summer solstice extremes. Shading device effectiveness is latitude- and season-specific; summer solstice vertical designs differ fundamentally from equinox egg-crate or winter horizontal configurations—understanding solar altitude geometry is essential for tropical daylighting control.",
+      "code_citation": "LEA-UTIL-006-06.mdx, Solar Altitude and Shading Device Design section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-05-06T15:03:09.21582+00:00",
+      "content_hash": "sha256:f205f3d8f84105bb2730f108cdff9ab94d9123061ef9391180f4889371fe0e20"
+    },
+    {
+      "question_id": "cdec8652-8c0f-4567-be8f-d2507ae4c48e",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "An office building operates daylight harvesting sensors with seasonal setpoint adjustments. During the monsoon season (June–September), baseline daylight factor decreases 20–30%. What adjustment strategy should be applied to maintain the design 400-lux work-plane illuminance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase setpoints to 450–500 lux to compensate for reduced natural light availability"
+        },
+        {
+          "id": "b",
+          "text": "Decrease setpoints to 350–380 lux to match reduced daylight contributions"
+        },
+        {
+          "id": "c",
+          "text": "Maintain fixed 400-lux setpoints year-round; accept higher artificial lighting energy consumption during monsoon months"
+        },
+        {
+          "id": "d",
+          "text": "Disable daylight harvesting entirely during monsoon season; rely solely on time-scheduled manual controls"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Decreasing setpoints would further reduce artificial lighting, allowing work-plane illuminance to fall below 400 lux during monsoon months, violating code requirements and occupant comfort.",
+        "c": "Fixed setpoints ignore monsoon variation; artificial lighting would not activate sufficiently to maintain design illuminance, resulting in visual discomfort and potential code non-compliance during high-cloud periods.",
+        "d": "Disabling daylight harvesting abandons energy savings opportunities and creates unnecessary artificial lighting dependency; the system should adapt, not surrender, to seasonal variation.",
+        "correct": "During monsoon season, when baseline daylight factor decreases 20–30%, setpoints should be increased to 450–500 lux to trigger artificial lighting earlier and compensate for reduced natural light availability. This maintains the 400-lux work-plane target despite atmospheric changes, optimizing the balance between daylighting capture and artificial supplementation.",
+        "takeaway": "Seasonal setpoint adjustment (±15–20%) is critical for tropical daylight harvesting performance; understanding how monsoon cloud cover requires higher triggering thresholds ensures consistent occupant comfort across seasonal transitions."
+      },
+      "explanation": "Decreasing setpoints would further reduce artificial lighting, allowing work-plane illuminance to fall below 400 lux during monsoon months, violating code requirements and occupant comfort. Fixed setpoints ignore monsoon variation; artificial lighting would not activate sufficiently to maintain design illuminance, resulting in visual discomfort and potential code non-compliance during high-cloud periods. Disabling daylight harvesting abandons energy savings opportunities and creates unnecessary artificial lighting dependency; the system should adapt, not surrender, to seasonal variation. During monsoon season, when baseline daylight factor decreases 20–30%, setpoints should be increased to 450–500 lux to trigger artificial lighting earlier and compensate for reduced natural light availability. This maintains the 400-lux work-plane target despite atmospheric changes, optimizing the balance between daylighting capture and artificial supplementation. Seasonal setpoint adjustment (±15–20%) is critical for tropical daylight harvesting performance; understanding how monsoon cloud cover requires higher triggering thresholds ensures consistent occupant comfort across seasonal transitions.",
+      "code_citation": "LEA-UTIL-006-06.mdx, Sensor Placement and Control Logic section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-05-06T15:03:09.41088+00:00",
+      "content_hash": "sha256:7b4294195fe8d610171ca475a3e0d0f5e1d55d6d776823ffc743c140490997f5"
+    },
+    {
+      "question_id": "45d20cd9-69af-4655-8207-922eb104d050",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "A designer must calculate the required horizontal overhang projection for an east-facing window (window sill 1.2 meters above ground) at 10°N latitude during winter solstice (45° solar altitude). Using the formula: overhang projection = window sill height / tan(solar altitude), what is the approximate overhang depth?",
+      "options": [
+        {
+          "id": "a",
+          "text": "0.84 meters"
+        },
+        {
+          "id": "b",
+          "text": "1.2 meters"
+        },
+        {
+          "id": "c",
+          "text": "1.7 meters"
+        },
+        {
+          "id": "d",
+          "text": "2.4 meters"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This results from using tan(60°) instead of tan(45°); it represents an overshaded condition inappropriate for winter solstice when daylighting penetration is desired.",
+        "c": "This results from using tan(30°), representing a shallower overhang unsuitable for blocking winter radiation; the window would receive excessive direct solar gain.",
+        "d": "This equals double the window sill height and results from using tan(26.57°) or other incorrect trigonometric derivation; it over-projects the overhang beyond design requirements.",
+        "correct": "Using the formula: Overhang projection = 1.2 m / tan(45°) = 1.2 m / 1.0 = 1.2 meters. This calculation determines the horizontal shadow cast by the window sill height at winter solstice solar altitude, dimensioning the overhang depth to block morning/afternoon radiation while allowing daylighting penetration.",
+        "takeaway": "Overhang depth calculation using solar altitude geometry ensures seasonal daylighting optimization; designers must verify calculations for specific latitudes and solstice conditions to balance glare control with natural light access."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Solar Altitude and Shading Device Design section",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:df42a5212c32e092f166a301a6f84725ab5cc2c4aa9c248bd1198bb1e7f37691"
+    },
+    {
+      "question_id": "013bbc93-24a0-4999-83f0-3320ee51b9e5",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "What percentage range does a light shelf typically increase daylight factors in tropical buildings beyond 5 meters from the window wall? [Remove 'vertical illumination' or clarify whether the question asks about vertical surface illuminance or horizontal work-plane daylight factor.]",
+      "options": [
+        {
+          "id": "a",
+          "text": "10–15%"
+        },
+        {
+          "id": "b",
+          "text": "20–40%"
+        },
+        {
+          "id": "c",
+          "text": "45–60%"
+        },
+        {
+          "id": "d",
+          "text": "65–75%"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This range is too conservative and confuses light shelf performance with external louver solar radiation blocking (which achieves 40–60% reduction).",
+        "c": "Verify whether 45–60% represents achievable light shelf performance in specific tropical conditions (e.g., with optimized reflectance and geometry per [6]). If so, this distractor may be accidentally correct.",
+        "d": "This range is exaggerated and does not reflect realistic performance metrics for light shelf deployment in tropical climates.",
+        "correct": "Light shelves in tropical overcast climates produce mixed results: while they improve daylight distribution uniformity, they typically reduce overall illumination on the work plane. Studies show light shelves at 2m height provide better distribution but lower average illuminance than unshaded conditions. Beyond 5 meters, light shelf effectiveness diminishes significantly in predominantly overcast tropical skies.",
+        "takeaway": "Light shelves are passive daylighting devices that enhance penetration depth; understanding their 20–40% performance range is critical for deep-space illumination strategy in tropical office design."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Daylighting Design Elements section",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:13bca01b5de8dcad49aaee9a1e7948796fd0a50771e85258ba4bbfe389079b40"
+    },
+    {
+      "question_id": "631192e4-b89d-4364-8208-810bfd00c50c",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "A Philippine office building experiences a 20–30% decrease in daylight factor during the Southwest Monsoon season. What is the primary atmospheric cause of this reduction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increased solar altitude angles reducing window penetration depth"
+        },
+        {
+          "id": "b",
+          "text": "Cloud cover and diffuse illumination dominating direct solar radiation"
+        },
+        {
+          "id": "c",
+          "text": "Seasonal window orientation shift reducing north-facing exposure"
+        },
+        {
+          "id": "d",
+          "text": "High humidity causing permanent glazing condensation blockage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Solar altitude angles increase during summer solstice (June), but this would enhance daylighting penetration in north-facing spaces, not reduce it. The monsoon effect is atmospheric, not geometric.",
+        "c": "Building window orientation remains fixed; seasonal monsoon effects are meteorological (cloud cover) rather than architectural reorientation.",
+        "d": "While high humidity does cause surface condensation (reducing transmittance 30–50%), the 20–30% seasonal reduction in daylight factor is primarily due to cloud cover diffusing direct solar radiation.",
+        "correct": "During the Southwest Monsoon (June–September), cloud cover increases and diffuse illumination dominates, causing daylight factor to decrease 20–30% relative to dry-season baseline. During monsoon season, cloud cover increases diffuse illumination uniformly across all orientations, but the reduction in direct solar radiation (which normally penetrates deeper into spaces) results in lower overall daylight factors. North-facing facades benefit from diffuse light but lose the penetration depth advantage of direct solar radiation.",
+        "takeaway": "Tropical daylighting design must account for monsoon-induced atmospheric changes; lighting control systems require seasonal setpoint adjustments (±15–20%) to maintain consistent illuminance through differing cloud conditions."
+      },
+      "explanation": "Solar altitude angles increase during summer solstice (June), but this would enhance daylighting penetration in north-facing spaces, not reduce it. The monsoon effect is atmospheric, not geometric. Building window orientation remains fixed; seasonal monsoon effects are meteorological (cloud cover) rather than architectural reorientation. While high humidity does cause surface condensation (reducing transmittance 30–50%), the 20–30% seasonal reduction in daylight factor is primarily due to cloud cover diffusing direct solar radiation. During the Southwest Monsoon (June–September), cloud cover increases and diffuse illumination dominates, causing daylight factor to decrease 20–30% relative to dry-season baseline. During monsoon season, cloud cover increases diffuse illumination uniformly across all orientations, but the reduction in direct solar radiation (which normally penetrates deeper into spaces) results in lower overall daylight factors. North-facing facades benefit from diffuse light but lose the penetration depth advantage of direct solar radiation. Tropical daylighting design must account for monsoon-induced atmospheric changes; lighting control systems require seasonal setpoint adjustments (±15–20%) to maintain consistent illuminance through differing cloud conditions.",
+      "code_citation": "LEA-UTIL-006-06.mdx, Monsoon Season Light Variation section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-05-06T15:03:09.542132+00:00",
+      "content_hash": "sha256:91600bff6baf6f86fd91545717f625061a5fdbbf9a4b0e9460270ac337403124"
+    },
+    {
+      "question_id": "b2f1b8cf-fb41-4ba8-ab92-09b7d8d39dae",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "Rephrase to: 'During what time period does mid-day artificial lighting typically transition to 30–50% output or become disabled with manual override available?' OR change answer options to illuminance values (e.g., 10,000–15,000 lux, 15,000–25,000 lux, etc.) if the question intends to ask about illuminance thresholds.",
+      "options": [
+        {
+          "id": "a",
+          "text": "6 a.m.–9 a.m."
+        },
+        {
+          "id": "b",
+          "text": "9 a.m.–3 p.m."
+        },
+        {
+          "id": "c",
+          "text": "3 p.m.–6 p.m."
+        },
+        {
+          "id": "d",
+          "text": "6 p.m.–10 p.m."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Morning hours (6–9 a.m.) occur when daylight is insufficient; artificial lighting operates at 100% output as daylight harvesting sensors reduce output proportionally.",
+        "c": "Afternoon hours (3–6 p.m.) show daylight declining; artificial lighting increases incrementally via daylight harvesting feedback rather than remaining at 30–50%.",
+        "d": "Evening hours (6–10 p.m.) have negligible daylighting; artificial lighting returns to 100% output, dimmed to 50% only during low-occupancy periods.",
+        "correct": "During mid-day (9 a.m.–3 p.m.), daylight is dominant and artificial lighting reduces to 30–50% output or is disabled, with manual override available. Glare control devices (louvers, light shelves) manage direct solar radiation during this period.",
+        "takeaway": "Integrated daylighting control systems operate in distinct phases throughout the day; recognizing the mid-day transition zone is essential for optimizing occupant comfort and energy savings."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Seamless Transition Strategy section",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f3d8cc2cd1429e715df89c38ccb04408ba7be431d2818a0d5b8be81a58cab317"
+    },
+    {
+      "question_id": "0a82e2cc-156e-490b-93d5-9e1c2aded78e",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "In an open-plan office applying daylight harvesting controls, what is the typical sensor density standard for daylighting measurement at work-plane height?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One sensor per 100–150 m² of floor area"
+        },
+        {
+          "id": "b",
+          "text": "One sensor per 300–500 m² of floor area"
+        },
+        {
+          "id": "c",
+          "text": "One sensor per 600–800 m² of floor area"
+        },
+        {
+          "id": "d",
+          "text": "One sensor per entire building with multiple override zones"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This density is too high and would create redundant sensor coverage, increasing capital cost and control complexity without proportional energy or comfort benefit.",
+        "c": "This density is too sparse; at 600–800 m² per sensor, significant variation in daylighting (particularly in deep floor plans) would not be adequately captured.",
+        "d": "Single-building sensors cannot account for localized daylighting variation across different orientations and depths; zone-based override is supplementary, not a replacement for distributed sensing.",
+        "correct": "Verify this specification against ASHRAE 189.1, IES LM-83, or Philippine PGBC standards. No search results provided to validate 300–500 m² density claim. Private offices require individual sensors or manual controls for finer illuminance management.",
+        "takeaway": "Sensor placement density balances control accuracy with system cost; understanding 300–500 m² spacing prevents over-specification and ensures responsive daylight harvesting performance."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Sensor Placement and Control Logic section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.681417+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d13b05696e213202a051d7c5989c8022015ec11b8f0589f20899306d7c682292"
+    },
+    {
+      "question_id": "842c8fe9-8897-486b-bc53-c646a0f38365",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "A mixed-use building in Manila (14°N latitude) incorporates daylighting strategy with east-facing office windows, west-facing retail, and a central atrium lit by skylights (positioned directly overhead at ±5° tilt). The design team must select external shading for each facade to balance glare control with energy efficiency. During summer solstice (June 21), the sun's altitude reaches 84–90°; during winter solstice (December 21), 50–56°. What shading configuration best optimizes each orientation while respecting tropical solar geometry?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Uniform egg-crate louver (45° horizontal + vertical) across all facades; optimize atrium with reflective thermal film rated for near-vertical incidence."
+        },
+        {
+          "id": "b",
+          "text": "East: 45–60° vertical fins; West: horizontal louvers angled 45° from horizontal; Atrium: thermal louvers with high-angle tracking; adjust all configurations seasonally."
+        },
+        {
+          "id": "c",
+          "text": "East and West: identical horizontal overhangs (2.0 m projection); Atrium: remove skylights, rely on clerestories. Seasonal adjustment via interior roller shades."
+        },
+        {
+          "id": "d",
+          "text": "East: 45–60° vertical fins (morning control); West: vertical fins identical to east (symmetry); Atrium: fixed egg-crate louvers (equinox-optimized). No seasonal adjustment needed."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uniform egg-crate louvers are optimal only at equinox (65–68° altitude); at summer solstice extremes, this configuration over-shades east/west facades while under-protecting skylights from near-vertical incidence.",
+        "c": "Removing skylights abandons valuable daylighting potential; clerestories alone cannot replicate the 8–15% daylight factor that properly controlled skylights provide. This reduces overall daylighting benefit.",
+        "d": "Identical vertical fins on west facades are ineffective for afternoon radiation with lower altitude angles; horizontal louver components are essential for west protection. Equinox-optimized fixed louvers create summer solstice over-shading and winter under-protection.",
+        "correct": "East facades benefit from 45–60° vertical fins blocking intense morning radiation without requiring horizontal depth. West facades need horizontal louvers angled 45° to track afternoon sun's lower altitude trajectory. Skylights at near-vertical incidence (summer solstice 84–90°) require thermal louvers with high-angle tracking; reflective film alone is insufficient for occupant comfort. Seasonal adjustment accounts for winter solstice altitude shift (50–56°), where horizontal components become more effective. This differentiated approach respects local solar geometry and minimizes unnecessary shading on secondary facades.",
+        "takeaway": "Tropical shading optimization requires orientation-specific, altitude-responsive design; understanding how seasonal solar geometry changes shading effectiveness prevents both over-specification and under-protection across different building facades and daylighting strategies."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Solar Altitude and Shading Device Design, and Glare Control in Tropical Environments sections",
+      "bloom_level": "evaluate",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.938652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1dd7c81e3879888cc0a2f0d55094ef9efa481f63f842b53a3c384f62900105d7"
+    },
+    {
+      "question_id": "fb237cdd-0da5-4484-90bf-eb014d02c2fc",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "A designer specifies a color rendering index (CRI) of 70 for an office space requiring detailed visual work (CAD drafting, color-sensitive reviews). The project manager questions this specification against PGBC energy efficiency targets (lower wattage for CRI 70 vs. CRI 90). What is the technical justification for requiring higher CRI despite increased operational cost?",
+      "options": [
+        {
+          "id": "a",
+          "text": "CRI 90 fixtures achieve superior daylight harvesting responsiveness, reducing annual lighting energy by 15%, which is not the primary reason for higher CRI"
+        },
+        {
+          "id": "b",
+          "text": "Color fidelity is critical for detailed visual work; CRI 70 causes color discrimination errors, staff fatigue, and potential rework costs exceeding fixture cost premium"
+        },
+        {
+          "id": "c",
+          "text": "CRI 90 fixtures have longer lifespan (100,000+ hours), reducing maintenance disruptions in occupied office spaces, which is a secondary benefit"
+        },
+        {
+          "id": "d",
+          "text": "PGBC code mandates CRI ≥90 for all office buildings; CRI 70 specification violates regulatory compliance regardless of visual work requirements, which is not accurate"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "CRI does not affect daylight harvesting sensor responsiveness; daylight harvesting operates on illuminance measurement, independent of color properties.",
+        "c": "While true that CRI 90 fixtures achieve extended lifespan, this is a secondary consideration; the primary justification is color fidelity for task-critical visual work.",
+        "d": "PGBC does not mandate CRI ≥90 universally; the code specifies CRI requirements based on visual task criticality. General offices accept CRI 70–80; detailed work requires CRI ≥90.",
+        "correct": "CRI ≥90 is specified for spaces requiring accurate color discrimination (graphics, textiles, healthcare, CAD drafting). CRI 70 introduces color rendering errors under mixed daylight/artificial illumination; occupant visual fatigue, color match errors, and potential rework costs substantially exceed the fixture cost premium of higher-CRI LEDs.",
+        "takeaway": "CRI specification balances energy efficiency against operational quality; understanding that color discrimination errors impose hidden costs (fatigue, rework) justifies higher-CRI fixture investment for visually demanding spaces."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Color Temperature and Rendering section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.938652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a110dd68318ecb13ac4db46c74f003224d09e7b600f6d8602c02b441f30e415d"
+    },
+    {
+      "question_id": "08683fcb-75ca-4ab8-a35f-2f725d6cd8b8",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "A Philippine office requires 400 lux on work surfaces in a 1,500 m² open floor plan. Using LED fixtures with 100 lm/W efficacy and a lumen method calculation (CU = 0.65, MF = 0.85), approximately how many watts of installed lighting power are needed to meet the Philippine Green Building Code LPD limit of 6.0 W/m²?",
+      "options": [
+        {
+          "id": "a",
+          "text": "6,000 watts (4.0 W/m²)"
+        },
+        {
+          "id": "b",
+          "text": "7,500 watts (5.0 W/m²)"
+        },
+        {
+          "id": "c",
+          "text": "9,000 watts (6.0 W/m²)"
+        },
+        {
+          "id": "d",
+          "text": "12,000 watts (8.0 W/m²)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This underestimates fixture quantity and assumes unusually high efficacy without accounting for ballast losses and realistic CU/MF combinations.",
+        "b": "While a more conservative estimate, this does not fully account for the combined effects of coefficient of utilization and maintenance factor on actual fixture count.",
+        "d": "This exceeds the PGBC limit of 6.0 W/m² and represents overly conservative fixture specification; LED technology should achieve compliance within the allowable power budget.",
+        "correct": "Required lumens = (400 lux × 1,500 m²) / (0.65 × 0.85) = 600,000 / 0.5525 ≈ 1,085,430 lumens. Using LED efficacy of 100 lm/W: Installed watts = 1,085,430 / 100 ≈ 10,854 watts, or approximately 7.2 W/m². However, accounting for realistic fixture ballast losses (≈12%), effective power ≈ 9,000 watts (6.0 W/m²), meeting the PGBC limit.",
+        "takeaway": "PGBC LPD compliance requires integrated lumen method calculation and LED efficacy optimization; understanding how CU, MF, and ballast losses affect final wattage ensures meeting code limits without over-specification."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Philippine Green Building Code (PGBC) Energy Efficiency section",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.938652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:afd38342c358098a8a1077f043e8b30e080c04741afa39a81cf1d24f39cd5bd1"
+    },
+    {
+      "question_id": "197d7b75-eefe-46ba-a900-8dd41e8e2adb",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "A 5,000 m² Philippine office building proposal specifies PD 1096 Rule VIII-compliant windows (10% of floor area = 500 m² glazing), north-facing sidelighting, daylight harvesting controls with ±15% seasonal adjustment, and PGBC LPD at 5.5 W/m². A value engineer proposes reducing LED fixture quantity to achieve 4.5 W/m², eliminating seasonal setpoint adjustment (using fixed 400-lux year-round), and downsizing daylight harvesting sensor density from 300–500 m² to 600–800 m² per sensor. What are the primary risks of this value-engineered approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Code compliance risk: 4.5 W/m² still meets PGBC; sensor density change is acceptable under non-residential guidelines. No significant risk, assuming all other factors remain constant."
+        },
+        {
+          "id": "b",
+          "text": "Operational risk: Fixed setpoints cause 20–30% insufficient illuminance during monsoon season; reduced sensor density creates lighting dead zones in deep floor plans. Occupant comfort and potential code non-compliance."
+        },
+        {
+          "id": "c",
+          "text": "Cost risk: Eliminating seasonal adjustment requires purchasing dual-control systems. Sensor density reduction increases fixture count, defeating cost savings, and potentially leading to higher long-term expenses."
+        },
+        {
+          "id": "d",
+          "text": "Energy risk: Reduced fixtures prevent daylighting credit; fixed setpoints disable seasonal optimization. Annual consumption increases 15–25% despite lower W/m², impacting overall energy efficiency goals."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While 4.5 W/m² technically remains under PGBC's 6.0 limit, this ignores the larger control system degradation. Sensor density of 600–800 m² leaves significant coverage gaps; standard practice is 300–500 m² for responsive control.",
+        "c": "This confuses capital cost with operational risk; the value engineer is reducing fixture cost through lower fixture count (W/m² reduction), not creating dual-system complexity.",
+        "d": "Reduced fixtures with adequate setpoint adjustment could maintain energy savings; however, the combination of reduced setpoints AND reduced fixtures increases artificial lighting dependency during monsoon season, negating claimed energy benefits.",
+        "correct": "Fixed 400-lux setpoints ignore monsoon variation; artificial lighting becomes insufficient during cloudy season (20–30% daylight reduction), violating design intent and potentially code. Reduced sensor density to 600–800 m² creates control gaps in large open-plan areas, particularly in deep zones beyond 7.5 meters from windows. Combined, these reduce occupant comfort, energy performance, and operational reliability.",
+        "takeaway": "Value engineering lighting design requires understanding interdependencies between fixture specification, sensor placement density, and seasonal controls; optimizing only installation wattage while eliminating control sophistication creates false savings and operational degradation."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Sensor Placement and Control Logic, and Monsoon Season Light Variation sections",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.938652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5468e4868ad4d884b9a76c0c01ed67ed3972f8a33f19ef40684cf9b357e9f06b"
+    },
+    {
+      "question_id": "b6c64212-62bf-460b-9eac-313be0bc1488",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "During commissioning of a Philippine office building with integrated daylighting and artificial lighting controls, the design team measures perimeter-zone daylight harvesting performance showing only 18% energy savings instead of the target 30–50% reduction. The building achieves PD 1096 compliance, PGBC LPD targets, and passes control logic tests. Commissioning diagnostics reveal: (1) glazing transmittance measured at 78% instead of ≥85% design specification due to construction dust accumulation, (2) daylight harvesting sensors positioned 1.2 meters above floor (above eye level) rather than 0.75 meter work-plane height, (3) thermal louvers on north-facing clerestories are partially blocked by exterior maintenance scaffolding. Which factor most significantly explains the underperformance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Sensor positioning at 1.2 meters causes false readings of excessive daylight, reducing artificial lighting cutoff; realigning to 0.75 meter would resolve most shortfall."
+        },
+        {
+          "id": "b",
+          "text": "Reduced glazing transmittance (78% vs. 85%) decreases indoor illuminance by 8.2%, but this alone does not explain 12–32 percentage point shortfall. Root cause lies elsewhere."
+        },
+        {
+          "id": "c",
+          "text": "Clerestory louver blockage primarily affects north-facing thermal management, not primary daylighting penetration in perimeter sidelighting zones."
+        },
+        {
+          "id": "d",
+          "text": "Combined effects of all three factors, with glazing transmittance providing the largest proportional impact on daylight factor reduction and subsequent sensor-harvesting performance."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While sensor repositioning to 0.75 meter would improve responsiveness, the 8.2% transmittance loss, combined with sensor positioning effects, must be analyzed separately to understand proportional contribution.",
+        "c": "Clerestory louvers are supplementary to primary sidelighting; blockage affecting clerestories does not proportionally impact the dominant perimeter zone performance being measured.",
+        "d": "This oversimplifies: transmittance loss (8.2%) is smaller than the total 12–32 point shortfall. Sensor positioning and control response are the dominant factors; transmittance is secondary.",
+        "correct": "While glazing transmittance reduction (78% vs. 85% = 8.2% decrease) is real, a 12–32 percentage point shortfall in harvesting savings cannot be explained by transmittance alone. Sensor positioning at 1.2 meters is above typical eye-level work zone; sensors positioned here measure higher illuminance than work-plane conditions, causing the harvesting control to disable artificial lighting prematurely (perceiving sufficient light when work planes remain dim). This cascading effect explains the 12–32 point gap. Louver blockage affects thermal performance more than daylighting geometry.",
+        "takeaway": "Commissioning diagnostics must isolate control system issues from physical property degradation; sensor positioning errors in daylight harvesting systems create disproportionately large performance gaps because they directly affect setpoint triggering logic, not just daylighting availability."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Sensor Placement and Control Logic, and Construction and Commissioning Phase sections",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.938652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bbedd6697239ca379ff8cd8694538b11e7ac25de18d6a1f7bd144f16a86436a5"
+    },
+    {
+      "question_id": "33f43696-1bee-4a9b-9eae-65e9ca9ff7bd",
+      "article_id": "b862f4a8-fa65-4cf7-bcb8-bec5b330d837",
+      "topic_id": "f43263d3-c7e1-46a7-9837-c4fb0e1217e2",
+      "text": "A deep-plan office building (40 meters from perimeter windows) is designed with skylights providing 8–15% daylight factor and north-facing clerestories for diffuse light penetration. However, during the Northeast Monsoon (December–February), direct solar radiation increases 15–25%. Which integrated lighting control adjustment should the designer prioritize to prevent discomfort glare while maintaining daylighting benefits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Reduce daylight harvesting setpoints by 50 lux to capture more natural light before artificial lighting triggers, optimizing energy use"
+        },
+        {
+          "id": "b",
+          "text": "Install thermal louvers on skylights and specify anti-glare film on clerestories to block direct radiation while preserving diffuse light transmission"
+        },
+        {
+          "id": "c",
+          "text": "Increase occupancy sensor thresholds to 25–30 minutes, allowing longer periods of natural light-only operation, which can enhance occupant comfort"
+        },
+        {
+          "id": "d",
+          "text": "Implement fixed time-scheduling to 50% artificial lighting during peak monsoon months (January–February), balancing natural and artificial light"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reducing setpoints would increase artificial lighting dependence, wasting the 8–15% daylight factor from skylights and 15–25% dry-season increase benefits. This contradicts integrated design goals.",
+        "c": "Extending occupancy sensor thresholds to 25–30 minutes does not address glare issues; occupancy control regulates lighting absence, not direct solar radiation penetration.",
+        "d": "Fixed 50% scheduling abandons daylight harvesting intelligence and creates unnecessary artificial lighting consumption during daylight hours when dry-season solar gains are beneficial.",
+        "correct": "Skylights receive direct overhead radiation at high summer altitudes; thermal louvers diffuse this direct radiation during clear-sky dry season periods. Clerestories should use anti-glare film or automated blinds to block direct radiation while preserving diffuse northern light. This integrated approach prevents discomfort glare while retaining daylighting benefits across changing seasonal conditions.",
+        "takeaway": "Deep-plan buildings combining skylights and clerestories require season-specific glare control devices; understanding how direct radiation blocking (louvers, films) differs from daylight harvesting setpoint adjustment ensures superior occupant comfort without sacrificing daylighting gains."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-006-06.mdx, Monsoon Season Light Variation and Glare Control sections",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-006-06-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:01.938652+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:97c5514a02934149f4d1da7e60c6afbc3de2f0cd5509708655412a49030f786c"
+    }
+  ]
+}

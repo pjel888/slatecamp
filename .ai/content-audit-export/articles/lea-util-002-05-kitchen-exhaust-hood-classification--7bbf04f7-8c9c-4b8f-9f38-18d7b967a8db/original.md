@@ -247,4 +247,3 @@ A 20 m² trash room with 10 ACH requires: (20 m² × 10 ACH) / 60 minutes = 3.33
 See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, **lea-util-002-04-core-concept**, **lea-util-002-06-core-concept**, **lea-util-002-07-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

@@ -1,0 +1,448 @@
+{
+  "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:ec129b6a6a5648b3d0c385640f628e3df77131f72cfe97f0f4e7c6d3f058b215",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "00115b59-c190-476b-8ef2-fae152241b7e",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A new public hospital requires an accessible ramp with a total rise of 1,400 mm. Using the 1:15 slope tier (MAX), what is the maximum length of a SINGLE sloped run, the maximum rise per run, and the required landing interval?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Max single run: 10.50 m; Max rise per run: 700 mm; Landing interval: every 9.00 m"
+        },
+        {
+          "id": "B",
+          "text": "Max single run: 10.50 m; Max rise per run: 700 mm; Landing interval: every 10.00 m"
+        },
+        {
+          "id": "C",
+          "text": "Max single run: 9.00 m; Max rise per run: 600 mm; Landing interval: every 10.50 m"
+        },
+        {
+          "id": "D",
+          "text": "Max single run: 15.00 m; Max rise per run: 700 mm; Landing interval: every 10.50 m"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2024 IRR Appendix A Table A.1.1 specifies for the 1:15 tier: maximum sloped run length = 10.50m (corresponding to 700mm rise × 15 = 10,500mm), and maximum rise per run = 700mm. Landings must be provided at 10.00m intervals — this is the interval trigger, which is DIFFERENT from the 10.50m maximum run. The distinction: 'every 10.00m' means you must introduce a landing even if you haven't reached the 700mm/10.50m ceiling; '10.50m' is the absolute maximum for a single run. For 1,400mm total rise: 1,400 ÷ 700 = 2 runs needed, each at 10.50m.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:02c9f55bb5c245d7666832acf4bd23900401ce584777d19d67ed06c95e9dc99c"
+    },
+    {
+      "question_id": "a2555ae7-ee40-4d1a-a83d-38e1f6145674",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under the 2024 BP 344 IRR, what are the three slope tiers for accessible ramps, and which tier represents the ideal design goal versus the maximum for new construction versus the renovation-only exception?",
+      "options": [
+        {
+          "id": "A",
+          "text": "GOLD = 1:12 (8.33%) as ideal; MAX = 1:15 (6.67%) for new construction; RENO = 1:20 (5%) for existing buildings, which is a common misunderstanding of the standard"
+        },
+        {
+          "id": "B",
+          "text": "GOLD = 1:20 (5%) as preferred/ideal; MAX = 1:15 (6.67%) for new construction maximum; RENO = 1:12 (8.33%) for existing building renovations only"
+        },
+        {
+          "id": "C",
+          "text": "GOLD = 1:15 (6.67%) as preferred; MAX = 1:20 (5%) for constrained sites; RENO = 1:12 (8.33%) for all projects, which is not aligned with the standard guidelines"
+        },
+        {
+          "id": "D",
+          "text": "GOLD = 1:8 (12.5%) as ideal; MAX = 1:12 (8.33%) for new construction; RENO = 1:15 (6.67%) for renovations, which exceeds the recommended slope for accessibility"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The anchor phrase is 'GOLD–MAX–RENO.' GOLD = 1:20 (5%) is the preferred slope for accessibility in new work. MAX = 1:15 (6.67%) is the steepest allowed for accessible ramps in new construction, with strict limits on run length (10.50m) and rise per run (700mm). RENO = 1:12 (8.33%) is allowed ONLY as a constrained exception for existing buildings under renovation where achieving 1:15 is physically impossible due to site constraints. The 2024 IRR explicitly supersedes older references that treated 1:12 as the standard maximum.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ee913c23a7e8e5270cc1b32eb43dc55ceb8096c80c5968f0ced9049a93a68f8"
+    },
+    {
+      "question_id": "0a31a28e-0935-4565-a118-60b76c0a2c0c",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What are the dual handrail heights required on accessible ramps under the 2024 BP 344 IRR, and at what rise threshold do handrails become mandatory?",
+      "options": [
+        {
+          "id": "A",
+          "text": "700 mm and 900 mm above the ramp surface; required when total rise exceeds 150 mm"
+        },
+        {
+          "id": "B",
+          "text": "800 mm and 900 mm above the ramp surface; required when total rise exceeds 200 mm"
+        },
+        {
+          "id": "C",
+          "text": "700 mm and 900 mm above the ramp surface; required when change in grade exceeds 170 mm"
+        },
+        {
+          "id": "D",
+          "text": "700 mm and 850 mm above the ramp surface; required for all accessible ramps regardless of rise"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2024 IRR Appendix A Section 1.2.f and Section 5 specify dual-height handrails on accessible ramps: 700mm and 900mm above the ramp surface. These dual heights serve both seated (wheelchair transfer) and ambulant users. Handrails are required when the change in grade exceeds 170mm. Extensions of 300mm horizontal length are required at upper and lower ends, ending in a closed end or return — no projection into the travel path. Grip diameter: 30–40mm. Guard/railing for protection (PD 1096): 1,100mm minimum when ramp is more than 750mm above adjacent grade.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:78e860e05b734ed202961b28aed298ddce11d2112178e21d231a0509decd629a"
+    },
+    {
+      "question_id": "a2aafc8a-50b3-4379-863c-ddfb9d51ecce",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under the 2024 BP 344 IRR, what is the minimum height for edge protection curbs on accessible ramps, and what is the rationlea for this requirement?",
+      "options": [
+        {
+          "id": "A",
+          "text": "50 mm minimum; to prevent water ingress into the ramp structure, which is not the primary concern for edge protection"
+        },
+        {
+          "id": "B",
+          "text": "75 mm minimum; to provide sufficient visual contrast between the ramp surface and the drop edge, enhancing safety for visually impaired users"
+        },
+        {
+          "id": "C",
+          "text": "100 mm minimum; to prevent wheelchair casters or crutch tips from slipping over the edge and causing falls"
+        },
+        {
+          "id": "D",
+          "text": "150 mm minimum; to meet the structural deflection requirements for cantilevered ramp edges, which is not typically a requirement for edge protection curbs"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Section A.1.2.h of the 2024 IRR Appendix A requires minimum 100mm high curbs/raised edges on both sides of accessible ramps with open edges. The rationale is safety: wheelchair casters and crutch tips can slip over low edges, causing falls. This curb requirement operates alongside the 1,100mm minimum guard/railing height (per PD 1096 Rule XII) for ramps elevated more than 750mm above adjacent grade. The curb handles the lower-level fall prevention; the guardrail handles the higher-level protection.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:88110056a8d0f2e0367ccbd1239f9e7e604d9c375418cd31e5e7482487ae5ea2"
+    },
+    {
+      "question_id": "069dd3a1-aa7d-4221-9a9b-53e3360e278b",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A new public building in Quezon City is being designed with an accessible ramp. The architect proposes using a 1:12 slope throughout, citing BP 344 as the governing standard. Is this compliant with the 2024 IRR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Yes — 1:12 is the maximum allowable slope for all accessible ramps under BP 344, ensuring compliance with accessibility standards"
+        },
+        {
+          "id": "B",
+          "text": "No — 1:12 is permitted only as an exception in existing buildings under renovation where 1:15 cannot be physically achieved, not in new construction"
+        },
+        {
+          "id": "C",
+          "text": "Yes — 1:12 is preferred for new construction as it minimizes ramp footprint, although it may not meet all accessibility requirements"
+        },
+        {
+          "id": "D",
+          "text": "No — 1:12 is prohibited entirely under the 2024 IRR; the maximum is 1:8 for all building types, which may not be practical for all designs"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2024 IRR explicitly distinguishes 1:12 as a renovation-only exception, not a design target. For new public buildings (hospitals, government offices, schools), the architect must design at 1:20 preferred or 1:15 maximum. 1:12 is only acceptable when: (1) the project involves existing buildings under renovation AND (2) achieving 1:15 is physically impossible due to site constraints (lot lines, existing structures, easements). Even in renovation cases, 1:15 must be attempted first — 1:12 is the absolute last resort, not a convenience choice. There is no indication in the 2024 amendments that 1:12 is re-elevated as the default maximum for new accessible ramps.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9bb41df26135aab855f4af6c906fe6aaf82b72179c2bf27d897906cbf963ee4f"
+    },
+    {
+      "question_id": "70215fdc-8b37-4339-8c09-b1ff12840f34",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "For a 1:15 accessible ramp in new construction, with a total rise of 1,400 mm, the total horizontal footprint (including all landings) is calculated as 26.4 m. What components make up this total?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bottom landing (1,800 mm) + 2 sloped runs (10.50 m each) + top landing (1,800 mm) = 26.4 m, assuming no intermediate landings are required"
+        },
+        {
+          "id": "B",
+          "text": "Bottom landing (1,800 mm) + 2 sloped runs (10.50 m each) + 2 intermediate landings (1,800 mm each) + top landing (1,800 mm) = 26.4 m"
+        },
+        {
+          "id": "C",
+          "text": "2 sloped runs (10.50 m each) + top landing (1,800 mm) = 22.8 m, which does not account for the bottom landing"
+        },
+        {
+          "id": "D",
+          "text": "Bottom landing (1,500 mm) + 2 sloped runs (10.50 m each) + top landing (1,500 mm) = 24.0 m, excluding any intermediate landings"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "For 1,400mm total rise at 1:15: maximum rise per run is 700mm, so 2 runs are required (700 × 2 = 1,400mm). Each run = 700 × 15 = 10,500mm = 10.50m. Landings: bottom level area (1,800mm) + 1 intermediate landing (1,800mm, required at the 10.00m interval) + top level area (1,800mm) = 5,400mm total landing length. Sloped runs: 2 × 10,500mm = 21,000mm. Total: 26,400mm = 26.4m. The most common exam mistake is answering 21.0m (forgetting the three required landings) or incorrectly using 1,500mm landing lengths.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:836c2af3ebba7c1c439aa1e0bd09c8ea38fc29c1d744f3491335d94d0fc25711"
+    },
+    {
+      "question_id": "9b6d0315-ba0b-4c42-8bda-d437595c72f9",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A student states that the minimum landing length for accessible ramps is 1,500 mm, and that 1:12 is the standard maximum slope for all new accessible ramps. Which statement correctly identifies the errors?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both values are wrong: the correct landing is 1,800 mm and 1:12 applies to all accessible ramps including new construction, which is a common error"
+        },
+        {
+          "id": "B",
+          "text": "Both values are wrong: landing is 1,800 mm (IRR amended value), and 1:12 applies only to existing building renovations where 1:15 cannot be achieved"
+        },
+        {
+          "id": "C",
+          "text": "The landing length is correct at 1,500 mm, but 1:12 is wrong — the standard maximum for new ramps is 1:15, which is often misunderstood"
+        },
+        {
+          "id": "D",
+          "text": "The landing length is wrong at 1,500 mm (should be 1,800 mm), but 1:12 is correct as the standard maximum for all new accessible ramps, which is a frequent misconception"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The 2024 IRR amended the landing requirement: intermediate landings must be at least 1,800mm long, and level areas at upper and lower ends must also be at least 1,800mm in the direction of travel. Older references citing 1,500mm are outdated. On the slope: the 2024 IRR defines 1:20 and 1:15 as the working slopes for accessible ramps, with 1:15 as the steepest for new construction. 1:12 belongs only to the constrained renovation exception — never a default design target for new accessible ramps. Even in renovations, 1:15 must be attempted first; 1:12 is only the last resort when site constraints make 1:15 physically impossible.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c02165f95fc0a603d3ac28aed1b6779234d125650089e45b70e424c25e3b1c1e"
+    },
+    {
+      "question_id": "2c9264f8-b339-405d-ab6c-df182954b6bd",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "The 2024 BP 344 IRR specifies different landing intervals for the GOLD (1:20) and MAX (1:15) tiers. What are these intervals, and what is the relationship between the maximum run length and the landing interval for 1:15?",
+      "options": [
+        {
+          "id": "A",
+          "text": "GOLD: every 10.00 m; MAX: every 10.50 m; the landing interval and maximum run are the same value, ensuring consistent accessibility"
+        },
+        {
+          "id": "B",
+          "text": "GOLD: every 15.00 m; MAX: every 10.00 m; the 10.00m is the trigger interval (must land even if not at max run), while 10.50m is the maximum single run"
+        },
+        {
+          "id": "C",
+          "text": "GOLD: every 10.50 m; MAX: every 15.00 m; the landing interval increases with steeper slopes, accommodating different accessibility needs"
+        },
+        {
+          "id": "D",
+          "text": "GOLD: every 12.00 m; MAX: every 10.00 m; the landing interval is determined by total rise, not slope tier, which affects design compliance"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Table A.1.1 specifies: GOLD (1:20) → landing every 15.00m. MAX (1:15) → landing interval: every 10.00m; maximum single run: 10.50m. The critical distinction: 10.00m is the INTERVAL trigger (you must introduce a landing before reaching 10.50m if 10.00m has passed); 10.50m is the ABSOLUTE MAXIMUM for a single run. If you reach 10.00m before hitting 700mm rise, you still need a landing. If you reach 700mm rise at 10.50m, you've hit both the interval and the maximum.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2e55dd80e0caa8cb244602909fab479982a1e35d405c39134f4788f9b9b36d5f"
+    },
+    {
+      "question_id": "4c92b571-c5f6-45e7-accd-4567ebe47393",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the minimum clear width for an accessible ramp under the 2024 BP 344 IRR, and how does this compare to PD 1096 corridor requirements?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1,000 mm minimum; this is stricter than PD 1096 which requires 1,100 mm for corridors, ensuring greater accessibility for all users"
+        },
+        {
+          "id": "B",
+          "text": "1,100 mm minimum; this is the same as PD 1096 corridor requirements for most public occupancies, maintaining consistency across regulations"
+        },
+        {
+          "id": "C",
+          "text": "1,200 mm minimum; this is stricter than PD 1096 which requires ≥1,100 mm for corridors in most public occupancies"
+        },
+        {
+          "id": "D",
+          "text": "900 mm minimum; this is the same as the accessible door width requirement, simplifying design standards for accessibility"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "BP 344 2024 IRR Appendix A Section 1.2.a specifies a minimum clear width of 1,200mm for accessible ramps. PD 1096 allows ramps as exits with width at least equal to corridor requirements — generally ≥1,100mm for many public occupancies. BP 344 tightens this to 1,200mm minimum for accessibility. The 1,200mm width also governs the accessible corridor width, accessible parking space width, and wheelchair maneuvering clearances — it is a foundational dimension in BP 344 design.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:be95f0e1fb0cb867a08c6ae640f5babd52e64605717ada87d45d1f4271b39ca3"
+    },
+    {
+      "question_id": "b7afac22-7103-40b4-9fca-b6cf8b0b6707",
+      "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "How do accessible ramp handrail heights under BP 344 (700mm and 900mm) differ from general stair handrail heights under PD 1096 IRR, and why must these two systems be kept separate in both design and examination answers?",
+      "options": [
+        {
+          "id": "A",
+          "text": "BP 344 and PD 1096 specify the same handrail heights — 800-900mm for all applications — they can be used interchangeably, which simplifies design processes"
+        },
+        {
+          "id": "B",
+          "text": "BP 344 requires dual heights (700mm and 900mm) for accessible ramps AND stairs; PD 1096 requires 800-900mm for general stairs; they are different regimes and must not be mixed"
+        },
+        {
+          "id": "C",
+          "text": "BP 344's dual heights (700/900mm) apply to accessible ramps only; PD 1096's 800-900mm applies to stairs; ramps do not require handrails under PD 1096, which is a common misconception"
+        },
+        {
+          "id": "D",
+          "text": "BP 344 specifies 700-900mm for all applications; PD 1096 specifies 800-900mm for general stairs; the BP 344 range always governs when in conflict, ensuring accessibility compliance"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The BP 344 2024 IRR Appendix A specifies DUAL handrail heights (700mm and 900mm above the surface) for accessible ramps and accessible stairs — this serves both seated (wheelchair transfer) and ambulant users simultaneously. PD 1096 IRR specifies a single handrail height band of 800-900mm above nosings for general stairs. The key differences: BP 344 requires TWO rails at specific heights; PD 1096 requires ONE rail within a range. When an accessible ramp also serves as an exit stair, BOTH requirements apply — the BP 344 dual-rail heights plus any additional PD 1096 provisions. Mixing these regimes is a common design error and a frequent ALE trap.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:07.9975+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:196a3204d922935cc3afc80f375f82ab62b658f167cadb039fc100e5d8d7458f"
+    }
+  ]
+}

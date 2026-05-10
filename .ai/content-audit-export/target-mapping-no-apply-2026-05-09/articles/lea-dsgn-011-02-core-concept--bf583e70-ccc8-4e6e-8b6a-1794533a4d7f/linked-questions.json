@@ -1,0 +1,518 @@
+{
+  "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b47e10f941765e6f4c9ca373e6cdfcba6d0c102adaf05148e76869eae110da58",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "5ec4abc5-c4dc-48e4-be53-af047dd6d6ee",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "An elevation drawing shows five regularly spaced window openings, but the corresponding floor plan shows four columns defining the structural grid. What does this discrepancy indicate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The elevation and floor plan are from different buildings; they cannot be reconciled without further investigation into the project documentation"
+        },
+        {
+          "id": "b",
+          "text": "The fenestration does not align with the structural grid; the drawings require coordination to resolve the conflict"
+        },
+        {
+          "id": "c",
+          "text": "Windows do not need to align with columns; this is a stylistic choice that may be intentional for aesthetic reasons"
+        },
+        {
+          "id": "d",
+          "text": "The structural grid shown in the floor plan is incorrect and should be updated to reflect the actual construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. A single building should have consistent structural and fenestration logic across drawings.",
+        "b": "Correct. You recognized the coordination error and understood its implications for structural integrity.",
+        "c": "Incorrect. While some stylistic variation is acceptable, systematic misalignment with the structural grid creates constructability and code compliance issues.",
+        "d": "Incorrect. The structural grid is typically fixed early in design; the fenestration should be coordinated to align with it.",
+        "correct": "Fenestration (window placement) must align with the structural grid to ensure windows are supported and to avoid openings that compromise beam-column connections. This discrepancy requires coordination between the architect and structural engineer.",
+        "takeaway": "Always cross-reference elevations with floor plans to verify that fenestration aligns with the structural grid. Misalignment is a red flag for design coordination errors."
+      },
+      "explanation": "Incorrect. A single building should have consistent structural and fenestration logic across drawings. Correct. You recognized the coordination error and understood its implications for structural integrity. Incorrect. While some stylistic variation is acceptable, systematic misalignment with the structural grid creates constructability and code compliance issues. Incorrect. The structural grid is typically fixed early in design; the fenestration should be coordinated to align with it. Fenestration (window placement) must align with the structural grid to ensure windows are supported and to avoid openings that compromise beam-column connections. This discrepancy requires coordination between the architect and structural engineer. Always cross-reference elevations with floor plans to verify that fenestration aligns with the structural grid. Misalignment is a red flag for design coordination errors.",
+      "code_citation": "Standard practice; structural coordination",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-05-06T15:15:13.226726+00:00",
+      "content_hash": "sha256:7be2ca7a280c61e7fe7de403749bbdbb6b8bd4567481c4eb6710f7015a02eab5"
+    },
+    {
+      "question_id": "9ec6e561-3868-4911-b43a-7afec0fe210f",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "A section shows a building with two stories. The architect has set FFL₁ = 0.50 m and FFL₂ = 3.50 m. The section also shows that existing grade slopes from 0.0 m (front) to −1.0 m (rear), meaning the rear is lower. The building will have a continuous foundation beam running front to rear. At the rear, the first-floor slab will be 0.50 m above existing grade. Analyze this design and identify any concern.",
+      "options": [
+        {
+          "id": "a",
+          "text": "No concern; the design appropriately accommodates the slope and maintains accessible entry conditions at the front, ensuring compliance with accessibility standards"
+        },
+        {
+          "id": "b",
+          "text": "The FFL₁ at the rear will be 1.5 m above grade, creating an excessively high step and poor accessibility; consider a split-level or adjusting the datum"
+        },
+        {
+          "id": "c",
+          "text": "The floor-to-floor height (3.0 m) is compliant, so no further analysis is needed, as it meets the minimum requirements for habitable spaces"
+        },
+        {
+          "id": "d",
+          "text": "The foundation beam must be adjusted to align with the existing grade; this is a structural detail, not an architectural concern, and should be addressed by the structural engineer"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. A 1.5 m step at the rear creates accessibility problems and potential code violations. This design has a significant concern.",
+        "b": "Correct. You recognized the grading challenge and identified practical design solutions.",
+        "c": "Incorrect. While floor-to-floor compliance is important, site adaptation (grading strategy) is equally critical and affects accessibility and code compliance.",
+        "d": "Incorrect. This is an architectural design decision informed by structural feasibility, not a structural detail to be determined later.",
+        "correct": "At the front, grade = 0.0 m and FFL₁ = 0.50 m (accessible step ≈ 0.50 m). At the rear, grade = −1.0 m and FFL₁ = 0.50 m (step ≈ 1.5 m). A 1.5 m step is excessive and creates accessibility and egress challenges. Design alternatives: (1) lower FFL₁ to 0.0 m or −0.50 m, (2) use a split-level, or (3) add ramp/stairs at the rear. This is a critical architectural design decision.",
+        "takeaway": "When a building is placed on a sloping site, the section must show how FFLs relate to existing grade at multiple points. A large step (>1.0 m) at any entry creates accessibility and code issues. Early analysis in section form prevents costly design conflicts later."
+      },
+      "explanation": null,
+      "code_citation": "NBC accessibility standards; site grading design",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:31452462dcec91acb4f9090d64b44be54b599f91c4d785acaad4100498e219ac"
+    },
+    {
+      "question_id": "4a856fae-3fec-4cd5-9714-06db97054e0f",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "A floor plan shows a section cut A-A running east-west through a building. The section drawing is labeled 'Section A-A'. What do the arrows on the section cut line indicate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The direction in which the building slopes, which is crucial for drainage planning"
+        },
+        {
+          "id": "b",
+          "text": "The viewing direction; the section is viewed from the direction the arrow points"
+        },
+        {
+          "id": "c",
+          "text": "The structural grid orientation, which helps in aligning structural elements"
+        },
+        {
+          "id": "d",
+          "text": "The flow of drainage or ventilation, indicating the path of air or water movement"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. Slope is communicated via contour lines or section depth, not section-cut arrows.",
+        "b": "Correct. You understand section-cut notation conventions.",
+        "c": "Incorrect. The structural grid is shown on floor plans and elevations, not indicated by section-cut arrows.",
+        "d": "Incorrect. Drainage and ventilation are shown in plan or schematic diagrams, not by section arrows.",
+        "correct": "Arrows at the ends of a section cut line indicate the direction from which the section is viewed. The viewer looks perpendicular to the cut line in the direction of the arrow.",
+        "takeaway": "Always verify the arrow direction on a section cut to ensure you're reading the section from the correct viewing direction. Misreading the direction can lead to misinterpretation of left/right relationships."
+      },
+      "explanation": null,
+      "code_citation": "Standard drawing conventions",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8948e1c1f3d8dd43873d9928e11b4e887c9bf1c8b8002111c277615b400120f3"
+    },
+    {
+      "question_id": "cd4aae80-f8a8-4256-8880-50c5e3787279",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "A section drawing shows three floors with grade line and all finish floor levels clearly labeled. However, the section does not include a reference elevation or datum note (e.g., 'FFL₁ = 0.0 m' or 'FFL₁ = 125.5 m AMSL'). What is the consequence of this omission?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The section is difficult to construct; contractors cannot determine absolute elevations or site relationships"
+        },
+        {
+          "id": "b",
+          "text": "The section is still usable because relative floor-to-floor heights are shown, allowing for some level of construction planning"
+        },
+        {
+          "id": "c",
+          "text": "A datum note is optional in architectural sections; the drawing is complete without it, provided other references are available"
+        },
+        {
+          "id": "d",
+          "text": "The omission is a minor drafting error that does not affect construction or code compliance, assuming all other details are accurate"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct. You understood that datum reference is essential for construction and site coordination.",
+        "b": "Incorrect. While relative heights are shown, contractors also need absolute elevations for grading and site coordination.",
+        "c": "Incorrect. Datum notation is not optional—it is a standard and essential part of section drawings.",
+        "d": "Incorrect. This is a significant omission, not a minor error. It prevents proper construction execution.",
+        "correct": "A section without a reference elevation (datum) is incomplete. Contractors need to know absolute elevations (relative to sea level, site datum, or a benchmark) to grade the site, set FFLs, and coordinate with adjacent buildings. Relative heights alone are insufficient for construction.",
+        "takeaway": "Always include a datum note on sections, identifying FFL₁ as either a relative value (0.0 m) or absolute elevation (m AMSL). This is essential for site grading, drainage coordination, and code compliance verification."
+      },
+      "explanation": null,
+      "code_citation": "Standard practice; drawing completeness",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:816b1586733eb7eac22e715800cde509dee13e957ffdca0d34074f7a2e411109"
+    },
+    {
+      "question_id": "40817474-48a6-41a5-bc0a-606796ced5b9",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "A section drawing shows a door opening with a height dimension of 2.05 m from finished floor to the top of the door frame. Is this door opening compliant with the NBC minimum door height requirement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 2.05 m exceeds the NBC minimum of 2.0 m"
+        },
+        {
+          "id": "b",
+          "text": "No, the NBC requires a minimum door opening of 2.1 m height"
+        },
+        {
+          "id": "c",
+          "text": "No, door openings must be at least 2.4 m for habitable spaces"
+        },
+        {
+          "id": "d",
+          "text": "Door height is not regulated by the NBC; the architect determines this dimension"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. The NBC minimum is 2.1 m, not 2.0 m. The 2.05 m opening is 50 mm short.",
+        "b": "Correct. You identified the code requirement (2.1 m) and recognized the non-compliance.",
+        "c": "Incorrect. The 2.4 m minimum applies to finished ceiling heights in habitable spaces, not door openings. Door minimum is 2.1 m.",
+        "d": "Incorrect. The NBC mandates minimum door height; this is a code requirement, not a discretionary choice.",
+        "correct": "NBC Rule VIII Sec 808 mandates minimum door clear opening height of 2.0 m (2000 mm). 2.05 m complies. A 2.05 m opening (2050 mm) falls short by 50 mm and is non-compliant.",
+        "takeaway": "NBC door height minimum is 2.1 m (2100 mm), not 2.0 m. Always verify door opening dimensions in sections to catch this common error. A difference of 50–100 mm is not acceptable in code review."
+      },
+      "explanation": null,
+      "code_citation": "NBC Section 301",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a892c9d7e4922ec878f1e1b4e81f53ebf143b5445b8318a8533939fb31c4ac2f"
+    },
+    {
+      "question_id": "457ed0ca-2e17-4d2b-9007-3c7efb17dc1e",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "A section drawing of a building on a slope shows three stories with FFLs of 0.0 m, 3.0 m, and 6.0 m relative to a site datum. The existing grade at the front is 2.5 m AMSL (above mean sea level) and at the rear is 5.5 m AMSL. If the first floor FFL is set at 2.5 m AMSL, what is the depth of the foundation/structure between the front and rear elevations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3.0 m"
+        },
+        {
+          "id": "b",
+          "text": "2.5 m"
+        },
+        {
+          "id": "c",
+          "text": "6.0 m"
+        },
+        {
+          "id": "d",
+          "text": "5.5 m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct. You calculated the slope difference over the building footprint (3.0 m vertical rise).",
+        "b": "Incorrect. This is the front grade elevation, not the slope difference.",
+        "c": "Incorrect. This is the total FFL height above the site datum, not the slope depth.",
+        "d": "Incorrect. This is the rear grade elevation, not the slope difference.",
+        "correct": "The grade slope is 5.5 − 2.5 = 3.0 m over the building depth. If the first floor is set at 2.5 m AMSL (meeting grade at the front) and grade rises 3.0 m toward the rear, the building depth must accommodate this 3.0 m height difference.",
+        "takeaway": "On sloping sites, sections must show how the building's FFLs relate to existing and proposed grade at multiple points. Always calculate the grade difference to understand how deep the foundation must be."
+      },
+      "explanation": null,
+      "code_citation": "Site grading and section interpretation",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:469ae0d791915f44655a8790e5f266cbc9e55b295a88a77c7949cd2703c3163f"
+    },
+    {
+      "question_id": "58bff75d-8036-418a-b9b7-44dc26144ece",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "A section drawing shows finish floor levels (FFL) at 0.0 m, 3.2 m, and 6.4 m for a three-story building. What is the error and the correct FFL for the second story?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Floor-to-floor is 3.2 m; correct FFL for second floor should be 3.0 m"
+        },
+        {
+          "id": "b",
+          "text": "No error; 3.2 m floor-to-floor is acceptable for buildings with higher ceilings"
+        },
+        {
+          "id": "c",
+          "text": "Floor-to-floor is 3.2 m; correct FFL for second floor should be 3.0 m"
+        },
+        {
+          "id": "d",
+          "text": "The error is in the third-floor FFL; it should be 9.0 m"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct. You identified the floor-to-floor deviation (3.2 m vs. 3.0 m NBC standard) and calculated the correct second-floor FFL (3.0 m).",
+        "b": "Incorrect. The NBC mandates 3.0 m floor-to-floor for standard multi-story buildings. Higher ceilings do not justify taller floor-to-floor spacing in code compliance.",
+        "c": "Correct. You identified the floor-to-floor deviation (3.2 m vs. 3.0 m NBC standard) and calculated the correct second-floor FFL (3.0 m).",
+        "d": "Incorrect. If the second floor is at 3.0 m, the third floor should be at 6.0 m, not 9.0 m. You may have misread the relationship between FFL values.",
+        "correct": "No error; 3.2 m floor-to-floor is acceptable provided minimum ceiling heights are met per NBC Rule VII Section 706. If FFL₁ = 0.0 m and floor-to-floor = 3.0 m, then FFL₂ = 3.0 m and FFL₃ = 6.0 m. The drawing shows 3.2 m and 6.4 m, indicating non-compliance.",
+        "takeaway": "Always verify floor-to-floor heights against the NBC 3.0 m standard. Use this to calculate all subsequent FFLs and detect drawing errors early."
+      },
+      "explanation": null,
+      "code_citation": "NBC Section 201; DPW Standard",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f8584c229dfa92b390c1fc2d6604f670378dd790c2aa04e7ac8d0cab0f152ccc"
+    },
+    {
+      "question_id": "7e243968-cde7-4245-b86d-83d2a164757f",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "In a section drawing, a stairwell is shown with a headroom (vertical clearance above the stairs) of 1.9 m. According to the NBC, what is the minimum required headroom?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.8 m; the design complies"
+        },
+        {
+          "id": "b",
+          "text": "2.0 m; this design is non-compliant and must be corrected"
+        },
+        {
+          "id": "c",
+          "text": "2.4 m; the design is significantly under code"
+        },
+        {
+          "id": "d",
+          "text": "There is no NBC requirement; headroom is determined by the architect's preference"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect. The NBC minimum is 2.0 m, not 1.8 m. Always reference the code.",
+        "b": "Correct. You identified the code violation and the correct minimum (2.0 m).",
+        "c": "Incorrect. The 2.4 m minimum applies to habitable spaces (living/working areas), not stairwells. Stairwell minimum is 2.0 m.",
+        "d": "Incorrect. The NBC mandates minimum headroom; this is not left to architect's preference.",
+        "correct": "NBC Rule VIII Sec 810 mandates minimum headroom of 2.0 m in stairs and stairwells. A 1.9 m headroom violates this and requires redesign.",
+        "takeaway": "Memorize the critical NBC clearances: 2.0 m (stairs), 2.4 m (habitable spaces), 2.1 m (toilets/baths). Section drawings must verify these are met."
+      },
+      "explanation": null,
+      "code_citation": "NBC Section 301",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1f6f2c339268f59e1b4a9b08005134c0c76d3dc156b137d02cb2ea55e5da2c50"
+    },
+    {
+      "question_id": "b2814555-bc05-475e-b14f-8566d8efa33c",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "In a roof section detail, a pitched roof is shown with notation '1:4'. What does this notation mean, and what is the roof pitch angle in degrees (approximately)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 unit of rise for every 4 units of run; approximately 14°"
+        },
+        {
+          "id": "b",
+          "text": "4 units of rise for every 1 unit of run; approximately 76°"
+        },
+        {
+          "id": "c",
+          "text": "1:4 refers to the structural-to-span ratio, not slope angle"
+        },
+        {
+          "id": "d",
+          "text": "This notation is non-standard; it should be expressed as a percentage (25%)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct. You understood the rise:run convention and calculated the approximate angle.",
+        "b": "Incorrect. This would be a very steep roof (1:4 inverted). The notation 1:4 means 1 unit rise per 4 units run.",
+        "c": "Incorrect. 1:4 is a standard slope notation used in architecture and drainage design.",
+        "d": "Incorrect. Ratio notation (1:4) is standard in architectural drawings and is preferable to percentage slope for roof design.",
+        "correct": "Roof pitch in ratio notation (rise:run) means for every 4 horizontal units, the roof rises 1 unit. tan⁻¹(1÷4) ≈ 14°. This is a standard and shallow pitch, common for tropical climates requiring rapid water drainage.",
+        "takeaway": "Roof pitch notation (rise:run) is crucial for drainage design and structural loading calculations. Always verify the direction: 1:4 means gentle slope; 4:1 means very steep. In the Philippines, pitched roofs are common for tropical rainfall runoff."
+      },
+      "explanation": null,
+      "code_citation": "Standard drawing conventions; roof design practice",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:067672ec67f12f9d9e98b12dd177cbd64b84ab64cfae8e91ed482aa3e8f4c7d2"
+    },
+    {
+      "question_id": "52c2e493-4a6b-44cf-8092-48c13c96fb97",
+      "article_id": "bf583e70-ccc8-4e6e-8b6a-1794533a4d7f",
+      "topic_id": "6c40a9c4-07cf-40b4-9b60-15c112173368",
+      "text": "Which of the following correctly describes the relationship between an elevation drawing and a section drawing?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elevations show only width and height; sections show height, depth, and internal spatial relationships"
+        },
+        {
+          "id": "b",
+          "text": "Elevations show interior ceiling heights; sections show exterior dimensions only"
+        },
+        {
+          "id": "c",
+          "text": "Sections show all four facades; elevations show only the front view"
+        },
+        {
+          "id": "d",
+          "text": "Elevations and sections are interchangeable views of the same orthographic projection"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct. You understand the functional distinction between these two view types.",
+        "b": "Incorrect. Elevations do show ceiling heights (via FFLs); sections are not restricted to exterior dimensions—they show interior conditions.",
+        "c": "Incorrect. Sections can be cut through any direction; elevations can show multiple facades, though typically four cardinal directions.",
+        "d": "Incorrect. These are distinct projection types serving different communication purposes.",
+        "correct": "Elevations are 2D orthographic projections showing width and height (perpendicular to a facade). Sections are vertical slices showing height, depth, and how spaces stack vertically—revealing internal relationships.",
+        "takeaway": "Elevations communicate exterior visual intent and vertical profile; sections communicate internal spatial organization and depth relationships. Always cross-reference both when reviewing a design."
+      },
+      "explanation": null,
+      "code_citation": "Ching (2016), Sections 2.1–2.3",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-011-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:17.379681+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7284a2e3b31d69cf21180016c276629a35cd68ad5ac46747638c3cf8ae325a71"
+    }
+  ]
+}

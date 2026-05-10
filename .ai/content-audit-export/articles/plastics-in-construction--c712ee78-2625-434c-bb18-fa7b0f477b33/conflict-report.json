@@ -1,19 +1,29 @@
 {
-  "attempted_at": "2026-05-10T03:10:34.963Z",
+  "attempted_at": "2026-05-10T03:30:16.550Z",
   "dry_run": false,
   "apply": true,
   "pushed": false,
   "blockers": [
-    "Remote Supabase content differs from export baseline; refusing stale push."
+    "Remote Supabase content differs from export baseline; refusing stale push.",
+    "Missing source-audit-evidence.json for legal/code candidate; raw PDF source audit is required before apply."
   ],
   "warnings": [],
   "updated_rows_count": 0,
   "article_id": "c712ee78-2625-434c-bb18-fa7b0f477b33",
   "slug": "plastics-in-construction",
   "preparation_actions": [],
-  "remote_hash_before": "sha256:2e668f8c882b92343fc1239792d291d52928d941ccd913d66261ec770ecbb983",
-  "original_hash": "sha256:74f34ff4e4441cc9f41e83066cf3511c1ccdab8f2b53859db5506ab1f19bcab4",
-  "candidate_hash": "sha256:b5214550e4a7c18073705ea62eb8704d9ec33caf058f3af80d0a8f2e6f2cfcc1",
+  "remote_hash_before": "sha256:6f49471c232317e2b5e6456dbb3fd2f03f36f8516a7b8a27711d1af32186d6a8",
+  "original_hash": "sha256:2e668f8c882b92343fc1239792d291d52928d941ccd913d66261ec770ecbb983",
+  "candidate_hash": "sha256:6f49471c232317e2b5e6456dbb3fd2f03f36f8516a7b8a27711d1af32186d6a8",
   "stale_check_passed": false,
-  "remote_updated_at_before": "2026-05-10T02:58:32.923012+00:00"
+  "source_audit": {
+    "legal_or_code_candidate": true,
+    "source_audit_required": true,
+    "source_audit_status": null,
+    "blockers": [
+      "Missing source-audit-evidence.json for legal/code candidate; raw PDF source audit is required before apply."
+    ],
+    "warnings": []
+  },
+  "remote_updated_at_before": "2026-05-10T03:12:53.636438+00:00"
 }

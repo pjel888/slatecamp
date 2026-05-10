@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-05-vitruvius-principles-and-departments",
+  "dry_question_id": "dryrun-05-vitruvius-principles-and-departments-q03",
+  "target_article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "Economy interpretation from the cited passage is not directly covered by existing questions.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF p.36.",
+    "text": "Which interpretation best follows Vitruvius's explanation of Economy in the cited passage?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Vitruvius describes economy as proper management of materials and site plus a thrifty balancing of cost and common sense.",
+      "distractors": {
+        "A": "Economy is not mere cheapness.",
+        "C": "The passage explicitly includes site and material realities.",
+        "D": "The passage warns against demanding things difficult or costly to obtain."
+      },
+      "takeaway": "Vitruvian economy is fit resource judgment, not lowest cost."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "vitruvius-economy-q3",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "B",
+    "explanation": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF p.36.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "Always use the cheapest material available"
+      },
+      {
+        "id": "B",
+        "text": "Balance materials, site, cost, and common sense in construction"
+      },
+      {
+        "id": "C",
+        "text": "Ignore site constraints when the design is symmetrical"
+      },
+      {
+        "id": "D",
+        "text": "Use only imported materials for civic dignity"
+      }
+    ]
+  },
+  "sme_source_locator": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF p.36.",
+  "code_citation": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF p.36.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

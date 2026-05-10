@@ -1,0 +1,518 @@
+{
+  "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4fa6fe9e2b1747a60b9fd20fe41d2db9676a0ddc5912c0c054b08c071fe7ad69",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "c1634584-4764-46d5-bcf3-3093356cc3fd",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "What is the key principle of lifecycle cost analysis in site planning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Total cost = Initial capital cost only; maintenance is a separate operational concern, not factored into initial planning"
+        },
+        {
+          "id": "b",
+          "text": "Total cost = Initial capital cost plus annual maintenance costs plus eventual replacement costs over the useful life of the element"
+        },
+        {
+          "id": "c",
+          "text": "Materials with the lowest initial purchase price always have the lowest total cost, which simplifies budgeting"
+        },
+        {
+          "id": "d",
+          "text": "Maintenance costs should be ignored in site planning; they are not predictable and can vary widely"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student excludes maintenance from cost calculation",
+        "b": "Lifecycle cost = capital + (maintenance × years) + replacement. This principle ensures sustainable choices over 20+ years.",
+        "c": "Student assumes cheap = economical; ignores maintenance burden",
+        "d": "Student dismisses maintenance cost analysis as speculative",
+        "correct": "Lifecycle cost = capital + (maintenance × years) + replacement. This principle ensures sustainable choices over 20+ years.",
+        "takeaway": "Compare materials using total lifecycle cost, not just initial price."
+      },
+      "explanation": "Student excludes maintenance from cost calculation Lifecycle cost = capital + (maintenance × years) + replacement. This principle ensures sustainable choices over 20+ years. Student assumes cheap = economical; ignores maintenance burden Student dismisses maintenance cost analysis as speculative Lifecycle cost = capital + (maintenance × years) + replacement. This principle ensures sustainable choices over 20+ years. Compare materials using total lifecycle cost, not just initial price.",
+      "code_citation": "LEA-PLAN-004-05: Lifecycle Cost Analysis section",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.324164+00:00",
+      "updated_at": "2026-05-06T14:40:20.384888+00:00",
+      "content_hash": "sha256:01efecb4bae29b93e70db74e3d055f0486d9378b3f75e3c3d2f030102c016083"
+    },
+    {
+      "question_id": "d8266f8a-313e-492e-b4ec-fc54b638dd67",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "What does the term _deferred maintenance_ mean, and what is its consequence on site lifecycle costs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Deferred maintenance is a planned strategy to save money; it does not affect long-term costs, assuming no unexpected failures occur"
+        },
+        {
+          "id": "b",
+          "text": "Maintenance that is postponed because it is not urgent; deferred maintenance reduces immediate costs but causes deterioration to accelerate and expensive emergency repairs to occur later"
+        },
+        {
+          "id": "c",
+          "text": "Deferred maintenance means sites do not require any future maintenance after 10 years, which is a misconception"
+        },
+        {
+          "id": "d",
+          "text": "Deferred maintenance has no impact on costs or site condition; it is a scheduling convenience, though this is often debated"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student treats deferred maintenance as a cost-saving strategy",
+        "b": "Small timely repairs cost ₱500–₱1,000; deferred small repairs become ₱5,000–₱10,000 emergency replacements—a 10× cost multiplier.",
+        "c": "Student misinterprets deferment as elimination",
+        "d": "Student discounts the consequences of deferred maintenance",
+        "correct": "Small timely repairs cost ₱500–₱1,000; deferred small repairs become ₱5,000–₱10,000 emergency replacements—a 10× cost multiplier.",
+        "takeaway": "Deferred maintenance multiplies costs; small repairs now prevent big repairs later."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Deferred Maintenance and Deterioration section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ef96aa0d2c9b0f44062bcfd18363505edb94bb7ddca8a6ad322405efe0774486"
+    },
+    {
+      "question_id": "dad68fd6-72ca-4bcf-859a-c2b3b0280b9d",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "A site planner is designing a public plaza in a typhoon-prone municipality. To ensure long-term resilience and reduced maintenance costs, which design approach is most appropriate for vegetation and landscape elements?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Plant large, fast-growing shade trees close together without regard for wind exposure or structural strength, prioritizing immediate aesthetic impact"
+        },
+        {
+          "id": "b",
+          "text": "Plan regular pruning and inspection of trees to remove hazardous branches; select wind-resistant species with strong root systems; design landscape to allow wind flow rather than create wind eddies; establish typhoon maintenance procedures"
+        },
+        {
+          "id": "c",
+          "text": "Minimize vegetation and use only hardscaping to avoid wind damage and maintenance burden, focusing on durability over natural aesthetics"
+        },
+        {
+          "id": "d",
+          "text": "Vegetation maintenance is not relevant to site planning; it is purely an operational concern, separate from design considerations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student prioritizes aesthetics without considering typhoon resilience",
+        "b": "Plan for typhoon resilience through design (wind-resistant species, open flow) + maintenance (regular pruning, inspection) + procedures (post-typhoon response).",
+        "c": "Student eliminates vegetation to avoid maintenance; loses ecological and social benefits",
+        "d": "Student separates planning from long-term resilience",
+        "correct": "Plan for typhoon resilience through design (wind-resistant species, open flow) + maintenance (regular pruning, inspection) + procedures (post-typhoon response).",
+        "takeaway": "Design for typhoon resilience + plan maintenance + establish procedures."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Typhoon-Resilient Maintenance; Flood and Storm Resilience sections",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a4ec3a5ef9363b22149efdc17b92204a8f1bca59903c4d30ed6db1e35aa5bd5b"
+    },
+    {
+      "question_id": "5e90b67e-a334-4c8c-8f26-c35747a271f2",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "A municipality is choosing between two drainage systems for a flood-prone barangay: (1) galvanized steel pipes (cheaper upfront, expected useful life 5–10 years in coastal conditions due to salt corrosion), or (2) PVC pipes (more expensive upfront, expected useful life 25+ years). Based on lifecycle cost, which choice is more economical over a 20-year period?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Galvanized steel is more economical because the initial cost is lower, despite the need for frequent replacements"
+        },
+        {
+          "id": "b",
+          "text": "The choice depends on aesthetic preference; both have equivalent long-term costs, which may not be the case in all scenarios"
+        },
+        {
+          "id": "c",
+          "text": "Neither material is suitable for coastal flooding; choose a different pipe material, such as HDPE, which offers better resistance"
+        },
+        {
+          "id": "d",
+          "text": "PVC is more economical because the higher initial cost is offset by avoiding 2–3 expensive replacements of galvanized pipes over 20 years"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student chooses based on initial cost without lifecycle analysis",
+        "b": "Student ignores lifecycle analysis entirely",
+        "c": "Student abandons the decision rather than analyzing options",
+        "d": "Galvanized steel over 20 years = 2–4 replacements + installation costs; PVC single installation >> lifecycle analysis favors PVC in coastal conditions.",
+        "correct": "Galvanized steel over 20 years = 2–4 replacements + installation costs; PVC single installation >> lifecycle analysis favors PVC in coastal conditions.",
+        "takeaway": "Lifecycle cost analysis favors durable upfront investment over cheap short-lived material."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Durability and Material Selection section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0b57d7a005b99afda2608e6159c23e60e15eb800199561231138fbf4b49e475b"
+    },
+    {
+      "question_id": "ad387d69-18f5-4b57-8122-7c4aeb2cbe86",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "Why is designing sites for maintenance accessibility important for long-term site viability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "When utilities, drainage, and equipment are difficult to access, maintenance workers cannot perform routine inspection and repair; systems deteriorate undetected until emergency failure occurs"
+        },
+        {
+          "id": "b",
+          "text": "Maintenance workers enjoy accessibility; it improves worker morale and reduces time spent on tasks"
+        },
+        {
+          "id": "c",
+          "text": "Accessibility is irrelevant to maintenance; systems will be maintained regardless of location, assuming resources are available"
+        },
+        {
+          "id": "d",
+          "text": "Accessible sites cost more to maintain; compact, inaccessible sites reduce annual maintenance burden by limiting access"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Inaccessible systems are avoided by maintenance workers; hidden damage escalates until catastrophic failure. Design for accessibility prevents this.",
+        "b": "Student focuses on worker comfort rather than system outcome",
+        "c": "Student assumes maintenance happens automatically",
+        "d": "Student inverts the relationship; inaccessible = higher long-term cost",
+        "correct": "Inaccessible systems are avoided by maintenance workers; hidden damage escalates until catastrophic failure. Design for accessibility prevents this.",
+        "takeaway": "Design for easy access; hidden systems = neglected systems = expensive failures."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Maintenance Access and Inspection section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c8c6bee7c25871fde527caa6a92b7a79337ef85b9ffd83dc4971a0fafaa6fdb1"
+    },
+    {
+      "question_id": "7e8807ad-f9f3-4ecb-8033-336bc86448fd",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "A barangay has operated a community garden for 5 years. Initially, infrastructure maintenance was consistent: drainage was cleaned quarterly, paths were repaired annually, and beds were refreshed with compost. Over the past 2 years, the barangay's maintenance budget was cut by 50%. Drainage has not been cleaned; two large sections of path have failed; and soil quality is declining. A site planner is asked to assess whether the garden should be abandoned or restored. Based on deferred maintenance principles and lifecycle cost analysis, what analysis should the planner conduct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The garden has failed due to lack of maintenance; recommend closure and site redevelopment, considering the long-term costs and benefits"
+        },
+        {
+          "id": "b",
+          "text": "Restore the garden with no changes to the original design; assume maintenance will be funded adequately in the future, which is an optimistic but risky assumption"
+        },
+        {
+          "id": "c",
+          "text": "Compare the cost of addressing deferred maintenance (drainage cleaning, path repair, soil restoration—likely ₱30,000–₱50,000 one-time) against the annual benefit of the garden to the community. If community benefit justifies cost, prepare a maintenance plan with realistic annual budget (₱10,000–₱15,000); secure funding commitment before restoration. If community benefit is low, recommend closure and alternative use"
+        },
+        {
+          "id": "d",
+          "text": "Deferred maintenance is irreversible; the site cannot be restored and must be abandoned, which is a drastic measure"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student recommends abandonment without analyzing recovery cost",
+        "b": "Student addresses immediate problem without securing funding",
+        "c": "Lifecycle analysis compares recovery cost vs. community benefit; if restoration is justified, secure ongoing funding before beginning—this prevents repeat failure.",
+        "d": "Student treats deferred maintenance as permanent damage",
+        "correct": "Lifecycle analysis compares recovery cost vs. community benefit; if restoration is justified, secure ongoing funding before beginning—this prevents repeat failure.",
+        "takeaway": "Analyze recovery cost; match ongoing budget to maintenance need; secure funding."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Deferred Maintenance and Deterioration; Lifecycle Cost Analysis sections",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dd84c812995e516f87ddd64e447b3bb0ff5e8b5b6b2e70bf9cb8961b0ea7b47f"
+    },
+    {
+      "question_id": "0b4b2339-e783-45a1-ad4b-8fb66490f9a2",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "In the Philippine tropical climate, which paving material typically has the longest useful life with moderate maintenance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Asphalt (8–10 years)"
+        },
+        {
+          "id": "b",
+          "text": "Painted wood (15 years)"
+        },
+        {
+          "id": "c",
+          "text": "Gravel (5 years)"
+        },
+        {
+          "id": "d",
+          "text": "Concrete (25+ years)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student selects the least durable option",
+        "b": "Student overestimates wood durability in tropical climate",
+        "c": "Student chooses a temporary material as durable",
+        "d": "Concrete is the most durable paving material for Philippine tropical climate, with 25+ year lifespan and minimal maintenance (sealing, minor repair).",
+        "correct": "Concrete is the most durable paving material for Philippine tropical climate, with 25+ year lifespan and minimal maintenance (sealing, minor repair).",
+        "takeaway": "For durability in tropical Philippines: concrete > interlocking pavers > asphalt > gravel."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Durability and Material Selection section; VERIFIED_REFERENCE.md PART 7",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d051139c45140d7a811c19e312efe52919e14abb1e14cf781ff2ecc19b2e9634"
+    },
+    {
+      "question_id": "c30785c1-2779-4142-ad4c-67baa0bcaba7",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "In flood-prone areas of the Philippines, what is the advantage of using corrosion-resistant materials (e.g., stainless steel, coated copper) instead of uncoated steel in site infrastructure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Corrosion-resistant materials require more frequent inspection and maintenance, which is counterintuitive but sometimes believed"
+        },
+        {
+          "id": "b",
+          "text": "Corrosion-resistant materials cost less than uncoated steel, which is generally not the case"
+        },
+        {
+          "id": "c",
+          "text": "Corrosion-resistant materials prevent rust and degradation from saltwater, humidity, and repeated wetting; they maintain function longer in flood and coastal conditions"
+        },
+        {
+          "id": "d",
+          "text": "Material corrosion resistance is irrelevant; flooding is a temporary event and does not affect materials, which is a misconception"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student reverses the maintenance burden; corrosion-resistant reduces it",
+        "b": "Student assumes cost advantage; actually more expensive upfront but cheaper long-term",
+        "c": "Tropical humidity + salt spray + repeated wetting = rapid corrosion of uncoated steel. Corrosion-resistant materials reduce lifecycle cost.",
+        "d": "Student underestimates repeated wetting and salt exposure damage",
+        "correct": "Tropical humidity + salt spray + repeated wetting = rapid corrosion of uncoated steel. Corrosion-resistant materials reduce lifecycle cost.",
+        "takeaway": "Flood + humidity = use corrosion-resistant materials; higher upfront cost pays off."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Flood and Storm Resilience in Maintenance section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:640e73186048a62a90f3fb8bb694120e630a8eaa25655f31e47e97dc8491fd88"
+    },
+    {
+      "question_id": "442dd015-9a4f-474f-9179-b9103e973fad",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "A developer has constructed a mixed-use development with extensive landscaping, a centralized stormwater retention pond, and a network of utilities. At the time of turnover to the homeowners' association (HOA), the developer provides an operations manual and claims that annual maintenance costs will be minimal because the systems are \"new and efficient.\" However, lifecycle cost analysis suggests annual maintenance will likely be ₱200,000–₱300,000 over 20 years. The HOA has 500 households. What is the site planner's role in ensuring the HOA understands and plans for realistic maintenance costs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Prepare a detailed asset inventory and lifecycle cost analysis during site planning; document annual maintenance budget requirements (₱200,000–₱300,000); communicate realistic costs to the developer and HOA before occupancy; ensure HOA has formal maintenance plan and secured funding mechanism"
+        },
+        {
+          "id": "b",
+          "text": "The developer's estimate is final; the site planner should not question it, as it is assumed to be accurate"
+        },
+        {
+          "id": "c",
+          "text": "The planner's role ends at site design; maintenance costs are an operational matter for the HOA to discover after occupancy, which is a common misconception"
+        },
+        {
+          "id": "d",
+          "text": "Minimize the lifecycle cost estimate to keep it attractive to buyers; actual costs can be managed by the HOA later, which is not a responsible approach"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Planners conduct lifecycle cost analysis and communicate realistic budgets pre-occupancy; this prevents the common failure where HOA discovers massive costs after move-in.",
+        "b": "Student defers to developer without independent verification",
+        "c": "Student separates design from operational viability",
+        "d": "Student treats cost misrepresentation as acceptable",
+        "correct": "Planners conduct lifecycle cost analysis and communicate realistic budgets pre-occupancy; this prevents the common failure where HOA discovers massive costs after move-in.",
+        "takeaway": "Conduct lifecycle analysis during planning; communicate realistic costs before handover."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Lifecycle Cost Analysis; Commissioning and Handover sections",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:02f8af950279b4e8b9bcb4af0375ad4e63f28e4d997a7eb76762725d5b2d5826"
+    },
+    {
+      "question_id": "816db117-f3c7-49d5-8ddc-062c8288121c",
+      "article_id": "f22ba499-94ce-41a3-999a-2d9ffdbc0b57",
+      "topic_id": "ccb76607-4b40-4710-8a16-7ff86774530b",
+      "text": "A barangay has constructed a 10-hectare community park with a storm drainage system, irrigation for vegetation, walking paths, and a community center. The systems are now operational, but site commissioning was incomplete—drainage was not tested under heavy rain, and the irrigation system was never activated before handover. Staff received minimal training. What will likely result from this lack of commissioning?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The park will operate smoothly; commissioning is not essential if construction was completed"
+        },
+        {
+          "id": "b",
+          "text": "Commissioning is only necessary for large commercial projects, not public parks"
+        },
+        {
+          "id": "c",
+          "text": "Problems will be discovered after opening (e.g., drainage failure during first typhoon, irrigation malfunction); operations staff will struggle to repair systems they were not trained on; costs for emergency repairs will be high"
+        },
+        {
+          "id": "d",
+          "text": "The contractor should have tested systems; the barangay has no responsibility for commissioning"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Student undervalues commissioning importance",
+        "b": "Student limits commissioning to commercial context",
+        "c": "Skipped commissioning = problems discovered after opening = untrained staff = expensive emergency repairs. Commissioning prevents this cascade.",
+        "d": "Student attributes responsibility without assuming shared ownership",
+        "correct": "Skipped commissioning = problems discovered after opening = untrained staff = expensive emergency repairs. Commissioning prevents this cascade.",
+        "takeaway": "Commissioning = test all systems + train operators + document baseline—do it before handover."
+      },
+      "explanation": null,
+      "code_citation": "LEA-PLAN-004-05: Commissioning and Handover section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-004-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:38.674683+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7639997adb829431fa8876f3cb8a958c29e03e24bfb2bc15d88c072b7199ab1b"
+    }
+  ]
+}

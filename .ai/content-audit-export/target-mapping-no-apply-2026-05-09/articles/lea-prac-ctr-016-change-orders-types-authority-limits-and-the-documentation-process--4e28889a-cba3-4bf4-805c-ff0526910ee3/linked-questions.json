@@ -1,0 +1,508 @@
+{
+  "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9c5fe20bcda453196035ee37c1958596ca86432d37094ca972ba895fff2bc8f0",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "b82974e7-8159-4c51-a6c7-35adaca31a63",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What information must be included in a change order proposal?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only the cost estimate for the changed work, excluding any schedule impacts or additional documentation"
+        },
+        {
+          "id": "b",
+          "text": "Description of the work change, specifications, drawings, cost estimate, and schedule impact analysis"
+        },
+        {
+          "id": "c",
+          "text": "Only the schedule delay impact, without any cost estimates or detailed descriptions"
+        },
+        {
+          "id": "d",
+          "text": "The change order cannot include drawings, as they are considered separate documents"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical information; proposals must include work description, specifications, drawings, and schedule impact.",
+        "c": "Omits cost information; proposals must include both cost and schedule impacts.",
+        "d": "Contradicts best practice; drawings are essential to communicate the scope change clearly.",
+        "correct": "A complete change order proposal documents the scope change, technical requirements, visual representation, cost estimate, and time impact.",
+        "takeaway": "Change order proposals must include work description, specifications, drawings, cost estimate, and schedule impact analysis."
+      },
+      "explanation": "Omits critical information; proposals must include work description, specifications, drawings, and schedule impact. Omits cost information; proposals must include both cost and schedule impacts. Contradicts best practice; drawings are essential to communicate the scope change clearly. A complete change order proposal documents the scope change, technical requirements, visual representation, cost estimate, and time impact. Change order proposals must include work description, specifications, drawings, cost estimate, and schedule impact analysis.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T14:40:21.03446+00:00",
+      "content_hash": "sha256:7b6021543d03c2fc99376cf74d83bf3d18cb7c569b47f6834b5a62f80acef91c"
+    },
+    {
+      "question_id": "10827527-4012-4090-b56f-2730c9447014",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What is a force account change and when is it used?",
+      "options": [
+        {
+          "id": "a",
+          "text": "change that must be rejected by the contractor due to non-compliance with contract terms"
+        },
+        {
+          "id": "b",
+          "text": "Work performed on a time-and-materials basis with actual labor, materials, and equipment costs billed plus overhead and profit when scope is not estimable beforehand"
+        },
+        {
+          "id": "c",
+          "text": "change that eliminates all contractor profit, making it financially unviable for the contractor"
+        },
+        {
+          "id": "d",
+          "text": "Only used when the contractor disagrees with the change and no consensus can be reached"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Contradicts purpose; force account is a billing method, not a reason for rejection.",
+        "c": "Contradicts terms; force account includes overhead and profit markups, not elimination of profit.",
+        "d": "Misidentifies trigger; force account is used when scope is uncertain, not based on contractor agreement status.",
+        "correct": "Force account changes are billed based on actual costs incurred when the modified scope cannot be precisely estimated in advance.",
+        "takeaway": "Force account changes are time-and-materials billing used when scope cannot be estimated beforehand."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f09f99aa5e2743f062e597726adaae6eb47979ee46582c58b51b4de2d0bbeb67"
+    },
+    {
+      "question_id": "4066e690-267b-4ec2-ba32-9bb0d267204a",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "Within what typical limits may the architect approve changes without owner authorization?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No limit; the architect can approve unlimited changes, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Unlimited for changes up to 10% of contract value, which is often misunderstood"
+        },
+        {
+          "id": "c",
+          "text": "Changes within specified limits, commonly 2% to 5% of contract value or specified dollar amounts"
+        },
+        {
+          "id": "d",
+          "text": "The architect never has independent change approval authority, which is an incorrect assumption"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Grants excessive authority; the architect's independent approval is limited to small amounts, not unlimited changes.",
+        "b": "Overstates architect authority; 10% exceeds typical limits; standard limits are 2–5%.",
+        "d": "Contradicts standard practice; architects typically have limited authority for small, routine modifications.",
+        "correct": "The architect's change approval authority, if granted, is typically limited to small modifications within 2% to 5% of contract value.",
+        "takeaway": "Architect change authority is limited to small changes (typically 2–5% of contract value) without owner approval."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:85be2bf3bc7231f90f923188534458b85da2dd353bb1ea430ae3dc7696ec5902"
+    },
+    {
+      "question_id": "bf23dc0b-86ba-4320-9b5c-850a26a9cb14",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What is a directive change and how does it differ from a standard change order?",
+      "options": [
+        {
+          "id": "a",
+          "text": "directive change is only for cost reductions and cannot be used for schedule adjustments"
+        },
+        {
+          "id": "b",
+          "text": "directive change is an owner direction requiring specific modifications before cost and schedule impacts are fully determined, with final pricing determined later"
+        },
+        {
+          "id": "c",
+          "text": "directive change cannot affect the schedule, and is limited to minor adjustments"
+        },
+        {
+          "id": "d",
+          "text": "Directive changes require the least documentation and are typically used for urgent modifications"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Overly restrictive; directive changes can increase, decrease, or neutrally affect cost.",
+        "c": "Contradicts reality; directive changes affect schedule like any other scope modification.",
+        "d": "Contradicts best practice; directive changes require careful documentation since pricing is finalized later.",
+        "correct": "Directive changes are owner directives for immediate scope modification when final impacts cannot be determined precisely beforehand.",
+        "takeaway": "Directive changes are owner orders to proceed with modifications before costs are fully determined; final pricing comes later."
+      },
+      "explanation": "Overly restrictive; directive changes can increase, decrease, or neutrally affect cost. Contradicts reality; directive changes affect schedule like any other scope modification. Contradicts best practice; directive changes require careful documentation since pricing is finalized later. Directive changes are owner directives for immediate scope modification when final impacts cannot be determined precisely beforehand. Directive changes are owner orders to proceed with modifications before costs are fully determined; final pricing comes later.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T14:40:20.525795+00:00",
+      "content_hash": "sha256:bf8924a6f3383d8ec602bdc3b4498c1fe64bfc363ef80e8ff3e27e1060fc08b0"
+    },
+    {
+      "question_id": "c7d65d1d-132a-499e-8c97-491fd7b7c95a",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What is a constructive change and why is it problematic?",
+      "options": [
+        {
+          "id": "a",
+          "text": "constructive change is an effective scope modification requested informally without a formal change order, creating potential disputes over authorization and compensation"
+        },
+        {
+          "id": "b",
+          "text": "constructive change is always clearly documented, ensuring no misunderstandings occur during project execution"
+        },
+        {
+          "id": "c",
+          "text": "Constructive changes never affect cost or schedule, making them a non-issue for project management"
+        },
+        {
+          "id": "d",
+          "text": "The term is not used in construction contracts, indicating it is irrelevant to contract administration"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Contradicts the problem; constructive changes are problematic precisely because they lack clear documentation.",
+        "c": "Contradicts impact; constructive changes affect cost and schedule like any scope modification.",
+        "d": "Contradicts legal reality; constructive changes are a recognized source of contract disputes in construction.",
+        "correct": "Constructive changes arise when the architect's direction or owner's actions effectively require modified work without formal change order authorization.",
+        "takeaway": "Constructive changes occur when informal architect directions effectively require scope changes without formal change orders—creating disputes."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7388e290d3e9819875d4e11e0e0cd1a734a5ca449c40cafa912bc6396d02796e"
+    },
+    {
+      "question_id": "cdc46758-169e-4b93-8518-1f9f9488511f",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What issue arises from cumulative changes over a project and how should it be addressed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Cumulative changes never create any issues, allowing projects to proceed without concern for adjustments"
+        },
+        {
+          "id": "b",
+          "text": "Multiple changes accumulating may substantially alter original contract conditions, potentially entitling the contractor to additional overhead and profit adjustments; contracts should include provisions addressing cumulative change pricing methodology"
+        },
+        {
+          "id": "c",
+          "text": "Cumulative changes always reduce contractor compensation, leading to potential financial losses"
+        },
+        {
+          "id": "d",
+          "text": "Each change is priced independently regardless of how many previous changes occurred, simplifying the financial management"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Underestimates impact; extensive changes create legitimate disputes over overhead and profit entitlements.",
+        "c": "Incorrectly generalizes; cumulative changes may increase compensation through overhead adjustments, not always reduce it.",
+        "d": "Creates dispute risk; cumulative changes alter the original contract fundamentally and may justify compensation adjustment beyond per-change pricing.",
+        "correct": "Extensive cumulative modifications justify contractor compensation adjustment; contracts should clarify pricing approaches when multiple changes substantially alter contract conditions.",
+        "takeaway": "Multiple cumulative changes may justify contractor overhead and profit adjustments; contracts should address cumulative change pricing."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f45755b22faecb139c89b8a68a0325f18dac8f98ba007b5571cc0c56a1146541"
+    },
+    {
+      "question_id": "8b3cfaee-a495-4da3-bb63-8672b766a243",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "How should schedule impacts from changes be addressed in the change order documentation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Schedule impacts should never be documented, as they are considered part of the normal project adjustments"
+        },
+        {
+          "id": "b",
+          "text": "Only cost impacts are documented; schedule changes are handled separately, often through informal agreements"
+        },
+        {
+          "id": "c",
+          "text": "The change order quantifies schedule delay and establishes a revised substantial completion date accounting for time impacts"
+        },
+        {
+          "id": "d",
+          "text": "Schedule impacts are ignored if the change is owner-directed, assuming the owner accepts the risk"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Omits critical information; schedule impact documentation is essential to prevent disputes.",
+        "b": "Splits the change order inappropriately; both cost and schedule must be in the change order for complete documentation.",
+        "d": "Creates risk; owner-directed delays still require formal documentation to protect the contractor from liquidated damages.",
+        "correct": "Change orders must address both cost and schedule; time extensions are formalized to avoid liquidated damages for owner-directed delays.",
+        "takeaway": "Change orders must quantify schedule impacts and establish revised completion dates to avoid liquidated damages disputes."
+      },
+      "explanation": "Omits critical information; schedule impact documentation is essential to prevent disputes. Splits the change order inappropriately; both cost and schedule must be in the change order for complete documentation. Creates risk; owner-directed delays still require formal documentation to protect the contractor from liquidated damages. Change orders must address both cost and schedule; time extensions are formalized to avoid liquidated damages for owner-directed delays. Change orders must quantify schedule impacts and establish revised completion dates to avoid liquidated damages disputes.",
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-05-06T14:40:21.172406+00:00",
+      "content_hash": "sha256:420e91964a2d8a0c7ae9d4f74a8cb4f14aa8e70334e3da7c9a4c2013e34322e4"
+    },
+    {
+      "question_id": "eb2681b4-ef67-4089-85bd-bc0b92319323",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What is an example of an owner-initiated change?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Discovery of unexpected subsurface utilities, which may require immediate attention and potential redesign of the foundation plan"
+        },
+        {
+          "id": "b",
+          "text": "The contractor's request to use alternative materials due to supply chain issues or cost considerations, which must be approved by the owner"
+        },
+        {
+          "id": "c",
+          "text": "The owner's request for a design modification or additional scope"
+        },
+        {
+          "id": "d",
+          "text": "Natural disaster during construction, necessitating a reassessment of the project timeline and budget"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Field-discovered change, not owner-initiated; subsurface obstacles are unanticipated site conditions discovered during construction.",
+        "b": "Contractor-proposed change, not owner-initiated; contractor requests for alternative materials originate with the contractor.",
+        "d": "Force majeure event, not owner-initiated; natural disasters are extraordinary circumstances beyond either party's initiation.",
+        "correct": "Owner-initiated changes occur when the owner requests design modifications, additional scope, or specification changes.",
+        "takeaway": "Owner-initiated changes are requests from the owner for design modifications, additional scope, or specification changes."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f4614d8c1e364a52e4717af990e611939a9057e1c0322e6e1c22e7db6c4c9852"
+    },
+    {
+      "question_id": "d0262e2e-a1eb-4602-8fbc-cf0cba977867",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What is the primary purpose of a change order in construction contracts?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce the contractor's compensation, often as a penalty for delays or non-compliance with project specifications."
+        },
+        {
+          "id": "b",
+          "text": "To modify the contract scope, establish new terms, and document agreement on cost and schedule impacts"
+        },
+        {
+          "id": "c",
+          "text": "To terminate the contractor's employment, effectively ending their involvement in the project without further obligations."
+        },
+        {
+          "id": "d",
+          "text": "To expedite project completion by reallocating resources and adjusting timelines to meet urgent deadlines."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Mischaracterizes purpose; change orders address all scope modifications, which may increase, decrease, or neutrally affect compensation.",
+        "c": "Confuses purpose; change orders modify scope within the contract relationship, not terminate the contractor.",
+        "d": "Misidentifies effect; change orders address scope changes and may delay or extend completion, not necessarily expedite it.",
+        "correct": "Change orders formally document scope modifications, cost adjustments, and schedule impacts when conditions require deviation from the original contract.",
+        "takeaway": "Change orders formally modify the contract scope, establish new terms, and document cost and schedule impacts."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da7ba77779bd5503fbcf24a614588d1203b57771e55cd2966c8e420b4ba6aa4d"
+    },
+    {
+      "question_id": "d846afe9-9a64-4419-8aeb-1e3c765f53ba",
+      "article_id": "4e28889a-cba3-4bf4-805c-ff0526910ee3",
+      "topic_id": "9a2ae75d-1981-46a9-818a-2ae12df3f36f",
+      "text": "What is a field-discovered change and when does it occur?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Changes requested by the owner during project planning, often to accommodate new design preferences"
+        },
+        {
+          "id": "b",
+          "text": "Changes arising from unanticipated site conditions like subsurface obstacles or structural deficiencies discovered during construction"
+        },
+        {
+          "id": "c",
+          "text": "Changes made by the architect to save money, typically without altering the project's scope"
+        },
+        {
+          "id": "d",
+          "text": "Changes required only when the contractor suggests them, usually based on practical site considerations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Owner-initiated change, not field-discovered; planning-stage requests are known at contract time, not discovered in the field.",
+        "c": "Architect cost-saving initiative, not field-discovered; field changes respond to discovered conditions, not architect decisions.",
+        "d": "Contractor initiation is irrelevant; field-discovered changes are identified by physical site conditions, regardless of who notices them.",
+        "correct": "Field-discovered changes address unanticipated site conditions not apparent from initial contract documents.",
+        "takeaway": "Field-discovered changes result from unanticipated site conditions like subsurface obstacles or hidden structural defects."
+      },
+      "explanation": null,
+      "code_citation": "UAP Doc 301",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-CTR-016-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:47.526003+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a3e2f527b681a32fac63f1ed8e388be672b518b0d56d95b3c994e567e96b0f04"
+    }
+  ]
+}

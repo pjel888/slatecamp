@@ -95,4 +95,3 @@ Extracted summary:
 - Props: (none)
 - Text: These are frequently tested traps. Memorize them to avoid losing easy points on exam day.
 [/SLATECAMP_UI_BLOCK]
-

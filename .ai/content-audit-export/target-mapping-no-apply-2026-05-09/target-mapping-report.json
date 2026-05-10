@@ -1,0 +1,887 @@
+{
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "root": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09",
+  "gate_lock": "NO APPLY. No content-audit:push:apply, no content-audit:push-question:apply, and no insert workflow has been run.",
+  "article_mappings": [
+    {
+      "label": "BP 344 Accessible Ramp Geometry",
+      "dry_article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+      "target_article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "decision": "MAP_EXISTING",
+      "basis": "Exact ramp topic match; target slug is bp-344-ramp-slope-tiers.",
+      "target_folder": "bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "dry_folder": "bp-344-accessible-ramp-geometry--dryrun-01-bp344-accessible-ramp-geometry",
+      "target_slug": "bp-344-ramp-slope-tiers",
+      "dry_slug": "bp-344-accessible-ramp-geometry",
+      "normalized_hash": "sha256:44cc083ba14200dc43012e6f8a54405ce3900e8204b743da7bce4340e02fa540",
+      "original_hash": "sha256:3205392462f9fbf67cac6b71e6d34610d86edeb9a8181186837cf8431df8cc41"
+    },
+    {
+      "label": "RA 9266 Foreign Architect and Temporary Permit Gate",
+      "dry_article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "target_article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "decision": "MAP_EXISTING",
+      "basis": "Exact foreign-architect practice / temporary-special permit topic.",
+      "target_folder": "lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "dry_folder": "ra-9266-foreign-architect-and-temporary-permit-gate--dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "target_slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+      "dry_slug": "ra-9266-foreign-architect-and-temporary-permit-gate",
+      "normalized_hash": "sha256:2cdc2ed40e8e06f760244189a2f68eb6f5309f69df74e9f6b9d6e921d6fc9848",
+      "original_hash": "sha256:373e1210a83a41370263f3e00d7bdd2944e65476922de8c502fd61ec17732ba8"
+    },
+    {
+      "label": "Vitruvius Principles versus Departments of Architecture",
+      "dry_article_id": "dryrun-05-vitruvius-principles-and-departments",
+      "target_article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "decision": "MAP_EXISTING",
+      "basis": "Existing Vitruvius/classical-theory article is the cleanest target.",
+      "target_folder": "lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18",
+      "dry_folder": "vitruvius-principles-versus-departments-of-architecture--dryrun-05-vitruvius-principles-and-departments",
+      "target_slug": "lea-theo-001-09-core-concept",
+      "dry_slug": "vitruvius-principles-versus-departments-of-architecture",
+      "normalized_hash": "sha256:8656cf9d5f866c418bff47816b68e968c0202d63d312169ca7f3a3e0cadf6c6a",
+      "original_hash": "sha256:58b9a06a02d675b2312a378c3a59d7b231806c0dcd5d2a6f5193b9d1609db699"
+    },
+    {
+      "label": "PD 1096 Rule VII TGFA, AMBF, and Location Controls",
+      "dry_article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "target_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "decision": "MAP_EXISTING",
+      "basis": "Existing PD 1096 Rule VII area-metrics article covers the same code region.",
+      "target_folder": "pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "dry_folder": "pd-1096-rule-vii-tgfa-ambf-and-location-controls--dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "target_slug": "pd-1096-rule-vii-area-metrics",
+      "dry_slug": "pd-1096-rule-vii-tgfa-ambf-and-location-controls",
+      "normalized_hash": "sha256:1d4b306a267335074b5b87914cfd83dbbc141a0075d82253230b081555daab94",
+      "original_hash": "sha256:e49208e2ecee6aecdeada17bf364c108ad95fe9ec88b00fc336bfeec82207b07"
+    },
+    {
+      "label": "UAP SPP 201 Pre-Design and Service Boundaries",
+      "dry_article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "target_article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "decision": "MAP_EXISTING",
+      "basis": "Existing SPP Doc 201 pre-design article is exact service-family target.",
+      "target_folder": "spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "dry_folder": "uap-spp-201-pre-design-and-service-boundaries--dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "target_slug": "spp-doc-201-pre-design-services",
+      "dry_slug": "uap-spp-201-pre-design-and-service-boundaries",
+      "normalized_hash": "sha256:136c0a9fac67a1f38786c0ee981a4dac4bc53951a7f1d982357714cc82ecc5dc",
+      "original_hash": "sha256:94f1e451c0e52001fefdd84cdcae0eee27923a9abadbea6cd33ecf768f75840d"
+    }
+  ],
+  "new_article_tickets": [
+    {
+      "ticket_type": "NEW_ARTICLE_INSERTION_TICKET",
+      "generated_at": "2026-05-09T14:08:41.185713Z",
+      "ticket_id": "new-article-ra9514-means-of-egress-width-count-illumination",
+      "label": "RA 9514 Means of Egress Width, Count, and Illumination",
+      "dry_article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+      "proposed_slug": "ra-9514-means-of-egress-width-count-and-illumination",
+      "decision": "NEW_ARTICLE_TICKET",
+      "basis": "Fresh mirror has related Fire egress and PD 1096 egress articles, but no exact RA 9514 article combining general egress width, egress count thresholds, and means-of-egress illumination. Treat as new unless Philip approves a deliberate merge into Fire egress.",
+      "closest_existing": [
+        {
+          "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+          "slug": "lea-dsgn-008-01-core-concept",
+          "title": "Fire egress",
+          "note": "strong egress overlap but broader travel-distance/dead-end coverage and lacks illumination focus"
+        },
+        {
+          "article_id": "93009368-9041-46e0-b93b-8786100311be",
+          "slug": "pd-1096-rule-xii-egress-and-corridors",
+          "title": "PD 1096 Rule XII Egress and Corridors",
+          "note": "egress overlap but different governing code"
+        }
+      ],
+      "status": "ticket_only_no_supabase_insert",
+      "dry_run_folder": "ra-9514-means-of-egress-width-count-and-illumination--dryrun-03-ra9514-means-of-egress-width-and-count",
+      "candidate_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/ra-9514-means-of-egress-width-count-and-illumination--dryrun-03-ra9514-means-of-egress-width-and-count/candidate.md",
+      "normalized_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/ra-9514-means-of-egress-width-count-and-illumination--dryrun-03-ra9514-means-of-egress-width-and-count/normalized.md",
+      "candidate_hash": "sha256:c0ef90e3d88ced45e33563dfbfbaec0d85426e18d9c31402f288c664aad4acd7",
+      "candidate_word_count": 890,
+      "linked_question_count": 3,
+      "gate_lock": "No insert/apply command is authorized by this ticket.",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/new-articles/new-article-ra9514-means-of-egress-width-count-illumination.json"
+    },
+    {
+      "ticket_type": "NEW_ARTICLE_INSERTION_TICKET",
+      "generated_at": "2026-05-09T14:08:41.185713Z",
+      "ticket_id": "new-article-npcp-fixture-units-and-venting",
+      "label": "National Plumbing Code Fixture Units and Venting",
+      "dry_article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+      "proposed_slug": "national-plumbing-code-fixture-units-and-venting",
+      "decision": "NEW_ARTICLE_TICKET",
+      "basis": "Existing plumbing articles are broad framework/system-component pages, not an exact Section 207.8 / Section 311.4 / loop-or-circuit vent focused target.",
+      "closest_existing": [
+        {
+          "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+          "slug": "lea-util-001-07-system-components-and-functions",
+          "title": "Sanitary drainage systems remove wastewater and human waste",
+          "note": "broad sanitary drainage overview"
+        },
+        {
+          "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+          "slug": "lea-util-001-08-what-you-need-to-know-for-the-lea",
+          "title": "Philippines' plumbing regulatory framework",
+          "note": "very broad utilities/plumbing framework"
+        }
+      ],
+      "status": "ticket_only_no_supabase_insert",
+      "dry_run_folder": "national-plumbing-code-fixture-units-and-venting--dryrun-04-npcp-fixture-unit-and-venting",
+      "candidate_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/national-plumbing-code-fixture-units-and-venting--dryrun-04-npcp-fixture-unit-and-venting/candidate.md",
+      "normalized_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/national-plumbing-code-fixture-units-and-venting--dryrun-04-npcp-fixture-unit-and-venting/normalized.md",
+      "candidate_hash": "sha256:c560a1842651d962e95fa2621d88b7fd3694528450449b3631f2601b92ff9e3f",
+      "candidate_word_count": 911,
+      "linked_question_count": 3,
+      "gate_lock": "No insert/apply command is authorized by this ticket.",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/new-articles/new-article-npcp-fixture-units-and-venting.json"
+    },
+    {
+      "ticket_type": "NEW_ARTICLE_INSERTION_TICKET",
+      "generated_at": "2026-05-09T14:08:41.185713Z",
+      "ticket_id": "new-article-bp220-parks-playgrounds-road-pavement",
+      "label": "BP 220 Parks, Playgrounds, and Road Pavement",
+      "dry_article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "proposed_slug": "bp-220-parks-playgrounds-and-road-pavement",
+      "decision": "NEW_ARTICLE_TICKET",
+      "basis": "Fresh mirror found BP 220 housing/density articles, but no exact parks/playgrounds allocation plus road pavement construction target.",
+      "closest_existing": [
+        {
+          "article_id": "1673310d-fe41-40f3-ab75-0c7e90db42e1",
+          "slug": "lea-dsgn-003-04-core-concept",
+          "title": "Senior Living and Low-Income Housing",
+          "note": "BP 220 overlap but different design/housing focus"
+        },
+        {
+          "article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
+          "slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
+          "title": "Philippine Housing Law Framework",
+          "note": "framework overview, not parks/road-pavement details"
+        }
+      ],
+      "status": "ticket_only_no_supabase_insert",
+      "dry_run_folder": "bp-220-parks-playgrounds-and-road-pavement--dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "candidate_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/bp-220-parks-playgrounds-and-road-pavement--dryrun-07-bp220-parks-playgrounds-road-pavement/candidate.md",
+      "normalized_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/bp-220-parks-playgrounds-and-road-pavement--dryrun-07-bp220-parks-playgrounds-road-pavement/normalized.md",
+      "candidate_hash": "sha256:9b4e286bee63efaf11ec68780cc2901f47c4a77ec793df78b2532d32d23199da",
+      "candidate_word_count": 925,
+      "linked_question_count": 3,
+      "gate_lock": "No insert/apply command is authorized by this ticket.",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/new-articles/new-article-bp220-parks-playgrounds-road-pavement.json"
+    },
+    {
+      "ticket_type": "NEW_ARTICLE_INSERTION_TICKET",
+      "generated_at": "2026-05-09T14:08:41.185713Z",
+      "ticket_id": "new-article-pd957-license-to-sell-registration-gate",
+      "label": "PD 957 License to Sell Registration Gate",
+      "dry_article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+      "proposed_slug": "pd-957-license-to-sell-registration-gate",
+      "decision": "NEW_ARTICLE_TICKET",
+      "basis": "Fresh mirror found broad housing-law and DHSUD-regulatory articles, but no exact PD 957 project-registration/license-to-sell gate article.",
+      "closest_existing": [
+        {
+          "article_id": "0d2e80df-4f76-484e-9b1f-5502da9e35be",
+          "slug": "lea-plan-003-01-what-you-need-to-know-for-the-lea",
+          "title": "Philippine Housing Law Framework",
+          "note": "broad PD 957 overview"
+        },
+        {
+          "article_id": "9098a3d8-b4d7-42f4-ac2b-0df1509c2507",
+          "slug": "lea-plan-007-02-core-concept",
+          "title": "DHSUD is a regulatory and policy-formulating agency, not",
+          "note": "DHSUD/LTS overlap but agency-role focus"
+        }
+      ],
+      "status": "ticket_only_no_supabase_insert",
+      "dry_run_folder": "pd-957-license-to-sell-registration-gate--dryrun-08-pd957-license-to-sell-registration-gate",
+      "candidate_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/pd-957-license-to-sell-registration-gate--dryrun-08-pd957-license-to-sell-registration-gate/candidate.md",
+      "normalized_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/pd-957-license-to-sell-registration-gate--dryrun-08-pd957-license-to-sell-registration-gate/normalized.md",
+      "candidate_hash": "sha256:80e733f822e9deb994fedd44582da2fc3ed6774bafdb94e9a2bd50bebeb46d0f",
+      "candidate_word_count": 914,
+      "linked_question_count": 3,
+      "gate_lock": "No insert/apply command is authorized by this ticket.",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/new-articles/new-article-pd957-license-to-sell-registration-gate.json"
+    }
+  ],
+  "question_classification_counts": {
+    "REPLACE_EXISTING": 2,
+    "DO_NOT_USE": 2,
+    "ADD_NEW": 23
+  },
+  "question_classifications": [
+    {
+      "dry_article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+      "dry_question_id": "dryrun-01-bp344-accessible-ramp-geometry-q01",
+      "dry_question_text": "Under the 2024 Revised IRR of BP 344, what is the minimum clear width of an accessible ramp?",
+      "classification": "REPLACE_EXISTING",
+      "target_article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "target_question_id": "4c92b571-c5f6-45e7-accd-4567ebe47393",
+      "ticket_target": null,
+      "rationale": "Same minimum accessible-ramp clear-width concept; dry-run version has explicit 2024 IRR source locator."
+    },
+    {
+      "dry_article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+      "dry_question_id": "dryrun-01-bp344-accessible-ramp-geometry-q02",
+      "dry_question_text": "A BP 344 ramp question asks for the general gradient limit before special-case table conditions are considered. Which answer follows the 2024 IRR excerpt?",
+      "classification": "DO_NOT_USE",
+      "target_article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "target_question_id": null,
+      "ticket_target": null,
+      "rationale": "Target article already has stronger slope-tier questions covering GOLD/MAX/RENO and 1:12 renovation trap; dry-run item is narrower."
+    },
+    {
+      "dry_article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+      "dry_question_id": "dryrun-01-bp344-accessible-ramp-geometry-q03",
+      "dry_question_text": "An accessible ramp is longer than 10.50 m. Under the cited BP 344 2024 IRR excerpt, what intermediate landing length must be provided?",
+      "classification": "DO_NOT_USE",
+      "target_article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+      "target_question_id": null,
+      "ticket_target": null,
+      "rationale": "Target article already has stronger landing/slope trap questions; dry-run item duplicates the 1,800 mm fact at lower complexity."
+    },
+    {
+      "dry_article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "dry_question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q01",
+      "dry_question_text": "Under the RA 9266 IRR, which description best matches a foreign architect?",
+      "classification": "ADD_NEW",
+      "target_article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "Definition of foreign architect is useful and not the same intent as existing permit/reciprocity items."
+    },
+    {
+      "dry_article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "dry_question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q02",
+      "dry_question_text": "Before assuming architectural consultant duties on a covered project in the Philippines, what must the foreign national secure under Section 38 of the RA 9266 IRR?",
+      "classification": "REPLACE_EXISTING",
+      "target_article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "target_question_id": "c348de7a-021d-4ff6-9c91-c9673fb255f6",
+      "ticket_target": null,
+      "rationale": "Same authorization/permit concept; dry-run wording is source-specific to Section 38 and has explicit code citation."
+    },
+    {
+      "dry_article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "dry_question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q03",
+      "dry_question_text": "What is the Filipino counterpart in the RA 9266 IRR definition?",
+      "classification": "ADD_NEW",
+      "target_article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "Filipino counterpart definition is adjacent to but not the same as the existing fee-flow question."
+    },
+    {
+      "dry_article_id": "dryrun-05-vitruvius-principles-and-departments",
+      "dry_question_id": "dryrun-05-vitruvius-principles-and-departments-q01",
+      "dry_question_text": "Which set belongs to Vitruvius's fundamental principles of architecture in Book I, Chapter II?",
+      "classification": "ADD_NEW",
+      "target_article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "Book I Chapter II principle-list distinction is not directly covered by existing triad-focused questions."
+    },
+    {
+      "dry_article_id": "dryrun-05-vitruvius-principles-and-departments",
+      "dry_question_id": "dryrun-05-vitruvius-principles-and-departments-q02",
+      "dry_question_text": "In Book I, Chapter III, which item is one of Vitruvius's three departments of architecture?",
+      "classification": "ADD_NEW",
+      "target_article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "Book I Chapter III departments distinction is not directly covered by existing triad-focused questions."
+    },
+    {
+      "dry_article_id": "dryrun-05-vitruvius-principles-and-departments",
+      "dry_question_id": "dryrun-05-vitruvius-principles-and-departments-q03",
+      "dry_question_text": "Which interpretation best follows Vitruvius's explanation of Economy in the cited passage?",
+      "classification": "ADD_NEW",
+      "target_article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "Economy interpretation from the cited passage is not directly covered by existing questions."
+    },
+    {
+      "dry_article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "dry_question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q01",
+      "dry_question_text": "Under PD 1096 Rule VII Section 704.1(a), which site condition is required before a building may be constructed?",
+      "classification": "ADD_NEW",
+      "target_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "Section 704.1(a) site-access condition is not an exact existing target-question concept."
+    },
+    {
+      "dry_article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "dry_question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q02",
+      "dry_question_text": "A question asks for Allowable Maximum Total Gross Floor Area. Which abbreviation should control the computation?",
+      "classification": "ADD_NEW",
+      "target_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "AMTGFA/TGFA abbreviation-control item is useful and not the same as existing TGFA/GFA/AMBF calculation items."
+    },
+    {
+      "dry_article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+      "dry_question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q03",
+      "dry_question_text": "For eaves over required windows under PD 1096 Rule VII Section 704.1(c), what minimum distance from side and rear property lines is stated?",
+      "classification": "ADD_NEW",
+      "target_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "Section 704.1(c) eaves-distance item is now taught by the mapped article, but needs duplicate review before insertion.",
+      "duplicate_watch": "A similar existing question exists outside the mapped target: 2e393cbc-69e8-4130-b2ed-96f5f065d060."
+    },
+    {
+      "dry_article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "dry_question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q01",
+      "dry_question_text": "Which listed service is clearly a Pre-design Service under SPP Document 201?",
+      "classification": "ADD_NEW",
+      "target_article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "Basic pre-design service identification is useful and not exact duplicate of existing specific-service questions."
+    },
+    {
+      "dry_article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "dry_question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q02",
+      "dry_question_text": "Under SPP 201, why is consultation still compensable professional input even if the project is not pursued?",
+      "classification": "ADD_NEW",
+      "target_article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "Consultation-as-compensable-input concept is not directly covered by existing SPP 201 questions."
+    },
+    {
+      "dry_article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+      "dry_question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q03",
+      "dry_question_text": "Under UAP Document 401-402, which service is explicitly not covered by the agreement?",
+      "classification": "ADD_NEW",
+      "target_article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "target_question_id": null,
+      "ticket_target": "existing-article-question-insertion",
+      "rationale": "UAP 401-402 exclusion boundary supports the rewritten article; insert only after scope review because it references a different UAP document."
+    },
+    {
+      "dry_article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+      "dry_question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q01",
+      "dry_question_text": "Under the general RA 9514 RIRR means-of-egress rule, what minimum width applies unless a specific occupancy division provides otherwise?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-ra9514-means-of-egress-width-count-illumination",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+      "dry_question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q02",
+      "dry_question_text": "A storey has an occupant load of 750. Under the general Section 10.2.5.2 rule, how many means of egress are required unless a specific occupancy rule changes the answer?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-ra9514-means-of-egress-width-count-illumination",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+      "dry_question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q03",
+      "dry_question_text": "What minimum illumination value is stated for floors of means of egress at corridors, landings, and exit doors?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-ra9514-means-of-egress-width-count-illumination",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+      "dry_question_id": "dryrun-04-npcp-fixture-unit-and-venting-q01",
+      "dry_question_text": "In the Revised National Plumbing Code of the Philippines definition, one fixture unit is equivalent to what flow rate?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-npcp-fixture-units-and-venting",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+      "dry_question_id": "dryrun-04-npcp-fixture-unit-and-venting-q02",
+      "dry_question_text": "Which statement follows Section 311.4 of the Revised National Plumbing Code of the Philippines?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-npcp-fixture-units-and-venting",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+      "dry_question_id": "dryrun-04-npcp-fixture-unit-and-venting-q03",
+      "dry_question_text": "Under the Revised National Plumbing Code of the Philippines definition, a loop or circuit vent connects on a horizontal soil or waste branch at what location?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-npcp-fixture-units-and-venting",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "dry_question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q01",
+      "dry_question_text": "In the cited BP 220 IRR hierarchy of basic needs, which item comes first?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-bp220-parks-playgrounds-road-pavement",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "dry_question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q02",
+      "dry_question_text": "For 150 lots/dwelling units per hectare and below, what parks/playgrounds allocation is shown in Table 1?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-bp220-parks-playgrounds-road-pavement",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+      "dry_question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q03",
+      "dry_question_text": "Under the cited BP 220 road-pavement excerpt, what minimum asphalt thickness is stated for major/minor roads and motor courts?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-bp220-parks-playgrounds-road-pavement",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+      "dry_question_id": "dryrun-08-pd957-license-to-sell-registration-gate-q01",
+      "dry_question_text": "A subdivision project has been registered, but no license to sell has been issued. Under the cited PD 957 IRR excerpt, may the owner/dealer sell disposable lots or units?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-pd957-license-to-sell-registration-gate",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+      "dry_question_id": "dryrun-08-pd957-license-to-sell-registration-gate-q02",
+      "dry_question_text": "The cited Section 11 ties issuance of the license to sell to which project event?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-pd957-license-to-sell-registration-gate",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    },
+    {
+      "dry_article_id": "dryrun-08-pd957-license-to-sell-registration-gate",
+      "dry_question_id": "dryrun-08-pd957-license-to-sell-registration-gate-q03",
+      "dry_question_text": "Which document type is explicitly included among public-offering materials in the cited PD 957 application evidence?",
+      "classification": "ADD_NEW",
+      "target_article_id": null,
+      "target_question_id": null,
+      "ticket_target": "new-article-pd957-license-to-sell-registration-gate",
+      "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows."
+    }
+  ],
+  "question_edit_files": [
+    {
+      "question_id": "4c92b571-c5f6-45e7-accd-4567ebe47393",
+      "edit_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/4c92b571-c5f6-45e7-accd-4567ebe47393.json",
+      "dry_question_id": "dryrun-01-bp344-accessible-ramp-geometry-q01"
+    },
+    {
+      "question_id": "c348de7a-021d-4ff6-9c91-c9673fb255f6",
+      "edit_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/question-edits/c348de7a-021d-4ff6-9c91-c9673fb255f6.json",
+      "dry_question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q02"
+    }
+  ],
+  "question_insertion_tickets": [
+    {
+      "dry_question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q01",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-02-ra9266-foreign-architect-temporary-permit-q01.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q03",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-02-ra9266-foreign-architect-temporary-permit-q03.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-05-vitruvius-principles-and-departments-q01",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-05-vitruvius-principles-and-departments-q01.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-05-vitruvius-principles-and-departments-q02",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-05-vitruvius-principles-and-departments-q02.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-05-vitruvius-principles-and-departments-q03",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-05-vitruvius-principles-and-departments-q03.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q01",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-06-pd1096-tgfa-ambf-location-controls-q01.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q02",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-06-pd1096-tgfa-ambf-location-controls-q02.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q03",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-06-pd1096-tgfa-ambf-location-controls-q03.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q01",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-09-uap-spp201-pre-design-and-service-boundaries-q01.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q02",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-09-uap-spp201-pre-design-and-service-boundaries-q02.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q03",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-09-uap-spp201-pre-design-and-service-boundaries-q03.json",
+      "target": "existing-article-question-insertion"
+    },
+    {
+      "dry_question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q01",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-03-ra9514-means-of-egress-width-and-count-q01.json",
+      "target": "new-article-ra9514-means-of-egress-width-count-illumination"
+    },
+    {
+      "dry_question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q02",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-03-ra9514-means-of-egress-width-and-count-q02.json",
+      "target": "new-article-ra9514-means-of-egress-width-count-illumination"
+    },
+    {
+      "dry_question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q03",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-03-ra9514-means-of-egress-width-and-count-q03.json",
+      "target": "new-article-ra9514-means-of-egress-width-count-illumination"
+    },
+    {
+      "dry_question_id": "dryrun-04-npcp-fixture-unit-and-venting-q01",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-04-npcp-fixture-unit-and-venting-q01.json",
+      "target": "new-article-npcp-fixture-units-and-venting"
+    },
+    {
+      "dry_question_id": "dryrun-04-npcp-fixture-unit-and-venting-q02",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-04-npcp-fixture-unit-and-venting-q02.json",
+      "target": "new-article-npcp-fixture-units-and-venting"
+    },
+    {
+      "dry_question_id": "dryrun-04-npcp-fixture-unit-and-venting-q03",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-04-npcp-fixture-unit-and-venting-q03.json",
+      "target": "new-article-npcp-fixture-units-and-venting"
+    },
+    {
+      "dry_question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q01",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-07-bp220-parks-playgrounds-road-pavement-q01.json",
+      "target": "new-article-bp220-parks-playgrounds-road-pavement"
+    },
+    {
+      "dry_question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q02",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-07-bp220-parks-playgrounds-road-pavement-q02.json",
+      "target": "new-article-bp220-parks-playgrounds-road-pavement"
+    },
+    {
+      "dry_question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q03",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-07-bp220-parks-playgrounds-road-pavement-q03.json",
+      "target": "new-article-bp220-parks-playgrounds-road-pavement"
+    },
+    {
+      "dry_question_id": "dryrun-08-pd957-license-to-sell-registration-gate-q01",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-08-pd957-license-to-sell-registration-gate-q01.json",
+      "target": "new-article-pd957-license-to-sell-registration-gate"
+    },
+    {
+      "dry_question_id": "dryrun-08-pd957-license-to-sell-registration-gate-q02",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-08-pd957-license-to-sell-registration-gate-q02.json",
+      "target": "new-article-pd957-license-to-sell-registration-gate"
+    },
+    {
+      "dry_question_id": "dryrun-08-pd957-license-to-sell-registration-gate-q03",
+      "ticket_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/insertion-tickets/add-new-questions/dryrun-08-pd957-license-to-sell-registration-gate-q03.json",
+      "target": "new-article-pd957-license-to-sell-registration-gate"
+    }
+  ],
+  "verification_summary": {
+    "article_verification": [
+      {
+        "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+        "slug": "bp-344-ramp-slope-tiers",
+        "folder": "bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+        "candidate_word_count": 934,
+        "compose_blockers": 0,
+        "diff_safe": true,
+        "validate_blockers": 0,
+        "validate_warnings": 1,
+        "push_dry_run_blockers": 0,
+        "push_dry_run_warnings": 3,
+        "stale_check_passed": true,
+        "placeholder_repair_warning": true,
+        "candidate_flags": [],
+        "candidate_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/candidate.md",
+        "push_report_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/push-report.json"
+      },
+      {
+        "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+        "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+        "folder": "lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+        "candidate_word_count": 930,
+        "compose_blockers": 0,
+        "diff_safe": true,
+        "validate_blockers": 0,
+        "validate_warnings": 1,
+        "push_dry_run_blockers": 0,
+        "push_dry_run_warnings": 3,
+        "stale_check_passed": true,
+        "placeholder_repair_warning": true,
+        "candidate_flags": [],
+        "candidate_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/candidate.md",
+        "push_report_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/push-report.json"
+      },
+      {
+        "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+        "slug": "lea-theo-001-09-core-concept",
+        "folder": "lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18",
+        "candidate_word_count": 905,
+        "compose_blockers": 0,
+        "diff_safe": true,
+        "validate_blockers": 0,
+        "validate_warnings": 1,
+        "push_dry_run_blockers": 0,
+        "push_dry_run_warnings": 3,
+        "stale_check_passed": true,
+        "placeholder_repair_warning": true,
+        "candidate_flags": [],
+        "candidate_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/candidate.md",
+        "push_report_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/lea-theo-001-09-core-concept--25607252-c20a-4013-99f5-af11e829fd18/push-report.json"
+      },
+      {
+        "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+        "slug": "pd-1096-rule-vii-area-metrics",
+        "folder": "pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4",
+        "candidate_word_count": 912,
+        "compose_blockers": 0,
+        "diff_safe": true,
+        "validate_blockers": 0,
+        "validate_warnings": 1,
+        "push_dry_run_blockers": 0,
+        "push_dry_run_warnings": 3,
+        "stale_check_passed": true,
+        "placeholder_repair_warning": true,
+        "candidate_flags": [],
+        "candidate_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4/candidate.md",
+        "push_report_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/pd-1096-rule-vii-area-metrics--85bcd328-436d-49ba-9d37-7b202d0d38d4/push-report.json"
+      },
+      {
+        "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+        "slug": "spp-doc-201-pre-design-services",
+        "folder": "spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+        "candidate_word_count": 926,
+        "compose_blockers": 0,
+        "diff_safe": true,
+        "validate_blockers": 0,
+        "validate_warnings": 1,
+        "push_dry_run_blockers": 0,
+        "push_dry_run_warnings": 3,
+        "stale_check_passed": true,
+        "placeholder_repair_warning": true,
+        "candidate_flags": [],
+        "candidate_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/candidate.md",
+        "push_report_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/push-report.json"
+      }
+    ],
+    "question_dry_runs": [
+      {
+        "question_id": "4c92b571-c5f6-45e7-accd-4567ebe47393",
+        "article_folder": "bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+        "blockers": 0,
+        "warnings": 1,
+        "stale_check_passed": true,
+        "proposed_field_names": [
+          "accepted_answers",
+          "application_context",
+          "bloom_level",
+          "code_citation",
+          "correct_option_id",
+          "correct_value",
+          "difficulty",
+          "difficulty_rating",
+          "discrimination_rating",
+          "explanation",
+          "is_assessment",
+          "options",
+          "practice_context",
+          "prompt_image_url",
+          "question_type",
+          "rationale",
+          "text",
+          "value_tolerance"
+        ],
+        "report_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/question-edits/4c92b571-c5f6-45e7-accd-4567ebe47393.push-report.json"
+      },
+      {
+        "question_id": "c348de7a-021d-4ff6-9c91-c9673fb255f6",
+        "article_folder": "lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+        "blockers": 0,
+        "warnings": 1,
+        "stale_check_passed": true,
+        "proposed_field_names": [
+          "accepted_answers",
+          "application_context",
+          "bloom_level",
+          "code_citation",
+          "correct_option_id",
+          "correct_value",
+          "difficulty",
+          "difficulty_rating",
+          "discrimination_rating",
+          "explanation",
+          "is_assessment",
+          "options",
+          "practice_context",
+          "prompt_image_url",
+          "question_type",
+          "rationale",
+          "text",
+          "value_tolerance"
+        ],
+        "report_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/articles/lea-prac-frm-005-foreign-architects-in-the-philippines--ae4bdc43-1451-4aa5-8c12-65283f4bbdfd/question-edits/c348de7a-021d-4ff6-9c91-c9673fb255f6.push-report.json"
+      }
+    ]
+  },
+  "browser_qa": {
+    "generated_at": "2026-05-09T14:35:58.781Z",
+    "report_generated_at": "2026-05-09T14:39:23Z",
+    "scope": "local browser-rendered QA for 5 mapped existing article repairs only",
+    "render_method": "candidate.md compiled through SlateCamp compileWikiArticleWithRenderer(), served as local static HTML, opened in Chromium via Playwright.",
+    "article_count": 5,
+    "viewport_count": 2,
+    "overall_status": "PASS",
+    "pass_count": 10,
+    "fail_count": 0,
+    "mutation_status": "No Supabase article/question apply and no insertion workflow executed by this QA harness.",
+    "results_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/browser-results.json",
+    "report_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/browser-qa-report.md",
+    "preview_index_path": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/preview/index.html",
+    "screenshots_dir": ".ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots",
+    "checks": {
+      "raw_placeholder_openings_rendered": 0,
+      "raw_placeholder_closings_rendered": 0,
+      "placeholder_props_lines_rendered": 0,
+      "console_errors": 0,
+      "page_errors": 0,
+      "wiki_article_error_states": 0,
+      "broken_images": 0,
+      "empty_headings": 0,
+      "horizontal_overflow": false
+    },
+    "article_results": [
+      {
+        "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+        "label": "BP 344",
+        "slug": "bp-344-ramp-slope-tiers",
+        "title": "BP 344 Ramp Slope Tiers",
+        "status": "PASS",
+        "viewports": [
+          "desktop",
+          "mobile"
+        ],
+        "min_article_text_length": 5475,
+        "min_h2_count": 8,
+        "screenshots": [
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/bp-344-ramp-slope-tiers-desktop.png",
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/bp-344-ramp-slope-tiers-mobile.png"
+        ]
+      },
+      {
+        "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
+        "label": "RA 9266",
+        "slug": "lea-prac-frm-005-foreign-architects-in-the-philippines",
+        "title": "Foreign Architects in the Philippines",
+        "status": "PASS",
+        "viewports": [
+          "desktop",
+          "mobile"
+        ],
+        "min_article_text_length": 6220,
+        "min_h2_count": 9,
+        "screenshots": [
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/lea-prac-frm-005-foreign-architects-in-the-philippines-desktop.png",
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/lea-prac-frm-005-foreign-architects-in-the-philippines-mobile.png"
+        ]
+      },
+      {
+        "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+        "label": "Vitruvius",
+        "slug": "lea-theo-001-09-core-concept",
+        "title": "Vitruvius and Classical Architectural Theory",
+        "status": "PASS",
+        "viewports": [
+          "desktop",
+          "mobile"
+        ],
+        "min_article_text_length": 5968,
+        "min_h2_count": 10,
+        "screenshots": [
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/lea-theo-001-09-core-concept-desktop.png",
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/lea-theo-001-09-core-concept-mobile.png"
+        ]
+      },
+      {
+        "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+        "label": "PD 1096",
+        "slug": "pd-1096-rule-vii-area-metrics",
+        "title": "PD 1096 Rule VII Area Metrics",
+        "status": "PASS",
+        "viewports": [
+          "desktop",
+          "mobile"
+        ],
+        "min_article_text_length": 5647,
+        "min_h2_count": 9,
+        "screenshots": [
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/pd-1096-rule-vii-area-metrics-desktop.png",
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/pd-1096-rule-vii-area-metrics-mobile.png"
+        ]
+      },
+      {
+        "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+        "label": "UAP SPP 201",
+        "slug": "spp-doc-201-pre-design-services",
+        "title": "SPP Doc 201: Pre-Design Services",
+        "status": "PASS",
+        "viewports": [
+          "desktop",
+          "mobile"
+        ],
+        "min_article_text_length": 6441,
+        "min_h2_count": 10,
+        "screenshots": [
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/spp-doc-201-pre-design-services-desktop.png",
+          "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09/browser-qa/screenshots/spp-doc-201-pre-design-services-mobile.png"
+        ]
+      }
+    ]
+  },
+  "no_apply_artifact_audit": {
+    "generated_at": "2026-05-09T14:40:51Z",
+    "scope": "artifact audit inside .ai/content-audit-export/target-mapping-no-apply-2026-05-09 plus browser QA harness scope",
+    "json_parse_errors": [],
+    "run_log_count": 16,
+    "article_push_report_count": 5,
+    "question_push_report_count": 2,
+    "all_article_push_reports_dry_run_apply_false": true,
+    "all_question_push_reports_dry_run_apply_false": true,
+    "apply_true_artifacts": [],
+    "non_dry_run_artifacts": [],
+    "conclusion": "PASS: no apply=true or dry_run=false push artifacts found; browser QA harness is local-render only and records no Supabase mutation."
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+  "dry_question_id": "dryrun-04-npcp-fixture-unit-and-venting-q03",
+  "target_article_id": null,
+  "ticket_target": "new-article-npcp-fixture-units-and-venting",
+  "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Definitions, Loop or Circuit Vent, PDF p.29.",
+    "text": "Under the Revised National Plumbing Code of the Philippines definition, a loop or circuit vent connects on a horizontal soil or waste branch at what location?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "The Code definition places the vertical vent connection downstream of the last fixture connection.",
+      "distractors": {
+        "A": "The definition says downstream of the last fixture, not upstream of the first.",
+        "C": "The water-service entrance is unrelated.",
+        "D": "The definition is not limited to the trap seal."
+      },
+      "takeaway": "The key location phrase is downstream of the last fixture connection on the horizontal soil or waste branch."
+    },
+    "bloom_level": "remember",
+    "value_tolerance": 0,
+    "model_id": "npcp-loopvent-q3",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "B",
+    "explanation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Definitions, Loop or Circuit Vent, PDF p.29.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "Upstream of the first fixture only"
+      },
+      {
+        "id": "B",
+        "text": "At a point downstream of the last fixture connection"
+      },
+      {
+        "id": "C",
+        "text": "At the water-service entrance"
+      },
+      {
+        "id": "D",
+        "text": "At the fixture trap seal only"
+      }
+    ]
+  },
+  "sme_source_locator": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Definitions, Loop or Circuit Vent, PDF p.29.",
+  "code_citation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Definitions, Loop or Circuit Vent, PDF p.29.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

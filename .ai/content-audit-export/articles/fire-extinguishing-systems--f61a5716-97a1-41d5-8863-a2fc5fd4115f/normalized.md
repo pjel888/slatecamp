@@ -346,4 +346,3 @@ Extracted summary:
 ## Cross‑References
 
 **Fire Resistive Construction Ratings**, **Chimneys And Fireplaces**, **Fire Zones And Existing Buildings**, **Storage Of X Ray Films**
-

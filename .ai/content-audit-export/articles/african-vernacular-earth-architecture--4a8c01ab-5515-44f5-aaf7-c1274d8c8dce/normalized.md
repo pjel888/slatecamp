@@ -67,28 +67,28 @@ Extracted summary:
 
 **Question 1.** What are *torons* in the context of Sudano-Sahelian mosque architecture?
 
-A. Decorative ceramic tiles applied to minaret surfaces  
-B. Projecting timber beams embedded in earthen walls, serving as scaffolding anchors for annual replastering and as ventilation elements  
-C. Stone lintels spanning doorway openings in dry-stone construction  
-D. Wooden lattice screens used for natural ventilation in West African domestic architecture  
+A. Decorative ceramic tiles applied to minaret surfaces
+B. Projecting timber beams embedded in earthen walls, serving as scaffolding anchors for annual replastering and as ventilation elements
+C. Stone lintels spanning doorway openings in dry-stone construction
+D. Wooden lattice screens used for natural ventilation in West African domestic architecture
 
 > **Correct Answer: B.** Torons are the distinctive projecting wooden beams (typically Palmyra palm) that protrude from the walls of Sudano-Sahelian mosques such as the Great Mosque of Djenné. They serve the dual function of providing permanent scaffolding attachment points for the annual *crépissage* (communal replastering) and acting as ventilation channels through the thick earthen walls.
 
 **Question 2.** Great Zimbabwe's walls achieve structural stability through which primary method?
 
-A. Lime mortar binding with iron clamp reinforcement  
-B. Post-and-lintel timber framing within stone cladding  
-C. Dry-stone masonry using shaped granite blocks held by gravity, friction, and curvilinear geometry  
-D. Rubble-core construction with dressed stone facing and bitumen waterproofing  
+A. Lime mortar binding with iron clamp reinforcement
+B. Post-and-lintel timber framing within stone cladding
+C. Dry-stone masonry using shaped granite blocks held by gravity, friction, and curvilinear geometry
+D. Rubble-core construction with dressed stone facing and bitumen waterproofing
 
 > **Correct Answer: C.** Great Zimbabwe is defined by its dry-stone construction — no mortar of any kind was used. The granite blocks were shaped by controlled heating and flaking, then carefully fitted. The curving wall profiles distribute lateral forces and provide inherent seismic flexibility, a principle analogous to modern base-isolation concepts.
 
 **Question 3.** Which of the following correctly describes the Great Mosque of Djenné?
 
-A. Built in 1327 by Mansa Musa as part of the University of Timbuktu  
-B. Originally constructed c. 13th century; the current structure dates from a 1906–1907 reconstruction using the Sudano-Sahelian style  
-C. A dry-stone granite complex in southeastern Africa dating to the 11th–15th centuries  
-D. A rammed-earth fortification in the Saharan interior, abandoned after the 16th century  
+A. Built in 1327 by Mansa Musa as part of the University of Timbuktu
+B. Originally constructed c. 13th century; the current structure dates from a 1906–1907 reconstruction using the Sudano-Sahelian style
+C. A dry-stone granite complex in southeastern Africa dating to the 11th–15th centuries
+D. A rammed-earth fortification in the Saharan interior, abandoned after the 16th century
 
 > **Correct Answer: B.** The Great Mosque of Djenné was originally built around the 13th century under Djenné's first Muslim sultan, Koi Konboro. The current structure is a reconstruction completed in 1907. Option A describes the Djinguereber Mosque in Timbuktu (founded c. 1325 by Mansa Musa). Option C describes Great Zimbabwe. Distinguishing between these sites and their correct dates is essential for the LEA.
 

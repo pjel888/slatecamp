@@ -1,14 +1,43 @@
 {
   "article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
   "slug": "pd-1096-rule-vii-area-metrics",
-  "normalized_created_at": "2026-05-09T04:02:57.560Z",
+  "normalized_created_at": "2026-05-09T17:04:24.055Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:cd2c7932ae791b78b22f311d870c4de0453159fd602a6ae1040cedbfb47f99d5",
-  "normalized_content_hash": "sha256:cd2c7932ae791b78b22f311d870c4de0453159fd602a6ae1040cedbfb47f99d5",
-  "ui_block_count": 0,
-  "total_blocks": 0,
-  "blocks": [],
+  "original_content_hash": "sha256:7a4fe2a081a4d04ccad2171081ef519629a39e58344766f89010632d49576fc0",
+  "normalized_content_hash": "sha256:b460f8c0688faeab8f4a1073cd0eea240987338122e478faf515208ab3c4955c",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiTableTabs",
+      "raw": "<WikiTableTabs\n  caption=\"PD 1096 Rule VII controls to separate before computing\"\n  tables='[{\"id\": \"pd1096-location-controls\", \"title\": \"Location checks\", \"content\": \"| Control | Source path | What the architect asks | Common trap |\\n|---|---|---|---|\\n| Direct access | Section 704.1(a) | Does the building adjoin or directly access a public space, yard, or street on at least one side? | Jumping to area arithmetic before checking access |\\n| Adjacent property line | Section 704.1(b) | Is an adjoining street or alley centerline treated as an adjacent property line for this rule? | Reading property-line language too literally |\\n| Eaves over required windows | Section 704.1(c) | Are eaves over required windows at least 750 mm from side and rear property lines? | Detaching the 750 mm value from its condition |\"}, {\"id\": \"pd1096-area-controls\", \"title\": \"Area controls\", \"content\": \"| Control | Source path | What it regulates | Common trap |\\n|---|---|---|---|\\n| AMBF | Section 704.4 | Allowable maximum building footprint | Using TGFA when the prompt asks for footprint |\\n| TGFA | Section 705.1-705.2 | Allowable maximum total gross floor area | Using footprint logic for total floor area |\\n| Table VII.1 percentages | Section 705.2 | Initial allowable maximum TGFA as percentages of Total Lot Area | Treating storey multiplier numbers as percentages |\"}]'\n/>",
+      "raw_hash": "sha256:6e2be05c0c07a8c9ff5aa3ccbf7e51c1dc49a902d5e98a3a2ec7f86d9129d56b",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiTableTabs\" status=\"preserved\"]\nExtracted summary:\n- Props: caption=\"PD 1096 Rule VII controls to separate before computing\", tables=\"[{\\\"id\\\": \\\"pd1096-location-controls\\\", \\\"title\\\": \\\"Location checks\\\", \\\"content\\\": \\\"| Control | Source path | What the architect asks | Common trap |\\\\n|---|---|---|---|\\\\n| Direct access | Section 704.1(a) | Does the building adjoin or directly access a public space, yard, or street on at least one side? | Jumping to area arithmetic before checking access |\\\\n| Adjacent property line | Section 704.1(b) | Is an adjoining street or alley centerline treated as an adjacent property line for this rule? | Reading property-line language too literally |\\\\n| Eaves over required windows | Section 704.1(c) | Are eaves over required windows at least 750 mm from side and rear property lines? | Detaching the 750 mm value from its condition |\\\"}, {\\\"id\\\": \\\"pd1096-area-controls\\\", \\\"title\\\": \\\"Area controls\\\", \\\"content\\\": \\\"| Control | Source path | What it regulates | Common trap |\\\\n|---|---|---|---|\\\\n| AMBF | Section 704.4 | Allowable maximum building footprint | Using TGFA when the prompt asks for footprint |\\\\n| TGFA | Section 705.1-705.2 | Allowable maximum total gross floor area | Using footprint logic for total floor area |\\\\n| Table VII.1 percentages | Section 705.2 | Initial allowable maximum TGFA as percentages of Total Lot Area | Treating storey multiplier numbers as percentages |\\\"}]\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:d206a882cdb23d582d85b273e3ad762290e89f19fa85b751fc73f73da4307cf5",
+      "props": {
+        "caption": "PD 1096 Rule VII controls to separate before computing",
+        "tables": "[{\"id\": \"pd1096-location-controls\", \"title\": \"Location checks\", \"content\": \"| Control | Source path | What the architect asks | Common trap |\\n|---|---|---|---|\\n| Direct access | Section 704.1(a) | Does the building adjoin or directly access a public space, yard, or street on at least one side? | Jumping to area arithmetic before checking access |\\n| Adjacent property line | Section 704.1(b) | Is an adjoining street or alley centerline treated as an adjacent property line for this rule? | Reading property-line language too literally |\\n| Eaves over required windows | Section 704.1(c) | Are eaves over required windows at least 750 mm from side and rear property lines? | Detaching the 750 mm value from its condition |\"}, {\"id\": \"pd1096-area-controls\", \"title\": \"Area controls\", \"content\": \"| Control | Source path | What it regulates | Common trap |\\n|---|---|---|---|\\n| AMBF | Section 704.4 | Allowable maximum building footprint | Using TGFA when the prompt asks for footprint |\\n| TGFA | Section 705.1-705.2 | Allowable maximum total gross floor area | Using footprint logic for total floor area |\\n| Table VII.1 percentages | Section 705.2 | Initial allowable maximum TGFA as percentages of Total Lot Area | Treating storey multiplier numbers as percentages |\"}]"
+      },
+      "props_json": {
+        "caption": "PD 1096 Rule VII controls to separate before computing",
+        "tables": "[{\"id\": \"pd1096-location-controls\", \"title\": \"Location checks\", \"content\": \"| Control | Source path | What the architect asks | Common trap |\\n|---|---|---|---|\\n| Direct access | Section 704.1(a) | Does the building adjoin or directly access a public space, yard, or street on at least one side? | Jumping to area arithmetic before checking access |\\n| Adjacent property line | Section 704.1(b) | Is an adjoining street or alley centerline treated as an adjacent property line for this rule? | Reading property-line language too literally |\\n| Eaves over required windows | Section 704.1(c) | Are eaves over required windows at least 750 mm from side and rear property lines? | Detaching the 750 mm value from its condition |\"}, {\"id\": \"pd1096-area-controls\", \"title\": \"Area controls\", \"content\": \"| Control | Source path | What it regulates | Common trap |\\n|---|---|---|---|\\n| AMBF | Section 704.4 | Allowable maximum building footprint | Using TGFA when the prompt asks for footprint |\\n| TGFA | Section 705.1-705.2 | Allowable maximum total gross floor area | Using footprint logic for total floor area |\\n| Table VII.1 percentages | Section 705.2 | Initial allowable maximum TGFA as percentages of Total Lot Area | Treating storey multiplier numbers as percentages |\"}]"
+      },
+      "props_text": "caption=\"PD 1096 Rule VII controls to separate before computing\"\n  tables='[{\"id\": \"pd1096-location-controls\", \"title\": \"Location checks\", \"content\": \"| Control | Source path | What the architect asks | Common trap |\\n|---|---|---|---|\\n| Direct access | Section 704.1(a) | Does the building adjoin or directly access a public space, yard, or street on at least one side? | Jumping to area arithmetic before checking access |\\n| Adjacent property line | Section 704.1(b) | Is an adjoining street or alley centerline treated as an adjacent property line for this rule? | Reading property-line language too literally |\\n| Eaves over required windows | Section 704.1(c) | Are eaves over required windows at least 750 mm from side and rear property lines? | Detaching the 750 mm value from its condition |\"}, {\"id\": \"pd1096-area-controls\", \"title\": \"Area controls\", \"content\": \"| Control | Source path | What it regulates | Common trap |\\n|---|---|---|---|\\n| AMBF | Section 704.4 | Allowable maximum building footprint | Using TGFA when the prompt asks for footprint |\\n| TGFA | Section 705.1-705.2 | Allowable maximum total gross floor area | Using footprint logic for total floor area |\\n| Table VII.1 percentages | Section 705.2 | Initial allowable maximum TGFA as percentages of Total Lot Area | Treating storey multiplier numbers as percentages |\"}]'",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 3784,
+      "end_offset": 5156,
+      "line_start": 44,
+      "line_end": 47,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:6e43c2b86fd023b77215fbcae511d626b5134ed64a704d33940fc77ef7dd6233"
 }

@@ -57,4 +57,3 @@
 - For the 15 reconstructed articles: `ui-blocks.json`, `candidate.md`, `compose-report.json`, `diff-report.json`, `diff-report.md`, `push-report.json`, and `push-result.json`; `normalized.md` changed only where typo fixes were applied.
 - Typo-only improvements applied locally: `prevleance -> prevalence`, `wall/celling -> wall/ceiling`, `equivleant -> equivalent`, `VA T -> VAT`, `TRAP LEART -> TRAP ALERT`.
 - Articles parked before compose were left unmodified by this batch pass.
-

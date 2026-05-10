@@ -490,4 +490,3 @@ Before closing this article, confirm you can do the following from memory:
 ## Cross‑References
 
 **Glass And Glazing Area Limits**, **Fire Resistive Construction Ratings**, **Plastics In Construction**, **Prefabricated Constructions**
-

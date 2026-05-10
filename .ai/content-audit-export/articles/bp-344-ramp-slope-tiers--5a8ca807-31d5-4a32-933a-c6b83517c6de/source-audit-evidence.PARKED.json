@@ -1,0 +1,121 @@
+{
+  "audit_date": "2026-05-10",
+  "audit_mode": "local_source_audit_no_supabase",
+  "source_truth_protocols": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "extraction_method": "PyMuPDF via python fitz against raw PDFs in vitruvius-connection/001_Raw-Source-Layer; pdftotext unavailable in this environment.",
+  "supabase_apply_status": "not_applied",
+  "normalized_md_changes": "none_applied",
+  "canonical_article_root": ".ai/content-audit-export/articles",
+  "duplicate_export_note": "Matching folders also exist under target-mapping-no-apply-2026-05-09/articles; this audit wrote to the canonical .ai/content-audit-export/articles folders only.",
+  "audited_at": "2026-05-10T11:41:05+08:00",
+  "article_slug": "bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "article_title": "BP 344 Ramp Slope Tiers",
+  "article_folder": ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de",
+  "inspected_files": [
+    ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/normalized.md",
+    ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/linked-questions.json",
+    ".ai/content-audit-export/articles/bp-344-ramp-slope-tiers--5a8ca807-31d5-4a32-933a-c6b83517c6de/sources.json"
+  ],
+  "readiness_verdict": "PARKED_NOT_SOURCE_AUDITED_READY",
+  "source_audit_evidence_file_policy": "source-audit-evidence.json is intentionally not written because at least one blocker remains.",
+  "raw_sources": [
+    {
+      "key": "bp344_2024",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "sha256": "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+    }
+  ],
+  "verified_major_claims": [
+    {
+      "claim": "Accessible ramps require minimum clear width of 1200 mm.",
+      "scope": "article and linked question 4c92b571-c5f6-45e7-accd-4567ebe47393",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 2,
+      "source_locator": "Appendix A, Accessible Ramps, item 1",
+      "evidence_excerpt": "Minimum clear width of 1200 mm.",
+      "status": "verified"
+    },
+    {
+      "claim": "General accessible ramp gradient is not steeper than 1:20; Table A.1.1 lists 1:15 with 10.50 m maximum length, 700 mm maximum rise, and 10 m landing interval.",
+      "scope": "article and linked questions 00115b59-c190-476b-8ef2-fae152241b7e, 2c9264f8-b339-405d-ab6c-df182954b6bd",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 2,
+      "source_locator": "Appendix A, Accessible Ramps, Table A.1.1",
+      "evidence_excerpt": "1:20 ... 15m; 1:15 10.50m 700mm 10m.",
+      "status": "verified"
+    },
+    {
+      "claim": "Intermediate landings are required when accessible ramps exceed 10.50 m total length; landing length is 1800 mm, with 1800 mm level areas at upper and lower ends.",
+      "scope": "article and linked questions 9b6d0315-ba0b-4c42-8bda-d437595c72f9, 70215fdc-8b37-4339-8c09-b1ff12840f34",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 2,
+      "source_locator": "Appendix A, Accessible Ramps, items 10-11",
+      "evidence_excerpt": "longer than 10.50m ... intermediate landings ... 1800 mm.",
+      "status": "verified"
+    },
+    {
+      "claim": "Handrails are required for accessible ramps with changes in grade higher than 170 mm and installed at 900 mm and 700 mm.",
+      "scope": "article and linked questions 0a31a28e-0935-4565-a118-60b76c0a2c0c, b7afac22-7103-40b4-9fca-b6cf8b0b6707",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 7,
+      "source_locator": "Appendix A, Handrails and Grab Bars",
+      "evidence_excerpt": "required ... higher than 170 mm ... installed at 900 mm and 700 mm.",
+      "status": "verified"
+    },
+    {
+      "claim": "Ramp raised edge/curb minimum height is 100 mm.",
+      "scope": "linked question a2aafc8a-50b3-4379-863c-ddfb9d51ecce",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 2,
+      "source_locator": "Appendix A, Accessible Ramps, item 14",
+      "evidence_excerpt": "Raised edge ... minimum height of 100 mm.",
+      "status": "verified"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "RAMP-BLOCKER-001",
+      "severity": "critical",
+      "type": "unsupported_linked_question_claim",
+      "affected_files": [
+        "linked-questions.json"
+      ],
+      "affected_question_ids": [
+        "a2555ae7-ee40-4d1a-a83d-38e1f6145674",
+        "069dd3a1-aa7d-4221-9a9b-53e3360e278b",
+        "9b6d0315-ba0b-4c42-8bda-d437595c72f9"
+      ],
+      "finding": "Linked questions state that 1:12 is a renovation-only exception for existing buildings where 1:15 is physically impossible, but the 2024 BP 344 PDF search found 1:12 only in the swimming-pool transfer-wall provision, not in the Accessible Ramps excerpt.",
+      "required_fix": "Either provide a primary-source locator for the 1:12 renovation exception or remove/rewrite those linked-question claims before readiness."
+    },
+    {
+      "id": "RAMP-BLOCKER-002",
+      "severity": "high",
+      "type": "linked_question_internal_consistency",
+      "affected_files": [
+        "linked-questions.json"
+      ],
+      "affected_question_ids": [
+        "70215fdc-8b37-4339-8c09-b1ff12840f34"
+      ],
+      "finding": "The rationale computes one intermediate landing for two 10.50 m runs, but the correct option text says two intermediate landings while still giving 26.4 m. That option text is mathematically inconsistent with the stated components.",
+      "required_fix": "Correct the option/component count and recompute before source-audit approval."
+    },
+    {
+      "id": "RAMP-BLOCKER-003",
+      "severity": "medium",
+      "type": "empty_source_bundle",
+      "affected_files": [
+        "sources.json"
+      ],
+      "finding": "sources.json has source_count 0, so the article bundle has no machine-readable source rows despite source claims in normalized.md and linked questions.",
+      "required_fix": "Populate local source metadata after claim-level verification."
+    }
+  ],
+  "required_next_action": "Resolve blockers, rerun raw-PDF claim ledger for article and linked questions, then write source-audit-evidence.json only if every material legal/code claim is verified."
+}

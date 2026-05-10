@@ -141,4 +141,3 @@ Extracted summary:
 See also within United States Architecture: **lea-hist-014-02-core-concept**, **lea-hist-014-03-core-concept**, **lea-hist-014-04-core-concept**, **lea-hist-014-05-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
-

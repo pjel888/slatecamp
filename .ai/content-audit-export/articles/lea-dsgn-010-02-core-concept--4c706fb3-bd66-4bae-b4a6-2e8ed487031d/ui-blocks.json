@@ -1,14 +1,113 @@
 {
   "article_id": "4c706fb3-bd66-4bae-b4a6-2e8ed487031d",
   "slug": "lea-dsgn-010-02-core-concept",
-  "normalized_created_at": "2026-05-09T04:03:13.341Z",
+  "normalized_created_at": "2026-05-09T17:04:25.787Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:2ac4ea527615dce8ff71b161e318425eb96f35076f23012a2d3fe9b286d008e3",
-  "normalized_content_hash": "sha256:2ac4ea527615dce8ff71b161e318425eb96f35076f23012a2d3fe9b286d008e3",
-  "ui_block_count": 0,
-  "total_blocks": 0,
-  "blocks": [],
+  "original_content_hash": "sha256:5b32d7281e45b6a341a4b0fe04144344cf11c2a4d0568aac0fb11dc2ecaf48b6",
+  "normalized_content_hash": "sha256:5b32d7281e45b6a341a4b0fe04144344cf11c2a4d0568aac0fb11dc2ecaf48b6",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-lea-dsgn-010-02-core-concept\" type=\"image\" caption=\"Parking Structure Geometry — Ramp, Bay, and Aisle Dimensions\" description=\"Plan and section of parking structure showing: ramp grade (max 1:7), parking bay width, aisle dimensions (6.1m for 90°), column spacing (3-bay standard), accessible stall (3.7m × 5.0m per BP 344), and turning radii for vehicle maneuverability.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
+      "raw_hash": "sha256:315b490740125fd22c3a7cb8bc7c61b7b9da0e450217f1e8e66b27ebf28efef4",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-010-02-core-concept\", type=\"image\", caption=\"Parking Structure Geometry — Ramp, Bay, and Aisle Dimensions\", description=\"Plan and section of parking structure showing: ramp grade (max 1:7), parking bay width, aisle dimensions (6.1m for 90°), column spacing (3-bay standard), accessible stall (3.7m × 5.0m per BP 344), and turning radii for vehicle maneuverability.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:274c270aa7a09b6e2b4e6badfb38a15153d8d811e9582ee6840b316aadd6bcf3",
+      "props": {
+        "id": "media-lea-dsgn-010-02-core-concept",
+        "type": "image",
+        "caption": "Parking Structure Geometry — Ramp, Bay, and Aisle Dimensions",
+        "description": "Plan and section of parking structure showing: ramp grade (max 1:7), parking bay width, aisle dimensions (6.1m for 90°), column spacing (3-bay standard), accessible stall (3.7m × 5.0m per BP 344), and turning radii for vehicle maneuverability.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_json": {
+        "id": "media-lea-dsgn-010-02-core-concept",
+        "type": "image",
+        "caption": "Parking Structure Geometry — Ramp, Bay, and Aisle Dimensions",
+        "description": "Plan and section of parking structure showing: ramp grade (max 1:7), parking bay width, aisle dimensions (6.1m for 90°), column spacing (3-bay standard), accessible stall (3.7m × 5.0m per BP 344), and turning radii for vehicle maneuverability.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_text": "id=\"media-lea-dsgn-010-02-core-concept\" type=\"image\" caption=\"Parking Structure Geometry — Ramp, Bay, and Aisle Dimensions\" description=\"Plan and section of parking structure showing: ramp grade (max 1:7), parking bay width, aisle dimensions (6.1m for 90°), column spacing (3-bay standard), accessible stall (3.7m × 5.0m per BP 344), and turning radii for vehicle maneuverability.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 2175,
+      "end_offset": 2773,
+      "line_start": 41,
+      "line_end": 45,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-lea-dsgn-010-02-core-concept\" type=\"image\" caption=\"Parking Ramp Section — Grade Limits and Vehicle Clearance\" description=\"Section diagram of parking ramp showing: ramp grades (max 1:7 or ~14.3%), transition slopes at top/bottom, headroom clearance (2.1m minimum), and vehicle approach/ departure angles. Bay width (typically 3-bay structural bay at 16.5m) and column spacing annotated.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
+      "raw_hash": "sha256:ac64f05b98c0c817142de58bf596da2765090a2bac71da72a07eb31a75979dec",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-010-02-core-concept\", type=\"image\", caption=\"Parking Ramp Section — Grade Limits and Vehicle Clearance\", description=\"Section diagram of parking ramp showing: ramp grades (max 1:7 or ~14.3%), transition slopes at top/bottom, headroom clearance (2.1m minimum), and vehicle approach/ departure angles. Bay width (typically 3-bay structural bay at 16.5m) and column spacing annotated.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:b11cba61d1e3807bf20f6c50952a1beb3ba33218e5fd5513eb8fc6c62e218006",
+      "props": {
+        "id": "media-lea-dsgn-010-02-core-concept",
+        "type": "image",
+        "caption": "Parking Ramp Section — Grade Limits and Vehicle Clearance",
+        "description": "Section diagram of parking ramp showing: ramp grades (max 1:7 or ~14.3%), transition slopes at top/bottom, headroom clearance (2.1m minimum), and vehicle approach/ departure angles. Bay width (typically 3-bay structural bay at 16.5m) and column spacing annotated.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_json": {
+        "id": "media-lea-dsgn-010-02-core-concept",
+        "type": "image",
+        "caption": "Parking Ramp Section — Grade Limits and Vehicle Clearance",
+        "description": "Section diagram of parking ramp showing: ramp grades (max 1:7 or ~14.3%), transition slopes at top/bottom, headroom clearance (2.1m minimum), and vehicle approach/ departure angles. Bay width (typically 3-bay structural bay at 16.5m) and column spacing annotated.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_text": "id=\"media-lea-dsgn-010-02-core-concept\" type=\"image\" caption=\"Parking Ramp Section — Grade Limits and Vehicle Clearance\" description=\"Section diagram of parking ramp showing: ramp grades (max 1:7 or ~14.3%), transition slopes at top/bottom, headroom clearance (2.1m minimum), and vehicle approach/ departure angles. Bay width (typically 3-bay structural bay at 16.5m) and column spacing annotated.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4287,
+      "end_offset": 4902,
+      "line_start": 83,
+      "line_end": 87,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\n  ]} />",
+      "raw_hash": "sha256:dfd6dfe648eb1cfe99aeb61f144f66259638d06caa19224cbef3303d75d8ba5a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\\n  ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:123d336ff3faebc25f39a92a751576d0987a71ffb298c5fb56bb81837d11bd05",
+      "props": {
+        "mistakes": "{[\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\n  ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\n  ]}"
+      },
+      "props_text": "mistakes={[\n    'ERR-DSGN-026: Using 1:8 gradient for vehicle ramps (Correct: 1:6 maximum).',\n    'Using 3.70 m width for PWD parking (Correct: BP 344 2024 revised this to 4.00 m).',\n    'ERR-DSGN-028: Designing vehicle areas with only 2.0 m clearance (Correct: 2.40 m for vehicles, 2.20 m for PWD walkways).',\n    'Applying 1:20 ramp slope as a strict requirement when 1:12 remains the enforceable permit minimum during the transition period.',\n    'Confusing turning radii; standard car inside wheel radius is 6.1 m, requiring 12.2 m for a full U-turn.',\n  ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 5170,
+      "end_offset": 5889,
+      "line_start": 95,
+      "line_end": 99,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:40f3e4db6abf13ab49de037313c85360090de660fd09eb24f0f5e6069cd1a5bc"
 }

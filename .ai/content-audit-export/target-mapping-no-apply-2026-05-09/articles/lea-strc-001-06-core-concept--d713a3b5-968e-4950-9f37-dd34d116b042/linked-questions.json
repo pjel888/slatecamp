@@ -1,0 +1,508 @@
+{
+  "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:86b25883a9d6701e0e9b056821551311826822a4f99ad0302729934c0c9baa16",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "147c6a87-2de9-434e-93a2-27f4621adf34",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "Which analysis method is appropriate for a statically determinate beam?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Method of joints (equilibrium only)"
+        },
+        {
+          "id": "b",
+          "text": "Moment distribution method, which is typically used for indeterminate structures but can be adapted for determinate ones with additional assumptions"
+        },
+        {
+          "id": "c",
+          "text": "Slope-deflection method, generally applied to indeterminate beams but sometimes used in determinate cases for educational purposes"
+        },
+        {
+          "id": "d",
+          "text": "Finite element analysis only, which is a comprehensive method applicable to all types of structures but often unnecessary for simple determinate beams"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A determinate structure can be analyzed using only equilibrium equations (ΣFx=0, ΣFy=0, ΣM=0). The method of joints or sections applies equilibrium to solve for reactions and internal forces directly.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Structural Analysis Methods by Determinacy",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9b0f18f10f2d158e341f7226cc485b3fc22832975ed0f97fef63743886b97f23"
+    },
+    {
+      "question_id": "6e3aa52a-49d2-4885-8ad4-8f458fbf7011",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "A building frame consists of rigid joints (not pinned) and is supported on four columns. To determine if the frame is statically indeterminate, an engineer must account for which of the following?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The number of columns only, which is insufficient for determining indeterminacy"
+        },
+        {
+          "id": "b",
+          "text": "The number of unknown reactions only, which does not consider the complexity of rigid joints"
+        },
+        {
+          "id": "c",
+          "text": "Unknown reactions AND unknown moments at rigid joints"
+        },
+        {
+          "id": "d",
+          "text": "The frame is always determinate if columns are vertical, which is a simplification that ignores joint conditions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A rigid-joint frame develops internal moments (unknown) at each joint in addition to support reactions. The total unknowns include all reactions (at supports) and all internal moments (at rigid joints). These must exceed 3 to determine indeterminacy; the frame is likely indeterminate.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Rigid-Frame Determinacy Analysis",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:954a9961cca3f0427f22a2b331a766759c6fec2a0e4956ef2594ffbc8c0e92b6"
+    },
+    {
+      "question_id": "a25fc81c-1499-491c-a8e4-3afd6f4de016",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "A continuous beam spans across four support columns, each providing one vertical reaction. The degree of indeterminacy (n) of this beam is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 0 (determinate)"
+        },
+        {
+          "id": "b",
+          "text": "n = 1 (one time indeterminate)"
+        },
+        {
+          "id": "c",
+          "text": "n = 2 (two times indeterminate)"
+        },
+        {
+          "id": "d",
+          "text": "n = 4 (four times indeterminate)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Four vertical reactions (r = 4) with 3 equilibrium equations in 2D gives n = r − 3 = 4 − 3 = 1. The beam is one time indeterminate; one redundant support exists.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Degree of Indeterminacy Calculation",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5b8df5282a506a245ec2a1efd3b678cf6e1507651d31d514d857a2b4b20a70e9"
+    },
+    {
+      "question_id": "86295d0b-30b2-42f9-a4ea-a6028f1e7bb1",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "A cantilever beam fixed at one end has three reaction components (Hx, Hy, M) at the support. This beam is statically:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Determinate"
+        },
+        {
+          "id": "b",
+          "text": "Indeterminate"
+        },
+        {
+          "id": "c",
+          "text": "Unstable"
+        },
+        {
+          "id": "d",
+          "text": "Over-constrained"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A cantilever has 3 unknowns (Hx, Hy, M). In 2D analysis, there are exactly 3 equilibrium equations. Three unknowns and three equations match perfectly; the beam is determinate.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Cantilever Beam Determinacy",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:300eb4b28cc60b081be7450b3f18122871e6592c6ef937236c795f538314209b"
+    },
+    {
+      "question_id": "43cc8681-979b-4de1-a19c-df9c04eb5a75",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "A support in a statically indeterminate continuous beam settles by 10 mm. How are the internal forces affected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Internal forces remain unchanged (same as determinate), assuming no additional loads are applied"
+        },
+        {
+          "id": "b",
+          "text": "Internal forces change, even though the applied loads have not changed"
+        },
+        {
+          "id": "c",
+          "text": "Internal forces increase proportionally to the settlement amount, which is a common misconception in structural analysis"
+        },
+        {
+          "id": "d",
+          "text": "Indeterminate structures are not affected by support settlement, which is incorrect as settlement induces additional forces"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In indeterminate structures, reactions depend on both loads AND support displacements (through deformation compatibility equations). A settling support redistributes loads to other supports, changing internal forces throughout the structure.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Support Settlement Effects on Indeterminate Structures",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0574528c8007689ce67527fd402f1258e7a09c779a1dd3c85dd141dd501a23ca"
+    },
+    {
+      "question_id": "344d7ef4-6e57-4160-8ec9-726ff37f39fa",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "A support in a statically determinate beam settles by 10 mm due to soil compression. How are the internal forces in the beam affected?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Internal forces increase significantly, potentially leading to structural failure if not addressed"
+        },
+        {
+          "id": "b",
+          "text": "Internal forces decrease, which may reduce the load-bearing capacity of the beam"
+        },
+        {
+          "id": "c",
+          "text": "Internal forces remain unchanged (support settlement does not affect equilibrium)"
+        },
+        {
+          "id": "d",
+          "text": "Internal forces oscillate unpredictably, making it difficult to ensure structural stability"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "In a determinate structure, reactions and internal forces depend only on applied loads and geometry, not on support displacement. A small settlement does not change the loads or span lengths, so equilibrium solutions remain identical.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Support Settlement Effects on Determinate Structures",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c88f9a362ef1beec7305bbc0f22e3c81b8555d2f1f938944e8b75010b3ef3577"
+    },
+    {
+      "question_id": "3b4cda58-122d-49c6-bec7-40c97aaf5a5c",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "A designer must choose between a simply supported beam (determinate) and a continuous beam (indeterminate) spanning the same distance with identical loads. Which statement correctly compares these two options?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The simply supported beam requires less steel; the continuous beam is always superior, which is not always true"
+        },
+        {
+          "id": "b",
+          "text": "The simply supported beam has no redundancy but is easier to analyze; the continuous beam has redundancy but is sensitive to support settlement"
+        },
+        {
+          "id": "c",
+          "text": "The continuous beam is always stronger and cheaper, which is a generalization"
+        },
+        {
+          "id": "d",
+          "text": "Both beams develop identical internal forces; determinacy has no practical impact, which is incorrect"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Simply supported (determinate): single load path, simple analysis, but if one support fails, collapse follows. Continuous (indeterminate): redundant load paths, more complex analysis, but sensitive to settlement; if one support moves, internal forces redistribute and change.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Structural Design Trade-offs: Determinate vs. Indeterminate",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:688a9646719e6406c7f0f1ed47388ccbc7c87172fe130d996d2c417d82a3fe21"
+    },
+    {
+      "question_id": "49de927c-0c98-4854-8958-60063f28fb09",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "A simply supported beam has two support reactions. This beam is statically:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Determinate"
+        },
+        {
+          "id": "b",
+          "text": "Indeterminate"
+        },
+        {
+          "id": "c",
+          "text": "Unstable"
+        },
+        {
+          "id": "d",
+          "text": "Over-constrained"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A simply supported beam has 2 support reactions (unknowns). With 3 equations of equilibrium available in 2D, the beam is statically determinate. The geometry (two supports, not collinear) ensures stability.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Simply Supported Beam Determinacy",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bbbcdc7ac679a63acc14211f693f7164873b39324d0f87ba99adca83aeaf1da7"
+    },
+    {
+      "question_id": "98e870f2-5f59-434f-99d4-d062d934f6fd",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "A fixed-ended beam has two fixed supports (one at each end), developing 3 reactions at each support (Hx, Hy, M at left; Hx, Hy, M at right). The total number of unknowns is 6. The degree of indeterminacy is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "n = 0 (determinate), indicating no additional equations are needed for equilibrium"
+        },
+        {
+          "id": "b",
+          "text": "n = 1 (one time indeterminate), requiring one additional equation for solution"
+        },
+        {
+          "id": "c",
+          "text": "n = 3 (three times indeterminate)"
+        },
+        {
+          "id": "d",
+          "text": "n = 6 (six times indeterminate), necessitating six additional equations for a complete solution"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "With 6 unknowns and 3 equilibrium equations, n = 6 − 3 = 3. The beam is three times indeterminate; three redundant constraints must be released to analyze it using equilibrium alone.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Fixed-Ended Beam Indeterminacy",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:521dc35fbcc9e99a18ff4247b68da7d8071910a2169dc9e4d919d3f6a61881b1"
+    },
+    {
+      "question_id": "6597ee20-dad2-47d9-8b67-6e22bcb35bc1",
+      "article_id": "d713a3b5-968e-4950-9f37-dd34d116b042",
+      "topic_id": "485decef-9814-4cb9-aad5-fb83e9c3dfd8",
+      "text": "A structure is considered statically determinate if:",
+      "options": [
+        {
+          "id": "a",
+          "text": "All reactions and internal forces can be found using only equilibrium equations"
+        },
+        {
+          "id": "b",
+          "text": "The structure does not deform under load, maintaining its original shape and dimensions"
+        },
+        {
+          "id": "c",
+          "text": "The structure has more than three support reactions, which are necessary to maintain stability under various loading conditions"
+        },
+        {
+          "id": "d",
+          "text": "The material properties (E and I) are known, allowing for precise calculations of deflection and stress"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Static determinacy is defined by the ability to solve for all reactions and forces using only the three equations of equilibrium (ΣFx=0, ΣFy=0, ΣM=0), without needing material properties or deformation information.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP Structural Analysis, Static Determinacy",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-001-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c839a1a1e670bfd3b97f6234c6bd74ff726c14ca011b6167bf043de54b7e5715"
+    }
+  ]
+}

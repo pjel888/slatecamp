@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-09T16:25:53.009Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [
+    "Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.",
+    "Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.",
+    "--repair-placeholders treats --note as an operational note; it was not written to public updated_note."
+  ],
+  "updated_rows_count": 1,
+  "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+  "slug": "spp-doc-201-pre-design-services",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:94f1e451c0e52001fefdd84cdcae0eee27923a9abadbea6cd33ecf768f75840d",
+  "original_hash": "sha256:94f1e451c0e52001fefdd84cdcae0eee27923a9abadbea6cd33ecf768f75840d",
+  "candidate_hash": "sha256:c0e3bf9f7b260341df1a509397464afb6ff7fa8488015153e9dfba3857991258",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-06T09:32:52.659037+00:00",
+  "repair_mode": "placeholder_content",
+  "updated_at_after": "2026-05-09T16:25:53.475813+00:00"
+}

@@ -1,0 +1,45 @@
+{
+  "generated_at": "2026-05-09T14:09:18.389Z",
+  "input": "<REPO_ROOT>/.ai/content-audit-export/target-mapping-no-apply-2026-05-09",
+  "article_count": 1,
+  "valid": true,
+  "blockers": [],
+  "warnings": [
+    "spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb: component-usage.json has not been generated for this article yet."
+  ],
+  "articles": [
+    {
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "slug": "spp-doc-201-pre-design-services",
+      "folder": "spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "valid": true,
+      "blockers": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
+      "files": {
+        "metadata": true,
+        "original": true,
+        "normalized": true,
+        "uiBlocks": true,
+        "parserErrors": true,
+        "uiBlockEdits": true,
+        "linkedQuestions": true,
+        "sources": true,
+        "taxonomy": true,
+        "componentUsage": false,
+        "candidate": true,
+        "diffReport": true,
+        "diffReportMarkdown": true,
+        "pushReport": false,
+        "pushResult": false
+      },
+      "hashes": {
+        "original": "sha256:94f1e451c0e52001fefdd84cdcae0eee27923a9abadbea6cd33ecf768f75840d",
+        "normalized": "sha256:136c0a9fac67a1f38786c0ee981a4dac4bc53951a7f1d982357714cc82ecc5dc",
+        "candidate": "sha256:136c0a9fac67a1f38786c0ee981a4dac4bc53951a7f1d982357714cc82ecc5dc",
+        "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+      }
+    }
+  ]
+}

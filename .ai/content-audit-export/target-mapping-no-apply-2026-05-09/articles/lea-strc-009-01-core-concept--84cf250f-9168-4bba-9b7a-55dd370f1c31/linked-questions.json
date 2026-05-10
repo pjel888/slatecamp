@@ -1,0 +1,508 @@
+{
+  "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:40a396331f3c95c064128e71f5dc73083e2a26a0d87ac4906838cc7586e7189b",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "136a9f76-4115-4c68-ac4a-aa015e09f5aa",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "A Dao timber beam is specified for a structure with occasional water splash. What limitation applies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Dao resists decay but not termites; it is unsuitable for splash zones without treatment."
+        },
+        {
+          "id": "b",
+          "text": "Dao has no resistance classification and must be treated for any durability, especially in environments with high humidity."
+        },
+        {
+          "id": "c",
+          "text": "Dao is adequate because it resists decay; splash water does not attract termites, making it a viable option for such conditions."
+        },
+        {
+          "id": "d",
+          "text": "Dao sapwood must be completely removed before use to prevent any potential decay or insect infestation."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Incorrect: Dao IS in the classification table with decay resistance.",
+        "d": "Incorrect logic. Even if decay resistance exists, termite risk is real in Philippine regions.",
+        "correct": "Dao is decay-resistant only. Splash zones carry both fungal decay risk AND termite risk in tropical climates. Dao lacks termite protection.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor durability classification; Philippine Forestry Code Section 111",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8d9afbe0b3f51a6c864d0dbf766ce326d795cb02a896824bdf29849ceb5f1e47"
+    },
+    {
+      "question_id": "f24e257f-ca78-467f-8719-2d28fe0d3722",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "A timber specification states: 'Narra heartwood, maximum 3% sapwood per edge.' Is this specification _more restrictive_ or _less restrictive_ than NatCor standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "More restrictive. NatCor allows up to 5%; this spec reduces the limit to 3%."
+        },
+        {
+          "id": "b",
+          "text": "Less restrictive. NatCor allows only heartwood; this spec permits any sapwood."
+        },
+        {
+          "id": "c",
+          "text": "Equivalent. NatCor uses a 3–5% range with no fixed maximum."
+        },
+        {
+          "id": "d",
+          "text": "Not comparable. Sapwood limits apply only to treated timber, not heartwood."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "NatCor explicitly permits up to 5%; it does not prohibit sapwood.",
+        "d": "NatCor does not specify a variable range; 5% is the threshold.",
+        "correct": "NatCor permits 5% sapwood (on linear dimension) as the maximum when heartwood ≥90% per face. A 3% limit is stricter, reducing acceptable sapwood to improve durability margin.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Section 3.2; specification engineering best practices",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5a9b54afeea51bcbf2227e7d1627eddaafa9d0ea31ad37ca2e353b11486a9bcf"
+    },
+    {
+      "question_id": "c5a6da5f-9d82-4137-a1ed-73a67cbc48b4",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "A structural designer substitutes Yakal for a specified Narra timber in a ground-contact foundation beam. What compliance issue arises?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yakal has documented decay resistance but lacks dual (decay+termite) classification equivalent to Narra for ground-contact without treatment."
+        },
+        {
+          "id": "b",
+          "text": "Yakal is listed as a decay-resistant alternative and is acceptable as a direct substitution, provided it meets all other structural requirements."
+        },
+        {
+          "id": "c",
+          "text": "Yakal resists termites better than Narra but is weaker in bending; the design must be strengthened to compensate for this."
+        },
+        {
+          "id": "d",
+          "text": "The substitution is valid as long as the same allowable stress values are maintained, which may require additional verification."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Yakal does not appear in the NatCor durability schedule at any resistance level.",
+        "d": "Strength properties and durability are independent. Maintaining stress values does not satisfy durability requirements.",
+        "correct": "Yakal is NOT in the NatCor durability classification table. It may have strength, but durability claims without explicit standard approval are non-compliant. Ground-contact use requires explicit classification.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Section 3.2; Philippine Building Code compliance requirements",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:50767e0376f4ff173d7d12484150e7fc2d0338c1b4d521cd5a243a0ede8c2d21"
+    },
+    {
+      "question_id": "4864b616-2862-4dad-be1f-8b73baa8e983",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "Identify the resistance profile of Tangile timber in structural use.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Decay resistant, termite susceptible"
+        },
+        {
+          "id": "b",
+          "text": "Termite resistant, decay susceptible"
+        },
+        {
+          "id": "c",
+          "text": "Both decay and termite resistant"
+        },
+        {
+          "id": "d",
+          "text": "Neither decay nor termite resistant; treatment always required"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Tangile is NOT termite-resistant.",
+        "d": "Tangile IS decay-resistant.",
+        "correct": "Tangile is classified as decay-resistant only. It shares the profile of Dao: good fungal durability, zero termite protection.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Durability Classification Schedule",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3bd2430e772fa2fff0731ea2a77ba65cb93452ecbec413e1f0b14bd8bdf4fd37"
+    },
+    {
+      "question_id": "60a71679-a95f-4b65-8ddd-36e05a2c0ed1",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "A design team discovers that specified Narra is in short supply and proposes chemically treating Dao timber instead. Evaluate this substitution strategy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Valid. Treated Dao will provide both decay and termite resistance equivalent to untreated Narra when properly applied."
+        },
+        {
+          "id": "b",
+          "text": "Invalid. NatCor prohibits substitution of treated timber; only naturally durable species are permitted for ground-contact use, ensuring long-term performance."
+        },
+        {
+          "id": "c",
+          "text": "Valid for decay, but termite protection depends on treatment type and application depth; verify treatment compliance with Philippine Building Code."
+        },
+        {
+          "id": "d",
+          "text": "Partially valid. Treatment adds decay resistance but cannot guarantee the long-term termite immunity of naturally durable species, which is critical for structural integrity."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Treatment is effective, but 'equivalent' requires specific verification of treatment type, retention levels (kg/m³), and penetration depth—not automatic.",
+        "b": "NatCor does not prohibit treated timber; it recognizes treatment as a valid durability strategy when natural durability is insufficient.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Chemical treatment can add both decay and termite protection to Dao, making it functionally equivalent to untreated Narra IF the treatment specification (e.g., copper-based, boron salts, oil-borne preservatives) is appropriate for the hazard class and application depth is verified per PD1096 Rule VIII Section 809 (Wood) or FPRDI treatment standards or equivalent.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "Philippine Building Code Section 2401; NatCor Section 3.3 (treated timber provisions); ASEAN TCS 4-2019",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc0c4cb79710bee51f87dc9f83ad2ad2e362b04956d6a26ef389f71e57141fef"
+    },
+    {
+      "question_id": "f8fd0b57-119f-4584-a713-7cd5e2e340d2",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "A Kamagong beam is placed in a brackish estuary environment subject to saltwater splash and submerged daily cycles. What design approach is necessary?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kamagong's natural dual resistance (decay + termites) is sufficient for this marine exposure; no additional treatment is required."
+        },
+        {
+          "id": "b",
+          "text": "Even Kamagong's heartwood will gradually degrade under saltwater exposure; protective coating or concrete encasement should be specified."
+        },
+        {
+          "id": "c",
+          "text": "Kamagong is unsuitable for saltwater; only treated softwood is acceptable, especially in environments with high salinity and tidal fluctuations."
+        },
+        {
+          "id": "d",
+          "text": "Kamagong resists organic decay but not salt crystallization damage; structural monitoring intervals should be specified, particularly during seasonal changes."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Terrestrial durability ≠ marine durability. Saltwater environments exceed the scope of NatCor resistance classification.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "Kamagong IS durable in terrestrial harsh environments; marine exposure is a separate class of hazard.",
+        "correct": "NatCor classification covers terrestrial decay (fungi) and termites only, not salt-water-induced crystallization, corrosion-cell mechanisms, or extended submersion. Kamagong heartwood will eventually deteriorate under continuous saltwater exposure despite high natural durability.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Section 3.2 (terrestrial classification scope); ASEAN TCS 4-2019; ISO 12944 marine durability standards",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:056c8a135493cf18e6da65b84b93855792257a926aaf0f6205076ee1a3aaedfa"
+    },
+    {
+      "question_id": "96d4546c-eab8-4ac1-ac61-7ccfc81a797f",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "Which Philippine timber species provide BOTH decay and termite resistance without chemical treatment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Narra and Kamagong"
+        },
+        {
+          "id": "b",
+          "text": "Narra and Dao"
+        },
+        {
+          "id": "c",
+          "text": "Tangile and Kamagong"
+        },
+        {
+          "id": "d",
+          "text": "Yakal and Molave"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Dao has decay resistance only; it offers NO termite protection.",
+        "d": "Kamagong is correct, but Tangile has decay resistance only.",
+        "correct": "Narra, Kamagong, and Molave have documented natural resistance to both decay and termites per FPRDI and forestry standards. This is the foundational durability pair in Philippine timber standards.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "FPRDI Timber Durability Classification or Philippine Wood Handbook",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3f1e12d1bf91b92d588851382f242811ef13b13c5c08aaca14fe6697321e719c"
+    },
+    {
+      "question_id": "aabd6070-7a57-439b-b95e-64c35c9c83fa",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "Explain why heartwood is essential for decay and termite resistance, while sapwood is not.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Heartwood contains extractive compounds that inhibit fungal and insect colonization; sapwood is nutrient-rich and vulnerable to both."
+        },
+        {
+          "id": "b",
+          "text": "Heartwood is older and therefore harder; sapwood is newer and softer, making it more susceptible to environmental damage and pest infestation"
+        },
+        {
+          "id": "c",
+          "text": "Heartwood is chemically treated in the tree; sapwood is left untreated and lacks the natural protective compounds found in heartwood"
+        },
+        {
+          "id": "d",
+          "text": "Sapwood naturally repels moisture; heartwood absorbs it and must be treated, which is a misconception as heartwood is naturally more resistant"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Hardness is unrelated to resistance; mechanical strength and durability are distinct properties.",
+        "d": "Trees do not chemically treat their own sapwood; the distinction is biological extractive accumulation.",
+        "correct": "Extractives (natural antimicrobial compounds such as tannins and terpenoids) concentrate in the heartwood as the tree ages. Sapwood lacks these and is nutritionally attractive to decomposers and insects.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "ASEAN TCS 4-2019 Section 3.1; Forest Products Research and Development Institute (FPRDI) durability studies",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6435c9febaad3e8f5392253b69061e58851697cecd4ff46d8bd1fdae9a773f6c"
+    },
+    {
+      "question_id": "e4a4c9d2-4019-4e22-8390-d377bf415d73",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "A foundation beam specification requires 'durable timber suitable for continuous soil contact in high-termite-pressure regions.' Which of the following satisfies this requirement without additional treatment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Narra heartwood or Kamagong heartwood, with sapwood ≤5% per edge and ≥90% heartwood per face."
+        },
+        {
+          "id": "b",
+          "text": "Dao or Tangile heartwood, with full sapwood removal and protective membrane applied to all surfaces for enhanced durability."
+        },
+        {
+          "id": "c",
+          "text": "Any Philippine hardwood listed in the timber grades table, provided allowable stresses are verified and documented in compliance reports."
+        },
+        {
+          "id": "d",
+          "text": "Treated Yakal with third-party durability certification, ensuring compliance with local building codes and standards."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "Dao and Tangile lack termite resistance; even with full sapwood removal, they remain susceptible.",
+        "d": "Grading tables address strength, not durability. A species in the grades table may have no durability classification.",
+        "correct": "Only Narra and Kamagong provide natural dual resistance (decay + termites) with the sapwood acceptance rule built into the standard. This satisfies the requirement without additional measures.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NatCor Durability Classification Schedule; Philippine Building Code Section 2402; ASEAN TCS 4-2019",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:963e3e1500651b624880a15f96bbf1643dbe240fe4ccf141e2a07e561c3ed424"
+    },
+    {
+      "question_id": "18988e39-3d86-4bf3-8c1a-a3647ecc8366",
+      "article_id": "84cf250f-9168-4bba-9b7a-55dd370f1c31",
+      "topic_id": "e0236a00-132b-4029-82ae-b289e0c20265",
+      "text": "A Narra timber piece shows sapwood on one edge representing 7% of the piece length, with heartwood comprising 93% of each face. Is this acceptable for ground-contact structural use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes. Sapwood is within the 5% tolerance and each face shows ≥90% heartwood."
+        },
+        {
+          "id": "b",
+          "text": "No. Any visible sapwood disqualifies the piece for ground-contact use."
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if the sapwood is sealed with a protective coating."
+        },
+        {
+          "id": "d",
+          "text": "No. The 7% sapwood exceeds the allowable 5% threshold."
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "correct": "NatCor permits sapwood only if it is ≤5% on linear dimension. Here, 7% sapwood exceeds the 5% threshold. Despite 93% heartwood per face meeting the 90% rule, the 7% sapwood on the edge disqualifies the piece for ground-contact use.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "FPRDI or forestry standards sapwood provisions; ASEAN TCS 4-2019",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-009-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:37634d7172c4f7332d45d7617527c1b3d358d8d3f7c67f55dd689a0092455705"
+    }
+  ]
+}

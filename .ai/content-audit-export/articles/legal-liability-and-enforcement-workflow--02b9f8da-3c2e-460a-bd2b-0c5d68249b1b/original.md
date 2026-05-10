@@ -457,4 +457,3 @@ Extracted summary:
 ## Cross‑References
 
 **Building Permit Process**, **Dangerous And Ruinous Buildings**, **Typology Checklists And Plan Checking**, **Certificate Of Occupancy**
-

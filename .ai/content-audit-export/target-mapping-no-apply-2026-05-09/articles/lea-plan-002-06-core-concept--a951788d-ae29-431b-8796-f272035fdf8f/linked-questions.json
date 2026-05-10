@@ -1,0 +1,528 @@
+{
+  "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:75556c45f47dfc0b0751fd58c2faa66451bb7ffad5533c4e5ea3152c038da374",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "1a96e3ab-8a15-49ed-9d2d-40b29cd57809",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "Who originated the concept of 'eyes on the street' to explain why diverse, mixed-use neighborhoods feel safer?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Kevin Lynch"
+        },
+        {
+          "id": "b",
+          "text": "Jan Gehl"
+        },
+        {
+          "id": "c",
+          "text": "Jane Jacobs"
+        },
+        {
+          "id": "d",
+          "text": "Gordon Cullen"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Kevin Lynch studied how people navigate cities (five elements). He did not focus on street safety or mixed uses.",
+        "b": "Jan Gehl studied human scale and public life. While related to Jacobs, 'eyes on the street' is Jacobs' specific concept.",
+        "c": "Jane Jacobs introduced 'eyes on the street' in _The Death and Life of Great American Cities_ (1961). The principle states that informal surveillance—people looking out windows, shopkeepers on the street, mixed activity—creates safety and prevents crime in public spaces.",
+        "d": "Gordon Cullen studied serial vision and townscape. Not the originator of 'eyes on the street.'",
+        "correct": "Jane Jacobs introduced 'eyes on the street' in _The Death and Life of Great American Cities_ (1961). The principle states that informal surveillance—people looking out windows, shopkeepers on the street, mixed activity—creates safety and prevents crime in public spaces.",
+        "takeaway": "Eyes on the street = Jane Jacobs. This is the highest-frequency attribution error in urban design."
+      },
+      "explanation": "Kevin Lynch studied how people navigate cities (five elements). He did not focus on street safety or mixed uses. Jan Gehl studied human scale and public life. While related to Jacobs, 'eyes on the street' is Jacobs' specific concept. Jane Jacobs introduced 'eyes on the street' in _The Death and Life of Great American Cities_ (1961). The principle states that informal surveillance—people looking out windows, shopkeepers on the street, mixed activity—creates safety and prevents crime in public spaces. Gordon Cullen studied serial vision and townscape. Not the originator of 'eyes on the street.' Jane Jacobs introduced 'eyes on the street' in _The Death and Life of Great American Cities_ (1961). The principle states that informal surveillance—people looking out windows, shopkeepers on the street, mixed activity—creates safety and prevents crime in public spaces. Eyes on the street = Jane Jacobs. This is the highest-frequency attribution error in urban design.",
+      "code_citation": "Jane Jacobs, The Death and Life of Great American Cities (1961); ERROR_REGISTRY.md (ERR-PLAN-005)",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-05-06T15:39:34.756648+00:00",
+      "content_hash": "sha256:41d0b635d5b375d27cd429a418cbf672ff0d486db32d09732f5ff81d08b7152a"
+    },
+    {
+      "question_id": "04df079f-1a2b-4d82-8dcc-266101fec936",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "What is 'serial vision' in Gordon Cullen's townscape theory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "How the city reveals itself sequentially as you move through it, creating visual surprises, enclosure, and memorable sequences"
+        },
+        {
+          "id": "b",
+          "text": "Designing buildings in a series along a street to create visual monotony, which can be used to emphasize certain architectural features"
+        },
+        {
+          "id": "c",
+          "text": "Using television to promote civic landmarks and enhance public awareness of urban design"
+        },
+        {
+          "id": "d",
+          "text": "Arranging buildings in chronological order of construction to reflect historical development patterns"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cullen's serial vision emphasizes the experience of moving through the city. Space opens and closes, buildings frame views, sight lines create surprises. The street reveals itself progressively—'here' is different from 'there.' This creates memorable, engaging urbanism.",
+        "b": "Serial vision is about creating visual variety and interest, not monotony.",
+        "c": "Serial vision has nothing to do with media promotion.",
+        "d": "Chronological order of construction is irrelevant to the concept.",
+        "correct": "Cullen's serial vision emphasizes the experience of moving through the city. Space opens and closes, buildings frame views, sight lines create surprises. The street reveals itself progressively—'here' is different from 'there.' This creates memorable, engaging urbanism.",
+        "takeaway": "Serial vision = progressive visual experience. Streets as sequences, not static spaces. Creates memorable, human-scaled experience."
+      },
+      "explanation": "Cullen's serial vision emphasizes the experience of moving through the city. Space opens and closes, buildings frame views, sight lines create surprises. The street reveals itself progressively—'here' is different from 'there.' This creates memorable, engaging urbanism. Serial vision is about creating visual variety and interest, not monotony. Serial vision has nothing to do with media promotion. Chronological order of construction is irrelevant to the concept. Cullen's serial vision emphasizes the experience of moving through the city. Space opens and closes, buildings frame views, sight lines create surprises. The street reveals itself progressively—'here' is different from 'there.' This creates memorable, engaging urbanism. Serial vision = progressive visual experience. Streets as sequences, not static spaces. Creates memorable, human-scaled experience.",
+      "code_citation": "Gordon Cullen, Townscape (1961)",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [
+        "Townscape analysis"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-05-06T15:39:34.610852+00:00",
+      "content_hash": "sha256:b5f904bfedb051ca3c3e6b64c5885a32676838f36536e3d769c019fe06f38e79"
+    },
+    {
+      "question_id": "3850184c-7a0c-4951-81c5-63763f8a2bd3",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "How do 'complete streets' differ from traditional street design that prioritizes cars?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Complete streets eliminate cars entirely; traditional streets include cars, which is not typically feasible in urban settings"
+        },
+        {
+          "id": "b",
+          "text": "Complete streets prioritize pedestrians, cyclists, and transit users; traditional streets prioritize cars. Complete streets include sidewalks, cycle tracks, transit amenities, tree canopy, and ground-floor activation"
+        },
+        {
+          "id": "c",
+          "text": "Complete streets are wider; traditional streets are narrower, which is not always the case"
+        },
+        {
+          "id": "d",
+          "text": "Complete streets cost more to build; traditional streets are cheaper, though costs can vary based on design specifics"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Complete streets include cars; they just prioritize other modes first.",
+        "b": "Complete streets reorder priorities: pedestrians > cyclists > transit > cars (not zero cars). They include designed features for each mode (sidewalks, bike lanes, bus stops, parking for cars). This is a fundamental shift from car-centric design.",
+        "c": "Complete streets may be narrower or wider; width is not the defining characteristic. Prioritization of users is.",
+        "d": "Cost varies by context. Complete streets can be cost-effective if designed carefully.",
+        "correct": "Complete streets reorder priorities: pedestrians > cyclists > transit > cars (not zero cars). They include designed features for each mode (sidewalks, bike lanes, bus stops, parking for cars). This is a fundamental shift from car-centric design.",
+        "takeaway": "Complete streets = user-hierarchy reordering. Pedestrians and transit first; cars accommodated but not dominant."
+      },
+      "explanation": null,
+      "code_citation": "Complete Streets Movement; contemporary urban design",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Sustainable urbanism"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9d0aa320a7e1e67752a22937a387f008a020deb72f569788c2028c4bc02a0779"
+    },
+    {
+      "question_id": "55c223b7-2891-4af3-afff-cded002a28a5",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "What does a Height-to-Width (H:W) ratio of 1:2 indicate in urban design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The street is too wide; pedestrians feel exposed and unsafe"
+        },
+        {
+          "id": "b",
+          "text": "The street is canyon-like and oppressive; buildings dominate"
+        },
+        {
+          "id": "c",
+          "text": "Comfortable street enclosure; buildings and street width are proportioned for pedestrian comfort"
+        },
+        {
+          "id": "d",
+          "text": "Building height is twice the street width; this is the ideal for all streets"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "That describes H:W 1:4 (exposed feeling). H:W 1:2 is comfortable enclosure.",
+        "b": "That describes H:W 2:1 (oppressive, canyon-like). H:W 1:2 is comfortable.",
+        "c": "An H:W of 1:2 (building 10m tall, street 20m wide) creates comfortable enclosure. Pedestrians feel oriented and safe without feeling claustrophobic. This ratio is the standard for well-designed streets.",
+        "d": "H:W 1:2 means building height is HALF the street width, not twice. And while 1:2 is ideal for many contexts, not all streets need the same ratio.",
+        "correct": "An H:W of 1:2 (building 10m tall, street 20m wide) creates comfortable enclosure. Pedestrians feel oriented and safe without feeling claustrophobic. This ratio is the standard for well-designed streets.",
+        "takeaway": "H:W 1:2 = comfortable enclosure. This is the target ratio for pedestrian-friendly streets."
+      },
+      "explanation": null,
+      "code_citation": "Jan Gehl, Cities for People (2010); urban design standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:43ea3dac6e416cc704639b4c9c2382e7d95beb2272616ee5d2b5425fcc648f3d"
+    },
+    {
+      "question_id": "c2dcff5b-f2f5-48d0-8afe-fc2326728f16",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "A street is 18 meters wide and has 12-meter-tall buildings on both sides. Evaluate the H:W ratio and pedestrian experience.",
+      "options": [
+        {
+          "id": "a",
+          "text": "H:W ≈ 2:1; oppressive canyon effect — uncomfortable for pedestrians"
+        },
+        {
+          "id": "b",
+          "text": "H:W ≈ 1:1.5; comfortable to slightly enclosed — good for pedestrians"
+        },
+        {
+          "id": "c",
+          "text": "H:W ≈ 1:4; exposed and wind-exposed — unsafe pedestrian environment"
+        },
+        {
+          "id": "d",
+          "text": "H:W ≈ 3:1; too much building height — streets should be wider"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "2:1 would mean buildings are twice as tall as street width (so 36m buildings on an 18m street). That would be oppressive. Here, buildings are 12m, not 36m.",
+        "b": "H = 12m, W = 18m. Ratio = 12:18 = 2:3 ≈ 1:1.5. This falls between comfortable (1:2) and slightly more exposed (1:1), but is generally positive. Pedestrians feel oriented and safe.",
+        "c": "1:4 means buildings are one-quarter building height to street width (so 4.5m buildings on an 18m street). Here buildings are 12m, much taller than 1:4.",
+        "d": "The ratio is approximately 1:1.5, not 3:1. Buildings do not need to be taller; the street width is appropriate.",
+        "correct": "H = 12m, W = 18m. Ratio = 12:18 = 2:3 ≈ 1:1.5. This falls between comfortable (1:2) and slightly more exposed (1:1), but is generally positive. Pedestrians feel oriented and safe.",
+        "takeaway": "Calculate H:W ratio precisely; compare to standard (1:2 comfortable, 1:4 exposed, 2:1 oppressive)."
+      },
+      "explanation": null,
+      "code_citation": "Jan Gehl, urban design standards",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [
+        "Urban design evaluation"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:585268796aba15a847a82fd7790b38891bf3578b744d048a8769eed96873b2e1"
+    },
+    {
+      "question_id": "8b7e6ff8-7289-4f26-bb88-d2ea40354059",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "What is 'ground-floor activation' and why is it critical to street vitality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Placing retail, cafés, offices, galleries, and other public-facing uses at street level to create continuous activity and 'eyes on the street'"
+        },
+        {
+          "id": "b",
+          "text": "Requiring building owners to install ground-floor lighting for security purposes, ensuring visibility and safety during nighttime hours"
+        },
+        {
+          "id": "c",
+          "text": "Building ground-floor levels strong enough to support heavy pedestrian traffic, including the installation of reinforced flooring materials"
+        },
+        {
+          "id": "d",
+          "text": "Installing motion-activated doors and accessibility features on ground-floor entrances to comply with universal design standards and enhance user experience"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Ground-floor activation means placing uses that draw activity and create informal surveillance. Shops, restaurants, and offices at street level generate constant presence and oversight—'eyes on the street.' This builds on Jane Jacobs' principle that vibrant, safe streets require continuous activity and mixed uses.",
+        "b": "Lighting is a security feature, not ground-floor activation.",
+        "c": "Structural engineering is not the same as urban design activation.",
+        "d": "Accessibility features are important but separate from the concept of ground-floor activation (which is about programmatic vitality).",
+        "correct": "Ground-floor activation means placing uses that draw activity and create informal surveillance. Shops, restaurants, and offices at street level generate constant presence and oversight—'eyes on the street.' This builds on Jane Jacobs' principle that vibrant, safe streets require continuous activity and mixed uses.",
+        "takeaway": "Ground-floor activation = placing vital uses at street level to generate activity and safety. This directly implements Jane Jacobs' 'eyes on the street.'"
+      },
+      "explanation": null,
+      "code_citation": "Jane Jacobs; urban design practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:171c5819a1c06d868f3cef61130c4fb7f56136174d42ca59b85ee79c05159e9e"
+    },
+    {
+      "question_id": "69655be3-8f81-438f-ae4c-035c64eb95cf",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "Why is pedestrian-sclea design (windows, doors, fine texture at eye level 0–2.5m) critical to urban vitality, according to modern urban design theory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It ensures buildings are not too tall and therefore cheaper to construct, reducing overall project costs"
+        },
+        {
+          "id": "b",
+          "text": "It is required by building codes for all structures over 10 stories, ensuring compliance with urban planning regulations"
+        },
+        {
+          "id": "c",
+          "text": "It reduces the structural load on building foundations, allowing for more flexible design options"
+        },
+        {
+          "id": "d",
+          "text": "It creates visual interest, allows informal observation ('eyes on street'), and makes spaces feel human-scaled rather than institutional or hostile"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Height cost is independent of pedestrian detail. Tall buildings can have detail; short buildings can be bland.",
+        "b": "Pedestrian-scale design is not a building code requirement; it is a best practice in urban design.",
+        "c": "Foundation design is structural engineering, not related to eye-level detail.",
+        "d": "Pedestrian-scale design—windows, doors, texture, variation at eye level—creates spaces that feel welcoming and human-scaled. It allows people to see into buildings (which supports 'eyes on the street') and creates visual interest that makes streets feel safe and engaging. Blank, featureless facades feel hostile and discourage use.",
+        "correct": "Pedestrian-scale design—windows, doors, texture, variation at eye level—creates spaces that feel welcoming and human-scaled. It allows people to see into buildings (which supports 'eyes on the street') and creates visual interest that makes streets feel safe and engaging. Blank, featureless facades feel hostile and discourage use.",
+        "takeaway": "Pedestrian-scale detail = human-friendly, safe, engaging streets. Blank walls = hostile, dead streets. Details matter."
+      },
+      "explanation": null,
+      "code_citation": "Jan Gehl, Jane Jacobs, Gordon Cullen; contemporary urban design theory",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Urban design quality"
+      ],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1033ef8abbb5f4a36538f49f8f5538ce09c7737c131e41e03c5b497105bce506"
+    },
+    {
+      "question_id": "4cab6543-7392-418c-a046-60e0674e3588",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "A city wants to improve pedestrian safety on a wide, car-dominated street lined with blank-walled parking garages and office building backs. According to Jane Jacobs' principles, what is the primary problem and solution?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Problem: street is too wide. Solution: narrow the street by adding more lane dividers, which may not address pedestrian safety"
+        },
+        {
+          "id": "b",
+          "text": "Problem: no street trees. Solution: plant more trees for shade and aesthetics, which may not directly improve safety"
+        },
+        {
+          "id": "c",
+          "text": "Problem: insufficient 'eyes on the street' due to lack of ground-floor activation and mixed use. Solution: allow street-facing shops, cafés, and offices to create continuous activity and informal surveillance"
+        },
+        {
+          "id": "d",
+          "text": "Problem: H:W ratio is unfavorable. Solution: increase building height to improve enclosure, which may not enhance pedestrian safety"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Street width (H:W ratio) is part of the problem, but not the primary cause of unsafety. The blank walls are.",
+        "b": "Trees are helpful but do not address Jacobs' core concern: lack of activity and oversight.",
+        "c": "Blank walls eliminate informal surveillance. Jacobs' solution is programmatic—activate the ground floor with uses that put people on the street (shops, cafés) and in windows (offices, housing). This generates continuous presence and natural security.",
+        "d": "Increasing height might worsen the H:W ratio and does nothing to activate the street.",
+        "correct": "Blank walls eliminate informal surveillance. Jacobs' solution is programmatic—activate the ground floor with uses that put people on the street (shops, cafés) and in windows (offices, housing). This generates continuous presence and natural security.",
+        "takeaway": "Jacobs' solution to unsafe streets: mix uses, activate ground floor, create continuous activity. This generates 'eyes on the street' and natural safety."
+      },
+      "explanation": null,
+      "code_citation": "Jane Jacobs, The Death and Life of Great American Cities (1961)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "Safety planning"
+      ],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5652a84367262980ca99797b53b8aaf629596651de41d51f8fd119b07e4d22ec"
+    },
+    {
+      "question_id": "766881be-71cc-42cb-bdcb-790e44432940",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "According to Jane Jacobs' 'eyes on the street' principle, which street design would enhance safety and vitality?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Wide streets with minimal buildings, empty plazas, and car-focused design, which may reduce pedestrian interaction."
+        },
+        {
+          "id": "b",
+          "text": "Building setbacks away from the street to reduce pedestrian crowding, potentially decreasing street-level engagement."
+        },
+        {
+          "id": "c",
+          "text": "Separated pedestrian walkways disconnected from street-level activity, limiting natural surveillance opportunities."
+        },
+        {
+          "id": "d",
+          "text": "Narrow streets with mixed-use buildings (retail, offices, housing), ground-floor shops, continuous activity"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wide, car-dominated streets with minimal activity create dead, unsafe environments—the opposite of Jacobs' ideal.",
+        "b": "Building setbacks reduce street activation and weaken 'eyes on the street.'",
+        "c": "Separated walkways isolate pedestrians and eliminate the street-level activity that creates safety.",
+        "d": "Mixed uses, ground-floor shops, continuous activity generate informal surveillance ('eyes on the street'). People looking out windows, shopkeepers on the street, pedestrians as part of daily life create natural security and vibrant streets.",
+        "correct": "Mixed uses, ground-floor shops, continuous activity generate informal surveillance ('eyes on the street'). People looking out windows, shopkeepers on the street, pedestrians as part of daily life create natural security and vibrant streets.",
+        "takeaway": "Jacobs' ideal street: dense activity, mixed uses, ground-floor activation, continuous presence. This generates safety through informal surveillance."
+      },
+      "explanation": null,
+      "code_citation": "Jane Jacobs, The Death and Life of Great American Cities (1961)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f2ac0a199915be850ad6740992e1e7e0e6fd4ce20ba457aaa87d454f95da6d60"
+    },
+    {
+      "question_id": "a912bdfe-00e3-49d4-9d62-ed3bada2e001",
+      "article_id": "a951788d-ae29-431b-8796-f272035fdf8f",
+      "topic_id": "5ac27cbb-9a97-4767-8f92-d2161aea4554",
+      "text": "What is the primary difference between Kevin Lynch's framework and Jane Jacobs' approach to understanding cities?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lynch studies physical planning; Jacobs studies only sociology, focusing on the social dynamics within urban environments"
+        },
+        {
+          "id": "b",
+          "text": "Lynch focuses on how people navigate and mentally map cities; Jacobs focuses on street vitality, safety, and mixed-use activity"
+        },
+        {
+          "id": "c",
+          "text": "Lynch emphasizes landmarks; Jacobs emphasizes landmarks, making their approaches indistinguishable"
+        },
+        {
+          "id": "d",
+          "text": "Both are identical frameworks; the names are interchangeable, with no real difference in their methodologies"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lynch studies perception/cognition (somewhat similar to sociology). Jacobs studies social dynamics (sociology). Both are engaged with human behavior, not just physical form.",
+        "b": "Lynch's five elements (paths, edges, districts, nodes, landmarks) describe PERCEPTION—how people navigate and understand the mental structure of cities. Jacobs' 'eyes on the street' and mixed-use principles describe VITALITY—why some streets feel safe and lively while others feel dead. Complementary but distinct frameworks.",
+        "c": "Both theorists address landmarks, but that is not the key difference between them.",
+        "d": "They are distinct frameworks addressing different aspects of urban experience.",
+        "correct": "Lynch's five elements (paths, edges, districts, nodes, landmarks) describe PERCEPTION—how people navigate and understand the mental structure of cities. Jacobs' 'eyes on the street' and mixed-use principles describe VITALITY—why some streets feel safe and lively while others feel dead. Complementary but distinct frameworks.",
+        "takeaway": "Lynch = navigation perception. Jacobs = street vitality and safety. Do not conflate them."
+      },
+      "explanation": null,
+      "code_citation": "Kevin Lynch, The Image of the City (1960); Jane Jacobs, The Death and Life of Great American Cities (1961)",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PLAN-002-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:29:06.930799+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:60054181ed9b0d60d2555db7c21198e3c0a8ec4c03144cee849ef68826aeab37"
+    }
+  ]
+}

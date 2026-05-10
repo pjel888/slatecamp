@@ -31,7 +31,7 @@ Calculate the number and dimensions of required accessible parking slots per BP 
 
 ## Important Correction Before You Memorize
 
-Your draft uses several **Appendix C corridor and parking values** (4.0 m stall, 1.8 m aisle, 1.5 m corridor, 1.8×2.0 passing space) that are **not present** in the BP 344 amendment pages you attached.[file:2]  
+Your draft uses several **Appendix C corridor and parking values** (4.0 m stall, 1.8 m aisle, 1.5 m corridor, 1.8×2.0 passing space) that are **not present** in the BP 344 amendment pages you attached.[file:2]
 In the attachments, we can **verify**:
 
 - Accessible ramp width and slopes.[file:2]
@@ -63,7 +63,7 @@ These govern **sloping segments** of an accessible route and also define some ke
 | **1:20** | 5.0%      | – (no rise limit specified) | –                | Landings every **15.0 m**.[file:2] |
 | **1:15** | 6.67%     | **10.50 m**                 | **700 mm**       | Landings every **10.0 m**.[file:2] |
 
-Formula: \(\text{Run} = \text{Rise} \times \text{Slope Ratio}\).  
+Formula: \(\text{Run} = \text{Rise} \times \text{Slope Ratio}\).
 Example: \(700 \times 15 = 10{,}500\) mm = **10.50 m** (matches the table).[file:2]
 
 **Landings and Level Areas**
@@ -116,8 +116,8 @@ These are where wheelchair users transition between **parking/roadway** and **si
 
 **Dropped Sidewalks (Crossings & Walkways < 1500 mm)**
 
-- Base/level surface at bottom of dropped sidewalk:  
-  – Depth: **1500 mm** minimum,  
+- Base/level surface at bottom of dropped sidewalk:
+  – Depth: **1500 mm** minimum,
   – Width: corresponding to crossing width.[file:2]
 
 This 1500×(crossing‑width) base acts as a maneuvering platform for wheelchair users at road crossings.

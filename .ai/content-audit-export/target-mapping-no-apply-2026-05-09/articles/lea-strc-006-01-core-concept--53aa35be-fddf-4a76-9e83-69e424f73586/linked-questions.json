@@ -1,0 +1,508 @@
+{
+  "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b4efeb23bc480d471597cd5538bc700618c2d7d339f805468d569214e9254101",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "f242783b-a63f-4ed0-9fa9-638ae204dc09",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "The modulus of elasticity of normal-weight concrete with f'c = 25 MPa is approximately:",
+      "options": [
+        {
+          "id": "a",
+          "text": "20,000 MPa"
+        },
+        {
+          "id": "b",
+          "text": "23,500 MPa"
+        },
+        {
+          "id": "c",
+          "text": "15,000 MPa"
+        },
+        {
+          "id": "d",
+          "text": "30,000 MPa"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Ec = 4,700√f'c MPa. For f'c = 25 MPa: Ec = 4,700√25 = 4,700 × 5 = 23,500 MPa.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Section 3.3",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:72fa77909d855d5637f3bf4b4d79578e39be308592714a515a840c0379de31e4"
+    },
+    {
+      "question_id": "a61a276b-47ec-4e27-9be3-4eaee2fc65b8",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "For a project exposed to acidic soil and seawater splash zones in a coastal Philippine location, which combination of cement type and admixture is most appropriate for maximum durability?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ordinary Portland Cement (OPC) Type I, no admixture, w/c = 0.60, which may not provide sufficient resistance to aggressive environments"
+        },
+        {
+          "id": "b",
+          "text": "OPC Type I, low w/c ≤ 0.50, and pozzolanic admixture (fly ash or silica fume) to reduce permeability and acid attack risk"
+        },
+        {
+          "id": "c",
+          "text": "White cement, high w/c to improve flowability and appearance, but lacking in durability against chemical exposure"
+        },
+        {
+          "id": "d",
+          "text": "Rapid-hardening cement (Type III) with water-reducing admixture only, no pozzolanic, which may not adequately protect against sulfate attack"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Acidic and saline exposures require low w/c (≤ 0.50) to minimize permeability and chloride ingress. Pozzolanic admixtures (fly ash is locally available) react with calcium hydroxide in hydration products, forming additional C-S-H gel and lowering permeability. This combination addresses both acid attack (via lower porosity) and chloride ingress, providing maximum durability.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 3; ACI 318, Appendix D",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f13075e0d9bd51ffd1fc5908e7e9c9cc14ce2844f478472e33161b3cec210518"
+    },
+    {
+      "question_id": "5bbf562c-83e5-45ec-9b01-a2fd23ab51d6",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "Concrete with a higher water-cement ratio (0.65 vs. 0.45) will have:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Higher early strength (7-day) and lower long-term creep"
+        },
+        {
+          "id": "b",
+          "text": "Lower 28-day strength and higher long-term creep and shrinkage"
+        },
+        {
+          "id": "c",
+          "text": "Identical 28-day strength but better freeze-thaw durability"
+        },
+        {
+          "id": "d",
+          "text": "Better workability and higher modulus of elasticity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "A higher w/c ratio (more water per unit cement) produces lower 28-day strength due to more capillary pores. It also increases long-term creep and drying shrinkage because the cement paste is less dense and more prone to moisture changes.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 3; ACI 209",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fd359c497343e5a380628a53761b16c930dffba75b1d3af838e01433bec5ca50"
+    },
+    {
+      "question_id": "d1ce9666-9eec-4d7d-bd26-2b0be7d4cd0a",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "A structural engineer is designing a high-rise column in Manila. The project specifies f'c = 40 MPa and a concrete unit weight of 2,300 kg/m³ to reduce self-weight. An analysis is done using 2,300 kg/m³. After construction, actual concrete tests show f'c = 40 MPa but the delivered concrete has a unit weight of 2,400 kg/m³. How should this be reconciled?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The difference is acceptable since the concrete met strength requirements; structural analysis using 2,300 kg/m³ is conservative."
+        },
+        {
+          "id": "b",
+          "text": "The unit weight must be corrected to 2,400 kg/m³ (normal-weight concrete standard); the structural analysis using 2,300 kg/m³ underestimated self-weight loads and member capacity must be verified."
+        },
+        {
+          "id": "c",
+          "text": "The concrete is defective and must be removed because it does not match the specified 2,300 kg/m³, which could lead to structural issues"
+        },
+        {
+          "id": "d",
+          "text": "The extra 100 kg/m³ indicates the concrete is overdesigned and some strength can be sacrificed in future mixes, potentially reducing costs"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Normal-weight concrete unit weight is 2,400 kg/m³ per PNSC and ACI standards. A design using 2,300 kg/m³ underestimated self-weight (dead load) for the high-rise column. The actual 2,400 kg/m³ represents true normal-weight concrete. The structural analysis must be revisited to verify member capacity under true self-weight; if undersized, reinforcement or member geometry may need adjustment.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Section 3.1; ACI 318, Section 2.1",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:249a000ba0c6b2a3a6b7fe3b5d084cb0605aa8dbfa7287590f522fe769f0075e"
+    },
+    {
+      "question_id": "1c5e085e-5724-43ac-a77a-0deb8b537aca",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "The standard compressive strength test cylinder is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "100 mm diameter × 200 mm tall"
+        },
+        {
+          "id": "b",
+          "text": "150 mm diameter × 300 mm tall"
+        },
+        {
+          "id": "c",
+          "text": "200 mm diameter × 400 mm tall"
+        },
+        {
+          "id": "d",
+          "text": "200 mm × 200 mm cube"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "The standard test cylinder for compressive strength in both ASTM C39 and PNSC specifications is 150 mm diameter × 300 mm tall. This 1:2 aspect ratio ensures reliable failure under axial compression.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C39; PNSC 2015",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:903bec6e90b1923783d061c7a04232dedc66506a5e8fe1f67305aba5dc7c7ca8"
+    },
+    {
+      "question_id": "29f264f6-1a48-4429-be8a-449ddcc34047",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "Which of the following best describes the role of fine aggregate (sand) in concrete?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It provides primary structural strength and replaces coarse aggregate in lightweight mixes, especially in non-load-bearing applications"
+        },
+        {
+          "id": "b",
+          "text": "It fills spaces between coarse aggregate particles and improves workability"
+        },
+        {
+          "id": "c",
+          "text": "It acts as a binder similar to cement, contributing to the overall cohesion of the mix"
+        },
+        {
+          "id": "d",
+          "text": "It reduces the need for water and increases the water-cement ratio, thereby affecting the hydration process"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Fine aggregate (sand, particles < 5 mm) comprises 35–45% of total aggregate. Its primary roles are to fill voids between coarse aggregate particles, improve paste distribution, and enhance workability and finishability.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Section 3.2",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:951568c2aff8198fba45e7057ec488f556c6b3e1279c3e955bdfd8f4d9d7cba5"
+    },
+    {
+      "question_id": "31b56717-88a8-4074-98ba-d0f6c4953f46",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "A construction project in a coastal area of the Philippines requires concrete with improved durability against seawater corrosion. Which of the following specifications best reduces permeability and chloride ingress?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Increase cement content to 450 kg/m³, w/c = 0.65, and use ordinary Portland cement only, which may not effectively reduce permeability"
+        },
+        {
+          "id": "b",
+          "text": "Use w/c ≤ 0.50, increase cement to 380–420 kg/m³, and incorporate pozzolanic admixtures like fly ash"
+        },
+        {
+          "id": "c",
+          "text": "Reduce cement content to 250 kg/m³ and use very coarse aggregate to lower material cost, which compromises durability"
+        },
+        {
+          "id": "d",
+          "text": "Use only fine aggregate (sand) and exclude coarse aggregate to reduce void space, which is not advisable for structural integrity"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Low w/c (≤ 0.50) produces denser, less permeable concrete. Higher cement content (380–420 kg/m³) ensures full hydration. Pozzolanic admixtures (fly ash is locally available in the Philippines) react with hydration products, further reducing permeability and improving long-term durability in aggressive (seawater) environments.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 3; ACI 318",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:feabd0bd59dc05960b58f175c48ac95d6573595966a2d41e32a90bc2ce4b78d0"
+    },
+    {
+      "question_id": "a449bc3a-c626-4742-9e33-3f1d1a43a884",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "A concrete mix design specifies a slump of 75 mm. If the concrete is delivered to site with a slump of 125 mm, what is the most likely implication?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The concrete is stronger because higher slump indicates better consolidation, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "The water-cement ratio has been increased on-site, reducing strength and potentially compromising durability design targets"
+        },
+        {
+          "id": "c",
+          "text": "The concrete will be faster to place, so cost savings offset any strength loss, assuming no other factors are affected"
+        },
+        {
+          "id": "d",
+          "text": "The coarse aggregate size has been reduced, which always improves workability without changing strength, which is not always true"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Slump is directly related to water content for a given mix. A 50 mm increase in slump (from 75 to 125 mm) almost certainly means water was added on-site, increasing the effective w/c ratio. Higher w/c reduces 28-day strength, increases creep, and increases permeability—all departures from design intent.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C143; PNSC 2015, QC requirements",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:329f3596a0350acf972d3865b08fd633b39dd4c19849dd5248299d63f4552039"
+    },
+    {
+      "question_id": "5ce99a97-aaf0-433e-9fbd-605739633562",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "In tropical curing conditions (high temperature and humidity), proper concrete curing (keeping concrete wet for 7 days) is especially critical because:",
+      "options": [
+        {
+          "id": "a",
+          "text": "High temperature slows hydration, requiring extended wet curing to reach strength, especially in large pours"
+        },
+        {
+          "id": "b",
+          "text": "High temperature and humidity accelerate hydration but also increase drying shrinkage; inadequate curing leads to early cracking and reduced durability"
+        },
+        {
+          "id": "c",
+          "text": "Tropical rain provides sufficient moisture, so additional curing is unnecessary, assuming consistent rainfall"
+        },
+        {
+          "id": "d",
+          "text": "High humidity prevents water evaporation, so concrete achieves strength automatically, without additional measures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Tropical climates accelerate early hydration (beneficial) but also cause rapid surface drying and high evaporation rates. Without proper curing, surface drying causes differential shrinkage stresses, leading to early cracking, reduced durability, and potential strength loss. Keeping concrete wet for 7 days maintains internal moisture, ensures complete hydration, and minimizes drying-shrinkage cracking.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 3; ACI 308",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7ce16698fbcbd8cbebad8e38abdc0cacda94e90cbf0e8df101720fab8df9f0d2"
+    },
+    {
+      "question_id": "d52a0538-49ee-437d-819e-a5788d5133aa",
+      "article_id": "53aa35be-fddf-4a76-9e83-69e424f73586",
+      "topic_id": "48520af4-fac7-4af7-9541-32f9f59e5aa0",
+      "text": "A concrete mix has a water-cement ratio of 0.50. This means:",
+      "options": [
+        {
+          "id": "a",
+          "text": "50% of the total mix mass is water"
+        },
+        {
+          "id": "b",
+          "text": "0.5 kg of water for every 1 kg of cement"
+        },
+        {
+          "id": "c",
+          "text": "50 kg of water per m³ of concrete"
+        },
+        {
+          "id": "d",
+          "text": "The concrete has 50% strength compared to a 0.40 w/c mix"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Water-cement ratio is the mass ratio of water to cement. A w/c of 0.50 means exactly 0.5 kg water per 1 kg cement—this is the definition used for strength and durability predictions.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "PNSC 2015, Chapter 3",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-006-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.016764+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4fdb3d8f257c8dd6cdf040ffdad686465fe93b79f3444cb9349bd007c0fc54d1"
+    }
+  ]
+}

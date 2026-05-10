@@ -1,14 +1,113 @@
 {
   "article_id": "6c4f539a-c589-4f53-bbfe-d4396641a3e6",
   "slug": "lea-dsgn-011-01-core-concept",
-  "normalized_created_at": "2026-05-09T04:02:59.641Z",
+  "normalized_created_at": "2026-05-09T17:04:24.639Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:a3069fe88ff59e2aaaf00149d73b3832beb836a09bc6893a132d90ea4cbf67b3",
-  "normalized_content_hash": "sha256:a3069fe88ff59e2aaaf00149d73b3832beb836a09bc6893a132d90ea4cbf67b3",
-  "ui_block_count": 0,
-  "total_blocks": 0,
-  "blocks": [],
+  "original_content_hash": "sha256:d3648b55927a5ef4ddcfe9901e32bb5cc463c22b2d1ae9ef914b1a32400b8282",
+  "normalized_content_hash": "sha256:d3648b55927a5ef4ddcfe9901e32bb5cc463c22b2d1ae9ef914b1a32400b8282",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-lea-dsgn-011-01-core-concept\" type=\"image\" caption=\"Floor Plan Conventions — Wall Types, Door Symbols, and Dimensioning\" description=\"Annotated floor plan excerpt showing standard conventions: exterior walls (heavy 0.5-0.7mm), interior partitions (medium 0.3-0.4mm), door swing arcs, window symbols, stair tread/direction arrows, dimension lines, and room labels at 1:100/1:50 scale.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
+      "raw_hash": "sha256:21de0b09d5e8f9b70ded5a291b4ab159e70b3e0b17fb384931684e962d798efc",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-011-01-core-concept\", type=\"image\", caption=\"Floor Plan Conventions — Wall Types, Door Symbols, and Dimensioning\", description=\"Annotated floor plan excerpt showing standard conventions: exterior walls (heavy 0.5-0.7mm), interior partitions (medium 0.3-0.4mm), door swing arcs, window symbols, stair tread/direction arrows, dimension lines, and room labels at 1:100/1:50 scale.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:00ee04a0a9d87c3644b6b2bac054d6006d00274bb93dcffd4b55b2e75c1fd5da",
+      "props": {
+        "id": "media-lea-dsgn-011-01-core-concept",
+        "type": "image",
+        "caption": "Floor Plan Conventions — Wall Types, Door Symbols, and Dimensioning",
+        "description": "Annotated floor plan excerpt showing standard conventions: exterior walls (heavy 0.5-0.7mm), interior partitions (medium 0.3-0.4mm), door swing arcs, window symbols, stair tread/direction arrows, dimension lines, and room labels at 1:100/1:50 scale.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_json": {
+        "id": "media-lea-dsgn-011-01-core-concept",
+        "type": "image",
+        "caption": "Floor Plan Conventions — Wall Types, Door Symbols, and Dimensioning",
+        "description": "Annotated floor plan excerpt showing standard conventions: exterior walls (heavy 0.5-0.7mm), interior partitions (medium 0.3-0.4mm), door swing arcs, window symbols, stair tread/direction arrows, dimension lines, and room labels at 1:100/1:50 scale.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_text": "id=\"media-lea-dsgn-011-01-core-concept\" type=\"image\" caption=\"Floor Plan Conventions — Wall Types, Door Symbols, and Dimensioning\" description=\"Annotated floor plan excerpt showing standard conventions: exterior walls (heavy 0.5-0.7mm), interior partitions (medium 0.3-0.4mm), door swing arcs, window symbols, stair tread/direction arrows, dimension lines, and room labels at 1:100/1:50 scale.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 3105,
+      "end_offset": 3716,
+      "line_start": 51,
+      "line_end": 55,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-lea-dsgn-011-01-core-concept\" type=\"image\" caption=\"Drawing Scale Reference — Common Architectural Scales and Their Uses\" description=\"Reference chart showing common architectural drawing scales: 1:100 (general floor plan), 1:50 (detailed plan/reflected ceiling), 1:20 (room layout/furniture), 1:10 (wall section), 1:5 (construction detail), and 1:1 (full-size template). Appropriate use cases and dimension precision for each scale.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
+      "raw_hash": "sha256:e0d167c0fa5aefad98c05965f69c84e32766868afbf7e923d811108fe01ea5d0",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-011-01-core-concept\", type=\"image\", caption=\"Drawing Scale Reference — Common Architectural Scales and Their Uses\", description=\"Reference chart showing common architectural drawing scales: 1:100 (general floor plan), 1:50 (detailed plan/reflected ceiling), 1:20 (room layout/furniture), 1:10 (wall section), 1:5 (construction detail), and 1:1 (full-size template). Appropriate use cases and dimension precision for each scale.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:1749f5f4442edeb11f58435f37536625aa2b03bd9f463dd194f2151e8239ecce",
+      "props": {
+        "id": "media-lea-dsgn-011-01-core-concept",
+        "type": "image",
+        "caption": "Drawing Scale Reference — Common Architectural Scales and Their Uses",
+        "description": "Reference chart showing common architectural drawing scales: 1:100 (general floor plan), 1:50 (detailed plan/reflected ceiling), 1:20 (room layout/furniture), 1:10 (wall section), 1:5 (construction detail), and 1:1 (full-size template). Appropriate use cases and dimension precision for each scale.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_json": {
+        "id": "media-lea-dsgn-011-01-core-concept",
+        "type": "image",
+        "caption": "Drawing Scale Reference — Common Architectural Scales and Their Uses",
+        "description": "Reference chart showing common architectural drawing scales: 1:100 (general floor plan), 1:50 (detailed plan/reflected ceiling), 1:20 (room layout/furniture), 1:10 (wall section), 1:5 (construction detail), and 1:1 (full-size template). Appropriate use cases and dimension precision for each scale.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_text": "id=\"media-lea-dsgn-011-01-core-concept\" type=\"image\" caption=\"Drawing Scale Reference — Common Architectural Scales and Their Uses\" description=\"Reference chart showing common architectural drawing scales: 1:100 (general floor plan), 1:50 (detailed plan/reflected ceiling), 1:20 (room layout/furniture), 1:10 (wall section), 1:5 (construction detail), and 1:1 (full-size template). Appropriate use cases and dimension precision for each scale.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 6876,
+      "end_offset": 7537,
+      "line_start": 108,
+      "line_end": 112,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\n \"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\",\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\n \"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\",\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\n ]} />",
+      "raw_hash": "sha256:1902b19768c5ed3ae5a64b8895c86a729abaa71d820eaacdb9366732ad051e26",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\\n \\\"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\\\",\\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\\n \\\"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\\\",\\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ed4fa912128c15117e4e3e4a213efa6901af361e631c8d619a4f29f2e57b0bfb",
+      "props": {
+        "mistakes": "{[\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\n \"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\",\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\n \"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\",\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\n ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\n \"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\",\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\n \"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\",\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\n ]}"
+      },
+      "props_text": "mistakes={[\n 'Calculating room area including exterior wall thickness (interior C-C is standard).',\n \"ERR-DSGN-030: Specifying 1.20m as the 'standard' accessible route width (Standard is 1.50m).\",\n 'Forgetting to indicate the UP/DN direction and tread count on stair plans.',\n \"Delineating a 0.80m door as the 'Accessible Entry' without accounting for the clear width reduction caused by the door stop and hinge.\",\n 'Failing to provide the required 1.50m diameter turning space in accessible restrooms or corridor dead-ends.',\n ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 7803,
+      "end_offset": 8495,
+      "line_start": 120,
+      "line_end": 124,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:88bf201bb69306c12562affffcb5d1130838fdb1ad4f0206fa4b4048933bbb18"
 }

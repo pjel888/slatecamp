@@ -1,0 +1,59 @@
+{
+  "question_id": "4c92b571-c5f6-45e7-accd-4567ebe47393",
+  "baseline_hash": "sha256:be95f0e1fb0cb867a08c6ae640f5babd52e64605717ada87d45d1f4271b39ca3",
+  "status": "proposed_no_apply",
+  "reason": "Same minimum accessible-ramp clear-width concept; dry-run version has explicit 2024 IRR source locator.",
+  "approved_by": "Hermes target-mapping dry-run review; final apply still blocked",
+  "approved_at": "2026-05-09T14:08:41.185713Z",
+  "dry_run_source": {
+    "dry_article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+    "dry_question_id": "dryrun-01-bp344-accessible-ramp-geometry-q01",
+    "sme_source_locator": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2.",
+    "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline."
+  },
+  "proposed": {
+    "code_citation": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2.",
+    "text": "Under the 2024 Revised IRR of BP 344, what is the minimum clear width of an accessible ramp?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "The extracted 2024 IRR text states: \"Minimum clear width of 1200 mm.\"",
+      "distractors": {
+        "A": "900 mm is a handrail height, not the clear ramp width.",
+        "B": "1000 mm is not the cited accessible-ramp clear width in this source excerpt.",
+        "D": "1500 mm may appear in turning or clearance contexts, but it is not the minimum clear width stated for accessible ramps here."
+      },
+      "takeaway": "For the ramp width item, remember 1200 mm before checking slope or landing conditions."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "C",
+    "explanation": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "900 mm"
+      },
+      {
+        "id": "B",
+        "text": "1000 mm"
+      },
+      {
+        "id": "C",
+        "text": "1200 mm"
+      },
+      {
+        "id": "D",
+        "text": "1500 mm"
+      }
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:2e3d233c86c836304a42475bb19e6241c8a96fdad3f9acb8088e43e2290420f0",
+  "question_count": 3,
+  "questions": [
+    {
+      "question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q01",
+      "article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+      "topic_id": "dryrun-topic-03-ra9514-means-of-egress-width-and-count",
+      "text": "Under the general RA 9514 RIRR means-of-egress rule, what minimum width applies unless a specific occupancy division provides otherwise?",
+      "options": [
+        {
+          "id": "A",
+          "text": "760 mm"
+        },
+        {
+          "id": "B",
+          "text": "815 mm"
+        },
+        {
+          "id": "C",
+          "text": "915 mm"
+        },
+        {
+          "id": "D",
+          "text": "1120 mm"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Section 10.2.5.2 paragraph F states that the width of any means of egress shall not be less than 915 mm except when specifically provided under Divisions 8 through 20.",
+        "distractors": {
+          "A": "760 mm appears in other dimensional contexts but is not this general minimum.",
+          "B": "815 mm is not the cited general egress minimum.",
+          "D": "1120 mm appears in the stair capacity equation context, not as the general minimum egress width."
+        },
+        "takeaway": "Keep the general width minimum separate from stair-capacity and occupancy-specific rules."
+      },
+      "explanation": "RA 9514 RIRR 2019, Section 10.2.5.2(F), PDF p.95.",
+      "code_citation": "RA 9514 RIRR 2019, Section 10.2.5.2(F), PDF p.95.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ra9514-egress-q1",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "RA 9514 RIRR 2019, Section 10.2.5.2(F), PDF p.95.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:b325ad52f54fc361f8f1c3ff40efcbd80540d5c0fb860ecc88fb31448fedb549"
+    },
+    {
+      "question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q02",
+      "article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+      "topic_id": "dryrun-topic-03-ra9514-means-of-egress-width-and-count",
+      "text": "A storey has an occupant load of 750. Under the general Section 10.2.5.2 rule, how many means of egress are required unless a specific occupancy rule changes the answer?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One"
+        },
+        {
+          "id": "B",
+          "text": "Two"
+        },
+        {
+          "id": "C",
+          "text": "Three"
+        },
+        {
+          "id": "D",
+          "text": "Four"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "For occupant load more than 500 but not more than 1000, the means of egress must not be less than three.",
+        "distractors": {
+          "A": "The general rule does not allow one for this load.",
+          "B": "Two is the baseline minimum, but 750 crosses the more-than-500 threshold.",
+          "D": "Four is triggered for occupant load in excess of 1000."
+        },
+        "takeaway": "More than 500 up to 1000 requires at least three means of egress."
+      },
+      "explanation": "RA 9514 RIRR 2019, Section 10.2.5.2(G), PDF p.95.",
+      "code_citation": "RA 9514 RIRR 2019, Section 10.2.5.2(G), PDF p.95.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ra9514-egress-q2",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "RA 9514 RIRR 2019, Section 10.2.5.2(G), PDF p.95.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:98cc0b9718b406e9fbd4c5c9da2b41d1305b66a33a1be3d768cc23b265bf1661"
+    },
+    {
+      "question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q03",
+      "article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+      "topic_id": "dryrun-topic-03-ra9514-means-of-egress-width-and-count",
+      "text": "What minimum illumination value is stated for floors of means of egress at corridors, landings, and exit doors?",
+      "options": [
+        {
+          "id": "A",
+          "text": "5 lux"
+        },
+        {
+          "id": "B",
+          "text": "10.7 lux"
+        },
+        {
+          "id": "C",
+          "text": "50 lux"
+        },
+        {
+          "id": "D",
+          "text": "100 lux"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Section 10.2.5.11 states that floors of means of egress shall be illuminated at all points to values not less than 10.7 lux.",
+        "distractors": {
+          "A": "Below the cited Fire Code illumination value.",
+          "C": "A plausible lighting distractor, but not the cited egress-floor value.",
+          "D": "Too high for the cited egress-floor requirement."
+        },
+        "takeaway": "For Fire Code egress illumination, the key number in this excerpt is 10.7 lux."
+      },
+      "explanation": "RA 9514 RIRR 2019, Section 10.2.5.11, PDF p.113.",
+      "code_citation": "RA 9514 RIRR 2019, Section 10.2.5.11, PDF p.113.",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ra9514-egress-q3",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "RA 9514 RIRR 2019, Section 10.2.5.11, PDF p.113.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:3590ab1a63a296d5ef04a24d38dfe862b4156a3e2d2382392d8e2c05672220b3"
+    }
+  ],
+  "dry_run_note": "Generated from SME-approved exemplar-question-set.json; do not edit linked-questions directly for real Supabase updates."
+}

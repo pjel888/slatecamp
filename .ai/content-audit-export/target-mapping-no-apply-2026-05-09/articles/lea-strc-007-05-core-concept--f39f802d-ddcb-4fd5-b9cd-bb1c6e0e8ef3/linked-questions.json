@@ -1,0 +1,508 @@
+{
+  "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:85825cf11580a5fef1e6d55fd5dc1a8aa2ff974d72a7ceb83a986794bd9c4910",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "0d8debcf-c39f-428d-a756-cde40a1b307a",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "A 300 mm beam contains two 80 mm conduits with spacing of 240 mm center-to-center. Check compliance with NSCP spacing and size limits.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both spacing and size compliant, assuming no additional structural constraints are present"
+        },
+        {
+          "id": "b",
+          "text": "Size non-compliant (exceeds h/3 = 100 mm) and spacing adequate (240 mm = 3 × 80 mm)."
+        },
+        {
+          "id": "c",
+          "text": "Spacing non-compliant (240 mm < 3 × 80 = 240 mm), which may require adjustment"
+        },
+        {
+          "id": "d",
+          "text": "Cumulative area exceeds limit; both conduits must be reduced, or alternative solutions considered"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "While size is compliant, spacing is exactly at the limit (not 'adequate' with margin).",
+        "c": "240 mm = 3 × 80 mm, so spacing meets the minimum requirement.",
+        "d": "Cumulative area = π(40)² × 2 ≈ 10,053 mm² > 7,854 mm² (h/3 equivalent for 300 mm), so cumulative exceeds limit.",
+        "correct": "Beam size limit = h/3 = 300/3 = 100 mm. The 80 mm conduits are individually compliant (80 < 100 mm). Spacing requirement = 3 × 80 = 240 mm. Actual spacing = 240 mm, which equals the requirement (compliant, just at the limit) (NSCP 6.3.1 & 6.3.2). The size criterion is satisfied, but the spacing is right at the boundary.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.1 & 6.3.2 (Size and Spacing checks)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c34e37a139ad25274d4dc11cb8635b496473c94469d43f356d2eecb53890359e"
+    },
+    {
+      "question_id": "6c765e0f-401b-4fa7-a331-0d6952b16166",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "A 350 mm × 350 mm column requires a 110 mm diameter utility sleeve. Is this within the 4% embedded area limit, and if so, what is the maximum area in mm²?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Non-compliant; 110 mm conduit exceeds 4% area limit. Maximum allowed is 4,900 mm²."
+        },
+        {
+          "id": "b",
+          "text": "Compliant; conduit area ≈ 9,503 mm² is within the 4,900 mm² limit, ensuring structural integrity and compliance with building codes"
+        },
+        {
+          "id": "c",
+          "text": "Compliant; the 110 mm conduit is less than h/3 of the column dimension, maintaining the necessary structural proportions"
+        },
+        {
+          "id": "d",
+          "text": "Cannot determine without knowing the reinforcement ratio of the column, which affects the overall structural capacity"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Column area = 350 × 350 = 122,500 mm². Maximum embedded = 4% × 122,500 = 4,900 mm². A 110 mm diameter conduit has area = π(55)² ≈ 9,503 mm². Since 9,503 mm² > 4,900 mm², the conduit exceeds the 4% limit and is non-compliant (NSCP 6.3.1).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.1 (Column embedded area — 4% limit)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8eba6da65b0004e7687301400ff408a6fb3f50c57e665af84a7c01b7ea0c71f9"
+    },
+    {
+      "question_id": "09117f07-7332-47ae-94e9-75f9effee9f2",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "Two electrical conduits (25 mm diameter each) are embedded in a concrete slab. What is the minimum center-to-center distance between them per NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 mm"
+        },
+        {
+          "id": "b",
+          "text": "75 mm"
+        },
+        {
+          "id": "c",
+          "text": "100 mm"
+        },
+        {
+          "id": "d",
+          "text": "25 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "50 mm = 2 × diameter (less than required 3 diameters).",
+        "c": "100 mm = 4 × diameter (more than required; acceptable but not minimum).",
+        "d": "25 mm is the conduit diameter itself (no spacing).",
+        "correct": "Minimum spacing between adjacent conduits is 3 times the conduit diameter, measured center-to-center (NSCP 6.3.2). For 25 mm conduits: 3 × 25 = 75 mm.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.2 (Conduit Spacing)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:47a877500aa342ccb63475f404af2aec851e7a94a5aed02860881472f2dc221d"
+    },
+    {
+      "question_id": "7f446ec1-b5d6-4c76-ad7e-7bb8a6cff5a7",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "A slab has ribbed joists (rib width = 120 mm). What is the maximum diameter of electrical conduit that can be embedded in the rib per NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "40 mm"
+        },
+        {
+          "id": "b",
+          "text": "30 mm"
+        },
+        {
+          "id": "c",
+          "text": "60 mm"
+        },
+        {
+          "id": "d",
+          "text": "20 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "40 mm = w_rib/3, which is NOT the code limit for ribs.",
+        "c": "60 mm = w_rib/2 (far too large for slender ribs).",
+        "d": "20 mm is more conservative than required.",
+        "correct": "For ribs in ribbed/joist slabs, the maximum conduit size is w_rib/4 = 120/4 = 30 mm (NSCP 6.3.1). This tighter limit (vs. h/3 for solid slabs) applies because ribs are slender and sensitive to voids.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.1 (Ribbed Slab — rib conduit limit w_rib/4)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9c05528efb7387a38154c6c47be981c46d2f0a38742bf8fefaf835063663e5f4"
+    },
+    {
+      "question_id": "02cea262-5a75-4808-86e3-051379a503c3",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "A beam (400 mm deep) requires a utility sleeve (110 mm diameter) that exceeds the standard size limit h/3 ≈ 133 mm. Wait—actually, is 110 mm within the limit? If yes, is it compliant? If no, what is required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant; 110 mm < 133 mm (h/3)."
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant; 110 mm > 133 mm requires reinforcement."
+        },
+        {
+          "id": "c",
+          "text": "Compliant; 110 mm is within the h/2 limit."
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant; only conduits ≤ 50 mm are allowed without reinforcement."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "110 mm is NOT greater than 133 mm; it is within the limit.",
+        "c": "h/2 = 200 mm is not the code limit; h/3 is the limit.",
+        "d": "The limit is h/3 (which equals 133 mm here), not a fixed 50 mm.",
+        "correct": "For a 400 mm beam, h/3 = 400/3 ≈ 133 mm. The 110 mm conduit is less than 133 mm, so it is compliant with the size limit (NSCP 6.3.1). No supplemental reinforcement is required.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.1 (Beam Conduit h/3 limit)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e3e0b815225cd89920e947f929bc7c7547ddfd6f182c8c1c0fa48e07fb7bf216"
+    },
+    {
+      "question_id": "b38842a0-af75-4746-88ed-282a67f96db1",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "A 400 mm × 400 mm concrete column is to be analyzed for embedded utility pipes. What is the maximum total area of embedded pipes per NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "9,600 mm²"
+        },
+        {
+          "id": "b",
+          "text": "6,400 mm²"
+        },
+        {
+          "id": "c",
+          "text": "16,000 mm²"
+        },
+        {
+          "id": "d",
+          "text": "4,800 mm²"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "9,600 mm² = 6% of column area (exceeds 4%).",
+        "c": "16,000 mm² = 10% of column area (far too large).",
+        "d": "4,800 mm² = 3% of column area (below 4% but not the code value).",
+        "correct": "For columns, the maximum embedded area is 4% of the gross cross-sectional area (NSCP 6.3.1). Column area = 400 × 400 = 160,000 mm². Max embedded = 0.04 × 160,000 = 6,400 mm² (ERR-STRC-024).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.1 (Conduit Size Limits — Columns)",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9dc9c63ea0d9bed9c203dc1a627e852fe6c41ddcf0e3c1952a27e330a4e21bd5"
+    },
+    {
+      "question_id": "e080685f-fe5e-42bf-86e1-5cbaa5663de9",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "A 250 mm deep beam requires embedded HVAC ducts. The largest single duct proposed is 90 mm diameter. Is this compliant per NSCP, and if not, what is the maximum allowed?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Compliant; 90 mm < 250 mm, which is a common misinterpretation of the code"
+        },
+        {
+          "id": "b",
+          "text": "Non-compliant; maximum allowed = 83 mm (h/3 = 250/3 ≈ 83 mm)."
+        },
+        {
+          "id": "c",
+          "text": "Compliant; 90 mm is within the h/2 limit, which is not applicable in this context"
+        },
+        {
+          "id": "d",
+          "text": "Non-compliant; maximum allowed = 75 mm (h/3.3), which is a miscalculation of the standard"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Compliance is not simply 'less than full depth'; the h/3 rule is the code limit.",
+        "c": "h/2 = 125 mm is not the code limit; the limit is h/3.",
+        "d": "The correct formula is h/3 ≈ 83 mm, not h/3.3.",
+        "correct": "For beams, maximum conduit size = h/3 = 250/3 ≈ 83 mm (NSCP 6.3.1). The proposed 90 mm exceeds this limit. The duct must be reduced to ≤83 mm, or reinforcement must be added around the opening.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.1 (Beam Conduit Limit h/3)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:865b8ce9073983694683e7b42a4765c7939a1cbe958b5f15d9e8a65491d42bf5"
+    },
+    {
+      "question_id": "99438c76-e9fc-4436-8ecf-208de1f1d5e1",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "A concrete slab (200 mm thick) has four 30 mm diameter electrical conduits running parallel. Assuming they are equally spaced in the slab cross-section, is the cumulative area within NSCP limits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, cumulative area = 2,827 mm² is within limits."
+        },
+        {
+          "id": "b",
+          "text": "No; 200 mm slab allows only one 67 mm conduit (h/3), not four 30 mm conduits."
+        },
+        {
+          "id": "c",
+          "text": "Yes, if spacing between conduits is ≥ 90 mm (3 diameters)."
+        },
+        {
+          "id": "d",
+          "text": "No; four conduits exceed the h/3 limit regardless of individual sizes."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The h/3 rule applies to total void area, not just single conduit. Multiple smaller conduits can fit if cumulative area is within limits.",
+        "c": "While adequate spacing (90 mm) is required, the area check is the primary limit.",
+        "d": "The cumulative area is the controlling factor, not the count. Four smaller conduits can be acceptable if total area ≤ h/3 equivalent.",
+        "correct": "Four 30 mm conduits have cumulative area = 4 × π(15)² ≈ 2,827 mm². The slab allows up to h/3 ≈ 66.7 mm equivalent diameter, which is ≈3,490 mm² area. Since 2,827 mm² < 3,533 mm², the design is within limits (NSCP 6.3.1). Also, if spacing is ≥3 diameters = 90 mm, the spacing criterion is satisfied.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.1 & 6.3.2 (Conduit area and spacing limits)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:190200c07a97c58c207bf7a2bc8d5aaafd35aeffece756381f98bcba6618c40a"
+    },
+    {
+      "question_id": "a7ddfea1-6c8b-4cba-967e-f0662ac042a9",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "A 180 mm thick concrete slab in an exterior building has a metal utility conduit (60 mm diameter) embedded for weather-exposed piping. What is the minimum concrete cover to this pipe per NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "25 mm"
+        },
+        {
+          "id": "b",
+          "text": "40 mm"
+        },
+        {
+          "id": "c",
+          "text": "50 mm"
+        },
+        {
+          "id": "d",
+          "text": "75 mm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "25 mm is not a standard cover in NSCP.",
+        "b": "40 mm applies to interior (protected) elements, not weather-exposed.",
+        "d": "75 mm is for concrete cast against earth (not applicable here).",
+        "correct": "Pipes exposed to weather require 50 mm concrete cover minimum, equivalent to the cover for ≥20 mm bars in weather exposure (NSCP 6.3.3 & 6.7.1). This applies because the slab surface and pipe are subject to weathering.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.3 (Cover for Embedded Pipes — weather exposure)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b83b9acc1b58c27d17fc32929ddf5805a17fff99260c0ac7f61fe3f5c795788b"
+    },
+    {
+      "question_id": "0219dc35-4e33-4ce0-b077-c008de043af6",
+      "article_id": "f39f802d-ddcb-4fd5-b9cd-bb1c6e0e8ef3",
+      "topic_id": "af2d7d18-8f7e-40c3-ad52-d3ebe34a0a47",
+      "text": "A 150 mm thick concrete slab has electrical conduits embedded. What is the maximum diameter of a single conduit per NSCP?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 mm"
+        },
+        {
+          "id": "b",
+          "text": "75 mm"
+        },
+        {
+          "id": "c",
+          "text": "100 mm"
+        },
+        {
+          "id": "d",
+          "text": "30 mm"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "75 mm = h/2, which exceeds the h/3 limit.",
+        "c": "100 mm approaches the full slab thickness and is far too large.",
+        "d": "30 mm is smaller than allowed (conservative but not standard).",
+        "correct": "For slabs and beams, the maximum conduit size is h/3 = 150/3 = 50 mm (NSCP 6.3.1). This ensures the void does not overly weaken the concrete section.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 § 6.3.1 (Conduit Size Limits — Slabs/Beams)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-007-05-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:51.88244+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4670f8b31695356bb63eb426ec9e997382a908a8943ef657f751de7ccb0d1edf"
+    }
+  ]
+}

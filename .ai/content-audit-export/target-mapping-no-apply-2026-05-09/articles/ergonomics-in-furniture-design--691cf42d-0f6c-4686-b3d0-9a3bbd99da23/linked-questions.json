@@ -1,0 +1,1072 @@
+{
+  "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:5498d8ef91a29d8984e46efd9589ad7727f95a2596b9719f2ef05a88b84157d9",
+  "question_count": 21,
+  "questions": [
+    {
+      "question_id": "e44b57ed-269e-4c44-b97a-e3fc2d2a26b3",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "Based on the specifications in \"Ergonomics in Furniture Design\", if a project requires 120 cm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "120 cm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "120 cm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "120 cm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "120 cm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 120 cm as the requirement. Context: | 111.4 cm | | PH Female 95th% | 74.0 cm | 117.0 cm | **The original draft's \"12...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:13.054955+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:61be7e6b90676f315687e053a0c75c4521a46ab006d2aceda493ca7ba73df806"
+    },
+    {
+      "question_id": "079fa38d-5f90-469f-8c24-c793a8d35a6c",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "What is the C-value in auditorium sightline design, and what does a C-value of 120 mm specifically represent per Neufert's Architects' Data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C-value is the horizontal distance between seat rows; 120 mm is the minimum row depth for grandstand seating, ensuring adequate legroom"
+        },
+        {
+          "id": "B",
+          "text": "C-value is the cumulative riser height across all rows; 120 mm per row is the maximum permitted rise per Neufert, maintaining sightline clarity"
+        },
+        {
+          "id": "C",
+          "text": "C-value is the vertical sightline clearance above the head in front; 120 mm is the optimal standard for clear sight over heads"
+        },
+        {
+          "id": "D",
+          "text": "C-value is the seat-to-seat clearance; 120 mm is the minimum continental seating clear width, allowing for comfortable passage"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The C-value is the vertical clearance between a viewer's sightline and the eyes of the person in the row ahead. Neufert establishes 120 mm as the optimal standard.",
+        "explanation": "C = vertical distance (mm) between the sightline of a viewer and the eyes of the person directly in front. Quality levels: 60 mm = minimum (look between heads); 90 mm = acceptable; 120 mm = optimal (clear sight over heads); 150 mm = premium (hat clearance). For ALE exam purposes, 120 mm is the standard answer for 'optimal C-value.' Options A, C, and D all misdefine what C-value measures.",
+        "common_misconceptions": [
+          "Confusing C-value with row depth or aisle width measurements",
+          "Thinking C = 60 mm is the Neufert standard — 60 mm is the minimum, 120 mm is optimal"
+        ]
+      },
+      "explanation": "This question tests understanding of the C-value concept and its optimal standard from Neufert.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:54c2021b510dfc50f0e78ea1b2ce5ff78752ec96f119dd6a09f1eef7ae80f598"
+    },
+    {
+      "question_id": "ff959e84-39c4-4592-94a4-1c7a66efc9ef",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "PD 1096 Rule VII, Section 1207(m)(2) specifies a minimum seat width for indoor grandstands. What is this minimum, and what common wrong answer does the LEA exam use as a distractor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimum seat width is 400 mm — grandstand seats without backrests may be narrower than upholstered seats"
+        },
+        {
+          "id": "B",
+          "text": "Minimum seat width is 450 mm — the code applies to all indoor grandstand seats regardless of type"
+        },
+        {
+          "id": "C",
+          "text": "Minimum seat width is 480 mm — the upper limit of the grandstand range specified in Sec. 1207(n)(3.3)"
+        },
+        {
+          "id": "D",
+          "text": "Minimum seat width is 457 mm (18 inches) — derived from the US BIFMA standard adopted by PD 1096"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 1207(m)(2) states the minimum seat width is 450 mm for all indoor grandstand seating.",
+        "explanation": "PD 1096 Rule VII, Sec. 1207(m)(2) is explicit: 'The width of any seat shall be not less than 450 millimeters.' This applies universally regardless of seat type. The range 450–480 mm in Sec. 1207(n)(3.3) refers to grandstands specifically — with 450 mm as the floor, not 480 mm. Option A (400 mm) is the most common wrong answer on ALE. Option C confuses the maximum of the grandstand range for the minimum. Option D incorrectly applies the US BIFMA 18-inch (457 mm) standard to Philippine code.",
+        "common_misconceptions": [
+          "Citing 400 mm as the minimum — PD 1096 requires 450 mm for all seats",
+          "Using the 480 mm grandstand upper limit as the minimum requirement"
+        ]
+      },
+      "explanation": "This question tests recall of the PD 1096 minimum seat width requirement.",
+      "code_citation": "PD 1096 Rule VII, Sec. 1207(m)(2)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:42cc5b32752eaaca4a38e1a14122147b2fc8e93420030cfcecb6d944b7b6dcf3"
+    },
+    {
+      "question_id": "004cabb5-20e8-48e8-98c6-4308a3d7cc51",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "The article corrects the citation 'WS Pangborn' as the source for ergonomic furniture standards. What is the correct authoritative reference for human dimension data used in furniture ergonomics?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Neufert, Ernst — Architects' Data, which contains all furniture ergonomic dimension tables"
+        },
+        {
+          "id": "B",
+          "text": "WS Pangborn — Ergonomic Standards for Interior Furniture Design (1981, AIA Press)"
+        },
+        {
+          "id": "C",
+          "text": "Panero, Julius and Martin Zelnik — Human Dimension and Interior Space (1979, Whitney Library of Design)"
+        },
+        {
+          "id": "D",
+          "text": "Del Prado-Lu (2007) — this is the definitive international reference for furniture ergonomics globally"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The correct ergonomics reference for furniture dimensions is Panero & Zelnik, Human Dimension and Interior Space (1979) — not the fabricated 'WS Pangborn.'",
+        "explanation": "Julius Panero and Martin Zelnik authored Human Dimension and Interior Space (1979, Whitney Library of Design) — the definitive reference for anthropometric data applied to interior furniture and space design. 'WS Pangborn' is a fabricated citation that does not exist as an ergonomics authority; citing it in exam answers or professional documents is an error. Option C (Neufert) is authoritative for sightline C-values and construction dimensions but is not the primary furniture ergonomics human dimensions reference. Option D (Del Prado-Lu, 2007) is a Filipino manufacturing worker anthropometric study, not a global furniture ergonomics reference.",
+        "common_misconceptions": [
+          "Citing 'WS Pangborn' as an ergonomics authority — this source does not exist",
+          "Treating Neufert as the primary source for furniture human dimensions when it is primarily a construction reference"
+        ]
+      },
+      "explanation": "This question tests recall of the correct authoritative reference for human dimension data in furniture ergonomics.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8c402e12fe0fc7bf58bcac4e01c8e7b3ad4377a466b9bf85aaee86c7b50a1f65"
+    },
+    {
+      "question_id": "bf9b8430-9c2a-480b-ab69-6a6d35b7f97c",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "According to Del Prado-Lu (2007), what is the popliteal height of the Filipino femlea at the 5th percentile, and what does this imply for seat height design in Philippine schools and offices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Filipino female 5th% popliteal height = 36.0 cm; Philippine seat heights should target a lower bound of 36–38 cm to prevent feet from dangling in shorter users"
+        },
+        {
+          "id": "B",
+          "text": "Filipino female 5th% popliteal height = 40.3 cm; this is the mean value and should serve as the design minimum, ensuring comfort for most users"
+        },
+        {
+          "id": "C",
+          "text": "Filipino female 5th% popliteal height = 35.1 cm; this matches the US female 5th% value and validates using BIFMA standards in the Philippines, which are internationally recognized"
+        },
+        {
+          "id": "D",
+          "text": "Filipino female 5th% popliteal height = 44.0 cm; seats at 43 cm will be slightly low but acceptable for most users, providing a balance between comfort and practicality"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Per Del Prado-Lu (2007), Filipino female 5th percentile popliteal height is 36.0 cm, establishing the lower bound for seat height in inclusive Philippine design.",
+        "explanation": "The popliteal height data from Del Prado-Lu (2007): PH Female 5th% = 36.0 cm; PH Female Mean = 40.3 cm; PH Female 95th% = 44.0 cm. Since ideal seat height = popliteal height ± 2 cm, the lower design bound for Filipino-inclusive seating is approximately 36–38 cm. The US BIFMA range starts at 43.2 cm (17 in) — appropriate for US users but too high for the shortest Filipino women. Option B cites the mean, not the 5th percentile. Option C cites the US female 5th% (35.1 cm), not the Filipino value. Option D cites the female 95th% as if it were the 5th%.",
+        "common_misconceptions": [
+          "Conflating Filipino female mean popliteal height (40.3 cm) with the 5th percentile (36.0 cm)",
+          "Assuming BIFMA's 43.2 cm lower bound is appropriate for the full range of Filipino women"
+        ]
+      },
+      "explanation": "This question tests application of Filipino popliteal height data to seat height selection.",
+      "code_citation": "Del Prado-Lu (2007); PD 1096 Rule VII",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c3012b3c2c2498451d145d47793623482cb6e7165c9c18ad1f4bc8b450cddc9e"
+    },
+    {
+      "question_id": "01cbb37d-5e78-4d45-afe7-f6d980d420d3",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "An architect designing a 500-seat auditorium selects a C-value of 60 mm to pack more rows into a fixed floor area. A reviewer objects. Which description of the consequence is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C = 60 mm is the Neufert optimal standard; the design is acceptable for all rows beyond the first two"
+        },
+        {
+          "id": "B",
+          "text": "C = 60 mm is acceptable only for the rear rows where distance to the stage compensates for reduced clearance"
+        },
+        {
+          "id": "C",
+          "text": "C = 60 mm violates PD 1096 Sec. 1207 which mandates a minimum C-value of 120 mm for all assembly seating"
+        },
+        {
+          "id": "D",
+          "text": "C = 60 mm requires viewers to look between the heads of those in front, producing discomfort for all rows beyond the first throughout the auditorium"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "C = 60 mm is the minimum threshold — viewers must look between heads of the person in front, producing poor sightline quality throughout the venue.",
+        "explanation": "Per Neufert's C-value scale: 60 mm = 'Craning' (minimum — look between heads); 90 mm = 'Comfortable'; 120 mm = 'Clear' (optimal ALE answer); 150 mm = 'Crowned' (hat clearance). Choosing C = 60 mm maximizes row count but produces chronic viewer discomfort and neck strain throughout the venue. Option A incorrectly identifies 60 mm as the optimal. Option C is a distractor — PD 1096 does not numerically specify a C-value; the 120 mm standard comes from Neufert professional practice. Option D has no basis in sightline design standards.",
+        "common_misconceptions": [
+          "Believing C = 60 mm is the 'standard' rather than the uncomfortable minimum",
+          "Thinking PD 1096 explicitly codifies a minimum C-value number — it does not"
+        ]
+      },
+      "explanation": "This question tests analysis of C-value quality levels and the consequence of selecting the minimum threshold.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8abff14283a2b3dbc8b7b7aeb2c2517fd7bbea136cfc421213c829693cb53e5f"
+    },
+    {
+      "question_id": "d32c4fd1-1663-4827-a0f3-68cb548dcdc3",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "The EPV Hierarchy (E → P → V) describes the relationship between ergonomics, posture, and viewing in auditorium seating design. Which sequence correctly describes the cascade of failures when seat height is too high?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bad ergonomics (seat too high) → bad posture (user perches forward) → bad viewing (head position disrupts sightline calculations)"
+        },
+        {
+          "id": "B",
+          "text": "Bad viewing (C-value fails) → bad posture (user leans forward) → bad ergonomics (seat too high), which is a common issue in poorly designed auditoriums"
+        },
+        {
+          "id": "C",
+          "text": "Bad posture (user cannot sit upright) → bad ergonomics (seat causes thigh pressure) → bad viewing (eyes drop below sightline), which affects user comfort"
+        },
+        {
+          "id": "D",
+          "text": "The three elements are independent; a seat height error affects ergonomics only, not posture or sightlines, which is a misconception"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The EPV cascade flows from Ergonomics → Posture → Viewing: a seat too high causes perching forward, which unpredictably raises the head and disrupts sightline calculations.",
+        "explanation": "The EPV Hierarchy is a cascade: Ergonomics (furniture fits the body) enables correct Posture (spine supported) which enables clear Viewing (sightlines unobstructed). When a seat is too high, the user's feet dangle and they perch forward (bad ergonomics → bad posture). This forward perch raises the head in unpredictable ways, disrupting the sightline geometry that the architect calculated assuming a standardized seated eye height (bad posture → bad viewing). Option A reverses the cascade. Option C starts from posture. Option D incorrectly claims independence between the three elements.",
+        "common_misconceptions": [
+          "Thinking sightline errors are purely a geometry issue independent of furniture ergonomics",
+          "Reversing the cascade — sightline problems cause ergonomic problems rather than vice versa"
+        ]
+      },
+      "explanation": "This question tests understanding of the EPV cascade and how ergonomic failures propagate to sightline design.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:013ec4841efcbf57071015135408af75e70c5315468600f4aaf3fdbe145e160b"
+    },
+    {
+      "question_id": "3916b123-7015-4082-82d8-e6380df46257",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A US-manufactured office chair with a fixed seat height of 45 cm is specified for a Filipino elementary school classroom. What is the primary ergonomic concern, and which data point justifies rejection?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The chair violates BP 344 accessible seating requirements, which limit fixed school chairs to 40 cm maximum height, ensuring accessibility for all students"
+        },
+        {
+          "id": "B",
+          "text": "The 45 cm seat exceeds the popliteal height of many Filipino girls; the Filipino female 5th percentile popliteal height is 36.0 cm, making 45 cm grossly too high for shorter students"
+        },
+        {
+          "id": "C",
+          "text": "The chair uses BIFMA imperial measurements and cannot be used in metric-standard Philippine schools without conversion documentation, which is often unavailable"
+        },
+        {
+          "id": "D",
+          "text": "A 45 cm seat height is appropriate for Filipino adult office workers but inappropriate only for elementary children under 5 years old, who require lower seating"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The ergonomic rejection basis is the popliteal height mismatch: Filipino female 5th% popliteal = 36.0 cm; a 45 cm seat leaves the shortest students' feet dangling.",
+        "explanation": "The popliteal rule states: ideal seat height = popliteal height ± 2 cm. Filipino female adult 5th percentile popliteal height = 36.0 cm (Del Prado-Lu, 2007). Elementary school girls of ages 6–10 would have even shorter popliteal heights. A 45 cm fixed seat would leave many students' feet entirely off the ground, causing thigh-edge compression, poor posture, and circulatory restriction. Option A fabricates a BP 344 provision — no such 40 cm maximum for school chairs exists. Option C makes the error about measurement units rather than ergonomics. Option D understates the problem age range.",
+        "common_misconceptions": [
+          "Framing the issue as a code violation rather than an ergonomic (popliteal) mismatch",
+          "Assuming the US BIFMA minimum of 43.2 cm is appropriate for the full Filipino female population"
+        ]
+      },
+      "explanation": "This question tests application of the popliteal height rule to a Philippine school seating scenario.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d6e72c281746c9a6bb683563bfd5afc8d52c5f8a623a772f7cf83defb5e4a880"
+    },
+    {
+      "question_id": "ea637b74-7ebb-493d-8bf3-a6e7de90e650",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "PD 1096 Rule VII specifies different minimum row spacing requirements depending on grandstand seat type. What is the minimum back-to-back row spacing for standard indoor grandstand seating with chair seats?",
+      "options": [
+        {
+          "id": "A",
+          "text": "600 mm — the minimum for open-air grandstand seating without backrests"
+        },
+        {
+          "id": "B",
+          "text": "750 mm — the minimum for grandstand seats with backrests (non-chair)"
+        },
+        {
+          "id": "C",
+          "text": "840 mm — the standard row spacing for general indoor seating back-to-back"
+        },
+        {
+          "id": "D",
+          "text": "850 mm — the minimum for grandstand chair seating per Sec. 1207(n)(3.1)"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 1207(n)(3.1) specifies 850 mm minimum row spacing for grandstand chair seating specifically.",
+        "explanation": "PD 1096 Sec. 1207(n)(3.1) provides three tiers of grandstand row spacing: 600 mm for seats without backrests (open air); 750 mm for seats with backrests (non-chair); 850 mm for chair seating. The 840 mm figure in Option C applies to standard general indoor seating (Sec. 1207(m)(1)), not grandstand chair seating. A common exam error is applying the general 840 mm figure to grandstand chairs. The grandstand chair minimum is higher at 850 mm.",
+        "common_misconceptions": [
+          "Applying the general seating row spacing (840 mm) to grandstand chair seating (850 mm)",
+          "Confusing the open-air no-backrest minimum (600 mm) with the chair seating minimum (850 mm)"
+        ]
+      },
+      "explanation": "This question tests recall of PD 1096 grandstand row spacing requirements by seat type.",
+      "code_citation": "PD 1096 Rule VII, Sec. 1207(n)(3.1)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:391418e7b6782cc67fc1f07a78bab19739ea59de63013a0b756430a6adc2f2a8"
+    },
+    {
+      "question_id": "8f937185-056e-4c45-989c-23c43ad50f20",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A 600-seat indoor grandstand in Pasay City specifies a seat width of 430 mm to maximize seating capacity. A plan reviewer flags this. Which statement most accurately identifies the violation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "430 mm violates BP 344 accessible seating requirements, which mandate a minimum 450 mm width for wheelchair-adjacent seats"
+        },
+        {
+          "id": "B",
+          "text": "430 mm violates PD 1096 Rule VII, Sec. 1207(m)(2), which requires a minimum seat width of 450 mm regardless of seat type"
+        },
+        {
+          "id": "C",
+          "text": "430 mm violates BIFMA standards (minimum 457 mm / 18 inches) which apply to all Philippine seating installations"
+        },
+        {
+          "id": "D",
+          "text": "430 mm is compliant for grandstand seating without backrests but non-compliant for upholstered seats only"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 1207(m)(2) mandates a minimum seat width of 450 mm for all indoor grandstand seating; 430 mm violates this Philippine code provision.",
+        "explanation": "PD 1096 Rule VII, Sec. 1207(m)(2): 'The width of any seat shall be not less than 450 millimeters.' At 430 mm, the specification is 20 mm below the Philippine code minimum. This violation is under the Philippine National Building Code, not BP 344 or BIFMA. Option A is a distractor — BP 344 governs accessible routes and clearances, not general auditorium seat widths. Option C incorrectly applies the US BIFMA standard as Philippine law. Option D is fabricated — the 450 mm minimum applies to all seat types.",
+        "common_misconceptions": [
+          "Attributing the seat width violation to BP 344 rather than PD 1096",
+          "Applying the US BIFMA standard as if it were binding in Philippine construction"
+        ]
+      },
+      "explanation": "This question tests application of PD 1096 seat width requirements to a grandstand design scenario.",
+      "code_citation": "PD 1096 Rule VII, Sec. 1207(m)(2)",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:616c0e3f7ea7242092bb3fb04917be43a7e738111ea39ae8bf7b196d062cd82e"
+    },
+    {
+      "question_id": "eb102a7b-e7f6-4d6d-a1fe-38cf6428af99",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "Filipino mlea mean seated eye height above the seat pan is 73.4 cm (Del Prado-Lu, 2007). With an assumed seat height of 43 cm, a sightline calculation for a Manila auditorium should use which value as the 'obstructing head height' above the floor for worst-case planning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "123.0 cm — Filipino male 95th percentile seated eye height above the floor (43 + 80.0)"
+        },
+        {
+          "id": "B",
+          "text": "116.4 cm — Filipino male mean seated eye height above the floor (43 + 73.4)"
+        },
+        {
+          "id": "C",
+          "text": "120.0 cm — the industry-average eye height used as a universal standard for all auditorium design"
+        },
+        {
+          "id": "D",
+          "text": "142.0 cm — the US male 95th percentile seated eye height (seat 45 cm + seated eye 97 cm)"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Worst-case sightline planning uses the 95th percentile obstructing head height — Filipino male 95th% seated eye above seat (80 cm) + seat height (43 cm) = 123 cm from floor.",
+        "explanation": "For a sightline calculation, the 'obstructing head' is the tallest likely viewer in the row ahead — the 95th percentile. Filipino male 95th% seated eye height above seat = 80.0 cm (Del Prado-Lu, 2007). Add seat height of 43 cm → floor-to-eye = 123.0 cm. Designing to 123 cm ensures that C ≥ 120 mm is maintained even over the tallest 5% of Filipino male heads. Option A uses the mean (not worst case). Option C uses the unattributed '120 cm' figure that the article explicitly flags as incorrect for Filipino audiences. Option D uses US data, which overestimates Filipino seated eye height by ~19 cm.",
+        "common_misconceptions": [
+          "Using the mean seated eye height (116.4 cm) instead of the 95th percentile (123 cm) for worst-case sightline planning",
+          "Using the uncited '120 cm average' figure that the article identifies as factually inaccurate for Filipino audiences"
+        ]
+      },
+      "explanation": "This question tests evaluation of which anthropometric data point is most appropriate for conservative sightline design in a Filipino auditorium.",
+      "code_citation": null,
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:58.849065+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:65ad91f01c739d8c85685b1916e2cd44379ecb005f01440638c747d117ee72c7"
+    },
+    {
+      "question_id": "88a58cea-7308-4278-9a5f-85b68a72ba62",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A 600-seat indoor grandstand in Pasay City specifies a seat width of 430 mm to maximize seating capacity. A plan reviewer flags this. Which statement most accurately identifies the violation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "430 mm violates BP 344 accessible seating requirements, which mandate a minimum 450 mm width for wheelchair-adjacent seats"
+        },
+        {
+          "id": "B",
+          "text": "430 mm violates PD 1096 Rule VII, Sec. 1207(m)(2), which requires a minimum seat width of 450 mm regardless of seat type"
+        },
+        {
+          "id": "C",
+          "text": "430 mm violates BIFMA standards (minimum 457 mm / 18 inches) which apply to all Philippine seating installations"
+        },
+        {
+          "id": "D",
+          "text": "430 mm is compliant for grandstand seating without backrests but non-compliant for upholstered seats only"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 1207(m)(2) mandates a minimum seat width of 450 mm for all indoor grandstand seating; 430 mm violates this Philippine code provision.",
+        "explanation": "PD 1096 Rule VII, Sec. 1207(m)(2): 'The width of any seat shall be not less than 450 millimeters.' At 430 mm, the specification is 20 mm below the Philippine code minimum. This violation is under the Philippine National Building Code, not BP 344 or BIFMA. Option A is a distractor — BP 344 governs accessible routes and clearances, not general auditorium seat widths. Option C incorrectly applies the US BIFMA standard as Philippine law. Option D is fabricated — the 450 mm minimum applies to all seat types.",
+        "common_misconceptions": [
+          "Attributing the seat width violation to BP 344 rather than PD 1096",
+          "Applying the US BIFMA standard as if it were binding in Philippine construction"
+        ]
+      },
+      "explanation": "This question tests application of PD 1096 seat width requirements to a grandstand design scenario.",
+      "code_citation": "PD 1096 Rule VII, Sec. 1207(m)(2)",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ef5fbf28033db3997e9b38734186fb9aab5bb98bbb8bc5698e57a3a03d073fbd"
+    },
+    {
+      "question_id": "e270ddc3-807d-49ae-95f0-4f7f3fa8a1c9",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "Filipino mlea mean seated eye height above the seat pan is 73.4 cm (Del Prado-Lu, 2007). With an assumed seat height of 43 cm, a sightline calculation for a Manila auditorium should use which value as the 'obstructing head height' above the floor for worst-case planning?",
+      "options": [
+        {
+          "id": "A",
+          "text": "123.0 cm — Filipino male 95th percentile seated eye height above the floor (43 + 80.0)"
+        },
+        {
+          "id": "B",
+          "text": "116.4 cm — Filipino male mean seated eye height above the floor (43 + 73.4)"
+        },
+        {
+          "id": "C",
+          "text": "120.0 cm — the industry-average eye height used as a universal standard for all auditorium design"
+        },
+        {
+          "id": "D",
+          "text": "142.0 cm — the US male 95th percentile seated eye height (seat 45 cm + seated eye 97 cm)"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Worst-case sightline planning uses the 95th percentile obstructing head height — Filipino male 95th% seated eye above seat (80 cm) + seat height (43 cm) = 123 cm from floor.",
+        "explanation": "For a sightline calculation, the 'obstructing head' is the tallest likely viewer in the row ahead — the 95th percentile. Filipino male 95th% seated eye height above seat = 80.0 cm (Del Prado-Lu, 2007). Add seat height of 43 cm → floor-to-eye = 123.0 cm. Designing to 123 cm ensures that C ≥ 120 mm is maintained even over the tallest 5% of Filipino male heads. Option A uses the mean (not worst case). Option C uses the unattributed '120 cm' figure that the article explicitly flags as incorrect for Filipino audiences. Option D uses US data, which overestimates Filipino seated eye height by ~19 cm.",
+        "common_misconceptions": [
+          "Using the mean seated eye height (116.4 cm) instead of the 95th percentile (123 cm) for worst-case sightline planning",
+          "Using the uncited '120 cm average' figure that the article identifies as factually inaccurate for Filipino audiences"
+        ]
+      },
+      "explanation": "This question tests evaluation of which anthropometric data point is most appropriate for conservative sightline design in a Filipino auditorium.",
+      "code_citation": null,
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b6120a47dbb2efd6531023bc660abf09a4bf6e6123b9525595ea35726581d3cb"
+    },
+    {
+      "question_id": "7f51fc25-590d-407a-bf31-a25d0d39b5b3",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "The EPV Hierarchy (E → P → V) describes the relationship between ergonomics, posture, and viewing in auditorium seating design. Which sequence correctly describes the cascade of failures when seat height is too high?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Bad ergonomics (seat too high) → bad posture (user perches forward) → bad viewing (head position disrupts sightline calculations)"
+        },
+        {
+          "id": "B",
+          "text": "Bad viewing (C-value fails) → bad posture (user leans forward) → bad ergonomics (seat too high); the cascade begins with visual discomfort"
+        },
+        {
+          "id": "C",
+          "text": "Bad posture (user cannot sit upright) → bad ergonomics (seat causes thigh pressure) → bad viewing (eyes drop below sightline); posture initiates the cascade"
+        },
+        {
+          "id": "D",
+          "text": "The three elements are independent; a seat height error affects ergonomics only, not posture or sightlines, because each is designed separately"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The EPV cascade flows from Ergonomics → Posture → Viewing: a seat too high causes perching forward, which unpredictably raises the head and disrupts sightline calculations.",
+        "explanation": "The EPV Hierarchy is a cascade: Ergonomics (furniture fits the body) enables correct Posture (spine supported) which enables clear Viewing (sightlines unobstructed). When a seat is too high, the user's feet dangle and they perch forward (bad ergonomics → bad posture). This forward perch raises the head in unpredictable ways, disrupting the sightline geometry that the architect calculated assuming a standardized seated eye height (bad posture → bad viewing). Option A reverses the cascade. Option C starts from posture. Option D incorrectly claims independence between the three elements.",
+        "common_misconceptions": [
+          "Thinking sightline errors are purely a geometry issue independent of furniture ergonomics",
+          "Reversing the cascade — sightline problems cause ergonomic problems rather than vice versa"
+        ]
+      },
+      "explanation": "This question tests understanding of the EPV cascade and how ergonomic failures propagate to sightline design.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0746ca9839312ea98bf574ba3bef3107a25b28911d24d80fce192bb5657e22f3"
+    },
+    {
+      "question_id": "624cd388-ea2e-419b-bed7-261b5b81c255",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "PD 1096 Rule VII, Section 1207(m)(2) specifies a minimum seat width for indoor grandstands. What is this minimum, and what common wrong answer does the LEA exam use as a distractor?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Minimum seat width is 400 mm — grandstand seats without backrests may be narrower than upholstered seats"
+        },
+        {
+          "id": "B",
+          "text": "Minimum seat width is 450 mm — the code applies to all indoor grandstand seats regardless of type"
+        },
+        {
+          "id": "C",
+          "text": "Minimum seat width is 480 mm — the upper limit of the grandstand range specified in Sec. 1207(n)(3.3)"
+        },
+        {
+          "id": "D",
+          "text": "Minimum seat width is 457 mm (18 inches) — derived from the US BIFMA standard adopted by PD 1096"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 1207(m)(2) states the minimum seat width is 450 mm for all indoor grandstand seating.",
+        "explanation": "PD 1096 Rule VII, Sec. 1207(m)(2) is explicit: 'The width of any seat shall be not less than 450 millimeters.' This applies universally regardless of seat type. The range 450–480 mm in Sec. 1207(n)(3.3) refers to grandstands specifically — with 450 mm as the floor, not 480 mm. Option A (400 mm) is the most common wrong answer on ALE. Option C confuses the maximum of the grandstand range for the minimum. Option D incorrectly applies the US BIFMA 18-inch (457 mm) standard to Philippine code.",
+        "common_misconceptions": [
+          "Citing 400 mm as the minimum — PD 1096 requires 450 mm for all seats",
+          "Using the 480 mm grandstand upper limit as the minimum requirement"
+        ]
+      },
+      "explanation": "This question tests recall of the PD 1096 minimum seat width requirement.",
+      "code_citation": "PD 1096 Rule VII, Sec. 1207(m)(2)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:38d8c4c3299ed04c82d1e5222d7a4bfa432077dcf95b3736af373d68c30f8eaa"
+    },
+    {
+      "question_id": "fcae9ada-ebf2-466b-8b25-574e2cd106f0",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "What is the C-value in auditorium sightline design, and what does a C-value of 120 mm specifically represent per Neufert's Architects' Data?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C-value is the horizontal distance between seat rows; 120 mm is the minimum row depth for grandstand seating, ensuring adequate legroom"
+        },
+        {
+          "id": "B",
+          "text": "C-value is the cumulative riser height across all rows; 120 mm per row is the maximum permitted rise per Neufert, maintaining visibility"
+        },
+        {
+          "id": "C",
+          "text": "C-value is the vertical sightline clearance above the head in front; 120 mm is the optimal standard for clear sight over heads"
+        },
+        {
+          "id": "D",
+          "text": "C-value is the seat-to-seat clearance; 120 mm is the minimum continental seating clear width, allowing for comfortable passage"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The C-value is the vertical clearance between a viewer's sightline and the eyes of the person in the row ahead. Neufert establishes 120 mm as the optimal standard.",
+        "explanation": "C = vertical distance (mm) between the sightline of a viewer and the eyes of the person directly in front. Quality levels: 60 mm = minimum (look between heads); 90 mm = acceptable; 120 mm = optimal (clear sight over heads); 150 mm = premium (hat clearance). For ALE exam purposes, 120 mm is the standard answer for 'optimal C-value.' Options A, C, and D all misdefine what C-value measures.",
+        "common_misconceptions": [
+          "Confusing C-value with row depth or aisle width measurements",
+          "Thinking C = 60 mm is the Neufert standard — 60 mm is the minimum, 120 mm is optimal"
+        ]
+      },
+      "explanation": "This question tests understanding of the C-value concept and its optimal standard from Neufert.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:18c1bb3a1dc181f0a6ab02c10a8a443e4af527c1f2dc5589d5a76dce2738fc27"
+    },
+    {
+      "question_id": "f013f91a-a77a-4457-837e-fea6323edb0e",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A US-manufactured office chair with a fixed seat height of 45 cm is specified for a Filipino elementary school classroom. What is the primary ergonomic concern, and which data point justifies rejection?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The chair violates BP 344 accessible seating requirements, which limit fixed school chairs to 40 cm maximum height, ensuring accessibility for all students"
+        },
+        {
+          "id": "B",
+          "text": "The 45 cm seat exceeds the popliteal height of many Filipino girls; the Filipino female 5th percentile popliteal height is 36.0 cm, making 45 cm grossly too high for shorter students"
+        },
+        {
+          "id": "C",
+          "text": "The chair uses BIFMA imperial measurements and cannot be used in metric-standard Philippine schools without conversion documentation, which complicates compliance"
+        },
+        {
+          "id": "D",
+          "text": "A 45 cm seat height is appropriate for Filipino adult office workers but inappropriate only for elementary children under 5 years old, which is a significant oversight"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The ergonomic rejection basis is the popliteal height mismatch: Filipino female 5th% popliteal = 36.0 cm; a 45 cm seat leaves the shortest students' feet dangling.",
+        "explanation": "The popliteal rule states: ideal seat height = popliteal height ± 2 cm. Filipino female adult 5th percentile popliteal height = 36.0 cm (Del Prado-Lu, 2007). Elementary school girls of ages 6–10 would have even shorter popliteal heights. A 45 cm fixed seat would leave many students' feet entirely off the ground, causing thigh-edge compression, poor posture, and circulatory restriction. Option A fabricates a BP 344 provision — no such 40 cm maximum for school chairs exists. Option C makes the error about measurement units rather than ergonomics. Option D understates the problem age range.",
+        "common_misconceptions": [
+          "Framing the issue as a code violation rather than an ergonomic (popliteal) mismatch",
+          "Assuming the US BIFMA minimum of 43.2 cm is appropriate for the full Filipino female population"
+        ]
+      },
+      "explanation": "This question tests application of the popliteal height rule to a Philippine school seating scenario.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:614b3705bd0e8fb3f1fc000e6fcf080c391a7807f687f11f70777394cfbb8dba"
+    },
+    {
+      "question_id": "2a9b516f-797a-4cbd-9b64-112b15ae24a4",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "According to Del Prado-Lu (2007), what is the popliteal height of the Filipino femlea at the 5th percentile, and what does this imply for seat height design in Philippine schools and offices?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Filipino female 5th% popliteal height = 36.0 cm; Philippine seat heights should target a lower bound of 36–38 cm to prevent feet from dangling in shorter users"
+        },
+        {
+          "id": "B",
+          "text": "Filipino female 5th% popliteal height = 40.3 cm; this is the mean value and should serve as the design minimum, ensuring comfort for the majority"
+        },
+        {
+          "id": "C",
+          "text": "Filipino female 5th% popliteal height = 35.1 cm; this matches the US female 5th% value and validates using BIFMA standards in the Philippines, though local adaptation may be necessary"
+        },
+        {
+          "id": "D",
+          "text": "Filipino female 5th% popliteal height = 44.0 cm; seats at 43 cm will be slightly low but acceptable for most users, though adjustments may be needed for specific populations"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Per Del Prado-Lu (2007), Filipino female 5th percentile popliteal height is 36.0 cm, establishing the lower bound for seat height in inclusive Philippine design.",
+        "explanation": "The popliteal height data from Del Prado-Lu (2007): PH Female 5th% = 36.0 cm; PH Female Mean = 40.3 cm; PH Female 95th% = 44.0 cm. Since ideal seat height = popliteal height ± 2 cm, the lower design bound for Filipino-inclusive seating is approximately 36–38 cm. The US BIFMA range starts at 43.2 cm (17 in) — appropriate for US users but too high for the shortest Filipino women. Option B cites the mean, not the 5th percentile. Option C cites the US female 5th% (35.1 cm), not the Filipino value. Option D cites the female 95th% as if it were the 5th%.",
+        "common_misconceptions": [
+          "Conflating Filipino female mean popliteal height (40.3 cm) with the 5th percentile (36.0 cm)",
+          "Assuming BIFMA's 43.2 cm lower bound is appropriate for the full range of Filipino women"
+        ]
+      },
+      "explanation": "This question tests application of Filipino popliteal height data to seat height selection.",
+      "code_citation": "Del Prado-Lu (2007); PD 1096 Rule VII",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e24f7928e75c8b096ad6dd43379de8fc10ee3cb6dc5a2590ca2f53dc6237471a"
+    },
+    {
+      "question_id": "05d6c9f7-ddb2-4691-b6bd-6f2b4ae2a889",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "An architect designing a 500-seat auditorium selects a C-value of 60 mm to pack more rows into a fixed floor area. A reviewer objects. Which description of the consequence is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "C = 60 mm is the Neufert optimal standard; the design is acceptable for all rows beyond the first two, provided sightlines are maintained"
+        },
+        {
+          "id": "B",
+          "text": "C = 60 mm is acceptable only for the rear rows where distance to the stage compensates for reduced clearance, ensuring minimal disruption"
+        },
+        {
+          "id": "C",
+          "text": "C = 60 mm violates PD 1096 Sec. 1207 which mandates a minimum C-value of 120 mm for all assembly seating"
+        },
+        {
+          "id": "D",
+          "text": "C = 60 mm requires viewers to look between the heads of those in front, producing discomfort for all rows beyond the first throughout the auditorium"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "C = 60 mm is the minimum threshold — viewers must look between heads of the person in front, producing poor sightline quality throughout the venue.",
+        "explanation": "Per Neufert's C-value scale: 60 mm = 'Craning' (minimum — look between heads); 90 mm = 'Comfortable'; 120 mm = 'Clear' (optimal ALE answer); 150 mm = 'Crowned' (hat clearance). Choosing C = 60 mm maximizes row count but produces chronic viewer discomfort and neck strain throughout the venue. Option A incorrectly identifies 60 mm as the optimal. Option C is a distractor — PD 1096 does not numerically specify a C-value; the 120 mm standard comes from Neufert professional practice. Option D has no basis in sightline design standards.",
+        "common_misconceptions": [
+          "Believing C = 60 mm is the 'standard' rather than the uncomfortable minimum",
+          "Thinking PD 1096 explicitly codifies a minimum C-value number — it does not"
+        ]
+      },
+      "explanation": "This question tests analysis of C-value quality levels and the consequence of selecting the minimum threshold.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:df08f08303e56abbd7dc9985ecf7edc83f2c192de827a7f2d064daf92385841a"
+    },
+    {
+      "question_id": "28a39dc7-0f3e-4b13-b50e-87aabcac188a",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "PD 1096 Rule VII specifies different minimum row spacing requirements depending on grandstand seat type. What is the minimum back-to-back row spacing for standard indoor grandstand seating with chair seats?",
+      "options": [
+        {
+          "id": "A",
+          "text": "600 mm — the minimum for open-air grandstand seating without backrests"
+        },
+        {
+          "id": "B",
+          "text": "750 mm — the minimum for grandstand seats with backrests (non-chair)"
+        },
+        {
+          "id": "C",
+          "text": "840 mm — the standard row spacing for general indoor seating back-to-back"
+        },
+        {
+          "id": "D",
+          "text": "850 mm — the minimum for grandstand chair seating per Sec. 1207(n)(3.1)"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 1207(n)(3.1) specifies 850 mm minimum row spacing for grandstand chair seating specifically.",
+        "explanation": "PD 1096 Sec. 1207(n)(3.1) provides three tiers of grandstand row spacing: 600 mm for seats without backrests (open air); 750 mm for seats with backrests (non-chair); 850 mm for chair seating. The 840 mm figure in Option C applies to standard general indoor seating (Sec. 1207(m)(1)), not grandstand chair seating. A common exam error is applying the general 840 mm figure to grandstand chairs. The grandstand chair minimum is higher at 850 mm.",
+        "common_misconceptions": [
+          "Applying the general seating row spacing (840 mm) to grandstand chair seating (850 mm)",
+          "Confusing the open-air no-backrest minimum (600 mm) with the chair seating minimum (850 mm)"
+        ]
+      },
+      "explanation": "This question tests recall of PD 1096 grandstand row spacing requirements by seat type.",
+      "code_citation": "PD 1096 Rule VII, Sec. 1207(n)(3.1)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:90fd30562c8f853a6a404aa539fea8d9841b259fdfe03e127d4dbcf712692220"
+    },
+    {
+      "question_id": "cb1a9ad9-c71b-49f1-b8ad-4cd71bb78dd9",
+      "article_id": "691cf42d-0f6c-4686-b3d0-9a3bbd99da23",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "The article corrects the citation 'WS Pangborn' as the source for ergonomic furniture standards. What is the correct authoritative reference for human dimension data used in furniture ergonomics?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Neufert, Ernst — Architects' Data, which contains all furniture ergonomic dimension tables"
+        },
+        {
+          "id": "B",
+          "text": "WS Pangborn — Ergonomic Standards for Interior Furniture Design (1981, AIA Press)"
+        },
+        {
+          "id": "C",
+          "text": "Panero, Julius and Martin Zelnik — Human Dimension and Interior Space (1979, Whitney Library of Design)"
+        },
+        {
+          "id": "D",
+          "text": "Del Prado-Lu (2007) — this is the definitive international reference for furniture ergonomics globally"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The correct ergonomics reference for furniture dimensions is Panero & Zelnik, Human Dimension and Interior Space (1979) — not the fabricated 'WS Pangborn.'",
+        "explanation": "Julius Panero and Martin Zelnik authored Human Dimension and Interior Space (1979, Whitney Library of Design) — the definitive reference for anthropometric data applied to interior furniture and space design. 'WS Pangborn' is a fabricated citation that does not exist as an ergonomics authority; citing it in exam answers or professional documents is an error. Option C (Neufert) is authoritative for sightline C-values and construction dimensions but is not the primary furniture ergonomics human dimensions reference. Option D (Del Prado-Lu, 2007) is a Filipino manufacturing worker anthropometric study, not a global furniture ergonomics reference.",
+        "common_misconceptions": [
+          "Citing 'WS Pangborn' as an ergonomics authority — this source does not exist",
+          "Treating Neufert as the primary source for furniture human dimensions when it is primarily a construction reference"
+        ]
+      },
+      "explanation": "This question tests recall of the correct authoritative reference for human dimension data in furniture ergonomics.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.684271+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c11a0a59702761aeb11853f67e5ba6843a369a0ec763a9474ee8a2ca3f2a4be0"
+    }
+  ]
+}

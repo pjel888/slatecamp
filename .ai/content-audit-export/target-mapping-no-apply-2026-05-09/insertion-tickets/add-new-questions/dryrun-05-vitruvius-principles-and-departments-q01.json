@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-05-vitruvius-principles-and-departments",
+  "dry_question_id": "dryrun-05-vitruvius-principles-and-departments-q01",
+  "target_article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "Book I Chapter II principle-list distinction is not directly covered by existing triad-focused questions.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF pp.33-36.",
+    "text": "Which set belongs to Vitruvius's fundamental principles of architecture in Book I, Chapter II?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Book I, Chapter II in the Morris Hicky Morgan translation lists Order, Arrangement, Eurythmy, Symmetry, Propriety, and Economy as the principles on which architecture depends.",
+      "distractors": {
+        "A": "That is the departments list from Chapter III.",
+        "C": "This is a common Vitruvian memory, but it is not the Chapter II list in the cited passage.",
+        "D": "This is a modern services sequence, not the cited Vitruvian list."
+      },
+      "takeaway": "Match the question prompt category before choosing the memorized list."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "vitruvius-principles-q1",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "B",
+    "explanation": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF pp.33-36.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "Building, time-pieces, machinery"
+      },
+      {
+        "id": "B",
+        "text": "Order, Arrangement, Eurythmy, Symmetry, Propriety, Economy"
+      },
+      {
+        "id": "C",
+        "text": "Commodity, firmness, delight only"
+      },
+      {
+        "id": "D",
+        "text": "Planning, design, construction, post-construction"
+      }
+    ]
+  },
+  "sme_source_locator": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF pp.33-36.",
+  "code_citation": "Vitruvius, The Ten Books on Architecture, trans. Morris Hicky Morgan, Book I, Chapter II, PDF pp.33-36.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

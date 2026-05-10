@@ -1,0 +1,508 @@
+{
+  "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:38f4e953b61b66be5bf7fec2990264ac13702d67b2c38889c8ddb0af3a2308f0",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "14b715aa-e644-44d4-93ac-95e07300a9de",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "An architect discovers that during design development, the client needs 15% more total space than originally programmed. Which approach best reflects SPP 201 guidance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Proceed with design without modification and absorb the additional work, which may lead to scope creep and unanticipated costs"
+        },
+        {
+          "id": "b",
+          "text": "Stop work entirely until original program is restored, which can cause delays and contractual disputes"
+        },
+        {
+          "id": "c",
+          "text": "Document the program change, reconcile impact on scope and fees, and obtain client approval"
+        },
+        {
+          "id": "d",
+          "text": "Complete the original design and address scope change in construction, potentially leading to inefficiencies and increased costs"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Absorbing changes without fee adjustment exposes the architect to financial loss.",
+        "b": "Reasonable client requests should be accommodated with proper documentation.",
+        "d": "Design must be current; scope issues resolved during design, not construction.",
+        "correct": "SPP 201 requires that program changes be documented and reconciled with the original scope, protecting both the architect's fee calculation and the client's expectations (SPP Doc 201).",
+        "takeaway": "Document and reconcile program changes to manage scope and fees."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1170cf504cff2fb272abb1f6a94cddb52fb97778d36ff537234758fdb5a347c4"
+    },
+    {
+      "question_id": "d370d03d-2eff-402b-9b34-d89aed64ca86",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "During design development and contract documents phases, program changes occur. How should these be handled according to SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Program changes are made without documentation, which can lead to disputes"
+        },
+        {
+          "id": "b",
+          "text": "Changes are documented and reconciled with the original scope to protect fees and expectations"
+        },
+        {
+          "id": "c",
+          "text": "All program changes automatically result in reduced fees, which is not standard practice"
+        },
+        {
+          "id": "d",
+          "text": "Program changes require design restart from schematic phase, which is inefficient"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Undocumented changes create scope and fee disputes.",
+        "c": "Changes may result in additional fees, not necessarily reductions.",
+        "d": "Design need not restart; changes are incorporated with reconciliation.",
+        "correct": "Changes to the program during later design phases must be documented and reconciled with the original scope, protecting both the architect's fee calculation and the client's expectations (SPP Doc 201).",
+        "takeaway": "Document program changes to protect scope, fees, and expectations."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:660f17eb9848471a4f20d8904ba58b95266c86f532874ecc572695ef9e07d210"
+    },
+    {
+      "question_id": "c86604df-3095-45f7-9bb5-9904f6591e96",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "What is the primary goal of gathering information during the space programming process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To establish the project budget, ensuring that financial constraints are identified early in the design process"
+        },
+        {
+          "id": "b",
+          "text": "To understand client's organizational structure, workflow, and functional requirements"
+        },
+        {
+          "id": "c",
+          "text": "To select the construction contractor, which is crucial for aligning project goals with execution capabilities"
+        },
+        {
+          "id": "d",
+          "text": "To prepare bid documents, which are necessary for soliciting competitive offers from potential contractors"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Budget establishment occurs during design phases, not programming.",
+        "c": "Contractor selection happens during the bidding phase.",
+        "d": "Bid documents are prepared during the Bidding Assistance phase.",
+        "correct": "Architectural programming begins with gathering information about the client's organizational structure, operational workflow, and functional requirements through interviews and surveys (SPP Doc 201).",
+        "takeaway": "Programming gathers organizational and functional requirements from stakeholders."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:070169c9a0a92e2d259c7c5fffecfed29b04c33fd68debaaab8cca4e081f3e28"
+    },
+    {
+      "question_id": "61efa497-61af-41d5-bbac-035d4a08a3c0",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "According to SPP 201, how does the architect use the space program during schematic design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The program is ignored in favor of purely aesthetic design concepts, which is not a recommended practice"
+        },
+        {
+          "id": "b",
+          "text": "The program is used as the primary guide to develop conceptual planning solutions"
+        },
+        {
+          "id": "c",
+          "text": "The program is only referenced after construction begins, which is contrary to standard procedures"
+        },
+        {
+          "id": "d",
+          "text": "The program is replaced entirely by cost estimates, which is not a typical approach in architectural design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Programs and aesthetic concepts work together; programs are not ignored.",
+        "c": "Programs actively guide design development and contract documents preparation.",
+        "d": "Programs remain the functional guide throughout design phases.",
+        "correct": "The architect uses the space program as the primary guide during schematic design to develop conceptual planning solutions (SPP Doc 201).",
+        "takeaway": "Space programs guide the architect's conceptual design solutions."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bc9d86e74a872906045b313996f209857cc4bdf47e80889cce20b7ba18951561"
+    },
+    {
+      "question_id": "9900f54f-5968-42b8-8332-154c50cd6dd1",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "According to SPP 201, architectural programming is described as what type of process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A cost estimation exercise, typically involving detailed budget analysis and financial forecasting for project feasibility"
+        },
+        {
+          "id": "b",
+          "text": "An analytical problem-seeking process leading to identification of spatial relationships"
+        },
+        {
+          "id": "c",
+          "text": "A schematic design methodology, focusing on preliminary design concepts and spatial organization"
+        },
+        {
+          "id": "d",
+          "text": "A construction documentation activity, which includes preparing detailed drawings and specifications for construction"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Programming identifies space requirements; cost estimation comes later.",
+        "c": "Programming precedes schematic design as a pre-design service.",
+        "d": "Programming is pre-design; documentation occurs in Contract Documents phase.",
+        "correct": "SPP 201 defines architectural programming as an analytical problem-seeking process leading to the statement and identification of both horizontal and vertical relationships in offering a solution (SPP Doc 201).",
+        "takeaway": "Programming is analytical problem-seeking to define spatial relationships."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:dc123dc7306920275e841051af2ce0ca6c9a4a3fab63695bfc4a8121a5311da8"
+    },
+    {
+      "question_id": "26b61b36-1777-4925-bdc8-1015c56874fe",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "Which of the following is NOT mentioned as a method for gathering information during space programming?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Interviews with stakeholders to understand functional requirements and operational workflows"
+        },
+        {
+          "id": "b",
+          "text": "Focus group discussions with end-users to identify spatial needs and activity patterns"
+        },
+        {
+          "id": "c",
+          "text": "Site visits with construction contractors"
+        },
+        {
+          "id": "d",
+          "text": "Space planning surveys documenting existing conditions and measuring current utilization rates"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Interviews are explicitly mentioned as a programming information-gathering method.",
+        "b": "Focus group discussions are explicitly mentioned.",
+        "d": "Space planning surveys are explicitly mentioned.",
+        "correct": "SPP 201 identifies interviews, focus group discussions, and space planning surveys for gathering information, not site visits with construction contractors (which occur during construction, not programming) (SPP Doc 201).",
+        "takeaway": "Programming uses collaborative information-gathering, not construction contractor input."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3b8afe3f366fe8a60c6e372bc1310729d3463de2db1a3f3c9072e7b9905b6dd2"
+    },
+    {
+      "question_id": "3c1bd554-a510-4762-bd1c-beb09f03d578",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "What does an adjacency matrix in a space program document communicate to the design team?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Which spaces must be located near one another and their spatial relationships"
+        },
+        {
+          "id": "b",
+          "text": "The total area required for the entire project including circulation and mechanical spaces"
+        },
+        {
+          "id": "c",
+          "text": "The cost estimate for each space based on unit area pricing and finish specifications"
+        },
+        {
+          "id": "d",
+          "text": "The construction methodology for different spaces including sequencing and phasing"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Total area is derived from summing individual space requirements, not shown in an adjacency matrix.",
+        "c": "Cost estimates are prepared in design phases, not in programming.",
+        "d": "Construction methodology is determined in later design phases.",
+        "correct": "An adjacency matrix shows which spaces must be close to one another and defines their spatial relationships, guiding the architect's design work (SPP Doc 201).",
+        "takeaway": "Adjacency matrices define spatial relationships to guide design layouts."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eaea4299213853d45caa7743cf73275faba3877c77ec71228fb59293368aedff"
+    },
+    {
+      "question_id": "ca250531-0a68-428c-bf3c-9623ebc69dc7",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "The space programming process involves user activity schedules as mentioned in SPP 201. What strategic value does this component provide to the design process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "User activity schedules determine construction costs, which can significantly impact budget planning and resource allocation"
+        },
+        {
+          "id": "b",
+          "text": "They inform spatial relationship design by showing temporal patterns of space utilization"
+        },
+        {
+          "id": "c",
+          "text": "They specify which contractor should be hired based on the availability and expertise required for specific project phases"
+        },
+        {
+          "id": "d",
+          "text": "They eliminate the need for adjacency analysis, simplifying the design process by reducing complexity in spatial planning"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Space utilization patterns guide design; costs are estimated in later phases.",
+        "c": "Activity schedules inform spatial organization, not contractor selection.",
+        "d": "Activity schedules complement adjacency matrices; they don't replace them.",
+        "correct": "User activity schedules are part of space program deliverables and help inform how spaces should be organized based on temporal patterns of use and interaction (SPP Doc 201).",
+        "takeaway": "User activity schedules inform how temporal patterns affect spatial design."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c0c7bd7214f3076a8312c2ef2c5dfc371315157a93783c822cf3d3da66534608"
+    },
+    {
+      "question_id": "9bc6c838-ff13-4a44-912d-ea665d844f5a",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "Why is the space programming process described as highly collaborative in SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To ensure the architect can make all decisions independently, without needing to consult with other professionals or stakeholders"
+        },
+        {
+          "id": "b",
+          "text": "To involve stakeholders at every level for comprehensive understanding of spatial needs and relationships"
+        },
+        {
+          "id": "c",
+          "text": "To reduce the architect's professional responsibility by distributing decision-making across a wider team"
+        },
+        {
+          "id": "d",
+          "text": "To comply with union labor requirements that mandate collaborative input from various trades and disciplines"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Collaboration enhances informed decision-making, not reduces architect authority.",
+        "c": "Collaboration maintains architect responsibility while ensuring completeness.",
+        "d": "Labor requirements are not mentioned as a reason for collaboration.",
+        "correct": "The space programming process is highly collaborative, involving stakeholders at every level to ensure comprehensive understanding of spatial relationships and operational interactions (SPP Doc 201).",
+        "takeaway": "Collaboration ensures programming captures all stakeholder spatial needs."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8a7dfaa3e8140fcdf4c96881af17780d6e53dd2ece3093659dc5714636dd27ce"
+    },
+    {
+      "question_id": "b4fce2de-7bed-40ad-bf15-c0a69ce64cb2",
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "topic_id": "92037496-5379-40c6-ba4b-44e057c19263",
+      "text": "The space program document specifies room types, quantities, and adjacency requirements. What other design criteria does it typically include?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Detailed construction specifications and materials, ensuring compliance with building codes and standards"
+        },
+        {
+          "id": "b",
+          "text": "Size ranges, special conditions, and design criteria like ambiance and cost range"
+        },
+        {
+          "id": "c",
+          "text": "Contractor availability and pricing, which are critical for project scheduling and budgeting"
+        },
+        {
+          "id": "d",
+          "text": "Construction schedule and equipment procurement, aligning with project timelines and resource allocation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Detailed construction specifications are prepared in Contract Documents phase.",
+        "c": "Contractor information is not included in the space program.",
+        "d": "Construction scheduling occurs in later phases.",
+        "correct": "The space program specifies room types, required quantities, size ranges, adjacency requirements, special conditions, and design criteria for each space, including characterizations of envisioned spaces with ambiance and cost range (SPP Doc 201).",
+        "takeaway": "Space programs define spatial requirements with performance and quality criteria."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 201",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-003-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:45.512865+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0fc5711b46a6d4c29410ddf74ed32de4c366eeb46815c052b394fbed01de6231"
+    }
+  ]
+}

@@ -186,7 +186,7 @@ Extracted summary:
 > - 18–22 sq.m. → 1 per **8** units (smallest units, fewest cars)
 > - > 22 up to 50 sq.m. → 1 per **6** units
 > - 50–100 sq.m. → 1 per **4** units
-> - Over 100 sq.m. → 1 per **1** unit (biggest units, 1:1)  
+> - Over 100 sq.m. → 1 per **1** unit (biggest units, 1:1)
 >   Pattern: Bigger unit = more cars = lower denominator = more parking.[web:6][web:10]
 
 ---
@@ -268,7 +268,7 @@ Extracted summary:
 >
 > - Highly urbanized: 1 per **3** rooms
 > - All other areas: 1 per **7** rooms
-> - Old summary table: 1 per **10** rooms  
+> - Old summary table: 1 per **10** rooms
 >   "**3**-star city / **7** provinces / **10** for the old exam"
 
 ---
@@ -364,9 +364,9 @@ Extracted summary:
 
 An architect is designing an R-5 condominium with 25 residential units, each with a GFA of 45 sq.m. What is the minimum number of off-street parking slots required for the residential units under the 2004 Revised IRR (as amended by DPWH DO 059 s. 2019)?
 
-**(A)** 25 slots  
-**(B)** 6 slots  
-**(C)** 5 slots  
+**(A)** 25 slots
+**(B)** 6 slots
+**(C)** 5 slots
 **(D)** 4 slots
 
 [SLATECAMP_UI_BLOCK:ui_0013 component="details" status="preserved"]
@@ -381,9 +381,9 @@ Extracted summary:
 
 A hotel in a highly urbanized city has 25 guest rooms. What is the minimum required parking under PD 1096 as specified in the 2004 Revised IRR?
 
-**(A)** 3 car slots only  
-**(B)** 9 car slots + 2 bus slots  
-**(C)** 3 car slots + 2 bus slots  
+**(A)** 3 car slots only
+**(B)** 9 car slots + 2 bus slots
+**(C)** 3 car slots + 2 bus slots
 **(D)** 2 car slots + 2 bus slots
 
 [SLATECAMP_UI_BLOCK:ui_0014 component="details" status="preserved"]
@@ -398,9 +398,9 @@ Extracted summary:
 
 Under the Old Summary Table of PD 1096, a low-income single-detached residential development has 47 units on individual lots of 90 sq.m. each. What is the minimum required pooled parking?
 
-**(A)** 4 slots  
-**(B)** 5 slots  
-**(C)** 6 slots  
+**(A)** 4 slots
+**(B)** 5 slots
+**(C)** 6 slots
 **(D)** 8 slots
 
 [SLATECAMP_UI_BLOCK:ui_0015 component="details" status="preserved"]
@@ -415,9 +415,9 @@ Extracted summary:
 
 What are the minimum dimensions of a perpendicular automobile parking slot under the 2004 Revised IRR of PD 1096?
 
-**(A)** 2.00 m x 5.00 m  
-**(B)** 2.15 m x 6.00 m  
-**(C)** 2.40 m x 5.00 m  
+**(A)** 2.00 m x 5.00 m
+**(B)** 2.15 m x 6.00 m
+**(C)** 2.40 m x 5.00 m
 **(D)** 2.50 m x 5.00 m
 
 [SLATECAMP_UI_BLOCK:ui_0016 component="details" status="preserved"]
@@ -432,9 +432,9 @@ Extracted summary:
 
 A building has 180 total off-street parking slots. How many accessible (PWD) parking slots are required under the **amended BP 344 IRR**?
 
-**(A)** 1 slot  
-**(B)** 2 slots  
-**(C)** 3 slots  
+**(A)** 1 slot
+**(B)** 2 slots
+**(C)** 3 slots
 **(D)** 4 slots
 
 [SLATECAMP_UI_BLOCK:ui_0017 component="details" status="preserved"]

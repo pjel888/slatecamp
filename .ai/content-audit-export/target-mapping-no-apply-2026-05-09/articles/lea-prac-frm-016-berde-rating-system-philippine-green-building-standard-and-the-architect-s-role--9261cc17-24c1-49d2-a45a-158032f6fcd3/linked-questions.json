@@ -1,0 +1,508 @@
+{
+  "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:2cbc807b47dd58731e2052d93025c4c2059af496ec7b624dbc03969c115f9941",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "042f1901-2fc0-4396-83f8-9d11cd6f85e9",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "Which major credit category in BERDE represents the most design-intensive responsibility for architects?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Waste management only"
+        },
+        {
+          "id": "b",
+          "text": "Energy credits, which involve envelope performance, daylighting, HVAC efficiency, and renewable energy design"
+        },
+        {
+          "id": "c",
+          "text": "Only water efficiency"
+        },
+        {
+          "id": "d",
+          "text": "Only material sourcing"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Minimizes architect role; while architects influence waste management, energy design is far more architecture-dependent.",
+        "c": "Minimizes architect role; water systems are primarily MEP-designed, though architects determine where systems fit.",
+        "d": "Minimizes architect role; material selection is important but less design-intensive than energy system optimization.",
+        "correct": "Energy is the largest BERDE credit category and depends heavily on architectural decisions—building form, envelope design, window placement, daylighting strategy, and HVAC system design.",
+        "takeaway": "Energy credits are BERDE's most design-intensive category because architect decisions about envelope, orientation, and daylighting directly determine performance."
+      },
+      "explanation": "Minimizes architect role; while architects influence waste management, energy design is far more architecture-dependent. Minimizes architect role; water systems are primarily MEP-designed, though architects determine where systems fit. Minimizes architect role; material selection is important but less design-intensive than energy system optimization. Energy is the largest BERDE credit category and depends heavily on architectural decisions—building form, envelope design, window placement, daylighting strategy, and HVAC system design. Energy credits are BERDE's most design-intensive category because architect decisions about envelope, orientation, and daylighting directly determine performance.",
+      "code_citation": "BERDE Framework",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T14:56:46.616526+00:00",
+      "content_hash": "sha256:c55fc33c96cad92c0a5c8c2e8e6c7482a287eb767135662a2edf3271272f43b5"
+    },
+    {
+      "question_id": "6979b48f-4da4-4cf0-ad5e-b4df64b1c013",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "What are the certification levels in BERDE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pass or Fail only, with no intermediate levels to indicate varying degrees of sustainability"
+        },
+        {
+          "id": "b",
+          "text": "Certified, Silver, Gold, and Platinum based on credit points earned"
+        },
+        {
+          "id": "c",
+          "text": "Bronze, Silver, and Gold only, reflecting a simplified tier system for ease of understanding"
+        },
+        {
+          "id": "d",
+          "text": "Beginner, Intermediate, and Expert, categorizing projects based on complexity rather than sustainability"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Oversimplifies the system; BERDE uses a nuanced credit-based approach with four distinct achievement levels.",
+        "c": "Omits the Certified and Platinum levels; BERDE has four levels, not three.",
+        "d": "Misses the technical rating structure; BERDE levels are Certified through Platinum, not Beginner/Intermediate/Expert.",
+        "correct": "BERDE uses a credit-based system with four certification levels: Certified (minimum), Silver, Gold, and Platinum (highest achievement).",
+        "takeaway": "BERDE's four-tier system (Certified, Silver, Gold, Platinum) rewards increasing environmental performance, not just pass/fail."
+      },
+      "explanation": "Oversimplifies the system; BERDE uses a nuanced credit-based approach with four distinct achievement levels. Omits the Certified and Platinum levels; BERDE has four levels, not three. Misses the technical rating structure; BERDE levels are Certified through Platinum, not Beginner/Intermediate/Expert. BERDE uses a credit-based system with four certification levels: Certified (minimum), Silver, Gold, and Platinum (highest achievement). BERDE's four-tier system (Certified, Silver, Gold, Platinum) rewards increasing environmental performance, not just pass/fail.",
+      "code_citation": "BERDE Framework",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T14:56:46.265917+00:00",
+      "content_hash": "sha256:244ad1714df3a2688428275e40a7abd422b550d44a6102452a4d4106ca9a2005"
+    },
+    {
+      "question_id": "ddc917a3-dd81-49e8-b80b-4e2f2b0cb942",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "Who developed BERDE?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Department of Public Works and Highways, which oversees infrastructure projects nationwide"
+        },
+        {
+          "id": "b",
+          "text": "Philippine Green Building Council (PHILGBC)"
+        },
+        {
+          "id": "c",
+          "text": "Board of Architecture, responsible for regulating the practice of architecture in the Philippines"
+        },
+        {
+          "id": "d",
+          "text": "National Building Code Authority, which enforces building standards and codes"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Confuses BERDE development with public works oversight; DPWH enforces building codes but did not develop BERDE.",
+        "c": "Confuses BERDE development with professional licensing; the Board of Architecture licenses architects but did not develop the green building rating system.",
+        "d": "Invokes a non-existent authority; BERDE was developed by the voluntary Philippine Green Building Council, not a National Building Code Authority.",
+        "correct": "The Philippine Green Building Council (PHILGBC) developed BERDE and continues to maintain and update the rating system.",
+        "takeaway": "PHILGBC, not a government department or licensing board, developed and oversees BERDE as the national green building standard."
+      },
+      "explanation": null,
+      "code_citation": "BERDE Framework",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:46b550c380dc4267cf4c480be14d6f064d079713306e0e2a31cf110671a28539"
+    },
+    {
+      "question_id": "742c3868-e3a9-437a-b583-84eb86fa4c8d",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "What is the architect's primary responsibility in achieving BERDE credits?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only submitting paperwork, which is insufficient for comprehensive BERDE compliance"
+        },
+        {
+          "id": "b",
+          "text": "Understanding credit requirements from inception, integrating green objectives into design, coordinating with consultants, and documenting design decisions to support credit claims"
+        },
+        {
+          "id": "c",
+          "text": "Having contractors install green features during construction, which is part of the process but not the architect's primary role"
+        },
+        {
+          "id": "d",
+          "text": "Operating the building efficiently after completion, which is typically the owner's responsibility"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Trivializes architect role; BERDE certification depends on substantive design decisions, not just paperwork.",
+        "c": "Shifts responsibility to contractors; while contractors execute green features, the architect designs them and must specify requirements.",
+        "d": "Misplaces responsibility; the architect designs for performance but cannot control occupant behavior or operational maintenance post-completion.",
+        "correct": "Architects must integrate BERDE requirements from project inception, make deliberate design choices, coordinate consultant systems, and document decisions to support certification claims.",
+        "takeaway": "BERDE success depends on architects understanding credits from day one and embedding green design into the design philosophy, not treating it as an afterthought."
+      },
+      "explanation": "Trivializes architect role; BERDE certification depends on substantive design decisions, not just paperwork. Shifts responsibility to contractors; while contractors execute green features, the architect designs them and must specify requirements. Misplaces responsibility; the architect designs for performance but cannot control occupant behavior or operational maintenance post-completion. Architects must integrate BERDE requirements from project inception, make deliberate design choices, coordinate consultant systems, and document decisions to support certification claims. BERDE success depends on architects understanding credits from day one and embedding green design into the design philosophy, not treating it as an afterthought.",
+      "code_citation": "BERDE Framework",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T14:56:46.375739+00:00",
+      "content_hash": "sha256:b17c02b198cf17956ef6c970f776d9636a36fe39ba5d150300b5824afb641193"
+    },
+    {
+      "question_id": "5b001d1e-7409-4ee2-80c9-fdd68ab32037",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "What does BERDE stand for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Building and Energy Responsive Design Engineering"
+        },
+        {
+          "id": "b",
+          "text": "Building for Ecologically Responsive Design Excellence"
+        },
+        {
+          "id": "c",
+          "text": "Building Efficiency Rating and Design Engineering"
+        },
+        {
+          "id": "d",
+          "text": "Basic Environmental Rating and Design Excellence"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Misplaces the focus to energy alone; BERDE addresses multiple environmental categories beyond energy performance.",
+        "c": "Uses 'Rating' instead of 'For'; BERDE emphasizes proactive design excellence, not merely rating buildings.",
+        "d": "Understates the standard as 'Basic'; BERDE targets excellence and comprehensive ecological performance, not just basic standards.",
+        "correct": "BERDE stands for Building for Ecologically Responsive Design Excellence, the Philippines' national green building rating system.",
+        "takeaway": "BERDE's name emphasizes ecological responsiveness and design excellence—not just energy or basic rating."
+      },
+      "explanation": "Misplaces the focus to energy alone; BERDE addresses multiple environmental categories beyond energy performance. Uses 'Rating' instead of 'For'; BERDE emphasizes proactive design excellence, not merely rating buildings. Understates the standard as 'Basic'; BERDE targets excellence and comprehensive ecological performance, not just basic standards. BERDE stands for Building for Ecologically Responsive Design Excellence, the Philippines' national green building rating system. BERDE's name emphasizes ecological responsiveness and design excellence—not just energy or basic rating.",
+      "code_citation": "BERDE Framework",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-05-06T14:56:46.501633+00:00",
+      "content_hash": "sha256:8ca135e093a09da44de39338be975a3236115b1d19864ea2690abf762cbb7866"
+    },
+    {
+      "question_id": "d55c0527-e332-4185-be4a-384408d99ed2",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "What is BERDE-NC-EDU specifically designed for?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Residential buildings only, focusing on sustainable living environments"
+        },
+        {
+          "id": "b",
+          "text": "Commercial offices only, with an emphasis on energy efficiency and occupant comfort"
+        },
+        {
+          "id": "c",
+          "text": "New construction in educational institutions (schools and universities)"
+        },
+        {
+          "id": "d",
+          "text": "Renovation projects only, targeting improvements in energy use and indoor air quality"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Wrong building type; residential buildings use BERDE-RES, not the educational scheme.",
+        "b": "Wrong building type; commercial offices use BERDE-CO, not the educational scheme.",
+        "d": "Wrong project phase; renovations use BERDE-R, while NC-EDU is specifically for new construction.",
+        "correct": "BERDE-NC-EDU (New Construction—Educational Institutions) version 1.1.0 (2013) is designed for new schools and universities.",
+        "takeaway": "BERDE-NC-EDU is the scheme architects use for new educational buildings, addressing daylighting, acoustics, and learning space quality."
+      },
+      "explanation": null,
+      "code_citation": "BERDE-NC-EDU v1.1.0",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:70ab58b0e358fea078709ec0115a66443ca7842e41689e76f8950508713cce5e"
+    },
+    {
+      "question_id": "da60ad3c-79e6-46e7-b153-af4a3872e843",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "When should BERDE certification be pursued in relation to the project timeline?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only after construction is complete, ensuring all criteria are met before certification"
+        },
+        {
+          "id": "b",
+          "text": "Design phase review during design development, then operational review after occupancy"
+        },
+        {
+          "id": "c",
+          "text": "Before design begins, to integrate sustainable practices from the outset"
+        },
+        {
+          "id": "d",
+          "text": "Never; timing is irrelevant, as certification can be pursued at any stage"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too late; if certification is only pursued after construction, design decisions cannot be revised to address credit requirements.",
+        "c": "Impractical; certification strategy must be developed during schematic/design development when major decisions are made.",
+        "d": "Dangerous misconception; timing is critical—BERDE must be integrated from design inception to influence key decisions.",
+        "correct": "BERDE certification involves design phase submission during design development (to validate the design achieves targets) and operational review after occupancy (to verify performance).",
+        "takeaway": "BERDE requires two reviews—design phase during DD to confirm the design is sound, and post-occupancy to verify actual performance."
+      },
+      "explanation": null,
+      "code_citation": "BERDE Framework",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2c3db3d7eb0cc2bfc8c4c6572b3c15f0e7d65523cfd1785ac068619aed6fb38b"
+    },
+    {
+      "question_id": "dd97d6f7-532b-4111-8870-b9dbe1c3ed48",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "How should an architect approach lifecycle cost discussion with clients regarding BERDE-certified design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Green design is always cheaper initially, which makes it an attractive option for budget-conscious clients"
+        },
+        {
+          "id": "b",
+          "text": "Green design costs more initially but delivers lower operational costs over time; 5% higher design cost may be offset by 30% lower operating costs over 20 years"
+        },
+        {
+          "id": "c",
+          "text": "Green design has no cost benefit, as the savings in operational costs do not justify the initial investment"
+        },
+        {
+          "id": "d",
+          "text": "Only wealthy clients can afford green design, as it requires significant upfront investment and long-term commitment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "False; efficient systems and premium materials cost more initially than baseline code-minimum solutions.",
+        "c": "Misleading; BERDE-certified buildings typically recover their higher initial costs through operational savings and market premiums within 10-15 years.",
+        "d": "Limiting and false; institutional clients (schools, government) and even private developers increasingly prioritize BERDE for long-term cost savings and sustainability goals.",
+        "correct": "BERDE-certified design typically requires higher upfront investment in efficient systems and materials but realizes significant operational savings through reduced energy, water, and waste costs over 20+ years.",
+        "takeaway": "When discussing BERDE costs with clients, frame it as an investment: modest upfront cost increase (5%) yields substantial long-term savings (30% over 20 years)."
+      },
+      "explanation": null,
+      "code_citation": "BERDE Framework",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:85427947a8d19349f066c73c7831534996ab1089e511afd0eae4aa20519878ac"
+    },
+    {
+      "question_id": "c19dd5a5-b075-42e5-910b-29e859586e21",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "How is BERDE different from the National Building Code (NBC)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are identical"
+        },
+        {
+          "id": "b",
+          "text": "NBC sets minimum safety standards; BERDE targets excellence above the baseline"
+        },
+        {
+          "id": "c",
+          "text": "NBC only applies to government buildings, excluding private sector projects"
+        },
+        {
+          "id": "d",
+          "text": "BERDE replaces NBC entirely in all aspects of building regulation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Dangerously incorrect; NBC and BERDE serve different purposes and have different requirements.",
+        "c": "Misunderstands NBC scope; the National Building Code applies to all building types (government and private).",
+        "d": "Misunderstands relationship; BERDE complements rather than replaces NBC; buildings must meet both standards.",
+        "correct": "NBC establishes minimum legal requirements for safety and accessibility; BERDE is complementary, targeting environmental excellence beyond baseline code compliance.",
+        "takeaway": "Both NBC and BERDE apply to the same project—NBC is the legal minimum, BERDE is the excellence standard."
+      },
+      "explanation": null,
+      "code_citation": "BERDE Framework; National Building Code",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f2aebcbf2297725184050a74f4d601f247e5a086e06ef304926d685c3f18390"
+    },
+    {
+      "question_id": "17577edd-6a51-484c-8a53-fc925cc124a8",
+      "article_id": "9261cc17-24c1-49d2-a45a-158032f6fcd3",
+      "topic_id": "925647f7-df2b-41f7-bcdb-ed8e63a2bb9b",
+      "text": "What liability risk does an architect face if BERDE design claims are not met?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No liability exists, as BERDE claims are considered aspirational rather than contractual obligations"
+        },
+        {
+          "id": "b",
+          "text": "If the design claims environmental benefits that are not achieved due to design error (e.g., insufficient daylighting), the architect may bear responsibility"
+        },
+        {
+          "id": "c",
+          "text": "Only the builder is liable, as they are responsible for the execution of the design"
+        },
+        {
+          "id": "d",
+          "text": "Only the client is liable, as they approved the design and its claims"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Reckless assumption; architects who claim BERDE credits bear responsibility if those claims are unfounded due to design error.",
+        "c": "Misplaces liability; while builders execute the design, architects designed it and made the environmental performance claims.",
+        "d": "Misplaces liability; while clients benefit from certification, architects designed to achieve it and must ensure design quality.",
+        "correct": "Architects are responsible for design claims in BERDE submissions; if those claims fail due to design errors (e.g., window calculations wrong, daylighting insufficient), architects bear liability.",
+        "takeaway": "Architects must carefully document BERDE design assumptions and avoid guaranteeing performance that depends on occupant behavior or external factors beyond design control."
+      },
+      "explanation": null,
+      "code_citation": "BERDE Framework",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-FRM-016-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:49.529462+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c03e8feea5f1cf751809d271b7373863d790c888c0d3e03468e746750676e89a"
+    }
+  ]
+}

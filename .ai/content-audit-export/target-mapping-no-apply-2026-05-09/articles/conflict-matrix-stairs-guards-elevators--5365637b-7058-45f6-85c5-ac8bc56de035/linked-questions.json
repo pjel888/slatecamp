@@ -1,0 +1,562 @@
+{
+  "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:a776c9f3d8579895c372cc9624ddca3ab4ff89d943da6088a1909206d3f4a869",
+  "question_count": 11,
+  "questions": [
+    {
+      "question_id": "c926771a-68ef-4ff6-9e4e-c84e37c9e816",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Based on the specifications in \"Conflict Matrix Stairs Guards Elevators\", if a project requires 200 mm, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "200 mm is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "200 mm is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "200 mm applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "200 mm is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 200 mm as the requirement. Context: . Guard height (both laws) → **1,100 mm**\r 9. Building elevator min width → **1,...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:09.81205+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c365bc1eaef1cd288de4600dc0cac6a2029a29b7123ed1cc843e363178e8399b"
+    },
+    {
+      "question_id": "c3d03b26-f7d9-4b7d-99aa-4d7b48043e38",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A stair on an accessible route has one handrail at 850 mm above the nosing, installed in compliance with PD 1096. Under BP 344 (2024 IRR), is this stair compliant for accessibility, and what is the reason?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compliant — PD 1096 governs stair handrails, and 850 mm falls within the permitted 800–900 mm band"
+        },
+        {
+          "id": "B",
+          "text": "Non-compliant — BP 344 requires dual handrails at exactly 700 mm and 900 mm above the nosing on accessible stairs"
+        },
+        {
+          "id": "C",
+          "text": "Non-compliant — the handrail must be at 900 mm only; the lower 700 mm rail is optional for residential stairs"
+        },
+        {
+          "id": "D",
+          "text": "Compliant — where PD 1096 already satisfies the upper handrail range, the lower 700 mm rail is waived"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 requires dual handrails at 700 mm and 900 mm — a single rail at 850 mm fails even if PD 1096-compliant.",
+        "explanation": "BP 344 (2024 IRR) requires dual handrails on all accessible stairs: a lower rail at 700 mm and an upper rail at 900 mm above the nosing. PD 1096 permits a single rail in the 800–900 mm band — but BP 344 is a special law that governs accessibility and overrides PD 1096 on accessible routes. A single rail at 850 mm satisfies PD 1096 but fails BP 344. Both rails are mandatory, not optional.",
+        "common_misconceptions": [
+          "Assuming PD 1096 compliance also satisfies BP 344 for handrails",
+          "Treating the lower 700 mm rail as optional"
+        ]
+      },
+      "explanation": "This is the most-tested handrail conflict — PD 1096 allows a single rail in the 800–900 mm band; BP 344 mandates dual rails at exactly 700 mm and 900 mm.",
+      "code_citation": "BP 344 2024 IRR; PD 1096",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8315f5310354d12ad1aa646a493915d1990fa00491273b5430d82aae5efdeac0"
+    },
+    {
+      "question_id": "dbc263c6-67c3-43fc-96fd-045617a62d27",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "What is the maximum vertical rise between stair landings under BP 344 (2024 IRR), and how does this compare to PD 1096?",
+      "options": [
+        {
+          "id": "A",
+          "text": "BP 344 allows 3,600 mm; PD 1096 is more restrictive at 3,000 mm — PD 1096 governs"
+        },
+        {
+          "id": "B",
+          "text": "BP 344 requires a landing at every 3,000 mm vertical rise; PD 1096 allows up to 3,600 mm — BP 344 governs"
+        },
+        {
+          "id": "C",
+          "text": "Both BP 344 and PD 1096 require a landing at every 3,600 mm vertical rise — no conflict exists"
+        },
+        {
+          "id": "D",
+          "text": "BP 344 requires a landing at every 1,800 mm vertical rise; PD 1096 allows up to 3,600 mm — BP 344 governs"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 requires a landing every 3,000 mm (3 m) vertical rise; PD 1096 allows 3,600 mm — BP 344 is more restrictive and governs.",
+        "explanation": "BP 344 (2024 IRR) requires a landing at every 3 m (3,000 mm) of vertical rise on accessible stairs. PD 1096 allows up to 3,600 mm. Since BP 344 is more restrictive and specifically protects accessibility, it governs under the principle that the more accessibility-protective standard controls. A stair designed with a landing at 3,400 mm vertical rise complies with PD 1096 but violates BP 344.",
+        "common_misconceptions": [
+          "Assuming both codes require the same landing interval",
+          "Believing the 3,600 mm PD 1096 standard applies to accessible stairs"
+        ]
+      },
+      "explanation": "This is a major exam trap — the landing interval conflict between BP 344 (3 m) and PD 1096 (3.6 m) is directly tested.",
+      "code_citation": "BP 344 2024 IRR; PD 1096",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b75cc9d3c4532075aeeda86b61d0ca27a257a0b99ed2a27db85b400f4df6e6ab"
+    },
+    {
+      "question_id": "35b5b7e8-fc47-4b25-8d61-69f631ab537f",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), where must Braille floor indicators be placed in an accessible elevator, and at what height?",
+      "options": [
+        {
+          "id": "A",
+          "text": "On the Car Operating Panel (COP) inside the elevator cab, at 1,200 mm AFF"
+        },
+        {
+          "id": "B",
+          "text": "On the outside door jambs on both sides of the elevator door, at 1,200 mm AFF"
+        },
+        {
+          "id": "C",
+          "text": "On the elevator lobby floor near the call button, at 300 mm from the door edge"
+        },
+        {
+          "id": "D",
+          "text": "On the inside back wall of the elevator cab, at 900 mm AFF beside the handrail"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Braille floor indicators must be on the outside door jambs at 1,200 mm AFF — not inside the cab.",
+        "explanation": "BP 344 (2024 IRR) requires Braille floor numbers on the outside door jambs (the vertical structural members beside the elevator door opening) at 1,200 mm AFF. This allows a blind person waiting for the elevator to confirm the floor by touching the jamb. Inside the cab, the COP is at 900 mm AFF (a different element). The jamb Braille and the COP height are distinct requirements at different heights.",
+        "common_misconceptions": [
+          "Placing Braille on the COP (which is at 900 mm, not 1,200 mm)",
+          "Locating Braille inside the cab rather than on the outside jambs"
+        ]
+      },
+      "explanation": "This question distinguishes Braille floor indicator location (outside jambs, 1,200 mm) from the COP height (inside cab, 900 mm) — a common confusion.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6c3a17df30325163c911dc2ff25ae705e833a2e5a0a32b885ceb258c2d378119"
+    },
+    {
+      "question_id": "2329135f-9acc-4968-b1a1-b32f888a3f95",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "On how many walls inside an accessible elevator car must handrails be installed under BP 344 (2024 IRR), and at what height?",
+      "options": [
+        {
+          "id": "A",
+          "text": "One wall — the rear wall only, at 900 mm AFF, to leave side walls clear for maneuvering"
+        },
+        {
+          "id": "B",
+          "text": "Two walls — both side walls at 900 mm AFF; the rear wall is reserved for the COP"
+        },
+        {
+          "id": "C",
+          "text": "Three walls — the rear wall and both side walls, at 900 mm AFF"
+        },
+        {
+          "id": "D",
+          "text": "Four walls — all interior cab walls including the door wall, at 700 mm and 900 mm dual height"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Handrails must be on three walls — the back and both sides — at 900 mm AFF; the door wall has no handrail.",
+        "explanation": "BP 344 (2024 IRR) requires handrails at 900 mm AFF on three walls of the accessible elevator cab: the rear wall and both side walls. The door wall cannot have a handrail since the door itself occupies that face. The COP (Car Operating Panel) is also at 900 mm AFF but is a separate element from the handrails. A common wrong answer is 'back wall only' — all three non-door walls are required.",
+        "common_misconceptions": [
+          "Installing handrails only on the back wall",
+          "Specifying handrails on all four walls including the door wall"
+        ]
+      },
+      "explanation": "This question tests the three-wall handrail requirement — a common exam trap since many drawings show handrails on only one wall.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.55,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ae762f0af96b33f38a58755f84fa922deefbcd47f6724b927d3e66ad2644cf2c"
+    },
+    {
+      "question_id": "bf19afe2-e949-4034-ab14-452ceccb3ea7",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Regarding guard/balustrade height, what is the relationship between BP 344 (2024 IRR) and PD 1096 where the drop exceeds 750 mm?",
+      "options": [
+        {
+          "id": "A",
+          "text": "BP 344 requires 1,200 mm guards; PD 1096 requires 1,100 mm — BP 344 governs at 1,200 mm"
+        },
+        {
+          "id": "B",
+          "text": "Both BP 344 and PD 1096 require 1,100 mm guards where the drop exceeds 750 mm — there is no conflict"
+        },
+        {
+          "id": "C",
+          "text": "PD 1096 requires 1,100 mm guards; BP 344 is silent on guard height — PD 1096 governs"
+        },
+        {
+          "id": "D",
+          "text": "BP 344 requires 900 mm guards for accessibility; PD 1096 requires 1,100 mm — PD 1096 governs"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both BP 344 and PD 1096 specify 1,100 mm guards where the drop exceeds 750 mm — this is the one point of perfect agreement.",
+        "explanation": "Guards are the single area of complete agreement between BP 344 and PD 1096: both specify 1,100 mm minimum height where the adjacent drop exceeds 750 mm. This means there is no conflict to resolve — both laws require 1,100 mm. Examiners sometimes frame this as 'which law governs?' — the correct answer is that both agree and no conflict exists. The 1,100 mm is universal.",
+        "common_misconceptions": [
+          "Assuming BP 344 requires a different guard height than PD 1096",
+          "Believing BP 344 is silent on guard height"
+        ]
+      },
+      "explanation": "This question tests the one non-conflict — both laws agree on 1,100 mm guards — which the exam presents as a 'which governs?' trap.",
+      "code_citation": "BP 344 2024 IRR; PD 1096 Rule XII",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:739ea65a0d41b74d888848b9d3ff7c284d8cf7ce782323905eb4f0d8e3a0ef1b"
+    },
+    {
+      "question_id": "9f55c736-2467-4f3f-b944-dcdc9883b42d",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), what horizontal extension is required at the top and bottom of each accessible stair handrail run, and on which rails does this apply?",
+      "options": [
+        {
+          "id": "A",
+          "text": "150 mm extension on the upper rail only; the lower rail terminates at the first and last riser"
+        },
+        {
+          "id": "B",
+          "text": "300 mm horizontal extension at both top and bottom, on both the upper (900 mm) and lower (700 mm) rails"
+        },
+        {
+          "id": "C",
+          "text": "300 mm extension at the top only; the bottom extension is not required for accessible stairs"
+        },
+        {
+          "id": "D",
+          "text": "200 mm extension on both rails at both ends; the terminal must return to the wall at 90 degrees"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 requires 300 mm horizontal extensions at both top and bottom of both the upper and lower handrails.",
+        "explanation": "BP 344 (2024 IRR) requires 300 mm horizontal extensions at the top and bottom of each accessible stair handrail run — this applies to both the upper rail (900 mm) and the lower rail (700 mm). The extensions allow users to grip the rail before stepping onto the first riser or after the last riser. The terminal must be bent at 150 mm radius to the newel or wall rather than cut sharply. PD 1096 does not specify extensions — this is a signature BP 344 requirement frequently omitted from drawings.",
+        "common_misconceptions": [
+          "Applying extensions only to the upper rail",
+          "Applying extensions only at the top of the stair, not the bottom"
+        ]
+      },
+      "explanation": "This question tests the 300 mm extension requirement — a signature BP 344 detail not found in PD 1096 that appears regularly on the LEA.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:61197218a47660cb1f6fbce6e0309fb6672ae13827872195c0efbba101c34e5c"
+    },
+    {
+      "question_id": "b1323699-41c0-49a5-bb39-830e0c6a4dbf",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "An accessible stair has a minimum clear width of 1,100 mm and a maximum riser of 175 mm. The architect cites PD 1096 for both dimensions. Under BP 344 (2024 IRR), which dimensions are non-compliant?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Only the riser height is non-compliant; the 1,100 mm clear width meets BP 344 requirements"
+        },
+        {
+          "id": "B",
+          "text": "Only the clear width is non-compliant; the 175 mm riser is within BP 344 tolerance"
+        },
+        {
+          "id": "C",
+          "text": "Both the clear width and the riser height are non-compliant under BP 344"
+        },
+        {
+          "id": "D",
+          "text": "Neither dimension is non-compliant — PD 1096 and BP 344 share these same stair standards"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Both are non-compliant: BP 344 requires 1,500 mm minimum clear width and 150 mm maximum riser on accessible stairs.",
+        "explanation": "BP 344 (2024 IRR) requires accessible stairs to have: (1) minimum clear width of 1,500 mm — the 1,100 mm is 400 mm too narrow; (2) maximum riser of 150 mm — the 175 mm riser exceeds this by 25 mm. PD 1096 typically permits ~1,100 mm widths and 200 mm risers, which is why PD 1096-compliant stairs are often non-compliant with BP 344. The more restrictive BP 344 governs on accessible routes.",
+        "common_misconceptions": [
+          "Assuming PD 1096 stair dimensions satisfy BP 344 requirements",
+          "Believing either the width or the riser alone is the issue, not both"
+        ]
+      },
+      "explanation": "This dual-dimension analysis tests the BP 344 vs PD 1096 stair width (1,500 vs 1,100 mm) and riser height (150 vs 200 mm) conflicts simultaneously.",
+      "code_citation": "BP 344 2024 IRR; PD 1096",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cd8611478fe5cb1508f269ddd10c37187ca34c97cc456a8930cab674f987d7da"
+    },
+    {
+      "question_id": "1c4181db-d7bc-456d-9801-fe2e3670fec8",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "Under BP 344 (2024 IRR), what is the minimum clear floor space required per wheelchair user in an Area of Refuge at a stair landing, and what emergency communication range applies?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1,800 × 1,800 mm per wheelchair user; emergency communications at 900–1,200 mm AFF"
+        },
+        {
+          "id": "B",
+          "text": "900 × 1,200 mm per wheelchair user; emergency communications at 700–900 mm AFF"
+        },
+        {
+          "id": "C",
+          "text": "1,200 × 1,500 mm per wheelchair user; emergency communications at 900 mm AFF centerline"
+        },
+        {
+          "id": "D",
+          "text": "900 × 900 mm per wheelchair user; emergency communications at 1,200 mm AFF"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Areas of Refuge require 900 × 1,200 mm per wheelchair user with emergency communications at 700–900 mm AFF.",
+        "explanation": "BP 344 (2024 IRR) specifies 900 × 1,200 mm of clear floor space per wheelchair user in Areas of Refuge at stair landings. Emergency communications (call buttons, intercoms) must be within the 700–900 mm AFF reach range so they can be operated by a person sitting in a wheelchair. The 1,800 × 1,800 mm applies to elevator lobbies and turning circles — not Areas of Refuge. Areas of Refuge are mandatory because elevators are shut down during fire emergencies.",
+        "common_misconceptions": [
+          "Confusing the 900 × 1,200 mm refuge footprint with the 1,800 × 1,800 mm elevator lobby or turning circle",
+          "Applying the 900–1,200 mm ATM control range to emergency communications"
+        ]
+      },
+      "explanation": "This question requires distinguishing the 900 × 1,200 mm refuge footprint from the 1,800 × 1,800 mm elevator lobby — two easily confused dimensions.",
+      "code_citation": "BP 344 2024 IRR, Sec. 5",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.85,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ace45409189021375e1d5a81c6a7cdc931e90582327be17bad4ea0fb824ab2ac"
+    },
+    {
+      "question_id": "40ec8b70-a23f-46c8-8afd-e5988d44a942",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A standard building elevator cab measures 1,100 mm wide × 1,300 mm deep with a 900 mm door. Under BP 344 (2024 IRR), which dimension(s) are non-compliant?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Both the width and depth are non-compliant; the door width is compliant"
+        },
+        {
+          "id": "B",
+          "text": "Only the width is non-compliant; depth and door width both meet BP 344 minimums"
+        },
+        {
+          "id": "C",
+          "text": "All three dimensions are non-compliant under BP 344 for a standard building elevator"
+        },
+        {
+          "id": "D",
+          "text": "Only the depth is non-compliant; the 1,100 mm width and 900 mm door are acceptable"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 requires minimum 1,200 mm wide × 1,400 mm deep for a building elevator — both the 1,100 mm width and 1,300 mm depth are non-compliant; the 900 mm door is correct.",
+        "explanation": "BP 344 (2024 IRR) specifies minimum elevator car dimensions for standard buildings as 1,200 mm wide × 1,400 mm deep, with a 900 mm clear door width. This cab is 100 mm too narrow (1,100 vs 1,200 mm) and 100 mm too shallow (1,300 vs 1,400 mm). The 900 mm door width is exactly the minimum and is compliant. The depth is required to allow full wheelchair entry with the chair oriented toward the door.",
+        "common_misconceptions": [
+          "Assuming only one dimension needs correction",
+          "Forgetting that depth (1,400 mm) is independently specified, not just derived from width"
+        ]
+      },
+      "explanation": "This analysis question requires knowing both the width (1,200 mm) and depth (1,400 mm) minimums simultaneously, plus correctly identifying which dimension is compliant.",
+      "code_citation": "BP 344 2024 IRR",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.75,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c15ab34ae5f72864ad39bb124ff5cca1decdd1887f3e131dd153e076f54e2d72"
+    },
+    {
+      "question_id": "dd7ac958-e8c9-430f-81d3-54b97774d78a",
+      "article_id": "5365637b-7058-45f6-85c5-ac8bc56de035",
+      "topic_id": "c8ee81ef-1264-4cfc-b9da-a780bc990834",
+      "text": "A transport facility elevator has a car measuring 1,500 mm wide × 1,400 mm deep with a 900 mm door. How does BP 344 (2024 IRR) treat this differently from a standard building elevator?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Transport facility elevators require a wider car (1,500 mm vs 1,200 mm) but the same depth and door width as standard building elevators"
+        },
+        {
+          "id": "B",
+          "text": "Transport facility elevators require both wider (1,500 mm) and deeper (1,800 mm) cars than standard building elevators, ensuring accessibility for all users"
+        },
+        {
+          "id": "C",
+          "text": "Transport facility elevators have no different requirements — BP 344 applies one standard to all elevator types, maintaining uniformity across facilities"
+        },
+        {
+          "id": "D",
+          "text": "Transport facility elevators require a wider door (1,200 mm) but the same car dimensions as standard building elevators, facilitating easier access for wheelchairs"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Transport facility elevators must be 1,500 mm wide (vs 1,200 mm for buildings); depth (1,400 mm) and door (900 mm) are the same.",
+        "explanation": "BP 344 (2024 IRR) distinguishes between standard building elevators (min 1,200 mm wide × 1,400 mm deep, 900 mm door) and transport facility elevators (min 1,500 mm wide × 1,400 mm deep, 900 mm door). The wider car accommodates transit crowds with mobility aids, luggage, and strollers. The depth and door requirements are identical. The 1,500 mm wide × 1,400 mm deep car described is exactly compliant for a transport facility.",
+        "common_misconceptions": [
+          "Assuming the same elevator dimensions apply to all building types",
+          "Believing transport facility elevators need a deeper or wider door"
+        ]
+      },
+      "explanation": "This question tests the transport vs. standard building elevator distinction — a specific BP 344 trap tested on the LEA.",
+      "code_citation": "BP 344 2024 IRR, Sec. 5.6",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:55.466644+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:40ab527d8f53d0b330a5771870a3e4ad55a0c8939ab05b7fcdb26ba13144c32b"
+    }
+  ]
+}

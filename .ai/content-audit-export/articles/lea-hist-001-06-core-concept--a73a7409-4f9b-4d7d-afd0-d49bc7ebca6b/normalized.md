@@ -49,7 +49,7 @@ The dome's interior was originally coffered (recessed square panels reducing wei
 [SLATECAMP_UI_BLOCK:ui_0004 component="Warn" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Critical Distinction:** The Pantheon's engineering demonstrates that Roman engineers understood structural behavior intuitively, if not mathematically. The dome thins as it rises; radial ribs channeled internal stress; the cylindrical drum had thick walls with internal chambers (relieving niches) to reduce weight. All materials worked together: stone at the base provided compression strength; concrete (lighter toward the top) distributed and transmitted thrust to the drum; the oculus provided 
+- Text: **Critical Distinction:** The Pantheon's engineering demonstrates that Roman engineers understood structural behavior intuitively, if not mathematically. The dome thins as it rises; radial ribs channeled internal stress; the cylindrical drum had thick walls with internal chambers (relieving niches) to reduce weight. All materials worked together: stone at the base provided compression strength; concrete (lighter toward the top) distributed and transmitted thrust to the drum; the oculus provided
 [/SLATECAMP_UI_BLOCK]
 
 **The Colosseum (Flavian Amphitheatre, built 70–80 CE under Emperors Vespasian and Titus):** An elliptical structure measuring 620 feet long, 513 feet wide, and 157 feet high. Capacity: 50,000+ spectators. The Colosseum used the **arch** and **vault** extensively. Its facade featured three tiers of arcaded openings (arches in arcades), each tier using a different order (Doric-like on ground, Ionic above, Corinthian at top), creating visual hierarchy and rhythm. The tiers were not merely decorative; they provided access and emergency egress for thousands of people—functional engineering integrated with visual refinement.
@@ -173,4 +173,3 @@ Extracted summary:
 See also within Ancient Architecture: **lea-hist-001-01-core-concept**, **lea-hist-001-02-core-concept**, **lea-hist-001-03-core-concept**, **lea-hist-001-04-core-concept**.
 
 > **Overview:** overview-history-of-architecture for the full curriculum structure and study strategy for History of Architecture.
-

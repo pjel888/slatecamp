@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-06-pd1096-tgfa-ambf-location-controls",
+  "dry_question_id": "dryrun-06-pd1096-tgfa-ambf-location-controls-q01",
+  "target_article_id": "85bcd328-436d-49ba-9d37-7b202d0d38d4",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "Section 704.1(a) site-access condition is not an exact existing target-question concept.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(a), PDF p.81.",
+    "text": "Under PD 1096 Rule VII Section 704.1(a), which site condition is required before a building may be constructed?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Section 704.1(a) states that the building must adjoin or have direct access to a public space, yard, or street on at least one side.",
+      "distractors": {
+        "B": "Section 704.1(a) requires at least one side, not all sides.",
+        "C": "Firewall/setback issues are separate controls; they do not replace the Section 704.1(a) location rule.",
+        "D": "TGFA comes under Section 705; it does not replace the Section 704.1(a) threshold location rule."
+      },
+      "takeaway": "Check Section 704.1(a) location/property access before doing area arithmetic."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "pd1096-tgfa-q1",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "A",
+    "explanation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(a), PDF p.81.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "It must adjoin or directly access a public space, yard, or street on at least one side."
+      },
+      {
+        "id": "B",
+        "text": "It must be surrounded by streets on all sides."
+      },
+      {
+        "id": "C",
+        "text": "It must have no side yard if firewalls are used."
+      },
+      {
+        "id": "D",
+        "text": "It must use the maximum TGFA before any location check."
+      }
+    ]
+  },
+  "sme_source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(a), PDF p.81.",
+  "code_citation": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(a), PDF p.81.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

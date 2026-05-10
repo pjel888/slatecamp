@@ -40,29 +40,29 @@ Typical NGR ranges by building type (planning norms, not code):
 
 ### Standard MEP-Related Allocations (Order-of-Magnitude Planning)
 
-**Mechanical Room Size (central equipment)**  
-- Small office (about 10 storeys, ~5,000 sqm total typical floors): on the order of 150–200 sqm for central mechanical plant.  
-- Mid-size office (about 20 storeys, ~4,000 sqm total typical floors): on the order of 250–350 sqm, often split between a central plant and fan rooms.  
+**Mechanical Room Size (central equipment)**
+- Small office (about 10 storeys, ~5,000 sqm total typical floors): on the order of 150–200 sqm for central mechanical plant.
+- Mid-size office (about 20 storeys, ~4,000 sqm total typical floors): on the order of 250–350 sqm, often split between a central plant and fan rooms.
 - Hospital per 100 beds: several hundred square meters (e.g., 400–500 sqm) distributed across multiple mechanical and support rooms.
 
-**Electrical Room Size**  
-- Office / residential: roughly 50–80 sqm per floor or per zone, depending on distribution strategy and equipment.  
+**Electrical Room Size**
+- Office / residential: roughly 50–80 sqm per floor or per zone, depending on distribution strategy and equipment.
 - Hospital: larger electrical rooms (on the order of 100 sqm and up) due to redundancy, emergency power, and specialized systems.
 
-**Plumbing Core**  
-- Vertical stacks and risers typically occupy a modest but continuous percentage of the plan, often bundled with toilets and wet areas.  
+**Plumbing Core**
+- Vertical stacks and risers typically occupy a modest but continuous percentage of the plan, often bundled with toilets and wet areas.
 - Sanitary, storm, and water supply risers require coordinated shafts; exact diameters are determined by engineers from load calculations rather than fixed exam numbers.
 
-**Vertical Circulation and Cores**  
-- Elevator and stair cores are part of the gross area, not usable area, and typically contribute a significant share of the “non-assignable” component.  
+**Vertical Circulation and Cores**
+- Elevator and stair cores are part of the gross area, not usable area, and typically contribute a significant share of the “non-assignable” component.
 - Total core and circulation area commonly falls within the non-usable fraction reflected in the NGR ranges above.
 
 ### Floor-to-Floor Impact on MEP
 
 A floor-to-floor height of about 3.0 m (common in many RC buildings) must accommodate:
 
-- Structural slab and beams.  
-- MEP runs (HVAC ducts, fire protection, electrical, plumbing).  
+- Structural slab and beams.
+- MEP runs (HVAC ducts, fire protection, electrical, plumbing).
 - Suspended ceiling and finishes where provided.
 
 If MEP depth is underestimated, clear finished ceiling height is reduced, creating comfort and proportion issues and potentially breaching minimum ceiling height standards (e.g., PD 1096 requires at least 2.40 m for upper-storey habitable rooms, with 2.70 m minimum at the first storey). Proper early allocation of vertical depth protects both compliance and design quality.
@@ -86,8 +86,8 @@ Extracted summary:
 
 **Shaft and Plant Zoning by Building Height (Planning Patterns)**
 
-- **1–5 storeys**: A single main mechanical/electrical core with distributed plumbing in walls may be adequate.  
-- **6–15 storeys**: A central mechanical core, electrical distribution per floor or per zone, and duplicated plumbing stacks for efficiency and redundancy.  
+- **1–5 storeys**: A single main mechanical/electrical core with distributed plumbing in walls may be adequate.
+- **6–15 storeys**: A central mechanical core, electrical distribution per floor or per zone, and duplicated plumbing stacks for efficiency and redundancy.
 - **16+ storeys**: Zoned mechanical floors (mechanical “interstitial” levels or sky lobbies) every several floors, redundant electrical feeds, and multiple pressure zones for plumbing.
 
 ## Philippine Practice Context
@@ -96,13 +96,13 @@ In the Philippines, MEP space has historically been under-allocated in many proj
 
 ## How It's Tested
 
-1. **NGR and Area Breakdown**  
+1. **NGR and Area Breakdown**
    Given a total GFA and a target NGR for a specific building type, you compute usable floor area versus space consumed by structure, MEP, and circulation.
 
-2. **Floor-to-Floor and Ceiling Height Trade-Offs**  
+2. **Floor-to-Floor and Ceiling Height Trade-Offs**
    You analyze how increased MEP depth affects clear ceiling height and whether the resulting height still complies with PD 1096 minimums and meets comfort and market expectations (e.g., office ceilings versus residential).
 
-3. **Core and Shaft Planning**  
+3. **Core and Shaft Planning**
    You design or evaluate the size and location of mechanical, electrical, and plumbing cores for a mid- or high-rise building, justifying whether they are adequate for the stated occupancy, storey count, and redundancy requirements.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]

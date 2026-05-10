@@ -50,7 +50,7 @@ The foreign country's law must specifically provide for this — not merely allo
 [SLATECAMP_UI_BLOCK:ui_0004 component="Note" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: **Why "law, not practice" matters.** If a foreign country merely tolerates Filipino architects working there without a written statutory right, that does not satisfy Section 27. The applicant must point to a specific legal provision in the foreign jurisdiction that grants Filipino architects equal access. This is a common exam trap: an answer choice describing a country's "established practice" of admitting Filipino architects sounds correct but fails because the law does not explicitly provide 
+- Text: **Why "law, not practice" matters.** If a foreign country merely tolerates Filipino architects working there without a written statutory right, that does not satisfy Section 27. The applicant must point to a specific legal provision in the foreign jurisdiction that grants Filipino architects equal access. This is a common exam trap: an answer choice describing a country's "established practice" of admitting Filipino architects sounds correct but fails because the law does not explicitly provide
 [/SLATECAMP_UI_BLOCK]
 
 ---

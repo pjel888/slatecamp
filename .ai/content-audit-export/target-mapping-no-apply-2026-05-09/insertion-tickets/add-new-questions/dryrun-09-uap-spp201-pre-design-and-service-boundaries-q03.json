@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries",
+  "dry_question_id": "dryrun-09-uap-spp201-pre-design-and-service-boundaries-q03",
+  "target_article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+  "ticket_target": "existing-article-question-insertion",
+  "rationale": "UAP 401-402 exclusion boundary supports the rewritten article; insert only after scope review because it references a different UAP document.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "UAP Document 401-402, Articles 5-6 and 7.08, PDF pp.1 and 8.",
+    "text": "Under UAP Document 401-402, which service is explicitly not covered by the agreement?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "Document 401-402 states the agreement does not cover Fulltime Construction Supervision, among other services.",
+      "distractors": {
+        "B": "The excerpt includes periodic visits in the 5% construction-phase service, not the separately engaged fulltime supervision.",
+        "C": "Preparation of plans/specifications is the primary service described in the excerpt.",
+        "D": "Contract document forms are listed under the 5% construction-phase service."
+      },
+      "takeaway": "Separate periodic construction-phase service from fulltime construction supervision."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "uap-boundary-q3",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "A",
+    "explanation": "UAP Document 401-402, Articles 5-6 and 7.08, PDF pp.1 and 8.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "Fulltime Construction Supervision"
+      },
+      {
+        "id": "B",
+        "text": "Periodic visits during construction phase service"
+      },
+      {
+        "id": "C",
+        "text": "Preparation of plans and specifications"
+      },
+      {
+        "id": "D",
+        "text": "Contract document forms as part of construction phase service"
+      }
+    ]
+  },
+  "sme_source_locator": "UAP Document 401-402, Articles 5-6 and 7.08, PDF pp.1 and 8.",
+  "code_citation": "UAP Document 401-402, Articles 5-6 and 7.08, PDF pp.1 and 8.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

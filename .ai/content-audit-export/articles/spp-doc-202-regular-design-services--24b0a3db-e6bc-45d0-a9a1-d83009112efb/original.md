@@ -335,4 +335,3 @@ LEA Swipe: SPP 202 five phases and fee percentages: SD (Phase 1) = 15% of basic 
 ## Cross‑References
 
 **Spp Doc 201 Pre Design Services**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 206 Comprehensive Architectural Services**
-

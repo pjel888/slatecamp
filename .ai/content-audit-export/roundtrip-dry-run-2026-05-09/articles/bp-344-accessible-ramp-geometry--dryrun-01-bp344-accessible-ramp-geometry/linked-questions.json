@@ -1,0 +1,171 @@
+{
+  "article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:bc97c74ca6b1fb900c3660cfdbcc71365ba8f0d5938e88ec9870fd8d2aeb46ce",
+  "question_count": 3,
+  "questions": [
+    {
+      "question_id": "dryrun-01-bp344-accessible-ramp-geometry-q01",
+      "article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+      "topic_id": "dryrun-topic-01-bp344-accessible-ramp-geometry",
+      "text": "Under the 2024 Revised IRR of BP 344, what is the minimum clear width of an accessible ramp?",
+      "options": [
+        {
+          "id": "A",
+          "text": "900 mm"
+        },
+        {
+          "id": "B",
+          "text": "1000 mm"
+        },
+        {
+          "id": "C",
+          "text": "1200 mm"
+        },
+        {
+          "id": "D",
+          "text": "1500 mm"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "The extracted 2024 IRR text states: \"Minimum clear width of 1200 mm.\"",
+        "distractors": {
+          "A": "900 mm is a handrail height, not the clear ramp width.",
+          "B": "1000 mm is not the cited accessible-ramp clear width in this source excerpt.",
+          "D": "1500 mm may appear in turning or clearance contexts, but it is not the minimum clear width stated for accessible ramps here."
+        },
+        "takeaway": "For the ramp width item, remember 1200 mm before checking slope or landing conditions."
+      },
+      "explanation": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2.",
+      "code_citation": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "bp344-ramp-q1",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:a59657e39176aa987e82ebab408dfcadab6a311aa2ad455a716a62e499059114"
+    },
+    {
+      "question_id": "dryrun-01-bp344-accessible-ramp-geometry-q02",
+      "article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+      "topic_id": "dryrun-topic-01-bp344-accessible-ramp-geometry",
+      "text": "A BP 344 ramp question asks for the general gradient limit before special-case table conditions are considered. Which answer follows the 2024 IRR excerpt?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Not steeper than 1:20"
+        },
+        {
+          "id": "B",
+          "text": "Not steeper than 1:12"
+        },
+        {
+          "id": "C",
+          "text": "Not steeper than 1:10"
+        },
+        {
+          "id": "D",
+          "text": "Not steeper than 1:8"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "The source says accessible ramps have a gradient \"not steeper than 1:20,\" with steeper gradients allowed only in special cases depending on the length to be covered.",
+        "distractors": {
+          "B": "1:12 can be a real special-case ramp answer in other accessibility memories, but this question prompt asks for the cited 2024 IRR general gradient before special-case length conditions are applied.",
+          "C": "Too steep for the cited general rule.",
+          "D": "Too steep and unsupported by the cited accessible-ramp excerpt."
+        },
+        "takeaway": "Answer 1:20 for the general accessible-ramp gradient unless the question prompt explicitly tests a special case."
+      },
+      "explanation": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2.",
+      "code_citation": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "bp344-ramp-q2",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, PDF p.2.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:e46d847fc2809b275fc12c700aea965f508e0ecc71d1f035ea152055a914e2d4"
+    },
+    {
+      "question_id": "dryrun-01-bp344-accessible-ramp-geometry-q03",
+      "article_id": "dryrun-01-bp344-accessible-ramp-geometry",
+      "topic_id": "dryrun-topic-01-bp344-accessible-ramp-geometry",
+      "text": "An accessible ramp is longer than 10.50 m. Under the cited BP 344 2024 IRR excerpt, what intermediate landing length must be provided?",
+      "options": [
+        {
+          "id": "A",
+          "text": "900 mm minimum"
+        },
+        {
+          "id": "B",
+          "text": "1200 mm minimum"
+        },
+        {
+          "id": "C",
+          "text": "1500 mm minimum"
+        },
+        {
+          "id": "D",
+          "text": "1800 mm minimum"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "The source states that accessible ramps with total length longer than 10.50 m shall have intermediate landings with a minimum length of 1800 mm.",
+        "distractors": {
+          "A": "900 mm is linked to handrail height, not landing length.",
+          "B": "1200 mm is the minimum clear ramp width.",
+          "C": "1500 mm is not the cited landing length for this condition."
+        },
+        "takeaway": "If the ramp length exceeds 10.50 m, pair the trigger with the 1800 mm landing."
+      },
+      "explanation": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, Item 10, PDF p.2.",
+      "code_citation": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, Item 10, PDF p.2.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "bp344-ramp-q3",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "BP 344 2024 Revised IRR, Appendix A, Accessible Ramps, Item 10, PDF p.2.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:b712e9a5471c478cfbad18cf4af93f5876f383316ac89d41b0103655250544f1"
+    }
+  ],
+  "dry_run_note": "Generated from SME-approved exemplar-question-set.json; do not edit linked-questions directly for real Supabase updates."
+}

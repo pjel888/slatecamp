@@ -282,7 +282,7 @@ The ADC promotes design innovation, creativity, and excellence in architecture. 
 [SLATECAMP_UI_BLOCK:ui_0007 component="ComparisonTable" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: | Role | Description | |---|---| | **Owner/Promoter** | Organization sponsoring the ADC and financing competition prizes | | **Professional Advisor** | RLA nominated by the owner and approved by IAPOA to organize the ADC | | **Jury** | Majority of RLAs plus a lay juror; approved by IAPOA; at least 5 members | | **Technical Advisors** | Specialists consulted by jurors for specific technical matters | | **Competition Secretariat** | Administrative body supporting the Professional Advisor and Jury 
+- Text: | Role | Description | |---|---| | **Owner/Promoter** | Organization sponsoring the ADC and financing competition prizes | | **Professional Advisor** | RLA nominated by the owner and approved by IAPOA to organize the ADC | | **Jury** | Majority of RLAs plus a lay juror; approved by IAPOA; at least 5 members | | **Technical Advisors** | Specialists consulted by jurors for specific technical matters | | **Competition Secretariat** | Administrative body supporting the Professional Advisor and Jury
 [/SLATECAMP_UI_BLOCK]
 
 
@@ -385,4 +385,3 @@ LEA Swipe: Nine SPP Docs: 201 (Pre-Design), 202 (Regular Design), 203 (Specializ
 ## Cross‑References
 
 **Spp Doc 201 Pre Design Services**, **Spp Doc 202 Regular Design Services**, **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 206 Comprehensive Architectural Services**
-

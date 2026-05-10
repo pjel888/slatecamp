@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-03-ra9514-means-of-egress-width-and-count",
+  "dry_question_id": "dryrun-03-ra9514-means-of-egress-width-and-count-q02",
+  "target_article_id": null,
+  "ticket_target": "new-article-ra9514-means-of-egress-width-count-illumination",
+  "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "RA 9514 RIRR 2019, Section 10.2.5.2(G), PDF p.95.",
+    "text": "A storey has an occupant load of 750. Under the general Section 10.2.5.2 rule, how many means of egress are required unless a specific occupancy rule changes the answer?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "For occupant load more than 500 but not more than 1000, the means of egress must not be less than three.",
+      "distractors": {
+        "A": "The general rule does not allow one for this load.",
+        "B": "Two is the baseline minimum, but 750 crosses the more-than-500 threshold.",
+        "D": "Four is triggered for occupant load in excess of 1000."
+      },
+      "takeaway": "More than 500 up to 1000 requires at least three means of egress."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "ra9514-egress-q2",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "C",
+    "explanation": "RA 9514 RIRR 2019, Section 10.2.5.2(G), PDF p.95.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "One"
+      },
+      {
+        "id": "B",
+        "text": "Two"
+      },
+      {
+        "id": "C",
+        "text": "Three"
+      },
+      {
+        "id": "D",
+        "text": "Four"
+      }
+    ]
+  },
+  "sme_source_locator": "RA 9514 RIRR 2019, Section 10.2.5.2(G), PDF p.95.",
+  "code_citation": "RA 9514 RIRR 2019, Section 10.2.5.2(G), PDF p.95.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

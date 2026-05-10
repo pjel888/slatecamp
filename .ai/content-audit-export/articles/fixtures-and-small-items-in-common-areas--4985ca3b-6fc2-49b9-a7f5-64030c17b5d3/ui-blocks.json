@@ -1,14 +1,91 @@
 {
   "article_id": "4985ca3b-6fc2-49b9-a7f5-64030c17b5d3",
   "slug": "fixtures-and-small-items-in-common-areas",
-  "normalized_created_at": "2026-05-09T04:02:41.207Z",
+  "normalized_created_at": "2026-05-09T17:04:22.519Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:ecc3aed6eb2cb9b49350bd974d587b9f53602bde51c7d222a47f6e03c8387d5c",
-  "normalized_content_hash": "sha256:ecc3aed6eb2cb9b49350bd974d587b9f53602bde51c7d222a47f6e03c8387d5c",
-  "ui_block_count": 0,
-  "total_blocks": 0,
-  "blocks": [],
+  "normalized_content_hash": "sha256:80d5b2e09d7dd196beb756ffcf222bd326fb72fcb64650afaf79613e43dc00cd",
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\">\nDFBA-E mnemonic: Drinking fountain spout at 750-900 mm AFF with knee clearance, public telephones max 1,200 mm controls, Benches at 450 mm seat height, ATMs controls at 900-1,200 mm, Exercise equipment requires 900×1,200 mm clear floor space.\n</LawCallout>",
+      "raw_hash": "sha256:28b5f4a8deaabc3b533cf99b45dd6d8d10dbd2fd582d0e7a9601a3063ddc9050",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"bp344\"\n- Text: DFBA-E mnemonic: Drinking fountain spout at 750-900 mm AFF with knee clearance, public telephones max 1,200 mm controls, Benches at 450 mm seat height, ATMs controls at 900-1,200 mm, Exercise equipment requires 900×1,200 mm clear floor space.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:9f7d3065f6ae89d554ebe21265bde8d07481af0867beedd00a9d7b827dc4605f",
+      "props": {
+        "code": "bp344"
+      },
+      "props_json": {
+        "code": "bp344"
+      },
+      "props_text": "code=\"bp344\"",
+      "children_raw": "\nDFBA-E mnemonic: Drinking fountain spout at 750-900 mm AFF with knee clearance, public telephones max 1,200 mm controls, Benches at 450 mm seat height, ATMs controls at 900-1,200 mm, Exercise equipment requires 900×1,200 mm clear floor space.\n",
+      "children_text": "DFBA-E mnemonic: Drinking fountain spout at 750-900 mm AFF with knee clearance, public telephones max 1,200 mm controls, Benches at 450 mm seat height, ATMs controls at 900-1,200 mm, Exercise equipment requires 900×1,200 mm clear floor space.",
+      "start_offset": 1518,
+      "end_offset": 1902,
+      "line_start": 21,
+      "line_end": 25,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "ExamTip",
+      "raw": "<ExamTip>\nLEA Pattern: Questions on fixtures test specific dimensional recall. Drinking fountain spout: 750-900 mm AFF with knee clearance min 750 mm high × 450 mm deep. Public phone controls: 1,200 mm max. ATM keypad: 900-1,200 mm. Benches: 450 mm seat height with back support.\n</ExamTip>",
+      "raw_hash": "sha256:d3eb9e04eed8feec623e9a11776d5dec261e8fcae3c0d78baed2603873633e9c",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ExamTip\" status=\"preserved\"]\nExtracted summary:\n- Props: (none)\n- Text: LEA Pattern: Questions on fixtures test specific dimensional recall. Drinking fountain spout: 750-900 mm AFF with knee clearance min 750 mm high × 450 mm deep. Public phone controls: 1,200 mm max. ATM keypad: 900-1,200 mm. Benches: 450 mm seat height with back support.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:2ef1cd3511c3f9c257df32d5db6ca3a498c0f3404763d881561b2aa74c4ba81c",
+      "props": {},
+      "props_json": {},
+      "props_text": null,
+      "children_raw": "\nLEA Pattern: Questions on fixtures test specific dimensional recall. Drinking fountain spout: 750-900 mm AFF with knee clearance min 750 mm high × 450 mm deep. Public phone controls: 1,200 mm max. ATM keypad: 900-1,200 mm. Benches: 450 mm seat height with back support.\n",
+      "children_text": "LEA Pattern: Questions on fixtures test specific dimensional recall. Drinking fountain spout: 750-900 mm AFF with knee clearance min 750 mm high × 450 mm deep. Public phone controls: 1,200 mm max. ATM keypad: 900-1,200 mm. Benches: 450 mm seat height with back support.",
+      "start_offset": 1904,
+      "end_offset": 2306,
+      "line_start": 27,
+      "line_end": 31,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "LawCallout",
+      "raw": "<LawCallout code=\"bp344\" section=\"Section 14 - Fixtures\">\nThis section covers ATMs as a fixture — the machine's reach, clearance, and hardware. Signage and counter provisions are in Module 4/12.\n</LawCallout>",
+      "raw_hash": "sha256:d6740ead5332788fbe0bf57bd691a6529baed59e0edf0235bcb06395f96f4062",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"LawCallout\" status=\"preserved\"]\nExtracted summary:\n- Props: code=\"bp344\", section=\"Section 14 - Fixtures\"\n- Text: This section covers ATMs as a fixture — the machine's reach, clearance, and hardware. Signage and counter provisions are in Module 4/12.\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:46425ecf314e7b6ead4938b1e6a4deb2bc8e75bc74b2e8824d744c12d7561813",
+      "props": {
+        "code": "bp344",
+        "section": "Section 14 - Fixtures"
+      },
+      "props_json": {
+        "code": "bp344",
+        "section": "Section 14 - Fixtures"
+      },
+      "props_text": "code=\"bp344\" section=\"Section 14 - Fixtures\"",
+      "children_raw": "\nThis section covers ATMs as a fixture — the machine's reach, clearance, and hardware. Signage and counter provisions are in Module 4/12.\n",
+      "children_text": "This section covers ATMs as a fixture — the machine's reach, clearance, and hardware. Signage and counter provisions are in Module 4/12.",
+      "start_offset": 9150,
+      "end_offset": 9461,
+      "line_start": 197,
+      "line_end": 201,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:4f5459b1cf6b419c3d95aef4c1cdc54f617bcd8cf065618ed34d47b8af50b0d8"
 }

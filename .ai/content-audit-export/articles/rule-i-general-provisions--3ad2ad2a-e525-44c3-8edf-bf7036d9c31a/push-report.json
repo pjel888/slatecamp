@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-10T02:58:33.903Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [
+    "Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.",
+    "Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.",
+    "--repair-placeholders treats --note as an operational note; it was not written to public updated_note."
+  ],
+  "updated_rows_count": 1,
+  "article_id": "3ad2ad2a-e525-44c3-8edf-bf7036d9c31a",
+  "slug": "rule-i-general-provisions",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:6302ac06e5e3e5b05c8bc111b51a6ea42b186e53d12b9d6180066b36d540fc60",
+  "original_hash": "sha256:6302ac06e5e3e5b05c8bc111b51a6ea42b186e53d12b9d6180066b36d540fc60",
+  "candidate_hash": "sha256:eb7adb6d51315a35cacd3f12ff48f27f473e14a7608a8b6a86e0ebed52a2c100",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-06T10:21:55.254949+00:00",
+  "repair_mode": "placeholder_content",
+  "updated_at_after": "2026-05-10T02:58:34.461722+00:00"
+}

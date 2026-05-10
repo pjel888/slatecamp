@@ -437,4 +437,3 @@ Extracted summary:
 ## Cross‑References
 
 **Lathing And Plastering**, **Fire Resistive Construction Ratings**, **Vertical Openings And Floor Roof Construction**, **Pd 1096 Rule Viii Light And Ventilation**
-

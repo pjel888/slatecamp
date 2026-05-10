@@ -1,0 +1,758 @@
+{
+  "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:37785adf0d51df5d9fe7c77d1ab1eac8b7cf69a836f420039efbbce2a34fd5c5",
+  "question_count": 15,
+  "questions": [
+    {
+      "question_id": "961a0025-7d66-4687-a931-e9a1ac59e619",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "For a water supply system in a flood-prone building, which of the following protection measures would be MOST effective at preventing contamination during a flood event?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Installing the intake point 1 meter above ground level"
+        },
+        {
+          "id": "b",
+          "text": "B. Installing check valves and automatic shutoff systems"
+        },
+        {
+          "id": "c",
+          "text": "C. Reducing the diameter of the supply line"
+        },
+        {
+          "id": "d",
+          "text": "D. Using only copper pipes throughout the system"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Elevation alone may be insufficient if flood levels exceed 1 meter; check valves provide active protection regardless of elevation.",
+        "c": "Pipe diameter does not address contamination prevention; it affects flow rate only.",
+        "d": "Pipe material (copper vs. steel) does not prevent contamination from backflow or floodwater ingress.",
+        "correct": "Per the article, water supply intakes in flood-prone buildings must be elevated above flood level OR equipped with check valves and automatic shutoff to prevent contamination from backflow during utility main failures. Check valves and automatic shutoffs are essential safeguards.",
+        "takeaway": "Check valves and automatic shutoff systems prevent contamination of water supplies during floods by blocking backflow and ingress."
+      },
+      "explanation": "Elevation alone may be insufficient if flood levels exceed 1 meter; check valves provide active protection regardless of elevation. Pipe diameter does not address contamination prevention; it affects flow rate only. Pipe material (copper vs. steel) does not prevent contamination from backflow or floodwater ingress. Per the article, water supply intakes in flood-prone buildings must be elevated above flood level OR equipped with check valves and automatic shutoff to prevent contamination from backflow during utility main failures. Check valves and automatic shutoffs are essential safeguards. Check valves and automatic shutoff systems prevent contamination of water supplies during floods by blocking backflow and ingress.",
+      "code_citation": "LEA-UTIL-004-05.mdx, Flood Protection Strategies section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-05-06T13:17:30.908145+00:00",
+      "content_hash": "sha256:0bf51e27c52e6480f9e0ca48f6de62e4d14b07c072c2308f2235efe82a13a573"
+    },
+    {
+      "question_id": "b495ee57-be6f-4e97-a4bf-39ee822e7aa0",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "When specifying fasteners for rooftop equipment in typhoon-prone regions, which ASTM standard must be met according to NSCP 2015?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. ASTM A36 structural steel"
+        },
+        {
+          "id": "b",
+          "text": "B. ASTM F1554 Grade 36 or higher"
+        },
+        {
+          "id": "c",
+          "text": "C. ASTM B36 copper alloy"
+        },
+        {
+          "id": "d",
+          "text": "D. ASTM A500 hollow structural sections"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "ASTM A36 is for structural steel shapes, not specialized fasteners.",
+        "c": "ASTM B36 specifies copper alloys, which are less suitable for high-stress fastener applications.",
+        "d": "ASTM A500 defines hollow structural sections, not fasteners.",
+        "correct": "Per the article, fasteners for rooftop equipment in typhoon-prone areas must meet ASTM F1554 Grade 36 or higher standards to ensure adequate strength and corrosion resistance.",
+        "takeaway": "ASTM F1554 Grade 36 or higher fasteners are required for rooftop equipment in typhoon-prone regions to ensure durability and reliability."
+      },
+      "explanation": "ASTM A36 is for structural steel shapes, not specialized fasteners. ASTM B36 specifies copper alloys, which are less suitable for high-stress fastener applications. ASTM A500 defines hollow structural sections, not fasteners. Per the article, fasteners for rooftop equipment in typhoon-prone areas must meet ASTM F1554 Grade 36 or higher standards to ensure adequate strength and corrosion resistance. ASTM F1554 Grade 36 or higher fasteners are required for rooftop equipment in typhoon-prone regions to ensure durability and reliability.",
+      "code_citation": "LEA-UTIL-004-05.mdx, Wind-Resistant Design for Typhoon Protection section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-015",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-05-06T13:17:31.034582+00:00",
+      "content_hash": "sha256:f33c7435c309b9ae5c401ccbe1c09afa69531dba5661ffc4b79b10b719346785"
+    },
+    {
+      "question_id": "e89766e7-b8ff-4981-8d2c-e2a2cf599820",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "What material or component type is required at seismic isolation joints in piping systems to prevent rupture during earthquakes?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Rigid steel couplings"
+        },
+        {
+          "id": "b",
+          "text": "B. Concrete-lined conduit"
+        },
+        {
+          "id": "c",
+          "text": "C. Flex couplings"
+        },
+        {
+          "id": "d",
+          "text": "D. Lead-lined isolation valves"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Rigid couplings would transmit seismic forces and increase rupture risk, defeating the isolation purpose.",
+        "b": "Concrete-lined conduit is used for different applications and does not provide the necessary flexibility for seismic isolation.",
+        "d": "Lead-lined valves address radiation or chemical isolation, not seismic displacement.",
+        "correct": "Per NSCP 2015 guidance cited in the article, piping systems require flex couplings at seismic isolation joints to accommodate relative motion and prevent rupture during earthquake events.",
+        "takeaway": "Flex couplings at seismic isolation joints allow piping systems to accommodate earthquake-induced motion without rupturing."
+      },
+      "explanation": "Rigid couplings would transmit seismic forces and increase rupture risk, defeating the isolation purpose. Concrete-lined conduit is used for different applications and does not provide the necessary flexibility for seismic isolation. Lead-lined valves address radiation or chemical isolation, not seismic displacement. Per NSCP 2015 guidance cited in the article, piping systems require flex couplings at seismic isolation joints to accommodate relative motion and prevent rupture during earthquake events. Flex couplings at seismic isolation joints allow piping systems to accommodate earthquake-induced motion without rupturing.",
+      "code_citation": "LEA-UTIL-004-05.mdx, Seismic Bracing and Earthquake Resilience section",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-05-06T13:17:31.26928+00:00",
+      "content_hash": "sha256:47bb30c9628f385f5a7f5f4829e231933efee6faefd1d2dfc974857bc266fe40"
+    },
+    {
+      "question_id": "2b17803b-3aa6-4188-bbe2-8d88091f712e",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "A professional engineer sealing MEPF designs for a multi-story hospital in a high-seismic, typhoon-prone, flood-prone region must ensure compliance with NSCP 2015, PD 1096, and RA 10121. Which of the following design decisions would BEST demonstrate comprehensive hazard integration and compliance with all three standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Design seismic bracing for 0.4g horizontal motion; separately design typhoon wind bracing; place emergency power above flood elevation, ensuring all systems are independently compliant"
+        },
+        {
+          "id": "b",
+          "text": "B. Design a unified MEPF system that accommodates seismic acceleration (0.4g horiz., 0.3g vert.), typhoon wind pressures (1.48 kPa), and flood elevation plus 0.6 m freeboard, with 72-hour emergency power and 90-minute backup PA system"
+        },
+        {
+          "id": "c",
+          "text": "C. Focus on the most significant hazard (seismic) and address others as secondary concerns, which may not fully comply with all standards"
+        },
+        {
+          "id": "d",
+          "text": "D. Design systems to meet only the local jurisdiction's preferred standard, waiving requirements from other codes, which could lead to non-compliance"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Addressing hazards separately misses cumulative effects; integrated design is required.",
+        "c": "Prioritizing one hazard violates multiple code requirements; all three hazards are mandated by the three applicable standards.",
+        "d": "Professional engineer seal requires compliance with all applicable codes; selective compliance is a violation of professional ethics and legal standards.",
+        "correct": "Comprehensive MEPF design for a building facing multiple hazards must integrate all three code requirements: NSCP 2015 seismic and wind criteria, PD 1096 emergency systems and fire safety, and RA 10121 disaster resilience (critical facility 72-hour autonomy). Option B demonstrates this integration across all hazard types and system categories.",
+        "takeaway": "Professional engineers must integrate seismic, wind, and flood design criteria across all MEPF systems, with emergency power and communication resilience, to meet NSCP 2015, PD 1096, and RA 10121 requirements for multi-hazard-prone critical facilities."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, comprehensive across all sections",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-024",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ff351ffaf7168fc4b88cf5d7ed58effb35fad1ac5843b83cedbb1928aabacf02"
+    },
+    {
+      "question_id": "27e3b467-5bed-4061-95f6-c8d7a8a85863",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "A critical facility's emergency power transfer switch is rated for 0.20-second auto-transfer time (exceeding NSCP's 0.15-second maximum). The facility engineer argues that 0.20 seconds is 'close enough' and operational testing shows no equipment damage. As a design reviewer, what is your professional responsibility and recommendation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Approve the design; the difference of 0.05 seconds is negligible and testing validates safety, which is a common practice in some jurisdictions"
+        },
+        {
+          "id": "b",
+          "text": "B. Require replacement with a switch rated for ≤0.15 seconds to achieve NSCP 2015 Section 1205 compliance and ensure margin for age-related degradation"
+        },
+        {
+          "id": "c",
+          "text": "C. Allow operation with quarterly testing instead of the standard testing frequency, which could mitigate potential risks"
+        },
+        {
+          "id": "d",
+          "text": "D. Request a variance from the local building authority allowing the extended transfer time, which may be granted under specific conditions"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Even small deviations from code standards violate professional engineer obligations; testing on new equipment does not ensure performance under fault conditions or after aging.",
+        "c": "Increased testing frequency cannot substitute for code compliance; the transfer time specification is based on life-safety criticality, not average performance.",
+        "d": "Variances are granted for novel situations or demonstrable hardship, not for using equipment that fails to meet standard specifications.",
+        "correct": "Per applicable fire safety codes (PD 1096 Rule VII or RA 9514), critical life safety loads require auto-transfer switches with a maximum of 0.15 seconds. A 0.20-second switch does not meet code; operational testing provides false assurance because equipment degradation over time will extend transfer time further. Professional responsibility requires enforcing the code standard to maintain an adequate safety margin.",
+        "takeaway": "Professional engineers must enforce code standards (0.15-second max transfer time) even when testing shows marginal performance, because standards provide safety margins for degradation and unexpected conditions."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Emergency Power Systems for Life Safety section",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-025",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3e9fe3a2249087f8c0109d148d78feaf6646657705b23d7c14d116f760e1a2e4"
+    },
+    {
+      "question_id": "00f76274-9125-4e6c-8eae-473634d9511b",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "A commercial building in a flood-prone area has electrical service panels, backup generators, and sump pump systems at ground level (below the 100-year design flood elevation). Which of the following best describes the comprehensive risk and required mitigation?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Only the sump system is at risk; replace with submersible pumps, which are designed to operate underwater and can handle flooding conditions"
+        },
+        {
+          "id": "b",
+          "text": "B. Only generators are at risk; store fuel tanks elsewhere to prevent contamination and ensure that the generators remain operational during a flood event"
+        },
+        {
+          "id": "c",
+          "text": "C. All three systems are vulnerable; relocate above design flood elevation plus 0.6 m freeboard or install flood barriers"
+        },
+        {
+          "id": "d",
+          "text": "D. The building code allows critical systems at ground level if backup cooling is provided, ensuring that systems remain functional during high temperatures"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Electrical and generator systems are equally vulnerable; all three must be protected.",
+        "b": "Relocating fuel tanks alone does not protect electrical panels or sump systems.",
+        "d": "The building code mandates elevation or flood-resistant design; ground-level location violates code regardless of cooling measures.",
+        "correct": "Per the article, electrical service entrance panels, backup power generators, and water supply intake points are all critical systems at risk during floods. Per NSCP guidelines, these systems must be positioned at or above the design flood elevation plus minimum 0.6 m freeboard, or protected with flood barriers and waterproofing.",
+        "takeaway": "Critical MEPF systems (electrical service, generators, drainage/sump) in flood-prone areas must be elevated above design flood elevation plus 0.6 m freeboard or protected by robust flood barriers."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Flood Protection Strategies section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-021",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4b0b7c543e9ec896ca3e588d8ffe29000f604e01e14435ec37cb337fb43b61a2"
+    },
+    {
+      "question_id": "9c6a6587-1493-430c-9ae9-cad501989ed5",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "A design professional must choose between three HVAC resilience strategies for a critical facility: (1) active cooling only (high energy consumption), (2) passive cooling with natural ventilation (low operating cost), (3) hybrid system with passive cooling + portable temporary units for extended power loss. Which strategy best aligns with RA 10121 resilience principles while managing operational costs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Active cooling only; it provides the highest reliability and is the most straightforward to implement"
+        },
+        {
+          "id": "b",
+          "text": "B. Passive cooling only; it eliminates energy dependence and is the most sustainable option"
+        },
+        {
+          "id": "c",
+          "text": "C. Hybrid approach; it provides passive resilience plus extended-outage capability with on-site or readily available portable equipment"
+        },
+        {
+          "id": "d",
+          "text": "D. None of the above; HVAC resilience is not addressed by RA 10121, which focuses on broader disaster risk reduction strategies"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Active cooling alone fails during power outages; passive components are essential for resilience.",
+        "b": "Passive cooling alone may be insufficient for sensitive environments (hospitals, data centers); supplemental portable capacity is necessary.",
+        "d": "RA 10121 explicitly requires disaster-resilient infrastructure, including HVAC systems for critical facilities.",
+        "correct": "Per the article, HVAC resilience strategies include passive cooling (natural ventilation, thermal mass) to reduce dependence on active systems during extended power loss, with portable equipment (temporary HVAC units) available on-site or within 4 hours of disaster. This hybrid approach balances passive resilience with rapid-deployment capability, aligning with RA 10121 risk reduction philosophy.",
+        "takeaway": "HVAC resilience best combines passive cooling strategies (natural ventilation, thermal mass) with portable equipment reserves to maintain habitability during extended power loss, balancing cost, reliability, and RA 10121 compliance."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Building Systems Resilience and Redundancy section",
+      "bloom_level": "evaluate",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-023",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c7549d93a5a8237173c2dfaa8d5940872425bd513c0f337d86e27247ecb2fb5b"
+    },
+    {
+      "question_id": "0863616e-8994-4ed6-91c7-e3b5684ed4a5",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "A critical facility is comparing two emergency power options: (1) a fuel cell system rated at 50 kW with 90-minute autonomy, and (2) a generator set with 72-hour autonomy and 25% fuel reserve. Based on RA 10121 requirements and operational resilience, which option or combination provides the best post-disaster support?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Option 1 alone; fuel cells are cleaner and require no maintenance, making them ideal for extended post-disaster operations"
+        },
+        {
+          "id": "b",
+          "text": "B. Option 2 alone; 72-hour autonomy meets RA 10121 minimum requirements for critical facility backup power provisions"
+        },
+        {
+          "id": "c",
+          "text": "C. Option 1 for immediate life-safety loads, then Option 2 for extended building operations"
+        },
+        {
+          "id": "d",
+          "text": "D. Neither option is adequate; a 7-day backup power system is required for critical facilities under RA 10121 enhanced provisions"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Fuel cells alone provide only 90 minutes, insufficient for the 72-hour RA 10121 requirement.",
+        "b": "Generator sets alone require startup time and fuel logistics; dual systems provide faster response plus extended runtime.",
+        "d": "RA 10121 specifies 72-hour autonomy, not 7 days; the article does not recommend 7-day systems as standard.",
+        "correct": "Per the article, fuel cell and battery systems provide 90-minute autonomy (suitable for emergency lighting, medical equipment during immediate crisis), while generator sets with extended fuel storage provide 72-hour autonomy (RA 10121 critical facility requirement). A hybrid approach—fuel cells for immediate response and generators for sustained operations—provides optimal resilience.",
+        "takeaway": "Optimal emergency power design combines fast-response fuel cells (90-minute autonomy) with extended-runtime generators (72-hour autonomy) to meet RA 10121 requirements and support immediate life-safety plus sustained building operations."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Emergency Power Systems for Life Safety section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-022",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:798c268327a0ce78b7db4dc07ee69d75afcfd22f43fdf7867f077205cda3867b"
+    },
+    {
+      "question_id": "0d2b06f3-b6a3-4168-9e53-0f1eba1a28d9",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "A critical facility requires redundant water supply resilience per RA 10121. If roof-mounted elevated storage provides 6-hour autonomy and a groundwater well with pump-to-storage provides 24-hour autonomy, what total effective autonomous supply period is achieved by combining both systems?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 6 hours (the limiting system), as the elevated storage cannot exceed its capacity"
+        },
+        {
+          "id": "b",
+          "text": "B. 24 hours (the highest capacity system), assuming the well system is fully operational"
+        },
+        {
+          "id": "c",
+          "text": "C. 30 hours (simple addition), assuming both systems operate without interruption"
+        },
+        {
+          "id": "d",
+          "text": "D. 6 hours initially, then 24 hours if the well system operates independently"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The 6-hour limit is incorrect; the well system extends autonomy beyond initial storage.",
+        "b": "Simple addition (30 hours) overstates the combined capability; the systems operate sequentially, not additively.",
+        "c": "Adding hours (6 + 24) assumes both operate simultaneously, which misrepresents system architecture.",
+        "correct": "Per the article, elevated storage (4–8 hour reserve) provides immediate supply during pressure loss, while groundwater wells with pump-to-storage provide extended 24-hour autonomy. The facility gains 6 hours from roof storage, then can continue on well-supplied storage for additional hours. The sequence provides initial fast response plus extended autonomy.",
+        "takeaway": "Redundant water supply systems (elevated storage + groundwater wells) provide layered resilience: immediate supply from elevated storage followed by extended autonomy from well systems."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Building Systems Resilience and Redundancy section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-018",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:52ffaad42c5bfd834e2769013329a676ed75c356c35ec70076abe152f0a1d990"
+    },
+    {
+      "question_id": "16abc24a-8747-48b9-96f6-93da3d0b017b",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "A hospital building requires emergency communication systems per RA 10121. What is the minimum number of independent control stations that the PA system must be operable from?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. One centralized control only"
+        },
+        {
+          "id": "b",
+          "text": "B. Two independent control stations"
+        },
+        {
+          "id": "c",
+          "text": "C. Three control stations with redundancy"
+        },
+        {
+          "id": "d",
+          "text": "D. Four or more depending on building height"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A single control point creates a single-failure vulnerability; redundancy is essential.",
+        "c": "Three stations exceeds the minimum requirement of two.",
+        "d": "Building height does not determine control station count; two independent stations meet the standard requirement.",
+        "correct": "Per the article, emergency communication PA systems must be operable from at least two independent control stations to ensure that communication capability is maintained even if one control point is compromised or inaccessible.",
+        "takeaway": "PA systems must have at least two independent control stations to provide redundancy and ensure emergency communication capability."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Emergency Communication Systems section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-016",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3d74954897877d4852db2c28a323d49d38d09f6cad96f2cec745c3424f4923f4"
+    },
+    {
+      "question_id": "31f01fa7-d997-4a9f-aff6-5762d82be418",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "A rooftop HVAC unit in a high-occupancy building must be secured to resist wind moments. If the calculated wind moment is 500 Nm, what is the typical range of moment resistance required by the attachment design per NSCP 2015?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. 500–625 Nm (1.0–1.25 times calculated)"
+        },
+        {
+          "id": "b",
+          "text": "B. 750–1000 Nm (1.5–2.0 times calculated)"
+        },
+        {
+          "id": "c",
+          "text": "C. 1000–1500 Nm (2.0–3.0 times calculated)"
+        },
+        {
+          "id": "d",
+          "text": "D. 625–750 Nm (1.25–1.5 times calculated)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "A 1.0–1.25 factor is insufficient; NSCP requires higher safety margins for wind-loaded equipment.",
+        "c": "A 2.0–3.0 factor exceeds NSCP guidance; 1.5–2.0 is the standard requirement.",
+        "d": "A 1.25–1.5 factor is lower than the specified 1.5–2.0 range.",
+        "correct": "Per the article, antenna and communication arrays (and by extension rooftop HVAC units) must have attachment points that resist 1.5 to 2.0 times the calculated wind moment. For a 500 Nm calculated moment, required resistance is 750–1000 Nm.",
+        "takeaway": "Rooftop MEPF equipment attachment points must be designed for 1.5–2.0 times the calculated wind moment to provide adequate safety margins."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Wind-Resistant Design for Typhoon Protection section",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b228f0cb29d71258b17f3150ebf594d44f17f3b923c576e6e7f3f5320736c7e5"
+    },
+    {
+      "question_id": "7e3698a4-7da8-43e3-ad9d-1d9ef857020c",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "Which Philippine code or regulation specifically mandates that MEPF systems be designed to protect occupants during disasters?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Philippine Fire Code only"
+        },
+        {
+          "id": "b",
+          "text": "B. NSCP 2015, PD 1096, and RA 10121"
+        },
+        {
+          "id": "c",
+          "text": "C. National Water Resources Board standards"
+        },
+        {
+          "id": "d",
+          "text": "D. National Telecommunications Commission allocations"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The Fire Code of the Philippines aligns with NSCP but does not independently mandate all MEPF disaster protection.",
+        "c": "Water Resources Board and NTC address specific subsystems but do not provide comprehensive MEPF disaster design requirements.",
+        "d": "NTC allocations apply only to communication system frequency bands, not overall MEPF resilience.",
+        "correct": "Per the article, the National Structural Code of the Philippines 2015 (NSCP 2015), Presidential Decree No. 1096 (Building Code), and the Philippine Disaster Risk Reduction and Management Act (RA 10121) all mandate disaster-resilient MEPF design.",
+        "takeaway": "Multiple Philippine codes (NSCP 2015, PD 1096, RA 10121) govern disaster-resilient MEPF design; all three work together to establish comprehensive requirements."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Introduction section",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8755ff06adf9b98f07e41662b1abe4064dcd9151d9de021cca043642739580a0"
+    },
+    {
+      "question_id": "b683dad1-83ca-4973-a6d2-dd80480182af",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "In designing the smoke control system for a high-rise building, the pressure relief dampers must be positioned above the fire floor. What is the primary purpose of this placement?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. To allow smoke to escape from the stairwell to lower floors, preventing smoke accumulation"
+        },
+        {
+          "id": "b",
+          "text": "B. To maintain design pressure differential in the stairwell by allowing air escape"
+        },
+        {
+          "id": "c",
+          "text": "C. To reduce the load on the emergency lighting system, ensuring visibility during evacuation"
+        },
+        {
+          "id": "d",
+          "text": "D. To facilitate manual override of the smoke control system, allowing for flexible response"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Relief dampers do not allow smoke to escape; they allow pressurization air to escape above the fire zone.",
+        "c": "Smoke control systems and lighting are independent; relief damper placement does not affect lighting load.",
+        "d": "Relief dampers facilitate pressure maintenance, not manual override (which uses manual levers on main dampers).",
+        "correct": "Per PD 1096 Rule VII or RA 9514 Fire Code guidance, pressure relief dampers positioned above the fire floor allow air to escape from the pressurized stairwell, maintaining the design pressure differential (25–50 Pa) that prevents smoke infiltration.",
+        "takeaway": "Pressure relief dampers positioned above the fire floor maintain stairwell pressurization by allowing excess air to escape, preserving the smoke-barrier pressure differential."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Smoke Control and Pressurization Systems section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-017",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:33ee2d19c1eec05fe8dbd0a3be6d0d430b43c90c3bcb81a7593fdb6309009121"
+    },
+    {
+      "question_id": "ad388f32-8ec2-45d8-8a4f-1726da564759",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "A speech intelligibility measurement of 0.70 per IEC 60268-16 is required for emergency PA systems. If a building's primary PA system achieves 0.68 intelligibility, what action is required to meet code compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. No action required; 0.68 is within acceptable tolerance, assuming minor deviations are permissible"
+        },
+        {
+          "id": "b",
+          "text": "B. Augment with a secondary system or improve primary system to meet ≥0.70 requirement"
+        },
+        {
+          "id": "c",
+          "text": "C. Accept the lower performance for cost savings, provided that risk assessments justify the decision"
+        },
+        {
+          "id": "d",
+          "text": "D. Document the deficiency and file for variance with the local authority, ensuring all stakeholders are informed"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.68 does not meet the ≥0.70 standard; even small deficiencies compromise emergency communication clarity.",
+        "c": "Cost savings cannot override life safety requirements.",
+        "d": "Code compliance cannot be deferred via variance; emergency communication is non-negotiable.",
+        "correct": "Per the article, PA systems must achieve speech intelligibility ≥0.70 per IEC 60268-16 for intelligible voice communication. A 0.68 measurement falls short and must be remedied through system improvements (speaker placement, acoustic treatment) or augmentation with secondary systems to achieve the minimum threshold.",
+        "takeaway": "PA system speech intelligibility must meet or exceed 0.70 per IEC 60268-16; any shortfall requires remediation to ensure emergency communications are intelligible."
+      },
+      "explanation": "0.68 does not meet the ≥0.70 standard; even small deficiencies compromise emergency communication clarity. Cost savings cannot override life safety requirements. Code compliance cannot be deferred via variance; emergency communication is non-negotiable. Per the article, PA systems must achieve speech intelligibility ≥0.70 per IEC 60268-16 for intelligible voice communication. A 0.68 measurement falls short and must be remedied through system improvements (speaker placement, acoustic treatment) or augmentation with secondary systems to achieve the minimum threshold. PA system speech intelligibility must meet or exceed 0.70 per IEC 60268-16; any shortfall requires remediation to ensure emergency communications are intelligible.",
+      "code_citation": "LEA-UTIL-004-05.mdx, Emergency Communication Systems section",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-019",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-05-06T13:17:31.153551+00:00",
+      "content_hash": "sha256:26559527e5a0f445cd8710c2d5c938be91aeff4d54e711c129b7f8c78ca285dc"
+    },
+    {
+      "question_id": "c7b1786e-3a56-45f4-b7c9-a2eae78515a4",
+      "article_id": "1caee82f-c2c8-409b-a3bf-41576bc702c5",
+      "topic_id": "b51800c7-944d-46ef-9d64-d8fa77693076",
+      "text": "During a seismic event in a high-occupancy building (hospital), horizontal acceleration reaches 0.5g and vertical acceleration reaches 0.35g—both exceeding the NSCP 2015 design spectra of 0.4g horizontal and 0.2–0.3g vertical. What is the most likely consequence for inadequately braced MEPF equipment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A. Minor vibration with no equipment damage, which is unlikely given the acceleration levels"
+        },
+        {
+          "id": "b",
+          "text": "B. Equipment anchorage failure, rupture of piping systems, and disruption of critical utilities"
+        },
+        {
+          "id": "c",
+          "text": "C. Cosmetic damage to equipment housings only, which would not affect functionality"
+        },
+        {
+          "id": "d",
+          "text": "D. Automatic shutdown of all systems as a safety feature, which is a standard precaution"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Minor vibration underestimates the destructive force; seismic acceleration at these levels causes significant damage to unbraced equipment.",
+        "c": "Cosmetic damage only is unrealistic; horizontal and vertical forces act on equipment mass, causing structural failure.",
+        "d": "MEPF systems do not automatically shut down from seismic events; equipment must be physically braced to remain functional.",
+        "correct": "Per the article, seismic demand categories depend on building occupancy classification. Hospital buildings require SDC D or higher restraint design. Accelerations exceeding design spectra will cause inertial forces beyond the capacity of inadequate anchorage, leading to equipment failure, piping rupture, and utility disruption.",
+        "takeaway": "MEPF equipment inadequately braced for design seismic demands will experience equipment failure, piping rupture, and critical utility disruption during earthquakes."
+      },
+      "explanation": null,
+      "code_citation": "LEA-UTIL-004-05.mdx, Seismic Bracing and Earthquake Resilience section",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-UTIL-004-05-020",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:02.422831+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b9c2061b73b396f66aaf377d74f88b8217034ec845316dc8ae478ac5649e3523"
+    }
+  ]
+}

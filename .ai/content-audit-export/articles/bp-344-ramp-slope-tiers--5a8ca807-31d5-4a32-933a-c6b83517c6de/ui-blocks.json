@@ -1,14 +1,43 @@
 {
   "article_id": "5a8ca807-31d5-4a32-933a-c6b83517c6de",
   "slug": "bp-344-ramp-slope-tiers",
-  "normalized_created_at": "2026-05-09T04:02:41.728Z",
+  "normalized_created_at": "2026-05-09T17:04:22.544Z",
   "parser_version": "ui-block-parser-v1",
-  "original_content_hash": "sha256:3205392462f9fbf67cac6b71e6d34610d86edeb9a8181186837cf8431df8cc41",
-  "normalized_content_hash": "sha256:3205392462f9fbf67cac6b71e6d34610d86edeb9a8181186837cf8431df8cc41",
-  "ui_block_count": 0,
-  "total_blocks": 0,
-  "blocks": [],
+  "original_content_hash": "sha256:59f1707fa8ebc489c5de0a4fdbeda48e481127972158c96ad8c9e99af0aef103",
+  "normalized_content_hash": "sha256:2e0733fa98677f175285210447aa4a11a62ce71f32130e52b70acd5b2f9eb673",
+  "ui_block_count": 1,
+  "total_blocks": 1,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "WikiTableTabs",
+      "raw": "<WikiTableTabs\n  caption=\"BP 344 ramp checks from the cited Appendix A excerpts\"\n  tables='[{\"id\": \"bp344-ramp-geometry\", \"title\": \"Ramp geometry\", \"content\": \"| Check | Governing value | Condition | Exam trap |\\n|---|---|---|---|\\n| Clear width | 1200 mm minimum | Accessible ramp clear width | Confusing clear width with constructed width after rails or finishes |\\n| General gradient | Not steeper than 1:20 | Ordinary accessible ramp condition | Treating a steeper special-case row as the default rule |\\n| 1:15 row | 10.50 m maximum length and 700 mm maximum rise | Special table condition | Using 1:15 without checking length and rise together |\\n| Intermediate landing | 1800 mm minimum length | Ramp total length longer than 10.50 m | Checking slope but forgetting the landing trigger |\"}, {\"id\": \"bp344-ramp-handrails\", \"title\": \"Handrail checks\", \"content\": \"| Check | Governing value | Condition | Exam trap |\\n|---|---|---|---|\\n| Handrail trigger | Change in grade higher than 170 mm | Accessible ramp condition | Assuming slope alone decides compliance |\\n| Handrail heights | 900 mm and 700 mm | Ramps and stairs | Answering only one handrail height |\\n| End extension | 300 mm horizontal extension | Before the start and after the end | Forgetting the extension after drawing the ramp run |\\n| Wall clearance | 50 mm minimum | Handrail attached to walls | Measuring only rail height and missing wall clearance |\"}]'\n/>",
+      "raw_hash": "sha256:161061787f12658386ff35958980285e684397b786474fb57ec4d6e7dadddd62",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"WikiTableTabs\" status=\"preserved\"]\nExtracted summary:\n- Props: caption=\"BP 344 ramp checks from the cited Appendix A excerpts\", tables=\"[{\\\"id\\\": \\\"bp344-ramp-geometry\\\", \\\"title\\\": \\\"Ramp geometry\\\", \\\"content\\\": \\\"| Check | Governing value | Condition | Exam trap |\\\\n|---|---|---|---|\\\\n| Clear width | 1200 mm minimum | Accessible ramp clear width | Confusing clear width with constructed width after rails or finishes |\\\\n| General gradient | Not steeper than 1:20 | Ordinary accessible ramp condition | Treating a steeper special-case row as the default rule |\\\\n| 1:15 row | 10.50 m maximum length and 700 mm maximum rise | Special table condition | Using 1:15 without checking length and rise together |\\\\n| Intermediate landing | 1800 mm minimum length | Ramp total length longer than 10.50 m | Checking slope but forgetting the landing trigger |\\\"}, {\\\"id\\\": \\\"bp344-ramp-handrails\\\", \\\"title\\\": \\\"Handrail checks\\\", \\\"content\\\": \\\"| Check | Governing value | Condition | Exam trap |\\\\n|---|---|---|---|\\\\n| Handrail trigger | Change in grade higher than 170 mm | Accessible ramp condition | Assuming slope alone decides compliance |\\\\n| Handrail heights | 900 mm and 700 mm | Ramps and stairs | Answering only one handrail height |\\\\n| End extension | 300 mm horizontal extension | Before the start and after the end | Forgetting the extension after drawing the ramp run |\\\\n| Wall clearance | 50 mm minimum | Handrail attached to walls | Measuring only rail height and missing wall clearance |\\\"}]\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:c101cfb6667732c4904c09bba7821629c25e4390b8494c547e8803716dda6965",
+      "props": {
+        "caption": "BP 344 ramp checks from the cited Appendix A excerpts",
+        "tables": "[{\"id\": \"bp344-ramp-geometry\", \"title\": \"Ramp geometry\", \"content\": \"| Check | Governing value | Condition | Exam trap |\\n|---|---|---|---|\\n| Clear width | 1200 mm minimum | Accessible ramp clear width | Confusing clear width with constructed width after rails or finishes |\\n| General gradient | Not steeper than 1:20 | Ordinary accessible ramp condition | Treating a steeper special-case row as the default rule |\\n| 1:15 row | 10.50 m maximum length and 700 mm maximum rise | Special table condition | Using 1:15 without checking length and rise together |\\n| Intermediate landing | 1800 mm minimum length | Ramp total length longer than 10.50 m | Checking slope but forgetting the landing trigger |\"}, {\"id\": \"bp344-ramp-handrails\", \"title\": \"Handrail checks\", \"content\": \"| Check | Governing value | Condition | Exam trap |\\n|---|---|---|---|\\n| Handrail trigger | Change in grade higher than 170 mm | Accessible ramp condition | Assuming slope alone decides compliance |\\n| Handrail heights | 900 mm and 700 mm | Ramps and stairs | Answering only one handrail height |\\n| End extension | 300 mm horizontal extension | Before the start and after the end | Forgetting the extension after drawing the ramp run |\\n| Wall clearance | 50 mm minimum | Handrail attached to walls | Measuring only rail height and missing wall clearance |\"}]"
+      },
+      "props_json": {
+        "caption": "BP 344 ramp checks from the cited Appendix A excerpts",
+        "tables": "[{\"id\": \"bp344-ramp-geometry\", \"title\": \"Ramp geometry\", \"content\": \"| Check | Governing value | Condition | Exam trap |\\n|---|---|---|---|\\n| Clear width | 1200 mm minimum | Accessible ramp clear width | Confusing clear width with constructed width after rails or finishes |\\n| General gradient | Not steeper than 1:20 | Ordinary accessible ramp condition | Treating a steeper special-case row as the default rule |\\n| 1:15 row | 10.50 m maximum length and 700 mm maximum rise | Special table condition | Using 1:15 without checking length and rise together |\\n| Intermediate landing | 1800 mm minimum length | Ramp total length longer than 10.50 m | Checking slope but forgetting the landing trigger |\"}, {\"id\": \"bp344-ramp-handrails\", \"title\": \"Handrail checks\", \"content\": \"| Check | Governing value | Condition | Exam trap |\\n|---|---|---|---|\\n| Handrail trigger | Change in grade higher than 170 mm | Accessible ramp condition | Assuming slope alone decides compliance |\\n| Handrail heights | 900 mm and 700 mm | Ramps and stairs | Answering only one handrail height |\\n| End extension | 300 mm horizontal extension | Before the start and after the end | Forgetting the extension after drawing the ramp run |\\n| Wall clearance | 50 mm minimum | Handrail attached to walls | Measuring only rail height and missing wall clearance |\"}]"
+      },
+      "props_text": "caption=\"BP 344 ramp checks from the cited Appendix A excerpts\"\n  tables='[{\"id\": \"bp344-ramp-geometry\", \"title\": \"Ramp geometry\", \"content\": \"| Check | Governing value | Condition | Exam trap |\\n|---|---|---|---|\\n| Clear width | 1200 mm minimum | Accessible ramp clear width | Confusing clear width with constructed width after rails or finishes |\\n| General gradient | Not steeper than 1:20 | Ordinary accessible ramp condition | Treating a steeper special-case row as the default rule |\\n| 1:15 row | 10.50 m maximum length and 700 mm maximum rise | Special table condition | Using 1:15 without checking length and rise together |\\n| Intermediate landing | 1800 mm minimum length | Ramp total length longer than 10.50 m | Checking slope but forgetting the landing trigger |\"}, {\"id\": \"bp344-ramp-handrails\", \"title\": \"Handrail checks\", \"content\": \"| Check | Governing value | Condition | Exam trap |\\n|---|---|---|---|\\n| Handrail trigger | Change in grade higher than 170 mm | Accessible ramp condition | Assuming slope alone decides compliance |\\n| Handrail heights | 900 mm and 700 mm | Ramps and stairs | Answering only one handrail height |\\n| End extension | 300 mm horizontal extension | Before the start and after the end | Forgetting the extension after drawing the ramp run |\\n| Wall clearance | 50 mm minimum | Handrail attached to walls | Measuring only rail height and missing wall clearance |\"}]'",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 4405,
+      "end_offset": 5839,
+      "line_start": 46,
+      "line_end": 49,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:7690df1c664201ac8bb5909e1c7e629ceb6780d143a7afd9c32f2ebcced7472b"
 }

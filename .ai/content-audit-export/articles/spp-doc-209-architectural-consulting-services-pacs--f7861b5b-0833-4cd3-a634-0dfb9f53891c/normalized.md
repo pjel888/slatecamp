@@ -461,4 +461,3 @@ LEA Swipe: PACS = Professional Architectural Consulting Services. A consultant u
 ## Cross‑References
 
 **Spp Doc 203 Specialized Architectural Services**, **Spp Doc 207 Design Build Services**, **Spp Doc 208 Architectural Design Competition Adc**, **Uap Spp Doc Standards Of Professional Practice For Philippine Architects**
-

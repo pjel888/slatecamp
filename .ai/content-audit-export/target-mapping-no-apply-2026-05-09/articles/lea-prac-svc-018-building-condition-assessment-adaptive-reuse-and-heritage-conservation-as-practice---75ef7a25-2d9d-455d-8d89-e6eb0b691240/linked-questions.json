@@ -1,0 +1,508 @@
+{
+  "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9565431ef0ad2b1812c376727e2bd9aef4a4c46b7829b4ef84eb310f7e204eee",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "8bf70084-ecca-4e0c-afe2-9662e9f5237e",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "An architect is evaluating a 1950s industrial building for adaptive reuse as office space. What critical analysis must the architect perform regarding the existing structure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only aesthetic improvements to modernize the facade, focusing on visual appeal without altering structural elements"
+        },
+        {
+          "id": "b",
+          "text": "Assessment of structural capacity for new loads, envelope performance, and whether existing floor plates accommodate new occupancies"
+        },
+        {
+          "id": "c",
+          "text": "Only compliance with current fire codes, ensuring that the building meets safety standards without additional modifications"
+        },
+        {
+          "id": "d",
+          "text": "Demolition cost estimates if adaptation proves unfeasible, considering financial implications of potential redevelopment"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Technical analysis extends beyond aesthetics.",
+        "c": "Analysis extends to multiple systems beyond fire code.",
+        "d": "The architect should focus on viable adaptation rather than demolition.",
+        "correct": "Architects must evaluate structural capacity for new loads, assess window and envelope performance, and determine whether existing floor plates can accommodate new occupancies in adaptive reuse projects. SPP 206.",
+        "takeaway": "Assess structural capacity, envelope, and spatial fit."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:530b41b231fd445f5dc651608a99d6e3e8a4bc6ba644928ea7456998b8e16b74"
+    },
+    {
+      "question_id": "048c28fc-8ffb-4709-867b-dcd9125b9c60",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "What is a key environmental benefit of Adaptive Reuse as a practice service?",
+      "options": [
+        {
+          "id": "a",
+          "text": "It eliminates the need for any future maintenance on existing structures by preserving the original building envelope"
+        },
+        {
+          "id": "b",
+          "text": "It extends the lifecycle of existing structures, reducing embodied energy and construction waste"
+        },
+        {
+          "id": "c",
+          "text": "It guarantees the building will meet all future code requirements indefinitely without requiring periodic compliance reviews"
+        },
+        {
+          "id": "d",
+          "text": "It allows architects to design buildings that don't require mechanical systems by relying entirely on the original passive design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Adaptive reuse still requires ongoing maintenance.",
+        "c": "Future code changes can still affect adapted buildings.",
+        "d": "Mechanical systems remain necessary for adapted buildings.",
+        "correct": "Environmental benefits of adaptive reuse extend the lifecycle of existing structures, reducing embodied energy (energy used to create materials and construct) and construction waste. SPP 206.",
+        "takeaway": "Reuse reduces embodied energy and waste."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f5ca39ede8211e8511b122abeffedfa37952daff49f61ecbb2fad36747e3b2c"
+    },
+    {
+      "question_id": "962aa12e-2083-4bf1-8c0e-90d72e711c90",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "How do Building Condition Assessment findings inform the adaptive reuse design process?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Assessment results are used only for insurance documentation and do not influence design decisions"
+        },
+        {
+          "id": "b",
+          "text": "Assessment findings establish constraints, opportunities, and requirements that shape adaptive reuse design decisions"
+        },
+        {
+          "id": "c",
+          "text": "Assessment is performed after design is complete and therefore does not impact the initial design phase"
+        },
+        {
+          "id": "d",
+          "text": "Assessment results have no impact on design decisions, as they are considered only during post-construction evaluation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assessment serves multiple critical purposes beyond insurance.",
+        "c": "Assessment typically precedes or informs design development.",
+        "d": "Assessment findings are foundational to design feasibility.",
+        "correct": "Building Condition Assessment evaluates structural integrity, mechanical/electrical systems, and remaining useful life—findings that directly inform adaptive reuse design by establishing what can and cannot be changed, what must be preserved, and what requires integration with new systems. SPP 206.",
+        "takeaway": "Assessment findings drive adaptive design decisions."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1c5736f406ac7b35c0379f18f45fd11f37464210000e7564e2a7762fab9592cb"
+    },
+    {
+      "question_id": "aa56867e-1624-4bf2-885d-3d4bb9253086",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "How does Adaptive Reuse differ from traditional new construction design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Adaptive reuse requires the same design process as new construction, which overlooks existing conditions"
+        },
+        {
+          "id": "b",
+          "text": "Adaptive reuse must balance historical preservation with functional requirements of new uses"
+        },
+        {
+          "id": "c",
+          "text": "Adaptive reuse ignores existing structural constraints in favor of new design, which is not feasible"
+        },
+        {
+          "id": "d",
+          "text": "Adaptive reuse is only used for residential buildings, which is a limited view of its application"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Adaptive reuse involves unique constraints not present in new construction.",
+        "c": "Existing structural capacity is a fundamental constraint in adaptive reuse.",
+        "d": "Adaptive reuse applies to diverse building types and uses.",
+        "correct": "Adaptive reuse requires understanding both original design intent and constraints of existing structure while balancing preservation with functional requirements of new uses. SPP 206.",
+        "takeaway": "Adaptive reuse balances old and new requirements."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:de805bf8da7f7c8b582b78332eabc7bdaa86f8c984f3f565b658a51232ccfb9c"
+    },
+    {
+      "question_id": "ae3684de-a518-4714-b587-34846f5dc6b6",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "What professional standards and practice approaches do architects need for Heritage Conservation services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Any architecture degree qualifies; no specialized knowledge is necessary, which is a common misconception"
+        },
+        {
+          "id": "b",
+          "text": "Documented experience, demonstrated expertise, and adherence to professional standards and guidelines for heritage conservation practice"
+        },
+        {
+          "id": "c",
+          "text": "Only government certification without any other qualifications, which is insufficient for comprehensive conservation"
+        },
+        {
+          "id": "d",
+          "text": "Solo practice without collaboration with other specialists, which limits the scope of effective conservation"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Specialized knowledge and experience are essential.",
+        "c": "Expertise extends beyond government certification.",
+        "d": "Collaboration with specialists is beneficial and often necessary.",
+        "correct": "Architects offering heritage conservation services should possess documented experience and demonstrated expertise. Professional standards and guidelines exist for heritage conservation practice, and many firms develop specialized departments or partner with consultants. SPP 206.",
+        "takeaway": "Heritage work requires documented expertise and standards."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "analyze",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5c81c1ae9ba00324845c768c4ba06ff7e960a2bba048507bbe9dc39a40d494b1"
+    },
+    {
+      "question_id": "86d5dd88-b1e2-4326-8708-24d6022bae06",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "How do Building Condition Assessment, Adaptive Reuse, and Heritage Conservation relate to Comprehensive Architectural Services?",
+      "options": [
+        {
+          "id": "a",
+          "text": "They are separate service categories unrelated to CAS, focusing on niche areas"
+        },
+        {
+          "id": "b",
+          "text": "They are classified as specialized architectural services within the CAS framework"
+        },
+        {
+          "id": "c",
+          "text": "They replace regular design services in CAS, offering alternative solutions"
+        },
+        {
+          "id": "d",
+          "text": "They are only available to firms with special licensure, limiting access"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "These specialized services are part of the broader CAS framework.",
+        "c": "They complement and occur alongside regular design services.",
+        "d": "Architects develop specialized expertise through experience and training.",
+        "correct": "Building Condition Assessment, Adaptive Reuse, and Heritage Conservation are classified as specialized architectural services within the Comprehensive Architectural Services framework and integrate with standard design phases as needed. SPP 206.",
+        "takeaway": "These are specialized services within CAS."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:72004755cec5d443b02b0af76eabe9162029593d78cce24e151926b3f883244e"
+    },
+    {
+      "question_id": "ef109051-2a55-45b7-a5d5-e6eef8d36250",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "A historic brick warehouse built in 1920 is being adapted for residential lofts. What expertise must the architect demonstrate to successfully navigate this Heritage Conservation project?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Knowledge only of modern residential code requirements, which is insufficient for heritage projects"
+        },
+        {
+          "id": "b",
+          "text": "Knowledge of historical periods, construction methods, materials appropriate to the era, and preservation standards"
+        },
+        {
+          "id": "c",
+          "text": "Expertise only in structural engineering, not historical context, which neglects the importance of historical accuracy"
+        },
+        {
+          "id": "d",
+          "text": "Understanding only of how to maximize residential units without regard to historical significance, a practice that often leads to regulatory issues"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Historical context is equally important as modern requirements.",
+        "c": "Historical knowledge is essential, not just structural expertise.",
+        "d": "Historical significance must be respected in interventions.",
+        "correct": "Heritage conservation work requires knowledge of historical periods, construction methods, materials appropriate to different eras, preservation standards established by regulatory agencies, and understanding of period-appropriate construction techniques. SPP 206.",
+        "takeaway": "Heritage work needs historical expertise and preservation knowledge."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d195be77496349ad3ef56c9fa65f19f076e6a49936d010c5094867e14c9026d5"
+    },
+    {
+      "question_id": "ac5d146f-55af-490e-8ffd-5a4ab4c063af",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "Which challenge is specific to Adaptive Reuse projects rather than new construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Ensuring code compliance for mechanical, electrical, and plumbing systems in buildings not originally designed for contemporary requirements"
+        },
+        {
+          "id": "b",
+          "text": "Selecting appropriate building materials, which is a common challenge in both adaptive reuse and new construction projects"
+        },
+        {
+          "id": "c",
+          "text": "Creating an aesthetically pleasing design, which is a universal challenge across all types of construction projects"
+        },
+        {
+          "id": "d",
+          "text": "Managing the construction budget, which is a critical aspect of both adaptive reuse and new construction projects"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Material selection occurs in both adaptive reuse and new construction.",
+        "c": "Aesthetic design is relevant to both project types.",
+        "d": "Budget management applies to all building projects.",
+        "correct": "Adaptive reuse requires integrating modern MEP systems into buildings not originally designed for contemporary code requirements, requiring creative problem-solving unique to existing structures. SPP 206.",
+        "takeaway": "MEP integration is unique to adaptive reuse."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "understand",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:13526f0e8198240b8d900b19b80b874e6d2ca31e06a3f1cde1f54275f2867c04"
+    },
+    {
+      "question_id": "b924280b-20ce-4e74-bf37-31ec5fdc6cd1",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "When does Heritage Conservation work typically occur in relation to regular design phases?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Only after construction is complete as post-construction service, ensuring historical accuracy"
+        },
+        {
+          "id": "b",
+          "text": "Only during the bidding phase, to align with contractor capabilities and historical requirements"
+        },
+        {
+          "id": "c",
+          "text": "Either preceding regular design services or occurring in parallel with them"
+        },
+        {
+          "id": "d",
+          "text": "Heritage conservation eliminates the need for other design phases, streamlining the process"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Heritage work typically precedes or parallels design, not follows it.",
+        "b": "Heritage work is not limited to the bidding phase.",
+        "d": "Heritage work complements and informs other design phases.",
+        "correct": "Heritage conservation services often precede regular design services or occur in parallel with them. A heritage project may require extensive assessment and planning before schematic design begins. SPP 206.",
+        "takeaway": "Heritage work precedes or parallels regular design."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "apply",
+      "application_context": "client_scenario",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e25845a2d6559650df8ef91d8a5b1acd7344eff4aaad5ad8ff6b8e3ad93e0705"
+    },
+    {
+      "question_id": "457e8ba6-4512-4332-9baa-92be64d22706",
+      "article_id": "75ef7a25-2d9d-455d-8d89-e6eb0b691240",
+      "topic_id": "e7fc40f0-799b-4107-90a5-b4743a4e4d34",
+      "text": "What is the primary purpose of a Building Condition Assessment?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To design new structural improvements to existing buildings, ensuring compliance with updated building codes and standards"
+        },
+        {
+          "id": "b",
+          "text": "To evaluate the physical state of existing structures and document deficiencies"
+        },
+        {
+          "id": "c",
+          "text": "To estimate the cost of demolishing older buildings, including the assessment of hazardous materials and site restoration requirements"
+        },
+        {
+          "id": "d",
+          "text": "To determine whether a building qualifies for historic designation, considering architectural significance and historical context"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Assessment precedes design but is distinct from it.",
+        "c": "Assessment serves multiple purposes including purchase feasibility and maintenance planning, not demolition estimation.",
+        "d": "Assessment is broader than historic designation determination.",
+        "correct": "Building Condition Assessment evaluates physical state of existing structures including systematic documentation of building components, identification of deficiencies, analysis of structural integrity, and assessment of mechanical and electrical systems. SPP 206.",
+        "takeaway": "Assessment documents condition of existing buildings."
+      },
+      "explanation": null,
+      "code_citation": "SPP Doc 206",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-PRAC-SVC-018-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:46.259279+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4ed325cd040929bbdf01f4db63723af87a5ea3bde5e5b8dbfbedccbc58ab20a0"
+    }
+  ]
+}

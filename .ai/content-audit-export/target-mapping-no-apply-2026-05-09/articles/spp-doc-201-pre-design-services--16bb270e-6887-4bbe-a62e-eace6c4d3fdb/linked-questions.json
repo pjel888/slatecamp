@@ -1,0 +1,518 @@
+{
+  "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:939ae969652cca82fb80f718ad092f0abd4a1717b590aed5b97eb7b205764028",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "102095f1-f23f-4e8b-834a-bd19cb868e99",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the primary purpose of Design Brief Preparation under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To establish the architect's design concept, which is a preliminary step in the design process"
+        },
+        {
+          "id": "b",
+          "text": "To prepare the owner's program of requirements, ensuring all client needs are documented"
+        },
+        {
+          "id": "c",
+          "text": "To enable the owner to bid out or commission architectural services"
+        },
+        {
+          "id": "d",
+          "text": "To conduct a feasibility study of the project site, assessing potential constraints and opportunities"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Design concept development occurs during the design phases under SPP 202, not during Design Brief Preparation.",
+        "b": "The program of requirements is the output of Architectural Programming, a separate pre-design service.",
+        "c": "Correct. Design Brief Preparation creates a comprehensive document that enables the owner to bid out or commission architectural design services from qualified architects.",
+        "d": "Feasibility studies are a separate pre-design service, not the purpose of Design Brief Preparation.",
+        "correct": "Design Brief Preparation under SPP 201 produces a document that allows the owner to bid out or commission architectural services. It defines project parameters, constraints, and requirements so prospective architects can prepare informed proposals.",
+        "takeaway": "Design Brief Preparation = document for bidding out architectural services."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:63d07047650929a2d87897d96aaade8cc23dda9b0ed046596c75e6ab18ef6f51"
+    },
+    {
+      "question_id": "4bedc8ba-b184-4e08-b612-4102581463a3",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the range of the Man-Day Professional Equivleant (MDPE) multiplier for pre-design services under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1.0 to 2.0"
+        },
+        {
+          "id": "b",
+          "text": "1.5 to 2.5"
+        },
+        {
+          "id": "c",
+          "text": "2.0 to 3.0"
+        },
+        {
+          "id": "d",
+          "text": "2.5 to 3.5"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1.0 to 2.0 is too low. The MDPE multiplier starts at 1.5 to account for professional overhead and expertise.",
+        "b": "Correct. The MDPE multiplier ranges from 1.5 to 2.5, applied to the daily professional rate to compute compensation for pre-design services.",
+        "c": "2.0 to 3.0 is incorrect. While the upper range could apply in specialized cases, the standard SPP 201 range is 1.5 to 2.5.",
+        "d": "2.5 to 3.5 is incorrect. This range exceeds the SPP 201 specification and may be confused with SPP 209 salary cost multipliers.",
+        "correct": "The MDPE multiplier for SPP 201 pre-design services ranges from 1.5 to 2.5. This multiplier is applied to the architect's daily professional rate to compute fair compensation that covers overhead, expertise, and profit.",
+        "takeaway": "MDPE multiplier for pre-design = 1.5 to 2.5."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:5a3ea68037eb1c8b0d0456f3affb006fee0b6693942c62f0aa666910a060e188"
+    },
+    {
+      "question_id": "bdb92e62-1ee7-4801-a823-ffb3b1b0836d",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What distinguishes a pre-feasibility study from a feasibility study under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Pre-feasibility uses primary data; feasibility uses secondary data"
+        },
+        {
+          "id": "b",
+          "text": "Pre-feasibility uses secondary data; feasibility uses primary data"
+        },
+        {
+          "id": "c",
+          "text": "Both use primary data but at different scales"
+        },
+        {
+          "id": "d",
+          "text": "Pre-feasibility is conducted by the owner; feasibility by the architect"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This reverses the actual distinction. Pre-feasibility relies on existing (secondary) data for preliminary assessment.",
+        "b": "Correct. Pre-feasibility studies use secondary (existing, published) data for preliminary assessment, while feasibility studies use primary (original, field-gathered) data for detailed analysis.",
+        "c": "Both studies do not use the same data type. The data source is the key differentiator.",
+        "d": "Both studies are conducted by the architect or qualified professionals, not distinguished by who performs them.",
+        "correct": "Under SPP 201, a pre-feasibility study uses secondary data (existing publications, statistics, prior studies) for a preliminary assessment, while a feasibility study uses primary data (original surveys, field investigations, market research) for a comprehensive evaluation.",
+        "takeaway": "Pre-feasibility = secondary data; Feasibility = primary data."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:81d7df99cd3e278d25bbab4ebaf34b27ec85acdcdc825475554ab52fa7cac911"
+    },
+    {
+      "question_id": "a3ea3cae-e60e-46c4-8121-3514399adc9c",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 201, what is the distance threshold beyond which travel expenses become reimbursable?",
+      "options": [
+        {
+          "id": "a",
+          "text": "50 km"
+        },
+        {
+          "id": "b",
+          "text": "75 km"
+        },
+        {
+          "id": "c",
+          "text": "100 km"
+        },
+        {
+          "id": "d",
+          "text": "150 km"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "50 km is the threshold under SPP 202 for per diem travel, not the reimbursable distance under SPP 201.",
+        "b": "75 km is not specified in any SPP document as a reimbursable threshold.",
+        "c": "Correct. Under SPP 201, travel expenses become reimbursable when the project site exceeds 100 km from the architect's office.",
+        "d": "150 km is incorrect. The 100 km threshold is the standard for pre-design reimbursable travel.",
+        "correct": "SPP 201 establishes a 100 km threshold for reimbursable travel expenses. When the project site is more than 100 km from the architect's principal office, travel costs become separately reimbursable by the Owner.",
+        "takeaway": "Pre-design reimbursable travel threshold = 100 km (vs. 50 km for SPP 202 per diem)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:36d0efd22a3b09bb5da65d95cc761f5f40ba3d70a6ea8fa7553730729922f844"
+    },
+    {
+      "question_id": "1ea78898-d881-4c87-b6b9-d5126c5b4190",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the goal of Value Management (VM) as a pre-design service under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "To reduce project cost by eliminating non-essential features"
+        },
+        {
+          "id": "b",
+          "text": "To achieve the owner's unimpaired program at minimum cost"
+        },
+        {
+          "id": "c",
+          "text": "To maximize the architect's fee through value engineering"
+        },
+        {
+          "id": "d",
+          "text": "To evaluate alternative construction materials for cost savings"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Eliminating features is cost-cutting, not value management. VM preserves the full program while optimizing cost.",
+        "b": "Correct. Value Management aims to achieve the owner's complete, unimpaired program at minimum cost — maintaining all functional requirements while finding the most economical solutions.",
+        "c": "Maximizing fees is not the goal of VM. It serves the owner's interest in cost optimization.",
+        "d": "Material evaluation may be part of VM but is not its defining goal. VM focuses on achieving the full program at minimum cost.",
+        "correct": "Value Management under SPP 201 aims to achieve the owner's unimpaired program at minimum cost. The key concept is that VM does not reduce scope or quality — it finds the most economical way to deliver the complete program.",
+        "takeaway": "Value Management = unimpaired program at minimum cost (not scope reduction)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:01d38a6973a23c64ea454279c9178f023a3c9ecd29f47996a982895584ce723e"
+    },
+    {
+      "question_id": "4c2f59d5-abe9-41bd-b985-8a3cd0ba122e",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What is the primary output of Architectural Programming as a pre-design service under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A schematic design concept, which serves as an initial visual representation of the project's architectural intent"
+        },
+        {
+          "id": "b",
+          "text": "A project feasibility report, detailing the economic, technical, and operational viability of the proposed project"
+        },
+        {
+          "id": "c",
+          "text": "A Program of Requirements (POR)"
+        },
+        {
+          "id": "d",
+          "text": "A design brief for bidding, outlining the project's scope, budget, and timeline for potential contractors"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Schematic design is part of SPP 202 Regular Design Services, not a pre-design output.",
+        "b": "A feasibility report is the output of a feasibility study, a separate pre-design service.",
+        "c": "Correct. Architectural Programming produces a Program of Requirements (POR) that defines the functional, spatial, and performance requirements of the project.",
+        "d": "A design brief for bidding is the output of Design Brief Preparation, a different pre-design service.",
+        "correct": "Architectural Programming under SPP 201 produces a Program of Requirements (POR). The POR systematically defines the project's functional needs, spatial requirements, adjacencies, and performance criteria — serving as the foundation for design.",
+        "takeaway": "Architectural Programming output = Program of Requirements (POR)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:adf9a467cb693f533902b5e4d9da8e111d818d82e32d009b9085280cedf0f449"
+    },
+    {
+      "question_id": "dc7cbc81-d9ab-4afb-8942-3ac7c17254c8",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Which compensation method is NOT applicable to pre-design services under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Percentage of Project Construction Cost (% of PCC)"
+        },
+        {
+          "id": "b",
+          "text": "Per Diem / Man-Day Professional Equivalent, which is often used for short-term engagements"
+        },
+        {
+          "id": "c",
+          "text": "Lump Sum / Fixed Fee, typically agreed upon before project commencement"
+        },
+        {
+          "id": "d",
+          "text": "Salary Cost multiplied by a factor, which is a common method for calculating fees in long-term projects"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct. Percentage of PCC is NOT used for pre-design services because the project construction cost is not yet determined at the pre-design stage.",
+        "b": "Per Diem / MDPE is a valid compensation method for pre-design services and is commonly used.",
+        "c": "Lump Sum / Fixed Fee is a valid compensation method for pre-design services when scope is clearly defined.",
+        "d": "Salary Cost multiplied by a factor is a valid compensation method for pre-design services, particularly for extended engagements.",
+        "correct": "Percentage of Project Construction Cost (% of PCC) cannot be used for pre-design services because the PCC has not yet been established at the pre-design phase. Other methods like MDPE, lump sum, and salary cost factor are appropriate.",
+        "takeaway": "% of PCC is NOT used for pre-design — the PCC does not exist yet at that stage."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:da2a49ee31112c81bb06d9112f0d0eeeea77e0f229554020e3d22127be81e089"
+    },
+    {
+      "question_id": "d6d46e45-262d-44f4-bbd1-f77b428d68df",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What are the three ways an architect may deliver pre-design services under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "As lead consultant, as sub-consultant, or as joint venture partner, depending on the project scope and client requirements"
+        },
+        {
+          "id": "b",
+          "text": "As sole provider, as part of a multidisciplinary team, or through a consulting firm, offering flexibility in service delivery"
+        },
+        {
+          "id": "c",
+          "text": "Independently, as part of regular design services, or through a separate pre-design contract"
+        },
+        {
+          "id": "d",
+          "text": "As principal architect, as consulting architect, or as design-build provider, each role offering distinct responsibilities and scopes"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "These describe contracting structures, not the three delivery modes specified in SPP 201.",
+        "b": "While related, this does not match the SPP 201 specification for pre-design delivery modes.",
+        "c": "Correct. Pre-design services may be delivered: (1) independently as standalone services, (2) as part of regular design services under SPP 202, or (3) through a separate pre-design contract.",
+        "d": "These describe architect roles, not delivery modes for pre-design services.",
+        "correct": "SPP 201 specifies three delivery modes for pre-design services: independently (standalone engagement), as part of regular design services (bundled with SPP 202), or through a separate pre-design contract (formal agreement before design engagement).",
+        "takeaway": "Three delivery modes: independently, within SPP 202, or via separate contract."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e013f06675ce8ad9322eab2b1a4e9be7f357e4ef8ace4c1a9285c67801d2f176"
+    },
+    {
+      "question_id": "8ae49694-2cba-4888-b438-7d0b734b80a8",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Which of the following must be included in the architect's written proposal for pre-design services under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Scope, timeline, deliverables, and fee only, without any additional conditions or requirements"
+        },
+        {
+          "id": "b",
+          "text": "Scope, methodology, timeline, and fee, including a detailed breakdown of each phase of the project"
+        },
+        {
+          "id": "c",
+          "text": "Scope, personnel qualifications, insurance, and fee, with specific emphasis on the qualifications of key personnel involved"
+        },
+        {
+          "id": "d",
+          "text": "Scope, methodology, deliverables, and compensation (4 items)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This list is close but omits methodology and misidentifies the fourth item. The SPP specifies deliverables as a required component.",
+        "b": "This list includes methodology but omits deliverables, which is a required component.",
+        "c": "Personnel qualifications and insurance are not among the four required items for the written proposal.",
+        "d": "Correct. The four required items in a written proposal for pre-design services are: scope of work, methodology, deliverables, and compensation terms.",
+        "correct": "SPP 201 requires four items in the architect's written proposal for pre-design services: (1) scope of work, (2) methodology, (3) deliverables, and (4) compensation. This ensures clarity and mutual understanding before engagement.",
+        "takeaway": "Written proposal = 4 items: scope, methodology, deliverables, compensation."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:fed9e59f7ddd8ebf15f25334946cf6352583f37f158cd51979283647e5ddf230"
+    },
+    {
+      "question_id": "2da5c8b0-a317-4c85-a3a7-04ea40db8d45",
+      "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How many distinct pre-design services are enumerated under SPP 201?",
+      "options": [
+        {
+          "id": "a",
+          "text": "8"
+        },
+        {
+          "id": "b",
+          "text": "10"
+        },
+        {
+          "id": "c",
+          "text": "12"
+        },
+        {
+          "id": "d",
+          "text": "15"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "8 is too few. SPP 201 lists a more comprehensive set of pre-design services.",
+        "b": "10 is incorrect, though close. The actual count is 12 distinct services.",
+        "c": "Correct. SPP 201 enumerates 12 distinct pre-design services, ranging from consultation and site evaluation to programming and design brief preparation.",
+        "d": "15 is too many. The 12 pre-design services are sometimes confused with specialized services under SPP 203.",
+        "correct": "SPP 201 lists exactly 12 pre-design services. These include consultation, site selection/analysis, feasibility studies, pre-feasibility studies, value management, architectural programming, design brief preparation, and others.",
+        "takeaway": "SPP 201 has exactly 12 pre-design services."
+      },
+      "explanation": null,
+      "code_citation": "SPP 201",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:46.751246+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:db85b67a4ae465fe57216fe163e8fab30db814fef0091f2b1707a1df9e73eba7"
+    }
+  ]
+}

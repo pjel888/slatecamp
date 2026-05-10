@@ -1,0 +1,431 @@
+
+
+## Board Exam Quick Check
+
+Before memorizing details from this topic, state the exam task in one sentence: what is being classified, measured, approved, or restricted? Then identify the controlling rule named by the item and avoid importing requirements from a different law, table, or occupancy condition.
+
+**Common mistake:** treating a familiar keyword in **Lea Prac Eth 010 Introduction** as enough to answer. In LEA-style questions, first anchor the question to the exact code, scope, and condition being tested, then choose the option that follows that rule.
+
+**Retrieval prompt:** What fact in the question tells you which rule set applies, and what option would become wrong if the scope changed?
+## Introduction
+## Learning Goal
+After reading this article, you should understand the key concepts tested in the LEA for this topic, including relevant code provisions, dimensional standards, and common exam applications.
+
+The LEA examination tests candidates' ability to recognize unprofessional conduct in realistic scenarios. Rather than abstract ethical rules, architects must identify violations in context—understanding when conduct crosses from acceptable professional practice into violation territory.
+
+This article presents a taxonomy of unprofessional conduct patterns based on RA 9266 Section 23 (grounds for suspension/revocation), the Code of Ethical Conduct, and Standards of Professional Practice. Each pattern is illustrated with scenarios showing how violations manifest in practice and what disciplinary consequences follow.
+
+## The Conduct Spectrum
+
+Not all poor professional judgment constitutes disciplinary violation. The conduct spectrum ranges from:
+
+```
+Acceptable Practice → Gray Area → Professional Deviation → Violation
+```
+
+**Acceptable Practice:** Actions within professional discretion, consistent with standards
+
+<ArticleMedia id="media-eth010-conflict-matrix" layout="single" variant="contained" type="image" status="placeholder" aspectRatio="16:9" title="Conflict of Interest — Analysis Matrix" description="Four-quadrant matrix crossing CONFLICT TYPE (Financial, Professional/Employment, Personal/Relationship, Role-based) against SEVERITY LEVEL (Disclosure sufficient, Consent sufficient, Recusal required, Always prohibited). Each cell shows representative scenarios. Bottom section shows the four-step mandatory process: Recognize → Disclose → Obtain Informed Consent → Recuse if irreconcilable." placementIntent="conflict-resolution" suggestedSearchQuery="architect conflict of interest matrix type severity disclosure recusal Code of Ethics" suggestedAsset="Diagram or reference image" />
+**Gray Area:** Practices that may be questionable but have professional defenders
+**Professional Deviation:** Breach of clear standard but not egregious
+**Violation:** Clear breach that justifies discipline
+```
+
+Understanding this spectrum is critical because LEA scenarios ask candidates to distinguish between actions that are poor judgment versus actions that constitute violations.
+
+## Pattern 1: Negligence and Failure to Meet Standard of Care
+
+<ExamTip />
+
+<Warn />
+
+<LawCallout />
+
+### Definition
+
+Negligence in architecture occurs when an architect fails to exercise the reasonable care and skill that a competent architect in similar circumstances would exercise. It involves:
+
+- **Deviation from applicable standards** (codes, best practices, professional norms)
+- **Failure to perform required services** or perform them inadequately
+- **Breach of professional duty** owed to client, public, or other parties
+- **Causation of harm or loss** as a result
+
+### Negligence Categories
+
+<ComparisonTable />
+
+### Scenario 1: Design Negligence
+
+**Situation:** Architect Raj designs an office building with floor slabs calculated for standard office loads (2.5 kPa live load) without inquiry into tenant use. The building is later leased to a data center operator requiring 5 kPa loads. The increased loading causes deflection and cracking.
+
+**Analysis:**
+- **Negligent element:** Failed to investigate or confirm intended use before design
+- **Violated standard:** Professional practice requires investigating client needs and intended use
+- **Causation:** The under-designed slabs directly caused structural distress
+- **Likely discipline:** Suspension 2-3 years; restitution for repair costs
+
+<ExamTip />
+
+### Scenario 2: Construction Administration Negligence
+
+**Situation:** Architect Carmen conducts monthly site inspections but the general contractor installs exterior walls with inadequate flashing details that are not in accordance with the approved drawings. Carmen's inspection photos show the defective work, but she files no non-compliance notice and does not require remediation.
+
+**Analysis:**
+- **Negligent element:** Observed code violation but failed to enforce correction
+- **Violated standard:** Architect's duty during construction admin is to verify compliance
+- **Causation:** Water infiltration and interior damage result from uncorrected defect
+- **Likely discipline:** Probation 1-2 years; requirement to complete CA training
+
+**Key distinction:** Carmen observed the defect (she has knowledge), making her failure to act more culpable than if she had unknowingly missed it.
+
+### Scenario 3: Site Investigation Negligence
+
+**Situation:** Architect Dakota designs a building foundation on a hillside without conducting a geotechnical investigation or consulting with a geotechnical engineer. Subsequent construction reveals unstable soil conditions requiring expensive foundation modifications.
+
+**Analysis:**
+- **Negligent element:** Failed to investigate site conditions before foundation design
+- **Violated standard:** Professional practice requires competent site investigation
+- **Causation:** Inadequate investigation led directly to foundation design errors
+- **Likely discipline:** Suspension 2-3 years; liability for modification costs
+
+<LeartBox />
+
+## Pattern 2: Incompetence and Lack of Professional Qualifications
+
+### Definition
+
+Incompetence differs from negligence: an architect may lack the skill or knowledge to perform required services, even with care. It includes:
+
+- **Practicing outside scope of expertise**
+- **Lacking specialized knowledge required for the project type**
+- **Failing to consult specialists when needed**
+- **Misrepresenting qualifications or experience**
+
+### Incompetence Scenarios
+
+**Scenario 4: Scope Overreach**
+
+**Situation:** Architect Evan, specializing in residential design, accepts a commission to design a complex underground parking structure without structural engineering expertise and without employing a structural engineer. The design is later found to violate code for underground facilities.
+
+**Analysis:**
+- **Incompetence element:** Lacked expertise for specialized project type
+- **Violated standard:** Must employ qualified specialists or decline services outside expertise
+- **Causation:** Lack of structural competence led to code violation
+- **Likely discipline:** Suspension 2-3 years; mandatory specialist consultation requirement
+
+**Scenario 5: Misrepresented Qualifications**
+
+**Situation:** Architect Fiona applies for a government project requiring 10 years of healthcare facility design experience. She submits a resume showing healthcare projects, but omits that she only performed junior designer roles under supervision. The awarded design later has inadequate infection control provisions.
+
+**Analysis:**
+- **Incompetence and fraud:** Misrepresented qualification level and lacked independent expertise
+- **Violated standard:** Code of Ethics requires honest representation of qualifications
+- **Causation:** Represented expertise she did not possess; design deficiency resulted
+- **Likely discipline:** Suspension 3-5 years; possible revocation if pattern of misrepresentation
+
+<ExamTip />
+
+## Pattern 3: Dishonesty and Fraudulent Conduct
+
+### Definition
+
+Dishonesty includes deliberate falsification, fraud, and deception, including:
+
+- **Falsifying documents** (design certifications, compliance statements)
+- **Fraudulent billing** (charging for services not rendered; inflating hours)
+- **Misrepresenting design compliance** (certifying non-compliant work as compliant)
+- **Forging signatures or stamps**
+- **False statements to clients, contractors, or authorities**
+
+### Dishonesty Scenarios
+
+**Scenario 6: Certification Fraud**
+
+**Situation:** Architect Greta, under time pressure, certifies that a building design complies with the Philippine Building Code without actually performing the compliance review. Subsequent construction reveals multiple code violations (inadequate fire-rated exits, non-compliant stair dimensions).
+
+**Analysis:**
+- **Fraudulent element:** Signed compliance certification knowing it was false
+- **Violated standard:** Code of Ethics Section 1 requires honesty and integrity; RA 9266 requires truthful certifications
+- **Causation:** False certification allowed non-compliant design to proceed
+- **Harm:** Public safety risk; life safety code violations
+- **Likely discipline:** Suspension 3-5 years; possible revocation (fraud with safety consequences)
+
+<LeartBox />
+
+**Scenario 7: Billing Fraud**
+
+**Situation:** Architect Hector bills a client for design services on a luxury residence including 200 hours of "structural analysis." In reality, he outsourced the structural design to an engineer for $5,000 and invoiced the client for 200 hours at $150/hour ($30,000), pocketing $25,000 profit.
+
+**Analysis:**
+- **Fraudulent element:** Misrepresented services provided and charged inflated hours
+- **Violated standard:** Code of Ethics requires honest dealing with clients
+- **Causation:** Client paid significantly more than fair value for work
+- **Restitution:** Client entitled to refund of unjust enrichment
+- **Likely discipline:** Suspension 2-3 years; mandatory restitution; ethics training
+
+**Scenario 8: Document Forgery**
+
+**Situation:** Architect Ivan, needing to show a building design complying with setback requirements, creates a forged municipal zoning certification indicating the lot qualifies for a setback variance. He submits this to the client as authentic.
+
+**Analysis:**
+- **Fraudulent element:** Created false government document
+- **Violated standard:** Code of Ethics Section 1 (honesty); RA 9266 Section 23(c) (fraudulent conduct)
+- **Legal consequences:** May also constitute criminal forgery
+- **Harm:** Client relies on false document; potential exposure to liability
+- **Likely discipline:** Suspension 3-5 years minimum; likely revocation if involving government documents
+
+## Pattern 4: Conflicts of Interest and Self-Dealing
+
+### Definition
+
+Conflicts of interest occur when an architect has competing financial or professional interests that compromise objectivity, including:
+
+- **Undisclosed financial interests in contractors or suppliers**
+- **Accepting commissions from building material suppliers without disclosure**
+- **Serving multiple parties with opposing interests (client and contractor) without disclosure**
+- **Self-dealing** (profiting from services recommended to client)
+- **Nepotism and favoritism** in hiring or contracting
+
+### Conflicts of Interest Scenarios
+
+**Scenario 9: Undisclosed Supplier Interest**
+
+**Situation:** Architect Jake receives a 15% commission from a curtain wall supplier for every project he specifies their systems. He does not disclose this financial arrangement to clients. When selecting curtain wall systems for projects, he consistently specifies the supplier's high-cost products even when equivalent lower-cost alternatives exist.
+
+**Analysis:**
+- **Conflict element:** Financial interest in supplier clouds judgment
+- **Violated standard:** Code of Ethics requires full disclosure of conflicts; architect must act in client's best interest
+- **Causation:** Clients overpay for curtain wall systems due to specification bias
+- **Client harm:** Unnecessary cost increase
+- **Likely discipline:** Suspension 1-2 years; mandatory restitution of commissions; disclosure requirement for future
+
+<ExamTip />
+
+**Scenario 10: Undisclosed Multiple Representation**
+
+**Situation:** Architect Kate agrees to design a commercial building for a client (the developer). Simultaneously, without the developer's knowledge, she agrees to design the general contractor's temporary site facilities for the same project. The contractor's facilities plan requires extra site area, conflicting with the developer's space plan.
+
+**Analysis:**
+- **Conflict element:** Competing interests of developer and contractor without either knowing
+- **Violated standard:** Code of Ethics requires exclusive loyalty and full disclosure
+- **Harm:** Developer's design interests compromised; contractor given undue influence
+- **Likely discipline:** Suspension 1-3 years; loss of both client relationships; restitution
+
+**Scenario 11: Accepting Kickbacks from Suppliers**
+
+**Situation:** Architect Leo accepts cash "gifts" from a structural engineering firm in exchange for directing projects to them for subconsultant work. The gifts are disguised as "professional development contributions." Over three years, Leo receives $50,000 in hidden payments.
+
+**Analysis:**
+- **Conflict element:** Financial incentive to recommend firms regardless of merit
+- **Fraud element:** Disguised payments constitute concealed kickbacks
+- **Violated standard:** Code of Ethics Section 4 (honest professional relationships)
+- **Potential harm:** Clients may not receive services from best-qualified subconsultants
+- **Likely discipline:** Suspension 3-5 years; possible revocation; mandatory restitution; potential criminal prosecution
+
+## Pattern 5: Breach of Fiduciary Duty to Client
+
+### Definition
+
+Architects owe clients a fiduciary duty requiring them to:
+
+- **Prioritize client interests over personal interests**
+- **Guard client confidential information**
+- **Account for client funds and payments**
+- **Avoid abandoning client without cause**
+- **Provide competent advice and services**
+
+### Fiduciary Breach Scenarios
+
+**Scenario 12: Abandonment of Client**
+
+**Situation:** Architect Martin accepts a commission to design a hospital addition. He completes schematic design and receives partial payment. Midway through design development, a more lucrative project opportunity appears. Martin informs the client he is "unable to continue" without explanation and does not facilitate transition to another architect.
+
+**Analysis:**
+- **Breach element:** Abandoned client project without legitimate cause or proper transition
+- **Violated standard:** Code of Ethics requires completing services or ensuring proper successor
+- **Causation:** Client incurs costs and delays finding replacement architect
+- **Likely discipline:** Suspension 1-2 years; mandatory restitution of unearned fee; ethics training
+
+<LeartBox />
+
+**Scenario 13: Failure to Return Client Documents**
+
+**Situation:** Architect Nora completes a project and receives final payment. The client requests return of all design documents, survey data, and geotechnical reports. Nora retains the documents, claiming they are "her work product" and potential future reference.
+
+**Analysis:**
+- **Breach element:** Client-provided information belongs to client and must be returned
+- **Violated standard:** Code of Ethics; professional contract terms (typically require return upon request)
+- **Causation:** Client cannot fully utilize building for future modifications or operations
+- **Likely discipline:** Suspension 1-2 years; mandatory document return; restitution if client harm demonstrated
+
+**Scenario 14: Commingling and Misuse of Client Funds**
+
+**Situation:** Architect Oscar receives $200,000 in advance payment from a client for design services. He deposits this into his general operating account (not a trust account) and uses $50,000 for office renovation. The remaining funds are eventually returned to the client when the project is completed, but for 6 months the client's funds were used for Oscar's business purposes.
+
+**Analysis:**
+- **Fiduciary breach:** Client funds misused; not held in separate trust account
+- **Violated standard:** Code of Ethics requires segregation of client funds; professional standards require trust accounting
+- **Causation:** Client's funds used for architect's purposes; risk of loss if business failed
+- **Likely discipline:** Suspension 2-3 years; mandatory restitution of interest; mandatory trust accounting training; possible criminal prosecution if deliberate theft
+
+## Pattern 6: Unprofessional Conduct and Unfit Character
+
+### Definition
+
+Beyond specific violations, RA 9266 Section 23(g) authorizes discipline for "any other act or conduct which is prejudicial to the best interest of the public or the integrity of the profession." This includes:
+
+- **Criminal conviction** (felony or crime of moral turpitude)
+- **Habitual intoxication or substance abuse** affecting practice
+- **Harassment, discrimination, or bullying** of colleagues or staff
+- **Violation of court orders or regulatory directives**
+- **Gross violation of building codes** or safety standards
+
+### Unfit Character Scenarios
+
+**Scenario 15: Criminal Conviction**
+
+**Situation:** Architect Paul is convicted of felony tax evasion for underreporting income from his architecture practice over five years. He receives a sentence of 2 years in federal prison.
+
+**Analysis:**
+- **Unfit character element:** Criminal conviction indicates dishonesty and poor character judgment
+- **Violated standard:** RA 9266 Section 23 allows discipline for criminal conviction involving moral turpitude
+- **Public trust breach:** Licensure carries expectation of trustworthiness and lawfulness
+- **Likely discipline:** Suspension during incarceration; possible revocation upon conviction depending on sentencing and severity
+
+<ExamTip />
+
+**Scenario 16: Habitual Substance Abuse**
+
+**Situation:** Architect Quinn demonstrates a pattern of substance abuse affecting professional judgment. During a site inspection, he appears impaired, makes unsafe decisions regarding an open excavation, and nearly causes an accident. Multiple staff members report concerns about his behavior.
+
+**Analysis:**
+- **Unfit character element:** Substance abuse compromises professional judgment and endangers safety
+- **Violated standard:** RA 9266 Section 23(g); Code of Ethics Section 1 (fitness to practice)
+- **Public safety risk:** Impaired decision-making during construction administration
+- **Likely discipline:** Mandatory suspension until completion of treatment program; possible revocation if no successful rehabilitation; reinstatement conditioned on ongoing monitoring
+
+**Scenario 17: Harassment of Subordinates**
+
+**Situation:** Architect Rosa creates a hostile work environment through verbal abuse, discriminatory comments toward junior female staff, and public humiliation of staff members who make minor errors. Multiple staff members file complaints.
+
+**Analysis:**
+- **Unfit character element:** Harassment and discrimination violate professional conduct standards
+- **Violated standard:** Code of Ethics Section 6 (responsibilities to subordinates); anti-discrimination laws
+- **Causation:** Staff harm; negative professional environment; potential legal liability
+- **Likely discipline:** Suspension 1-2 years; mandatory ethics and management training; restitution to harmed staff if settlement required
+
+## Pattern 7: Violation of Regulatory Requirements and Court Orders
+
+### Definition
+
+Professional discipline is also imposed for:
+
+- **Practicing without current license** or with expired registration
+- **Violating PRBoA or PRC directives** (e.g., orders to cease certain practices)
+- **Failing to maintain continuing professional development** requirements
+- **Non-compliance with statutory reporting** (e.g., failure to report discipline of other licensees)
+- **Violation of court orders** (e.g., orders from litigation)
+
+### Regulatory Violation Scenarios
+
+**Scenario 18: Practicing Without Current License**
+
+**Situation:** Architect Sam's license expires on December 31, 2025. He fails to renew and continues accepting and executing architectural commissions into January 2026 without current license. He later renews the license in February 2026 after a client complaint.
+
+**Analysis:**
+- **Violation element:** Practiced architecture without current license
+- **Violated standard:** RA 9266 Section 34 requires current license for practice
+- **Harm:** Client services performed by unlicensed "architect"; public protection compromised
+- **Likely discipline:** Probation 1-2 years; fine; requirement to notify clients of unlicensed period
+
+**Scenario 19: Failing to Comply with PRBoA Directive**
+
+**Situation:** Following a PRBoA decision directing Architect Tina to obtain mentoring from a senior architect in structural design, Tina ignores the directive and continues independent structural design work without mentoring. She later faces a new complaint for inadequate structural design.
+
+**Analysis:**
+- **Violation element:** Willfully violated PRBoA compliance order
+- **Violated standard:** RA 9266 Section 37 (PRBoA authority); professional obligation to comply with regulatory directives
+- **Aggravating factor:** Demonstrated disrespect for regulatory authority; pattern of structural design problems
+- **Likely discipline:** Enhanced penalty for previous violation; suspension 2-3 years; mandatory compliance monitoring
+
+## Conduct Severity Framework
+
+Not all violations are equally serious. The PRBoA applies a severity framework:
+
+<ComparisonTable />
+
+## Mitigating and Aggravating Factors
+
+The PRBoA considers factors beyond the violation itself:
+
+### Mitigating Factors (Supporting Lighter Discipline)
+
+- **First offense** by previously unblemished architect
+- **Good faith effort** to comply or remedy
+- **Client satisfaction** despite error
+- **Prompt correction** of defect when identified
+- **Genuine remorse** and commitment to improvement
+- **Completion of remedial training** proactively
+- **Difficult project circumstances** (unusually constrained timeline, etc.)
+
+### Aggravating Factors (Supporting Harsher Discipline)
+
+- **Pattern of violations** (repeat offender)
+- **Deliberate conduct** (versus inadvertent error)
+- **Concealment** of violation or dishonesty about it
+- **Significant harm** resulting from violation
+- **Public safety consequences**
+- **Abuse of professional position** or client trust
+- **Violation while under prior discipline** or regulatory order
+
+<ExamTip />
+
+## The Role of Intent and Negligence Versus Fraud
+
+A critical LEA distinction: **did the architect intend the violation or act negligently?**
+
+- **Negligent violation:** Architect exercised care but fell short of standard; often deserves probation/suspended sentence
+- **Reckless violation:** Architect was indifferent to whether standard was met; typically deserves suspension
+- **Intentional/fraudulent violation:** Architect deliberately violated standard or deceived; typically deserves revocation
+
+**Scenario 20: Distinguishing Intent Levels**
+
+Three architects all failed to perform site investigation before foundation design:
+
+**Architect A:** Relied on client representation that site had been investigated; did not know investigation was inadequate (negligent—deserves probation)
+
+**Architect B:** Knew site investigation was needed but skipped it due to budget constraints; hoped for the best (reckless—deserves suspension)
+
+**Architect C:** Knew site investigation was needed and deliberately didn't perform it, then falsely certified the design was based on proper investigation (fraudulent—deserves revocation)
+
+Same violation (inadequate site investigation) yields vastly different discipline based on architect's mental state.
+
+## Summary Table: Violation Patterns and Likely Discipline
+
+<ComparisonTable />
+
+## About This Article
+
+This article is part of the SlateCamp Professional Practice Content Engine for LEA preparation. It synthesizes regulatory frameworks, case law principles, and professional standards into competency-based learning outcomes aligned with the Licensure Examination for Architects syllabus.
+
+**Revision History:**
+- 2026-03-22: Initial publication covering unprofessional conduct patterns
+
+**Next Article:** LEA-PRAC-ETH-011 — Continuing Professional Development and Competency
+
+---
+
+## Related Articles
+
+- [RA 9266: Legal Framework](lea-prac-law-001)
+- [Prohibited Acts and Penalties](lea-prac-law-003)
+- [Grounds for Suspension and Revocation](lea-prac-eth-008)
+- [Non-Poaching and Professional Courtesy](lea-prac-eth-006)
+- [Obligations to Contractors](lea-prac-eth-007)
+- [Conflict of Interest](lea-prac-eth-010)
+- [Scope of Practice](lea-prac-law-002)
+- [Signing and Sealing Prohibition](lea-prac-law-017)
+
+## Real-World Application
+
+Suppose a young architect in Cebu is asked by a relative to “just sign” a small commercial fit-out prepared by an unlicensed drafter. The ethical problem is not only family pressure. The architect must decide whether the documents were prepared under responsible professional control, whether the scope is honestly represented, and whether signing would mislead the client, the building official, or the public. A proper response is to review the work, identify missing code and coordination checks, explain what professional responsibility requires, and either take over the work lawfully or refuse the signature. In LEA questions, this kind of situation usually tests the difference between loyalty to a client and duty to the public. When the choices look personal, translate them into professional obligations: competence, honesty, accountability, and protection of life, health, and property.

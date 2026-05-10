@@ -141,7 +141,7 @@ Extracted summary:
 - Text: Critical Note: Both of these structures still undergo the full permit review process. A government building's plans are reviewed for structural safety, fire safety, and sanitation just like any private project. Only the payment of fees is waived.
 [/SLATECAMP_UI_BLOCK]
 
-> **Exam Caveat — Traditional Indigenous Family Dwellings**  
+> **Exam Caveat — Traditional Indigenous Family Dwellings**
 > PD 1096 Sec. 209 states that **public buildings and traditional indigenous family dwellings are exempt only from payment of building permit fees**, not from the permit requirement itself. Some review materials and local practices say that traditional indigenous family dwellings are entirely outside the Code and treat them as **permit‑exempt**. For this module (and for LEA safety), we follow the **stricter Code‑text reading**: permit still required, fees waived. Always match your answer to the exact wording of the exam question.
 
 ---
@@ -358,7 +358,7 @@ A homeowner builds a 1.60 m-high concrete perimeter fence around their property.
 [SLATECAMP_UI_BLOCK:ui_0010 component="Accordion" status="preserved"]
 Extracted summary:
 - Props: (none)
-- Text: Reveal Answer **Correct Answer: C — Accessory Permit required** **Analysis:** The fence rules under the Revised IRR have three distinct thresholds: - Garden masonry walls **1.20 m and below**: fully exempt from any permit (Sec. 301.3.a.v) - Fences **above 1.20 m up to 1.80 m**: **Accessory Permit required** (Sec. 301.2.b.ii) - Fences **above 1.80 m**: Full Building Permit required as Group J-2 occupancy (Sec. 701, IRR) A 1.60 m fence falls in the middle bracket — Accessory Permit only. Option A 
+- Text: Reveal Answer **Correct Answer: C — Accessory Permit required** **Analysis:** The fence rules under the Revised IRR have three distinct thresholds: - Garden masonry walls **1.20 m and below**: fully exempt from any permit (Sec. 301.3.a.v) - Fences **above 1.20 m up to 1.80 m**: **Accessory Permit required** (Sec. 301.2.b.ii) - Fences **above 1.80 m**: Full Building Permit required as Group J-2 occupancy (Sec. 701, IRR) A 1.60 m fence falls in the middle bracket — Accessory Permit only. Option A
 [/SLATECAMP_UI_BLOCK]
 
 ---

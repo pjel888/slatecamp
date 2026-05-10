@@ -1,0 +1,1072 @@
+{
+  "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:875b7c080850f7f426b030ae828f98a57769c09e0a11aa8066f263a07ba89a46",
+  "question_count": 21,
+  "questions": [
+    {
+      "question_id": "8eb74cdf-c2a3-42f0-8edd-a903e1f786bd",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "Based on the specifications in \"Institutional Human Dimensions\", if a project requires 3 m, what is the correct interpretation?",
+      "options": [
+        {
+          "id": "A",
+          "text": "3 m is the minimum/standard requirement"
+        },
+        {
+          "id": "B",
+          "text": "3 m is the maximum permitted value"
+        },
+        {
+          "id": "C",
+          "text": "3 m applies only to specific conditions"
+        },
+        {
+          "id": "D",
+          "text": "3 m is an approximate value subject to interpretation"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "The article specifies 3 m as the requirement. Context: gical oxygen-suffocation threshold. Children do not suffocate from a room below ...",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:13.250019+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bf9cb561af0a9e25beadebea719b8650bd2e5222b8ef59ccd7898d346f8cde9b"
+    },
+    {
+      "question_id": "fa0b8577-7b5e-4684-ac5e-dc9f098392dd",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "What is the minimum clear door width required under BP 344 for accessible routes in institutional buildings, and how does it compare to the ADA minimum?",
+      "options": [
+        {
+          "id": "A",
+          "text": "BP 344: 900 mm clear — wider than ADA's minimum of 813 mm (32 in); Philippine accessible doors require more clearance"
+        },
+        {
+          "id": "B",
+          "text": "BP 344: 813 mm (32 in) clear — identical to the ADA minimum; both standards require the same door width for accessibility"
+        },
+        {
+          "id": "C",
+          "text": "BP 344: 700 mm clear — the minimum residential door opening, also used for accessible institutional doors, which is incorrect"
+        },
+        {
+          "id": "D",
+          "text": "BP 344: 760 mm clear — derived from the standard wheelchair width plus a 50 mm maneuvering buffer, which is not accurate"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 requires 900 mm minimum clear door width for accessible routes. ADA requires 32 inches (813 mm) minimum — BP 344 is more demanding by 87 mm.",
+        "explanation": "BP 344 IRR specifies 900 mm minimum clear opening for accessible doors. ADA 2010 requires a minimum of 32 inches (813 mm) measured with the door open at 90°. Philippine accessible design therefore demands wider door clearances than the US ADA standard. This is significant for institutional buildings like hospitals, schools, and libraries that must comply with BP 344. The 700 mm figure (Option C) is the minimum clear exitway after door swing per PD 1096, not the accessible door clear width.",
+        "common_misconceptions": [
+          "Assuming BP 344 and ADA require the same door clear width — BP 344's 900 mm is wider than ADA's 813 mm",
+          "Citing 700 mm as the BP 344 accessible door width — 700 mm is the PD 1096 minimum exit clear opening, not the accessible width"
+        ]
+      },
+      "explanation": "This question tests comparative analysis of BP 344 and ADA accessible door width requirements.",
+      "code_citation": "BP 344 IRR; ADA 2010",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a57596e1b5f61c8b69fa95b080e3e493390900521635c27f6ef74bfda8e013fd"
+    },
+    {
+      "question_id": "29424dd0-2882-4d05-bda3-46f40f1d31a8",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "In designing library shelving for a barangay library in the Philippines, an architect applies US shelving heights based on US femlea 5th percentile overhead reach. Why is this approach problematic for Filipino users?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The heights are equivalent — both Filipino and US female populations have the same 5th percentile overhead reach of approximately 183 cm, which is a common misconception"
+        },
+        {
+          "id": "B",
+          "text": "US library shelving regulations are prohibited in Philippine buildings by BP 344, which mandates Filipino anthropometric data for all institutional design, ensuring accessibility"
+        },
+        {
+          "id": "C",
+          "text": "Filipino female overhead reach is greater than US female reach, so US standards undersize the shelving height for Filipino users, leading to inefficiencies"
+        },
+        {
+          "id": "D",
+          "text": "US 5th% female overhead reach (~218 cm) significantly exceeds Filipino female mean overhead reach (196.5 cm); shelves placed at US standards will be inaccessible to many Filipino women"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "US female 5th% overhead reach is approximately 218 cm; Filipino female mean overhead reach is only 196.5 cm. Shelves designed for the US 5th% are beyond reach for a large proportion of Filipino women.",
+        "explanation": "Per Del Prado-Lu (2007), Filipino female mean overhead fingertip reach = 196.5 cm; 5th percentile = 183.0 cm. US female overhead reach (5th%) is approximately 218 cm. Shelves set at US 5th% standards (around 218 cm) would be unreachable by the majority of Filipino women — not just the 5th percentile. For inclusive Philippine library design, upper shelves should not exceed approximately 196 cm (Filipino female mean), or lower to accommodate wheelchair users (≤120–135 cm per BP 344). Option B fabricates a BP 344 provision. Option C reverses the direction of the anthropometric gap.",
+        "common_misconceptions": [
+          "Assuming Filipino and US female overhead reach are similar or identical",
+          "Thinking BP 344 explicitly prohibits US anthropometric data in Philippine designs"
+        ]
+      },
+      "explanation": "This question tests analysis of the anthropometric gap between Filipino and US femlea overhead reach in an institutional design context.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e8822229b7136ec9ea4a716368bb7df416b1886c4ed6e9f300724ada141176f7"
+    },
+    {
+      "question_id": "68d10d65-10ea-402f-9adc-171335481cb2",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "Under PD 1096, which occupancy group applies to a public elementary school in the Philippines, and why is this classification an LEA exam trap?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Group D-2 — schools are classified with hospitals because both serve vulnerable populations under institutional care"
+        },
+        {
+          "id": "B",
+          "text": "Group C — schools are Education and Recreation occupancies; Group D covers health care and custodial institutions only"
+        },
+        {
+          "id": "C",
+          "text": "Group E — the IBC Group E classification for educational occupancies was adopted directly into PD 1096"
+        },
+        {
+          "id": "D",
+          "text": "Group H — schools with assembly functions like auditoriums are classified as Assembly occupancies under PD 1096"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 701 places schools in Group C (Education and Recreation). Group D is for health care and custodial institutions — not schools.",
+        "explanation": "PD 1096 Sec. 701 is explicit: Group C covers buildings used for school or day-care purposes involving assemblage for instruction, education, or recreation. Group D covers hospitals (D-2), jails/prisons (D-1), and ambulatory nursing homes (D-3). The exam trap is placing schools in Group D — a very common error. Group E is IBC (US) terminology and does not exist in PD 1096. Group H applies to assembly occupancies under PD 1096, not educational occupancies.",
+        "common_misconceptions": [
+          "Placing schools in Group D because both schools and hospitals serve 'dependent' or 'vulnerable' populations",
+          "Applying the US IBC Group E classification to Philippine code answers"
+        ]
+      },
+      "explanation": "This question tests recall of the PD 1096 occupancy classification for schools versus hospitals.",
+      "code_citation": "PD 1096 Sec. 701",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12ef6a57afc5ea376c84397faf49ff57c0092a8e130e431890b025c3652b298d"
+    },
+    {
+      "question_id": "8580cd4e-3dcc-41cb-b054-b453dddb16e6",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "PD 1096, Rule VIII, Section 807.1 specifies the minimum airspace requirement for school rooms. What is the correct standard, and what does it actually prevent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.0 m²/person floor area only — PD 1096 Sec. 807.1 specifies area, not volume, for school rooms, which is a common misconception"
+        },
+        {
+          "id": "B",
+          "text": "12.0 m³/person — the same standard used for school rooms, workshops, and offices under PD 1096, ensuring adequate ventilation"
+        },
+        {
+          "id": "C",
+          "text": "3.0 m³/person — this is an oxygen suffocation threshold; below this volume students cannot breathe safely, leading to health risks"
+        },
+        {
+          "id": "D",
+          "text": "3.0 m³/person plus 1.0 m²/person floor area — prevents excessive CO₂ buildup and poor air quality, not oxygen suffocation"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 807.1 requires 3.0 m³/person AND 1.0 m²/person for school rooms. Both must be met. The standard prevents CO₂ buildup and poor ventilation — not oxygen suffocation.",
+        "explanation": "PD 1096 Rule VIII, Sec. 807.1: school rooms require 3.00 m³/person (airspace) plus 1.00 m²/person (floor area) — both standards must be satisfied simultaneously. The 3.0 m³ figure is a ventilation sufficiency threshold, not a biological oxygen limit. Children do not suffocate below 3 m³/person; excessive CO₂, pathogen concentration, and thermal discomfort are the real risks. The 12.0 m³/person figure in Option B applies to workshops, factories, and offices — not school rooms. Option D incorrectly omits the volumetric requirement.",
+        "common_misconceptions": [
+          "Applying the 12.0 m³/person office standard to school rooms — school rooms use only 3.0 m³/person",
+          "Claiming that students 'suffocate' below 3 m³/person — this is a code ventilation threshold, not an oxygen limit"
+        ]
+      },
+      "explanation": "This question tests understanding of the PD 1096 school room airspace standard and its purpose.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807.1",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:25e616481a3ca32723f03615334cfd08099d5e5c5f11c168562c0636a1895897"
+    },
+    {
+      "question_id": "51711e75-f9fe-4283-9cf0-a48c76836406",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A US design brief for a Philippine hospital project states: 'Hospital corridor minimum clear width: 8 ft (244 cm), Group I-2.' What is the most accurate response from a Philippine architect?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The 244 cm dimension is acceptable since it exceeds the Philippine minimum; the Group I-2 designation can be used in Philippine permit submissions, provided it aligns with local zoning ordinances"
+        },
+        {
+          "id": "B",
+          "text": "BP 344 sets the Philippine hospital corridor width at 1.20 m, overriding both the PD 1096 and US standards cited, and must be adhered to in all cases"
+        },
+        {
+          "id": "C",
+          "text": "Under PD 1096, Philippine hospitals are Group D-2; the corridor minimum is 2.40 m — the US Group I-2 designation does not apply to Philippine code compliance"
+        },
+        {
+          "id": "D",
+          "text": "Group I-2 applies in the Philippines when the project uses an internationally recognized building code endorsed by the DPWH, subject to local amendments"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Philippine hospitals are classified as Group D-2 under PD 1096. The corridor minimum is 2.40 m. The US IBC Group I-2 designation has no legal standing in the Philippines.",
+        "explanation": "Under PD 1096 Sec. 701(4)(b), hospitals fall under Group D-2 (Institutional — health care). The applicable Philippine corridor minimum is 2.40 m. 'Group I-2' is IBC terminology for US hospital occupancies — using it in a Philippine building permit submission is a code terminology error. While 8 ft (244 cm) and 2.40 m are nearly identical numerically, using the wrong occupancy designation and code framework is a substantive error on Philippine ALE exams. Option C fabricates a BP 344 corridor width — BP 344 governs accessible elements, not general corridor widths.",
+        "common_misconceptions": [
+          "Accepting Group I-2 terminology as valid for Philippine hospital design because the dimension is numerically similar",
+          "Citing BP 344 as the source of hospital corridor minimums — it is not"
+        ]
+      },
+      "explanation": "This question tests the ability to identify incorrect application of US IBC occupancy terminology to Philippine institutional design.",
+      "code_citation": "PD 1096 Sec. 701(4)(b); PD 1096 Group D-2",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7abcb2cdc4b20bfeb3a0ff1ebfd0b5c15d85c646bb19a3cc19becd7f4f23fef9"
+    },
+    {
+      "question_id": "a308f00f-c039-46e5-bd27-df23619601af",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "BP 344 IRR specifies the maximum accessible ramp slope for institutional buildings in the Philippines. What is the correct value, and what figure is commonly cited in error?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum slope 1:20 — the same standard used for sidewalk cross-gradients adapted to ramp design"
+        },
+        {
+          "id": "B",
+          "text": "Maximum slope 1:12 — approximately 8.3%; the correct BP 344 IRR accessible ramp standard"
+        },
+        {
+          "id": "C",
+          "text": "Maximum slope 1:50 — cited in the original reference material; equivalent to approximately 2% grade"
+        },
+        {
+          "id": "D",
+          "text": "Maximum slope 1:8 — a steeper standard permitted for compact institutional sites with space constraints"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR mandates a maximum accessible ramp slope of 1:12 (approximately 8.3%). The figure 1:50 is a critical factual error that appears in some reference materials.",
+        "explanation": "BP 344 IRR accessible ramp requirements: minimum clear width 1,200 mm; maximum gradient 1:12 (not 1:50); handrails at 700 mm and 900 mm on both sides; landings at intervals of no more than 10.5 m. A 1:50 slope would be nearly flat (2%) — uselessly gentle and not matching any Philippine accessibility standard for ramps. The 1:20 figure (Option A) applies to sidewalk gradients. The 1:12 maximum is identical to the US ADA ramp slope standard, making this one of the few points where Philippine and US accessibility codes align exactly.",
+        "common_misconceptions": [
+          "Citing 1:50 as the BP 344 ramp slope — this is a documented factual error in circulated study materials",
+          "Confusing the 1:20 sidewalk cross-gradient with the 1:12 ramp maximum"
+        ]
+      },
+      "explanation": "This question tests recall of the correct BP 344 accessible ramp slope and flags the common 1:50 error.",
+      "code_citation": "BP 344 IRR (Amended)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b62ecc9cda5c221cf1510d696cb1831a0aaa53ce875f67cdf34a4255d3ac44b5"
+    },
+    {
+      "question_id": "9b50ebed-ad8d-4bdd-ba2d-be6cbc03befe",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A classroom measures 8 m × 6 m × 3.0 m. What is the maximum number of students it can legally accommodate under PD 1096, and which standard governs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "48 students — the floor area standard (48 m² ÷ 1.0 m²/person) and airspace standard (144 m³ ÷ 3.0) both yield 48; floor area governs"
+        },
+        {
+          "id": "B",
+          "text": "144 students — derived by dividing total air volume (144 m³) by 1.0 m²/person floor standard, which is incorrect"
+        },
+        {
+          "id": "C",
+          "text": "80 students — calculated by dividing floor area by 0.75 m² per student for dense elementary occupancy, which is not applicable"
+        },
+        {
+          "id": "D",
+          "text": "48 students by airspace; 20 students by the IBC Table 1004.5 area standard of 1.86 m²/person; IBC governs, which is not the case here"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Volume = 8 × 6 × 3.0 = 144 m³ ÷ 3.0 = 48 by airspace. Floor area = 48 m² ÷ 1.0 = 48 by area. Both yield 48 — the lower of the two governs = 48 students.",
+        "explanation": "PD 1096 Sec. 807.1 requires BOTH: (1) airspace ≥ 3.0 m³/person → 144 m³ ÷ 3.0 = 48 students; (2) floor area ≥ 1.0 m²/person → 48 m² ÷ 1.0 = 48 students. When both standards yield the same result, the governing capacity is 48. Option A confuses the volume calculation output (144) with the allowed occupant count. Option C applies a fabricated density factor. Option D incorrectly applies US IBC standards to a Philippine code question.",
+        "common_misconceptions": [
+          "Reporting the total volume (144 m³) as the student count rather than dividing by 3.0 m³/person",
+          "Applying only one of the two PD 1096 Sec. 807.1 standards (airspace OR floor area) instead of both"
+        ]
+      },
+      "explanation": "This question tests step-by-step application of the PD 1096 dual-standard classroom capacity calculation.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:19fb0e58747bbae72ff0daf209c13021e3f5875181b63dfc850ae408f7fd94ed"
+    },
+    {
+      "question_id": "6b21b4ad-40f4-49ad-9c5e-1931e56fcb4d",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "Under PD 1096, jails and prisons are classified under which occupancy group and division, and how does this compare to IBC classification?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PD 1096: Group C (Education & Recreation); IBC: Group I-3 (Institutional — Restrained), highlighting differences in classification criteria"
+        },
+        {
+          "id": "B",
+          "text": "PD 1096: Group D-1 (Institutional — Custody, personal liberty restrained); IBC: Group I-3 (Institutional — Restrained)"
+        },
+        {
+          "id": "C",
+          "text": "PD 1096: Group D-2 (Institutional — Health Care); IBC: Group I-2 (Institutional — Incapacitated), showing a focus on health care facilities"
+        },
+        {
+          "id": "D",
+          "text": "PD 1096: Group H (Assembly); IBC: Group I-3 — both classify custodial institutions as assembly occupancies, which is a common misconception"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 701(4)(a) places jails/prisons in Group D-1 (personal liberty restrained). The IBC equivalent is Group I-3 (Institutional — Restrained). Never confuse with Group D-2 (hospitals).",
+        "explanation": "PD 1096 Sec. 701, Group D: D-1 = Mental hospitals, jails, prisons, reformatories (personal liberty restrained). D-2 = Hospitals, nursing homes (non-ambulatory, health care). D-3 = Ambulatory nursing homes, children's homes. Jails are specifically Group D-1. The US IBC equivalent is Group I-3 (Institutional — Restrained). The mnemonic: 'D-1 = Detained; D-2 = Dependent; D-3 = Demi-able.' Option A wrongly places jails in Group C. Option C confuses D-1 (jails) with D-2 (hospitals).",
+        "common_misconceptions": [
+          "Confusing D-1 (jails, prisons) with D-2 (hospitals) — both are institutional but serve completely different populations",
+          "Applying IBC Group I-3 terminology in Philippine exam answers without acknowledging the PD 1096 equivalent"
+        ]
+      },
+      "explanation": "This question tests knowledge of PD 1096 Group D subdivisions and their US IBC equivleants.",
+      "code_citation": "PD 1096 Sec. 701(4)(a); IBC Group I-3",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:06e1954d2b779b10ad4b91edb62e4861f2746618871da0b7b1af23b6cd4d0a6d"
+    },
+    {
+      "question_id": "3e92e825-fe17-450f-8986-b9a9eac23b74",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A 10 m × 8 m × 3.0 m classroom is proposed. What is the governing maximum student capacity under PD 1096, and which standard is the binding constraint?",
+      "options": [
+        {
+          "id": "A",
+          "text": "240 students — volume 240 m³ divided by 1.0 m²/person airspace standard yields the maximum, assuming optimal conditions"
+        },
+        {
+          "id": "B",
+          "text": "43 students — derived from the US IBC classroom occupant load factor of 1.86 m²/person applied to Philippine rooms, which may not be directly applicable"
+        },
+        {
+          "id": "C",
+          "text": "80 students — both the airspace (240 m³ ÷ 3.0 = 80) and floor area (80 m² ÷ 1.0 = 80) standards yield 80; neither individually constrains the other"
+        },
+        {
+          "id": "D",
+          "text": "80 students by airspace, 20 students by floor area; floor area is more restrictive so 20 governs, which is a misinterpretation"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Volume = 10 × 8 × 3.0 = 240 m³ ÷ 3.0 = 80 by airspace. Floor area = 80 m² ÷ 1.0 = 80. Both standards yield 80; maximum capacity = 80 students.",
+        "explanation": "PD 1096 Sec. 807.1 requires both standards to be satisfied. Step 1: Airspace → 240 m³ ÷ 3.0 m³/person = 80 students. Step 2: Floor area → 80 m² ÷ 1.0 m²/person = 80 students. Both yield 80 — the room is perfectly proportioned so neither standard is more restrictive than the other. The governing capacity is 80 students. Option A confuses volume (240) with occupant count. Option C applies the US IBC factor, which is not valid for Philippine code compliance. Option D fabricates a floor area calculation error.",
+        "common_misconceptions": [
+          "Using total volume (240) rather than dividing by 3.0 m³/person to get the airspace-based occupant count",
+          "Applying the US IBC 1.86 m²/person factor instead of PD 1096's 1.0 m²/person floor area standard"
+        ]
+      },
+      "explanation": "This question tests application of both PD 1096 classroom capacity standards to a specific room calculation.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1646309eee81efe47e3c44cfe9f18d0a52f354487ba483b8ee7e859652ff69ca"
+    },
+    {
+      "question_id": "cbf0a368-691d-411f-a072-cf3542a9d9c7",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A reviewer claims that ADA applies to all public buildings in the US, while BP 344 applies only to listed building types in the Philippines. An architect argues both laws are equivleant in scope. Which evaluation is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The architect is correct — both ADA and BP 344 require full accessibility compliance in all buildings open to the public, with no exemption lists in either law, ensuring universal access"
+        },
+        {
+          "id": "B",
+          "text": "The reviewer is partially wrong — BP 344 covers all public buildings, but ADA applies only to federally funded facilities, which limits its scope"
+        },
+        {
+          "id": "C",
+          "text": "The reviewer is correct — ADA covers all public buildings comprehensively while BP 344 applies to an explicit list of building types; their scope differs meaningfully"
+        },
+        {
+          "id": "D",
+          "text": "Both are limited to specific building types; ADA covers federally funded buildings and BP 344 covers government buildings only, which restricts their applicability"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The reviewer is correct. ADA applies comprehensively to all public accommodations. BP 344 applies to a specific enumerated list of building types including hospitals, schools, libraries, government buildings, hotels with 6+ rooms, and commercial buildings open to the public.",
+        "explanation": "ADA (Americans with Disabilities Act) applies to all facilities open to the public — there is no exemption list; all new construction must be fully compliant. BP 344 (Philippine Accessibility Law) applies to listed building types: hospitals, schools, libraries, government buildings, hotels with 6+ rooms, commercial buildings open to the public, and others. While the list is extensive, it is a defined list rather than a universal mandate. For Philippine practice, architects must verify whether a specific building type is on the BP 344 list. This scope difference is a critical distinction for ALE exam questions comparing the two frameworks.",
+        "common_misconceptions": [
+          "Assuming BP 344 and ADA have equivalent universal scope when BP 344 uses an explicit enumerated list",
+          "Thinking ADA applies only to federally funded buildings — it applies to all public accommodations"
+        ]
+      },
+      "explanation": "This question tests evaluation of the scope difference between ADA and BP 344 accessibility frameworks.",
+      "code_citation": "BP 344 IRR; ADA 1990",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.016126+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:102303514d95cbcce950022b840b736d7c2f54a90fefea581622369cd3f627d3"
+    },
+    {
+      "question_id": "404fb2c4-b5ff-45e0-82ff-030993b5d57d",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "In designing library shelving for a barangay library in the Philippines, an architect applies US shelving heights based on US femlea 5th percentile overhead reach. Why is this approach problematic for Filipino users?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The heights are equivalent — both Filipino and US female populations have the same 5th percentile overhead reach of approximately 183 cm, which is a common misconception"
+        },
+        {
+          "id": "B",
+          "text": "US library shelving regulations are prohibited in Philippine buildings by BP 344, which mandates Filipino anthropometric data for all institutional design, which is often misunderstood"
+        },
+        {
+          "id": "C",
+          "text": "Filipino female overhead reach is greater than US female reach, so US standards undersize the shelving height for Filipino users, which is an incorrect assumption"
+        },
+        {
+          "id": "D",
+          "text": "US 5th% female overhead reach (~218 cm) significantly exceeds Filipino female mean overhead reach (196.5 cm); shelves placed at US standards will be inaccessible to many Filipino women"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "US female 5th% overhead reach is approximately 218 cm; Filipino female mean overhead reach is only 196.5 cm. Shelves designed for the US 5th% are beyond reach for a large proportion of Filipino women.",
+        "explanation": "Per Del Prado-Lu (2007), Filipino female mean overhead fingertip reach = 196.5 cm; 5th percentile = 183.0 cm. US female overhead reach (5th%) is approximately 218 cm. Shelves set at US 5th% standards (around 218 cm) would be unreachable by the majority of Filipino women — not just the 5th percentile. For inclusive Philippine library design, upper shelves should not exceed approximately 196 cm (Filipino female mean), or lower to accommodate wheelchair users (≤120–135 cm per BP 344). Option B fabricates a BP 344 provision. Option C reverses the direction of the anthropometric gap.",
+        "common_misconceptions": [
+          "Assuming Filipino and US female overhead reach are similar or identical",
+          "Thinking BP 344 explicitly prohibits US anthropometric data in Philippine designs"
+        ]
+      },
+      "explanation": "This question tests analysis of the anthropometric gap between Filipino and US femlea overhead reach in an institutional design context.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c094a8dc4ac1fa8a6345834b418f5cf4fc78b40b8b2ea9fccca0c8bc4cfc732a"
+    },
+    {
+      "question_id": "198eb759-2d2f-4d98-8199-294cdaf30839",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "Under PD 1096, jails and prisons are classified under which occupancy group and division, and how does this compare to IBC classification?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PD 1096: Group C (Education & Recreation); IBC: Group I-3 (Institutional — Restrained), highlighting a significant difference in classification approach."
+        },
+        {
+          "id": "B",
+          "text": "PD 1096: Group D-1 (Institutional — Custody, personal liberty restrained); IBC: Group I-3 (Institutional — Restrained)"
+        },
+        {
+          "id": "C",
+          "text": "PD 1096: Group D-2 (Institutional — Health Care); IBC: Group I-2 (Institutional — Incapacitated), showing a divergence in how health care facilities are categorized."
+        },
+        {
+          "id": "D",
+          "text": "PD 1096: Group H (Assembly); IBC: Group I-3 — both classify custodial institutions as assembly occupancies, which may lead to confusion in international projects."
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 701(4)(a) places jails/prisons in Group D-1 (personal liberty restrained). The IBC equivalent is Group I-3 (Institutional — Restrained). Never confuse with Group D-2 (hospitals).",
+        "explanation": "PD 1096 Sec. 701, Group D: D-1 = Mental hospitals, jails, prisons, reformatories (personal liberty restrained). D-2 = Hospitals, nursing homes (non-ambulatory, health care). D-3 = Ambulatory nursing homes, children's homes. Jails are specifically Group D-1. The US IBC equivalent is Group I-3 (Institutional — Restrained). The mnemonic: 'D-1 = Detained; D-2 = Dependent; D-3 = Demi-able.' Option A wrongly places jails in Group C. Option C confuses D-1 (jails) with D-2 (hospitals).",
+        "common_misconceptions": [
+          "Confusing D-1 (jails, prisons) with D-2 (hospitals) — both are institutional but serve completely different populations",
+          "Applying IBC Group I-3 terminology in Philippine exam answers without acknowledging the PD 1096 equivalent"
+        ]
+      },
+      "explanation": "This question tests knowledge of PD 1096 Group D subdivisions and their US IBC equivleants.",
+      "code_citation": "PD 1096 Sec. 701(4)(a); IBC Group I-3",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b35f80c7a83d793172d6f31fbea05a73481c9b1cd0c614cf4050ed795a83fc42"
+    },
+    {
+      "question_id": "afb7289c-2441-47d4-85fe-fe4c3f439070",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "PD 1096, Rule VIII, Section 807.1 specifies the minimum airspace requirement for school rooms. What is the correct standard, and what does it actually prevent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "1.0 m²/person floor area only — PD 1096 Sec. 807.1 specifies area, not volume, for school rooms, focusing on spatial allocation"
+        },
+        {
+          "id": "B",
+          "text": "12.0 m³/person — the same standard used for school rooms, workshops, and offices under PD 1096, ensuring adequate ventilation"
+        },
+        {
+          "id": "C",
+          "text": "3.0 m³/person — this is an oxygen suffocation threshold; below this volume students cannot breathe safely, risking health"
+        },
+        {
+          "id": "D",
+          "text": "3.0 m³/person plus 1.0 m²/person floor area — prevents excessive CO₂ buildup and poor air quality, not oxygen suffocation"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 807.1 requires 3.0 m³/person AND 1.0 m²/person for school rooms. Both must be met. The standard prevents CO₂ buildup and poor ventilation — not oxygen suffocation.",
+        "explanation": "PD 1096 Rule VIII, Sec. 807.1: school rooms require 3.00 m³/person (airspace) plus 1.00 m²/person (floor area) — both standards must be satisfied simultaneously. The 3.0 m³ figure is a ventilation sufficiency threshold, not a biological oxygen limit. Children do not suffocate below 3 m³/person; excessive CO₂, pathogen concentration, and thermal discomfort are the real risks. The 12.0 m³/person figure in Option B applies to workshops, factories, and offices — not school rooms. Option D incorrectly omits the volumetric requirement.",
+        "common_misconceptions": [
+          "Applying the 12.0 m³/person office standard to school rooms — school rooms use only 3.0 m³/person",
+          "Claiming that students 'suffocate' below 3 m³/person — this is a code ventilation threshold, not an oxygen limit"
+        ]
+      },
+      "explanation": "This question tests understanding of the PD 1096 school room airspace standard and its purpose.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807.1",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:06113c45b92f0c13a2e8630d6f866b20f7187c439ed4fc4167e3c8fa3657e406"
+    },
+    {
+      "question_id": "0dd8d068-caa2-4b04-8fc4-789f1ec9ed37",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A classroom measures 8 m × 6 m × 3.0 m. What is the maximum number of students it can legally accommodate under PD 1096, and which standard governs?",
+      "options": [
+        {
+          "id": "A",
+          "text": "48 students — the floor area standard (48 m² ÷ 1.0 m²/person) and airspace standard (144 m³ ÷ 3.0) both yield 48; floor area governs"
+        },
+        {
+          "id": "B",
+          "text": "144 students — derived by dividing total air volume (144 m³) by 1.0 m²/person floor standard, which misinterprets the standard"
+        },
+        {
+          "id": "C",
+          "text": "80 students — calculated by dividing floor area by 0.75 m² per student for dense elementary occupancy, which is not applicable here"
+        },
+        {
+          "id": "D",
+          "text": "48 students by airspace; 20 students by the IBC Table 1004.5 area standard of 1.86 m²/person; IBC governs, which is not the governing code in this context"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Volume = 8 × 6 × 3.0 = 144 m³ ÷ 3.0 = 48 by airspace. Floor area = 48 m² ÷ 1.0 = 48 by area. Both yield 48 — the lower of the two governs = 48 students.",
+        "explanation": "PD 1096 Sec. 807.1 requires BOTH: (1) airspace ≥ 3.0 m³/person → 144 m³ ÷ 3.0 = 48 students; (2) floor area ≥ 1.0 m²/person → 48 m² ÷ 1.0 = 48 students. When both standards yield the same result, the governing capacity is 48. Option A confuses the volume calculation output (144) with the allowed occupant count. Option C applies a fabricated density factor. Option D incorrectly applies US IBC standards to a Philippine code question.",
+        "common_misconceptions": [
+          "Reporting the total volume (144 m³) as the student count rather than dividing by 3.0 m³/person",
+          "Applying only one of the two PD 1096 Sec. 807.1 standards (airspace OR floor area) instead of both"
+        ]
+      },
+      "explanation": "This question tests step-by-step application of the PD 1096 dual-standard classroom capacity calculation.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ea1495b756c8c263a24180872183bd7214e236397afd01caa2a45dbdaddbe44a"
+    },
+    {
+      "question_id": "cf1fe3ab-770f-4b97-ab36-9a8f12526e86",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "Under PD 1096, which occupancy group applies to a public elementary school in the Philippines, and why is this classification an LEA exam trap?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Group D-2 — schools are classified with hospitals because both serve vulnerable populations under institutional care"
+        },
+        {
+          "id": "B",
+          "text": "Group C — schools are Education and Recreation occupancies; Group D covers health care and custodial institutions only"
+        },
+        {
+          "id": "C",
+          "text": "Group E — the IBC Group E classification for educational occupancies was adopted directly into PD 1096"
+        },
+        {
+          "id": "D",
+          "text": "Group H — schools with assembly functions like auditoriums are classified as Assembly occupancies under PD 1096"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "PD 1096 Sec. 701 places schools in Group C (Education and Recreation). Group D is for health care and custodial institutions — not schools.",
+        "explanation": "PD 1096 Sec. 701 is explicit: Group C covers buildings used for school or day-care purposes involving assemblage for instruction, education, or recreation. Group D covers hospitals (D-2), jails/prisons (D-1), and ambulatory nursing homes (D-3). The exam trap is placing schools in Group D — a very common error. Group E is IBC (US) terminology and does not exist in PD 1096. Group H applies to assembly occupancies under PD 1096, not educational occupancies.",
+        "common_misconceptions": [
+          "Placing schools in Group D because both schools and hospitals serve 'dependent' or 'vulnerable' populations",
+          "Applying the US IBC Group E classification to Philippine code answers"
+        ]
+      },
+      "explanation": "This question tests recall of the PD 1096 occupancy classification for schools versus hospitals.",
+      "code_citation": "PD 1096 Sec. 701",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e21a852e202136cbe45166aa3ebf809282af413c3e8b17504755a7bfceaaa3be"
+    },
+    {
+      "question_id": "8480e20a-9f31-4e70-9ffd-c2bfc2745190",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A 10 m × 8 m × 3.0 m classroom is proposed. What is the governing maximum student capacity under PD 1096, and which standard is the binding constraint?",
+      "options": [
+        {
+          "id": "A",
+          "text": "240 students — volume 240 m³ divided by 1.0 m²/person airspace standard yields the maximum, assuming no other constraints"
+        },
+        {
+          "id": "B",
+          "text": "43 students — derived from the US IBC classroom occupant load factor of 1.86 m²/person applied to Philippine rooms, which may not be directly applicable"
+        },
+        {
+          "id": "C",
+          "text": "80 students — both the airspace (240 m³ ÷ 3.0 = 80) and floor area (80 m² ÷ 1.0 = 80) standards yield 80; neither individually constrains the other"
+        },
+        {
+          "id": "D",
+          "text": "80 students by airspace, 20 students by floor area; floor area is more restrictive so 20 governs, highlighting the importance of accurate calculations"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Volume = 10 × 8 × 3.0 = 240 m³ ÷ 3.0 = 80 by airspace. Floor area = 80 m² ÷ 1.0 = 80. Both standards yield 80; maximum capacity = 80 students.",
+        "explanation": "PD 1096 Sec. 807.1 requires both standards to be satisfied. Step 1: Airspace → 240 m³ ÷ 3.0 m³/person = 80 students. Step 2: Floor area → 80 m² ÷ 1.0 m²/person = 80 students. Both yield 80 — the room is perfectly proportioned so neither standard is more restrictive than the other. The governing capacity is 80 students. Option A confuses volume (240) with occupant count. Option C applies the US IBC factor, which is not valid for Philippine code compliance. Option D fabricates a floor area calculation error.",
+        "common_misconceptions": [
+          "Using total volume (240) rather than dividing by 3.0 m³/person to get the airspace-based occupant count",
+          "Applying the US IBC 1.86 m²/person factor instead of PD 1096's 1.0 m²/person floor area standard"
+        ]
+      },
+      "explanation": "This question tests application of both PD 1096 classroom capacity standards to a specific room calculation.",
+      "code_citation": "PD 1096 Rule VIII, Sec. 807.1",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bc8d54400778f4ded04e434d5db08b52008af42134f5773c0ed32e4e9a9cb0e8"
+    },
+    {
+      "question_id": "f4e0484c-8344-4f85-aa8d-08d6927310e7",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A US design brief for a Philippine hospital project states: 'Hospital corridor minimum clear width: 8 ft (244 cm), Group I-2.' What is the most accurate response from a Philippine architect?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The 244 cm dimension is acceptable since it exceeds the Philippine minimum; the Group I-2 designation can be used in Philippine permit submissions, which is incorrect"
+        },
+        {
+          "id": "B",
+          "text": "BP 344 sets the Philippine hospital corridor width at 1.20 m, overriding both the PD 1096 and US standards cited, which is not applicable in this context"
+        },
+        {
+          "id": "C",
+          "text": "Under PD 1096, Philippine hospitals are Group D-2; the corridor minimum is 2.40 m — the US Group I-2 designation does not apply to Philippine code compliance"
+        },
+        {
+          "id": "D",
+          "text": "Group I-2 applies in the Philippines when the project uses an internationally recognized building code endorsed by the DPWH, which is a misinterpretation"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Philippine hospitals are classified as Group D-2 under PD 1096. The corridor minimum is 2.40 m. The US IBC Group I-2 designation has no legal standing in the Philippines.",
+        "explanation": "Under PD 1096 Sec. 701(4)(b), hospitals fall under Group D-2 (Institutional — health care). The applicable Philippine corridor minimum is 2.40 m. 'Group I-2' is IBC terminology for US hospital occupancies — using it in a Philippine building permit submission is a code terminology error. While 8 ft (244 cm) and 2.40 m are nearly identical numerically, using the wrong occupancy designation and code framework is a substantive error on Philippine ALE exams. Option C fabricates a BP 344 corridor width — BP 344 governs accessible elements, not general corridor widths.",
+        "common_misconceptions": [
+          "Accepting Group I-2 terminology as valid for Philippine hospital design because the dimension is numerically similar",
+          "Citing BP 344 as the source of hospital corridor minimums — it is not"
+        ]
+      },
+      "explanation": "This question tests the ability to identify incorrect application of US IBC occupancy terminology to Philippine institutional design.",
+      "code_citation": "PD 1096 Sec. 701(4)(b); PD 1096 Group D-2",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:acf501f869bef56c0afbc4cb03fc9ed6c8bffa1b027b70bbb804e97391457620"
+    },
+    {
+      "question_id": "9bf427e0-1cd7-4862-8bdc-caef8df7fd87",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "BP 344 IRR specifies the maximum accessible ramp slope for institutional buildings in the Philippines. What is the correct value, and what figure is commonly cited in error?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Maximum slope 1:20 — the same standard used for sidewalk cross-gradients adapted to ramp design"
+        },
+        {
+          "id": "B",
+          "text": "Maximum slope 1:12 — approximately 8.3%; the correct BP 344 IRR accessible ramp standard"
+        },
+        {
+          "id": "C",
+          "text": "Maximum slope 1:50 — cited in the original reference material; equivalent to approximately 2% grade"
+        },
+        {
+          "id": "D",
+          "text": "Maximum slope 1:8 — a steeper standard permitted for compact institutional sites with space constraints"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 IRR mandates a maximum accessible ramp slope of 1:12 (approximately 8.3%). The figure 1:50 is a critical factual error that appears in some reference materials.",
+        "explanation": "BP 344 IRR accessible ramp requirements: minimum clear width 1,200 mm; maximum gradient 1:12 (not 1:50); handrails at 700 mm and 900 mm on both sides; landings at intervals of no more than 10.5 m. A 1:50 slope would be nearly flat (2%) — uselessly gentle and not matching any Philippine accessibility standard for ramps. The 1:20 figure (Option A) applies to sidewalk gradients. The 1:12 maximum is identical to the US ADA ramp slope standard, making this one of the few points where Philippine and US accessibility codes align exactly.",
+        "common_misconceptions": [
+          "Citing 1:50 as the BP 344 ramp slope — this is a documented factual error in circulated study materials",
+          "Confusing the 1:20 sidewalk cross-gradient with the 1:12 ramp maximum"
+        ]
+      },
+      "explanation": "This question tests recall of the correct BP 344 accessible ramp slope and flags the common 1:50 error.",
+      "code_citation": "BP 344 IRR (Amended)",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:15876214a02cfb245882a17981ce2f12e0dd7e864b4b6defd07d4b9a037af9c7"
+    },
+    {
+      "question_id": "d9c61a2b-ccde-4da8-8236-a252d184d73a",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "What is the minimum clear door width required under BP 344 for accessible routes in institutional buildings, and how does it compare to the ADA minimum?",
+      "options": [
+        {
+          "id": "A",
+          "text": "BP 344: 900 mm clear — wider than ADA's minimum of 813 mm (32 in); Philippine accessible doors require more clearance"
+        },
+        {
+          "id": "B",
+          "text": "BP 344: 813 mm (32 in) clear — identical to the ADA minimum; both standards require the same door width, ensuring international accessibility compliance"
+        },
+        {
+          "id": "C",
+          "text": "BP 344: 700 mm clear — the minimum residential door opening, also used for accessible institutional doors, though not compliant with international standards"
+        },
+        {
+          "id": "D",
+          "text": "BP 344: 760 mm clear — derived from the standard wheelchair width plus a 50 mm maneuvering buffer, providing adequate space for most users"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "BP 344 requires 900 mm minimum clear door width for accessible routes. ADA requires 32 inches (813 mm) minimum — BP 344 is more demanding by 87 mm.",
+        "explanation": "BP 344 IRR specifies 900 mm minimum clear opening for accessible doors. ADA 2010 requires a minimum of 32 inches (813 mm) measured with the door open at 90°. Philippine accessible design therefore demands wider door clearances than the US ADA standard. This is significant for institutional buildings like hospitals, schools, and libraries that must comply with BP 344. The 700 mm figure (Option C) is the minimum clear exitway after door swing per PD 1096, not the accessible door clear width.",
+        "common_misconceptions": [
+          "Assuming BP 344 and ADA require the same door clear width — BP 344's 900 mm is wider than ADA's 813 mm",
+          "Citing 700 mm as the BP 344 accessible door width — 700 mm is the PD 1096 minimum exit clear opening, not the accessible width"
+        ]
+      },
+      "explanation": "This question tests comparative analysis of BP 344 and ADA accessible door width requirements.",
+      "code_citation": "BP 344 IRR; ADA 2010",
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:25502f2c7f0b42aebeb9473a569c453c94a12eaad10c407fe5fd59179da18a60"
+    },
+    {
+      "question_id": "8488cf4e-89bf-434f-836d-988ab27a878f",
+      "article_id": "b1233aee-06ed-44fd-a31a-e57086eab325",
+      "topic_id": "1cbe644d-243c-4fcd-8058-912993d312b2",
+      "text": "A reviewer claims that ADA applies to all public buildings in the US, while BP 344 applies only to listed building types in the Philippines. An architect argues both laws are equivleant in scope. Which evaluation is most accurate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The architect is correct — both ADA and BP 344 require full accessibility compliance in all buildings open to the public, with no exemption lists in either law, which is a common misconception"
+        },
+        {
+          "id": "B",
+          "text": "The reviewer is partially wrong — BP 344 covers all public buildings, but ADA applies only to federally funded facilities, which is not entirely accurate"
+        },
+        {
+          "id": "C",
+          "text": "The reviewer is correct — ADA covers all public buildings comprehensively while BP 344 applies to an explicit list of building types; their scope differs meaningfully"
+        },
+        {
+          "id": "D",
+          "text": "Both are limited to specific building types; ADA covers federally funded buildings and BP 344 covers government buildings only, which oversimplifies the actual scope"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The reviewer is correct. ADA applies comprehensively to all public accommodations. BP 344 applies to a specific enumerated list of building types including hospitals, schools, libraries, government buildings, hotels with 6+ rooms, and commercial buildings open to the public.",
+        "explanation": "ADA (Americans with Disabilities Act) applies to all facilities open to the public — there is no exemption list; all new construction must be fully compliant. BP 344 (Philippine Accessibility Law) applies to listed building types: hospitals, schools, libraries, government buildings, hotels with 6+ rooms, commercial buildings open to the public, and others. While the list is extensive, it is a defined list rather than a universal mandate. For Philippine practice, architects must verify whether a specific building type is on the BP 344 list. This scope difference is a critical distinction for ALE exam questions comparing the two frameworks.",
+        "common_misconceptions": [
+          "Assuming BP 344 and ADA have equivalent universal scope when BP 344 uses an explicit enumerated list",
+          "Thinking ADA applies only to federally funded buildings — it applies to all public accommodations"
+        ]
+      },
+      "explanation": "This question tests evaluation of the scope difference between ADA and BP 344 accessibility frameworks.",
+      "code_citation": "BP 344 IRR; ADA 1990",
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:48.867848+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:23c173831fa9ceaad99d80c99238491e5bb6468d3605a54ff7b1f7ca4b004c33"
+    }
+  ]
+}

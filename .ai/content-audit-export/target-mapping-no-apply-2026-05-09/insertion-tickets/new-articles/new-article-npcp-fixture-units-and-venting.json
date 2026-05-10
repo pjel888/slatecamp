@@ -1,0 +1,39 @@
+{
+  "ticket_type": "NEW_ARTICLE_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "ticket_id": "new-article-npcp-fixture-units-and-venting",
+  "label": "National Plumbing Code Fixture Units and Venting",
+  "dry_article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+  "proposed_slug": "national-plumbing-code-fixture-units-and-venting",
+  "decision": "NEW_ARTICLE_TICKET",
+  "basis": "Existing plumbing articles are broad framework/system-component pages, not an exact Section 207.8 / Section 311.4 / loop-or-circuit vent focused target.",
+  "closest_existing": [
+    {
+      "article_id": "be3f2bf1-8d85-4c03-a047-ae1c2503d4cb",
+      "slug": "lea-util-001-07-system-components-and-functions",
+      "title": "Sanitary drainage systems remove wastewater and human waste",
+      "note": "broad sanitary drainage overview"
+    },
+    {
+      "article_id": "8ba7dce8-b30a-497e-af30-7cf6b3637216",
+      "slug": "lea-util-001-08-what-you-need-to-know-for-the-lea",
+      "title": "Philippines' plumbing regulatory framework",
+      "note": "very broad utilities/plumbing framework"
+    }
+  ],
+  "status": "ticket_only_no_supabase_insert",
+  "dry_run_folder": "national-plumbing-code-fixture-units-and-venting--dryrun-04-npcp-fixture-unit-and-venting",
+  "dry_run_article_metadata": {
+    "article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+    "title": "National Plumbing Code Fixture Units and Venting",
+    "slug": "national-plumbing-code-fixture-units-and-venting",
+    "subject_label": "Building Utilities",
+    "difficulty_label": "Calibration exemplar"
+  },
+  "candidate_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/national-plumbing-code-fixture-units-and-venting--dryrun-04-npcp-fixture-unit-and-venting/candidate.md",
+  "normalized_path": ".ai/content-audit-export/roundtrip-dry-run-2026-05-09/articles/national-plumbing-code-fixture-units-and-venting--dryrun-04-npcp-fixture-unit-and-venting/normalized.md",
+  "candidate_hash": "sha256:c560a1842651d962e95fa2621d88b7fd3694528450449b3631f2601b92ff9e3f",
+  "candidate_word_count": 911,
+  "linked_question_count": 3,
+  "gate_lock": "No insert/apply command is authorized by this ticket."
+}

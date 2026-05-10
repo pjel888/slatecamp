@@ -1,0 +1,508 @@
+{
+  "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:9dba1cac01b17b6660261d045e0a14e43a211c21685d25f1811587021177d0cd",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "ce44e176-bd26-4981-bd9e-f050929bab11",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "Under PD 1096, what occupancy group classification applies to a university dormitory?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Group A-1 (single-family)"
+        },
+        {
+          "id": "b",
+          "text": "Group A-2 (multi-family residential)"
+        },
+        {
+          "id": "c",
+          "text": "Group B (hotel/dormitory/pension)"
+        },
+        {
+          "id": "d",
+          "text": "Group E (business/mercantile)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Group A-1 is for single-family dwellings only.",
+        "b": "Group A-2 is for multi-family dwellings such as townhouses or apartments for permanent residency.",
+        "d": "Group E is for Business and Mercantile occupancies.",
+        "correct": "PD 1096 Section 701 classifies hotels and dormitories as Group B (Residential, Hotels, and Apartments) because they serve transient residents rather than permanent single-family households.",
+        "takeaway": "Dormitories = Group B per PD 1096. This differs from Residential R-1 or R-2 classifications."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Section 701",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c616f0a430ac008b7c8c59c8c36d1219b9f6f8e62c3cdbd503b327c973f921db"
+    },
+    {
+      "question_id": "a463e347-42c8-4aae-b2d8-5061f30b6c23",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "Calculate the total GFA of a 500-bed 3-Star dormitory with 30% common areas and 20% support/circulation spaces calculated as percentages of the sleeping area.",
+      "options": [
+        {
+          "id": "a",
+          "text": "12,500 sqm"
+        },
+        {
+          "id": "b",
+          "text": "18,750 sqm"
+        },
+        {
+          "id": "c",
+          "text": "25,000 sqm"
+        },
+        {
+          "id": "d",
+          "text": "15,625 sqm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Sleeping area only.",
+        "c": "Incorrectly assumes the percentages apply to the Total GFA (12,500 ÷ 0.5).",
+        "d": "Incorrect calculation.",
+        "correct": "1. Sleeping Area: 500 beds × 25 sqm (3-Star DOT) = 12,500 sqm. 2. Common Area: 12,500 × 0.30 = 3,750 sqm. 3. Support/Circulation: 12,500 × 0.20 = 2,500 sqm. Total GFA = 12,500 + 3,750 + 2,500 = 18,750 sqm.",
+        "takeaway": "GFA = Core Area + Common Area + Support Area. 3-Star = 25 sqm/unit."
+      },
+      "explanation": null,
+      "code_citation": "DOT Standards; Architectural Programming",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6ad1becd73e3d7ecdd413d28409d3cbd99f5fe0507e5aa84d3595ea712920efc"
+    },
+    {
+      "question_id": "e12d0fbf-541a-465e-854b-15b507f10fa5",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "A 3-Star dormitory must provide a minimum of how many square meters per sleeping unit according to DOT Standards?",
+      "options": [
+        {
+          "id": "a",
+          "text": "16 sqm"
+        },
+        {
+          "id": "b",
+          "text": "20 sqm"
+        },
+        {
+          "id": "c",
+          "text": "25 sqm"
+        },
+        {
+          "id": "d",
+          "text": "30 sqm"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "16 sqm is for 1-Star (Budget/Economy) standards.",
+        "b": "20 sqm is for 2-Star (Standard) standards.",
+        "d": "30 sqm is for 4-Star (Premium) standards.",
+        "correct": "DOT Standards for accommodation (hotels/dormitories) define space requirements by star rating: 3-Star requires 25 sqm per unit.",
+        "takeaway": "DOT Area Progression: 1★=16, 2★=20, 3★=25, 4★=30, 5★=40 sqm."
+      },
+      "explanation": null,
+      "code_citation": "DOT Accommodation Standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d53834731ef0bc6adbb533c8a50b1d5129d8f1c976df6547c9cdafc87e7d06a3"
+    },
+    {
+      "question_id": "047113d9-ee9b-42e7-b287-d70e8f2141ee",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "Why is the occupant load factor for a dormitory residential area (18.6 sqm per person) significantly higher than that of a classroom (1.9 sqm per person)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Residential areas include more fixed furniture and fewer occupants per unit of area than classrooms"
+        },
+        {
+          "id": "b",
+          "text": "Dormitories are classified as high-risk occupancies requiring wider egress corridors and additional fire suppression systems"
+        },
+        {
+          "id": "c",
+          "text": "Classrooms have higher fire load than residential rooms due to the presence of combustible educational materials and storage"
+        },
+        {
+          "id": "d",
+          "text": "Occupant load factors are based only on the number of beds provided and do not account for common areas or shared facilities"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Risk classification does not determine the load factor directly.",
+        "c": "Fire load is a separate calculation from occupant load.",
+        "d": "Load factors are area-based; bed counts are used for plumbing or specific programming but not the standard area-based fire code calculation.",
+        "correct": "Occupant load factors reflect density. Residential spaces (18.6 sqm) are less dense than Educational spaces (1.9 sqm for classrooms) because bedrooms contain beds and storage, limiting the number of people in the gross area.",
+        "takeaway": "Density matters: Educational (1.9) > Assembly (1.4) > Residential (18.6)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 6",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ea66ebaee7ae1668a72bd614e02b04616660718bfbdd4bb3eeff5355c928357"
+    },
+    {
+      "question_id": "466ef5b0-3439-414f-9857-f7c1864cf01b",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "A 400-bed dormitory requires parking according to the Revised IRR of the National Building Code (PD 1096). What is the minimum number of parking slots required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 slots (1 per 20 beds)"
+        },
+        {
+          "id": "b",
+          "text": "40 slots (1 per 10 beds)"
+        },
+        {
+          "id": "c",
+          "text": "50 slots (1 per 8 beds)"
+        },
+        {
+          "id": "d",
+          "text": "80 slots (1 per 5 beds)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect ratio; might apply to low-density residential but not dorms.",
+        "b": "Incorrect ratio.",
+        "d": "Incorrect ratio.",
+        "correct": "NBC Table VII.1 (Schedule of Parking Requirements) specifies 1 slot for every 8 beds for dormitories and boarding houses. Calculation: 400 ÷ 8 = 50 slots.",
+        "takeaway": "Dormitory Parking Ratio: 1 slot per 8 beds."
+      },
+      "explanation": null,
+      "code_citation": "PD 1096 Table VII.1",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:246202f3e6449ba1109caf34117bc4bd80097f83181d3f76b5966ab1f494beca"
+    },
+    {
+      "question_id": "ea05341f-a795-46cb-8bde-f0e7f04ccfe2",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "A dormitory floor has an occupant load of 600. If the fire code requires a minimum of 3 exit stairwells for this occupancy, and each stair is 1.12 m wide, is the exit capacity adequate per RA 9514?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, 3.36 m total > 3.0 m required"
+        },
+        {
+          "id": "b",
+          "text": "No, 3.36 m total < 4.56 m required"
+        },
+        {
+          "id": "c",
+          "text": "Yes, 1.12 m is the minimum stair width allowed for any occupancy"
+        },
+        {
+          "id": "d",
+          "text": "No, a floor with 600 occupants requires 4 exits"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect calculation of required width.",
+        "c": "1.12 m (44 inches) is a standard minimum, but the aggregate width must still meet the occupant load requirement.",
+        "d": "4 exits are only required for occupancy exceeding 1,000.",
+        "correct": "Required Width = 600 occupants × 7.6 mm = 4,560 mm (4.56 m). Provided Width = 3 stairs × 1.12 m = 3.36 m. Since 3.36 m < 4.56 m, it is inadequate.",
+        "takeaway": "Always check both exit count AND aggregate width. Both must be satisfied."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Section 10.2.5.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6144af74adc526e3036a179b13b7260efbf5664f0d4f287398544bf6ecc318e4"
+    },
+    {
+      "question_id": "06f582c0-9937-47fe-aa98-20f9a60cc7d4",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "A 2,000 sqm sleeping area in a dormitory is being evaluated for fire safety. Using the RA 9514 2019 Revised IRR Table 6, calculate the occupant load for this area.",
+      "options": [
+        {
+          "id": "a",
+          "text": "108 occupants"
+        },
+        {
+          "id": "b",
+          "text": "215 occupants"
+        },
+        {
+          "id": "c",
+          "text": "400 occupants"
+        },
+        {
+          "id": "d",
+          "text": "500 occupants"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Incorrectly uses the outdated or specific room factor of 9.3 sqm.",
+        "c": "This assumes a 5 sqm per person factor, which is not standard for residential.",
+        "d": "This assumes 4 sqm per person.",
+        "correct": "Per RA 9514 (2019 IRR) Table 6, the occupant load factor for Residential occupancies (including dormitories) is 18.6 sqm per person (gross). Calculation: 2,000 sqm ÷ 18.6 ≈ 107.5, rounded up to 108.",
+        "takeaway": "RA 9514 (2019) Residential Factor = 18.6 sqm/person. Note that this is higher (less dense) than educational or assembly factors."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 6 (Occupant Load Factors)",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b83387576f3db5f4f69750107f204e2206e0b54b7e09895becf63eb44e44b224"
+    },
+    {
+      "question_id": "d6ca925c-9231-4f63-92f2-f7e66cb862ef",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "A 300-bed dormitory includes a 1,200 sqm dining commons (seated). Based on RA 9514 2019 Revised IRR, calculate the occupant load for the dining area and the minimum number of exits required.",
+      "options": [
+        {
+          "id": "a",
+          "text": "858 occupants; 2 exits required"
+        },
+        {
+          "id": "b",
+          "text": "858 occupants; 3 exits required"
+        },
+        {
+          "id": "c",
+          "text": "632 occupants; 2 exits required"
+        },
+        {
+          "id": "d",
+          "text": "1,846 occupants; 4 exits required"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct occupancy, but 2 exits are insufficient for over 500 persons.",
+        "c": "Uses the outdated 1.9 sqm/person factor for dining.",
+        "d": "Uses the 0.65 sqm/person factor for concentrated standing, not appropriate for seated dining.",
+        "correct": "Dining area (Assembly, less concentrated) uses 1.4 sqm/person per 2019 IRR. 1,200 ÷ 1.4 = 857.14 ≈ 858. Per RA 9514 Section 10.2.5.2, any room/space with 501–1,000 occupants requires at least 3 exits.",
+        "takeaway": "RA 9514 (2019) Seated Dining = 1.4 sqm/person. Exit counts: 0–500 (2 exits), 501–1,000 (3 exits), 1,001+ (4 exits)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Table 6 and Section 10.2.5.2",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f62647a00490e7f32d5a57729fd13a277528389b05195edbd378e2f150feee21"
+    },
+    {
+      "question_id": "6c701196-e405-4113-8f1b-cbfc2aaba98d",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "For a dormitory egress design, a space has a calculated occupant load of 673 persons. Based on the 2019 Revised IRR of RA 9514, what is the required total width of the exit stairs?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3,365 mm"
+        },
+        {
+          "id": "b",
+          "text": "5,115 mm"
+        },
+        {
+          "id": "c",
+          "text": "6,259 mm"
+        },
+        {
+          "id": "d",
+          "text": "4,560 mm"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrectly uses the level components/ramps factor (5.0 mm).",
+        "c": "Uses an incorrect factor (approx 9.3 mm).",
+        "d": "Incorrect calculation.",
+        "correct": "RA 9514 Section 10.2.5.2 (2019 IRR) specifies exit width for stairs at 7.6 mm per person. Calculation: 673 persons × 7.6 mm/person = 5,114.8 mm ≈ 5,115 mm.",
+        "takeaway": "Exit Width Factors: Stairs = 7.6 mm/person; Ramps/Level = 5.0 mm/person."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Section 10.2.5.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1cc10191c84e9559eb74da7273f13b578efa9dbdb2f3d0d86ab7629634a9afb8"
+    },
+    {
+      "question_id": "99542da8-2eac-4acc-b880-1fd8fa6d2b29",
+      "article_id": "7eb99f1e-4b28-4b86-beed-0adc56824ff8",
+      "topic_id": "14202cde-e58c-4b23-a8a7-6b6dfc197272",
+      "text": "A dormitory project includes admin offices and a student bookstore. How does the 2019 Revised IRR of RA 9514 treat these mixed-occupancy areas for exit capacity?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The entire building uses the Residential factor (18.6 sqm) to simplify egress, assuming uniform occupancy"
+        },
+        {
+          "id": "b",
+          "text": "Each occupancy is calculated separately based on its specific load factor; egress must satisfy the sum or the largest occupancy"
+        },
+        {
+          "id": "c",
+          "text": "The most restrictive factor (Mercantile) must be applied to the whole floor, ensuring maximum safety"
+        },
+        {
+          "id": "d",
+          "text": "Mixed-use buildings are not allowed under Group B classification, requiring separate structures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Incorrect; using 18.6 for an office or shop would understate the actual occupancy.",
+        "c": "Applying the most restrictive factor to the whole floor is an over-design and not required by code; spaces are calculated individually.",
+        "d": "Mixed-use is permitted provided fire-rated separations are installed between different occupancy groups.",
+        "correct": "RA 9514 Section 10.2.1.2 states that for mixed-occupancy buildings, the occupant load of each part must be determined based on its own specific classification and factor.",
+        "takeaway": "Mixed-occupancy: calculate each space by its specific function (Residential = 18.6, Business = 9.3, Mercantile = 2.8/5.6)."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Section 10.2.1.2",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-003-06-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:28:59.202547+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:89d8620988290400297cbd60c4ee044b5622fade9e1852eca07f13b951d89a01"
+    }
+  ]
+}

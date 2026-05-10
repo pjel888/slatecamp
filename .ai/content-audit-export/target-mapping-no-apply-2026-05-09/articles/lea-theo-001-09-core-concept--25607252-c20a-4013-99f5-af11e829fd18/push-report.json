@@ -1,0 +1,23 @@
+{
+  "attempted_at": "2026-05-09T16:24:37.314Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": true,
+  "blockers": [],
+  "warnings": [
+    "Remote Supabase content contains raw SLATECAMP_UI_BLOCK placeholders and should be repaired from candidate.md.",
+    "Stale check bypassed in repair mode: remote content is placeholder-corrupted; explicit placeholder repair.",
+    "--repair-placeholders treats --note as an operational note; it was not written to public updated_note."
+  ],
+  "updated_rows_count": 1,
+  "article_id": "25607252-c20a-4013-99f5-af11e829fd18",
+  "slug": "lea-theo-001-09-core-concept",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:58b9a06a02d675b2312a378c3a59d7b231806c0dcd5d2a6f5193b9d1609db699",
+  "original_hash": "sha256:58b9a06a02d675b2312a378c3a59d7b231806c0dcd5d2a6f5193b9d1609db699",
+  "candidate_hash": "sha256:1dfcdca0c5e286334d16c2b4da462f9253cee9d66a8d08ccf873f03c95a618c9",
+  "stale_check_passed": true,
+  "remote_updated_at_before": "2026-05-06T09:36:53.352726+00:00",
+  "repair_mode": "placeholder_content",
+  "updated_at_after": "2026-05-09T16:24:38.23363+00:00"
+}

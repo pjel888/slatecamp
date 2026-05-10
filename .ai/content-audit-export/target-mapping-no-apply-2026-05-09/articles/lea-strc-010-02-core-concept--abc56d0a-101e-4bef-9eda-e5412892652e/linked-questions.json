@@ -1,0 +1,508 @@
+{
+  "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:603fe43d9086d4a2e426532b0f9d9d3786d0617771ac8fc64b725b4eb17995b3",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "8708c400-3f73-401a-8684-0725f9052109",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "A standard 6-inch (150 mm thick) concrete hollow block measures 150 mm (thickness) × 400 mm (length) at the bed face. Typical cell voids account for 50% of the unit volume. What is the classification of this unit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Solid, because the unit is 150 mm thick"
+        },
+        {
+          "id": "b",
+          "text": "Hollow, because net area (50% of gross) is less than 75%"
+        },
+        {
+          "id": "c",
+          "text": "Neither hollow nor solid; thickness is independent of void classification"
+        },
+        {
+          "id": "d",
+          "text": "Solid, because 150 mm is a standard nominal dimension"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Net area = 50% of gross area. Since 50% < 75%, the unit is HOLLOW. Unit thickness and nominal dimensions do not determine classification; only the net-to-gross area ratio does. A thick unit can be hollow; a thin unit can be solid (high web density).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBP 2020, Sec. 1907.1; ACI 530-19, Sec. 2.1.1.1",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:680ac917db8ad512d1cc43f9d95417e38cf1291ddba7324999bcc5fe90844340"
+    },
+    {
+      "question_id": "980666c7-2bd4-4b7d-a071-4efc77da8dd5",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "A design office uses a simplified approach: they assume all concrete hollow blocks have a bedded area equal to 60% of gross area and apply this 60% multiplier to all bearing stress calculations without verifying actual unit properties for each project. A new CHB supplier provides units with a bedded area of only 48% of gross area. Evaluate the risk of this simplified approach and explain the structural consequence when these new units are used without design revision.",
+      "options": [
+        {
+          "id": "a",
+          "text": "The simplified approach is acceptable because 60% is a conservative average. The new 48% units provide a 12% additional safety margin, which is beneficial for structural integrity."
+        },
+        {
+          "id": "b",
+          "text": "The simplified approach masks actual unit properties. Using 48% units without revision results in underestimated bearing stress and increases crushing risk. Actual stress is 25% higher than the simplified 60% assumption predicts, creating inadequacy."
+        },
+        {
+          "id": "c",
+          "text": "The bedded area difference is negligible (<15%); the simplified approach is acceptable for all suppliers, as it falls within typical industry tolerances."
+        },
+        {
+          "id": "d",
+          "text": "The simplified approach requires adjustment only if the new units have net area < 40% of gross; a 48% bedded area is always adequate for standard load conditions."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Simplified assumption: stress = load ÷ (0.60 × gross). Actual stress with 48% bedded: stress = load ÷ (0.48 × gross) = (0.60 ÷ 0.48) × assumed stress = 1.25× assumed stress. The 25% stress amplification means actual stress is 25% higher than designed, risking bearing failure. The simplified approach is inadequate and dangerous; bedded area must be verified for each unit type and supplier. This error violates ALE design principles and NBP requirements.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBP 2020, Sec. 1907.5 (Bearing Strength Design); ACI 530-19, Sec. 3.3.4.3",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:29a6947ec8bf1d92f3184fbabeb57bdcdda464bd0bd1f08b2ff0e31b5f8dfa55"
+    },
+    {
+      "question_id": "7d557a4f-03e4-4ef0-8e29-92b0de46dd83",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "Which of the following best describes the relationship between net area, gross area, and bedded area for a concrete hollow block?",
+      "options": [
+        {
+          "id": "a",
+          "text": "All three are equal; the terms are synonymous and interchangeable, which simplifies calculations"
+        },
+        {
+          "id": "b",
+          "text": "Gross area > net area > bedded area; bedded area is the portion of solid material actually contacting mortar in the bed joint."
+        },
+        {
+          "id": "c",
+          "text": "Bedded area > net area > gross area; bedded area includes both solid material and partial void contact, affecting structural integrity"
+        },
+        {
+          "id": "d",
+          "text": "Net area = bedded area; gross area is a theoretical measurement used only for classification, not practical application"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Gross area is the total bounding cross-section (including all voids). Net area is the solid material (voids excluded). Bedded area is the portion of solid material that actually contacts mortar in the bed joint. For typical CHB with shells contacting mortar: gross > net > bedded. Bedded area is typically 50–60% of gross and slightly less than net area (because not all internal solid walls contact mortar).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBP 2020, Sec. 1907.1; ACI 530-19, Sec. 2.1.1.2",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9f68bda2f534916401d60f4a6ba59b885ab1f7ebc6590e442a353c3b68972cf3"
+    },
+    {
+      "question_id": "36908fd7-e3f7-406b-99ee-9972eeb85ead",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "An inspector discovers that a three-story concrete hollow block wall is experiencing localized crushing failure at bed joints (visible spalling and mortar extrusion). The wall was designed using gross area instead of bedded area for the bearing stress calculation. Explain why this design error occurred, quantify the actual vs. calculated stress, and propose a remedial design strategy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Using gross area underestimated the actual bearing stress by approximately 40–50%, leading to higher actual stress than designed. Remediation requires reducing load, thickening the wall, or injecting grout to increase bedded area. Design correction: always use bedded area (55–60% of gross for typical CHB), not gross area."
+        },
+        {
+          "id": "b",
+          "text": "Using gross area overestimated stress, providing a safety margin. No remediation is required; the crushing is due to poor workmanship, not design."
+        },
+        {
+          "id": "c",
+          "text": "Gross and bedded area differences are negligible for design purposes; the crushing is unrelated to area calculation methods."
+        },
+        {
+          "id": "d",
+          "text": "The design error is irreversible; the wall must be demolished and reconstructed with a different unit type."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Gross area for 6-inch CHB ≈ 60,000 mm²; bedded area ≈ 33,000–36,000 mm² (55–60% of gross). If design used gross (60,000 mm²), actual stress = load ÷ bedded (33,000 mm²) = 1.82× the designed stress. This 82% stress amplification easily causes crushing. Remediation: (1) reduce applied load (post-tensioning relief), (2) increase wall thickness (spreads load over more units), or (3) grout all cells (increases effective bedded area). Future designs must use bedded area exclusively.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBP 2020, Sec. 1907.5 (Allowable Stress Design); ACI 530-19, Sec. 3.3.4.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c08bda2783d55c01e9c364da037693723bc34e37240b94afd37ab518311ca43c"
+    },
+    {
+      "question_id": "54803f09-c55b-4706-af46-37901a67c476",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "A masonry wall constructed of standard 6-inch CHB (gross area = 60,000 mm², bedded area = 33,000 mm²) carries a service (unfactored) axial load of 250 kN per unit width. The allowable bearing strength for this masonry is 3.5 MPa. Calculate the required bedded area and determine if the unit is adequate. If not, propose a mitigation strategy.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Required bedded area = 250 kN ÷ 3.5 MPa = 71,429 mm² (exact); available bedded area is 33,000 mm² (INADEQUATE). Mitigation: increase wall thickness or use higher-strength grout in all cells to increase effective bearing area."
+        },
+        {
+          "id": "b",
+          "text": "Required bedded area = 250 kN ÷ 3.5 MPa = 71,400 mm²; available bedded area exceeds this (ADEQUATE). No mitigation required."
+        },
+        {
+          "id": "c",
+          "text": "Bedded area does not apply to service loads; only factored loads require bearing checks. The unit is adequate."
+        },
+        {
+          "id": "d",
+          "text": "Required area = 250 kN ÷ 3.5 MPa = 71.4 mm² (ADEQUATE for all practical walls)."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Bearing stress = 250 kN ÷ (33,000 mm² ÷ 1,000,000 mm²/m²) = 250 ÷ 0.033 = 7.58 MPa > 3.5 MPa allowable (INADEQUATE). To reduce stress, either: (1) increase wall thickness (increases bedded area and divides load into more units), or (2) use higher-strength grout (increases effective bedded area through cell filling). Full-cell grouting is a practical mitigation that converts some void area to solid material, increasing bedded area.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBP 2020, Sec. 1907.5 (Allowable Stress Design—Bearing Strength); ACI 530-19, Sec. 3.3.4.3",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b715bd4fa11923ff851f2ae93a68bd1f972813ffbe6c60aa8b82bc75918a6ee0"
+    },
+    {
+      "question_id": "90fb863a-1b8c-4ccc-b459-0db1fc2d5c91",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "Compare solid masonry units (net area ≥ 75% of gross) and hollow masonry units (net area < 75% of gross) in terms of structural behavior under compression, bearing stress development, lateral bond capacity, grouting strategy, and applicability in seismic design. Provide specific examples and explain why hollow units dominate in Philippine practice despite lower net area.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Solid units have uniform stress distribution and high bearing capacity; hollow units have concentration at shells and higher bedded stress, but hollow units dominate in the Philippines due to lower material cost and availability of CHB production capacity, not superior structural performance."
+        },
+        {
+          "id": "b",
+          "text": "Hollow units are stronger than solid units; they are preferred for seismic design because empty cells act as shock absorbers, which is a common misconception."
+        },
+        {
+          "id": "c",
+          "text": "Solid and hollow units have identical structural performance if grouted equally; selection is purely economic, often influenced by local market conditions."
+        },
+        {
+          "id": "d",
+          "text": "Hollow units cannot be used in high-rise buildings; solid units are mandatory for structures over three stories, which is a regulatory requirement in some regions."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Solid units (≥75% net) distribute stress uniformly; hollow units (<75% net) concentrate stress at solid shells, requiring bearing verification via bedded area. Solid units have simpler design and higher bearing capacity. However, hollow CHB dominates in the Philippines because: (1) significant cost savings (less material per unit), (2) established production infrastructure for CHB, (3) proven performance with appropriate grouting strategy, and (4) thermal benefits (ungrouted cells provide insulation). Hollow units are fully structural when designed correctly with strategic grouting at reinforcement and header locations.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBP 2020, Sec. 1907-1908 (Masonry); ACI 530-19, Sec. 2.1 (Unit Properties)",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9ae865c2f84438a8b2d94e0ce3f7e4551073c5bf9da985b69880209b8aa13a5c"
+    },
+    {
+      "question_id": "73c5b75a-0255-4875-83d2-97be0eace9d5",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "Standard concrete hollow blocks are produced with net-to-gross area ratios typically between 45% and 55%. A manufacturer proposes a new 'super-hollow' block with a net-to-gross ratio of 40% to reduce material cost. How does this change affect the structural classification and design considerations?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Classification remains hollow; bearing stress increases, potentially requiring thicker walls or lower allowable stress design values to avoid local crushing."
+        },
+        {
+          "id": "b",
+          "text": "The unit would be reclassified as 'ultra-hollow' and cannot be used in structural masonry due to insufficient material for load-bearing applications."
+        },
+        {
+          "id": "c",
+          "text": "Bearing stress decreases because less material means lighter load transfer, which may affect the overall stability of the structure."
+        },
+        {
+          "id": "d",
+          "text": "Classification changes from hollow to a new intermediate category; existing design methods do not apply, necessitating new engineering assessments."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "40% < 75%, so the unit remains HOLLOW in classification. However, lower net area (40% vs. typical 50%) means lower bedded area and proportionally higher bearing stress for the same applied load. The unit remains usable but requires careful design: bedded area is even smaller, stress is higher, and local crushing risk increases. Design must explicitly address this higher bearing stress, potentially through thicker walls, higher-strength grout, or reinforcement strategies.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBP 2020, Sec. 1907.1 (Masonry Unit Properties); ACI 530-19, Sec. 3.3.4.3 (Bearing Strength)",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cfd4f8bb531a4bed8b27b372577721dd2f2afd8f18fe0a65e822b7a8905ec710"
+    },
+    {
+      "question_id": "41bcdd39-88d5-4d5a-817b-8a6ffec636c3",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "No change needed (math correct), but confirm units consistent. The solid material (excluding all cells) measures 0.035 m². What is the net area, and is this unit classified as hollow or solid?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Net area = 0.035 m²; classification = solid (because 0.035 > 0.030)"
+        },
+        {
+          "id": "b",
+          "text": "Net area = 0.035 m²; classification = hollow (because 0.035 ÷ 0.060 = 58.3% < 75%)"
+        },
+        {
+          "id": "c",
+          "text": "Net area = 0.025 m²; classification = solid (because gross area is large)"
+        },
+        {
+          "id": "d",
+          "text": "Net area = 0.035 m²; classification = indeterminate (requires field testing)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Net area is the solid material only = 0.035 m². Classification: 0.035 ÷ 0.060 = 0.583 = 58.3% < 75%, so the unit is HOLLOW. The 75% threshold is the code criterion: net area ≥ 75% of gross = solid; < 75% = hollow.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 610 (Masonry), referencing ACI 530-13/ASCE 5-13/TMS 402-13 Sec. 2.1; or PNS 49:2002 (Concrete Hollow Blocks)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bdf877fe321bf5056b82511d31c3a1824b3aa51ec10886230def670d447de310"
+    },
+    {
+      "question_id": "c99e0fb0-5c62-4459-8bc7-6436f9a64473",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "In a concrete hollow block wall, a factored axial load is transmitted through a single course. If the gross area of one CHB unit is 60,000 mm² and the bedded area is 35,000 mm² (approximately 58% of gross), what is the key implication for design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bearing stress must be calculated using gross area to avoid overestimation of stress, ensuring safety margins are maintained."
+        },
+        {
+          "id": "b",
+          "text": "Bearing stress is higher than if calculated using gross area, increasing the risk of local crushing at bed joints."
+        },
+        {
+          "id": "c",
+          "text": "Bedded area and gross area produce the same bearing stress; the difference is negligible for design, allowing for simplified calculations."
+        },
+        {
+          "id": "d",
+          "text": "Bedded area applies only to unreinforced masonry; reinforced masonry uses gross area, which affects the choice of design methodology."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Bearing stress = load ÷ bedded area (35,000 mm²), not gross area (60,000 mm²). Because bedded area is only 58% of gross, the bearing stress is correspondingly higher (load ÷ 0.58 × original). This higher stress increases the risk of local crushing and must be explicitly verified in design. Bearing strength of hollow masonry is typically lower than solid masonry for this reason.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Section 610-3.3.4 (Bearing Strength, referencing ACI 530 Sec. 3.3.4); ACI 530-19, Sec. 3.3.4.3",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:2bb68645f301615dd7560d28585e3f15d14a951a72f7fa77cd667dd5051b4d4e"
+    },
+    {
+      "question_id": "e5b59c4e-243c-4759-a428-953a69bc7b36",
+      "article_id": "abc56d0a-101e-4bef-9eda-e5412892652e",
+      "topic_id": "681ee818-dd05-407b-a427-443a40e72c76",
+      "text": "A structural designer is deciding between full-cell grouting (all cells filled) and strategic cell grouting (only cells at reinforcement locations and specified intervals) for a four-story hollow CHB building. From a structural and economic perspective, what is the primary advantage of strategic grouting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Full-cell grouting provides uniform strength throughout; strategic grouting is weaker and acceptable only for non-seismic buildings, which do not require the same level of reinforcement."
+        },
+        {
+          "id": "b",
+          "text": "Strategic grouting provides required vertical load paths and lateral confinement around reinforcement while reducing material cost and preserving thermal insulation in ungrouted cells."
+        },
+        {
+          "id": "c",
+          "text": "Strategic grouting is cosmetically superior and requires no structural justification, making it a choice for projects where aesthetics are prioritized over structural integrity."
+        },
+        {
+          "id": "d",
+          "text": "Full-cell grouting is prohibited in seismic zones; strategic grouting is the only code-approved method, ensuring compliance with local building regulations."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This option is incorrect. Review the correct answer above.",
+        "c": "This option is incorrect. Review the correct answer above.",
+        "d": "This option is incorrect. Review the correct answer above.",
+        "correct": "Strategic grouting places grout where structurally necessary: in cells with vertical reinforcement (load transfer), at header courses (lateral tying), and at specified intervals. Ungrouted cells maintain insulation value. Full grouting is structurally redundant in these locations and increases cost without proportional structural benefit. Strategic grouting is code-compliant for both seismic and non-seismic design.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NBP 2020, Sec. 1908.7 (Grouting); ACI 530-19, Sec. 2.4.1",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-010-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:89ca278b2188eac86e258936a6a10fb07921828dfc4c3c100353b20145c8a5b2"
+    }
+  ]
+}

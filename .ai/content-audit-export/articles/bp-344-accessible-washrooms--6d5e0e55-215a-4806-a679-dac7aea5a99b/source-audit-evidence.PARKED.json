@@ -1,0 +1,182 @@
+{
+  "audit_date": "2026-05-10",
+  "audit_mode": "local_source_audit_no_supabase",
+  "source_truth_protocols": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "extraction_method": "PyMuPDF via python fitz against raw PDFs in vitruvius-connection/001_Raw-Source-Layer; pdftotext unavailable in this environment.",
+  "supabase_apply_status": "not_applied",
+  "normalized_md_changes": "none_applied",
+  "canonical_article_root": ".ai/content-audit-export/articles",
+  "duplicate_export_note": "Matching folders also exist under target-mapping-no-apply-2026-05-09/articles; this audit wrote to the canonical .ai/content-audit-export/articles folders only.",
+  "audited_at": "2026-05-10T11:41:05+08:00",
+  "article_slug": "bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+  "article_id": "6d5e0e55-215a-4806-a679-dac7aea5a99b",
+  "article_title": "BP 344 Accessible Washrooms",
+  "article_folder": ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b",
+  "inspected_files": [
+    ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/normalized.md",
+    ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/linked-questions.json",
+    ".ai/content-audit-export/articles/bp-344-accessible-washrooms--6d5e0e55-215a-4806-a679-dac7aea5a99b/sources.json"
+  ],
+  "readiness_verdict": "PARKED_NOT_SOURCE_AUDITED_READY",
+  "source_audit_evidence_file_policy": "source-audit-evidence.json is intentionally not written because at least one blocker remains.",
+  "raw_sources": [
+    {
+      "key": "bp344_2024",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf",
+      "sha256": "63ba8df9a0c5092aa28aae1e1afbbff4f82697768b4ce38230f960444a6a4953"
+    },
+    {
+      "key": "pd1096_2004",
+      "raw_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "sha256": "ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6"
+    }
+  ],
+  "verified_major_claims": [
+    {
+      "claim": "Section 6 Toilets and Baths requires accessible toilet cubicles to have a minimum area of 1800 mm x 1800 mm.",
+      "scope": "article and linked question 3badda29-6310-42a0-a47c-98fdea52f5e3",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 36,
+      "source_locator": "Section 6, Toilets and Baths",
+      "evidence_excerpt": "Accessible toilet cubicles ... minimum area of 1800 mm x 1800 mm.",
+      "status": "verified_value"
+    },
+    {
+      "claim": "Side grab bars include 300 mm height from top of toilet seat to top of grab bars; water closet centerline is 450 mm from sidewall.",
+      "scope": "article and linked questions b64e22fe-5fa3-4755-b7d2-bf2b16281a51, e4a9c949-d613-4946-b0c2-2832e60eacb5",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 36,
+      "source_locator": "Section 6, Toilets and Baths, accessible toilet cubicle grab bar paragraphs",
+      "evidence_excerpt": "installed 300 mm high from the top of the toilet seat ... Water closets ... 450 mm.",
+      "status": "verified_value"
+    },
+    {
+      "claim": "Turning space outside water closet cubicles is minimum 1800 mm x 1800 mm, and where direct access is not possible transfer space is at least 750 mm adjacent to the water closet.",
+      "scope": "article and linked question 3badda29-6310-42a0-a47c-98fdea52f5e3",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 37,
+      "source_locator": "Section 6, Toilets and Baths, turning/transfer paragraphs",
+      "evidence_excerpt": "turning space ... 1800 x 1800 mm ... transfer space of at least 750mm.",
+      "status": "verified_value"
+    },
+    {
+      "claim": "Lavatory height is 800 mm finished floor with vertical clear leg room not lower than 650 mm.",
+      "scope": "article and linked question 2331bf6f-4e0b-4728-ab79-a7c3a34ef068",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 38,
+      "source_locator": "Section 6, Toilets and Baths, lavatory paragraph",
+      "evidence_excerpt": "height of 800 mm ... clear leg room space not lower than 650 mm.",
+      "status": "verified_value"
+    },
+    {
+      "claim": "Urinal lip is 350-400 mm; front clear space 900 mm x 900 mm; grab bars are 600 mm long with 650 mm between outer edges and 1500 mm top height.",
+      "scope": "article and linked question 7652f8cc-6362-457a-911f-44383edd1329",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 38,
+      "source_locator": "Section 6, Toilets and Baths, urinal paragraph",
+      "evidence_excerpt": "350-400 mm ... 900 mm x 900 mm ... 600 mm ... 650 mm ... 1500 mm.",
+      "status": "verified_value"
+    },
+    {
+      "claim": "Door opens outward; horizontal pull bar fixed at 900 mm; emergency call button is 400 mm to 600 mm AFF, waterproof, contrasting color.",
+      "scope": "article and linked question 471af8a5-4970-46c2-946a-6445a166ba2f",
+      "raw_source_key": "bp344_2024",
+      "pdf_pages": [
+        38,
+        39
+      ],
+      "source_locator": "Section 6, Toilets and Baths, door/call-button paragraphs",
+      "evidence_excerpt": "open outwards ... pull bar ... 900 mm ... call button ... 400 mm to 600 mm.",
+      "status": "verified_value"
+    },
+    {
+      "claim": "Strobe alarms flash not more than 2 flashes per second and in accordance with NFPA 72.",
+      "scope": "article and linked question 457a3745-222c-478e-b0d1-a58a6f78474e",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 39,
+      "source_locator": "Section 6, Toilets and Baths, strobe paragraph",
+      "evidence_excerpt": "flash not more than 2 flashes per second ... NFPA 72.",
+      "status": "verified_value"
+    },
+    {
+      "claim": "Roll-in shower compartment is 1800 mm by 1800 mm; curb not more than 12 mm and beveled; shower hose minimum 1500 mm.",
+      "scope": "article and linked question 9c200c7f-b0cf-4625-a351-39229d62e3ba",
+      "raw_source_key": "bp344_2024",
+      "pdf_page": 40,
+      "source_locator": "Section 6, Toilets and Baths, roll-in shower paragraph",
+      "evidence_excerpt": "dimension of 1800 mm by 1800 mm ... not more than 12 mm ... hose ... 1500 mm.",
+      "status": "verified_value"
+    }
+  ],
+  "blockers": [
+    {
+      "id": "WASHROOM-BLOCKER-001",
+      "severity": "critical",
+      "type": "unverified_section_locator_format",
+      "affected_files": [
+        "normalized.md",
+        "linked-questions.json"
+      ],
+      "affected_question_ids": [
+        "3badda29-6310-42a0-a47c-98fdea52f5e3",
+        "2331bf6f-4e0b-4728-ab79-a7c3a34ef068",
+        "7652f8cc-6362-457a-911f-44383edd1329",
+        "471af8a5-4970-46c2-946a-6445a166ba2f",
+        "9c200c7f-b0cf-4625-a351-39229d62e3ba",
+        "457a3745-222c-478e-b0d1-a58a6f78474e",
+        "b64e22fe-5fa3-4755-b7d2-bf2b16281a51",
+        "f20e6d4b-8ea1-4736-b80b-caaa0de099bb",
+        "e4a9c949-d613-4946-b0c2-2832e60eacb5",
+        "9be94bd0-ae1f-4694-95bc-901c6e60656e"
+      ],
+      "finding": "The article and linked questions cite locators such as Sec 6.1.a, Sec 6.3.b, Sec 6.9, Sec 6.12, Sec 6.14, Sec 6.18, Sec 6.19, and Sec 6.22. The raw 2024 BP 344 PDF and refined extraction expose these as Section 6 Toilets and Baths paragraphs/items, not those sub-section numbers.",
+      "required_fix": "Replace unsupported subsection locators with raw-source-valid locators or provide the official source that contains the 6.x subsection numbering."
+    },
+    {
+      "id": "WASHROOM-BLOCKER-002",
+      "severity": "critical",
+      "type": "unsupported_dimensions_or_old_values",
+      "affected_files": [
+        "normalized.md",
+        "linked-questions.json"
+      ],
+      "finding": "Raw PDF search did not verify 1800 mm x 2250 mm as an acceptable deeper WC layout, 900 mm x 1500 mm WC clearance, 450 mm side transfer space, 750-850 mm grab bar height band, 1.3 kN capacity, or 100 mm raised edges in the washroom section. Several of these appear in normalized.md exam tips or question rationales.",
+      "required_fix": "Remove or source-verify those values before readiness; do not mix older BP 344/secondary notes with the 2024 IRR without explicit version labels."
+    },
+    {
+      "id": "WASHROOM-BLOCKER-003",
+      "severity": "high",
+      "type": "wrong_section_label",
+      "affected_files": [
+        "normalized.md"
+      ],
+      "finding": "A preserved UI block names Section 9 - Accessible Washrooms, while the 2024 BP 344 raw source places Toilets and Baths under Section 6.",
+      "required_fix": "Correct the section label through the content roundtrip pipeline after source review."
+    },
+    {
+      "id": "WASHROOM-BLOCKER-004",
+      "severity": "high",
+      "type": "non_source_artifacts_in_learner_content",
+      "affected_files": [
+        "normalized.md"
+      ],
+      "finding": "The article contains [file:*] and [web:*] artifact citations and source-looking labels not suitable for learner-facing content or the internal source ledger.",
+      "required_fix": "Replace artifacts with learner-facing source citations and internal ledger entries."
+    },
+    {
+      "id": "WASHROOM-BLOCKER-005",
+      "severity": "medium",
+      "type": "empty_source_bundle",
+      "affected_files": [
+        "sources.json"
+      ],
+      "finding": "sources.json has source_count 0.",
+      "required_fix": "Populate source rows after full evidence verification."
+    }
+  ],
+  "required_next_action": "Resolve blockers, rerun raw-PDF claim ledger for article and linked questions, then write source-audit-evidence.json only if every material legal/code claim is verified."
+}

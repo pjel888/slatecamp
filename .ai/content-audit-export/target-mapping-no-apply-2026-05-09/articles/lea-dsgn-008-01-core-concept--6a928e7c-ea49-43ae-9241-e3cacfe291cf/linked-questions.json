@@ -1,0 +1,509 @@
+{
+  "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:4a902b634f51adba178210caa4e83344f8a13115de426104970cccba50258527",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "6a17f0f2-e0e3-4e60-9ed3-4f409d4c13fe",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "An office building is NOT sprinklered. What is the maximum travel distance to an exit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "30m (common misremembering—ERR-DSGN-020), which is often confused with other building types"
+        },
+        {
+          "id": "b",
+          "text": "45m unsprinklered; 60m if sprinklered (correct)"
+        },
+        {
+          "id": "c",
+          "text": "90m (overly conservative), typically used in larger, more complex buildings with advanced fire safety systems"
+        },
+        {
+          "id": "d",
+          "text": "Depends on building height; no fixed limit, though this is a misconception as limits are defined by code"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Common error; under-estimates the actual limit.",
+        "c": "Over-conservative; wastes usable floor area.",
+        "d": "Height does not affect travel distance limits; sprinkler status does.",
+        "correct": "Unsprinklered = 45m max travel distance. Sprinklered = 60m (fire suppression allows longer travel). ERR-DSGN-020 documents the error of using 30m, which is too restrictive. NBC Chapter 4 mandates 45/60m per sprinkler status.",
+        "takeaway": "ERR-DSGN-020: Travel distance = 45m (unsprinklered) or 60m (sprinklered), NOT 30m."
+      },
+      "explanation": null,
+      "code_citation": "ERR-DSGN-020, NBC Chapter 4",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d89a52671f8c1c984db47ea717fd7a7e01d8bfe85025133b01da284d10868906"
+    },
+    {
+      "question_id": "7fd91f3b-58e2-498d-ae4a-a4be8c2329a1",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "A 3,000 sqm office floor has OL = 323 persons. Calculate required exits and minimum total exit width.",
+      "options": [
+        {
+          "id": "a",
+          "text": "2 exits, 1,616mm total (800mm each), which meets the minimum width requirements for safe evacuation"
+        },
+        {
+          "id": "b",
+          "text": "2 exits, 2,454mm total (1,227mm each, ensures 1,100mm minimum)"
+        },
+        {
+          "id": "c",
+          "text": "3 exits, 2,454mm total (818mm each—too narrow for compliance with safety standards)"
+        },
+        {
+          "id": "d",
+          "text": "2 exits, 2,600mm total (1,300mm each—oversized, providing additional safety margin)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct exits but under-calculates required width (1,616 ≠ 2,454).",
+        "c": "Adds extra exit unnecessarily; OL 323 does not require 3 exits until OL > 500.",
+        "d": "Slightly over-sized but functionally acceptable; 2,600mm for 2 exits = 1,300mm each.",
+        "correct": "OL = 323 (50–499 range) → 2 exits. Required width = 323 × 7.6 = 2,454.8mm total. Distribute: 2,454 ÷ 2 = 1,227mm each. Minimum per exit = 1,100mm double leaf (or 900mm single leaf). 1,227mm exceeds both minimums ✓. Final design: 2 exits of 1,227mm each (or 2 exits of 1,300mm for round number).",
+        "takeaway": "Exit count from OL range (50–499 → 2 exits). Exit width = OL × 7.6, distributed across required exits, each ≥ minimum (900mm or 1,100mm)."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 4 Exit Requirements",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:06ce23f845e687788e002367f79e7f1376b957e220d019e05785804b0f0e9c3c"
+    },
+    {
+      "question_id": "92b7d744-4747-4eb9-8b31-e679bd8c7d4b",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "A 5,000 sqm restaurant has 150 sqm kitchen and 4,850 sqm dining area. Calculate total occupant load and exits required. (Dining = 1.4 sqm/person, Kitchen = 9.3 sqm/person)",
+      "options": [
+        {
+          "id": "a",
+          "text": "OL = 5,357 persons, 4 exits (grossly over-calculated, not feasible for the given space)"
+        },
+        {
+          "id": "b",
+          "text": "OL ≈ 3,571 persons, 4 exits (large restaurant, assuming maximum density without considering practical constraints)"
+        },
+        {
+          "id": "c",
+          "text": "OL ≈ 3,596 persons, 4 exits (150÷1.4 + 4,850÷1.4)"
+        },
+        {
+          "id": "d",
+          "text": "OL ≈ 3,479 persons, 4 exits (150÷1.4 + 4,850÷9.3, correct loads)"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uses single factor (≈1.35) for entire space; ignores use-type differentiation.",
+        "b": "Approximate value but calculation method not shown; likely using blended factor.",
+        "c": "Uses dining factor for kitchen (9.3 vs 1.4 are not interchangeable); over-calculates OL.",
+        "d": "Correct: separates by use type, applies correct factors.",
+        "correct": "Kitchen: 150÷9.3 = 16 persons. Dining: 4,850÷1.4 = 3,464 persons. Total = 3,480 ≈ 3,479 (with rounding). OL 3,480 falls in 1,000+ range → 4 exits required. Using correct load factors by use type is critical.",
+        "takeaway": "Always separate occupancy by use type. Kitchen ≠ dining area. Different load factors apply to each. Small miscalculation in load factor scales dramatically at large floor areas."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 4 Occupant Load Factors",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a5f24d5916684b72cf884c52e5aeaf043b4fcbaa027627f99c22c019a283aa0f"
+    },
+    {
+      "question_id": "2ab13d94-6bc4-4728-9712-43568274ef54",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "An office floor is 50m × 50m (2,500 sqm). Exits are located only on one 50m side (North). If the building is sprinklered, can a person at the South side reach an exit within the travel distance limit?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes (South wall is 50m away; sprinklered max 60m, so 50m is within limit)"
+        },
+        {
+          "id": "b",
+          "text": "No (50m exceeds sprinklered limit of 45m, which is the standard for non-sprinklered buildings)"
+        },
+        {
+          "id": "c",
+          "text": "Yes, but only if exits are distributed; one-sided exits create dead-end corridors, which are not compliant with safety codes"
+        },
+        {
+          "id": "d",
+          "text": "No (offices require maximum 30m travel distance—ERR-DSGN-020, which is a common misconception)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Confuses sprinklered (60m) with unsprinklered (45m) limit.",
+        "c": "Also correct; highlights that while travel distance is met, egress design should distribute exits to avoid dead-ends.",
+        "d": "Uses wrong limit (30m—ERR-DSGN-020); correct sprinklered limit is 60m.",
+        "correct": "South to North = 50m travel distance. Sprinklered building max = 60m. 50m < 60m ✓ travel distance is compliantOption 'c' correctly identifies the dead-end corridor violation created by one-sided exits exceeding dead-end limits, making 'a' incomplete. Travel distance alone does not override dead-end rules.South side (farthest point is ~50m away with only one direction of escape). Code may require distributed exits to avoid this dead-end condition, even if travel distance is within limit.",
+        "takeaway": "Travel distance (50m < 60m) ✓; BUT if all exits are one-sided, dead-end corridor on far side may be a secondary issue. Distribute exits for redundancy."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 4 Travel Distance & Dead-End Limits",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:34f360ee5ff75eb91bf02ce19651bfcec77749dcb7e1927a92e62b79d2e4465c"
+    },
+    {
+      "question_id": "553a552e-2e19-4521-82f4-4904fc04f487",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "A classroom is 200 sqm with only 1 calculated exit. Why is 1 exit inadequate, and how many are actually required?",
+      "options": [
+        {
+          "id": "a",
+          "text": "1 exit is fine; 200 sqm ÷ 9.3 = 22 persons < 50 person limit, thus meeting the minimum requirement"
+        },
+        {
+          "id": "b",
+          "text": "1 exit is inadequate for classrooms; OL = 200÷2 = 100 persons → requires 2 exits (use correct load factor)"
+        },
+        {
+          "id": "c",
+          "text": "Classroom needs 2 exits minimum by code, regardless of OL, to ensure safe evacuation"
+        },
+        {
+          "id": "d",
+          "text": "Classroom load factor equals office (9.3); OL too low for 2 exits, but safety standards suggest otherwise"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uses wrong load factor (office instead of classroom); under-estimates OL.",
+        "c": "Some codes do require 2 exits for classrooms as policy, but NBC calculates from occupancy load.",
+        "d": "Repeats mistake of using office factor; classroom is denser (2.0 vs 9.3).",
+        "correct": "Classroom load factor = 2.0 sqm/person (NOT office 9.3). OL = 200÷2 = 100 persons (50–499 range) → 2 exits required. Using office load factor (9.3) would give OL ≈ 22, incorrectly suggesting 1 exit. Many designs fail because they apply wrong load factors to specific use types.",
+        "takeaway": "Always verify use type's load factor. Classroom (2.0) ≠ Office (9.3). Correct load factor directly affects exit count."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 4 Load Factor Table",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:90f288dd3c5487dc81c7ee84f9710e7ca2f47c861b5fa5a3c1f6066246706dfb"
+    },
+    {
+      "question_id": "df017087-aad2-4037-8011-b4c95c94f6f8",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "What is the maximum length of a dead-end corridor in an unsprinklered building?",
+      "options": [
+        {
+          "id": "a",
+          "text": "4m (overly restrictive, often misunderstood in older codes)"
+        },
+        {
+          "id": "b",
+          "text": "6m unsprinklered; 12m sprinklered (correct)"
+        },
+        {
+          "id": "c",
+          "text": "10m (common error—ERR-DSGN-024, frequently cited in design reviews)"
+        },
+        {
+          "id": "d",
+          "text": "No limit on dead-ends; only total travel distance matters, which is a misconception in fire safety design"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Too strict; 6m is the actual limit.",
+        "c": "Common error; 10m exceeds the 6m unsprinklered limit.",
+        "d": "Dead-end length is a separate check from total travel distance.",
+        "correct": "Unsprinklered dead-end max = 6m (you can only escape one way). Sprinklered = 12m. ERR-DSGN-024 documents using 10m, which is incorrect. A dead-end is a corridor segment where you must backtrack to reach an exit (only one exit direction available).",
+        "takeaway": "ERR-DSGN-024: Dead-end max = 6m (unsprinklered), 12m (sprinklered), NOT 10m."
+      },
+      "explanation": null,
+      "code_citation": "ERR-DSGN-024, NBC Chapter 4",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b6fcf9febbb5e94328199e7e7abd7d11288c632f8d914819988e2c700a3892a8"
+    },
+    {
+      "question_id": "6f55e06c-6e3b-4568-85dd-b48e5940340c",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "A 200 sqm office (business use) requires egress calculation. Calculate: (a) occupant load, (b) number of exits required, (c) total exit width needed.",
+      "options": [
+        {
+          "id": "a",
+          "text": "(a) 22 persons, (b) 1 exit, (c) 168mm (too narrow) for compliance with standard egress requirements"
+        },
+        {
+          "id": "b",
+          "text": "(a) 21 persons, (b) 1 exit, (c) 160mm ≈159.6mm → must use 900mm minimum"
+        },
+        {
+          "id": "c",
+          "text": "(a) 43 persons, (b) 1 exit, (c) 327mm → must use 900mm minimum to ensure safe evacuation"
+        },
+        {
+          "id": "d",
+          "text": "(a) 50 persons, (b) 2 exits, (c) 380mm → 190mm each (too narrow) for the expected occupant load"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Correct OL and exits, but says 168mm is the final answer—should note 900mm minimum applies.",
+        "c": "Over-calculates OL (should be ~21, not 43); leads to 2 exits unnecessarily.",
+        "d": "Over-calculates OL (should be 21, not 50); incorrect exit count and width.",
+        "correct": "(a) OL = 200 sqm ÷ 9.3 sqm/person ≈21.5 → 21 persons. (b) OL < 50 → 1 exit required. (c) Required width = 21 × 7.6 = 159.6mm. BUT minimum exit door = 900mm, so actual exit width = 900mm (minimum takes precedence).",
+        "takeaway": "Exit width = max(calculated width, 900mm minimum per exit). For small spaces, minimum governs."
+      },
+      "explanation": null,
+      "code_citation": "RA 9514 2019 IRR Chapter 10 Division 2",
+      "bloom_level": "remember",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a82d43de8d2e38f2bc4f1c324d7a97904c36b4975188bcbae807c9be0102ee1d"
+    },
+    {
+      "question_id": "464c5e78-5ae6-46c0-911f-4124ff1af5f3",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "What is the correct exit width formula and the critical error in this field?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Exit width = OL × 5mm (simple, but ERR-DSGN-019 uses wrong factor)"
+        },
+        {
+          "id": "b",
+          "text": "Exit width = OL × 7.6mm (correct; ERR-DSGN-019 is using 5mm instead)"
+        },
+        {
+          "id": "c",
+          "text": "Exit width = OL × 10mm (conservative, safe choice)"
+        },
+        {
+          "id": "d",
+          "text": "Exit width = (OL ÷ 50) × 250mm (uses occupancy-based increments)"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Identifies the error correctly but uses the wrong formula in the answer.",
+        "c": "10mm is over-conservative; unnecessary cost.",
+        "d": "This is the stair width formula, not exit width.",
+        "correct": "Exit width = OL × 7.6 mm/person (NOT 5mm). ERR-DSGN-019 documents the error of using 5mm, which under-sizes exits by ~33%. Example: 100 persons should get 760mm (minimum 900mm), but 5mm would give only 500mm—dangerously inadequate.",
+        "takeaway": "ERR-DSGN-019: Exit width = OL × 7.6 mm/person (NOT 5mm). This is the highest-tested error in fire egress."
+      },
+      "explanation": null,
+      "code_citation": "ERR-DSGN-019, NBC Chapter 4",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:10ebf1448fd2e793c9074c806f33cc851c62b2331bdff12db5d07593356150ed"
+    },
+    {
+      "question_id": "0c4c3232-acb6-488a-8459-089ddebc6584",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "A 400 sqm retail store (ground floor) has 2 exits of 900mm each. Is exit width adequate? (OL = 400÷2.8 ≈ 143 persons)",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes (2 × 900 = 1,800mm ≥ 1,086mm required)"
+        },
+        {
+          "id": "b",
+          "text": "No (required 143 × 7.6 = 1,086mm → need exits >1,050mm each; 900mm is minimum)"
+        },
+        {
+          "id": "c",
+          "text": "No (900mm is too narrow for any retail; need 1,100mm minimum)"
+        },
+        {
+          "id": "d",
+          "text": "Yes (900mm × 2 meets code minimum; no extra width needed)"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Calculation is correct but conclusion is wrong—1,800mm total ≥ 1,086mm required.",
+        "c": "Confuses minimum (900mm door) with adequacy for load. 900mm is code minimum; total width governs.",
+        "d": "Correct conclusion but reasoning is incomplete; should verify total width ≥ required width.",
+        "correct": "OL = 400÷2.8 = 143 persons. Required width = 143×7.6 = 1,086.8mm total. Provided: 2×900 = 1,800mm total. Since 1,800 > 1,086, exit width is adequate ✓. Note: minimum per exit (900mm) is met, and total exceeds required (1,086mm).",
+        "takeaway": "Exit width adequacy: total provided ≥ (OL × 7.6), AND each exit ≥ 900mm minimum. Both conditions must be met."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 4 Exit Width Verification",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:40d9b7e57d47c609cce1ce13c12d0bb2361b36afda047614bb9a2e65a68cae2d"
+    },
+    {
+      "question_id": "0423c6df-7887-4c65-93cc-72c427e6c4cb",
+      "article_id": "6a928e7c-ea49-43ae-9241-e3cacfe291cf",
+      "topic_id": "ca55b378-141f-4970-8b82-a773aeb0b423",
+      "text": "A mixed-use building (ground: retail 200 sqm; upper: office 800 sqm) must calculate total occupant load and exits. Retail load factor = 2.8 sqm/person, office = 9.3 sqm/person. How many exits are required, and what is the minimum total exit width?",
+      "options": [
+        {
+          "id": "a",
+          "text": "OL = 157 persons; 2 exits; 1,193mm total width required"
+        },
+        {
+          "id": "b",
+          "text": "OL = 200 persons; 2 exits; 1,520mm total width required"
+        },
+        {
+          "id": "c",
+          "text": "OL = 1,000 persons; 4 exits; 7,600mm total width required"
+        },
+        {
+          "id": "d",
+          "text": "OL = 300 persons; 2 exits; 2,280mm total width required"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Over-counts occupancy; fails to differentiate load factors correctly.",
+        "c": "Massively over-counts; uses wrong area or load factor for one category.",
+        "d": "Over-calculates occupancy; mixes area values.",
+        "correct": "Retail: 200÷2.8 = 71 persons. Office: 800÷9.3 = 86 persons. Total OL = 71 + 86 = 157 persons (50–499 range → 2 exits). Exit width = 157 × 7.6 = 1,193mm total. Distribute as ~600mm each (minimum 900mm per exit may apply, so actual provision could be 2×900mm = 1,800mm to meet both requirements).",
+        "takeaway": "Always separate use types and apply correct load factors (retail 2.8, office 9.3, etc.). Sum OLs, determine exits from range, calculate required width = OL × 7.6, and verify each exit ≥ 900mm minimum."
+      },
+      "explanation": null,
+      "code_citation": "NBC Chapter 4 Occupant Load & Exit Requirements",
+      "bloom_level": "analyze",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-DSGN-008-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:16.127916+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:65ca724f8985b9e40e9dc83b0c9fcc2489c1f24f862114f8e520984d1cd12736"
+    }
+  ]
+}

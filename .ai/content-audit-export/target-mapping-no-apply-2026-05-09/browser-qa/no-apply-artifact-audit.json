@@ -1,0 +1,13 @@
+{
+  "generated_at": "2026-05-09T14:40:51Z",
+  "scope": "artifact audit inside .ai/content-audit-export/target-mapping-no-apply-2026-05-09 plus browser QA harness scope",
+  "json_parse_errors": [],
+  "run_log_count": 16,
+  "article_push_report_count": 5,
+  "question_push_report_count": 2,
+  "all_article_push_reports_dry_run_apply_false": true,
+  "all_question_push_reports_dry_run_apply_false": true,
+  "apply_true_artifacts": [],
+  "non_dry_run_artifacts": [],
+  "conclusion": "PASS: no apply=true or dry_run=false push artifacts found; browser QA harness is local-render only and records no Supabase mutation."
+}

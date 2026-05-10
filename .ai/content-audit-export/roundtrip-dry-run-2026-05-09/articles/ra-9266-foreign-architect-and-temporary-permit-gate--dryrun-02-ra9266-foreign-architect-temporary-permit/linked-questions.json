@@ -1,0 +1,171 @@
+{
+  "article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:fe87bb13412274ba1c045d96436106688cb413e085415e98d1d640c0906183eb",
+  "question_count": 3,
+  "questions": [
+    {
+      "question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q01",
+      "article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "topic_id": "dryrun-topic-02-ra9266-foreign-architect-temporary-permit",
+      "text": "Under the RA 9266 IRR, which description best matches a foreign architect?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A Filipino architect working for a foreign-owned firm"
+        },
+        {
+          "id": "B",
+          "text": "An architect not Filipino and not registered and licensed in the Philippines, but licensed in the home country"
+        },
+        {
+          "id": "C",
+          "text": "Any architect who studied abroad but holds a Philippine PRC card"
+        },
+        {
+          "id": "D",
+          "text": "A contractor who hires a foreign design consultant"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Section 3, Item 30 defines the foreign architect by non-Filipino/non-Philippine licensure status plus home-country architectural licensure.",
+        "distractors": {
+          "A": "Foreign ownership of the firm is not the definition.",
+          "C": "Studying abroad does not make a Philippine RLA a foreign architect under this definition.",
+          "D": "The contractor relationship is not the statutory definition."
+        },
+        "takeaway": "The definition turns on citizenship, Philippine registration/licensure, and home-country licensure."
+      },
+      "explanation": "RA 9266 IRR, Section 3, Item 30, PDF p.5.",
+      "code_citation": "RA 9266 IRR, Section 3, Item 30, PDF p.5.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ra9266-foreign-q1",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "RA 9266 IRR, Section 3, Item 30, PDF p.5.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:33af09e3a5d2cef5f471b0d6b1e5105aded2bf5376bd7e01683d06ebd70664da"
+    },
+    {
+      "question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q02",
+      "article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "topic_id": "dryrun-topic-02-ra9266-foreign-architect-temporary-permit",
+      "text": "Before assuming architectural consultant duties on a covered project in the Philippines, what must the foreign national secure under Section 38 of the RA 9266 IRR?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A local business permit only"
+        },
+        {
+          "id": "B",
+          "text": "A special/temporary permit from the Board, subject to Commission approval"
+        },
+        {
+          "id": "C",
+          "text": "A UAP chapter endorsement only"
+        },
+        {
+          "id": "D",
+          "text": "A notarized employment contract only"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Section 38 requires a special/temporary permit from the Board subject to approval of the Commission before the foreign national assumes the covered duties.",
+        "distractors": {
+          "A": "A business permit does not substitute for the professional permit.",
+          "C": "A professional organization endorsement is not the Section 38 permit.",
+          "D": "A contract may evidence engagement, but it is not the permit gate."
+        },
+        "takeaway": "For foreign practice questions, look for the Board permit and Commission approval."
+      },
+      "explanation": "RA 9266 IRR, Section 38, PDF p.20.",
+      "code_citation": "RA 9266 IRR, Section 38, PDF p.20.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ra9266-foreign-q2",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "RA 9266 IRR, Section 38, PDF p.20.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:d508f8205325e92adc5162ace6be78fe8c085c9ad067e81333e32ed2eac5818c"
+    },
+    {
+      "question_id": "dryrun-02-ra9266-foreign-architect-temporary-permit-q03",
+      "article_id": "dryrun-02-ra9266-foreign-architect-temporary-permit",
+      "topic_id": "dryrun-topic-02-ra9266-foreign-architect-temporary-permit",
+      "text": "What is the Filipino counterpart in the RA 9266 IRR definition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The local architect, partnership, or corporation that must work in association with the foreign architect on a Philippine project"
+        },
+        {
+          "id": "B",
+          "text": "Any Filipino employee assigned to translate the foreign architect's drawings"
+        },
+        {
+          "id": "C",
+          "text": "The building official who reviews the permit application"
+        },
+        {
+          "id": "D",
+          "text": "The project owner who pays the design fee"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Section 3, Item 31 defines the Filipino Counterpart as the local Philippine architect, partnership, or corporation that must work in association with the foreign architect or firm on a project on Philippine soil.",
+        "distractors": {
+          "B": "Translation or staff support is not the legal counterpart role.",
+          "C": "The building official is a regulator, not the Filipino counterpart.",
+          "D": "The owner commissions the project but is not the counterpart defined by the IRR."
+        },
+        "takeaway": "Counterpart means local architectural association for the project, not a clerical or ownership role."
+      },
+      "explanation": "RA 9266 IRR, Section 3, Item 31, PDF p.5.",
+      "code_citation": "RA 9266 IRR, Section 3, Item 31, PDF p.5.",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ra9266-foreign-q3",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "RA 9266 IRR, Section 3, Item 31, PDF p.5.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:fc4b546c4a48035f7622143b0309ed23540513d5d3f26ba3de28cd945292ac33"
+    }
+  ],
+  "dry_run_note": "Generated from SME-approved exemplar-question-set.json; do not edit linked-questions directly for real Supabase updates."
+}

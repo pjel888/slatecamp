@@ -80,13 +80,13 @@ Funeral homes are licensed commercial establishments regulated by local health a
 ## How It's Tested
 
 **Pattern 1: Mixed Occupancy**
-"A funeral home's business office area is **Group E**, while the chapel is **Group H**. Fire separation between them requires a minimum **1-hour** rated wall." 
+"A funeral home's business office area is **Group E**, while the chapel is **Group H**. Fire separation between them requires a minimum **1-hour** rated wall."
 
 **Pattern 2: Space Sizing**
-"A funeral home expects 60 simultaneous visitors in the viewing room. Using a design factor of 1.1–1.5 sqm/person, calculate the minimum required viewing room area." 
+"A funeral home expects 60 simultaneous visitors in the viewing room. Using a design factor of 1.1–1.5 sqm/person, calculate the minimum required viewing room area."
 
 **Pattern 3: Exit Capacity**
-"A funeral home chapel seats 300 persons. Calculate the minimum combined exit width and the required number of exits (Note: 2 exits are required for 50+ persons)." 
+"A funeral home chapel seats 300 persons. Calculate the minimum combined exit width and the required number of exits (Note: 2 exits are required for 50+ persons)."
 
 > [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 Extracted summary:

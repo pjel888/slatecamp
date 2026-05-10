@@ -1,0 +1,1116 @@
+{
+  "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:28c3a3e51dacceb3f94ac0cbb8bad9ac9b3dd1d5f67d385673754ed8f8c2b39f",
+  "question_count": 22,
+  "questions": [
+    {
+      "question_id": "b47b03be-76bd-49bc-a377-a9f8de7cde49",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Which Philippine law or code governs the principles discussed in \"Colonial European Influence\"?",
+      "options": [
+        {
+          "id": "A",
+          "text": "PD 1096 - National Building Code of the Philippines"
+        },
+        {
+          "id": "B",
+          "text": "BP 344 - Accessibility Law of the Philippines"
+        },
+        {
+          "id": "C",
+          "text": "RA 9266 - Architecture Act of the Philippines"
+        },
+        {
+          "id": "D",
+          "text": "Various codes depending on the specific provision"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "Colonial European Influence may reference multiple laws including PD 1096, BP 344, and other regulations.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:13.852842+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:613c7f2d04fd68f1546df513b0cdc6b4f467ec9eeb42c3948f776f869b82582d"
+    },
+    {
+      "question_id": "01488b83-5edd-4ec3-9cc1-99f00fa1feb6",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "A question involving numerical calculation related to \"Colonial European Influence\" would require:",
+      "options": [
+        {
+          "id": "A",
+          "text": "Direct application of a formula or table value"
+        },
+        {
+          "id": "B",
+          "text": "Conversion between metric and imperial units"
+        },
+        {
+          "id": "C",
+          "text": "Interpolation between table values"
+        },
+        {
+          "id": "D",
+          "text": "All of the above calculation skills"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": "ALE questions involving Colonial European Influence may require any or all of these calculation approaches.",
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": null,
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T05:47:13.852842+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d8321e7be62318688045f7cc56053417d27e83569a52aea7172b93d10e2dbed9"
+    },
+    {
+      "question_id": "94f0ac4d-06cc-4e31-ba3e-29217edc31df",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The Federal style in American architecture is correctly associated with which chronological period and distinguishing characteristic?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pre-1776 colonial period; characterized by symmetrical brick facades, small upper windows, and central chimneys derived from British Georgian prototypes"
+        },
+        {
+          "id": "B",
+          "text": "Post-1776 Neoclassical movement; also called the Adam style; characterized by symmetrical facades, classical porticos, and fanlights over doors"
+        },
+        {
+          "id": "C",
+          "text": "Mid-19th century Victorian period; characterized by ornate carved timber detailing, steep gabled roofs, and asymmetrical picturesque massing"
+        },
+        {
+          "id": "D",
+          "text": "Post-Civil War Beaux-Arts period; characterized by monumental stone facades with rusticated bases and elaborate sculptural programs"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Federal style is a post-1776 Neoclassical movement (also called Adam style) with classical porticos, fanlights, and symmetrical facades.",
+        "explanation": "The article identifies a specific ALE trap: assuming Federal style predates American independence. The Federal style (also called Adam style in America) is a post-1776 Neoclassical movement. Key examples include Independence Hall (1753, Philadelphia — this is actually Georgian, not Federal) and the U.S. Capitol (begun 1793). Georgian style is the pre-independence colonial standard. Any ALE question that dates a 'Federal' building before 1776 contains an error.",
+        "common_misconceptions": [
+          "This is an explicit ALE trap in the article: Federal style is POST-1776. If a Federal building is dated before 1776, the answer is wrong.",
+          "Georgian is the pre-independence colonial standard; Federal is the post-independence Neoclassical adaptation."
+        ]
+      },
+      "explanation": "This question tests the critical LEA trap distinguishing Georgian (pre-1776) from Federal (post-1776) American colonial architecture.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c538c9280fe5e1a650e1edc7c5e9c22dd272bed81bf3ac9f5b03a45b5066471e"
+    },
+    {
+      "question_id": "18fa916d-2c66-4457-b90e-eebf93b3256f",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Spanish colonial churches in the Americas introduced the open-air atrio as a distinctly adapted architectural element. What function did the atrio serve?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An open-air walled churchyard serving as an outdoor worship space for large indigenous congregations that the nave could not accommodate"
+        },
+        {
+          "id": "B",
+          "text": "A fortified outer precinct wall designed to defend the church compound from military attack during the colonial period"
+        },
+        {
+          "id": "C",
+          "text": "An enclosed narthex vestibule providing shade and rain protection for parishioners waiting to enter the main nave of the church"
+        },
+        {
+          "id": "D",
+          "text": "A subterranean burial crypt beneath the main altar, reserved for colonial administrators and high-ranking clergy"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The atrio is an open-air walled churchyard used as an outdoor worship space for large indigenous congregations.",
+        "explanation": "The atrio (open-air churchyard) is a uniquely Mesoamerican colonial adaptation. Because indigenous congregations in New Spain were too large to fit inside European-scaled church naves, Spanish missionaries created large enclosed open-air forecourts where thousands could gather for Mass outdoors. This adaptation — a European liturgical space reengineered for tropical climate and demographic realities — is a key example of the C-A-A framework (Climate, Available Materials, Adapted Forms).",
+        "common_misconceptions": [
+          "The atrio is not an indoor vestibule or a defensive wall — it is a specifically designed open-air worship space scaling to the enormous size of indigenous congregations.",
+          "This adaptation is unique to Spanish colonial Mexico and reflects the demographic reality of mass conversion, not a European prototype."
+        ]
+      },
+      "explanation": "This question tests understanding of the atrio as a climate and demographic adaptation unique to Spanish colonial Mexico.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:bb31fcfd31bf51af6b330ca21322857b1fc8bc21923fa7b7811e4e976b74f548"
+    },
+    {
+      "question_id": "d060088c-99ce-4f13-a834-6a14396a0976",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Which material substitution most clearly distinguishes Spanish colonial architecture in the Philippines from Spanish colonial architecture in Mesoamerica?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Philippines used reinforced concrete frames while Mesoamerica relied on traditional adobe brick load-bearing wall construction"
+        },
+        {
+          "id": "B",
+          "text": "The Philippines used imported Spanish marble and granite while Mesoamerica relied on locally quarried limestone from Yucatan deposits"
+        },
+        {
+          "id": "C",
+          "text": "The Philippines used coral stone (piedra de coral), brick, and local hardwood (bahay na bato); Mesoamerica used adobe and volcanic tezontle stone"
+        },
+        {
+          "id": "D",
+          "text": "The Philippines used timber framing with bamboo infill panels while Mesoamerica used fired ceramic brick with lime mortar joints"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Philippine Spanish colonial buildings used coral stone, brick, and hardwood; Mesoamerican ones used adobe and volcanic tezontle stone.",
+        "explanation": "The article explicitly identifies this as an ALE trap: while both derive from Spanish Baroque, the material palette differs significantly. In the Philippines, coral stone (piedra de coral), brick, and hardwood were used in the bahay na bato hybrid type. In Mesoamerica, colonists substituted adobe and volcanic tezontle stone for unavailable European materials. Recognizing these distinct material substitutions by region is essential for ALE performance.",
+        "common_misconceptions": [
+          "Both regions adapted Spanish Baroque forms, but the materials available locally drove very different construction systems.",
+          "Coral stone (piedra de coral) is a specifically Philippine substitution — it does not appear in Mesoamerican colonial construction."
+        ]
+      },
+      "explanation": "This question tests the critical LEA distinction between Spanish colonial material pleattes in the Philippines versus Mesoamerica.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:82a084080ed9712338dc32c640f56a52c97b77f25dd4773ff25e8d59834701d7"
+    },
+    {
+      "question_id": "6d24172d-49c8-46b8-aef9-594b4fe3483d",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "A heritage conservation team is assessing an 18th-century colonial building in the Philippines with coral stone walls, internal courtyards, and a hardwood upper story. Which colonial tradition does this building type most directly represent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "British Federation style adapted to Southeast Asian conditions, with bull-nosed verandas replacing the traditional Philippine upper-story hardwood construction"
+        },
+        {
+          "id": "B",
+          "text": "Pre-colonial Malay vernacular architecture, with no European influence despite the described coral stone construction and internal courtyard organization"
+        },
+        {
+          "id": "C",
+          "text": "American Federal Neoclassical architecture transplanted to the Philippines during the colonial period from 1898 onward"
+        },
+        {
+          "id": "D",
+          "text": "Spanish colonial architecture adapted to Philippine conditions — the bahay na bato type using coral stone, brick, and hardwood in place of Iberian materials"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Coral stone walls, internal courtyards, and hardwood upper stories identify the Philippine bahay na bato — Spanish colonial architecture adapted to local materials.",
+        "explanation": "The article explicitly links coral stone (piedra de coral), brick, and hardwood to the Philippine Spanish colonial material palette — the bahay na bato (stone house) hybrid type. The internal courtyard is a direct Spanish colonial adaptation providing thermal mass and cross-ventilation. The C-A-A framework applies: Spanish Baroque forms were adapted to Philippine climate, using locally available coral stone and hardwood in place of unavailable Iberian materials. American-period Neoclassical buildings came after 1898 and used different formal vocabularies.",
+        "common_misconceptions": [
+          "Coral stone is specifically a Philippine colonial material substitution — it distinguishes Philippine Spanish colonial buildings from both Mesoamerican and Iberian examples.",
+          "The bahay na bato is a hybrid type: European spatial organization with Philippine material adaptations, not purely European or purely indigenous."
+        ]
+      },
+      "explanation": "This question tests evaluative application of the Philippine Spanish colonial material pleatte to a specific building description.",
+      "code_citation": null,
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c31602cab13658242f0310053270a707b7d0ce7f9a58e2662b42d7a6043f5169"
+    },
+    {
+      "question_id": "fffbd1ad-4517-4c7d-b489-63b4d37ab562",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Monticello in Charlottesville, Virginia, designed by Thomas Jefferson between 1768 and 1809, represents which colonial and post-colonial architectural tradition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Churrigueresque Baroque, with ornate stone retablo facades and an open-air atrio fronting the main entrance approach"
+        },
+        {
+          "id": "B",
+          "text": "Australian Federation style, with wide bull-nosed verandas of corrugated iron and decorative cast-iron lacework railings"
+        },
+        {
+          "id": "C",
+          "text": "British Georgian, with symmetrical clapboard facades, central chimneys, and compact plans designed for cold northeastern winters"
+        },
+        {
+          "id": "D",
+          "text": "English North America Southern Colonial, using local timber framing and brick piers adapted to Virginia's hot, humid subtropical climate"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Monticello represents the Southern Colonial tradition, adapted to Virginia's hot, humid subtropical climate.",
+        "explanation": "The article identifies Monticello (1768–1809) as the key example of English North America Southern Colonial/plantation architecture, featuring local timber framing (cypress, pine), brick piers, and climate adaptations including elevated floors and columned galleries — all responses to Virginia's hot, humid subtropical conditions. Jefferson's design also reflects Neoclassical influences, but the article categorizes it under the Southern colonial tradition with its distinctive climate responses.",
+        "common_misconceptions": [
+          "Jefferson incorporated Neoclassical and Palladian references, but Monticello's essential type — raised plantation house with columned gallery — is Southern Colonial.",
+          "Option D (Georgian/compact/chimneys) describes the Northern colonial tradition, which was designed for cold climates."
+        ]
+      },
+      "explanation": "This question tests application of the Southern Colonial tradition to a specific named building, Monticello.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:17613aa67f64dccddcd54d7f3b442fde36a3eb5268e0a5b5c1017d9f027f9651"
+    },
+    {
+      "question_id": "7f8fd3b4-a783-465e-9d74-1bfbc11e5ae2",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Sydney Town Hall (1889) is identified? as an example of which architectural style, and how does it relate to the Federation style timeline?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Victorian Free Classical style; it predates Federation style, which emerged after Australian federation in 1901 and represents a distinct subsequent movement"
+        },
+        {
+          "id": "B",
+          "text": "Australian Federation style; it is one of the defining early examples that established the Federation vocabulary from the 1880s onward"
+        },
+        {
+          "id": "C",
+          "text": "Georgian Colonial style; it represents the earliest phase of British settlement architecture from the First Fleet period beginning in 1788"
+        },
+        {
+          "id": "D",
+          "text": "Arts and Crafts style; it directly imported William Morris design principles from Britain without any climate-specific Australian adaptations"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sydney Town Hall (1889) is Victorian Free Classical and predates Federation style, which emerged after 1901.",
+        "explanation": "The article places Sydney Town Hall (1889) firmly within the Victorian Free Classical style, which preceded Federation style chronologically. Australian Federation style emerged after federation in 1901 and ran to approximately 1915, synthesizing Victorian, Arts and Crafts, and Art Nouveau elements with climate-specific adaptations. The ALE tests this chronological precision: Victorian (mid-19th century through 1900) is distinct from Federation (1901–1915), even though they share some material characteristics.",
+        "common_misconceptions": [
+          "Australian Federation style is NOT Victorian architecture — it is a post-1901 hybrid that built upon Victorian precedents while adding distinctly Australian climate adaptations.",
+          "The 1889 date for Sydney Town Hall places it firmly in the Victorian period, before Federation style was codified."
+        ]
+      },
+      "explanation": "This question tests precise chronological distinction between Victorian Free Classical and Australian Federation styles.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b3b437533991dbbba4417c5555fb24c38248bac933baa55eef82bdec9a84f825"
+    },
+    {
+      "question_id": "d7d08a89-2b8c-4dd3-8fe9-62015542ab9a",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The Mexico City Metropolitan Cathedral, begun in 1573 and completed in 1813, is a primary example of which colonial architectural tradition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "British Georgian Neoclassicism, adapted to tropical conditions using local volcanic stone and internal courtyards for cross-ventilation"
+        },
+        {
+          "id": "B",
+          "text": "Australian Federation style, characterized by bull-nosed corrugated iron verandas and cast-iron lacework balustrades"
+        },
+        {
+          "id": "C",
+          "text": "Spanish Americas Churrigueresque Baroque, featuring highly ornamental retablo-style facades and adobe or volcanic stone construction"
+        },
+        {
+          "id": "D",
+          "text": "American Federal Neoclassical style, featuring symmetrical facades, fanlights over entries, and local clapboard timber construction"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Mexico City Metropolitan Cathedral is the key example of Spanish Americas Churrigueresque Baroque colonial architecture.",
+        "explanation": "The article identifies the Mexico City Metropolitan Cathedral (begun 1573, completed 1813) as the key example of Spanish Baroque and Plateresque-derived colonial architecture in the Americas. Churrigueresque Baroque is characterized by its extremely ornate, retablo-style facades and the use of local materials — adobe, volcanic tezontle stone, stucco over rubble core — substituting for unavailable European materials. The other options describe entirely different colonial traditions in different geographic regions.",
+        "common_misconceptions": [
+          "The long construction period (1573–1813) reflects both the complexity of the project and colonial disruptions, not multiple architectural styles.",
+          "Churrigueresque refers specifically to the hyper-ornamental late Baroque style dominant in Spanish colonial sacred architecture."
+        ]
+      },
+      "explanation": "This question tests recall of the primary built example of Spanish Americas Churrigueresque Baroque colonial architecture.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:61326763cf8465e0746841c4ff8fc35d5365d3b61823c3a88062e7b7a9f8e738"
+    },
+    {
+      "question_id": "cf70b913-96a6-4b46-9877-45847540ad8a",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Which climate adaptation distinguishes Southern American colonial plantation houses from their Northern Georgian counterparts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compact plans with central chimneys and thick masonry walls to maximize heat retention during cold winters in the humid South"
+        },
+        {
+          "id": "B",
+          "text": "Raised main floors on brick piers with wrap-around verandas for flood protection, air circulation, and shade in humid subtropical conditions"
+        },
+        {
+          "id": "C",
+          "text": "Underground basement vaults with vaulted masonry ceilings for cold storage and shelter from summer heat and violent storms"
+        },
+        {
+          "id": "D",
+          "text": "Fortified stone perimeter walls with minimal fenestration to resist tropical hurricanes and provide security for remote estates"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Southern plantation houses responded to hot, humid conditions with raised floors on brick piers and wrap-around verandas.",
+        "explanation": "Southern colonial American plantation architecture adapted to hot, humid, flood-prone subtropical conditions through elevated main floors on brick piers (allowing air circulation underneath and protecting from flooding) and deep wrap-around verandas (galleries) providing shade and rain protection. Northern Georgian houses took the opposite approach — compact plans, thick walls, small upper windows, and central chimneys for cold-weather heat retention.",
+        "common_misconceptions": [
+          "Central chimneys and compact plans are Northern Georgian adaptations to cold climate, not Southern plantation features.",
+          "The raised floor on piers is specifically a hot, humid climate response — not a defensive or aesthetic choice."
+        ]
+      },
+      "explanation": "This question tests understanding of the climate-driven distinctions between Northern Georgian and Southern plantation colonial architecture.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:50a2205e3f73898a6eee7b245b463af00d85eb2a0e025b83859c65b745a43e4a"
+    },
+    {
+      "question_id": "35957e18-5435-43bb-bfcd-b70355a00eec",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The C-A-A framework (Climate, Available Materials, Adapted Forms) explains how colonial architecture evolved globally. Which example best demonstrates all three components of this framework?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spanish colonists replicated identical European Baroque cathedrals in Mexico using imported Spanish marble, with no modifications for the local climate or construction context, demonstrating a lack of adaptation"
+        },
+        {
+          "id": "B",
+          "text": "Australian Federation buildings adapted Georgian massing with local sandstone, bull-nosed corrugated iron verandas, and cast-iron lacework to manage intense solar radiation and seasonal rainfall"
+        },
+        {
+          "id": "C",
+          "text": "British colonists in North America imported all construction materials from England and trained European craftsmen to execute unmodified Georgian designs, ignoring local conditions"
+        },
+        {
+          "id": "D",
+          "text": "French colonial buildings in Canada retained the full Baroque vocabulary without alteration because Quebec's climate closely matched that of northern France, minimizing the need for adaptation"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Australian Federation architecture demonstrates C-A-A: climate demands drove verandas, local sandstone replaced British materials, and Georgian forms were hybridized into a distinctly Australian style.",
+        "explanation": "The C-A-A framework holds that no European style arrived in the colonies unchanged. Australian Federation style exemplifies all three components: intense solar radiation and seasonal rainfall (Climate) demanded deep verandas with bull-nosed awnings; local sandstone, brick, and corrugated iron (Available Materials) replaced unavailable British materials; and the resulting hybrid (Arts and Crafts + Victorian + local adaptations) produced the distinctly Australian Federation form (Adapted Forms). Option A describes an impossibility — colonists always adapted to local conditions.",
+        "common_misconceptions": [
+          "The C-A-A framework's core premise is that perfect European replication was never achieved — climate and material availability always forced adaptation.",
+          "The Federation style is not simply Victorian architecture transplanted to Australia; it is a genuinely distinct hybrid tradition."
+        ]
+      },
+      "explanation": "This question tests application of the C-A-A framework to evaluate which example demonstrates all three components.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0b69273ca66a8b1faa041cb8fce9b5a02377c8a57e6c691b5fb58586f9fe0775"
+    },
+    {
+      "question_id": "2f237f92-57a5-4247-983a-82d73ba5db46",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Australia's Federation style (c. 1901–1915) is correctly characterized by which combination of features?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Smooth concrete facades with horizontal ribbon windows and flat roofs, derived from the International Style after World War I"
+        },
+        {
+          "id": "B",
+          "text": "Gothic Revival pointed arches in red sandstone with flying buttresses, tracery windows, and steeply pitched slate roofs"
+        },
+        {
+          "id": "C",
+          "text": "Symmetrical Georgian brick facades with classical pediments, pilasters, and no veranda or climate-specific shading devices"
+        },
+        {
+          "id": "D",
+          "text": "Red brick construction with terracotta roof tiles, wide verandas with bull-nosed corrugated iron awnings, and decorative cast-iron lacework"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Federation style is characterized by red brick, terracotta roof tiles, bull-nosed corrugated iron verandas, and cast-iron lacework.",
+        "explanation": "Australian Federation style (c. 1901–1915) is a uniquely Australian hybrid synthesizing Victorian, Arts and Crafts, and Art Nouveau elements with local climate adaptations. Its defining features include red brick walls, Marseilles-pattern terracotta roof tiles, deep verandas with bull-nosed (curved) corrugated iron awnings that manage intense solar radiation and seasonal rainfall, and decorative cast-iron or timber lacework. The Sydney Town Hall (1889, Victorian Free Classical) predates Federation style — the ALE tests this chronological distinction.",
+        "common_misconceptions": [
+          "Federation style should not be conflated with British Victorian architecture — it is a distinctly Australian hybrid that emerged after federation in 1901.",
+          "Bull-nosed roofing refers specifically to the curved corrugated iron eave profile, a climate-driven innovation, not a British import."
+        ]
+      },
+      "explanation": "This question tests precise recall of the defining material and formal characteristics of Australian Federation style.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:35:59.605667+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:448fa231e76c29a21ac046d98ce1654c438a13d5ebd2973dce94f440944c2a09"
+    },
+    {
+      "question_id": "35645512-ae15-419d-99b9-911ba2fee297",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Which material substitution most clearly distinguishes Spanish colonial architecture in the Philippines from Spanish colonial architecture in Mesoamerica?",
+      "options": [
+        {
+          "id": "A",
+          "text": "The Philippines used reinforced concrete frames while Mesoamerica relied on traditional adobe brick load-bearing wall construction"
+        },
+        {
+          "id": "B",
+          "text": "The Philippines used imported Spanish marble and granite while Mesoamerica relied on locally quarried limestone from Yucatan deposits"
+        },
+        {
+          "id": "C",
+          "text": "The Philippines used coral stone (piedra de coral), brick, and local hardwood (bahay na bato); Mesoamerica used adobe and volcanic tezontle stone"
+        },
+        {
+          "id": "D",
+          "text": "The Philippines used timber framing with bamboo infill panels while Mesoamerica used fired ceramic brick with lime mortar joints"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Philippine Spanish colonial buildings used coral stone, brick, and hardwood; Mesoamerican ones used adobe and volcanic tezontle stone.",
+        "explanation": "The article explicitly identifies this as an ALE trap: while both derive from Spanish Baroque, the material palette differs significantly. In the Philippines, coral stone (piedra de coral), brick, and hardwood were used in the bahay na bato hybrid type. In Mesoamerica, colonists substituted adobe and volcanic tezontle stone for unavailable European materials. Recognizing these distinct material substitutions by region is essential for ALE performance.",
+        "common_misconceptions": [
+          "Both regions adapted Spanish Baroque forms, but the materials available locally drove very different construction systems.",
+          "Coral stone (piedra de coral) is a specifically Philippine substitution — it does not appear in Mesoamerican colonial construction."
+        ]
+      },
+      "explanation": "This question tests the critical LEA distinction between Spanish colonial material pleattes in the Philippines versus Mesoamerica.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:572a6e100cd77ab2dd0a8391684b7391b45763ef9d87c3c3bd21fb80e0d21cfe"
+    },
+    {
+      "question_id": "42194e53-99cf-43e5-a985-a47a90015fca",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "A heritage conservation team is assessing an 18th-century colonial building in the Philippines with coral stone walls, internal courtyards, and a hardwood upper story. Which colonial tradition does this building type most directly represent?",
+      "options": [
+        {
+          "id": "A",
+          "text": "British Federation style adapted to Southeast Asian conditions, with bull-nosed verandas replacing the traditional Philippine upper-story hardwood construction"
+        },
+        {
+          "id": "B",
+          "text": "Pre-colonial Malay vernacular architecture, with no European influence despite the described coral stone construction and internal courtyard organization"
+        },
+        {
+          "id": "C",
+          "text": "American Federal Neoclassical architecture transplanted to the Philippines during the colonial period from 1898 onward"
+        },
+        {
+          "id": "D",
+          "text": "Spanish colonial architecture adapted to Philippine conditions — the bahay na bato type using coral stone, brick, and hardwood in place of Iberian materials"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Coral stone walls, internal courtyards, and hardwood upper stories identify the Philippine bahay na bato — Spanish colonial architecture adapted to local materials.",
+        "explanation": "The article explicitly links coral stone (piedra de coral), brick, and hardwood to the Philippine Spanish colonial material palette — the bahay na bato (stone house) hybrid type. The internal courtyard is a direct Spanish colonial adaptation providing thermal mass and cross-ventilation. The C-A-A framework applies: Spanish Baroque forms were adapted to Philippine climate, using locally available coral stone and hardwood in place of unavailable Iberian materials. American-period Neoclassical buildings came after 1898 and used different formal vocabularies.",
+        "common_misconceptions": [
+          "Coral stone is specifically a Philippine colonial material substitution — it distinguishes Philippine Spanish colonial buildings from both Mesoamerican and Iberian examples.",
+          "The bahay na bato is a hybrid type: European spatial organization with Philippine material adaptations, not purely European or purely indigenous."
+        ]
+      },
+      "explanation": "This question tests evaluative application of the Philippine Spanish colonial material pleatte to a specific building description.",
+      "code_citation": null,
+      "bloom_level": "evaluate",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f6411ee1d2c814ade7a7aa123c5bc0f1e0a7f4cd0e7c8d7656553b6a972a376a"
+    },
+    {
+      "question_id": "2138cdfc-bf97-4552-aa75-5154f756ac62",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The Mexico City Metropolitan Cathedral, begun in 1573 and completed in 1813, is a primary example of which colonial architectural tradition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "British Georgian Neoclassicism, adapted to tropical conditions using local volcanic stone and internal courtyards for cross-ventilation"
+        },
+        {
+          "id": "B",
+          "text": "Australian Federation style, characterized by bull-nosed corrugated iron verandas and cast-iron lacework balustrades"
+        },
+        {
+          "id": "C",
+          "text": "Spanish Americas Churrigueresque Baroque, featuring highly ornamental retablo-style facades and adobe or volcanic stone construction"
+        },
+        {
+          "id": "D",
+          "text": "American Federal Neoclassical style, featuring symmetrical facades, fanlights over entries, and local clapboard timber construction"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Mexico City Metropolitan Cathedral is the key example of Spanish Americas Churrigueresque Baroque colonial architecture.",
+        "explanation": "The article identifies the Mexico City Metropolitan Cathedral (begun 1573, completed 1813) as the key example of Spanish Baroque and Plateresque-derived colonial architecture in the Americas. Churrigueresque Baroque is characterized by its extremely ornate, retablo-style facades and the use of local materials — adobe, volcanic tezontle stone, stucco over rubble core — substituting for unavailable European materials. The other options describe entirely different colonial traditions in different geographic regions.",
+        "common_misconceptions": [
+          "The long construction period (1573–1813) reflects both the complexity of the project and colonial disruptions, not multiple architectural styles.",
+          "Churrigueresque refers specifically to the hyper-ornamental late Baroque style dominant in Spanish colonial sacred architecture."
+        ]
+      },
+      "explanation": "This question tests recall of the primary built example of Spanish Americas Churrigueresque Baroque colonial architecture.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8fcf0d9d6b79a92990ffa261e3ec54cd7791bb3a27071d03c36205da4f953f4c"
+    },
+    {
+      "question_id": "ef693f26-e865-4f28-80ca-18c3d81b36ba",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Which climate adaptation distinguishes Southern American colonial plantation houses from their Northern Georgian counterparts?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Compact plans with central chimneys and thick masonry walls to maximize heat retention during cold winters in the humid South"
+        },
+        {
+          "id": "B",
+          "text": "Raised main floors on brick piers with wrap-around verandas for flood protection, air circulation, and shade in humid subtropical conditions"
+        },
+        {
+          "id": "C",
+          "text": "Underground basement vaults with vaulted masonry ceilings for cold storage and shelter from summer heat and violent storms"
+        },
+        {
+          "id": "D",
+          "text": "Fortified stone perimeter walls with minimal fenestration to resist tropical hurricanes and provide security for remote estates"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Southern plantation houses responded to hot, humid conditions with raised floors on brick piers and wrap-around verandas.",
+        "explanation": "Southern colonial American plantation architecture adapted to hot, humid, flood-prone subtropical conditions through elevated main floors on brick piers (allowing air circulation underneath and protecting from flooding) and deep wrap-around verandas (galleries) providing shade and rain protection. Northern Georgian houses took the opposite approach — compact plans, thick walls, small upper windows, and central chimneys for cold-weather heat retention.",
+        "common_misconceptions": [
+          "Central chimneys and compact plans are Northern Georgian adaptations to cold climate, not Southern plantation features.",
+          "The raised floor on piers is specifically a hot, humid climate response — not a defensive or aesthetic choice."
+        ]
+      },
+      "explanation": "This question tests understanding of the climate-driven distinctions between Northern Georgian and Southern plantation colonial architecture.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a26196b90d5527b7ce63f16e1871ef63325fcf4f9a22ba9118b2780c11e2130c"
+    },
+    {
+      "question_id": "109e8ca7-039e-49a4-ac07-30bb89f4cd80",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Australia's Federation style (c. 1901–1915) is correctly characterized by which combination of features?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Smooth concrete facades with horizontal ribbon windows and flat roofs, derived from the International Style after World War I"
+        },
+        {
+          "id": "B",
+          "text": "Gothic Revival pointed arches in red sandstone with flying buttresses, tracery windows, and steeply pitched slate roofs"
+        },
+        {
+          "id": "C",
+          "text": "Symmetrical Georgian brick facades with classical pediments, pilasters, and no veranda or climate-specific shading devices"
+        },
+        {
+          "id": "D",
+          "text": "Red brick construction with terracotta roof tiles, wide verandas with bull-nosed corrugated iron awnings, and decorative cast-iron lacework"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Federation style is characterized by red brick, terracotta roof tiles, bull-nosed corrugated iron verandas, and cast-iron lacework.",
+        "explanation": "Australian Federation style (c. 1901–1915) is a uniquely Australian hybrid synthesizing Victorian, Arts and Crafts, and Art Nouveau elements with local climate adaptations. Its defining features include red brick walls, Marseilles-pattern terracotta roof tiles, deep verandas with bull-nosed (curved) corrugated iron awnings that manage intense solar radiation and seasonal rainfall, and decorative cast-iron or timber lacework. The Sydney Town Hall (1889, Victorian Free Classical) predates Federation style — the ALE tests this chronological distinction.",
+        "common_misconceptions": [
+          "Federation style should not be conflated with British Victorian architecture — it is a distinctly Australian hybrid that emerged after federation in 1901.",
+          "Bull-nosed roofing refers specifically to the curved corrugated iron eave profile, a climate-driven innovation, not a British import."
+        ]
+      },
+      "explanation": "This question tests precise recall of the defining material and formal characteristics of Australian Federation style.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:8c5d92d824ddf08996ac04f058d157081961d987e4701a3f3e4bf3aaabbc6720"
+    },
+    {
+      "question_id": "8f118413-cfd5-4375-96d7-7334a5f6b082",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Sydney Town Hall (1889) is identified? as an example of which architectural style, and how does it relate to the Federation style timeline?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Victorian Free Classical style; it predates Federation style, which emerged after Australian federation in 1901 and represents a distinct subsequent movement"
+        },
+        {
+          "id": "B",
+          "text": "Australian Federation style; it is one of the defining early examples that established the Federation vocabulary from the 1880s onward"
+        },
+        {
+          "id": "C",
+          "text": "Georgian Colonial style; it represents the earliest phase of British settlement architecture from the First Fleet period beginning in 1788"
+        },
+        {
+          "id": "D",
+          "text": "Arts and Crafts style; it directly imported William Morris design principles from Britain without any climate-specific Australian adaptations"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Sydney Town Hall (1889) is Victorian Free Classical and predates Federation style, which emerged after 1901.",
+        "explanation": "The article places Sydney Town Hall (1889) firmly within the Victorian Free Classical style, which preceded Federation style chronologically. Australian Federation style emerged after federation in 1901 and ran to approximately 1915, synthesizing Victorian, Arts and Crafts, and Art Nouveau elements with climate-specific adaptations. The ALE tests this chronological precision: Victorian (mid-19th century through 1900) is distinct from Federation (1901–1915), even though they share some material characteristics.",
+        "common_misconceptions": [
+          "Australian Federation style is NOT Victorian architecture — it is a post-1901 hybrid that built upon Victorian precedents while adding distinctly Australian climate adaptations.",
+          "The 1889 date for Sydney Town Hall places it firmly in the Victorian period, before Federation style was codified."
+        ]
+      },
+      "explanation": "This question tests precise chronological distinction between Victorian Free Classical and Australian Federation styles.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a4baa271b5005bd760659ecd0be74e9836300683230d849458c7f3db4e8f4fe9"
+    },
+    {
+      "question_id": "f93b088e-e279-4609-8d06-8e30de6b7556",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The C-A-A framework (Climate, Available Materials, Adapted Forms) explains how colonial architecture evolved globally. Which example best demonstrates all three components of this framework?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Spanish colonists replicated identical European Baroque cathedrals in Mexico using imported Spanish marble, with no modifications for the local climate or construction context, ignoring the environmental and material constraints"
+        },
+        {
+          "id": "B",
+          "text": "Australian Federation buildings adapted Georgian massing with local sandstone, bull-nosed corrugated iron verandas, and cast-iron lacework to manage intense solar radiation and seasonal rainfall"
+        },
+        {
+          "id": "C",
+          "text": "British colonists in North America imported all construction materials from England and trained European craftsmen to execute unmodified Georgian designs, maintaining strict adherence to traditional styles"
+        },
+        {
+          "id": "D",
+          "text": "French colonial buildings in Canada retained the full Baroque vocabulary without alteration because Quebec's climate closely matched that of northern France, allowing for direct architectural transference"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Australian Federation architecture demonstrates C-A-A: climate demands drove verandas, local sandstone replaced British materials, and Georgian forms were hybridized into a distinctly Australian style.",
+        "explanation": "The C-A-A framework holds that no European style arrived in the colonies unchanged. Australian Federation style exemplifies all three components: intense solar radiation and seasonal rainfall (Climate) demanded deep verandas with bull-nosed awnings; local sandstone, brick, and corrugated iron (Available Materials) replaced unavailable British materials; and the resulting hybrid (Arts and Crafts + Victorian + local adaptations) produced the distinctly Australian Federation form (Adapted Forms). Option A describes an impossibility — colonists always adapted to local conditions.",
+        "common_misconceptions": [
+          "The C-A-A framework's core premise is that perfect European replication was never achieved — climate and material availability always forced adaptation.",
+          "The Federation style is not simply Victorian architecture transplanted to Australia; it is a genuinely distinct hybrid tradition."
+        ]
+      },
+      "explanation": "This question tests application of the C-A-A framework to evaluate which example demonstrates all three components.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.8,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1b54f924a51a6d642972950951b13c99641d1a03642bfbaff3e7175efc29bd2f"
+    },
+    {
+      "question_id": "f312e36e-19cc-40dd-94ef-2bedd211d224",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Monticello in Charlottesville, Virginia, designed by Thomas Jefferson between 1768 and 1809, represents which colonial and post-colonial architectural tradition?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Churrigueresque Baroque, with ornate stone retablo facades and an open-air atrio fronting the main entrance approach"
+        },
+        {
+          "id": "B",
+          "text": "Australian Federation style, with wide bull-nosed verandas of corrugated iron and decorative cast-iron lacework railings"
+        },
+        {
+          "id": "C",
+          "text": "British Georgian, with symmetrical clapboard facades, central chimneys, and compact plans designed for cold northeastern winters"
+        },
+        {
+          "id": "D",
+          "text": "English North America Southern Colonial, using local timber framing and brick piers adapted to Virginia's hot, humid subtropical climate"
+        }
+      ],
+      "correct_option_id": "D",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "Monticello represents the Southern Colonial tradition, adapted to Virginia's hot, humid subtropical climate.",
+        "explanation": "The article identifies Monticello (1768–1809) as the key example of English North America Southern Colonial/plantation architecture, featuring local timber framing (cypress, pine), brick piers, and climate adaptations including elevated floors and columned galleries — all responses to Virginia's hot, humid subtropical conditions. Jefferson's design also reflects Neoclassical influences, but the article categorizes it under the Southern colonial tradition with its distinctive climate responses.",
+        "common_misconceptions": [
+          "Jefferson incorporated Neoclassical and Palladian references, but Monticello's essential type — raised plantation house with columned gallery — is Southern Colonial.",
+          "Option D (Georgian/compact/chimneys) describes the Northern colonial tradition, which was designed for cold climates."
+        ]
+      },
+      "explanation": "This question tests application of the Southern Colonial tradition to a specific named building, Monticello.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:9175f63e7139f7e477b620800c443b433c1f19fa041f6eef697d3e5cd878cd27"
+    },
+    {
+      "question_id": "85ae207c-adf9-438b-8c6b-cb0bef09aba1",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "The Federal style in American architecture is correctly associated with which chronological period and distinguishing characteristic?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Pre-1776 colonial period; characterized by symmetrical brick facades, small upper windows, and central chimneys derived from British Georgian prototypes"
+        },
+        {
+          "id": "B",
+          "text": "Post-1776 Neoclassical movement; also called the Adam style; characterized by symmetrical facades, classical porticos, and fanlights over doors"
+        },
+        {
+          "id": "C",
+          "text": "Mid-19th century Victorian period; characterized by ornate carved timber detailing, steep gabled roofs, and asymmetrical picturesque massing"
+        },
+        {
+          "id": "D",
+          "text": "Post-Civil War Beaux-Arts period; characterized by monumental stone facades with rusticated bases and elaborate sculptural programs"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The Federal style is a post-1776 Neoclassical movement (also called Adam style) with classical porticos, fanlights, and symmetrical facades.",
+        "explanation": "The article identifies a specific ALE trap: assuming Federal style predates American independence. The Federal style (also called Adam style in America) is a post-1776 Neoclassical movement. Key examples include Independence Hall (1753, Philadelphia — this is actually Georgian, not Federal) and the U.S. Capitol (begun 1793). Georgian style is the pre-independence colonial standard. Any ALE question that dates a 'Federal' building before 1776 contains an error.",
+        "common_misconceptions": [
+          "This is an explicit ALE trap in the article: Federal style is POST-1776. If a Federal building is dated before 1776, the answer is wrong.",
+          "Georgian is the pre-independence colonial standard; Federal is the post-independence Neoclassical adaptation."
+        ]
+      },
+      "explanation": "This question tests the critical LEA trap distinguishing Georgian (pre-1776) from Federal (post-1776) American colonial architecture.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:882581316fa134406e9904a10f2c4f310974cd4a42728bd60e9353ef2a2eeb6d"
+    },
+    {
+      "question_id": "c08f5e23-7809-415b-98a6-372ac420e233",
+      "article_id": "2862e34d-02fd-4f95-a2a2-5119a355bdf8",
+      "topic_id": "5b346179-6b2e-4d12-936f-b22149feefe0",
+      "text": "Spanish colonial churches in the Americas introduced the open-air atrio as a distinctly adapted architectural element. What function did the atrio serve?",
+      "options": [
+        {
+          "id": "A",
+          "text": "An open-air walled churchyard serving as an outdoor worship space for large indigenous congregations that the nave could not accommodate"
+        },
+        {
+          "id": "B",
+          "text": "A fortified outer precinct wall designed to defend the church compound from military attack during the colonial period"
+        },
+        {
+          "id": "C",
+          "text": "An enclosed narthex vestibule providing shade and rain protection for parishioners waiting to enter the main nave of the church"
+        },
+        {
+          "id": "D",
+          "text": "A subterranean burial crypt beneath the main altar, reserved for colonial administrators and high-ranking clergy"
+        }
+      ],
+      "correct_option_id": "A",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "summary": "The atrio is an open-air walled churchyard used as an outdoor worship space for large indigenous congregations.",
+        "explanation": "The atrio (open-air churchyard) is a uniquely Mesoamerican colonial adaptation. Because indigenous congregations in New Spain were too large to fit inside European-scaled church naves, Spanish missionaries created large enclosed open-air forecourts where thousands could gather for Mass outdoors. This adaptation — a European liturgical space reengineered for tropical climate and demographic realities — is a key example of the C-A-A framework (Climate, Available Materials, Adapted Forms).",
+        "common_misconceptions": [
+          "The atrio is not an indoor vestibule or a defensive wall — it is a specifically designed open-air worship space scaling to the enormous size of indigenous congregations.",
+          "This adaptation is unique to Spanish colonial Mexico and reflects the demographic reality of mass conversion, not a European prototype."
+        ]
+      },
+      "explanation": "This question tests understanding of the atrio as a climate and demographic adaptation unique to Spanish colonial Mexico.",
+      "code_citation": null,
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:36:49.54198+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:f8fe30c5fb4956ce7375acde09649729e64c87c34e87af3d1db5325178c4b519"
+    }
+  ]
+}

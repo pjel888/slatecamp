@@ -1,58 +1,60 @@
 {
   "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
   "hash_algorithm": "sha256",
-  "linked_questions_hash": "sha256:e23b37af0606c3b15686743222ca698da3254bea992d538620f9539761a9ef68",
+  "linked_questions_hash": "sha256:104faf39613cc6881980e783d5c96e05286cce56ebae8242ac0042c5421ff6b3",
   "question_count": 10,
   "questions": [
     {
       "question_id": "c348de7a-021d-4ff6-9c91-c9673fb255f6",
       "article_id": "ae4bdc43-1451-4aa5-8c12-65283f4bbdfd",
       "topic_id": "b2ed3165-9e0f-45d6-8031-12b470d82ef3",
-      "text": "What authorizes a foreign architect to practice in the Philippines?",
+      "text": "Before assuming architectural consultant duties on a covered project in the Philippines, what must the foreign national secure under Section 38 of the RA 9266 IRR?",
       "options": [
         {
-          "id": "a",
-          "text": "A foreign professional license from their home country, which must be recognized by the Philippine government"
+          "id": "A",
+          "text": "A local business permit only"
         },
         {
-          "id": "b",
-          "text": "Temporary or special permits issued by the Board of Architecture"
+          "id": "B",
+          "text": "A special/temporary permit from the Board, subject to Commission approval"
         },
         {
-          "id": "c",
-          "text": "Immigration clearance only, which does not cover professional practice rights"
+          "id": "C",
+          "text": "A UAP chapter endorsement only"
         },
         {
-          "id": "d",
-          "text": "Direct registration with the PRC, which is not typically available to foreign professionals"
+          "id": "D",
+          "text": "A notarized employment contract only"
         }
       ],
-      "correct_option_id": "b",
+      "correct_option_id": "B",
       "correct_value": null,
       "accepted_answers": null,
       "value_tolerance": 0,
       "question_type": "mcq",
       "rationale": {
-        "a": "Mistakes licensing equivalency—foreign credentials are insufficient; BOA authorization is required.",
-        "c": "Confuses legal entry with professional practice—immigration clearance permits presence but not architectural practice.",
-        "d": "Incorrectly routes through PRC—foreign architects do not register with PRC; BOA issues special/temporary permits instead.",
-        "correct": "Foreign architects must secure temporary or special permits from the Board of Architecture to practice in the Philippines; home country licenses alone do not authorize practice.",
-        "takeaway": "Foreign architects cannot practice in the Philippines on home-country credentials alone—they must obtain BOA temporary or special permits."
+        "correct": "Section 38 requires a special/temporary permit from the Board subject to approval of the Commission before the foreign national assumes the covered duties.",
+        "takeaway": "For foreign practice questions, look for the Board permit and Commission approval.",
+        "distractors": {
+          "A": "A business permit does not substitute for the professional permit.",
+          "C": "A professional organization endorsement is not the Section 38 permit.",
+          "D": "A contract may evidence engagement, but it is not the permit gate."
+        }
       },
-      "explanation": null,
-      "code_citation": "RA 9266",
-      "bloom_level": "remember",
-      "application_context": "code_interpretation",
+      "explanation": "RA 9266 IRR, Section 38, PDF p.20.",
+      "code_citation": "RA 9266 IRR, Section 38, PDF p.20.",
+      "bloom_level": "apply",
+      "application_context": null,
       "practice_context": [],
-      "difficulty": 0.3,
+      "difficulty": null,
       "difficulty_rating": null,
       "discrimination_rating": null,
       "is_assessment": false,
       "model_id": "ALE-PRAC-FRM-005-001",
       "prompt_image_url": null,
       "created_at": "2026-03-23T19:27:47.923634+00:00",
-      "updated_at": "2026-04-08T07:44:46.846261+00:00",
-      "content_hash": "sha256:3ef7f0204651281fdba701b595a8bc431210ad396844667bfac6db0fcc168aa9"
+      "updated_at": "2026-05-09T16:26:04.852429+00:00",
+      "content_hash": "sha256:c879ba0cc2649e424b093969ec81e5d60599bfd75c103a54b787af9bd73d4c13"
     },
     {
       "question_id": "1c94b42d-f325-4780-8ee6-4bb31ffae4ef",

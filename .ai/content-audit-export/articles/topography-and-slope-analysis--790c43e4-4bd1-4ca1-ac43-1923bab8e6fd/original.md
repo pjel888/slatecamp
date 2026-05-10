@@ -236,4 +236,3 @@ Extracted summary:
 ## Cross‑References
 
 **Microclimate Analysis**, **Hydrology In Site Planning**, **Geological Hazards**, **Excavation Foundation And Veneer**
-

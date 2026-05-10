@@ -1,0 +1,736 @@
+{
+  "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:2ca07fb8c53e5af7b7892147bb0fdee7a1670963ec82e0b381eafdd93d6f9404",
+  "question_count": 14,
+  "questions": [
+    {
+      "question_id": "bf3578d8-6545-4c9b-b344-5619e91acf78",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "In a university campus with 12 buildings, poor gestalt organization would most likely manifest as:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Buildings using uniform materials throughout the campus, creating a monotonous visual experience"
+        },
+        {
+          "id": "b",
+          "text": "Buildings grouped by proximity but lacking functional relationships, leading to inefficient space utilization"
+        },
+        {
+          "id": "c",
+          "text": "Excessive wayfinding signage directing visitors through the campus, indicating a lack of intuitive navigation"
+        },
+        {
+          "id": "d",
+          "text": "Buildings not grouped by proximity or similarity, appearing scattered; no clear continuous pathways; landmarks absent or undistinguished; figure-ground relationships ambiguous"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Similarity supports organization; this demonstrates good gestalt application",
+        "b": "Proximity-based grouping supports organization; this is good gestalt application",
+        "c": "Excessive signage compensates for poor spatial organization; good gestalt reduces signage need",
+        "correct": "Poor gestalt organization exhibits proximity failures (scattered buildings), similarity failures (varied materials without logic), continuity failures (fragmented paths), and figure-ground confusion",
+        "takeaway": "Poor gestalt organization exhibits proximity failures (scattered buildings), similarity failures (varied materials without logic), continuity failures (fragmented paths), and figure-ground confusion."
+      },
+      "explanation": "Similarity supports organization; this demonstrates good gestalt application Proximity-based grouping supports organization; this is good gestalt application Excessive signage compensates for poor spatial organization; good gestalt reduces signage need Poor gestalt organization exhibits proximity failures (scattered buildings), similarity failures (varied materials without logic), continuity failures (fragmented paths), and figure-ground confusion Poor gestalt organization exhibits proximity failures (scattered buildings), similarity failures (varied materials without logic), continuity failures (fragmented paths), and figure-ground confusion.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-012",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:01.555586+00:00",
+      "content_hash": "sha256:b5ad4cad21e1c03573b00ca38c131955acb6de5da5b3321aff509afaff70bb2f"
+    },
+    {
+      "question_id": "80bbef32-00e0-4b05-9b45-deded1d306cf",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "In designing a building facade with windows clustered in three vertical columns (narrow spacing) separated by wide mullion spacing, which gestalt principle is being applied?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Closure—incomplete window patterns are mentally completed, which is not the primary principle here"
+        },
+        {
+          "id": "b",
+          "text": "Continuity—vertical lines create unified column appearance, which is a secondary effect"
+        },
+        {
+          "id": "c",
+          "text": "Proximity—close window spacing creates visual grouping into columns"
+        },
+        {
+          "id": "d",
+          "text": "Similarity—uniform window shape creates visual unity, which is not the main principle applied"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Closure applies to partial visual information; complete windows don't require mental completion",
+        "b": "Continuity contributes to column perception but proximity is primary",
+        "d": "Similarity explains why matching windows are perceived as related",
+        "correct": "Proximity spacing groups nearby windows into columns; the spacing change creates distinct groupings",
+        "takeaway": "Proximity spacing groups nearby windows into columns; the spacing change creates distinct groupings."
+      },
+      "explanation": "Closure applies to partial visual information; complete windows don't require mental completion Continuity contributes to column perception but proximity is primary Similarity explains why matching windows are perceived as related Proximity spacing groups nearby windows into columns; the spacing change creates distinct groupings Proximity spacing groups nearby windows into columns; the spacing change creates distinct groupings.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:01.677986+00:00",
+      "content_hash": "sha256:16713d4bbbefc2ebf379636730a2627881a48a41504db73be8ead39cb8c42d51"
+    },
+    {
+      "question_id": "5179dd7f-a28d-4499-8598-486f73f8f1fc",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "The Gestalt principle of Figure-Ground describes:",
+      "options": [
+        {
+          "id": "a",
+          "text": "How objects (figures) are perceptually separated from surrounding context (ground); this relationship is relational and reversible"
+        },
+        {
+          "id": "b",
+          "text": "How elements cluster based on visual similarity, often leading to perceived grouping in design"
+        },
+        {
+          "id": "c",
+          "text": "How the eye follows visual continuity and smooth flow, creating a sense of movement and direction"
+        },
+        {
+          "id": "d",
+          "text": "How elements cluster based on distance from each other, affecting perceived proximity and organization"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This is similarity",
+        "c": "This is continuity",
+        "d": "This is proximity",
+        "correct": "Figure-ground describes the perceptual separation of object from context, with reversible relationships (Rubin's vase effect)",
+        "takeaway": "Figure-ground describes the perceptual separation of object from context, with reversible relationships (Rubin's vase effect)."
+      },
+      "explanation": "This is similarity This is continuity This is proximity Figure-ground describes the perceptual separation of object from context, with reversible relationships (Rubin's vase effect) Figure-ground describes the perceptual separation of object from context, with reversible relationships (Rubin's vase effect).",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:01.429673+00:00",
+      "content_hash": "sha256:027ed31c1da4011e9905636788bfd50066d9aca874590b8f438c940e375e0b44"
+    },
+    {
+      "question_id": "0b9d433a-e78f-4560-84f2-8d8413476faf",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "Gestalt psychology is based on the principle that:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Humans perceive wholes and organized patterns rather than disconnected elements; the mind organizes visual information into coherent wholes"
+        },
+        {
+          "id": "b",
+          "text": "All visual perception is learned through cultural conditioning with no innate perceptual organization or universal cognitive grouping principles"
+        },
+        {
+          "id": "c",
+          "text": "Visual perception is purely individual and varies randomly across different observers without any consistent organizational tendencies"
+        },
+        {
+          "id": "d",
+          "text": "Humans perceive isolated elements and component parts, processing them independently before assembling meaning through conscious rational analysis"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "While culture influences emphasis, gestalt principles operate at pre-conscious levels independent of cultural learning",
+        "c": "Gestalt principles operate consistently across individuals due to shared perceptual mechanisms",
+        "d": "Gestalt explicitly rejects component-based perception, emphasizing wholeness",
+        "correct": "Gestalt's fundamental principle is that perception organizes elements into wholes according to learnable psychological rules",
+        "takeaway": "Gestalt's fundamental principle is that perception organizes elements into wholes according to learnable psychological rules."
+      },
+      "explanation": "While culture influences emphasis, gestalt principles operate at pre-conscious levels independent of cultural learning Gestalt principles operate consistently across individuals due to shared perceptual mechanisms Gestalt explicitly rejects component-based perception, emphasizing wholeness Gestalt's fundamental principle is that perception organizes elements into wholes according to learnable psychological rules Gestalt's fundamental principle is that perception organizes elements into wholes according to learnable psychological rules.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:02.173468+00:00",
+      "content_hash": "sha256:3473130b427464190713e4f539feee93d4119ed2bc696b000d4830ca624de63a"
+    },
+    {
+      "question_id": "51b0f970-9583-45d3-a775-a48152461aaa",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "How do gestalt principles operate at different architectural scleas?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Each architectural scale requires entirely different perceptual frameworks; gestalt principles are inapplicable, making them irrelevant for comprehensive design analysis"
+        },
+        {
+          "id": "b",
+          "text": "Gestalt principles operate consistently across all scales—single facades, building compositions, campus organizations, and urban districts—but specific applications vary"
+        },
+        {
+          "id": "c",
+          "text": "Gestalt principles are too abstract to apply to large-scale urban design, limiting their usefulness in broader contexts"
+        },
+        {
+          "id": "d",
+          "text": "Gestalt principles apply only to facade composition; interior and urban scales follow different perceptual rules, necessitating alternative design approaches"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Consistent perceptual principles apply across scales with scale-appropriate applications",
+        "c": "Gestalt principles directly inform urban legibility and wayfinding",
+        "d": "Gestalt principles operate across all scales systematically",
+        "correct": "Gestalt principles operate at facade, building, campus, and urban scales; proximity, similarity, continuity, closure, and figure-ground apply throughout",
+        "takeaway": "Gestalt principles operate at facade, building, campus, and urban scales; proximity, similarity, continuity, closure, and figure-ground apply throughout."
+      },
+      "explanation": "Consistent perceptual principles apply across scales with scale-appropriate applications Gestalt principles directly inform urban legibility and wayfinding Gestalt principles operate across all scales systematically Gestalt principles operate at facade, building, campus, and urban scales; proximity, similarity, continuity, closure, and figure-ground apply throughout Gestalt principles operate at facade, building, campus, and urban scales; proximity, similarity, continuity, closure, and figure-ground apply throughout.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "SYS"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-011",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:02.051135+00:00",
+      "content_hash": "sha256:ba67468baee0a12d43e9b4bec147f7bcfb494d74dbddfb79378bc68e98ccdb04"
+    },
+    {
+      "question_id": "98efe8cf-6fbb-46fe-8d15-b7e735b301df",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "The Gestalt principle of Proximity states that:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Elements with similar visual characteristics are perceived as related, often leading to visual grouping"
+        },
+        {
+          "id": "b",
+          "text": "Complete shapes are perceived from incomplete visual information, a phenomenon known as closure"
+        },
+        {
+          "id": "c",
+          "text": "The eye follows curves and lines, preferring smooth continuation, which is a key aspect of visual flow"
+        },
+        {
+          "id": "d",
+          "text": "Elements positioned close together are perceived as related and grouped together"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is similarity, not proximity",
+        "b": "This is closure, not proximity",
+        "c": "This is continuity, not proximity",
+        "correct": "Proximity means distance determines grouping; close elements are perceived as related",
+        "takeaway": "Proximity means distance determines grouping; close elements are perceived as related."
+      },
+      "explanation": "This is similarity, not proximity This is closure, not proximity This is continuity, not proximity Proximity means distance determines grouping; close elements are perceived as related Proximity means distance determines grouping; close elements are perceived as related.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:02.288082+00:00",
+      "content_hash": "sha256:392637d6a8f0123b89566c5b65cb1738dfe1a6761384a9c3389f4ca75167851a"
+    },
+    {
+      "question_id": "c5cefe05-9743-4fba-b3d1-03d307339194",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "The Gestalt principle of Similarity means:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Complete shapes are perceived from partial visual information, a process known as closure."
+        },
+        {
+          "id": "b",
+          "text": "Elements positioned close together are grouped together, illustrating the principle of proximity."
+        },
+        {
+          "id": "c",
+          "text": "The eye follows smooth continuations rather than abrupt changes, demonstrating the principle of continuity."
+        },
+        {
+          "id": "d",
+          "text": "Elements sharing visual characteristics (color, shape, size, texture) are perceived as grouped despite spatial separation"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This is closure, not similarity",
+        "b": "This is proximity, not similarity",
+        "c": "This is continuity, not similarity",
+        "correct": "Similarity groups elements by visual matching characteristics, overriding distance considerations",
+        "takeaway": "Similarity groups elements by visual matching characteristics, overriding distance considerations."
+      },
+      "explanation": "This is closure, not similarity This is proximity, not similarity This is continuity, not similarity Similarity groups elements by visual matching characteristics, overriding distance considerations Similarity groups elements by visual matching characteristics, overriding distance considerations.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:02.406595+00:00",
+      "content_hash": "sha256:2b66da9116d07c794251accde540b1afba1a2c4c905aa25fb5024598bb868c71"
+    },
+    {
+      "question_id": "b5c10727-3e93-4c35-8982-641483fcfd36",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "A commercial building with uniform materials throughout its facade appears more coherent than one mixing materials because of which gestalt principle?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Closure—incomplete material patterns are mentally completed by observers who perceive the whole"
+        },
+        {
+          "id": "b",
+          "text": "Proximity—uniform materials are positioned close together, enhancing the perception of unity"
+        },
+        {
+          "id": "c",
+          "text": "Similarity—uniform material creates visual matching and grouping across all facade areas"
+        },
+        {
+          "id": "d",
+          "text": "Continuity—material uniformity creates visual flow, guiding the eye smoothly across the facade"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Complete material coverage doesn't require mental completion",
+        "b": "Material positioning (proximity) is secondary to matching characteristics",
+        "d": "Continuity contributes to flow but similarity is the primary unifying mechanism",
+        "correct": "Similarity through material matching creates visual unity, overriding location variation",
+        "takeaway": "Similarity through material matching creates visual unity, overriding location variation."
+      },
+      "explanation": "Complete material coverage doesn't require mental completion Material positioning (proximity) is secondary to matching characteristics Continuity contributes to flow but similarity is the primary unifying mechanism Similarity through material matching creates visual unity, overriding location variation Similarity through material matching creates visual unity, overriding location variation.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:02.524442+00:00",
+      "content_hash": "sha256:ca624b562f93365b12cf595705a2a1f2c6b8cbc23d9019f06ebf497676117352"
+    },
+    {
+      "question_id": "2199d4e9-bae6-4ad1-b285-32dd238c5512",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "The Gestalt principle of Continuity explains why:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Close elements are perceived as related due to their proximity, which creates a visual connection"
+        },
+        {
+          "id": "b",
+          "text": "The eye follows smooth curves and lines rather than abrupt directional changes"
+        },
+        {
+          "id": "c",
+          "text": "Repeated elements are perceived as unified because they form a consistent pattern"
+        },
+        {
+          "id": "d",
+          "text": "Incomplete shapes appear complete through mental filling, as the mind seeks closure"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "This describes proximity (distance)",
+        "c": "This describes similarity (repetition/matching)",
+        "d": "This describes closure (completion)",
+        "correct": "Continuity describes how eyes follow visual flow; curved smooth paths appear unified versus fragmented angles",
+        "takeaway": "Continuity describes how eyes follow visual flow; curved smooth paths appear unified versus fragmented angles."
+      },
+      "explanation": "This describes proximity (distance) This describes similarity (repetition/matching) This describes closure (completion) Continuity describes how eyes follow visual flow; curved smooth paths appear unified versus fragmented angles Continuity describes how eyes follow visual flow; curved smooth paths appear unified versus fragmented angles.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:01.308684+00:00",
+      "content_hash": "sha256:967a34668270233c6258b4bb492bc64bcb82bb19d84b02ad7461fe7bedfae4e5"
+    },
+    {
+      "question_id": "2a613227-25ad-4417-ae58-f8c87a079860",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "Why might a building facade with uniform, high-density patterns appear visually confusing despite being aesthetically interesting?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Modern architecture is inherently confusing regardless of pattern design, often leading to a lack of clear visual hierarchy"
+        },
+        {
+          "id": "b",
+          "text": "The patterns are too small to perceive from distance, causing a loss of intended visual impact and detail"
+        },
+        {
+          "id": "c",
+          "text": "The materials are too expensive, creating visual expense impression, which can distract from the overall design intent"
+        },
+        {
+          "id": "d",
+          "text": "Excessive similarity without hierarchical variation creates visual monotony and confusion about organizational logic"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Clear gestalt organization creates clarity regardless of style",
+        "b": "Pattern scale should be visible; scale issues are separate from perceptual organization",
+        "c": "Material cost is unrelated to visual clarity",
+        "correct": "Over-application of similarity without variation creates ambiguity; the eye can't establish clear figure-ground relationships or hierarchical organization",
+        "takeaway": "Over-application of similarity without variation creates ambiguity; the eye can't establish clear figure-ground relationships or hierarchical organization."
+      },
+      "explanation": "Clear gestalt organization creates clarity regardless of style Pattern scale should be visible; scale issues are separate from perceptual organization Material cost is unrelated to visual clarity Over-application of similarity without variation creates ambiguity; the eye can't establish clear figure-ground relationships or hierarchical organization Over-application of similarity without variation creates ambiguity; the eye can't establish clear figure-ground relationships or hierarchical organization.",
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:01.801964+00:00",
+      "content_hash": "sha256:41ad25ea3e0fbda0b4937e9394e2ced79c0cadb13326576e2655dd31e6100a7d"
+    },
+    {
+      "question_id": "535ff07d-54a4-4494-a841-139d14df0937",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "The Gestalt principle of Closure explains that:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Complete shapes are perceived from incomplete visual information; the mind fills in missing parts"
+        },
+        {
+          "id": "b",
+          "text": "Similar elements are grouped despite spatial separation, which is related to the principle of similarity"
+        },
+        {
+          "id": "c",
+          "text": "Close elements are grouped together in perception, which is known as the principle of proximity"
+        },
+        {
+          "id": "d",
+          "text": "Objects appear distinct from their background context, which is related to the principle of figure-ground"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "This is similarity",
+        "c": "This is proximity",
+        "d": "This is figure-ground",
+        "correct": "Closure means the brain perceives completeness from partial visual cues",
+        "takeaway": "Closure means the brain perceives completeness from partial visual cues."
+      },
+      "explanation": "This is similarity This is proximity This is figure-ground Closure means the brain perceives completeness from partial visual cues Closure means the brain perceives completeness from partial visual cues.",
+      "code_citation": null,
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [
+        "DEF"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:01.923752+00:00",
+      "content_hash": "sha256:3ba8e6b5c1e39281c5f64195d34f7b15f712c707e93caf66926ec9813365e1c5"
+    },
+    {
+      "question_id": "8f035e7b-290a-45b5-91ee-c5dc89a1dfc2",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "Why do architects sometimes deliberately violate gestalt principles in contemporary design?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Contemporary architects are unaware of gestalt principles and create violations accidentally, often due to a lack of formal education in these foundational concepts."
+        },
+        {
+          "id": "b",
+          "text": "Contemporary architects understand gestalt principles and consciously violate them to create dynamic, unsettling, or experimental effects with intentional impact"
+        },
+        {
+          "id": "c",
+          "text": "Violating gestalt principles is always a design failure regardless of intent, leading to a lack of coherence and visual harmony in architectural projects."
+        },
+        {
+          "id": "d",
+          "text": "Gestalt principles are outdated and no longer relevant to modern architecture, having been replaced by more contemporary theories and practices."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Contemporary architects understand gestalt principles; violations are intentional, not accidental",
+        "c": "Informed principle violation can create powerful effects; uninformed violation creates confusion",
+        "d": "Gestalt principles remain psychologically valid; understanding them enables either application or informed violation",
+        "correct": "Contemporary (deconstructivist, parametric) architecture deliberately violates gestalt principles to create specific psychological effects, requiring conscious principle understanding",
+        "takeaway": "Contemporary (deconstructivist, parametric) architecture deliberately violates gestalt principles to create specific psychological effects, requiring conscious principle understanding."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [
+        "CON"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-013",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:81bb7ad96411edce8aaccf7a507af2c4f71decf6c60d2bfeeba27662ce16d292"
+    },
+    {
+      "question_id": "83b02964-a52b-4b48-b61f-e77919fbf8b3",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "In interior space design, how does the principle of Closure support spatial definition without complete enclosure?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Closure is irrelevant to interior spaces; complete walls are always required, ensuring full separation"
+        },
+        {
+          "id": "b",
+          "text": "Closure applies only to exterior facades, not interior spaces, focusing on building aesthetics"
+        },
+        {
+          "id": "c",
+          "text": "Closure requires uniformly colored surfaces throughout for visual unity, enhancing the perception of space"
+        },
+        {
+          "id": "d",
+          "text": "Partial enclosure (columns, screens, partial walls) creates perceived space through mental completion, defining rooms without full physical enclosure"
+        }
+      ],
+      "correct_option_id": "d",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Closure is especially valuable in interior design allowing flexible open spaces with psychological definition",
+        "b": "Closure operates universally in visual perception, both exterior and interior",
+        "c": "Color uniformity is similarity principle, not closure",
+        "correct": "Closure enables spatial definition through partial elements; the mind completes implied enclosure",
+        "takeaway": "Closure enables spatial definition through partial elements; the mind completes implied enclosure."
+      },
+      "explanation": null,
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:1186d7f38df82924d3ffc355c064e170ca797953dbace69b88fd266340e4e178"
+    },
+    {
+      "question_id": "e5fbabf4-6828-422d-8375-50f24984775a",
+      "article_id": "f38a5c0d-cc63-4c79-b3d2-c3ab7eccda60",
+      "topic_id": "ec048fd0-c868-4a44-903b-05377b0ae35b",
+      "text": "In designing an open-plan office, how would gestalt principles create coherent functional zones without physical walls?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Create completely uniform spacing and materials throughout, eliminating all zone differentiation, which contradicts the principles of functional zoning."
+        },
+        {
+          "id": "b",
+          "text": "Gestalt cannot create zones without physical walls; full enclosure is always required, as open spaces lack the necessary boundaries."
+        },
+        {
+          "id": "c",
+          "text": "Use proximity (desk clustering), similarity (consistent desk types/materials by zone), continuity (aligned workstations), closure (implied boundaries through partial screening), and figure-ground (primary work zones as figures against circulation ground)"
+        },
+        {
+          "id": "d",
+          "text": "Rely entirely on color coding without applying other gestalt principles, which limits the effectiveness of spatial organization."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Uniformity eliminates zone perception; variation supporting gestalt creates organizational clarity",
+        "b": "Gestalt principles enable zonation through perceptual organization independent of enclosure",
+        "d": "Color coding (similarity) is one principle; comprehensive application uses all five principles",
+        "correct": "All five gestalt principles create functional zones through psychological organization without physical barriers",
+        "takeaway": "All five gestalt principles create functional zones through psychological organization without physical barriers."
+      },
+      "explanation": "Uniformity eliminates zone perception; variation supporting gestalt creates organizational clarity Gestalt principles enable zonation through perceptual organization independent of enclosure Color coding (similarity) is one principle; comprehensive application uses all five principles All five gestalt principles create functional zones through psychological organization without physical barriers All five gestalt principles create functional zones through psychological organization without physical barriers.",
+      "code_citation": null,
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [
+        "APP"
+      ],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-THEO-003-08-014",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:54.274779+00:00",
+      "updated_at": "2026-05-06T16:21:02.642722+00:00",
+      "content_hash": "sha256:cdb05ceba34520e3364561afc10c2d7ff81e752ab7469e184a0af00449e65fd9"
+    }
+  ]
+}

@@ -1,0 +1,509 @@
+{
+  "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:dc5200c8403e6535e2a5948ac8c030cff5cabc3f108e884d2e4e0655bba0eb0e",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "0aaee778-7a09-41f0-91b6-b483ec500ff9",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "What is the typical span range for a Howe truss used in residential construction?",
+      "options": [
+        {
+          "id": "a",
+          "text": "5-7 meters"
+        },
+        {
+          "id": "b",
+          "text": "7-10 meters"
+        },
+        {
+          "id": "c",
+          "text": "10-20 meters"
+        },
+        {
+          "id": "d",
+          "text": "20-30 meters"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "5-7 m is King Post range.",
+        "b": "7-10 m is Queen Post range.",
+        "d": "20-30 m is Pratt or steel truss range; exceeds typical Howe residential use.",
+        "correct": "Howe trusses span 10-20 meters; diagonal pattern slopes inward toward peak. Used for wider residential or light commercial applications.",
+        "takeaway": "Howe truss = 10-20 m span. Spans larger than Fink but more economical than Pratt for residential."
+      },
+      "explanation": null,
+      "code_citation": "Truss Design Standards, ASTM D3737",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:e0a7a1eb94ec2922b7e5810820bacd6fc5696033dd82817f5a1d182e398703c4"
+    },
+    {
+      "question_id": "dbadb794-cc3c-4faa-bf1f-21cda09a81b1",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "A 12-meter Fink truss in a residential project spans between two 300 mm concrete masonry unit (CMU) walls with a 20 mm wall height tolerance on one side. The rafter bearing is detailed with a bolted connection and timber top plate. During wind load analysis (V = 35 m/s), lateral thrust increases top plate compression by 150 kN on the tolerance side. If the timber top plate is 50×100 mm (bearing area = 5000 mm²), what is the crushing stress on timber and will it exceed NSCP allowable of 4 MPa?",
+      "options": [
+        {
+          "id": "a",
+          "text": "f_c = 10 MPa; exceeds allowable by 2.5×"
+        },
+        {
+          "id": "b",
+          "text": "f_c = 30 MPa; exceeds allowable by 7.5× (critical failure risk)"
+        },
+        {
+          "id": "c",
+          "text": "f_c = 0.3 MPa; well within allowable, indicating no immediate structural concerns"
+        },
+        {
+          "id": "d",
+          "text": "f_c = 3 MPa; marginally safe, but close monitoring is advised"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "10 MPa would correspond to a thrust of 50 kN, not the given 150 kN.",
+        "c": "0.3 MPa incorrectly converts thrust (150 kN as 150 N).",
+        "d": "3 MPa is far below the calculated stress.",
+        "correct": "Lateral thrust = 150 kN = 150,000 N. Bearing area = 5000 mm² (50 mm wide top plate across rafter width). Crushing stress f_c = 150,000 / 5000 = 30 MPa. This exceeds 4 MPa allowable by 7.5×, indicating critical failure risk. The top plate must be upgraded (wider plate, steel bearing plate, or improved connection) to reduce bearing stress.",
+        "takeaway": "Bearing stress at rafter-wall interface is critical in high-wind design. Top plate width and bearing area directly affect crushing failure. Increase plate width or add bearing stiffeners to reduce stress."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 6 (Timber Design), Bearing Stress Criteria",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:0a50bd0e1a0ebbea228592edea6767f81174197a253b4ec2f327b2d174bc9de2"
+    },
+    {
+      "question_id": "76bebe1d-277a-43cc-a2ff-0985fc7b17d8",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "Which truss type is best suited for a 15 meter residential roof span in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "King Post (5-7 m span capability)"
+        },
+        {
+          "id": "b",
+          "text": "Queen Post (7-10 m span capability)"
+        },
+        {
+          "id": "c",
+          "text": "Fink (9-15 m span capability)"
+        },
+        {
+          "id": "d",
+          "text": "Howe (10-20 m span capability)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "King Post maximum span is 5-7 m; insufficient for 15 m.",
+        "b": "Queen Post maximum span is 7-10 m; insufficient for 15 m.",
+        "d": "Howe is overkill and more expensive; typically used for spans >15 m or heavy loads.",
+        "correct": "15 meter span falls within Fink truss range (9-15 m). Fink W-pattern diagonal bracing is most economical for this span; it is the most common residential truss in the Philippines.",
+        "takeaway": "Match truss type to span: King Post ≤7m, Queen Post ≤10m, Fink ≤15m, Howe >15m."
+      },
+      "explanation": null,
+      "code_citation": "Truss Design Standards, ASTM D3737",
+      "bloom_level": "understand",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7b01b635dc61338f8f9dee474de64fee318041ef794957e6f835513bf1d400e9"
+    },
+    {
+      "question_id": "8c5f0540-4251-4ba2-9829-c1ea1c7fac14",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "Purlins support corrugated GI roofing at 1500 mm spacing. The roof loading is 2 kN/m² (self-weight plus live load). Calculate the bending moment in the purlin and determine if a 150×150 mm timber section (I = 56.25 × 10⁶ mm⁴) is adequate assuming maximum allowable bending stress of 8 MPa for timber.",
+      "options": [
+        {
+          "id": "a",
+          "text": "M = 0.84 kN·m; section adequate"
+        },
+        {
+          "id": "b",
+          "text": "M = 0.84 kN·m; section marginal, requires upgrade"
+        },
+        {
+          "id": "c",
+          "text": "M = 1.12 kN·m; section inadequate, requires steel"
+        },
+        {
+          "id": "d",
+          "text": "M = 1.68 kN·m; section fail"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Calculation matches option a; section is adequate.",
+        "b": "Marginal is incorrect because the computed stress is well within allowable.",
+        "c": "1.12 kN·m uses incorrect loading or span; does not match 2 kN/m² × 1.5 m × 1.5²/8.",
+        "d": "1.68 kN·m overstates moment; does not correspond to given loads and spacing.",
+        "correct": "Purlin tributary load: w = 2 kN/m² × 1.5 m = 3 kN/m. Span = 1.5 m (spacing between trusses). M = wL²/8 = 3 × 1.5² / 8 = 3 × 2.25 / 8 = 0.84 kN·m = 840,000 N·mm. Bending stress f_b = M/S where S = I/c. For 150×150 mm, c = 75 mm, S = 56.25×10⁶/75 = 750,000 mm³. f_b = 840,000 / 750,000 = 1.12 MPa. This is well below 8 MPa allowable; section is adequate.",
+        "takeaway": "Purlin design: calculate tributary load from roof area, apply moment formula M = wL²/8, check stress f_b = M/S against allowable. Timber purlins are typically over-sized; steel may be economical for heavy loads."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 6 (Timber Design), Structural Analysis",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cc1795188bb61e8987e24bdef8636e2a4a6d78159749448460266f85fa2280e4"
+    },
+    {
+      "question_id": "b7d8abf2-0bdf-40b6-902a-4042401ad542",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "What is the standard truss spacing for residential construction in the Philippines?",
+      "options": [
+        {
+          "id": "a",
+          "text": "400 mm OC"
+        },
+        {
+          "id": "b",
+          "text": "600 mm OC"
+        },
+        {
+          "id": "c",
+          "text": "900 mm OC"
+        },
+        {
+          "id": "d",
+          "text": "1200 mm OC"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "400 mm OC results in over-spacing and excess material cost for residential loads.",
+        "c": "900 mm OC reduces material but increases deflection risk for standard residential loading.",
+        "d": "1200 mm OC is typical for purlins, not primary trusses.",
+        "correct": "600 mm OC (on-center) is the Philippine standard, coordinating with corrugated GI roofing sheet width (1000 mm) and allowing 1.67 sheets per roof bay.",
+        "takeaway": "Memorize 600 mm OC as Philippine residential standard. Coordinate with corrugated sheet module."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 6 (Timber), Philippine Construction Practice",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a51d4818abe208fe2554d7ea6384a9c524ce83d034fd766e7f911775947c176f"
+    },
+    {
+      "question_id": "fc99634d-3876-409e-9a13-2f677b39c079",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "A residential roof in Batanes (NSCP 2015 typhoon zone V = 45 m/s) requires collar tie placement. Where should collar ties be positioned relative to the truss height?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Lower 1/3 of height, near the heel"
+        },
+        {
+          "id": "b",
+          "text": "Middle 1/2 of height, at the quarter point"
+        },
+        {
+          "id": "c",
+          "text": "Upper 1/3 of height, near the peak"
+        },
+        {
+          "id": "d",
+          "text": "At the ridge board, coincident with peak"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Lower 1/3 is ineffective for lateral thrust; serves no restraint function.",
+        "b": "Middle 1/2 is compromise positioning but less effective than upper 1/3 for thrust reduction.",
+        "d": "Ridge position is structural continuity but not the required collar tie placement per code.",
+        "correct": "Collar ties in upper portion recommended for lateral thrust restraint in high-wind zones per timber design practice (NSCP 2015 Ch.6). Positioning near peak maximizes moment arm and restraint effectiveness.",
+        "takeaway": "Collar ties in high-wind zones go in upper 1/3 of truss height. Memory aid: upper collar = lateral thrust control."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Chapter 6 (Timber Design), Wind Load Provisions",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:a96abe2154858228e85b6b4396bd3624aaedc6d6afd56308b9d1e16c8347eec7"
+    },
+    {
+      "question_id": "584be4d0-a3c8-4e0e-a7c3-2028bf97e1fd",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "A Fink truss with a 12 meter span and 1.8 meter height is designed for deflection control. Calculate the span-to-depth ratio and assess whether it meets residential deflection limits (L/240).",
+      "options": [
+        {
+          "id": "a",
+          "text": "4.5:1 ratio; excessive deflection risk"
+        },
+        {
+          "id": "b",
+          "text": "6.7:1 ratio; acceptable for residential"
+        },
+        {
+          "id": "c",
+          "text": "8.5:1 ratio; marginal for residential"
+        },
+        {
+          "id": "d",
+          "text": "10.2:1 ratio; inadequate for residential"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "4.5:1 is a valid ratio but not the calculation result; 12/1.8 ≠ 4.5.",
+        "c": "8.5:1 overstates the ratio; would indicate height = 12/8.5 = 1.41 m, less than given 1.8 m.",
+        "d": "10.2:1 is excessive; would require height = 12/10.2 = 1.18 m.",
+        "correct": "Span-to-depth = 12 m / 1.8 m = 6.67:1. Residential trusses typically range 4:1 to 8:1; 6.67:1 is within acceptable limits. Deflection ≈ L/240 = 12000/240 = 50 mm, acceptable for roof structures.",
+        "takeaway": "Span-to-depth ratio determines deflection risk. Residential should stay 4:1 to 8:1. Higher ratios require deeper trusses or material upgrade."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Deflection Criteria (L/240), Truss Design Practice",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:ecabe016c7a6a8935bb1cfcc4ef6a169df0bebc191241e8b09df75b49702c43a"
+    },
+    {
+      "question_id": "810cd2d3-796f-4b60-be52-fc44836ad4ed",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "In high-wind typhoon zones (V > 30 m/s), which truss member experiences tension reversal (compression to tension) under suction loading, requiring design for both directions?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bottom chord (tie beam)"
+        },
+        {
+          "id": "b",
+          "text": "Web diagonals"
+        },
+        {
+          "id": "c",
+          "text": "Rafters (top chord)"
+        },
+        {
+          "id": "d",
+          "text": "Collar ties only"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bottom chord (tension tie) remains tensile; no reversal.",
+        "c": "Rafters are primarily in compression (gravity) and bending; wind uplift reduces compression but does not typically reverse to tension in roof members.",
+        "d": "Collar ties see increased tension during uplift but are specifically designed for tension; not typical reversal concern.",
+        "correct": "Web diagonals (interior bracing) experience compression under gravity loading and reversal to tension under wind uplift. Suction creates tensile stress in members normally in compression. Design must verify both stress states.",
+        "takeaway": "Wind uplift causes tension reversal in compression-dominated members (web diagonals, some bottom-chord segments). Critical in high-wind design."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2015 Wind Load Analysis, Truss Design under Suction",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6f2558e49f754d9ecaa993e96723f0044bc0db1df1ee56db0b69d15776786d7f"
+    },
+    {
+      "question_id": "3bd45ddd-62e4-4c58-8693-67f49dc8b745",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "A timber Fink truss with bolted connections is fabricated in the factory and delivered to a hillside site in a typhoon-prone region. The specification calls for collar tie torque 50 N·m on each of 8 bolts connecting the collar ties to rafters. After initial tightening and three months of exposure (thermal cycling, humidity variation), torque loss due to creep and bolt relaxation is approximately 15-25% in timber connections. What is the risk implication and required corrective action?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Negligible risk; timber bolt preload is self-adjusting through creep, which is not a reliable assumption in structural engineering"
+        },
+        {
+          "id": "b",
+          "text": "Significant risk; recheck bolts and re-torque to specification before seasonal high winds"
+        },
+        {
+          "id": "c",
+          "text": "Critical risk; replace with welded connections immediately, which may not be feasible or necessary"
+        },
+        {
+          "id": "d",
+          "text": "Unknown risk; requires ultrasonic testing of joint integrity, a method not typically used for this purpose"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Self-adjusting creep does not re-establish preload; bolts lose clamp and joint integrity degrades.",
+        "c": "Welded connections eliminate bolt relaxation but require factory fabrication and high cost; not necessary if maintenance is performed.",
+        "d": "Ultrasonic testing is not standard for routine timber bolt inspection; impractical and not cost-effective.",
+        "correct": "Timber bolt connections experience 15-25% preload loss due to stress relaxation and creep under sustained load. After 3 months exposure, bolts relax to 50 × (0.80-0.85) = 40-42.5 N·m. Before typhoon season, re-torque to specification (50 N·m). This is standard maintenance for timber structures in high-wind zones.",
+        "takeaway": "Timber bolt connections require periodic retorquing, especially in tropical climates with high thermal cycling. Include re-torque before typhoon season in maintenance schedule."
+      },
+      "explanation": null,
+      "code_citation": "Timber Connection Design, NSCP 2015 Maintenance Guidelines",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:eb4a9fd482a387876469fa1a8f37ab30c904da7cdf76809849c93f4ba9068c0e"
+    },
+    {
+      "question_id": "9aa44c93-7e84-4863-a2d7-d4a69436f8ea",
+      "article_id": "ac93167f-51ff-4126-ae62-34cf6a534d04",
+      "topic_id": "59b0e808-4ee3-4165-9272-95e62b0a06b8",
+      "text": "A roof truss with a single vertical member at the peak and two diagonal struts extending to the feet is classified as a ___ truss.",
+      "options": [
+        {
+          "id": "a",
+          "text": "Queen Post, which typically includes two vertical posts and is used for spans up to 10 meters in traditional timber construction."
+        },
+        {
+          "id": "b",
+          "text": "King Post"
+        },
+        {
+          "id": "c",
+          "text": "Fink, commonly used in residential construction for its efficient use of materials and ability to span large distances with minimal support."
+        },
+        {
+          "id": "d",
+          "text": "Howe, characterized by its diagonal members sloping towards the center and vertical members providing additional support."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Queen Post uses two verticals symmetrically placed with diagonals; spans 7-10 m.",
+        "c": "Fink uses W-pattern diagonals; spans 9-15 m and is most common.",
+        "d": "Howe inverts Fink pattern with inward-sloping diagonals; spans 10-20 m.",
+        "correct": "King Post geometry: single center vertical from peak to base, two diagonals to feet. Optimal for 5-7 meter spans and attic storage.",
+        "takeaway": "Truss types are identified by member arrangement. King Post = single vertical = shortest span."
+      },
+      "explanation": null,
+      "code_citation": "ASTM D3737, Truss Design Standards",
+      "bloom_level": "remember",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-006-02-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.434371+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:59b504188607612455c515c5e8552d73bb3ce323d3cffd75d9868f0355128fcc"
+    }
+  ]
+}

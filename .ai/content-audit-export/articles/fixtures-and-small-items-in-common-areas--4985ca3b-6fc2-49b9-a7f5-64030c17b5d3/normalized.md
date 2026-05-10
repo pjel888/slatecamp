@@ -82,7 +82,7 @@ Front Edge
 
 ---
 
-## > TRAP LEART #1 — Dual Access is Mandatory
+## > TRAP ALERT #1 — Dual Access is Mandatory
 
 **Question stem:** *"A building installs one drinking fountain with its spout at 900 mm AFF. Is this compliant?"*
 
@@ -90,7 +90,7 @@ Front Edge
 
 ---
 
-## > TRAP LEART #2 — Spout Extension vs. Height
+## > TRAP ALERT #2 — Spout Extension vs. Height
 
 Exam questions sometimes isolate one dimension. Remember: even if the height is correct (750–900 mm), the spout must **extend at least 50 mm** from the front edge. A recessed spout that sits flush with the housing is non-compliant even at the right height.
 
@@ -130,7 +130,7 @@ If a floor has two separate banks of phones (e.g., near entrance and near elevat
 
 ---
 
-## > TRAP LEART #3 — 200 Lux for Phones, Not General
+## > TRAP ALERT #3 — 200 Lux for Phones, Not General
 
 **Question stem:** *"What illumination level does BP 344 require for accessible public telephone areas?"*
 
@@ -138,7 +138,7 @@ If a floor has two separate banks of phones (e.g., near entrance and near elevat
 
 ---
 
-## > TRAP LEART #4 — Controls at 1,200 mm is a MAXIMUM
+## > TRAP ALERT #4 — Controls at 1,200 mm is a MAXIMUM
 
 The 1,200 mm for telephone controls is a **maximum**, not a target. A phone with controls at 1,050 mm is compliant. A phone with controls at 1,250 mm is non-compliant. On exam questions, "maximum" and "minimum" language is the trap.
 
@@ -178,13 +178,13 @@ Seat surface ──────────────────────�
 
 ---
 
-## > TRAP LEART #5 — Back Support Length vs. Seat Length
+## > TRAP ALERT #5 — Back Support Length vs. Seat Length
 
 Both the seat **and** the back support have a **1,200 mm** minimum length. The back support runs the same length as the seat. Exam questions sometimes present a bench with a 1,200 mm seat and a 900 mm back support and ask if this is compliant. **Answer: No.** Both must be 1,200 mm minimum.
 
 ---
 
-## > TRAP LEART #6 — 30 m Interval is a MAXIMUM
+## > TRAP ALERT #6 — 30 m Interval is a MAXIMUM
 
 Benches must appear **at least** every 30 m along accessible circulation routes. Fewer benches spaced farther than 30 m apart is non-compliant. More frequent benches (every 15 m, for example) is compliant.
 
@@ -228,7 +228,7 @@ Extracted summary:
 
 ---
 
-## > TRAP LEART #7 — ATM Controls: Range, Not a Single Number
+## > TRAP ALERT #7 — ATM Controls: Range, Not a Single Number
 
 ATM controls must fall **within** 900–1,200 mm AFF — this is a **range** with both a floor and a ceiling. A keypad at 850 mm is too low; a keypad at 1,250 mm is too high. Both are non-compliant. The entire usable control surface must be within 900–1,200 mm.
 
@@ -274,13 +274,13 @@ ATM controls must fall **within** 900–1,200 mm AFF — this is a **range** wit
 
 ---
 
-## > TRAP LEART #8 — Three Fixtures All Have 1,800 × 1,800 mm Clear Space
+## > TRAP ALERT #8 — Three Fixtures All Have 1,800 × 1,800 mm Clear Space
 
 Drinking fountains, public phones, and ATMs all share the **1,800 × 1,800 mm** clear floor requirement. Examiners love to swap the numbers — e.g., showing 1,500 × 1,800 mm and asking if it complies. **Answer: No** — all three require the full square 1,800 × 1,800 mm.
 
 ---
 
-## > TRAP LEART #9 — Bottle Filler Spout Height
+## > TRAP ALERT #9 — Bottle Filler Spout Height
 
 When a drinking fountain includes a bottle-filling station, the bottle filler spout is set at **100 mm above the fill platform** — not at the 750–900 mm drinking spout height. These are two separate elements.
 

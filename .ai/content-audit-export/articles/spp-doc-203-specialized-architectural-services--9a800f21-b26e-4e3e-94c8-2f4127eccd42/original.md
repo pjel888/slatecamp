@@ -384,4 +384,3 @@ LEA Trap: Nine specialized services: Interior Design, Landscape Architecture, Ac
 ## Cross‑References
 
 **Spp Doc 202 Regular Design Services**, **Spp Doc 204 A Fulltime Supervision Services**, **Spp Doc 205 Post Construction Services**, **Spp Doc 209 Architectural Consulting Services Pacs**
-

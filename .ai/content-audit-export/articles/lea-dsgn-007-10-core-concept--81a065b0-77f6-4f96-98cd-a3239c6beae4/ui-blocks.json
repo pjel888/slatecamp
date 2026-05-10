@@ -1,14 +1,113 @@
 {
   "article_id": "81a065b0-77f6-4f96-98cd-a3239c6beae4",
   "slug": "lea-dsgn-007-10-core-concept",
-  "normalized_created_at": "2026-05-09T04:02:39.633Z",
+  "normalized_created_at": "2026-05-09T17:04:22.217Z",
   "parser_version": "ui-block-parser-v1",
   "original_content_hash": "sha256:2f82552fdc7c3309af643153e3a7f2ed6b671ffc102120d94239f8a51dc4d7ff",
   "normalized_content_hash": "sha256:2f82552fdc7c3309af643153e3a7f2ed6b671ffc102120d94239f8a51dc4d7ff",
-  "ui_block_count": 0,
-  "total_blocks": 0,
-  "blocks": [],
+  "ui_block_count": 3,
+  "total_blocks": 3,
+  "blocks": [
+    {
+      "block_id": "ui_0001",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-lea-dsgn-007-10-core-concept\" type=\"image\" caption=\"Code Compliance Checklist — Design Phase Verification Flowchart\" description=\"Decision tree/flowchart for code compliance verification at each design phase: schematic (occupancy, setbacks, height limits), design development (egress, fire-rated separations, accessibility), and contract documents (detailed compliance per PD 1096, RA 9514, BP 344).\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
+      "raw_hash": "sha256:54bd420d6447d6f41b83420a3ee91554fd7e6764cf398710356db63403c614ce",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0001 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-007-10-core-concept\", type=\"image\", caption=\"Code Compliance Checklist — Design Phase Verification Flowchart\", description=\"Decision tree/flowchart for code compliance verification at each design phase: schematic (occupancy, setbacks, height limits), design development (egress, fire-rated separations, accessibility), and contract documents (detailed compliance per PD 1096, RA 9514, BP 344).\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:97859845ad2ae13aa358e799ce3427ae6ac6796a06e5cdc30a1abfc56ac58da3",
+      "props": {
+        "id": "media-lea-dsgn-007-10-core-concept",
+        "type": "image",
+        "caption": "Code Compliance Checklist — Design Phase Verification Flowchart",
+        "description": "Decision tree/flowchart for code compliance verification at each design phase: schematic (occupancy, setbacks, height limits), design development (egress, fire-rated separations, accessibility), and contract documents (detailed compliance per PD 1096, RA 9514, BP 344).",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_json": {
+        "id": "media-lea-dsgn-007-10-core-concept",
+        "type": "image",
+        "caption": "Code Compliance Checklist — Design Phase Verification Flowchart",
+        "description": "Decision tree/flowchart for code compliance verification at each design phase: schematic (occupancy, setbacks, height limits), design development (egress, fire-rated separations, accessibility), and contract documents (detailed compliance per PD 1096, RA 9514, BP 344).",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_text": "id=\"media-lea-dsgn-007-10-core-concept\" type=\"image\" caption=\"Code Compliance Checklist — Design Phase Verification Flowchart\" description=\"Decision tree/flowchart for code compliance verification at each design phase: schematic (occupancy, setbacks, height limits), design development (egress, fire-rated separations, accessibility), and contract documents (detailed compliance per PD 1096, RA 9514, BP 344).\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 2870,
+      "end_offset": 3497,
+      "line_start": 48,
+      "line_end": 52,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0002",
+      "block_type": "mdx_component",
+      "component_name": "ArticleMedia",
+      "raw": "<ArticleMedia id=\"media-lea-dsgn-007-10-core-concept\" type=\"image\" caption=\"Code Compliance Workflow — Design Phase Regulatory Checklist\" description=\"Flowchart showing code compliance verification at each design phase: Pre-Design (zoning, site code), Schematic (occupancy, egress concept), Design Development (fire separation, accessibility), Construction Documents (permit-ready checklist). Key PD 1096, RA 9514, and BP 344 checkpoints at each gate.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\" />",
+      "raw_hash": "sha256:be84fdede3d7bc667880134b58ca361741a630e6adcdc902b8759e7cf36e410a",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0002 component=\"ArticleMedia\" status=\"preserved\"]\nExtracted summary:\n- Props: id=\"media-lea-dsgn-007-10-core-concept\", type=\"image\", caption=\"Code Compliance Workflow — Design Phase Regulatory Checklist\", description=\"Flowchart showing code compliance verification at each design phase: Pre-Design (zoning, site code), Schematic (occupancy, egress concept), Design Development (fire separation, accessibility), Construction Documents (permit-ready checklist). Key PD 1096, RA 9514, and BP 344 checkpoints at each gate.\", suggestedAsset=\"Diagram or reference image\", status=\"placeholder\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:ef6f35c4da1906bc2d8be58c1b288c2874680b2cdcae65fd492e9412a027c219",
+      "props": {
+        "id": "media-lea-dsgn-007-10-core-concept",
+        "type": "image",
+        "caption": "Code Compliance Workflow — Design Phase Regulatory Checklist",
+        "description": "Flowchart showing code compliance verification at each design phase: Pre-Design (zoning, site code), Schematic (occupancy, egress concept), Design Development (fire separation, accessibility), Construction Documents (permit-ready checklist). Key PD 1096, RA 9514, and BP 344 checkpoints at each gate.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_json": {
+        "id": "media-lea-dsgn-007-10-core-concept",
+        "type": "image",
+        "caption": "Code Compliance Workflow — Design Phase Regulatory Checklist",
+        "description": "Flowchart showing code compliance verification at each design phase: Pre-Design (zoning, site code), Schematic (occupancy, egress concept), Design Development (fire separation, accessibility), Construction Documents (permit-ready checklist). Key PD 1096, RA 9514, and BP 344 checkpoints at each gate.",
+        "suggestedAsset": "Diagram or reference image",
+        "status": "placeholder"
+      },
+      "props_text": "id=\"media-lea-dsgn-007-10-core-concept\" type=\"image\" caption=\"Code Compliance Workflow — Design Phase Regulatory Checklist\" description=\"Flowchart showing code compliance verification at each design phase: Pre-Design (zoning, site code), Schematic (occupancy, egress concept), Design Development (fire separation, accessibility), Construction Documents (permit-ready checklist). Key PD 1096, RA 9514, and BP 344 checkpoints at each gate.\" suggestedAsset=\"Diagram or reference image\" status=\"placeholder\"",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 8393,
+      "end_offset": 9048,
+      "line_start": 131,
+      "line_end": 135,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    },
+    {
+      "block_id": "ui_0003",
+      "block_type": "mdx_component",
+      "component_name": "WikiMistakeList",
+      "raw": "<WikiMistakeList mistakes={[\n 'ERR-DSGN-022: Treating a “preferred” riser (e.g., 175–180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\n \"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\"\n ]} />",
+      "raw_hash": "sha256:faa000878327917a625c3b5517a105a4a145d338ec95cffd9af336d65017f49f",
+      "placeholder": "[SLATECAMP_UI_BLOCK:ui_0003 component=\"WikiMistakeList\" status=\"preserved\"]\nExtracted summary:\n- Props: mistakes=\"{[\\n 'ERR-DSGN-022: Treating a “preferred” riser (e.g., 175–180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\\n \\\"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\\\"\\n ]}\"\n- Text: (none detected)\n[/SLATECAMP_UI_BLOCK]",
+      "placeholder_hash": "sha256:32af9cef63281cb9314586112dd24c7a553987c6f8d2c1792a140cd74f7a9ae6",
+      "props": {
+        "mistakes": "{[\n 'ERR-DSGN-022: Treating a “preferred” riser (e.g., 175–180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\n \"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\"\n ]}"
+      },
+      "props_json": {
+        "mistakes": "{[\n 'ERR-DSGN-022: Treating a “preferred” riser (e.g., 175–180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\n \"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\"\n ]}"
+      },
+      "props_text": "mistakes={[\n 'ERR-DSGN-022: Treating a “preferred” riser (e.g., 175–180 mm) as the legal maximum instead of the PD 1096 limit of 200 mm',\n 'Failing to round UP the number of risers, which can push actual riser height above the 200 mm maximum',\n 'Ignoring RA 9514 stair-width requirements and using a generic 1,000 mm minimum for all occupancies',\n 'ERR-DSGN-033: Using outdated or undersized elevator car dimensions instead of current BP 344 accessibility standards',\n \"Treating Blondel's formula as a strict legal requirement rather than an ergonomic check layered on top of code limits\"\n ]}",
+      "children_raw": null,
+      "children_text": null,
+      "start_offset": 9302,
+      "end_offset": 10054,
+      "line_start": 143,
+      "line_end": 147,
+      "parser_confidence": "high",
+      "parse_status": "parsed",
+      "warnings": [],
+      "status": "preserved"
+    }
+  ],
   "unknown_blocks": [],
   "unresolved_critical_blocks": [],
-  "ui_blocks_hash": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+  "ui_blocks_hash": "sha256:db68288f7ba2115a09fdd951636ac93c287ded17162a2162a20d523dba31a1e1"
 }

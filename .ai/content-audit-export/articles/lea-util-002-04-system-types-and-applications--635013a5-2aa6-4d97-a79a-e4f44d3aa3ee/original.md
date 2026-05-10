@@ -325,4 +325,3 @@ _Q_total_ ≈ 88 + 15 = 103 kW ≈ 29 TR
 See also within HVAC and Mechanical Systems: **lea-util-002-03-core-concept**, **lea-util-002-05-core-concept**, **lea-util-002-06-core-concept**, **lea-util-002-07-core-concept**.
 
 > **Overview:** See **overview-building-utilities-mepf** for the full curriculum structure and study strategy. See **mastery-building-utilities-mepf** for connections across topics.
-

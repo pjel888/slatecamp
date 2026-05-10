@@ -1,0 +1,508 @@
+{
+  "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:8f8b6bb1d9c33c57587383173103d98ca1b1525fd09efb85f85abdcc5d7af8ea",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "2f11d79e-d2f1-4cb6-853b-a5100c5c0ab0",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "Comparing ASD and LRFD methods philosophically, which statement explains why ASD uses direct allowable stress fractions (0.40–0.66Fy) while LRFD multiplies loads by factors greater than 1?",
+      "options": [
+        {
+          "id": "a",
+          "text": "ASD and LRFD are equivalent; they both arrive at the same design safety level, but apply the safety margin differently (on strength vs. load)."
+        },
+        {
+          "id": "b",
+          "text": "ASD is more accurate because it works with actual stresses, while LRFD uses artificial load factors that overestimate real conditions."
+        },
+        {
+          "id": "c",
+          "text": "LRFD is newer and always produces safer designs than ASD; allowable stresses are outdated and should not be used in modern practice."
+        },
+        {
+          "id": "d",
+          "text": "ASD allows stresses up to yield because material strength is more predictable than load variability in all structural applications."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Neither method is inherently more accurate; both are valid design approaches with different philosophies.",
+        "c": "LRFD is more modern and is preferred in many codes, but ASD remains valid and is not obsolete. Safety levels depend on the specific code and factors/fractions chosen.",
+        "d": "ASD does not allow stresses up to yield; it uses fractions like 0.66Fy, which is far below yield.",
+        "correct": "Both methods provide comparable safety margins. ASD reduces material strength by applying conservative fractions (0.40–0.66) and compares to working loads. LRFD increases loads by factors (1.2–1.7) and compares to nominal strength. The net safety margin can be equivalent; the difference is where uncertainty is addressed (strength vs. load).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2001 and 2015, Design Methods (ASD and LRFD); AISC Manual of Steel Construction",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c040a2244e006896f9b5b7876d5b1df837c0f5930476a2568c155287ee60a8be"
+    },
+    {
+      "question_id": "7bcd5090-4aa1-4fd5-a52b-54d5d5e94fab",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "What is the allowable bending stress for ASTM A36 steel under the ASD method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fb = 0.40Fy = 99 MPa"
+        },
+        {
+          "id": "b",
+          "text": "Fb = 0.60Fy = 149 MPa"
+        },
+        {
+          "id": "c",
+          "text": "Fb = 0.66Fy = 164 MPa"
+        },
+        {
+          "id": "d",
+          "text": "Fb = 0.75Fy = 186 MPa"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.40Fy is the shear allowable, not bending.",
+        "b": "0.60Fy is the axial compression allowable, not bending.",
+        "d": "0.75Fy exceeds the A36 allowable fractions and is not a standard value.",
+        "correct": "Bending is a ductile failure mode with non-uniform stress distribution. The highest allowable stress fraction 0.66Fy applies. For A36, Fb = 0.66 × 248 = 163.68 ≈ 164 MPa.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": "0.40Fy is the shear allowable, not bending. 0.60Fy is the axial compression allowable, not bending. 0.75Fy exceeds the A36 allowable fractions and is not a standard value. Bending is a ductile failure mode with non-uniform stress distribution. The highest allowable stress fraction 0.66Fy applies. For A36, Fb = 0.66 × 248 = 163.68 ≈ 164 MPa. Review the correct answer and associated code provision.",
+      "code_citation": "ASTM A36, ASD Allowable Stresses for Bending; NSCP 2001, Section 4.3",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T16:21:03.742702+00:00",
+      "content_hash": "sha256:30227724af539c6bd647932992a9736817a2f46918afb6a99af66c8d808ee581"
+    },
+    {
+      "question_id": "104dbdfe-ec95-4e5c-a4de-1e346e32d5cf",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "A structural beam made of A36 steel is checked for three stress types: shear 85 MPa, compression 145 MPa, and bending 160 MPa. Which stress is closest to its allowable limit (i.e., has the smallest safety margin)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Shear: 85 / 99 ≈ 0.86 (86% of allowable)."
+        },
+        {
+          "id": "b",
+          "text": "Compression: 145 / 149 ≈ 0.97 (97% of allowable)."
+        },
+        {
+          "id": "c",
+          "text": "Bending: 160 / 164 ≈ 0.98 (98% of allowable)."
+        },
+        {
+          "id": "d",
+          "text": "All three have equal safety margins."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Shear has the largest safety margin (86% is far from 99%).",
+        "b": "Compression has 2.7% margin, which is higher than bending's 2.4%.",
+        "d": "The safety margins differ significantly.",
+        "correct": "Compare each stress to its allowable: Shear 85 / 99 = 0.858 (14% margin). Compression 145 / 149 = 0.973 (2.7% margin). Bending 160 / 164 = 0.976 (2.4% margin). Bending has the smallest margin (98% of allowable).",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": "Shear has the largest safety margin (86% is far from 99%). Compression has 2.7% margin, which is higher than bending's 2.4%. The safety margins differ significantly. Compare each stress to its allowable: Shear 85 / 99 = 0.858 (14% margin). Compression 145 / 149 = 0.973 (2.7% margin). Bending 160 / 164 = 0.976 (2.4% margin). Bending has the smallest margin (98% of allowable). Review the correct answer and associated code provision.",
+      "code_citation": "NSCP 2001, Section 4.3, ASD Stress Checks and Utilization Ratios",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T16:21:03.867465+00:00",
+      "content_hash": "sha256:99ac3181aa5e133c7f1937ff086fa176a90018141d922ee948af6e4959e6cbca"
+    },
+    {
+      "question_id": "bdb6f9d9-14ae-40c4-b4f4-70d77cc87270",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "A steel connection requires bearing stress check. The applied bearing stress is 220 MPa on an A36 member. Under ASD, bearing stress is allowed at Fp = 1.0Fy. Is the connection adequate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No; 220 MPa > 248 MPa (1.0Fy)."
+        },
+        {
+          "id": "b",
+          "text": "Yes; 220 MPa < 248 MPa (1.0Fy)."
+        },
+        {
+          "id": "c",
+          "text": "No; 220 MPa exceeds the bending allowable of 164 MPa."
+        },
+        {
+          "id": "d",
+          "text": "Yes; 220 MPa is between 164 and 248 MPa."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "The inequality is correct (220 < 248), so the connection IS adequate, not inadequate.",
+        "c": "Bending allowable is not the criterion for bearing stress.",
+        "d": "While the value falls in this range, the correct statement is that 220 < 248, making it adequate.",
+        "correct": "For bearing deformation limit, Fp = 1.2Fu = 1.2×400=480 MPa or 0.9Fy=225 MPa (deformation governs for standard holes); 220 MPa < 225 MPa. The applied bearing stress 220 MPa < 248 MPa, so the connection is adequate.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": "The inequality is correct (220 < 248), so the connection IS adequate, not inadequate. Bending allowable is not the criterion for bearing stress. While the value falls in this range, the correct statement is that 220 < 248, making it adequate. For bearing deformation limit, Fp = 1.2Fu = 1.2×400=480 MPa or 0.9Fy=225 MPa (deformation governs for standard holes); 220 MPa < 225 MPa. The applied bearing stress 220 MPa < 248 MPa, so the connection is adequate. Review the correct answer and associated code provision.",
+      "code_citation": "ASTM A36, Allowable Bearing Stress; NSCP 2001, Section 4.3",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T16:21:03.619005+00:00",
+      "content_hash": "sha256:40481ac6895282c527d74f5f5798e69b4f5a38d73e9061b9e5340f2b097e17f0"
+    },
+    {
+      "question_id": "7398985d-e3a6-4e52-b62a-96088a4e37a0",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "An engineer designing a multi-story office building uses A36 steel for columns and beams. Why is the allowable bending stress (0.66Fy = 164 MPa) higher than the allowable compression stress (0.60Fy = 149 MPa)?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Bending members can carry higher stresses because they do not buckle like columns, which are more prone to instability"
+        },
+        {
+          "id": "b",
+          "text": "The stress distribution in bending is non-uniform; outer fibers are most stressed, but interior fibers carry less. Compression subjects the entire section to uniform stress, and buckling is a concern, so it is more conservative."
+        },
+        {
+          "id": "c",
+          "text": "Bending uses a lower factor of safety because bending failures are less severe than compression failures, which can lead to catastrophic collapse"
+        },
+        {
+          "id": "d",
+          "text": "ASTM A36 is stronger in bending than in compression, so it receives a higher allowable stress, reflecting its material properties"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Buckling is addressed through slenderness ratio checks, not by lowering the allowable bending stress.",
+        "c": "The factor of safety is inversely related to the allowable fraction; 0.66 implies ~1.5 factor of safety; 0.60 implies ~1.67, so compression is more conservative.",
+        "d": "Material yield strength is identical for all stress types; the difference is structural behavior, not material property.",
+        "correct": "In bending, the stress is maximum at the outer fibers and zero at the neutral axis. This non-uniform stress distribution allows higher average stresses. In axial compression, the entire cross-section is uniformly stressed, and buckling risk (for longer columns) requires conservatism. These factors justify the higher allowable for bending.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "NSCP 2001, Section 4.3, ASD Design Philosophy and Stress Limits",
+      "bloom_level": "understand",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:991902d36f2bedc905631c7770280a8b2fd8264156d596ee6d68221be3afba90"
+    },
+    {
+      "question_id": "20d482ed-1184-4443-9d6c-957f5cb9e0ce",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "For ASTM A36 steel (Fy = 248 MPa), what is the allowable axial compression stress under the ASD method?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fc = 0.40 × 248 = 99 MPa"
+        },
+        {
+          "id": "b",
+          "text": "Fc = 0.60 × 248 = 149 MPa"
+        },
+        {
+          "id": "c",
+          "text": "Fc = 0.66 × 248 = 164 MPa"
+        },
+        {
+          "id": "d",
+          "text": "Fc = 0.75 × 248 = 186 MPa"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.40Fy is the shear allowable.",
+        "c": "0.66Fy is the bending allowable (higher than compression because bending is more ductile).",
+        "d": "0.75Fy exceeds the standard A36 fractions.",
+        "correct": "Axial compression in steel uses the allowable stress Fc = 0.60Fy. For A36, Fc = 0.60 × 248 = 148.8 ≈ 149 MPa.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": "0.40Fy is the shear allowable. 0.66Fy is the bending allowable (higher than compression because bending is more ductile). 0.75Fy exceeds the standard A36 fractions. Axial compression in steel uses the allowable stress Fc = 0.60Fy. For A36, Fc = 0.60 × 248 = 148.8 ≈ 149 MPa. Review the correct answer and associated code provision.",
+      "code_citation": "ASTM A36, ASD Allowable Stresses for Compression; NSCP 2001, Section 4.3",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T16:21:03.988206+00:00",
+      "content_hash": "sha256:547a327274392d8a25fc12d9b98b4fc25b3164733a311874fe036b7ce77a63cd"
+    },
+    {
+      "question_id": "be352df0-c71e-48bc-ae25-ac18bf1c8814",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "A design engineer mistakenly applies the bending allowable stress (0.66Fy) to an axial compression check. How much unconservative is this error for A36 steel?",
+      "options": [
+        {
+          "id": "a",
+          "text": "The error increases the allowable by approximately 10%; allowable bending (164 MPa) is 10% higher than compression (149 MPa)."
+        },
+        {
+          "id": "b",
+          "text": "The error increases the allowable by approximately 15%; bending (0.66) divided by compression (0.60) = 1.10 or 10% higher, which is a miscalculation"
+        },
+        {
+          "id": "c",
+          "text": "The error increases the allowable by approximately 6.7%; 164 MPa / 149 MPa ≈ 1.10, which is a rounding error"
+        },
+        {
+          "id": "d",
+          "text": "The error is negligible; bending and compression allowables are nearly equal, which is incorrect"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "The arithmetic is correct (0.66 / 0.60 = 1.10 or 10% higher), but the option incorrectly states '15%'.",
+        "c": "Arithmetic is correct but mixes percentage terms.",
+        "d": "164 MPa vs. 149 MPa is not negligible; a 10% difference can cause structural failure.",
+        "correct": "Bending allowable: 0.66 × 248 = 164 MPa. Compression allowable: 0.60 × 248 = 149 MPa. Ratio: 164 / 149 ≈ 1.10, or 10% higher. Using the bending allowable for compression would permit 10% more stress than is safe.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "ASTM A36 and NSCP 2001, Comparison of Allowable Stress Fractions",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.9,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:4fb5dd076515b107eb00c15073a03e08517d26accb215b7d070f4716ce6c9029"
+    },
+    {
+      "question_id": "73d3f973-45ee-4581-8e57-e2b238ece6c2",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "For ASTM A36 structural steel, the allowable shear stress under the ASD method is:",
+      "options": [
+        {
+          "id": "a",
+          "text": "Fv = 0.60Fy = 149 MPa"
+        },
+        {
+          "id": "b",
+          "text": "Fv = 0.40Fy = 99 MPa"
+        },
+        {
+          "id": "c",
+          "text": "Fv = 0.66Fy = 164 MPa"
+        },
+        {
+          "id": "d",
+          "text": "Fv = 0.50Fy = 124 MPa"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.60Fy is the allowable axial compression stress, not shear.",
+        "c": "0.66Fy is the allowable bending stress, not shear.",
+        "d": "0.50Fy is not a standard ASTM A36 allowable fraction.",
+        "correct": "Shear stress in steel is governed by the lower allowable stress fraction 0.40Fy. For A36 with Fy = 250 MPa, Fv = 0.40 × 248 = 99.2 ≈ 99 MPa.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": "0.60Fy is the allowable axial compression stress, not shear. 0.66Fy is the allowable bending stress, not shear. 0.50Fy is not a standard ASTM A36 allowable fraction. Shear stress in steel is governed by the lower allowable stress fraction 0.40Fy. For A36 with Fy = 250 MPa, Fv = 0.40 × 248 = 99.2 ≈ 99 MPa. Review the correct answer and associated code provision.",
+      "code_citation": "ASTM A36, ASD Allowable Stresses; NSCP 2015, Section 508 (ASD provisions)",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.3,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T16:21:04.109789+00:00",
+      "content_hash": "sha256:6adc7fe0e6e0ea37c54a6732ce253cd04d56341b36bafab3e2586691d4ac7371"
+    },
+    {
+      "question_id": "75e51e43-0a5d-424c-b3c7-4919e7345353",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "A steel beam member carries an applied bending stress of 155 MPa. Is this member safe under the ASD method, given that the material is A36?",
+      "options": [
+        {
+          "id": "a",
+          "text": "No; 155 MPa exceeds the allowable bending stress of 149 MPa, which is calculated based on the yield strength and safety factors."
+        },
+        {
+          "id": "b",
+          "text": "Yes; 155 MPa is less than the allowable bending stress of 164 MPa."
+        },
+        {
+          "id": "c",
+          "text": "No; 155 MPa exceeds the allowable bending stress of 99 MPa, which is determined by the specific load conditions and material properties."
+        },
+        {
+          "id": "d",
+          "text": "Yes; 155 MPa equals the yield strength limit, assuming no additional factors are considered."
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "149 MPa is the axial compression allowable, not bending.",
+        "c": "99 MPa is the shear allowable, not bending.",
+        "d": "155 MPa is far below Fy = 248 MPa; the comparison to Fy is irrelevant in ASD (compare to Fb instead).",
+        "correct": "A36 allowable bending stress Fb = 0.66Fy = 164 MPa. The applied stress 155 MPa < 164 MPa, so the member is adequate for bending.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": "149 MPa is the axial compression allowable, not bending. 99 MPa is the shear allowable, not bending. 155 MPa is far below Fy = 248 MPa; the comparison to Fy is irrelevant in ASD (compare to Fb instead). A36 allowable bending stress Fb = 0.66Fy = 164 MPa. The applied stress 155 MPa < 164 MPa, so the member is adequate for bending. Review the correct answer and associated code provision.",
+      "code_citation": "NSCP 2001, Section 4.3, ASD Design Method and Member Adequacy",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.7,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-05-06T16:21:04.232746+00:00",
+      "content_hash": "sha256:e5396307766bb48f624b85362be28ba782f4fff92ee9544d4045953c9bc78f1c"
+    },
+    {
+      "question_id": "ca9430e3-6362-48d4-96a3-55ba5fc787be",
+      "article_id": "e9e1832c-2829-48d7-91ae-77910608c5c2",
+      "topic_id": "ed2893bc-b78a-4333-a0ff-7ee2bf016d42",
+      "text": "An older design drawing specifies A36 steel but does not clearly state the allowable stresses used. A review engineer calculates the design stresses and finds bending = 160 MPa and shear = 95 MPa. Based on ASTM A36 and the ASD method, which statement is correct?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Both stresses are adequate because 160 < 164 (bending) and 95 < 99 (shear)."
+        },
+        {
+          "id": "b",
+          "text": "Both stresses are inadequate because 160 MPa and 95 MPa are both less than Fy = 248 MPa."
+        },
+        {
+          "id": "c",
+          "text": "Bending is adequate, but shear is too high; 95 MPa approaches the allowable 99 MPa."
+        },
+        {
+          "id": "d",
+          "text": "The stresses cannot be evaluated without knowing the section dimensions."
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Yield strength Fy is not the design limit in ASD; the allowable stresses (smaller fractions) are the limits.",
+        "c": "Shear 95 MPa is safely below 99 MPa; it is not too high.",
+        "d": "Stresses are independent of section dimensions once applied stress is calculated from loads and section properties.",
+        "correct": "For A36: Fb = 164 MPa (allowable bending) and Fv = 99 MPa (allowable shear). Applied bending 160 < 164 ✓, and applied shear 95 < 99 ✓. Both stresses meet the allowable limits.",
+        "takeaway": "Review the correct answer and associated code provision."
+      },
+      "explanation": null,
+      "code_citation": "ASTM A36 and NSCP 2001, ASD Design Method and Adequacy Checks",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-STRC-005-03-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:52.700869+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:aa4488e90c06e2795e342b196bf3d79688e924eb840b3e69d8762d94bed464b5"
+    }
+  ]
+}

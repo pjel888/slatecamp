@@ -12,31 +12,31 @@ Before memorizing details from this topic, state the exam task in one sentence: 
 ## Learning Goal
 Determine buildable area from site constraints and setbacks, organize site access and circulation, coordinate utility routing and easements, apply zoning and subdivision regulations, and produce site development plans showing land use allocation.
 
-Site development planning is the systematic process of organizing land use, access, and infrastructure to create a functional, safe, and efficient site. Understanding how to determine buildable envelopes, manage site access, and coordinate utilities is essential to laying the foundation for any architectural project. 
+Site development planning is the systematic process of organizing land use, access, and infrastructure to create a functional, safe, and efficient site. Understanding how to determine buildable envelopes, manage site access, and coordinate utilities is essential to laying the foundation for any architectural project.
 
 ## Core Concept
 
-Site development planning transforms raw land into organized, developable space through a methodical approach that balances regulatory constraints, infrastructure logistics, and design intent. 
+Site development planning transforms raw land into organized, developable space through a methodical approach that balances regulatory constraints, infrastructure logistics, and design intent.
 
 ### The Buildable Envelope
 
-The buildable envelope is the three-dimensional area where structures may legally be placed. It is determined by setback distances from property lines and easements. 
+The buildable envelope is the three-dimensional area where structures may legally be placed. It is determined by setback distances from property lines and easements.
 
-- **Front Setback:** Typically 3–6m depending on the road Right-of-Way (RROW). 
-- **Side/Rear Setbacks:** Vary based on the occupancy group and whether the wall has openings (firewall vs. windowed wall). 
+- **Front Setback:** Typically 3–6m depending on the road Right-of-Way (RROW).
+- **Side/Rear Setbacks:** Vary based on the occupancy group and whether the wall has openings (firewall vs. windowed wall).
 
 ### Site Metrics and Formulas
 
-- **PSO (Percentage of Site Occupancy):** The maximum percentage of the Total Lot Area (TLA) that can be occupied by the building footprint. 
-- **AMBF (Allowable Maximum Built-up Floor):** The actual area of the footprint. $AMBF = TLA \times PSO$. 
-- **TGFA (Total Gross Floor Area):** The sum of all floor areas. $TGFA = AMBF \times \text{number of floors}$. 
+- **PSO (Percentage of Site Occupancy):** The maximum percentage of the Total Lot Area (TLA) that can be occupied by the building footprint.
+- **AMBF (Allowable Maximum Built-up Floor):** The actual area of the footprint. $AMBF = TLA \times PSO$.
+- **TGFA (Total Gross Floor Area):** The sum of all floor areas. $TGFA = AMBF \times \text{number of floors}$.
 
 ### Site Access and Utilities
 
-Access is organized hierarchically—major arterial roads connect to local streets. 
+Access is organized hierarchically—major arterial roads connect to local streets.
 
-- **Ramps:** Must have a maximum gradient of **1:12** per BP 344 2024 IRR to be considered accessible. 
-- **Water Easements (PD 1067):** The "Rule of 3-20-40" applies to the banks of rivers, streams, and seas: 
+- **Ramps:** Must have a maximum gradient of **1:12** per BP 344 2024 IRR to be considered accessible.
+- **Water Easements (PD 1067):** The "Rule of 3-20-40" applies to the banks of rivers, streams, and seas:
  - **3 meters:** Urban areas.
  - **20 meters:** Agricultural areas.
  - **40 meters:** Forest areas.
@@ -58,25 +58,25 @@ Extracted summary:
 
 ## Philippine Practice Context
 
-In the Philippines, site development is a layered process. Beyond the NBC, local **Zoning Ordinances** often dictate the specific FAR and PSO for a given block. Due to the monsoon climate, drainage and flood resilience (integrating detention ponds or bioswleas) are now critical components of a site plan, often cross-referenced with the **BERDE** or **EDGE** green building frameworks. 
+In the Philippines, site development is a layered process. Beyond the NBC, local **Zoning Ordinances** often dictate the specific FAR and PSO for a given block. Due to the monsoon climate, drainage and flood resilience (integrating detention ponds or bioswleas) are now critical components of a site plan, often cross-referenced with the **BERDE** or **EDGE** green building frameworks.
 
 ## How It's Tested
 
 **Pattern 1: Footprint Calculation**
 A 1,000 m² lot has a 60% PSO. What is the AMBF?
 
-- **Answer:** 600 m². 
-- **Note:** Always check if setbacks restrict the footprint further than the PSO does. The buildable area is the _smaller_ of the two. 
+- **Answer:** 600 m².
+- **Note:** Always check if setbacks restrict the footprint further than the PSO does. The buildable area is the _smaller_ of the two.
 
 **Pattern 2: Road Hierarchy**
 Which road type requires a minimum 12m RROW?
 
-- **Answer:** Major Roads. 
+- **Answer:** Major Roads.
 
 **Pattern 3: Waterway Easements**
 A project is located in an **urban** district bordering a river. What is the required easement?
 
-- **Answer:** 3 meters. 
+- **Answer:** 3 meters.
 
 [SLATECAMP_UI_BLOCK:ui_0002 component="Tip" status="preserved"]
 Extracted summary:

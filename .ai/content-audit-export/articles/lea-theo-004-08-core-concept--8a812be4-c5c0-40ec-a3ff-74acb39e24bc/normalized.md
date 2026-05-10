@@ -214,7 +214,7 @@ Extracted summary:
 - Text: Philippine latitude (5°N–20°N) positions the country in low-latitude tropical zones where solar altitude angles shift dramatically across seasons. Strategic east-west building elongation and solar penetration analysis reduce cooling loads by 20–30%, directly supporting BERDE energy efficiency credits and tropical climate adaptation.
 [/SLATECAMP_UI_BLOCK]
 Extracted summary:
-- Props: 
+- Props:
 - Text: Philippine latitude (5°N–20°N) positions the country in low-latitude tropical zones where solar altitude angles shift dramatically across seasons. Strategic east-west building elongation and solar pen
 
 ## Common Mistakes
@@ -264,4 +264,3 @@ Extracted summary:
 See also within Tropical Architecture & Climate: **lea-theo-004-01-core-concept**, **lea-theo-004-02-core-concept**, **lea-theo-004-03-core-concept**, **lea-theo-004-07-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

@@ -432,4 +432,3 @@ LEA Swipe: Accessible route requirements: max slope 1:20, min width 1.20 m, pass
 ## Cross‑References
 
 **Site Exterior Circulation**, **Wheelchair Maneuvering And Parking**, **Accessible Seating In Assembly Areas**, **Pd 1096 Rule Viii Setbacks And Easements**
-

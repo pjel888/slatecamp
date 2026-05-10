@@ -1,0 +1,518 @@
+{
+  "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:6dd9876c986a9db6f8936664c377a87c3d49c1239e7ffbbf76827710ccd08533",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "8bcb5c05-1eb8-4529-bcad-17d71f59d368",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How many specialized architectural services are enumerated under SPP 203?",
+      "options": [
+        {
+          "id": "a",
+          "text": "15"
+        },
+        {
+          "id": "b",
+          "text": "18"
+        },
+        {
+          "id": "c",
+          "text": "23"
+        },
+        {
+          "id": "d",
+          "text": "25"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "15 is too few. SPP 203 has a more extensive list of specialized services.",
+        "b": "18 is incorrect. The actual count is 23 distinct specialized services.",
+        "c": "Correct. SPP 203 enumerates 23 specialized architectural services, each separately compensated from regular design services.",
+        "d": "25 is incorrect. The precise count is 23 services.",
+        "correct": "SPP 203 lists exactly 23 specialized architectural services. These range from interior design and landscape architecture to forensic architecture and building environmental certification.",
+        "takeaway": "SPP 203 has exactly 23 specialized services."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:03a9e33325ef4863aa5e7ce99e5e108f00aa8ee90d556c09ae01a3c60ad0283a"
+    },
+    {
+      "question_id": "689df8d6-744b-4966-b727-66894ebc538b",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How is one man-month calculated under SPP 203?",
+      "options": [
+        {
+          "id": "a",
+          "text": "20 days x 8 hours = 160 hours"
+        },
+        {
+          "id": "b",
+          "text": "22 days x 8 hours = 176 hours"
+        },
+        {
+          "id": "c",
+          "text": "25 days x 8 hours = 200 hours"
+        },
+        {
+          "id": "d",
+          "text": "30 days x 8 hours = 240 hours"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "160 hours (20 days) is incorrect. SPP 203 uses 22 working days per month.",
+        "b": "Correct. SPP 203 defines one man-month as 22 working days multiplied by 8 hours per day, equaling 176 hours.",
+        "c": "200 hours (25 days) exceeds the SPP 203 specification. Not all calendar days are working days.",
+        "d": "240 hours (30 days) is incorrect as it counts all calendar days, not working days.",
+        "correct": "Under SPP 203, one man-month is calculated as 22 working days multiplied by 8 hours per day, totaling 176 hours. This standard is used for computing salary-based compensation for specialized services.",
+        "takeaway": "One man-month = 22 days x 8 hours = 176 hours."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.4,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7f4ec65626b4c3c54ce89dba5dc3b5c3552e6e2f16c06356f2cf2579ce344778"
+    },
+    {
+      "question_id": "71ef8a32-7164-4180-aea3-4e9cced4573e",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What type of rating system does Building Environmental Certification under SPP 203 use?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A pass/fail inspection system"
+        },
+        {
+          "id": "b",
+          "text": "A credit-based rating system"
+        },
+        {
+          "id": "c",
+          "text": "A percentile ranking system"
+        },
+        {
+          "id": "d",
+          "text": "A tiered licensing system"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Pass/fail is too binary for environmental certification, which evaluates multiple sustainability criteria.",
+        "b": "Correct. Building Environmental Certification uses a credit-based rating system where buildings earn credits across various sustainability categories to achieve certification levels.",
+        "c": "Percentile ranking compares buildings against each other, which is not how environmental certification works.",
+        "d": "Tiered licensing is a regulatory concept, not applicable to environmental certification.",
+        "correct": "Building Environmental Certification under SPP 203 uses a credit-based rating system (similar to LEED, BERDE, or Green Mark). Buildings earn credits across categories like energy efficiency, water conservation, materials, and indoor environmental quality.",
+        "takeaway": "Building Environmental Certification = credit-based rating system."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d30ce60451096f8910d78e1dae30d70e0547e66c1725360e64cf270aabf27114"
+    },
+    {
+      "question_id": "77937dd5-3508-482b-a590-8f3525c3715f",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under which law is the Fire and Life Safety Assessment Report (FALAR) required, as referenced in SPP 203?",
+      "options": [
+        {
+          "id": "a",
+          "text": "P.D. 1096 (National Building Code), which outlines general building requirements"
+        },
+        {
+          "id": "b",
+          "text": "R.A. 9266 (Architecture Act), focusing on the practice of architecture"
+        },
+        {
+          "id": "c",
+          "text": "R.A. 9514 (Fire Code of the Philippines)"
+        },
+        {
+          "id": "d",
+          "text": "R.A. 9285 (ADR Act), which deals with alternative dispute resolution"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "P.D. 1096 is the National Building Code, which governs building construction but does not specifically mandate the FALAR.",
+        "b": "R.A. 9266 is the Architecture Act, which governs professional practice but does not create the FALAR requirement.",
+        "c": "Correct. The FALAR requirement is mandated under R.A. 9514, the Fire Code of the Philippines, which requires fire and life safety assessments for building occupancy and compliance.",
+        "d": "R.A. 9285 is the ADR (Alternative Dispute Resolution) Act, unrelated to fire safety.",
+        "correct": "The Fire and Life Safety Assessment Report (FALAR) is required under R.A. 9514 (Fire Code of the Philippines). This specialized service under SPP 203 involves comprehensive assessment of fire protection systems, egress, and life safety compliance.",
+        "takeaway": "FALAR is required under R.A. 9514 (Fire Code)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203 / R.A. 9514",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:162712a7f84118a5baa12c3c7608ab4c82dad5cd0bfb1f67b8da9a868c25ff92"
+    },
+    {
+      "question_id": "fbb25f2a-0077-4f66-9aee-a9fd00e6f3bd",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "How many components are required in a Comprehensive Development Plan (CDP) under SPP 203?",
+      "options": [
+        {
+          "id": "a",
+          "text": "3 components (Physical, Economic, Legal)"
+        },
+        {
+          "id": "b",
+          "text": "4 components (Physical, Economic, Socio-Cultural, Transport)"
+        },
+        {
+          "id": "c",
+          "text": "5 components (Physical, Economic, Socio-Cultural, Transport, Legal)"
+        },
+        {
+          "id": "d",
+          "text": "6 components (Physical, Economic, Socio-Cultural, Transport, Legal, Environmental)"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "3 components is insufficient. A CDP requires a more comprehensive analysis.",
+        "b": "4 components omits the Legal component, which is essential for land use and zoning compliance.",
+        "c": "Correct. A CDP under SPP 203 requires 5 components: Physical, Economic, Socio-Cultural, Transport/Infrastructure, and Legal/Institutional frameworks.",
+        "d": "6 components overspecifies. Environmental considerations are typically integrated within the Physical component.",
+        "correct": "A Comprehensive Development Plan under SPP 203 requires 5 components: (1) Physical/spatial planning, (2) Economic analysis, (3) Socio-Cultural assessment, (4) Transport/Infrastructure planning, and (5) Legal/Institutional framework compliance.",
+        "takeaway": "CDP = 5 components: Physical, Economic, Socio-Cultural, Transport, Legal."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:99b1362b269918d0fc983343dad32959ac77151c31faebc2f4a776f40c0e2569"
+    },
+    {
+      "question_id": "6fe01e49-fba9-4e85-9e89-0e69b82830ed",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under which law does Dispute Avoidance/Resolution as a specialized service under SPP 203 operate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "R.A. 9266 (Architecture Act), which primarily governs the practice of architecture"
+        },
+        {
+          "id": "b",
+          "text": "R.A. 9184 (Government Procurement Reform Act), which focuses on procurement processes"
+        },
+        {
+          "id": "c",
+          "text": "R.A. 9285 (Alternative Dispute Resolution Act)"
+        },
+        {
+          "id": "d",
+          "text": "P.D. 1096 (National Building Code), which sets building standards"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "R.A. 9266 governs the architecture profession but does not specifically govern dispute resolution procedures.",
+        "b": "R.A. 9184 governs government procurement, not general dispute resolution for architectural services.",
+        "c": "Correct. Dispute Avoidance/Resolution under SPP 203 operates under R.A. 9285, the Alternative Dispute Resolution (ADR) Act of 2004, which provides the legal framework for mediation, arbitration, and other ADR methods.",
+        "d": "P.D. 1096 is the National Building Code, unrelated to dispute resolution procedures.",
+        "correct": "Dispute Avoidance/Resolution as a specialized service operates under R.A. 9285, the ADR Act of 2004. This law provides the legal framework for alternative dispute resolution methods including mediation, conciliation, and arbitration in construction and architectural disputes.",
+        "takeaway": "Dispute Avoidance/Resolution = R.A. 9285 (ADR Act)."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203 / R.A. 9285",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:6a402f64faff0efb5bc21a8b6d99b8b80bba13546394c4c8451d13dd30b3b017"
+    },
+    {
+      "question_id": "52f21bce-da91-4474-9dba-96c018798aaa",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "In how many manners may an architect provide specialized services under SPP 203?",
+      "options": [
+        {
+          "id": "a",
+          "text": "One: as an independent consultant only, without any collaboration"
+        },
+        {
+          "id": "b",
+          "text": "Two: in dual capacity (designer + specialist) or as consulting architect only"
+        },
+        {
+          "id": "c",
+          "text": "Three: independently, as sub-consultant, or as joint venture partner, depending on project requirements"
+        },
+        {
+          "id": "d",
+          "text": "Four: as lead, sub-consultant, joint venture, or independent specialist, offering flexibility in service delivery"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Independent consulting is only one of the two recognized manners.",
+        "b": "Correct. SPP 203 recognizes two manners: (1) dual capacity, where the architect serves as both the regular designer and specialist, and (2) as consulting architect only, providing specialized expertise to another architect's project.",
+        "c": "Three manners is incorrect. SPP 203 specifies exactly two delivery manners.",
+        "d": "Four manners is incorrect and overcomplicates the SPP 203 framework.",
+        "correct": "SPP 203 specifies two manners of providing specialized services: (1) in dual capacity — the architect performs both regular design (SPP 202) and specialized services simultaneously, and (2) as consulting architect only — providing specialized expertise on another architect's project.",
+        "takeaway": "Two manners: dual capacity (designer + specialist) or consulting architect only."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c20732c5ea65437de2673328111f93a2dcfd683200dff559ce592e4d5e573649"
+    },
+    {
+      "question_id": "de714ef0-32e2-4196-a43c-82b4a0542b27",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "What does Forensic Architecture (SPP 203.13) primarily investigate?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Criminal activities in buildings, focusing on how architectural elements may facilitate or hinder illegal actions."
+        },
+        {
+          "id": "b",
+          "text": "Historical significance of architectural structures, examining their cultural and historical context and impact over time."
+        },
+        {
+          "id": "c",
+          "text": "Causes of building deterioration, failure, or collapse"
+        },
+        {
+          "id": "d",
+          "text": "Archaeological remains beneath building foundations, which may provide insights into past civilizations and construction techniques."
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Criminal investigation is not within the scope of Forensic Architecture. The term 'forensic' here relates to technical investigation, not criminal law.",
+        "b": "Historical significance assessment falls under heritage conservation, not forensic architecture.",
+        "c": "Correct. Forensic Architecture under SPP 203.13 investigates the causes of building deterioration, structural failure, or collapse through systematic technical analysis.",
+        "d": "Archaeological investigation is a separate discipline unrelated to forensic architecture.",
+        "correct": "Forensic Architecture (SPP 203.13) is a specialized service that investigates the causes of building deterioration, failure, or collapse. It involves systematic technical analysis to determine why a building has degraded or failed, often for insurance, litigation, or remediation purposes.",
+        "takeaway": "Forensic Architecture = investigating causes of building deterioration/failure."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:12952721fed10cdfda4fe889db218a9ee6805239e19ef37694c89ed9805288c9"
+    },
+    {
+      "question_id": "43c9869f-554c-4995-aa6c-da3498a8bafb",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Under SPP 203, a Consulting Architect providing specialized services may hold a Specialist Certificate from which bodies?",
+      "options": [
+        {
+          "id": "a",
+          "text": "PRC and DTI, provided they meet the specific criteria set by each organization"
+        },
+        {
+          "id": "b",
+          "text": "PRBoA and IAPOA"
+        },
+        {
+          "id": "c",
+          "text": "SEC and UAP, contingent upon fulfilling the necessary registration requirements"
+        },
+        {
+          "id": "d",
+          "text": "DoLE and CHED, assuming compliance with their respective professional standards"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PRC and DTI handle general registration and business registration, not specialist certification.",
+        "b": "Correct. A Consulting Architect may hold a Specialist Certificate issued by the Professional Regulatory Board of Architecture (PRBoA) and/or the IAPOA.",
+        "c": "SEC handles corporate registration and UAP is the professional organization, but neither issues specialist certificates.",
+        "d": "DoLE handles employment permits and CHED handles education — neither issues specialist architectural certificates.",
+        "correct": "Under SPP 203, a Consulting Architect providing specialized services may hold a Specialist Certificate from the PRBoA (Professional Regulatory Board of Architecture) and/or the IAPOA (Integrated Accredited Professional Organization of Architects).",
+        "takeaway": "Specialist Certificate sources: PRBoA and/or IAPOA."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203 / R.A. 9266",
+      "bloom_level": "understand",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:996ed4dd355e7db23fe1e423825ac172c8fb85cf0892d151e791592408cda960"
+    },
+    {
+      "question_id": "bfe346e0-bbb5-42d9-880b-ddfa05624177",
+      "article_id": "9a800f21-b26e-4e3e-94c8-2f4127eccd42",
+      "topic_id": "1042b5a6-e01e-4e1c-b9e3-5c3b31042f64",
+      "text": "Are SPP 203 specialized services included in the regular design fee under SPP 202?",
+      "options": [
+        {
+          "id": "a",
+          "text": "Yes, they are bundled into the SPP 202 design fee, covering all necessary services"
+        },
+        {
+          "id": "b",
+          "text": "No, they are always separately compensated from SPP 202"
+        },
+        {
+          "id": "c",
+          "text": "Only if performed by the same architect, who can integrate them into the overall project scope"
+        },
+        {
+          "id": "d",
+          "text": "Only for projects below a certain PCC threshold, where additional services are not justified"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Bundling is incorrect. SPP 203 services require separate compensation regardless of the engagement structure.",
+        "b": "Correct. SPP 203 specialized services are always separately compensated from the SPP 202 regular design fee, even when performed by the same architect in dual capacity.",
+        "c": "Even when the same architect provides both, SPP 203 services are separately compensated.",
+        "d": "There is no PCC threshold exception. Separate compensation applies to all projects.",
+        "correct": "SPP 203 services are always separately compensated from SPP 202 design fees. This principle holds even when the same architect performs both regular and specialized services in dual capacity. The separate compensation reflects the distinct expertise and additional work involved.",
+        "takeaway": "SPP 203 services = always separately compensated from SPP 202 fees."
+      },
+      "explanation": null,
+      "code_citation": "SPP 203",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": 0.6,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": null,
+      "prompt_image_url": null,
+      "created_at": "2026-03-31T06:07:47.199954+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:161e7361fc7b77afb95ef1b7f67ab56b59cdd2acf255f6ccdc62c9e20bd91620"
+    }
+  ]
+}

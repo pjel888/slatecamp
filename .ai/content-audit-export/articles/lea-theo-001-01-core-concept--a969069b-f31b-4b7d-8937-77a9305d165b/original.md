@@ -195,4 +195,3 @@ Extracted summary:
 See also within Nature of Architecture: **lea-theo-001-07-core-concept**, **lea-theo-001-08-core-concept**, **lea-theo-001-09-core-concept**, **lea-theo-001-10-core-concept**.
 
 > **Overview:** overview-theory-of-architecture for the full curriculum structure and study strategy for Theory of Architecture.
-

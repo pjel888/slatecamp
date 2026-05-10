@@ -1,0 +1,508 @@
+{
+  "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:b1a0aa095168ae9e9f351d36923972edb3cd46c5c194d3e314d431294cfb2f69",
+  "question_count": 10,
+  "questions": [
+    {
+      "question_id": "aab76f9d-e868-4acc-9cf5-0723aedcf966",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "According to ASTM C373, what is the maximum water absorption percentage that defines a porcelain tile?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Less than 0.5%"
+        },
+        {
+          "id": "b",
+          "text": "B) Between 0.5% and 3%"
+        },
+        {
+          "id": "c",
+          "text": "C) Between 3% and 7%"
+        },
+        {
+          "id": "d",
+          "text": "D) Greater than 7%"
+        }
+      ],
+      "correct_option_id": "a",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "b": "Semi-vitreous tiles fall in the 0.5-3% range, acceptable for light-duty areas but not ground-level installations.",
+        "c": "Non-vitreous tiles absorb 3-7%, suitable only for interior walls, not floors.",
+        "d": "Unglazed earthenware and porous materials exceed 7%, unsuitable for any interior floor application.",
+        "correct": "Porcelain tiles are defined by water absorption ≤0.5% per ASTM C373, making them impervious (not non-vitreous). Semi-vitreous is 3-7%; vitreous is 0.5-3%. and suitable for wet areas.",
+        "takeaway": "Memorize: porcelain <0.5%, semi-vitreous 0.5-3%, non-vitreous >3%. For wet areas, always specify porcelain."
+      },
+      "explanation": "Semi-vitreous tiles fall in the 0.5-3% range, acceptable for light-duty areas but not ground-level installations. Non-vitreous tiles absorb 3-7%, suitable only for interior walls, not floors. Unglazed earthenware and porous materials exceed 7%, unsuitable for any interior floor application. Porcelain tiles are defined by water absorption ≤0.5% per ASTM C373, making them impervious (not non-vitreous). Semi-vitreous is 3-7%; vitreous is 0.5-3%. and suitable for wet areas. Memorize: porcelain <0.5%, semi-vitreous 0.5-3%, non-vitreous >3%. For wet areas, always specify porcelain.",
+      "code_citation": "ASTM C373 Standard Test Methods; Philippine construction practice",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-001",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T16:21:47.638412+00:00",
+      "content_hash": "sha256:6bf68f9986883565057870b675c0f57f5d913fae834fed6166753d1b89537d71"
+    },
+    {
+      "question_id": "9137f9d5-5ebf-479f-93e0-aa3f23f3ab03",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "Which PEI wear rating is the minimum acceptable for a residential kitchen floor?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) PEI Grade I"
+        },
+        {
+          "id": "b",
+          "text": "B) PEI Grade II"
+        },
+        {
+          "id": "c",
+          "text": "C) PEI Grade III"
+        },
+        {
+          "id": "d",
+          "text": "D) PEI Grade IV"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "PEI I is wall-only; unsuitable for any floor.",
+        "b": "PEI II is light residential use (bathrooms, bedrooms); insufficient for kitchens where daily wear is heavier.",
+        "d": "PEI IV and V are commercial-grade, unnecessary for residential but acceptable if budget allows.",
+        "correct": "PEI Grade III is the standard for residential kitchens, handling normal foot traffic without visible wear within the service life.",
+        "takeaway": "Kitchen = Grade III minimum. Bathrooms and bedrooms = Grade II acceptable. Retail and offices = Grade IV or V."
+      },
+      "explanation": "PEI I is wall-only; unsuitable for any floor. PEI II is light residential use (bathrooms, bedrooms); insufficient for kitchens where daily wear is heavier. PEI IV and V are commercial-grade, unnecessary for residential but acceptable if budget allows. PEI Grade III is the standard for residential kitchens, handling normal foot traffic without visible wear within the service life. Kitchen = Grade III minimum. Bathrooms and bedrooms = Grade II acceptable. Retail and offices = Grade IV or V.",
+      "code_citation": "PEI Rating System; LEA specification standards",
+      "bloom_level": "remember",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-002",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-05-06T16:21:47.771631+00:00",
+      "content_hash": "sha256:8a5a24adcb60a272305793a93bbb2faada8a36ae25f7c40fb018f1e93407124f"
+    },
+    {
+      "question_id": "c7ae46cd-f4c9-4aa5-b056-861f2f64f0b9",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "Why is ASTM C1028 (static coefficient of friction) no longer the standard method for testing slip resistance of floor tiles?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) It was too expensive to perform, making it impractical for widespread use"
+        },
+        {
+          "id": "b",
+          "text": "B) It had poor reproducibility and did not reliably predict pedestrian slip risk"
+        },
+        {
+          "id": "c",
+          "text": "C) Tiles with high C1028 scores showed excessive wear, leading to durability concerns"
+        },
+        {
+          "id": "d",
+          "text": "D) It was replaced by a cheaper alternative, which offered similar accuracy"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost was not the primary reason for withdrawal; the standard was withdrawn due to technical limitations.",
+        "c": "High C1028 scores did not indicate excessive wear; the test methodology was unreliable.",
+        "d": "ANSI A137.1 replaced it, but not for cost reasons—for accuracy.",
+        "correct": "ASTM C1028 was withdrawn because it exhibited poor reproducibility between labs and failed to predict actual pedestrian slip risk in wet conditions. ANSI A137.1 DCOF (Dynamic Coefficient of Friction) testing better correlates with real-world performance.",
+        "takeaway": "Always specify ANSI A137.1 DCOF in modern ALE practice. If a specification cites C1028 alone, it is outdated."
+      },
+      "explanation": null,
+      "code_citation": "Tile Council of North America; ASTM standards evolution",
+      "bloom_level": "understand",
+      "application_context": "recall",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-006",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d9940e2f0d4a95a9a076682ad894af95f682957d90f71492dae2c7011102a41f"
+    },
+    {
+      "question_id": "e8648db2-e8d9-4b13-b387-b2c07a7f4f5a",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "A specification for a mixed-use building requires: (1) kitchen tiles with PEI Grade III, slip-resistant (COF ≥0.60), porcelain; (2) accessible ramp finish with COF ≥0.80; (3) ground-floor bathrooms in flood-prone area with <0.5% water absorption. Which option best satisfies all three requirements with a single material approach?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Semi-vitreous glazed tile throughout (meets cost target, fails requirement 1 and 3, and does not provide necessary slip resistance)"
+        },
+        {
+          "id": "b",
+          "text": "B) Textured porcelain tile with documented ANSI A137.1 DCOF ≥0.60 for kitchen/ramp, honed or anti-slip treated to reach COF ≥0.80 on ramp; same material for bathrooms (satisfies all three)"
+        },
+        {
+          "id": "c",
+          "text": "C) Mix of polished marble (kitchen), textured granite (ramp), porcelain (bathrooms), which does not meet the slip resistance requirement for ramps"
+        },
+        {
+          "id": "d",
+          "text": "D) Large-format porcelain with epoxy grout throughout, no slip treatment, which fails to meet the COF requirement for ramps"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Semi-vitreous fails water absorption requirement (0.5-3% vs. required <0.5%) and may not meet consistent slip resistance across settings.",
+        "c": "Mixed materials create maintenance inconsistency, cost variability, and aesthetic discontinuity. Polished marble fails slip resistance.",
+        "d": "Epoxy grout does not address surface slip resistance; large-format tiles on ramps require texture to meet COF ≥0.80.",
+        "correct": "Textured porcelain satisfies all requirements: PEI III glaze durability for kitchens, ANSI A137.1 DCOF ≥0.60 in standard form, surface treatment (honing, anti-slip coating) reaches COF ≥0.80 for ramp. Porcelain's <0.5% absorption suits flood-prone bathrooms. Single-material approach reduces installation complexity and maintenance variance.",
+        "takeaway": "Unified material with targeted surface treatment beats material mixing. Specify ANSI A137.1 test data; don't assume visual texture meets code."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C373, ANSI A137.1, BP 344, PEI Rating System integrated application",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-010",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:c3be4b701cbbc70339ed309b993081e7d0ccfb01cfad9b6254d6c294667d7057"
+    },
+    {
+      "question_id": "e2819950-ceaf-458e-9085-0f2e763def81",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "A shopping mall floor plan calls for terrazzo in the main corridor (high traffic, 50,000+ visitors/week) and porcelain tile in the bathrooms. Which material selection is appropriate and why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Both are unsuitable; use epoxy throughout for its seamless finish and chemical resistance, which is ideal for high-traffic areas"
+        },
+        {
+          "id": "b",
+          "text": "B) Terrazzo in corridors is appropriate (monolithic, high durability); porcelain in bathrooms is appropriate (moisture resistant)"
+        },
+        {
+          "id": "c",
+          "text": "C) Terrazzo only; bathrooms should use the same material for consistency, ensuring a uniform aesthetic throughout the facility"
+        },
+        {
+          "id": "d",
+          "text": "D) Porcelain only; terrazzo is outdated and difficult to maintain, requiring specialized cleaning and sealing procedures"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Epoxy is appropriate for industrial spaces, not retail.",
+        "c": "Consistency does not trump performance; different zones need different finishes.",
+        "d": "Terrazzo, while labor-intensive, offers superior durability for the stated traffic volume.",
+        "correct": "Terrazzo offers superior durability and monolithic appearance for very high-traffic commercial corridors, resisting the heavy daily wear from foot traffic. Porcelain's <0.5% absorption and sanitary properties suit bathroom environments. Material selection should match function, not aesthetic consistency.",
+        "takeaway": "Match finish type to space function: high-traffic corridors benefit from terrazzo; wet areas benefit from porcelain."
+      },
+      "explanation": null,
+      "code_citation": "Commercial flooring standards; field performance data",
+      "bloom_level": "analyze",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-009",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:82f0a3caa42442293e70a54658c327cea70e71757e87f73a5b9aee7fc0501227"
+    },
+    {
+      "question_id": "23bebe25-bb2d-4232-9826-4ad8d8c19412",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "A ground-level bathroom in Pasig suffers seasonal water seepage during monsoons. Should you specify semi-vitreous or porcelain tile? Why?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Semi-vitreous; lower cost offsets replacement expense, but may not prevent moisture issues effectively"
+        },
+        {
+          "id": "b",
+          "text": "B) Porcelain; <0.5% absorption prevents capillary moisture and spalling"
+        },
+        {
+          "id": "c",
+          "text": "C) Either; both meet ASTM standards, though performance may vary under specific conditions"
+        },
+        {
+          "id": "d",
+          "text": "D) Neither; use epoxy instead, as it provides a seamless and waterproof surface"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Cost savings are false economy; replacement cycles are shorter for semi-vitreous in high-moisture areas.",
+        "c": "Standards differ; ASTM C373 distinguishes porcelain from semi-vitreous specifically for this reason.",
+        "d": "Epoxy is appropriate for industrial spaces, not typical bathroom finishes.",
+        "correct": "Porcelain's <0.5% absorption (ASTM C373) resists capillary rise and prevents water-induced spalling and substrate decay. Semi-vitreous absorbs 0.5-3%, allowing moisture ingress and damage in flood-prone conditions.",
+        "takeaway": "In monsoon zones and flood-prone areas, porcelain is non-negotiable. Semi-vitreous fails within 5-7 years."
+      },
+      "explanation": null,
+      "code_citation": "ASTM C373; Philippine climate construction context",
+      "bloom_level": "apply",
+      "application_context": "design_application",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-003",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:3337170825f410bc705f877bbc8237ab78772f955583f80b8241160cf4ee06b3"
+    },
+    {
+      "question_id": "b50574a4-16b0-429e-b274-fb00b5704096",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "Mariwasa tiles in a residential kitchen show visible wear patterns after 18 months in normal use. The tile is labeled 'PEI Grade II.' What is the most likely cause of premature wear?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) The subfloor was not level, leading to uneven stress distribution and accelerated wear"
+        },
+        {
+          "id": "b",
+          "text": "B) The grout joint width was too wide, allowing for excessive movement and wear"
+        },
+        {
+          "id": "c",
+          "text": "C) PEI Grade II is insufficient for kitchen foot traffic"
+        },
+        {
+          "id": "d",
+          "text": "D) The tiles were installed with epoxy mortar, which may not provide adequate flexibility for kitchen environments"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Unlevel subfloor causes cracking, not surface wear patterns.",
+        "b": "Grout width affects maintenance, not tile surface glaze wear.",
+        "d": "Epoxy mortar is appropriate for wet areas and does not cause surface wear.",
+        "correct": "PEI Grade II is rated for light residential use (bathrooms, bedrooms), not kitchens. Kitchen wear patterns emerge within 18-24 months with Grade II due to underspecification of glaze hardness.",
+        "takeaway": "Always specify PEI III minimum for kitchens. Grade II is acceptable for bathrooms and bedrooms only."
+      },
+      "explanation": null,
+      "code_citation": "PEI Rating System; Field performance data",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-007",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:cb10ff6bd27bf3de8322b630def1001e674ec20e732052ffe5d08b423ee40676"
+    },
+    {
+      "question_id": "497a6c64-2ad1-49d9-b139-ef92916b3ba9",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "A specification calls for large-format porcelain tiles (80×80cm) in a commercial showroom. What subfloor flatness standard minimizes cracking risk?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 1/4\" in 10 feet"
+        },
+        {
+          "id": "b",
+          "text": "B) 1/8\" in 10 feet"
+        },
+        {
+          "id": "c",
+          "text": "C) 3/16\" in 20 feet"
+        },
+        {
+          "id": "d",
+          "text": "D) 1/2\" in 10 feet"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "1/4\" is too loose for large tiles; voids form under the tile body, causing breakage under load.",
+        "c": "3/16\" is acceptable but looser than best practice; 1/8\" is the binding standard.",
+        "d": "1/2\" is unsuitable for any tile installation.",
+        "correct": "ASTM F710 requires flatness to 1/8\" in 10 feet for thin-set tile installations. Large-format tiles magnify deviations; this tolerance prevents voids and stress concentration.",
+        "takeaway": "Large tiles (>60cm) require tighter subfloor prep. Budget extra time for grinding or self-leveling compound."
+      },
+      "explanation": null,
+      "code_citation": "ASTM F710; ANSI A108.02 installation standards",
+      "bloom_level": "apply",
+      "application_context": "calculation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-005",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:d04891d77b5b122bcf0e71ba189d1b7eaaaa5639f2598249befd3025c3d9cc33"
+    },
+    {
+      "question_id": "a3167e74-3e6f-4147-ac53-9b9cf0146f41",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "A high-end residential project specifies polished marble tile for a common hallway subject to BP 344 accessibility requirements. Test data shows COF of 0.45 dry and 0.30 wet. What is the primary code compliance issue?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) Marble is a natural stone and always complies with BP 344"
+        },
+        {
+          "id": "b",
+          "text": "B) The wet COF (0.30) falls below the BP 344 minimum of 0.60 for level surfaces"
+        },
+        {
+          "id": "c",
+          "text": "C) The dry COF (0.45) is acceptable; wet conditions do not apply to hallways"
+        },
+        {
+          "id": "d",
+          "text": "D) Polished marble exceeds aesthetic requirements and should be textured instead"
+        }
+      ],
+      "correct_option_id": "b",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "Material type is irrelevant; BP 344 specifies performance (COF), not material.",
+        "c": "Hallways are common areas subject to BP 344; wet conditions are realistic in tropical Philippines.",
+        "d": "Aesthetics do not override code compliance.",
+        "correct": "BP 344 mandates COF ≥0.60 for level surfaces and ≥0.80 for slopes. Wet COF 0.30 is a severe violation, creating slip hazard in typical humidity. Common hallways are public spaces subject to accessibility law.",
+        "takeaway": "Polished marble rarely meets BP 344 without surface treatment. Recommend honing or anti-slip coating, or specify a different material."
+      },
+      "explanation": null,
+      "code_citation": "BP 344 IRR; Philippine Accessibility Law enforcement",
+      "bloom_level": "analyze",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-008",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:b8b7c8cbfe4ce3b788955836f9c8fd1ca3c45a3e90313cfff786fef3635b3a80"
+    },
+    {
+      "question_id": "56ef26be-58cc-46d3-ba88-87babb1704a2",
+      "article_id": "20f67594-cbef-4aac-b65d-db77bc3e2c9e",
+      "topic_id": "af2658c6-c1fe-491a-9d26-bf08f4fc0f82",
+      "text": "An accessible ramp slopes at 6 degrees. According to BP 344, what is the minimum coefficient of friction required for compliance?",
+      "options": [
+        {
+          "id": "a",
+          "text": "A) 0.50"
+        },
+        {
+          "id": "b",
+          "text": "B) 0.60"
+        },
+        {
+          "id": "c",
+          "text": "C) 0.80"
+        },
+        {
+          "id": "d",
+          "text": "D) 1.00"
+        }
+      ],
+      "correct_option_id": "c",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "a": "0.50 is below both level and slope minimums, creating slip hazard.",
+        "b": "0.60 is correct for level surfaces only; slopes demand higher friction due to gravity component.",
+        "d": "1.00 exceeds requirements; 0.80 is the binding limit per BP 344 IRR amendments.",
+        "correct": "BP 344 requires non-slip surface materials for ramps and walkways (no numerical COF specified). ANSI A137.1 recommends DCOF ≥0.42 wet for level, ≥0.60 for slopes.",
+        "takeaway": "Level = 0.60 COF (BP 344); slopes = 0.80 COF. Use ANSI A137.1 DCOF ≥0.42 for modern verification; ASTM C1028 reinstated 2021 for static COF."
+      },
+      "explanation": null,
+      "code_citation": "BP 344 Implementing Rules and Regulations (IRR) Amendments",
+      "bloom_level": "apply",
+      "application_context": "code_interpretation",
+      "practice_context": [],
+      "difficulty": 0.5,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "ALE-MATL-007-01-004",
+      "prompt_image_url": null,
+      "created_at": "2026-03-23T19:27:27.970051+00:00",
+      "updated_at": "2026-04-08T07:44:46.846261+00:00",
+      "content_hash": "sha256:7459ba537aaee53fa4751383ebca84ddf3efffb45a8171200950b964c8761e3d"
+    }
+  ]
+}

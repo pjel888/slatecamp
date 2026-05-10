@@ -1,0 +1,60 @@
+{
+  "ticket_type": "ADD_NEW_QUESTION_INSERTION_TICKET",
+  "generated_at": "2026-05-09T14:08:41.185713Z",
+  "status": "ticket_only_no_supabase_insert",
+  "dry_article_id": "dryrun-07-bp220-parks-playgrounds-road-pavement",
+  "dry_question_id": "dryrun-07-bp220-parks-playgrounds-road-pavement-q01",
+  "target_article_id": null,
+  "ticket_target": "new-article-bp220-parks-playgrounds-road-pavement",
+  "rationale": "Question belongs to a proposed new article ticket; current push-question script cannot insert new rows.",
+  "duplicate_watch": null,
+  "proposed_question": {
+    "code_citation": "BP 220 Revised IRR 2008, PDF p.9.",
+    "text": "In the cited BP 220 IRR hierarchy of basic needs, which item comes first?",
+    "accepted_answers": null,
+    "correct_value": null,
+    "is_assessment": false,
+    "discrimination_rating": null,
+    "rationale": {
+      "correct": "The extracted list places water first among the basic needs of human settlements.",
+      "distractors": {
+        "A": "Park/playground appears later in the list.",
+        "C": "Power appears after park/playground in the extracted sequence.",
+        "D": "Solid/liquid waste disposal is listed, but not first."
+      },
+      "takeaway": "For hierarchy question prompts, answer from the sequence, not from what sounds most visible on a site plan."
+    },
+    "bloom_level": "apply",
+    "value_tolerance": 0,
+    "model_id": "bp220-basicneeds-q1",
+    "difficulty": null,
+    "difficulty_rating": null,
+    "application_context": null,
+    "prompt_image_url": null,
+    "question_type": "mcq",
+    "correct_option_id": "B",
+    "explanation": "BP 220 Revised IRR 2008, PDF p.9.",
+    "practice_context": [],
+    "options": [
+      {
+        "id": "A",
+        "text": "Park/playground"
+      },
+      {
+        "id": "B",
+        "text": "Water"
+      },
+      {
+        "id": "C",
+        "text": "Power"
+      },
+      {
+        "id": "D",
+        "text": "Solid and liquid waste disposal"
+      }
+    ]
+  },
+  "sme_source_locator": "BP 220 Revised IRR 2008, PDF p.9.",
+  "code_citation": "BP 220 Revised IRR 2008, PDF p.9.",
+  "gate_lock": "Not valid for content-audit:push-question:dry-run because no real Supabase question_id exists yet."
+}

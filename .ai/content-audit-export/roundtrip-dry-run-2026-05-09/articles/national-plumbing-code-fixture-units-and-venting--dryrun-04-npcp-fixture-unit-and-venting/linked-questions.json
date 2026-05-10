@@ -1,0 +1,183 @@
+{
+  "article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+  "hash_algorithm": "sha256",
+  "linked_questions_hash": "sha256:8c7bf848c1c7a0f1b660c5bd1d3eea1e912d43cebdc885bb08967095a18d5d08",
+  "question_count": 3,
+  "questions": [
+    {
+      "question_id": "dryrun-04-npcp-fixture-unit-and-venting-q01",
+      "article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+      "topic_id": "dryrun-topic-04-npcp-fixture-unit-and-venting",
+      "text": "In the Revised National Plumbing Code of the Philippines definition, one fixture unit is equivalent to what flow rate?",
+      "options": [
+        {
+          "id": "A",
+          "text": "10.7 liters per minute"
+        },
+        {
+          "id": "B",
+          "text": "18.0 liters per minute"
+        },
+        {
+          "id": "C",
+          "text": "28.3 liters per minute"
+        },
+        {
+          "id": "D",
+          "text": "38.0 liters per minute"
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Section 207.8 states that one fixture unit is equivalent to a rate of flow at 28.3 liters per minute (1 cu. ft./minute).",
+        "distractors": {
+          "A": "10.7 is not the cited plumbing fixture-unit equivalent; the local fixture-unit definition points to 28.3 L/min.",
+          "B": "Not the cited fixture-unit equivalent.",
+          "D": "Not the cited fixture-unit equivalent."
+        },
+        "takeaway": "Fixture unit is a load/flow scale; in the cited definition, one fixture unit equals 28.3 L/min."
+      },
+      "explanation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 207.8, Fixture Unit, PDF p.24.",
+      "code_citation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 207.8, Fixture Unit, PDF p.24.",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "npcp-fixture-q1",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 207.8, Fixture Unit, PDF p.24.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:48a99808c5b7533476cef9d65d6099643e682fb3533a89d1ed98ba0617b2b2a1"
+    },
+    {
+      "question_id": "dryrun-04-npcp-fixture-unit-and-venting-q02",
+      "article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+      "topic_id": "dryrun-topic-04-npcp-fixture-unit-and-venting",
+      "text": "Which statement follows Section 311.4 of the Revised National Plumbing Code of the Philippines?",
+      "options": [
+        {
+          "id": "A",
+          "text": "A vent pipe may be used as a soil pipe if it is oversized."
+        },
+        {
+          "id": "B",
+          "text": "A soil or waste pipe may be used as a vent if the branch is short."
+        },
+        {
+          "id": "C",
+          "text": "No vent pipe shall be used as a soil or waste pipe, nor shall any soil or waste pipe be used as a vent, except as provided in the cited Code sections."
+        },
+        {
+          "id": "D",
+          "text": "Single drainage and venting systems with unvented branch lines are allowed for small buildings."
+        }
+      ],
+      "correct_option_id": "C",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "Section 311.4 states the prohibition and names the exception path in Sections 812, 813, and 814.",
+        "distractors": {
+          "A": "Oversizing is not the stated permission.",
+          "B": "Branch length is not the stated permission.",
+          "D": "The same section says single drainage and venting systems with unvented branch lines are prohibited."
+        },
+        "takeaway": "Do not turn a vent into drainage or drainage into venting unless the Code exception is actually cited."
+      },
+      "explanation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 311.4, PDF p.44.",
+      "code_citation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 311.4, PDF p.44.",
+      "bloom_level": "apply",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "npcp-vent-q2",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section 311.4, PDF p.44.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:a95affefde9b02b360c7964f84a4a785ad0ed120970dc110314083d8a7d394e7"
+    },
+    {
+      "question_id": "dryrun-04-npcp-fixture-unit-and-venting-q03",
+      "article_id": "dryrun-04-npcp-fixture-unit-and-venting",
+      "topic_id": "dryrun-topic-04-npcp-fixture-unit-and-venting",
+      "text": "Under the Revised National Plumbing Code of the Philippines definition, a loop or circuit vent connects on a horizontal soil or waste branch at what location?",
+      "options": [
+        {
+          "id": "A",
+          "text": "Upstream of the first fixture only"
+        },
+        {
+          "id": "B",
+          "text": "At a point downstream of the last fixture connection"
+        },
+        {
+          "id": "C",
+          "text": "At the water-service entrance"
+        },
+        {
+          "id": "D",
+          "text": "At the fixture trap seal only"
+        }
+      ],
+      "correct_option_id": "B",
+      "correct_value": null,
+      "accepted_answers": null,
+      "value_tolerance": 0,
+      "question_type": "mcq",
+      "rationale": {
+        "correct": "The Code definition places the vertical vent connection downstream of the last fixture connection.",
+        "distractors": {
+          "A": "The definition says downstream of the last fixture, not upstream of the first.",
+          "C": "The water-service entrance is unrelated.",
+          "D": "The definition is not limited to the trap seal."
+        },
+        "takeaway": "The key location phrase is downstream of the last fixture connection on the horizontal soil or waste branch."
+      },
+      "explanation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Definitions, Loop or Circuit Vent, PDF p.29.",
+      "code_citation": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Definitions, Loop or Circuit Vent, PDF p.29.",
+      "bloom_level": "remember",
+      "application_context": null,
+      "practice_context": [],
+      "difficulty": null,
+      "difficulty_rating": null,
+      "discrimination_rating": null,
+      "is_assessment": false,
+      "model_id": "npcp-loopvent-q3",
+      "prompt_image_url": null,
+      "created_at": "2026-05-09T12:03:00.423463Z",
+      "updated_at": "2026-05-09T12:03:00.423463Z",
+      "sme_source_locator": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Definitions, Loop or Circuit Vent, PDF p.29.",
+      "roundtrip_conversion_note": "Generated from SME-approved exemplar question set; dry-run only, not a Supabase baseline.",
+      "content_hash": "sha256:b2bf98769df5acb382ecc4f45d128c5b322c9713b643b36d33b134292bc7504e"
+    }
+  ],
+  "dry_run_note": "Generated from SME-approved exemplar-question-set.json; do not edit linked-questions directly for real Supabase updates.",
+  "sme_guardrails": [
+    "Cite the source as Revised National Plumbing Code of the Philippines adopted under PRC Board Resolution No. 04-99.",
+    "Keep Section 207.8 fixture-unit flow equivalent at 28.3 L/min (1 cu. ft./minute).",
+    "Keep Section 311.4 prohibition with its stated exception path: Sections 812, 813, and 814.",
+    "Do not present local OCR/provenance uncertainty in learner-facing question text; keep provenance in audit metadata."
+  ],
+  "source_provenance": {
+    "governing_source_label": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99",
+    "locator_scope": "Section 207.8 for Fixture Unit; Section 311.4 for vent/soil/waste-pipe interchange; Definitions entry for Loop or Circuit Vent.",
+    "local_source_status": "Local raw PDF used for Section 207.8, Section 311.4, and Loop or Circuit Vent locators; learner-facing wording cites the Code and section/definition, not OCR workflow details.",
+    "learner_citation_style": "Revised National Plumbing Code of the Philippines, PRC Board Resolution No. 04-99, Section/definition, PDF page."
+  }
+}
