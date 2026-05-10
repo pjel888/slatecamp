@@ -1,0 +1,137 @@
+{
+  "artifact_type": "source-audit-evidence.PARKED",
+  "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T13:18:00+08:00",
+  "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md",
+    ".ai/00_system/vitruvius-source-reference.md"
+  ],
+  "target": {
+    "article_id": "5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+    "slug": "lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is-based-on",
+    "title": "Project Construction Cost PCC Definition Inclusions",
+    "article_folder": ".ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d",
+    "candidate_path": ".ai/content-audit-export/articles/lea-prac-cmp-003-project-construction-cost-pcc-definition-inclusions-and-what-the-architect-s-fee-is--5967e69f-d295-4dd2-9eb7-b4f1a321db4d/candidate.md",
+    "candidate_sha256": null,
+    "normalized_sha256": "sha256:69783f0b4efc85fdb6708d538ea74537da875ac3f6b05d609c88a31e17c6d39b",
+    "linked_questions_sha256": "sha256:b21637ee0f4ad392b81d66d2410e6a40af4b7f5476931aa546e9c38a1b1d48e0"
+  },
+  "classification": {
+    "content_type": "professional_practice_compensation_article",
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "linked_questions_observed": 10,
+    "question_edits_created": []
+  },
+  "raw_sources": [
+    {
+      "key": "uap_spp_2010_compilation",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "pages_checked": [20, 21, 22, 23]
+    },
+    {
+      "key": "uap_401_402",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "pages_checked": [3, 5, 8]
+    },
+    {
+      "key": "ra9266_irr",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
+      "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
+      "pages_checked": [14, 20]
+    }
+  ],
+  "gate_results": {
+    "compose": "PARKED: Auto-compose blocked by unresolved placeholders ui_0001, ui_0002, ui_0003.",
+    "validate": "PARKED: validation reported unresolved placeholders ui_0001, ui_0002, ui_0003; candidate.md is absent.",
+    "push_dry_run": "PARKED: dry-run push stopped before Supabase fetch because auto-compose failed on the same unresolved placeholders.",
+    "supabase_mutation": "not_attempted"
+  },
+  "raw_pdf_evidence_obtained": [
+    {
+      "claim": "PCC definition and included building systems are source-supported in the 2010 SPP compilation.",
+      "raw_source_key": "uap_spp_2010_compilation",
+      "pdf_pages": [22, 23],
+      "source_locator": "SPP Document 202, Section 7.17 Project Construction Cost (PCC)",
+      "evidence_excerpt": "Project Construction Cost (PCC) ... means the cost of the completed building to the Owner, including the structure, plumbing/sanitary and electrical fixtures, mechanical equipment, elevators, escalators, air-conditioning system, fire protection system, alarm and clock system, communications and electronic system."
+    },
+    {
+      "claim": "PCC excludes Architect, Engineer, Specialist Consultant, and construction inspector fees/salaries.",
+      "raw_source_key": "uap_spp_2010_compilation",
+      "pdf_page": 23,
+      "source_locator": "SPP Document 202, Section 7.17 Project Construction Cost (PCC)",
+      "evidence_excerpt": "The PCC does not include any of the fees for the Architect, the Engineer, the Specialist Consultants or the salaries of the construction inspectors."
+    },
+    {
+      "claim": "SPPCC estimates are not guaranteed because the Architect does not control labor, materials, or competitive bidding.",
+      "raw_source_key": "uap_401_402",
+      "pdf_page": 8,
+      "source_locator": "UAP Document 401-402, Article 9 Estimates",
+      "evidence_excerpt": "Since the Architect has no control over the cost of labor and materials or competitive bidding, he does not guarantee the accuracy of any Statements of Probable Project Construction Cost (SPPCC)."
+    },
+    {
+      "claim": "The learner-facing LawCallout's RA 9266 Section 22 locator is not supported for compensation.",
+      "raw_source_key": "ra9266_irr",
+      "pdf_page": 14,
+      "source_locator": "RA 9266 IRR, Section 22",
+      "evidence_excerpt": "SECTION 22. Refusal to Issue Certificate of Registration and Professional Identification Card."
+    }
+  ],
+  "blockers": [
+    {
+      "id": "CMP003-BLOCKER-001",
+      "severity": "critical",
+      "type": "compose_blocker",
+      "finding": "candidate.md cannot be generated because normalized.md references ui_0001, ui_0002, and ui_0003 but the current ui-block mapping does not resolve those placeholders."
+    },
+    {
+      "id": "CMP003-BLOCKER-002",
+      "severity": "critical",
+      "type": "wrong_legal_locator",
+      "finding": "A preserved LawCallout attributes architect compensation to RA 9266 Section 22. Raw RA 9266 IRR page 14 shows Section 22 is about refusal to issue registration/PIC, not compensation. This cannot pass without a UI-block correction."
+    },
+    {
+      "id": "CMP003-BLOCKER-003",
+      "severity": "high",
+      "type": "unsupported_values",
+      "finding": "The article and linked question c6907bc2-8c8b-4654-b167-7d65484931b7 state cost-estimate accuracy bands of +/-25-35%, +/-15-20%, and +/-10%. These values were not found in the checked raw SPP/Agreement sources."
+    },
+    {
+      "id": "CMP003-BLOCKER-004",
+      "severity": "high",
+      "type": "unsupported_values",
+      "finding": "The article states owner contingency reserves typically range from 5-15% and a UI block states a typical fee of 10-15% of PCC. These are not supported by the checked raw SPP/Agreement sources for this article."
+    },
+    {
+      "id": "CMP003-BLOCKER-005",
+      "severity": "medium",
+      "type": "empty_source_bundle",
+      "finding": "sources.json has source_count 0, so the bundle has no exported source rows for this source family."
+    }
+  ],
+  "linked_question_audit": {
+    "status": "PARKED_NOT_FULLY_AUDITED",
+    "question_ids_observed": [
+      "ee97d4e4-50a8-4c93-a8ed-0397f4c26b6a",
+      "c6907bc2-8c8b-4654-b167-7d65484931b7",
+      "42b2e06c-d7f8-448e-a673-ec5acd552597",
+      "a64d2971-b0e2-4678-bfcb-ade7501b5dc4",
+      "dd7fe46d-6918-4a30-a8f9-26e165bb188a",
+      "f16dd1cf-cf8d-455e-a76d-041a3d632051",
+      "bada848b-412c-4b7e-b547-f033d081f2aa",
+      "14616f99-a597-44f2-9bc4-2a22675aa078",
+      "ac4629c9-78cf-4e2a-9c61-2f9cba6b9c57",
+      "b85121c9-dece-4221-b3a1-9335ed7b27b2"
+    ],
+    "finding": "Question edits were not created because the parent article has unresolved candidate and source blockers."
+  },
+  "overall": {
+    "source_audit_status": "PARKED",
+    "safe_for_supabase_upload": false,
+    "next_required_action": "Resolve UI block mapping, remove or source-correct unsupported values, compose a current candidate, then rerun article and linked-question source audit."
+  }
+}
