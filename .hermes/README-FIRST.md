@@ -40,8 +40,19 @@ hermes doctor
 hermes chat
 ```
 
-If your model/provider is not configured yet:
+SlateCamp developer AI is Codex-first with GPT-5.5 where available. If your model/provider is not configured yet, use the interactive picker or set the Codex defaults:
 
 ```bash
 hermes model
+hermes config set model.provider openai-codex
+hermes config set model.default gpt-5.5
+hermes config set model.api_mode responses
+hermes config set model.max_tokens 4096
+hermes config set agent.reasoning_effort low
+hermes config set delegation.provider openai-codex
+hermes config set delegation.model gpt-5.5
 ```
+
+OpenRouter belongs to app/runtime AI for learners and product users through `src/lib/ai/provider.ts`; do not force Hermes/developer agents through OpenRouter by default.
+
+See `docs/17-codex-developer-ai.md` for the developer-agent model policy.

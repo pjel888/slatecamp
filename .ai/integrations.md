@@ -1,13 +1,14 @@
 # Integrations
 
-**Last updated:** 2026-04-29 final launch hardening pass.
-**Launch stance:** current launch is payment-free and live-AI-provider-free. Deferred provider verification is not a launch blocker.
+**Last updated:** 2026-05-09 OpenRouter app-provider + Codex developer-AI pivot.
+**Launch stance:** current learner-facing launch is payment-free and live-AI-provider-free. Deferred provider verification is not a launch blocker. Developer AI is Codex-first with GPT-5.5 where available; OpenRouter is reserved for app/runtime learner/user AI when intentionally enabled.
 
 | Service/library | Purpose in app | Relevant files | Configuration/env | Launch status |
 |---|---|---|---|---|
 | Supabase | Auth, database, service-role server operations, middleware session handling. | `src/lib/supabase/`, `middleware.ts`, `DATABASE_SCHEMA.sql`, `supabase/migrations/`, `src/types/supabase.ts` | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_ANON_KEY`, `SUPABASE_SERVICE_ROLE_KEY` | Launch-critical |
 | PayRex | Deferred checkout and payment webhook provider when payments are intentionally re-enabled. | `src/lib/payrex/config.ts`, `src/lib/payments/provider.ts`, `src/app/api/payments/checkout/route.ts`, `src/app/api/webhooks/payrex/route.ts` | `PAYMENT_PROVIDER=payrex`, `PAYREX_SECRET_KEY`, `PAYREX_WEBHOOK_SECRET`, `NEXT_PUBLIC_PAYMENTS_ENABLED` | Deferred; not current launch-blocking |
-| AI provider abstraction | Deferred tutor, Socratic, study-agent, embeddings, and question generation endpoints. | `src/lib/ai/`, `src/app/api/ai/*/route.ts`, `src/lib/actions/teach-back.ts`, `src/components/quiz-v2/FeedbackPanel.tsx` | `AI_PROVIDER`, `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, AI timeout vars | Deferred; launch UI does not require live providers |
+| AI provider abstraction | Deferred tutor, Socratic, study-agent, embeddings, question generation, teach-back, and maintenance AI endpoints/scripts. | `src/lib/ai/`, `src/app/api/ai/*/route.ts`, `src/lib/actions/teach-back.ts`, `scripts/normalize-distractors.ts`, `scripts/sanitize-article-refs.ts`, `src/components/quiz-v2/FeedbackPanel.tsx` | `AI_PROVIDER=openrouter`, app-runtime `OPENROUTER_API_KEY`, `OPENROUTER_*`, legacy direct `OPENAI_API_KEY`/`OPENAI_CHAT_MODEL`/`OPENAI_EMBEDDING_MODEL` and `ANTHROPIC_API_KEY`/`ANTHROPIC_CHAT_MODEL`, AI timeout vars | Deferred for learner/public launch; launch UI does not require live providers |
+| Developer AI provider routing | Internal Hermes sessions, delegated agent calls, one-shot workers, companion review/planning, and local developer automation. | `.hermes/config.yaml`, `.hermes/.env.example`, `.hermes/docs/17-codex-developer-ai.md`, `.ai/00_system/CODEX_ENABLEMENT_GUIDE.md`, `.ai/12_agents/repo-agent-model.md` | Codex-first; `model.provider=openai-codex`; `model.default=gpt-5.5`; `delegation.provider=openai-codex`; `delegation.model=gpt-5.5` | Active/preferred for developers; separate from app OpenRouter env |
 | Next.js ImageResponse | Dynamic OG score image. | `src/app/api/og/score/route.tsx` | none | Launch-supporting |
 | Storybook | Component documentation/checking. | `.storybook/`, `src/**/*.stories.tsx`, `scripts/check-storybook.ts` | none required | Launch-supporting |
 | Playwright | E2E and performance verification. | `e2e/`, `scripts/playwright-run.ts`, `.ai/00_performance/` | `PLAYWRIGHT_*`, `PERF_*` | Launch-supporting |

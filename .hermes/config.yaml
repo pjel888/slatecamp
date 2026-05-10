@@ -1,10 +1,20 @@
 # Slatecamp Hermes baseline configuration.
 # Merge with an existing ~/.hermes/config.yaml instead of blindly overwriting.
 # Keep secrets in ~/.hermes/.env, not here.
+# Slatecamp developer AI is Codex-first; use GPT-5.5 where available.
+# OpenRouter belongs to app/runtime AI for learners/users, not the default developer-agent path.
 
-model: ""
+model:
+  default: gpt-5.5
+  provider: openai-codex
+  api_mode: responses
+  max_tokens: 4096
 providers: {}
-fallback_providers: []
+fallback_providers:
+  - provider: opencode-go
+    model: kimi-k2.6
+    base_url: https://opencode.ai/zen/go/v1
+    api_mode: chat_completions
 toolsets:
   - hermes-cli
 
@@ -14,6 +24,7 @@ agent:
   restart_drain_timeout: 180
   api_max_retries: 3
   tool_use_enforcement: auto
+  reasoning_effort: low
   image_input_mode: auto
   disabled_toolsets: []
 
@@ -128,3 +139,9 @@ auxiliary:
     provider: auto
     model: ""
     timeout: 600
+
+delegation:
+  model: gpt-5.5
+  provider: openai-codex
+  base_url: ""
+  api_key: ""

@@ -159,7 +159,8 @@ export const envVars = {
   server: [
     'SUPABASE_SERVICE_ROLE_KEY',
     'PAYREX_SECRET_KEY (deferred payment)',
-    'ANTHROPIC_API_KEY (deferred AI)',
+    'OPENROUTER_API_KEY (preferred deferred AI)',
+    'OPENAI_API_KEY / ANTHROPIC_API_KEY (legacy deferred AI fallback)',
   ],
 }
 

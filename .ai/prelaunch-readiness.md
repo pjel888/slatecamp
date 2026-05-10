@@ -205,7 +205,7 @@ Generated inventory includes 174 server-ish files (actions, queries, server help
 | `src/lib/supabase/bootstrap.ts` | supabase | bootstrapUser | Unknown/supporting | Supabase | — | Check callers before cleanup. |
 | `src/lib/audit/audit-actions.ts` | audit | getAuditLogsAction | Unknown/supporting | — | — | Check callers before cleanup. |
 | `src/lib/focus-review/generate-queue.ts` | focus-review | generateFocusReviewQueue, completeFocusReviewQueue, deferFocusReviewQueue, getActiveFocusReviewQueue | Launch-critical/supporting | Supabase | — | Keep and protect with targeted tests. |
-| `src/lib/actions/teach-back.ts` | actions | getTeachBackCriteria, submitTeachBack, submitRevision | Experimental AI | Supabase | ANTHROPIC_API_KEY | Gate/defer unless AI launch is explicitly chosen. |
+| `src/lib/actions/teach-back.ts` | actions | getTeachBackCriteria, submitTeachBack, submitRevision | Experimental AI | Supabase + shared AI provider | `AI_PROVIDER`; `OPENROUTER_API_KEY` when OpenRouter is enabled; legacy `ANTHROPIC_API_KEY` only for direct Anthropic fallback | Gate/defer unless AI launch is explicitly chosen. |
 | `src/lib/actions/dashboard-page.ts` | actions | getDashboardPageData, getDashboardSyncPayload | Launch-critical/supporting | Supabase | — | Keep and protect with targeted tests. |
 | `src/lib/actions/pods.ts` | actions | createPod, joinPod, leavePod, getPodData, getUserPods | Nice-to-have/optional | Supabase | — | Defer or remove from launch surface unless product cutline includes it. |
 | `src/lib/actions/lab.ts` | actions | record3DLabInteraction, create3DLabSession, get3DModuleBySlug | Unknown/supporting | Supabase | — | Check callers before cleanup. |
@@ -553,7 +553,7 @@ Generated inventory includes 174 server-ish files (actions, queries, server help
 | boneyard-js / bones:build | script/dependency | package.json `bones:build` | Unclear launch relevance | Defer/remove unless generated bones are part of launch workflow | No current docs identify it as launch-critical. |
 | PLAYWRIGHT_DEMO_* envs | test env | e2e/support/authenticated-demo.ts; scripts/playwright-run.ts | Test-only | Keep for test harness; do not design product behavior around demo auth | Demo mode should not be production path. |
 | NEXT_PUBLIC_PAYMENTS_ENABLED | env/feature flag | src/lib/constants/feature-flags.ts | Payment gate | Default off until paid launch decision | Avoid half-enabled billing. |
-| AI_PROVIDER / OPENAI_API_KEY / ANTHROPIC_API_KEY | env/integration | src/lib/ai/provider.ts; src/lib/actions/teach-back.ts | Experimental AI | Keep out of launch-critical path unless provider QA is done | Do not require AI keys for base launch. |
+| AI_PROVIDER / OPENROUTER_API_KEY / OPENROUTER_* / OPENAI_API_KEY / ANTHROPIC_API_KEY | env/integration | src/lib/ai/provider.ts; src/lib/actions/teach-back.ts; scripts/normalize-distractors.ts; scripts/sanitize-article-refs.ts | Experimental AI | Prefer OpenRouter for future live AI; keep all AI provider keys out of the launch-critical path unless provider QA is done | Do not require AI keys for base launch. |
 | CRON_SECRET | env/cron | vercel.json; src/app/api/cron/* | Background jobs | Keep if focus-review/readiness automation launches; add monitoring | Required for cron auth. |
 
 ## Canonical Implementation Map

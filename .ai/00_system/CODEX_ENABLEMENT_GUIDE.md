@@ -73,7 +73,7 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
   - GitNexus MCP: `gitnexus_impact` / `gitnexus_context` / `gitnexus_detect_changes`
   - code-review-graph MCP: `get_minimal_context_tool` then `get_impact_radius_tool`
   - ChunkHound: targeted search/research for the changed symbol, file, route, or workflow; use semantic/multi-hop when embeddings are available and regex/path-filtered search otherwise
-- Project Codex MCP config lives at `.codex/config.toml`; the expected local servers are `gitnexus`, `code-review-graph`, and `chunkhound`.
+- Codex MCP config may live in global `~/.codex/config.toml` or a project-local `.codex/config.toml` if one is intentionally recreated. Verify the active Codex config before assuming a project-local file exists; the expected local servers are `gitnexus`, `code-review-graph`, and `chunkhound`.
 - ChunkHound should prefer the local Ollama/OpenAI-compatible setup when available:
   - embeddings: `nomic-embed-text:latest`
   - base URL: `http://127.0.0.1:11434/v1`
@@ -83,9 +83,19 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
 - Do not rely on VoyageAI for routine ChunkHound work in this environment; it hit billing/rate-limit failures during indexing.
 - If one signal is stale or unavailable, refresh/retry when safe and disclose the gap instead of replacing the triad with grep-only analysis.
 
-### Companion AI CLI work
+### Developer AI provider work
 
-- Kimi Code CLI is available locally and should be used opportunistically when it can improve quality, speed, or independent verification.
+- SlateCamp developer AI is Codex-first with GPT-5.5 where available. Codex remains the primary implementation builder and owner of PR-ready diffs.
+- Hermes may coordinate developer work, but its default provider should be Codex, not OpenRouter:
+  - `hermes config set model.provider openai-codex`
+  - `hermes config set model.default gpt-5.5`
+  - `hermes config set model.api_mode responses`
+  - `hermes config set model.max_tokens 4096`
+  - `hermes config set delegation.provider openai-codex`
+  - `hermes config set delegation.model gpt-5.5`
+- Keep the app/runtime AI boundary separate: learner-facing `/api/ai/*`, teach-back, embeddings, and generation helpers use `src/lib/ai/provider.ts`; OpenRouter is the preferred app provider when those user-facing features are intentionally enabled.
+- Canonical app OpenRouter runbook: `.ai/00_system/OPENROUTER_APP_AI_RUNBOOK.md`.
+- Kimi Code CLI remains available as a direct companion CLI and should be used opportunistically when it improves quality, speed, or independent verification.
 - Verified on 2026-04-25:
   - binary: `/Users/philiplewis/.local/bin/kimi`
   - `kimi info`: `kimi-cli version: 1.37.0`
@@ -97,11 +107,11 @@ This guide is the fastest way for future Codex sessions to orient in SlateCamp a
   - test strategy, edge-case brainstorming, and migration pre-mortems
   - summarizing large read-only context when Codex needs a parallel perspective
 - Guardrails:
-  - Codex remains responsible for final edits, verification, and claims.
-  - Do not send secrets, credentials, private env values, production data, or service-role keys to Kimi.
+  - Codex/Hermes remain responsible for final edits, verification, and claims.
+  - Do not send secrets, credentials, private env values, production data, student PII, or service-role keys to OpenRouter, Kimi, Codex, or any companion model unless the data boundary is explicitly approved.
   - Prefer read-only prompts unless explicitly delegating a contained draft or review task.
-  - Use Kimi when it materially helps; do not block simple local work on Kimi.
-- Typical non-interactive commands:
+  - Use companion AI when it materially helps; do not block simple local work on companion tools.
+- Typical Kimi non-interactive commands:
   - `kimi --quiet -p 'Health check only. Reply exactly: KIMI_CODE_OK'`
   - `kimi --work-dir /Users/philiplewis/slatecamp --quiet -p 'Read-only review: ...'`
   - `kimi --work-dir /Users/philiplewis/slatecamp --plan --quiet -p 'Plan review only: ...'`

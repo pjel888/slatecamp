@@ -112,9 +112,9 @@ export const aiEndpoints = [
     method: 'POST',
     path: '/api/ai/tutor',
     description:
-      'Claude AI contextual explanation for a quiz answer. Returns structured Misconception / Principle / Wiki Reference. Temperature=0.',
+      'Provider-backed AI contextual explanation for a quiz answer. Returns structured Misconception / Principle / Wiki Reference. Temperature=0.',
     auth: 'User session + rate limit (ai_{userId})',
-    badges: ['Claude', 'temp=0'],
+    badges: ['OpenRouter-ready', 'temp=0'],
     requestSchema: `{
   message: string,       // user message / prompt
   context: {
@@ -145,7 +145,7 @@ export const aiEndpoints = [
     description:
       'Generate AI practice questions from source content. Returns structured MCQ array.',
     auth: 'User session + rate limit (ai_{userId})',
-    badges: ['Claude', 'temp=0.7'],
+    badges: ['OpenRouter-ready', 'temp=0.7'],
     requestSchema: `{
   chunkContent: string,      // source text to generate from
   profession: string,        // e.g. "Architecture"
@@ -175,7 +175,7 @@ export const aiEndpoints = [
     description:
       'AI study assistance: summarize notes into atomic bullets, generate flashcard recall questions, or flag code/rule references against NBCP.',
     auth: 'User session + rate limit (ai_{userId})',
-    badges: ['Claude', 'temp=0.4'],
+    badges: ['OpenRouter-ready', 'temp=0.4'],
     requestSchema: `{
   action: "summarize" | "flashcards" | "code_check",
   content: string    // note text to process
