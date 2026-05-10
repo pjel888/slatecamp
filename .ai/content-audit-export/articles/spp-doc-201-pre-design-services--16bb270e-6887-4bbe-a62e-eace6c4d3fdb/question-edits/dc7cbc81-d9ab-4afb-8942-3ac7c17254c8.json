@@ -1,0 +1,52 @@
+{
+  "question_id": "dc7cbc81-d9ab-4afb-8942-3ac7c17254c8",
+  "baseline_hash": "sha256:da2a49ee31112c81bb06d9112f0d0eeeea77e0f229554020e3d22127be81e089",
+  "status": "proposed_source_audited_local_no_supabase",
+  "reason": "Rewrites a negative compensation-method question that treated an unlisted method as valid into a positive raw-source compensation-method question.",
+  "approved_by": "source-audit-local-agent",
+  "approved_at": "2026-05-10T12:48:00+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+    "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+    "pdf_page": 31,
+    "source_locator": "SPP Document 201, Methods of Compensation, Professional Fee + Expenses",
+    "quoted_pdf_excerpt": "This method of compensation is frequently used where there is continuing relationship involving a series of Projects."
+  },
+  "proposed": {
+    "text": "Under SPP 201, which compensation method is frequently used where there is a continuing relationship involving a series of projects?",
+    "options": [
+      {
+        "id": "a",
+        "text": "Professional Fee + Expenses"
+      },
+      {
+        "id": "b",
+        "text": "Percentage of Project Construction Cost"
+      },
+      {
+        "id": "c",
+        "text": "Penalty-based billing"
+      },
+      {
+        "id": "d",
+        "text": "Free preliminary consultation"
+      }
+    ],
+    "correct_option_id": "a",
+    "code_citation": "UAP SPP Document 201, Methods of Compensation, Professional Fee + Expenses, PDF p.31.",
+    "rationale": {
+      "a": "Correct. SPP 201 states that Professional Fee + Expenses is frequently used where there is a continuing relationship involving a series of projects.",
+      "b": "Percentage of Project Construction Cost is not the source-stated answer to this SPP 201 compensation-method prompt.",
+      "c": "Penalty-based billing is not the SPP 201 compensation method described in the cited source.",
+      "d": "SPP 201 treats pre-design work as professional service, not free preliminary labor.",
+      "correct": "The cited SPP 201 page names Professional Fee + Expenses as the method often used for a continuing relationship involving a series of projects.",
+      "takeaway": "Continuing relationship or series of projects under SPP 201: Professional Fee + Expenses."
+    }
+  },
+  "baseline_refresh": {
+    "reason": "Remote Supabase question row differed from stale linked-questions export; refreshed exact baseline hash before dry-run/apply, without changing proposed source-audited fields.",
+    "previous_baseline_hash": "sha256:da2a49ee31112c81bb06d9112f0d0eeeea77e0f229554020e3d22127be81e089",
+    "remote_hash_verified_before_apply": "sha256:da2a49ee31112c81bb06d9112f0d0eeeea77e0f229554020e3d22127be81e089",
+    "verified_at": "2026-05-10T12:58:00+08:00"
+  }
+}

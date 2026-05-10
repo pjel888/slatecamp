@@ -1,91 +1,277 @@
 {
-  "schema_version": "source-audit-evidence-v1",
+  "artifact_type": "source-audit-evidence",
   "audit_date": "2026-05-10",
+  "audited_at": "2026-05-10T12:52:00+08:00",
   "audit_mode": "local_source_audit_no_supabase",
+  "protocols_applied": [
+    ".ai/CONTENT_EXCELLENCE_GOAL.md",
+    ".ai/00_system/slatecamp-learning-material-depth-protocol.md"
+  ],
   "target": {
     "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
     "slug": "spp-doc-201-pre-design-services",
-    "candidate_sha256": "c0e3bf9f7b260341df1a509397464afb6ff7fa8488015153e9dfba3857991258",
-    "candidate_path": ".ai/content-audit-export/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/candidate.md"
+    "title": "SPP Doc 201: Pre-Design Services",
+    "candidate_path": ".ai/content-audit-export/articles/spp-doc-201-pre-design-services--16bb270e-6887-4bbe-a62e-eace6c4d3fdb/candidate.md",
+    "candidate_sha256": "sha256:c0e3bf9f7b260341df1a509397464afb6ff7fa8488015153e9dfba3857991258",
+    "normalized_sha256": "sha256:c0e3bf9f7b260341df1a509397464afb6ff7fa8488015153e9dfba3857991258",
+    "linked_questions_sha256": "sha256:e8c59f9076bd3b773510590062941c6b18820eeb5acdd8e45ac6a147740331a8"
   },
   "classification": {
-    "contains_legal_or_code_claims": true,
-    "source_risk_tier": "legal_code_primary_source",
-    "requires_raw_pdf_audit": true
+    "content_type": "professional_practice_article",
+    "requires_raw_pdf_audit": true,
+    "linked_questions_audited": 10,
+    "question_edits_created": [
+      "4bedc8ba-b184-4e08-b612-4102581463a3",
+      "4c2f59d5-abe9-41bd-b985-8a3cd0ba122e",
+      "dc7cbc81-d9ab-4afb-8942-3ac7c17254c8",
+      "d6d46e45-262d-44f4-bbd1-f77b428d68df",
+      "8ae49694-2cba-4888-b438-7d0b734b80a8"
+    ]
   },
   "raw_sources": [
     {
       "key": "spp201",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-      "sha256": "d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93"
+      "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+      "extraction_method": "PyMuPDF local text extraction from raw PDF",
+      "pages_checked": [
+        24,
+        25,
+        28,
+        31,
+        35,
+        36,
+        42,
+        43,
+        44,
+        48,
+        49,
+        52,
+        53,
+        56,
+        58
+      ]
     },
     {
-      "key": "doc401_402",
+      "key": "uap401402",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-      "sha256": "5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f"
+      "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+      "extraction_method": "PyMuPDF local text extraction from raw PDF",
+      "pages_checked": [
+        1,
+        8
+      ]
     }
   ],
   "claims": [
     {
-      "claim_id": "SPP201-Q2-LABEL-PASS",
-      "claim": "Question 4bedc8ba-b184-4e08-b612-4102581463a3 should use the source label Multiple of Direct Personnel Expenses; the multiplier range is 1.5 to 2.5.",
+      "claim_id": "SPP201-001",
+      "claim_text": "Article: SPP Document 201 is the Standards of Professional Practice on Pre-design Services.",
+      "claim_class": "document_identity",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "pdf_pages": [
-          25,
-          28,
-          58
-        ],
-        "quoted_pdf_excerpt": "MULTIPLE OF DIRECT PERSONNEL EXPENSES ... The multiplier ranges from 1.5 to 2.5 ... M = Multiplier to account for overhead and reasonable profit. The value may range from 1.5 to 2.5."
-      },
-      "local_resolution": "question-edits/4bedc8ba-b184-4e08-b612-4102581463a3.json"
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 36,
+        "source_locator": "SPP Document 201 title page",
+        "quoted_pdf_excerpt": "SPP DOC. 201 Standards of Professional Practice on Pre-design Services."
+      }
     },
     {
-      "claim_id": "SPP201-Q8-MANNER-PASS",
-      "claim": "Question d6d46e45-262d-44f4-bbd1-f77b428d68df should identify the three source-listed manners of providing services: as an individual; Architect’s own staff; by association, consultation or networking.",
+      "claim_id": "SPP201-002",
+      "claim_text": "Article: Consultation includes advice, conferences, evaluations, and appraisals, and remains valuable whether or not the client pursues the project.",
+      "claim_class": "service_definition",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "pdf_page": 56,
-        "quoted_pdf_excerpt": "MANNER OF PROVIDING SERVICES ▪As an individual ▪Architect’s own staff ▪By association, consultation or networking"
-      },
-      "local_resolution": "question-edits/d6d46e45-262d-44f4-bbd1-f77b428d68df.json"
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 42,
+        "source_locator": "SPP Document 201, Consultation",
+        "quoted_pdf_excerpt": "oral or written advice and direction ... evaluations and appraisals ... renders valuable inputs whether or not the Client pursues the project."
+      }
     },
     {
-      "claim_id": "SPP201-Q9-PROPOSAL-PARK-REPLACED",
-      "claim": "The exported written-proposal four-item requirement was not located in SPP 201 raw PDF text; local edit replaces it with a verified Multiple of Direct Personnel Expenses computation question.",
+      "claim_id": "SPP201-003",
+      "claim_text": "Article and question bdb92e62-1ee7-4801-a823-ffb3b1b0836d: pre-feasibility uses secondary information; feasibility study uses primary data gathering and analysis.",
+      "claim_class": "service_distinction",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "pdf_pages": [
-          25,
-          28,
-          58
-        ],
-        "quoted_pdf_excerpt": "The computation is made by adding all costs of technical services (man hours x rate) and then multiplying it by a multiplier to cover overhead and profit. The multiplier ranges from 1.5 to 2.5."
-      },
-      "local_resolution": "question-edits/8ae49694-2cba-4888-b438-7d0b734b80a8.json",
-      "rejected_exported_claim": "SPP 201 requires four written proposal items: scope, methodology, deliverables, compensation."
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 43,
+        "source_locator": "SPP Document 201, Pre-feasibility Studies",
+        "quoted_pdf_excerpt": "preliminary studies involve the procurement, analysis and use of secondary information ... early decision-making."
+      }
     },
     {
-      "claim_id": "SPP201-DOC401-402-PASS",
-      "claim": "UAP Document 401-402 supports article context excluding pre-design services and separate service/agreement context.",
+      "claim_id": "SPP201-004",
+      "claim_text": "Question bdb92e62-1ee7-4801-a823-ffb3b1b0836d: feasibility studies involve detailed analysis and primary data gathering.",
+      "claim_class": "service_distinction",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 44,
+        "source_locator": "SPP Document 201, Feasibility Studies",
+        "quoted_pdf_excerpt": "Detailed analysis ... requires primary data gathering and analysis."
+      }
+    },
+    {
+      "claim_id": "SPP201-005",
+      "claim_text": "Article and question edit 4c2f59d5-abe9-41bd-b985-8a3cd0ba122e: Architectural Programming identifies horizontal and vertical requirements and incorporates a space program.",
+      "claim_class": "question_edit_service_definition",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 48,
+        "source_locator": "SPP Document 201, Architectural Programming",
+        "quoted_pdf_excerpt": "identification of both horizontal and vertical requirements ... incorporates a space program with characterizations of the envisioned spaces."
+      }
+    },
+    {
+      "claim_id": "SPP201-006",
+      "claim_text": "Article: Space Planning determines adequate size and appropriate configuration considering use, allocation, and interface of spaces.",
+      "claim_class": "service_definition",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 49,
+        "source_locator": "SPP Document 201, Space Planning",
+        "quoted_pdf_excerpt": "determines the adequate size and appropriate configuration ... use, allocation and interface of spaces."
+      }
+    },
+    {
+      "claim_id": "SPP201-007",
+      "claim_text": "Question 1ea78898-d881-4c87-b6b9-d5126c5b4190: Value Management goal is an unimpaired program at minimum cost.",
+      "claim_class": "service_goal",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 52,
+        "source_locator": "SPP Document 201, Value Management",
+        "quoted_pdf_excerpt": "The goal of value management is to achieve an unimpaired program at minimum cost."
+      }
+    },
+    {
+      "claim_id": "SPP201-008",
+      "claim_text": "Question 102095f1-f23f-4e8b-834a-bd19cb868e99: Design Brief Preparation states ToR, concept, objectives, and requirements to bid out architectural services.",
+      "claim_class": "service_output",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 53,
+        "source_locator": "SPP Document 201, Design Brief Preparation",
+        "quoted_pdf_excerpt": "states the project terms of reference (ToR) including the concept, objectives and other necessary requirements to bid out architectural services."
+      }
+    },
+    {
+      "claim_id": "SPP201-009",
+      "claim_text": "Question edit d6d46e45-262d-44f4-bbd1-f77b428d68df: manner of providing services is as an individual, Architect's own staff, or by association, consultation or networking.",
+      "claim_class": "question_edit_service_delivery",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 56,
+        "source_locator": "SPP Document 201, Manner of Providing Services",
+        "quoted_pdf_excerpt": "As an individual ... Architect's own staff ... By association, consultation or networking."
+      }
+    },
+    {
+      "claim_id": "SPP201-010",
+      "claim_text": "Question edits 4bedc8ba-b184-4e08-b612-4102581463a3 and 8ae49694-2cba-4888-b438-7d0b734b80a8: Multiple of Direct Personnel Expenses adds technical service costs and uses a 1.5 to 2.5 multiplier.",
+      "claim_class": "question_edit_compensation",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 25,
+        "source_locator": "SPP Document 201, Multiple of Direct Personnel Expenses",
+        "quoted_pdf_excerpt": "adding all costs of technical services ... multiplying it by a multiplier ... The multiplier ranges from 1.5 to 2.5."
+      }
+    },
+    {
+      "claim_id": "SPP201-011",
+      "claim_text": "Question a3ea3cae-e60e-46c4-8121-3514399adc9c: reimbursable expenses include travel-related expenses for assignments over 100 km from the architect's area of operation.",
+      "claim_class": "distance_threshold",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 28,
+        "source_locator": "SPP Document 201, Multiple of Direct Personnel Expenses formula notes",
+        "quoted_pdf_excerpt": "transportation, per diem, housing and living allowance ... if assigned to places over 100 km."
+      }
+    },
+    {
+      "claim_id": "SPP201-012",
+      "claim_text": "Question edit dc7cbc81-d9ab-4afb-8942-3ac7c17254c8: Professional Fee + Expenses is frequently used for a continuing relationship involving a series of projects.",
+      "claim_class": "question_edit_compensation",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_page": 31,
+        "source_locator": "SPP Document 201, Professional Fee + Expenses",
+        "quoted_pdf_excerpt": "frequently used where there is continuing relationship involving a series of Projects."
+      }
+    },
+    {
+      "claim_id": "SPP201-013",
+      "claim_text": "Article: UAP Document 401-402 excludes Fulltime Construction Supervision, Project or Construction Management, Pre-Design Services, allied architectural interiors/site planning services, Design-Build, and Construction Agreement scope.",
+      "claim_class": "agreement_boundary",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
-        "pdf_pages": [
-          1,
-          8
+        "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "raw_pdf_page": 1,
+        "source_locator": "UAP Document 401-402, Articles 5-6 excerpt",
+        "quoted_pdf_excerpt": "does NOT cover ... Fulltime Construction Supervision ... Project or Construction Management ... Pre-Design Services ... NOT for Design-Build Services."
+      }
+    },
+    {
+      "claim_id": "SPP201-014",
+      "claim_text": "Article: Article 7.08 has an 85 percent Contract Documents Phase rule and reserves 10 percent for Article 1723 liability plus 5 percent for construction-phase services.",
+      "claim_class": "agreement_percentage",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+        "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+        "raw_pdf_page": 8,
+        "source_locator": "UAP Document 401-402, Article 7.08",
+        "quoted_pdf_excerpt": "Contract Documents Phase ... EIGHTY FIVE percent (85.0%) of his Fee."
+      }
+    },
+    {
+      "claim_id": "SPP201-015",
+      "claim_text": "Question 2da5c8b0-a317-4c85-a3a7-04ea40db8d45: SPP 201 enumerates 12 pre-design services from Consultation through Design Brief Preparation.",
+      "claim_class": "enumeration",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "raw_pdf_pages": [
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          51,
+          52,
+          53,
+          54
         ],
-        "quoted_pdf_excerpt": "does NOT cover ... Pre-Design Services such as Space Planning and Research; EIGHTY FIVE percent (85.0%) ... Article 7.08."
+        "source_locator": "SPP Document 201, service enumeration items 1-12",
+        "quoted_pdf_excerpt": "1: CONSULTATION ... 7: ARCHITECTURAL PROGRAMMING ... 11: DESIGN BRIEF PREPARATION ... 12: PROMOTIONAL SERVICES."
       }
     }
-  ],
-  "proposed_question_edits": [
-    "question-edits/4bedc8ba-b184-4e08-b612-4102581463a3.json",
-    "question-edits/d6d46e45-262d-44f4-bbd1-f77b428d68df.json",
-    "question-edits/8ae49694-2cba-4888-b438-7d0b734b80a8.json"
   ],
   "unverified_or_rejected_claims": [],
   "raw_pdf_gate": {
@@ -105,8 +291,9 @@
     "safe_for_supabase_upload": true,
     "blockers": [],
     "warnings": [
-      "No Supabase write was performed. PASS depends on applying the local question-edits before upload; exported linked-questions.json still shows stale source-blocked text.",
-      "sources.json remains source_count 0 in export; raw source evidence is carried in this artifact."
+      "No Supabase mutation was performed in this batch.",
+      "sources.json remains source_count 0 in the export; raw source evidence is recorded in this audit artifact.",
+      "Five linked-question corrections are staged in question-edits; linked-questions.json remains the exported baseline."
     ]
   }
 }

@@ -24,5 +24,11 @@
       "correct": "Under SPP 201, the Multiple of Direct Personnel Expenses method adds all costs of technical services and multiplies them by a multiplier to cover overhead and profit. The multiplier ranges from 1.5 to 2.5.",
       "takeaway": "Multiple of Direct Personnel Expenses multiplier = 1.5 to 2.5."
     }
+  },
+  "baseline_refresh": {
+    "reason": "Remote Supabase question row differed from stale linked-questions export; refreshed exact baseline hash before dry-run/apply, without changing proposed source-audited fields.",
+    "previous_baseline_hash": "sha256:5a3ea68037eb1c8b0d0456f3affb006fee0b6693942c62f0aa666910a060e188",
+    "remote_hash_verified_before_apply": "sha256:5a3ea68037eb1c8b0d0456f3affb006fee0b6693942c62f0aa666910a060e188",
+    "verified_at": "2026-05-10T12:58:00+08:00"
   }
 }

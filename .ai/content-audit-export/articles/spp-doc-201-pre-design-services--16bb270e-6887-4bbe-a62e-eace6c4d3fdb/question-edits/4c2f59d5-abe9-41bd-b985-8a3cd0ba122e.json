@@ -1,0 +1,52 @@
+{
+  "question_id": "4c2f59d5-abe9-41bd-b985-8a3cd0ba122e",
+  "baseline_hash": "sha256:adf9a467cb693f533902b5e4d9da8e111d818d82e32d009b9085280cedf0f449",
+  "status": "proposed_source_audited_local_no_supabase",
+  "reason": "Replaces the unsupported Program of Requirements wording with the raw-PDF term space program.",
+  "approved_by": "source-audit-local-agent",
+  "approved_at": "2026-05-10T12:48:00+08:00",
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+    "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+    "pdf_page": 48,
+    "source_locator": "SPP Document 201, Architectural Programming",
+    "quoted_pdf_excerpt": "It incorporates a space program with characterizations of the envisioned spaces such as ambiance, cost range, etc."
+  },
+  "proposed": {
+    "text": "Under SPP 201, what does Architectural Programming incorporate as part of the problem-seeking process?",
+    "options": [
+      {
+        "id": "a",
+        "text": "A schematic design concept for immediate construction documentation"
+      },
+      {
+        "id": "b",
+        "text": "A project feasibility report based on primary data"
+      },
+      {
+        "id": "c",
+        "text": "A space program with characterizations of the envisioned spaces"
+      },
+      {
+        "id": "d",
+        "text": "A design brief for bidding out architectural services"
+      }
+    ],
+    "correct_option_id": "c",
+    "code_citation": "UAP SPP Document 201, Architectural Programming, PDF p.48.",
+    "rationale": {
+      "a": "Schematic design belongs to later design work, not the SPP 201 source wording for Architectural Programming.",
+      "b": "A feasibility report is a different pre-design service.",
+      "c": "Correct. The SPP 201 raw PDF says Architectural Programming incorporates a space program with characterizations of the envisioned spaces.",
+      "d": "A design brief is a separate SPP 201 service.",
+      "correct": "SPP 201 describes Architectural Programming as an analytical problem-seeking process that identifies horizontal and vertical requirements and incorporates a space program.",
+      "takeaway": "Architectural Programming in SPP 201 points to requirements plus a space program, not schematic design."
+    }
+  },
+  "baseline_refresh": {
+    "reason": "Remote Supabase question row differed from stale linked-questions export; refreshed exact baseline hash before dry-run/apply, without changing proposed source-audited fields.",
+    "previous_baseline_hash": "sha256:adf9a467cb693f533902b5e4d9da8e111d818d82e32d009b9085280cedf0f449",
+    "remote_hash_verified_before_apply": "sha256:adf9a467cb693f533902b5e4d9da8e111d818d82e32d009b9085280cedf0f449",
+    "verified_at": "2026-05-10T12:58:00+08:00"
+  }
+}

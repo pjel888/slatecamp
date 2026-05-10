@@ -1,0 +1,34 @@
+{
+  "attempted_at": "2026-05-10T04:58:26.087Z",
+  "dry_run": false,
+  "apply": true,
+  "pushed": false,
+  "blockers": [
+    "candidate.md matches original.md; refusing no-op apply."
+  ],
+  "warnings": [
+    "No Supabase mutation was performed in this batch.",
+    "sources.json remains source_count 0 in the export; raw source evidence is recorded in this audit artifact.",
+    "Five linked-question corrections are staged in question-edits; linked-questions.json remains the exported baseline."
+  ],
+  "updated_rows_count": 0,
+  "article_id": "16bb270e-6887-4bbe-a62e-eace6c4d3fdb",
+  "slug": "spp-doc-201-pre-design-services",
+  "preparation_actions": [],
+  "remote_hash_before": "sha256:c0e3bf9f7b260341df1a509397464afb6ff7fa8488015153e9dfba3857991258",
+  "original_hash": "sha256:c0e3bf9f7b260341df1a509397464afb6ff7fa8488015153e9dfba3857991258",
+  "candidate_hash": "sha256:c0e3bf9f7b260341df1a509397464afb6ff7fa8488015153e9dfba3857991258",
+  "stale_check_passed": true,
+  "source_audit": {
+    "legal_or_code_candidate": true,
+    "source_audit_required": true,
+    "source_audit_status": "PASS",
+    "blockers": [],
+    "warnings": [
+      "No Supabase mutation was performed in this batch.",
+      "sources.json remains source_count 0 in the export; raw source evidence is recorded in this audit artifact.",
+      "Five linked-question corrections are staged in question-edits; linked-questions.json remains the exported baseline."
+    ]
+  },
+  "remote_updated_at_before": "2026-05-09T16:25:53.475813+00:00"
+}
