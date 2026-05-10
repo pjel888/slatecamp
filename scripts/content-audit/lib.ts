@@ -1339,7 +1339,7 @@ export function readSourceAuditEvidence(articleDir: string): SourceAuditEvidence
 
 export function candidateAppearsLegalOrCode(content: string | null | undefined): boolean {
   if (!content) return false
-  return /\b(PD\s*1096|BP\s*344|RA\s*\d{3,5}|Rule\s+[IVXLCDM]+|Sec(?:tion)?\.\s*\d|IRR|Code|Fire Code|National Building Code|NSCP|UAP|SPP|PRC|DHSUD|HLURB)\b/i.test(content)
+  return /\b(PD\s*1096|BP\s*344|RA\s*\d{3,5}|Rule\s+[IVXLCDM]+|Sec(?:tion)?\.\s*\d|IRR|Code|NBCP|Fire Code|National Building Code|NSCP|UAP|SPP|PRC|DHSUD|HLURB)\b/i.test(content)
 }
 
 export function evaluateSourceAuditGate({
