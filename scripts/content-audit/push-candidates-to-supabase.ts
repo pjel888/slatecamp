@@ -17,6 +17,8 @@ import {
   diffCandidate,
   discoverArticleDirs,
   evaluatePushSafety,
+  evaluateSourceAuditGate,
+  readSourceAuditEvidence,
   nowIso,
   parseArgs,
   resolveExportRoot,
@@ -103,10 +105,19 @@ async function main() {
         force: options.force === true,
         repairPlaceholders: options.repairPlaceholders === true,
       })
+      const sourceAudit = evaluateSourceAuditGate({
+        evidence: readSourceAuditEvidence(articleDir),
+        metadata,
+        candidate,
+        apply: options.apply === true,
+      })
+      safety.blockers.push(...sourceAudit.blockers)
+      safety.warnings.push(...sourceAudit.warnings)
 
       report = {
         ...report,
         ...safety,
+        source_audit: sourceAudit,
         remote_updated_at_before: remote.updated_at,
         dry_run: safety.dry_run,
         apply: safety.apply,
