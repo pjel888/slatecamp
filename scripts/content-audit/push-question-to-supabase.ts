@@ -7,6 +7,7 @@ import {
   discoverArticleDirs,
   nowIso,
   parseArgs,
+  readSourceAuditEvidence,
   resolveExportRoot,
   sha256Json,
   writeJson,
@@ -92,6 +93,21 @@ async function main() {
   if (edit.question_id && edit.question_id !== questionId) (report.blockers as string[]).push('question-edits file question_id does not match requested question.')
   if (!edit.reason) (report.warnings as string[]).push('question edit has no reason field.')
   if (!edit.approved_by || !edit.approved_at) (report.warnings as string[]).push('question edit is missing approved_by/approved_at review metadata.')
+  const sourceAudit = readSourceAuditEvidence(located.articleDir)
+  const sourceAuditHasQuestion = sourceAudit?.claims?.some((claim) => {
+    const claimText = `${claim.claim_id ?? ''} ${claim.claim_text ?? ''}`
+    return claimText.includes(questionId) || claimText.includes(String(located.exportedQuestion.model_id ?? ''))
+  }) === true
+  report.source_audit = {
+    source_audit_status: sourceAudit?.overall?.source_audit_status ?? null,
+    safe_for_supabase_upload: sourceAudit?.overall?.safe_for_supabase_upload ?? null,
+    question_claim_found: sourceAuditHasQuestion,
+  }
+  if (options.apply === true) {
+    if (!sourceAudit) (report.blockers as string[]).push('Missing source-audit-evidence.json in parent article folder; question edits require raw-source audit before apply.')
+    else if (sourceAudit.overall?.source_audit_status !== 'PASS' || sourceAudit.overall.safe_for_supabase_upload !== true) (report.blockers as string[]).push('Parent source-audit-evidence.json is not PASS/safe_for_supabase_upload.')
+    else if (!sourceAuditHasQuestion) (report.blockers as string[]).push('Parent source-audit-evidence.json does not include this question/model_id in audited claims.')
+  }
   if (edit.status === 'duplicate') {
     ;(report.warnings as string[]).push('Question is flagged as duplicate; skipping push to Supabase.')
     await writeQuestionReports(root, questionId, located.articleDir, report)
