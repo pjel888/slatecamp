@@ -9,15 +9,6 @@ const env = Object.fromEntries(
 env.PERF_DEV_SERVER_MEMORY_PROFILE ??= 'false'
 delete env.NO_COLOR
 
-const playwrightLocalStorageFile =
-  env.PLAYWRIGHT_LOCALSTORAGE_FILE ?? '.next/playwright-node-localstorage.json'
-const localStorageNodeOption = `--localstorage-file=${playwrightLocalStorageFile}`
-env.NODE_OPTIONS = env.NODE_OPTIONS?.trim()
-  ? env.NODE_OPTIONS.includes('--localstorage-file')
-    ? env.NODE_OPTIONS
-    : `${env.NODE_OPTIONS} ${localStorageNodeOption}`
-  : localStorageNodeOption
-
 const playwrightBin =
   process.platform === 'win32'
     ? './node_modules/.bin/playwright.cmd'
