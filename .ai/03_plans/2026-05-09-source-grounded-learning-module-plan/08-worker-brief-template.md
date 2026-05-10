@@ -2,7 +2,7 @@
 
 Use this template for future article/question editing workers. It is intentionally strict.
 
-**Mandatory preamble for every worker:** Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` before producing any content artifact.
+**Mandatory preamble for every worker:** Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md` before producing any content artifact.
 
 ## Mission
 
@@ -40,6 +40,8 @@ Improve one SlateCamp article and its linked questions as a source-grounded LEA 
 
 The article must read like careful board-review teaching, not generic AI prose. Include appropriate exam-task framing, common trap diagnosis, concrete Philippine practice context, and human-scale explanation. Any real-world story must be sourced or clearly hypothetical. Do not invent incidents, clients, enforcement stories, or practice anecdotes.
 
+The article must also be contentful enough to teach. For legal/code/dimensional/professional-practice topics, thin summaries fail the depth gate. Include governing source/version, exact section/table/item locators, important numbers and conditions, scope, exceptions, worked application, common traps, quick checks, and a linked-question bridge unless a recorded atomic-topic exception applies.
+
 Use the added writing-quality gates from Quill, Research Paper Writing Skills, Anti-AI-Slop Writing, and STORM:
 
 - calibrate against an approved SlateCamp voice exemplar when one exists;
@@ -58,19 +60,21 @@ Use the added writing-quality gates from Quill, Research Paper Writing Skills, A
 5. Draft a mini-outline before editing prose: exam task, source-backed rule, trap, worked example, practice bridge.
 6. Remove or mark unsupported legal/code claims.
 7. Add exam-task framing and learning objectives.
-8. Improve explanations for application and transfer.
-9. Add common traps only when source-supported.
-10. Keep UI blocks intact or modify by roundtrip protocol.
-11. Reverse-outline the draft and confirm one message per paragraph.
-12. Run anti-slop audit and remove generic AI phrasing.
-13. Compose, diff, validate.
-14. Report changed files and unresolved risks.
+8. Expand thin summaries into source-backed teaching: rule breakdown, numbers that matter, scope, exceptions, worked example, and common traps.
+9. Improve explanations for application and transfer.
+10. Add common traps only when source-supported.
+11. Keep learner-facing citations clean: no local paths, hashes, claim-ledger filenames, or internal release notes.
+12. Keep UI blocks intact or modify by roundtrip protocol.
+13. Reverse-outline the draft and confirm one message per paragraph.
+14. Run anti-slop audit and remove generic AI phrasing.
+15. Compose, diff, validate.
+16. Report changed files and unresolved risks.
 
 ## Question task checklist
 
 1. Verify each linked question's baseline.
 2. Map each question to article objective.
-3. Check stem, key, distractors, rationale, and source locator.
+3. Check question prompt, key, distractors, rationale, and source locator.
 4. Write `question-edits/<question_id>.json` for authorized changes.
 5. Flag answer-key risks separately.
 6. Validate and report.

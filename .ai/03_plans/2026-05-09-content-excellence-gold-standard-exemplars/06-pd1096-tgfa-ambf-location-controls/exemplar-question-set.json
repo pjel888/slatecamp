@@ -8,7 +8,7 @@
   "questions": [
     {
       "id": "pd1096-tgfa-q1",
-      "stem": "Under PD 1096 Rule VII Section 704, which site condition is required before a building may be constructed?",
+      "stem": "Under PD 1096 Rule VII Section 704.1(a), which site condition is required before a building may be constructed?",
       "options": {
         "A": "It must adjoin or directly access a public space, yard, or street on at least one side.",
         "B": "It must be surrounded by streets on all sides.",
@@ -17,15 +17,15 @@
       },
       "correct_option_id": "A",
       "rationale": {
-        "correct": "Section 704 states the building must adjoin or have direct access to a public space, yard, or street on at least one side.",
+        "correct": "Section 704.1(a) states that the building must adjoin or have direct access to a public space, yard, or street on at least one side.",
         "distractors": {
-          "B": "The extracted rule requires at least one side, not all sides.",
-          "C": "Firewall/setback issues are separate controls, not the base location rule.",
-          "D": "TGFA comes under Section 705; it does not replace the Section 704 location rule."
+          "B": "Section 704.1(a) requires at least one side, not all sides.",
+          "C": "Firewall/setback issues are separate controls; they do not replace the Section 704.1(a) location rule.",
+          "D": "TGFA comes under Section 705; it does not replace the Section 704.1(a) threshold location rule."
         },
-        "takeaway": "Check location/property access before doing area arithmetic."
+        "takeaway": "Check Section 704.1(a) location/property access before doing area arithmetic."
       },
-      "source_locator": "PD 1096 RIRR 2004, Rule VII, Section 704, PDF p.81."
+      "source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(a), PDF p.81."
     },
     {
       "id": "pd1096-tgfa-q2",
@@ -38,7 +38,7 @@
       },
       "correct_option_id": "B",
       "rationale": {
-        "correct": "TGFA means Total Gross Floor Area. Section 705 specifically governs allowable floor areas and TGFA limitation.",
+        "correct": "TGFA means Total Gross Floor Area. Section 705.1-705.2 governs allowable floor areas and TGFA limitation.",
         "distractors": {
           "A": "AMBF is the building footprint, not total floor area.",
           "C": "FSEC is a Fire Safety Evaluation Clearance term, not the Rule VII area metric.",
@@ -46,11 +46,11 @@
         },
         "takeaway": "Do not swap TGFA and AMBF; both appear in development-control questions."
       },
-      "source_locator": "PD 1096 RIRR 2004, Rule VII, Section 705, PDF p.83."
+      "source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 705.1-705.2, PDF p.83."
     },
     {
       "id": "pd1096-tgfa-q3",
-      "stem": "For eaves over required windows under the cited Section 704 excerpt, what minimum distance from side and rear property lines is stated?",
+      "stem": "For eaves over required windows under PD 1096 Rule VII Section 704.1(c), what minimum distance from side and rear property lines is stated?",
       "options": {
         "A": "300 mm",
         "B": "500 mm",
@@ -59,15 +59,15 @@
       },
       "correct_option_id": "C",
       "rationale": {
-        "correct": "The extracted text states that eaves over required windows shall not be less than 750 mm from side and rear property lines.",
+        "correct": "Section 704.1(c) states that eaves over required windows shall not be less than 750 mm from side and rear property lines.",
         "distractors": {
-          "A": "300 mm is too small and not the cited eaves distance.",
+          "A": "300 mm is not the Section 704.1(c) value for eaves over required windows.",
           "B": "500 mm is not the cited value.",
-          "D": "1200 mm appears in other accessibility contexts; it is not the eaves distance in Section 704."
+          "D": "1200 mm is not the Section 704.1(c) eaves-over-required-windows distance."
         },
-        "takeaway": "When the stem says eaves over required windows, answer the Section 704 value, not a general setback memory."
+        "takeaway": "When the question prompt says eaves over required windows, answer the Section 704.1(c) value, not a general setback memory."
       },
-      "source_locator": "PD 1096 RIRR 2004, Rule VII, Section 704, PDF p.81."
+      "source_locator": "PD 1096, 2004 Revised IRR, Rule VII, Section 704.1(c), PDF p.81."
     }
   ]
 }

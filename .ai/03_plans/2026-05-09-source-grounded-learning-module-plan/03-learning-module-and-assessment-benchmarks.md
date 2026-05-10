@@ -9,7 +9,7 @@ The planning pass checked these external references for module and MCQ quality:
 - **NBME Item Writing Guide** — https://www.nbme.org/sites/default/files/2021-02/NBME_Item%20Writing%20Guide_R_6.pdf — MCQ/item-writing quality: one-best-answer items, focused stems/lead-ins, plausible distractors, avoid technical item flaws.
 - **AERA/APA/NCME Standards for Educational and Psychological Testing** — https://www.aera.net/Publications/Books/Standards-for-Educational-Psychological-Testing-2014-Edition — Validity, reliability, fairness, documentation, and defensible assessment use.
 - **APA Standards landing page** — https://www.apa.org/science/programs/testing/standards — Companion source for the Standards book and testing-quality framing.
-- **University of Waterloo Centre for Teaching Excellence — Designing Multiple-Choice Questions** — https://uwaterloo.ca/centre-for-teaching-excellence/catalogs/tip-sheets/designing-multiple-choice-questions — MCQ anatomy: stem, key, plausible distractors; practical item-writing guidance.
+- **University of Waterloo Centre for Teaching Excellence — Designing Multiple-Choice Questions** — https://uwaterloo.ca/centre-for-teaching-excellence/catalogs/tip-sheets/designing-multiple-choice-questions — MCQ anatomy: question prompt, key, plausible distractors; practical item-writing guidance.
 - **Carnegie Mellon Eberly Center — Learning Objectives** — https://www.cmu.edu/teaching/designteach/design/learningobjectives.html — Constructive alignment: objectives, assessments, and instructional strategies must align.
 - **Quality Matters Higher Education Rubric Standards** — https://www.qualitymatters.org/qa-resources/rubric-standards/higher-ed-rubric — Course/module design alignment among objectives, assessment, instructional materials, activities, and technology.
 - **National Academies — How People Learn II** — https://nap.nationalacademies.org/catalog/24783/how-people-learn-ii-learners-contexts-and-cultures — Learning science: prior knowledge, practice, feedback, transfer, motivation, and context.
@@ -128,7 +128,7 @@ A module can be accurate and still fail if it reads like generic AI output. The 
 Use NBME/Waterloo/Haladyna-style item principles adapted to the LEA:
 
 1. Ask one focused problem.
-2. Put the problem in the stem, not in scattered option wording.
+2. Put the problem in the question prompt, not in scattered option wording.
 3. Use one best answer, not opinion or multiple defensible answers.
 4. Keep options homogeneous and parallel.
 5. Make distractors plausible and diagnostic of misconceptions.
@@ -148,7 +148,7 @@ Use NBME/Waterloo/Haladyna-style item principles adapted to the LEA:
   "approved_by": "hermes-agent-content-optimizer",
   "approved_at": "<ISO timestamp>",
   "proposed": {
-    "text": "<focused LEA-style stem>",
+    "text": "<focused LEA-style question prompt>",
     "options": [
       {"id": "A", "text": "..."},
       {"id": "B", "text": "..."},

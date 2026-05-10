@@ -82,7 +82,7 @@ A question is publish-ready only when:
 
 - proposed edit is in `question-edits/<question_id>.json`;
 - baseline hash matches current exported question;
-- stem has one clear problem;
+- question prompt has one clear problem;
 - exactly one best answer exists;
 - distractors are plausible and not trick-only;
 - rationale teaches correct and incorrect options;

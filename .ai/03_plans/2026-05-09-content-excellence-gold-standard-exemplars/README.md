@@ -1,6 +1,6 @@
 # Content Excellence Gold-Standard Exemplar Packs
 
-Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` before producing any content artifact.
+Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md` before producing any content artifact.
 
 Updated: 2026-05-09
 

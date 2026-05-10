@@ -117,7 +117,7 @@ All SlateCamp writing files must include this hierarchy reminder:
 > 6. Textbooks — secondary context only, mark as non-statutory
 
 **Every content production prompt must prepend:**
-> Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` before producing any content artifact.
+> Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md` before producing any content artifact.
 
 
 ## Raw status

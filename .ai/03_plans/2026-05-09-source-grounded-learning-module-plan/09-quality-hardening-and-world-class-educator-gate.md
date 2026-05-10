@@ -6,7 +6,7 @@ Generated: `2026-05-09T05:14:46.925474+00:00`
 
 All content-production prompts must begin with:
 
-> Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` before producing any content artifact.
+> Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md` before producing any content artifact.
 
 ## Honest readiness status
 
@@ -33,7 +33,7 @@ Do not begin scaled article/question editing until these are complete:
 
 ## World-class educator rubric
 
-A publishable SlateCamp module must pass all five gates.
+A publishable SlateCamp module must pass all six gates.
 
 ### Gate 1 — Truth
 
@@ -48,6 +48,13 @@ A publishable SlateCamp module must pass all five gates.
 - Objectives, explanation, components, and linked questions align.
 - The explanation moves from concept to application to exam trap.
 - The learner gets retrieval prompts, not just passive reading.
+
+### Gate 2A — Depth and technical completeness
+
+- Thin summaries do not pass, even when factually clean.
+- Legal/code/dimensional/professional-practice articles include governing source/version, exact section/table/item locators, important numbers, conditions, scope, exceptions, worked application, common traps, and learner-facing citations.
+- A legal/code article under 900 words is a depth-risk item unless the reviewer records a specific atomic-topic exception.
+- Internal source paths, hashes, claim-ledger names, and release-status notes stay in sidecar files, not learner prose.
 
 ### Gate 3 — Human voice
 

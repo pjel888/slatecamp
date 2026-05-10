@@ -1,4 +1,4 @@
-Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` before producing any content artifact.
+Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md` before producing any content artifact.
 
 Act as a senior Philippine LEA/ALE SME for SlateCamp. Review the remaining risky/unresolved exemplar pack issues below read-only. Return a concise SME memo with verdicts, required fixes, OCR approval/rejection, citation corrections, publication-hold recommendation, and disagreement-worthy concerns. Do not edit files.
 

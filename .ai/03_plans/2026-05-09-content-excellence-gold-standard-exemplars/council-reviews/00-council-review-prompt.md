@@ -1,4 +1,4 @@
-Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` before producing any content artifact.
+Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md` before producing any content artifact.
 
 You are reviewing SlateCamp's current gold-standard exemplar pack for Philippine LEA/ALE learning materials.
 

@@ -106,7 +106,7 @@ SlateCamp adaptation:
 
 ## Updated SlateCamp article workflow
 
-0. Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md`; include that line at the top of the worker/content-production prompt.
+0. Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md`; include that line at the top of the worker/content-production prompt.
 1. Pull or verify the local Supabase mirror.
 2. Build the source ledger from approved local/official sources, starting from `.ai/00_system/vitruvius-source-reference.md` and exact raw files under `vitruvius-connection/001_Raw-Source-Layer/`.
 3. Run a STORM-style pre-writing pass: perspectives, questions, gathered evidence, outline.
@@ -122,6 +122,7 @@ SlateCamp adaptation:
 A publishable article/question cluster now needs:
 
 - `.ai/CONTENT_EXCELLENCE_GOAL.md` acknowledgment pass;
+- learning-depth protocol pass for source-heavy, digestible, contentful treatment;
 - source ledger pass;
 - outline quality pass before prose writing;
 - reverse-outline pass after prose writing;

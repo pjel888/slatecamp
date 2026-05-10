@@ -1,0 +1,1143 @@
+{
+  "captured_at_utc": "2026-05-09T07:34:28.436851+00:00",
+  "target_name": "ARCHRIS Architecture Review",
+  "target_facebook_id": "61559691737674",
+  "target_url": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+  "method": "public_no_cookie_http_capture",
+  "endpoint_results": [
+    {
+      "label": "endpoint-01-desktop_chrome",
+      "endpoint": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "user_agent_key": "desktop_chrome",
+      "status_code": 400,
+      "final_url": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 1542,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-01-desktop_chrome-https-web.facebook.com-people-ARCHRIS-Architecture__e3f5ea13d175.html",
+      "title": "Error",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-02-mobile_safari",
+      "endpoint": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "user_agent_key": "mobile_safari",
+      "status_code": 200,
+      "final_url": "https://m.facebook.com/p/ARCHRIS-Architecture-Review-61559691737674/?sk=photos&wtsid=rdr_02t4hXjKEMEh8bM8P&hr=1",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 46068,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-02-mobile_safari-https-web.facebook.com-people-ARCHRIS-Architecture-R__dce33274cc43.html",
+      "title": "ARCHRIS Architecture Review",
+      "extracted_image_candidates": 1,
+      "error": null
+    },
+    {
+      "label": "endpoint-03-facebook_externalhit",
+      "endpoint": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "user_agent_key": "facebook_externalhit",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 637449,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-03-facebook_externalhit-https-web.facebook.com-people-ARCHRIS-Archite__48a11324529c.html",
+      "title": "ARCHRIS Architecture Review",
+      "extracted_image_candidates": 11,
+      "error": null
+    },
+    {
+      "label": "endpoint-04-desktop_chrome",
+      "endpoint": "https://www.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "user_agent_key": "desktop_chrome",
+      "status_code": 400,
+      "final_url": "https://www.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 1542,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-04-desktop_chrome-https-www.facebook.com-people-ARCHRIS-Architecture__1ff47d9ddbb4.html",
+      "title": "Error",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-05-mobile_safari",
+      "endpoint": "https://www.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "user_agent_key": "mobile_safari",
+      "status_code": 200,
+      "final_url": "https://www.facebook.com/p/ARCHRIS-Architecture-Review-61559691737674/?sk=photos&wtsid=rdr_00iYrioJZ5CBy14Xx&hr=1",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 46079,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-05-mobile_safari-https-www.facebook.com-people-ARCHRIS-Architecture-R__08869b79bddb.html",
+      "title": "ARCHRIS Architecture Review",
+      "extracted_image_candidates": 1,
+      "error": null
+    },
+    {
+      "label": "endpoint-06-facebook_externalhit",
+      "endpoint": "https://www.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "user_agent_key": "facebook_externalhit",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos&_rdc=1",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 637475,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-06-facebook_externalhit-https-www.facebook.com-people-ARCHRIS-Archite__b7cd55c0e7b3.html",
+      "title": "ARCHRIS Architecture Review",
+      "extracted_image_candidates": 11,
+      "error": null
+    },
+    {
+      "label": "endpoint-07-desktop_chrome",
+      "endpoint": "https://www.facebook.com/profile.php?id=61559691737674&sk=photos",
+      "user_agent_key": "desktop_chrome",
+      "status_code": 400,
+      "final_url": "https://www.facebook.com/profile.php?id=61559691737674&sk=photos",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 1542,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-07-desktop_chrome-https-www.facebook.com-profile.php-id-6155969173767__d3d2677abf1c.html",
+      "title": "Error",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-08-mobile_safari",
+      "endpoint": "https://www.facebook.com/profile.php?id=61559691737674&sk=photos",
+      "user_agent_key": "mobile_safari",
+      "status_code": 200,
+      "final_url": "https://www.facebook.com/p/ARCHRIS-Architecture-Review-61559691737674/?sk=photos&wtsid=rdr_0FSDgW4V9jfIAS5rZ&hr=1",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 46079,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-08-mobile_safari-https-www.facebook.com-profile.php-id-61559691737674__5f9a6944ed4e.html",
+      "title": "ARCHRIS Architecture Review",
+      "extracted_image_candidates": 1,
+      "error": null
+    },
+    {
+      "label": "endpoint-09-facebook_externalhit",
+      "endpoint": "https://www.facebook.com/profile.php?id=61559691737674&sk=photos",
+      "user_agent_key": "facebook_externalhit",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 637442,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-09-facebook_externalhit-https-www.facebook.com-profile.php-id-6155969__329cb76f1b7c.html",
+      "title": "ARCHRIS Architecture Review",
+      "extracted_image_candidates": 11,
+      "error": null
+    },
+    {
+      "label": "endpoint-10-desktop_chrome",
+      "endpoint": "https://m.facebook.com/profile.php?id=61559691737674&sk=photos",
+      "user_agent_key": "desktop_chrome",
+      "status_code": 400,
+      "final_url": "https://www.facebook.com/profile.php?id=61559691737674&sk=photos&_rdr",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 1542,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-10-desktop_chrome-https-m.facebook.com-profile.php-id-61559691737674__3b32cb4c2a6c.html",
+      "title": "Error",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-11-mobile_safari",
+      "endpoint": "https://m.facebook.com/profile.php?id=61559691737674&sk=photos",
+      "user_agent_key": "mobile_safari",
+      "status_code": 200,
+      "final_url": "https://m.facebook.com/p/ARCHRIS-Architecture-Review-61559691737674/?sk=photos&wtsid=rdr_0Lju7IdA74kJDJJle&hr=1",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 46068,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-11-mobile_safari-https-m.facebook.com-profile.php-id-61559691737674-s__dec449db97d7.html",
+      "title": "ARCHRIS Architecture Review",
+      "extracted_image_candidates": 1,
+      "error": null
+    },
+    {
+      "label": "endpoint-12-facebook_externalhit",
+      "endpoint": "https://m.facebook.com/profile.php?id=61559691737674&sk=photos",
+      "user_agent_key": "facebook_externalhit",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?sk=photos",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 635467,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-12-facebook_externalhit-https-m.facebook.com-profile.php-id-615596917__1ffa0e1b6d6f.html",
+      "title": "ARCHRIS Architecture Review",
+      "extracted_image_candidates": 11,
+      "error": null
+    },
+    {
+      "label": "endpoint-13-desktop_chrome",
+      "endpoint": "https://mbasic.facebook.com/profile.php?id=61559691737674&v=photos",
+      "user_agent_key": "desktop_chrome",
+      "status_code": 400,
+      "final_url": "https://mbasic.facebook.com/profile.php?id=61559691737674&v=photos",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 3676,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-13-desktop_chrome-https-mbasic.facebook.com-profile.php-id-6155969173__7f3618357736.html",
+      "title": "Error Facebook",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-14-mobile_safari",
+      "endpoint": "https://mbasic.facebook.com/profile.php?id=61559691737674&v=photos",
+      "user_agent_key": "mobile_safari",
+      "status_code": 200,
+      "final_url": "https://m.facebook.com/login/?next=https%3A%2F%2Fmbasic.facebook.com%2Fprofile.php%3Fid%3D61559691737674%26v%3Dphotos&wtsid=rdr_05LjAy3vgoxd6rkkv&refsrc=deprecated&_rdc=1&_rdr",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 253507,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-14-mobile_safari-https-mbasic.facebook.com-profile.php-id-61559691737__a3630b183b27.html",
+      "title": "Log into Facebook | Facebook",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-15-facebook_externalhit",
+      "endpoint": "https://mbasic.facebook.com/profile.php?id=61559691737674&v=photos",
+      "user_agent_key": "facebook_externalhit",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/?v=photos",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 2151012,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-15-facebook_externalhit-https-mbasic.facebook.com-profile.php-id-6155__acbabc7f92e4.html",
+      "title": "ARCHRIS Architecture Review",
+      "extracted_image_candidates": 24,
+      "error": null
+    },
+    {
+      "label": "endpoint-16-desktop_chrome",
+      "endpoint": "https://mbasic.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/photos/",
+      "user_agent_key": "desktop_chrome",
+      "status_code": 200,
+      "final_url": "https://mbasic.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/photos/",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 5029,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-16-desktop_chrome-https-mbasic.facebook.com-people-ARCHRIS-Architectu__0fe260308797.html",
+      "title": "Error",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-17-mobile_safari",
+      "endpoint": "https://mbasic.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/photos/",
+      "user_agent_key": "mobile_safari",
+      "status_code": 404,
+      "final_url": "https://mbasic.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/photos/",
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 81159,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-17-mobile_safari-https-mbasic.facebook.com-people-ARCHRIS-Architectur__73348ee9d77b.html",
+      "title": "Page Not Found",
+      "extracted_image_candidates": 1,
+      "error": null
+    },
+    {
+      "label": "endpoint-18-facebook_externalhit",
+      "endpoint": "https://mbasic.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/photos/",
+      "user_agent_key": "facebook_externalhit",
+      "status_code": 404,
+      "final_url": "https://www.facebook.com/people/ARCHRIS-Architecture-Review/61559691737674/photos/",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 9,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-18-facebook_externalhit-https-mbasic.facebook.com-people-ARCHRIS-Arch__4c13bc777544.html",
+      "title": null,
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-19-desktop_chrome",
+      "endpoint": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=timeline&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false",
+      "user_agent_key": "desktop_chrome",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=timeline&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&_rdc=1&_rdr",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 18786,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-19-desktop_chrome-https-www.facebook.com-plugins-page.php-href-https__ebbfb7bbd87b.html",
+      "title": "Facebook",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-20-mobile_safari",
+      "endpoint": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=timeline&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false",
+      "user_agent_key": "mobile_safari",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=timeline&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&_rdc=1&_rdr",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 18574,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-20-mobile_safari-https-www.facebook.com-plugins-page.php-href-https-3__757f2b8a9b31.html",
+      "title": "Facebook",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-21-facebook_externalhit",
+      "endpoint": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=timeline&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false",
+      "user_agent_key": "facebook_externalhit",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=timeline&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&_rdc=1",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 18529,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-21-facebook_externalhit-https-www.facebook.com-plugins-page.php-href__604b3ac4d2d2.html",
+      "title": "Facebook",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-22-desktop_chrome",
+      "endpoint": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=photos&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false",
+      "user_agent_key": "desktop_chrome",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=photos&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&_rdc=1&_rdr",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 18774,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-22-desktop_chrome-https-www.facebook.com-plugins-page.php-href-https__74ce75326e6b.html",
+      "title": "Facebook",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-23-mobile_safari",
+      "endpoint": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=photos&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false",
+      "user_agent_key": "mobile_safari",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=photos&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&_rdc=1&_rdr",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 18567,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-23-mobile_safari-https-www.facebook.com-plugins-page.php-href-https-3__b854fb8d838a.html",
+      "title": "Facebook",
+      "extracted_image_candidates": 0,
+      "error": null
+    },
+    {
+      "label": "endpoint-24-facebook_externalhit",
+      "endpoint": "https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=photos&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false",
+      "user_agent_key": "facebook_externalhit",
+      "status_code": 200,
+      "final_url": "https://web.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fpeople%2FARCHRIS-Architecture-Review%2F61559691737674%2F&tabs=photos&width=500&height=1200&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&_rdc=1",
+      "content_type": "text/html; charset=\"utf-8\"",
+      "content_length": 18522,
+      "raw_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/raw/endpoint-24-facebook_externalhit-https-www.facebook.com-plugins-page.php-href__be72c9d0d67a.html",
+      "title": "Facebook",
+      "extracted_image_candidates": 0,
+      "error": null
+    }
+  ],
+  "image_candidates": [
+    "https://graph.facebook.com/61559691737674/picture?type=large&width=2048&height=2048",
+    "https://graph.facebook.com/61559691737674/picture?type=normal",
+    "https://lookaside.fbsbx.com",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122108931710323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205348800323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205566132323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205840380323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205897032323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210104916323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210625116323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210639840323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210644640323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122211242378323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122216190044323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122216198858323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122217850196323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220455006323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220595988323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220694076323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220795098323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220795218323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122221096328323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122221402688323057",
+    "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61559691737674",
+    "https://scontent.fmnl9-4.fna.fbcdn.net",
+    "https://scontent.fmnl9-6.fna.fbcdn.net",
+    "https://z-m-lookaside$1$2$3$4",
+    "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=2_pKSIBFFxDd7--jU7c9cg&_nc_ss=7b20f&oh=00_Af4OFYeX2JvbbLZ33VVB5pnVPUce1a6nkUJxMwiGYYLpdw&oe=6A04BD4A",
+    "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=Frc8QvPlui08LmSOin5u8w&_nc_ss=7b20f&oh=00_Af5o4kHgx_l6ChJKxc5SgRmWzBZMPJvqoBN9e_iCIUZB8g&oe=6A04BD4A",
+    "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=M6Rs1_lIe5CENS4PFqo8rg&_nc_ss=7b20f&oh=00_Af4GWa5RgoYL1uLhyu-ayQ1sO1m7PdLoPEkYjv9xtl6ORg&oe=6A04BD4A",
+    "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=Yuyf1Kc2ahnMc7JvINf2ig&_nc_ss=7b20f&oh=00_Af7Xktx9OgP_U21_nCFBXOpV__gI57oMEccRZUUzCCHhOQ&oe=6A04BD4A"
+  ],
+  "downloads": [
+    {
+      "ordinal": 1,
+      "source_url": "https://graph.facebook.com/61559691737674/picture?type=large&width=2048&height=2048",
+      "status_code": 200,
+      "final_url": "https://scontent.fmnl9-6.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c379.0.1290.1290a_dst-jpg_s1290x1290_tt6&_nc_cat=1&ccb=1-7&_nc_sid=7565cd&_nc_ohc=bJByn42pDQoQ7kNvwEUY84-&_nc_oc=AdoQ2sRXNRhTVyBQuT28o36nBIVDwvt637wNuxjav1ajxTt3A8bg1sPdEUbg7wttYLU&_nc_zt=24&_nc_ht=scontent.fmnl9-6.fna&edm=AHgPADgEAAAA&oh=00_Af7bJHpz7KMStXpl_x2Yx07AECUOCuU7Nb0StlQDBjBt9w&oe=6A265059",
+      "content_type": "image/jpeg",
+      "bytes": 19030,
+      "sha256": "de21b293582678a21b709069736bfa1adca6760a90fb93729139a4cb20246488",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-001__de21b2935826.jpg",
+      "download_user_agent_key": "desktop_chrome",
+      "attempts": [
+        {
+          "user_agent_key": "desktop_chrome",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 19030,
+          "is_image": true,
+          "final_url": "https://scontent.fmnl9-6.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c379.0.1290.1290a_dst-jpg_s1290x1290_tt6&_nc_cat=1&ccb=1-7&_nc_sid=7565cd&_nc_ohc=bJByn42pDQoQ7kNvwEUY84-&_nc_oc=AdoQ2sRXNRhTVyBQuT28o36nBIVDwvt637wNuxjav1ajxTt3A8bg1sPdEUbg7wttYLU&_nc_zt=24&_nc_ht=scontent.fmnl9-6.fna&edm=AHgPADgEAAAA&oh=00_Af7bJHpz7KMStXpl_x2Yx07AECUOCuU7Nb0StlQDBjBt9w&oe=6A265059"
+        }
+      ],
+      "elapsed_seconds": 0.55,
+      "error": null
+    },
+    {
+      "ordinal": 2,
+      "source_url": "https://graph.facebook.com/61559691737674/picture?type=normal",
+      "status_code": 200,
+      "final_url": "https://scontent.fmnl9-6.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c379.0.1290.1290a_dst-jpg_s100x100_tt6&_nc_cat=1&ccb=1-7&_nc_sid=7565cd&_nc_ohc=bJByn42pDQoQ7kNvwEUY84-&_nc_oc=AdoQ2sRXNRhTVyBQuT28o36nBIVDwvt637wNuxjav1ajxTt3A8bg1sPdEUbg7wttYLU&_nc_zt=24&_nc_ht=scontent.fmnl9-6.fna&edm=AHgPADgEAAAA&oh=00_Af67P9mLsIPTmyakCrBygle3Wxi2I1wKP36RYgiRYOnz6w&oe=6A265059",
+      "content_type": "image/jpeg",
+      "bytes": 1112,
+      "sha256": "798b566988eb4bdbd0cddc08dc7b9d00f5fce1842d47f1601d12452c2cdb7101",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-002__798b566988eb.jpg",
+      "download_user_agent_key": "desktop_chrome",
+      "attempts": [
+        {
+          "user_agent_key": "desktop_chrome",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 1112,
+          "is_image": true,
+          "final_url": "https://scontent.fmnl9-6.fna.fbcdn.net/v/t1.30497-1/84628273_176159830277856_972693363922829312_n.jpg?stp=c379.0.1290.1290a_dst-jpg_s100x100_tt6&_nc_cat=1&ccb=1-7&_nc_sid=7565cd&_nc_ohc=bJByn42pDQoQ7kNvwEUY84-&_nc_oc=AdoQ2sRXNRhTVyBQuT28o36nBIVDwvt637wNuxjav1ajxTt3A8bg1sPdEUbg7wttYLU&_nc_zt=24&_nc_ht=scontent.fmnl9-6.fna&edm=AHgPADgEAAAA&oh=00_Af67P9mLsIPTmyakCrBygle3Wxi2I1wKP36RYgiRYOnz6w&oe=6A265059"
+        }
+      ],
+      "elapsed_seconds": 0.28,
+      "error": null
+    },
+    {
+      "ordinal": 3,
+      "source_url": "https://lookaside.fbsbx.com",
+      "status_code": 400,
+      "final_url": "https://lookaside.fbsbx.com/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 2854,
+      "sha256": "bdee804356fcc5c7b420108ad234d32ab0f10ffabb82d000bd93eb53f83b0113",
+      "is_image": false,
+      "saved_path": null,
+      "download_user_agent_key": "desktop_chrome",
+      "attempts": [
+        {
+          "user_agent_key": "desktop_chrome",
+          "status_code": 400,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 2854,
+          "is_image": false,
+          "final_url": "https://lookaside.fbsbx.com/"
+        },
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 400,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 2854,
+          "is_image": false,
+          "final_url": "https://lookaside.fbsbx.com/"
+        },
+        {
+          "user_agent_key": "mobile_safari",
+          "status_code": 400,
+          "content_type": "text/html; charset=utf-8",
+          "bytes": 2854,
+          "is_image": false,
+          "final_url": "https://lookaside.fbsbx.com/"
+        }
+      ],
+      "elapsed_seconds": 0.54,
+      "error": null
+    },
+    {
+      "ordinal": 4,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122108931710323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122108931710323057",
+      "content_type": "image/jpeg",
+      "bytes": 43811,
+      "sha256": "2c5c29fb32e34b3a344d2af88a7285543d9bbbb200c1f4f8f18300f9f7772dc0",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-004__2c5c29fb32e3.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 43811,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122108931710323057"
+        }
+      ],
+      "elapsed_seconds": 1.76,
+      "error": null
+    },
+    {
+      "ordinal": 5,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205348800323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205348800323057",
+      "content_type": "image/jpeg",
+      "bytes": 423733,
+      "sha256": "d642819b897e37ef550b0cf9cf95666ed7b4a1f8072e4a41c1d60b11048bd644",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-005__d642819b897e.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 423733,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205348800323057"
+        }
+      ],
+      "elapsed_seconds": 1.77,
+      "error": null
+    },
+    {
+      "ordinal": 6,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205566132323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205566132323057",
+      "content_type": "image/jpeg",
+      "bytes": 235471,
+      "sha256": "11b5df71f48a1dd0faffe8df623fbdc5c2563cef7e273daf1952f985d7d66dd4",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-006__11b5df71f48a.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 235471,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205566132323057"
+        }
+      ],
+      "elapsed_seconds": 1.07,
+      "error": null
+    },
+    {
+      "ordinal": 7,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205840380323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205840380323057",
+      "content_type": "image/jpeg",
+      "bytes": 666070,
+      "sha256": "0887155ce1cff3c880e60a63a7fd7ae088b3c22779b99804b507238966756bac",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-007__0887155ce1cf.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 666070,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205840380323057"
+        }
+      ],
+      "elapsed_seconds": 1.36,
+      "error": null
+    },
+    {
+      "ordinal": 8,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205897032323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205897032323057",
+      "content_type": "image/jpeg",
+      "bytes": 423733,
+      "sha256": "d642819b897e37ef550b0cf9cf95666ed7b4a1f8072e4a41c1d60b11048bd644",
+      "is_image": true,
+      "saved_path": null,
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 423733,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122205897032323057"
+        }
+      ],
+      "elapsed_seconds": 1.16,
+      "error": null,
+      "duplicate_of_existing_sha256": true
+    },
+    {
+      "ordinal": 9,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210104916323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210104916323057",
+      "content_type": "image/jpeg",
+      "bytes": 349961,
+      "sha256": "91b726a9df48964ec2be180745c6c568b39d94ee8f0287bb650f56eea7f7f095",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-009__91b726a9df48.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 349961,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210104916323057"
+        }
+      ],
+      "elapsed_seconds": 1.28,
+      "error": null
+    },
+    {
+      "ordinal": 10,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210625116323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210625116323057",
+      "content_type": "image/jpeg",
+      "bytes": 529627,
+      "sha256": "a9a2a89d35b36f2efad05dc1ba1bba0d142433bc657fb9853c1fd76c81c5ba88",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-010__a9a2a89d35b3.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 529627,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210625116323057"
+        }
+      ],
+      "elapsed_seconds": 1.04,
+      "error": null
+    },
+    {
+      "ordinal": 11,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210639840323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210639840323057",
+      "content_type": "image/jpeg",
+      "bytes": 498248,
+      "sha256": "15ebab414acf3fc468b955c7aa06a5082f31c433627480b642505cd5ececabf6",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-011__15ebab414acf.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 498248,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210639840323057"
+        }
+      ],
+      "elapsed_seconds": 0.99,
+      "error": null
+    },
+    {
+      "ordinal": 12,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210644640323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210644640323057",
+      "content_type": "image/jpeg",
+      "bytes": 196149,
+      "sha256": "88000925c56ca36e2d0bc33a6717b95249398e85cea4ca8ac65eadc1b84ceac0",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-012__88000925c56c.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 196149,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122210644640323057"
+        }
+      ],
+      "elapsed_seconds": 1.03,
+      "error": null
+    },
+    {
+      "ordinal": 13,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122211242378323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122211242378323057",
+      "content_type": "image/jpeg",
+      "bytes": 713472,
+      "sha256": "46986ea0248a6c13d9e1e3e1a4fc38d9dea623a91227bfe2f6464fcae38cc1e8",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-013__46986ea0248a.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 713472,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122211242378323057"
+        }
+      ],
+      "elapsed_seconds": 1.13,
+      "error": null
+    },
+    {
+      "ordinal": 14,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122216190044323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122216190044323057",
+      "content_type": "image/jpeg",
+      "bytes": 121090,
+      "sha256": "c5d05abd16118b02e7444b6c04e8e5e4b6b11f20179518647e81afaa321400c2",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-014__c5d05abd1611.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 121090,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122216190044323057"
+        }
+      ],
+      "elapsed_seconds": 1.64,
+      "error": null
+    },
+    {
+      "ordinal": 15,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122216198858323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122216198858323057",
+      "content_type": "image/jpeg",
+      "bytes": 71609,
+      "sha256": "f03369fd93190dbb20ef04af7784fe954ede219188723512ee6bf6ca2d79cfe5",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-015__f03369fd9319.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 71609,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122216198858323057"
+        }
+      ],
+      "elapsed_seconds": 1.16,
+      "error": null
+    },
+    {
+      "ordinal": 16,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122217850196323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122217850196323057",
+      "content_type": "image/jpeg",
+      "bytes": 59206,
+      "sha256": "53e066127ca75156452605960cb8180d8d434265823c8ad2df1fe2bc15c1a516",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-016__53e066127ca7.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 59206,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122217850196323057"
+        }
+      ],
+      "elapsed_seconds": 1.77,
+      "error": null
+    },
+    {
+      "ordinal": 17,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220455006323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220455006323057",
+      "content_type": "image/jpeg",
+      "bytes": 176964,
+      "sha256": "b6879ffb4c28a5df2b2b77a4ffc151acd49421799961a240b2c4d7dff805fbfd",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-017__b6879ffb4c28.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 176964,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220455006323057"
+        }
+      ],
+      "elapsed_seconds": 1.29,
+      "error": null
+    },
+    {
+      "ordinal": 18,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220595988323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220595988323057",
+      "content_type": "image/jpeg",
+      "bytes": 266916,
+      "sha256": "fd26cc791d46087eddaca6ccd0bdc3b062112239856bc6a9dc504c968d79066a",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-018__fd26cc791d46.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 266916,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220595988323057"
+        }
+      ],
+      "elapsed_seconds": 1.26,
+      "error": null
+    },
+    {
+      "ordinal": 19,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220694076323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220694076323057",
+      "content_type": "image/jpeg",
+      "bytes": 699433,
+      "sha256": "1e1ad9c7bcb03d917a182bc113486d73e39475c9d0278d3efda7fe4e23020c11",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-019__1e1ad9c7bcb0.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 699433,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220694076323057"
+        }
+      ],
+      "elapsed_seconds": 1.23,
+      "error": null
+    },
+    {
+      "ordinal": 20,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220795098323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220795098323057",
+      "content_type": "image/jpeg",
+      "bytes": 663181,
+      "sha256": "959599e228735780a06196f8bd218c14273dea3a47e650bd5df0bbf85fe11e73",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-020__959599e22873.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 663181,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220795098323057"
+        }
+      ],
+      "elapsed_seconds": 0.99,
+      "error": null
+    },
+    {
+      "ordinal": 21,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220795218323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220795218323057",
+      "content_type": "image/jpeg",
+      "bytes": 159600,
+      "sha256": "ce91a216c34acfd24204b48f6ea944b01e49f8173311d21ecc560c04efd241f2",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-021__ce91a216c34a.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 159600,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122220795218323057"
+        }
+      ],
+      "elapsed_seconds": 0.99,
+      "error": null
+    },
+    {
+      "ordinal": 22,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122221096328323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122221096328323057",
+      "content_type": "image/jpeg",
+      "bytes": 615610,
+      "sha256": "c9fb93f2682b6b2b2c797a4515eb7c17d5ca08dbf4e0d739a22a77c4c15129b7",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-022__c9fb93f2682b.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 615610,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122221096328323057"
+        }
+      ],
+      "elapsed_seconds": 1.05,
+      "error": null
+    },
+    {
+      "ordinal": 23,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122221402688323057",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122221402688323057",
+      "content_type": "image/jpeg",
+      "bytes": 654442,
+      "sha256": "f4327bb5db09067ff477b939ca2099969df2b61f321540a70a829f9dc542ffca",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-023__f4327bb5db09.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 654442,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=122221402688323057"
+        }
+      ],
+      "elapsed_seconds": 1.06,
+      "error": null
+    },
+    {
+      "ordinal": 24,
+      "source_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61559691737674",
+      "status_code": 200,
+      "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61559691737674",
+      "content_type": "image/jpeg",
+      "bytes": 217627,
+      "sha256": "8f6c332122d57dcefa3cb7e3769b407f1ea16235d4ebb5eb7e7ac42ae2742e62",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-024__8f6c332122d5.jpg",
+      "download_user_agent_key": "facebook_externalhit",
+      "attempts": [
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 217627,
+          "is_image": true,
+          "final_url": "https://lookaside.fbsbx.com/lookaside/crawler/media/?media_id=61559691737674"
+        }
+      ],
+      "elapsed_seconds": 0.97,
+      "error": null
+    },
+    {
+      "ordinal": 25,
+      "source_url": "https://scontent.fmnl9-4.fna.fbcdn.net",
+      "status_code": 204,
+      "final_url": "https://scontent.fmnl9-4.fna.fbcdn.net/",
+      "content_type": "text/plain",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "is_image": false,
+      "saved_path": null,
+      "download_user_agent_key": "desktop_chrome",
+      "attempts": [
+        {
+          "user_agent_key": "desktop_chrome",
+          "status_code": 204,
+          "content_type": "text/plain",
+          "bytes": 0,
+          "is_image": false,
+          "final_url": "https://scontent.fmnl9-4.fna.fbcdn.net/"
+        },
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 204,
+          "content_type": "text/plain",
+          "bytes": 0,
+          "is_image": false,
+          "final_url": "https://scontent.fmnl9-4.fna.fbcdn.net/"
+        },
+        {
+          "user_agent_key": "mobile_safari",
+          "status_code": 204,
+          "content_type": "text/plain",
+          "bytes": 0,
+          "is_image": false,
+          "final_url": "https://scontent.fmnl9-4.fna.fbcdn.net/"
+        }
+      ],
+      "elapsed_seconds": 0.19,
+      "error": null
+    },
+    {
+      "ordinal": 26,
+      "source_url": "https://scontent.fmnl9-6.fna.fbcdn.net",
+      "status_code": 204,
+      "final_url": "https://scontent.fmnl9-6.fna.fbcdn.net/",
+      "content_type": "text/plain",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "is_image": false,
+      "saved_path": null,
+      "download_user_agent_key": "desktop_chrome",
+      "attempts": [
+        {
+          "user_agent_key": "desktop_chrome",
+          "status_code": 204,
+          "content_type": "text/plain",
+          "bytes": 0,
+          "is_image": false,
+          "final_url": "https://scontent.fmnl9-6.fna.fbcdn.net/"
+        },
+        {
+          "user_agent_key": "facebook_externalhit",
+          "status_code": 204,
+          "content_type": "text/plain",
+          "bytes": 0,
+          "is_image": false,
+          "final_url": "https://scontent.fmnl9-6.fna.fbcdn.net/"
+        },
+        {
+          "user_agent_key": "mobile_safari",
+          "status_code": 204,
+          "content_type": "text/plain",
+          "bytes": 0,
+          "is_image": false,
+          "final_url": "https://scontent.fmnl9-6.fna.fbcdn.net/"
+        }
+      ],
+      "elapsed_seconds": 0.05,
+      "error": null
+    },
+    {
+      "ordinal": 27,
+      "source_url": "https://z-m-lookaside$1$2$3$4",
+      "status_code": null,
+      "final_url": null,
+      "content_type": null,
+      "bytes": 0,
+      "sha256": null,
+      "is_image": false,
+      "saved_path": null,
+      "download_user_agent_key": null,
+      "attempts": [],
+      "elapsed_seconds": 0.01,
+      "error": "ConnectionError(MaxRetryError('HTTPSConnectionPool(host=\\'z-m-lookaside$1$2$3$4\\', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host=\\'z-m-lookaside$1$2$3$4\\', port=443): Failed to resolve \\'z-m-lookaside$1$2$3$4\\' ([Errno 8] nodename nor servname provided, or not known)\"))'))"
+    },
+    {
+      "ordinal": 28,
+      "source_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=2_pKSIBFFxDd7--jU7c9cg&_nc_ss=7b20f&oh=00_Af4OFYeX2JvbbLZ33VVB5pnVPUce1a6nkUJxMwiGYYLpdw&oe=6A04BD4A",
+      "status_code": 200,
+      "final_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=2_pKSIBFFxDd7--jU7c9cg&_nc_ss=7b20f&oh=00_Af4OFYeX2JvbbLZ33VVB5pnVPUce1a6nkUJxMwiGYYLpdw&oe=6A04BD4A",
+      "content_type": "image/jpeg",
+      "bytes": 15945,
+      "sha256": "52c950a67df944ab21c8d85a71c5d844da6df92def6956ae328b3192fcf4da9b",
+      "is_image": true,
+      "saved_path": "<REPO_ROOT>/.ai/13_research/archris-facebook-photo-audit-2026-05-09/assets/facebook-photos/archris-facebook-photo-028__52c950a67df9.jpg",
+      "download_user_agent_key": "desktop_chrome",
+      "attempts": [
+        {
+          "user_agent_key": "desktop_chrome",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 15945,
+          "is_image": true,
+          "final_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=2_pKSIBFFxDd7--jU7c9cg&_nc_ss=7b20f&oh=00_Af4OFYeX2JvbbLZ33VVB5pnVPUce1a6nkUJxMwiGYYLpdw&oe=6A04BD4A"
+        }
+      ],
+      "elapsed_seconds": 0.23,
+      "error": null
+    },
+    {
+      "ordinal": 29,
+      "source_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=Frc8QvPlui08LmSOin5u8w&_nc_ss=7b20f&oh=00_Af5o4kHgx_l6ChJKxc5SgRmWzBZMPJvqoBN9e_iCIUZB8g&oe=6A04BD4A",
+      "status_code": 200,
+      "final_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=Frc8QvPlui08LmSOin5u8w&_nc_ss=7b20f&oh=00_Af5o4kHgx_l6ChJKxc5SgRmWzBZMPJvqoBN9e_iCIUZB8g&oe=6A04BD4A",
+      "content_type": "image/jpeg",
+      "bytes": 15945,
+      "sha256": "52c950a67df944ab21c8d85a71c5d844da6df92def6956ae328b3192fcf4da9b",
+      "is_image": true,
+      "saved_path": null,
+      "download_user_agent_key": "desktop_chrome",
+      "attempts": [
+        {
+          "user_agent_key": "desktop_chrome",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 15945,
+          "is_image": true,
+          "final_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=Frc8QvPlui08LmSOin5u8w&_nc_ss=7b20f&oh=00_Af5o4kHgx_l6ChJKxc5SgRmWzBZMPJvqoBN9e_iCIUZB8g&oe=6A04BD4A"
+        }
+      ],
+      "elapsed_seconds": 0.03,
+      "error": null,
+      "duplicate_of_existing_sha256": true
+    },
+    {
+      "ordinal": 30,
+      "source_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=M6Rs1_lIe5CENS4PFqo8rg&_nc_ss=7b20f&oh=00_Af4GWa5RgoYL1uLhyu-ayQ1sO1m7PdLoPEkYjv9xtl6ORg&oe=6A04BD4A",
+      "status_code": 200,
+      "final_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=M6Rs1_lIe5CENS4PFqo8rg&_nc_ss=7b20f&oh=00_Af4GWa5RgoYL1uLhyu-ayQ1sO1m7PdLoPEkYjv9xtl6ORg&oe=6A04BD4A",
+      "content_type": "image/jpeg",
+      "bytes": 15945,
+      "sha256": "52c950a67df944ab21c8d85a71c5d844da6df92def6956ae328b3192fcf4da9b",
+      "is_image": true,
+      "saved_path": null,
+      "download_user_agent_key": "desktop_chrome",
+      "attempts": [
+        {
+          "user_agent_key": "desktop_chrome",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 15945,
+          "is_image": true,
+          "final_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=M6Rs1_lIe5CENS4PFqo8rg&_nc_ss=7b20f&oh=00_Af4GWa5RgoYL1uLhyu-ayQ1sO1m7PdLoPEkYjv9xtl6ORg&oe=6A04BD4A"
+        }
+      ],
+      "elapsed_seconds": 0.09,
+      "error": null,
+      "duplicate_of_existing_sha256": true
+    },
+    {
+      "ordinal": 31,
+      "source_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=Yuyf1Kc2ahnMc7JvINf2ig&_nc_ss=7b20f&oh=00_Af7Xktx9OgP_U21_nCFBXOpV__gI57oMEccRZUUzCCHhOQ&oe=6A04BD4A",
+      "status_code": 200,
+      "final_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=Yuyf1Kc2ahnMc7JvINf2ig&_nc_ss=7b20f&oh=00_Af7Xktx9OgP_U21_nCFBXOpV__gI57oMEccRZUUzCCHhOQ&oe=6A04BD4A",
+      "content_type": "image/jpeg",
+      "bytes": 15945,
+      "sha256": "52c950a67df944ab21c8d85a71c5d844da6df92def6956ae328b3192fcf4da9b",
+      "is_image": true,
+      "saved_path": null,
+      "download_user_agent_key": "desktop_chrome",
+      "attempts": [
+        {
+          "user_agent_key": "desktop_chrome",
+          "status_code": 200,
+          "content_type": "image/jpeg",
+          "bytes": 15945,
+          "is_image": true,
+          "final_url": "https://z-m-scontent.fmnl9-4.fna.fbcdn.net/v/t39.30808-1/502579285_122182236812323057_4277264664458400696_n.jpg?stp=cp0_dst-jpg_e15_fr_q65_tt6&cstp=mx2048x2048&ctp=s720x720&_nc_cat=106&ccb=1-7&_nc_sid=3ab345&_nc_ohc=0gIRXLeuE2QQ7kNvwGAxW1I&_nc_oc=AdoYOxk5Kd3MWlWeHEf2MWc0RR9dAYVGs5D7NxqzCum_jf2JKSrWG090rK6A5krqcMQ&_nc_ad=z-m&_nc_cid=1066&_nc_zt=24&_nc_rml=0&_nc_ht=z-m-scontent.fmnl9-4.fna&_nc_gid=Yuyf1Kc2ahnMc7JvINf2ig&_nc_ss=7b20f&oh=00_Af7Xktx9OgP_U21_nCFBXOpV__gI57oMEccRZUUzCCHhOQ&oe=6A04BD4A"
+        }
+      ],
+      "elapsed_seconds": 0.1,
+      "error": null,
+      "duplicate_of_existing_sha256": true
+    }
+  ]
+}

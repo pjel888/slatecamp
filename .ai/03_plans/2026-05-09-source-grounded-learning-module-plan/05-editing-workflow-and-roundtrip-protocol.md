@@ -56,7 +56,7 @@ For each question:
 3. Decide edit class:
    - clarity/rationale only;
    - option wording;
-   - stem rewrite;
+   - question-prompt rewrite;
    - answer-key change;
    - quarantine/remove from batch.
 4. Create `question-edits/<question_id>.json` with baseline hash and full proposed payload.

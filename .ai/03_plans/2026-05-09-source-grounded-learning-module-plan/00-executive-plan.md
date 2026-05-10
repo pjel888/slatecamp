@@ -97,7 +97,7 @@ Required article module structure:
 
 Required question improvement structure:
 
-1. Focused stem with one defensible best answer.
+1. Focused question prompt with one defensible best answer.
 2. Four options unless the platform explicitly supports otherwise.
 3. Plausible distractors tied to common misconceptions.
 4. Rationale explaining why the key is correct and why each distractor is wrong.

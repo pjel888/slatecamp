@@ -1,6 +1,6 @@
 # SlateCamp SME Council Packet — Remaining Exemplar Risks (2026-05-09)
 
-Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` before producing any content artifact.
+Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md` before producing any content artifact.
 
 You are acting as the SlateCamp SME council for Philippine LEA/ALE learning materials. Treat the review standard as if a candidate may rely on this for board-exam preparation.
 

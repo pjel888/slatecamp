@@ -6,7 +6,7 @@
 
 Every active prompt that asks an AI worker to produce, rewrite, polish, review for publication, or remediate SlateCamp learning content must begin with:
 
-> Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` before producing any content artifact.
+> Read and apply `.ai/CONTENT_EXCELLENCE_GOAL.md` and `.ai/00_system/slatecamp-learning-material-depth-protocol.md` before producing any content artifact.
 
 This rule applies to article, question, rationale, source-ledger, exemplar, and worker-brief prompts. Historical/archive prompts do not need retroactive edits unless they are reused.
 
