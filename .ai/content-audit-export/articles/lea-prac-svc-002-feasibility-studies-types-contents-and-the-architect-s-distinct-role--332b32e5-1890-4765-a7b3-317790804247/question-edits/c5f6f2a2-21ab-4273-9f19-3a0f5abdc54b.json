@@ -2,32 +2,36 @@
   "question_id": "c5f6f2a2-21ab-4273-9f19-3a0f5abdc54b",
   "baseline_hash": "sha256:fc5bc8b8e4d5b999a103f4d6d029858da75755ed67ac622b36499b65fefc6255",
   "action": "replace",
-  "reason": "source-audited-article-batch-031-local-first aligned linked question with audited local source language for lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role.",
-  "approved_by": "codex-local-source-audit-batch-031",
-  "approved_at": "2026-05-11T08:56:01+08:00",
+  "reason": "source-audited-article-batch-096-local-first refreshed this linked question against local raw PDF evidence for lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role.",
+  "approved_by": "codex-local-source-audit-batch-096",
+  "approved_at": "2026-05-12T23:55:00+08:00",
   "source_audit_support": {
     "parent_article_id": "332b32e5-1890-4765-a7b3-317790804247",
     "parent_article_slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "SPP 201 lines 254, 268-324, 328-330, 437-447",
+    "source_locator": "SPP 201 pre-design scope, feasibility/programming services, and compensation method",
+    "checked_markdown_lines": [
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-324",
+      "SPP 201 refined markdown lines 328-367",
+      "SPP 201 refined markdown lines 425-447"
+    ],
     "checked_sources": [
       {
-        "source_id": "uap-spp-201-predesign-services-local",
-        "label": "UAP SPP 201 - Pre-design Services",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-        "source_locator": "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447",
-        "checked_markdown_lines": [
-          "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447"
-        ]
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "source_id": "spp-201-predesign-services-batch-096",
+        "locator": "SPP 201 pre-design scope, feasibility/programming services, and compensation method"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_id": "spp-201-predesign-services-batch-096",
+        "locator": "Converted local text for line anchoring: SPP 201 refined markdown lines 245-255; SPP 201 refined markdown lines 268-324; SPP 201 refined markdown lines 328-367; SPP 201 refined markdown lines 425-447"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to the audited local article scope."
+    "local_source_safe_action": "updated Batch 096 source-audit support metadata; proposed question text remains source-safe or was already source-safe rewritten in the local bundle"
   },
   "proposed": {
     "text": "According to SPP 201, why is early architect involvement advantageous?",

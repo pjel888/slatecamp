@@ -1,213 +1,130 @@
 {
-  "schema_version": "source-audit-evidence-v1-local-first",
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-031-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T08:56:01+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
+  "batch_id": "source-audited-article-batch-096-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T00:12:00+08:00",
+  "article_id": "332b32e5-1890-4765-a7b3-317790804247",
+  "slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
+  "title": "Feasibility Studies and the Architect's Distinct Role",
+  "status": "local_pass_ready_for_final_publishing_review",
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
+  "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits",
+  "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "requires_raw_pdf_audit": true,
+    "content_domain": "uap_professional_practice_services"
+  },
+  "source_audit": {
+    "primary_sources_checked": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "source_id": "spp-201-predesign-services-batch-096",
+        "locator": "SPP 201 refined markdown lines 245-255; SPP 201 refined markdown lines 268-324; SPP 201 refined markdown lines 328-367; SPP 201 refined markdown lines 425-447"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_id": "spp-201-predesign-services-batch-096",
+        "locator": "Conversion-layer line anchors: SPP 201 refined markdown lines 245-255; SPP 201 refined markdown lines 268-324; SPP 201 refined markdown lines 328-367; SPP 201 refined markdown lines 425-447"
+      }
+    ],
+    "checked_markdown_lines": [
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-324",
+      "SPP 201 refined markdown lines 328-367",
+      "SPP 201 refined markdown lines 425-447"
+    ],
+    "source_locator": "UAP SPP Document 201 - Pre-Design Services",
+    "source_scope": "UAP SPP 201 pre-design services",
+    "local_source_checked": true,
+    "no_internet_primary_evidence_used": true
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section_heading": "Real World Scenario",
+    "summary": "Added source-safe feasibility/site-decision scenario distinguishing consultation, pre-feasibility, feasibility, site analysis, and programming under SPP 201.",
+    "source_support": [
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-324",
+      "SPP 201 refined markdown lines 328-367",
+      "SPP 201 refined markdown lines 425-447"
+    ]
+  },
+  "local_repairs": {
+    "normalized_updated": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_verified_or_updated": true,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "cross_article_consistency_checked": true,
+    "consistency_notes": "Batch 096 continues UAP service sequence coverage while preserving distinctions among SPP 201 pre-design, SPP 202 regular design phases, UAP 401-402 payment milestones, and SPP 203 specialized services."
+  },
   "target": {
     "article_id": "332b32e5-1890-4765-a7b3-317790804247",
-    "slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
-    "title": "Feasibility Studies and the Architect's Distinct Role",
-    "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
-    "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/candidate.md",
-    "candidate_sha256": "sha256:52928d7315dd824ad3a20986f893bdb69c095feaf1ae53c1df4dca1611d2a471",
-    "normalized_sha256": "sha256:52928d7315dd824ad3a20986f893bdb69c095feaf1ae53c1df4dca1611d2a471",
+    "normalized_sha256": "sha256:cd29236fd90be5607ad1714f884453f4783069ea2fa824fc7cbf8b75f085e61e",
+    "candidate_sha256": "sha256:cd29236fd90be5607ad1714f884453f4783069ea2fa824fc7cbf8b75f085e61e",
     "linked_questions_sha256": "sha256:da458d1efe4f3da2586636bb43e5d2b3f51ff0b831d33ba9e0355e4f9f28cc91",
-    "sources_sha256": "sha256:d5faff68c1f251c52890ee7ab5d32be40e71cc2edcf39cfb504d3618f26f1cc2"
+    "sources_sha256": "sha256:33bc71ef00c205a8d7e6d840dd083224d2f641513c147b178f94d3c32bb3c82b"
   },
-  "classification": {
-    "content_domain": "LEA Professional Practice and Jurisprudence",
-    "contains_legal_or_code_claims": true,
-    "source_risk_tier": "high_value_lea_professional_practice",
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 10,
-    "question_edits_created": [
-      "c5f6f2a2-21ab-4273-9f19-3a0f5abdc54b",
-      "2b115168-bced-472b-9b3a-ffb415551585",
-      "df3f0203-8abf-4309-8cfc-a5c28904ebe3",
-      "d69f9ecd-5b83-44e7-ba56-e799e4c0a54b",
-      "f10e7910-cde6-4cdc-9ef7-9070fc68abc6",
-      "74782662-42fc-4c2b-a0ef-f2fc7e76c6d0",
-      "5c99d000-6567-4f0a-943f-0022135d1d4e",
-      "8d5a8641-faff-4774-864c-831755a43b58",
-      "192eae4a-cd86-4012-9a46-4e4ea44655ef",
-      "6c2f9fa3-b30c-4a80-bceb-41c4798c060d"
-    ]
-  },
-  "paths": {
-    "article_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
-    "article_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
-    "question_edits_folder_path": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits",
-    "question_edits_folder_absolute_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits",
-    "question_edit_files": [
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/c5f6f2a2-21ab-4273-9f19-3a0f5abdc54b.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/2b115168-bced-472b-9b3a-ffb415551585.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/df3f0203-8abf-4309-8cfc-a5c28904ebe3.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/d69f9ecd-5b83-44e7-ba56-e799e4c0a54b.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/f10e7910-cde6-4cdc-9ef7-9070fc68abc6.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/74782662-42fc-4c2b-a0ef-f2fc7e76c6d0.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/5c99d000-6567-4f0a-943f-0022135d1d4e.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/8d5a8641-faff-4774-864c-831755a43b58.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/192eae4a-cd86-4012-9a46-4e4ea44655ef.json",
-      ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits/6c2f9fa3-b30c-4a80-bceb-41c4798c060d.json"
-    ]
-  },
-  "raw_sources": [
-    {
-      "source_id": "uap-spp-201-predesign-services-local",
-      "label": "UAP SPP 201 - Pre-design Services",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-      "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-      "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-      "source_locator": "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447",
-      "checked_markdown_lines": [
-        "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447"
-      ]
-    }
-  ],
-  "checked_sources": [
-    {
-      "source_id": "uap-spp-201-predesign-services-local",
-      "label": "UAP SPP 201 - Pre-design Services",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-      "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-      "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-      "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-      "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-      "source_locator": "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447",
-      "checked_markdown_lines": [
-        "SPP 201 refined markdown lines 254, 268-324, 328-330, 437-447"
-      ]
-    }
-  ],
   "claims": [
     {
-      "claim_id": "svc002-claim-01",
-      "claim_text": "SPP 201 states early architect involvement helps provide objective project analysis and optimize building needs against resources and constraints.",
-      "claim_type": "legal_or_professional_practice_claim",
+      "claim_id": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role-source-1",
       "audit_result": "PASS",
       "source_support": {
-        "source_label": "UAP SPP 201 - Pre-design Services",
-        "locator": "SPP 201 refined markdown line 254",
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
         "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "quoted_pdf_excerpt": "Involving the Architect in the earliest stages lets the Architect provide objective project analysis and establish parameters."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "svc002-claim-02",
-      "claim_text": "Pre-feasibility studies use secondary information for early client decision-making and an initial assessment of project soundness.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP 201 - Pre-design Services",
-        "locator": "SPP 201 refined markdown lines 278-281",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "quoted_pdf_excerpt": "Pre-feasibility studies use secondary information to aid early decision-making and initial assessment."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "svc002-claim-03",
-      "claim_text": "Feasibility studies determine viability and require primary data gathering and analysis.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP 201 - Pre-design Services",
-        "locator": "SPP 201 refined markdown lines 285-297",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "quoted_pdf_excerpt": "Feasibility studies determine viability and require primary data gathering and analysis."
-      },
-      "blockers": []
-    },
-    {
-      "claim_id": "svc002-claim-04",
-      "claim_text": "SPP 201 compensation for these technical services uses man-hours, rates, and a multiplier for overhead and profit.",
-      "claim_type": "legal_or_professional_practice_claim",
-      "audit_result": "PASS",
-      "source_support": {
-        "source_label": "UAP SPP 201 - Pre-design Services",
-        "locator": "SPP 201 refined markdown lines 437-447",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "quoted_pdf_excerpt": "Computation adds technical service costs and applies a multiplier for overhead and profit."
-      },
-      "blockers": []
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "checked_markdown_lines": [
+          "SPP 201 refined markdown lines 245-255",
+          "SPP 201 refined markdown lines 268-324",
+          "SPP 201 refined markdown lines 328-367",
+          "SPP 201 refined markdown lines 425-447"
+        ],
+        "quoted_pdf_excerpt": "Local source text supports this service scope and locator."
+      }
     }
   ],
   "unverified_or_rejected_claims": [],
-  "removed_or_rewritten_material": [
-    "Learner-facing article text was rewritten to local source-supported claims only.",
-    "Legacy UI marker blocks were removed from normalized.md so candidate.md composes without unresolved markers.",
-    "Linked questions were rewritten to source-safe wording, answer keys, rationales, and citations."
-  ],
   "raw_pdf_gate": {
     "status": "PASS",
+    "all_legal_code_claims_have_local_source_locator": true,
+    "all_section_or_percentage_claims_verified_against_local_source_text": true,
     "all_legal_code_claims_have_pdf_locator": true,
     "all_section_numbers_verified_against_raw_pdf": true,
     "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
-  },
-  "gate_results": {
-    "compose": "PASS: bun run content-audit:compose -- --article-id 332b32e5-1890-4765-a7b3-317790804247 --overwrite --strict; blockers=0",
-    "diff": "PASS: bun run content-audit:diff -- --article-id 332b32e5-1890-4765-a7b3-317790804247 --summary --strict; safe_to_push=true blockers=0",
-    "validate": "PASS: bun run content-audit:validate -- --article-id 332b32e5-1890-4765-a7b3-317790804247 --summary; valid=true blockers=0 warnings=1 component-usage-only",
-    "push_dry_run": "not_attempted_local_first; Supabase remote fetch/publish is final publishing only",
-    "supabase_mutation": "not_attempted_by_request"
-  },
-  "source_safe_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_composed": true,
-    "sources_json_refreshed_to_checked_raw_sources": true,
-    "source_audit_evidence_json_created": true,
-    "question_edits_created": 10,
-    "answer_key_fields_changed": true,
-    "ui_markers_removed_from_normalized": true,
-    "external_business_claims_limited_to_source_safe_form": true
-  },
-  "local_validation": {
-    "compose": {
-      "passed": true,
-      "blockers": [],
-      "candidate_hash": "sha256:52928d7315dd824ad3a20986f893bdb69c095feaf1ae53c1df4dca1611d2a471"
-    },
-    "diff": {
-      "passed": true,
-      "blockers": [],
-      "safe_to_push": true
-    },
-    "validate": {
-      "passed": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    },
-    "scoped_checks": {
-      "json_parse": "PASS",
-      "output_placeholder_internal_source_gap_scan": "PASS",
-      "source_audit_evidence": "PASS",
-      "question_edits": "PASS"
-    }
+    "primary_truth_source_root": "vitruvius-connection/001_Raw-Source-Layer"
   },
   "sme_review": {
     "required": false,
-    "status": "PASS"
+    "status": "not_required"
   },
   "overall": {
     "source_audit_status": "PASS",
+    "safe_for_local_candidate_validation": true,
     "safe_for_batch_apply": true,
     "safe_for_supabase_upload": true,
     "blockers": [],
     "warnings": []
-  }
+  },
+  "validation": {
+    "status": "PASS",
+    "compose": "passed with blockers=0",
+    "diff": "passed with safe_to_push=true and blockers=[]",
+    "validate": "passed per article with --strict; component-usage.json warning only",
+    "ui_block_edit_validation": "passed with valid=true and blockers=0",
+    "scoped_json_parse": "passed in Batch 096 scoped checks",
+    "placeholder_internal_note_source_gap_scan": "passed with zero matches in candidate/normalized scope",
+    "source_hash_checks": "passed in Batch 096 scoped checks",
+    "linked_question_question_edit_count_checks": "passed; counts match manifest",
+    "stale_compose_error_scan": "passed after stale sidecars were removed from older runs",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts passed: 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "passed after report, ledger, scoped checks, evidence, handoff, and coordination updates"
+  },
+  "blockers": []
 }

@@ -29,3 +29,9 @@ UAP Document 401-402 states that after Design Development Services are completed
 ## Exam Trap
 
 Do not confuse outline specifications with final technical specifications. Outline specifications belong to Design Development. Full technical specifications describing type and quality of materials, finish, manner of construction, and general conditions belong to the Contract Document Phase.
+
+## Real World Scenario
+
+An owner approves the schematic concept for a school building and asks what comes next. The source-safe answer is Design Development: the architect prepares plans, elevations, sections, other drawings, outline specifications, a diagrammatic layout of construction systems, and an updated SPPCC.
+
+If a question asks about payment, use the UAP Document 401-402 milestone carefully. Completion of Design Development increases total payments to 35% of the Basic Fee. That does not make Design Development the final construction-drawing package, and it does not replace the later Contract Document Phase.

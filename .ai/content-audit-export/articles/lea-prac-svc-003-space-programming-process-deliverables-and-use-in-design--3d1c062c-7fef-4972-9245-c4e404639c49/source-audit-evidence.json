@@ -1,337 +1,157 @@
 {
-  "batch_id": "source-audited-article-batch-025-local-first",
-  "audit_date": "2026-05-11",
-  "audited_at": "2026-05-11T18:30:00.000+08:00",
+  "batch_id": "source-audited-article-batch-096-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T00:12:00+08:00",
   "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
   "slug": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
   "title": "Space Programming Process Deliverables and Use in Design",
   "status": "local_pass_ready_for_final_publishing_review",
   "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49",
-  "absolute_article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49",
+  "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49",
   "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits",
-  "absolute_question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits",
+  "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits",
   "linked_questions": 10,
   "question_edits_created": 10,
   "source_safe_rewrite_question_edits": 10,
   "classification": {
-    "content_domain": "professional_practice",
+    "contains_legal_or_code_claims": true,
     "requires_raw_pdf_audit": true,
-    "legal_or_code_source": true
+    "content_domain": "uap_professional_practice_services"
+  },
+  "source_audit": {
+    "primary_sources_checked": [
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+        "sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+        "source_id": "spp-201-predesign-services-batch-096",
+        "locator": "SPP 201 refined markdown lines 245-255; SPP 201 refined markdown lines 268-324; SPP 201 refined markdown lines 328-367; SPP 201 refined markdown lines 425-447"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+        "source_id": "spp-201-predesign-services-batch-096",
+        "locator": "Conversion-layer line anchors: SPP 201 refined markdown lines 245-255; SPP 201 refined markdown lines 268-324; SPP 201 refined markdown lines 328-367; SPP 201 refined markdown lines 425-447"
+      },
+      {
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "source_id": "uap-standards-spp-201-comprehensive-services-list-batch-096",
+        "locator": "Standards of Professional Practice2 refined markdown lines 1114-1126"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_id": "uap-standards-spp-201-comprehensive-services-list-batch-096",
+        "locator": "Conversion-layer line anchors: Standards of Professional Practice2 refined markdown lines 1114-1126"
+      }
+    ],
+    "checked_markdown_lines": [
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-324",
+      "SPP 201 refined markdown lines 328-367",
+      "SPP 201 refined markdown lines 425-447",
+      "Standards of Professional Practice2 refined markdown lines 1114-1126"
+    ],
+    "source_locator": "UAP SPP Document 201 - Pre-Design Services; UAP Standards of Professional Practice - Comprehensive Services list for SPP 201",
+    "source_scope": "UAP SPP 201 architectural programming, space planning, and space management",
+    "local_source_checked": true,
+    "no_internet_primary_evidence_used": true
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section_heading": "Real World Scenario",
+    "summary": "Removed internal source-note section and added source-safe client-programming scenario for interviews, space audits, requirements, space planning, and management studies.",
+    "source_support": [
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-324",
+      "SPP 201 refined markdown lines 328-367",
+      "SPP 201 refined markdown lines 425-447",
+      "Standards of Professional Practice2 refined markdown lines 1114-1126"
+    ]
+  },
+  "local_repairs": {
+    "normalized_updated": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_verified_or_updated": true,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "cross_article_consistency_checked": true,
+    "consistency_notes": "Batch 096 continues UAP service sequence coverage while preserving distinctions among SPP 201 pre-design, SPP 202 regular design phases, UAP 401-402 payment milestones, and SPP 203 specialized services."
   },
   "target": {
     "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
-    "slug": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
-    "normalized_sha256": "sha256:71611b393c33d93f518ba8552708ef30cd15418ca60220d358a930cd8f639d99",
-    "candidate_sha256": "sha256:71611b393c33d93f518ba8552708ef30cd15418ca60220d358a930cd8f639d99"
-  },
-  "overall": {
-    "source_audit_status": "PASS",
-    "safe_for_supabase_upload": true,
-    "local_first_only": true,
-    "supabase_push_attempted": false,
-    "deploy_attempted": false,
-    "commit_attempted": false
-  },
-  "raw_pdf_gate": {
-    "status": "PASS",
-    "all_legal_code_claims_have_pdf_locator": true,
-    "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true,
-    "blockers": []
-  },
-  "source_audit": {
-    "checked_sources": [
-      {
-        "source_id": "spp201-pre-design-services-local",
-        "label": "SPP 201 - Pre-Design Services",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "SPP 201 lines 328-367",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-        "checked_markdown_lines": [
-          "SPP 201 lines 328-367"
-        ],
-        "use": "Local SPP 201 raw PDF and refined markdown checked for architectural programming, space planning, and space management scope.",
-        "local_source_checked": true
-      },
-      {
-        "source_id": "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
-        "label": "UAP Document Standards of Professional Practice - Space Programming Process Deliverables and Use in Design",
-        "authority": "United Architects of the Philippines / Professional practice standards source",
-        "source_type": "professional_practice_pdf",
-        "source_locator": "UAP Standards lines 1120-1125",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
-        "checked_markdown_lines": [
-          "UAP Standards lines 1120-1125"
-        ],
-        "use": "Local UAP standards source checked for the SPP 201 pre-design services list.",
-        "local_source_checked": true
-      }
-    ],
-    "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-    "checked_markdown_lines": [
-      "SPP 201 lines 328-367",
-      "UAP Standards lines 1120-1125"
-    ]
-  },
-  "article_repair": {
-    "normalized_md_rewritten": true,
-    "candidate_md_pending_compose": false,
-    "placeholders_removed": true,
-    "internal_notes_removed": true,
-    "source_gap_notes_removed": true,
-    "unsupported_claims_rewritten_or_removed": true,
-    "candidate_md_composed": true,
-    "diff_report_generated": true
+    "normalized_sha256": "sha256:04a00c835fd35c22f87f2e0d4c3863d1dec42a9c55cd35e64bff7e803d8dce09",
+    "candidate_sha256": "sha256:04a00c835fd35c22f87f2e0d4c3863d1dec42a9c55cd35e64bff7e803d8dce09",
+    "linked_questions_sha256": "sha256:38f4e953b61b66be5bf7fec2990264ac13702d67b2c38889c8ddb0af3a2308f0",
+    "sources_sha256": "sha256:f78b5c6c09e35a54c057507443c146a89da3ff59fb83c343026ef38a281e84e8"
   },
   "claims": [
     {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-001",
-      "claim_text": "Question 14b715aa-e644-44d4-93ac-95e07300a9de / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-001 rewritten to local source-safe form.",
-      "question_id": "14b715aa-e644-44d4-93ac-95e07300a9de",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-001",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
+      "claim_id": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-source-1",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
         "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+        "checked_markdown_lines": [
+          "SPP 201 refined markdown lines 245-255",
+          "SPP 201 refined markdown lines 268-324",
+          "SPP 201 refined markdown lines 328-367",
+          "SPP 201 refined markdown lines 425-447"
+        ],
+        "quoted_pdf_excerpt": "Local source text supports this service scope and locator."
       }
     },
     {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-002",
-      "claim_text": "Question d370d03d-2eff-402b-9b34-d89aed64ca86 / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-002 rewritten to local source-safe form.",
-      "question_id": "d370d03d-2eff-402b-9b34-d89aed64ca86",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-002",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
+      "claim_id": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-source-2",
       "audit_result": "PASS",
       "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-003",
-      "claim_text": "Question c86604df-3095-45f7-9bb5-9904f6591e96 / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-003 rewritten to local source-safe form.",
-      "question_id": "c86604df-3095-45f7-9bb5-9904f6591e96",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-003",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-004",
-      "claim_text": "Question 61efa497-61af-41d5-bbac-035d4a08a3c0 / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-004 rewritten to local source-safe form.",
-      "question_id": "61efa497-61af-41d5-bbac-035d4a08a3c0",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-004",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-005",
-      "claim_text": "Question 9900f54f-5968-42b8-8332-154c50cd6dd1 / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-005 rewritten to local source-safe form.",
-      "question_id": "9900f54f-5968-42b8-8332-154c50cd6dd1",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-005",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-006",
-      "claim_text": "Question 26b61b36-1777-4925-bdc8-1015c56874fe / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-006 rewritten to local source-safe form.",
-      "question_id": "26b61b36-1777-4925-bdc8-1015c56874fe",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-006",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-007",
-      "claim_text": "Question 3c1bd554-a510-4762-bd1c-beb09f03d578 / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-007 rewritten to local source-safe form.",
-      "question_id": "3c1bd554-a510-4762-bd1c-beb09f03d578",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-007",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-008",
-      "claim_text": "Question ca250531-0a68-428c-bf3c-9623ebc69dc7 / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-008 rewritten to local source-safe form.",
-      "question_id": "ca250531-0a68-428c-bf3c-9623ebc69dc7",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-008",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-009",
-      "claim_text": "Question 9bc6c838-ff13-4a44-912d-ea665d844f5a / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-009 rewritten to local source-safe form.",
-      "question_id": "9bc6c838-ff13-4a44-912d-ea665d844f5a",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-009",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
-      }
-    },
-    {
-      "claim_id": "batch-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-question-010",
-      "claim_text": "Question b4fce2de-7bed-40ad-bf15-c0a69ce64cb2 / model BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-010 rewritten to local source-safe form.",
-      "question_id": "b4fce2de-7bed-40ad-bf15-c0a69ce64cb2",
-      "model_id": "BATCH-025-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design-010",
-      "support_status": "PASS",
-      "source_ids": [
-        "spp201-pre-design-services-local",
-        "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design"
-      ],
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
-        "quoted_pdf_excerpt": "Local raw PDF and refined markdown line range checked for this source-safe rewrite."
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "checked_markdown_lines": [
+          "Standards of Professional Practice2 refined markdown lines 1114-1126"
+        ],
+        "quoted_pdf_excerpt": "Local source text supports this service scope and locator."
       }
     }
   ],
-  "question_edits": [
-    {
-      "question_id": "14b715aa-e644-44d4-93ac-95e07300a9de",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/14b715aa-e644-44d4-93ac-95e07300a9de.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "d370d03d-2eff-402b-9b34-d89aed64ca86",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/d370d03d-2eff-402b-9b34-d89aed64ca86.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "c86604df-3095-45f7-9bb5-9904f6591e96",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/c86604df-3095-45f7-9bb5-9904f6591e96.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "61efa497-61af-41d5-bbac-035d4a08a3c0",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/61efa497-61af-41d5-bbac-035d4a08a3c0.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "9900f54f-5968-42b8-8332-154c50cd6dd1",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/9900f54f-5968-42b8-8332-154c50cd6dd1.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "26b61b36-1777-4925-bdc8-1015c56874fe",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/26b61b36-1777-4925-bdc8-1015c56874fe.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "3c1bd554-a510-4762-bd1c-beb09f03d578",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/3c1bd554-a510-4762-bd1c-beb09f03d578.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "ca250531-0a68-428c-bf3c-9623ebc69dc7",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/ca250531-0a68-428c-bf3c-9623ebc69dc7.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "9bc6c838-ff13-4a44-912d-ea665d844f5a",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/9bc6c838-ff13-4a44-912d-ea665d844f5a.json",
-      "support_status": "PASS"
-    },
-    {
-      "question_id": "b4fce2de-7bed-40ad-bf15-c0a69ce64cb2",
-      "edit_file": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits/b4fce2de-7bed-40ad-bf15-c0a69ce64cb2.json",
-      "support_status": "PASS"
-    }
-  ]
+  "unverified_or_rejected_claims": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_local_source_locator": true,
+    "all_section_or_percentage_claims_verified_against_local_source_text": true,
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "primary_truth_source_root": "vitruvius-connection/001_Raw-Source-Layer"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
+  },
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_local_candidate_validation": true,
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
+  },
+  "validation": {
+    "status": "PASS",
+    "compose": "passed with blockers=0",
+    "diff": "passed with safe_to_push=true and blockers=[]",
+    "validate": "passed per article with --strict; component-usage.json warning only",
+    "ui_block_edit_validation": "passed with valid=true and blockers=0",
+    "scoped_json_parse": "passed in Batch 096 scoped checks",
+    "placeholder_internal_note_source_gap_scan": "passed with zero matches in candidate/normalized scope",
+    "source_hash_checks": "passed in Batch 096 scoped checks",
+    "linked_question_question_edit_count_checks": "passed; counts match manifest",
+    "stale_compose_error_scan": "passed after stale sidecars were removed from older runs",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts passed: 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "passed after report, ledger, scoped checks, evidence, handoff, and coordination updates"
+  },
+  "blockers": []
 }

@@ -2,46 +2,49 @@
   "question_id": "3c1bd554-a510-4762-bd1c-beb09f03d578",
   "baseline_hash": "sha256:eaea4299213853d45caa7743cf73275faba3877c77ec71228fb59293368aedff",
   "action": "replace",
-  "reason": "source-audited-article-batch-025-local-first rewrote this linked question to align with the local source audit for lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design.",
-  "approved_by": "codex-local-source-audit-batch-025",
-  "approved_at": "2026-05-11T18:30:00.000+08:00",
+  "reason": "source-audited-article-batch-096-local-first refreshed this linked question against local raw PDF evidence for lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design.",
+  "approved_by": "codex-local-source-audit-batch-096",
+  "approved_at": "2026-05-12T23:55:00+08:00",
   "source_audit_support": {
     "parent_article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
     "parent_article_slug": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "SPP 201 refined markdown lines 328-367; UAP Standards lines 1120-1125",
+    "source_locator": "SPP 201 pre-design scope, feasibility/programming services, and compensation method; Comprehensive Architectural Services list naming architectural programming, space planning, and space management studies under SPP 201",
     "checked_markdown_lines": [
-      "SPP 201 lines 328-367",
-      "UAP Standards lines 1120-1125"
+      "SPP 201 refined markdown lines 245-255",
+      "SPP 201 refined markdown lines 268-324",
+      "SPP 201 refined markdown lines 328-367",
+      "SPP 201 refined markdown lines 425-447",
+      "Standards of Professional Practice2 refined markdown lines 1114-1126"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
         "sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "source_id": "spp201-pre-design-services-local",
-        "locator": "SPP 201 lines 328-367"
+        "source_id": "spp-201-predesign-services-batch-096",
+        "locator": "SPP 201 pre-design scope, feasibility/programming services, and compensation method"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
         "sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-        "source_id": "spp201-pre-design-services-local",
-        "locator": "SPP 201 lines 328-367"
+        "source_id": "spp-201-predesign-services-batch-096",
+        "locator": "Converted local text for line anchoring: SPP 201 refined markdown lines 245-255; SPP 201 refined markdown lines 268-324; SPP 201 refined markdown lines 328-367; SPP 201 refined markdown lines 425-447"
       },
       {
-        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "source_id": "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
-        "locator": "UAP Standards lines 1120-1125"
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "source_id": "uap-standards-spp-201-comprehensive-services-list-batch-096",
+        "locator": "Comprehensive Architectural Services list naming architectural programming, space planning, and space management studies under SPP 201"
       },
       {
-        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
-        "source_id": "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
-        "locator": "UAP Standards lines 1120-1125"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_id": "uap-standards-spp-201-comprehensive-services-list-batch-096",
+        "locator": "Converted local text for line anchoring: Standards of Professional Practice2 refined markdown lines 1114-1126"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-audited question, answer key, citation, and explanation"
+    "local_source_safe_action": "updated Batch 096 source-audit support metadata; proposed question text remains source-safe or was already source-safe rewritten in the local bundle"
   },
   "proposed": {
     "text": "Which statement best describes how the space program is used?",

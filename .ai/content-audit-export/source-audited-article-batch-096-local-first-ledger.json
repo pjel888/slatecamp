@@ -1,0 +1,530 @@
+{
+  "artifact_type": "source-audited-local-first-ledger",
+  "batch_number": "096",
+  "batch_id": "source-audited-article-batch-096-local-first",
+  "generated_at": "2026-05-13T00:12:00+08:00",
+  "workspace": "/Users/philiplewis/slatecamp",
+  "manifest_path": ".ai/03_plans/production-line-batch-096-manifest.json",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": [],
+  "totals": {
+    "selected_articles": 5,
+    "linked_questions": 50,
+    "question_edits": 50,
+    "source_safe_question_edits": 50,
+    "expected_linked_questions": 50,
+    "expected_question_edits": 50,
+    "scenario_eligible_added": 5,
+    "scenario_eligible_deferred": 0,
+    "scenario_not_applicable": 0,
+    "source_hash_checks": 18,
+    "source_hash_failures": 0,
+    "scoped_json_files_parsed": 108,
+    "scoped_json_parse_failures": 0,
+    "stale_compose_error_matches": 0,
+    "candidate_placeholder_matches": 0,
+    "internal_note_source_gap_matches": 0,
+    "component_usage_warnings": 5,
+    "blockers": 0
+  },
+  "exact_improved_article_folder_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71"
+  ],
+  "exact_question_edits_paths": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/question-edits",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits"
+  ],
+  "articles": [
+    {
+      "article_id": "332b32e5-1890-4765-a7b3-317790804247",
+      "slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
+      "title": "Feasibility Studies and the Architect's Distinct Role",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role--332b32e5-1890-4765-a7b3-317790804247/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 1,
+      "normalized_sha256": "sha256:cd29236fd90be5607ad1714f884453f4783069ea2fa824fc7cbf8b75f085e61e",
+      "candidate_sha256": "sha256:cd29236fd90be5607ad1714f884453f4783069ea2fa824fc7cbf8b75f085e61e",
+      "sources_sha256": "sha256:33bc71ef00c205a8d7e6d840dd083224d2f641513c147b178f94d3c32bb3c82b",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe feasibility/site-decision scenario distinguishing consultation, pre-feasibility, feasibility, site analysis, and programming under SPP 201.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "spp-201-predesign-services-batch-096",
+          "label": "UAP SPP Document 201 - Pre-Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "conversion_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "conversion_markdown_field": "refined_markdown_sha256",
+          "checked_markdown_lines": [
+            "SPP 201 refined markdown lines 245-255",
+            "SPP 201 refined markdown lines 268-324",
+            "SPP 201 refined markdown lines 328-367",
+            "SPP 201 refined markdown lines 425-447"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 031 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "Publish verified SlateCamp article batch 013",
+          "Publish verified SlateCamp article batch 011",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      }
+    },
+    {
+      "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+      "slug": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+      "title": "Space Programming Process Deliverables and Use in Design",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design--3d1c062c-7fef-4972-9245-c4e404639c49/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:04a00c835fd35c22f87f2e0d4c3863d1dec42a9c55cd35e64bff7e803d8dce09",
+      "candidate_sha256": "sha256:04a00c835fd35c22f87f2e0d4c3863d1dec42a9c55cd35e64bff7e803d8dce09",
+      "sources_sha256": "sha256:f78b5c6c09e35a54c057507443c146a89da3ff59fb83c343026ef38a281e84e8",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Removed internal source-note section and added source-safe client-programming scenario for interviews, space audits, requirements, space planning, and management studies.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "spp-201-predesign-services-batch-096",
+          "label": "UAP SPP Document 201 - Pre-Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+          "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+          "conversion_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+          "conversion_markdown_field": "refined_markdown_sha256",
+          "checked_markdown_lines": [
+            "SPP 201 refined markdown lines 245-255",
+            "SPP 201 refined markdown lines 268-324",
+            "SPP 201 refined markdown lines 328-367",
+            "SPP 201 refined markdown lines 425-447"
+          ]
+        },
+        {
+          "source_id": "uap-standards-spp-201-comprehensive-services-list-batch-096",
+          "label": "UAP Standards of Professional Practice - Comprehensive Services list for SPP 201",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "conversion_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "conversion_markdown_field": "refined_markdown_sha256",
+          "checked_markdown_lines": [
+            "Standards of Professional Practice2 refined markdown lines 1114-1126"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 025 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "Publish verified SlateCamp article batch 014",
+          "Publish verified SlateCamp article batch 011",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      }
+    },
+    {
+      "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "slug": "lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
+      "title": "Phase 2 Design Development Coordination Engineering Integration",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee--bdc69dbd-c7fb-405f-b8f7-38a6a8fce526/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:4b9e2bee9e5510b774b0237108445c8688f85e252de406e40401caa22d7ad537",
+      "candidate_sha256": "sha256:4b9e2bee9e5510b774b0237108445c8688f85e252de406e40401caa22d7ad537",
+      "sources_sha256": "sha256:296125f62a90a15f66bdf5370e6f3928d635010d90c01c791ca58b65cc123db2",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe design-development scenario distinguishing outline specifications and coordinated systems from final contract documents while preserving the 35% cumulative milestone.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-spp-202-regular-design-services-batch-096",
+          "label": "SPP Document 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "conversion_markdown_field": "raw_markdown_sha256",
+          "checked_markdown_lines": [
+            "UAP Document Standards raw markdown lines 301-318",
+            "UAP Document Standards raw markdown lines 321-335",
+            "UAP Document Standards raw markdown lines 338-382"
+          ]
+        },
+        {
+          "source_id": "uap-doc-401-402-payment-milestones-batch-096",
+          "label": "UAP Document 401-402 - Owner-Architect Agreement payment milestones",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+          "conversion_markdown_sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "conversion_markdown_field": "raw_markdown_sha256",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 raw markdown lines 88-100",
+            "UAP Document 401-402 raw markdown lines 113-124"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 016 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "Publish verified SlateCamp article batch 013",
+          "Publish verified SlateCamp article batch 011",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      }
+    },
+    {
+      "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+      "slug": "lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202",
+      "title": "Bidding or Negotiation and Construction Phase Under SPP 202",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:a517d347dc8d93759a247b1f0a224dcf5a100b1722398c647843f9f678f59a3c",
+      "candidate_sha256": "sha256:a517d347dc8d93759a247b1f0a224dcf5a100b1722398c647843f9f678f59a3c",
+      "sources_sha256": "sha256:38ab19a6701522149498b46ab7187c3cd04e1517fdd1d66620011494b7581c4b",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe procurement-to-construction scenario separating bid support from claims, changes, periodic visits, payment certification, and completion duties.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-spp-202-regular-design-services-batch-096",
+          "label": "SPP Document 202 - Regular Design Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
+          "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
+          "conversion_markdown_sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
+          "conversion_markdown_field": "raw_markdown_sha256",
+          "checked_markdown_lines": [
+            "UAP Document Standards raw markdown lines 301-318",
+            "UAP Document Standards raw markdown lines 321-335",
+            "UAP Document Standards raw markdown lines 338-382"
+          ]
+        },
+        {
+          "source_id": "uap-doc-401-402-payment-milestones-batch-096",
+          "label": "UAP Document 401-402 - Owner-Architect Agreement payment milestones",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
+          "raw_pdf_sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
+          "conversion_markdown_sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
+          "conversion_markdown_field": "raw_markdown_sha256",
+          "checked_markdown_lines": [
+            "UAP Document 401-402 raw markdown lines 88-100",
+            "UAP Document 401-402 raw markdown lines 113-124"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 016 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "Publish verified SlateCamp article batch 011",
+          "Publish verified SlateCamp article batch 003",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      }
+    },
+    {
+      "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+      "slug": "lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation",
+      "title": "Specialized Architectural Services Scope and Compensation",
+      "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+      "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+      "normalized_path": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/normalized.md",
+      "candidate_path": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/candidate.md",
+      "sources_path": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/sources.json",
+      "source_audit_evidence_path": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/source-audit-evidence.json",
+      "question_edits_path": ".ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits",
+      "question_edits_path_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation--debf8513-f91a-4e0a-9f32-8fe4f677ed71/question-edits",
+      "linked_questions": 10,
+      "question_edits": 10,
+      "source_safe_question_edits": 10,
+      "source_count": 2,
+      "normalized_sha256": "sha256:3fc064eee6ae24eeceb4634d8f6ff3eb2c6a08ea2a3b934d33d78b7990a35003",
+      "candidate_sha256": "sha256:3fc064eee6ae24eeceb4634d8f6ff3eb2c6a08ea2a3b934d33d78b7990a35003",
+      "sources_sha256": "sha256:96bf0b363df67d255fcbe4947abe2e8804c6b27ff14a29630e1397292c2b9576",
+      "scenario_status": "eligible-added",
+      "scenario_summary": "Added source-safe specialized-services scenario distinguishing Architectural Interiors, acoustic design, and lighting layout/design from Regular Design Services and separate consultant fees.",
+      "compose": {
+        "blockers": 0,
+        "safe_to_diff": true
+      },
+      "diff": {
+        "blockers": 0,
+        "safe_to_push": true,
+        "locally_safe_to_push": true
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": 0,
+        "warnings": 0
+      },
+      "validation_warnings": [
+        "component-usage.json has not been generated; package validator warning only"
+      ],
+      "blockers": [],
+      "source_locators": [
+        {
+          "source_id": "uap-spp-203-specialized-services-batch-096",
+          "label": "SPP Document 203 - Specialized Architectural Services",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+          "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+          "conversion_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+          "conversion_markdown_field": "refined_markdown_sha256",
+          "checked_markdown_lines": [
+            "SPP 203 refined markdown lines 101-150",
+            "SPP 203 refined markdown lines 228-232"
+          ]
+        },
+        {
+          "source_id": "uap-standards-spp-203-specialized-services-batch-096",
+          "label": "UAP Standards of Professional Practice - Specialized Architectural Services details",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+          "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+          "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+          "conversion_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+          "conversion_markdown_field": "refined_markdown_sha256",
+          "checked_markdown_lines": [
+            "Standards of Professional Practice2 refined markdown lines 600-628",
+            "Standards of Professional Practice2 refined markdown lines 630-658",
+            "Standards of Professional Practice2 refined markdown lines 660-689"
+          ]
+        }
+      ],
+      "historical_overlap": {
+        "current_serial_source_audited_batches": [],
+        "historical_local_first_or_reaudit_artifacts": [
+          "Batch 034 local-first source-audited repair artifact"
+        ],
+        "historical_published_article_question_artifacts": [
+          "Publish verified SlateCamp article batch 014",
+          "Publish verified SlateCamp article batch 011",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      }
+    }
+  ],
+  "historical_overlap_classification": {
+    "current_serial_source_audited_batches": {
+      "status": "NO_OVERLAP_WITH_BATCHES_087_095",
+      "selected_ids_found": []
+    },
+    "historical_local_first_or_reaudit_artifacts": [
+      {
+        "article_id": "332b32e5-1890-4765-a7b3-317790804247",
+        "slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
+        "artifacts": [
+          "Batch 031 local-first source-audited repair artifact"
+        ]
+      },
+      {
+        "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+        "slug": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+        "artifacts": [
+          "Batch 025 local-first source-audited repair artifact"
+        ]
+      },
+      {
+        "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+        "slug": "lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
+        "artifacts": [
+          "Batch 016 local-first source-audited repair artifact"
+        ]
+      },
+      {
+        "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+        "slug": "lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202",
+        "artifacts": [
+          "Batch 016 local-first source-audited repair artifact"
+        ]
+      },
+      {
+        "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+        "slug": "lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation",
+        "artifacts": [
+          "Batch 034 local-first source-audited repair artifact"
+        ]
+      }
+    ],
+    "historical_published_article_question_artifacts": [
+      {
+        "article_id": "332b32e5-1890-4765-a7b3-317790804247",
+        "slug": "lea-prac-svc-002-feasibility-studies-types-contents-and-the-architect-s-distinct-role",
+        "artifacts": [
+          "Publish verified SlateCamp article batch 013",
+          "Publish verified SlateCamp article batch 011",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      },
+      {
+        "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
+        "slug": "lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+        "artifacts": [
+          "Publish verified SlateCamp article batch 014",
+          "Publish verified SlateCamp article batch 011",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      },
+      {
+        "article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
+        "slug": "lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
+        "artifacts": [
+          "Publish verified SlateCamp article batch 013",
+          "Publish verified SlateCamp article batch 011",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      },
+      {
+        "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+        "slug": "lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202",
+        "artifacts": [
+          "Publish verified SlateCamp article batch 011",
+          "Publish verified SlateCamp article batch 003",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      },
+      {
+        "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
+        "slug": "lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation",
+        "artifacts": [
+          "Publish verified SlateCamp article batch 014",
+          "Publish verified SlateCamp article batch 011",
+          "legacy content-audit/Supabase preparation commits"
+        ]
+      }
+    ]
+  },
+  "no_external_actions": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false,
+    "git_push_attempted": false
+  }
+}

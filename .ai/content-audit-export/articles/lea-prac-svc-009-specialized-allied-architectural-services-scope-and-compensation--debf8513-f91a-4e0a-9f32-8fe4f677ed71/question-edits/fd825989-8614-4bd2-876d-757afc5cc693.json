@@ -2,68 +2,49 @@
   "question_id": "fd825989-8614-4bd2-876d-757afc5cc693",
   "baseline_hash": "sha256:f45c5f547469fe8270cb7b264e65f7c6cd62d0eb747ae0efa6a4f51edac956a8",
   "action": "replace",
-  "reason": "source-audited-article-batch-034-local-first aligned linked professional-practice question with audited local raw PDF source language for lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
-  "approved_by": "codex-local-source-audit-batch-034",
-  "approved_at": "2026-05-11T10:59:50+08:00",
+  "reason": "source-audited-article-batch-096-local-first refreshed this linked question against local raw PDF evidence for lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation.",
+  "approved_by": "codex-local-source-audit-batch-096",
+  "approved_at": "2026-05-12T23:55:00+08:00",
   "source_audit_support": {
     "parent_article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
     "parent_article_slug": "lea-prac-svc-009-specialized-allied-architectural-services-scope-and-compensation",
-    "parent_article_title": "Specialized Architectural Services Scope and Compensation",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "UAP SPP 203 refined markdown lines 101-150; UAP Standards of Professional Practice refined markdown lines 793, 878",
+    "source_locator": "SPP 203 list of Specialized Architectural Services and manner of providing Architectural Interiors services; Detailed definitions, scope, and compensation cues for Architectural Interiors, Acoustic Design, and Architectural Lighting Layout and Design",
+    "checked_markdown_lines": [
+      "SPP 203 refined markdown lines 101-150",
+      "SPP 203 refined markdown lines 228-232",
+      "Standards of Professional Practice2 refined markdown lines 600-628",
+      "Standards of Professional Practice2 refined markdown lines 630-658",
+      "Standards of Professional Practice2 refined markdown lines 660-689"
+    ],
     "checked_sources": [
       {
-        "source_id": "uap-spp-203-local",
-        "label": "UAP SPP Document 203 - Specialized Architectural Services",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
-        "source_locator": "UAP SPP 203 refined markdown lines 101-150",
-        "checked_markdown_lines": [
-          "UAP SPP 203 refined markdown lines 101-150"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
-        "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
-        "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389"
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+        "sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+        "source_id": "uap-spp-203-specialized-services-batch-096",
+        "locator": "SPP 203 list of Specialized Architectural Services and manner of providing Architectural Interiors services"
       },
       {
-        "source_id": "uap-standards-professional-practice2-local",
-        "label": "UAP Standards of Professional Practice - compiled SPP source",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "source_locator": "UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215",
-        "checked_markdown_lines": [
-          "UAP Standards of Professional Practice refined markdown lines 300-350",
-          "UAP Standards of Professional Practice refined markdown lines 362-418",
-          "UAP Standards of Professional Practice refined markdown lines 475-586",
-          "UAP Standards of Professional Practice refined markdown lines 1036-1077",
-          "UAP Standards of Professional Practice refined markdown lines 1097-1215"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
-        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
-        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c"
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+        "sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+        "source_id": "uap-spp-203-specialized-services-batch-096",
+        "locator": "Converted local text for line anchoring: SPP 203 refined markdown lines 101-150; SPP 203 refined markdown lines 228-232"
       },
       {
-        "source_id": "ra-9266-irr-local",
-        "label": "RA 9266 IRR Architecture Act of 2004",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "source_locator": "RA 9266 IRR refined markdown lines 674-680, 688-690, 736-738, 853-855",
-        "checked_markdown_lines": [
-          "RA 9266 IRR refined markdown lines 674-680",
-          "RA 9266 IRR refined markdown lines 688-690",
-          "RA 9266 IRR refined markdown lines 736-738",
-          "RA 9266 IRR refined markdown lines 853-855"
-        ],
-        "raw_pdf_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9266/RA-9266 IRR Architecture Act of 2004.pdf",
-        "raw_pdf_sha256": "sha256:d0ce03b572f40560647359abf8e3a38c14bbf9b1b1436389a6d9148eb6fd0574",
-        "refined_markdown_absolute_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9266/RA-9266 IRR Architecture Act of 2004.md",
-        "refined_markdown_sha256": "sha256:bdc987f6e326afdc4cdffa9dabc85f4f5c64d2960ad14c9c7665ab964c7141f0"
+        "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "source_id": "uap-standards-spp-203-specialized-services-batch-096",
+        "locator": "Detailed definitions, scope, and compensation cues for Architectural Interiors, Acoustic Design, and Architectural Lighting Layout and Design"
+      },
+      {
+        "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_id": "uap-standards-spp-203-specialized-services-batch-096",
+        "locator": "Converted local text for line anchoring: Standards of Professional Practice2 refined markdown lines 600-628; Standards of Professional Practice2 refined markdown lines 630-658; Standards of Professional Practice2 refined markdown lines 660-689"
       }
     ],
-    "local_source_safe_action": "Question text, options, answer key, rationale, explanation, and code citation rewritten to audited local article scope."
+    "local_source_safe_action": "updated Batch 096 source-audit support metadata; proposed question text remains source-safe or was already source-safe rewritten in the local bundle"
   },
   "proposed": {
     "text": "Which source-safe service boundary is correct?",

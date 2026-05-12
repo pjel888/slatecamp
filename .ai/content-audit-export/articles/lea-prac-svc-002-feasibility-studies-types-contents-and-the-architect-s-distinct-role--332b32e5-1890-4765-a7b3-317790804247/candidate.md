@@ -29,3 +29,9 @@ SPP 201 also includes site selection and analysis, site utilization and land-use
 ## Compensation Cue
 
 For this SPP 201 section, the method of compensation is based on adding technical service costs, using man-hours multiplied by rate, then applying a multiplier for overhead and profit. The multiplier range stated in the source is 1.5 to 2.5 depending on office setup, overhead, experience, and project complexity.
+
+## Real World Scenario
+
+A client is considering a mixed-use project on a constrained site but has not yet decided whether to acquire the property. The architect should not jump straight into schematic design. A source-safe response is to define the needed pre-design service: consultation for advice, pre-feasibility when the work relies on secondary information, feasibility when primary data and present-or-future trends are analyzed, and site selection or land-use study when the decision depends on site criteria, context, and development controls.
+
+In an LEA item, choose the answer that keeps those services before regular design. The architect may help the client decide whether the project is viable, but that decision support is still different from producing SPP 202 design-phase deliverables.

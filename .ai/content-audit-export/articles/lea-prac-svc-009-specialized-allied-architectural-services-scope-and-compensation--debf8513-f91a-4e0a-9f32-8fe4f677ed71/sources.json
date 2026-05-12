@@ -1,44 +1,49 @@
 {
   "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
   "hash_algorithm": "sha256",
-  "source_count": 3,
+  "source_count": 2,
   "sources": [
     {
-      "source_id": "uap-spp-203-local",
+      "source_id": "uap-spp-203-specialized-services-batch-096",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
-      "label": "UAP SPP Document 203 - Specialized Architectural Services",
+      "label": "SPP Document 203 - Specialized Architectural Services",
       "url": null,
       "source_type": "local_raw_pdf",
-      "description": "UAP SPP Document 203 - Specialized Architectural Services; UAP SPP 203 refined markdown lines 101-150; raw PDF checked locally for source-audited-article-batch-034-local-first.",
+      "description": "SPP Document 203 - Specialized Architectural Services; local raw PDF verified with conversion-layer anchors: SPP 203 refined markdown lines 101-150; SPP 203 refined markdown lines 228-232.",
       "is_verified": true,
       "sort_order": 0,
-      "created_at": "2026-05-11T10:59:50+08:00",
-      "updated_at": "2026-05-11T10:59:50+08:00"
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 203.pdf",
+      "raw_pdf_sha256": "sha256:a9d014f91d1fdc8c692a06d90f65eef3264dc5a2a977e4cf1d3a3f0ed142f02a",
+      "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 203.md",
+      "refined_markdown_sha256": "sha256:16c8f5ac0165a1fc537e6e13f94b7ee8d77626fd4b58c9049b2d2b75a1833389",
+      "checked_markdown_lines": [
+        "SPP 203 refined markdown lines 101-150",
+        "SPP 203 refined markdown lines 228-232"
+      ],
+      "created_at": "2026-05-12T23:55:00+08:00",
+      "updated_at": "2026-05-12T23:55:00+08:00"
     },
     {
-      "source_id": "uap-standards-professional-practice2-local",
+      "source_id": "uap-standards-spp-203-specialized-services-batch-096",
       "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
-      "label": "UAP Standards of Professional Practice - compiled SPP source",
+      "label": "UAP Standards of Professional Practice - Specialized Architectural Services details",
       "url": null,
       "source_type": "local_raw_pdf",
-      "description": "UAP Standards of Professional Practice - compiled SPP source; UAP Standards of Professional Practice refined markdown lines 300-350, 362-418, 475-586, 1036-1077, 1097-1215; raw PDF checked locally for source-audited-article-batch-034-local-first.",
+      "description": "UAP Standards of Professional Practice - Specialized Architectural Services details; local raw PDF verified with conversion-layer anchors: Standards of Professional Practice2 refined markdown lines 600-628; Standards of Professional Practice2 refined markdown lines 630-658; Standards of Professional Practice2 refined markdown lines 660-689.",
       "is_verified": true,
       "sort_order": 1,
-      "created_at": "2026-05-11T10:59:50+08:00",
-      "updated_at": "2026-05-11T10:59:50+08:00"
-    },
-    {
-      "source_id": "ra-9266-irr-local",
-      "article_id": "debf8513-f91a-4e0a-9f32-8fe4f677ed71",
-      "label": "RA 9266 IRR Architecture Act of 2004",
-      "url": null,
-      "source_type": "local_raw_pdf",
-      "description": "RA 9266 IRR Architecture Act of 2004; RA 9266 IRR refined markdown lines 674-680, 688-690, 736-738, 853-855; raw PDF checked locally for source-audited-article-batch-034-local-first.",
-      "is_verified": true,
-      "sort_order": 2,
-      "created_at": "2026-05-11T10:59:50+08:00",
-      "updated_at": "2026-05-11T10:59:50+08:00"
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+      "checked_markdown_lines": [
+        "Standards of Professional Practice2 refined markdown lines 600-628",
+        "Standards of Professional Practice2 refined markdown lines 630-658",
+        "Standards of Professional Practice2 refined markdown lines 660-689"
+      ],
+      "created_at": "2026-05-12T23:55:00+08:00",
+      "updated_at": "2026-05-12T23:55:00+08:00"
     }
   ],
-  "sources_hash": "sha256:5658591f5de5ec3f03f9b46281f07b38480edda3f2719aaaa17ca991b8e3ebe6"
+  "sources_hash": "sha256:96bf0b363df67d255fcbe4947abe2e8804c6b27ff14a29630e1397292c2b9576"
 }

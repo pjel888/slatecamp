@@ -2,49 +2,49 @@
   "question_id": "9d6ee24f-c1d2-4973-b302-7e507998d72c",
   "baseline_hash": "sha256:5843b15b95ac80352ab1001a1bb06c460b50ea21008cdebd545b6a69379458f1",
   "action": "replace",
-  "reason": "source-audited-article-batch-016-local-first rewrote this linked question to align with the local SPP 202 source audit for lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee.",
-  "approved_by": "codex-local-source-audit-batch-016",
-  "approved_at": "2026-05-10T23:58:00.000+08:00",
+  "reason": "source-audited-article-batch-096-local-first refreshed this linked question against local raw PDF evidence for lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee.",
+  "approved_by": "codex-local-source-audit-batch-096",
+  "approved_at": "2026-05-12T23:55:00+08:00",
   "source_audit_support": {
     "parent_article_id": "bdc69dbd-c7fb-405f-b8f7-38a6a8fce526",
     "parent_article_slug": "lea-prac-svc-006-phase-2-design-development-coordination-engineering-integration-and-fee",
     "answer_key_fields_changed": true,
     "support_status": "source_safe_rewrite",
-    "source_locator": "SPP Document 202 scope, phase duties, and UAP payment milestones where payment is tested",
+    "source_locator": "SPP 202 regular design service phase duties for Project Definition, Schematic Design, Design Development, Contract Documents, Bidding or Negotiation, and Construction Phase; Owner-Architect Agreement basic fee, payment schedule, owner-furnished data, and additional-charge provisions",
     "checked_markdown_lines": [
-      "UAP Document Standards raw markdown lines 283-297",
-      "UAP Document Standards raw markdown lines 301-344",
-      "UAP Document Standards raw markdown lines 347-382",
+      "UAP Document Standards raw markdown lines 301-318",
+      "UAP Document Standards raw markdown lines 321-335",
+      "UAP Document Standards raw markdown lines 338-382",
       "UAP Document 401-402 raw markdown lines 88-100",
-      "UAP Document 401-402 raw markdown lines 138-145"
+      "UAP Document 401-402 raw markdown lines 113-124"
     ],
     "checked_sources": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "source_id": "uap-spp-202-standards-of-professional-practice",
-        "locator": "SPP Document 202, Regular Design Services scope and phase duties"
+        "source_id": "uap-spp-202-regular-design-services-batch-096",
+        "locator": "SPP 202 regular design service phase duties for Project Definition, Schematic Design, Design Development, Contract Documents, Bidding or Negotiation, and Construction Phase"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
         "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
-        "source_id": "uap-spp-202-standards-of-professional-practice",
-        "locator": "Converted local text for SPP Document 202 line anchoring"
+        "source_id": "uap-spp-202-regular-design-services-batch-096",
+        "locator": "Converted local text for line anchoring: UAP Document Standards raw markdown lines 301-318; UAP Document Standards raw markdown lines 321-335; UAP Document Standards raw markdown lines 338-382"
       },
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
         "sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
-        "source_id": "uap-doc-401-402-owner-architect-agreement",
-        "locator": "Architect fee and manner of payment milestones"
+        "source_id": "uap-doc-401-402-payment-milestones-batch-096",
+        "locator": "Owner-Architect Agreement basic fee, payment schedule, owner-furnished data, and additional-charge provisions"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
         "sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
-        "source_id": "uap-doc-401-402-owner-architect-agreement",
-        "locator": "Converted local text for payment milestone line anchoring"
+        "source_id": "uap-doc-401-402-payment-milestones-batch-096",
+        "locator": "Converted local text for line anchoring: UAP Document 401-402 raw markdown lines 88-100; UAP Document 401-402 raw markdown lines 113-124"
       }
     ],
-    "local_source_safe_action": "replaced prior wording with a source-aligned question, answer key, citation, and explanation"
+    "local_source_safe_action": "updated Batch 096 source-audit support metadata; proposed question text remains source-safe or was already source-safe rewritten in the local bundle"
   },
   "proposed": {
     "text": "A scenario asks for the phase that refines approved schematics into drawings, outline specifications, and updated cost. What is the answer?",

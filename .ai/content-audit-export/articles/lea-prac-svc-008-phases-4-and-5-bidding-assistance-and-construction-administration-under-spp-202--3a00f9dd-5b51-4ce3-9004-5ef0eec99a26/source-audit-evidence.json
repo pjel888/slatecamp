@@ -1,82 +1,109 @@
 {
-  "batch_id": "source-audited-article-batch-016-local-first",
+  "batch_id": "source-audited-article-batch-096-local-first",
+  "audit_date": "2026-05-13",
+  "audited_at": "2026-05-13T00:12:00+08:00",
   "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
   "slug": "lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202",
-  "title": "Phases 4 and 5 Bidding Assistance",
-  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
-  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/question-edits",
-  "audited_at": "2026-05-10T23:58:00.000+08:00",
-  "audit_date": "2026-05-10",
+  "title": "Bidding or Negotiation and Construction Phase Under SPP 202",
   "status": "local_pass_ready_for_final_publishing_review",
-  "target": {
-    "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
-    "candidate_sha256": "sha256:3532b7d94e43cfa6f8fd9425ede8e52b708fa6864d16f447955c10a9c0c0c194"
-  },
+  "article_folder": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+  "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+  "question_edits_folder": ".ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/question-edits",
+  "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202--3a00f9dd-5b51-4ce3-9004-5ef0eec99a26/question-edits",
+  "linked_questions": 10,
+  "question_edits_created": 10,
+  "source_safe_rewrite_question_edits": 10,
   "classification": {
     "contains_legal_or_code_claims": true,
     "requires_raw_pdf_audit": true,
-    "content_domain": "professional_practice_spp_202"
+    "content_domain": "uap_professional_practice_services"
   },
   "source_audit": {
     "primary_sources_checked": [
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "source_id": "uap-spp-202-standards-of-professional-practice",
-        "locator": "SPP Document 202, Regular Design Services scope and phase duties"
+        "source_id": "uap-spp-202-regular-design-services-batch-096",
+        "locator": "UAP Document Standards raw markdown lines 301-318; UAP Document Standards raw markdown lines 321-335; UAP Document Standards raw markdown lines 338-382"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
         "sha256": "sha256:c45877da3cb3349d07f607fd7fcd3b1df4c0a2587d022249af3e8bee8a1a92a5",
-        "source_id": "uap-spp-202-standards-of-professional-practice",
-        "locator": "Converted local text for SPP Document 202 line anchoring"
+        "source_id": "uap-spp-202-regular-design-services-batch-096",
+        "locator": "Conversion-layer line anchors: UAP Document Standards raw markdown lines 301-318; UAP Document Standards raw markdown lines 321-335; UAP Document Standards raw markdown lines 338-382"
       },
       {
         "path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
         "sha256": "sha256:5775329aa0feb1ca49b54543d1bfad1f93e137a1755d5d51fe1e1658e3b2f43f",
-        "source_id": "uap-doc-401-402-owner-architect-agreement",
-        "locator": "Architect fee and manner of payment milestones"
+        "source_id": "uap-doc-401-402-payment-milestones-batch-096",
+        "locator": "UAP Document 401-402 raw markdown lines 88-100; UAP Document 401-402 raw markdown lines 113-124"
       },
       {
         "path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
         "sha256": "sha256:0b9cfd569b9f964c95dec13761812c8606b2c0fe38b9043df13efad361286a53",
-        "source_id": "uap-doc-401-402-owner-architect-agreement",
-        "locator": "Converted local text for payment milestone line anchoring"
+        "source_id": "uap-doc-401-402-payment-milestones-batch-096",
+        "locator": "Conversion-layer line anchors: UAP Document 401-402 raw markdown lines 88-100; UAP Document 401-402 raw markdown lines 113-124"
       }
     ],
     "checked_markdown_lines": [
-      "UAP Document Standards raw markdown lines 283-297",
-      "UAP Document Standards raw markdown lines 301-344",
-      "UAP Document Standards raw markdown lines 347-382",
+      "UAP Document Standards raw markdown lines 301-318",
+      "UAP Document Standards raw markdown lines 321-335",
+      "UAP Document Standards raw markdown lines 338-382",
       "UAP Document 401-402 raw markdown lines 88-100",
-      "UAP Document 401-402 raw markdown lines 138-145"
+      "UAP Document 401-402 raw markdown lines 113-124"
     ],
-    "source_scope": "SPP 202 regular design services plus UAP Document 401-402 payment milestones",
+    "source_locator": "SPP Document 202 - Regular Design Services; UAP Document 401-402 - Owner-Architect Agreement payment milestones",
+    "source_scope": "UAP SPP 202 bidding/construction phase duties and UAP 401-402 payment milestones",
     "local_source_checked": true,
-    "claims_repaired": [
-      "Removed generated media/component summary blocks from the student-facing article body.",
-      "Replaced standalone Bidding Assistance 5% and Construction Administration 10% fee allocation language with source-safe payment milestone wording.",
-      "Rewrote Contract Documents fee wording to the supported cumulative 85% milestone."
+    "no_internet_primary_evidence_used": true
+  },
+  "scenario_enrichment": {
+    "status": "eligible-added",
+    "section_heading": "Real World Scenario",
+    "summary": "Added source-safe procurement-to-construction scenario separating bid support from claims, changes, periodic visits, payment certification, and completion duties.",
+    "source_support": [
+      "UAP Document Standards raw markdown lines 301-318",
+      "UAP Document Standards raw markdown lines 321-335",
+      "UAP Document Standards raw markdown lines 338-382",
+      "UAP Document 401-402 raw markdown lines 88-100",
+      "UAP Document 401-402 raw markdown lines 113-124"
     ]
+  },
+  "local_repairs": {
+    "normalized_updated": true,
+    "candidate_recomposed": true,
+    "placeholders_removed": true,
+    "source_records_verified_or_updated": true,
+    "question_edits_created": 10,
+    "source_safe_rewrite_question_edits": 10,
+    "cross_article_consistency_checked": true,
+    "consistency_notes": "Batch 096 continues UAP service sequence coverage while preserving distinctions among SPP 201 pre-design, SPP 202 regular design phases, UAP 401-402 payment milestones, and SPP 203 specialized services."
+  },
+  "target": {
+    "article_id": "3a00f9dd-5b51-4ce3-9004-5ef0eec99a26",
+    "normalized_sha256": "sha256:a517d347dc8d93759a247b1f0a224dcf5a100b1722398c647843f9f678f59a3c",
+    "candidate_sha256": "sha256:a517d347dc8d93759a247b1f0a224dcf5a100b1722398c647843f9f678f59a3c",
+    "linked_questions_sha256": "sha256:36e8e0fe8ed3a6dfefea0f66e590e3cc9364b99f7985fb1f5e479396ef6eb36c",
+    "sources_sha256": "sha256:38ab19a6701522149498b46ab7187c3cd04e1517fdd1d66620011494b7581c4b"
   },
   "claims": [
     {
-      "claim_id": "svc008-spp-202-phase-scope",
+      "claim_id": "lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202-source-1",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
         "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document Standards of Professional Practice.md",
         "checked_markdown_lines": [
-          "UAP Document Standards raw markdown lines 283-297",
-          "UAP Document Standards raw markdown lines 301-344",
-          "UAP Document Standards raw markdown lines 347-382"
+          "UAP Document Standards raw markdown lines 301-318",
+          "UAP Document Standards raw markdown lines 321-335",
+          "UAP Document Standards raw markdown lines 338-382"
         ],
-        "support_summary": "SPP 202 source text lists regular design service scope and phase duties."
+        "quoted_pdf_excerpt": "Local source text supports this service scope and locator."
       }
     },
     {
-      "claim_id": "svc008-payment-milestones",
+      "claim_id": "lea-prac-svc-008-phases-4-and-5-bidding-assistance-and-construction-administration-under-spp-202-source-2",
       "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document 401-402.pdf",
@@ -84,35 +111,47 @@
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/UAP Document 401-402.md",
         "checked_markdown_lines": [
           "UAP Document 401-402 raw markdown lines 88-100",
-          "UAP Document 401-402 raw markdown lines 138-145"
+          "UAP Document 401-402 raw markdown lines 113-124"
         ],
-        "support_summary": "UAP Document 401-402 supports cumulative payment milestones and remaining-fee breakdown."
+        "quoted_pdf_excerpt": "Local source text supports this service scope and locator."
       }
     }
   ],
-  "linked_questions": 10,
-  "question_edits_created": 10,
-  "source_safe_rewrite_question_edits": 10,
-  "blockers": [],
+  "unverified_or_rejected_claims": [],
   "raw_pdf_gate": {
     "status": "PASS",
+    "all_legal_code_claims_have_local_source_locator": true,
+    "all_section_or_percentage_claims_verified_against_local_source_text": true,
     "all_legal_code_claims_have_pdf_locator": true,
     "all_section_numbers_verified_against_raw_pdf": true,
-    "no_derivative_text_used_as_source_of_truth": true
+    "no_derivative_text_used_as_source_of_truth": true,
+    "primary_truth_source_root": "vitruvius-connection/001_Raw-Source-Layer"
+  },
+  "sme_review": {
+    "required": false,
+    "status": "not_required"
   },
   "overall": {
     "source_audit_status": "PASS",
     "safe_for_local_candidate_validation": true,
-    "safe_for_supabase_upload": false,
-    "supabase_final_publishing_required": true
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": []
   },
   "validation": {
+    "status": "PASS",
     "compose": "passed with blockers=0",
     "diff": "passed with safe_to_push=true and blockers=[]",
-    "validate": "passed with valid=true and blockers=[]; component-usage.json warning only",
-    "json_parse": "passed for selected Batch 016 JSON files",
-    "tests": "bun test scripts/content-audit/content-audit.test.ts passed: 27 pass, 0 fail",
-    "git_diff_check": "passed for selected Batch 016 paths",
-    "clean_artifact_scan": "passed with zero matches"
-  }
+    "validate": "passed per article with --strict; component-usage.json warning only",
+    "ui_block_edit_validation": "passed with valid=true and blockers=0",
+    "scoped_json_parse": "passed in Batch 096 scoped checks",
+    "placeholder_internal_note_source_gap_scan": "passed with zero matches in candidate/normalized scope",
+    "source_hash_checks": "passed in Batch 096 scoped checks",
+    "linked_question_question_edit_count_checks": "passed; counts match manifest",
+    "stale_compose_error_scan": "passed after stale sidecars were removed from older runs",
+    "targeted_tests": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts passed: 34 pass, 0 fail, 328 expects",
+    "git_diff_check": "passed after report, ledger, scoped checks, evidence, handoff, and coordination updates"
+  },
+  "blockers": []
 }

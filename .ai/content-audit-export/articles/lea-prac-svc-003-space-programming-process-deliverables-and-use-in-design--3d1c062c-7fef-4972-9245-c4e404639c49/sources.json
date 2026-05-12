@@ -1,56 +1,49 @@
 {
   "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:469e32821c4d49509bf28b46c98ed6c625818d522ce8153be27daa9a2dbea3bd",
   "source_count": 2,
   "sources": [
     {
-      "source_id": "spp201-pre-design-services-local",
+      "source_id": "spp-201-predesign-services-batch-096",
       "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
-      "label": "SPP 201 - Pre-Design Services",
+      "label": "UAP SPP Document 201 - Pre-Design Services",
       "url": null,
-      "source_type": "professional_practice_pdf",
-      "description": "Local SPP 201 raw PDF and refined markdown checked for architectural programming, space planning, and space management scope.",
+      "source_type": "local_raw_pdf",
+      "description": "UAP SPP Document 201 - Pre-Design Services; local raw PDF verified with conversion-layer anchors: SPP 201 refined markdown lines 245-255; SPP 201 refined markdown lines 268-324; SPP 201 refined markdown lines 328-367; SPP 201 refined markdown lines 425-447.",
       "is_verified": true,
-      "sort_order": 1,
-      "created_at": "2026-05-11T18:30:00.000+08:00",
-      "updated_at": "2026-05-11T18:30:00.000+08:00",
-      "local_source_audit": {
-        "authority": "United Architects of the Philippines / Professional practice standards source",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
-        "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
-        "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
-        "source_locator": "SPP 201 lines 328-367",
-        "checked_markdown_lines": [
-          "SPP 201 lines 328-367"
-        ],
-        "local_source_checked": true
-      }
+      "sort_order": 0,
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/SPP 201.pdf",
+      "raw_pdf_sha256": "sha256:d3b76a26515c2eb4d584096ce60843b75c357f18b0767b72508d765eb554ef93",
+      "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/SPP 201.md",
+      "refined_markdown_sha256": "sha256:a2fb32f5606775066ff831d4e37d36254db4bd87ccd895c06467ff51933261ed",
+      "checked_markdown_lines": [
+        "SPP 201 refined markdown lines 245-255",
+        "SPP 201 refined markdown lines 268-324",
+        "SPP 201 refined markdown lines 328-367",
+        "SPP 201 refined markdown lines 425-447"
+      ],
+      "created_at": "2026-05-12T23:55:00+08:00",
+      "updated_at": "2026-05-12T23:55:00+08:00"
     },
     {
-      "source_id": "uap-standards-local-lea-prac-svc-003-space-programming-process-deliverables-and-use-in-design",
+      "source_id": "uap-standards-spp-201-comprehensive-services-list-batch-096",
       "article_id": "3d1c062c-7fef-4972-9245-c4e404639c49",
-      "label": "UAP Document Standards of Professional Practice - Space Programming Process Deliverables and Use in Design",
+      "label": "UAP Standards of Professional Practice - Comprehensive Services list for SPP 201",
       "url": null,
-      "source_type": "professional_practice_pdf",
-      "description": "Local UAP standards source checked for the SPP 201 pre-design services list.",
+      "source_type": "local_raw_pdf",
+      "description": "UAP Standards of Professional Practice - Comprehensive Services list for SPP 201; local raw PDF verified with conversion-layer anchors: Standards of Professional Practice2 refined markdown lines 1114-1126.",
       "is_verified": true,
-      "sort_order": 2,
-      "created_at": "2026-05-11T18:30:00.000+08:00",
-      "updated_at": "2026-05-11T18:30:00.000+08:00",
-      "local_source_audit": {
-        "authority": "United Architects of the Philippines / Professional practice standards source",
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/UAP Document Standards of Professional Practice.pdf",
-        "raw_pdf_sha256": "sha256:af3b0fd1b232443881cbb79d3b2ed2a9a93ecb34677cdbd3b2acddbcdb7d2b3b",
-        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/UAP Document Standards of Professional Practice.md",
-        "refined_markdown_sha256": "sha256:99f8443bb133867c47c9c4e297f82cfe45526bd1d78805d7e0347c40aedfb622",
-        "source_locator": "UAP Standards lines 1120-1125",
-        "checked_markdown_lines": [
-          "UAP Standards lines 1120-1125"
-        ],
-        "local_source_checked": true
-      }
+      "sort_order": 1,
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+      "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+      "conversion_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+      "checked_markdown_lines": [
+        "Standards of Professional Practice2 refined markdown lines 1114-1126"
+      ],
+      "created_at": "2026-05-12T23:55:00+08:00",
+      "updated_at": "2026-05-12T23:55:00+08:00"
     }
-  ]
+  ],
+  "sources_hash": "sha256:f78b5c6c09e35a54c057507443c146a89da3ff59fb83c343026ef38a281e84e8"
 }

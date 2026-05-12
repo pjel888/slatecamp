@@ -2,7 +2,7 @@
 
 ## Source Scope
 
-Use SPP Document 202 for the Bidding or Negotiation Phase and Construction Phase duties. Use UAP Document 401-402 only where a question asks about the payment schedule or abandoned-work breakdown.
+Use SPP Document 202 for the Bidding or Negotiation Phase and Construction Phase duties. Use UAP Document 401-402 only where a question asks about the payment schedule, owner responsibilities, or additional-charge provisions.
 
 ## Learning Goal
 
@@ -33,8 +33,14 @@ For LEA questions, separate procurement support from construction-phase administ
 
 ## Fee Questions Need Care
 
-The checked payment source says total payments remain at the 85% milestone after award adjustment and that the remaining 15% is handled through progress billing and final balance. In abandoned-work wording, it breaks the remaining 15% into 10% for Civil Code liability and 5% for construction phase service. Do not rewrite this as a separate SPP 202 bidding-fee allocation.
+The checked payment source says total payments remain at the 85% milestone after award adjustment and that the remaining 15% is handled through progress billing and final balance. Do not rewrite this as a separate SPP 202 bidding-fee allocation.
 
 ## Exam Trap
 
 If the task is about bid documents, bidder questions, pre-bid conferences, bid abstracts, or notice of award, choose Bidding or Negotiation. If the task is about claims, change orders, site visits, Certificates for Payment, or substantial and final completion, choose Construction Phase.
+
+## Real World Scenario
+
+The owner has complete Contract Documents and is ready to select a constructor. The architect helps prepare Bid Documents, assists with the prospective-contractor list, helps conduct pre-bid conferences, responds to bidder questions, analyzes bids, and prepares award-related documents. Those cues point to Bidding or Negotiation.
+
+After award, the exam vocabulary changes. Claims, change orders, guarantees, periodic site visits, Certificates for Payment, and substantial or final completion belong to the Construction Phase. The architect's periodic visits are not the same as continuous 8-hour supervision unless that separate service is agreed upon.
