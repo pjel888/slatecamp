@@ -77,6 +77,12 @@ The checked source text outside Section 309 treats failure to post or display th
 
 Keep the distinction clear: Section 309 tells you how the certificate is obtained; the penalty provisions tell you what happens when the certificate is missing or not properly displayed.
 
+## Real World Scenario
+
+A clinic fit-out is ready for turnover, but the owner wants to open the ground-floor diagnostic area before the upper-floor offices are finished. The architect's source-safe checklist starts before the Certificate of Occupancy application: the building permit holder must have a duly licensed architect or civil engineer providing full-time inspection and supervision, with a jobsite logbook recording actual progress, tests, weather, and other data.
+
+For the application, the owner or permittee submits the Certificate of Occupancy application with a notarized Certificate of Completion, the construction logbook, as-built plans and specifications, and the Building Inspection Sheet with the required signatures and professional seal. The OBO coordinates final inspection, including BFP action on the fire-safety inspection certificate, then the Building Official issues the certificate after fees are paid. The clinic cannot be used until the certificate is issued, but a partial Certificate of Occupancy can cover a properly phased independent portion if it does not pose hazards to occupants, adjacent building residents, or the public.
+
 ## LEA Recall Anchors
 
 - Section 308: full-time inspection and supervision by a duly licensed architect or civil engineer.

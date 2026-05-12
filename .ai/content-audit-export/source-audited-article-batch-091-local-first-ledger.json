@@ -1,0 +1,1085 @@
+{
+  "batch_number": "091",
+  "generated_at": "2026-05-12T17:05:00+08:00",
+  "status": "PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW",
+  "blockers": 0,
+  "local_only_constraints": {
+    "supabase_push_attempted": false,
+    "deploy_attempted": false,
+    "commit_attempted": false
+  },
+  "manifest_path": "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-091-manifest.json",
+  "coordination_doc_path": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-production-line-coordination.md",
+  "handoff_path": "/Users/philiplewis/slatecamp/.ai/03_plans/source-audited-local-first-batches-handoff.md",
+  "reservation_commit": "d2581499a",
+  "prior_batch": "Batch 090 accepted as 6a561f7d3",
+  "counts": {
+    "articles_completed": 5,
+    "linked_questions_checked": 168,
+    "source_safe_question_edits_created": 168,
+    "source_rows": 5,
+    "source_evidence_claims": 183,
+    "unique_local_raw_source_families": 2,
+    "real_world_scenarios_added": 5,
+    "scoped_article_json_files_parsed": 226,
+    "source_hash_checks": 12
+  },
+  "corrected_counts": {
+    "corrected_question_edits_expected_after_audit": 168,
+    "correction_reason": null
+  },
+  "source_families": [
+    {
+      "family": "PD 1096 RIRR 2004 DPWH Official",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "purpose": "Primary building-code source for all Batch 091 articles and linked question edits",
+      "exists_now": true
+    },
+    {
+      "family": "Building Construction Illustrated (5th Edition)",
+      "status": "existing-local-raw-source",
+      "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "refined_markdown_path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "purpose": "Expected construction-technology source family hash-checked; not used as primary support because PD 1096 RIRR directly governed all retained Batch 091 claims",
+      "exists_now": true
+    }
+  ],
+  "blocker_resolution_summary": [
+    "No inherited blockers and no manifest count mismatch. All 168 linked questions have exactly one source-safe question-edit JSON file."
+  ],
+  "articles": [
+    {
+      "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+      "slug": "excavation-foundation-and-veneer",
+      "title": "Excavation Foundation and Veneer",
+      "subject": "LEA-MATL - Building Technology and Materials",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/004d177e-3aee-42d6-a872-aee0bb462ea0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/07e3a106-8637-4e79-948a-8a9eefb44a6d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/081e4819-b68a-47c9-8563-24d20748b406.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/0847fee1-28a8-429e-8291-e9b574ae9ee3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/115f5b4c-2354-48db-a5cf-dc1eaa21e383.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/137defa1-0a8a-4d89-9cf6-53f3805f9db2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/18c390fe-c441-4dd5-a8e4-5583f77d1625.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/1e7e5024-3343-45bc-8141-cd7d9ee89f28.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/2108b0d0-7223-40cf-9697-3f893d94a37d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/294cbff3-144f-4ef2-aaf4-b7e833b28001.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/39308fa5-b10c-43b0-bb79-bd5d697a219c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/3942352f-1555-4048-80df-655cde50e5d4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/3dc3907c-9f82-441d-bbeb-340577f1a4a3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/3def7d87-66cb-4f0f-a891-8cfddea19fc4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/42216077-dc83-47c0-9708-89b21411eaab.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/685a5ebe-4e98-4755-9b2a-353bd5a82d63.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/69809eaf-c432-4f81-afb9-907479a97fc2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/73418d95-4794-4f01-9210-17e5456d9cdc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/738c7e8a-c666-47c7-bf2a-1d125c47be66.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/78c2494c-537a-4830-bb29-5f677cd262a2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/8f611c3c-df48-4dab-9cc3-5093f4326b1e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/98fb80a9-cb7d-49a3-a730-99676d78ad73.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/9942164f-192b-4d6c-afbd-0cf421e92b9b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/9e7ed88c-1372-4da4-9180-8bfbe2fe2935.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/9e8d39a7-64ab-4a0c-8d57-8019722dd33d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a1258a0a-aaa4-4abf-b04c-0946e2e29320.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a4a65be3-924c-4d83-a398-6c4b61ba50fe.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a77e0325-f189-42c4-a540-09b086a832be.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a895489c-8a1a-4902-86bb-3d8dfd37c997.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/baf101d1-f965-4666-9e58-ebd3e2688b93.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/bb1038ce-029c-42d6-9d5f-1f5421ee63ae.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/bc07ec6a-2412-4d69-ba20-5a591ccbfd9c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/d196ea0d-b097-4d47-98a5-07c8bf16ceeb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/d4820ce8-59bd-432c-b04c-b7dd8bf16224.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/d6cb4482-5bc1-42bf-aacb-c20749434aa0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/ddbf32c7-ca3b-4136-af55-cfff964d6506.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/e31054a9-6ad8-47a6-98b8-689e5228454d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/e424387f-e1a0-4457-b70c-504948657507.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/f3e4cccd-d13b-4e39-9777-d6ab74981e12.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/linked-questions.json",
+      "linked_question_count": 39,
+      "manifest_linked_question_count": 39,
+      "question_edit_count": 39,
+      "question_edit_ids_missing": [],
+      "question_edit_ids_extra": [],
+      "source_count": 1,
+      "source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "raw_sources": [
+        {
+          "source_id": "pd1096-rirr-2004-dpwh-official",
+          "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+          "authority": "Department of Public Works and Highways",
+          "source_type": "law_irr_pdf",
+          "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_refined_markdown_lines": [
+            "3385-3446"
+          ],
+          "checked_pdf_pages": [
+            186,
+            187,
+            188,
+            189
+          ],
+          "use": "primary local source for article, scenario, and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "source_audit_claim_count": 42,
+      "scenario_status": "eligible-added",
+      "scenario_summary": "eligible-added - Basement-adjacent excavation and veneer-support scenario using adjoining-owner notice, underpinning/protection, restoration, trench exits, slope/geotechnical review, and veneer anchorage/source checks.",
+      "scenario_source_basis": [
+        "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203; refined markdown lines 3385-3446; raw PDF pages 186-189"
+      ],
+      "normalized_sha256": "sha256:bd508dfb880d332cdd3d12d3be39626beb43a34482238a757c8462bb947cefbe",
+      "candidate_sha256": "sha256:bd508dfb880d332cdd3d12d3be39626beb43a34482238a757c8462bb947cefbe",
+      "sources_sha256": "sha256:75a0354adc2b4a87aa6bd6148130c766951921f74e2f03fdcde49ec3879ec4d7",
+      "evidence_sha256": "sha256:1ee290db259947db311d7ebac047fdee252a27fc8a5a1dca0072ff38064ac6b1",
+      "compose": {
+        "blockers": 0,
+        "blocker_items": [],
+        "candidate_hash": "sha256:bd508dfb880d332cdd3d12d3be39626beb43a34482238a757c8462bb947cefbe"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true,
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_hash_checks": [
+        {
+          "source_id": "batch091-excavation-foundation-and-veneer-source-01",
+          "label": "excavation-foundation-and-veneer PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-excavation-foundation-and-veneer-source-01",
+          "label": "excavation-foundation-and-veneer PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+      "slug": "glass-and-glazing-area-limits",
+      "title": "Glass and Glazing Area Limits",
+      "subject": "LEA-DSGN - Architectural Design and Site Planning",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/0653b39d-4af6-4c01-ab8d-799ad4960894.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/06e0da80-e3d2-46ba-b0c3-3b5674f3c8d8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/10f58fb0-4824-47a6-8e44-b26eb5e2907a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/127e949f-a2a5-4083-967d-cddca3ae6dc0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/15795078-a155-4f8d-9d06-ad7c222e32cc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/245f9c2b-d478-4768-828e-63e78628d066.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/28a7e6a3-84a4-43db-a219-9593e648aa37.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/359290e6-4cb9-4535-a1a2-a43823007fe2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/35e6527b-080a-4f55-b91d-3330aa889ead.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/45fe90cf-b871-4dd5-9899-1dbe3441c7cb.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/554f630d-4d1f-4be9-bfc0-e9ba8dbc1313.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/572a3856-d041-4115-8bbe-8c6b3ef55036.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/5e59a254-a459-45e2-add1-8bf51fc65431.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/62cb2cbe-fb78-44fb-8684-2572a80d0fb7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/7014b109-2fbf-479e-8ea9-b5ca262baeb9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/731467a7-9f50-4af5-b0d8-e3e093418a08.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/749fb721-3e86-48b7-b1f5-a9157f491457.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/77168b8f-b3ae-416b-8687-554192702bdc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/812ea49f-00a5-480e-8344-5215a0adace2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/93fe01f6-5cee-4de2-9ecb-ba1f546603b5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/9da2d2e4-cbd7-40c7-9c0f-46deb58bcf8a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/9f776d63-b1b5-4ce5-8a91-5683b2a830e7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/aeddee73-9425-4b9a-85d8-a047e8017339.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/b48226c4-4cfb-47cd-af42-b304cbae71ca.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/c4fd8064-c833-4595-88ea-874eeca86c70.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/c564f4ca-3ed8-4052-b84a-d13837b2b648.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/c9b3c883-e318-48f9-8f43-1fe5ed09dbc0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/cd9829ea-a9d7-4d30-b720-56b9e8bcbae3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/cde2f9be-b9e2-4ce7-afa7-cb30c67027cf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/d56df8e4-bfe0-46a5-a76d-30b460445e8f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/d8f449db-469b-4b29-8d5e-ee64adad5be7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/dd7c99be-b2c8-4769-8123-f914126af3dc.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/dd823aab-09ea-4596-8d92-b10689fc2b5b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/e1c82d65-8aad-459f-9e43-ffeebcf134a3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/ea1d569d-0ee1-4d1d-98f1-9f3b04c4c8b2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/f231b8f0-7c4a-4bf0-8c02-42eb47544088.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/f28a23bc-441b-4449-a7ae-b91fcaeea3f0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/f6de2a26-104c-4d04-a4bf-dede5c40933f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/fc5886cb-a18d-4db0-b8f2-202699e61e48.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/linked-questions.json",
+      "linked_question_count": 39,
+      "manifest_linked_question_count": 39,
+      "question_edit_count": 39,
+      "question_edit_ids_missing": [],
+      "question_edit_ids_extra": [],
+      "source_count": 1,
+      "source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "raw_sources": [
+        {
+          "source_id": "pd1096-rirr-2004-dpwh-official",
+          "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+          "authority": "Department of Public Works and Highways",
+          "source_type": "law_irr_pdf",
+          "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_refined_markdown_lines": [
+            "4386-4508"
+          ],
+          "checked_pdf_pages": [
+            230,
+            231,
+            234
+          ],
+          "use": "primary local source for article, scenario, and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "source_audit_claim_count": 42,
+      "scenario_status": "eligible-added",
+      "scenario_summary": "eligible-added - Office-lobby glazing scenario using labels, safety-glass triggers, area limits, support deflection, and jalousie dimensional limits.",
+      "scenario_source_basis": [
+        "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801-1805; refined markdown lines 4386-4508; raw PDF pages 230, 231, and 234"
+      ],
+      "normalized_sha256": "sha256:5d4b7e8febc601ca659a670c9ac5498f2488f06677a3b2d71994448e173ba857",
+      "candidate_sha256": "sha256:5d4b7e8febc601ca659a670c9ac5498f2488f06677a3b2d71994448e173ba857",
+      "sources_sha256": "sha256:2cdd29d02a6b7d2f44e3500fbe3f1a5d37035bc612a7da3e5e7cc5b305eeb17d",
+      "evidence_sha256": "sha256:50ca28f4debd06fb9f633f6bb8e34420e8e8506d39a94f449bd82f49d4298e0b",
+      "compose": {
+        "blockers": 0,
+        "blocker_items": [],
+        "candidate_hash": "sha256:5d4b7e8febc601ca659a670c9ac5498f2488f06677a3b2d71994448e173ba857"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true,
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_hash_checks": [
+        {
+          "source_id": "batch091-glass-and-glazing-area-limits-source-01",
+          "label": "glass-and-glazing-area-limits PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-glass-and-glazing-area-limits-source-01",
+          "label": "glass-and-glazing-area-limits PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+      "slug": "fire-zones-and-existing-buildings",
+      "title": "Fire Zones and Existing Buildings",
+      "subject": "LEA-UTIL - Utilities and Building Systems",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0160b018-7507-482c-a6a6-bdfeec05a78d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0779f41d-4659-4bc6-99f2-f356db2d1715.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0d8071e7-7231-4af2-95f5-eded3930df04.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0e0235e8-1734-4017-a824-27339a8535d8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/12fa76ed-14dc-409f-b3e5-0913d7c65426.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/15094e33-337c-465a-bee5-78b582523661.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/1d529e84-d2e4-4706-a4d8-744d79146ff9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/20573d52-3297-413a-aca7-6c04a606a462.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/2f5c2212-3f83-4150-819f-0f275360fe68.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/49a236a4-2df0-4785-842b-4f876f4927f0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/49e50e09-2086-4821-b09b-afd33a813bde.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/52c93c36-2434-4bac-9c2e-3a9c040f125f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/562573f4-38b1-412a-91a9-ce07fdf840ee.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/6548066e-372c-43f8-a191-d5bf988c1997.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/834e1250-ec22-41fa-8ea0-0a58b814f5a7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/86fa54dc-9a43-4148-a171-2075e04756b6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/91825d29-f47e-4503-9312-112572517417.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/9691d764-7cc2-48c7-a69d-5fcb2982f478.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/9821850f-1e71-433a-aae7-aa4676ca564c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/9957fdbc-1c3a-4207-97cd-3f6eee0c64f7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/a0cdd45c-4fbc-4077-857f-f520039200c8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/adbf6684-c5a1-48f0-83e2-750bb38ca37f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/b7ceb4c6-1d05-4e30-ae6f-8e472bbfc7e5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/bd216e8e-574c-4acf-bc28-56cd9db3c571.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/c8184ce9-18a2-4ac0-a5c2-93ba68b26693.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/c8f745eb-5e3b-4fe9-b972-d43cc21768fa.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/d9e1643d-0fd2-447c-9bb1-cacc58c110ef.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/df956457-65f8-4662-bd61-cf426a78d5a4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/e1588ff5-9f2c-4b39-9f12-16e7a38beda9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/e2981dbe-c8e1-4156-9d1c-0ad1567f57f2.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/e36f84ef-6e6a-477f-90e1-b007baeab16b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/ec8975ad-4016-4f02-ac24-c7edcca5abd7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/f6691308-d82b-42a9-8e4e-d395f550b2a5.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/linked-questions.json",
+      "linked_question_count": 33,
+      "manifest_linked_question_count": 33,
+      "question_edit_count": 33,
+      "question_edit_ids_missing": [],
+      "question_edit_ids_extra": [],
+      "source_count": 1,
+      "source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "raw_sources": [
+        {
+          "source_id": "pd1096-rirr-2004-dpwh-official",
+          "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+          "authority": "Department of Public Works and Highways",
+          "source_type": "law_irr_pdf",
+          "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_refined_markdown_lines": [
+            "1011-1053"
+          ],
+          "checked_pdf_pages": [
+            43,
+            44
+          ],
+          "use": "primary local source for article, scenario, and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "source_audit_claim_count": 36,
+      "scenario_status": "eligible-added",
+      "scenario_summary": "eligible-added - Existing-warehouse fire-zone scenario using restrictive-zone, moved/prefabricated, alteration, material/fire-hazard, firewall-separated addition, and damage-repair threshold checks.",
+      "scenario_source_basis": [
+        "PD 1096 2004 Revised IRR, Rule V Sections 501-507; refined markdown lines 1011-1053; raw PDF pages 43-44"
+      ],
+      "normalized_sha256": "sha256:b85f7287d6e197f378ff8da15415a60a8f976d6be23b8e51608608ea660dda89",
+      "candidate_sha256": "sha256:b85f7287d6e197f378ff8da15415a60a8f976d6be23b8e51608608ea660dda89",
+      "sources_sha256": "sha256:e9568df7d32614ece8cb0c6e9b8331ebf4b3f738d5c88e2cfd7842b28b173d13",
+      "evidence_sha256": "sha256:aa980d432a45d662a193565a230c0962d7377e038e82d48e0a8f9fa5d7bcefb6",
+      "compose": {
+        "blockers": 0,
+        "blocker_items": [],
+        "candidate_hash": "sha256:b85f7287d6e197f378ff8da15415a60a8f976d6be23b8e51608608ea660dda89"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true,
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_hash_checks": [
+        {
+          "source_id": "batch091-fire-zones-and-existing-buildings-source-01",
+          "label": "fire-zones-and-existing-buildings PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-fire-zones-and-existing-buildings-source-01",
+          "label": "fire-zones-and-existing-buildings PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+      "slug": "certificate-of-occupancy",
+      "title": "Certificate of Occupancy",
+      "subject": "LEA-PRAC - Professional Practice and Law",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/054288fe-8f6f-4f48-9e22-2ef72182fa38.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/10f3c02e-3de3-43af-96a9-a2fad72952ec.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/15f64400-3bc6-460c-91bb-f7d35d403a1d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/21803612-b2e7-437d-97d6-e4ea9bb38abd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/2bf4ed44-c162-4c66-81f3-b85aec50699f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/2d820c6a-2883-4273-8854-a4ff26de0ccd.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/373ca9fc-4d31-47ac-a8bf-34310efdda68.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/4b77adbe-6e43-4db3-aece-408f4a797a97.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/52479e71-60bd-4fb9-9e33-66dd0bf10eaf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/58901082-1aea-44a7-acfe-6b69699803b6.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/68c01825-2f6a-4461-ab88-0c99153aa64c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/7240edc0-f8f2-4d8f-8bbe-b013898d30c1.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/76fd20b2-be2e-4cfb-bf95-a9ec772ea0c4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/77d9898d-599e-45c0-9d7b-180d999b7075.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/7ff873a6-5480-433a-92a0-df1974a330a9.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/831133bc-60aa-43b4-81be-a5c3dc3c75b0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/8e4d9032-4b31-4a8b-a48d-f224ec64f6c5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/9404e6ff-f25f-41d8-b242-65df996240d5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/a5676f2f-4719-4960-a940-a01943c47f1c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/af1e53de-f10c-48de-8531-7f48d7a0d241.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/affc1f9a-1728-40a6-b729-d3b323135b8b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/b42dcf3d-7e76-45e0-9afe-5ec47784e817.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/b5f6dc2a-004f-4b45-ba4d-44c58fc3ef06.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/cb0185e6-83de-4dec-8602-e76e3f2d77e5.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/dfe01fe3-464f-4e79-bc01-0b36356dee81.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/e13237bf-562a-4308-bc54-818dafb62127.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/e4c86247-b8a0-4a1e-b5b9-df8ee6f1c19f.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/e58d7560-8e57-4879-91d7-c91463d3a11c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/f174e0c4-042d-42bf-8114-1efd86c5f447.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/f3d56480-3930-4a6e-b74b-d80340bbd959.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/f73e557f-73c0-4e14-afce-5be4a819373d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/fab8269d-e782-4162-80d5-d681987649aa.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/linked-questions.json",
+      "linked_question_count": 32,
+      "manifest_linked_question_count": 32,
+      "question_edit_count": 32,
+      "question_edit_ids_missing": [],
+      "question_edit_ids_extra": [],
+      "source_count": 1,
+      "source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "raw_sources": [
+        {
+          "source_id": "pd1096-rirr-2004-dpwh-official",
+          "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+          "authority": "Department of Public Works and Highways",
+          "source_type": "law_irr_pdf",
+          "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_refined_markdown_lines": [
+            "858-864",
+            "906-924"
+          ],
+          "checked_pdf_pages": [
+            38
+          ],
+          "use": "primary local source for article, scenario, and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "source_audit_claim_count": 35,
+      "scenario_status": "eligible-added",
+      "scenario_summary": "eligible-added - Clinic-turnover occupancy scenario using supervision, logbook, completion certificate, as-builts, BFP/FSIC, fee payment, no-use-before-certificate, and partial occupancy checks.",
+      "scenario_source_basis": [
+        "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309; refined markdown lines 858-864 and 906-924; raw PDF page 38"
+      ],
+      "normalized_sha256": "sha256:e4bb77b332bd309c24ebdb957e515e753f5422a55442037c5f53a8f17e8de6e6",
+      "candidate_sha256": "sha256:e4bb77b332bd309c24ebdb957e515e753f5422a55442037c5f53a8f17e8de6e6",
+      "sources_sha256": "sha256:b7569072ffaf4b2eb7144951bf3fb2e77c7af57ba437e0ebd360ff4291962ca2",
+      "evidence_sha256": "sha256:f8b012cfdc05a7e3d0b001671b88530a57cb71c92760a8d2041b8043d8bea564",
+      "compose": {
+        "blockers": 0,
+        "blocker_items": [],
+        "candidate_hash": "sha256:e4bb77b332bd309c24ebdb957e515e753f5422a55442037c5f53a8f17e8de6e6"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true,
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_hash_checks": [
+        {
+          "source_id": "batch091-certificate-of-occupancy-source-01",
+          "label": "certificate-of-occupancy PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-certificate-of-occupancy-source-01",
+          "label": "certificate-of-occupancy PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        }
+      ]
+    },
+    {
+      "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+      "slug": "dangerous-and-ruinous-buildings",
+      "title": "Dangerous and Ruinous Buildings",
+      "subject": "LEA-UTIL - Utilities and Building Systems",
+      "article_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+      "improved_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/normalized.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/candidate.md",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/sources.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/source-audit-evidence.json"
+      ],
+      "question_edits_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits",
+      "question_edit_file_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/02eed33f-a090-491b-bad0-e0cb2d376c93.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/1503cbe5-a2b6-4c1c-b6d8-2efef5e0be17.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/1bee7845-65cd-4375-abb4-3aeacf582157.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/301e4271-b38c-4fb4-a1c7-cb2c692d1e2a.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/33865ebc-ef29-4ca6-94f3-fc010e7763a7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/36dbb78c-21bd-4a28-bdb8-59d058635bf0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/37a4edc4-03ae-4086-acaa-8cc99ad18c0c.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/57166821-b223-41ac-af54-4bf7bd2027b0.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/5748478b-f007-43ca-b19d-87e2f116434d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/5a4c83a8-7ae5-4c6d-a8a2-27e326d675ba.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/6aeeebbb-5770-46d4-92e1-76da25fd515b.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/7630a21e-0182-4fdc-808d-250aa2db2f24.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/78199e2f-cbd0-4ba0-ad1b-a96b9b228321.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/7c237b09-b2dd-4376-a268-63a77875411e.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/8305df1e-cc21-4ded-b897-05e3dc277494.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/8695541f-c614-44b4-aca3-37017bcd7ab8.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/87f56090-87a5-4875-8585-b2ea40ce726d.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/927ee181-9f52-424e-9302-85b4e3c3dda7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/9476cf68-d12a-4413-8801-83b86ed3f7b7.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/a3faabf7-6f39-403c-81a8-664ca68ffeaf.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/a500f027-a9d8-4822-972f-bf74118c2889.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/c174708a-494f-4c29-9e59-e9a2afb50af3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/c33f6404-6609-474f-a72d-52e1e140dad4.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/c4d270ca-b338-4a9d-8ac9-ade2b6181ab3.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/d2f0564a-b497-44bc-9a1e-36b53a877fd8.json"
+      ],
+      "linked_questions_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/linked-questions.json",
+      "linked_question_count": 25,
+      "manifest_linked_question_count": 25,
+      "question_edit_count": 25,
+      "question_edit_ids_missing": [],
+      "question_edit_ids_extra": [],
+      "source_count": 1,
+      "source_labels": [
+        "PD 1096 2004 Revised IRR, DPWH Official Publication"
+      ],
+      "raw_sources": [
+        {
+          "source_id": "pd1096-rirr-2004-dpwh-official",
+          "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+          "authority": "Department of Public Works and Highways",
+          "source_type": "law_irr_pdf",
+          "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+          "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+          "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "checked_refined_markdown_lines": [
+            "397-488"
+          ],
+          "checked_pdf_pages": [
+            17,
+            18,
+            19,
+            20
+          ],
+          "use": "primary local source for article, scenario, and linked-question support",
+          "local_source_checked": true
+        }
+      ],
+      "source_audit_claim_count": 28,
+      "scenario_status": "eligible-added",
+      "scenario_summary": "eligible-added - Post-typhoon mixed-use building scenario using hazard categories, repair/vacate/demolish orders, notice, appeal/reconsideration, cost recovery, and related remedies.",
+      "scenario_source_basis": [
+        "PD 1096 2004 Revised IRR, Rule II Sections 214-216 and following procedure; refined markdown lines 397-488; raw PDF pages 17-20"
+      ],
+      "normalized_sha256": "sha256:79d783ebd12380ffa6fe4c74b5bd7c5d6f5bebb28c0a51c94ff0859eae53580b",
+      "candidate_sha256": "sha256:79d783ebd12380ffa6fe4c74b5bd7c5d6f5bebb28c0a51c94ff0859eae53580b",
+      "sources_sha256": "sha256:8aeded27fd9d0a8f4e9b2ab6a3b0314c8b38695d11c83f5a7c915aa2a9340236",
+      "evidence_sha256": "sha256:94c66ca876bd0158787548946d6457b2bdf441f0a5aaf782439c9cbd6d0e74cd",
+      "compose": {
+        "blockers": 0,
+        "blocker_items": [],
+        "candidate_hash": "sha256:79d783ebd12380ffa6fe4c74b5bd7c5d6f5bebb28c0a51c94ff0859eae53580b"
+      },
+      "diff": {
+        "safe_to_push": true,
+        "blockers": [],
+        "changed": true,
+        "warnings": [
+          "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+        ]
+      },
+      "ui_block_edit_validation": {
+        "valid": true,
+        "blockers": [],
+        "warnings": []
+      },
+      "source_hash_checks": [
+        {
+          "source_id": "batch091-dangerous-and-ruinous-buildings-source-01",
+          "label": "dangerous-and-ruinous-buildings PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-dangerous-and-ruinous-buildings-source-01",
+          "label": "dangerous-and-ruinous-buildings PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        }
+      ]
+    }
+  ],
+  "checks_summary": {
+    "manifest_scope": {
+      "status": "PASS",
+      "manifest_path": "/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-091-manifest.json",
+      "selected_article_count": 5,
+      "improved_article_folders": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d"
+      ],
+      "question_edits_paths": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits"
+      ]
+    },
+    "compose": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+          "slug": "excavation-foundation-and-veneer",
+          "blockers": 0,
+          "candidate_hash": "sha256:bd508dfb880d332cdd3d12d3be39626beb43a34482238a757c8462bb947cefbe"
+        },
+        {
+          "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+          "slug": "glass-and-glazing-area-limits",
+          "blockers": 0,
+          "candidate_hash": "sha256:5d4b7e8febc601ca659a670c9ac5498f2488f06677a3b2d71994448e173ba857"
+        },
+        {
+          "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+          "slug": "fire-zones-and-existing-buildings",
+          "blockers": 0,
+          "candidate_hash": "sha256:b85f7287d6e197f378ff8da15415a60a8f976d6be23b8e51608608ea660dda89"
+        },
+        {
+          "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+          "slug": "certificate-of-occupancy",
+          "blockers": 0,
+          "candidate_hash": "sha256:e4bb77b332bd309c24ebdb957e515e753f5422a55442037c5f53a8f17e8de6e6"
+        },
+        {
+          "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+          "slug": "dangerous-and-ruinous-buildings",
+          "blockers": 0,
+          "candidate_hash": "sha256:79d783ebd12380ffa6fe4c74b5bd7c5d6f5bebb28c0a51c94ff0859eae53580b"
+        }
+      ]
+    },
+    "diff": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+          "slug": "excavation-foundation-and-veneer",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        {
+          "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+          "slug": "glass-and-glazing-area-limits",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        {
+          "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+          "slug": "fire-zones-and-existing-buildings",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        {
+          "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+          "slug": "certificate-of-occupancy",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        },
+        {
+          "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+          "slug": "dangerous-and-ruinous-buildings",
+          "safe_to_push": true,
+          "blockers": [],
+          "changed": true
+        }
+      ]
+    },
+    "validate": {
+      "status": "PASS",
+      "blockers": 0,
+      "warnings": [
+        "excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd: component-usage.json has not been generated for this article yet.",
+        "glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43: component-usage.json has not been generated for this article yet."
+      ]
+    },
+    "ui_block_edit_validation": {
+      "status": "PASS",
+      "articles": [
+        {
+          "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+          "slug": "excavation-foundation-and-veneer",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        },
+        {
+          "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+          "slug": "glass-and-glazing-area-limits",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        },
+        {
+          "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+          "slug": "fire-zones-and-existing-buildings",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        },
+        {
+          "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+          "slug": "certificate-of-occupancy",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        },
+        {
+          "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+          "slug": "dangerous-and-ruinous-buildings",
+          "valid": true,
+          "blockers": [],
+          "warnings": []
+        }
+      ]
+    },
+    "scoped_json_parse": {
+      "status": "PASS",
+      "json_files": 226,
+      "failures": []
+    },
+    "placeholder_internal_note_source_gap_scan": {
+      "status": "PASS",
+      "findings": [],
+      "patterns": [
+        "SLATECAMP_UI_BLOCK",
+        "TODO",
+        "FIXME",
+        "VERIFY",
+        "source gap",
+        "unsupported source",
+        "internal note",
+        "manually corrupted"
+      ],
+      "scan_scope": "Batch 091 normalized.md, candidate.md, sources.json, source-audit-evidence.json, and question-edits JSON files only"
+    },
+    "candidate_raw_ui_placeholder_scan": {
+      "status": "PASS",
+      "findings": []
+    },
+    "source_hash_checks": {
+      "status": "PASS",
+      "checks": 12,
+      "failures": [],
+      "details": [
+        {
+          "source_id": "batch091-excavation-foundation-and-veneer-source-01",
+          "label": "excavation-foundation-and-veneer PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-excavation-foundation-and-veneer-source-01",
+          "label": "excavation-foundation-and-veneer PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-glass-and-glazing-area-limits-source-01",
+          "label": "glass-and-glazing-area-limits PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-glass-and-glazing-area-limits-source-01",
+          "label": "glass-and-glazing-area-limits PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-fire-zones-and-existing-buildings-source-01",
+          "label": "fire-zones-and-existing-buildings PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-fire-zones-and-existing-buildings-source-01",
+          "label": "fire-zones-and-existing-buildings PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-certificate-of-occupancy-source-01",
+          "label": "certificate-of-occupancy PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-certificate-of-occupancy-source-01",
+          "label": "certificate-of-occupancy PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-dangerous-and-ruinous-buildings-source-01",
+          "label": "dangerous-and-ruinous-buildings PD1096 raw PDF",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+          "expected_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "actual_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+          "status": "PASS"
+        },
+        {
+          "source_id": "batch091-dangerous-and-ruinous-buildings-source-01",
+          "label": "dangerous-and-ruinous-buildings PD1096 refined markdown",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+          "expected_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "actual_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+          "status": "PASS"
+        },
+        {
+          "source_id": "building-construction-illustrated-5th-edition",
+          "label": "BCI raw PDF expected source family",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+          "expected_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "actual_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+          "status": "PASS"
+        },
+        {
+          "source_id": "building-construction-illustrated-5th-edition",
+          "label": "BCI refined markdown expected source family",
+          "path": "/Users/philiplewis/slatecamp/vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+          "expected_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "actual_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+          "status": "PASS"
+        }
+      ]
+    },
+    "source_audit_evidence_gate": {
+      "status": "PASS",
+      "evidence_files": [
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/source-audit-evidence.json",
+        "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/source-audit-evidence.json"
+      ],
+      "claims": 183,
+      "blockers": []
+    },
+    "linked_question_question_edit_counts": {
+      "status": "PASS",
+      "total_linked_questions": 168,
+      "total_question_edits": 168,
+      "failures": [],
+      "articles": [
+        {
+          "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+          "slug": "excavation-foundation-and-veneer",
+          "linked_question_count": 39,
+          "question_edit_count": 39
+        },
+        {
+          "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+          "slug": "glass-and-glazing-area-limits",
+          "linked_question_count": 39,
+          "question_edit_count": 39
+        },
+        {
+          "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+          "slug": "fire-zones-and-existing-buildings",
+          "linked_question_count": 33,
+          "question_edit_count": 33
+        },
+        {
+          "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+          "slug": "certificate-of-occupancy",
+          "linked_question_count": 32,
+          "question_edit_count": 32
+        },
+        {
+          "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+          "slug": "dangerous-and-ruinous-buildings",
+          "linked_question_count": 25,
+          "question_edit_count": 25
+        }
+      ]
+    },
+    "stale_compose_error_scan": {
+      "status": "PASS",
+      "findings": []
+    },
+    "scenario_enrichment": {
+      "status": "PASS",
+      "eligible_added": 5,
+      "eligible_deferred": 0,
+      "not_applicable": 0,
+      "articles": [
+        {
+          "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
+          "slug": "excavation-foundation-and-veneer",
+          "scenario_status": "eligible-added",
+          "scenario_summary": "eligible-added - Basement-adjacent excavation and veneer-support scenario using adjoining-owner notice, underpinning/protection, restoration, trench exits, slope/geotechnical review, and veneer anchorage/source checks."
+        },
+        {
+          "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
+          "slug": "glass-and-glazing-area-limits",
+          "scenario_status": "eligible-added",
+          "scenario_summary": "eligible-added - Office-lobby glazing scenario using labels, safety-glass triggers, area limits, support deflection, and jalousie dimensional limits."
+        },
+        {
+          "article_id": "9437579a-377e-41ec-8527-4c0399348746",
+          "slug": "fire-zones-and-existing-buildings",
+          "scenario_status": "eligible-added",
+          "scenario_summary": "eligible-added - Existing-warehouse fire-zone scenario using restrictive-zone, moved/prefabricated, alteration, material/fire-hazard, firewall-separated addition, and damage-repair threshold checks."
+        },
+        {
+          "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+          "slug": "certificate-of-occupancy",
+          "scenario_status": "eligible-added",
+          "scenario_summary": "eligible-added - Clinic-turnover occupancy scenario using supervision, logbook, completion certificate, as-builts, BFP/FSIC, fee payment, no-use-before-certificate, and partial occupancy checks."
+        },
+        {
+          "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+          "slug": "dangerous-and-ruinous-buildings",
+          "scenario_status": "eligible-added",
+          "scenario_summary": "eligible-added - Post-typhoon mixed-use building scenario using hazard categories, repair/vacate/demolish orders, notice, appeal/reconsideration, cost recovery, and related remedies."
+        }
+      ]
+    },
+    "targeted_tests": {
+      "status": "PASS",
+      "command": "bun test scripts/content-audit/content-audit.test.ts scripts/content-audit/source-verification-invariants.test.ts",
+      "result": "34 pass, 0 fail, 328 expect() calls"
+    },
+    "scoped_git_diff_check": {
+      "status": "PASS",
+      "command": "git diff --check -- .ai/content-audit-export .ai/03_plans/source-audited-local-first-batches-handoff.md .ai/03_plans/source-audited-production-line-coordination.md",
+      "result": "PASS; final scoped git diff check produced no whitespace errors"
+    },
+    "local_only_constraints": {
+      "supabase_push_attempted": false,
+      "deploy_attempted": false,
+      "commit_attempted": false
+    }
+  }
+}

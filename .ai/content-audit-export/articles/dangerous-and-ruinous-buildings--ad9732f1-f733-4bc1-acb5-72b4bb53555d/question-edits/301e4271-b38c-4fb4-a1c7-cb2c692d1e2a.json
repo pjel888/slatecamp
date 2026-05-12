@@ -1,20 +1,30 @@
 {
   "question_id": "301e4271-b38c-4fb4-a1c7-cb2c692d1e2a",
   "baseline_hash": "sha256:7cfd1b4a9c8746d9b6744cdaa28f8f2719faac1bb7bf0021eaf6a05c13f9af0a",
-  "reason": "Batch 009 local source audit aligned linked question 301e4271-b38c-4fb4-a1c7-cb2c692d1e2a with the repaired Dangerous and Ruinous Buildings article and verified PD 1096 raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-009",
-  "approved_at": "2026-05-10T18:39:52.382+08:00",
+  "reason": "Batch 091 local-first source audit aligned linked question 301e4271-b38c-4fb4-a1c7-cb2c692d1e2a with the repaired Dangerous and Ruinous Buildings article using local PD 1096 raw-source evidence. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-091",
+  "approved_at": "2026-05-12T16:44:46+08:00",
   "source_audit_support": {
     "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
     "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-    "source_locator": "PD 1096 2004 Revised IRR, Rule II Section 215",
+    "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+    "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214-216 and Procedure for Abatement/Demolition of Dangerous/Ruinous Buildings/Structures",
+    "checked_refined_markdown_lines": [
+      "397-488"
+    ],
+    "checked_pdf_pages": [
+      17,
+      18,
+      19,
+      20
+    ],
     "parent_article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
     "parent_article_slug": "dangerous-and-ruinous-buildings",
     "answer_key_fields_changed": false
   },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Rule II Section 215",
-    "explanation": "The controlling source is PD 1096 Rule II Sections 214 to 216 and the abatement/demolition procedure that follows. Section 214 defines dangerous buildings, Section 215 gives the Building Official repair/vacation/demolition response and defect categories, Section 216 preserves other remedies, and the procedure provides notice and appeal steps. This local edit adds source context only and does not change answer-key fields."
+    "code_citation": "PD 1096 2004 Revised IRR, Rule II Sections 214 through 216 and the abatement/demolition procedure following Section 216",
+    "explanation": "The controlling local source is PD 1096 2004 Revised IRR, Rule II Sections 214 through 216 and the abatement/demolition procedure following Section 216. This Batch 091 local edit refreshes source context for the linked article and keeps the original answer-key fields unchanged."
   }
 }

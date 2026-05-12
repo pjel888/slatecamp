@@ -46,6 +46,12 @@ Veneer must not support any load other than its own weight and the vertical dead
 
 The design must account for differential movement caused by temperature changes, shrinkage, creep, and deflection. Adhered veneer and backing must resist shearing stresses, including seismic effects. Anchored veneer and its attachment must resist horizontal forces equal to twice the weight of the veneer. Anchors, supports, and ties must be non-combustible and corrosion-resistant.
 
+## Real World Scenario
+
+A project team is preparing a small commercial basement excavation beside an older neighboring residence. Before work starts, the architect flags the PD 1096 checks that must be settled before the contractor opens the site: written notice to the adjoining owner at least 10 days before excavation, access for checking protection of the adjoining property, a crack survey with photographs or telltales where needed, and support or underpinning for any affected footings or foundations.
+
+During execution, the same checklist controls site observations. Public-property disturbance must be restored within the required 48-hour window unless excluded by the Building Official, a 1.50 m-deep trench needs suitable exit or escape points at least every 7.50 m, and a steeper-than-2H:1V permanent cut needs an acceptable geotechnical or geological report. When the facade veneer is later reviewed, it is checked as a nonstructural facing: it may carry only its own weight and the vertical dead load immediately above, while the backing and anchors must resist the required vertical, lateral, seismic, and corrosion-resistance demands.
+
 ## Exam Values To Memorize
 
 | Requirement | Source-grounded value |

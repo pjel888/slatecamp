@@ -1,17 +1,22 @@
 {
   "question_id": "93fe01f6-5cee-4de2-9ecb-ba1f546603b5",
   "baseline_hash": "sha256:36dcf600337056f6848e621d57ab1e1de35b9c582121085ec9f1ef564a9ba630",
-  "reason": "Batch 010 local source audit aligned linked question 93fe01f6-5cee-4de2-9ecb-ba1f546603b5 with the repaired Glass and Glazing Area Limits article and verified PD 1096 raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-010",
-  "approved_at": "2026-05-10T10:55:01.585+08:00",
+  "reason": "Batch 091 local-first source audit aligned linked question 93fe01f6-5cee-4de2-9ecb-ba1f546603b5 with the repaired Glass and Glazing Area Limits article using local PD 1096 raw-source evidence. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-091",
+  "approved_at": "2026-05-12T16:44:46+08:00",
   "source_audit_support": {
     "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
     "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-    "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+    "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
     "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-    "checked_markdown_lines": [
-      "5110-5151"
+    "checked_refined_markdown_lines": [
+      "4386-4508"
+    ],
+    "checked_pdf_pages": [
+      230,
+      231,
+      234
     ],
     "parent_article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
     "parent_article_slug": "glass-and-glazing-area-limits",
@@ -19,6 +24,6 @@
   },
   "proposed": {
     "code_citation": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-    "explanation": "The controlling source is PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805. It covers scope, labeling, fixed-glass deterrence, area limitation, safety glass triggers, glazing support, louvered windows, and impact exceptions. This local edit adds source context only and does not change answer-key fields."
+    "explanation": "The controlling local source is PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805. This Batch 091 local edit refreshes source context for the linked article and keeps the original answer-key fields unchanged."
   }
 }

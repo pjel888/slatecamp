@@ -66,6 +66,12 @@ Section 507 authorizes the LGU legislative body to enact ordinances designating 
 | Fire Restrictive Zone | Areas where siting is permitted within prescribed fire-resistivity measures, including exterior walls of at least two-hour fire resistivity; Types II, III, and IV construction are referenced. |
 | Highly Fire Restrictive Zone | Areas where highly fire-resistive or non-combustible assemblies of no less than three-to-four-hour fire-resistive construction are used throughout, including exterior walls; only Types IV and V construction are permitted. |
 
+## Real World Scenario
+
+An existing warehouse sits across a boundary between a fire restrictive zone and a highly fire restrictive zone. If more than one-third of its total floor area lies in the more restrictive zone, the whole building is treated under that more restrictive classification. If it is a moved, pre-engineered, or reassembled prefabricated structure, it must comply with the receiving fire zone.
+
+The owner wants a quick renovation and small extension. For an existing nonconforming building, Section 506 blocks ordinary enlargement or repair unless one of the listed paths applies. A repair or alteration within a 12-month period must stay within the 20 percent value limit, must not add combustible material, and must not increase the fire hazard in the Building Official's opinion. An addition needs separation from the existing building by firewalls, while damage repair after a fortuitous event has its own 20 percent replacement-cost limit.
+
 ## LEA Recall Anchors
 
 - More than one-third of total floor area in the more restrictive zone triggers the more restrictive classification for the whole building.

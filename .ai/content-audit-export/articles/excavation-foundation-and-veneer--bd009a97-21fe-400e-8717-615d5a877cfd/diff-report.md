@@ -1,6 +1,6 @@
 # Content Diff Report: excavation-foundation-and-veneer
 
-Generated: 2026-05-10T10:57:33.702Z
+Generated: 2026-05-12T08:48:35.536Z
 Article ID: bd009a97-21fe-400e-8717-615d5a877cfd
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:cce45b392dbf17ce050a5a494e88ad699486fdbb8711da35bfe032b3741ed750`
-- Normalized: `sha256:0ad890408fc293f778250eec958fdf761de1663d2b9a4aa5d5b6c281be78eb09`
-- Candidate: `sha256:0ad890408fc293f778250eec958fdf761de1663d2b9a4aa5d5b6c281be78eb09`
+- Normalized: `sha256:bd508dfb880d332cdd3d12d3be39626beb43a34482238a757c8462bb947cefbe`
+- Candidate: `sha256:bd508dfb880d332cdd3d12d3be39626beb43a34482238a757c8462bb947cefbe`
 
 ## Line summary
 
-- Changed lines: 275
+- Changed lines: 270
 - Inserted lines: 0
-- Deleted lines: 213
+- Deleted lines: 207
 
 ## UI block preservation
 

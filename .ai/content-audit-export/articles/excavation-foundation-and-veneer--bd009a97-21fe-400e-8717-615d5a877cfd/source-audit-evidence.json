@@ -1,664 +1,528 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-010",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T10:55:01.585+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
-  "protocols_applied": [
-    "AGENTS.md local-first content-audit workflow",
-    ".ai/AGENTS.md additive operational artifact rules",
-    "ph-arch-construction-law source-grounding",
-    "ph-arch-professional-context LEA exam relevance"
-  ],
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-091-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T16:55:00+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
   "target": {
     "article_id": "bd009a97-21fe-400e-8717-615d5a877cfd",
     "slug": "excavation-foundation-and-veneer",
     "title": "Excavation Foundation and Veneer",
-    "article_folder": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd",
+    "folder": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd",
     "normalized_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/normalized.md",
     "candidate_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/candidate.md",
     "sources_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/sources.json",
     "question_edits_folder": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits",
-    "normalized_sha256": "sha256:0ad890408fc293f778250eec958fdf761de1663d2b9a4aa5d5b6c281be78eb09",
-    "candidate_sha256": "sha256:0ad890408fc293f778250eec958fdf761de1663d2b9a4aa5d5b6c281be78eb09",
-    "linked_questions_sha256": "sha256:9c373673d7759cc8ea01b08ae93a201c3009b72d2e3cee8809d645ecfff877fb",
-    "sources_sha256": "sha256:bc48fb5583b32ef275fe24f72b20e4442ba7dcd1dcd0d25b3e9c01f2116ac828"
-  },
-  "classification": {
-    "content_type": "pd1096_excavation_foundation_veneer_code_article",
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 39,
-    "question_edits_created": [
-      "bc07ec6a-2412-4d69-ba20-5a591ccbfd9c",
-      "39308fa5-b10c-43b0-bb79-bd5d697a219c",
-      "3942352f-1555-4048-80df-655cde50e5d4",
-      "1e7e5024-3343-45bc-8141-cd7d9ee89f28",
-      "d4820ce8-59bd-432c-b04c-b7dd8bf16224",
-      "69809eaf-c432-4f81-afb9-907479a97fc2",
-      "738c7e8a-c666-47c7-bf2a-1d125c47be66",
-      "a4a65be3-924c-4d83-a398-6c4b61ba50fe",
-      "a77e0325-f189-42c4-a540-09b086a832be",
-      "e31054a9-6ad8-47a6-98b8-689e5228454d",
-      "3dc3907c-9f82-441d-bbeb-340577f1a4a3",
-      "685a5ebe-4e98-4755-9b2a-353bd5a82d63",
-      "137defa1-0a8a-4d89-9cf6-53f3805f9db2",
-      "e424387f-e1a0-4457-b70c-504948657507",
-      "294cbff3-144f-4ef2-aaf4-b7e833b28001",
-      "8f611c3c-df48-4dab-9cc3-5093f4326b1e",
-      "bb1038ce-029c-42d6-9d5f-1f5421ee63ae",
-      "9e7ed88c-1372-4da4-9180-8bfbe2fe2935",
-      "004d177e-3aee-42d6-a872-aee0bb462ea0",
-      "9942164f-192b-4d6c-afbd-0cf421e92b9b",
-      "07e3a106-8637-4e79-948a-8a9eefb44a6d",
-      "a895489c-8a1a-4902-86bb-3d8dfd37c997",
-      "baf101d1-f965-4666-9e58-ebd3e2688b93",
-      "a1258a0a-aaa4-4abf-b04c-0946e2e29320",
-      "f3e4cccd-d13b-4e39-9777-d6ab74981e12",
-      "78c2494c-537a-4830-bb29-5f677cd262a2",
-      "2108b0d0-7223-40cf-9697-3f893d94a37d",
-      "d196ea0d-b097-4d47-98a5-07c8bf16ceeb",
-      "ddbf32c7-ca3b-4136-af55-cfff964d6506",
-      "9e8d39a7-64ab-4a0c-8d57-8019722dd33d",
-      "115f5b4c-2354-48db-a5cf-dc1eaa21e383",
-      "42216077-dc83-47c0-9708-89b21411eaab",
-      "3def7d87-66cb-4f0f-a891-8cfddea19fc4",
-      "18c390fe-c441-4dd5-a8e4-5583f77d1625",
-      "98fb80a9-cb7d-49a3-a730-99676d78ad73",
-      "d6cb4482-5bc1-42bf-aacb-c20749434aa0",
-      "0847fee1-28a8-429e-8291-e9b574ae9ee3",
-      "73418d95-4794-4f01-9210-17e5456d9cdc",
-      "081e4819-b68a-47c9-8563-24d20748b406"
-    ]
+    "original_hash": "sha256:cce45b392dbf17ce050a5a494e88ad699486fdbb8711da35bfe032b3741ed750",
+    "normalized_hash": "sha256:bd508dfb880d332cdd3d12d3be39626beb43a34482238a757c8462bb947cefbe",
+    "candidate_hash": "sha256:bd508dfb880d332cdd3d12d3be39626beb43a34482238a757c8462bb947cefbe",
+    "sources_hash": "sha256:75a0354adc2b4a87aa6bd6148130c766951921f74e2f03fdcde49ec3879ec4d7",
+    "linked_questions_hash": "sha256:9c373673d7759cc8ea01b08ae93a201c3009b72d2e3cee8809d645ecfff877fb",
+    "question_edit_count": 39
   },
   "raw_sources": [
     {
-      "key": "pd1096_2004_revised_irr",
-      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
-      "source_type": "implementing_rules",
-      "source_id": "batch010-excavation-foundation-and-veneer-source-01",
+      "source_id": "pd1096-rirr-2004-dpwh-official",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+      "authority": "Department of Public Works and Highways",
+      "source_type": "law_irr_pdf",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
       "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
       "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
       "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-      "extraction_method": "Local raw markdown conversion checked against verified raw PDF file hash",
-      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-      "markdown_lines_checked": [
-        "3857-3897",
-        "3900-3911"
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_refined_markdown_lines": [
+        "3385-3446"
+      ],
+      "checked_pdf_pages": [
+        186,
+        187,
+        188,
+        189
+      ],
+      "use": "primary local source for article, scenario, and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "expected_source_families_checked": [
+    {
+      "source_id": "building-construction-illustrated-5th-edition",
+      "label": "Building Construction Illustrated (5th Edition)",
+      "source_type": "technology_reference_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/raw_markdown/Building Construction Illustrated (5th Edition).md",
+      "raw_markdown_sha256": "sha256:b0f90d710e63c1a0f957bb52ff84fae2b92d74e04583fd41bc52025451963b8f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "batch091_use": "expected source family checked; final asserted Batch 091 code-rule claims use PD 1096 RIRR as the controlling primary source",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_own_ui_blocks": true,
+    "raw_ui_placeholders_removed_from_candidate": true,
+    "sources_json_updated": true,
+    "question_edits_created": 39,
+    "answer_key_fields_changed": false,
+    "real_world_scenario": {
+      "status": "eligible-added",
+      "summary": "Basement-adjacent excavation scenario applying 10-day adjoining-owner notice, survey/telltales, underpinning, 48-hour public-property restoration, trench-exit spacing, slope/geotechnical review, and nonstructural veneer support checks.",
+      "source_basis": [
+        "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203; refined markdown lines 3385-3446; raw PDF pages 186-189"
       ]
     }
-  ],
-  "claims": [
+  },
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "ui_block_edit_validation": {
+      "valid": true,
+      "blockers": [],
+      "warnings": []
+    }
+  },
+  "source_claims": [
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-ARTICLE-01",
-      "claim_text": "Excavation Foundation and Veneer was repaired against PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203; unsupported placeholders, comparative foreign-code claims, and unverified practice statements were removed from normalized.md.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "markdown_lines_checked": [
-          "3857-3897",
-          "3900-3911"
-        ]
-      }
+      "claim_id": "excavation-foundation-and-veneer-article-claim-01",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Excavation beside adjoining property requires notice, inspection/protection measures, and restoration duties under Rule XII Section 1202.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203; refined markdown lines 3385-3446; raw PDF pages 186-189"
+      ],
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-001",
-      "claim_text": "Question bc07ec6a-2412-4d69-ba20-5a591ccbfd9c has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-article-claim-02",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Excavation/trench safety in Rule XII Section 1202 controls slope and access constraints used in the scenario.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203; refined markdown lines 3385-3446; raw PDF pages 186-189"
+      ],
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-002",
-      "claim_text": "Question 39308fa5-b10c-43b0-bb79-bd5d697a219c has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-article-claim-03",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Veneer is treated as a nonstructural facing subject to support and anchorage limits under Rule XII Section 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203; refined markdown lines 3385-3446; raw PDF pages 186-189"
+      ],
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-003",
-      "claim_text": "Question 3942352f-1555-4048-80df-655cde50e5d4 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-001",
+      "claim_type": "linked_question_source_support",
+      "question_id": "bc07ec6a-2412-4d69-ba20-5a591ccbfd9c",
+      "claim": "Linked question bc07ec6a-2412-4d69-ba20-5a591ccbfd9c was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/bc07ec6a-2412-4d69-ba20-5a591ccbfd9c.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-004",
-      "claim_text": "Question 1e7e5024-3343-45bc-8141-cd7d9ee89f28 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-002",
+      "claim_type": "linked_question_source_support",
+      "question_id": "39308fa5-b10c-43b0-bb79-bd5d697a219c",
+      "claim": "Linked question 39308fa5-b10c-43b0-bb79-bd5d697a219c was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/39308fa5-b10c-43b0-bb79-bd5d697a219c.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-005",
-      "claim_text": "Question d4820ce8-59bd-432c-b04c-b7dd8bf16224 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-003",
+      "claim_type": "linked_question_source_support",
+      "question_id": "3942352f-1555-4048-80df-655cde50e5d4",
+      "claim": "Linked question 3942352f-1555-4048-80df-655cde50e5d4 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/3942352f-1555-4048-80df-655cde50e5d4.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-006",
-      "claim_text": "Question 69809eaf-c432-4f81-afb9-907479a97fc2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-004",
+      "claim_type": "linked_question_source_support",
+      "question_id": "1e7e5024-3343-45bc-8141-cd7d9ee89f28",
+      "claim": "Linked question 1e7e5024-3343-45bc-8141-cd7d9ee89f28 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/1e7e5024-3343-45bc-8141-cd7d9ee89f28.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-007",
-      "claim_text": "Question 738c7e8a-c666-47c7-bf2a-1d125c47be66 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-005",
+      "claim_type": "linked_question_source_support",
+      "question_id": "d4820ce8-59bd-432c-b04c-b7dd8bf16224",
+      "claim": "Linked question d4820ce8-59bd-432c-b04c-b7dd8bf16224 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/d4820ce8-59bd-432c-b04c-b7dd8bf16224.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-008",
-      "claim_text": "Question a4a65be3-924c-4d83-a398-6c4b61ba50fe has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-006",
+      "claim_type": "linked_question_source_support",
+      "question_id": "69809eaf-c432-4f81-afb9-907479a97fc2",
+      "claim": "Linked question 69809eaf-c432-4f81-afb9-907479a97fc2 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/69809eaf-c432-4f81-afb9-907479a97fc2.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-009",
-      "claim_text": "Question a77e0325-f189-42c4-a540-09b086a832be has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-007",
+      "claim_type": "linked_question_source_support",
+      "question_id": "738c7e8a-c666-47c7-bf2a-1d125c47be66",
+      "claim": "Linked question 738c7e8a-c666-47c7-bf2a-1d125c47be66 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/738c7e8a-c666-47c7-bf2a-1d125c47be66.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-010",
-      "claim_text": "Question e31054a9-6ad8-47a6-98b8-689e5228454d has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-008",
+      "claim_type": "linked_question_source_support",
+      "question_id": "a4a65be3-924c-4d83-a398-6c4b61ba50fe",
+      "claim": "Linked question a4a65be3-924c-4d83-a398-6c4b61ba50fe was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a4a65be3-924c-4d83-a398-6c4b61ba50fe.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-011",
-      "claim_text": "Question 3dc3907c-9f82-441d-bbeb-340577f1a4a3 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-009",
+      "claim_type": "linked_question_source_support",
+      "question_id": "a77e0325-f189-42c4-a540-09b086a832be",
+      "claim": "Linked question a77e0325-f189-42c4-a540-09b086a832be was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a77e0325-f189-42c4-a540-09b086a832be.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-012",
-      "claim_text": "Question 685a5ebe-4e98-4755-9b2a-353bd5a82d63 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-010",
+      "claim_type": "linked_question_source_support",
+      "question_id": "e31054a9-6ad8-47a6-98b8-689e5228454d",
+      "claim": "Linked question e31054a9-6ad8-47a6-98b8-689e5228454d was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/e31054a9-6ad8-47a6-98b8-689e5228454d.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-013",
-      "claim_text": "Question 137defa1-0a8a-4d89-9cf6-53f3805f9db2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-011",
+      "claim_type": "linked_question_source_support",
+      "question_id": "3dc3907c-9f82-441d-bbeb-340577f1a4a3",
+      "claim": "Linked question 3dc3907c-9f82-441d-bbeb-340577f1a4a3 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/3dc3907c-9f82-441d-bbeb-340577f1a4a3.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-014",
-      "claim_text": "Question e424387f-e1a0-4457-b70c-504948657507 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-012",
+      "claim_type": "linked_question_source_support",
+      "question_id": "685a5ebe-4e98-4755-9b2a-353bd5a82d63",
+      "claim": "Linked question 685a5ebe-4e98-4755-9b2a-353bd5a82d63 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/685a5ebe-4e98-4755-9b2a-353bd5a82d63.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-015",
-      "claim_text": "Question 294cbff3-144f-4ef2-aaf4-b7e833b28001 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-013",
+      "claim_type": "linked_question_source_support",
+      "question_id": "137defa1-0a8a-4d89-9cf6-53f3805f9db2",
+      "claim": "Linked question 137defa1-0a8a-4d89-9cf6-53f3805f9db2 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/137defa1-0a8a-4d89-9cf6-53f3805f9db2.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-016",
-      "claim_text": "Question 8f611c3c-df48-4dab-9cc3-5093f4326b1e has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-014",
+      "claim_type": "linked_question_source_support",
+      "question_id": "e424387f-e1a0-4457-b70c-504948657507",
+      "claim": "Linked question e424387f-e1a0-4457-b70c-504948657507 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/e424387f-e1a0-4457-b70c-504948657507.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-017",
-      "claim_text": "Question bb1038ce-029c-42d6-9d5f-1f5421ee63ae has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-015",
+      "claim_type": "linked_question_source_support",
+      "question_id": "294cbff3-144f-4ef2-aaf4-b7e833b28001",
+      "claim": "Linked question 294cbff3-144f-4ef2-aaf4-b7e833b28001 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/294cbff3-144f-4ef2-aaf4-b7e833b28001.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-018",
-      "claim_text": "Question 9e7ed88c-1372-4da4-9180-8bfbe2fe2935 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-016",
+      "claim_type": "linked_question_source_support",
+      "question_id": "8f611c3c-df48-4dab-9cc3-5093f4326b1e",
+      "claim": "Linked question 8f611c3c-df48-4dab-9cc3-5093f4326b1e was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/8f611c3c-df48-4dab-9cc3-5093f4326b1e.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-019",
-      "claim_text": "Question 004d177e-3aee-42d6-a872-aee0bb462ea0 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-017",
+      "claim_type": "linked_question_source_support",
+      "question_id": "bb1038ce-029c-42d6-9d5f-1f5421ee63ae",
+      "claim": "Linked question bb1038ce-029c-42d6-9d5f-1f5421ee63ae was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/bb1038ce-029c-42d6-9d5f-1f5421ee63ae.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-020",
-      "claim_text": "Question 9942164f-192b-4d6c-afbd-0cf421e92b9b has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-018",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9e7ed88c-1372-4da4-9180-8bfbe2fe2935",
+      "claim": "Linked question 9e7ed88c-1372-4da4-9180-8bfbe2fe2935 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/9e7ed88c-1372-4da4-9180-8bfbe2fe2935.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-021",
-      "claim_text": "Question 07e3a106-8637-4e79-948a-8a9eefb44a6d has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-019",
+      "claim_type": "linked_question_source_support",
+      "question_id": "004d177e-3aee-42d6-a872-aee0bb462ea0",
+      "claim": "Linked question 004d177e-3aee-42d6-a872-aee0bb462ea0 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/004d177e-3aee-42d6-a872-aee0bb462ea0.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-022",
-      "claim_text": "Question a895489c-8a1a-4902-86bb-3d8dfd37c997 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-020",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9942164f-192b-4d6c-afbd-0cf421e92b9b",
+      "claim": "Linked question 9942164f-192b-4d6c-afbd-0cf421e92b9b was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/9942164f-192b-4d6c-afbd-0cf421e92b9b.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-023",
-      "claim_text": "Question baf101d1-f965-4666-9e58-ebd3e2688b93 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-021",
+      "claim_type": "linked_question_source_support",
+      "question_id": "07e3a106-8637-4e79-948a-8a9eefb44a6d",
+      "claim": "Linked question 07e3a106-8637-4e79-948a-8a9eefb44a6d was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/07e3a106-8637-4e79-948a-8a9eefb44a6d.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-024",
-      "claim_text": "Question a1258a0a-aaa4-4abf-b04c-0946e2e29320 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-022",
+      "claim_type": "linked_question_source_support",
+      "question_id": "a895489c-8a1a-4902-86bb-3d8dfd37c997",
+      "claim": "Linked question a895489c-8a1a-4902-86bb-3d8dfd37c997 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a895489c-8a1a-4902-86bb-3d8dfd37c997.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-025",
-      "claim_text": "Question f3e4cccd-d13b-4e39-9777-d6ab74981e12 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-023",
+      "claim_type": "linked_question_source_support",
+      "question_id": "baf101d1-f965-4666-9e58-ebd3e2688b93",
+      "claim": "Linked question baf101d1-f965-4666-9e58-ebd3e2688b93 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/baf101d1-f965-4666-9e58-ebd3e2688b93.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-026",
-      "claim_text": "Question 78c2494c-537a-4830-bb29-5f677cd262a2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-024",
+      "claim_type": "linked_question_source_support",
+      "question_id": "a1258a0a-aaa4-4abf-b04c-0946e2e29320",
+      "claim": "Linked question a1258a0a-aaa4-4abf-b04c-0946e2e29320 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a1258a0a-aaa4-4abf-b04c-0946e2e29320.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-027",
-      "claim_text": "Question 2108b0d0-7223-40cf-9697-3f893d94a37d has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-025",
+      "claim_type": "linked_question_source_support",
+      "question_id": "f3e4cccd-d13b-4e39-9777-d6ab74981e12",
+      "claim": "Linked question f3e4cccd-d13b-4e39-9777-d6ab74981e12 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/f3e4cccd-d13b-4e39-9777-d6ab74981e12.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-028",
-      "claim_text": "Question d196ea0d-b097-4d47-98a5-07c8bf16ceeb has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-026",
+      "claim_type": "linked_question_source_support",
+      "question_id": "78c2494c-537a-4830-bb29-5f677cd262a2",
+      "claim": "Linked question 78c2494c-537a-4830-bb29-5f677cd262a2 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/78c2494c-537a-4830-bb29-5f677cd262a2.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-029",
-      "claim_text": "Question ddbf32c7-ca3b-4136-af55-cfff964d6506 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-027",
+      "claim_type": "linked_question_source_support",
+      "question_id": "2108b0d0-7223-40cf-9697-3f893d94a37d",
+      "claim": "Linked question 2108b0d0-7223-40cf-9697-3f893d94a37d was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/2108b0d0-7223-40cf-9697-3f893d94a37d.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-030",
-      "claim_text": "Question 9e8d39a7-64ab-4a0c-8d57-8019722dd33d has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-028",
+      "claim_type": "linked_question_source_support",
+      "question_id": "d196ea0d-b097-4d47-98a5-07c8bf16ceeb",
+      "claim": "Linked question d196ea0d-b097-4d47-98a5-07c8bf16ceeb was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/d196ea0d-b097-4d47-98a5-07c8bf16ceeb.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-031",
-      "claim_text": "Question 115f5b4c-2354-48db-a5cf-dc1eaa21e383 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-029",
+      "claim_type": "linked_question_source_support",
+      "question_id": "ddbf32c7-ca3b-4136-af55-cfff964d6506",
+      "claim": "Linked question ddbf32c7-ca3b-4136-af55-cfff964d6506 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/ddbf32c7-ca3b-4136-af55-cfff964d6506.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-032",
-      "claim_text": "Question 42216077-dc83-47c0-9708-89b21411eaab has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-030",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9e8d39a7-64ab-4a0c-8d57-8019722dd33d",
+      "claim": "Linked question 9e8d39a7-64ab-4a0c-8d57-8019722dd33d was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/9e8d39a7-64ab-4a0c-8d57-8019722dd33d.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-033",
-      "claim_text": "Question 3def7d87-66cb-4f0f-a891-8cfddea19fc4 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-031",
+      "claim_type": "linked_question_source_support",
+      "question_id": "115f5b4c-2354-48db-a5cf-dc1eaa21e383",
+      "claim": "Linked question 115f5b4c-2354-48db-a5cf-dc1eaa21e383 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/115f5b4c-2354-48db-a5cf-dc1eaa21e383.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-034",
-      "claim_text": "Question 18c390fe-c441-4dd5-a8e4-5583f77d1625 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-032",
+      "claim_type": "linked_question_source_support",
+      "question_id": "42216077-dc83-47c0-9708-89b21411eaab",
+      "claim": "Linked question 42216077-dc83-47c0-9708-89b21411eaab was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/42216077-dc83-47c0-9708-89b21411eaab.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-035",
-      "claim_text": "Question 98fb80a9-cb7d-49a3-a730-99676d78ad73 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-033",
+      "claim_type": "linked_question_source_support",
+      "question_id": "3def7d87-66cb-4f0f-a891-8cfddea19fc4",
+      "claim": "Linked question 3def7d87-66cb-4f0f-a891-8cfddea19fc4 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/3def7d87-66cb-4f0f-a891-8cfddea19fc4.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-036",
-      "claim_text": "Question d6cb4482-5bc1-42bf-aacb-c20749434aa0 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-034",
+      "claim_type": "linked_question_source_support",
+      "question_id": "18c390fe-c441-4dd5-a8e4-5583f77d1625",
+      "claim": "Linked question 18c390fe-c441-4dd5-a8e4-5583f77d1625 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/18c390fe-c441-4dd5-a8e4-5583f77d1625.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-037",
-      "claim_text": "Question 0847fee1-28a8-429e-8291-e9b574ae9ee3 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-035",
+      "claim_type": "linked_question_source_support",
+      "question_id": "98fb80a9-cb7d-49a3-a730-99676d78ad73",
+      "claim": "Linked question 98fb80a9-cb7d-49a3-a730-99676d78ad73 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/98fb80a9-cb7d-49a3-a730-99676d78ad73.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-038",
-      "claim_text": "Question 73418d95-4794-4f01-9210-17e5456d9cdc has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-036",
+      "claim_type": "linked_question_source_support",
+      "question_id": "d6cb4482-5bc1-42bf-aacb-c20749434aa0",
+      "claim": "Linked question d6cb4482-5bc1-42bf-aacb-c20749434aa0 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/d6cb4482-5bc1-42bf-aacb-c20749434aa0.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-excavation-foundation-and-veneer-QUESTION-039",
-      "claim_text": "Question 081e4819-b68a-47c9-8563-24d20748b406 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits for the repaired Excavation Foundation and Veneer article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "excavation-foundation-and-veneer-question-037",
+      "claim_type": "linked_question_source_support",
+      "question_id": "0847fee1-28a8-429e-8291-e9b574ae9ee3",
+      "claim": "Linked question 0847fee1-28a8-429e-8291-e9b574ae9ee3 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/0847fee1-28a8-429e-8291-e9b574ae9ee3.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "excavation-foundation-and-veneer-question-038",
+      "claim_type": "linked_question_source_support",
+      "question_id": "73418d95-4794-4f01-9210-17e5456d9cdc",
+      "claim": "Linked question 73418d95-4794-4f01-9210-17e5456d9cdc was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/73418d95-4794-4f01-9210-17e5456d9cdc.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "excavation-foundation-and-veneer-question-039",
+      "claim_type": "linked_question_source_support",
+      "question_id": "081e4819-b68a-47c9-8563-24d20748b406",
+      "claim": "Linked question 081e4819-b68a-47c9-8563-24d20748b406 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XII Sections 1202 and 1203",
+      "question_edit_path": ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/081e4819-b68a-47c9-8563-24d20748b406.json",
+      "status": "source_safe"
     }
   ],
-  "unsupported_claims_removed": [
-    "Removed unresolved [SLATECAMP_UI_BLOCK:*] placeholders from normalized learner content.",
-    "Removed comparative foreign-code tables and unsupported international practice claims not audited against local raw PDFs.",
-    "Removed or corrected unverified section/number claims that conflicted with the checked PD 1096 raw source."
-  ],
-  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED"
+  "removed_or_superseded_claims": [],
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/004d177e-3aee-42d6-a872-aee0bb462ea0.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/07e3a106-8637-4e79-948a-8a9eefb44a6d.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/081e4819-b68a-47c9-8563-24d20748b406.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/0847fee1-28a8-429e-8291-e9b574ae9ee3.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/115f5b4c-2354-48db-a5cf-dc1eaa21e383.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/137defa1-0a8a-4d89-9cf6-53f3805f9db2.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/18c390fe-c441-4dd5-a8e4-5583f77d1625.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/1e7e5024-3343-45bc-8141-cd7d9ee89f28.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/2108b0d0-7223-40cf-9697-3f893d94a37d.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/294cbff3-144f-4ef2-aaf4-b7e833b28001.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/39308fa5-b10c-43b0-bb79-bd5d697a219c.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/3942352f-1555-4048-80df-655cde50e5d4.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/3dc3907c-9f82-441d-bbeb-340577f1a4a3.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/3def7d87-66cb-4f0f-a891-8cfddea19fc4.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/42216077-dc83-47c0-9708-89b21411eaab.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/685a5ebe-4e98-4755-9b2a-353bd5a82d63.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/69809eaf-c432-4f81-afb9-907479a97fc2.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/73418d95-4794-4f01-9210-17e5456d9cdc.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/738c7e8a-c666-47c7-bf2a-1d125c47be66.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/78c2494c-537a-4830-bb29-5f677cd262a2.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/8f611c3c-df48-4dab-9cc3-5093f4326b1e.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/98fb80a9-cb7d-49a3-a730-99676d78ad73.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/9942164f-192b-4d6c-afbd-0cf421e92b9b.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/9e7ed88c-1372-4da4-9180-8bfbe2fe2935.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/9e8d39a7-64ab-4a0c-8d57-8019722dd33d.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a1258a0a-aaa4-4abf-b04c-0946e2e29320.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a4a65be3-924c-4d83-a398-6c4b61ba50fe.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a77e0325-f189-42c4-a540-09b086a832be.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/a895489c-8a1a-4902-86bb-3d8dfd37c997.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/baf101d1-f965-4666-9e58-ebd3e2688b93.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/bb1038ce-029c-42d6-9d5f-1f5421ee63ae.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/bc07ec6a-2412-4d69-ba20-5a591ccbfd9c.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/d196ea0d-b097-4d47-98a5-07c8bf16ceeb.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/d4820ce8-59bd-432c-b04c-b7dd8bf16224.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/d6cb4482-5bc1-42bf-aacb-c20749434aa0.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/ddbf32c7-ca3b-4136-af55-cfff964d6506.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/e31054a9-6ad8-47a6-98b8-689e5228454d.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/e424387f-e1a0-4457-b70c-504948657507.json",
+    ".ai/content-audit-export/articles/excavation-foundation-and-veneer--bd009a97-21fe-400e-8717-615d5a877cfd/question-edits/f3e4cccd-d13b-4e39-9777-d6ab74981e12.json"
+  ]
 }

@@ -1,668 +1,466 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-009",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T18:42:00.579+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
-  "protocols_applied": [
-    "AGENTS.md local-first content-audit workflow",
-    ".ai/AGENTS.md additive operational artifact rules",
-    "ph-arch-construction-law source-grounding",
-    "ph-arch-professional-context LEA exam relevance"
-  ],
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-091-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T16:55:00+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
   "target": {
     "article_id": "9437579a-377e-41ec-8527-4c0399348746",
     "slug": "fire-zones-and-existing-buildings",
     "title": "Fire Zones and Existing Buildings",
-    "article_folder": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746",
+    "folder": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746",
     "normalized_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/normalized.md",
     "candidate_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/candidate.md",
     "sources_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/sources.json",
     "question_edits_folder": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits",
-    "normalized_sha256": "sha256:083e6393b9da544487b573a2ebfa659a627a34f8c9ecf5255b626f368d3c2eea",
-    "candidate_sha256": "sha256:083e6393b9da544487b573a2ebfa659a627a34f8c9ecf5255b626f368d3c2eea",
-    "linked_questions_sha256": "sha256:5339d646a6093ceaf4fd47d8aa687273ea63a11a9e919c713526bf117ff47a60",
-    "sources_sha256": "sha256:a731abd7bf3f1d8d467c730717a646402036f4f1b8ce846623cbfa166e27bdbe"
-  },
-  "classification": {
-    "content_type": "pd1096_fire_zone_code_article",
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 33,
-    "question_edits_created": [
-      "562573f4-38b1-412a-91a9-ce07fdf840ee",
-      "9691d764-7cc2-48c7-a69d-5fcb2982f478",
-      "0d8071e7-7231-4af2-95f5-eded3930df04",
-      "6548066e-372c-43f8-a191-d5bf988c1997",
-      "834e1250-ec22-41fa-8ea0-0a58b814f5a7",
-      "e1588ff5-9f2c-4b39-9f12-16e7a38beda9",
-      "20573d52-3297-413a-aca7-6c04a606a462",
-      "91825d29-f47e-4503-9312-112572517417",
-      "a0cdd45c-4fbc-4077-857f-f520039200c8",
-      "c8184ce9-18a2-4ac0-a5c2-93ba68b26693",
-      "d9e1643d-0fd2-447c-9bb1-cacc58c110ef",
-      "15094e33-337c-465a-bee5-78b582523661",
-      "0e0235e8-1734-4017-a824-27339a8535d8",
-      "df956457-65f8-4662-bd61-cf426a78d5a4",
-      "52c93c36-2434-4bac-9c2e-3a9c040f125f",
-      "9957fdbc-1c3a-4207-97cd-3f6eee0c64f7",
-      "9821850f-1e71-433a-aae7-aa4676ca564c",
-      "e2981dbe-c8e1-4156-9d1c-0ad1567f57f2",
-      "e36f84ef-6e6a-477f-90e1-b007baeab16b",
-      "f6691308-d82b-42a9-8e4e-d395f550b2a5",
-      "0779f41d-4659-4bc6-99f2-f356db2d1715",
-      "adbf6684-c5a1-48f0-83e2-750bb38ca37f",
-      "0160b018-7507-482c-a6a6-bdfeec05a78d",
-      "49e50e09-2086-4821-b09b-afd33a813bde",
-      "2f5c2212-3f83-4150-819f-0f275360fe68",
-      "1d529e84-d2e4-4706-a4d8-744d79146ff9",
-      "bd216e8e-574c-4acf-bc28-56cd9db3c571",
-      "86fa54dc-9a43-4148-a171-2075e04756b6",
-      "12fa76ed-14dc-409f-b3e5-0913d7c65426",
-      "ec8975ad-4016-4f02-ac24-c7edcca5abd7",
-      "c8f745eb-5e3b-4fe9-b972-d43cc21768fa",
-      "b7ceb4c6-1d05-4e30-ae6f-8e472bbfc7e5",
-      "49a236a4-2df0-4785-842b-4f876f4927f0"
-    ]
+    "original_hash": "sha256:048f7e3bc8797ce5251176685b729e474a859c9ff407f68cd8280d1b168e5980",
+    "normalized_hash": "sha256:b85f7287d6e197f378ff8da15415a60a8f976d6be23b8e51608608ea660dda89",
+    "candidate_hash": "sha256:b85f7287d6e197f378ff8da15415a60a8f976d6be23b8e51608608ea660dda89",
+    "sources_hash": "sha256:e9568df7d32614ece8cb0c6e9b8331ebf4b3f738d5c88e2cfd7842b28b173d13",
+    "linked_questions_hash": "sha256:5339d646a6093ceaf4fd47d8aa687273ea63a11a9e919c713526bf117ff47a60",
+    "question_edit_count": 33
   },
   "raw_sources": [
     {
-      "key": "pd1096_2004_revised_irr",
-      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
-      "source_type": "implementing_rules",
-      "source_id": "batch009-fire-zones-and-existing-buildings-source-01",
+      "source_id": "pd1096-rirr-2004-dpwh-official",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+      "authority": "Department of Public Works and Highways",
+      "source_type": "law_irr_pdf",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
       "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
       "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-      "extraction_method": "Local raw markdown conversion checked against verified raw PDF file hash",
-      "source_locator": "Rule V Sections 501-507",
-      "markdown_lines_checked": [
-        "1156-1206"
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_refined_markdown_lines": [
+        "1011-1053"
+      ],
+      "checked_pdf_pages": [
+        43,
+        44
+      ],
+      "use": "primary local source for article, scenario, and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "expected_source_families_checked": [
+    {
+      "source_id": "building-construction-illustrated-5th-edition",
+      "label": "Building Construction Illustrated (5th Edition)",
+      "source_type": "technology_reference_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/raw_markdown/Building Construction Illustrated (5th Edition).md",
+      "raw_markdown_sha256": "sha256:b0f90d710e63c1a0f957bb52ff84fae2b92d74e04583fd41bc52025451963b8f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "batch091_use": "expected source family checked; final asserted Batch 091 code-rule claims use PD 1096 RIRR as the controlling primary source",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_own_ui_blocks": true,
+    "raw_ui_placeholders_removed_from_candidate": true,
+    "sources_json_updated": true,
+    "question_edits_created": 33,
+    "answer_key_fields_changed": false,
+    "real_world_scenario": {
+      "status": "eligible-added",
+      "summary": "Existing-warehouse scenario applying fire-zone classification, more restrictive zone rule, moved/prefabricated building compliance, alteration value limits, material/fire-hazard limits, firewall-separated addition logic, and damage-repair thresholds.",
+      "source_basis": [
+        "PD 1096 2004 Revised IRR, Rule V Sections 501-507; refined markdown lines 1011-1053; raw PDF pages 43-44"
       ]
     }
-  ],
-  "claims": [
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-ARTICLE-01",
-      "claim_text": "Fire Zones and Existing Buildings: Section 501 fire zones defined was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule V Sections 501-507",
-        "markdown_lines_checked": [
-          "1156-1206"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-ARTICLE-02",
-      "claim_text": "Fire Zones and Existing Buildings: Section 502 buildings located in more than one fire zone was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule V Sections 501-507",
-        "markdown_lines_checked": [
-          "1156-1206"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-ARTICLE-03",
-      "claim_text": "Fire Zones and Existing Buildings: Section 503 moved buildings was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule V Sections 501-507",
-        "markdown_lines_checked": [
-          "1156-1206"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-ARTICLE-04",
-      "claim_text": "Fire Zones and Existing Buildings: Section 504 temporary buildings/structures was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule V Sections 501-507",
-        "markdown_lines_checked": [
-          "1156-1206"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-ARTICLE-05",
-      "claim_text": "Fire Zones and Existing Buildings: Section 505 center lines of streets was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule V Sections 501-507",
-        "markdown_lines_checked": [
-          "1156-1206"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-ARTICLE-06",
-      "claim_text": "Fire Zones and Existing Buildings: Section 506 restrictions on existing buildings was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule V Sections 501-507",
-        "markdown_lines_checked": [
-          "1156-1206"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-ARTICLE-07",
-      "claim_text": "Fire Zones and Existing Buildings: Section 507 designation of fire zones was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule V Sections 501-507",
-        "markdown_lines_checked": [
-          "1156-1206"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-001",
-      "claim_text": "Question 562573f4-38b1-412a-91a9-ce07fdf840ee has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-002",
-      "claim_text": "Question 9691d764-7cc2-48c7-a69d-5fcb2982f478 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-003",
-      "claim_text": "Question 0d8071e7-7231-4af2-95f5-eded3930df04 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-004",
-      "claim_text": "Question 6548066e-372c-43f8-a191-d5bf988c1997 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-005",
-      "claim_text": "Question 834e1250-ec22-41fa-8ea0-0a58b814f5a7 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-006",
-      "claim_text": "Question e1588ff5-9f2c-4b39-9f12-16e7a38beda9 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-007",
-      "claim_text": "Question 20573d52-3297-413a-aca7-6c04a606a462 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-008",
-      "claim_text": "Question 91825d29-f47e-4503-9312-112572517417 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-009",
-      "claim_text": "Question a0cdd45c-4fbc-4077-857f-f520039200c8 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-010",
-      "claim_text": "Question c8184ce9-18a2-4ac0-a5c2-93ba68b26693 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-011",
-      "claim_text": "Question d9e1643d-0fd2-447c-9bb1-cacc58c110ef has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-012",
-      "claim_text": "Question 15094e33-337c-465a-bee5-78b582523661 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-013",
-      "claim_text": "Question 0e0235e8-1734-4017-a824-27339a8535d8 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-014",
-      "claim_text": "Question df956457-65f8-4662-bd61-cf426a78d5a4 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-015",
-      "claim_text": "Question 52c93c36-2434-4bac-9c2e-3a9c040f125f has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-016",
-      "claim_text": "Question 9957fdbc-1c3a-4207-97cd-3f6eee0c64f7 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-017",
-      "claim_text": "Question 9821850f-1e71-433a-aae7-aa4676ca564c has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-018",
-      "claim_text": "Question e2981dbe-c8e1-4156-9d1c-0ad1567f57f2 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-019",
-      "claim_text": "Question e36f84ef-6e6a-477f-90e1-b007baeab16b has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-020",
-      "claim_text": "Question f6691308-d82b-42a9-8e4e-d395f550b2a5 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-021",
-      "claim_text": "Question 0779f41d-4659-4bc6-99f2-f356db2d1715 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-022",
-      "claim_text": "Question adbf6684-c5a1-48f0-83e2-750bb38ca37f has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-023",
-      "claim_text": "Question 0160b018-7507-482c-a6a6-bdfeec05a78d has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-024",
-      "claim_text": "Question 49e50e09-2086-4821-b09b-afd33a813bde has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-025",
-      "claim_text": "Question 2f5c2212-3f83-4150-819f-0f275360fe68 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-026",
-      "claim_text": "Question 1d529e84-d2e4-4706-a4d8-744d79146ff9 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-027",
-      "claim_text": "Question bd216e8e-574c-4acf-bc28-56cd9db3c571 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-028",
-      "claim_text": "Question 86fa54dc-9a43-4148-a171-2075e04756b6 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-029",
-      "claim_text": "Question 12fa76ed-14dc-409f-b3e5-0913d7c65426 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-030",
-      "claim_text": "Question ec8975ad-4016-4f02-ac24-c7edcca5abd7 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-031",
-      "claim_text": "Question c8f745eb-5e3b-4fe9-b972-d43cc21768fa has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-032",
-      "claim_text": "Question b7ceb4c6-1d05-4e30-ae6f-8e472bbfc7e5 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-fire-zones-and-existing-buildings-QUESTION-033",
-      "claim_text": "Question 49a236a4-2df0-4785-842b-4f876f4927f0 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits for the repaired Fire Zones and Existing Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule V Sections 501-507",
-        "answer_key_fields_changed": false
-      }
-    }
-  ],
-  "unsupported_or_removed_claims": [
-    {
-      "removal_id": "B009-fire-zones-and-existing-buildings-REMOVED-01",
-      "description": "UI placeholders and raw ArticleMedia fragments",
-      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
-    },
-    {
-      "removal_id": "B009-fire-zones-and-existing-buildings-REMOVED-02",
-      "description": "mnemonic-only claims not anchored to Rule V",
-      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
-    },
-    {
-      "removal_id": "B009-fire-zones-and-existing-buildings-REMOVED-03",
-      "description": "unsupported generalizations about existing buildings",
-      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
-    }
-  ],
-  "gate_results": {
-    "raw_pdf_sha256_verified": true,
+  },
+  "validation": {
     "compose": {
-      "status": "PASS",
-      "blockers": 0,
-      "candidate_hash": "sha256:083e6393b9da544487b573a2ebfa659a627a34f8c9ecf5255b626f368d3c2eea"
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
     },
     "diff": {
-      "status": "PASS",
       "changed": true,
       "safe_to_push": true,
-      "blockers": 0,
-      "warnings": 1
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
     },
-    "validate": {
-      "status": "PASS",
-      "blockers": 0,
-      "warnings": 0
-    },
-    "supabase": "not_attempted_by_request",
-    "deploy": "not_attempted_by_request",
-    "commit": "not_attempted_by_request"
+    "ui_block_edit_validation": {
+      "valid": true,
+      "blockers": [],
+      "warnings": []
+    }
   },
-  "remaining_blockers": [],
-  "overall": {
-    "source_audit_status": "PASS",
-    "local_first_status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
-    "safe_for_supabase_upload": true,
-    "publishing_note": "Final publishing still requires Supabase dry-run stale checks and human/editor review before any apply."
-  }
+  "source_claims": [
+    {
+      "claim_id": "fire-zones-and-existing-buildings-article-claim-01",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Fire zone classification and boundary-crossing treatment are controlled by Rule V.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule V Sections 501-507; refined markdown lines 1011-1053; raw PDF pages 43-44"
+      ],
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-article-claim-02",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Existing building alterations, repairs, and additions are limited by Rule V thresholds and fire-hazard constraints.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule V Sections 501-507; refined markdown lines 1011-1053; raw PDF pages 43-44"
+      ],
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-article-claim-03",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Moved, prefabricated, and firewall-separated addition cases require separate Rule V compliance checks.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule V Sections 501-507; refined markdown lines 1011-1053; raw PDF pages 43-44"
+      ],
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-001",
+      "claim_type": "linked_question_source_support",
+      "question_id": "562573f4-38b1-412a-91a9-ce07fdf840ee",
+      "claim": "Linked question 562573f4-38b1-412a-91a9-ce07fdf840ee was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/562573f4-38b1-412a-91a9-ce07fdf840ee.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-002",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9691d764-7cc2-48c7-a69d-5fcb2982f478",
+      "claim": "Linked question 9691d764-7cc2-48c7-a69d-5fcb2982f478 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/9691d764-7cc2-48c7-a69d-5fcb2982f478.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-003",
+      "claim_type": "linked_question_source_support",
+      "question_id": "0d8071e7-7231-4af2-95f5-eded3930df04",
+      "claim": "Linked question 0d8071e7-7231-4af2-95f5-eded3930df04 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0d8071e7-7231-4af2-95f5-eded3930df04.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-004",
+      "claim_type": "linked_question_source_support",
+      "question_id": "6548066e-372c-43f8-a191-d5bf988c1997",
+      "claim": "Linked question 6548066e-372c-43f8-a191-d5bf988c1997 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/6548066e-372c-43f8-a191-d5bf988c1997.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-005",
+      "claim_type": "linked_question_source_support",
+      "question_id": "834e1250-ec22-41fa-8ea0-0a58b814f5a7",
+      "claim": "Linked question 834e1250-ec22-41fa-8ea0-0a58b814f5a7 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/834e1250-ec22-41fa-8ea0-0a58b814f5a7.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-006",
+      "claim_type": "linked_question_source_support",
+      "question_id": "e1588ff5-9f2c-4b39-9f12-16e7a38beda9",
+      "claim": "Linked question e1588ff5-9f2c-4b39-9f12-16e7a38beda9 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/e1588ff5-9f2c-4b39-9f12-16e7a38beda9.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-007",
+      "claim_type": "linked_question_source_support",
+      "question_id": "20573d52-3297-413a-aca7-6c04a606a462",
+      "claim": "Linked question 20573d52-3297-413a-aca7-6c04a606a462 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/20573d52-3297-413a-aca7-6c04a606a462.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-008",
+      "claim_type": "linked_question_source_support",
+      "question_id": "91825d29-f47e-4503-9312-112572517417",
+      "claim": "Linked question 91825d29-f47e-4503-9312-112572517417 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/91825d29-f47e-4503-9312-112572517417.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-009",
+      "claim_type": "linked_question_source_support",
+      "question_id": "a0cdd45c-4fbc-4077-857f-f520039200c8",
+      "claim": "Linked question a0cdd45c-4fbc-4077-857f-f520039200c8 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/a0cdd45c-4fbc-4077-857f-f520039200c8.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-010",
+      "claim_type": "linked_question_source_support",
+      "question_id": "c8184ce9-18a2-4ac0-a5c2-93ba68b26693",
+      "claim": "Linked question c8184ce9-18a2-4ac0-a5c2-93ba68b26693 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/c8184ce9-18a2-4ac0-a5c2-93ba68b26693.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-011",
+      "claim_type": "linked_question_source_support",
+      "question_id": "d9e1643d-0fd2-447c-9bb1-cacc58c110ef",
+      "claim": "Linked question d9e1643d-0fd2-447c-9bb1-cacc58c110ef was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/d9e1643d-0fd2-447c-9bb1-cacc58c110ef.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-012",
+      "claim_type": "linked_question_source_support",
+      "question_id": "15094e33-337c-465a-bee5-78b582523661",
+      "claim": "Linked question 15094e33-337c-465a-bee5-78b582523661 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/15094e33-337c-465a-bee5-78b582523661.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-013",
+      "claim_type": "linked_question_source_support",
+      "question_id": "0e0235e8-1734-4017-a824-27339a8535d8",
+      "claim": "Linked question 0e0235e8-1734-4017-a824-27339a8535d8 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0e0235e8-1734-4017-a824-27339a8535d8.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-014",
+      "claim_type": "linked_question_source_support",
+      "question_id": "df956457-65f8-4662-bd61-cf426a78d5a4",
+      "claim": "Linked question df956457-65f8-4662-bd61-cf426a78d5a4 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/df956457-65f8-4662-bd61-cf426a78d5a4.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-015",
+      "claim_type": "linked_question_source_support",
+      "question_id": "52c93c36-2434-4bac-9c2e-3a9c040f125f",
+      "claim": "Linked question 52c93c36-2434-4bac-9c2e-3a9c040f125f was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/52c93c36-2434-4bac-9c2e-3a9c040f125f.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-016",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9957fdbc-1c3a-4207-97cd-3f6eee0c64f7",
+      "claim": "Linked question 9957fdbc-1c3a-4207-97cd-3f6eee0c64f7 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/9957fdbc-1c3a-4207-97cd-3f6eee0c64f7.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-017",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9821850f-1e71-433a-aae7-aa4676ca564c",
+      "claim": "Linked question 9821850f-1e71-433a-aae7-aa4676ca564c was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/9821850f-1e71-433a-aae7-aa4676ca564c.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-018",
+      "claim_type": "linked_question_source_support",
+      "question_id": "e2981dbe-c8e1-4156-9d1c-0ad1567f57f2",
+      "claim": "Linked question e2981dbe-c8e1-4156-9d1c-0ad1567f57f2 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/e2981dbe-c8e1-4156-9d1c-0ad1567f57f2.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-019",
+      "claim_type": "linked_question_source_support",
+      "question_id": "e36f84ef-6e6a-477f-90e1-b007baeab16b",
+      "claim": "Linked question e36f84ef-6e6a-477f-90e1-b007baeab16b was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/e36f84ef-6e6a-477f-90e1-b007baeab16b.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-020",
+      "claim_type": "linked_question_source_support",
+      "question_id": "f6691308-d82b-42a9-8e4e-d395f550b2a5",
+      "claim": "Linked question f6691308-d82b-42a9-8e4e-d395f550b2a5 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/f6691308-d82b-42a9-8e4e-d395f550b2a5.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-021",
+      "claim_type": "linked_question_source_support",
+      "question_id": "0779f41d-4659-4bc6-99f2-f356db2d1715",
+      "claim": "Linked question 0779f41d-4659-4bc6-99f2-f356db2d1715 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0779f41d-4659-4bc6-99f2-f356db2d1715.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-022",
+      "claim_type": "linked_question_source_support",
+      "question_id": "adbf6684-c5a1-48f0-83e2-750bb38ca37f",
+      "claim": "Linked question adbf6684-c5a1-48f0-83e2-750bb38ca37f was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/adbf6684-c5a1-48f0-83e2-750bb38ca37f.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-023",
+      "claim_type": "linked_question_source_support",
+      "question_id": "0160b018-7507-482c-a6a6-bdfeec05a78d",
+      "claim": "Linked question 0160b018-7507-482c-a6a6-bdfeec05a78d was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0160b018-7507-482c-a6a6-bdfeec05a78d.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-024",
+      "claim_type": "linked_question_source_support",
+      "question_id": "49e50e09-2086-4821-b09b-afd33a813bde",
+      "claim": "Linked question 49e50e09-2086-4821-b09b-afd33a813bde was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/49e50e09-2086-4821-b09b-afd33a813bde.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-025",
+      "claim_type": "linked_question_source_support",
+      "question_id": "2f5c2212-3f83-4150-819f-0f275360fe68",
+      "claim": "Linked question 2f5c2212-3f83-4150-819f-0f275360fe68 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/2f5c2212-3f83-4150-819f-0f275360fe68.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-026",
+      "claim_type": "linked_question_source_support",
+      "question_id": "1d529e84-d2e4-4706-a4d8-744d79146ff9",
+      "claim": "Linked question 1d529e84-d2e4-4706-a4d8-744d79146ff9 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/1d529e84-d2e4-4706-a4d8-744d79146ff9.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-027",
+      "claim_type": "linked_question_source_support",
+      "question_id": "bd216e8e-574c-4acf-bc28-56cd9db3c571",
+      "claim": "Linked question bd216e8e-574c-4acf-bc28-56cd9db3c571 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/bd216e8e-574c-4acf-bc28-56cd9db3c571.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-028",
+      "claim_type": "linked_question_source_support",
+      "question_id": "86fa54dc-9a43-4148-a171-2075e04756b6",
+      "claim": "Linked question 86fa54dc-9a43-4148-a171-2075e04756b6 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/86fa54dc-9a43-4148-a171-2075e04756b6.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-029",
+      "claim_type": "linked_question_source_support",
+      "question_id": "12fa76ed-14dc-409f-b3e5-0913d7c65426",
+      "claim": "Linked question 12fa76ed-14dc-409f-b3e5-0913d7c65426 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/12fa76ed-14dc-409f-b3e5-0913d7c65426.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-030",
+      "claim_type": "linked_question_source_support",
+      "question_id": "ec8975ad-4016-4f02-ac24-c7edcca5abd7",
+      "claim": "Linked question ec8975ad-4016-4f02-ac24-c7edcca5abd7 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/ec8975ad-4016-4f02-ac24-c7edcca5abd7.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-031",
+      "claim_type": "linked_question_source_support",
+      "question_id": "c8f745eb-5e3b-4fe9-b972-d43cc21768fa",
+      "claim": "Linked question c8f745eb-5e3b-4fe9-b972-d43cc21768fa was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/c8f745eb-5e3b-4fe9-b972-d43cc21768fa.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-032",
+      "claim_type": "linked_question_source_support",
+      "question_id": "b7ceb4c6-1d05-4e30-ae6f-8e472bbfc7e5",
+      "claim": "Linked question b7ceb4c6-1d05-4e30-ae6f-8e472bbfc7e5 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/b7ceb4c6-1d05-4e30-ae6f-8e472bbfc7e5.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "fire-zones-and-existing-buildings-question-033",
+      "claim_type": "linked_question_source_support",
+      "question_id": "49a236a4-2df0-4785-842b-4f876f4927f0",
+      "claim": "Linked question 49a236a4-2df0-4785-842b-4f876f4927f0 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule V Sections 501 to 507.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule V Sections 501 to 507",
+      "question_edit_path": ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/49a236a4-2df0-4785-842b-4f876f4927f0.json",
+      "status": "source_safe"
+    }
+  ],
+  "removed_or_superseded_claims": [],
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0160b018-7507-482c-a6a6-bdfeec05a78d.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0779f41d-4659-4bc6-99f2-f356db2d1715.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0d8071e7-7231-4af2-95f5-eded3930df04.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/0e0235e8-1734-4017-a824-27339a8535d8.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/12fa76ed-14dc-409f-b3e5-0913d7c65426.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/15094e33-337c-465a-bee5-78b582523661.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/1d529e84-d2e4-4706-a4d8-744d79146ff9.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/20573d52-3297-413a-aca7-6c04a606a462.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/2f5c2212-3f83-4150-819f-0f275360fe68.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/49a236a4-2df0-4785-842b-4f876f4927f0.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/49e50e09-2086-4821-b09b-afd33a813bde.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/52c93c36-2434-4bac-9c2e-3a9c040f125f.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/562573f4-38b1-412a-91a9-ce07fdf840ee.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/6548066e-372c-43f8-a191-d5bf988c1997.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/834e1250-ec22-41fa-8ea0-0a58b814f5a7.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/86fa54dc-9a43-4148-a171-2075e04756b6.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/91825d29-f47e-4503-9312-112572517417.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/9691d764-7cc2-48c7-a69d-5fcb2982f478.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/9821850f-1e71-433a-aae7-aa4676ca564c.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/9957fdbc-1c3a-4207-97cd-3f6eee0c64f7.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/a0cdd45c-4fbc-4077-857f-f520039200c8.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/adbf6684-c5a1-48f0-83e2-750bb38ca37f.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/b7ceb4c6-1d05-4e30-ae6f-8e472bbfc7e5.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/bd216e8e-574c-4acf-bc28-56cd9db3c571.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/c8184ce9-18a2-4ac0-a5c2-93ba68b26693.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/c8f745eb-5e3b-4fe9-b972-d43cc21768fa.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/d9e1643d-0fd2-447c-9bb1-cacc58c110ef.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/df956457-65f8-4662-bd61-cf426a78d5a4.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/e1588ff5-9f2c-4b39-9f12-16e7a38beda9.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/e2981dbe-c8e1-4156-9d1c-0ad1567f57f2.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/e36f84ef-6e6a-477f-90e1-b007baeab16b.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/ec8975ad-4016-4f02-ac24-c7edcca5abd7.json",
+    ".ai/content-audit-export/articles/fire-zones-and-existing-buildings--9437579a-377e-41ec-8527-4c0399348746/question-edits/f6691308-d82b-42a9-8e4e-d395f550b2a5.json"
+  ]
 }

@@ -1,6 +1,6 @@
 # Content Diff Report: glass-and-glazing-area-limits
 
-Generated: 2026-05-10T10:57:33.754Z
+Generated: 2026-05-12T08:48:35.614Z
 Article ID: 3a28da11-0053-4b2f-85a8-f675a3d10a43
 Changed: true
 Safe to push locally: true
@@ -8,14 +8,14 @@ Safe to push locally: true
 ## Hashes
 
 - Original: `sha256:eb14fa18c809972a95156eedb258b40875f940de881ebc34acd7a0316578421c`
-- Normalized: `sha256:b92f34c2bc6c483756fcbfa92ca6fdafefdfdfbc7a99ff7345ca2da104357733`
-- Candidate: `sha256:b92f34c2bc6c483756fcbfa92ca6fdafefdfdfbc7a99ff7345ca2da104357733`
+- Normalized: `sha256:5d4b7e8febc601ca659a670c9ac5498f2488f06677a3b2d71994448e173ba857`
+- Candidate: `sha256:5d4b7e8febc601ca659a670c9ac5498f2488f06677a3b2d71994448e173ba857`
 
 ## Line summary
 
-- Changed lines: 429
+- Changed lines: 427
 - Inserted lines: 0
-- Deleted lines: 365
+- Deleted lines: 359
 
 ## UI block preservation
 

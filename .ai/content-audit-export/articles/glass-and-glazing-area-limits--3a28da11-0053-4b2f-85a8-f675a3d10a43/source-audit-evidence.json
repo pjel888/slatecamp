@@ -1,662 +1,527 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-010",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T10:55:01.585+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
-  "protocols_applied": [
-    "AGENTS.md local-first content-audit workflow",
-    ".ai/AGENTS.md additive operational artifact rules",
-    "ph-arch-construction-law source-grounding",
-    "ph-arch-professional-context LEA exam relevance"
-  ],
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-091-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T16:55:00+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
   "target": {
     "article_id": "3a28da11-0053-4b2f-85a8-f675a3d10a43",
     "slug": "glass-and-glazing-area-limits",
     "title": "Glass and Glazing Area Limits",
-    "article_folder": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43",
+    "folder": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43",
     "normalized_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/normalized.md",
     "candidate_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/candidate.md",
     "sources_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/sources.json",
     "question_edits_folder": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits",
-    "normalized_sha256": "sha256:b92f34c2bc6c483756fcbfa92ca6fdafefdfdfbc7a99ff7345ca2da104357733",
-    "candidate_sha256": "sha256:b92f34c2bc6c483756fcbfa92ca6fdafefdfdfbc7a99ff7345ca2da104357733",
-    "linked_questions_sha256": "sha256:9e721dd14857f3d4ad634d10bc824f8015ae21e46d8ac5f40bc5bb01c3662175",
-    "sources_sha256": "sha256:a007ff2e45695f621ab90a5a222cdca830d11a4f79cd618d5a217ef170ca25c6"
-  },
-  "classification": {
-    "content_type": "pd1096_glass_glazing_code_article",
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 39,
-    "question_edits_created": [
-      "62cb2cbe-fb78-44fb-8684-2572a80d0fb7",
-      "812ea49f-00a5-480e-8344-5215a0adace2",
-      "f6de2a26-104c-4d04-a4bf-dede5c40933f",
-      "dd823aab-09ea-4596-8d92-b10689fc2b5b",
-      "f231b8f0-7c4a-4bf0-8c02-42eb47544088",
-      "ea1d569d-0ee1-4d1d-98f1-9f3b04c4c8b2",
-      "10f58fb0-4824-47a6-8e44-b26eb5e2907a",
-      "731467a7-9f50-4af5-b0d8-e3e093418a08",
-      "d56df8e4-bfe0-46a5-a76d-30b460445e8f",
-      "359290e6-4cb9-4535-a1a2-a43823007fe2",
-      "554f630d-4d1f-4be9-bfc0-e9ba8dbc1313",
-      "572a3856-d041-4115-8bbe-8c6b3ef55036",
-      "aeddee73-9425-4b9a-85d8-a047e8017339",
-      "749fb721-3e86-48b7-b1f5-a9157f491457",
-      "cd9829ea-a9d7-4d30-b720-56b9e8bcbae3",
-      "d8f449db-469b-4b29-8d5e-ee64adad5be7",
-      "9f776d63-b1b5-4ce5-8a91-5683b2a830e7",
-      "b48226c4-4cfb-47cd-af42-b304cbae71ca",
-      "e1c82d65-8aad-459f-9e43-ffeebcf134a3",
-      "77168b8f-b3ae-416b-8687-554192702bdc",
-      "28a7e6a3-84a4-43db-a219-9593e648aa37",
-      "c564f4ca-3ed8-4052-b84a-d13837b2b648",
-      "0653b39d-4af6-4c01-ab8d-799ad4960894",
-      "c9b3c883-e318-48f9-8f43-1fe5ed09dbc0",
-      "35e6527b-080a-4f55-b91d-3330aa889ead",
-      "dd7c99be-b2c8-4769-8123-f914126af3dc",
-      "245f9c2b-d478-4768-828e-63e78628d066",
-      "127e949f-a2a5-4083-967d-cddca3ae6dc0",
-      "5e59a254-a459-45e2-add1-8bf51fc65431",
-      "45fe90cf-b871-4dd5-9899-1dbe3441c7cb",
-      "f28a23bc-441b-4449-a7ae-b91fcaeea3f0",
-      "fc5886cb-a18d-4db0-b8f2-202699e61e48",
-      "cde2f9be-b9e2-4ce7-afa7-cb30c67027cf",
-      "93fe01f6-5cee-4de2-9ecb-ba1f546603b5",
-      "15795078-a155-4f8d-9d06-ad7c222e32cc",
-      "c4fd8064-c833-4595-88ea-874eeca86c70",
-      "06e0da80-e3d2-46ba-b0c3-3b5674f3c8d8",
-      "9da2d2e4-cbd7-40c7-9c0f-46deb58bcf8a",
-      "7014b109-2fbf-479e-8ea9-b5ca262baeb9"
-    ]
+    "original_hash": "sha256:eb14fa18c809972a95156eedb258b40875f940de881ebc34acd7a0316578421c",
+    "normalized_hash": "sha256:5d4b7e8febc601ca659a670c9ac5498f2488f06677a3b2d71994448e173ba857",
+    "candidate_hash": "sha256:5d4b7e8febc601ca659a670c9ac5498f2488f06677a3b2d71994448e173ba857",
+    "sources_hash": "sha256:2cdd29d02a6b7d2f44e3500fbe3f1a5d37035bc612a7da3e5e7cc5b305eeb17d",
+    "linked_questions_hash": "sha256:9e721dd14857f3d4ad634d10bc824f8015ae21e46d8ac5f40bc5bb01c3662175",
+    "question_edit_count": 39
   },
   "raw_sources": [
     {
-      "key": "pd1096_2004_revised_irr",
-      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
-      "source_type": "implementing_rules",
-      "source_id": "batch010-glass-and-glazing-area-limits-source-01",
+      "source_id": "pd1096-rirr-2004-dpwh-official",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+      "authority": "Department of Public Works and Highways",
+      "source_type": "law_irr_pdf",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
       "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
       "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
       "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-      "extraction_method": "Local raw markdown conversion checked against verified raw PDF file hash",
-      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-      "markdown_lines_checked": [
-        "5110-5151"
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_refined_markdown_lines": [
+        "4386-4508"
+      ],
+      "checked_pdf_pages": [
+        230,
+        231,
+        234
+      ],
+      "use": "primary local source for article, scenario, and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "expected_source_families_checked": [
+    {
+      "source_id": "building-construction-illustrated-5th-edition",
+      "label": "Building Construction Illustrated (5th Edition)",
+      "source_type": "technology_reference_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/raw_markdown/Building Construction Illustrated (5th Edition).md",
+      "raw_markdown_sha256": "sha256:b0f90d710e63c1a0f957bb52ff84fae2b92d74e04583fd41bc52025451963b8f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "batch091_use": "expected source family checked; final asserted Batch 091 code-rule claims use PD 1096 RIRR as the controlling primary source",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_own_ui_blocks": true,
+    "raw_ui_placeholders_removed_from_candidate": true,
+    "sources_json_updated": true,
+    "question_edits_created": 39,
+    "answer_key_fields_changed": false,
+    "real_world_scenario": {
+      "status": "eligible-added",
+      "summary": "Office-lobby glazing scenario applying Rule XVIII applicability, labeling, safety-glass triggers, area limits, support deflection, and jalousie thickness/height limits.",
+      "source_basis": [
+        "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801-1805; refined markdown lines 4386-4508; raw PDF pages 230, 231, and 234"
       ]
     }
-  ],
-  "claims": [
+  },
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "diff": {
+      "changed": true,
+      "safe_to_push": true,
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
+    },
+    "ui_block_edit_validation": {
+      "valid": true,
+      "blockers": [],
+      "warnings": []
+    }
+  },
+  "source_claims": [
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-ARTICLE-01",
-      "claim_text": "Glass and Glazing Area Limits was repaired against PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805; unsupported placeholders, comparative foreign-code claims, and unverified practice statements were removed from normalized.md.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "markdown_lines_checked": [
-          "5110-5151"
-        ]
-      }
+      "claim_id": "glass-and-glazing-area-limits-article-claim-01",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Rule XVIII governs glass and glazing labeling, materials, supports, and area limitations.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801-1805; refined markdown lines 4386-4508; raw PDF pages 230, 231, and 234"
+      ],
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-001",
-      "claim_text": "Question 62cb2cbe-fb78-44fb-8684-2572a80d0fb7 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-article-claim-02",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Hazardous-location glazing must be safety glass when dimensional and location triggers are met.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801-1805; refined markdown lines 4386-4508; raw PDF pages 230, 231, and 234"
+      ],
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-002",
-      "claim_text": "Question 812ea49f-00a5-480e-8344-5215a0adace2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-article-claim-03",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Jalousie and support details are controlled by Rule XVIII rather than generic drafting preference.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801-1805; refined markdown lines 4386-4508; raw PDF pages 230, 231, and 234"
+      ],
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-003",
-      "claim_text": "Question f6de2a26-104c-4d04-a4bf-dede5c40933f has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-001",
+      "claim_type": "linked_question_source_support",
+      "question_id": "62cb2cbe-fb78-44fb-8684-2572a80d0fb7",
+      "claim": "Linked question 62cb2cbe-fb78-44fb-8684-2572a80d0fb7 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/62cb2cbe-fb78-44fb-8684-2572a80d0fb7.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-004",
-      "claim_text": "Question dd823aab-09ea-4596-8d92-b10689fc2b5b has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-002",
+      "claim_type": "linked_question_source_support",
+      "question_id": "812ea49f-00a5-480e-8344-5215a0adace2",
+      "claim": "Linked question 812ea49f-00a5-480e-8344-5215a0adace2 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/812ea49f-00a5-480e-8344-5215a0adace2.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-005",
-      "claim_text": "Question f231b8f0-7c4a-4bf0-8c02-42eb47544088 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-003",
+      "claim_type": "linked_question_source_support",
+      "question_id": "f6de2a26-104c-4d04-a4bf-dede5c40933f",
+      "claim": "Linked question f6de2a26-104c-4d04-a4bf-dede5c40933f was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/f6de2a26-104c-4d04-a4bf-dede5c40933f.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-006",
-      "claim_text": "Question ea1d569d-0ee1-4d1d-98f1-9f3b04c4c8b2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-004",
+      "claim_type": "linked_question_source_support",
+      "question_id": "dd823aab-09ea-4596-8d92-b10689fc2b5b",
+      "claim": "Linked question dd823aab-09ea-4596-8d92-b10689fc2b5b was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/dd823aab-09ea-4596-8d92-b10689fc2b5b.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-007",
-      "claim_text": "Question 10f58fb0-4824-47a6-8e44-b26eb5e2907a has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-005",
+      "claim_type": "linked_question_source_support",
+      "question_id": "f231b8f0-7c4a-4bf0-8c02-42eb47544088",
+      "claim": "Linked question f231b8f0-7c4a-4bf0-8c02-42eb47544088 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/f231b8f0-7c4a-4bf0-8c02-42eb47544088.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-008",
-      "claim_text": "Question 731467a7-9f50-4af5-b0d8-e3e093418a08 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-006",
+      "claim_type": "linked_question_source_support",
+      "question_id": "ea1d569d-0ee1-4d1d-98f1-9f3b04c4c8b2",
+      "claim": "Linked question ea1d569d-0ee1-4d1d-98f1-9f3b04c4c8b2 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/ea1d569d-0ee1-4d1d-98f1-9f3b04c4c8b2.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-009",
-      "claim_text": "Question d56df8e4-bfe0-46a5-a76d-30b460445e8f has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-007",
+      "claim_type": "linked_question_source_support",
+      "question_id": "10f58fb0-4824-47a6-8e44-b26eb5e2907a",
+      "claim": "Linked question 10f58fb0-4824-47a6-8e44-b26eb5e2907a was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/10f58fb0-4824-47a6-8e44-b26eb5e2907a.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-010",
-      "claim_text": "Question 359290e6-4cb9-4535-a1a2-a43823007fe2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-008",
+      "claim_type": "linked_question_source_support",
+      "question_id": "731467a7-9f50-4af5-b0d8-e3e093418a08",
+      "claim": "Linked question 731467a7-9f50-4af5-b0d8-e3e093418a08 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/731467a7-9f50-4af5-b0d8-e3e093418a08.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-011",
-      "claim_text": "Question 554f630d-4d1f-4be9-bfc0-e9ba8dbc1313 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-009",
+      "claim_type": "linked_question_source_support",
+      "question_id": "d56df8e4-bfe0-46a5-a76d-30b460445e8f",
+      "claim": "Linked question d56df8e4-bfe0-46a5-a76d-30b460445e8f was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/d56df8e4-bfe0-46a5-a76d-30b460445e8f.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-012",
-      "claim_text": "Question 572a3856-d041-4115-8bbe-8c6b3ef55036 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-010",
+      "claim_type": "linked_question_source_support",
+      "question_id": "359290e6-4cb9-4535-a1a2-a43823007fe2",
+      "claim": "Linked question 359290e6-4cb9-4535-a1a2-a43823007fe2 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/359290e6-4cb9-4535-a1a2-a43823007fe2.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-013",
-      "claim_text": "Question aeddee73-9425-4b9a-85d8-a047e8017339 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-011",
+      "claim_type": "linked_question_source_support",
+      "question_id": "554f630d-4d1f-4be9-bfc0-e9ba8dbc1313",
+      "claim": "Linked question 554f630d-4d1f-4be9-bfc0-e9ba8dbc1313 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/554f630d-4d1f-4be9-bfc0-e9ba8dbc1313.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-014",
-      "claim_text": "Question 749fb721-3e86-48b7-b1f5-a9157f491457 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-012",
+      "claim_type": "linked_question_source_support",
+      "question_id": "572a3856-d041-4115-8bbe-8c6b3ef55036",
+      "claim": "Linked question 572a3856-d041-4115-8bbe-8c6b3ef55036 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/572a3856-d041-4115-8bbe-8c6b3ef55036.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-015",
-      "claim_text": "Question cd9829ea-a9d7-4d30-b720-56b9e8bcbae3 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-013",
+      "claim_type": "linked_question_source_support",
+      "question_id": "aeddee73-9425-4b9a-85d8-a047e8017339",
+      "claim": "Linked question aeddee73-9425-4b9a-85d8-a047e8017339 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/aeddee73-9425-4b9a-85d8-a047e8017339.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-016",
-      "claim_text": "Question d8f449db-469b-4b29-8d5e-ee64adad5be7 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-014",
+      "claim_type": "linked_question_source_support",
+      "question_id": "749fb721-3e86-48b7-b1f5-a9157f491457",
+      "claim": "Linked question 749fb721-3e86-48b7-b1f5-a9157f491457 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/749fb721-3e86-48b7-b1f5-a9157f491457.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-017",
-      "claim_text": "Question 9f776d63-b1b5-4ce5-8a91-5683b2a830e7 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-015",
+      "claim_type": "linked_question_source_support",
+      "question_id": "cd9829ea-a9d7-4d30-b720-56b9e8bcbae3",
+      "claim": "Linked question cd9829ea-a9d7-4d30-b720-56b9e8bcbae3 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/cd9829ea-a9d7-4d30-b720-56b9e8bcbae3.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-018",
-      "claim_text": "Question b48226c4-4cfb-47cd-af42-b304cbae71ca has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-016",
+      "claim_type": "linked_question_source_support",
+      "question_id": "d8f449db-469b-4b29-8d5e-ee64adad5be7",
+      "claim": "Linked question d8f449db-469b-4b29-8d5e-ee64adad5be7 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/d8f449db-469b-4b29-8d5e-ee64adad5be7.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-019",
-      "claim_text": "Question e1c82d65-8aad-459f-9e43-ffeebcf134a3 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-017",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9f776d63-b1b5-4ce5-8a91-5683b2a830e7",
+      "claim": "Linked question 9f776d63-b1b5-4ce5-8a91-5683b2a830e7 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/9f776d63-b1b5-4ce5-8a91-5683b2a830e7.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-020",
-      "claim_text": "Question 77168b8f-b3ae-416b-8687-554192702bdc has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-018",
+      "claim_type": "linked_question_source_support",
+      "question_id": "b48226c4-4cfb-47cd-af42-b304cbae71ca",
+      "claim": "Linked question b48226c4-4cfb-47cd-af42-b304cbae71ca was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/b48226c4-4cfb-47cd-af42-b304cbae71ca.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-021",
-      "claim_text": "Question 28a7e6a3-84a4-43db-a219-9593e648aa37 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-019",
+      "claim_type": "linked_question_source_support",
+      "question_id": "e1c82d65-8aad-459f-9e43-ffeebcf134a3",
+      "claim": "Linked question e1c82d65-8aad-459f-9e43-ffeebcf134a3 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/e1c82d65-8aad-459f-9e43-ffeebcf134a3.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-022",
-      "claim_text": "Question c564f4ca-3ed8-4052-b84a-d13837b2b648 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-020",
+      "claim_type": "linked_question_source_support",
+      "question_id": "77168b8f-b3ae-416b-8687-554192702bdc",
+      "claim": "Linked question 77168b8f-b3ae-416b-8687-554192702bdc was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/77168b8f-b3ae-416b-8687-554192702bdc.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-023",
-      "claim_text": "Question 0653b39d-4af6-4c01-ab8d-799ad4960894 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-021",
+      "claim_type": "linked_question_source_support",
+      "question_id": "28a7e6a3-84a4-43db-a219-9593e648aa37",
+      "claim": "Linked question 28a7e6a3-84a4-43db-a219-9593e648aa37 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/28a7e6a3-84a4-43db-a219-9593e648aa37.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-024",
-      "claim_text": "Question c9b3c883-e318-48f9-8f43-1fe5ed09dbc0 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-022",
+      "claim_type": "linked_question_source_support",
+      "question_id": "c564f4ca-3ed8-4052-b84a-d13837b2b648",
+      "claim": "Linked question c564f4ca-3ed8-4052-b84a-d13837b2b648 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/c564f4ca-3ed8-4052-b84a-d13837b2b648.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-025",
-      "claim_text": "Question 35e6527b-080a-4f55-b91d-3330aa889ead has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-023",
+      "claim_type": "linked_question_source_support",
+      "question_id": "0653b39d-4af6-4c01-ab8d-799ad4960894",
+      "claim": "Linked question 0653b39d-4af6-4c01-ab8d-799ad4960894 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/0653b39d-4af6-4c01-ab8d-799ad4960894.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-026",
-      "claim_text": "Question dd7c99be-b2c8-4769-8123-f914126af3dc has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-024",
+      "claim_type": "linked_question_source_support",
+      "question_id": "c9b3c883-e318-48f9-8f43-1fe5ed09dbc0",
+      "claim": "Linked question c9b3c883-e318-48f9-8f43-1fe5ed09dbc0 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/c9b3c883-e318-48f9-8f43-1fe5ed09dbc0.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-027",
-      "claim_text": "Question 245f9c2b-d478-4768-828e-63e78628d066 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-025",
+      "claim_type": "linked_question_source_support",
+      "question_id": "35e6527b-080a-4f55-b91d-3330aa889ead",
+      "claim": "Linked question 35e6527b-080a-4f55-b91d-3330aa889ead was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/35e6527b-080a-4f55-b91d-3330aa889ead.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-028",
-      "claim_text": "Question 127e949f-a2a5-4083-967d-cddca3ae6dc0 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-026",
+      "claim_type": "linked_question_source_support",
+      "question_id": "dd7c99be-b2c8-4769-8123-f914126af3dc",
+      "claim": "Linked question dd7c99be-b2c8-4769-8123-f914126af3dc was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/dd7c99be-b2c8-4769-8123-f914126af3dc.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-029",
-      "claim_text": "Question 5e59a254-a459-45e2-add1-8bf51fc65431 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-027",
+      "claim_type": "linked_question_source_support",
+      "question_id": "245f9c2b-d478-4768-828e-63e78628d066",
+      "claim": "Linked question 245f9c2b-d478-4768-828e-63e78628d066 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/245f9c2b-d478-4768-828e-63e78628d066.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-030",
-      "claim_text": "Question 45fe90cf-b871-4dd5-9899-1dbe3441c7cb has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-028",
+      "claim_type": "linked_question_source_support",
+      "question_id": "127e949f-a2a5-4083-967d-cddca3ae6dc0",
+      "claim": "Linked question 127e949f-a2a5-4083-967d-cddca3ae6dc0 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/127e949f-a2a5-4083-967d-cddca3ae6dc0.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-031",
-      "claim_text": "Question f28a23bc-441b-4449-a7ae-b91fcaeea3f0 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-029",
+      "claim_type": "linked_question_source_support",
+      "question_id": "5e59a254-a459-45e2-add1-8bf51fc65431",
+      "claim": "Linked question 5e59a254-a459-45e2-add1-8bf51fc65431 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/5e59a254-a459-45e2-add1-8bf51fc65431.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-032",
-      "claim_text": "Question fc5886cb-a18d-4db0-b8f2-202699e61e48 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-030",
+      "claim_type": "linked_question_source_support",
+      "question_id": "45fe90cf-b871-4dd5-9899-1dbe3441c7cb",
+      "claim": "Linked question 45fe90cf-b871-4dd5-9899-1dbe3441c7cb was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/45fe90cf-b871-4dd5-9899-1dbe3441c7cb.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-033",
-      "claim_text": "Question cde2f9be-b9e2-4ce7-afa7-cb30c67027cf has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-031",
+      "claim_type": "linked_question_source_support",
+      "question_id": "f28a23bc-441b-4449-a7ae-b91fcaeea3f0",
+      "claim": "Linked question f28a23bc-441b-4449-a7ae-b91fcaeea3f0 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/f28a23bc-441b-4449-a7ae-b91fcaeea3f0.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-034",
-      "claim_text": "Question 93fe01f6-5cee-4de2-9ecb-ba1f546603b5 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-032",
+      "claim_type": "linked_question_source_support",
+      "question_id": "fc5886cb-a18d-4db0-b8f2-202699e61e48",
+      "claim": "Linked question fc5886cb-a18d-4db0-b8f2-202699e61e48 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/fc5886cb-a18d-4db0-b8f2-202699e61e48.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-035",
-      "claim_text": "Question 15795078-a155-4f8d-9d06-ad7c222e32cc has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-033",
+      "claim_type": "linked_question_source_support",
+      "question_id": "cde2f9be-b9e2-4ce7-afa7-cb30c67027cf",
+      "claim": "Linked question cde2f9be-b9e2-4ce7-afa7-cb30c67027cf was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/cde2f9be-b9e2-4ce7-afa7-cb30c67027cf.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-036",
-      "claim_text": "Question c4fd8064-c833-4595-88ea-874eeca86c70 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-034",
+      "claim_type": "linked_question_source_support",
+      "question_id": "93fe01f6-5cee-4de2-9ecb-ba1f546603b5",
+      "claim": "Linked question 93fe01f6-5cee-4de2-9ecb-ba1f546603b5 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/93fe01f6-5cee-4de2-9ecb-ba1f546603b5.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-037",
-      "claim_text": "Question 06e0da80-e3d2-46ba-b0c3-3b5674f3c8d8 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-035",
+      "claim_type": "linked_question_source_support",
+      "question_id": "15795078-a155-4f8d-9d06-ad7c222e32cc",
+      "claim": "Linked question 15795078-a155-4f8d-9d06-ad7c222e32cc was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/15795078-a155-4f8d-9d06-ad7c222e32cc.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-038",
-      "claim_text": "Question 9da2d2e4-cbd7-40c7-9c0f-46deb58bcf8a has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-036",
+      "claim_type": "linked_question_source_support",
+      "question_id": "c4fd8064-c833-4595-88ea-874eeca86c70",
+      "claim": "Linked question c4fd8064-c833-4595-88ea-874eeca86c70 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/c4fd8064-c833-4595-88ea-874eeca86c70.json",
+      "status": "source_safe"
     },
     {
-      "claim_id": "B010-glass-and-glazing-area-limits-QUESTION-039",
-      "claim_text": "Question 7014b109-2fbf-479e-8ea9-b5ca262baeb9 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits for the repaired Glass and Glazing Area Limits article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 through 1805",
-        "answer_key_fields_changed": false
-      }
+      "claim_id": "glass-and-glazing-area-limits-question-037",
+      "claim_type": "linked_question_source_support",
+      "question_id": "06e0da80-e3d2-46ba-b0c3-3b5674f3c8d8",
+      "claim": "Linked question 06e0da80-e3d2-46ba-b0c3-3b5674f3c8d8 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/06e0da80-e3d2-46ba-b0c3-3b5674f3c8d8.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "glass-and-glazing-area-limits-question-038",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9da2d2e4-cbd7-40c7-9c0f-46deb58bcf8a",
+      "claim": "Linked question 9da2d2e4-cbd7-40c7-9c0f-46deb58bcf8a was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/9da2d2e4-cbd7-40c7-9c0f-46deb58bcf8a.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "glass-and-glazing-area-limits-question-039",
+      "claim_type": "linked_question_source_support",
+      "question_id": "7014b109-2fbf-479e-8ea9-b5ca262baeb9",
+      "claim": "Linked question 7014b109-2fbf-479e-8ea9-b5ca262baeb9 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XVIII Sections 1801 to 1805",
+      "question_edit_path": ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/7014b109-2fbf-479e-8ea9-b5ca262baeb9.json",
+      "status": "source_safe"
     }
   ],
-  "unsupported_claims_removed": [
-    "Removed unresolved [SLATECAMP_UI_BLOCK:*] placeholders from normalized learner content.",
-    "Removed comparative foreign-code tables and unsupported international practice claims not audited against local raw PDFs.",
-    "Removed or corrected unverified section/number claims that conflicted with the checked PD 1096 raw source."
-  ],
-  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED"
+  "removed_or_superseded_claims": [],
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/0653b39d-4af6-4c01-ab8d-799ad4960894.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/06e0da80-e3d2-46ba-b0c3-3b5674f3c8d8.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/10f58fb0-4824-47a6-8e44-b26eb5e2907a.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/127e949f-a2a5-4083-967d-cddca3ae6dc0.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/15795078-a155-4f8d-9d06-ad7c222e32cc.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/245f9c2b-d478-4768-828e-63e78628d066.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/28a7e6a3-84a4-43db-a219-9593e648aa37.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/359290e6-4cb9-4535-a1a2-a43823007fe2.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/35e6527b-080a-4f55-b91d-3330aa889ead.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/45fe90cf-b871-4dd5-9899-1dbe3441c7cb.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/554f630d-4d1f-4be9-bfc0-e9ba8dbc1313.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/572a3856-d041-4115-8bbe-8c6b3ef55036.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/5e59a254-a459-45e2-add1-8bf51fc65431.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/62cb2cbe-fb78-44fb-8684-2572a80d0fb7.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/7014b109-2fbf-479e-8ea9-b5ca262baeb9.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/731467a7-9f50-4af5-b0d8-e3e093418a08.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/749fb721-3e86-48b7-b1f5-a9157f491457.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/77168b8f-b3ae-416b-8687-554192702bdc.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/812ea49f-00a5-480e-8344-5215a0adace2.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/93fe01f6-5cee-4de2-9ecb-ba1f546603b5.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/9da2d2e4-cbd7-40c7-9c0f-46deb58bcf8a.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/9f776d63-b1b5-4ce5-8a91-5683b2a830e7.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/aeddee73-9425-4b9a-85d8-a047e8017339.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/b48226c4-4cfb-47cd-af42-b304cbae71ca.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/c4fd8064-c833-4595-88ea-874eeca86c70.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/c564f4ca-3ed8-4052-b84a-d13837b2b648.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/c9b3c883-e318-48f9-8f43-1fe5ed09dbc0.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/cd9829ea-a9d7-4d30-b720-56b9e8bcbae3.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/cde2f9be-b9e2-4ce7-afa7-cb30c67027cf.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/d56df8e4-bfe0-46a5-a76d-30b460445e8f.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/d8f449db-469b-4b29-8d5e-ee64adad5be7.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/dd7c99be-b2c8-4769-8123-f914126af3dc.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/dd823aab-09ea-4596-8d92-b10689fc2b5b.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/e1c82d65-8aad-459f-9e43-ffeebcf134a3.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/ea1d569d-0ee1-4d1d-98f1-9f3b04c4c8b2.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/f231b8f0-7c4a-4bf0-8c02-42eb47544088.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/f28a23bc-441b-4449-a7ae-b91fcaeea3f0.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/f6de2a26-104c-4d04-a4bf-dede5c40933f.json",
+    ".ai/content-audit-export/articles/glass-and-glazing-area-limits--3a28da11-0053-4b2f-85a8-f675a3d10a43/question-edits/fc5886cb-a18d-4db0-b8f2-202699e61e48.json"
+  ]
 }

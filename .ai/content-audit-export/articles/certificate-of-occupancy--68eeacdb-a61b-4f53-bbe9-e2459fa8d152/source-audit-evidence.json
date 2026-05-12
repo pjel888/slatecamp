@@ -1,598 +1,456 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-009",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T18:42:00.579+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
-  "protocols_applied": [
-    "AGENTS.md local-first content-audit workflow",
-    ".ai/AGENTS.md additive operational artifact rules",
-    "ph-arch-construction-law source-grounding",
-    "ph-arch-professional-context LEA exam relevance"
-  ],
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-091-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T16:55:00+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
   "target": {
     "article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
     "slug": "certificate-of-occupancy",
     "title": "Certificate of Occupancy",
-    "article_folder": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
+    "folder": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
     "normalized_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/normalized.md",
     "candidate_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/candidate.md",
     "sources_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/sources.json",
     "question_edits_folder": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits",
-    "normalized_sha256": "sha256:114d249b52365f6a04e9721da3b3dfe728e4663d23893feb66a0f93ba62be740",
-    "candidate_sha256": "sha256:114d249b52365f6a04e9721da3b3dfe728e4663d23893feb66a0f93ba62be740",
-    "linked_questions_sha256": "sha256:19d4a037adc829ab1fae19b10bdfbf78088ed5494f0d4ffd96a8eb97c3b1a9f4",
-    "sources_sha256": "sha256:f2fc45445bb79f011a251aa6d2ab98ffef359838086634eb96c79aa8fd2d3622"
-  },
-  "classification": {
-    "content_type": "pd1096_certificate_of_occupancy_article",
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 32,
-    "question_edits_created": [
-      "f73e557f-73c0-4e14-afce-5be4a819373d",
-      "58901082-1aea-44a7-acfe-6b69699803b6",
-      "68c01825-2f6a-4461-ab88-0c99153aa64c",
-      "4b77adbe-6e43-4db3-aece-408f4a797a97",
-      "76fd20b2-be2e-4cfb-bf95-a9ec772ea0c4",
-      "77d9898d-599e-45c0-9d7b-180d999b7075",
-      "a5676f2f-4719-4960-a940-a01943c47f1c",
-      "7ff873a6-5480-433a-92a0-df1974a330a9",
-      "f3d56480-3930-4a6e-b74b-d80340bbd959",
-      "52479e71-60bd-4fb9-9e33-66dd0bf10eaf",
-      "373ca9fc-4d31-47ac-a8bf-34310efdda68",
-      "8e4d9032-4b31-4a8b-a48d-f224ec64f6c5",
-      "affc1f9a-1728-40a6-b729-d3b323135b8b",
-      "b42dcf3d-7e76-45e0-9afe-5ec47784e817",
-      "af1e53de-f10c-48de-8531-7f48d7a0d241",
-      "fab8269d-e782-4162-80d5-d681987649aa",
-      "831133bc-60aa-43b4-81be-a5c3dc3c75b0",
-      "10f3c02e-3de3-43af-96a9-a2fad72952ec",
-      "15f64400-3bc6-460c-91bb-f7d35d403a1d",
-      "b5f6dc2a-004f-4b45-ba4d-44c58fc3ef06",
-      "9404e6ff-f25f-41d8-b242-65df996240d5",
-      "f174e0c4-042d-42bf-8114-1efd86c5f447",
-      "7240edc0-f8f2-4d8f-8bbe-b013898d30c1",
-      "2bf4ed44-c162-4c66-81f3-b85aec50699f",
-      "2d820c6a-2883-4273-8854-a4ff26de0ccd",
-      "21803612-b2e7-437d-97d6-e4ea9bb38abd",
-      "054288fe-8f6f-4f48-9e22-2ef72182fa38",
-      "e58d7560-8e57-4879-91d7-c91463d3a11c",
-      "cb0185e6-83de-4dec-8602-e76e3f2d77e5",
-      "dfe01fe3-464f-4e79-bc01-0b36356dee81",
-      "e4c86247-b8a0-4a1e-b5b9-df8ee6f1c19f",
-      "e13237bf-562a-4308-bc54-818dafb62127"
-    ]
+    "original_hash": "sha256:45a398682ef1ec1fc1bf790aae34a4f71584bbe3afd80bb3c67302316b0cf99b",
+    "normalized_hash": "sha256:e4bb77b332bd309c24ebdb957e515e753f5422a55442037c5f53a8f17e8de6e6",
+    "candidate_hash": "sha256:e4bb77b332bd309c24ebdb957e515e753f5422a55442037c5f53a8f17e8de6e6",
+    "sources_hash": "sha256:b7569072ffaf4b2eb7144951bf3fb2e77c7af57ba437e0ebd360ff4291962ca2",
+    "linked_questions_hash": "sha256:19d4a037adc829ab1fae19b10bdfbf78088ed5494f0d4ffd96a8eb97c3b1a9f4",
+    "question_edit_count": 32
   },
   "raw_sources": [
     {
-      "key": "pd1096_2004_revised_irr",
-      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
-      "source_type": "implementing_rules",
-      "source_id": "batch009-certificate-of-occupancy-source-01",
+      "source_id": "pd1096-rirr-2004-dpwh-official",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+      "authority": "Department of Public Works and Highways",
+      "source_type": "law_irr_pdf",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
       "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
       "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-      "extraction_method": "Local raw markdown conversion checked against verified raw PDF file hash",
-      "source_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-      "markdown_lines_checked": [
-        "373-399",
-        "1034-1068"
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_refined_markdown_lines": [
+        "858-864",
+        "906-924"
+      ],
+      "checked_pdf_pages": [
+        38
+      ],
+      "use": "primary local source for article, scenario, and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "expected_source_families_checked": [
+    {
+      "source_id": "building-construction-illustrated-5th-edition",
+      "label": "Building Construction Illustrated (5th Edition)",
+      "source_type": "technology_reference_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/raw_markdown/Building Construction Illustrated (5th Edition).md",
+      "raw_markdown_sha256": "sha256:b0f90d710e63c1a0f957bb52ff84fae2b92d74e04583fd41bc52025451963b8f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "batch091_use": "expected source family checked; final asserted Batch 091 code-rule claims use PD 1096 RIRR as the controlling primary source",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_own_ui_blocks": true,
+    "raw_ui_placeholders_removed_from_candidate": true,
+    "sources_json_updated": true,
+    "question_edits_created": 32,
+    "answer_key_fields_changed": false,
+    "real_world_scenario": {
+      "status": "eligible-added",
+      "summary": "Clinic-turnover scenario applying full-time architect/civil-engineer supervision, logbook, Certificate of Completion, as-built documents, BFP/FSIC, fee payment, no-use-before-certificate rule, and safe partial-occupancy review.",
+      "source_basis": [
+        "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309; refined markdown lines 858-864 and 906-924; raw PDF page 38"
       ]
     }
-  ],
-  "claims": [
-    {
-      "claim_id": "B009-certificate-of-occupancy-ARTICLE-01",
-      "claim_text": "Certificate of Occupancy: Section 308 inspection and supervision of work was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "markdown_lines_checked": [
-          "373-399",
-          "1034-1068"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-ARTICLE-02",
-      "claim_text": "Certificate of Occupancy: Section 309 Certificate of Occupancy was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "markdown_lines_checked": [
-          "373-399",
-          "1034-1068"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-ARTICLE-03",
-      "claim_text": "Certificate of Occupancy: Rule II penalty text for use without certificate and failure to post/display certificate was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "markdown_lines_checked": [
-          "373-399",
-          "1034-1068"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-001",
-      "claim_text": "Question f73e557f-73c0-4e14-afce-5be4a819373d has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-002",
-      "claim_text": "Question 58901082-1aea-44a7-acfe-6b69699803b6 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-003",
-      "claim_text": "Question 68c01825-2f6a-4461-ab88-0c99153aa64c has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-004",
-      "claim_text": "Question 4b77adbe-6e43-4db3-aece-408f4a797a97 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-005",
-      "claim_text": "Question 76fd20b2-be2e-4cfb-bf95-a9ec772ea0c4 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-006",
-      "claim_text": "Question 77d9898d-599e-45c0-9d7b-180d999b7075 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-007",
-      "claim_text": "Question a5676f2f-4719-4960-a940-a01943c47f1c has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-008",
-      "claim_text": "Question 7ff873a6-5480-433a-92a0-df1974a330a9 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-009",
-      "claim_text": "Question f3d56480-3930-4a6e-b74b-d80340bbd959 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-010",
-      "claim_text": "Question 52479e71-60bd-4fb9-9e33-66dd0bf10eaf has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-011",
-      "claim_text": "Question 373ca9fc-4d31-47ac-a8bf-34310efdda68 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-012",
-      "claim_text": "Question 8e4d9032-4b31-4a8b-a48d-f224ec64f6c5 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-013",
-      "claim_text": "Question affc1f9a-1728-40a6-b729-d3b323135b8b has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-014",
-      "claim_text": "Question b42dcf3d-7e76-45e0-9afe-5ec47784e817 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-015",
-      "claim_text": "Question af1e53de-f10c-48de-8531-7f48d7a0d241 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-016",
-      "claim_text": "Question fab8269d-e782-4162-80d5-d681987649aa has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-017",
-      "claim_text": "Question 831133bc-60aa-43b4-81be-a5c3dc3c75b0 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-018",
-      "claim_text": "Question 10f3c02e-3de3-43af-96a9-a2fad72952ec has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-019",
-      "claim_text": "Question 15f64400-3bc6-460c-91bb-f7d35d403a1d has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-020",
-      "claim_text": "Question b5f6dc2a-004f-4b45-ba4d-44c58fc3ef06 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-021",
-      "claim_text": "Question 9404e6ff-f25f-41d8-b242-65df996240d5 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-022",
-      "claim_text": "Question f174e0c4-042d-42bf-8114-1efd86c5f447 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-023",
-      "claim_text": "Question 7240edc0-f8f2-4d8f-8bbe-b013898d30c1 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-024",
-      "claim_text": "Question 2bf4ed44-c162-4c66-81f3-b85aec50699f has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-025",
-      "claim_text": "Question 2d820c6a-2883-4273-8854-a4ff26de0ccd has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-026",
-      "claim_text": "Question 21803612-b2e7-437d-97d6-e4ea9bb38abd has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-027",
-      "claim_text": "Question 054288fe-8f6f-4f48-9e22-2ef72182fa38 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-028",
-      "claim_text": "Question e58d7560-8e57-4879-91d7-c91463d3a11c has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-029",
-      "claim_text": "Question cb0185e6-83de-4dec-8602-e76e3f2d77e5 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-030",
-      "claim_text": "Question dfe01fe3-464f-4e79-bc01-0b36356dee81 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-031",
-      "claim_text": "Question e4c86247-b8a0-4a1e-b5b9-df8ee6f1c19f has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-certificate-of-occupancy-QUESTION-032",
-      "claim_text": "Question e13237bf-562a-4308-bc54-818dafb62127 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits for the repaired Certificate of Occupancy article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule III Sections 308-309 plus Rule II certificate posting/use penalty text",
-        "answer_key_fields_changed": false
-      }
-    }
-  ],
-  "unsupported_or_removed_claims": [
-    {
-      "removal_id": "B009-certificate-of-occupancy-REMOVED-01",
-      "description": "UI placeholders and raw media fragments",
-      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
-    },
-    {
-      "removal_id": "B009-certificate-of-occupancy-REMOVED-02",
-      "description": "unsupported 30-day Certificate of Occupancy application deadline claims",
-      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
-    },
-    {
-      "removal_id": "B009-certificate-of-occupancy-REMOVED-03",
-      "description": "claims that collapsed Section 309 workflow and separate penalty provisions into one rule",
-      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
-    }
-  ],
-  "gate_results": {
-    "raw_pdf_sha256_verified": true,
+  },
+  "validation": {
     "compose": {
-      "status": "PASS",
-      "blockers": 0,
-      "candidate_hash": "sha256:114d249b52365f6a04e9721da3b3dfe728e4663d23893feb66a0f93ba62be740"
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
     },
     "diff": {
-      "status": "PASS",
       "changed": true,
       "safe_to_push": true,
-      "blockers": 0,
-      "warnings": 1
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
     },
-    "validate": {
-      "status": "PASS",
-      "blockers": 0,
-      "warnings": 0
-    },
-    "supabase": "not_attempted_by_request",
-    "deploy": "not_attempted_by_request",
-    "commit": "not_attempted_by_request"
+    "ui_block_edit_validation": {
+      "valid": true,
+      "blockers": [],
+      "warnings": []
+    }
   },
-  "remaining_blockers": [],
-  "overall": {
-    "source_audit_status": "PASS",
-    "local_first_status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
-    "safe_for_supabase_upload": true,
-    "publishing_note": "Final publishing still requires Supabase dry-run stale checks and human/editor review before any apply."
-  }
+  "source_claims": [
+    {
+      "claim_id": "certificate-of-occupancy-article-claim-01",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Completion documentation and supervision duties are controlled by Rule III Section 308.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309; refined markdown lines 858-864 and 906-924; raw PDF page 38"
+      ],
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-article-claim-02",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Certificate of Occupancy requirements, including use restrictions and partial certificate handling, are controlled by Rule III Section 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309; refined markdown lines 858-864 and 906-924; raw PDF page 38"
+      ],
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-article-claim-03",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Fire-safety clearance and required documents are part of the occupancy approval package.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309; refined markdown lines 858-864 and 906-924; raw PDF page 38"
+      ],
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-001",
+      "claim_type": "linked_question_source_support",
+      "question_id": "f73e557f-73c0-4e14-afce-5be4a819373d",
+      "claim": "Linked question f73e557f-73c0-4e14-afce-5be4a819373d was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/f73e557f-73c0-4e14-afce-5be4a819373d.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-002",
+      "claim_type": "linked_question_source_support",
+      "question_id": "58901082-1aea-44a7-acfe-6b69699803b6",
+      "claim": "Linked question 58901082-1aea-44a7-acfe-6b69699803b6 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/58901082-1aea-44a7-acfe-6b69699803b6.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-003",
+      "claim_type": "linked_question_source_support",
+      "question_id": "68c01825-2f6a-4461-ab88-0c99153aa64c",
+      "claim": "Linked question 68c01825-2f6a-4461-ab88-0c99153aa64c was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/68c01825-2f6a-4461-ab88-0c99153aa64c.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-004",
+      "claim_type": "linked_question_source_support",
+      "question_id": "4b77adbe-6e43-4db3-aece-408f4a797a97",
+      "claim": "Linked question 4b77adbe-6e43-4db3-aece-408f4a797a97 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/4b77adbe-6e43-4db3-aece-408f4a797a97.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-005",
+      "claim_type": "linked_question_source_support",
+      "question_id": "76fd20b2-be2e-4cfb-bf95-a9ec772ea0c4",
+      "claim": "Linked question 76fd20b2-be2e-4cfb-bf95-a9ec772ea0c4 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/76fd20b2-be2e-4cfb-bf95-a9ec772ea0c4.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-006",
+      "claim_type": "linked_question_source_support",
+      "question_id": "77d9898d-599e-45c0-9d7b-180d999b7075",
+      "claim": "Linked question 77d9898d-599e-45c0-9d7b-180d999b7075 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/77d9898d-599e-45c0-9d7b-180d999b7075.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-007",
+      "claim_type": "linked_question_source_support",
+      "question_id": "a5676f2f-4719-4960-a940-a01943c47f1c",
+      "claim": "Linked question a5676f2f-4719-4960-a940-a01943c47f1c was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/a5676f2f-4719-4960-a940-a01943c47f1c.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-008",
+      "claim_type": "linked_question_source_support",
+      "question_id": "7ff873a6-5480-433a-92a0-df1974a330a9",
+      "claim": "Linked question 7ff873a6-5480-433a-92a0-df1974a330a9 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/7ff873a6-5480-433a-92a0-df1974a330a9.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-009",
+      "claim_type": "linked_question_source_support",
+      "question_id": "f3d56480-3930-4a6e-b74b-d80340bbd959",
+      "claim": "Linked question f3d56480-3930-4a6e-b74b-d80340bbd959 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/f3d56480-3930-4a6e-b74b-d80340bbd959.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-010",
+      "claim_type": "linked_question_source_support",
+      "question_id": "52479e71-60bd-4fb9-9e33-66dd0bf10eaf",
+      "claim": "Linked question 52479e71-60bd-4fb9-9e33-66dd0bf10eaf was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/52479e71-60bd-4fb9-9e33-66dd0bf10eaf.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-011",
+      "claim_type": "linked_question_source_support",
+      "question_id": "373ca9fc-4d31-47ac-a8bf-34310efdda68",
+      "claim": "Linked question 373ca9fc-4d31-47ac-a8bf-34310efdda68 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/373ca9fc-4d31-47ac-a8bf-34310efdda68.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-012",
+      "claim_type": "linked_question_source_support",
+      "question_id": "8e4d9032-4b31-4a8b-a48d-f224ec64f6c5",
+      "claim": "Linked question 8e4d9032-4b31-4a8b-a48d-f224ec64f6c5 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/8e4d9032-4b31-4a8b-a48d-f224ec64f6c5.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-013",
+      "claim_type": "linked_question_source_support",
+      "question_id": "affc1f9a-1728-40a6-b729-d3b323135b8b",
+      "claim": "Linked question affc1f9a-1728-40a6-b729-d3b323135b8b was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/affc1f9a-1728-40a6-b729-d3b323135b8b.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-014",
+      "claim_type": "linked_question_source_support",
+      "question_id": "b42dcf3d-7e76-45e0-9afe-5ec47784e817",
+      "claim": "Linked question b42dcf3d-7e76-45e0-9afe-5ec47784e817 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/b42dcf3d-7e76-45e0-9afe-5ec47784e817.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-015",
+      "claim_type": "linked_question_source_support",
+      "question_id": "af1e53de-f10c-48de-8531-7f48d7a0d241",
+      "claim": "Linked question af1e53de-f10c-48de-8531-7f48d7a0d241 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/af1e53de-f10c-48de-8531-7f48d7a0d241.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-016",
+      "claim_type": "linked_question_source_support",
+      "question_id": "fab8269d-e782-4162-80d5-d681987649aa",
+      "claim": "Linked question fab8269d-e782-4162-80d5-d681987649aa was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/fab8269d-e782-4162-80d5-d681987649aa.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-017",
+      "claim_type": "linked_question_source_support",
+      "question_id": "831133bc-60aa-43b4-81be-a5c3dc3c75b0",
+      "claim": "Linked question 831133bc-60aa-43b4-81be-a5c3dc3c75b0 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/831133bc-60aa-43b4-81be-a5c3dc3c75b0.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-018",
+      "claim_type": "linked_question_source_support",
+      "question_id": "10f3c02e-3de3-43af-96a9-a2fad72952ec",
+      "claim": "Linked question 10f3c02e-3de3-43af-96a9-a2fad72952ec was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/10f3c02e-3de3-43af-96a9-a2fad72952ec.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-019",
+      "claim_type": "linked_question_source_support",
+      "question_id": "15f64400-3bc6-460c-91bb-f7d35d403a1d",
+      "claim": "Linked question 15f64400-3bc6-460c-91bb-f7d35d403a1d was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/15f64400-3bc6-460c-91bb-f7d35d403a1d.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-020",
+      "claim_type": "linked_question_source_support",
+      "question_id": "b5f6dc2a-004f-4b45-ba4d-44c58fc3ef06",
+      "claim": "Linked question b5f6dc2a-004f-4b45-ba4d-44c58fc3ef06 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/b5f6dc2a-004f-4b45-ba4d-44c58fc3ef06.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-021",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9404e6ff-f25f-41d8-b242-65df996240d5",
+      "claim": "Linked question 9404e6ff-f25f-41d8-b242-65df996240d5 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/9404e6ff-f25f-41d8-b242-65df996240d5.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-022",
+      "claim_type": "linked_question_source_support",
+      "question_id": "f174e0c4-042d-42bf-8114-1efd86c5f447",
+      "claim": "Linked question f174e0c4-042d-42bf-8114-1efd86c5f447 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/f174e0c4-042d-42bf-8114-1efd86c5f447.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-023",
+      "claim_type": "linked_question_source_support",
+      "question_id": "7240edc0-f8f2-4d8f-8bbe-b013898d30c1",
+      "claim": "Linked question 7240edc0-f8f2-4d8f-8bbe-b013898d30c1 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/7240edc0-f8f2-4d8f-8bbe-b013898d30c1.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-024",
+      "claim_type": "linked_question_source_support",
+      "question_id": "2bf4ed44-c162-4c66-81f3-b85aec50699f",
+      "claim": "Linked question 2bf4ed44-c162-4c66-81f3-b85aec50699f was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/2bf4ed44-c162-4c66-81f3-b85aec50699f.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-025",
+      "claim_type": "linked_question_source_support",
+      "question_id": "2d820c6a-2883-4273-8854-a4ff26de0ccd",
+      "claim": "Linked question 2d820c6a-2883-4273-8854-a4ff26de0ccd was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/2d820c6a-2883-4273-8854-a4ff26de0ccd.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-026",
+      "claim_type": "linked_question_source_support",
+      "question_id": "21803612-b2e7-437d-97d6-e4ea9bb38abd",
+      "claim": "Linked question 21803612-b2e7-437d-97d6-e4ea9bb38abd was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/21803612-b2e7-437d-97d6-e4ea9bb38abd.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-027",
+      "claim_type": "linked_question_source_support",
+      "question_id": "054288fe-8f6f-4f48-9e22-2ef72182fa38",
+      "claim": "Linked question 054288fe-8f6f-4f48-9e22-2ef72182fa38 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/054288fe-8f6f-4f48-9e22-2ef72182fa38.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-028",
+      "claim_type": "linked_question_source_support",
+      "question_id": "e58d7560-8e57-4879-91d7-c91463d3a11c",
+      "claim": "Linked question e58d7560-8e57-4879-91d7-c91463d3a11c was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/e58d7560-8e57-4879-91d7-c91463d3a11c.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-029",
+      "claim_type": "linked_question_source_support",
+      "question_id": "cb0185e6-83de-4dec-8602-e76e3f2d77e5",
+      "claim": "Linked question cb0185e6-83de-4dec-8602-e76e3f2d77e5 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/cb0185e6-83de-4dec-8602-e76e3f2d77e5.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-030",
+      "claim_type": "linked_question_source_support",
+      "question_id": "dfe01fe3-464f-4e79-bc01-0b36356dee81",
+      "claim": "Linked question dfe01fe3-464f-4e79-bc01-0b36356dee81 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/dfe01fe3-464f-4e79-bc01-0b36356dee81.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-031",
+      "claim_type": "linked_question_source_support",
+      "question_id": "e4c86247-b8a0-4a1e-b5b9-df8ee6f1c19f",
+      "claim": "Linked question e4c86247-b8a0-4a1e-b5b9-df8ee6f1c19f was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/e4c86247-b8a0-4a1e-b5b9-df8ee6f1c19f.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "certificate-of-occupancy-question-032",
+      "claim_type": "linked_question_source_support",
+      "question_id": "e13237bf-562a-4308-bc54-818dafb62127",
+      "claim": "Linked question e13237bf-562a-4308-bc54-818dafb62127 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule III Sections 308 and 309.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+      "question_edit_path": ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/e13237bf-562a-4308-bc54-818dafb62127.json",
+      "status": "source_safe"
+    }
+  ],
+  "removed_or_superseded_claims": [],
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/054288fe-8f6f-4f48-9e22-2ef72182fa38.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/10f3c02e-3de3-43af-96a9-a2fad72952ec.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/15f64400-3bc6-460c-91bb-f7d35d403a1d.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/21803612-b2e7-437d-97d6-e4ea9bb38abd.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/2bf4ed44-c162-4c66-81f3-b85aec50699f.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/2d820c6a-2883-4273-8854-a4ff26de0ccd.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/373ca9fc-4d31-47ac-a8bf-34310efdda68.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/4b77adbe-6e43-4db3-aece-408f4a797a97.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/52479e71-60bd-4fb9-9e33-66dd0bf10eaf.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/58901082-1aea-44a7-acfe-6b69699803b6.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/68c01825-2f6a-4461-ab88-0c99153aa64c.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/7240edc0-f8f2-4d8f-8bbe-b013898d30c1.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/76fd20b2-be2e-4cfb-bf95-a9ec772ea0c4.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/77d9898d-599e-45c0-9d7b-180d999b7075.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/7ff873a6-5480-433a-92a0-df1974a330a9.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/831133bc-60aa-43b4-81be-a5c3dc3c75b0.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/8e4d9032-4b31-4a8b-a48d-f224ec64f6c5.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/9404e6ff-f25f-41d8-b242-65df996240d5.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/a5676f2f-4719-4960-a940-a01943c47f1c.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/af1e53de-f10c-48de-8531-7f48d7a0d241.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/affc1f9a-1728-40a6-b729-d3b323135b8b.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/b42dcf3d-7e76-45e0-9afe-5ec47784e817.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/b5f6dc2a-004f-4b45-ba4d-44c58fc3ef06.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/cb0185e6-83de-4dec-8602-e76e3f2d77e5.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/dfe01fe3-464f-4e79-bc01-0b36356dee81.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/e13237bf-562a-4308-bc54-818dafb62127.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/e4c86247-b8a0-4a1e-b5b9-df8ee6f1c19f.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/e58d7560-8e57-4879-91d7-c91463d3a11c.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/f174e0c4-042d-42bf-8114-1efd86c5f447.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/f3d56480-3930-4a6e-b74b-d80340bbd959.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/f73e557f-73c0-4e14-afce-5be4a819373d.json",
+    ".ai/content-audit-export/articles/certificate-of-occupancy--68eeacdb-a61b-4f53-bbe9-e2459fa8d152/question-edits/fab8269d-e782-4162-80d5-d681987649aa.json"
+  ]
 }

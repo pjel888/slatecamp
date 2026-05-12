@@ -1,511 +1,388 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-009",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T18:42:00.579+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
-  "protocols_applied": [
-    "AGENTS.md local-first content-audit workflow",
-    ".ai/AGENTS.md additive operational artifact rules",
-    "ph-arch-construction-law source-grounding",
-    "ph-arch-professional-context LEA exam relevance"
-  ],
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-091-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T16:55:00+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "local_pass_ready_for_final_publishing_review",
   "target": {
     "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
     "slug": "dangerous-and-ruinous-buildings",
     "title": "Dangerous and Ruinous Buildings",
-    "article_folder": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+    "folder": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d",
     "normalized_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/normalized.md",
     "candidate_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/candidate.md",
     "sources_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/sources.json",
     "question_edits_folder": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits",
-    "normalized_sha256": "sha256:9daabd3f0435633a31ae5df3aad0bf050f579f17a065ed6ffeb6f8614399e2e2",
-    "candidate_sha256": "sha256:9daabd3f0435633a31ae5df3aad0bf050f579f17a065ed6ffeb6f8614399e2e2",
-    "linked_questions_sha256": "sha256:dcbec969d0932f846694270db18e4d244b075101acb81270762ad3fc4a97fd1e",
-    "sources_sha256": "sha256:d12f63e3881a26f55a497e1f1d7691f6b3bb69b0183c8d781b9b00f195d7c7ef"
-  },
-  "classification": {
-    "content_type": "pd1096_dangerous_buildings_article",
-    "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 25,
-    "question_edits_created": [
-      "c174708a-494f-4c29-9e59-e9a2afb50af3",
-      "1bee7845-65cd-4375-abb4-3aeacf582157",
-      "9476cf68-d12a-4413-8801-83b86ed3f7b7",
-      "1503cbe5-a2b6-4c1c-b6d8-2efef5e0be17",
-      "57166821-b223-41ac-af54-4bf7bd2027b0",
-      "7c237b09-b2dd-4376-a268-63a77875411e",
-      "8305df1e-cc21-4ded-b897-05e3dc277494",
-      "36dbb78c-21bd-4a28-bdb8-59d058635bf0",
-      "c33f6404-6609-474f-a72d-52e1e140dad4",
-      "5a4c83a8-7ae5-4c6d-a8a2-27e326d675ba",
-      "d2f0564a-b497-44bc-9a1e-36b53a877fd8",
-      "a3faabf7-6f39-403c-81a8-664ca68ffeaf",
-      "301e4271-b38c-4fb4-a1c7-cb2c692d1e2a",
-      "33865ebc-ef29-4ca6-94f3-fc010e7763a7",
-      "8695541f-c614-44b4-aca3-37017bcd7ab8",
-      "5748478b-f007-43ca-b19d-87e2f116434d",
-      "87f56090-87a5-4875-8585-b2ea40ce726d",
-      "a500f027-a9d8-4822-972f-bf74118c2889",
-      "7630a21e-0182-4fdc-808d-250aa2db2f24",
-      "6aeeebbb-5770-46d4-92e1-76da25fd515b",
-      "927ee181-9f52-424e-9302-85b4e3c3dda7",
-      "02eed33f-a090-491b-bad0-e0cb2d376c93",
-      "78199e2f-cbd0-4ba0-ad1b-a96b9b228321",
-      "37a4edc4-03ae-4086-acaa-8cc99ad18c0c",
-      "c4d270ca-b338-4a9d-8ac9-ade2b6181ab3"
-    ]
+    "original_hash": "sha256:c241fb3cf7ae69790014c5961743d85b8f693b0a2626e75baae6ee63b2e4ac73",
+    "normalized_hash": "sha256:79d783ebd12380ffa6fe4c74b5bd7c5d6f5bebb28c0a51c94ff0859eae53580b",
+    "candidate_hash": "sha256:79d783ebd12380ffa6fe4c74b5bd7c5d6f5bebb28c0a51c94ff0859eae53580b",
+    "sources_hash": "sha256:8aeded27fd9d0a8f4e9b2ab6a3b0314c8b38695d11c83f5a7c915aa2a9340236",
+    "linked_questions_hash": "sha256:dcbec969d0932f846694270db18e4d244b075101acb81270762ad3fc4a97fd1e",
+    "question_edit_count": 25
   },
   "raw_sources": [
     {
-      "key": "pd1096_2004_revised_irr",
-      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
-      "source_type": "implementing_rules",
-      "source_id": "batch009-dangerous-and-ruinous-buildings-source-01",
+      "source_id": "pd1096-rirr-2004-dpwh-official",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+      "authority": "Department of Public Works and Highways",
+      "source_type": "law_irr_pdf",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
       "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
       "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-      "extraction_method": "Local raw markdown conversion checked against verified raw PDF file hash",
-      "source_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-      "markdown_lines_checked": [
-        "443-541"
+      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_refined_markdown_lines": [
+        "397-488"
+      ],
+      "checked_pdf_pages": [
+        17,
+        18,
+        19,
+        20
+      ],
+      "use": "primary local source for article, scenario, and linked-question support",
+      "local_source_checked": true
+    }
+  ],
+  "expected_source_families_checked": [
+    {
+      "source_id": "building-construction-illustrated-5th-edition",
+      "label": "Building Construction Illustrated (5th Edition)",
+      "source_type": "technology_reference_pdf",
+      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/004-Technology/Building Construction Illustrated (5th Edition).pdf",
+      "raw_pdf_sha256": "sha256:528acdc8afd84d937d5ab49a5df8c349321d20d3d403d110e038628e4d2f1c02",
+      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/raw_markdown/Building Construction Illustrated (5th Edition).md",
+      "raw_markdown_sha256": "sha256:b0f90d710e63c1a0f957bb52ff84fae2b92d74e04583fd41bc52025451963b8f",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/004-Technology/refined_markdown/Building Construction Illustrated (5th Edition).md",
+      "refined_markdown_sha256": "sha256:0f3213a3ca3dcf8fd2076dae5e1b12a215dc7041950f864cfd5f4b53250c820a",
+      "batch091_use": "expected source family checked; final asserted Batch 091 code-rule claims use PD 1096 RIRR as the controlling primary source",
+      "local_source_checked": true
+    }
+  ],
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_own_ui_blocks": true,
+    "raw_ui_placeholders_removed_from_candidate": true,
+    "sources_json_updated": true,
+    "question_edits_created": 25,
+    "answer_key_fields_changed": false,
+    "real_world_scenario": {
+      "status": "eligible-added",
+      "summary": "Post-typhoon mixed-use building scenario applying structural, fire, electrical, mechanical, sanitation, and architectural danger categories, repair/vacate/demolish orders, notice, appeal/reconsideration, cost recovery, and related remedies.",
+      "source_basis": [
+        "PD 1096 2004 Revised IRR, Rule II Sections 214-216 and following procedure; refined markdown lines 397-488; raw PDF pages 17-20"
       ]
     }
-  ],
-  "claims": [
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-ARTICLE-01",
-      "claim_text": "Dangerous and Ruinous Buildings: Section 214 dangerous and ruinous buildings or structures was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "markdown_lines_checked": [
-          "443-541"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-ARTICLE-02",
-      "claim_text": "Dangerous and Ruinous Buildings: Section 215 abatement of dangerous buildings was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "markdown_lines_checked": [
-          "443-541"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-ARTICLE-03",
-      "claim_text": "Dangerous and Ruinous Buildings: Section 216 other remedies was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "markdown_lines_checked": [
-          "443-541"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-ARTICLE-04",
-      "claim_text": "Dangerous and Ruinous Buildings: abatement/demolition procedure immediately following Section 216 was checked against the local raw PD 1096 source and used to repair the article candidate.",
-      "claim_class": "article_source_repair",
-      "audit_result": "PASS",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "source_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "markdown_lines_checked": [
-          "443-541"
-        ]
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-001",
-      "claim_text": "Question c174708a-494f-4c29-9e59-e9a2afb50af3 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-002",
-      "claim_text": "Question 1bee7845-65cd-4375-abb4-3aeacf582157 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-003",
-      "claim_text": "Question 9476cf68-d12a-4413-8801-83b86ed3f7b7 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-004",
-      "claim_text": "Question 1503cbe5-a2b6-4c1c-b6d8-2efef5e0be17 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-005",
-      "claim_text": "Question 57166821-b223-41ac-af54-4bf7bd2027b0 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-006",
-      "claim_text": "Question 7c237b09-b2dd-4376-a268-63a77875411e has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-007",
-      "claim_text": "Question 8305df1e-cc21-4ded-b897-05e3dc277494 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-008",
-      "claim_text": "Question 36dbb78c-21bd-4a28-bdb8-59d058635bf0 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-009",
-      "claim_text": "Question c33f6404-6609-474f-a72d-52e1e140dad4 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-010",
-      "claim_text": "Question 5a4c83a8-7ae5-4c6d-a8a2-27e326d675ba has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-011",
-      "claim_text": "Question d2f0564a-b497-44bc-9a1e-36b53a877fd8 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-012",
-      "claim_text": "Question a3faabf7-6f39-403c-81a8-664ca68ffeaf has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-013",
-      "claim_text": "Question 301e4271-b38c-4fb4-a1c7-cb2c692d1e2a has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-014",
-      "claim_text": "Question 33865ebc-ef29-4ca6-94f3-fc010e7763a7 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-015",
-      "claim_text": "Question 8695541f-c614-44b4-aca3-37017bcd7ab8 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-016",
-      "claim_text": "Question 5748478b-f007-43ca-b19d-87e2f116434d has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-017",
-      "claim_text": "Question 87f56090-87a5-4875-8585-b2ea40ce726d has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-018",
-      "claim_text": "Question a500f027-a9d8-4822-972f-bf74118c2889 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-019",
-      "claim_text": "Question 7630a21e-0182-4fdc-808d-250aa2db2f24 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-020",
-      "claim_text": "Question 6aeeebbb-5770-46d4-92e1-76da25fd515b has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-021",
-      "claim_text": "Question 927ee181-9f52-424e-9302-85b4e3c3dda7 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-022",
-      "claim_text": "Question 02eed33f-a090-491b-bad0-e0cb2d376c93 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-023",
-      "claim_text": "Question 78199e2f-cbd0-4ba0-ad1b-a96b9b228321 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-024",
-      "claim_text": "Question 37a4edc4-03ae-4086-acaa-8cc99ad18c0c has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B009-dangerous-and-ruinous-buildings-QUESTION-025",
-      "claim_text": "Question c4d270ca-b338-4a9d-8ac9-ade2b6181ab3 has a Batch 009 local question-edit JSON draft under .ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits for the repaired Dangerous and Ruinous Buildings article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "parent_article_locator": "Rule II Sections 214-216 and abatement/demolition procedure",
-        "answer_key_fields_changed": false
-      }
-    }
-  ],
-  "unsupported_or_removed_claims": [
-    {
-      "removal_id": "B009-dangerous-and-ruinous-buildings-REMOVED-01",
-      "description": "UI placeholders and extraction artifacts",
-      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
-    },
-    {
-      "removal_id": "B009-dangerous-and-ruinous-buildings-REMOVED-02",
-      "description": "unsupported historical/narrative claims",
-      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
-    },
-    {
-      "removal_id": "B009-dangerous-and-ruinous-buildings-REMOVED-03",
-      "description": "claims outside checked dangerous-building, abatement, notice, appeal, and remedy text",
-      "disposition": "removed_or_rewritten_in_normalized_and_candidate"
-    }
-  ],
-  "gate_results": {
-    "raw_pdf_sha256_verified": true,
+  },
+  "validation": {
     "compose": {
-      "status": "PASS",
-      "blockers": 0,
-      "candidate_hash": "sha256:9daabd3f0435633a31ae5df3aad0bf050f579f17a065ed6ffeb6f8614399e2e2"
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
     },
     "diff": {
-      "status": "PASS",
       "changed": true,
       "safe_to_push": true,
-      "blockers": 0,
-      "warnings": 1
+      "locally_safe_to_push": true,
+      "blockers": [],
+      "warnings": [
+        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
+      ]
     },
-    "validate": {
-      "status": "PASS",
-      "blockers": 0,
-      "warnings": 0
-    },
-    "supabase": "not_attempted_by_request",
-    "deploy": "not_attempted_by_request",
-    "commit": "not_attempted_by_request"
+    "ui_block_edit_validation": {
+      "valid": true,
+      "blockers": [],
+      "warnings": []
+    }
   },
-  "remaining_blockers": [],
-  "overall": {
-    "source_audit_status": "PASS",
-    "local_first_status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
-    "safe_for_supabase_upload": true,
-    "publishing_note": "Final publishing still requires Supabase dry-run stale checks and human/editor review before any apply."
-  }
+  "source_claims": [
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-article-claim-01",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Dangerous and ruinous building classification is defined by Rule II Sections 214 and 215.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule II Sections 214-216 and following procedure; refined markdown lines 397-488; raw PDF pages 17-20"
+      ],
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-article-claim-02",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Building Official abatement authority and ordered remedies are controlled by Rule II Section 216 and the following procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule II Sections 214-216 and following procedure; refined markdown lines 397-488; raw PDF pages 17-20"
+      ],
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-article-claim-03",
+      "claim_type": "article_or_scenario_claim",
+      "claim": "Safety categories include structural, fire, electrical, mechanical, sanitation, and architectural hazards.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "local_evidence": [
+        "PD 1096 2004 Revised IRR, Rule II Sections 214-216 and following procedure; refined markdown lines 397-488; raw PDF pages 17-20"
+      ],
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-001",
+      "claim_type": "linked_question_source_support",
+      "question_id": "c174708a-494f-4c29-9e59-e9a2afb50af3",
+      "claim": "Linked question c174708a-494f-4c29-9e59-e9a2afb50af3 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/c174708a-494f-4c29-9e59-e9a2afb50af3.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-002",
+      "claim_type": "linked_question_source_support",
+      "question_id": "1bee7845-65cd-4375-abb4-3aeacf582157",
+      "claim": "Linked question 1bee7845-65cd-4375-abb4-3aeacf582157 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/1bee7845-65cd-4375-abb4-3aeacf582157.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-003",
+      "claim_type": "linked_question_source_support",
+      "question_id": "9476cf68-d12a-4413-8801-83b86ed3f7b7",
+      "claim": "Linked question 9476cf68-d12a-4413-8801-83b86ed3f7b7 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/9476cf68-d12a-4413-8801-83b86ed3f7b7.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-004",
+      "claim_type": "linked_question_source_support",
+      "question_id": "1503cbe5-a2b6-4c1c-b6d8-2efef5e0be17",
+      "claim": "Linked question 1503cbe5-a2b6-4c1c-b6d8-2efef5e0be17 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/1503cbe5-a2b6-4c1c-b6d8-2efef5e0be17.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-005",
+      "claim_type": "linked_question_source_support",
+      "question_id": "57166821-b223-41ac-af54-4bf7bd2027b0",
+      "claim": "Linked question 57166821-b223-41ac-af54-4bf7bd2027b0 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/57166821-b223-41ac-af54-4bf7bd2027b0.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-006",
+      "claim_type": "linked_question_source_support",
+      "question_id": "7c237b09-b2dd-4376-a268-63a77875411e",
+      "claim": "Linked question 7c237b09-b2dd-4376-a268-63a77875411e was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/7c237b09-b2dd-4376-a268-63a77875411e.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-007",
+      "claim_type": "linked_question_source_support",
+      "question_id": "8305df1e-cc21-4ded-b897-05e3dc277494",
+      "claim": "Linked question 8305df1e-cc21-4ded-b897-05e3dc277494 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/8305df1e-cc21-4ded-b897-05e3dc277494.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-008",
+      "claim_type": "linked_question_source_support",
+      "question_id": "36dbb78c-21bd-4a28-bdb8-59d058635bf0",
+      "claim": "Linked question 36dbb78c-21bd-4a28-bdb8-59d058635bf0 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/36dbb78c-21bd-4a28-bdb8-59d058635bf0.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-009",
+      "claim_type": "linked_question_source_support",
+      "question_id": "c33f6404-6609-474f-a72d-52e1e140dad4",
+      "claim": "Linked question c33f6404-6609-474f-a72d-52e1e140dad4 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/c33f6404-6609-474f-a72d-52e1e140dad4.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-010",
+      "claim_type": "linked_question_source_support",
+      "question_id": "5a4c83a8-7ae5-4c6d-a8a2-27e326d675ba",
+      "claim": "Linked question 5a4c83a8-7ae5-4c6d-a8a2-27e326d675ba was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/5a4c83a8-7ae5-4c6d-a8a2-27e326d675ba.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-011",
+      "claim_type": "linked_question_source_support",
+      "question_id": "d2f0564a-b497-44bc-9a1e-36b53a877fd8",
+      "claim": "Linked question d2f0564a-b497-44bc-9a1e-36b53a877fd8 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/d2f0564a-b497-44bc-9a1e-36b53a877fd8.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-012",
+      "claim_type": "linked_question_source_support",
+      "question_id": "a3faabf7-6f39-403c-81a8-664ca68ffeaf",
+      "claim": "Linked question a3faabf7-6f39-403c-81a8-664ca68ffeaf was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/a3faabf7-6f39-403c-81a8-664ca68ffeaf.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-013",
+      "claim_type": "linked_question_source_support",
+      "question_id": "301e4271-b38c-4fb4-a1c7-cb2c692d1e2a",
+      "claim": "Linked question 301e4271-b38c-4fb4-a1c7-cb2c692d1e2a was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/301e4271-b38c-4fb4-a1c7-cb2c692d1e2a.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-014",
+      "claim_type": "linked_question_source_support",
+      "question_id": "33865ebc-ef29-4ca6-94f3-fc010e7763a7",
+      "claim": "Linked question 33865ebc-ef29-4ca6-94f3-fc010e7763a7 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/33865ebc-ef29-4ca6-94f3-fc010e7763a7.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-015",
+      "claim_type": "linked_question_source_support",
+      "question_id": "8695541f-c614-44b4-aca3-37017bcd7ab8",
+      "claim": "Linked question 8695541f-c614-44b4-aca3-37017bcd7ab8 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/8695541f-c614-44b4-aca3-37017bcd7ab8.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-016",
+      "claim_type": "linked_question_source_support",
+      "question_id": "5748478b-f007-43ca-b19d-87e2f116434d",
+      "claim": "Linked question 5748478b-f007-43ca-b19d-87e2f116434d was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/5748478b-f007-43ca-b19d-87e2f116434d.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-017",
+      "claim_type": "linked_question_source_support",
+      "question_id": "87f56090-87a5-4875-8585-b2ea40ce726d",
+      "claim": "Linked question 87f56090-87a5-4875-8585-b2ea40ce726d was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/87f56090-87a5-4875-8585-b2ea40ce726d.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-018",
+      "claim_type": "linked_question_source_support",
+      "question_id": "a500f027-a9d8-4822-972f-bf74118c2889",
+      "claim": "Linked question a500f027-a9d8-4822-972f-bf74118c2889 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/a500f027-a9d8-4822-972f-bf74118c2889.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-019",
+      "claim_type": "linked_question_source_support",
+      "question_id": "7630a21e-0182-4fdc-808d-250aa2db2f24",
+      "claim": "Linked question 7630a21e-0182-4fdc-808d-250aa2db2f24 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/7630a21e-0182-4fdc-808d-250aa2db2f24.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-020",
+      "claim_type": "linked_question_source_support",
+      "question_id": "6aeeebbb-5770-46d4-92e1-76da25fd515b",
+      "claim": "Linked question 6aeeebbb-5770-46d4-92e1-76da25fd515b was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/6aeeebbb-5770-46d4-92e1-76da25fd515b.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-021",
+      "claim_type": "linked_question_source_support",
+      "question_id": "927ee181-9f52-424e-9302-85b4e3c3dda7",
+      "claim": "Linked question 927ee181-9f52-424e-9302-85b4e3c3dda7 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/927ee181-9f52-424e-9302-85b4e3c3dda7.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-022",
+      "claim_type": "linked_question_source_support",
+      "question_id": "02eed33f-a090-491b-bad0-e0cb2d376c93",
+      "claim": "Linked question 02eed33f-a090-491b-bad0-e0cb2d376c93 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/02eed33f-a090-491b-bad0-e0cb2d376c93.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-023",
+      "claim_type": "linked_question_source_support",
+      "question_id": "78199e2f-cbd0-4ba0-ad1b-a96b9b228321",
+      "claim": "Linked question 78199e2f-cbd0-4ba0-ad1b-a96b9b228321 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/78199e2f-cbd0-4ba0-ad1b-a96b9b228321.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-024",
+      "claim_type": "linked_question_source_support",
+      "question_id": "37a4edc4-03ae-4086-acaa-8cc99ad18c0c",
+      "claim": "Linked question 37a4edc4-03ae-4086-acaa-8cc99ad18c0c was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/37a4edc4-03ae-4086-acaa-8cc99ad18c0c.json",
+      "status": "source_safe"
+    },
+    {
+      "claim_id": "dangerous-and-ruinous-buildings-question-025",
+      "claim_type": "linked_question_source_support",
+      "question_id": "c4d270ca-b338-4a9d-8ac9-ade2b6181ab3",
+      "claim": "Linked question c4d270ca-b338-4a9d-8ac9-ade2b6181ab3 was retained with answer-key fields unchanged and given Batch 091 citation/explanation support from PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure.",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule II Sections 214 to 216 and the immediately following abatement procedure",
+      "question_edit_path": ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/c4d270ca-b338-4a9d-8ac9-ade2b6181ab3.json",
+      "status": "source_safe"
+    }
+  ],
+  "removed_or_superseded_claims": [],
+  "question_edit_files": [
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/02eed33f-a090-491b-bad0-e0cb2d376c93.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/1503cbe5-a2b6-4c1c-b6d8-2efef5e0be17.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/1bee7845-65cd-4375-abb4-3aeacf582157.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/301e4271-b38c-4fb4-a1c7-cb2c692d1e2a.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/33865ebc-ef29-4ca6-94f3-fc010e7763a7.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/36dbb78c-21bd-4a28-bdb8-59d058635bf0.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/37a4edc4-03ae-4086-acaa-8cc99ad18c0c.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/57166821-b223-41ac-af54-4bf7bd2027b0.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/5748478b-f007-43ca-b19d-87e2f116434d.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/5a4c83a8-7ae5-4c6d-a8a2-27e326d675ba.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/6aeeebbb-5770-46d4-92e1-76da25fd515b.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/7630a21e-0182-4fdc-808d-250aa2db2f24.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/78199e2f-cbd0-4ba0-ad1b-a96b9b228321.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/7c237b09-b2dd-4376-a268-63a77875411e.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/8305df1e-cc21-4ded-b897-05e3dc277494.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/8695541f-c614-44b4-aca3-37017bcd7ab8.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/87f56090-87a5-4875-8585-b2ea40ce726d.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/927ee181-9f52-424e-9302-85b4e3c3dda7.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/9476cf68-d12a-4413-8801-83b86ed3f7b7.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/a3faabf7-6f39-403c-81a8-664ca68ffeaf.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/a500f027-a9d8-4822-972f-bf74118c2889.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/c174708a-494f-4c29-9e59-e9a2afb50af3.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/c33f6404-6609-474f-a72d-52e1e140dad4.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/c4d270ca-b338-4a9d-8ac9-ade2b6181ab3.json",
+    ".ai/content-audit-export/articles/dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d/question-edits/d2f0564a-b497-44bc-9a1e-36b53a877fd8.json"
+  ]
 }

@@ -73,6 +73,12 @@ Section 216 states that the rights, actions, and remedies provided in the Code a
 
 For exam purposes, avoid answers that make the Building Official's dangerous-building order the only possible legal consequence. PD 1096 remedies can operate alongside Civil Code and other legal remedies.
 
+## Real World Scenario
+
+After a typhoon, an old mixed-use building has leaning exterior walls, damaged exits, exposed wiring, and abandoned debris on the site. The Building Official does not need to treat the case as collapse risk only. Under Sections 214 and 215, dangerous or ruinous conditions can come from structural hazards, fire hazards, unsafe electrical or mechanical installations, sanitation and health hazards, architectural deficiencies, abandonment, or intolerable pollution.
+
+The appropriate order depends on the degree of danger to life, health, or safety. A repairable condition may be ordered repaired, an immediate occupancy danger may require vacation, and a condition that cannot safely remain may require demolition. The procedure begins with a finding or declaration and written notice giving at least 15 days to vacate, repair, renovate, demolish, or remove the dangerous condition, with appeal or reconsideration routes preserved. If the owner fails to comply after the order, the Building Official may cause the work to be done and charge the cost to the owner, while Section 216 keeps other legal remedies available.
+
 ## LEA Recall Anchors
 
 - Dangerous building is broader than collapse: unsafe structure, unsafe egress, fire hazard, life danger, health/public welfare hazard, abandonment, or intolerable pollution.

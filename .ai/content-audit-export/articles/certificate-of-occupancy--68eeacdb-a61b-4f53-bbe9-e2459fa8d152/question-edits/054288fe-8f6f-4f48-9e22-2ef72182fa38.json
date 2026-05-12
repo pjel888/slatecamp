@@ -1,20 +1,28 @@
 {
   "question_id": "054288fe-8f6f-4f48-9e22-2ef72182fa38",
   "baseline_hash": "sha256:7045a191985270d5c02496cc8ae225969ad1c3a31a7f2b57f450b1bfde92fc3b",
-  "reason": "Batch 009 local source audit aligned linked question 054288fe-8f6f-4f48-9e22-2ef72182fa38 with the repaired Certificate of Occupancy article and verified PD 1096 raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-009",
-  "approved_at": "2026-05-10T18:39:52.382+08:00",
+  "reason": "Batch 091 local-first source audit aligned linked question 054288fe-8f6f-4f48-9e22-2ef72182fa38 with the repaired Certificate of Occupancy article using local PD 1096 raw-source evidence. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-091",
+  "approved_at": "2026-05-12T16:44:46+08:00",
   "source_audit_support": {
     "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
     "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-    "source_locator": "PD 1096 2004 Revised IRR, Section 308.1",
+    "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+    "source_locator": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+    "checked_refined_markdown_lines": [
+      "858-864",
+      "906-924"
+    ],
+    "checked_pdf_pages": [
+      38
+    ],
     "parent_article_id": "68eeacdb-a61b-4f53-bbe9-e2459fa8d152",
     "parent_article_slug": "certificate-of-occupancy",
     "answer_key_fields_changed": false
   },
   "proposed": {
-    "code_citation": "PD 1096 2004 Revised IRR, Section 308.1",
-    "explanation": "The controlling PD 1096 source is Rule III Sections 308 and 309. Section 308 covers licensed full-time inspection, the jobsite logbook, and the Certificate of Completion. Section 309 covers the Certificate of Occupancy application package, BFP final inspection/FSIC step, final OBO review, fee payment before issuance, partial occupancy, and later certificates for changes in use. This local edit adds source context only and does not change answer-key fields."
+    "code_citation": "PD 1096 2004 Revised IRR, Rule III Sections 308 and 309",
+    "explanation": "The controlling local source is PD 1096 2004 Revised IRR, Rule III Sections 308 and 309. This Batch 091 local edit refreshes source context for the linked article and keeps the original answer-key fields unchanged."
   }
 }

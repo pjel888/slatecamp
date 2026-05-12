@@ -52,6 +52,12 @@ Frameless glass doors, glass in doors, fixed glass panels, and similar glazed op
 - glass lights whose least dimension is not greater than 450 mm;
 - glass lights 1.50 sq.m. or less in area.
 
+## Real World Scenario
+
+An office lobby design proposes large fixed glass panels beside the entrance, a set of framed glazed openings, and jalousie windows in a support room. The architect first checks whether Rule XVIII applies, then asks for manufacturer labels showing glass type and thickness, including permanent identification for special-performance glass such as laminated or tempered units.
+
+For the lobby panel, the exam move is to match the panel dimensions to the Rule XVIII area table and then check nearby wall openings. A panel more than 600 mm wide and at least 180 mm high beside a wall opening needs safety glass unless an opaque bulkhead at least 450 mm high protects it. The framing must also qualify as firm support by keeping deflection at design load within 1/175 of the span. For the jalousie window, the glass cannot be thinner than 5.6 mm and cannot be longer than 1.20 m.
+
 ## Exam Values To Memorize
 
 | Requirement | Source-grounded value |
