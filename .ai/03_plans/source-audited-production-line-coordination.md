@@ -95,4 +95,3 @@ Independent QA for Batch 095 passed all structural/content gates but requested c
 Acceptance rationale: Batch 095 followed the fixed 093-095 manifest, produced current local-first source-audit evidence, repaired/validated 50/50 question edits, added source-safe scenarios, passed independent UAP SPP quality review, and made no Supabase push/deploy. This local-first production line is establishing a frozen source-audited state before any future final publishing review; prior historical publication/re-audit artifacts do not invalidate the current local repair, but they expose a reservation-process gap.
 
 Process advisory: future reservation coordinators must record three separate categories: (1) current serially accepted source-audited batches, (2) historical local-first/re-audit artifacts, and (3) historical published/article/question batches. Manifests must not report overlap as zero when any of these historical categories contain the selected IDs.
-
