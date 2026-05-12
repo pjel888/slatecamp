@@ -5,7 +5,7 @@ import { Canvas, useFrame, useThree } from '@react-three/fiber'
 import { Edges, OrbitControls, PerspectiveCamera } from '@react-three/drei'
 import { HouseLine, Lightbulb, Pause, Play } from '@phosphor-icons/react/dist/ssr'
 import { motion } from 'framer-motion'
-import { CanvasTexture, SRGBColorSpace, type Group } from 'three'
+import { CanvasTexture, SRGBColorSpace, type Group, BufferGeometry, Float32BufferAttribute, DoubleSide } from 'three'
 import { SCIcon } from '@/components/graphics/icons/Icon'
 import { WebGLErrorBoundary } from '@/components/r3f/WebGLErrorBoundary'
 import { SlideToSubmit } from '@/components/quiz-v2/SlideToSubmit'
@@ -20,13 +20,20 @@ const LOT_COLORS = {
   line: palette.slateBlue700,
   guide: palette.slateBlue,
   dimension: palette.campOrange,
-  front: palette.warmRed,
-  side: palette.campOrange,
-  rear: palette.amber,
+  front: palette.slateBlue,
+  side: palette.teal,
+  rear: palette.emerald,
   road: palette.inkSecondary,
   roadStripe: palette.surfaceCard,
+  roadEdge: palette.inkTertiary,
+  roadSeam: palette.inkPrimary,
+  sidewalk: palette.surfaceFocused,
+  curb: palette.borderDefault,
   text: palette.inkPrimary,
   shadow: palette.inkSecondary,
+  houseMassing: '#FFFFFF',
+  houseEdge: '#0A0A0A',
+  houseRoof: '#FFFFFF',
 } as const
 
 const LOT_WIDTH_METERS = 16
@@ -55,6 +62,11 @@ const ROAD_GAP = 0.08
 const ROAD_THICKNESS = 0.018
 const ROAD_WIDTH = LOT_WIDTH
 const ROAD_Y = LOT_THICKNESS / 2 - ROAD_THICKNESS / 2 - 0.004
+const SIDEWALK_DEPTH = 0.06
+const SIDEWALK_THICKNESS = 0.014
+const CURB_DEPTH = 0.014
+const CURB_THICKNESS = 0.022
+const ROAD_MARKING_THICKNESS = 0.003
 const MODEL_ROTATION_SPEED = 0.11
 export const LOT_MODEL_GROUP_POSITION: Vector3Tuple = [0, 0.08, 0]
 
@@ -78,6 +90,23 @@ interface SetbackBandSpec {
   grid: SetbackGridArea
   position: Vector3Tuple
   size: Vector3Tuple
+}
+
+interface RoadDetailRect {
+  position: Vector3Tuple
+  size: Vector3Tuple
+}
+
+export interface RoadDetailPlan {
+  roadTopY: number
+  nearSidewalk: RoadDetailRect
+  farSidewalk: RoadDetailRect
+  nearCurb: RoadDetailRect
+  farCurb: RoadDetailRect
+  laneEdgeLines: RoadDetailRect[]
+  centerDashes: RoadDetailRect[]
+  sidewalkJoints: RoadDetailRect[]
+  asphaltSeams: RoadDetailRect[]
 }
 
 export interface SetbackGridPlan {
@@ -183,6 +212,81 @@ export const getSetbackGridPlan = (setbacks: SetbackValues): SetbackGridPlan => 
         position: [roundSceneValue(halfWidth - sideDepth / 2), SETBACK_FILL_Y, roundSceneValue((frontDepth - rearDepth) / 2)],
       },
     },
+  }
+}
+
+const createRoadRect = (
+  position: Vector3Tuple,
+  size: Vector3Tuple,
+): RoadDetailRect => ({ position, size })
+
+export const getRoadDetailPlan = (
+  road: SetbackGridPlan['road'] = getSetbackGridPlan({ front: 0, side: 0, rear: 0 }).road,
+): RoadDetailPlan => {
+  const [roadWidth, , roadDepth] = road.size
+  const roadTopY = road.position[1] + ROAD_THICKNESS / 2 + 0.004
+  const nearRoadEdgeZ = road.position[2] + roadDepth / 2
+  const farRoadEdgeZ = road.position[2] - roadDepth / 2
+  const markingY = roadTopY + 0.003
+  const sidewalkY = roadTopY + SIDEWALK_THICKNESS / 2
+  const curbY = roadTopY + CURB_THICKNESS / 2
+  const centerDashCount = 5
+  const centerDashLength = roundSceneValue(roadWidth * 0.095)
+  const centerDashSpan = roadWidth * 0.76
+  const centerDashGap = (centerDashSpan - centerDashLength * centerDashCount) / (centerDashCount - 1)
+  const firstDashX = -centerDashSpan / 2 + centerDashLength / 2
+  const sidewalkJointXs = [-0.6, -0.2, 0.2, 0.6].map((value) => roundSceneValue(value))
+  const nearSidewalkZ = roundSceneValue(nearRoadEdgeZ + ROAD_GAP / 2)
+  const farSidewalkZ = roundSceneValue(farRoadEdgeZ - SIDEWALK_DEPTH / 2 - 0.014)
+
+  return {
+    roadTopY,
+    nearSidewalk: createRoadRect(
+      [0, sidewalkY, nearSidewalkZ],
+      [roadWidth, SIDEWALK_THICKNESS, SIDEWALK_DEPTH],
+    ),
+    farSidewalk: createRoadRect(
+      [0, sidewalkY, farSidewalkZ],
+      [roadWidth, SIDEWALK_THICKNESS, SIDEWALK_DEPTH],
+    ),
+    nearCurb: createRoadRect(
+      [0, curbY, roundSceneValue(nearRoadEdgeZ + CURB_DEPTH / 2)],
+      [roadWidth, CURB_THICKNESS, CURB_DEPTH],
+    ),
+    farCurb: createRoadRect(
+      [0, curbY, roundSceneValue(farRoadEdgeZ - CURB_DEPTH / 2)],
+      [roadWidth, CURB_THICKNESS, CURB_DEPTH],
+    ),
+    laneEdgeLines: [
+      createRoadRect(
+        [0, markingY, roundSceneValue(road.position[2] + roadDepth * 0.34)],
+        [roadWidth * 0.82, ROAD_MARKING_THICKNESS, 0.008],
+      ),
+      createRoadRect(
+        [0, markingY, roundSceneValue(road.position[2] - roadDepth * 0.34)],
+        [roadWidth * 0.82, ROAD_MARKING_THICKNESS, 0.008],
+      ),
+    ],
+    centerDashes: Array.from({ length: centerDashCount }, (_, index) => (
+      createRoadRect(
+        [roundSceneValue(firstDashX + index * (centerDashLength + centerDashGap)), markingY + 0.001, road.position[2]],
+        [centerDashLength, ROAD_MARKING_THICKNESS, 0.014],
+      )
+    )),
+    sidewalkJoints: [
+      ...sidewalkJointXs.map((x) => createRoadRect(
+        [x, sidewalkY + 0.008, nearSidewalkZ],
+        [0.004, ROAD_MARKING_THICKNESS, SIDEWALK_DEPTH * 0.72],
+      )),
+      ...sidewalkJointXs.map((x) => createRoadRect(
+        [x, sidewalkY + 0.008, farSidewalkZ],
+        [0.004, ROAD_MARKING_THICKNESS, SIDEWALK_DEPTH * 0.72],
+      )),
+    ],
+    asphaltSeams: [-0.36, 0.36].map((x) => createRoadRect(
+      [roundSceneValue(x), markingY - 0.001, road.position[2]],
+      [0.004, ROAD_MARKING_THICKNESS, roadDepth * 0.76],
+    )),
   }
 }
 
@@ -312,28 +416,126 @@ const GuideLine = ({
   </mesh>
 )
 
-const SetbackFill = ({ spec }: { spec: SetbackBandSpec }) => (
-  <mesh position={spec.position} renderOrder={2}>
-    <boxGeometry args={spec.size} />
-    <meshBasicMaterial color={spec.color} transparent opacity={0.68} depthWrite={false} toneMapped={false} />
-  </mesh>
-)
+const SetbackFill = ({
+  spec,
+  gradient,
+}: {
+  spec: SetbackBandSpec
+  gradient?: { from: string; to: string }
+}) => {
+  const texture = useMemo(() => {
+    if (!gradient || typeof document === 'undefined') return null
+
+    const canvas = document.createElement('canvas')
+    canvas.width = 2
+    canvas.height = 128
+    const ctx = canvas.getContext('2d')
+    if (!ctx) return null
+
+    const grad = ctx.createLinearGradient(0, 0, 0, 128)
+    grad.addColorStop(0, gradient.from)
+    grad.addColorStop(1, gradient.to)
+    ctx.fillStyle = grad
+    ctx.fillRect(0, 0, 2, 128)
+
+    const tex = new CanvasTexture(canvas)
+    tex.colorSpace = SRGBColorSpace
+    tex.needsUpdate = true
+    return tex
+  }, [gradient?.from, gradient?.to])
+
+  useEffect(() => () => texture?.dispose(), [texture])
+
+  return (
+    <mesh position={spec.position} renderOrder={2}>
+      <boxGeometry args={spec.size} />
+      <meshBasicMaterial
+        color={texture ? '#ffffff' : spec.color}
+        map={texture}
+        transparent
+        opacity={0.68}
+        depthWrite={false}
+        toneMapped={false}
+      />
+    </mesh>
+  )
+}
 
 const RoadStrip = () => {
   const road = getSetbackGridPlan({ front: 0, side: 0, rear: 0 }).road
-  const roadTopY = road.position[1] + ROAD_THICKNESS / 2 + 0.004
+  const roadDetails = getRoadDetailPlan(road)
 
   return (
     <group>
       <mesh position={road.position} renderOrder={0}>
         <boxGeometry args={road.size} />
-        <meshBasicMaterial color={LOT_COLORS.road} transparent opacity={0.28} toneMapped={false} />
+        <meshBasicMaterial color={LOT_COLORS.road} transparent opacity={0.34} toneMapped={false} />
       </mesh>
       <GuideLine
-        args={[road.size[0] * 0.78, 0.003, 0.012]}
-        position={[0, roadTopY, road.position[2]]}
+        args={roadDetails.nearSidewalk.size}
+        position={roadDetails.nearSidewalk.position}
+        color={LOT_COLORS.sidewalk}
+        opacity={0.78}
+      />
+      <GuideLine
+        args={roadDetails.farSidewalk.size}
+        position={roadDetails.farSidewalk.position}
+        color={LOT_COLORS.sidewalk}
+        opacity={0.48}
+      />
+      <GuideLine
+        args={roadDetails.nearCurb.size}
+        position={roadDetails.nearCurb.position}
+        color={LOT_COLORS.curb}
+        opacity={0.78}
+      />
+      <GuideLine
+        args={roadDetails.farCurb.size}
+        position={roadDetails.farCurb.position}
+        color={LOT_COLORS.curb}
+        opacity={0.48}
+      />
+      {roadDetails.sidewalkJoints.map((joint) => (
+        <GuideLine
+          key={`sidewalk-joint-${joint.position.join('-')}`}
+          args={joint.size}
+          position={joint.position}
+          color={LOT_COLORS.roadSeam}
+          opacity={0.12}
+        />
+      ))}
+      {roadDetails.asphaltSeams.map((seam) => (
+        <GuideLine
+          key={`asphalt-seam-${seam.position[0]}`}
+          args={seam.size}
+          position={seam.position}
+          color={LOT_COLORS.roadSeam}
+          opacity={0.12}
+        />
+      ))}
+      {roadDetails.laneEdgeLines.map((line) => (
+        <GuideLine
+          key={`lane-edge-${line.position[2]}`}
+          args={line.size}
+          position={line.position}
+          color={LOT_COLORS.roadEdge}
+          opacity={0.36}
+        />
+      ))}
+      {roadDetails.centerDashes.map((dash) => (
+        <GuideLine
+          key={`road-center-dash-${dash.position[0]}`}
+          args={dash.size}
+          position={dash.position}
+          color={LOT_COLORS.roadStripe}
+          opacity={0.78}
+        />
+      ))}
+      <GuideLine
+        args={[road.size[0] * 0.78, ROAD_MARKING_THICKNESS, 0.003]}
+        position={[0, roadDetails.roadTopY + 0.002, road.position[2]]}
         color={LOT_COLORS.roadStripe}
-        opacity={0.64}
+        opacity={0.24}
       />
     </group>
   )
@@ -344,11 +546,108 @@ const SetbackBands = ({ setbacks }: { setbacks: SetbackValues }) => {
 
   return (
     <>
-      <SetbackFill spec={plan.bands.front} />
-      <SetbackFill spec={plan.bands.rear} />
+      <SetbackFill spec={plan.bands.front} gradient={{ from: LOT_COLORS.front, to: LOT_COLORS.side }} />
+      <SetbackFill spec={plan.bands.rear} gradient={{ from: LOT_COLORS.side, to: LOT_COLORS.rear }} />
       <SetbackFill spec={plan.bands.leftSide} />
       <SetbackFill spec={plan.bands.rightSide} />
     </>
+  )
+}
+
+const HOUSE_HEIGHT = 0.42
+const ROOF_HEIGHT = HOUSE_HEIGHT * 0.5
+const EAVE_OVERHANG = 0.05
+
+const createHipRoofGeometry = (width: number, depth: number, height: number) => {
+  const geometry = new BufferGeometry()
+  const hw = width / 2
+  const hd = depth / 2
+
+  const vertices = new Float32Array([
+    // Front face (facing -Z)
+    0, height, 0,
+    hw, 0, -hd,
+    -hw, 0, -hd,
+    // Right face (facing +X)
+    0, height, 0,
+    hw, 0, hd,
+    hw, 0, -hd,
+    // Back face (facing +Z)
+    0, height, 0,
+    -hw, 0, hd,
+    hw, 0, hd,
+    // Left face (facing -X)
+    0, height, 0,
+    -hw, 0, -hd,
+    -hw, 0, hd,
+  ])
+
+  geometry.setAttribute('position', new Float32BufferAttribute(vertices, 3))
+  geometry.computeVertexNormals()
+  return geometry
+}
+
+const HouseMassing = ({ setbacks }: { setbacks: SetbackValues }) => {
+  const plan = getSetbackGridPlan(setbacks)
+  const halfLength = LOT_LENGTH / 2
+
+  const frontDepth = plan.bands.front.size[2]
+  const rearDepth = plan.bands.rear.size[2]
+  const sideDepth = plan.bands.leftSide.size[0]
+
+  const buildableWidth = Math.max(0.01, LOT_WIDTH - 2 * sideDepth)
+  const buildableDepth = Math.max(0.01, LOT_LENGTH - frontDepth - rearDepth)
+
+  const houseWidth = buildableWidth * 0.98
+  const houseDepth = buildableDepth * 0.58
+  const houseY = LOT_THICKNESS / 2 + HOUSE_HEIGHT / 2 + 0.004
+
+  const frontBuildableEdgeZ = -halfLength + frontDepth
+  const houseZ = frontBuildableEdgeZ + houseDepth / 2
+
+  const roofWidth = houseWidth + EAVE_OVERHANG * 2
+  const roofDepth = houseDepth + EAVE_OVERHANG * 2
+  const roofY = houseY + HOUSE_HEIGHT / 2
+
+  const roofGeometry = useMemo(
+    () => createHipRoofGeometry(roofWidth, roofDepth, ROOF_HEIGHT),
+    [roofWidth, roofDepth]
+  )
+
+  useEffect(() => () => roofGeometry.dispose(), [roofGeometry])
+
+  if (buildableWidth <= 0.02 || buildableDepth <= 0.02) return null
+
+  return (
+    <group renderOrder={3}>
+      {/* House body */}
+      <mesh position={[0, houseY, houseZ]}>
+        <boxGeometry args={[houseWidth, HOUSE_HEIGHT, houseDepth]} />
+        <meshPhysicalMaterial
+          color={LOT_COLORS.houseMassing}
+          roughness={0.4}
+          transmission={0.12}
+          transparent
+          opacity={0.4}
+          toneMapped={false}
+        />
+        <Edges color={LOT_COLORS.houseEdge} threshold={12} linewidth={0.4} />
+      </mesh>
+
+      {/* Hip roof with eaves */}
+      <mesh position={[0, roofY, houseZ]} geometry={roofGeometry}>
+        <meshPhysicalMaterial
+          color={LOT_COLORS.houseRoof}
+          roughness={0.4}
+          transmission={0.08}
+          transparent
+          opacity={0.4}
+          side={DoubleSide}
+          toneMapped={false}
+        />
+        <Edges color={LOT_COLORS.houseEdge} threshold={12} linewidth={0.4} />
+      </mesh>
+    </group>
   )
 }
 
@@ -464,6 +763,7 @@ const LotMesh = ({
       <GuideLine args={[0.01, 0.01, LOT_LENGTH]} position={[halfWidth, topY + 0.014, 0]} color={LOT_COLORS.line} opacity={0.46} />
 
       {selectedSetbacks ? <SetbackBands setbacks={selectedSetbacks} /> : null}
+      {selectedSetbacks ? <HouseMassing setbacks={selectedSetbacks} /> : null}
 
       {GRID_Z_LINES.map((z, index) => {
         const isMeterLine = (index + 1) % 2 === 0
@@ -751,7 +1051,7 @@ export const HeroHousePreview = () => {
   const reducedMotion = usePrefersReducedMotion()
   const webGLAvailable = useSafeWebGLStatus()
   const [rotationPlaying, setRotationPlaying] = useState(true)
-  const [selectedOptionId, setSelectedOptionId] = useState<string | null>(null)
+  const [selectedOptionId, setSelectedOptionId] = useState<string | null>(SETBACK_QUIZ_OPTIONS[0].id)
   const [checked, setChecked] = useState(false)
   const [successEffectKey, setSuccessEffectKey] = useState(0)
   const selectedOption = SETBACK_QUIZ_OPTIONS.find((option) => option.id === selectedOptionId)
@@ -768,7 +1068,7 @@ export const HeroHousePreview = () => {
       : 'Play slow lot rotation'
   const setbackVisualizationText = selectedOption
     ? `Visualization: front ${selectedOption.values.front} is beside the road, side ${selectedOption.values.side} fills only uncolored side cells, and rear ${selectedOption.values.rear} is opposite the road.`
-    : 'Select a setback option to color the half-meter grid: red front, orange side, and yellow rear.'
+    : 'Select a setback option to color the half-meter grid: blue front, blue-green side, and green rear.'
 
   const handleSelectOption = (optionId: string) => {
     setSelectedOptionId((prev) => (prev === optionId ? null : optionId))

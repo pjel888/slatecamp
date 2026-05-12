@@ -51,6 +51,7 @@ import {
   HeroHousePreview,
   LOT_MODEL_GROUP_POSITION,
   SETBACK_GRID_STEP_METERS,
+  getRoadDetailPlan,
   getSetbackGridPlan,
 } from '@/components/marketing/hero/HeroHousePreview'
 
@@ -67,6 +68,19 @@ describe('HeroHousePreview setback geometry', () => {
 
     expect(plan.road.position[2]).toBeLessThan(-1.6)
     expect(plan.road.size[0]).toBe(1.6)
+
+    const roadDetails = getRoadDetailPlan(plan.road)
+    expect(roadDetails.nearSidewalk.position[2]).toBeGreaterThan(plan.road.position[2])
+    expect(roadDetails.nearSidewalk.position[2]).toBeLessThan(-1.6)
+    expect(roadDetails.nearCurb.position[2]).toBeCloseTo(-1.673)
+    expect(roadDetails.farSidewalk.position[2]).toBeLessThan(plan.road.position[2])
+    expect(roadDetails.laneEdgeLines).toHaveLength(2)
+    expect(roadDetails.centerDashes).toHaveLength(5)
+    expect(roadDetails.centerDashes[0].position[0]).toBeLessThan(0)
+    expect(roadDetails.centerDashes[2].position[0]).toBeCloseTo(0)
+    expect(roadDetails.centerDashes[4].position[0]).toBeGreaterThan(0)
+    expect(roadDetails.sidewalkJoints).toHaveLength(8)
+    expect(roadDetails.asphaltSeams).toHaveLength(2)
 
     expect(plan.bands.front.size).toEqual([1.6, expect.any(Number), 0.45])
     expect(plan.bands.front.position[2]).toBeCloseTo(-1.375)
@@ -155,7 +169,7 @@ describe('HeroHousePreview', () => {
     expect(screen.getByRole('button', { name: /play slow lot rotation/i })).toHaveAttribute('aria-pressed', 'false')
 
     const submitSlider = screen.getByRole('slider', { name: /slide to submit/i })
-    expect(submitSlider).toHaveAttribute('aria-disabled', 'true')
+    expect(submitSlider).not.toHaveAttribute('aria-disabled')
     expect(submitSlider.parentElement?.className).toContain('rounded-lg')
     expect(submitSlider.parentElement?.className).toContain('bottom-0')
     expect(submitSlider.parentElement?.className).toContain('mb-2')
@@ -174,7 +188,7 @@ describe('HeroHousePreview', () => {
     expect(firstLetterMarker.className).toContain('h-5')
     expect(firstLetterMarker.className).toContain('w-5')
     expect(firstLetterMarker.className).toContain('rounded-full')
-    expect(firstLetterMarker.className).toContain('bg-primary/[0.16]')
+    expect(firstLetterMarker.className).toContain('bg-camp-green/18')
     expect(firstLetterMarker.className).not.toContain('uppercase')
 
     const divider = options[0].querySelector('.w-px')
@@ -190,8 +204,6 @@ describe('HeroHousePreview', () => {
     expect(firstOption.getByText('4.50 m')).toBeInTheDocument()
     expect(firstOption.getAllByText('2.00 m')).toHaveLength(2)
 
-    fireEvent.click(options[0])
-    expect(submitSlider).not.toHaveAttribute('aria-disabled')
     expect(within(options[0]).getByText('a').className).toContain('bg-camp-green/18')
     expect(screen.queryByTestId('hero-setback-success-effect')).not.toBeInTheDocument()
     expect(playCorrectSoundMock).not.toHaveBeenCalled()
@@ -250,9 +262,7 @@ describe('HeroHousePreview', () => {
       render(<HeroHousePreview />)
 
       const submitSlider = screen.getByRole('slider', { name: /slide to submit/i })
-      const options = screen.getAllByRole('radio')
 
-      fireEvent.click(options[0])
       fireEvent.keyDown(submitSlider, { key: 'Enter' })
 
       expect(submitSlider).toHaveTextContent('You are correct!')

@@ -38,7 +38,11 @@ const PATHS = [
 ] as const
 
 export const BentoFeatureGrid = () => (
-  <section id='features' aria-labelledby='platform-paths-heading' className='relative scroll-mt-24 bg-page-bg px-6 py-18'>
+  <section
+    id='features'
+    aria-labelledby='platform-paths-heading'
+    className='relative scroll-mt-24 bg-transparent px-6 py-18'
+  >
     <div className='relative z-10 mx-auto max-w-[1200px]'>
       <div className='grid gap-8 border-y border-border-design py-8 lg:grid-cols-[0.72fr_1.28fr] lg:gap-14'>
         <div>
@@ -55,22 +59,33 @@ export const BentoFeatureGrid = () => (
             Four ways back to a clearer architecture map.
           </h2>
           <p className='mt-4 max-w-xl text-[15px] leading-relaxed text-text-2'>
-            SlateCamp is supplementary support: a field guide, practice surface, visual toolbelt, and weak-topic map for the moments when review starts to feel scattered.
+            SlateCamp is supplementary support: a field guide, practice surface,
+            visual toolbelt, and weak-topic map for the moments when review
+            starts to feel scattered.
           </p>
         </div>
 
         <div className='divide-y divide-border-design border-t border-border-design lg:border-t-0'>
           {PATHS.map((path) => (
-            <article key={path.index} className='grid gap-4 py-6 sm:grid-cols-[122px_1fr_auto] sm:items-start'>
+            <article
+              key={path.index}
+              className='grid gap-4 py-6 sm:grid-cols-[122px_1fr_auto] sm:items-start'
+            >
               <div>
                 <span className='font-[family-name:var(--font-dm-mono)] text-[11px] font-semibold uppercase tracking-[0.18em] text-camp-cobalt'>
                   {path.index}
                 </span>
-                <p className='mt-1 text-[12px] font-bold uppercase tracking-[0.08em] text-text-2'>{path.label}</p>
+                <p className='mt-1 text-[12px] font-bold uppercase tracking-[0.08em] text-text-2'>
+                  {path.label}
+                </p>
               </div>
               <div>
-                <h3 className='text-[20px] font-extrabold leading-tight text-camp-black'>{path.title}</h3>
-                <p className='mt-2 max-w-2xl text-[13px] leading-relaxed text-text-2'>{path.body}</p>
+                <h3 className='text-[20px] font-extrabold leading-tight text-camp-black'>
+                  {path.title}
+                </h3>
+                <p className='mt-2 max-w-2xl text-[13px] leading-relaxed text-text-2'>
+                  {path.body}
+                </p>
               </div>
               <Link
                 href={path.href}

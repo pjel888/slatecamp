@@ -6,11 +6,11 @@ import { BentoFeatureGrid } from '@/components/marketing/BentoFeatureGrid'
 import { HowItWorksSection } from '@/components/marketing/HowItWorksSection'
 import { ComparisonSection } from '@/components/marketing/ComparisonSection'
 import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
-import { SocialProofBar } from '@/components/marketing/SocialProofBar'
 import { QuestionsSection } from '@/components/marketing/QuestionsSection'
 import { ThreeDLabSection } from '@/components/marketing/ThreeDLabSection'
 import { AnalyticsSection } from '@/components/marketing/AnalyticsSection'
 import { WikiSection } from '@/components/marketing/WikiSection'
+import { ScrollWipeContainer } from '@/components/motion/ScrollWipeContainer'
 import { ROUTES } from '@/lib/constants'
 
 export async function LandingPageContent() {
@@ -25,14 +25,17 @@ export async function LandingPageContent() {
       <MarketingNav activeRoute='/' logoScrollsToTop isLoggedIn={isLoggedIn} />
 
       <main>
-        <HeroSection
-          ctaHref={ctaHref}
-          ctaLabel={ctaLabel}
-        />
+        <div className='relative z-10 shadow-[0_12px_48px_rgba(15,23,42,0.14)]'>
+          <HeroSection
+            ctaHref={ctaHref}
+            ctaLabel={ctaLabel}
+          />
+        </div>
 
-        <SocialProofBar />
-        <BentoFeatureGrid />
-        <QuestionsSection />
+        <ScrollWipeContainer>
+          <BentoFeatureGrid />
+          <QuestionsSection />
+        </ScrollWipeContainer>
         <ThreeDLabSection />
         <AnalyticsSection />
         <WikiSection />

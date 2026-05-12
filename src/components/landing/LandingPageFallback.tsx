@@ -5,7 +5,6 @@ import { BentoFeatureGrid } from '@/components/marketing/BentoFeatureGrid'
 import { HowItWorksSection } from '@/components/marketing/HowItWorksSection'
 import { ComparisonSection } from '@/components/marketing/ComparisonSection'
 import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
-import { SocialProofBar } from '@/components/marketing/SocialProofBar'
 import { QuestionsSection } from '@/components/marketing/QuestionsSection'
 import { ThreeDLabSection } from '@/components/marketing/ThreeDLabSection'
 import { AnalyticsSection } from '@/components/marketing/AnalyticsSection'
@@ -21,7 +20,6 @@ export function LandingPageFallback() {
           ctaHref={ROUTES.auth.register}
           ctaLabel='Open the atlas'
         />
-        <SocialProofBar />
         <BentoFeatureGrid />
         <QuestionsSection />
         <ThreeDLabSection />

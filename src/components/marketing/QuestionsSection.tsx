@@ -18,7 +18,7 @@ const OPTIONS = [
 ] as const
 
 const QuizPreview = () => {
-  const [selected, setSelected] = useState<number | null>(null)
+  const [selected, setSelected] = useState<number | null>(0)
   const [submitted, setSubmitted] = useState(false)
   const correctIndex = 1
 
@@ -120,7 +120,7 @@ const QuizPreview = () => {
 }
 
 export const QuestionsSection = () => (
-  <FeatureSectionLayout className='!py-8'>
+  <FeatureSectionLayout white className='!py-8'>
     <StaggerParent>
       <StaggerItem>
         <SectionEyebrow label='Quizzes' />

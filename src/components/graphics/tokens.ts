@@ -18,6 +18,7 @@ export const palette = {
   warmRed50: '#FDF0F0',
   amber: '#D4951A',
   amber50: '#FEF8ED',
+  teal: '#1A9B9E',
   infoBlue: '#3B82C8',
   surfaceLight: '#F5F5F5',
   surfaceCard: '#FFFFFF',

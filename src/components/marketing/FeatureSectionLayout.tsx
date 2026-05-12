@@ -8,12 +8,14 @@ export const FeatureSectionLayout = ({
   flip = false,
   dark = false,
   amber = false,
+  white = false,
   className,
 }: {
   children: React.ReactNode
   flip?: boolean
   dark?: boolean
   amber?: boolean
+  white?: boolean
   className?: string
 }) => (
   <section
@@ -22,7 +24,9 @@ export const FeatureSectionLayout = ({
         ? 'bg-camp-black border-white/10'
         : amber
           ? 'bg-camp-amber border-warning/40'
-          : 'border-border-design bg-muted'
+          : white
+            ? 'border-border-design bg-white'
+            : 'border-border-design bg-muted'
     } ${className || ''}`}
   >
     <div

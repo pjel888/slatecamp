@@ -9,24 +9,42 @@ import { HowItWorksSection } from '@/components/marketing/HowItWorksSection'
 import { FinalCtaSection } from '@/components/marketing/FinalCtaSection'
 
 vi.mock('@/components/marketing/hero/AtlasFieldHero', () => ({
-  AtlasAtmosphere: () => <div data-testid='atlas-atmosphere' aria-hidden='true'>Atlas atmosphere</div>,
-  AtlasFieldHero: () => <div data-testid='atlas-atmosphere' aria-hidden='true'>Atlas atmosphere</div>,
+  AtlasAtmosphere: () => (
+    <div data-testid='atlas-atmosphere' aria-hidden='true'>
+      Atlas atmosphere
+    </div>
+  ),
+  AtlasFieldHero: () => (
+    <div data-testid='atlas-atmosphere' aria-hidden='true'>
+      Atlas atmosphere
+    </div>
+  ),
 }))
 
 vi.mock('@/components/marketing/hero/HeroHousePreview', () => ({
   HeroHousePreview: () => (
-    <div data-testid='hero-house-preview' role='img' aria-label='Interactive three-dimensional blank 16 by 32 meter lot model with one-meter grid and dimension guides. It rotates slowly until you drag to orbit it.' />
+    <div
+      data-testid='hero-house-preview'
+      role='img'
+      aria-label='Interactive three-dimensional blank 16 by 32 meter lot model with one-meter grid and dimension guides. It rotates slowly until you drag to orbit it.'
+    />
   ),
 }))
 
 vi.mock('@/components/motion/ScrollReveal', () => ({
-  ScrollReveal: ({ children }: { children: React.ReactNode }) => <>{children}</>,
+  ScrollReveal: ({ children }: { children: React.ReactNode }) => (
+    <>{children}</>
+  ),
 }))
 
 vi.mock('@/components/motion/StaggerChildren', () => ({
-  StaggerParent: ({ children, className }: { children: React.ReactNode; className?: string }) => (
-    <div className={className}>{children}</div>
-  ),
+  StaggerParent: ({
+    children,
+    className,
+  }: {
+    children: React.ReactNode
+    className?: string
+  }) => <div className={className}>{children}</div>,
   StaggerItem: ({ children }: { children: React.ReactNode }) => <>{children}</>,
 }))
 
@@ -44,29 +62,56 @@ describe('landing page marketing surface', () => {
       'src/components/marketing/WikiSection.tsx',
     ]
 
-    const oversizedRadiusPattern = /rounded-(?:xl|2xl|3xl)|rounded-\[(?:[1-9]\d+px|[1-9](?:\.\d+)?rem)\]/
+    const oversizedRadiusPattern =
+      /rounded-(?:xl|2xl|3xl)|rounded-\[(?:[1-9]\d+px|[1-9](?:\.\d+)?rem)\]/
 
     for (const file of files) {
-      expect(readFileSync(join(process.cwd(), file), 'utf8'), file).not.toMatch(oversizedRadiusPattern)
+      expect(readFileSync(join(process.cwd(), file), 'utf8'), file).not.toMatch(
+        oversizedRadiusPattern,
+      )
     }
   })
 
   it('explains SlateCamp clearly for first-time Filipino architecture learners', () => {
     render(<HeroSection ctaHref='/register' ctaLabel='Open the atlas' />)
 
-    expect(screen.getByText(/Architecture resource base/i)).toBeInTheDocument()
-    expect(screen.getByRole('heading', { name: /know you’ll win/i })).toBeInTheDocument()
-    expect(screen.getByText(/SlateCamp shows you how PD 1096, RA 9514, and BP 344 actually work/i)).toBeInTheDocument()
-    expect(screen.getByText(/in 3D, with quizzes that explain why/i)).toBeInTheDocument()
-    expect(screen.getByText(/quick free check that points you to what to study next/i)).toBeInTheDocument()
-    expect(screen.getAllByText(/Knowledge Wiki/i).length).toBeGreaterThanOrEqual(1)
-    expect(screen.getAllByText(/Practice Questions/i).length).toBeGreaterThanOrEqual(1)
+    expect(screen.getByText(/Architecture Resource Camp/i)).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', { name: /know you’ll win/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(
+        /SlateCamp shows you how PD 1096, RA 9514, and BP 344 actually work/i,
+      ),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(/in 3D, with quizzes that explain why/i),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(
+        /quick free check that points you to what to study next/i,
+      ),
+    ).toBeInTheDocument()
+    expect(
+      screen.getAllByText(/Knowledge Wiki/i).length,
+    ).toBeGreaterThanOrEqual(1)
+    expect(
+      screen.getAllByText(/Practice Questions/i).length,
+    ).toBeGreaterThanOrEqual(1)
     expect(screen.getAllByText(/3D Lab/i).length).toBeGreaterThanOrEqual(1)
-    expect(screen.queryByLabelText(/SlateCamp atlas path index/i)).not.toBeInTheDocument()
-    expect(screen.getByLabelText(/SlateCamp feature video launcher/i)).toBeInTheDocument()
-    expect(screen.queryByLabelText(/SlateCamp product preview carousel/i)).not.toBeInTheDocument()
+    expect(
+      screen.queryByLabelText(/SlateCamp atlas path index/i),
+    ).not.toBeInTheDocument()
+    expect(
+      screen.getByLabelText(/SlateCamp feature video launcher/i),
+    ).toBeInTheDocument()
+    expect(
+      screen.queryByLabelText(/SlateCamp product preview carousel/i),
+    ).not.toBeInTheDocument()
     expect(screen.getByText(/feature previews/i)).toBeInTheDocument()
-    expect(screen.getAllByRole('button', { name: /play .* feature video/i })).toHaveLength(4)
+    expect(
+      screen.getAllByRole('button', { name: /play .* feature video/i }),
+    ).toHaveLength(4)
     const featureMotionCards = [
       'knowledge-wiki',
       'quizzes',
@@ -77,26 +122,56 @@ describe('landing page marketing surface', () => {
     featureMotionCards.forEach((card) => {
       expect(card).toHaveAttribute('data-motion', 'bottom-up-stagger')
     })
-    expect(screen.getByRole('button', { name: /play knowledge wiki feature video/i })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /play quizzes feature video/i })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /play 3D Lab feature video/i })).toBeInTheDocument()
-    expect(screen.getByRole('button', { name: /play analytics feature video/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', {
+        name: /play knowledge wiki feature video/i,
+      }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /play quizzes feature video/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /play 3D Lab feature video/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByRole('button', { name: /play analytics feature video/i }),
+    ).toBeInTheDocument()
     expect(screen.queryByText(/Slide to submit/i)).not.toBeInTheDocument()
     expect(screen.queryByText(/Spatial rule controls/i)).not.toBeInTheDocument()
-    expect(screen.queryByText(/Find architecture topics/i)).not.toBeInTheDocument()
-    expect(screen.queryByText('Know the next subject to review')).not.toBeInTheDocument()
+    expect(
+      screen.queryByText(/Find architecture topics/i),
+    ).not.toBeInTheDocument()
+    expect(
+      screen.queryByText('Know the next subject to review'),
+    ).not.toBeInTheDocument()
 
-    fireEvent.click(screen.getByRole('button', { name: /play knowledge wiki feature video/i }))
-    expect(screen.getByRole('dialog', { name: /Knowledge Wiki/i })).toBeInTheDocument()
-    expect(screen.getByText(/Knowledge Wiki video placeholder/i)).toBeInTheDocument()
+    fireEvent.click(
+      screen.getByRole('button', {
+        name: /play knowledge wiki feature video/i,
+      }),
+    )
+    expect(
+      screen.getByRole('dialog', { name: /Knowledge Wiki/i }),
+    ).toBeInTheDocument()
+    expect(
+      screen.getByText(/Knowledge Wiki video placeholder/i),
+    ).toBeInTheDocument()
     expect(screen.getByText(/wired for playback/i)).toBeInTheDocument()
-    fireEvent.click(screen.getByRole('button', { name: /close feature video/i }))
+    fireEvent.click(
+      screen.getByRole('button', { name: /close feature video/i }),
+    )
     expect(screen.queryByRole('dialog')).not.toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /open the atlas/i })).toHaveAttribute('href', '/register')
-    expect(screen.queryByRole('link', { name: /find a topic/i })).not.toBeInTheDocument()
+    expect(
+      screen.getByRole('link', { name: /open the atlas/i }),
+    ).toHaveAttribute('href', '/register')
+    expect(
+      screen.queryByRole('link', { name: /find a topic/i }),
+    ).not.toBeInTheDocument()
     expect(screen.getByTestId('atlas-atmosphere')).toBeInTheDocument()
     expect(screen.getByTestId('hero-house-preview')).toBeInTheDocument()
-    expect(screen.getByRole('img', { name: /blank 16 by 32 meter lot model/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('img', { name: /blank 16 by 32 meter lot model/i }),
+    ).toBeInTheDocument()
     expect(screen.queryByTestId('atlas-field-hero')).not.toBeInTheDocument()
     expect(screen.queryByText(/review center/i)).not.toBeInTheDocument()
     expect(screen.queryByText(/source-aware/i)).not.toBeInTheDocument()
@@ -109,13 +184,19 @@ describe('landing page marketing surface', () => {
   it('renders indexed product paths instead of card-first feature pillars', () => {
     render(<BentoFeatureGrid />)
 
-    expect(screen.getByRole('heading', { name: /four ways back to a clearer architecture map/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        name: /four ways back to a clearer architecture map/i,
+      }),
+    ).toBeInTheDocument()
     expect(screen.getByText('A / Find')).toBeInTheDocument()
     expect(screen.getByText('B / Check')).toBeInTheDocument()
     expect(screen.getByText('C / See')).toBeInTheDocument()
     expect(screen.getByText('D / Revisit')).toBeInTheDocument()
     expect(screen.getByText(/supplementary support/i)).toBeInTheDocument()
-    expect(screen.getByText(/where account access supports it/i)).toBeInTheDocument()
+    expect(
+      screen.getByText(/where account access supports it/i),
+    ).toBeInTheDocument()
   })
 
   it('explains the atlas workflow with assurance and repair language', () => {
@@ -130,11 +211,23 @@ describe('landing page marketing surface', () => {
   })
 
   it('uses fear marketing safely without pass guarantees', () => {
-    render(<FinalCtaSection ctaHref='/register' ctaLabel='Open the atlas' isLoggedIn={false} />)
+    render(
+      <FinalCtaSection
+        ctaHref='/register'
+        ctaLabel='Open the atlas'
+        isLoggedIn={false}
+      />,
+    )
 
-    expect(screen.getByRole('heading', { name: /danger is discovering them too late/i })).toBeInTheDocument()
+    expect(
+      screen.getByRole('heading', {
+        name: /danger is discovering them too late/i,
+      }),
+    ).toBeInTheDocument()
     expect(screen.getByText(/No credit card required/i)).toBeInTheDocument()
     expect(screen.queryByText(/guarantee/i)).not.toBeInTheDocument()
-    expect(screen.getByRole('link', { name: /open the atlas/i })).toHaveAttribute('href', '/register')
+    expect(
+      screen.getByRole('link', { name: /open the atlas/i }),
+    ).toHaveAttribute('href', '/register')
   })
 })

@@ -8,7 +8,13 @@ import {
   type PointerEvent,
 } from 'react'
 import Link from 'next/link'
-import { motion, useReducedMotion, type Variants } from 'framer-motion'
+import {
+  motion,
+  useReducedMotion,
+  useScroll,
+  useTransform,
+  type Variants,
+} from 'framer-motion'
 import {
   BookOpen,
   CaretRight,
@@ -187,6 +193,29 @@ const HALFTONE_IDLE_MS = 720
 const clamp = (value: number, min: number, max: number) =>
   Math.min(Math.max(value, min), max)
 
+const HeroBackground = ({
+  sectionRef,
+  shouldReduceMotion,
+}: {
+  sectionRef: React.RefObject<HTMLElement | null>
+  shouldReduceMotion: boolean | null
+}) => {
+  const { scrollYProgress } = useScroll({
+    target: sectionRef,
+    offset: ['start start', 'end start'],
+  })
+
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 1.12])
+
+  return (
+    <motion.div
+      aria-hidden='true'
+      className='pointer-events-none absolute inset-[-6%] z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-90 brightness-[1.10] contrast-[0.92] grayscale-[12%] saturate-[0.86]'
+      style={shouldReduceMotion ? undefined : { scale }}
+    />
+  )
+}
+
 export const HeroSection = ({
   ctaHref,
   ctaLabel,
@@ -326,9 +355,9 @@ export const HeroSection = ({
       onPointerMove={handlePointerMove}
       onPointerLeave={handlePointerLeave}
     >
-      <div
-        aria-hidden='true'
-        className='pointer-events-none absolute inset-0 z-0 bg-[url("/images/dashboard/Dashboard-BG-Image.png")] bg-cover bg-bottom bg-no-repeat opacity-90 brightness-[1.10] contrast-[0.92] grayscale-[12%] saturate-[0.86]'
+      <HeroBackground
+        sectionRef={sectionRef}
+        shouldReduceMotion={shouldReduceMotion}
       />
       <div
         aria-hidden='true'
@@ -369,7 +398,7 @@ export const HeroSection = ({
           <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:duration-300 flex items-center gap-2'>
             <Starburst className='h-3 w-3 text-primary' />
             <span className='font-[family-name:var(--font-dm-mono)] text-[12px] font-semibold uppercase tracking-[0.24em] text-primary'>
-              Architecture resource base
+              Architecture Resource Camp
             </span>
           </div>
 
@@ -380,9 +409,7 @@ export const HeroSection = ({
             <span className='relative inline-block pb-3'>
               <span className='relative z-10 text-slate-950 drop-shadow-[0_18px_38px_rgba(15,23,42,0.14)]'>
                 <span ref={phraseRef} className='relative inline-block'>
-                  <span className='relative inline-block'>
-                    Know
-                  </span>{' '}
+                  <span className='relative inline-block'>Know</span>{' '}
                   <span>you’ll</span>{' '}
                   <span ref={winRef} className='relative inline-block'>
                     win
@@ -398,7 +425,9 @@ export const HeroSection = ({
           </h1>
 
           <p className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:delay-200 motion-safe:duration-300 mt-7 max-w-[560px] text-[16px] font-semibold leading-[1.48] text-slate-700 sm:text-[17px]'>
-            SlateCamp shows you how PD 1096, RA 9514, and BP 344 actually work — in 3D, with quizzes that explain why, and a quick free check that points you to what to study next.
+            SlateCamp shows you how PD 1096, RA 9514, and BP 344 actually work —
+            in 3D, with quizzes that explain why, and a quick free check that
+            points you to what to study next.
           </p>
 
           <div className='motion-safe:animate-in motion-safe:fade-in motion-safe:slide-in-from-bottom-2 motion-safe:delay-300 motion-safe:duration-300 mt-7 flex flex-wrap items-center gap-3'>
@@ -414,7 +443,6 @@ export const HeroSection = ({
             Free
           </p>
         </div>
-
       </div>
 
       <div className='pointer-events-none absolute inset-x-6 bottom-[calc(0.5rem+var(--hero-feature-strip-height))] top-[8.75rem] z-30 hidden lg:block'>
@@ -474,7 +502,11 @@ export const HeroSection = ({
                                 <span
                                   className={`inline-flex h-8 w-8 items-center justify-center rounded-full ${feature.accent} text-white shadow-sm shadow-slate-900/10`}
                                 >
-                                  <SCIcon icon={feature.icon} size='xs' weight='bold' />
+                                  <SCIcon
+                                    icon={feature.icon}
+                                    size='xs'
+                                    weight='bold'
+                                  />
                                 </span>
                                 <span>{feature.eyebrow}</span>
                               </span>
@@ -505,7 +537,9 @@ export const HeroSection = ({
                       >
                         <div className='flex'>
                           <div className='relative w-[150px] flex-shrink-0 overflow-hidden aspect-[4/3]'>
-                            <div className={cn('absolute inset-0', feature.accent)} />
+                            <div
+                              className={cn('absolute inset-0', feature.accent)}
+                            />
                             <div className='absolute inset-0 bg-gradient-to-br from-white/25 to-black/10' />
                             <div className='relative flex h-full items-center justify-center'>
                               <SCIcon
