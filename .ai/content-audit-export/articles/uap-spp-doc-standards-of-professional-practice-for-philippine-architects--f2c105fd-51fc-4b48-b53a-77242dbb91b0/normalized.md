@@ -52,3 +52,7 @@ The SPP framework includes general and service-specific documents. The audited s
 - SPPCC is an estimate, not a guaranteed construction cost.
 - Foreign participation must follow the RA 9266 permit and local-practice controls.
 - Use the SPP document number before choosing an answer; each document governs a different service type.
+
+## Real World Scenario
+
+An owner planning a civic building wants to compare architects by lowest fee and also invites a foreign architect to join the competition team. Under the UAP SPP source, split the issue into selection method and legal capacity. The recognized selection routes are direct selection, comparative selection, and Architectural Design Competition; lowest-bid selection is not one of the three. If a foreign architect participates on a Philippine project, check the Temporary or Special Permit, work-permit, and local RLA counterpart requirements before treating the entry as compliant. When the owner asks for a construction-cost guarantee, remember that the SPPCC is an Architect's probable cost estimate, not a guaranteed bid price.

@@ -1,20 +1,23 @@
 {
   "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:55d0a50efcf3bed78e5c5f312da4a5a3ff0ad580959684479718b7dc838e9e94",
   "source_count": 1,
   "sources": [
     {
-      "source_id": "batch007-pd-1096-rule-viii-light-and-ventilatio-source-01",
+      "source_id": "batch092-rule-viii-light-ventilation-source-01",
       "article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
-      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
       "url": null,
-      "source_type": "implementing_rules",
-      "description": "pd1096_2004_revised_irr; raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; checked_pdf_pages=119,120,126,128,132,133,134; PD 1096 2004 Revised IRR, Rule VIII Sections 801-811",
+      "authority": "Department of Public Works and Highways",
+      "source_type": "implementing_rules_pdf",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule VIII Sections 801-811 and Table VIII.4; linked Rule VII Section 707/Table VII.2 parking/height cross-checks where questions require them",
+      "description": "Rule VIII light and ventilation requirements for courts, ceiling heights, room dimensions, air space, windows, shafts, skylights, and artificial ventilation. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; raw_markdown_sha256=sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_markdown_lines=PD 1096 refined markdown lines 2083-2411, 1452-1463, and 1627-1771",
       "is_verified": true,
+      "local_source_checked": true,
       "sort_order": 0,
-      "created_at": "2026-05-10T23:10:00+08:00",
-      "updated_at": "2026-05-10T23:10:00+08:00"
+      "created_at": "2026-05-12T17:41:23.000+08:00",
+      "updated_at": "2026-05-12T17:41:23.000+08:00"
     }
-  ]
+  ],
+  "sources_hash": "sha256:35f90a525e59cea9204550b5fa1c0c2fad07815d23efbd231845e683a93a151e"
 }

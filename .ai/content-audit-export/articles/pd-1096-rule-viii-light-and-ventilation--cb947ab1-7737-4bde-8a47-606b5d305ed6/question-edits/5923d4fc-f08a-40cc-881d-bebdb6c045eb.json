@@ -1,11 +1,28 @@
 {
   "question_id": "5923d4fc-f08a-40cc-881d-bebdb6c045eb",
   "baseline_hash": "sha256:83dec438c7503ab8c1a4bcb88c1966b12ae5efd44bd5d3f4f086b0cec736588f",
-  "reason": "Batch 007 local source audit aligned PD 1096 Rule VIII Light and Ventilation linked question 5923d4fc-f08a-40cc-881d-bebdb6c045eb to verified raw-source citations and repaired stale/null explanation metadata where needed.",
-  "approved_by": "codex-local-source-audit-batch-007",
-  "approved_at": "2026-05-10T23:10:00+08:00",
+  "reason": "Batch 092 local-first source audit aligned linked question 5923d4fc-f08a-40cc-881d-bebdb6c045eb with the repaired PD 1096 Rule VIII Light and Ventilation article and verified local raw-source support. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-092",
+  "approved_at": "2026-05-12T17:41:23.000+08:00",
   "proposed": {
     "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Section 806",
     "explanation": "Source-audited against Rule VIII Section 806: rooms for human habitation are 6.00 sq.m with 2.00 m least dimension; kitchens are 3.00 sq.m with 1.50 m least dimension; bath/toilet rooms are 1.20 sq.m with 900 mm least dimension."
+  },
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+    "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+    "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+    "source_locator": "PD 1096 2004 Revised IRR, Rule VIII Section 806",
+    "checked_markdown_lines": [
+      "PD 1096 refined markdown lines 2358-2364"
+    ],
+    "parent_article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+    "parent_article_slug": "pd-1096-rule-viii-light-and-ventilation",
+    "answer_key_fields_changed": false,
+    "local_source_checked": true,
+    "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review"
   }
 }

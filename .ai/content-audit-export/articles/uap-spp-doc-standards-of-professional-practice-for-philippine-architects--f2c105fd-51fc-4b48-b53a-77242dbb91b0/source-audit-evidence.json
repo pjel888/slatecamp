@@ -1,25 +1,32 @@
 {
+  "schema_version": "source-audit-evidence.v2.local-first",
   "artifact_type": "source_audit_evidence",
-  "batch_id": "source-audited-article-batch-013-local-first",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T22:25:00.000+08:00",
+  "batch_id": "source-audited-article-batch-092-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T17:41:23.000+08:00",
   "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
-  "status": "local_pass_ready_for_final_publishing_review",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
   "target": {
     "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
     "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
     "title": "UAP SPP: General Standards",
-    "folder": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
-    "normalized_path": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/normalized.md",
-    "candidate_path": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/candidate.md",
-    "sources_path": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/sources.json",
-    "question_edits_folder": ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits",
+    "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+    "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/normalized.md",
+    "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/candidate.md",
+    "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits",
     "original_hash": "sha256:712933904177e2ab8f82af83f84c44ef7fdab38c771d10018f0b36d69642d813",
-    "normalized_hash": "sha256:5f363f64eeb22959f64cf0270e823a1a604cc96357d2d76d9bfd921d8208276c",
-    "candidate_hash": "sha256:5f363f64eeb22959f64cf0270e823a1a604cc96357d2d76d9bfd921d8208276c",
-    "sources_hash": "sha256:955ebda3b142b482bb3525394dfc7a2cc1b2b85f301c20e5944f50efd6e613dd",
+    "normalized_hash": "sha256:8f7f9289f893f8f22c52439919deb7edde8c67614d5a6c79a8003c5857698b84",
+    "candidate_hash": "sha256:8f7f9289f893f8f22c52439919deb7edde8c67614d5a6c79a8003c5857698b84",
+    "candidate_sha256": "sha256:8f7f9289f893f8f22c52439919deb7edde8c67614d5a6c79a8003c5857698b84",
+    "sources_hash": "sha256:0e26838146123bd339d06d0efb879213bfe410f7293dd98d0542e28958011517",
     "linked_questions_hash": "sha256:d6c9af942bb7b2f8a841d8f2f072e79b9033438ca7a38c19780e351d54577d6a",
     "question_edit_count": 10
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "HIGH",
+    "requires_raw_pdf_audit": true
   },
   "raw_sources": [
     {
@@ -27,18 +34,323 @@
       "label": "UAP Standards of Professional Practice",
       "authority": "United Architects of the Philippines / PRBoA SPP reference copy",
       "source_type": "professional_practice_pdf",
-      "source_locator": "UAP Standards of Professional Practice Annex A and document map",
+      "source_locator": "UAP Standards of Professional Practice, SPP 200 general standards, Architect selection, foreign architect participation, and SPPCC provisions",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
       "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
       "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
       "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+      "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
       "checked_markdown_lines": [
-        "UAP SPP raw markdown lines 25-140, 287-343, and 560"
+        "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
       ],
       "use": "primary source for article and linked-question support",
       "local_source_checked": true
     }
   ],
+  "claims": [
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-ARTICLE-01",
+      "claim_text": "UAP SPP: General Standards was refreshed against UAP Standards of Professional Practice, SPP 200 general standards, Architect selection, foreign architect participation, and SPPCC provisions; stale batch metadata was refreshed for the Batch 092 candidate.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "UAP Standards of Professional Practice, SPP 200 general standards, Architect selection, foreign architect participation, and SPPCC provisions",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; see source_locator and checked_markdown_lines."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-SCENARIO-01",
+      "claim_text": "eligible-added - civic-building architect-selection scenario using direct/comparative/ADC routes, no lowest-bid selection, foreign architect TSP/local counterpart checks, and SPPCC limitations.",
+      "claim_class": "scenario_enrichment",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "UAP Standards of Professional Practice, SPP 200 general standards, Architect selection, foreign architect participation, and SPPCC provisions",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; scenario uses only the recorded source constraints."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-001",
+      "claim_text": "Question 2c8d742c-4c03-44c9-b34f-8a19f772466b has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/2c8d742c-4c03-44c9-b34f-8a19f772466b.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "SPP 200 / R.A. 9266",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-002",
+      "claim_text": "Question 44de2806-024e-488f-9c38-f6b3fcf6ca3d has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/44de2806-024e-488f-9c38-f6b3fcf6ca3d.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "SPP 200 / Annex A",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-003",
+      "claim_text": "Question 6959881a-e9a0-44a3-b7c5-35a1aec20712 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/6959881a-e9a0-44a3-b7c5-35a1aec20712.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "SPP 200",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-004",
+      "claim_text": "Question 97530be3-4382-434c-b56d-8bca7da48893 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/97530be3-4382-434c-b56d-8bca7da48893.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "SPP 200",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-005",
+      "claim_text": "Question b437c81d-373b-4905-ba00-5a4f470f024c has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/b437c81d-373b-4905-ba00-5a4f470f024c.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "R.A. 9266 / SPP 200",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-006",
+      "claim_text": "Question d905acf1-6d69-4aad-b4fa-bf27c1af0135 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/d905acf1-6d69-4aad-b4fa-bf27c1af0135.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "SPP 200",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-007",
+      "claim_text": "Question e42464b4-5bd6-48be-93bd-d6fc378f439f has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e42464b4-5bd6-48be-93bd-d6fc378f439f.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "R.A. 9266 / SPP 200",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-008",
+      "claim_text": "Question e65cfa10-7569-42df-a72c-1176c0ce5bf9 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e65cfa10-7569-42df-a72c-1176c0ce5bf9.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "SPP 200 / R.A. 9266",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-009",
+      "claim_text": "Question ef5a28ce-610a-48c7-a3b7-2aeabf1617a2 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/ef5a28ce-610a-48c7-a3b7-2aeabf1617a2.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "SPP 200",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-uap-spp-doc-standards-of-professional-practice-for-philippine-architects-QUESTION-010",
+      "claim_text": "Question f545be77-116b-48fd-8899-cadc77f2fd22 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/f545be77-116b-48fd-8899-cadc77f2fd22.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
+        "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
+        "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+        "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+        "source_locator": "R.A. 9266 / SPP 200",
+        "checked_markdown_lines": [
+          "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+        ],
+        "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+        "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "unsupported_claims_removed": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "NOT_REQUIRED_LOCAL_SOURCE_MATCH"
+  },
   "local_edits": {
     "normalized_repaired": true,
     "candidate_composed": true,
@@ -46,7 +358,7 @@
     "sources_json_updated": true,
     "question_edits_created": 10,
     "answer_key_fields_changed": false,
-    "partial_source_support_question_edits": 0
+    "scenario_enrichment_status": "eligible-added"
   },
   "validation": {
     "compose": {
@@ -55,33 +367,29 @@
       "placeholders_found": 0,
       "unresolved_placeholders": []
     },
-    "diff": {
-      "changed": true,
-      "safe_to_push": true,
-      "locally_safe_to_push": true,
-      "blockers": [],
-      "warnings": [
-        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
-      ]
-    },
-    "bundle_validate_dry_run": {
-      "valid": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    }
+    "question_edit_count_matches_linked_questions": true,
+    "linked_question_count": 10,
+    "question_edit_count": 10
   },
   "question_edit_files": [
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/2c8d742c-4c03-44c9-b34f-8a19f772466b.json",
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/44de2806-024e-488f-9c38-f6b3fcf6ca3d.json",
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/6959881a-e9a0-44a3-b7c5-35a1aec20712.json",
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/97530be3-4382-434c-b56d-8bca7da48893.json",
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/b437c81d-373b-4905-ba00-5a4f470f024c.json",
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/d905acf1-6d69-4aad-b4fa-bf27c1af0135.json",
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e42464b4-5bd6-48be-93bd-d6fc378f439f.json",
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e65cfa10-7569-42df-a72c-1176c0ce5bf9.json",
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/ef5a28ce-610a-48c7-a3b7-2aeabf1617a2.json",
-    ".ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/f545be77-116b-48fd-8899-cadc77f2fd22.json"
-  ]
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/2c8d742c-4c03-44c9-b34f-8a19f772466b.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/44de2806-024e-488f-9c38-f6b3fcf6ca3d.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/6959881a-e9a0-44a3-b7c5-35a1aec20712.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/97530be3-4382-434c-b56d-8bca7da48893.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/b437c81d-373b-4905-ba00-5a4f470f024c.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/d905acf1-6d69-4aad-b4fa-bf27c1af0135.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e42464b4-5bd6-48be-93bd-d6fc378f439f.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/e65cfa10-7569-42df-a72c-1176c0ce5bf9.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/ef5a28ce-610a-48c7-a3b7-2aeabf1617a2.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits/f545be77-116b-48fd-8899-cadc77f2fd22.json"
+  ],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "Supabase stale check was not run; this batch is local-first only and requires separate final publishing review before any apply."
+    ]
+  }
 }

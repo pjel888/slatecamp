@@ -1,24 +1,23 @@
 {
   "article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
   "hash_algorithm": "sha256",
-  "sources_hash": "sha256:62517acb42ff01fcb3f1e081626003fe42fdc26c0d4fba121403ba5da1fa4a7e",
   "source_count": 1,
   "sources": [
     {
-      "source_id": "pd1096-rirr-2004-dpwh-official",
+      "source_id": "batch092-pedestrian-protection-source-01",
+      "article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
       "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+      "url": null,
       "authority": "Department of Public Works and Highways",
-      "source_type": "law_irr_pdf",
-      "source_locator": "PD 1096 Rule XI Sections 1101 to 1108; related Rule III, IV, IX, and XV crosslinks for linked questions",
-      "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-      "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-      "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-      "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-      "checked_markdown_lines": [
-        "PD 1096 raw markdown lines 981-982, 1040-1041, 1061-1070, 1126-1131, 3434-3568, 3735-3754, and 4974-4983"
-      ],
-      "use": "primary source for article and linked-question support",
-      "local_source_checked": true
+      "source_type": "implementing_rules_pdf",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XI Sections 1101-1108; related linked-question provisions in Rules III, IV, IX, and XV",
+      "description": "Rule XI pedestrian protection during construction/demolition; related linked-question support for accessory permits, construction type, storm drainage, and prefabricated assembly. raw_pdf_path=vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf; raw_pdf_sha256=sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6; raw_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; raw_markdown_sha256=sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c; refined_markdown_path=vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md; refined_markdown_sha256=sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7; checked_markdown_lines=PD 1096 refined markdown lines 3037-3158 and 3291-3300; related lines 489-507, 840-880, 929-986, and 4360-4363",
+      "is_verified": true,
+      "local_source_checked": true,
+      "sort_order": 0,
+      "created_at": "2026-05-12T17:41:23.000+08:00",
+      "updated_at": "2026-05-12T17:41:23.000+08:00"
     }
-  ]
+  ],
+  "sources_hash": "sha256:a4b9627ac454d14885f15547ffea48e4da86033cb0cc941b43b1b7701eed78a8"
 }

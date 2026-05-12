@@ -1,21 +1,25 @@
 {
   "question_id": "9d00dc32-a53b-43b1-bcdb-0ec741d56d51",
   "baseline_hash": "sha256:8bb132caed55186d79ce5b6223d0bfa78fded3c61d82a4a3b81ea30811886f77",
-  "reason": "Batch 012 local source audit aligned linked question 9d00dc32-a53b-43b1-bcdb-0ec741d56d51 with the repaired Pedestrian Protection During Construction article and checked raw-source citations. This local draft updates citation and explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-012",
-  "approved_at": "2026-05-10T20:40:00.000+08:00",
+  "reason": "Batch 092 local-first source audit aligned linked question 9d00dc32-a53b-43b1-bcdb-0ec741d56d51 with the repaired Pedestrian Protection During Construction article and verified local raw-source support. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-092",
+  "approved_at": "2026-05-12T17:41:23.000+08:00",
   "source_audit_support": {
     "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
     "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
     "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
     "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-    "source_locator": "PD 1096 Rule XI Section 1103",
+    "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+    "source_locator": "PD 1096 Rule XI, Section 1103",
     "checked_markdown_lines": [
-      "PD 1096 raw markdown line 3449"
+      "PD 1096 refined markdown line 3050"
     ],
     "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
     "parent_article_slug": "pedestrian-protection-during-construction",
-    "answer_key_fields_changed": false
+    "answer_key_fields_changed": false,
+    "local_source_checked": true,
+    "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review"
   },
   "proposed": {
     "code_citation": "PD 1096 Rule XI, Section 1103",

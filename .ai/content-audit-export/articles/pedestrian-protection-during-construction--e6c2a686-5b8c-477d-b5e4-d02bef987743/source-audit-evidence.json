@@ -1,51 +1,892 @@
 {
+  "schema_version": "source-audit-evidence.v2.local-first",
   "artifact_type": "source_audit_evidence",
-  "batch_id": "source-audited-article-batch-012-local-first",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T20:50:00.000+08:00",
+  "batch_id": "source-audited-article-batch-092-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T17:41:23.000+08:00",
   "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
-  "status": "local_pass_ready_for_final_publishing_review",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
   "target": {
     "article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
     "slug": "pedestrian-protection-during-construction",
     "title": "Pedestrian Protection During Construction",
-    "folder": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743",
-    "normalized_path": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/normalized.md",
-    "candidate_path": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/candidate.md",
-    "sources_path": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/sources.json",
-    "question_edits_folder": ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits",
+    "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743",
+    "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/normalized.md",
+    "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/candidate.md",
+    "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits",
     "original_hash": "sha256:827f46c5526739495348da7254beee4460657b868be81d52bd70fcf8a43428e8",
-    "normalized_hash": "sha256:66199a55a74d55b9c253a719e8cdf29c95c7dfa8cb1e7b304edef1caee0d4797",
-    "candidate_hash": "sha256:66199a55a74d55b9c253a719e8cdf29c95c7dfa8cb1e7b304edef1caee0d4797",
-    "sources_hash": "sha256:62517acb42ff01fcb3f1e081626003fe42fdc26c0d4fba121403ba5da1fa4a7e",
+    "normalized_hash": "sha256:9bb4d884d57b4750ddddfe698c4e5ad63c4ed79a6a93270ddd836e8fd788ad26",
+    "candidate_hash": "sha256:9bb4d884d57b4750ddddfe698c4e5ad63c4ed79a6a93270ddd836e8fd788ad26",
+    "candidate_sha256": "sha256:9bb4d884d57b4750ddddfe698c4e5ad63c4ed79a6a93270ddd836e8fd788ad26",
+    "sources_hash": "sha256:a4b9627ac454d14885f15547ffea48e4da86033cb0cc941b43b1b7701eed78a8",
     "linked_questions_hash": "sha256:742ed79bccc4edef7d0a92970542f96f83097576284298f436a2e15bb1e6397a",
     "question_edit_count": 32
+  },
+  "classification": {
+    "contains_legal_or_code_claims": true,
+    "source_risk_tier": "HIGH",
+    "requires_raw_pdf_audit": true
   },
   "raw_sources": [
     {
       "source_id": "pd1096-rirr-2004-dpwh-official",
       "label": "PD 1096 2004 Revised IRR (DPWH Official)",
       "authority": "Department of Public Works and Highways",
-      "source_type": "law_irr_pdf",
-      "source_locator": "PD 1096 Rule XI Sections 1101 to 1108; related Rule III, IV, IX, and XV crosslinks for linked questions",
+      "source_type": "implementing_rules_pdf",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XI Sections 1101-1108; related linked-question provisions in Rules III, IV, IX, and XV",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
       "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
       "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
       "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
       "checked_markdown_lines": [
-        "PD 1096 raw markdown lines 981-982, 1040-1041, 1061-1070, 1126-1131, 3434-3568, 3735-3754, and 4974-4983"
+        "PD 1096 refined markdown lines 3037-3158 and 3291-3300; related lines 489-507, 840-880, 929-986, and 4360-4363"
       ],
       "use": "primary source for article and linked-question support",
       "local_source_checked": true
     }
   ],
+  "claims": [
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-ARTICLE-01",
+      "claim_text": "Pedestrian Protection During Construction was refreshed against PD 1096 2004 Revised IRR, Rule XI Sections 1101-1108; related linked-question provisions in Rules III, IV, IX, and XV; stale batch metadata was refreshed for the Batch 092 candidate.",
+      "claim_class": "article_source_repair",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XI Sections 1101-1108; related linked-question provisions in Rules III, IV, IX, and XV",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3293-3300"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; see source_locator and checked_markdown_lines."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-SCENARIO-01",
+      "claim_text": "eligible-added - sidewalk-closure scenario using temporary walkway, railings, fence/canopy clearances, warning signs, lighting, public-way storage, and pedestrian exposure duration.",
+      "claim_class": "scenario_enrichment",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XI Sections 1101-1108; related linked-question provisions in Rules III, IV, IX, and XV",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3293-3300"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; scenario uses only the recorded source constraints."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-001",
+      "claim_text": "Question 0fb654f9-536e-4d3e-91c1-9c863a62086f has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/0fb654f9-536e-4d3e-91c1-9c863a62086f.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1103",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown line 3050"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-002",
+      "claim_text": "Question 105d585e-4661-4c4f-b254-442dddeccadc has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/105d585e-4661-4c4f-b254-442dddeccadc.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XV, Section 1501",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4360-4363"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-003",
+      "claim_text": "Question 1ceb9197-7417-4d6e-bc56-a8ca59ad1fd6 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/1ceb9197-7417-4d6e-bc56-a8ca59ad1fd6.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Sections 1101 to 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-004",
+      "claim_text": "Question 2cce46a7-05a8-4038-99fe-fbb05abd1652 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/2cce46a7-05a8-4038-99fe-fbb05abd1652.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-005",
+      "claim_text": "Question 2eb82ecf-fa04-4c29-9c9e-8623fb1c50a5 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/2eb82ecf-fa04-4c29-9c9e-8623fb1c50a5.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule IV, Section 401",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 929-938"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-006",
+      "claim_text": "Question 33b6e0ce-3712-4d21-9f0c-8121d217dd70 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/33b6e0ce-3712-4d21-9f0c-8121d217dd70.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule III accessory permits; Rule XI, Section 1108",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3293-3300"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-007",
+      "claim_text": "Question 3d15fb0f-aa82-470d-b7c5-f223c9e78bf7 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/3d15fb0f-aa82-470d-b7c5-f223c9e78bf7.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule IX, Section 904",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 986-1001"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-008",
+      "claim_text": "Question 42124372-e6d0-4279-8434-fa5ba51667c9 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/42124372-e6d0-4279-8434-fa5ba51667c9.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule III accessory permits; Rule XI, Section 1108",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3293-3300"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-009",
+      "claim_text": "Question 4395860b-5485-4baf-9569-910b99944621 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/4395860b-5485-4baf-9569-910b99944621.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1102",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3045-3047"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-010",
+      "claim_text": "Question 51e70000-31da-441c-a14b-abdf9d2e6de0 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/51e70000-31da-441c-a14b-abdf9d2e6de0.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1104",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3052-3059"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-011",
+      "claim_text": "Question 59dc0fb3-75f0-4edd-b97a-068228aefe50 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/59dc0fb3-75f0-4edd-b97a-068228aefe50.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Sections 1101 to 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-012",
+      "claim_text": "Question 647b1fb7-6b62-4ad8-829a-17ba5db72715 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/647b1fb7-6b62-4ad8-829a-17ba5db72715.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Sections 1101 to 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-013",
+      "claim_text": "Question 6a01a77e-ff6c-4afd-84e6-c44992a00439 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/6a01a77e-ff6c-4afd-84e6-c44992a00439.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule III, Sections 304 and 306",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 489-507 and 840-880"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-014",
+      "claim_text": "Question 7557d28a-6361-4ddc-8f73-8fa26704b810 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7557d28a-6361-4ddc-8f73-8fa26704b810.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-015",
+      "claim_text": "Question 7ada5e00-38f4-458c-9637-1559b1659ab2 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7ada5e00-38f4-458c-9637-1559b1659ab2.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-016",
+      "claim_text": "Question 7e290577-22f0-4afc-8192-346edd5cbced has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7e290577-22f0-4afc-8192-346edd5cbced.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1107",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3146-3158 and 3291"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-017",
+      "claim_text": "Question 7eadd381-e7e9-4c37-89c9-40f27879264d has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7eadd381-e7e9-4c37-89c9-40f27879264d.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Sections 1101 to 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-018",
+      "claim_text": "Question 7faa42a2-7030-4ef2-98a1-bf50b2d39c84 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7faa42a2-7030-4ef2-98a1-bf50b2d39c84.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1104",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3052-3059"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-019",
+      "claim_text": "Question 82429017-cb3c-4d12-ac74-258efc6a152a has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/82429017-cb3c-4d12-ac74-258efc6a152a.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1105",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3061-3068"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-020",
+      "claim_text": "Question 8a0b4b99-1a91-4f75-b5ba-fac17d51d3c5 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/8a0b4b99-1a91-4f75-b5ba-fac17d51d3c5.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-021",
+      "claim_text": "Question 8c9d65e7-dd73-49b1-896a-bcec50a758af has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/8c9d65e7-dd73-49b1-896a-bcec50a758af.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-022",
+      "claim_text": "Question 9cb73d6b-6fb2-4898-8450-73cf70f18a3b has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/9cb73d6b-6fb2-4898-8450-73cf70f18a3b.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-023",
+      "claim_text": "Question 9d00dc32-a53b-43b1-bcdb-0ec741d56d51 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/9d00dc32-a53b-43b1-bcdb-0ec741d56d51.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1103",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown line 3050"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-024",
+      "claim_text": "Question acf12fc8-7222-4567-b8ea-7a2b4fdcd6f9 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/acf12fc8-7222-4567-b8ea-7a2b4fdcd6f9.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-025",
+      "claim_text": "Question b4628a11-d451-4e89-b3b6-7f5d9f615cf1 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/b4628a11-d451-4e89-b3b6-7f5d9f615cf1.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1106",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3070-3098"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-026",
+      "claim_text": "Question c32cd0e3-5d03-4dcb-be1d-d2d650d0b26c has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/c32cd0e3-5d03-4dcb-be1d-d2d650d0b26c.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1102",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3045-3047"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-027",
+      "claim_text": "Question ccde3faf-3b97-419f-bd3e-2dc54ba23514 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/ccde3faf-3b97-419f-bd3e-2dc54ba23514.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1107",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3146-3158 and 3291"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-028",
+      "claim_text": "Question d459ea5d-890e-4217-af46-9a73e4fc5e38 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/d459ea5d-890e-4217-af46-9a73e4fc5e38.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1107",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3146-3158 and 3291"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-029",
+      "claim_text": "Question e0ae464c-3653-4871-a342-18fbffcac469 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/e0ae464c-3653-4871-a342-18fbffcac469.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1102",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3045-3047"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-030",
+      "claim_text": "Question e446aec8-ca44-49c8-875a-f41cc4a91011 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/e446aec8-ca44-49c8-875a-f41cc4a91011.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1104",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3052-3059"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-031",
+      "claim_text": "Question f164109f-129f-494a-8270-1ac805d010e4 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/f164109f-129f-494a-8270-1ac805d010e4.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1105",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3061-3068"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    },
+    {
+      "claim_id": "B092-pedestrian-protection-during-construction-QUESTION-032",
+      "claim_text": "Question fe67187c-51bd-4113-bda4-7bb462d3ef11 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/fe67187c-51bd-4113-bda4-7bb462d3ef11.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 Rule XI, Section 1105",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 3061-3068"
+        ],
+        "parent_article_id": "e6c2a686-5b8c-477d-b5e4-d02bef987743",
+        "parent_article_slug": "pedestrian-protection-during-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
+      }
+    }
+  ],
+  "unverified_or_rejected_claims": [],
+  "unsupported_claims_removed": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "NOT_REQUIRED_LOCAL_SOURCE_MATCH"
+  },
   "local_edits": {
     "normalized_repaired": true,
     "candidate_composed": true,
     "ui_blocks_removed_from_repaired_markdown": true,
     "sources_json_updated": true,
     "question_edits_created": 32,
-    "answer_key_fields_changed": false
+    "answer_key_fields_changed": false,
+    "scenario_enrichment_status": "eligible-added"
   },
   "validation": {
     "compose": {
@@ -54,55 +895,51 @@
       "placeholders_found": 0,
       "unresolved_placeholders": []
     },
-    "diff": {
-      "changed": true,
-      "safe_to_push": true,
-      "locally_safe_to_push": true,
-      "blockers": [],
-      "warnings": [
-        "Remote stale check has not been run by diff; push command must verify Supabase before mutation."
-      ]
-    },
-    "bundle_validate_dry_run": {
-      "valid": true,
-      "blockers": [],
-      "warnings": [
-        "component-usage.json has not been generated for this article yet."
-      ]
-    }
+    "question_edit_count_matches_linked_questions": true,
+    "linked_question_count": 32,
+    "question_edit_count": 32
   },
   "question_edit_files": [
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/0fb654f9-536e-4d3e-91c1-9c863a62086f.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/105d585e-4661-4c4f-b254-442dddeccadc.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/1ceb9197-7417-4d6e-bc56-a8ca59ad1fd6.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/2cce46a7-05a8-4038-99fe-fbb05abd1652.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/2eb82ecf-fa04-4c29-9c9e-8623fb1c50a5.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/33b6e0ce-3712-4d21-9f0c-8121d217dd70.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/3d15fb0f-aa82-470d-b7c5-f223c9e78bf7.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/42124372-e6d0-4279-8434-fa5ba51667c9.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/4395860b-5485-4baf-9569-910b99944621.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/51e70000-31da-441c-a14b-abdf9d2e6de0.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/59dc0fb3-75f0-4edd-b97a-068228aefe50.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/647b1fb7-6b62-4ad8-829a-17ba5db72715.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/6a01a77e-ff6c-4afd-84e6-c44992a00439.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7557d28a-6361-4ddc-8f73-8fa26704b810.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7ada5e00-38f4-458c-9637-1559b1659ab2.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7e290577-22f0-4afc-8192-346edd5cbced.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7eadd381-e7e9-4c37-89c9-40f27879264d.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7faa42a2-7030-4ef2-98a1-bf50b2d39c84.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/82429017-cb3c-4d12-ac74-258efc6a152a.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/8a0b4b99-1a91-4f75-b5ba-fac17d51d3c5.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/8c9d65e7-dd73-49b1-896a-bcec50a758af.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/9cb73d6b-6fb2-4898-8450-73cf70f18a3b.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/9d00dc32-a53b-43b1-bcdb-0ec741d56d51.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/acf12fc8-7222-4567-b8ea-7a2b4fdcd6f9.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/b4628a11-d451-4e89-b3b6-7f5d9f615cf1.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/c32cd0e3-5d03-4dcb-be1d-d2d650d0b26c.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/ccde3faf-3b97-419f-bd3e-2dc54ba23514.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/d459ea5d-890e-4217-af46-9a73e4fc5e38.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/e0ae464c-3653-4871-a342-18fbffcac469.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/e446aec8-ca44-49c8-875a-f41cc4a91011.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/f164109f-129f-494a-8270-1ac805d010e4.json",
-    ".ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/fe67187c-51bd-4113-bda4-7bb462d3ef11.json"
-  ]
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/0fb654f9-536e-4d3e-91c1-9c863a62086f.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/105d585e-4661-4c4f-b254-442dddeccadc.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/1ceb9197-7417-4d6e-bc56-a8ca59ad1fd6.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/2cce46a7-05a8-4038-99fe-fbb05abd1652.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/2eb82ecf-fa04-4c29-9c9e-8623fb1c50a5.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/33b6e0ce-3712-4d21-9f0c-8121d217dd70.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/3d15fb0f-aa82-470d-b7c5-f223c9e78bf7.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/42124372-e6d0-4279-8434-fa5ba51667c9.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/4395860b-5485-4baf-9569-910b99944621.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/51e70000-31da-441c-a14b-abdf9d2e6de0.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/59dc0fb3-75f0-4edd-b97a-068228aefe50.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/647b1fb7-6b62-4ad8-829a-17ba5db72715.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/6a01a77e-ff6c-4afd-84e6-c44992a00439.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7557d28a-6361-4ddc-8f73-8fa26704b810.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7ada5e00-38f4-458c-9637-1559b1659ab2.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7e290577-22f0-4afc-8192-346edd5cbced.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7eadd381-e7e9-4c37-89c9-40f27879264d.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/7faa42a2-7030-4ef2-98a1-bf50b2d39c84.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/82429017-cb3c-4d12-ac74-258efc6a152a.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/8a0b4b99-1a91-4f75-b5ba-fac17d51d3c5.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/8c9d65e7-dd73-49b1-896a-bcec50a758af.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/9cb73d6b-6fb2-4898-8450-73cf70f18a3b.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/9d00dc32-a53b-43b1-bcdb-0ec741d56d51.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/acf12fc8-7222-4567-b8ea-7a2b4fdcd6f9.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/b4628a11-d451-4e89-b3b6-7f5d9f615cf1.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/c32cd0e3-5d03-4dcb-be1d-d2d650d0b26c.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/ccde3faf-3b97-419f-bd3e-2dc54ba23514.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/d459ea5d-890e-4217-af46-9a73e4fc5e38.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/e0ae464c-3653-4871-a342-18fbffcac469.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/e446aec8-ca44-49c8-875a-f41cc4a91011.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/f164109f-129f-494a-8270-1ac805d010e4.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits/fe67187c-51bd-4113-bda4-7bb462d3ef11.json"
+  ],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "Supabase stale check was not run; this batch is local-first only and requires separate final publishing review before any apply."
+    ]
+  }
 }

@@ -1,24 +1,25 @@
 {
   "question_id": "a25309f7-0188-46ee-9900-c2a414d9576c",
   "baseline_hash": "sha256:4722edf2f16f13da7e8c5d62c781de43a9cef9aa4e188d0c6f86824fcf36c4c5",
-  "reason": "Batch 011 local source audit aligned linked question a25309f7-0188-46ee-9900-c2a414d9576c with the repaired Fire Detection and Alarm Systems article and verified raw-source citations. This local draft updates citation/explanation context only and does not change answer-key fields.",
-  "approved_by": "codex-local-source-audit-batch-011",
-  "approved_at": "2026-05-10T12:05:00.000+08:00",
+  "reason": "Batch 092 local-first source audit aligned linked question a25309f7-0188-46ee-9900-c2a414d9576c with the repaired Fire Detection and Alarm Systems article and verified local raw-source support. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-092",
+  "approved_at": "2026-05-12T17:41:23.000+08:00",
   "source_audit_support": {
     "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
     "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
     "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
     "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+    "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+    "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
     "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
     "checked_markdown_lines": [
-      "3991-4060",
-      "4624-4627",
-      "6098-6106",
-      "6743-6770"
+      "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
     ],
     "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
     "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
-    "answer_key_fields_changed": false
+    "answer_key_fields_changed": false,
+    "local_source_checked": true,
+    "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review"
   },
   "proposed": {
     "code_citation": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",

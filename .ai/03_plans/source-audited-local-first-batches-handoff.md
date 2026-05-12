@@ -1,6 +1,6 @@
 # Source-Audited Local-First Batches Handoff
 
-Updated: 2026-05-12T17:05:00+08:00
+Updated: 2026-05-12T19:49:52+08:00
 
 ## Operating Mode
 
@@ -11,15 +11,15 @@ Updated: 2026-05-12T17:05:00+08:00
 
 ## Completed Batches
 
-- Source-audited local-first article batches 001 through 091 are recorded under `/Users/philiplewis/slatecamp/.ai/content-audit-export`.
-- Latest completed batch: Batch 091, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-091-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-091-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-091-local-first-scoped-checks.json`.
+- Source-audited local-first article batches 001 through 092 are recorded under `/Users/philiplewis/slatecamp/.ai/content-audit-export`.
+- Latest completed batch: Batch 092, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, local-first complete and pending final publishing review; report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-scoped-checks.json`.
 - Previous completed checkpoint before this session: Batch 030, status `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`, report `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-report.md`, ledger `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-ledger.json`, scoped checks `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-030-local-first-scoped-checks.json`.
 
 ## Current Batch State
 
-- Last completed batch: Batch 091
-- Current batch number for next continuation: Batch 092
-- Current worker/session state: Batch 091 completed locally with blockers=0 from the fixed Batch 091 manifest only; Batch 092 is reserved for a separate run. No Supabase push, deploy, or commit attempted.
+- Last completed batch: Batch 092
+- Current batch number for next continuation: unreserved; a new reservation coordinator must reserve the next batches if blockers=0.
+- Current worker/session state: Batch 092 local-first complete from the fixed manifest only; no Batch 093 work, reservation, or selection was started. No Supabase push, deploy, or commit attempted.
 - Latest completed Batch 082 selection rule used: five unpassed sourceable LEA building-technology/materials/estimating clusters with linked questions and local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 081 artifacts.
 - Active Batch 083 selection rule used: five unpassed sourceable LEA building-materials and metals clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 082 artifacts.
 - Active Batch 084 selection rule used: five unpassed sourceable LEA building-technology/construction-systems clusters with linked questions and exact readable local raw source families, excluding IDs recorded in source-audited Batch 001 through Batch 083 artifacts.
@@ -33,7 +33,8 @@ Updated: 2026-05-12T17:05:00+08:00
 - Batch 086 prior-batch exclusion check: PASS; selected IDs were checked against Batch 001 through Batch 085 artifacts and this handoff before edits.
 - Batch 086 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0.
 - Batch 090 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 091 readiness is separate-run only; this run stopped after Batch 090.
-- Batch 091 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 092 readiness is separate-run only; this run stopped after Batch 091.
+- Batch 091 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. Batch 092 was executed in this subsequent local-first run.
+- Batch 092 completion check: PASS; report, ledger, scoped checks, and post-batch handoff exist with blockers=0. A new reservation coordinator must reserve the next batches if blockers=0.
 
 ## Batch 081 Pre-Selection Checkpoint
 
@@ -7926,15 +7927,94 @@ Batch 092 source families selected for audit:
 
 Batch 092 unresolved blockers at this checkpoint: 0 inherited. Do not advance to Batch 093 execution unless Batch 092 report, ledger, scoped checks, and post-batch handoff exist with zero blockers.
 
+## Batch 092 Pre-Start Execution Checkpoint
+
+- Updated: 2026-05-12T17:29:20+08:00
+- Batch: 092
+- Execution state: Batch 092 started locally from the fixed manifest only; no Batch 093 work, reservation, or selection may begin in this run.
+- Manifest: `/Users/philiplewis/slatecamp/.ai/03_plans/production-line-batch-092-manifest.json`
+- Inherited blocker status: Batch 091 blockers=0; accepted and pushed as `7c2b35e47` with whitespace hygiene follow-up `3881a1f23`.
+- Reservation baseline: Batches 090-092 reservation committed as `d2581499a`.
+- Known blocker-resolution-needed notes: none inherited and none reserved in the Batch 092 manifest.
+- Pending gates: local raw-source audit, roundtrip preservation, compose/diff/validate, UI-block-edit validation, scoped JSON parse, placeholder/internal-note/source-gap scans, source hash checks, linked-question/question-edit count checks, stale compose-error scan, targeted content-audit tests, scoped `git diff --check`, Batch 092 report, Batch 092 ledger, Batch 092 scoped checks, and this handoff's Batch 092 post-batch completion update.
+- Supabase/deploy/commit state: no Supabase push, deploy, or commit attempted.
+
+Batch 092 exact execution scope:
+
+| # | Article ID | Slug | Article folder | Question-edits folder | Linked questions |
+|---|---|---|---|---|---:|
+| 1 | `e6c2a686-5b8c-477d-b5e4-d02bef987743` | `pedestrian-protection-during-construction` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits` | 32 |
+| 2 | `16a0bc40-d538-4e4a-8408-cd41dd7aa7aa` | `signs-design-and-construction` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits` | 37 |
+| 3 | `cb947ab1-7737-4bde-8a47-606b5d305ed6` | `pd-1096-rule-viii-light-and-ventilation` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits` | 26 |
+| 4 | `1d37a355-c8bf-4d5e-a41b-07a9817a4427` | `lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits` | 25 |
+| 5 | `f2c105fd-51fc-4b48-b53a-77242dbb91b0` | `uap-spp-doc-standards-of-professional-practice-for-philippine-architects` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits` | 10 |
+
+Batch 092 expected source families:
+
+- PD 1096 RIRR 2004 DPWH Official raw PDF: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf`
+- BP 344 2024 Revised IRR raw PDF: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf`
+- RA 9514 2019 Revised IRR raw PDF: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf`
+- UAP Standards of Professional Practice raw PDF: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf`
+
+## Batch 092 Post-Batch Completion Checkpoint
+
+- Updated: 2026-05-12T19:49:52+08:00
+- Batch: 092
+- Status: `PASS_LOCAL_FIRST_READY_FOR_FINAL_PUBLISHING_REVIEW`
+- Completed article count: 5
+- Completed linked-question count: 130
+- Completed source-safe question-edit count: 130
+- Scenario enrichment results: 5 eligible-added, 0 eligible-deferred, 0 not-applicable.
+- Source evidence: local/raw primary evidence used for all cited claims; PD 1096, RA 9514, and UAP SPP local source families supported the final articles; BP 344 expected family was hash-checked as supplemental/non-cited.
+- Unresolved blockers: 0
+- Supabase/deploy/commit state: no Supabase push, deploy, or commit attempted.
+- Batch 093 state: not started and not reserved in this run.
+- Report: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-report.md`
+- Ledger: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-ledger.json`
+- Scoped checks: `/Users/philiplewis/slatecamp/.ai/content-audit-export/source-audited-article-batch-092-local-first-scoped-checks.json`
+- Inherited blocker status: Batch 091 blockers=0; accepted and pushed as `7c2b35e47` with whitespace hygiene follow-up `3881a1f23`.
+- Next-batch instruction: a new reservation coordinator must reserve the next batches if blockers=0; do not start Batch 093 from this Batch 092 worker run.
+
+| # | Article ID | Slug | Improved normalized path | Improved candidate path | Question-edits path | Linked questions | Question edits | Scenario status |
+|---|---|---|---|---|---|---:|---:|---|
+| 1 | `e6c2a686-5b8c-477d-b5e4-d02bef987743` | `pedestrian-protection-during-construction` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pedestrian-protection-during-construction--e6c2a686-5b8c-477d-b5e4-d02bef987743/question-edits` | 32 | 32 | `eligible-added` |
+| 2 | `16a0bc40-d538-4e4a-8408-cd41dd7aa7aa` | `signs-design-and-construction` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits` | 37 | 37 | `eligible-added` |
+| 3 | `cb947ab1-7737-4bde-8a47-606b5d305ed6` | `pd-1096-rule-viii-light-and-ventilation` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/pd-1096-rule-viii-light-and-ventilation--cb947ab1-7737-4bde-8a47-606b5d305ed6/question-edits` | 26 | 26 | `eligible-added` |
+| 4 | `1d37a355-c8bf-4d5e-a41b-07a9817a4427` | `lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits` | 25 | 25 | `eligible-added` |
+| 5 | `f2c105fd-51fc-4b48-b53a-77242dbb91b0` | `uap-spp-doc-standards-of-professional-practice-for-philippine-architects` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/normalized.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/candidate.md` | `/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0/question-edits` | 10 | 10 | `eligible-added` |
+
+Batch 092 source evidence recorded:
+
+- PD 1096 2004 Revised IRR (DPWH Official): `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf`; raw PDF hash `sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6`; refined markdown hash `sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7`; locators used: PD 1096 2004 Revised IRR, Rule XI Sections 1101-1108; related linked-question provisions in Rules III, IV, IX, and XV; PD 1096 2004 Revised IRR, Rule XX Sections 2001-2006; PD 1096 2004 Revised IRR, Rule VIII Sections 801-811 and Table VIII.4; linked Rule VII Section 707/Table VII.2 parking/height cross-checks where questions require them.
+- RA 9514 2019 Revised IRR, Fire Code of the Philippines: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf`; raw PDF hash `sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266`; refined markdown hash `sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567`; locators used: RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, 16, 17, 18, and parking-structure provisions.
+- UAP Standards of Professional Practice: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf`; raw PDF hash `sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e`; refined markdown hash `sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c`; locators used: UAP Standards of Professional Practice, SPP 200 general standards, Architect selection, foreign architect participation, and SPPCC provisions.
+- BP 344 2024 Revised IRR: `/Users/philiplewis/slatecamp/vitruvius-connection/001_Raw-Source-Layer/001-Laws/BP-344/2024 Revised Implementing Rules and Regulations Batas Pambansa Blg. 344 _ National Council on Disability Affairs.pdf`; hash-checked as supplemental/non-cited reservation family; final Batch 092 cited claims did not rely on BP 344.
+
+Batch 092 quality protocol results:
+
+- Compose: 5/5 pass, blockers=0.
+- Diff: 5/5 pass, locally safe, blockers=0.
+- Validate: 5/5 pass, blockers=0; expected component-usage warnings only.
+- UI-block edits: 5/5 pass, blockers=0, warnings=0.
+- Scoped JSON parse: 186 JSON files parsed, failures=0.
+- Placeholder/internal-note/source-gap scan: matches=0.
+- Source hash checks: 9 cited-source checks, failures=0; BP 344 supplemental expected-family hash check PASS.
+- Linked-question/question-edit count checks: 5/5 pass; 130 linked questions and 130 question edits.
+- Stale compose-error scan: matches=0.
+- Targeted tests: 34 pass, 0 fail, 328 expect calls.
+- Scoped git diff --check: PASS after report, ledger, scoped checks, and handoff/coordination updates.
+
+
 ## Batches 090-092 Reservation Summary
 
-- Updated: 2026-05-12T07:27:54+08:00
-- Reservation status: `RESERVED_PRE_START_NOT_COMPLETE`
-- Baseline commit: `3957e8c08`
+- Updated: 2026-05-12T19:49:52+08:00
+- Reservation status: `COMPLETED_THROUGH_BATCH_092_LOCAL_FIRST`
+- Current committed baseline: `3881a1f23` (Batch 091 hygiene follow-up after Batch 091 acceptance at `7c2b35e47`)
 - Branch: `3dlab-gray-viewport-bg`
-- Total articles reserved: 15
-- Total linked questions: 469 (Batch 090: 171, Batch 091: 168, Batch 092: 130)
-- Total question edits: 470 (Batch 090: 172 with 1 known mismatch, Batch 091: 168, Batch 092: 130)
-- Exclusion check: PASS — all 15 article IDs are absent from Batch 001 through Batch 089 artifacts.
-- Next action: Batch 090 may begin source-audit execution only after this reservation is committed and pushed; worker must verify `minimum-parking-requirements` question-edit count mismatch before batch acceptance.
-- Stop condition: Batches 090-092 are reserved only; no content edits, Supabase pushes, deploys, or commits have been attempted in this reservation run.
+- Total articles reserved/executed: 15 (Batch 090: 5, Batch 091: 5, Batch 092: 5)
+- Total linked questions completed: 469 (Batch 090: 171, Batch 091: 168, Batch 092: 130)
+- Total source-safe question edits completed: 469 (Batch 090 corrected to 171 after mismatch resolution, Batch 091: 168, Batch 092: 130)
+- Exclusion check: PASS - all 15 reserved article IDs were absent from Batch 001 through Batch 089 artifacts at reservation; Batch 092 was executed only after Batch 091 was accepted/pushed.
+- Completion status: Batch 090 accepted at `6a561f7d3`; Batch 091 accepted at `7c2b35e47` with hygiene follow-up `3881a1f23`; Batch 092 local-first complete with blockers=0 and pending final publishing review.
+- Next action: do not start or reserve Batch 093 in this worker run. A new reservation coordinator must reserve the next batches if blockers=0.
+- Stop condition: Batch 092 local-first work is complete; no Supabase pushes, deploys, or commits were attempted in this Batch 092 worker run.

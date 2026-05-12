@@ -1,22 +1,25 @@
 {
   "question_id": "2c8d742c-4c03-44c9-b34f-8a19f772466b",
   "baseline_hash": "sha256:a1a031de0390de070e2ac6363a5dab7bd01fce84f6b1722ef90ecb9039322a67",
-  "reason": "source-audited-article-batch-013-local-first aligned linked question with repaired source-audited article content and local raw-source evidence.",
-  "approved_by": "codex-local-source-audit-batch-013",
-  "approved_at": "2026-05-10T22:10:00.000+08:00",
+  "reason": "Batch 092 local-first source audit aligned linked question 2c8d742c-4c03-44c9-b34f-8a19f772466b with the repaired UAP SPP: General Standards article and verified local raw-source support. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-092",
+  "approved_at": "2026-05-12T17:41:23.000+08:00",
   "source_audit_support": {
     "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/UAP/Standards of Professional Practice2.pdf",
     "raw_pdf_sha256": "sha256:5529c01f4b74c0c2292cabbddf99663a2385e3c9ab2de6d6c7801bbe92fcc39e",
     "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/UAP/Standards of Professional Practice2.md",
     "raw_markdown_sha256": "sha256:8cabf64ea171b2dba6d63e911164711675f06791fb55730e441d64b2c3eca09a",
+    "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/UAP/Standards of Professional Practice2.md",
+    "refined_markdown_sha256": "sha256:9d2e8b1eccf0568665e83ed0db03c0db60223ac5e32d7ac92d434ff64b84828c",
+    "source_locator": "SPP 200 / R.A. 9266",
+    "checked_markdown_lines": [
+      "UAP SPP refined markdown lines 29, 60-71, 84-121, 278, 306-320, 521, and 1294-1322"
+    ],
     "parent_article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
     "parent_article_slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
     "answer_key_fields_changed": false,
-    "support_status": "source_supported",
-    "source_locator": "UAP SPP general standards and Annex A",
-    "checked_markdown_lines": [
-      "UAP SPP raw markdown lines 25-140"
-    ]
+    "local_source_checked": true,
+    "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review"
   },
   "proposed": {
     "code_citation": "SPP 200 / R.A. 9266",

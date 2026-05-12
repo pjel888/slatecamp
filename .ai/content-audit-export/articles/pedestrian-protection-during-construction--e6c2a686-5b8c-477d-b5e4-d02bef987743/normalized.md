@@ -31,6 +31,10 @@ Some linked questions test nearby PD 1096 construction controls. The same local 
 - Public-property storage cannot interfere with fire, police, utility, drainage, or traffic functions.
 - Protective devices remain required while pedestrians may be endangered, even if a visible construction milestone has already been completed.
 
+## Real World Scenario
+
+A contractor for a mid-rise renovation needs to fence the full sidewalk along a busy street. Under Rule XI, the review should not stop at the fence permit. Check whether the Building Official-authorized closure triggers a temporary walkway at least 1.20 m wide, whether any roadway-side walkway has protective railings, whether the fence and canopy clearances are distinct, and whether warning signs and night lighting stay maintained while pedestrians remain exposed. If the contractor proposes storing materials on the public way, reject any layout that blocks hydrants, alarms, utility boxes, drainage, or safe pedestrian and vehicle movement.
+
 ## Source Audit
 
 Primary source checked: PD 1096 2004 Revised IRR, Rule XI Sections 1101 to 1108, with related Rule III, IV, IX, and XV lines for linked questions.

@@ -1,11 +1,28 @@
 {
   "question_id": "aebc577f-0d76-44e0-b8fa-8d24cb7802a6",
   "baseline_hash": "sha256:2ff8101274f0c580b35cf54a7fa11cefa36e78828d1ca13f5d7c503107cb9c95",
-  "reason": "Batch 007 local source audit aligned PD 1096 Rule VIII Light and Ventilation linked question aebc577f-0d76-44e0-b8fa-8d24cb7802a6 to verified raw-source citations and repaired stale/null explanation metadata where needed.",
-  "approved_by": "codex-local-source-audit-batch-007",
-  "approved_at": "2026-05-10T23:10:00+08:00",
+  "reason": "Batch 092 local-first source audit aligned linked question aebc577f-0d76-44e0-b8fa-8d24cb7802a6 with the repaired PD 1096 Rule VIII Light and Ventilation article and verified local raw-source support. This local draft updates citation/explanation context only and does not change answer-key fields.",
+  "approved_by": "codex-local-source-audit-batch-092",
+  "approved_at": "2026-05-12T17:41:23.000+08:00",
   "proposed": {
     "code_citation": "PD 1096 2004 Revised IRR, Rule VIII Section 807",
     "explanation": "Source-audited against Rule VIII Section 807: school rooms require 3.00 cu.m plus 1.00 sq.m floor area per person; workshops, factories, and offices require 12.00 cu.m per person; habitable rooms require 14.00 cu.m per person."
+  },
+  "source_audit_support": {
+    "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+    "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+    "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+    "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+    "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+    "source_locator": "PD 1096 2004 Revised IRR, Rule VIII Section 807",
+    "checked_markdown_lines": [
+      "PD 1096 refined markdown lines 2366-2372"
+    ],
+    "parent_article_id": "cb947ab1-7737-4bde-8a47-606b5d305ed6",
+    "parent_article_slug": "pd-1096-rule-viii-light-and-ventilation",
+    "answer_key_fields_changed": false,
+    "local_source_checked": true,
+    "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review"
   }
 }

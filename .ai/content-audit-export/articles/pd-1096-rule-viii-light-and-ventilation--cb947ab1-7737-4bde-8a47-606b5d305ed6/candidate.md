@@ -84,6 +84,10 @@ Section 811 requires artificial ventilation for rooms or spaces housing industri
 
 Ceilings are Section 805. Room dimensions are Section 806. Air volume is Section 807. Windows are Section 808. Shafts are Section 809. Skylights are Section 810. Artificial ventilation is Section 811.
 
+## Real World Scenario
+
+A designer is converting a small upper-floor space into studio rooms with shared toilets and a mechanical exhaust proposal. Apply Rule VIII as a sequence instead of a single number lookup. First test ceiling height under Section 805, then check each room's minimum area and least dimension under Section 806, then confirm air-space volume under Section 807. If a room relies on natural ventilation, compute the required window opening and check where it opens under Section 808. If the plan uses vent shafts, skylights, or artificial ventilation, move to Sections 809 through 811 instead of borrowing the natural-window answer.
+
 ## Sources
 
 - PD 1096 2004 Revised IRR, Rule VIII Sections 801-811.

@@ -83,3 +83,7 @@ Signs must be illuminated only by electrical means in accordance with the Philip
 - Do not say arcaded signs must be flush. The checked source allows up to 0.60 m from the outermost wall line over the arcade and requires 5.00 m clearance.
 - Do not forget the 0.30 m projection limit for buildings abutting roads, streets, or alleys without sidewalks.
 - Do not allow signs to interfere with exits, fire escapes, standpipes, required light, or required ventilation.
+
+## Real World Scenario
+
+A retail tenant wants a new illuminated sign on a commercial building that faces both an arcade and a non-arcaded sidewalk. Treat it as a Rule XX classification problem before checking aesthetics. Identify whether each proposed face is a wall, projecting, roof, or ground sign; apply the 1.20 m, 0.60 m, or 0.30 m projection rule based on the street condition; keep the required 3.00 m or 5.00 m clearance; and reject any sign that blocks required light, ventilation, exits, fire escapes, standpipes, or pedestrian passage. Illumination still has to follow the Philippine Electrical Code path required by the source.

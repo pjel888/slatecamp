@@ -1,18 +1,22 @@
 {
-  "generated_at": "2026-05-12T08:48:47.668Z",
+  "generated_at": "2026-05-12T11:18:05.855Z",
   "input": "/Users/philiplewis/slatecamp/.ai/content-audit-export",
   "article_count": 1,
   "valid": true,
   "blockers": [],
-  "warnings": [],
+  "warnings": [
+    "uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0: component-usage.json has not been generated for this article yet."
+  ],
   "articles": [
     {
-      "article_id": "ad9732f1-f733-4bc1-acb5-72b4bb53555d",
-      "slug": "dangerous-and-ruinous-buildings",
-      "folder": "dangerous-and-ruinous-buildings--ad9732f1-f733-4bc1-acb5-72b4bb53555d",
+      "article_id": "f2c105fd-51fc-4b48-b53a-77242dbb91b0",
+      "slug": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects",
+      "folder": "uap-spp-doc-standards-of-professional-practice-for-philippine-architects--f2c105fd-51fc-4b48-b53a-77242dbb91b0",
       "valid": true,
       "blockers": [],
-      "warnings": [],
+      "warnings": [
+        "component-usage.json has not been generated for this article yet."
+      ],
       "files": {
         "metadata": true,
         "original": true,
@@ -23,7 +27,7 @@
         "linkedQuestions": true,
         "sources": true,
         "taxonomy": true,
-        "componentUsage": true,
+        "componentUsage": false,
         "candidate": true,
         "diffReport": true,
         "diffReportMarkdown": true,
@@ -31,9 +35,9 @@
         "pushResult": false
       },
       "hashes": {
-        "original": "sha256:c241fb3cf7ae69790014c5961743d85b8f693b0a2626e75baae6ee63b2e4ac73",
-        "normalized": "sha256:79d783ebd12380ffa6fe4c74b5bd7c5d6f5bebb28c0a51c94ff0859eae53580b",
-        "candidate": "sha256:79d783ebd12380ffa6fe4c74b5bd7c5d6f5bebb28c0a51c94ff0859eae53580b",
+        "original": "sha256:712933904177e2ab8f82af83f84c44ef7fdab38c771d10018f0b36d69642d813",
+        "normalized": "sha256:8f7f9289f893f8f22c52439919deb7edde8c67614d5a6c79a8003c5857698b84",
+        "candidate": "sha256:8f7f9289f893f8f22c52439919deb7edde8c67614d5a6c79a8003c5857698b84",
         "ui_blocks": "sha256:4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
       }
     }

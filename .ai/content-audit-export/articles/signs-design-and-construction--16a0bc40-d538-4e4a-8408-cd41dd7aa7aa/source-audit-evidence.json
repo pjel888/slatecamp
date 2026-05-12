@@ -1,96 +1,57 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-010",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T10:55:01.585+08:00",
-  "audit_mode": "local_source_audit_no_supabase_no_deploy_no_commit",
-  "protocols_applied": [
-    "AGENTS.md local-first content-audit workflow",
-    ".ai/AGENTS.md additive operational artifact rules",
-    "ph-arch-construction-law source-grounding",
-    "ph-arch-professional-context LEA exam relevance"
-  ],
+  "schema_version": "source-audit-evidence.v2.local-first",
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-092-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T17:41:23.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
+  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
   "target": {
     "article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
     "slug": "signs-design-and-construction",
     "title": "Signs Design and Construction",
-    "article_folder": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
-    "normalized_path": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/normalized.md",
-    "candidate_path": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/candidate.md",
-    "sources_path": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/sources.json",
-    "question_edits_folder": ".ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits",
-    "normalized_sha256": "sha256:7f4eefdd44794b0e5f1fb946dd01864a82bbd92ec665ddf464c0eabb132c514d",
-    "candidate_sha256": "sha256:7f4eefdd44794b0e5f1fb946dd01864a82bbd92ec665ddf464c0eabb132c514d",
-    "linked_questions_sha256": "sha256:b2ad5e0240b6fef962ed333a984b6539f6cdd033edd182fcd0c1d59604c08fa7",
-    "sources_sha256": "sha256:926439a2d76265fdf8d77abe0bf465b448c8458b80a4f2bbba8c6e32f964e060"
+    "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+    "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/normalized.md",
+    "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/candidate.md",
+    "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits",
+    "original_hash": "sha256:dc98686bea5de5ea3462c451859b507c34794bbc042276290b88a1845ea93267",
+    "normalized_hash": "sha256:a285c75b7612f008ccc6436f1a13d8002cfbdcb9a465e5d0914ec0b13ef6d900",
+    "candidate_hash": "sha256:a285c75b7612f008ccc6436f1a13d8002cfbdcb9a465e5d0914ec0b13ef6d900",
+    "candidate_sha256": "sha256:a285c75b7612f008ccc6436f1a13d8002cfbdcb9a465e5d0914ec0b13ef6d900",
+    "sources_hash": "sha256:6846d4cc11959c3870c632522eab7db98092cef5bfcd86cfc94a44915c8d866d",
+    "linked_questions_hash": "sha256:b2ad5e0240b6fef962ed333a984b6539f6cdd033edd182fcd0c1d59604c08fa7",
+    "question_edit_count": 37
   },
   "classification": {
-    "content_type": "pd1096_signs_code_article",
     "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 37,
-    "question_edits_created": [
-      "0de8e05e-4518-4824-b146-78538996b570",
-      "e000822c-f304-498f-b960-dcc5e819ed39",
-      "ef43b73d-70e8-4e48-872d-a91d46b52f63",
-      "ba847fe2-1060-44f4-adbb-09ba1d0fdea1",
-      "d16477f3-4f40-4151-b9f8-a9184798cdee",
-      "36b8bca9-c2c1-4196-bcd9-560e4f4a457e",
-      "dc0623ae-d36a-48b4-9ee8-a1923c27bb0d",
-      "9bdbccbc-122e-463a-8ed3-354092dc88fc",
-      "3a6024ea-076d-4c47-a8c0-78330f6d1295",
-      "28523c8d-f1a6-4805-90bd-b55cbb132028",
-      "2a84ff3b-a43a-4dc3-b372-241ea4592429",
-      "2e128f3f-1ea1-4aca-a0c4-8fb53879744f",
-      "4791e449-dc72-4f01-ab5d-36892e1c81fd",
-      "89bc7810-7304-41ab-806d-b22e338038a7",
-      "ac37db0e-2609-4ead-bc5b-0dfa7b66b17d",
-      "06bd8d6d-ce78-4eb6-aa4d-6aa795520040",
-      "41fe151c-da3a-4ac9-89cb-1cdfda4d2dd3",
-      "0605fffe-d97c-4aff-a3d1-82a5db520648",
-      "eb9a794d-ca45-4439-a0b5-d35aec3e48e6",
-      "cb9955d0-c505-42a1-b1c6-644ee07308b0",
-      "ad72b91c-6cdb-4c2f-8c13-c7c63e68431c",
-      "802a8d89-b04e-4ea8-9158-3127f5ed1f71",
-      "393234ea-bca2-4e36-af01-af23efdb1de2",
-      "1fe4a86b-09a8-4983-ac06-2c91364ff305",
-      "e4d7877c-e75c-4283-becb-14cfd41cbdc5",
-      "744c6fa3-f860-40bf-8451-06c49c5188af",
-      "0a0f02be-7f90-45bb-bcbf-9e954933564f",
-      "10d28226-d5e0-4237-931f-4ff647012884",
-      "60c70d86-4d93-46e7-b670-852e7bbaf882",
-      "0f7f1087-9b20-4e9c-b466-36ff26a70463",
-      "c9d431d4-7644-4582-98a6-19e3b895b712",
-      "1a1bc273-4daa-41d4-95ec-4c3ad09a77ee",
-      "5b6477e2-7df8-4694-bee9-6db09e1fa14e",
-      "d514c373-47cc-4dd7-b370-a9266eddcdfe",
-      "d5b7be30-d51c-4ad1-8c15-22c8d36ee178",
-      "e2bbd8d1-51d3-4f8d-8be9-8a41833bbfa2",
-      "c4565528-3d3e-4a87-9eaf-11bc569868a8"
-    ]
+    "source_risk_tier": "HIGH",
+    "requires_raw_pdf_audit": true
   },
   "raw_sources": [
     {
-      "key": "pd1096_2004_revised_irr",
-      "label": "PD 1096 2004 Revised IRR, DPWH Official Publication",
-      "source_type": "implementing_rules",
-      "source_id": "batch010-signs-design-and-construction-source-01",
+      "source_id": "pd1096-rirr-2004-dpwh-official",
+      "label": "PD 1096 2004 Revised IRR (DPWH Official)",
+      "authority": "Department of Public Works and Highways",
+      "source_type": "implementing_rules_pdf",
+      "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001-2006",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
       "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
       "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
       "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-      "extraction_method": "Local raw markdown conversion checked against verified raw PDF file hash",
-      "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-      "markdown_lines_checked": [
-        "5160-5251"
-      ]
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+      "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+      "checked_markdown_lines": [
+        "PD 1096 refined markdown lines 4521-4595"
+      ],
+      "use": "primary source for article and linked-question support",
+      "local_source_checked": true
     }
   ],
   "claims": [
     {
-      "claim_id": "B010-signs-design-and-construction-ARTICLE-01",
-      "claim_text": "Signs Design and Construction was repaired against PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006; unsupported placeholders, comparative foreign-code claims, and unverified practice statements were removed from normalized.md.",
+      "claim_id": "B092-signs-design-and-construction-ARTICLE-01",
+      "claim_text": "Signs Design and Construction was refreshed against PD 1096 2004 Revised IRR, Rule XX Sections 2001-2006; stale batch metadata was refreshed for the Batch 092 candidate.",
       "claim_class": "article_source_repair",
       "audit_result": "PASS",
       "source_support": {
@@ -98,535 +59,1012 @@
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001-2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; see source_locator and checked_markdown_lines."
+      }
+    },
+    {
+      "claim_id": "B092-signs-design-and-construction-SCENARIO-01",
+      "claim_text": "eligible-added - retail signage scenario using sign type, arcade/non-arcade projection, clearance, lighting, and obstruction checks.",
+      "claim_class": "scenario_enrichment",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001-2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; scenario uses only the recorded source constraints."
+      }
+    },
+    {
+      "claim_id": "B092-signs-design-and-construction-QUESTION-001",
+      "claim_text": "Question 0605fffe-d97c-4aff-a3d1-82a5db520648 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0605fffe-d97c-4aff-a3d1-82a5db520648.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
+        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
         "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "markdown_lines_checked": [
-          "5160-5251"
-        ]
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-001",
-      "claim_text": "Question 0de8e05e-4518-4824-b146-78538996b570 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-002",
+      "claim_text": "Question 06bd8d6d-ce78-4eb6-aa4d-6aa795520040 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/06bd8d6d-ce78-4eb6-aa4d-6aa795520040.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-002",
-      "claim_text": "Question e000822c-f304-498f-b960-dcc5e819ed39 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-003",
+      "claim_text": "Question 0a0f02be-7f90-45bb-bcbf-9e954933564f has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0a0f02be-7f90-45bb-bcbf-9e954933564f.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-003",
-      "claim_text": "Question ef43b73d-70e8-4e48-872d-a91d46b52f63 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-004",
+      "claim_text": "Question 0de8e05e-4518-4824-b146-78538996b570 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0de8e05e-4518-4824-b146-78538996b570.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-004",
-      "claim_text": "Question ba847fe2-1060-44f4-adbb-09ba1d0fdea1 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-005",
+      "claim_text": "Question 0f7f1087-9b20-4e9c-b466-36ff26a70463 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0f7f1087-9b20-4e9c-b466-36ff26a70463.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-005",
-      "claim_text": "Question d16477f3-4f40-4151-b9f8-a9184798cdee has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-006",
+      "claim_text": "Question 10d28226-d5e0-4237-931f-4ff647012884 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/10d28226-d5e0-4237-931f-4ff647012884.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-006",
-      "claim_text": "Question 36b8bca9-c2c1-4196-bcd9-560e4f4a457e has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-007",
+      "claim_text": "Question 1a1bc273-4daa-41d4-95ec-4c3ad09a77ee has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/1a1bc273-4daa-41d4-95ec-4c3ad09a77ee.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-007",
-      "claim_text": "Question dc0623ae-d36a-48b4-9ee8-a1923c27bb0d has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-008",
+      "claim_text": "Question 1fe4a86b-09a8-4983-ac06-2c91364ff305 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/1fe4a86b-09a8-4983-ac06-2c91364ff305.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-008",
-      "claim_text": "Question 9bdbccbc-122e-463a-8ed3-354092dc88fc has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-009",
+      "claim_text": "Question 28523c8d-f1a6-4805-90bd-b55cbb132028 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/28523c8d-f1a6-4805-90bd-b55cbb132028.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-009",
-      "claim_text": "Question 3a6024ea-076d-4c47-a8c0-78330f6d1295 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-010",
+      "claim_text": "Question 2a84ff3b-a43a-4dc3-b372-241ea4592429 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/2a84ff3b-a43a-4dc3-b372-241ea4592429.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-010",
-      "claim_text": "Question 28523c8d-f1a6-4805-90bd-b55cbb132028 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-011",
+      "claim_text": "Question 2e128f3f-1ea1-4aca-a0c4-8fb53879744f has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/2e128f3f-1ea1-4aca-a0c4-8fb53879744f.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-011",
-      "claim_text": "Question 2a84ff3b-a43a-4dc3-b372-241ea4592429 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-012",
+      "claim_text": "Question 36b8bca9-c2c1-4196-bcd9-560e4f4a457e has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/36b8bca9-c2c1-4196-bcd9-560e4f4a457e.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-012",
-      "claim_text": "Question 2e128f3f-1ea1-4aca-a0c4-8fb53879744f has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-013",
+      "claim_text": "Question 393234ea-bca2-4e36-af01-af23efdb1de2 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/393234ea-bca2-4e36-af01-af23efdb1de2.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-013",
-      "claim_text": "Question 4791e449-dc72-4f01-ab5d-36892e1c81fd has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-014",
+      "claim_text": "Question 3a6024ea-076d-4c47-a8c0-78330f6d1295 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/3a6024ea-076d-4c47-a8c0-78330f6d1295.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-014",
-      "claim_text": "Question 89bc7810-7304-41ab-806d-b22e338038a7 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-015",
+      "claim_text": "Question 41fe151c-da3a-4ac9-89cb-1cdfda4d2dd3 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/41fe151c-da3a-4ac9-89cb-1cdfda4d2dd3.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-015",
-      "claim_text": "Question ac37db0e-2609-4ead-bc5b-0dfa7b66b17d has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-016",
+      "claim_text": "Question 4791e449-dc72-4f01-ab5d-36892e1c81fd has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/4791e449-dc72-4f01-ab5d-36892e1c81fd.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-016",
-      "claim_text": "Question 06bd8d6d-ce78-4eb6-aa4d-6aa795520040 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-017",
+      "claim_text": "Question 5b6477e2-7df8-4694-bee9-6db09e1fa14e has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/5b6477e2-7df8-4694-bee9-6db09e1fa14e.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-017",
-      "claim_text": "Question 41fe151c-da3a-4ac9-89cb-1cdfda4d2dd3 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-018",
+      "claim_text": "Question 60c70d86-4d93-46e7-b670-852e7bbaf882 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/60c70d86-4d93-46e7-b670-852e7bbaf882.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-018",
-      "claim_text": "Question 0605fffe-d97c-4aff-a3d1-82a5db520648 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-019",
+      "claim_text": "Question 744c6fa3-f860-40bf-8451-06c49c5188af has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/744c6fa3-f860-40bf-8451-06c49c5188af.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-019",
-      "claim_text": "Question eb9a794d-ca45-4439-a0b5-d35aec3e48e6 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-020",
+      "claim_text": "Question 802a8d89-b04e-4ea8-9158-3127f5ed1f71 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/802a8d89-b04e-4ea8-9158-3127f5ed1f71.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-020",
-      "claim_text": "Question cb9955d0-c505-42a1-b1c6-644ee07308b0 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-021",
+      "claim_text": "Question 89bc7810-7304-41ab-806d-b22e338038a7 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/89bc7810-7304-41ab-806d-b22e338038a7.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-021",
-      "claim_text": "Question ad72b91c-6cdb-4c2f-8c13-c7c63e68431c has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-022",
+      "claim_text": "Question 9bdbccbc-122e-463a-8ed3-354092dc88fc has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/9bdbccbc-122e-463a-8ed3-354092dc88fc.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-022",
-      "claim_text": "Question 802a8d89-b04e-4ea8-9158-3127f5ed1f71 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-023",
+      "claim_text": "Question ac37db0e-2609-4ead-bc5b-0dfa7b66b17d has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ac37db0e-2609-4ead-bc5b-0dfa7b66b17d.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-023",
-      "claim_text": "Question 393234ea-bca2-4e36-af01-af23efdb1de2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-024",
+      "claim_text": "Question ad72b91c-6cdb-4c2f-8c13-c7c63e68431c has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ad72b91c-6cdb-4c2f-8c13-c7c63e68431c.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-024",
-      "claim_text": "Question 1fe4a86b-09a8-4983-ac06-2c91364ff305 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-025",
+      "claim_text": "Question ba847fe2-1060-44f4-adbb-09ba1d0fdea1 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ba847fe2-1060-44f4-adbb-09ba1d0fdea1.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-025",
-      "claim_text": "Question e4d7877c-e75c-4283-becb-14cfd41cbdc5 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-026",
+      "claim_text": "Question c4565528-3d3e-4a87-9eaf-11bc569868a8 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/c4565528-3d3e-4a87-9eaf-11bc569868a8.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-026",
-      "claim_text": "Question 744c6fa3-f860-40bf-8451-06c49c5188af has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-027",
+      "claim_text": "Question c9d431d4-7644-4582-98a6-19e3b895b712 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/c9d431d4-7644-4582-98a6-19e3b895b712.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-027",
-      "claim_text": "Question 0a0f02be-7f90-45bb-bcbf-9e954933564f has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-028",
+      "claim_text": "Question cb9955d0-c505-42a1-b1c6-644ee07308b0 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/cb9955d0-c505-42a1-b1c6-644ee07308b0.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-028",
-      "claim_text": "Question 10d28226-d5e0-4237-931f-4ff647012884 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-029",
+      "claim_text": "Question d16477f3-4f40-4151-b9f8-a9184798cdee has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/d16477f3-4f40-4151-b9f8-a9184798cdee.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-029",
-      "claim_text": "Question 60c70d86-4d93-46e7-b670-852e7bbaf882 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-030",
+      "claim_text": "Question d514c373-47cc-4dd7-b370-a9266eddcdfe has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/d514c373-47cc-4dd7-b370-a9266eddcdfe.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-030",
-      "claim_text": "Question 0f7f1087-9b20-4e9c-b466-36ff26a70463 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-031",
+      "claim_text": "Question d5b7be30-d51c-4ad1-8c15-22c8d36ee178 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/d5b7be30-d51c-4ad1-8c15-22c8d36ee178.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-031",
-      "claim_text": "Question c9d431d4-7644-4582-98a6-19e3b895b712 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-032",
+      "claim_text": "Question dc0623ae-d36a-48b4-9ee8-a1923c27bb0d has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/dc0623ae-d36a-48b4-9ee8-a1923c27bb0d.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-032",
-      "claim_text": "Question 1a1bc273-4daa-41d4-95ec-4c3ad09a77ee has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-033",
+      "claim_text": "Question e000822c-f304-498f-b960-dcc5e819ed39 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/e000822c-f304-498f-b960-dcc5e819ed39.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-033",
-      "claim_text": "Question 5b6477e2-7df8-4694-bee9-6db09e1fa14e has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-034",
+      "claim_text": "Question e2bbd8d1-51d3-4f8d-8be9-8a41833bbfa2 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/e2bbd8d1-51d3-4f8d-8be9-8a41833bbfa2.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-034",
-      "claim_text": "Question d514c373-47cc-4dd7-b370-a9266eddcdfe has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-035",
+      "claim_text": "Question e4d7877c-e75c-4283-becb-14cfd41cbdc5 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/e4d7877c-e75c-4283-becb-14cfd41cbdc5.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-035",
-      "claim_text": "Question d5b7be30-d51c-4ad1-8c15-22c8d36ee178 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-036",
+      "claim_text": "Question eb9a794d-ca45-4439-a0b5-d35aec3e48e6 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/eb9a794d-ca45-4439-a0b5-d35aec3e48e6.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-036",
-      "claim_text": "Question e2bbd8d1-51d3-4f8d-8be9-8a41833bbfa2 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-signs-design-and-construction-QUESTION-037",
+      "claim_text": "Question ef43b73d-70e8-4e48-872d-a91d46b52f63 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ef43b73d-70e8-4e48-872d-a91d46b52f63.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
         "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
         "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B010-signs-design-and-construction-QUESTION-037",
-      "claim_text": "Question c4565528-3d3e-4a87-9eaf-11bc569868a8 has a Batch 010 local question-edit JSON draft under .ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits for the repaired Signs Design and Construction article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).pdf",
-        "raw_pdf_sha256": "sha256:ca465dd26cb1c4a235fd63d01b19c7239a73920f3753b7807cc8e98a3ac33bc6",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
-        "raw_markdown_sha256": "sha256:1d2f06b8dc9fe40f98410c5ff6e6889d4ad938f2bb764e12fb4a32724abc120c",
-        "parent_article_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/PD-1096/PD 1096 RIRR 2004 - Revised IRR (DPWH Official).md",
+        "refined_markdown_sha256": "sha256:e2fb9b01e5700a429d2b0178e653bb4f76be6b24070700c1bf47fd58714a1ac7",
+        "source_locator": "PD 1096 2004 Revised IRR, Rule XX Sections 2001 through 2006",
+        "checked_markdown_lines": [
+          "PD 1096 refined markdown lines 4521-4595"
+        ],
+        "parent_article_id": "16a0bc40-d538-4e4a-8408-cd41dd7aa7aa",
+        "parent_article_slug": "signs-design-and-construction",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     }
   ],
-  "unsupported_claims_removed": [
-    "Removed unresolved [SLATECAMP_UI_BLOCK:*] placeholders from normalized learner content.",
-    "Removed comparative foreign-code tables and unsupported international practice claims not audited against local raw PDFs.",
-    "Removed or corrected unverified section/number claims that conflicted with the checked PD 1096 raw source."
+  "unverified_or_rejected_claims": [],
+  "unsupported_claims_removed": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "NOT_REQUIRED_LOCAL_SOURCE_MATCH"
+  },
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_removed_from_repaired_markdown": true,
+    "sources_json_updated": true,
+    "question_edits_created": 37,
+    "answer_key_fields_changed": false,
+    "scenario_enrichment_status": "eligible-added"
+  },
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "question_edit_count_matches_linked_questions": true,
+    "linked_question_count": 37,
+    "question_edit_count": 37
+  },
+  "question_edit_files": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0605fffe-d97c-4aff-a3d1-82a5db520648.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/06bd8d6d-ce78-4eb6-aa4d-6aa795520040.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0a0f02be-7f90-45bb-bcbf-9e954933564f.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0de8e05e-4518-4824-b146-78538996b570.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/0f7f1087-9b20-4e9c-b466-36ff26a70463.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/10d28226-d5e0-4237-931f-4ff647012884.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/1a1bc273-4daa-41d4-95ec-4c3ad09a77ee.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/1fe4a86b-09a8-4983-ac06-2c91364ff305.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/28523c8d-f1a6-4805-90bd-b55cbb132028.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/2a84ff3b-a43a-4dc3-b372-241ea4592429.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/2e128f3f-1ea1-4aca-a0c4-8fb53879744f.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/36b8bca9-c2c1-4196-bcd9-560e4f4a457e.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/393234ea-bca2-4e36-af01-af23efdb1de2.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/3a6024ea-076d-4c47-a8c0-78330f6d1295.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/41fe151c-da3a-4ac9-89cb-1cdfda4d2dd3.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/4791e449-dc72-4f01-ab5d-36892e1c81fd.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/5b6477e2-7df8-4694-bee9-6db09e1fa14e.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/60c70d86-4d93-46e7-b670-852e7bbaf882.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/744c6fa3-f860-40bf-8451-06c49c5188af.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/802a8d89-b04e-4ea8-9158-3127f5ed1f71.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/89bc7810-7304-41ab-806d-b22e338038a7.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/9bdbccbc-122e-463a-8ed3-354092dc88fc.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ac37db0e-2609-4ead-bc5b-0dfa7b66b17d.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ad72b91c-6cdb-4c2f-8c13-c7c63e68431c.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ba847fe2-1060-44f4-adbb-09ba1d0fdea1.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/c4565528-3d3e-4a87-9eaf-11bc569868a8.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/c9d431d4-7644-4582-98a6-19e3b895b712.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/cb9955d0-c505-42a1-b1c6-644ee07308b0.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/d16477f3-4f40-4151-b9f8-a9184798cdee.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/d514c373-47cc-4dd7-b370-a9266eddcdfe.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/d5b7be30-d51c-4ad1-8c15-22c8d36ee178.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/dc0623ae-d36a-48b4-9ee8-a1923c27bb0d.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/e000822c-f304-498f-b960-dcc5e819ed39.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/e2bbd8d1-51d3-4f8d-8be9-8a41833bbfa2.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/e4d7877c-e75c-4283-becb-14cfd41cbdc5.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/eb9a794d-ca45-4439-a0b5-d35aec3e48e6.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/signs-design-and-construction--16a0bc40-d538-4e4a-8408-cd41dd7aa7aa/question-edits/ef43b73d-70e8-4e48-872d-a91d46b52f63.json"
   ],
-  "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED"
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "Supabase stale check was not run; this batch is local-first only and requires separate final publishing review before any apply."
+    ]
+  }
 }

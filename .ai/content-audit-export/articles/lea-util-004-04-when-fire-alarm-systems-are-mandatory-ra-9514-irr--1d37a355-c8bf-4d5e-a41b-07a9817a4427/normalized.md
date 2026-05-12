@@ -43,3 +43,6 @@ Occupant notification uses audible and visible signals under NFPA 72 or another 
 
 ## Common Trap
 Do not answer a mandatory-system question by naming a detector technology first. The RA 9514 audit support used here verifies required alarm behavior and occupancy thresholds. Detector technology, device addressing, and detailed equipment selection need separate NFPA 72, PEC, or engineering design support.
+
+## Real World Scenario
+A four-storey dormitory operator reports that the automatic fire alarm panel will be disabled for a maintenance repair. Under the RA 9514 IRR source, the decision is not just whether smoke detectors exist. Confirm that the required alarm system follows the referenced alarm standards, that any outage exceeding four hours in a 24-hour period is reported to the City or Municipal Fire Marshal within 24 hours, and that a fire watch is assigned until service is restored. For layout review, check that manual boxes remain visible, unobstructed, near escape paths and exits, and within the 30 m same-floor travel limit where boxes are required.

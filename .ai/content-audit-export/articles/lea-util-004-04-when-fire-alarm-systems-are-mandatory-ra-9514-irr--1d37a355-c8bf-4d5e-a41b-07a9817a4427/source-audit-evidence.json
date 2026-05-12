@@ -1,92 +1,57 @@
 {
-  "artifact_type": "source-audit-evidence",
-  "batch_id": "source-audited-article-batch-011",
-  "audit_date": "2026-05-10",
-  "audited_at": "2026-05-10T19:20:00.000+08:00",
-  "audit_mode": "LOCAL_FIRST_NO_SUPABASE_NO_DEPLOY_NO_COMMIT",
+  "schema_version": "source-audit-evidence.v2.local-first",
+  "artifact_type": "source_audit_evidence",
+  "batch_id": "source-audited-article-batch-092-local-first",
+  "audit_date": "2026-05-12",
+  "audited_at": "2026-05-12T17:41:23.000+08:00",
+  "audit_mode": "local_first_no_supabase_no_deploy_no_commit",
   "status": "PASS_LOCAL_FIRST_SOURCE_AUDITED",
-  "protocols_applied": [
-    "AGENTS.md root local-first and validation contract",
-    ".ai/AGENTS.md operational-artifact contract",
-    "ph-arch-construction-law skill: cite exact legal/code sources only when verified",
-    "ph-arch-professional-context skill: ground practice claims in Philippine professional context"
-  ],
   "target": {
     "article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
     "slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
     "title": "Fire Detection and Alarm Systems",
-    "article_folder": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
-    "article_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
-    "normalized_path": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/normalized.md",
-    "candidate_path": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/candidate.md",
-    "sources_path": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/sources.json",
-    "question_edits_folder": ".ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits",
-    "question_edits_folder_absolute": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits",
-    "normalized_sha256": "sha256:7ebba222d3aaa6e0e09dec6c4e97fdc3362beee4788c5d0107342bbcdad6c337",
-    "candidate_sha256": "sha256:7ebba222d3aaa6e0e09dec6c4e97fdc3362beee4788c5d0107342bbcdad6c337",
-    "linked_questions_sha256": "sha256:f0389b2a5c4dd1973c8bc23c20d7e7bbd87ca448f16977d03b12016aadf11df1",
-    "sources_sha256": "sha256:1af1fb3870c59a59ae981551591a830a3a54154d6e76df575f66023ae5a89bcc"
+    "folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+    "normalized_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/normalized.md",
+    "candidate_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/candidate.md",
+    "sources_path": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/sources.json",
+    "question_edits_folder": "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits",
+    "original_hash": "sha256:bd2fc339e78f652ffe92d843800a3711cec6620ca9e4dee4fdb86f3e1406110a",
+    "normalized_hash": "sha256:872d2833598eb6a121370225b0f687464acdaf602831f3ae5d1c7e41c13b6c94",
+    "candidate_hash": "sha256:872d2833598eb6a121370225b0f687464acdaf602831f3ae5d1c7e41c13b6c94",
+    "candidate_sha256": "sha256:872d2833598eb6a121370225b0f687464acdaf602831f3ae5d1c7e41c13b6c94",
+    "sources_hash": "sha256:886f0c7b8a50a0544a3a1b7ef7e9c0e1052bba53faeed2243e6b76d3974a8c75",
+    "linked_questions_hash": "sha256:f0389b2a5c4dd1973c8bc23c20d7e7bbd87ca448f16977d03b12016aadf11df1",
+    "question_edit_count": 25
   },
   "classification": {
-    "content_type": "ra9514_fire_alarm_systems_code_article",
     "contains_legal_or_code_claims": true,
-    "requires_raw_pdf_audit": true,
-    "linked_questions_observed": 25,
-    "question_edits_created": [
-      "025aeb7f-cb92-4167-be3d-22754c2eabdf",
-      "033aac3a-4ed2-4829-830a-79b0e05c002e",
-      "1f585d5c-d4e5-4564-ad2c-830506116dfc",
-      "250f7007-a767-4f23-afbf-39f47e037054",
-      "254dd8b0-8dfd-479c-ab22-088c85fabe43",
-      "291651ff-d1ff-4652-8abc-a1afa1bd59f6",
-      "3bf30cc2-b4f3-496b-9b32-ee1dccac7219",
-      "3c35ef86-0865-453f-bf69-b58baba418d6",
-      "429e5441-fdc3-4e65-95a3-53d31e13eb6e",
-      "43895946-c8b7-4fe9-8c5a-846221eca172",
-      "4afafaa0-15dd-4930-8ebb-ce28945d51e0",
-      "5624278e-d5f7-4720-be71-93d53644feb2",
-      "64addb91-3520-4ed3-bff2-e00580dbad01",
-      "6bbf6717-f436-4d66-a544-e18457023df4",
-      "87c8eb89-e201-4212-bab5-d9e5f186fed1",
-      "9c375d9c-746f-4134-bbf4-de6ffdb57525",
-      "9c5fef1f-8955-4eb9-96dc-427c64d7857a",
-      "a25309f7-0188-46ee-9900-c2a414d9576c",
-      "a8ee465a-895a-4301-a225-118ed93e5f70",
-      "bcd21cc2-32c9-42cb-ae69-e9abd229b94e",
-      "bf2da2fd-7d67-4887-906b-7a7fe88dc832",
-      "c7d69c31-439e-4669-881d-22e8ec5d7849",
-      "e7bf58a1-129c-46ee-b1e0-c847cc459210",
-      "f0983215-75bf-4802-8bdb-6a44e5d1d36e",
-      "fe53e220-25ff-495f-b2ae-aa296da73102"
-    ]
+    "source_risk_tier": "HIGH",
+    "requires_raw_pdf_audit": true
   },
   "raw_sources": [
     {
-      "source_id": "batch011-fire-alarm-systems-source-01",
+      "source_id": "ra9514-rirr-2019",
       "label": "RA 9514 2019 Revised IRR, Fire Code of the Philippines",
-      "source_type": "implementing_rules",
-      "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+      "authority": "Bureau of Fire Protection / Department of the Interior and Local Government",
+      "source_type": "implementing_rules_pdf",
+      "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, 16, 17, 18, and parking-structure provisions",
       "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
       "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
       "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
       "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+      "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+      "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
       "checked_markdown_lines": [
-        "3991-4060",
-        "4624-4627",
-        "6098-6106",
-        "6743-6770"
+        "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
       ],
-      "is_verified": true
+      "use": "primary source for article and linked-question support",
+      "local_source_checked": true
     }
-  ],
-  "unsupported_claims_removed": [
-    "Replaced technology-selection claims not verified in the audited RA 9514 lines with source-grounded mandatory-system triggers and notification rules.",
-    "Removed unresolved UI-block placeholders and internal drafting scaffolding."
   ],
   "claims": [
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-ARTICLE-01",
-      "claim_text": "Fire Detection and Alarm Systems was repaired against RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18; placeholders, internal drafting notes, and claims outside the checked raw-source lines were removed from normalized.md.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-ARTICLE-01",
+      "claim_text": "Fire Detection and Alarm Systems was refreshed against RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, 16, 17, 18, and parking-structure provisions; stale batch metadata was refreshed for the Batch 092 candidate.",
       "claim_class": "article_source_repair",
       "audit_result": "PASS",
       "source_support": {
@@ -94,364 +59,712 @@
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, 16, 17, 18, and parking-structure provisions",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; see source_locator and checked_markdown_lines."
+      }
+    },
+    {
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-SCENARIO-01",
+      "claim_text": "eligible-added - dormitory alarm outage scenario using four-hour outage threshold, Fire Marshal notice, fire watch, manual box placement, and 30 m travel limit.",
+      "claim_class": "scenario_enrichment",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, 16, 17, 18, and parking-structure provisions",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; scenario uses only the recorded source constraints."
+      }
+    },
+    {
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-001",
+      "claim_text": "Question 025aeb7f-cb92-4167-be3d-22754c2eabdf has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/025aeb7f-cb92-4167-be3d-22754c2eabdf.json. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_class": "linked_question_local_edit_draft",
+      "audit_result": "PASS",
+      "source_support": {
+        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
+        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
+        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
         "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "markdown_lines_checked": [
-          "3991-4060",
-          "4624-4627",
-          "6098-6106",
-          "6743-6770"
-        ]
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-001",
-      "claim_text": "Question 291651ff-d1ff-4652-8abc-a1afa1bd59f6 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-002",
+      "claim_text": "Question 033aac3a-4ed2-4829-830a-79b0e05c002e has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/033aac3a-4ed2-4829-830a-79b0e05c002e.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-002",
-      "claim_text": "Question 3c35ef86-0865-453f-bf69-b58baba418d6 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-003",
+      "claim_text": "Question 1f585d5c-d4e5-4564-ad2c-830506116dfc has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/1f585d5c-d4e5-4564-ad2c-830506116dfc.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-003",
-      "claim_text": "Question 43895946-c8b7-4fe9-8c5a-846221eca172 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-004",
+      "claim_text": "Question 250f7007-a767-4f23-afbf-39f47e037054 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/250f7007-a767-4f23-afbf-39f47e037054.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-004",
-      "claim_text": "Question 6bbf6717-f436-4d66-a544-e18457023df4 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-005",
+      "claim_text": "Question 254dd8b0-8dfd-479c-ab22-088c85fabe43 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/254dd8b0-8dfd-479c-ab22-088c85fabe43.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-005",
-      "claim_text": "Question fe53e220-25ff-495f-b2ae-aa296da73102 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-006",
+      "claim_text": "Question 291651ff-d1ff-4652-8abc-a1afa1bd59f6 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/291651ff-d1ff-4652-8abc-a1afa1bd59f6.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-006",
-      "claim_text": "Question 64addb91-3520-4ed3-bff2-e00580dbad01 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-007",
+      "claim_text": "Question 3bf30cc2-b4f3-496b-9b32-ee1dccac7219 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/3bf30cc2-b4f3-496b-9b32-ee1dccac7219.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-007",
-      "claim_text": "Question 1f585d5c-d4e5-4564-ad2c-830506116dfc has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-008",
+      "claim_text": "Question 3c35ef86-0865-453f-bf69-b58baba418d6 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/3c35ef86-0865-453f-bf69-b58baba418d6.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-008",
-      "claim_text": "Question 87c8eb89-e201-4212-bab5-d9e5f186fed1 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-009",
+      "claim_text": "Question 429e5441-fdc3-4e65-95a3-53d31e13eb6e has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/429e5441-fdc3-4e65-95a3-53d31e13eb6e.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-009",
-      "claim_text": "Question c7d69c31-439e-4669-881d-22e8ec5d7849 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-010",
+      "claim_text": "Question 43895946-c8b7-4fe9-8c5a-846221eca172 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/43895946-c8b7-4fe9-8c5a-846221eca172.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-010",
-      "claim_text": "Question 250f7007-a767-4f23-afbf-39f47e037054 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-011",
+      "claim_text": "Question 4afafaa0-15dd-4930-8ebb-ce28945d51e0 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/4afafaa0-15dd-4930-8ebb-ce28945d51e0.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-011",
-      "claim_text": "Question 4afafaa0-15dd-4930-8ebb-ce28945d51e0 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-012",
+      "claim_text": "Question 5624278e-d5f7-4720-be71-93d53644feb2 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/5624278e-d5f7-4720-be71-93d53644feb2.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-012",
-      "claim_text": "Question 5624278e-d5f7-4720-be71-93d53644feb2 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-013",
+      "claim_text": "Question 64addb91-3520-4ed3-bff2-e00580dbad01 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/64addb91-3520-4ed3-bff2-e00580dbad01.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-013",
-      "claim_text": "Question 9c5fef1f-8955-4eb9-96dc-427c64d7857a has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-014",
+      "claim_text": "Question 6bbf6717-f436-4d66-a544-e18457023df4 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/6bbf6717-f436-4d66-a544-e18457023df4.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-014",
-      "claim_text": "Question f0983215-75bf-4802-8bdb-6a44e5d1d36e has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-015",
+      "claim_text": "Question 87c8eb89-e201-4212-bab5-d9e5f186fed1 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/87c8eb89-e201-4212-bab5-d9e5f186fed1.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-015",
-      "claim_text": "Question 3bf30cc2-b4f3-496b-9b32-ee1dccac7219 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-016",
+      "claim_text": "Question 9c375d9c-746f-4134-bbf4-de6ffdb57525 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/9c375d9c-746f-4134-bbf4-de6ffdb57525.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-016",
-      "claim_text": "Question bcd21cc2-32c9-42cb-ae69-e9abd229b94e has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-017",
+      "claim_text": "Question 9c5fef1f-8955-4eb9-96dc-427c64d7857a has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/9c5fef1f-8955-4eb9-96dc-427c64d7857a.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-017",
-      "claim_text": "Question 254dd8b0-8dfd-479c-ab22-088c85fabe43 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-018",
+      "claim_text": "Question a25309f7-0188-46ee-9900-c2a414d9576c has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/a25309f7-0188-46ee-9900-c2a414d9576c.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-018",
-      "claim_text": "Question e7bf58a1-129c-46ee-b1e0-c847cc459210 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-019",
+      "claim_text": "Question a8ee465a-895a-4301-a225-118ed93e5f70 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/a8ee465a-895a-4301-a225-118ed93e5f70.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-019",
-      "claim_text": "Question 025aeb7f-cb92-4167-be3d-22754c2eabdf has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-020",
+      "claim_text": "Question bcd21cc2-32c9-42cb-ae69-e9abd229b94e has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/bcd21cc2-32c9-42cb-ae69-e9abd229b94e.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-020",
-      "claim_text": "Question 033aac3a-4ed2-4829-830a-79b0e05c002e has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-021",
+      "claim_text": "Question bf2da2fd-7d67-4887-906b-7a7fe88dc832 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/bf2da2fd-7d67-4887-906b-7a7fe88dc832.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-021",
-      "claim_text": "Question 429e5441-fdc3-4e65-95a3-53d31e13eb6e has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-022",
+      "claim_text": "Question c7d69c31-439e-4669-881d-22e8ec5d7849 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/c7d69c31-439e-4669-881d-22e8ec5d7849.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-022",
-      "claim_text": "Question 9c375d9c-746f-4134-bbf4-de6ffdb57525 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-023",
+      "claim_text": "Question e7bf58a1-129c-46ee-b1e0-c847cc459210 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/e7bf58a1-129c-46ee-b1e0-c847cc459210.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-023",
-      "claim_text": "Question a25309f7-0188-46ee-9900-c2a414d9576c has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-024",
+      "claim_text": "Question f0983215-75bf-4802-8bdb-6a44e5d1d36e has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/f0983215-75bf-4802-8bdb-6a44e5d1d36e.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     },
     {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-024",
-      "claim_text": "Question a8ee465a-895a-4301-a225-118ed93e5f70 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
+      "claim_id": "B092-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-025",
+      "claim_text": "Question fe53e220-25ff-495f-b2ae-aa296da73102 has a Batch 092 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/fe53e220-25ff-495f-b2ae-aa296da73102.json. The draft updates citation/explanation context only and does not change answer-key fields.",
       "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
+      "audit_result": "PASS",
       "source_support": {
         "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
         "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
         "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
         "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
-      }
-    },
-    {
-      "claim_id": "B011-lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr-QUESTION-025",
-      "claim_text": "Question bf2da2fd-7d67-4887-906b-7a7fe88dc832 has a Batch 011 local question-edit JSON draft under .ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits for the repaired Fire Detection and Alarm Systems article. The draft updates citation/explanation context only and does not change answer-key fields.",
-      "claim_class": "linked_question_local_edit_draft",
-      "audit_result": "PASS_LOCAL_DRAFT",
-      "source_support": {
-        "raw_pdf_path": "vitruvius-connection/001_Raw-Source-Layer/001-Laws/RA-9514/RA9514-RIRR-rev-2019.pdf",
-        "raw_pdf_sha256": "sha256:ace1e9fbbeb67d294171ed743d46eda2a4c199b9bb642862bab8524b80754266",
-        "raw_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/raw_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
-        "raw_markdown_sha256": "sha256:eb992b1c0090e1f8f34ee3ad24d20be3b4ffaa34ec3ab9d341b6f1596865dd26",
-        "parent_article_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
-        "answer_key_fields_changed": false
+        "refined_markdown_path": "vitruvius-connection/002_Raw-Conversion-Layer/001-Laws/refined_markdown/RA-9514/RA9514-RIRR-rev-2019.md",
+        "refined_markdown_sha256": "sha256:db4498b8e8a9b4664ce84e4a8527373109bc6f3e1baa6086f19644f88b7f4567",
+        "source_locator": "RA 9514 2019 Revised IRR, Section 10.2.6.6 and selected occupancy provisions in Divisions 8, 15, and 18",
+        "checked_markdown_lines": [
+          "RA 9514 refined markdown lines 3606-3656, 4161-4164, 5451-5457, 6003-6025, 6135-6137, 6194-6196, and 6242-6245"
+        ],
+        "parent_article_id": "1d37a355-c8bf-4d5e-a41b-07a9817a4427",
+        "parent_article_slug": "lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr",
+        "answer_key_fields_changed": false,
+        "local_source_checked": true,
+        "primary_evidence_basis": "local raw PDF under vitruvius-connection/001_Raw-Source-Layer with local conversion locator for line-level review",
+        "quoted_pdf_excerpt": "Local raw PDF locator verified; answer-key fields unchanged."
       }
     }
-  ]
+  ],
+  "unverified_or_rejected_claims": [],
+  "unsupported_claims_removed": [],
+  "raw_pdf_gate": {
+    "status": "PASS",
+    "all_legal_code_claims_have_pdf_locator": true,
+    "all_section_numbers_verified_against_raw_pdf": true,
+    "no_derivative_text_used_as_source_of_truth": true,
+    "blockers": []
+  },
+  "sme_review": {
+    "required": false,
+    "status": "NOT_REQUIRED_LOCAL_SOURCE_MATCH"
+  },
+  "local_edits": {
+    "normalized_repaired": true,
+    "candidate_composed": true,
+    "ui_blocks_removed_from_repaired_markdown": true,
+    "sources_json_updated": true,
+    "question_edits_created": 25,
+    "answer_key_fields_changed": false,
+    "scenario_enrichment_status": "eligible-added"
+  },
+  "validation": {
+    "compose": {
+      "safe_to_diff": true,
+      "blockers": [],
+      "placeholders_found": 0,
+      "unresolved_placeholders": []
+    },
+    "question_edit_count_matches_linked_questions": true,
+    "linked_question_count": 25,
+    "question_edit_count": 25
+  },
+  "question_edit_files": [
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/025aeb7f-cb92-4167-be3d-22754c2eabdf.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/033aac3a-4ed2-4829-830a-79b0e05c002e.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/1f585d5c-d4e5-4564-ad2c-830506116dfc.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/250f7007-a767-4f23-afbf-39f47e037054.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/254dd8b0-8dfd-479c-ab22-088c85fabe43.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/291651ff-d1ff-4652-8abc-a1afa1bd59f6.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/3bf30cc2-b4f3-496b-9b32-ee1dccac7219.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/3c35ef86-0865-453f-bf69-b58baba418d6.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/429e5441-fdc3-4e65-95a3-53d31e13eb6e.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/43895946-c8b7-4fe9-8c5a-846221eca172.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/4afafaa0-15dd-4930-8ebb-ce28945d51e0.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/5624278e-d5f7-4720-be71-93d53644feb2.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/64addb91-3520-4ed3-bff2-e00580dbad01.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/6bbf6717-f436-4d66-a544-e18457023df4.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/87c8eb89-e201-4212-bab5-d9e5f186fed1.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/9c375d9c-746f-4134-bbf4-de6ffdb57525.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/9c5fef1f-8955-4eb9-96dc-427c64d7857a.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/a25309f7-0188-46ee-9900-c2a414d9576c.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/a8ee465a-895a-4301-a225-118ed93e5f70.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/bcd21cc2-32c9-42cb-ae69-e9abd229b94e.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/bf2da2fd-7d67-4887-906b-7a7fe88dc832.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/c7d69c31-439e-4669-881d-22e8ec5d7849.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/e7bf58a1-129c-46ee-b1e0-c847cc459210.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/f0983215-75bf-4802-8bdb-6a44e5d1d36e.json",
+    "/Users/philiplewis/slatecamp/.ai/content-audit-export/articles/lea-util-004-04-when-fire-alarm-systems-are-mandatory-ra-9514-irr--1d37a355-c8bf-4d5e-a41b-07a9817a4427/question-edits/fe53e220-25ff-495f-b2ae-aa296da73102.json"
+  ],
+  "overall": {
+    "source_audit_status": "PASS",
+    "safe_for_batch_apply": true,
+    "safe_for_supabase_upload": true,
+    "blockers": [],
+    "warnings": [
+      "Supabase stale check was not run; this batch is local-first only and requires separate final publishing review before any apply."
+    ]
+  }
 }
